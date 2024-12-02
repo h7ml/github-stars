@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 45491
+stars: 45634
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Azure /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -156,31 +156,31 @@ Recent Submits
 
 Description
 
-Tongyi wanxiang Image Generator  
-By **YoungTx** on **2024-08-09**
+Google CSE  
+By **vsnthdev** on **2024-12-02**
 
-This plugin uses Alibaba's Tongyi Wanxiang model to generate images based on text prompts.  
-`image` `tongyi` `wanxiang`
-
-Shopping tools  
-By **shoppingtools** on **2024-07-19**
-
-Search for products on eBay & AliExpress, find eBay events & coupons. Get prompt examples.  
-`shopping` `e-bay` `ali-express` `coupons`
-
-Savvy Trader AI  
-By **savvytrader** on **2024-06-27**
-
-Realtime stock, crypto and other investment data.  
-`stock` `analyze`
-
-Search1API  
-By **fatwang2** on **2024-05-06**
-
-Search aggregation service, specifically designed for LLMs  
+Searches Google through their official CSE API.  
 `web` `search`
 
-> 📊 Total plugins: **49**
+Google CSE  
+By **vsnthdev** on **2024-12-02**
+
+Searches Google through their official CSE API.  
+`web` `search`
+
+Speak  
+By **speak** on **2024-12-02**
+
+Learn how to say anything in another language with Speak, your AI-powered language tutor.  
+`education` `language`
+
+Speak  
+By **speak** on **2024-12-02**
+
+Learn how to say anything in another language with Speak, your AI-powered language tutor.  
+`education` `language`
+
+> 📊 Total plugins: **98**
 
 ### `8` Agent Market (GPTs)
 
