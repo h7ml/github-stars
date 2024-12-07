@@ -1,6 +1,6 @@
 ---
 project: common-tags
-stars: 1995
+stars: 1998
 description: 🔖 Useful template literal tags for dealing with strings in ES2015+
 url: https://github.com/zspecza/common-tags
 ---
@@ -219,7 +219,7 @@ let userMessages \= \['hi', 'what are you up to?', '<script>alert("something evi
 html\`
   <div class\="chat-list"\>
     <ul\>
-      ${userMessages.map(message \=> safeHtml\`<li>${message}</li>\`)}
+      ${userMessages.map(message \=> safeHtml\`<li\>${message}</li\>\`)}
     </ul\>
   </div\>
 \`

@@ -1,6 +1,6 @@
 ---
 project: MagicQuill
-stars: 1930
+stars: 2060
 description: Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/magic-quill/MagicQuill
 ---
@@ -42,6 +42,8 @@ Update Log
 
 -   \[2024.11.21\] 📢 Update the save button; Fix path bug on Windows; Add `.bat` and `.sh` files for convenient environment install on Windows and Linux. Thanks lior007 and JamesIV4.
 -   \[2024.11.25\] 📢 New UI Updates: Drag & Drop Images + Download Button: We've enhanced our interface with two exciting features! Now you can easily upload images with drag & drop functionality, and quickly save your work using our new download button. Try it out and let us know what you think!
+-   \[2024.12.06\] 📢 New Feature Updates: Auto-save and Resolution Adjustment are now enabled in the parameter settings. Thanks Furkan Gözükara for his brilliant suggestions.
+-   \[2024.12.07\] 🎉 Exciting News: ComfyUI MagicQuill Node has been released! Check the repository https://github.com/magic-quill/ComfyUI\_MagicQuill for more details.
 
 To update the latest features, pull the latest code and re-install the gradio\_magicquill:
 

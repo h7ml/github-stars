@@ -1,6 +1,6 @@
 ---
 project: Auralis
-stars: 247
+stars: 354
 description: A Fast TTS Engine
 url: https://github.com/astramind-ai/Auralis
 ---
@@ -15,7 +15,7 @@ What is Auralis? 🚀
 
 Auralis is a text-to-speech engine that makes voice generation practical for real-world use:
 
--   Convert the entire first Harry Potter book to speech in 10 minutes
+-   Convert the entire first Harry Potter book to speech in 10 minutes (**realtime factor of ≈ 0.02x!** )
 -   Automatically enhance the reference quality, you can register them even with a low quality mic!
 -   It can be configured to have a small memory footprint (scheduler\_max\_concurrency)
 -   Process multiple requests simultaneously
@@ -37,7 +37,7 @@ Quick Start ⭐
     pip install auralis
     
 
-and then you try it out
+and then you can try it out via **python**
 
 from auralis import TTS, TTSRequest
 
@@ -52,6 +52,14 @@ request \= TTSRequest(
 
 output \= tts.generate\_speech(request)
 output.save('hello.wav')
+
+or via **cli** using the openai compatible server
+
+```
+auralis.openai --host 127.0.0.1 --port 8000 --model AstraMindAI/xttsv2 --gpt_model AstraMindAI/xtts2-gpt --max_concurrency 8 --vllm_logging_level warn  
+```
+
+You can see here for a more in-depth explanation or try it out with this example
 
 Key Features 🛸
 ---------------
@@ -157,6 +165,8 @@ request \= TTSRequest(
 output \= TTSOutput.from\_file("input.wav")
 
 \# Format conversion
+output.bit\_depth \= 32
+output.channel \= 2
 tensor\_audio \= output.to\_tensor()
 audio\_bytes \= output.to\_bytes()
 

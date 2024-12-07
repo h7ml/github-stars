@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 135750
+stars: 136002
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---
@@ -96,29 +96,29 @@ Quick tour
 
 To immediately use a model on a given input (text, image, audio, ...), we provide the `pipeline` API. Pipelines group together a pretrained model with the preprocessing that was used during that model's training. Here is how to quickly use a pipeline to classify positive versus negative texts:
 
-\>>\> from transformers import pipeline
+\>\>> from transformers import pipeline
 
 \# Allocate a pipeline for sentiment-analysis
-\>>\> classifier \= pipeline('sentiment-analysis')
-\>>\> classifier('We are very happy to introduce pipeline to the transformers repository.')
+\>\>> classifier \= pipeline('sentiment-analysis')
+\>\>> classifier('We are very happy to introduce pipeline to the transformers repository.')
 \[{'label': 'POSITIVE', 'score': 0.9996980428695679}\]
 
 The second line of code downloads and caches the pretrained model used by the pipeline, while the third evaluates it on the given text. Here, the answer is "positive" with a confidence of 99.97%.
 
 Many tasks have a pre-trained `pipeline` ready to go, in NLP but also in computer vision and speech. For example, we can easily extract detected objects in an image:
 
-\>>\> import requests
-\>>\> from PIL import Image
-\>>\> from transformers import pipeline
+\>\>> import requests
+\>\>> from PIL import Image
+\>\>> from transformers import pipeline
 
 \# Download an image with cute cats
-\>>\> url \= "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/coco\_sample.png"
-\>>\> image\_data \= requests.get(url, stream\=True).raw
-\>>\> image \= Image.open(image\_data)
+\>\>> url \= "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/coco\_sample.png"
+\>\>> image\_data \= requests.get(url, stream\=True).raw
+\>\>> image \= Image.open(image\_data)
 
 \# Allocate a pipeline for object detection
-\>>\> object\_detector \= pipeline('object-detection')
-\>>\> object\_detector(image)
+\>\>> object\_detector \= pipeline('object-detection')
+\>\>> object\_detector(image)
 \[{'score': 0.9982201457023621,
   'label': 'remote',
   'box': {'xmin': 40, 'ymin': 70, 'xmax': 175, 'ymax': 117}},
@@ -143,23 +143,23 @@ You can learn more about the tasks supported by the `pipeline` API in this tutor
 
 In addition to `pipeline`, to download and use any of the pretrained models on your given task, all it takes is three lines of code. Here is the PyTorch version:
 
-\>>\> from transformers import AutoTokenizer, AutoModel
+\>\>> from transformers import AutoTokenizer, AutoModel
 
-\>>\> tokenizer \= AutoTokenizer.from\_pretrained("google-bert/bert-base-uncased")
-\>>\> model \= AutoModel.from\_pretrained("google-bert/bert-base-uncased")
+\>\>> tokenizer \= AutoTokenizer.from\_pretrained("google-bert/bert-base-uncased")
+\>\>> model \= AutoModel.from\_pretrained("google-bert/bert-base-uncased")
 
-\>>\> inputs \= tokenizer("Hello world!", return\_tensors\="pt")
-\>>\> outputs \= model(\*\*inputs)
+\>\>> inputs \= tokenizer("Hello world!", return\_tensors\="pt")
+\>\>> outputs \= model(\*\*inputs)
 
 And here is the equivalent code for TensorFlow:
 
-\>>\> from transformers import AutoTokenizer, TFAutoModel
+\>\>> from transformers import AutoTokenizer, TFAutoModel
 
-\>>\> tokenizer \= AutoTokenizer.from\_pretrained("google-bert/bert-base-uncased")
-\>>\> model \= TFAutoModel.from\_pretrained("google-bert/bert-base-uncased")
+\>\>> tokenizer \= AutoTokenizer.from\_pretrained("google-bert/bert-base-uncased")
+\>\>> model \= TFAutoModel.from\_pretrained("google-bert/bert-base-uncased")
 
-\>>\> inputs \= tokenizer("Hello world!", return\_tensors\="tf")
-\>>\> outputs \= model(\*\*inputs)
+\>\>> inputs \= tokenizer("Hello world!", return\_tensors\="tf")
+\>\>> outputs \= model(\*\*inputs)
 
 The tokenizer is responsible for all the preprocessing the pretrained model expects and can be called directly on a single string (as in the above examples) or a list. It will output a dictionary that you can use in downstream code or simply directly pass to your model using the \*\* argument unpacking operator.
 

@@ -1,6 +1,6 @@
 ---
 project: stdweb
-stars: 3446
+stars: 3447
 description: A standard library for the client-side Web
 url: https://github.com/koute/stdweb
 ---

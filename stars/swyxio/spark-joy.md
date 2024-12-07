@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9425
+stars: 9426
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -601,13 +601,13 @@ typography matters! https://twitter.com/kvncnls/status/1399077512014086150?s=21
     -   StackOverflow almost-system-font stack:
     
     @ff-sans:
-      -apple-system, BlinkMacSystemFont, // San Francisco on macOS and iOS
+      \-apple-system, BlinkMacSystemFont, // San Francisco on macOS and iOS
       "Segoe UI",                        // Windows
       "Liberation Sans",                 // Linux
-      sans-serif;                        // The final fallback for rendering in sans-serif.
+      sans-serif;                        // The final fallback for rendering in sans\-serif.
     @ff-serif: Georgia, Cambria, "Times New Roman", Times, serif;
     @ff-mono:
-      ui-monospace,                     // San Francisco Mono on macOS and iOS
+      ui\-monospace,                     // San Francisco Mono on macOS and iOS
       "Cascadia Mono", "Segoe UI Mono", // Newer Windows monospace fonts that are optionally installed. Most likely to be rendered in Consolas
       "Liberation Mono",                // Linux
       Menlo, Monaco, Consolas,          // A few sensible system font choices

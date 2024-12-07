@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 10835
+stars: 10871
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -95,7 +95,7 @@ Rozière et al. 2023
 
 Mixtral MoE
 
-8x7B
+8x7B, 8x22B
 
 Mistral AI
 
@@ -233,6 +233,14 @@ Meta AI
 
 Meta AI 2024
 
+Llama 3.3
+
+70B
+
+Meta AI
+
+Meta AI 2024
+
 Mathstral
 
 7B
@@ -264,6 +272,14 @@ Mistral
 Mistral AI
 
 Mistral AI 2023
+
+Mixtral MoE
+
+8x22B
+
+Mistral AI
+
+Mistral AI 2024
 
 OLMo
 
@@ -336,6 +352,14 @@ QwQ
 Alibaba Group
 
 Qwen Team 2024
+
+Salamandra
+
+2B, 7B
+
+Barcelona Supercomputing Centre
+
+BSC-LTC 2024
 
 StableCode
 

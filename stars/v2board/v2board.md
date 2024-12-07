@@ -1,6 +1,6 @@
 ---
 project: v2board
-stars: 4530
+stars: 4539
 description: 🚀A multiple proxy protocol manage panel application interface
 url: https://github.com/v2board/v2board
 ---

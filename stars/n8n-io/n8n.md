@@ -1,6 +1,6 @@
 ---
 project: n8n
-stars: 50392
+stars: 50847
 description: Free and source-available fair-code licensed workflow automation tool. Easily automate tasks across different services.
 url: https://github.com/n8n-io/n8n
 ---

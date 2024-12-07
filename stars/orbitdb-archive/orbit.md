@@ -1,6 +1,6 @@
 ---
 project: orbit
-stars: 1637
+stars: 1638
 description: A distributed, serverless, peer-to-peer chat application on IPFS
 url: https://github.com/orbitdb-archive/orbit
 ---

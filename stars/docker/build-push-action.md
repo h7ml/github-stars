@@ -1,6 +1,6 @@
 ---
 project: build-push-action
-stars: 4420
+stars: 4435
 description: GitHub Action to build and push Docker images with Buildx
 url: https://github.com/docker/build-push-action
 ---
@@ -49,17 +49,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB\_USERNAME }}
+          password: ${{ secrets.DOCKERHUB\_TOKEN }}
+      -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      -
-        name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB\_USERNAME }}
-          password: ${{ secrets.DOCKERHUB\_TOKEN }}
       -
         name: Build and push
         uses: docker/build-push-action@v6
@@ -105,17 +105,17 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB\_USERNAME }}
+          password: ${{ secrets.DOCKERHUB\_TOKEN }}
+      -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      -
-        name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB\_USERNAME }}
-          password: ${{ secrets.DOCKERHUB\_TOKEN }}
       -
         name: Build and push
         uses: docker/build-push-action@v6

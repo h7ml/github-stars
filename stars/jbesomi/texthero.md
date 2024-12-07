@@ -1,6 +1,6 @@
 ---
 project: texthero
-stars: 2893
+stars: 2895
 description: Text preprocessing, representation and visualization from zero to hero.
 url: https://github.com/jbesomi/texthero
 ---
@@ -113,18 +113,18 @@ hero.scatterplot(df, 'pca', color\='kmeans\_labels', title\="K-means BBC Sport n
 
 ### 3\. Simple pipeline for text cleaning
 
-\>>\> import texthero as hero
-\>>\> import pandas as pd
-\>>\> text \= "This sèntencé    (123 /) needs to \[OK!\] be cleaned!   "
-\>>\> s \= pd.Series(text)
-\>>\> s
+\>\>> import texthero as hero
+\>\>> import pandas as pd
+\>\>> text \= "This sèntencé    (123 /) needs to \[OK!\] be cleaned!   "
+\>\>> s \= pd.Series(text)
+\>\>> s
 0    This sèntencé    (123 /) needs to \[OK!\] be cleane...
 dtype: object
 
 Remove all digits:
 
-\>>\> s \= hero.remove\_digits(s)
-\>>\> s
+\>\>> s \= hero.remove\_digits(s)
+\>\>> s
 0    This sèntencé    (  /) needs to \[OK!\] be cleaned!
 dtype: object
 
@@ -132,36 +132,36 @@ dtype: object
 
 Remove all types of brackets and their content.
 
-\>>\> s \= hero.remove\_brackets(s)
-\>>\> s 
+\>\>> s \= hero.remove\_brackets(s)
+\>\>> s 
 0    This sèntencé    needs to  be cleaned!
 dtype: object
 
 Remove diacritics.
 
-\>>\> s \= hero.remove\_diacritics(s)
-\>>\> s 
+\>\>> s \= hero.remove\_diacritics(s)
+\>\>> s 
 0    This sentence    needs to  be cleaned!
 dtype: object
 
 Remove punctuation.
 
-\>>\> s \= hero.remove\_punctuation(s)
-\>>\> s 
+\>\>> s \= hero.remove\_punctuation(s)
+\>\>> s 
 0    This sentence    needs to  be cleaned
 dtype: object
 
 Remove extra white-spaces.
 
-\>>\> s \= hero.remove\_whitespace(s)
-\>>\> s 
+\>\>> s \= hero.remove\_whitespace(s)
+\>\>> s 
 0    This sentence needs to be cleaned
 dtype: object
 
 Sometimes we also want to get rid of stop-words.
 
-\>>\> s \= hero.remove\_stopwords(s)
-\>>\> s
+\>\>> s \= hero.remove\_stopwords(s)
+\>\>> s
 0    This sentence needs cleaned
 dtype: object
 

@@ -24,38 +24,34 @@ Usage
 
 This is helpful in defining function guards. For example:
 
-```
 defmodule Guards do
   require Unicode.Set
 
-  # Define a guard that checks if a codepoint is a unicode digit
-  defguard digit?(x) when Unicode.Set.match?(x, "[[:Nd:]]")
+  \# Define a guard that checks if a codepoint is a unicode digit
+  defguard digit?(x) when Unicode.Set.match?(x, "\[\[:Nd:\]\]")
 end
 
 defmodule MyModule do
   require Guards
 
-  # Define a function using the previously defined guard
-  def my_function(<< x :: utf8, _rest :: binary>>) when Guards.digit?(x) do
+  \# Define a function using the previously defined guard
+  def my\_function(<< x :: utf8, \_rest :: binary\>>) when Guards.digit?(x) do
     IO.puts "Its a digit!"
   end
 
-  # Define a guard directly on the function
-  def my_other_function_(<< x :: utf8, _rest :: binary>>) when Unicode.Set.match?(x, "[[:Nd:]]") do
+  \# Define a guard directly on the function
+  def my\_other\_function\_(<< x :: utf8, \_rest :: binary\>>) when Unicode.Set.match?(x, "\[\[:Nd:\]\]") do
     IO.puts "Its also a digit!"
   end
 end
-```
 
 ### Generating compiled patterns for String matching
 
 `String.split/3` and `String.replace/3` allow for patterns and compiled patterns to be used with compiled patterns being the more performant approach. Unicode Set supports the generation of patterns and compiled patterns:
 
-```
-iex> pattern = Unicode.Set.compile_pattern!("[[:digit:]]")
-iex> list = String.split("abc1def2ghi3jkl", pattern)
-["abc", "def", "ghi", "jkl"]
-```
+iex\> pattern \= Unicode.Set.compile\_pattern!("\[\[:digit:\]\]")
+iex\> list \= String.split("abc1def2ghi3jkl", pattern)
+\["abc", "def", "ghi", "jkl"\]
 
 ### Generating NimbleParsec ranges
 
@@ -68,17 +64,15 @@ iex> Unicode.Set.to_utf8_char!("[[^abcd][mnb]]")
 
 This can be used as shown in the following example:
 
-```
 defmodule MyCombinators do
   import NimbleParsec
 
-  @digit_list = Unicode.Set.to_utf8_char!("[[:digit:]]")
-  def unicode_digit do
-    utf8_char(@digit_list)
+  @digit\_list \= Unicode.Set.to\_utf8\_char!("\[\[:digit:\]\]")
+  def unicode\_digit do
+    utf8\_char(@digit\_list)
     |> label("a digit in any Unicode script")
   end
 end
-```
 
 ### Compiling extended regular expressions
 
@@ -88,29 +82,25 @@ All Unicode Sets are expanded, even those that are known to `Regex.compile/2` si
 
 For example:
 
-```
-iex> Unicode.Regex.compile("\\p{Zs}")
-{:ok, ~r/[\x{20}\x{A0}\x{1680}\x{2000}-\x{200A}\x{202F}\x{205F}\x{3000}]/u}
+iex\> Unicode.Regex.compile("\\\\p{Zs}")
+{:ok, ~r/\[\\x{20}\\x{A0}\\x{1680}\\x{2000}\-\\x{200A}\\x{202F}\\x{205F}\\x{3000}\]/u}
 
-iex> Unicode.Regex.compile("[:graphic:]")
+iex\> Unicode.Regex.compile("\[:graphic:\]")
 {:ok,
- ~r/[\x{20}-\x{7E}\x{A0}-\x{AC}\x{AE}-\x{377}\x{37A}-\x{37F}...]/u}
-```
+ ~r/\[\\x{20}\-\\x{7E}\\x{A0}\-\\x{AC}\\x{AE}\-\\x{377}\\x{37A}\-\\x{37F}...\]/u}
 
 ### Other Examples
 
 These examples show how to combine sets (union, difference and intersection) to deliver a flexible targeting of the required match.
 
-```
-# The character "๓" is the thai digit `1`
-iex> Unicode.Set.match? ?๓, "[[:digit:]]"
+\# The character "๓" is the thai digit \`1\`
+iex\> Unicode.Set.match? ?๓, "\[\[:digit:\]\]"
 true
 
-# Set operations allow union, insersection and difference
-# This example matches on digits, but not the Thai script
-iex> Unicode.Set.match? ?๓, "[[:digit:]-[:thai:]]"
+\# Set operations allow union, insersection and difference
+\# This example matches on digits, but not the Thai script
+iex\> Unicode.Set.match? ?๓, "\[\[:digit:\]-\[:thai:\]\]"
 false
-```
 
 ### Compile time parsing
 
@@ -763,12 +753,10 @@ Installation
 
 To install, add the package `unicode_set` to your list of dependencies in `mix.exs`:
 
-```
 def deps do
-  [
-    {:unicode_set, "~> 1.0"}
-  ]
+  \[
+    {:unicode\_set, "~> 1.0"}
+  \]
 end
-```
 
 Documentation can be found at https://hexdocs.pm/unicode\_set.

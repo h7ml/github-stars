@@ -1,6 +1,6 @@
 ---
 project: maigret
-stars: 10367
+stars: 10692
 description: 🕵️‍♂️ Collect a dossier on a person by username from thousands of sites
 url: https://github.com/soxoj/maigret
 ---
@@ -33,15 +33,21 @@ See full description of Maigret features in the documentation.
 Installation
 ------------
 
-‼️ Maigret is available online via official Telegram bot.
+‼️ Maigret is available online via official Telegram bot. Consider using it if you don't want to install anything.
 
-Maigret can be installed using pip, Docker, or simply can be launched from the cloned repo.
+### Windows
 
 Standalone EXE-binaries for Windows are located in Releases section of GitHub repository.
 
-Also, you can run Maigret using cloud shells and Jupyter notebooks (see buttons below).
+Video guide on how to run it: https://youtu.be/qIgwTZOmMmM.
 
-### Package installing
+### Installation in Cloud Shells
+
+You can launch Maigret using cloud shells and Jupyter notebooks. Press one of the buttons below and follow the instructions to launch it in your browser.
+
+### Local installation
+
+Maigret can be installed using pip, Docker, or simply can be launched from the cloned repo.
 
 **NOTE**: Python 3.10 or higher and pip is required, **Python 3.11 is recommended.**
 
@@ -110,7 +116,22 @@ PDF report, HTML report
 
 Full console output
 
-### SOWEL classification
+Disclaimer
+----------
+
+**This tool is intended for educational and lawful purposes only.** The developers do not endorse or encourage any illegal activities or misuse of this tool. Regulations regarding the collection and use of personal data vary by country and region, including but not limited to GDPR in the EU, CCPA in the USA, and similar laws worldwide.
+
+It is your sole responsibility to ensure that your use of this tool complies with all applicable laws and regulations in your jurisdiction. Any illegal use of this tool is strictly prohibited, and you are fully accountable for your actions.
+
+The authors and developers of this tool bear no responsibility for any misuse or unlawful activities conducted by its users.
+
+Feedback
+--------
+
+If you have any questions, suggestions, or feedback, please feel free to open an issue, create a GitHub discussion, or contact the author directly via Telegram.
+
+SOWEL classification
+--------------------
 
 This tool uses the following OSINT techniques:
 

@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 27900
+stars: 28183
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -50,6 +50,7 @@ Cool features of AnythingLLM
 -   Azure OpenAI
 -   AWS Bedrock
 -   Anthropic
+-   NVIDIA NIM (chat models)
 -   Google Gemini Pro
 -   Hugging Face (chat models)
 -   Ollama (chat models)

@@ -1,6 +1,6 @@
 ---
 project: lossless-cut
-stars: 28273
+stars: 28355
 description: The swiss army knife of lossless video/audio editing
 url: https://github.com/mifi/lossless-cut
 ---
@@ -121,14 +121,11 @@ If you prefer to download the executables manually, this will of course always b
 -   Windows: 7zip (Windows 7, 8 and 8.1 is no longer supported after v3.50.0)
 -   Linux: x64 tar.bz2 / x64 AppImage / arm64 tar.bz2 / Raspberry Pi armv7l
 -   More releases (note that APPX for Windows and PKG for MacOS **do not work**)
+-   Download latest nightly builds 🧪.
 
 If you find LosslessCut useful, I'm very thankful for your support.
 
 What's the **difference between App Stores and GitHub download?** Please see FAQ
-
-### Nightly builds 🧪
-
-If you want to test the very latest and greatest bleeding-edge version. 1. Go to Actions, 2. click on the latest _Build/release_, 3. scroll all the way down to _Artifacts_. **Note:** these builds may be totally broken!
 
 Supported operating systems
 ---------------------------

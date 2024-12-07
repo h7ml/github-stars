@@ -1,6 +1,6 @@
 ---
 project: nanoid
-stars: 24720
+stars: 24742
 description: A tiny (124 bytes), secure, URL-friendly, unique string ID generator for JavaScript
 url: https://github.com/ai/nanoid
 ---
@@ -104,11 +104,9 @@ Install
 
 npm install nanoid
 
-Nano ID 5 works only with ESM projects, in tests or Node.js scripts. For CommonJS you need to use latest Node.js 20 or 22 with `--experimental-require-module`:
+Nano ID 5 works with ESM projects (with `import`) in tests or Node.js scripts. For CommonJS `require()` you need to use latest Node.js 22.12 (works out-of-the-box) or Node.js 20 (with `--experimental-require-module`):
 
-node --experimental-require-module app.js
-
-Or you can use Nano ID 3.x (we still support it):
+For Node.js 18 you can use Nano ID 3.x (we still support it):
 
 npm install nanoid@3
 

@@ -1,6 +1,6 @@
 ---
 project: Ventoy
-stars: 63238
+stars: 63349
 description: A new bootable USB solution.
 url: https://github.com/ventoy/Ventoy
 ---

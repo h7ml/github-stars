@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 72315
+stars: 72430
 description: Architected for speed. Automated for easy. Monitoring and troubleshooting, transformed!
 url: https://github.com/netdata/netdata
 ---
@@ -10,6 +10,7 @@ in high-resolution and in real-time.
 
   
 
+  
   
   
 
@@ -22,60 +23,131 @@ MENU: **GETTING STARTED** | **HOW IT WORKS** | **FAQ** | **DOCS** | **COMMUNITY*
 > **Important** 💡  
 > People get addicted to Netdata. Once you use it on your systems, **there's no going back!**  
 
-**Netdata** is a high-performance, cloud-native, and on-premises observability platform designed to monitor metrics and logs with unparalleled efficiency. It delivers a simpler, faster, and significantly easier approach to real-time, low-latency monitoring for systems, containers, and applications. Netdata requires **zero-configuration** to get started, offering a powerful and comprehensive monitoring experience, out of the box.
+**Netdata: Real-time Observability, Simplified.**
 
-Netdata is also known for its **cost-efficient, distributed design**. Unlike traditional monitoring solutions that centralize data, **Netdata distributes the code**. Instead of funneling all data into a few central databases, Netdata processes data at the edge, keeping it close to the source. The smart open-source Netdata Agent acts as a distributed database, enabling the construction of complex observability pipelines with modular, Lego-like simplicity.
+Netdata is a high-performance observability platform designed to simplify modern infrastructure monitoring. With its innovative distributed architecture, Netdata delivers real-time insights into your systems, containers, and applications at a granular level.
 
-Netdata provides **A.I. insights** for all monitored data, training machine learning models directly at the edge. This allows for fully automated and unsupervised anomaly detection, and with its intuitive APIs and UIs, users can quickly perform root cause analysis and troubleshoot issues, identifying correlations and gaining deeper insights into their infrastructure.
+**✨ Key Features**:
+
+-   **Real-Time**: Per-second data collection provides immediate visibility into your infrastructure's behavior.
+-   **Zero-Configuration**: Start monitoring in minutes with automatic detection and instant insights.
+-   **ML-Powered Insights**: Automatic anomaly detection and pattern recognition, helping you identify issues before they become critical.
+-   **Enterprise-Ready**: Scale from a single node to thousands while maintaining performance and ease of use.
+-   **Complete Visibility**: From infrastructure to applications, logs to metrics, all in one solution.
+-   **Edge-Based**: Process and store metrics at the edge for superior performance and cost efficiency.
+-   **Advanced Visualization**: Rich, interactive dashboard for deep system insights and rapid troubleshooting.
+
+* * *
 
 ### The Netdata Ecosystem
 
-Netdata is built on three core parts:
+> **Note**: This repository contains the Netdata Agent, the open-source core of the Netdata ecosystem. For information about other components, see below.
 
-1.  **Netdata Agent** (usually called just "Netdata"): This open-source component is the heart of the Netdata ecosystem, handling data collection, storage (embedded database), querying, machine learning, exporting, and alerting of observability data. All observability data and features a Netdata ecosystem offers, are managed by the Netdata Agent. It runs in physical and virtual servers, cloud environments, Kubernetes clusters, and edge/IoT devices and is carefully optimized to have _**zero impact**_ on production systems and applications.
-    
-2.  **Netdata Cloud**: Enhancing the Netdata Agent, Netdata Cloud offers enterprise features such as user management, role-based access control, horizontal scalability, alert and notification management, access from anywhere, and more. Netdata Cloud does **not** centralize or store observability data.
-    
-    _Netdata Cloud is a commercial product, available as an on-premises installation, or a SaaS solution, with a free community tier._
-    
-3.  **Netdata UI**: The user interface that powers all dashboards, data visualization, and configuration.
-    
-    _While closed-source, it is free to use with both Netdata Agents and Netdata Cloud, via their public APIs. It is included in the binary packages offered by Netdata, and its latest version is publicly available via CDN._
-    
+This three-part architecture enables Netdata to scale seamlessly from single-node deployments to complex multi-cloud environments with thousands of nodes, supporting long-term data retention without compromising performance.
 
-Netdata scales effortlessly from a single server to thousands, even in complex, multi-cloud or hybrid environments, with the ability to retain data for years.
+Component
 
-### Key characteristics of the Netdata Agent
+Description
 
--   💥 **Collects data from 800+ integrations**  
-    Operating system metrics, container metrics, virtual machines, hardware sensors, applications metrics, OpenMetrics exporters, StatsD, and logs. OpenTelemetry is on its way to be included (currently being developed)...
-    
--   💪 **Real-Time, Low-Latency, High-Resolution**  
-    All data are collected per second and are made available on the APIs for visualization, immediately after data collection (1-second latency, data collection to visualization).
-    
--   😶‍🌫️ **AI across the board**  
-    Trains multiple Machine-Learning (ML) models at the edge, for each metric collected and uses AI to detect anomalies based on the past behavior of each metric.
-    
--   📜 **systemd-journald Logs**  
-    Includes tools to efficiently convert plain text log (text, csv, logfmt, json) files to structured systemd-journald entries (`log2journal`, `systemd-cat-native`) and queries systemd-journal files directly enabling powerful logs visualization dashboards. The Netdata Agents eliminate the need to centralize logs and provide all the functions to work with logs directly at the edge.
-    
--   ⭐ **Lego like, Observability Pipelines**  
-    Netdata Agents can be linked to together (in parent-child relationships), to build observability centralization points within your infrastructure, allowing you to control data replication and retention at multiple levels.
-    
--   🔥 **Fully Automated Powerful Visualization**  
-    Using the NIDL (Nodes, Instances, Dimensions & Labels) data model, the Netdata Agent enables the creation of fully automated dashboards, providing correlated visualization of all metrics, allowing you to understand any dataset at first sight, but also to filter, slice and dice the data directly on the dashboards, without the need to learn a query language.
-    
-    Note: the Netdata UI is closed-source, but free to use with Netdata Agents and Netdata Cloud.
-    
--   🔔 **Out of box Alerts**  
-    Comes with hundreds of alerts out of the box to detect common issues and pitfalls, revealing issues that can easily go unnoticed. It supports several notification methods to let you know when your attention is needed.
-    
--   😎 **Low Maintenance**  
-    Fully automated in every aspect: automated dashboards, out-of-the-box alerts, auto-detection and auto-discovery of metrics, zero-touch machine-learning, easy scalability and high availability, and CI/CD friendly.
-    
--   ⭐ **Open and Extensible**  
-    Netdata is a modular platform that can be extended in all possible ways, and it also integrates nicely with other monitoring solutions.
-    
+License
+
+Netdata Agent
+
+• The heart of Netdata's monitoring capabilities  
+• Handles data collection, storage, querying, ML analysis, exports, and alerts  
+• Runs on physical/virtual servers, cloud, Kubernetes, and IoT devices  
+• Optimized for zero production impact  
+• Core of all observability features
+
+GPL v3+
+
+Netdata Cloud
+
+• Adds enterprise-grade features:  
+  - User management and RBAC  
+  - Horizontal scalability  
+  - Centralized alert management  
+  - Access your infrastructure from anywhere  
+• Available as SaaS or on-premises  
+• Includes free community tier  
+• Does not centralize metric storage
+
+Netdata UI
+
+• Powers all dashboards and visualizations  
+• Free to use with both Agent and Cloud  
+• Included in standard Netdata packages  
+• Latest version available via CDN
+
+NCUL1
+
+### Key capabilities of the Netdata Agent
+
+With these capabilities, Netdata Agent provides a powerful, automated monitoring solution that works right out-of-the-box while remaining highly customizable for specific needs.
+
+Capability
+
+Description
+
+Comprehensive Data Collection
+
+• 800+ integrations out of the box  
+• Collects metrics from systems, containers, VMs, hardware sensors  
+• Supports OpenMetrics exporters, StatsD, and logs  
+• OpenTelemetry support coming soon
+
+Performance & Precision
+
+• Per-second data collection  
+• Real-time visualization with 1-second latency  
+• High-resolution metrics for precise monitoring
+
+Edge-Based ML
+
+• Trains ML models directly at the edge  
+• Automatic anomaly detection per metric  
+• Pattern recognition based on historical behavior
+
+Advanced Log Management
+
+• Direct systemd-journald and Windows Event Log integrations  
+• Tools for log conversion (log2journal, systemd-cat-native)  
+• Process logs at the edge - no centralization needed  
+• Rich log visualization dashboards
+
+Observability Pipeline
+
+• Build Parent-Child relationships between Agents  
+• Create flexible centralization points  
+• Control data replication and retention at multiple levels
+
+Automated Visualization
+
+• NIDL (Nodes, Instances, Dimensions & Labels) data model  
+• Auto-generated, correlated dashboards  
+• Filter and analyze data without query language  
+• Free to use, powered by Netdata UI
+
+Smart Alerting
+
+• Hundreds of pre-configured alerts  
+• Detect common issues automatically  
+• Multiple notification methods  
+• Proactive problem detection
+
+Low Maintenance
+
+• Auto-detection of metrics  
+• Zero-touch machine learning  
+• Easy scalability  
+• CI/CD friendly deployment
+
+Open & Extensible
+
+• Modular architecture  
+• Easy to extend and customize  
+• Integrates with existing monitoring tools  
+• Active community ecosystem
 
 ### What can be monitored with the Netdata Agent
 
@@ -286,12 +358,10 @@ Netdata actively supports and is a member of the Cloud Native Computing Foundati
 
 * * *
 
-**Below is an animated image, but you can see Netdata live!**  
+**You can see Netdata live!**  
 **FRANKFURT** | **NEWYORK** | **ATLANTA** | **SANFRANCISCO** | **TORONTO** | **SINGAPORE** | **BANGALORE**  
-_They are clustered Netdata Agent Parents. They all have the same data. **Select the one closer to you.**_  
-_All these run with the default configuration. We only clustered them to have multi-node dashboards._  
-Note: These demos include the Netdata UI,  
-which while being closed-source, is free to use with Netdata Agents and Netdata Cloud.
+_We've set up multiple demo clusters around the world, each running with the default configuration and showing real monitoring data._  
+_Choose the instance closest to you for the best experience._
 
 * * *
 

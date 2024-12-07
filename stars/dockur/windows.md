@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 30154
+stars: 30588
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -275,7 +275,9 @@ Replace the example path `/home/user/example.iso` with the filename of your desi
 
 ### How do I run a script after installation?
 
-To run your own script after installation, you can create a file called `install.bat` and place it in a folder together with any additional files it needs (software to be installed for example). Then bind that folder in your compose file like this:
+To run your own script after installation, you can create a file called `install.bat` and place it in a folder together with any additional files it needs (software to be installed for example).
+
+Then bind that folder in your compose file like this:
 
 volumes:
   -  /home/user/example:/oem

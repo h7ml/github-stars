@@ -1,6 +1,6 @@
 ---
 project: just
-stars: 6064
+stars: 6073
 description: A library of dependency-free JavaScript utilities that do just one thing.
 url: https://github.com/angus-c/just
 ---
@@ -2202,7 +2202,8 @@ yarn add just-pipe
 Pass a value through a pipeline of functions
 
 import pipe from 'just-pipe
-pipe(3, a => a+1, b => b\*2) // 8
+
+pipe(3, a \=> a+1, b \=> b\*2) // 8
 pipe('John Smith', a \=> a.split(' '), b \=> b.reverse(), c \=> c\[0\]) // 'Smith'
 
 ### just-debounce-it

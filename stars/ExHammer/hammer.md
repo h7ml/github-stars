@@ -1,6 +1,6 @@
 ---
 project: hammer
-stars: 758
+stars: 762
 description: An Elixir rate-limiter with pluggable backends
 url: https://github.com/ExHammer/hammer
 ---
@@ -8,82 +8,74 @@ url: https://github.com/ExHammer/hammer
 Hammer
 ======
 
-A rate-limiter for Elixir, with pluggable storage backends.
+**Hammer** is a rate-limiter for Elixir with pluggable storage backends. Hammer enables users to set limits on actions performed within specified time intervals, applying per-user or global limits on API requests, file uploads, and more.
 
-Hammer-Plug
------------
+* * *
 
-We have a helper-library to make adding rate-limiting to your Phoenix (or other plug-based) application even easier: Hammer.Plug.
+Note
+
+This README is for the unreleased master branch, please reference the official documentation on hexdocs for the latest stable release.
+
+* * *
 
 Installation
 ------------
 
-Hammer is available in Hex, the package can be installed by adding `:hammer` to your list of dependencies in `mix.exs`:
+Hammer is available in Hex. Install by adding `:hammer` to your list of dependencies in `mix.exs`:
 
 def deps do
   \[
-    {:hammer, "~> 6.1"}
+    {:hammer, "~> 7.0"}
   \]
 end
 
-Documentation
+Default Algorithm
+-----------------
+
+By default, Hammer uses a **fixed window counter** to track actions within set time windows, resetting the count at the start of each new window. For example, with a limit of 10 uploads per minute, a user could upload up to 10 files between 12:00:00 and 12:00:59, and up to 10 more between 12:01:00 and 12:01:59. Notice that the user can upload 20 videos in a second if the uploads are timed at the window edges. If this is an issue, it can be worked around with a "bursty" counter which can be implemented with the current API by making two checks, one for the original interval with the total limit, and one for a shorter interval with a fraction of the limit. That would smooth out the number of requests allowed.
+
+Core Concepts
 -------------
 
-On HexDocs: https://hexdocs.pm/hammer/frontpage.html
+-   **Limit:** Maximum number of actions allowed in a window.
+-   **Scale:** Duration of the time window (in milliseconds).
+-   **Key:** Unique identifier (e.g., user ID) to scope the rate limiting.
 
-The Tutorial is an especially good place to start.
+Example Usage
+-------------
 
-Usage
------
-
-Example:
-
-defmodule MyApp.VideoUpload do
-
-  def upload(video\_data, user\_id) do
-    case Hammer.check\_rate("upload\_video:#{user\_id}", 60\_000, 5) do
-      {:allow, \_count} \->
-        \# upload the video, somehow
-      {:deny, \_limit} \-\>
-        \# deny the request
-    end
-  end
-
+defmodule MyApp.RateLimit do
+  use Hammer, backend: :ets
 end
 
-The `Hammer` module provides the following functions:
+MyApp.RateLimit.start\_link()
 
--   `check_rate(id, scale_ms, limit)`
--   `check_rate_inc(id, scale_ms, limit, increment)`
--   `inspect_bucket(id, scale_ms, limit)`
--   `delete_buckets(id)`
+user\_id \= 42
+key \= "upload\_video:#{user\_id}"
+scale \= :timer.minutes(1)
+limit \= 3
 
-Backends are configured via `Mix.Config`:
+case MyApp.RateLimit.hit(key, scale, limit) do
+  {:allow, \_count} \->
+    \# upload the video
+    :ok
 
-config :hammer,
-  backend: {Hammer.Backend.ETS, \[expiry\_ms: 60\_000 \* 60 \* 4,
-                                 cleanup\_interval\_ms: 60\_000 \* 10\]}
-
-See the Tutorial for more.
-
-See the Hammer Testbed app for an example of using Hammer in a Phoenix application.
+  {:deny, retry\_after} \->
+    \# deny the request
+    {:error, :rate\_limit, \_message \= "try again in #{retry\_after}ms"}
+end
 
 Available Backends
 ------------------
 
--   Hammer.Backend.ETS (provided with Hammer for testing and dev purposes, not very good for production use)
--   Hammer.Backend.Redis
--   Hammer.Backend.Mnesia (beta)
-
-Getting Help
-------------
-
-If you're having trouble, either open an issue on this repo
+-   Hammer.ETS (default, can be distributed)
+-   Hammer.Redis
+-   Hammer.Mnesia
 
 Acknowledgements
 ----------------
 
-Hammer was inspired by the ExRated library, by grempe.
+Hammer was originally inspired by the ExRated library, by grempe.
 
 License
 -------

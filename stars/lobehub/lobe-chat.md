@@ -1,7 +1,7 @@
 ---
 project: lobe-chat
-stars: 45634
-description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Azure /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
+stars: 48333
+description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
 url: https://github.com/lobehub/lobe-chat
 ---
 
@@ -198,31 +198,31 @@ Recent Submits
 
 Description
 
-AI Assistant for Course Content and Teaching Guidelines  
-By **HNaga** on **2024-11-29**
+System Instruction Expert  
+By **yuyun2000** on **2024-12-04**
 
-This AI assistant is designed to help educators and instructors prepare comprehensive course content and provide practical teaching guidelines. It leverages advanced NLP capabilities to generate lesson plans, suggest engaging teaching strategies, and offer insights into educational best practices.  
-`education` `teaching` `course-design` `content-creation` `ai-assistance` `curriculum-development` `instructional-design`
+Skilled in refining and generating efficient system instructions  
+`system-instructions` `writing` `detail-optimization` `user-needs`
 
-Backend Development Assistant  
-By **zeno980** on **2024-11-26**
+Japanese Memory Helper  
+By **sharkbear212** on **2024-12-04**
 
-Skilled in backend development tasks  
-`backend-development` `ai-technology` `web-applications` `spring` `sql`
+Specializes in Japanese Hiragana, Katakana, vocabulary, and memory techniques for explanations and phrases  
+`explanation` `memory-techniques` `japanese-teaching`
 
-Bilingual Dictionary Expert  
-By **swarfte** on **2024-11-26**
+Poetry Card Designer  
+By **lianxin255** on **2024-12-03**
 
-Expert in bilingual English-Chinese vocabulary translation and analysis  
-`translation` `language-learning` `vocabulary` `dictionary`
+Skilled in designing poetry cards to enhance artistic sense and appeal  
+`poetry-card-design` `card` `creativity` `artistic-expression`
 
-SSC Incremental  
-By **Base03** on **2024-11-26**
+Daily Doctor  
+By **yuyun2000** on **2024-11-30**
 
-Claude minus the Reddit  
-`technology` `analysis` `software` `ai` `research`
+Specializes in surgical diagnosis and personalized health management  
+`general-medicine` `surgery` `health-consultation` `personalized-treatment` `medical-education`
 
-> 📊 Total agents: **447**
+> 📊 Total agents: **453**
 
 ### `9` Support Local / Remote Database
 

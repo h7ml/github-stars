@@ -1,6 +1,6 @@
 ---
 project: tabler-icons
-stars: 18375
+stars: 18408
 description: A set of over 5700 free MIT-licensed high-quality SVG icons for you to use in your web projects.
 url: https://github.com/tabler/tabler-icons
 ---
@@ -8,7 +8,7 @@ url: https://github.com/tabler/tabler-icons
 Tabler Icons
 ============
 
-A set of 5736 free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
+A set of 5754 free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
 
 **Browse at tabler.io/icons →**
 
@@ -25,9 +25,9 @@ Browser testing via:
 Preview
 -------
 
-### Outline version (4901 icons)
+### Outline version (4905 icons)
 
-### Filled version (835 icons)
+### Filled version (849 icons)
 
 Installation
 ------------
@@ -100,7 +100,7 @@ const MyComponent \= () \=> {
     color\="red" // set \`stroke\` color
     stroke\={3}  // set \`stroke-width\`
     strokeLinejoin\="miter" // override other SVG props
-  /\>
+  />
 }
 
 `@tabler/icons-react` exports its own type declarations for usage with React and Typescript.
@@ -137,7 +137,7 @@ export default {
 
 or with `<script setup>`
 
-<script setup\>
+<script setup>
 // Import Vue component
 import { IconHome } from '@tabler/icons-vue';
 </script\>
@@ -193,9 +193,9 @@ Svelte components available through `@tabler/icons-svelte` package.
 </script\>
 
 <main\>
-  <IconHeart size\={48} stroke\={1} /\>
+  <IconHeart size\={48} stroke\={1} />
   <IconHeart size\="32" stroke\="1.5" /\>
-  <IconHeart color\="crimson" class\="p-1" size\="96" stroke\="2" /\>
+  <IconHeart color\="crimson" class\="p-1" size\="96" stroke\="2" />
 </main>
 
 CDN

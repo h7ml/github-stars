@@ -25,8 +25,8 @@ new TextView({top: 'prev() 16', centerX: true})
 contentView.append(
   <$\>
     <Button top\={16} centerX text\='Use native UI'
-            onSelect\={() \=> $(TextView).only().text \= 'Powered by Tabris.js'}/\>
-    <TextView top\='prev() 16' centerX/\>
+            onSelect\={() \=> $(TextView).only().text \= 'Powered by Tabris.js'}/>
+    <TextView top\='prev() 16' centerX/>
   </$\>
 );
 

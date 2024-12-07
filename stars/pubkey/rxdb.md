@@ -1,6 +1,6 @@
 ---
 project: rxdb
-stars: 21671
+stars: 21689
 description: A fast, local first, reactive Database for JavaScript Applications https://rxdb.info/
 url: https://github.com/pubkey/rxdb
 ---
@@ -230,8 +230,7 @@ By setting a schema-field to `encrypted`, the value of this field will be stored
   "title": "my schema",
   "properties": {
     "secret": {
-      "type": "string",
-      "encrypted": true
+      "type": "string"
     }
   },
   "encrypted": \[

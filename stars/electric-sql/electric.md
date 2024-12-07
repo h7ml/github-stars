@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 6500
+stars: 6544
 description: Sync little subsets of your Postgres data into local apps and services.
 url: https://github.com/electric-sql/electric
 ---
@@ -50,8 +50,10 @@ import { useShape } from '@electric-sql/react'
 function Component() {
   const { data } \= useShape({
     url: \`http://localhost:3000/v1/shape\`,
-    table: \`foo\`,
-    where: \`title LIKE 'foo%'\`,
+    params: {
+      table: \`foo\`,
+      where: \`title LIKE 'foo%'\`
+    }
   })
 
   return JSON.stringify(data)

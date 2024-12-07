@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 17174
+stars: 17238
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -282,10 +282,6 @@ Efficiently persists document updates to the browsers indexeddb database. The do
 y-mongodb-provider
 
 Adds persistent storage to a server with MongoDB. Can be used with the y-websocket provider.
-
-@toeverything/y-indexeddb
-
-Like y-indexeddb, but with sub-documents support and fully TypeScript.
 
 y-fire
 

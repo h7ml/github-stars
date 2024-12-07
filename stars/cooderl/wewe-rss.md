@@ -1,6 +1,6 @@
 ---
 project: wewe-rss
-stars: 5418
+stars: 5490
 description: 🤗更优雅的微信公众号订阅方式，支持私有化部署、微信公众号RSS生成（基于微信读书）v2.x
 url: https://github.com/cooderl/wewe-rss
 ---
@@ -20,14 +20,15 @@ WeWe RSS
 -   支持全文内容输出，让阅读无障碍
 -   所有订阅源导出OPML
 -   支持通过/feeds/all.(json|rss|atom)接口和/feeds/:feed对标题进行过滤：使用title\_include和title\_exclude参数，支持使用`|`实现多个关键词的 或 逻辑
-
-> {{ORIGIN\_URL}}/feeds/all.atom?title\_include=张三
-> 
-> {{ORIGIN\_URL}}/feeds/MP\_WXS\_123.json?limit=30&title\_include=张三|李四|王五&title\_exclude=张三丰|赵六
-
+    
+    > {{ORIGIN\_URL}}/feeds/all.atom?title\_include=张三
+    > 
+    > {{ORIGIN\_URL}}/feeds/MP\_WXS\_123.json?limit=30&title\_include=张三|李四|王五&title\_exclude=张三丰|赵六
+    
 -   支持通过/feeds/:feed接口触发单个feedid更新：使用update=true参数（实时返回结果不包含更新后的articles，要获取更新后的articles需去掉update参数再请求一次）
-
-> {{ORIGIN\_URL}}/feeds/MP\_WXS\_123.rss?update=true
+    
+    > {{ORIGIN\_URL}}/feeds/MP\_WXS\_123.rss?update=true
+    
 
 部署
 --
@@ -100,10 +101,10 @@ export DATABASE\_TYPE="sqlite"
 rm -rf apps/server/prisma
 mv apps/server/prisma-sqlite apps/server/prisma
 # 生成prisma client
-npx prisma generate --schema apps/server/prisma/schema.prisma 
+npx prisma generate --schema apps/server/prisma/schema.prisma
 # 生成数据库表
 npx prisma migrate deploy --schema apps/server/prisma/schema.prisma
-# 构建并运行 
+# 构建并运行
 pnpm run -r build
 pnpm run start:server
 
@@ -124,6 +125,8 @@ pnpm run start:server
     
 -   `CRON_EXPRESSION` 定时更新订阅源Cron表达式，默认为 `35 5,17 * * *`。
     
+-   `PLATFORM_URL` 默认为 `https://weread.111965.xyz`, **如果在国内DNS解析问题可以使用 `https://weread-v.111965.xyz`加速访问** 。
+    
 
 支持钉钉通知
 ------
@@ -134,8 +137,9 @@ pnpm run start:server
 ----
 
 1.  进入账号管理，点击添加账号，微信扫码登录微信读书账号。
-
-1.  进入公众号源，点击添加，通过提交微信公众号分享链接，订阅微信公众号。 **（添加频率过高容易被封控，等24小时解封）**
+    
+2.  进入公众号源，点击添加，通过提交微信公众号分享链接，订阅微信公众号。 **（添加频率过高容易被封控，等24小时解封）**
+    
 
 账号状态说明
 ------
@@ -173,3 +177,8 @@ License
 -------
 
 MIT @cooderl
+
+Donation
+--------
+
+如果你有 $POWER，快来打赏我吧😄 0x7d096901db65f84dc798252dbbdbcba8852ad6e1

@@ -1,6 +1,6 @@
 ---
 project: kepler.gl
-stars: 10439
+stars: 10451
 description: Kepler.gl is a powerful open source geospatial analysis tool for large-scale data sets.
 url: https://github.com/keplergl/kepler.gl
 ---
@@ -32,24 +32,24 @@ Env
 
 Use Node 18.18.2 or above, older node versions have not been supported/ tested. For best results, use nvm `nvm install`.
 
-Install kepler.gl
------------------
+Install kepler.gl modules
+-------------------------
 
-Install node (`> 18.18.2`), yarn, and project dependencies
+Kepler.gl consists of different modules. Each module can be added to the project like this:
 
-npm install --save kepler.gl
+npm install --save @kepler.gl/components
 // or
-yarn add kepler.gl
+yarn add @kepler.gl/components
 
 kepler.gl is built upon mapbox. You will need a Mapbox Access Token to use it.
 
-If you don't use a module bundler, it's also fine. Kepler.gl npm package includes precompiled production UMD builds in the umd folder. You can add the script tag to your html file as it follows:
+If you don't use a module bundler, it's also fine. Kepler.gl npm package includes precompiled production UMD builds in the umd folder. You can add the script tag to your html file as it follows (latest version of Kepler.gl):
 
 <script src\="https://unpkg.com/kepler.gl/umd/keplergl.min.js" />
 
-or if you would like, you can load a specific version
+or if you would like, you can load a specific version:
 
-<script src\="https://unpkg.com/kepler.gl@2.5.5/umd/keplergl.min.js" />
+<script src\="https://unpkg.com/kepler.gl@3.0.0/umd/keplergl.min.js" />
 
 Develop kepler.gl
 -----------------
@@ -111,7 +111,7 @@ Read more about Reducers.
 import KeplerGl from '@kepler.gl/components';
 
 const Map \= props \=> (
-  <KeplerGl id\="foo" width\={width} mapboxApiAccessToken\={token} height\={height} /\>
+  <KeplerGl id\="foo" width\={width} mapboxApiAccessToken\={token} height\={height} />
 );
 
 #### Props
@@ -326,10 +326,10 @@ import {connect} from 'react-redux';
 
 const MapContainer \= props \=> (
   <div\>
-    <button onClick\={() \=> props.keplerGlDispatch(toggleFullScreen())}/\>
+    <button onClick\={() \=> props.keplerGlDispatch(toggleFullScreen())}/>
     <KeplerGl
       id\="foo"
-    /\>
+    />
   </div\>
 )
 
@@ -358,10 +358,10 @@ import {toggleFullScreen, wrapTo} from '@kepler.gl/actions';
 const wrapToMap \= wrapTo('foo');
 const MapContainer \= ({dispatch}) \=> (
   <div\>
-    <button onClick\={() \=> dispatch(wrapToMap(toggleFullScreen())} /\>
+    <button onClick\={() \=> dispatch(wrapToMap(toggleFullScreen())} />
     <KeplerGl
       id\="foo"
-    /\>
+    />
   </div\>
 );
 
@@ -397,7 +397,7 @@ return (
     width\={800}
     height\={800}
     theme\={customTheme}
-  /\>
+  />
 );
 
 As you can see the customTheme object defines certain properties which will override Kepler.gl default style rules.
@@ -418,7 +418,7 @@ const customTheme \= {
 
 return (
   <ThemeProvider theme\={customTheme}\>
-    <KeplerGl mapboxApiAccessToken\={MAPBOX\_TOKEN} id\="map" width\={800} height\={800} /\>
+    <KeplerGl mapboxApiAccessToken\={MAPBOX\_TOKEN} id\="map" width\={800} height\={800} />
   </ThemeProvider\>
 );
 
@@ -438,7 +438,7 @@ const KeplerGl \= injectComponents(\[\[PanelHeaderFactory, myCustomHeaderFactory
 // render KeplerGl, it will render your custom header instead of the default
 const MapContainer \= () \=> (
   <div\>
-    <KeplerGl id\="foo" /\>
+    <KeplerGl id\="foo" />
   </div\>
 );
 

@@ -1,6 +1,6 @@
 ---
 project: spg
-stars: 89
+stars: 90
 description: Scalable Process Groups
 url: https://github.com/max-au/spg
 ---

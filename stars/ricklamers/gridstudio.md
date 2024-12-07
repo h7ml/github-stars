@@ -1,6 +1,6 @@
 ---
 project: gridstudio
-stars: 8881
+stars: 8880
 description: Grid studio is a web-based application for data science with full integration of open source data science frameworks and languages.
 url: https://github.com/ricklamers/gridstudio
 ---

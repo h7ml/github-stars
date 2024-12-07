@@ -1,6 +1,6 @@
 ---
 project: nushell
-stars: 32822
+stars: 32915
 description: A new type of shell
 url: https://github.com/nushell/nushell
 ---

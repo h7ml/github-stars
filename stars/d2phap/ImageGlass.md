@@ -1,6 +1,6 @@
 ---
 project: ImageGlass
-stars: 7894
+stars: 7917
 description: 🏞 A lightweight, versatile image viewer
 url: https://github.com/d2phap/ImageGlass
 ---
@@ -57,21 +57,21 @@ Price
 
 Commercial use
 
-✅, Recommended to register
+✅ Recommended to register
 
 ✅
 
 Auto-update
 
-❌, User-managed
+❌ User-managed
 
-✅, Seamless auto-updates
+✅ Seamless auto-updates
 
 Hotfix update
 
-❌, Available in official releases only
+❌ Available in official releases only
 
-✅, Available as soon as they are fixed
+✅ Available as soon as they are fixed
 
 🪁 System Requirements
 ----------------------

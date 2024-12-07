@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 25890
+stars: 25998
 description: Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -15,7 +15,9 @@ README is open, so feel free to submit your project here.
 Donation & NFTs
 ---------------
 
-Announcement of NFTs by Project X
+-   **ETH/USDT/USDC: `0xDc3Fe44F0f25D13CACb1C4896CD0D321df3146Ee`**
+-   **Project X NFT: Announcement of NFTs by Project X**
+-   **REALITY NFT: XHTTP: Beyond REALITY**
 
 License
 -------

@@ -1,6 +1,6 @@
 ---
 project: manim
-stars: 26877
+stars: 27024
 description: A community-maintained Python framework for creating mathematical animations. 
 url: https://github.com/ManimCommunity/manim
 ---

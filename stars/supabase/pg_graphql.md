@@ -1,6 +1,6 @@
 ---
 project: pg_graphql
-stars: 2918
+stars: 2923
 description: GraphQL support for PostgreSQL 
 url: https://github.com/supabase/pg_graphql
 ---

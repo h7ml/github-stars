@@ -1,6 +1,6 @@
 ---
 project: urllib3
-stars: 3805
+stars: 3810
 description: urllib3 is a user-friendly HTTP client library for Python
 url: https://github.com/urllib3/urllib3
 ---
@@ -22,11 +22,11 @@ urllib3 is a powerful, _user-friendly_ HTTP client for Python. Much of the Pytho
 
 urllib3 is powerful and easy to use:
 
-\>>\> import urllib3
-\>>\> resp \= urllib3.request("GET", "http://httpbin.org/robots.txt")
-\>>\> resp.status
+\>\>> import urllib3
+\>\>> resp \= urllib3.request("GET", "http://httpbin.org/robots.txt")
+\>\>> resp.status
 200
-\>>\> resp.data
+\>\>> resp.data
 b"User-agent: \*\\nDisallow: /deny\\n"
 
 Installing

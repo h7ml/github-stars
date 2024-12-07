@@ -1,6 +1,6 @@
 ---
 project: SoniTranslate
-stars: 895
+stars: 906
 description: Synchronized Translation for Videos. Video dubbing
 url: https://github.com/R3gm/SoniTranslate
 ---

@@ -1,6 +1,6 @@
 ---
 project: FileCentipede
-stars: 9329
+stars: 9389
 description: Cross-platform internet upload/download manager for HTTP(S), FTP(S), SSH, magnet-link, BitTorrent, m3u8, ed2k, and online videos.  WebDAV client, FTP client, SSH client.
 url: https://github.com/filecxx/FileCentipede
 ---
@@ -64,6 +64,20 @@ Browser extension screenshots
 #### Videos panel
 
 #### Audios panel
+
+#### Custom files panel
+
+#### Resource explorer - images
+
+#### Resource explorer - scripts
+
+#### Videos preview
+
+#### Videos collector
+
+#### Audios collector
+
+#### Settings
 
 features
 --------

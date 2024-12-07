@@ -1,6 +1,6 @@
 ---
 project: libcimbar
-stars: 4262
+stars: 4305
 description: Optimized implementation for color-icon-matrix barcodes
 url: https://github.com/sz3/libcimbar
 ---
