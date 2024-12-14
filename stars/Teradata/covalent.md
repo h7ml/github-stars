@@ -1,6 +1,6 @@
 ---
 project: covalent
-stars: 2228
+stars: 2229
 description: Teradata UI Platform built on Angular Material
 url: https://github.com/Teradata/covalent
 ---

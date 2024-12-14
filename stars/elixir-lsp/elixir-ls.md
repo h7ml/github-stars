@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1507
+stars: 1508
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -166,6 +166,10 @@ For `eglot`, use:
 
 ;; Be sure to edit the path appropriately; use the \`.bat\` script instead for Windows:
 (add-to-list 'eglot-server-programs '(elixir-mode "path-to-elixir-ls/release/language\_server.sh"))
+
+If you access any projects via symlinks, and the lsp crashes immediately on startup in those projects, you might need this:
+
+(setq find-file-visit-truename t)
 
 Supported Elixir and OTP versions
 ---------------------------------

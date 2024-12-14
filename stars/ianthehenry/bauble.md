@@ -1,6 +1,6 @@
 ---
 project: bauble
-stars: 410
+stars: 411
 description: a playground for making 3D art with lisp and math
 url: https://github.com/ianthehenry/bauble
 ---
@@ -21,21 +21,24 @@ https://twitter.com/ianthehenry
 Dependencies
 ============
 
--   `janet`
--   `emscripten`
--   `redo`
--   `yarn`
--   `pngcrush` (tests only)
+-   For the CLI
+    -   `janet`
+-   For the web UI
+    -   `emscripten`
+    -   `redo`
+    -   `yarn`
+-   For tests
+    -   `pngcrush` (tests only)
 
 Bauble requires at least Janet 1.36.0 (the first release with integer literal syntax). It may work with newer versions of Janet, assuming that the image format is compatible, but it's better to update the version of Janet that Bauble includes to match your local version if you want to upgrade.
 
-Install the Janet dependencies:
+To build the CLI, install Janet dependencies like this:
 
 ```
 $ (cd src && jpm -l deps)
 ```
 
-Afterwards, install JavaScript dependencies with:
+To build the web UI, install JavaScript dependencies as well:
 
 ```
 $ yarn
@@ -47,7 +50,19 @@ Bauble depends on `codemirror-lang-janet`. If you want to make changes to the gr
 Development
 ===========
 
-To build Bauble after installing dependencies:
+To build the CLI:
+
+```
+$ (cd src && jpm -l build)
+```
+
+To run the CLI:
+
+```
+$ src/build/bauble help
+```
+
+To build the web UI:
 
 ```
 $ redo
@@ -62,7 +77,7 @@ $ BUILD_MODE=prod redo
 Lint the JS with:
 
 ```
-(cd studio/; yarn eslint .)
+(cd studio && yarn eslint .)
 ```
 
 And you can serve a local Bauble like this:
@@ -77,20 +92,20 @@ Testing
 There are two types of tests. Regular Judge unit tests:
 
 ```
-$ (cd src; judge)
+$ (cd src && judge)
 ```
 
 And snapshot tests, which require installing separate dependencies:
 
 ```
 # you only have to do this once
-$ (cd src && jpm -l deps)
+$ (cd tests && jpm -l deps)
 ```
 
 After installing dependencies, run tests like this:
 
 ```
-$ (cd tests; jpm -l janet suite.janet)
+$ (cd tests && jpm -l janet suite.janet)
 ```
 
 Snapshot tests will write a file called `tests/summary.html`. It's not a very good file.
@@ -98,7 +113,7 @@ Snapshot tests will write a file called `tests/summary.html`. It's not a very go
 Before you commit snapshot changes, run:
 
 ```
-$ (cd tests; jpm -l janet gc.janet)
+$ (cd tests && jpm -l janet gc.janet)
 ```
 
 Which will delete old snapshots and compress new ones. This depends on `pngcrush`.

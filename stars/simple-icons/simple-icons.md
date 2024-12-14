@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 21278
+stars: 21339
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
@@ -127,7 +127,7 @@ echo file\_get\_contents('path/to/package/icons/\[ICON SLUG\].svg');
 // For example:
 echo file\_get\_contents('path/to/package/icons/simpleicons.svg');
 
-// <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">...</svg>
+// <svg role\="img" viewBox\="0 0 24 24" xmlns\="http://www.w3.org/2000/svg"\>...</svg\>
 ?>
 
 Third-Party Extensions

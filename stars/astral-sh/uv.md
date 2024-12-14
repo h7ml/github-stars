@@ -1,6 +1,6 @@
 ---
 project: uv
-stars: 28808
+stars: 32226
 description: An extremely fast Python package and project manager, written in Rust.
 url: https://github.com/astral-sh/uv
 ---
@@ -80,7 +80,7 @@ Resolved 2 packages in 170ms
 Prepared 2 packages in 627ms
 Installed 2 packages in 1ms
  + example==0.1.0 (from file:///home/user/example)
- + ruff==0.5.7
+ + ruff==0.5.9
 
 $ uv run ruff check
 All checks passed!
@@ -115,11 +115,11 @@ Install a tool with `uv tool install`:
 $ uv tool install ruff
 Resolved 1 package in 6ms
 Installed 1 package in 2ms
- + ruff==0.5.7
+ + ruff==0.5.9
 Installed 1 executable: ruff
 
 $ ruff --version
-ruff 0.5.7
+ruff 0.5.9
 
 See the tools documentation to get started.
 
@@ -153,8 +153,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Use a specific Python version in the current directory:
 
-$ uv python pin pypy@3.11
-Pinned \`.python-version\` to \`pypy@3.11\`
+$ uv python pin 3.11
+Pinned \`.python-version\` to \`3.11\`
 
 See the Python installation documentation to get started.
 

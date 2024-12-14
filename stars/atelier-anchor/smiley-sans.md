@@ -1,6 +1,6 @@
 ---
 project: smiley-sans
-stars: 13141
+stars: 13158
 description: 得意黑 Smiley Sans：一款在人文观感和几何特征中寻找平衡的中文黑体
 url: https://github.com/atelier-anchor/smiley-sans
 ---
@@ -19,7 +19,6 @@ url: https://github.com/atelier-anchor/smiley-sans
     -   macOS
         -   也可使用 Homebrew 进行安装，在命令行中输入以下指令（这要求已经安装好 Homebrew）：
             
-            brew tap homebrew/cask-fonts  # 只需要在第一次安装时执行
             brew install font-smiley-sans
             
     -   Linux

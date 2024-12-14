@@ -1,6 +1,6 @@
 ---
 project: MagicQuill
-stars: 2060
+stars: 2226
 description: Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/magic-quill/MagicQuill
 ---
@@ -285,7 +285,7 @@ Next to the Run button, you can select parameters to modify advanced settings ðŸ
 -   Grow Size: Adjust this parameter to set the pixel range affected around brush strokes when editing images, to expand/reduce the brush stroke influence area.
 -   Edge Strength: Parameter for adjusting the add/subtract brush control strength. Simply put, if you're confident in your drawing skills, you can increase strength. If you're a bad drawer like us ðŸ¤¦, please keep the parameter as is, or reduce the strength a bit.
 -   Color Strength: Parameter for adjusting the color brush control strength, can adjust the image's coloring effects.
--   The remaining parameters are just some common parameters for diffusion models! You basically don't need to manage these, but if you're in the industry/AI art expert, feel free to try adjusting them~
+-   The remaining parameters are just some common parameters for diffusion models! You basically don't need to manage these, but if you're in the industry/AI art expert, feel free to try adjusting them.
 
 Citation
 --------

@@ -1,6 +1,6 @@
 ---
 project: maigret
-stars: 10692
+stars: 13251
 description: 🕵️‍♂️ Collect a dossier on a person by username from thousands of sites
 url: https://github.com/soxoj/maigret
 ---
@@ -15,20 +15,25 @@ _The Commissioner Jules Maigret is a fictional French police detective, created 
 About
 -----
 
-**Maigret** collects a dossier on a person **by username only**, checking for accounts on a huge number of sites and gathering all the available information from web pages. No API keys required. Maigret is an easy-to-use and powerful fork of Sherlock.
+**Maigret** collects a dossier on a person **by username only**, checking for accounts on a huge number of sites and gathering all the available information from web pages. No API keys are required. Maigret is an easy-to-use and powerful fork of Sherlock.
 
-Currently supported more than 3000 sites (full list), search is launched against 500 popular sites in descending order of popularity by default. Also supported checking of Tor sites, I2P sites, and domains (via DNS resolving).
+Currently supports more than 3000 sites (full list), search is launched against 500 popular sites in descending order of popularity by default. Also supported checking Tor sites, I2P sites, and domains (via DNS resolving).
+
+Powered By Maigret
+------------------
+
+These are professional tools for social media content analysis and OSINT investigations that use Maigret (banners are clickable).
 
 Main features
 -------------
 
--   Profile pages parsing, extraction of personal info, links to other profiles, etc.
--   Recursive search by new usernames and other ids found
+-   Profile page parsing, extraction of personal info, links to other profiles, etc.
+-   Recursive search by new usernames and other IDs found
 -   Search by tags (site categories, countries)
 -   Censorship and captcha detection
 -   Requests retries
 
-See full description of Maigret features in the documentation.
+See the full description of Maigret features in the documentation.
 
 Installation
 ------------

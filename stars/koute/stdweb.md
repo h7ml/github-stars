@@ -1,6 +1,6 @@
 ---
 project: stdweb
-stars: 3447
+stars: 3448
 description: A standard library for the client-side Web
 url: https://github.com/koute/stdweb
 ---
@@ -48,7 +48,7 @@ let print\_hello = |name: String| {
 };
 
 js! {
-    var print\_hello = @{print\_hello};
+    var print\_hello \= @{print\_hello};
     print\_hello( "Bob" );
     print\_hello.drop(); // Necessary to clean up the closure on Rust's side.
 }
@@ -64,7 +64,7 @@ struct Person {
 js\_serializable!( Person );
 
 js! {
-    var person = @{person};
+    var person \= @{person};
     console.log( person.name + " is " + person.age + " years old." );
 };
 
@@ -73,7 +73,7 @@ This crate also exposes a number of Web APIs, for example:
 let button = document().query\_selector( "#hide-button" ).unwrap().unwrap();
 button.add\_event\_listener( move |\_: ClickEvent| {
     for anchor in document().query\_selector\_all( "#main a" ) {
-        js!( @{anchor}.style = "display: none;"; );
+        js!( @{anchor}.style \= "display: none;"; );
     }
 });
 

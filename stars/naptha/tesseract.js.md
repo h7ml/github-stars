@@ -1,6 +1,6 @@
 ---
 project: tesseract.js
-stars: 35471
+stars: 35541
 description: Pure Javascript OCR for more than 100 Languages 📖🎉🖥
 url: https://github.com/naptha/tesseract.js
 ---
@@ -11,7 +11,7 @@ Image Recognition
 
 Video Real-time Recognition
 
-Tesseract.js wraps a webassembly port of the Tesseract OCR Engine. It works in the browser using webpack, esm, or plain script tags with a CDN and on the server with Node.js. After you install it, using it is as simple as:
+Tesseract.js works in the browser using webpack, esm, or plain script tags with a CDN and on the server with Node.js. After you install it, using it is as simple as:
 
 import { createWorker } from 'tesseract.js';
 
@@ -49,6 +49,13 @@ yarn add tesseract.js
 # For old versions
 npm install tesseract.js@3.0.3
 yarn add tesseract.js@3.0.3
+
+Project Scope
+-------------
+
+Tesseract.js aims to bring the Tesseract OCR engine (a separate project) to the browser and Node.js, and works by wrapping a WebAssembly port of Tesseract. This project does not modify core Tesseract features. Most notably, **Tesseract.js does not support PDF files and does not modify the Tesseract recognition model to improve accuracy.**
+
+If your project requires features outside of this scope, consider the Scribe.js library. Scribe.js is an alternative library created to accommodate common feature requests that are outside of the scope of this repo. Scribe.js includes improvements to the Tesseract recognition model and supports extracting text from PDF documents, among other features. For more information see Scribe.js vs. Tesseract.js.
 
 Documentation
 -------------
@@ -139,10 +146,6 @@ npm start
 
 The development server will be available at http://localhost:3000/examples/browser/basic-efficient.html in your favorite browser. It will automatically rebuild `tesseract.min.js` and `worker.min.js` when you change files in the **src** folder.
 
-### Online Setup with a single Click
-
-You can use Gitpod(A free online VS Code like IDE) for contributing. With a single click it will launch a ready to code workspace with the build & start scripts already in process and within a few seconds it will spin up the dev server so that you can start contributing straight away without wasting any time.
-
 ### Building Static Files
 
 To build the compiled static files just execute the following:
@@ -150,6 +153,13 @@ To build the compiled static files just execute the following:
 npm run build
 
 This will output the files into the `dist` directory.
+
+### Run Tests
+
+**Always confirm the automated tests pass before submitting a pull request.** To run the automated tests locally, run the following commands.
+
+npm run lint
+npm run test
 
 Contributors
 ------------

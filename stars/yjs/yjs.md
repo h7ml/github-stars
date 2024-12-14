@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 17238
+stars: 17309
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -202,6 +202,12 @@ demo
 mobx-keystone
 
 mobx-keystone-yjs
+
+demo
+
+PSPDFKit
+
+yjs-pspdfkit
 
 demo
 

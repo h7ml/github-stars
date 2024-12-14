@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 72430
+stars: 72586
 description: Architected for speed. Automated for easy. Monitoring and troubleshooting, transformed!
 url: https://github.com/netdata/netdata
 ---

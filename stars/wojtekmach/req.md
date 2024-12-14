@@ -1,6 +1,6 @@
 ---
 project: req
-stars: 1102
+stars: 1108
 description: Req is a batteries-included HTTP client for Elixir.
 url: https://github.com/wojtekmach/req
 ---
@@ -184,6 +184,11 @@ Req.get!(req, url: "https://api.github.com/user").body\["login"\]
 #=> "wojtekmach"
 
 See `Req.Request` module documentation for more information on low-level API, request struct, and developing plugins.
+
+Configuration
+-------------
+
+Req supports many configuration options, see `Req.new/1` for a full list and see each step for more details. In particular, if you are looking for slightly lower level HTTP options such as timeouts, pool sizes, and certificates, see the `run_finch` documentation.
 
 Related Packages
 ----------------

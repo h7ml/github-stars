@@ -1,6 +1,6 @@
 ---
 project: lexical
-stars: 20078
+stars: 20124
 description: Lexical is an extensible text editor framework that provides excellent reliability, accessibility and performance.
 url: https://github.com/facebook/lexical
 ---
@@ -106,13 +106,13 @@ function Editor() {
   return (
     <LexicalComposer initialConfig\={initialConfig}\>
       <PlainTextPlugin
-        contentEditable\={<ContentEditable /\>}
+        contentEditable\={<ContentEditable />}
         placeholder\={<div\>Enter some text...</div\>}
         ErrorBoundary\={LexicalErrorBoundary}
-      /\>
-      <OnChangePlugin onChange\={onChange} /\>
-      <HistoryPlugin /\>
-      <MyCustomAutoFocusPlugin /\>
+      />
+      <OnChangePlugin onChange\={onChange} />
+      <HistoryPlugin />
+      <MyCustomAutoFocusPlugin />
     </LexicalComposer\>
   );
 }

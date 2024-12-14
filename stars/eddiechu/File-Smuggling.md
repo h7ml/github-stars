@@ -1,6 +1,6 @@
 ---
 project: File-Smuggling
-stars: 382
+stars: 383
 description: HTML smuggling is not an evil, it can be useful
 url: https://github.com/eddiechu/File-Smuggling
 ---

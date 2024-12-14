@@ -1,6 +1,6 @@
 ---
 project: gitpod
-stars: 13016
+stars: 13015
 description: The developer platform for on-demand cloud development environments to create software faster and more securely.
 url: https://github.com/gitpod-io/gitpod
 ---
@@ -19,7 +19,7 @@ Features
 -   **Prebuilt dev environments** - Gitpod continuously prebuilds all your git branches similar to a CI server. Control how Gitpod pre-configures and initializes environments before you even start a workspace through tasks commands in your .gitpod.yml. No more watching apt-get or npm install again. 
 -   **Secure** - Each Gitpod workspace or prebuild runs on a secured single-use container providing fast startup times without compromising on security. Gitpod generates SLSA level 1 compliant provenance. Gitpod is also GDPR and SOC2 compliant. And, of course, Gitpod is open-source and available for review by everyone.
 -   **Workspaces based on Docker** - Gitpod instantly starts a container in the cloud based on an (optional) Docker image. If you’re already using Docker, you can easily re-use your Docker file. 
--   **GitLab, GitHub, and Bitbucket integration** - Gitpod seamlessly integrates into your workflow and works with all major Git hosting platforms including GitHub, GitLab, and Bitbucket.
+-   **GitLab, GitHub, Bitbucket and Azure DevOps integration** - Gitpod seamlessly integrates into your workflow and works with all major Git hosting platforms including GitHub, GitLab, Bitbucket, and Azure DevOps.
 -   **Integrated code reviews** - with Gitpod you can do native code reviews on any PR/MR. No need to switch contexts anymore and clutter your local machine with your colleagues' PR/MR.
 -   **Collaboration** - invite team members to your dev environment or snapshot of any state of your dev environment to share it with your team asynchronously. **Professional & customizable developer experience** - a Gitpod workspace gives you the same capabilities as your Linux machine - pre-configured and optimized for your development workflow. Install any VS Code extension with one click on a user and/or team level. You can also bring your dotfiles and customize your dev environment as you like.
 
@@ -29,7 +29,7 @@ Getting Started
 -   **Browser**: 
     -   Using Gitpod dashboard gitpod.io/new.
     -   Add `gitpod.io/#` as a prefix to any of your GitHub/ GitLab/ Bitbucket repository, like this
--   **CLI**: You can also install Gitpod CLI and create your first workspace directly from your terminal :)
+-   **CLI**: You can also install the Gitpod CLI and create your first workspace directly from your terminal :)
 
 Documentation
 -------------
@@ -64,7 +64,7 @@ During the development of Gitpod, we also developed some of our infrastructure t
 
 -   Workspace images: Ready to use docker images for Gitpod workspaces
 -   OpenVSCode Server: Run the latest VS Code on a remote machine accessed through a browser
--   Gitpod browser extension: It adds a Gitpod button to the configured GitLab, GitHub and Bitbucket installations
+-   Gitpod browser extension: It adds a Gitpod button to the configured GitLab, GitHub, Bitbucket and Azure DevOps installations
 -   Leeway - A heavily caching build system
 -   Dazzle - An experimental Docker image builder
 -   Werft - A Kubernetes native CI system

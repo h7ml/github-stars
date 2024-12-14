@@ -1,6 +1,6 @@
 ---
 project: Auralis
-stars: 354
+stars: 372
 description: A Fast TTS Engine
 url: https://github.com/astramind-ai/Auralis
 ---
@@ -453,6 +453,13 @@ Memory usage:
 
 -   Base: ~2.5GB VRAM concurrency = 1
 -   ~ 5.3GB VRAM concurrency = 20
+
+Contributions
+-------------
+
+**Join Our Community!**
+
+We welcome and appreciate any contributions to our project! To ensure a smooth and efficient process, please take a moment to review our Contribution Guideline. By following these guidelines, you'll help us review and accept your contribution quickly. Thank you for your support!
 
 Learn More 🔭
 -------------

@@ -1,6 +1,6 @@
 ---
 project: heroicons
-stars: 21739
+stars: 21758
 description: A set of free MIT-licensed high-quality SVG icons for UI development.
 url: https://github.com/tailwindlabs/heroicons
 ---
@@ -45,7 +45,7 @@ import { BeakerIcon } from '@heroicons/react/24/solid'
 function MyComponent() {
   return (
     <div\>
-      <BeakerIcon className\="size-6 text-blue-500" /\>
+      <BeakerIcon className\="size-6 text-blue-500" />
       <p\>...</p\>
     </div\>
   )
@@ -73,7 +73,7 @@ Now each icon can be imported individually as a Vue component:
   </div\>
 </template\>
 
-<script setup\>
+<script setup>
 import { BeakerIcon } from '@heroicons/vue/24/solid'
 </script\>
 

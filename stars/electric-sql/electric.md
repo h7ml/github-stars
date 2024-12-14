@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 6544
+stars: 6975
 description: Sync little subsets of your Postgres data into local apps and services.
 url: https://github.com/electric-sql/electric
 ---
@@ -9,6 +9,17 @@ Electric
 ========
 
 Your Postgres data, in sync, wherever you need it.
+
+**Table of Contents:**
+
+-   Quick links
+-   What is Electric?
+-   Getting Started
+-   HTTP API Docs
+-   Developing Electric
+    -   Mac setup
+-   Contributing
+-   Support
 
 Quick links
 -----------
@@ -45,15 +56,15 @@ curl -i 'http://localhost:3000/v1/shape?table=foo&offset=-1'
 
 Or use one of the clients or integrations, such as the `useShape` React hook:
 
-import { useShape } from '@electric-sql/react'
+import { useShape } from "@electric-sql/react"
 
 function Component() {
   const { data } \= useShape({
     url: \`http://localhost:3000/v1/shape\`,
     params: {
       table: \`foo\`,
-      where: \`title LIKE 'foo%'\`
-    }
+      where: \`title LIKE 'foo%'\`,
+    },
   })
 
   return JSON.stringify(data)

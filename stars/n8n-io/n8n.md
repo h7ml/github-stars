@@ -1,99 +1,78 @@
 ---
 project: n8n
-stars: 50847
-description: Free and source-available fair-code licensed workflow automation tool. Easily automate tasks across different services.
+stars: 51467
+description: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
 url: https://github.com/n8n-io/n8n
 ---
 
-n8n - Workflow automation tool
-==============================
+n8n - Secure Workflow Automation for Technical Teams
+====================================================
 
-n8n is an extendable workflow automation tool. With a fair-code distribution model, n8n will always have visible source code, be available to self-host, and allow you to add your own custom functions, logic and apps. n8n's node-based approach makes it highly versatile, enabling you to connect anything to everything.
+n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
 
-Demo
-----
+Key Capabilities
+----------------
 
-📺 A short video (< 5 min) that goes over key concepts of creating workflows in n8n.
+-   **Code When You Need It**: Write JavaScript/Python, add npm packages, or use the visual interface
+-   **AI-Native Platform**: Build AI agent workflows based on LangChain with your own data and models
+-   **Full Control**: Self-host with our fair-code license or use our cloud offering
+-   **Enterprise-Ready**: Advanced permissions, SSO, and air-gapped deployments
+-   **Active Community**: 400+ integrations and 900+ ready-to-use templates
 
-Available integrations
-----------------------
+Quick Start
+-----------
 
-n8n has 200+ different nodes to automate workflows. The list can be found on: https://n8n.io/integrations
-
-Documentation
--------------
-
-The official n8n documentation can be found on our documentation website
-
-Additional information and example workflows on the n8n.io website
-
-The release notes can be found here and the list of breaking changes here.
-
-Usage
------
-
--   📚 Learn how to **use** it from the command line
--   🐳 Learn how to run n8n in **Docker**
-
-Start
------
-
-You can try n8n without installing it using npx. You must have Node.js installed. From the terminal, run:
+Try n8n instantly with npx (requires Node.js):
 
 `npx n8n`
 
-This command will download everything that is needed to start n8n. You can then access n8n and start building workflows by opening http://localhost:5678.
+Or deploy with Docker:
 
-n8n cloud
+`docker run -it --rm --name n8n -p 5678:5678 docker.n8n.io/n8n-io/n8n`
+
+Access the editor at http://localhost:5678
+
+Resources
 ---------
 
-Sign-up for an n8n cloud account.
-
-While n8n cloud and n8n are the same in terms of features, n8n cloud provides certain conveniences such as:
-
--   Not having to set up and maintain your n8n instance
--   Managed OAuth for authentication
--   Easily upgrading to the newer n8n versions
-
-Build with LangChain and AI in n8n (beta)
------------------------------------------
-
-With n8n's LangChain nodes you can build AI-powered functionality within your workflows. The LangChain nodes are configurable, meaning you can choose your preferred agent, LLM, memory, and so on. Alongside the LangChain nodes, you can connect any n8n node as normal: this means you can integrate your LangChain logic with other data sources and services.
-
-Learn more in the documentation.
-
--   LangChain nodes package
--   Chatbot package
+-   📚 Documentation
+-   🔧 400+ Integrations
+-   💡 Example Workflows
+-   🤖 AI & LangChain Guide
+-   👥 Community Forum
+-   📖 Community Tutorials
 
 Support
 -------
 
-If you have problems or questions go to our forum, we will then try to help you asap:
-
-https://community.n8n.io
-
-Jobs
-----
-
-If you are interested in working for n8n and so shape the future of the project check out our job posts
-
-What does n8n mean and how do you pronounce it?
------------------------------------------------
-
-**Short answer:** It means "nodemation" and it is pronounced as n-eight-n.
-
-**Long answer:** "I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'." - **Jan Oberhauser, Founder and CEO, n8n.io**
-
-Development setup
------------------
-
-Have you found a bug 🐛 ? Or maybe you have a nice feature ✨ to contribute ? The CONTRIBUTING guide will help you get your development environment ready in minutes.
+Need help? Our community forum is the place to get support and connect with other users: community.n8n.io
 
 License
 -------
 
-n8n is fair-code distributed under the **Sustainable Use License** and the **n8n Enterprise License**.
+n8n is fair-code distributed under the Sustainable Use License and n8n Enterprise License.
 
-Proprietary licenses are available for enterprise customers. Get in touch
+-   **Source Available**: Always visible source code
+-   **Self-Hostable**: Deploy anywhere
+-   **Extensible**: Add your own nodes and functionality
+
+Enterprise licenses available for additional features and support.
 
 Additional information about the license model can be found in the docs.
+
+Contributing
+------------
+
+Found a bug 🐛 or have a feature idea ✨? Check our Contributing Guide to get started.
+
+Join the Team
+-------------
+
+Want to shape the future of automation? Check out our job posts and join our team!
+
+What does n8n mean?
+-------------------
+
+**Short answer:** It means "nodemation" and is pronounced as n-eight-n.
+
+**Long answer:** "I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'." - **Jan Oberhauser, Founder and CEO, n8n.io**

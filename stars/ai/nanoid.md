@@ -1,6 +1,6 @@
 ---
 project: nanoid
-stars: 24742
+stars: 24788
 description: A tiny (124 bytes), secure, URL-friendly, unique string ID generator for JavaScript
 url: https://github.com/ai/nanoid
 ---
@@ -283,6 +283,7 @@ bccbcabaabaccab
 
 Nano ID was ported to many languages. You can use these ports to have the same ID generator on the client and server side.
 
+-   C
 -   C#
 -   C++
 -   Clojure and ClojureScript

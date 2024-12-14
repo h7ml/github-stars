@@ -1,6 +1,6 @@
 ---
 project: metadata-action
-stars: 933
+stars: 935
 description: GitHub Action to extract metadata (tags, labels) from Git reference and GitHub events for Docker
 url: https://github.com/docker/metadata-action
 ---
@@ -1099,13 +1099,18 @@ Default priority
 
 ### Global expressions
 
-The following Handlebars' template expressions for `prefix`, `suffix`, `value` and `enable` attributes are available:
+The following Handlebars' template expressions for `prefix`, `suffix`, `value` and `enable` attributes of `tags` input are available:
 
 tags: |
   # dynamically set the branch name as a prefix
   type=sha,prefix={{branch}}-
   # dynamically set the branch name and sha as a custom tag
   type=raw,value=mytag-{{branch}}-{{sha}}
+
+They can also be applied to `labels` and `annotations` inputs:
+
+labels: |
+  org.opencontainers.image.created={{commit\_date 'YYYY-MM-DDTHH:mm:ss.SSS\[Z\]'}}
 
 #### `{{branch}}`
 
