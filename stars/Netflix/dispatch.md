@@ -1,6 +1,6 @@
 ---
 project: dispatch
-stars: 5194
+stars: 5206
 description: All of the ad-hoc things you're doing to manage incidents today, done for you, and much more!
 url: https://github.com/Netflix/dispatch
 ---

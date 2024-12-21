@@ -1,6 +1,6 @@
 ---
 project: statix
-stars: 275
+stars: 277
 description: Fast and reliable Elixir client for StatsD-compatible servers
 url: https://github.com/lexmag/statix
 ---

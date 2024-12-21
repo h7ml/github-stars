@@ -1,6 +1,6 @@
 ---
 project: flair
-stars: 13989
+stars: 13994
 description: A very simple framework for state-of-the-art Natural Language Processing (NLP)
 url: https://github.com/flairNLP/flair
 ---
@@ -18,7 +18,7 @@ Flair is:
 -   **A PyTorch NLP framework.** Our framework builds directly on PyTorch, making it easy to train your own models and experiment with new approaches using Flair embeddings and classes.
     
 
-Now at version 0.14.0!
+Now at version 0.15.0!
 
 State-of-the-Art Models
 -----------------------

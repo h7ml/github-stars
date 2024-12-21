@@ -1,6 +1,6 @@
 ---
 project: eqrcode
-stars: 209
+stars: 210
 description: Simple QRCode Generator in Elixir
 url: https://github.com/SiliconJungles/eqrcode
 ---
@@ -15,7 +15,7 @@ Installation
 
 def deps do
   \[
-    {:eqrcode, "~> 0.1.10"}
+    {:eqrcode, "~> 0.2.0"}
   \]
 end
 
@@ -102,6 +102,6 @@ We reused most of the code from sunboshan/qrcode to generate the matrix required
 Copyright and License
 ---------------------
 
-Copyright (c) 2014 Silicon Jungles
+Copyright (c) 2024 Silicon Jungles
 
 This library is released under the MIT License. See the LICENSE.md file.

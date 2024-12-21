@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1508
+stars: 1515
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -174,11 +174,11 @@ If you access any projects via symlinks, and the lsp crashes immediately on star
 Supported Elixir and OTP versions
 ---------------------------------
 
-Elixir itself supports five versions with security updates: https://hexdocs.pm/elixir/compatibility-and-deprecations.html#content
+Elixir itself supports the last five released versions with security updates: https://hexdocs.pm/elixir/compatibility-and-deprecations.html#content
 
-OTP supports the last three versions: https://www.erlang.org/doc/system/misc.html
+OTP supports the last three versions with security updates: https://github.com/erlang/otp/blob/master/SECURITY.md#supported-versions https://www.erlang.org/doc/system/misc.html#supported-releases
 
-ElixirLS generally aims to support the last three released versions of Elixir and the last three versions of OTP. However this is not a hard and fast rule and may change in the future.
+ElixirLS generally aims to support all supported versions of Elixir on all compatible versions of OTP. However this is not a hard and fast rule and may change in the future.
 
 ### Support matrix
 

@@ -1,6 +1,6 @@
 ---
 project: sweep
-stars: 7474
+stars: 7477
 description: Sweep: open-source AI-powered Software Developer for small features and bug fixes.
 url: https://github.com/sweepai/sweep
 ---

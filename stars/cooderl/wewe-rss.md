@@ -1,6 +1,6 @@
 ---
 project: wewe-rss
-stars: 5578
+stars: 5659
 description: 🤗更优雅的微信公众号订阅方式，支持私有化部署、微信公众号RSS生成（基于微信读书）v2.x
 url: https://github.com/cooderl/wewe-rss
 ---
@@ -15,6 +15,7 @@ WeWe RSS
 
 -   v2.x版本使用全新接口，更加稳定
 -   支持微信公众号订阅（基于微信读书）
+-   获取公众号历史发布文章
 -   后台自动定时更新内容
 -   微信公众号RSS生成（支持`.atom`.`rss`.`json`格式)
 -   支持全文内容输出，让阅读无障碍
@@ -36,8 +37,6 @@ WeWe RSS
 ### 一键部署（待完善添加模板）
 
 你可以通过以下平台一键部署，只需填写本项目的URL即可。
-
-Zeabur
 
 Railway
 
@@ -125,7 +124,11 @@ pnpm run start:server
     
 -   `CRON_EXPRESSION` 定时更新订阅源Cron表达式，默认为 `35 5,17 * * *`。
     
--   `PLATFORM_URL` 默认为 `https://weread.111965.xyz`, **如果在国内DNS解析问题可以使用 `https://weread-v.111965.xyz`加速访问** 。
+-   `UPDATE_DELAY_TIME` 连续更新延迟时间，减少被关小黑屋，默认为 `60s`。
+    
+-   `ENABLE_CLEAN_HTML` 是否开启正文html清理，默认为 `false`。
+    
+-   `PLATFORM_URL` 默认为 `https://weread.111965.xyz`, **如果在国内DNS解析问题可以使用 `https://weread.965111.xyz` 加速访问** 。
     
 
 支持钉钉通知
@@ -165,20 +168,26 @@ pnpm run start:server
 3.  执行 `pnpm install && pnpm dev` 即可。⚠️ 注意：此命令仅用于本地开发，不要用于部署！
 4.  前端访问 `http://localhost:5173` ，后端访问 `http://localhost:4000`
 
-贡献者
----
-
 风险声明
 ----
 
 为了确保本项目的持久运行，某些接口请求将通过`weread.111965.xyz`进行转发。请放心，该转发服务不会保存任何数据。
 
+❤️ 赞助
+-----
+
+如果觉得 wewe-rss 项目对老板你有帮助，可以给我来一杯啤酒！
+
+### PayPal
+
+paypal.me/cooderl
+
+### 微信
+
+贡献者
+---
+
 License
 -------
 
 MIT @cooderl
-
-Donation
---------
-
-如果你有 $POWER，快来打赏我吧😄 0x7d096901db65f84dc798252dbbdbcba8852ad6e1

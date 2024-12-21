@@ -1,6 +1,6 @@
 ---
 project: idb
-stars: 6476
+stars: 6502
 description: IndexedDB, but with promises
 url: https://github.com/jakearchibald/idb
 ---
@@ -468,7 +468,7 @@ Note: Types like `IDBPDatabase` are used by TypeScript only. The implementation 
 Developing
 ==========
 
-npm run dev
+pnpm run dev
 
 This will also perform type testing.
 

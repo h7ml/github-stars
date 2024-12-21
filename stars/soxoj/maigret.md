@@ -1,6 +1,6 @@
 ---
 project: maigret
-stars: 13251
+stars: 13688
 description: 🕵️‍♂️ Collect a dossier on a person by username from thousands of sites
 url: https://github.com/soxoj/maigret
 ---
@@ -102,6 +102,23 @@ maigret user --tags us
 maigret user1 user2 user3 -a
 
 Use `maigret --help` to get full options description. Also options are documented.
+
+### Web interface
+
+You can run Maigret with a web interface, where you can view the graph with results and download reports of all formats on a single page.
+
+Web Interface Screenshots
+
+Instructions:
+
+1.  Run Maigret with the `--web` flag and specify the port number.
+
+maigret --web 5000
+
+1.  Open http://127.0.0.1:5000 in your browser and enter one or more usernames to make a search.
+    
+2.  Wait a bit for the search to complete and view the graph with results, the table with all accounts found, and download reports of all formats.
+    
 
 Contributing
 ------------

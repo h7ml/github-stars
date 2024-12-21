@@ -1,6 +1,6 @@
 ---
 project: huebee
-stars: 403
+stars: 404
 description: 🐝 1-click color picker
 url: https://github.com/metafizzy/huebee
 ---

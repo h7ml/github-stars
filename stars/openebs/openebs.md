@@ -1,6 +1,6 @@
 ---
 project: openebs
-stars: 9044
+stars: 9058
 description: Most popular & widely deployed Open Source Container Native Storage platform for Stateful Persistent Applications on Kubernetes.
 url: https://github.com/openebs/openebs
 ---
@@ -140,42 +140,6 @@ Important
 > ☑️   a Native high performance Blobstore  
 > ☑️   Native Block layer Thin provisioning  
 > ☑️   Native Block layer Snapshots and Clones  
-
-### Get in touch with our team.
-
-Vishnu Attur
-
-**@avishnu**
-
-`Maintainer`
-
-Abhinandan Purkait
-
-😎 **@Abhinandan-Purkait**
-
-`Maintainer`
-
-Niladri Halder
-
-🚀 **@niladrih**
-
-`Maintainer`
-
-Tiago Castro
-
-⚡ **@tiagolobocastro**
-
- 
-
-`Maintainer`
-
-David Brace
-
-⭐ **@orville-wright**
-
-   
-
-`Maintainer`
 
 * * *
 

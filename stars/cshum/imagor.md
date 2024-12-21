@@ -1,6 +1,6 @@
 ---
 project: imagor
-stars: 3480
+stars: 3488
 description: Fast, secure image processing server and Go library, using libvips
 url: https://github.com/cshum/imagor
 ---
@@ -774,4 +774,7 @@ Usage of imagor:
         VIPS avif speed, the lowest is at 0 and the fastest is at 9 (Default 5).
   -vips-strip-metadata
         VIPS strips all metadata from the resulting image
+        
+  -sentry-dsn
+        include sentry dsn to integrate imagor with sentry
 ```

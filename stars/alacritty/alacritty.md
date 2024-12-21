@@ -1,6 +1,6 @@
 ---
 project: alacritty
-stars: 56905
+stars: 56990
 description: A cross-platform, OpenGL terminal emulator.
 url: https://github.com/alacritty/alacritty
 ---

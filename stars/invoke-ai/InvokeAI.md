@@ -1,6 +1,6 @@
 ---
 project: InvokeAI
-stars: 23900
+stars: 23948
 description: Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.
 url: https://github.com/invoke-ai/InvokeAI
 ---
@@ -45,55 +45,12 @@ Documentation
 
 Installation and Updates - Documentation and Tutorials - Bug Reports - Contributing
 
-Quick Start
------------
+Installation
+============
 
-1.  Download and unzip the installer from the bottom of the latest release.
-    
-2.  Run the installer script.
-    
-    -   **Windows**: Double-click on the `install.bat` script.
-    -   **macOS**: Open a Terminal window, drag the file `install.sh` from Finder into the Terminal, and press enter.
-    -   **Linux**: Run `install.sh`.
-3.  When prompted, enter a location for the install and select your GPU type.
-    
-4.  Once the install finishes, find the directory you selected during install. The default location is `C:\Users\Username\invokeai` for Windows or `~/invokeai` for Linux/macOS.
-    
-5.  Run the launcher script (`invoke.bat` for Windows, `invoke.sh` for macOS and Linux) the same way you ran the installer script in step 2.
-    
-6.  Select option 1 to start the application. Once it starts up, open your browser and go to http://localhost:9090.
-    
-7.  Open the model manager tab to install a starter model and then you'll be ready to generate.
-    
+To get started with Invoke, Download the Installer.
 
-More detail, including hardware requirements and manual install instructions, are available in the installation documentation.
-
-Docker Container
-----------------
-
-We publish official container images in Github Container Registry: https://github.com/invoke-ai/InvokeAI/pkgs/container/invokeai. Both CUDA and ROCm images are available. Check the above link for relevant tags.
-
-Important
-
-Ensure that Docker is set up to use the GPU. Refer to NVIDIA or AMD documentation.
-
-### Generate!
-
-Run the container, modifying the command as necessary:
-
-docker run --runtime=nvidia --gpus=all --publish 9090:9090 ghcr.io/invoke-ai/invokeai
-
-Then open `http://localhost:9090` and install some models using the Model Manager tab to begin generating.
-
-For ROCm, add `--device /dev/kfd --device /dev/dri` to the `docker run` command.
-
-### Persist your data
-
-You will likely want to persist your workspace outside of the container. Use the `--volume /home/myuser/invokeai:/invokeai` flag to mount some local directory (using its **absolute** path) to the `/invokeai` path inside the container. Your generated images and models will reside there. You can use this directory with other InvokeAI installations, or switch between runtime directories as needed.
-
-### DIY
-
-Build your own image and customize the environment to match your needs using our `docker-compose` stack. See README.md in the docker directory.
+For detailed step by step instructions, or for instructions on manual/docker installations, visit our documentation on Installation and Updates
 
 Troubleshooting, FAQ and Support
 --------------------------------

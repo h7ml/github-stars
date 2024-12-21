@@ -1,6 +1,6 @@
 ---
 project: zincsearch
-stars: 17085
+stars: 17098
 description: ZincSearch . A lightweight alternative to elasticsearch that requires minimal resources, written in Go.
 url: https://github.com/zincsearch/zincsearch
 ---

@@ -28,7 +28,7 @@ Goal
 %% rebar.config
 {deps, \[observer\_cli\]}
 %% erlang.mk
-dep\_observer\_cli \= hex 1.8.0
+dep\_observer\_cli \= hex 1.8.1
 
 **Elixir**
 
@@ -219,6 +219,9 @@ A more specific plugin can collect linux system information such as kernel vsn, 
 
 ### Changelog
 
+-   1.8.1
+    
+    -   Show node name in system pane.
 -   1.8.0
     
     -   Support `<Pid` to jump to specific pid.

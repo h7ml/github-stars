@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 36081
+stars: 36515
 description: Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -21,10 +21,6 @@ Choose your path:
 -   **PAI-DSW**: Llama3 Example | Qwen2-VL Example
 -   **Amazon SageMaker**: Blog
 
-Recent activities:
-
--   **2024/10/18-2024/11/30**: Build a personal tour guide bot using PAI+LLaMA Factory. \[website\]
-
 Note
 
 Except for the above links, all other websites are unauthorized third-party websites. Please carefully use them.
@@ -40,6 +36,16 @@ Table of Contents
 -   Provided Datasets
 -   Requirement
 -   Getting Started
+    -   Installation
+    -   Data Preparation
+    -   Quickstart
+    -   Fine-Tuning with LLaMA Board GUI
+    -   Build Docker
+    -   Deploy with OpenAI-style API and vLLM
+    -   Download from ModelScope Hub
+    -   Download from Modelers Hub
+    -   Use W&B Logger
+    -   Use SwanLab Logger
 -   Projects using LLaMA Factory
 -   License
 -   Citation
@@ -53,7 +59,7 @@ Features
 -   **Scalable resources**: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
 -   **Advanced algorithms**: GaLore, BAdam, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ, PiSSA and Agent tuning.
 -   **Practical tricks**: FlashAttention-2, Unsloth, Liger Kernel, RoPE scaling, NEFTune and rsLoRA.
--   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, etc.
+-   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab, etc.
 -   **Faster inference**: OpenAI-style API, Gradio UI and CLI with vLLM worker.
 
 Benchmark
@@ -71,15 +77,17 @@ Definitions
 Changelog
 ---------
 
+\[24/12/21\] We supported using **SwanLab** for experiment tracking and visualization. See this section for details.
+
 \[24/11/27\] We supported fine-tuning the **Skywork-o1** model and the **OpenO1** dataset.
 
 \[24/10/09\] We supported downloading pre-trained models and datasets from the **Modelers Hub**. See this tutorial for usage.
 
+Full Changelog
+
 \[24/09/19\] We supported fine-tuning the **Qwen2.5** models.
 
 \[24/08/30\] We supported fine-tuning the **Qwen2-VL** models. Thank @simonJJJ's PR.
-
-Full Changelog
 
 \[24/08/27\] We supported **Liger Kernel**. Try `enable_liger_kernel: true` for efficient training.
 
@@ -242,7 +250,7 @@ Llama 2
 
 llama2
 
-Llama 3-3.2
+Llama 3-3.3
 
 1B/3B/8B/70B
 
@@ -290,9 +298,9 @@ OLMo
 
 \-
 
-PaliGemma
+PaliGemma/PaliGemma2
 
-3B
+3B/10B/28B
 
 paligemma
 
@@ -343,6 +351,12 @@ StarCoder 2
 3B/7B/15B
 
 \-
+
+TeleChat2
+
+3B/7B/35B/115B
+
+telechat2
 
 XVERSE
 
@@ -812,7 +826,7 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".\[torch,metrics\]"
 
-Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, galore, badam, adam-mini, qwen, modelscope, openmind, quality
+Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, galore, badam, adam-mini, qwen, modelscope, openmind, swanlab, quality
 
 Tip
 
@@ -1051,6 +1065,19 @@ run\_name: test\_run # optional
 
 Set `WANDB_API_KEY` to your key when launching training tasks to log in with your W&B account.
 
+### Use SwanLab Logger
+
+To use SwanLab for logging experimental results, you need to add the following arguments to yaml files.
+
+use\_swanlab: true
+swanlab\_run\_name: test\_run # optional
+
+When launching training tasks, you can log in to SwanLab in three ways:
+
+1.  Add `swanlab_api_key=<your_api_key>` to the yaml file, and set it to your API key.
+2.  Set the environment variable `SWANLAB_API_KEY` to your API key.
+3.  Use the `swanlab login` command to complete the login.
+
 Projects using LLaMA Factory
 ----------------------------
 
@@ -1157,7 +1184,7 @@ License
 
 This repository is licensed under the Apache-2.0 License.
 
-Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / XVERSE / Yi / Yi-1.5 / Yuan 2
+Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
 
 Citation
 --------

@@ -1,6 +1,6 @@
 ---
 project: sha256algorithm
-stars: 1552
+stars: 1554
 description: Sha256 Algorithm Explained
 url: https://github.com/dmarman/sha256algorithm
 ---

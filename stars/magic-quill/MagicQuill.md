@@ -1,6 +1,6 @@
 ---
 project: MagicQuill
-stars: 2226
+stars: 2345
 description: Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/magic-quill/MagicQuill
 ---
@@ -44,6 +44,7 @@ Update Log
 -   \[2024.11.25\] 📢 New UI Updates: Drag & Drop Images + Download Button: We've enhanced our interface with two exciting features! Now you can easily upload images with drag & drop functionality, and quickly save your work using our new download button. Try it out and let us know what you think!
 -   \[2024.12.06\] 📢 New Feature Updates: Auto-save and Resolution Adjustment are now enabled in the parameter settings. Thanks Furkan Gözükara for his brilliant suggestions.
 -   \[2024.12.07\] 🎉 Exciting News: ComfyUI MagicQuill Node has been released! Check the repository https://github.com/magic-quill/ComfyUI\_MagicQuill for more details.
+-   \[2024.12.16\] 🎉 Exciting News: MagicQuill is also available at Modelscope. Thanks for their amazing support and infrastructure.
 
 To update the latest features, pull the latest code and re-install the gradio\_magicquill:
 
@@ -57,7 +58,7 @@ Hardware Requirements
 
 -   GPU is required to run MagicQuill. **Through our testing, we have confirmed that the model can run on GPUs with 8GB VRAM (RTX4070 Laptop).**
 
-For users with limited GPU resources, please try our Huggingface Demo and Web Demo (Alipay Cloud). Also, consider disabling the DrawNGuess automatic prompt filling by clicking the wand icon above if it takes too long time on your machine.
+For users with limited GPU resources, please try our Huggingface Demo and Modelscope Demo. Also, consider disabling the DrawNGuess automatic prompt filling by clicking the wand icon above if it takes too long time on your machine.
 
 Setup
 -----

@@ -1,6 +1,6 @@
 ---
 project: tempo
-stars: 176
+stars: 177
 description: Date/Time library for Elixir based upon intervals not instants
 url: https://github.com/kipcole9/tempo
 ---

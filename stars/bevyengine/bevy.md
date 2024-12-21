@@ -1,6 +1,6 @@
 ---
 project: bevy
-stars: 36928
+stars: 37058
 description: A refreshingly simple data-driven game engine built in Rust
 url: https://github.com/bevyengine/bevy
 ---

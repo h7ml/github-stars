@@ -1,6 +1,6 @@
 ---
 project: obs-studio
-stars: 60920
+stars: 61068
 description: OBS Studio - Free and open source software for live streaming and screen recording
 url: https://github.com/obsproject/obs-studio
 ---
