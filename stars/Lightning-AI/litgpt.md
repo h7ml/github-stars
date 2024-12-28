@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 10953
+stars: 11007
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -176,6 +176,14 @@ Falcon
 TII UAE
 
 TII 2023
+
+Falcon 3
+
+1B, 3B, 7B, 10B
+
+TII UAE
+
+TII 2024
 
 FreeWilly2 (Stable Beluga 2)
 

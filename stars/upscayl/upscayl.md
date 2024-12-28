@@ -1,12 +1,12 @@
 ---
 project: upscayl
-stars: 31869
+stars: 32227
 description: 🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.
 url: https://github.com/upscayl/upscayl
 ---
 
-v2.15-pre-release is out! 🥳 Download v2.15-pre-release! ⬇️
-===========================================================
+v2.15 is out! 🥳 Download Now ⬇️
+================================
 
   
   
@@ -173,6 +173,7 @@ npm run publish-app
 -   Real-ESRGAN for their wonderful research work. Real-ESRGAN: Copyright (c) 2021, Xintao Wang
 -   @JanDeDinoMan, @xanderfrangos, @Fdawgs, @keturn for their code contributions
 -   @aaronliu0130 for providing community support :)
+-   Helaman for their HFA2k model (included as "High Fidelity")
 -   Foolhardy for their Remacri model.
 -   Kim2091 for their Ultrasharp and Ultramix Balanced model.
 -   @NicKoehler for their amazing logo :)

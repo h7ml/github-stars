@@ -1,7 +1,7 @@
 ---
 project: mua
 stars: 10
-description: Minimal SMTP client in Elixir
+description: SMTP client in Elixir
 url: https://github.com/ruslandoga/mua
 ---
 

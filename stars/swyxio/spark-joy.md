@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9430
+stars: 9435
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -332,6 +332,7 @@ more control in exchange for more work on your part.
 -   https://ui.supabase.io/
 -   https://ui.shadcn.com/ Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
 -   https://magicui.design/ 20+ free and open-source animated components built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.
+-   Fancy Components (tweet)): a collection full of fancy, fun, edgy and useless React components!
 
 Layout
 ------
@@ -999,16 +1000,15 @@ https://workos.com/blog/5-lessons-we-learned-adding-dark-mode-to-our-platform?re
 
 Note: Default gradients often have "hard edges" that are too rough. (example, example). Add a third color stop in the middle and boost saturation. You can use esaing gradients in future.
 
+-   Gradient Generator https://www.learnui.design/tools/gradient-generator.html - create linear, radial, or conic gradients in 8 color spaces, all avoiding the "gray dead zone" problem)
 -   https://www.joshwcomeau.com/gradient-generator/
 -   gradients https://mybrandnewlogo.com/color-gradient-generator
--   vivid gradient generator https://www.learnui.design/tools/gradient-generator.html
 -   CSS Gradient Text https://twitter.com/argyleink/status/1281623252662489088/photo/2
 -   🌟 https://mycolor.space/gradient Generate a CSS Color Gradient
 -   https://huemint.com/ Huemint uses machine learning to create unique color schemes for your brand, website or graphic
 -   https://webgradients.com/ free collection of 180 linear gradients
 -   https://uigradients.com/#Petrichor
 -   https://gradient-king.vercel.app/
--   https://learnui.design/tools/gradient-generator.html (to avoid the "gray zone" problem)
 -   Adam Argyle conic CSS gradient examples https://www.conic.style/
 -   https://www.grabient.com/
 -   https://www.colorsandfonts.com/color-gradients
@@ -1157,6 +1157,8 @@ Linear gradients can be "eased" to be smoother: https://css-tricks.com/easing-li
 -   https://products.ls.graphics/paaatterns/
 -   https://notchr.is/patterns/ (Really simple SVG Patterns using single unicode characters.)
 -   https://doodad.dev/pattern-generator/ (Pattern generator that exports to png, jpg and svg.)
+-   https://creatica.app/backgrounds/ (Generate unique SVG Backgrounds and patterns for your websites)
+-   https://mossaik.app/ SVG Pattern generator, waves, and blobs.
 -   wave dividers
     -   https://www.shapedivider.app/ generate custom shape dividers
     -   https://svgwave.in/
@@ -1182,7 +1184,7 @@ Linear gradients can be "eased" to be smoother: https://css-tricks.com/easing-li
 -   CSS Doodle https://css-doodle.com/
 -   CSS backgroundy patterns https://leaverou.github.io/css3patterns/
 -   this guy https://twitter.com/yuanchuan23
--   super adanced pokemon shiny card gradients https://github.com/simeydotme/pokemon-cards-css
+-   super advanced pokemon shiny card gradients https://github.com/simeydotme/pokemon-cards-css
 -   Generative Gradients http://generative-placeholders.glitch.me/
     -   Generateive SVG https://dev.to/georgedoescode/a-generative-svg-starter-kit-5cm1
 -   Image Placeholders - blurring - https://blurha.sh/ (and gatsby image and nextjs image)
@@ -1209,6 +1211,8 @@ Linear gradients can be "eased" to be smoother: https://css-tricks.com/easing-li
 -   edit photo in browser no BS https://edit.photo/
     -   AI Colorizer https://palette.fm/
 -   https://animatedbackgrounds.me/
+-   Remove backgrounds and modify faces (for photos, videos and real time camera)
+    -   https://studio.banuba.net/, https://www.banuba.com/webar-sdk#webar-player (commercial SDK that adds teeth whitening, eye and hair color changer, and other face touch-up features).
 
 Icons and Favicons
 ------------------
@@ -1234,7 +1238,9 @@ Don't forget them!
     
 -   the 6 favicon types you need
     
--   🌟 **Real Favicon generator** - pop in an image, get back a favicon! The most comprehensive one for all platforms (Windows, iOS, Android)
+-   🌟 **Favicon InBrowser.App** - A modern pure-frontend favicon generator. Support SVG, maskable and dark mode. Optimize PNG and SVG outputs.
+    
+-   Real Favicon generator - pop in an image, get back a favicon! The most comprehensive one for all platforms (Windows, iOS, Android)
     
 -   Favicon.io - Generate a favicon from text, from an image, or from an emoji. Download in .ico and .png formats
     
@@ -1301,6 +1307,7 @@ other boilerplates to use
 -   https://iconsear.ch/ instant search of 50k svg icons from GitHub and GitLab
 -   https://macosicons.com/ icons intended to replace mac desktop icons
 -   https://awsicons.dev/ AWS icons and https://aws-icons.com/
+-   https://az-icons.com/ Azure icons
 
 #### General & Misc
 
@@ -1437,6 +1444,7 @@ Specifically for BPMN: https://bpmn.io/
 
 ### Entity Relationship Diagrams
 
+-   Azimutt is Open-Source and makes database design easy AML, but also exploring existing databases
 -   https://dbdiagram.io/home which also has an open-source markup language: https://github.com/holistics/dbml
 -   Databasediagram.com – Private, Text to Entity-Relationship Diagram Tool
 -   Mocodo: French-flavored ERD, aka Merise MCD, where the layout is constrained to a grid
@@ -1955,6 +1963,7 @@ Instead of dropdowns, use: (https://learnui.design/blog/4-rules-intuitive-ux.htm
 -   https://www.youtube.com/channel/UCV3itPyPPgvftXBsreYADlw Bensound
 -   https://www.soundboardguy.com/
 -   https://snapmuse.com/ - royalty free music for Youtube, Podcast, Vlog and other video projects
+-   https://www.soundboardly.com/ - sound effects library with downloadable mp3 file
 
 Paid:
 
@@ -1981,6 +1990,7 @@ Tools:
 -   https://docs.anychart.com/Basic\_Charts/Stacked/Value/Vertical\_Area\_Chart
 -   https://antv.vision/en
 -   https://stephenhutchings.github.io/shown/ Statically-generated, responsive charts, without the need for client-side Javascript.
+-   Datamapplot for static and interactive data maps https://datamapplot.readthedocs.io/en/latest/intro\_splash.html#interactive-plot-examples (example)
 
 ### Dashboarding
 
@@ -2215,6 +2225,7 @@ Animations & Transitions
 -   https://andrew.wang-hoyer.com/experiments/svg-animations/
 -   Single Element CSS Spinners https://projects.lukehaas.me/css-loaders/
 -   https://whirl.netlify.app/ 100+ animated loaders
+-   https://loading.io/css/ - Fast pure html/css spinners
 
 ### React Animation Tools
 
@@ -2496,7 +2507,7 @@ free or mock data apis for demos
 
 ### Other Lists like this one
 
--   https://a11yresources.webflow.io/
+-   https://www.getstark.co/library/
 -   https://webflow.com/accessibility/checklist
 -   https://www.getstark.co/library/
 -   https://10015.io/

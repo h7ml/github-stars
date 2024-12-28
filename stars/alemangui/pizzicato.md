@@ -1,6 +1,6 @@
 ---
 project: pizzicato
-stars: 1677
+stars: 1678
 description: Library to simplify the way you create and manipulate sounds with the Web Audio API.
 url: https://github.com/alemangui/pizzicato
 ---

@@ -1,6 +1,6 @@
 ---
 project: n8n
-stars: 51940
+stars: 53071
 description: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
 url: https://github.com/n8n-io/n8n
 ---
@@ -28,7 +28,7 @@ Try n8n instantly with npx (requires Node.js):
 
 Or deploy with Docker:
 
-`docker run -it --rm --name n8n -p 5678:5678 docker.n8n.io/n8n-io/n8n`
+`docker run -it --rm --name n8n -p 5678:5678 docker.n8n.io/n8nio/n8n`
 
 Access the editor at http://localhost:5678
 

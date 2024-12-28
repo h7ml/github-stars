@@ -1,6 +1,6 @@
 ---
 project: libring
-stars: 217
+stars: 218
 description: A fast consistent hash ring implementation in Elixir
 url: https://github.com/bitwalker/libring
 ---

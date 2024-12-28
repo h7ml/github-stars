@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 36515
+stars: 36887
 description: Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -226,6 +226,12 @@ GLM-4
 
 glm4
 
+Granite 3.0-3.1
+
+1B/2B/3B/8B
+
+granite3
+
 Index
 
 1.9B
@@ -334,7 +340,7 @@ Qwen/QwQ (1-2.5) (Code/Math/MoE)
 
 qwen
 
-Qwen2-VL
+Qwen2-VL/QVQ
 
 2B/7B/72B
 
@@ -1184,7 +1190,7 @@ License
 
 This repository is licensed under the Apache-2.0 License.
 
-Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
+Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / Granite / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
 
 Citation
 --------

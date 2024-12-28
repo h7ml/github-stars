@@ -1,6 +1,6 @@
 ---
 project: ngx-charts
-stars: 4298
+stars: 4299
 description: :bar_chart: Declarative Charting Framework for Angular
 url: https://github.com/swimlane/ngx-charts
 ---

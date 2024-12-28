@@ -1,6 +1,6 @@
 ---
 project: Unique3D
-stars: 3146
+stars: 3159
 description: [NeurIPS 2024] Unique3D: High-Quality and Efficient 3D Mesh Generation from a Single Image
 url: https://github.com/AiuniAI/Unique3D
 ---
@@ -16,8 +16,8 @@ Official implementation of Unique3D: High-Quality and Efficient 3D Mesh Generati
 
 Kailu Wu, Fangfu Liu, Zhihan Cai, Runjie Yan, Hanyang Wang, Yating Hu, Yueqi Duan, Kaisheng Ma
 
-Paper | Project page | Huggingface Demo | Gradio Demo | Online Demo
--------------------------------------------------------------------
+Paper | Project page | Huggingface Demo | Online Demo
+-----------------------------------------------------
 
 -   Demo inference speed: Gradio Demo > Huggingface Demo > Huggingface Demo2 > Online Demo
 

@@ -1,6 +1,6 @@
 ---
 project: UPNG.js
-stars: 2119
+stars: 2120
 description: Fast and advanced PNG (APNG) decoder and encoder (lossy / lossless)
 url: https://github.com/photopea/UPNG.js
 ---

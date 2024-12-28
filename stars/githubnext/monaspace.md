@@ -1,6 +1,6 @@
 ---
 project: monaspace
-stars: 14571
+stars: 14625
 description: An innovative superfamily of fonts for code
 url: https://github.com/githubnext/monaspace
 ---

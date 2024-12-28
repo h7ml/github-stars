@@ -1,6 +1,6 @@
 ---
 project: ex_rated
-stars: 453
+stars: 454
 description: ExRated, the Elixir OTP GenServer with the naughty name that allows you to rate-limit calls to any service that requires it.
 url: https://github.com/grempe/ex_rated
 ---

@@ -1,6 +1,6 @@
 ---
 project: brain.js
-stars: 14482
+stars: 14493
 description: 🤖 GPU accelerated Neural networks in JavaScript for Browsers and Node.js
 url: https://github.com/BrainJS/brain.js
 ---

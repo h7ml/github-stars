@@ -1,6 +1,6 @@
 ---
 project: DragGAN
-stars: 35802
+stars: 35814
 description: Official Code for DragGAN (SIGGRAPH 2023)
 url: https://github.com/XingangPan/DragGAN
 ---

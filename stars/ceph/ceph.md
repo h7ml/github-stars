@@ -1,6 +1,6 @@
 ---
 project: ceph
-stars: 14367
+stars: 14386
 description: Ceph is a distributed object, block, and file storage platform 
 url: https://github.com/ceph/ceph
 ---
@@ -125,6 +125,30 @@ To build Ceph, follow this procedure:
     ```
     ninja install
     ```
+    
+    > vstart.sh is commonly used to quickly deploy a development cluster.
+    
+    > \[TIPS & TRICKS\]
+    > 
+    > Use Debug Builds Only When Needed
+    > 
+    > While debugging builds are helpful for development, they can slow down performance.
+    > 
+    > Use `-DCMAKE_BUILD_TYPE=Release` when debugging isn't necessary.
+    
+    Enable Selective Daemons if you're testing specific components, don't start unnecessary daemons. Preserve Existing Data skip cluster reinitialization between tests by using the `-n` flag
+    
+    > \[TROUBLESHOOTING\]
+    > 
+    > Cluster Fails to Start: Look for errors in the logs under the out/ directory, e.g.
+    > 
+    > OSD Crashes: Check the OSD logs for errors.
+    > 
+    > Cluster in a Health Error State: Run `ceph status` to identify the issue.
+    > 
+    > RocksDB Errors: Look for RocksDB-related errors in OSD logs.
+    
+    To manage a vstart cluster, stop daemons using `./stop.sh` and start them with ./vstart.sh --daemon osd.${ID} \[--nodaemonize\]. Restart by stopping and restarting daemons, ensuring no stale sockets. For RocksDB performance tracking, set `export ROCKSDB_PERF=true` and start the cluster with `./vstart.sh -n -d -x --bluestore`. Build with `vstart-base` using debug flags in cmake, compile, and deploy via `./vstart.sh -d -n --bluestore`. To containerize, generate configurations with `vstart.sh`, and deploy with Docker, mapping directories and configuring the network. Manage containers using `docker run`, `stop`, and `rm`. For detailed setups, consult the Ceph-Container repository.
     
 
 ### CMake Options

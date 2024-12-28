@@ -1,6 +1,6 @@
 ---
 project: Nuitka
-stars: 12251
+stars: 12284
 description: Nuitka is a Python compiler written in Python.  It's fully compatible with Python 2.6, 2.7, 3.4-3.13. You feed it your Python app, it does a lot of clever things, and spits out an executable or extension module. 
 url: https://github.com/Nuitka/Nuitka
 ---
@@ -671,6 +671,10 @@ If you app is a GUI, e.g. `your_main_program.py` should contain these comments a
 \#    nuitka-project: --macos-create-app-bundle
 #
 
+Note
+
+This is best expression with `nuitka-project: --mode=app` which encapsulates these options.
+
 ### Tweaks
 
 #### Icons
@@ -710,8 +714,8 @@ Splash screens are useful when program startup is slow. Onefile startup itself i
 
 For the splash screen, you need to specify it as a PNG file, and then make sure to disable the splash screen when your program is ready, e.g. has completed the imports, prepared the window, connected to the database, and wants the splash screen to go away. Here we are using the project syntax to combine the code with the creation, compile this:
 
-\# nuitka-project: --onefile
-\# nuitka-project: --onefile-windows-splash-screen-image={MAIN\_DIRECTORY}/Splash-Screen.png
+\# nuitka-project: --mode=onefile
+\# nuitka-project: --mode=onefile-windows-splash-screen-image={MAIN\_DIRECTORY}/Splash-Screen.png
 
 \# Whatever this is, obviously
 print("Delaying startup by 10s...")
@@ -998,9 +1002,9 @@ One clean way of providing options to Nuitka, that you will always use for your 
 
 \# Compilation mode, support OS-specific options
 \# nuitka-project-if: {OS} in ("Windows", "Linux", "Darwin", "FreeBSD"):
-\#    nuitka-project: --onefile
+\#    nuitka-project: --mode=app
 \# nuitka-project-else:
-\#    nuitka-project: --standalone
+\#    nuitka-project: --mode=standalone
 
 \# The PySide2 plugin covers qt-plugins
 \# nuitka-project: --enable-plugin=pyside2

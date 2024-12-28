@@ -1,6 +1,6 @@
 ---
 project: uptime-kuma
-stars: 61539
+stars: 61812
 description: A fancy self-hosted monitoring tool
 url: https://github.com/louislam/uptime-kuma
 ---
@@ -60,6 +60,7 @@ Requirements:
 -   Platform
     -   ✅ Major Linux distros such as Debian, Ubuntu, CentOS, Fedora and ArchLinux etc.
     -   ✅ Windows 10 (x64), Windows Server 2012 R2 (x64) or higher
+    -   ❌ FreeBSD / OpenBSD / NetBSD
     -   ❌ Replit / Heroku
 -   Node.js 18 / 20.4
 -   npm 9
