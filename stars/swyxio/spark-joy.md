@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9435
+stars: 9438
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -2091,6 +2091,8 @@ Pure CSS Tricks
     }
     
 -   https://ui.glass/generator/ Get started with this free CSS generator based on the glassmorphism design specifications to quickly design and customize the style properties.
+    
+-   frosted glass sticky header https://www.joshwcomeau.com/css/backdrop-filter/
     
 -   glassy glassmorphism codepen, in context
     

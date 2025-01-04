@@ -1,6 +1,6 @@
 ---
 project: llama-ocr
-stars: 1909
+stars: 1971
 description: Document to Markdown OCR library with Llama 3.2 vision
 url: https://github.com/Nutlope/llama-ocr
 ---

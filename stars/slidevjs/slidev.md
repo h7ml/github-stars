@@ -1,6 +1,6 @@
 ---
 project: slidev
-stars: 34085
+stars: 34159
 description: Presentation Slides for Developers
 url: https://github.com/slidevjs/slidev
 ---
@@ -27,7 +27,7 @@ Features
 -   🎙 **Presenter Mode** - use another window, or even your phone to control your slides
 -   🎨 **Drawing** - draw and annotate on your slides
 -   🧮 **LaTeX** - built-in LaTeX math equations support
--   📰 **Diagrams** - creates diagrams using textual descriptions with Mermaid.js
+-   📰 **Diagrams** - creates diagrams using textual descriptions with Mermaid
 -   🌟 **Icons** - access to icons from any icon set directly
 -   💻 **Editor** - integrated editor, or the VSCode extension
 -   🎥 **Recording** - built-in recording and camera view

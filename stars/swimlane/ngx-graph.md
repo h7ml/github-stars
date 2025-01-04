@@ -1,6 +1,6 @@
 ---
 project: ngx-graph
-stars: 949
+stars: 948
 description: Graph visualization library for angular
 url: https://github.com/swimlane/ngx-graph
 ---

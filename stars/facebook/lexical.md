@@ -1,6 +1,6 @@
 ---
 project: lexical
-stars: 20224
+stars: 20260
 description: Lexical is an extensible text editor framework that provides excellent reliability, accessibility and performance.
 url: https://github.com/facebook/lexical
 ---
@@ -181,7 +181,7 @@ Other rules
 
 Node Transforms and Command Listeners are called with an implicit `editor.update(() => {...})` context.
 
-It is permitted to do nested updates, or nested reads, but an update should not be nested in a read or vice versa. For example, `editor.update(() => editor.update(() => {...}))` is allowed. It is permitted to nest nest an `editor.read` at the end of an `editor.update`, but this will immediately flush the update and any additional update in that callback will throw an error.
+It is permitted to do nested updates, or nested reads, but an update should not be nested in a read or vice versa. For example, `editor.update(() => editor.update(() => {...}))` is allowed. It is permitted to nest an `editor.read` at the end of an `editor.update`, but this will immediately flush the update and any additional update in that callback will throw an error.
 
 All Lexical Nodes are dependent on the associated Editor State. With few exceptions, you should only call methods and access properties of a Lexical Node while in a read or update call (just like `$` functions). Methods on Lexical Nodes will first attempt to locate the latest (and possibly a writable) version of the node from the active editor state using the node's unique key. All versions of a logical node have the same key. These keys are managed by the Editor, are only present at runtime (not serialized), and should be considered to be random and opaque (do not write tests that assume hard-coded values for keys).
 

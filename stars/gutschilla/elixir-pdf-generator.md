@@ -1,6 +1,6 @@
 ---
 project: elixir-pdf-generator
-stars: 338
+stars: 339
 description: Create PDFs with wkhtmltopdf or puppeteer/chromium from Elixir.
 url: https://github.com/gutschilla/elixir-pdf-generator
 ---

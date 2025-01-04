@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 36887
+stars: 37254
 description: Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -208,6 +208,12 @@ DeepSeek (Code/MoE)
 
 deepseek
 
+DeepSeek 2.5/3
+
+236B/685B
+
+deepseek3
+
 Falcon
 
 7B/11B/40B/180B
@@ -225,6 +231,12 @@ GLM-4
 9B
 
 glm4
+
+GPT-2
+
+0.1B/0.4B/0.8B/1.5B
+
+\-
 
 Granite 3.0-3.1
 
@@ -1184,13 +1196,14 @@ Click to show
 91.  **NVIDIA RTX AI Toolkit**: SDKs for fine-tuning LLMs on Windows PC for NVIDIA RTX.
 92.  **LazyLLM**: An easy and lazy way for building multi-agent LLMs applications and supports model fine-tuning via LLaMA Factory.
 93.  **RAG-Retrieval**: A full pipeline for RAG retrieval model fine-tuning, inference, and distillation. \[blog\]
+94.  **360-LLaMA-Factory**: A modified library that supports long sequence SFT & DPO using ring attention.
 
 License
 -------
 
 This repository is licensed under the Apache-2.0 License.
 
-Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / Granite / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
+Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
 
 Citation
 --------

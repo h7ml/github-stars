@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 67612
+stars: 67675
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---

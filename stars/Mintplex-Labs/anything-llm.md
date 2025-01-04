@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 29304
+stars: 29693
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -212,5 +212,5 @@ View all telemetry events in source code
 
 * * *
 
-Copyright © 2024 Mintplex Labs.  
+Copyright © 2025 Mintplex Labs.  
 This project is MIT licensed.

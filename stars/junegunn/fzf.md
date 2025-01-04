@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 66659
+stars: 66845
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -364,7 +364,7 @@ fzf --height -3
 
 With `--tmux` option, fzf will start in a tmux popup.
 
-# --tmux \[center|top|bottom|left|right\]\[,SIZE\[%\]\]\[,SIZE\[%\]\]
+# --tmux \[center|top|bottom|left|right\]\[,SIZE\[%\]\]\[,SIZE\[%\]\[,border-native\]\]
 
 fzf --tmux center         # Center, 50% width and height
 fzf --tmux 80%            # Center, 80% width and height

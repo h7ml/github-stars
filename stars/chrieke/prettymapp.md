@@ -1,6 +1,6 @@
 ---
 project: prettymapp
-stars: 2398
+stars: 2405
 description: 🖼️ Create beautiful maps from OpenStreetMap data in a streamlit webapp
 url: https://github.com/chrieke/prettymapp
 ---
@@ -25,6 +25,8 @@ Prettymapp is based on a rewrite of the fantastic prettymaps project by @marcelo
 
 Running the app locally
 -----------------------
+
+You can use the webapp directly under prettymapp.streamlit.app or run it locally via:
 
 git clone https://github.com/chrieke/prettymapp.git
 cd prettymapp

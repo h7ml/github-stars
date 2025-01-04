@@ -1,6 +1,6 @@
 ---
 project: tesseract.js
-stars: 35602
+stars: 35657
 description: Pure Javascript OCR for more than 100 Languages 📖🎉🖥
 url: https://github.com/naptha/tesseract.js
 ---

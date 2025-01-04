@@ -1,6 +1,6 @@
 ---
 project: nu_plugin_clipboard
-stars: 47
+stars: 49
 description: A nushell plugin to copy text into clipboard or get text from it.
 url: https://github.com/FMotalleb/nu_plugin_clipboard
 ---

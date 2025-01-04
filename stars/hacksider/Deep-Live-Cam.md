@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 41916
+stars: 42069
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -70,7 +70,7 @@ brew install python-tk@3.10
 
 **CUDA Execution Provider (Nvidia)**
 
-1.  Install CUDA Toolkit 11.8
+1.  Install CUDA Toolkit 11.8 or CUDA Toolkit 12.1.1
 2.  Install dependencies:
 
 pip uninstall onnxruntime onnxruntime-gpu
@@ -208,6 +208,7 @@ Press
 -   _"New Real-Time Face-Swapping AI Allows Anyone to Mimic Famous Faces"_ - Digital Music News
 -   _"This real-time webcam deepfake tool raises alarms about the future of identity theft"_ - DIYPhotography
 -   _"That's Crazy, Oh God. That's Fucking Freaky Dude... That's So Wild Dude"_ - SomeOrdinaryGamers
+-   _"Alright look look look, now look chat, we can do any face we want to look like chat"_ - IShowSpeed
 
 Credits
 -------

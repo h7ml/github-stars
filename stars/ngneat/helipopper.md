@@ -1,6 +1,6 @@
 ---
 project: helipopper
-stars: 415
+stars: 416
 description: 🚁 A Powerful Tooltip and Popover for Angular Applications
 url: https://github.com/ngneat/helipopper
 ---
@@ -102,7 +102,8 @@ export const tooltipVariation \= {
 
 ### Use `Component` as content
 
-import { injectTippyRef, TippyInstance } from '@ngneat/helipopper/config';
+import type { TippyInstance } from '@ngneat/helipopper/config';
+import { injectTippyRef } from '@ngneat/helipopper';
 
 @Component()
 class MyComponent {
@@ -262,7 +263,8 @@ tpVisible \= new EventEmitter<boolean\>();
 
 ### Create `tippy` Programmatically
 
-import { TippyService, TippyInstance } from '@ngneat/helipopper';
+import type { TippyInstance } from '@ngneat/helipopper/config';
+import { TippyService } from '@ngneat/helipopper';
 
 class Component {
   @ViewChild('inputName') inputName: ElementRef;

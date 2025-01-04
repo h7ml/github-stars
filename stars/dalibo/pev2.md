@@ -1,6 +1,6 @@
 ---
 project: pev2
-stars: 2710
+stars: 2717
 description: Postgres Explain Visualizer 2
 url: https://github.com/dalibo/pev2
 ---
@@ -31,24 +31,25 @@ Integrated in a web application
 
 ### Without building tools
 
-<script src\="https://unpkg.com/vue@3.2.45/dist/vue.global.prod.js"\></script\>
-<script src\="https://unpkg.com/pev2/dist/pev2.umd.js"\></script\>
+```
+<script src="https://unpkg.com/vue@3.2.45/dist/vue.global.prod.js"></script>
+<script src="https://unpkg.com/pev2/dist/pev2.umd.js"></script>
 <link
-  href\="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-  rel\="stylesheet"
+  href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
 />
-<link rel\="stylesheet" href\="https://unpkg.com/pev2/dist/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/pev2/dist/style.css" />
 
-<div id\="app"\>
-  <pev2 :plan-source\="plan" plan-query\="" />
-</div\>
+<div id="app">
+  <pev2 :plan-source="plan" plan-query="" />
+</div>
 
-<script\>
-  const { createApp } \= Vue
+<script>
+  const { createApp } = Vue
 
-  const plan \= "Seq Scan on foo  (cost=0.00..155.00 rows=10000 width=4)"
+  const plan = "Seq Scan on foo  (cost=0.00..155.00 rows=10000 width=4)"
 
-  const app \= createApp({
+  const app = createApp({
     data() {
       return {
         plan: plan,
@@ -57,7 +58,8 @@ Integrated in a web application
   })
   app.component("pev2", pev2.Plan)
   app.mount("#app")
-</script\>
+</script>
+```
 
 See it live.
 
@@ -73,6 +75,7 @@ npm install pev2
 
 Declare the `PEV2` component and use it:
 
+```
 import { Plan } from "pev2"
 import "pev2/dist/style.css"
 
@@ -88,19 +91,24 @@ export default {
     }
   },
 }
+```
 
 Then add the `PEV2` component to your template:
 
-<div id\="app"\>
-  <pev2 :plan-source\="plan" :plan-query\="query"\></pev2\>
-</div\>
+```
+<div id="app">
+  <pev2 :plan-source="plan" :plan-query="query"></pev2>
+</div>
+```
 
 `PEV2` requires `Bootstrap (CSS)` to work so don't forget to add the following in you header (or load them with your favorite bundler).
 
+```
 <link
-  href\="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-  rel\="stylesheet"
+  href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
 />
+```
 
 See it live.
 

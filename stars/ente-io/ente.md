@@ -1,6 +1,6 @@
 ---
 project: ente
-stars: 16886
+stars: 17023
 description: FOSS, End to End Encrypted alternative to Google Photos and Apple Photos
 url: https://github.com/ente-io/ente
 ---

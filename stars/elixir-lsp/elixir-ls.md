@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1520
+stars: 1523
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -224,7 +224,7 @@ None
 
 25
 
-1.13.4 - 1.17
+1.13.4 - 1.18
 
 Yes
 
@@ -240,7 +240,7 @@ No
 
 26.0.2 - 26.1.2
 
-1.14.5 - 1.17
+1.14.5 - 1.18
 
 \*nix only
 
@@ -248,7 +248,7 @@ No
 
 \>= 26.2.0
 
-1.14.5 - 1.17
+1.14.5 - 1.18
 
 Yes
 
@@ -264,7 +264,7 @@ Broken formatter #975
 
 27
 
-1.17
+1.17 - 1.18
 
 Yes
 
@@ -318,12 +318,26 @@ To debug Phoenix applications using ElixirLS, you can use the following launch c
   "name": "phx.server",
   "request": "launch",
   "task": "phx.server",
-  "projectDir": "${workspaceRoot}"
+  "projectDir": "${workspaceRoot}",
+  "debugAutoInterpretAllModules": false,
+  "debugInterpretModulesPatterns": \["MyApp\*", "MyAppWeb\*"\],
+  "exitAfterTaskReturns": false
 }
+
+In case of phoenix apps it is generally not advised to interpret all modules. Cowboy and ecto have known performance issues when run in interpreted mode. The example configuration disables auto interpreting and instead makes the DAP interpret only a subset of modules.
+
+Note that `exitAfterTaskReturns` is set to `false`. Otherwise DAP session will end immediately after starting because mix task `phx.server` returns control to the caller.
 
 Please make sure that `startApps` is not set to `true`. To clarify, `startApps` is a configuration option in the ElixirLS debug adapter. It controls whether or not to start the applications in the Mix project before running the task. In the case of Phoenix applications, setting `startApps` to `true` can interfere with the application's normal startup process and cause issues.
 
 If you are running tests in the Phoenix application, you may need to set `startApps` to true. This will ensure that the necessary applications are started before the tests run.
+
+#### Known issues
+
+-   Phoenix live reload and CodeReloader is not compatible with debug adapter. It will purge and recompile beams running in interpreted mode, unset breakpoints and corrupt the debug session phoenix\_live\_reload issue
+    
+-   When cowboy and/or ecto modules are interpreted the DAP server leaks enormous amount of heap memory on every request. The reason is unknown. GH issue
+    
 
 ### NIF modules limitation
 

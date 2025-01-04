@@ -1,6 +1,6 @@
 ---
 project: compodoc
-stars: 4017
+stars: 4020
 description: :notebook_with_decorative_cover: The missing documentation tool for your Angular, Nest & Stencil application
 url: https://github.com/compodoc/compodoc
 ---

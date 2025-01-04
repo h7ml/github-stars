@@ -1,6 +1,6 @@
 ---
 project: dockerc
-stars: 3919
+stars: 3951
 description: container image to single executable compiler
 url: https://github.com/NilsIrl/dockerc
 ---
@@ -40,7 +40,11 @@ $ git submodule init
 $ git submodule update
 ```
 
-This will ensure that you download and update all relevant submodule contents. Once the submodules are properly initialized, you can proceed with the compilation instructions below.
+This will ensure that you download and update all relevant submodule contents.
+
+dockerc uses a patched version of the zig compiler than can be found on the nils-dockerc-version branch of the NilsIrl/zig repository. There is an open PR for the patch to be included in upstream zig.
+
+To compile dockerc use the following commands:
 
 ```
 $ zig build -Doptimize=ReleaseSafe -Dtarget=x86_64-linux-musl

@@ -1,6 +1,6 @@
 ---
 project: filepond
-stars: 15297
+stars: 15311
 description: 🌊 A flexible and fun JavaScript file upload library
 url: https://github.com/pqina/filepond
 ---

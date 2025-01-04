@@ -1,6 +1,6 @@
 ---
 project: MagicQuill
-stars: 2453
+stars: 2515
 description: Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/magic-quill/MagicQuill
 ---
@@ -23,6 +23,7 @@ Zichen Liu\*,1,2, Yue Yu\*,1,2, Hao Ouyang2, Qiuyu Wang2, Ka Leong Cheng1,2, Wen
     -   TODO List
     -   Update Log
     -   Hardware Requirements
+    -   Docker Container
     -   Setup
     -   Tutorial
     -   Citation
@@ -45,6 +46,7 @@ Update Log
 -   \[2024.12.06\] 📢 New Feature Updates: Auto-save and Resolution Adjustment are now enabled in the parameter settings. Thanks Furkan Gözükara for his brilliant suggestions.
 -   \[2024.12.07\] 🎉 Exciting News: ComfyUI MagicQuill Node has been released! Check the repository https://github.com/magic-quill/ComfyUI\_MagicQuill for more details.
 -   \[2024.12.16\] 🎉 Exciting News: MagicQuill is also available at Modelscope. Thanks for their amazing support and infrastructure.
+-   \[2025.01.02\] 🎉 Exciting News: MagicQuill docker container is now available. You can now build & run your own image in a cleaner, isolated environment. Thanks gbudge for his contribution.
 
 To update the latest features, pull the latest code and re-install the gradio\_magicquill:
 
@@ -137,6 +139,42 @@ Alternatively, follow the step-by-step installation guide.
     ```
     
     If you are mainland user, you may try `export HF_ENDPOINT=https://hf-mirror.com` to use huggingface mirror to facilitate the download of some necessary checkpoints to run our system.
+    
+
+Docker Container
+----------------
+
+You can build a docker container with MagicQuill as follows:
+
+1.  git clone repo. **Please don't forget the `--recursive` flag.** Otherwise, you will find `LLaVA` submodule missing.
+    
+    ```
+    git clone --recursive https://github.com/magic-quill/MagicQuill.git
+    cd MagicQuill
+    ```
+    
+2.  download and unzip checkpoints
+    
+    ```
+    wget -O models.zip "https://hkustconnect-my.sharepoint.com/:u:/g/personal/zliucz_connect_ust_hk/EWlGF0WfawJIrJ1Hn85_-3gB0MtwImAnYeWXuleVQcukMg?e=Gcjugg&download=1"
+    unzip models.zip
+    ```
+    
+    If the .zip file is not accessible, download it via browser. All checkpoints are about 25 GB in total. It may take some time to download. Alternatively, check our checkpoints at huggingface.
+    
+    Note: these can be located anywhere on the host computer, but Docker Compose expects them to be in `/data/magicquill/models` by default. Update `docker-compose.yaml` if you unzip them to another location.
+    
+3.  build the image
+    
+    ```
+    docker compose build
+    ```
+    
+4.  run the image
+    
+    ```
+    docker compose up -d
+    ```
     
 
 Tutorial

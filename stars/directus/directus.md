@@ -1,6 +1,6 @@
 ---
 project: directus
-stars: 28519
+stars: 28574
 description: The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.
 url: https://github.com/directus/directus
 ---
@@ -61,4 +61,4 @@ Directus is a premium open-source (BSL 1.1) project, made possible with support 
 
   
 
-© 2004-2024, Monospace, Inc.
+© 2004-2025, Monospace, Inc.
