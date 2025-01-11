@@ -1,6 +1,6 @@
 ---
 project: eqrcode
-stars: 213
+stars: 214
 description: Simple QRCode Generator in Elixir
 url: https://github.com/SiliconJungles/eqrcode
 ---

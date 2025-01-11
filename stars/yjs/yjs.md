@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 17473
+stars: 17520
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -73,7 +73,7 @@ Who is using Yjs
 -   AppMaster A No-Code platform for creating production-ready applications with source code generation.
 -   Synthesia - Collaborative Video Editor
 -   thinkdeli - A fast and simple notes app powered by AI
--   ourboard - A collaborative whiteboard applicaiton
+-   ourboard - A collaborative whiteboard application
 -   Ellie.ai - Data Product Design and Collaboration
 -   GoPeer - Collaborative tutoring
 -   screen.garden - Collaborative backend for PKM apps.
@@ -224,7 +224,7 @@ A module that contains a simple websocket backend and a websocket client that co
 
 y-webrtc
 
-Propagates document updates peer-to-peer using WebRTC. The peers exchange signaling data over signaling servers. Publically available signaling servers are available. Communication over the signaling servers can be encrypted by providing a shared secret, keeping the connection information and the shared document private.
+Propagates document updates peer-to-peer using WebRTC. The peers exchange signaling data over signaling servers. Publicly available signaling servers are available. Communication over the signaling servers can be encrypted by providing a shared secret, keeping the connection information and the shared document private.
 
 @liveblocks/yjs 🌟
 
@@ -980,7 +980,7 @@ Encode a relative position to an Uint8Array. Binary data is the preferred encodi
 
 **`Y.decodeRelativePosition(Uint8Array):RelativePosition`**
 
-Decode a binary-encoded relative position to a RelativePositon object.
+Decode a binary-encoded relative position to a RelativePosition object.
 
 ### Y.UndoManager
 
@@ -1101,7 +1101,7 @@ _Conflict-free replicated data types_ (CRDT) for collaborative editing are an al
 
 Yjs implements a modified version of the algorithm described in this paper. This article explains a simple optimization on the CRDT model and gives more insight about the performance characteristics in Yjs. More information about the specific implementation is available in INTERNALS.md and in this walkthrough of the Yjs codebase.
 
-CRDTs that are suitable for shared text editing suffer from the fact that they only grow in size. There are CRDTs that do not grow in size, but they do not have the characteristics that are benificial for shared text editing (like intention preservation). Yjs implements many improvements to the original algorithm that diminish the trade-off that the document only grows in size. We can't garbage collect deleted structs (tombstones) while ensuring a unique order of the structs. But we can 1. merge preceeding structs into a single struct to reduce the amount of meta information, 2. we can delete content from the struct if it is deleted, and 3. we can garbage collect tombstones if we don't care about the order of the structs anymore (e.g. if the parent was deleted).
+CRDTs that are suitable for shared text editing suffer from the fact that they only grow in size. There are CRDTs that do not grow in size, but they do not have the characteristics that are beneficial for shared text editing (like intention preservation). Yjs implements many improvements to the original algorithm that diminish the trade-off that the document only grows in size. We can't garbage collect deleted structs (tombstones) while ensuring a unique order of the structs. But we can 1. merge preceding structs into a single struct to reduce the amount of meta information, 2. we can delete content from the struct if it is deleted, and 3. we can garbage collect tombstones if we don't care about the order of the structs anymore (e.g. if the parent was deleted).
 
 **Examples:**
 

@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 21551
+stars: 21615
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
@@ -185,6 +185,10 @@ Author
 License
 
 Simple Icons Version
+
+Angular package
+
+@khalilou88
 
 Astro package
 

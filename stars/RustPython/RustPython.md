@@ -1,6 +1,6 @@
 ---
 project: RustPython
-stars: 19441
+stars: 19477
 description: A Python Interpreter written in Rust
 url: https://github.com/RustPython/RustPython
 ---
@@ -40,7 +40,7 @@ NOTE: For windows users, please set `RUSTPYTHONPATH` environment variable as `Li
 
 You can also install and run RustPython with the following:
 
-$ cargo install --git https://github.com/RustPython/RustPython
+$ cargo install --git https://github.com/RustPython/RustPython rustpython
 $ rustpython
 Welcome to the magnificent Rust Python interpreter
 >>>>>
@@ -63,11 +63,11 @@ You can compile RustPython to a standalone WebAssembly WASI module so it can run
 
 Build
 
-cargo build --target wasm32-wasi --no-default-features --features freeze-stdlib,stdlib --release
+cargo build --target wasm32-wasip1 --no-default-features --features freeze-stdlib,stdlib --release
 
 Run by wasmer
 
-wasmer run --dir \`pwd\` -- target/wasm32-wasi/release/rustpython.wasm \`pwd\`/extra\_tests/snippets/stdlib\_random.py
+wasmer run --dir \`pwd\` -- target/wasm32-wasip1/release/rustpython.wasm \`pwd\`/extra\_tests/snippets/stdlib\_random.py
 
 Run by wapm
 
@@ -80,9 +80,9 @@ $ wapm run rustpython
 
 You can build the WebAssembly WASI file with:
 
-cargo build --release --target wasm32-wasi --features="freeze-stdlib"
+cargo build --release --target wasm32-wasip1 --features="freeze-stdlib"
 
-> Note: we use the `freeze-stdlib` to include the standard library inside the binary. You also have to run once `rustup target add wasm32-wasi`.
+> Note: we use the `freeze-stdlib` to include the standard library inside the binary. You also have to run once `rustup target add wasm32-wasip1`.
 
 ### JIT (Just in time) compiler
 

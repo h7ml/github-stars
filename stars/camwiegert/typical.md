@@ -1,6 +1,6 @@
 ---
 project: typical
-stars: 1569
+stars: 1570
 description: Animated typing in ~400 bytes 🐡 of JavaScript
 url: https://github.com/camwiegert/typical
 ---

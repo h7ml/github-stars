@@ -1,6 +1,6 @@
 ---
 project: starship
-stars: 46283
+stars: 46424
 description: ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 url: https://github.com/starship/starship
 ---
@@ -248,16 +248,12 @@ eval $(starship init ion)
 
 Nushell
 
-Add the following to the end of your Nushell env file (find it by running `$nu.env-path` in Nushell):
+Add the following to the end of your Nushell configuration (find it by running `$nu.config-path` in Nushell):
 
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
-And add the following to the end of your Nushell configuration (find it by running `$nu.config-path`):
-
-use ~/.cache/starship/init.nu
-
-Note: Only Nushell v0.78+ is supported
+Note: Only Nushell v0.96+ is supported
 
 PowerShell
 

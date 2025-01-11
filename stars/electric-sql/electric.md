@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 7130
+stars: 7195
 description: Sync little subsets of your Postgres data into local apps and services.
 url: https://github.com/electric-sql/electric
 ---

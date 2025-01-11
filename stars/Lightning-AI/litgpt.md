@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 11059
+stars: 11117
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -316,6 +316,14 @@ Li et al. 2023
 Phi 3
 
 3.8B
+
+Microsoft Research
+
+Abdin et al. 2024
+
+Phi 4
+
+14B
 
 Microsoft Research
 

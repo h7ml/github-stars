@@ -1,6 +1,6 @@
 ---
 project: CyberChef
-stars: 29752
+stars: 29826
 description: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis
 url: https://github.com/gchq/CyberChef
 ---

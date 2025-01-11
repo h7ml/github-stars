@@ -1,6 +1,6 @@
 ---
 project: gitea
-stars: 46401
+stars: 46546
 description: Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD
 url: https://github.com/go-gitea/gitea
 ---
@@ -22,6 +22,15 @@ For online demonstrations, you can visit demo.gitea.com.
 For accessing free Gitea service (with a limited number of repositories), you can visit gitea.com.
 
 To quickly deploy your own dedicated Gitea instance on Gitea Cloud, you can start a free trial at cloud.gitea.com.
+
+Documentation
+-------------
+
+You can find comprehensive documentation on our official documentation website.
+
+It includes installation, administration, usage, development, contributing guides, and more to help you get started and explore all features effectively.
+
+If you have any suggestions or would like to contribute to it, you can visit the documentation repository
 
 Building
 --------
@@ -50,6 +59,8 @@ More info: https://docs.gitea.com/installation/install-from-source
 Using
 -----
 
+After building, a binary file named `gitea` will be generated in the root of the source tree by default. To run it, use:
+
 ```
 ./gitea web
 ```
@@ -75,16 +86,19 @@ Translations are done through Crowdin. If you want to translate to a new languag
 
 You can also just create an issue for adding a language or ask on discord on the #translation channel. If you need context or find some translation issues, you can leave a comment on the string or ask on Discord. For general translation questions there is a section in the docs. Currently a bit empty but we hope to fill it as questions pop up.
 
-https://docs.gitea.com/contributing/localization
+Get more information from documentation.
 
-Further information
--------------------
+Official and Third-Party Projects
+---------------------------------
 
-For more information and instructions about how to install Gitea, please look at our documentation. If you have questions that are not covered by the documentation, you can get in contact with us on our Discord server or create a post in the discourse forum.
+We provide an official go-sdk, a CLI tool called tea and an action runner for Gitea Action.
 
-We maintain a list of Gitea-related projects at gitea/awesome-gitea.
+We maintain a list of Gitea-related projects at gitea/awesome-gitea, where you can discover more third-party projects, including SDKs, plugins, themes, and more.
 
-The official Gitea CLI is developed at gitea/tea.
+Communication
+-------------
+
+If you have questions that are not covered by the documentation, you can get in contact with us on our Discord server or create a post in the discourse forum.
 
 Authors
 -------
@@ -114,12 +128,16 @@ Gitea is pronounced /ɡɪ’ti:/ as in "gi-tea" with a hard g.
 
 We're working on it.
 
+**Where can I find the security patches?**
+
+In the release log or the change log, search for the keyword `SECURITY` to find the security patches.
+
 License
 -------
 
 This project is licensed under the MIT License. See the LICENSE file for the full license text.
 
-Screenshots
------------
+Further information
+-------------------
 
 Looking for an overview of the interface? Check it out!

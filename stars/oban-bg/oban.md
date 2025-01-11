@@ -1,6 +1,6 @@
 ---
 project: oban
-stars: 3408
+stars: 3413
 description: 💎 Robust job processing in Elixir, backed by modern PostgreSQL, SQLite3, and MySQL
 url: https://github.com/oban-bg/oban
 ---
@@ -98,7 +98,7 @@ Requirements
 
 Oban requires:
 
--   Elixir 1.14+
+-   Elixir 1.15+
 -   Erlang 24+
 -   PostgreSQL 12.0+, MySQL 8.0+, or SQLite3 3.37.0+
 
@@ -151,7 +151,6 @@ There are a few places to connect and communicate with other Oban users:
 -   Ask questions and discuss _#oban_ on the Elixir Forum
 -   Request an invitation and join the _#oban_ channel on Slack
 -   Learn about bug reports and upcoming features in the issue tracker
--   Follow @sorentwo (Twitter)
 
 Contributing
 ------------

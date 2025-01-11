@@ -1,6 +1,6 @@
 ---
 project: pocketbase
-stars: 42652
+stars: 42796
 description: Open Source realtime backend in 1 file
 url: https://github.com/pocketbase/pocketbase
 ---
@@ -21,10 +21,12 @@ Please keep in mind that PocketBase is still under active development and theref
 API SDK clients
 ---------------
 
-The easiest way to interact with the API is to use one of the official SDK clients:
+The easiest way to interact with the PocketBase Web APIs is to use one of the official SDK clients:
 
--   **JavaScript - pocketbase/js-sdk** (_browser and node_)
--   **Dart - pocketbase/dart-sdk** (_web, mobile, desktop_)
+-   **JavaScript - pocketbase/js-sdk** (_Browser, Node.js, React Native_)
+-   **Dart - pocketbase/dart-sdk** (_Web, Mobile, Desktop, CLI_)
+
+You could also check the recommendations in https://pocketbase.io/docs/how-to-use/.
 
 Overview
 --------

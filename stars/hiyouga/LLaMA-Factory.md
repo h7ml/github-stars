@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 37254
+stars: 37723
 description: Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -77,13 +77,15 @@ Definitions
 Changelog
 ---------
 
+\[25/01/10\] We supported fine-tuning the **Phi-4** model.
+
 \[24/12/21\] We supported using **SwanLab** for experiment tracking and visualization. See this section for details.
 
 \[24/11/27\] We supported fine-tuning the **Skywork-o1** model and the **OpenO1** dataset.
 
-\[24/10/09\] We supported downloading pre-trained models and datasets from the **Modelers Hub**. See this tutorial for usage.
-
 Full Changelog
+
+\[24/10/09\] We supported downloading pre-trained models and datasets from the **Modelers Hub**. See this tutorial for usage.
 
 \[24/09/19\] We supported fine-tuning the **Qwen2.5** models.
 
@@ -328,7 +330,7 @@ Phi-1.5/Phi-2
 
 \-
 
-Phi-3
+Phi-3/Phi-3.5
 
 4B/14B
 
@@ -339,6 +341,12 @@ Phi-3-small
 7B
 
 phi\_small
+
+Phi-4
+
+14B
+
+phi4
 
 Pixtral
 
@@ -1203,7 +1211,7 @@ License
 
 This repository is licensed under the Apache-2.0 License.
 
-Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
+Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3/Phi-4 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
 
 Citation
 --------

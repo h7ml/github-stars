@@ -1,6 +1,6 @@
 ---
 project: tesseract.js
-stars: 35657
+stars: 35716
 description: Pure Javascript OCR for more than 100 Languages 📖🎉🖥
 url: https://github.com/naptha/tesseract.js
 ---
@@ -84,6 +84,19 @@ The following are examples and projects built by the community using Tesseract.j
 
 If you have a project or example repo that uses Tesseract.js, feel free to add it to this list using a pull request. Examples submitted should be well documented such that new users can run them; projects should be functional and actively maintained.
 
+Major changes in v6
+-------------------
+
+Version 6 changes are documented in this issue. Highlights are below.
+
+-   Fixed memory leak in previous versions
+-   Overall reductions in runtime and memory usage
+-   Breaking changes:
+    -   All outputs formats other than `text` are disabled by default.
+        -   To re-enable the `hocr` output (for example), set the following: `worker.recognize(image, {}, { hocr: true })`
+    -   Minor changes to the structure of the JavaScript object (`blocks`) output
+    -   See this issue for full list
+
 Major changes in v5
 -------------------
 
@@ -92,12 +105,11 @@ Version 5 changes are documented in this issue. Highlights are below.
 -   Significantly smaller files by default (54% smaller for English, 73% smaller for Chinese)
     -   This results in a ~50% reduction in runtime for first-time users (who do not have the files cached yet)
 -   Significantly lower memory usage
--   Compatible with iOS 17 (using default settings)
 -   Breaking changes:
     -   `createWorker` arguments changed
         -   Setting non-default language and OEM now happens in `createWorker`
             -   E.g. `createWorker("chi_sim", 1)`
-    -   `worker.initialize` and `worker.loadLanguage` functions now do nothing and can be deleted from code
+    -   `worker.initialize` and `worker.loadLanguage` functions should be deleted from code
     -   See this issue for full list
 
 Upgrading from v2 to v5? See this guide.
@@ -113,19 +125,6 @@ Version 4 includes many new features and bug fixes--see this issue for a full li
 -   Breaking changes:
     -   `createWorker` is now async
     -   `getPDF` function replaced by `pdf` recognize option
-
-Major changes in v3
--------------------
-
--   Significantly faster performance
-    -   Runtime reduction of 84% for Browser and 96% for Node.js when recognizing the example images
--   Upgrade to Tesseract v5.1.0 (using emscripten 3.1.18)
--   Added SIMD-enabled build for supported devices
--   Added support:
-    -   Node.js version 18
--   Removed support:
-    -   ASM.js version, any other old versions of Tesseract.js-core (<3.0.0)
-    -   Node.js versions 10 and 12
 
 Contributing
 ------------

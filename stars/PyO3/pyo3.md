@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 12720
+stars: 12771
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---

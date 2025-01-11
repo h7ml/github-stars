@@ -1,6 +1,6 @@
 ---
 project: theBeamBook
-stars: 3146
+stars: 3149
 description: A description of the Erlang Runtime System ERTS and the virtual Machine BEAM.
 url: https://github.com/happi/theBeamBook
 ---
@@ -99,29 +99,53 @@ For larger rewrites check the status of the chapter and check the issues to see 
 Building the PDF locally from source
 ------------------------------------
 
-The project contains a makefile which will let you build your own PDF from the source, provided that you have all the needed tools installed.
-
-### Docker
-
-You can build the project locally using docker by first building the docker image
-
-```
-make docker-build
-```
-
-And then building the project by
-
-```
-make docker
-```
-
-### Linux
-
-WIP, to be updated
+The project contains a Makefile which will let you build your own PDF from the source, provided that you have all the needed tools installed. Just running the command
 
 make
 
+will build the file `beam-book.pdf` in the top directory as well as the HTML version under the `site` directory.
+
+We assume that you already have an Erlang installation of your choice for running examples etc. Apart from that, see below for what you need in order to build the book.
+
+### Docker
+
+You can build the project locally via Docker without having to install any addtional software, by first building the docker image. Assuming you have Docker installed, run:
+
+make docker-build
+
+And then you can build the book by running
+
+make docker
+
+(Note: On Linux, the resulting files will be created with User ID 1000, regardless of what your current user ID is outside Docker. This is due to how Docker integrates with the file system.)
+
+#### Devcontainers in the IDE
+
+If you use VSCode or any other editor that has support for Devcontainers, this repository contains a configuration that can be used out of the box. By opening the project in the dev container, you get a shell inside the container with all the tools pre-installed and with access to the project files so that all you need to do is run `make`.
+
+For a tutorial on devcontainers, see Introduction to Dev Containers, Decvontainer setup, and Devcontainers, UIDs and file permissions.
+
+If you prefer to build natively rather than use Docker, see the following sections depending on your system.
+
+### Linux
+
+The following should work on a Debian based system, such as Ubuntu:
+
+1.  `apt install git rsync wget curl make`
+2.  `apt install ruby ruby-dev default-jre`
+3.  `apt install asciidoctor graphviz`
+4.  `gem install asciidoctor-pdf asciidoctor-diagram rouge`
+5.  `make`
+
 ### Mac OSX
+
+#### Using Homebrew
+
+1.  `brew install asciidoctor graphviz wget ditaa`
+2.  `gem install asciidoctor-pdf asciidoctor-diagram rouge`
+3.  `make`
+
+#### Manual installation
 
 1.  Install asciidoc
 2.  Install asciidoctor-pdf
@@ -130,17 +154,6 @@ make
 5.  Install graphviz
 6.  Install rouge
 7.  Install wget
-8.  `make`
-
-### Mac OSX (using brew etc)
-
-1.  `brew install asciidoctor`
-2.  `gem install asciidoctor-pdf`
-3.  `gem install asciidoctor-diagram`
-4.  `brew install ditaa`
-5.  `brew install graphviz`
-6.  `gem install rouge`
-7.  `brew install wget`
 8.  `make`
 
 License

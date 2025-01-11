@@ -1,6 +1,6 @@
 ---
 project: libcluster
-stars: 1991
+stars: 1994
 description: Automatic cluster formation/healing for Elixir applications
 url: https://github.com/bitwalker/libcluster
 ---
@@ -115,6 +115,7 @@ The following list of third-party strategy implementations is not comprehensive,
 -   libcluster\_ec2 - EC2 clustering strategy based on tags
 -   libcluster\_droplet - Digital Ocean Droplet clustering strategy
 -   libcluster\_consul - Consul clustering strategy
+-   libcluster\_postgres - Postgres clustering strategy
 
 Copyright and License
 ---------------------

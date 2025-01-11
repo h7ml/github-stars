@@ -1,6 +1,6 @@
 ---
 project: scikit-learn
-stars: 60623
+stars: 60736
 description: scikit-learn: machine learning in Python
 url: https://github.com/scikit-learn/scikit-learn
 ---
@@ -30,7 +30,7 @@ scikit-learn requires:
 
 **Scikit-learn 0.20 was the last version to support Python 2.7 and Python 3.4.** scikit-learn 1.0 and later require Python 3.7 or newer. scikit-learn 1.1 and later require Python 3.8 or newer.
 
-Scikit-learn plotting capabilities (i.e., functions start with `plot_` and classes end with `Display`) require Matplotlib (>= 3.3.4). For running the examples Matplotlib >= 3.3.4 is required. A few examples require scikit-image >= 0.17.2, a few examples require pandas >= 1.1.5, some examples require seaborn >= 0.9.0 and plotly >= 5.14.0.
+Scikit-learn plotting capabilities (i.e., functions start with `plot_` and classes end with `Display`) require Matplotlib (>= 3.3.4). For running the examples Matplotlib >= 3.3.4 is required. A few examples require scikit-image >= 0.17.2, a few examples require pandas >= 1.2.0, some examples require seaborn >= 0.9.0 and plotly >= 5.14.0.
 
 ### User installation
 

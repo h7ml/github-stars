@@ -1,6 +1,6 @@
 ---
 project: merquery
-stars: 232
+stars: 233
 description: Interactive HTTP Client for Livebook w/ power-ups
 url: https://github.com/acalejos/merquery
 ---
@@ -77,7 +77,7 @@ Installation
 
 def deps do
   \[
-    {:merquery, "~> 0.2"}
+    {:merquery, "~> 0.3"}
   \]
 end
 

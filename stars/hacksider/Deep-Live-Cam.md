@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 42069
+stars: 42222
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -13,21 +13,53 @@ Real-time face swap and video deepfake with a single click and only a single ima
 Disclaimer
 ----------
 
-This software is intended as a productive contribution to the AI-generated media industry. It aims to assist artists with tasks like animating custom characters or using them as models for clothing, etc.
+###### This software is intended as a productive contribution to the AI-generated media industry. It aims to assist artists with tasks like animating custom characters or using them as models for clothing, etc.
 
-We are aware of the potential for unethical applications and are committed to preventative measures. A built-in check prevents the program from processing inappropriate media (nudity, graphic content, sensitive material like war footage, etc.). We will continue to develop this project responsibly, adhering to law and ethics. We may shut down the project or add watermarks if legally required.
+###### We are aware of the potential for unethical applications and are committed to preventative measures. A built-in check prevents the program from processing inappropriate media (nudity, graphic content, sensitive material like war footage, etc.). We will continue to develop this project responsibly, adhering to the law and ethics. We may shut down the project or add watermarks if legally required.
 
-Users are expected to use this software responsibly and legally. If using a real person's face, obtain their consent and clearly label any output as a deepfake when sharing online. We are not responsible for end-user actions.
+###### Users are expected to use this software responsibly and legally. If using a real person's face, obtain their consent and clearly label any output as a deepfake when sharing online. We are not responsible for end-user actions.
 
-Quick Start (Windows / Nvidia)
-------------------------------
+Quick Start - Pre-built (Windows / Nvidia)
+------------------------------------------
 
-Download latest pre-built version with CUDA support - No Manual Installation/Downloading required and Early features testing.
+##### This is the fastest build you can get if you have a discrete NVIDIA GPU.
+
+Quick Start - Pre-built (Mac / Silicon)
+---------------------------------------
+
+###### These Pre-builts are perfect for non-technical users or those who don’t have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually if you have the knowledge.
+
+TLDR; Live Deepfake in just 3 Clicks
+------------------------------------
+
+1.  Select a face
+2.  Select which camera to use
+3.  Press live!
+
+Features - Everything is real-time
+----------------------------------
+
+### Mouth Mask
+
+**Retain your original mouth using Mouth Mask**
+
+### Face Mapping
+
+**Use different faces on multiple subjects**
+
+### Your Movie, Your Face
+
+**Watch movies with any face in real-time**
+
+Benchmarks
+----------
+
+**Nearly 0% detection!**
 
 Installation (Manual)
 ---------------------
 
-**Please be aware that the installation needs technical skills and is not for beginners, consider downloading the prebuilt.**
+**Please be aware that the installation requires technical skills and is not for beginners. Consider downloading the prebuilt version.**
 
 Click to see the process
 
@@ -35,7 +67,7 @@ Click to see the process
 
 This is more likely to work on your computer but will be slower as it utilizes the CPU.
 
-**1\. Setup Your Platform**
+**1\. Set up Your Platform**
 
 -   Python (3.10 recommended)
 -   pip
@@ -43,11 +75,11 @@ This is more likely to work on your computer but will be slower as it utilizes t
 -   ffmpeg
 -   Visual Studio 2022 Runtimes (Windows)
 
-**2\. Clone Repository**
+**2\. Clone the Repository**
 
 https://github.com/hacksider/Deep-Live-Cam.git
 
-**3\. Download Models**
+**3\. Download the Models**
 
 1.  GFPGANv1.4
 2.  inswapper\_128\_fp16.onnx (Note: Use this replacement version if you encounter issues)
@@ -143,26 +175,6 @@ Usage
 -   Use a screen capture tool like OBS to stream.
 -   To change the face, select a new source image.
 
-Features - Everything is realtime
----------------------------------
-
-### Mouth Mask
-
-**Retain your original mouth using Mouth Mask**
-
-### Face Mapping
-
-**Use different faces on multiple subjects**
-
-### Your Movie, Your Face
-
-**Watch movies with any face in realtime**
-
-Benchmarks
-----------
-
-**Nearly 0% detection!**
-
 Command Line Arguments (Unmaintained)
 -------------------------------------
 
@@ -195,7 +207,7 @@ Looking for a CLI mode? Using the -s/--source argument will make the run program
 Press
 -----
 
-**We are always open to criticism and ready to improve, that's why we didn't cherrypick anything.**
+**We are always open to criticism and are ready to improve, that's why we didn't cherry-pick anything.**
 
 -   _"Deep-Live-Cam goes viral, allowing anyone to become a digital doppelganger"_ - Ars Technica
 -   _"Thanks Deep Live Cam, shapeshifters are among us now"_ - Dataconomy
@@ -213,16 +225,17 @@ Press
 Credits
 -------
 
--   ffmpeg: for making video related operations easy
+-   ffmpeg: for making video-related operations easy
 -   deepinsight: for their insightface project which provided a well-made library and models. Please be reminded that the use of the model is for non-commercial research purposes only.
--   havok2-htwo : for sharing the code for webcam
--   GosuDRM : for open version of roop
--   pereiraroland26 : Multiple faces support
--   vic4key : For supporting/contributing on this project
--   KRSHH : For his contributions
+-   havok2-htwo: for sharing the code for webcam
+-   GosuDRM: for the open version of roop
+-   pereiraroland26: Multiple faces support
+-   vic4key: For supporting/contributing to this project
+-   kier007: for improving the user experience
+-   qitianai: for multi-lingual support
 -   and all developers behind libraries used in this project.
--   Foot Note: Please be informed that the base author of the code is s0md3v
--   All the wonderful users who helped making this project go viral by starring the repo ❤️
+-   Footnote: Please be informed that the base author of the code is s0md3v
+-   All the wonderful users who helped make this project go viral by starring the repo ❤️
 
 Contributions
 -------------

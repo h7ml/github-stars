@@ -1,6 +1,6 @@
 ---
 project: lighthouse
-stars: 28563
+stars: 28578
 description: Automated auditing, performance metrics, and best practices for the web.
 url: https://github.com/GoogleChrome/lighthouse
 ---
@@ -345,6 +345,8 @@ This section details services that have integrated Lighthouse data. If you're wo
 -   **DeploymentHawk** - DeploymentHawk is an automated site auditing tool powered by Lighthouse. Effortlessly catch performance, accessibility, and SEO issues before they impact your users. DeploymentHawk is a paid product with a free 7-day trial.
     
 -   **Guardius** - Guardius is a DevOps and DevSecOps SaaS platform that integrates Lighthouse to deliver automated web performance analysis. It not only provides metrics evaluation and automatic scanning but also enables performance comparisons across different periods and ongoing observation over time. Additionally, Guardius offers predefined and customized alerts tailored to your specific requirements. A free version of Guardius is available for users to explore its features.
+    
+-   **Sonā** - Powered by Lighthouse amongst others, Sonā delivers in-depth insights into your website’s health. Track changes over time, share reports, and receive actionable recommendations to improve performance, accessibility, SEO, best practices, and security. Sonā is free during its beta period.
     
 
 Lighthouse Integrations in non-Web Perf services

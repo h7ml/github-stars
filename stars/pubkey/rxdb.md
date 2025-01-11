@@ -1,6 +1,6 @@
 ---
 project: rxdb
-stars: 21757
+stars: 21789
 description: A fast, local first, reactive Database for JavaScript Applications https://rxdb.info/
 url: https://github.com/pubkey/rxdb
 ---
@@ -165,4 +165,4 @@ Get started now by reading the docs or exploring the example-projects.
 
 #### More content
 
-Angular Database, Frontend Database, localStorage, React Database, Browser Database, React Native Database, PWA Database, In-memory NoSQL database, JSON database
+Angular Database, Frontend Database, localStorage, React Database, Browser Database, React Native Database, PWA Database, In-memory NoSQL database, JSON database, Angular IndexedDB, React IndexedDB

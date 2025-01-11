@@ -1,6 +1,6 @@
 ---
 project: nanoid
-stars: 24900
+stars: 24950
 description: A tiny (124 bytes), secure, URL-friendly, unique string ID generator for JavaScript
 url: https://github.com/ai/nanoid
 ---
@@ -36,6 +36,9 @@ Table of Contents
 -   Benchmark
 -   Security
 -   Install
+    -   ESM
+    -   CommonJS
+    -   CDN
 -   API
     -   Blocking
     -   Non-Secure
@@ -102,13 +105,32 @@ _See a good article about random generators theory: Secure random values (in Nod
 Install
 -------
 
+### ESM
+
+Nano ID 5 works with ESM projects (with `import`) in tests or Node.js scripts.
+
 npm install nanoid
 
-Nano ID 5 works with ESM projects (with `import`) in tests or Node.js scripts. For CommonJS `require()` you need to use latest Node.js 22.12 (works out-of-the-box) or Node.js 20 (with `--experimental-require-module`):
+### CommonJS
 
-For Node.js 18 you can use Nano ID 3.x (we still support it):
+Nano ID can be used with CommonJS in one of the following ways:
 
-npm install nanoid@3
+-   You can use `require()` to import Nano ID. You need to use latest Node.js 22.12 (works out-of-the-box) or Node.js 20 (with `--experimental-require-module`).
+    
+-   For Node.js 18 you can dynamically import Nano ID as follows:
+    
+    let nanoid
+    module.exports.createID \= async () \=> {
+      if (!nanoid) ({ nanoid } \= await import('nanoid'))
+      return nanoid() // => "V1StGXR8\_Z5jdHi6B-myT"
+    }
+    
+-   You can use Nano ID 3.x (we still support it):
+    
+    npm install nanoid@3
+    
+
+### CDN
 
 For quick hacks, you can load Nano ID from CDN. Though, it is not recommended to be used in production because of the lower loading performance.
 

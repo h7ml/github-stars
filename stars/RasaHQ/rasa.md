@@ -1,6 +1,6 @@
 ---
 project: rasa
-stars: 19140
+stars: 19184
 description: 💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants
 url: https://github.com/RasaHQ/rasa
 ---
@@ -79,8 +79,8 @@ We are very happy to receive and merge your contributions into this repository!
 
 To contribute via pull request, follow these steps:
 
-1.  Create an issue describing the bug/improvement you want to work on or pick up an existing issue in Jira
-2.  Follow our Pull Request guidelines: write code, test, documentation, changelog and follow our Code Style
+1.  Create an issue describing the feature you want to work on (or have a look at the contributor board)
+2.  Write your code, tests and documentation, and format them with `black`
 3.  Create a pull request describing your changes
 
 For more detailed instructions on how to contribute code, check out these code contributor guidelines.
@@ -280,7 +280,7 @@ While this table represents our target release frequency, we reserve the right t
 
 Our End of Life policy defines how long a given release is considered supported, as well as how long a release is considered to be still in active development or maintenance.
 
-The maintenance duration and end of life for every release are shown on our website as part of the Product Release and Maintenance Policy.
+The maintentance duration and end of life for every release are shown on our website as part of the Product Release and Maintenance Policy.
 
 ### Cutting a Major / Minor release
 

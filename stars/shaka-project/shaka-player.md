@@ -1,6 +1,6 @@
 ---
 project: shaka-player
-stars: 7284
+stars: 7291
 description: JavaScript player library / DASH & HLS client / MSE-EME player
 url: https://github.com/shaka-project/shaka-player
 ---
@@ -423,7 +423,7 @@ HLS features supported:
 -   MPEG-2 TS support
 -   WebVTT and TTML
 -   CEA-608/708 captions
--   Encrypted content with PlayReady and Widevine
+-   Encrypted content with PlayReady, Widevine and WisePlay
 -   Encrypted content with FairPlay (Safari on macOS and iOS 9+ only)
 -   AES-128, AES-256 and AES-256-CTR support on browsers with Web Crypto API support
 -   SAMPLE-AES and SAMPLE-AES-CTR (identity) support on browsers with ClearKey support
@@ -517,6 +517,8 @@ PlayReady
 
 FairPlay
 
+WisePlay
+
 ClearKey⁶
 
 Chrome¹
@@ -527,11 +529,15 @@ Chrome¹
 
 \-
 
+\-
+
 **Y**
 
 Firefox²
 
 **Y**
+
+\-
 
 \-
 
@@ -549,11 +555,15 @@ Edge³
 
 \-
 
+\-
+
 Edge Chromium
 
 **Y**
 
 **Y**
+
+\-
 
 \-
 
@@ -569,9 +579,13 @@ Safari
 
 \-
 
+\-
+
 Opera
 
 **Y**
+
+\-
 
 \-
 
@@ -587,6 +601,8 @@ Chromecast
 
 \-
 
+\-
+
 **Y**
 
 Tizen TV
@@ -594,6 +610,8 @@ Tizen TV
 **Y**
 
 **Y**
+
+\-
 
 \-
 
@@ -607,6 +625,8 @@ untested⁷
 
 \-
 
+\-
+
 untested⁷
 
 Hisense⁷
@@ -614,6 +634,8 @@ Hisense⁷
 untested⁷
 
 untested⁷
+
+\-
 
 \-
 
@@ -629,11 +651,15 @@ Xbox One
 
 \-
 
+\-
+
 Playstation 4⁷
 
 \-
 
 untested⁷
+
+\-
 
 \-
 
@@ -646,6 +672,20 @@ Playstation 5⁷
 untested⁷
 
 \-
+
+\-
+
+untested⁷
+
+Huawei⁷
+
+\-
+
+\-
+
+\-
+
+untested⁷
 
 untested⁷
 
@@ -667,6 +707,8 @@ PlayReady
 
 FairPlay
 
+WisePlay
+
 ClearKey
 
 DASH
@@ -675,7 +717,9 @@ DASH
 
 **Y**
 
-\-
+**Y**
+
+**Y**
 
 **Y**
 
@@ -687,13 +731,17 @@ HLS
 
 **Y** ¹
 
-\-
+**Y**
+
+**Y**
 
 MSS
 
 \-
 
 **Y**
+
+\-
 
 \-
 

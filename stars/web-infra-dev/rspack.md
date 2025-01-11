@@ -1,6 +1,6 @@
 ---
 project: rspack
-stars: 10502
+stars: 10562
 description: The fast Rust-based web bundler with webpack-compatible API 🦀️
 url: https://github.com/web-infra-dev/rspack
 ---
@@ -24,19 +24,19 @@ Rspack is a high performance JavaScript bundler written in Rust. It offers stron
 
 Read Introduction for details.
 
-Getting Started
+Getting started
 ---------------
 
-See Quick Start.
+See Quick start.
 
 Contribution
 ------------
 
 Please read the contributing guide and let's build Rspack together.
 
-### Code of Conduct
+### Code of conduct
 
-This repo has adopted the ByteDance Open Source Code of Conduct. Please check Code of Conduct for more details.
+This repo has adopted the ByteDance Open Source Code of Conduct. Please check Code of conduct for more details.
 
 Community
 ---------

@@ -1,6 +1,6 @@
 ---
 project: AFFiNE
-stars: 44086
+stars: 44445
 description: There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. 
 url: https://github.com/toeverything/AFFiNE
 ---
@@ -135,6 +135,8 @@ Blog
 Welcome to the AFFiNE blog section! Here, you’ll find the latest insights, tips, and guides on how to maximize your experience with AFFiNE and AFFiNE AI, the leading Canvas AI tool for flexible note-taking and creative organization.
 
 -   vision board template
+-   ai homework helper
+-   vision board maker
 -   itinerary template
 -   one pager template
 -   cornell notes template

@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 113414
+stars: 113728
 description: Windows system utilities to maximize productivity
 url: https://github.com/microsoft/PowerToys
 ---
@@ -70,14 +70,6 @@ Text Extractor
 Video Conference Mute
 
 Workspaces
-
-🎁⭐ PowerToys Advent calendar ⭐🎁
----------------------------------
-
-We will be highlighting a cool utility each day for 24 days in December! To follow along, check out these threads:
-
--   https://bsky.app/profile/kaylacinnamon.bsky.social/post/3lcb7iljxck2o
--   https://x.com/cinnamon\_msft/status/1863284610773246257
 
 Installing and running Microsoft PowerToys
 ------------------------------------------

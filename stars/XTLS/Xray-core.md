@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 26499
+stars: 26676
 description: Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
 url: https://github.com/XTLS/Xray-core
 ---

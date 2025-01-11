@@ -1,6 +1,6 @@
 ---
 project: syslog-ng
-stars: 2162
+stars: 2167
 description: syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL.
 url: https://github.com/syslog-ng/syslog-ng
 ---
@@ -147,10 +147,6 @@ sources.list component name
 Ubuntu 24.04
 
 ubuntu-noble
-
-Ubuntu 23.04
-
-ubuntu-lunar
 
 Ubuntu 22.04
 
