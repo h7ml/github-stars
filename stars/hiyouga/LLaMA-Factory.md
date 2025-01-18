@@ -1,9 +1,11 @@
 ---
 project: LLaMA-Factory
-stars: 37723
-description: Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
+stars: 38378
+description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
+
+### Easily fine-tune 100+ large language models with zero-code CLI and Web UI
 
 👋 Join our WeChat or NPU user group.
 
@@ -57,10 +59,24 @@ Features
 -   **Various models**: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Qwen2-VL, Yi, Gemma, Baichuan, ChatGLM, Phi, etc.
 -   **Integrated methods**: (Continuous) pre-training, (multimodal) supervised fine-tuning, reward modeling, PPO, DPO, KTO, ORPO, etc.
 -   **Scalable resources**: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
--   **Advanced algorithms**: GaLore, BAdam, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ, PiSSA and Agent tuning.
+-   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ, PiSSA and Agent tuning.
 -   **Practical tricks**: FlashAttention-2, Unsloth, Liger Kernel, RoPE scaling, NEFTune and rsLoRA.
 -   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab, etc.
 -   **Faster inference**: OpenAI-style API, Gradio UI and CLI with vLLM worker.
+
+### Day-N Support for Fine-Tuning Cutting-Edge Models
+
+Support Date
+
+Model Name
+
+Day 0
+
+Qwen2.5 / Qwen2-VL / QwQ / QvQ / InternLM3 / MiniCPM-o-2.6
+
+Day 1
+
+Llama 3 / GLM-4 / PaliGemma2
 
 Benchmark
 ---------
@@ -77,13 +93,19 @@ Definitions
 Changelog
 ---------
 
+\[25/01/15\] We supported **APOLLO** optimizer. See examples for usage.
+
+\[25/01/14\] We supported fine-tuning the **MiniCPM-o-2.6** and **MiniCPM-V-2.6** models. Thank @BUAADreamer's PR.
+
+\[25/01/14\] We supported fine-tuning the **InternLM3** models. Thank @hhaAndroid's PR.
+
 \[25/01/10\] We supported fine-tuning the **Phi-4** model.
+
+Full Changelog
 
 \[24/12/21\] We supported using **SwanLab** for experiment tracking and visualization. See this section for details.
 
 \[24/11/27\] We supported fine-tuning the **Skywork-o1** model and the **OpenO1** dataset.
-
-Full Changelog
 
 \[24/10/09\] We supported downloading pre-trained models and datasets from the **Modelers Hub**. See this tutorial for usage.
 
@@ -258,6 +280,12 @@ InternLM2/InternLM2.5
 
 intern2
 
+InternLM3
+
+8B
+
+intern3
+
 Llama
 
 7B/13B/33B/65B
@@ -305,6 +333,12 @@ MiniCPM
 1B/2B/4B
 
 cpm/cpm3
+
+MiniCPM-o-2.6/MiniCPM-V-2.6
+
+8B
+
+minicpm\_v
 
 Mistral/Mixtral
 
@@ -715,7 +749,7 @@ Bits
 
 Full
 
-AMP
+32
 
 120GB
 
@@ -767,7 +801,7 @@ Freeze
 
 400GB
 
-LoRA/GaLore/BAdam
+LoRA/GaLore/APOLLO/BAdam
 
 16
 
@@ -852,7 +886,7 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".\[torch,metrics\]"
 
-Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, galore, badam, adam-mini, qwen, modelscope, openmind, swanlab, quality
+Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
 
 Tip
 
@@ -860,15 +894,19 @@ Use `pip install --no-deps -e .` to resolve package conflicts.
 
 For Windows users
 
+#### Install BitsAndBytes
+
 If you want to enable the quantized LoRA (QLoRA) on the Windows platform, you need to install a pre-built version of `bitsandbytes` library, which supports CUDA 11.1 to 12.2, please select the appropriate release version based on your CUDA version.
 
 pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.2.post2-py3-none-win\_amd64.whl
+
+#### Install Flash Attention-2
 
 To enable FlashAttention-2 on the Windows platform, you need to install the precompiled `flash-attn` library, which supports CUDA 12.1 to 12.2. Please download the corresponding version from flash-attention based on your requirements.
 
 For Ascend NPU users
 
-To install LLaMA Factory on Ascend NPU devices, please specify extra dependencies: `pip install -e ".[torch-npu,metrics]"`. Additionally, you need to install the **Ascend CANN Toolkit and Kernels**. Please follow the installation tutorial or use the following commands:
+To install LLaMA Factory on Ascend NPU devices, please upgrade Python to version 3.10 or higher and specify extra dependencies: `pip install -e ".[torch-npu,metrics]"`. Additionally, you need to install the **Ascend CANN Toolkit and Kernels**. Please follow the installation tutorial or use the following commands:
 
 # replace the url according to your CANN version and devices
 # install CANN Toolkit
@@ -917,6 +955,36 @@ Remember to use `ASCEND_RT_VISIBLE_DEVICES` instead of `CUDA_VISIBLE_DEVICES` to
 If you cannot infer model on NPU devices, try setting `do_sample: false` in the configurations.
 
 Download the pre-built Docker images: 32GB | 64GB
+
+#### Install BitsAndBytes
+
+To use QLoRA based on bitsandbytes on Ascend NPU, please follow these 3 steps:
+
+1.  Manually compile bitsandbytes: Refer to the installation documentation for the NPU version of bitsandbytes to complete the compilation and installation. The compilation requires a cmake version of at least 3.22.1 and a g++ version of at least 12.x.
+
+# Install bitsandbytes from source
+# Clone bitsandbytes repo, Ascend NPU backend is currently enabled on multi-backend-refactor branch
+git clone -b multi-backend-refactor https://github.com/bitsandbytes-foundation/bitsandbytes.git
+cd bitsandbytes/
+
+# Install dependencies
+pip install -r requirements-dev.txt
+
+# Install the dependencies for the compilation tools. Note that the commands for this step may vary depending on the operating system. The following are provided for reference
+apt-get install -y build-essential cmake
+
+# Compile & install  
+cmake -DCOMPUTE\_BACKEND=npu -S .
+make
+pip install .
+
+1.  Install transformers from the main branch.
+
+git clone -b main https://github.com/huggingface/transformers.git
+cd transformers
+pip install .
+
+1.  Set `double_quantization: false` in the configuration. You can refer to the example.
 
 ### Data Preparation
 
@@ -1205,6 +1273,7 @@ Click to show
 92.  **LazyLLM**: An easy and lazy way for building multi-agent LLMs applications and supports model fine-tuning via LLaMA Factory.
 93.  **RAG-Retrieval**: A full pipeline for RAG retrieval model fine-tuning, inference, and distillation. \[blog\]
 94.  **360-LLaMA-Factory**: A modified library that supports long sequence SFT & DPO using ring attention.
+95.  **Sky-T1**: An o1-like model fine-tuned by NovaSky AI with very small cost.
 
 License
 -------

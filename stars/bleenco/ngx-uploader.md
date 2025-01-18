@@ -1,6 +1,6 @@
 ---
 project: ngx-uploader
-stars: 757
+stars: 758
 description: Angular File Uploader
 url: https://github.com/bleenco/ngx-uploader
 ---

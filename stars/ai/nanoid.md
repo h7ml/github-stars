@@ -1,6 +1,6 @@
 ---
 project: nanoid
-stars: 24950
+stars: 24980
 description: A tiny (124 bytes), secure, URL-friendly, unique string ID generator for JavaScript
 url: https://github.com/ai/nanoid
 ---
@@ -314,6 +314,7 @@ Nano ID was ported to many languages. You can use these ports to have the same I
 -   Dart & Flutter
 -   Deno
 -   Elixir
+-   Gleam
 -   Go
 -   Haskell
 -   Haxe

@@ -1,6 +1,6 @@
 ---
 project: cascadia-code
-stars: 26287
+stars: 26313
 description: This is a fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.
 url: https://github.com/microsoft/cascadia-code
 ---

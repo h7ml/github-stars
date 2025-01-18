@@ -1,6 +1,6 @@
 ---
 project: finch
-stars: 1286
+stars: 1288
 description: Elixir HTTP client, focused on performance
 url: https://github.com/sneako/finch
 ---

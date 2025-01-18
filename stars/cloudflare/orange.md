@@ -1,6 +1,6 @@
 ---
 project: orange
-stars: 1751
+stars: 1762
 description: null
 url: https://github.com/cloudflare/orange
 ---

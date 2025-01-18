@@ -1,6 +1,6 @@
 ---
 project: Toshi
-stars: 4211
+stars: 4212
 description: A full-text search engine in rust
 url: https://github.com/toshi-search/Toshi
 ---

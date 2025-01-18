@@ -1,6 +1,6 @@
 ---
 project: workerd
-stars: 6411
+stars: 6429
 description: The JavaScript / Wasm runtime that powers Cloudflare Workers
 url: https://github.com/cloudflare/workerd
 ---
@@ -181,7 +181,13 @@ Prebuilt binaries are distributed via `npm`. Run `npx workerd ...` to use these.
 
 ### Local Worker development with `wrangler`
 
-You can use Wrangler (v3.0 or greater) to develop Cloudflare Workers locally, using `workerd`. Run:
+You can use Wrangler (v3.0 or greater) to develop Cloudflare Workers locally, using `workerd`. First, run the following command to configure Miniflare to use this build of `workerd`.
+
+```
+$ export MINIFLARE_WORKERD_PATH="<WORKERD_REPO_DIR>/bazel-bin/src/workerd/server/workerd"
+```
+
+Then, run:
 
 `wrangler dev`
 

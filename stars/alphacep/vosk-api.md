@@ -1,6 +1,6 @@
 ---
 project: vosk-api
-stars: 8451
+stars: 8501
 description: Offline speech recognition API for Android, iOS, Raspberry Pi and servers with Python, Java, C# and Node
 url: https://github.com/alphacep/vosk-api
 ---

@@ -1,6 +1,6 @@
 ---
 project: tridactyl
-stars: 5449
+stars: 5456
 description: A Vim-like interface for Firefox, inspired by Vimperator/Pentadactyl.
 url: https://github.com/tridactyl/tridactyl
 ---
@@ -201,6 +201,10 @@ Frequently asked questions (FAQ)
     `:set searchurls.esa http://www.esa.int/esasearch?q=`
     
     `:set searchengine esa`
+    
+    Note that this does not apply to `:open` when run without arguments, as it simply opens the newtab page which can be set like this:
+    
+    `:set newtab [newtab url]`, e.g. `:set newtab https://www.google.com`
     
 -   How can I add a search engine?
     

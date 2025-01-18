@@ -1,6 +1,6 @@
 ---
 project: tabler-icons
-stars: 18600
+stars: 18648
 description: A set of over 5700 free MIT-licensed high-quality SVG icons for you to use in your web projects.
 url: https://github.com/tabler/tabler-icons
 ---
@@ -196,7 +196,7 @@ Svelte components available through `@tabler/icons-svelte` package.
   <IconHeart size\={48} stroke\={1} />
   <IconHeart size\="32" stroke\="1.5" /\>
   <IconHeart color\="crimson" class\="p-1" size\="96" stroke\="2" />
-</main>
+</main\>
 
 CDN
 ---

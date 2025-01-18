@@ -1,6 +1,6 @@
 ---
 project: vega
-stars: 11309
+stars: 11318
 description: A visualization grammar.
 url: https://github.com/vega/vega
 ---

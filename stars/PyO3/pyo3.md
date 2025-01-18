@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 12771
+stars: 12815
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -165,6 +165,7 @@ Tools and libraries
 -   pyo3-asyncio _Utilities for working with Python's Asyncio library and async functions_
 -   rustimport _Directly import Rust files or crates from Python, without manual compilation step. Provides pyo3 integration by default and generates pyo3 binding code automatically._
 -   pyo3-arrow _Lightweight Apache Arrow integration for pyo3._
+-   pyo3-bytes _Integration between `bytes` and pyo3._
 
 Examples
 --------

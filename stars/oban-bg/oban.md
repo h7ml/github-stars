@@ -1,6 +1,6 @@
 ---
 project: oban
-stars: 3413
+stars: 3424
 description: 💎 Robust job processing in Elixir, backed by modern PostgreSQL, SQLite3, and MySQL
 url: https://github.com/oban-bg/oban
 ---
@@ -12,7 +12,7 @@ Table of Contents
 -----------------
 
 -   Features
--   Oban Web+Pro
+-   Oban Pro
 -   Engines
 -   Requirements
 -   Installation
@@ -76,17 +76,21 @@ Oban is fundamentally different from other background job processing tools becau
 -   **Telemetry Integration** — Job life-cycle events are emitted via Telemetry integration. This enables simple logging, error reporting and health checkups without plug-ins.
     
 
-Oban Web+Pro
-------------
+🌟 Oban Pro
+-----------
 
-Tip
+An official set of extensions, plugins, and workers that expand what Oban is capable of is available as a licensed package. It includes features like:
 
-A web dashboard for managing Oban, along with an official set of extensions, plugins, and workers that expand what Oban is capable of are available as licensed packages:
+-   🖇️ Workflows
+-   🎨 Decorators
+-   ⛓️ Chains
+-   🏗️ Structured Jobs
+-   🪝 Worker Hooks
+-   🌎 Global Limits
+-   🔪 Queue Partitioning
+-   🎢 Dynamic Queues
 
--   🧭 Oban Web
--   🌟 Oban Pro
-
-Learn more at oban.pro!
+Plus much more. Learn more about Oban Pro
 
 Engines
 -------

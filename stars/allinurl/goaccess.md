@@ -1,6 +1,6 @@
 ---
 project: goaccess
-stars: 18829
+stars: 18886
 description: GoAccess is a real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems or through your browser.
 url: https://github.com/allinurl/goaccess
 ---
@@ -52,7 +52,7 @@ GoAccess parses the specified web log file and outputs the data to the X termina
     GoAccess features the ability to parse large logs due to its optimized in-memory hash tables. It has very good memory usage and pretty good performance. This storage has support for on-disk persistence as well.
     
 -   **Docker Support**  
-    Ability to build GoAccess' Docker image from upstream. You can still fully configure it, by using Volume mapping and editing `goaccess.conf`. See Docker section below.
+    Ability to build GoAccess' Docker image from upstream. You can still fully configure it, by using Volume mapping and editing `goaccess.conf`. See Docker section below. There is also documentation how to use docker-compose.
     
 
 ### Nearly all web log formats...
@@ -275,6 +275,8 @@ OR real-time
 ```
 tail -F access.log | docker run -p 7890:7890 --rm -i -e LANG=$LANG allinurl/goaccess -a -o report.html --log-format COMBINED --real-time-html -
 ```
+
+There is also documentation how to use docker-compose.
 
 ##### Build in isolated container
 

@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 36235
+stars: 36447
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -62,7 +62,7 @@ Special thanks to our biggest sponsors!
 -   PFGlabs - Build real project with Golang.
 -   Treive - An AI-powered search and discovery platform for enhancing information retrieval in large datasets.
 -   Blacksmith - A cloud-native platform for automating infrastructure provisioning and management across multiple cloud providers.
--   Brand Dev - A web development agency specializing in creating custom digital experiences and brand identities.
+-   Brand Dev - The #1 Brand API for B2B software startups - instantly pull logos, fonts, descriptions, social links, slogans, and so much more from any domain via a single api call.
 -   Jobscollider - A job search platform connecting professionals with remote work opportunities across various industries.
 -   Hostinger - A web hosting provider offering affordable hosting solutions, domain registration, and website building tools.
 -   Glueops - A DevOps consulting company providing infrastructure automation and cloud optimization services.

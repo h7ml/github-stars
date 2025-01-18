@@ -11,9 +11,12 @@ Logster
 > **Note**  
 > This is the documentation for v2 of Logster. If you're looking for v1, see the v1 branch.
 
-An easy-to-parse, single-line logger for Elixir Phoenix and Plug.Conn, inspired by lograge. Supports logfmt, JSON and custom output formatting.
+An easy-to-parse, single-line logger for Elixir Phoenix and Plug applications. Supports logfmt, JSON and custom formatting.
 
-By default, Phoenix log output for a request looks similar to the following:
+Motivation
+----------
+
+By default, the Phoenix log output for a request looks like:
 
 ```
 [info] GET /articles/some-article
@@ -23,21 +26,26 @@ By default, Phoenix log output for a request looks similar to the following:
 [info] Sent 200 in 21ms
 ```
 
-This can be handy for development, but cumbersome for production. The log output is spread across multiple lines, making it difficult to parse and search.
+This can be handy for development, but cumbersome in production. The log output is spread across multiple lines making it difficult to parse and search.
 
-Logster aims to solve this problem by logging the request in a single line:
+Logster aims to solve this problem by logging the request in a easy-to-parse single line like:
 
 ```
 [info] state=sent method=GET path=/articles/some-article format=html controller=HelloPhoenix.ArticleController action=show params={"id":"some-article"} status=200 duration=0.402
 ```
 
-This is especially handy when integrating with log management services such as Logentries or Papertrail.
+This is especially handy when integrating with log management services such as Better Stack or Papertrail.
 
-Alternatively, Logster can also output JSON formatted logs (see configuration section below):
+Alternatively, Logster can also output JSON formatted logs (see configuration section below), or you can provide a custom formatter:
 
 ```
 [info] {"state":"sent","method":"GET","path":"/articles/some-article","format":"html","controller":"HelloPhoenix.ArticleController","action":"show","params":{"id":"some-article"},"status":200,"duration":0.402}
 ```
+
+Migrating from v1.x to v2.x
+---------------------------
+
+See Migration Guide for more information on migrating from v1.x to v2.x.
 
 Installation
 ------------
@@ -47,11 +55,6 @@ Add `:logster` to the list of dependencies in `mix.exs`:
 def deps do
   \[{:logster, "~> 2.0.0-rc.1"}\]
 end
-
-Upgrading
----------
-
-See Upgrade Guide for more information.
 
 Usage
 -----
@@ -77,6 +80,7 @@ end
 
 Next, disable the default Phoenix logger by adding the following line to your `config.exs` file:
 
+\# config/config.exs
 config :phoenix, :logger, false
 
 ### Using with Plug
@@ -85,7 +89,7 @@ Add `Logster.Plug` to your plug pipeline, or in the relevant module:
 
 plug Logster.Plug
 
-### Using standalone logger
+### Using the standalone logger
 
 Logster provides `debug`, `info`, `warning`, `error` etc convenience functions that mimic those provided by the elixir logger, which outputs messages in your chosen log format.
 
@@ -93,7 +97,7 @@ For example:
 
 Logster.info(service: :payments, event: :received, amount: 1000, customer: 123)
 
-will output the following to the logs:
+will output the following:
 
 ```
 [info] service=payments event=received amount=1000 customer=123
@@ -112,7 +116,31 @@ end)
 Configuration
 -------------
 
-The following configuration options can be set through your `config.exs` file
+### Application wide
+
+You can configure Logster application wide using your `config.exs`, or environment specific config file by providing options like:
+
+config :logster,
+  formatter: :json,
+  headers: \["content-type"\],
+  excludes: \[:params\]
+
+### Per request
+
+You can then customize each option on a request basis by passing them as options to the `Logster.ChangeConfig` plug in the relevant controller or plug:
+
+plug Logster.ChangeConfig, status\_2xx\_level: :debug, headers: \["content-type", "x-request-id"\]
+
+This is specially useful for cases such as when you want to lower the log level for a healthcheck endpoint that gets hit every few seconds.
+
+### Plug level
+
+If you're using the `Logster.Plug` plug, you can also pass options to it directly:
+
+plug Logster.Plug, status\_2xx\_level: :debug, headers: \["content-type", "x-request-id"\]
+
+Configuration options
+---------------------
 
 ### Formatter
 
@@ -128,52 +156,37 @@ Provide a function that takes one argument, the parameters as input, and returns
 
 config :logster, formatter: &MyCustomFormatter.format/1
 
-### Filtering parameters
+### Log level per status group
 
-By default, Logster filters parameters named `password`.
+You can change the log level for each status group by using the following configuration options:
 
-To change the filtered parameters:
+config :logster,
+  status\_2xx\_level: :debug, \# default: :info
+  status\_3xx\_level: :debug, \# default: :info
+  status\_4xx\_level: :info,  \# default: :warning
+  status\_5xx\_level: :error  \# default: :error
 
-config :logster, filter\_parameters: \["password", "secret", "token"\]
+### Fine grained log level configuration
 
-### Logging HTTP request headers
+You can specify a function to be called to determine the log level for each request.
+
+This function will be called with the `conn`, and expects a logger level, or `false` to not log the request as return value.
+
+\# config/config.exs
+config :logster, log: {MyLoggingModule, :log\_level, \[\]}
+
+defmodule MyLoggingModule do
+  def log\_level(%{status: status}) when status \>= 500, do: :error
+  def log\_level(%{status: status}) when status \>= 400, do: :warning
+  def log\_level(%{path\_info: \["status" | \_\]}), do: false
+  def log\_level(\_), do: :info
+end
+
+### Request headers
 
 By default, Logster won't log any request headers. To log specific headers, you can use the `:headers` option:
 
 config :logster, headers: \["my-header-one", "my-header-two"\]
-
-### Changing the log level for a specific controller/action
-
-#### Through Logster.ChangeLogLevel plug
-
-To change the Logster log level for a specific controller and/or action, you use the `Logster.ChangeLogLevel` plug.
-
-For example, to change the logging of all requests in a controller to `debug`, add the following to that controller:
-
-plug Logster.ChangeLogLevel, to: :debug
-
-And to change it only for `index` and `show` actions:
-
-plug Logster.ChangeLogLevel, \[to: :debug\] when action in \[:index, :show\]
-
-This is specially useful for cases such as when you want to lower the log level for a healthcheck endpoint that gets hit every few seconds.
-
-#### Through endpoint configuration
-
-You can set the `Plug.Telemetry` `:log` option to a tuple, `{Mod, Fun, Args}`. `The Plug.Conn.t()` for the request will be prepended to the provided list of arguments.
-
-When invoked, your function must return a `Logger.level()` or `false` to disable logging for the request.
-
-\# lib/my\_app\_web/endpoint.ex
-plug Plug.Telemetry,
-  event\_prefix: \[:phoenix, :endpoint\],
-  log: {\_\_MODULE\_\_, :log\_level, \[\]}
-
-\# Disables logging for routes like /status/\*
-def log\_level(%{status: status}) when status \>= 500, do: :error
-def log\_level(%{status: status}) when status \>= 400, do: :warning
-def log\_level(%{path\_info: \["status" | \_\]}), do: false
-def log\_level(\_), do: :info
 
 ### Enabling extra fields
 
@@ -200,7 +213,7 @@ Example output:
 
 ### Renaming default fields
 
-You can rename the default keys passing a map like `%{key: :new_key}`:
+You can rename the default keys passing a keyword list like:
 
 config :logster, renames: \[duration: :response\_time, params: :parameters\]
 
@@ -209,6 +222,14 @@ Example output:
 ```
 [info] method=GET path=/articles/some-article format=html controller=HelloPhoenix.ArticleController action=show parameters={"id":"some-article"} status=200 response_time=0.402 state=set
 ```
+
+### Filtering parameters
+
+By default, Logster filters parameters named `password`.
+
+To change the filtered parameters:
+
+config :logster, filter\_parameters: \["password", "secret", "token"\]
 
 ### Metadata
 
@@ -261,6 +282,11 @@ Use the following mix task before pushing commits to run the same checks that ar
 ```
 mix ci
 ```
+
+Acknowledgements
+----------------
+
+This library was inspired by the ruby lograge gem.
 
 License
 -------

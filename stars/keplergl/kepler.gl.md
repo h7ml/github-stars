@@ -1,6 +1,6 @@
 ---
 project: kepler.gl
-stars: 10499
+stars: 10513
 description: Kepler.gl is a powerful open source geospatial analysis tool for large-scale data sets.
 url: https://github.com/keplergl/kepler.gl
 ---
@@ -242,7 +242,7 @@ const mapStyles \= \[
     layerGroups: \[
       {
         slug: 'label',
-        filter: ({id}) \=> id.match(/(?=(label|place-|poi-))/),
+        filter: ({id}) \=> id.match(/(?\=(label|place\-|poi\-))/),
         defaultVisibility: true
       },
       {

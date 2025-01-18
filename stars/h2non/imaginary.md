@@ -1,6 +1,6 @@
 ---
 project: imaginary
-stars: 5723
+stars: 5730
 description: Fast, simple, scalable, Docker-ready HTTP microservice for high-level image processing
 url: https://github.com/h2non/imaginary
 ---
@@ -113,7 +113,7 @@ docker pull h2non/imaginary
 Start the container with optional flags (default listening on port 9000)
 
 ```
-docker run -p 9000:9000 h2non/imaginary -cors -gzip
+docker run -p 9000:9000 h2non/imaginary -cors
 ```
 
 Start the container enabling remote URL source image processing via GET requests and `url` query param.

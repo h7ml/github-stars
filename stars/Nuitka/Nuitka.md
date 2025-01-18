@@ -1,6 +1,6 @@
 ---
 project: Nuitka
-stars: 12352
+stars: 12379
 description: Nuitka is a Python compiler written in Python.  It's fully compatible with Python 2.6, 2.7, 3.4-3.13. You feed it your Python app, it does a lot of clever things, and spits out an executable or extension module. 
 url: https://github.com/Nuitka/Nuitka
 ---
@@ -251,7 +251,7 @@ If you want to be able to copy it to another machine, use `--standalone` and cop
 
 If you want to compile a single extension module, all you have to do is this:
 
-python -m nuitka --module some\_module.py
+python -m nuitka --mode=module some\_module.py
 
 The resulting file `some_module.so` can then be used instead of `some_module.py`.
 
@@ -279,7 +279,7 @@ The resulting extension module can only be loaded into a CPython of the same ver
 
 If you need to compile a whole package and embed all modules, that is also feasible, use Nuitka like this:
 
-python -m nuitka --module some\_package --include-package=some\_package
+python -m nuitka --mode=module some\_package --include-package=some\_package
 
 Note
 

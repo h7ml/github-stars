@@ -1,6 +1,6 @@
 ---
 project: tesseract
-stars: 63714
+stars: 63898
 description: Tesseract Open Source OCR Engine (main repository)
 url: https://github.com/tesseract-ocr/tesseract
 ---

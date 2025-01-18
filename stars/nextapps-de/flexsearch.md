@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 12645
+stars: 12656
 description: Next-Generation full text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -1264,7 +1264,7 @@ var index \= new FlexSearch({
 
     tokenize: function(str){
 
-        return str.split(/\\s-\\//g);
+        return str.split(/\\s\-\\//g);
     }
 });
 
@@ -1357,7 +1357,7 @@ var index\_en \= new Index({
 Just set the field "rtl" to _true_ and use a compatible tokenizer:
 
 var index \= new Index({
-    encode: str \=> str.toLowerCase().split(/\[^a-z\]+/),
+    encode: str \=> str.toLowerCase().split(/\[^a\-z\]+/),
     tokenize: "reverse",
     rtl: true
 });
@@ -1367,7 +1367,7 @@ var index \= new Index({
 Set a custom tokenizer which fits your needs, e.g.:
 
 var index \= FlexSearch.create({
-    encode: str \=> str.replace(/\[\\x00-\\x7F\]/g, "").split("")
+    encode: str \=> str.replace(/\[\\x00\-\\x7F\]/g, "").split("")
 });
 
 You can also pass a custom encoder function to apply some linguistic transformations.

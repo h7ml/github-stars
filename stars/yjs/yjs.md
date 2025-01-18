@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 17520
+stars: 17787
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -84,6 +84,7 @@ Who is using Yjs
 -   Eclipse Theia - A cloud & desktop IDE that runs in the browser.
 -   ScienHub - Collaborative LaTeX editor in the browser.
 -   Open Collaboration Tools - Collaborative editing for your IDE or custom editor
+-   Typst - Compose, edit, and automate technical documents
 
 Table of Contents
 -----------------

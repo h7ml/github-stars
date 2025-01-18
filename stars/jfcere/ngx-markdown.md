@@ -1,6 +1,6 @@
 ---
 project: ngx-markdown
-stars: 1077
+stars: 1078
 description: Angular markdown component/directive/pipe/service to parse static, dynamic or remote content to HTML with syntax highlight and more...
 url: https://github.com/jfcere/ngx-markdown
 ---

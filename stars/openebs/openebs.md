@@ -1,6 +1,6 @@
 ---
 project: openebs
-stars: 9087
+stars: 9100
 description: Most popular & widely deployed Open Source Container Native Storage platform for Stateful Persistent Applications on Kubernetes.
 url: https://github.com/openebs/openebs
 ---

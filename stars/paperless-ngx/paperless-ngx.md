@@ -1,6 +1,6 @@
 ---
 project: paperless-ngx
-stars: 23740
+stars: 23916
 description: A community-supported supercharged version of paperless: scan, index and archive all your physical documents
 url: https://github.com/paperless-ngx/paperless-ngx
 ---
@@ -34,7 +34,7 @@ A full list of features and screenshots are available in the documentation.
 Getting started
 ===============
 
-The easiest way to deploy paperless is `docker compose`. The files in the `/docker/compose` directory are configured to pull the image from GitHub Packages.
+The easiest way to deploy paperless is `docker compose`. The files in the `/docker/compose` directory are configured to pull the image from the GitHub container registry.
 
 If you'd like to jump right in, you can configure a `docker compose` environment with our install script:
 

@@ -1,6 +1,6 @@
 ---
 project: supavisor
-stars: 1812
+stars: 1817
 description: A cloud-native, multi-tenant Postgres connection pooler.
 url: https://github.com/supabase/supavisor
 ---
@@ -67,8 +67,6 @@ Features
     -   Easy drop-in replacement for `PgBouncer`
 -   Pool mode support per tenant
     -   Transaction
-    -   Session
-    -   Native
 -   Cloud-native
     -   Cluster-able
     -   Resilient during cluster resizing
@@ -94,6 +92,8 @@ Future Work
     -   Load balancing is independent of Postgres high-availability management (see below)
 -   Query caching
     -   Query results are optionally cached in the pool cluster and returned before hitting the tenant database
+-   Session pooling
+    -   Like `PgBouncer`
 -   Multi-protocol Postgres query interface
     -   Postgres binary
     -   HTTPS

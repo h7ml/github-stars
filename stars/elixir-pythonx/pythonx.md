@@ -1,8 +1,8 @@
 ---
 project: pythonx
-stars: 42
+stars: 43
 description: Python Interpreter in Elixir
-url: https://github.com/cocoa-xu/pythonx
+url: https://github.com/elixir-pythonx/pythonx
 ---
 
 Pythonx

@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 137445
+stars: 137737
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---
@@ -208,13 +208,31 @@ You should install 🤗 Transformers in a virtual environment. If you're unfamil
 
 First, create a virtual environment with the version of Python you're going to use and activate it.
 
-Then, you will need to install at least one of Flax, PyTorch, or TensorFlow. Please refer to TensorFlow installation page, PyTorch installation page and/or Flax and Jax installation pages regarding the specific installation command for your platform.
+**macOS/Linux**
+
+source env/bin/activate
+
+**Windows**
+
+env\\Scripts\\activate
+
+To use 🤗 Transformers, you must install at least one of Flax, PyTorch, or TensorFlow. Refer to the official installation guides for platform-specific commands:
+
+TensorFlow installation page, PyTorch installation page and/or Flax and Jax
 
 When one of those backends has been installed, 🤗 Transformers can be installed using pip as follows:
 
+```
 pip install transformers
+```
 
 If you'd like to play with the examples or need the bleeding edge of the code and can't wait for a new release, you must install the library from source.
+
+```
+git clone https://github.com/huggingface/transformers.git
+cd transformers
+pip install
+```
 
 ### With conda
 

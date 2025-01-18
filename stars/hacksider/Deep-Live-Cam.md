@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 42222
+stars: 42427
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -27,7 +27,7 @@ Quick Start - Pre-built (Windows / Nvidia)
 Quick Start - Pre-built (Mac / Silicon)
 ---------------------------------------
 
-###### These Pre-builts are perfect for non-technical users or those who don’t have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually if you have the knowledge.
+###### These Pre-builts are perfect for non-technical users or those who don’t have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually.
 
 TLDR; Live Deepfake in just 3 Clicks
 ------------------------------------
@@ -36,25 +36,31 @@ TLDR; Live Deepfake in just 3 Clicks
 2.  Select which camera to use
 3.  Press live!
 
-Features - Everything is real-time
-----------------------------------
+Features & Uses - Everything is real-time
+-----------------------------------------
 
 ### Mouth Mask
 
-**Retain your original mouth using Mouth Mask**
+**Retain your original mouth for accurate movement using Mouth Mask**
 
 ### Face Mapping
 
-**Use different faces on multiple subjects**
+**Use different faces on multiple subjects simultaneously**
 
 ### Your Movie, Your Face
 
 **Watch movies with any face in real-time**
 
-Benchmarks
-----------
+### Live Show
 
-**Nearly 0% detection!**
+**Run Live shows and performances**
+
+### Memes
+
+**Create Your most viral meme yet**
+
+  
+Created using Many Faces feature in Deep-Live-Cam
 
 Installation (Manual)
 ---------------------
@@ -72,7 +78,7 @@ This is more likely to work on your computer but will be slower as it utilizes t
 -   Python (3.10 recommended)
 -   pip
 -   git
--   ffmpeg
+-   ffmpeg - `iex (irm ffmpeg.tc.ht)`
 -   Visual Studio 2022 Runtimes (Windows)
 
 **2\. Clone the Repository**
@@ -82,7 +88,7 @@ https://github.com/hacksider/Deep-Live-Cam.git
 **3\. Download the Models**
 
 1.  GFPGANv1.4
-2.  inswapper\_128\_fp16.onnx (Note: Use this replacement version if you encounter issues)
+2.  inswapper\_128\_fp16.onnx
 
 Place these files in the "**models**" folder.
 

@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 113728
+stars: 113930
 description: Windows system utilities to maximize productivity
 url: https://github.com/microsoft/PowerToys
 ---
@@ -67,9 +67,9 @@ Shortcut Guide
 
 Text Extractor
 
-Video Conference Mute
-
 Workspaces
+
+ZoomIt
 
 Installing and running Microsoft PowerToys
 ------------------------------------------

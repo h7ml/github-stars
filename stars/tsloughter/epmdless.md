@@ -1,6 +1,6 @@
 ---
 project: epmdless
-stars: 179
+stars: 180
 description: Distributed Erlang without the EPMD
 url: https://github.com/tsloughter/epmdless
 ---

@@ -1,6 +1,6 @@
 ---
 project: svgtofont
-stars: 624
+stars: 625
 description: Read a set of SVG icons and ouput a TTF/EOT/WOFF/WOFF2/SVG font.
 url: https://github.com/jaywcjlove/svgtofont
 ---
@@ -657,9 +657,9 @@ Preview demo `font-class.html`, `symbol.html` and `index.html`. Automatically ge
   font-family: "svgtofont-iconfont" !important;
   font-size: 16px;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
+  \-webkit-font-smoothing: antialiased;
+  \-webkit-text-stroke-width: 0.2px;
+  \-moz-osx-font-smoothing: grayscale;
 }
 </style\>
 <span class\="iconfont"\>&#59907;</span\>
