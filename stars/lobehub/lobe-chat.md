@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 51750
+stars: 52161
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -184,11 +184,23 @@ Recent Submits
 
 Description
 
+Web  
+By **Proghit** on **2025-01-24**
+
+Smart web search that reads and analyzes pages to deliver comprehensive answers from Google results.  
+`web` `search`
+
 MintbaseSearch  
 By **mintbase** on **2024-12-31**
 
 Find any NFT data on the NEAR Protocol.  
 `crypto` `nft`
+
+Bing\_websearch  
+By **FineHow** on **2024-12-22**
+
+Search for information from the internet base BingApi  
+`bingsearch`
 
 PortfolioMeta  
 By **portfoliometa** on **2024-12-22**
@@ -196,19 +208,7 @@ By **portfoliometa** on **2024-12-22**
 Analyze stocks and get comprehensive real-time investment data and analytics.  
 `stock`
 
-Google CSE  
-By **vsnthdev** on **2024-12-02**
-
-Searches Google through their official CSE API.  
-`web` `search`
-
-Speak  
-By **speak** on **2024-12-02**
-
-Learn how to say anything in another language with Speak, your AI-powered language tutor.  
-`education` `language`
-
-> 📊 Total plugins: **48**
+> 📊 Total plugins: **49**
 
 ### `8` Agent Market (GPTs)
 
@@ -226,31 +226,30 @@ Recent Submits
 
 Description
 
-System Instruction Expert  
-By **yuyun2000** on **2024-12-04**
+The Great Biggus Dickus  
+By **CGitwater** on **2025-01-24**
 
-Skilled in refining and generating efficient system instructions  
-`system-instructions` `writing` `detail-optimization` `user-needs`
+The almighty powerful god of klnowledge  
+`biggus` `diccus`
 
-Japanese Memory Helper  
-By **sharkbear212** on **2024-12-04**
+PPT Production Expert  
+By **patricleehua** on **2025-01-24**
 
-Specializes in Japanese Hiragana, Katakana, vocabulary, and memory techniques for explanations and phrases  
-`explanation` `memory-techniques` `japanese-teaching`
+Skilled in the rapid production and optimization of high-quality PPTs  
+`ppt-production` `design` `consulting` `content-optimization` `user-support`
 
-Poetry Card Designer  
-By **lianxin255** on **2024-12-03**
+English Tutor  
+By **GEORGE-Ta** on **2025-01-24**
 
-Skilled in designing poetry cards to enhance artistic sense and appeal  
-`poetry-card-design` `card` `creativity` `artistic-expression`
+An English tutor with a proud and disdainful attitude, skilled in sarcastic corrections of spoken English.  
+`english-teaching` `speaking` `role-play` `education` `sarcasm`
 
-Daily Doctor  
-By **yuyun2000** on **2024-11-30**
+Academic Revision Specialist  
+By **sunrisewestern** on **2025-01-24**
 
-Specializes in surgical diagnosis and personalized health management  
-`general-medicine` `surgery` `health-consultation` `personalized-treatment` `medical-education`
+Skilled in academic writing and paper revision  
 
-> 📊 Total agents: **453**
+> 📊 Total agents: **466**
 
 ### `9` Support Local / Remote Database
 

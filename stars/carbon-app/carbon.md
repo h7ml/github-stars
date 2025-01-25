@@ -1,6 +1,6 @@
 ---
 project: carbon
-stars: 34824
+stars: 34848
 description: :black_heart: Create and share beautiful images of your source code
 url: https://github.com/carbon-app/carbon
 ---

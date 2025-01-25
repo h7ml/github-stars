@@ -1,6 +1,6 @@
 ---
 project: sketchedit
-stars: 249
+stars: 250
 description: SketchEdit: Mask-Free Local Image Manipulation with Partial Sketches, CVPR2022
 url: https://github.com/zengxianyu/sketchedit
 ---

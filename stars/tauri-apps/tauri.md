@@ -1,6 +1,6 @@
 ---
 project: tauri
-stars: 88510
+stars: 88761
 description: Build smaller, faster, and more secure desktop and mobile applications with a web frontend.
 url: https://github.com/tauri-apps/tauri
 ---
@@ -32,7 +32,7 @@ The list of Tauri's features includes, but is not limited to:
 -   Built-in self updater (desktop only)
 -   System tray icons
 -   Native notifications
--   Localhost free (🔥)
+-   Native WebView Protocol (tauri doesn't create a localhost http(s) server to serve the WebView contents)
 -   GitHub action for streamlined CI
 -   VS Code extension
 

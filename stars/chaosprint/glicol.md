@@ -1,6 +1,6 @@
 ---
 project: glicol
-stars: 2462
+stars: 2490
 description: Graph-oriented live coding language and music/audio DSP library written in Rust
 url: https://github.com/chaosprint/glicol
 ---
@@ -55,7 +55,7 @@ Run Glicol DSL on Bela board for quick audio prototyping.
 
 ### 🍿 YouTube Channel
 
-Find Glicol demo vidoes in this playlist.
+Find Glicol demo videos in this playlist.
 
 Philosophy of Glicol
 --------------------

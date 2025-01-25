@@ -1,6 +1,6 @@
 ---
 project: mkdocs-material
-stars: 21784
+stars: 21868
 description: Documentation that simply works
 url: https://github.com/squidfunk/mkdocs-material
 ---
@@ -65,7 +65,7 @@ ArXiv, Atlassian, AWS, Bloomberg, CERN, CloudFlare, Datadog, Google, Harvard, He
 
 ### ... and successful Open Source projects
 
-Amp, Arduino, Auto-GPT, AutoKeras, BFE, CentOS, Crystal, eBPF, Electron, FastAPI, Freqtrade, GoReleaser, HedgeDoc, Hummingbot, Knative, Kubernetes, kSQL, NetBox, Nokogiri, OpenFaaS, OpenSSL, Orchard Core, Percona, Pi-Hole, Pydantic, PyPI, Renovate, RetroPie, Supervision, Traefik, Trivy, Typer, tinygrad, Ultralytics, Vapor, WebKit, WTF, ZeroNet
+Amp, Arduino, Auto-GPT, AutoKeras, BFE, CentOS, Crystal, eBPF, Electron, FastAPI, FlatBuffers, Freqtrade, GoReleaser, GraphRAG, HedgeDoc, Hummingbot, Knative, Kubernetes, kSQL, LeakCanary, LlamaIndex, NetBox, Nokogiri, OpenFaaS, OpenSSL, Orchard Core, Percona, Pi-Hole, Polars, Pydantic, PyPI, Quivr, Renovate, RetroPie, Ruff, Supervision, Textual, Traefik, Trivy, Typer, tinygrad, Ultralytics, UV, Vapor, WebKit, WTF, ZeroNet
 
 License
 -------

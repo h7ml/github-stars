@@ -1,6 +1,6 @@
 ---
 project: acme
-stars: 45
+stars: 44
 description: Acme (Let's Encrypt) Client for Elixir
 url: https://github.com/sikanhe/acme
 ---

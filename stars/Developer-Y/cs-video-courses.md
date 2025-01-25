@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 67841
+stars: 67909
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -189,6 +189,7 @@ Courses
 ### Systems Programming
 
 -   15-213 Introduction to Computer Systems, Fall 2015 - CMU
+-   Computer Systems: A programmer's Perspective
 -   CS361 - COMPUTER SYSTEMS - UIC
 -   CS 3650 - Computer Systems - Fall 2020 - Nat Tuck - NEU (Lectures - YouTube)
 -   CS 4400 – Computer Systems Fall 2016 - UoUtah
@@ -522,6 +523,8 @@ Courses
     -   ETH Zürich | Deep Learning in Scientific Computing 2023
     -   CS294 Deep Unsupervised Learning Spring 2024
     -   Applied Deep Learning Maziar Raissi
+    -   UC Berkeley CS 182 / 282a Deep Learning spring 2023, by Anant Sahai
+    -   Foundations of Deep Learning - UMD
 -   #### **Reinforcement Learning**
     
     -   CS234: Reinforcement Learning - Winter 2019 - Stanford University
@@ -545,6 +548,7 @@ Courses
     -   ECE524 Foundations of Reinforcement Learning at Princeton University, Spring 2024
     -   REINFORCEMENT LEARNING AND OPTIMAL CONTROL - Dimitri P. Bertsekas, ASU
     -   CMU 16 745 Optimal Control and Reinforcement Learning spring by Zac Manchester
+    -   CMU 16 899 Adaptive Control and Reinforcement Learning fall 2020, by Changliu Liu
 -   #### **Advanced Machine Learning**
     
     -   Advanced Machine Learning, 2021-2022, Sem I - by Prof. Madhavan Mukund, CMI
@@ -591,9 +595,10 @@ Courses
     -   Informatics 1 - Cognitive Science 2015/16- University of Edinburgh
     -   Informatics 2A - Processing Formal and Natural Languages 2016-17 - University of Edinburgh
     -   NOC:Deep Learning For Visual Computing - IIT Kharagpur
-    -   Deep Learning for Computer Vision - University of Michigan
     -   Extreme Classification
     -   EECS 498/598 - Deep Learning for Computer Vision - University of Michigan - Fall 2019 (Youtube)
+    -   CAP5415 Computer Vision - UCF Fall 2023
+    -   CAP6412 Advanced Computer Vision - UCF Spring 2024 (Youtube)
 -   #### **Time Series Analysis**
     
     -   02417 Time Series Analysis
@@ -639,6 +644,7 @@ Courses
     -   EE512A - Advanced Inference in Graphical Models, Fall Quarter, 2014
     -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
     -   University of Wisconsin-Madison CS/ECE 561 - Probability and Information Theory in Machine Learning fall 2020, by Matthew Malley
+    -   Statistical Physics of Machine Learning
 
 * * *
 
@@ -729,6 +735,7 @@ Courses
     -   UCLA Stats 102A Introduction to Computational Statistics with R winter 2024, by Miles Chen
     -   UCLA Stats 102B Computation and Optimization for Statistics spring 2024, by Miles Chen
     -   UCLA Stats 102C Introduction to Monte Carlo Methods fall 2023, by Miles Chen
+    -   STATS 200C: High-dimensional Statistics
 -   **Linear Algebra**
     -   Mathematical Foundations of Machine Learning (Fall 2021) - University of Chicago - Rebecca Willett
     -   18.06 - Linear Algebra, Prof. Gilbert Strang, MIT OCW
@@ -923,6 +930,7 @@ Courses
     -   Computer Architecture - IIT Madras
     -   High Performance Computer Architecture - IIT Kharagpur
     -   BE5B35APO - Computer Architectures, Spring 2022, CTU - FEE (YouTube - Spring 2022) (RISC-V simulator - QtRvSim)
+    -   CS773: Computer Architecture for Performance and Security - IIT Bombay
 -   **Parallel Computer Architecture**
     -   15-418 - Parallel Computer Architecture and Programming, CMU (Lecture Videos)
     -   CS 267 Applications of Parallel Computers, Spring 16 - UC Berkeley (YouTube)
@@ -1056,6 +1064,10 @@ Courses
 -   Computational Physics Course in Python, Rutgers 2021
 -   Landau Computational Physics Course
 -   Statistical Methods and Machine Learning in High Energy Physics
+-   Physics Informed Machine Learning by Steve Brunton
+-   Physics-informed machine learning meets engineering seminar series
+-   Physics Informed Machine Learning Workshop
+-   Jake VanderPlas: Machine learning in Astronomy python tutorial
 
 * * *
 
@@ -1093,6 +1105,7 @@ Courses
 -   Statistical Models in Computational Biology
 -   ETH Zürich Statistical Models in Computational Biology spring 2018, by Niko Beerenwinkel
 -   UC Berkeley CS 198-96 Introduction to Neurotechnology fall 2020
+-   MLCB24 - Machine Learning in Computational Biology Fall 2024
 
 * * *
 
@@ -1183,6 +1196,7 @@ Courses
 -   MAE 509 Linear Matrix Inequality Methods in Optimal and Robust Control, by Matthew M. Peet
 -   UIUC CS 588 Autonomous Vehicle System Engineering fall 2021, by David Forsyth
 -   EPFL ME 425 Model Predictive Control fall 2020, by Colin Jones
+-   Robots That Learn - UC Berkeley CS 294-277
 
 * * *
 
@@ -1203,6 +1217,7 @@ Courses
 -   Financial Derivatives & Risk Management - IIT Roorkee
 -   Financial Mathematics - IIT Roorkee
 -   Harvard Economics 2355 Deep Learning for Economics spring 2023, by Melissa Dell
+-   MATH69122 Stochastic Control for Finance
 
 * * *
 

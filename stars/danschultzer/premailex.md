@@ -1,6 +1,6 @@
 ---
 project: premailex
-stars: 175
+stars: 174
 description: Preflight for your HTML emails - inline styling and plain text.
 url: https://github.com/danschultzer/premailex
 ---
@@ -23,7 +23,7 @@ Installation
 def deps do
   \[
     \# ...
-    {:premailex, "~> 0.3.0"},
+    {:premailex, "~> 0.3.20"},
 
     \# Optional, but recommended for SSL validation with :httpc
     {:certifi, "~> 2.4"},

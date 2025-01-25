@@ -1,6 +1,6 @@
 ---
 project: sonix
-stars: 62
+stars: 63
 description: An Elixir client for Sonic Search 
 url: https://github.com/imerkle/sonix
 ---

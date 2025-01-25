@@ -1,6 +1,6 @@
 ---
 project: release-drafter
-stars: 3465
+stars: 3474
 description: Drafts your next release notes as pull requests are merged into master. 
 url: https://github.com/release-drafter/release-drafter
 ---
@@ -20,7 +20,9 @@ on:
   push:
     # branches to consider in the event; optional, defaults to all
     branches:
+      - main
       - master
+
   # pull\_request event is required only for autolabeler
   pull\_request:
     # Only following types are handled by the action, but one can default to all as well
@@ -632,6 +634,22 @@ The URL users can navigate to in order to view the release. i.e. `https://github
 `upload_url`
 
 The URL for uploading assets to the release, which could be used by GitHub Actions for additional uses, for example the `@actions/upload-release-asset GitHub Action`.
+
+`resolved_version`
+
+Version resolved by Version Resolver. i.e. `6.3.1`
+
+`major_version`
+
+Major part of resolved version by Version Resolver. i.e. `6` for version `6.3.1`
+
+`minor_version`
+
+Minor part of resolved version by Version Resolver. i.e. `3` for version `6.3.1`
+
+`patch_version`
+
+Patch part of resolved version by Version Resolver. i.e. `1` for version `6.3.1`
 
 Developing
 ----------

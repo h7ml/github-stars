@@ -1,6 +1,6 @@
 ---
 project: hammer
-stars: 788
+stars: 789
 description: An Elixir rate-limiter with pluggable backends
 url: https://github.com/ExHammer/hammer
 ---
@@ -74,11 +74,31 @@ Hammer.ETS
 
 Hammer.ETS.SlidingWindow
 
-Hammer.Redis
+Hammer.ETS
 
 Hammer.Redis.FixedWindow
 
 Hammer.Redis
+
+Hammer.Redis.LeakyBucket
+
+Hammer.Redis
+
+Hammer.Redis.TokenBucket
+
+Hammer.Redis
+
+Hammer.Mnesia.FixedWindow
+
+Hammer.Mnesia
+
+Hammer.Mnesia.LeakyBucket
+
+Hammer.Mnesia
+
+Hammer.Mnesia.TokenBucket
+
+Hammer.Mnesia
 
 Default Algorithm
 -----------------
@@ -125,8 +145,14 @@ Selection Guide:
 -   Need burst tolerance? → Token Bucket
 -   Need precise limits? → Sliding Window
 
-Creating a Rate Limiter
------------------------
+How to use Hammer
+-----------------
+
+-   Basic usage is covered in the Tutorial.
+-   Distributed usage is covered in the Distributed ETS guide.
+
+The quick start
+---------------
 
 -   **Limit:** Maximum number of actions allowed in a window.
 -   **Scale:** Duration of the time window (in milliseconds).

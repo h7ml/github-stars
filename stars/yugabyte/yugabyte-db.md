@@ -1,6 +1,6 @@
 ---
 project: yugabyte-db
-stars: 9171
+stars: 9198
 description: YugabyteDB - the cloud native distributed SQL database for mission-critical applications.
 url: https://github.com/yugabyte/yugabyte-db
 ---
@@ -100,26 +100,22 @@ Refer to roadmap tracker for the list of all items in the current roadmap.
 Recently released features
 ==========================
 
-v2.23 (Preview) - Sep, 2024
+v2.25 (Preview) - Jan, 2025
 ---------------------------
 
-**v2.23** is the current Preview release. This includes features under active development and is recommended for development and testing only. For the full list of features and improvements in this release, see Release notes - v2.23. Here are some of the prominent features.
+**v2.25** is the current Preview release. This includes features under active development and is recommended for development and testing only. For the full list of features and improvements in this release, see Release notes - v2.25. Here are some of the prominent features.
 
-#### Instant database cloning
+### PostgreSQL 15 Support
 
-Quickly create independent copies of your database for data recovery, development, and testing.
+As part of this release, we have upgraded our PostgreSQL fork from version 11.2 to 15.0, enabling you to leverage the many key capabilities introduced in PostgreSQL between these two versions. This upgrade brings YSQL API support for numerous features, including stored generated columns, foreign keys on partitioned tables, and non-distinct NULLs in unique indexes. It also introduces query execution optimizations like incremental sort and memoization, along with various observability and security enhancements.
 
-#### pg\_cron extension
+### Query Diagnostics
 
-Use pg\_cron to schedule YSQL commands using familiar cron syntax, including jobs on intervals as fine as seconds.
+This feature significantly simplifies tuning poorly performing SQL queries by allowing you to capture and export detailed diagnostic information, including bind variables and constants, pg\_stat\_statements statistics, schema details, active session history, and execution plans.
 
-#### Semi-automatic xCluster replication
+### Active session history
 
-Simplified management of YSQL transactional xCluster replication by operating at the database level instead of the table level.
-
-#### Improvement to backward scans
-
-Improvements to backward scan performance now allows such queries to be 10X faster out of the box!
+In addition, the Active Session History, which provides real-time and historical views of system activity, is now enabled by default.
 
 v2024.2 (Stable) - Dec, 2024
 ----------------------------

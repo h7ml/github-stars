@@ -1,6 +1,6 @@
 ---
 project: Orb
-stars: 249
+stars: 252
 description: Write WebAssembly with Elixir
 url: https://github.com/RoyalIcing/Orb
 ---
@@ -10,20 +10,33 @@ Orb: Write WebAssembly with Elixir
 
 Docs | Examples
 
+Features
+--------
+
 Write WebAssembly with the power of Elixir as your compiler:
 
--   Use Elixir’s **module system** to break problems down and then compose them together.
+-   Allow access to nearly all WebAssembly 1.0 instructions.
+-   Produce tiny `.wasm` executables: kilobytes not megabytes.
+-   Use Elixir modules to organize and reuse code.
+-   Use Elixir functions and macros to create composable abstractions.
 -   Chain function calls together with the **pipe `|>` operator**.
--   Publish reusable code with the **Hex package manager**.
+-   Run any Elixir code at compile time, including Hex packages. e.g. talk to the rest of your Elixir application, call out to an Elixir library, or make network requests.
 -   **Write unit tests** using Elixir’s built-in ExUnit.
--   Reduce boilerplate with Elixir’s **powerful macro system**.
--   **Run dynamic Elixir code at compile time** e.g. talk to the rest of your Elixir application, call out to an Elixir library, or make network requests.
 -   **Compile modules on-the-fly** e.g. use feature flags to conditionally compile code paths or enable particular WebAssembly instructions, creating a custom “tree shaken” WebAssembly module per user.
+-   Define your own WebAssembly instructions that output to `wat` and `wasm` formats.
 
 Status
 ------
 
 Orb is alpha in active development. My aim is to refine the current feature set and complete a `.wasm` compiler (current it compiles to WebAssembly’s `.wat` text format) in order to get to beta.
+
+Anti-Features
+-------------
+
+-   Allow executing any Elixir code in WebAssembly runtime. It’s not a goal of Orb to take a piece of everyday Elixir code and have it run in WebAssembly. However, because you can use macros you could decide to build that functionality on top of Orb.
+-   Allow access to the DOM. I believe the DOM is a poor fit for WebAssembly with its big object graph.
+-   WASI support. It’s not stabilized yet and for now I’d rather it be a library built on top of Orb.
+-   Produce the most optimized code possible through deep analysis. I recommend using `wasm-opt` if you really need to squeeze every byte possible.
 
 Libraries
 ---------

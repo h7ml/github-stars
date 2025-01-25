@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 7244
+stars: 7305
 description: Sync little subsets of your Postgres data into local apps and services.
 url: https://github.com/electric-sql/electric
 ---
@@ -80,7 +80,7 @@ The HTTP API is defined in an OpenAPI spec in website/electric-api.yaml.
 Developing Electric
 -------------------
 
-We're using asdf to install Elixir, Erlang, and Node.js. Versions are defined in .tool-versions.
+We use asdf to install Elixir, Erlang, and Node.js. Versions are defined in .tool-versions.
 
 ### Mac setup
 

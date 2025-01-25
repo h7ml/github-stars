@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 9953
+stars: 10038
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -187,6 +187,14 @@ AuthInbox
 
 维护中
 
+moemail
+
+MoeMail - 基于 NextJS + Cloudflare 技术栈构建的可爱临时邮箱服务 。
+
+https://moemail.app
+
+维护中
+
 博客
 --
 
@@ -249,6 +257,14 @@ Rin
 Rin 是一个基于 Cloudflare Pages + Workers + D1 + R2 全家桶的博客，无需服务器无需备案，只需要一个解析到 Cloudflare 的域名即可部署。
 
 https://docs.openrin.org/
+
+维护中
+
+cf-comment
+
+一个基于 Cloudflare Workers 运行的简单评论系统，支持回复、点赞、举报以及管理员后台管理功能；同时提供中英双语切换，方便更广泛地使用。
+
+https://comment.joyance.page/area/test-4
 
 维护中
 
@@ -364,6 +380,14 @@ Demo 地址
 
 维护中
 
+CFWorkerUrls
+
+一个基于CF Worker的短链接跳转服务，支持Lucky STUN自动化 。
+
+https://1web.us.kg/
+
+维护中
+
 网站分析
 ----
 
@@ -469,6 +493,12 @@ https://docker.fxxk.dedyn.io/
 
 维护中
 
+Page-api-forwarder
+
+它可以帮助您绕过某些API上的IP限制，并且由于它通过Cloudflare，因此速度很快。
+
+维护中
+
 文件分享
 ----
 
@@ -514,6 +544,12 @@ https://copy.vw50.ggff.net/share/paste/example
 
 维护中
 
+cf-drop
+
+一个「文件传输助手」，运行在 Cloudflare Worker + R2 + D1。具备PWA移动端优化、支持多线程文件下载、访问密码、打包下载tarball 等功能。界面简单易用，可放到浏览器侧栏，或者添加到手机桌面上快速使用。
+
+维护中
+
 测速
 --
 
@@ -551,6 +587,8 @@ SpeedTest
 UptimeFlare
 
 基于 Cloudflare Worker 的无服务器站点监控工具， 支持 HTTP/HTTPS/TCP 多种协议的端口监控， 可以从全球数百个城市发起地理位置特定的检查， 自定义的请求参数和响应校验规则,灵活适配各类监控场景。
+
+https://uptimeflare.pages.dev/
 
 维护中
 

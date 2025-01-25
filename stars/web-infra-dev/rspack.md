@@ -1,6 +1,6 @@
 ---
 project: rspack
-stars: 10606
+stars: 10662
 description: The fast Rust-based web bundler with webpack-compatible API 🦀️
 url: https://github.com/web-infra-dev/rspack
 ---
@@ -76,7 +76,7 @@ A one-stop build analyzer for Rspack
 
 Rslib
 
-A library build tool powered by Rsbuild
+A library development tool powered by Rsbuild
 
 rspack-dev-server
 

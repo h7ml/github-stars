@@ -1,6 +1,6 @@
 ---
 project: logster
-stars: 206
+stars: 205
 description: Easily parsable single line, plain text and JSON logger for Plug and Phoenix applications
 url: https://github.com/navinpeiris/logster
 ---
@@ -131,6 +131,10 @@ You can then customize each option on a request basis by passing them as options
 
 plug Logster.ChangeConfig, status\_2xx\_level: :debug, headers: \["content-type", "x-request-id"\]
 
+or, for specific actions in the controller:
+
+plug Logster.ChangeConfig, \[status\_2xx\_level: :debug, headers: \["content-type", "x-request-id"\]\] when action in \[:index, :show\]
+
 This is specially useful for cases such as when you want to lower the log level for a healthcheck endpoint that gets hit every few seconds.
 
 ### Plug level
@@ -193,11 +197,11 @@ config :logster, headers: \["my-header-one", "my-header-two"\]
 One or more of the following fields can be optionally enabled through the `extra_fields` configuration option:
 
 -   host
--   query\_params
+-   query
 
 Example:
 
-config :logster, extra\_fields: \[:host, :query\_params\]
+config :logster, extra\_fields: \[:host, :query\]
 
 ### Excluding fields
 

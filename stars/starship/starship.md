@@ -1,6 +1,6 @@
 ---
 project: starship
-stars: 46587
+stars: 46725
 description: ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 url: https://github.com/starship/starship
 ---
@@ -124,6 +124,12 @@ Copr
 `dnf copr enable atim/starship`  
 `dnf install starship`
 
+Debian 13+
+
+Debian Main
+
+`apt install starship`
+
 Gentoo
 
 Gentoo Packages
@@ -145,6 +151,12 @@ openSUSE
 OSS
 
 `zypper in starship`
+
+Ubuntu 25.04+
+
+Ubuntu Universe
+
+`apt install starship`
 
 Void Linux
 

@@ -1,6 +1,6 @@
 ---
 project: chisel
-stars: 14043
+stars: 14080
 description: A fast TCP/UDP tunnel over HTTP
 url: https://github.com/jpillora/chisel
 ---

@@ -1,6 +1,6 @@
 ---
 project: cobalt
-stars: 26517
+stars: 27044
 description: best way to save what you love
 url: https://github.com/imputnet/cobalt
 ---
@@ -10,7 +10,8 @@ url: https://github.com/imputnet/cobalt
 best way to save what you love  
 cobalt.tools
 
-💬 community discord server 🐦 twitter
+💬 community discord server  
+🐦 twitter 🦋 bluesky
 
   
 
@@ -30,12 +31,11 @@ it also includes documentation in the docs tree:
 
 -   cobalt api documentation
 -   how to run a cobalt instance
--   how to protect a cobalt instance
--   how to configure a cobalt instance for youtube
+-   how to protect a cobalt instance (recommended if you host a public instance)
 
 ### thank you
 
-cobalt is sponsored by royalehosting.net and the main processing servers are hosted on their network. we really appreciate their kindness and support!
+cobalt is sponsored by royalehosting.net. a part of our infrastructure is hosted on their network. we really appreciate their kindness and support!
 
 ### ethics
 
@@ -45,7 +45,7 @@ cobalt is in no way a piracy tool and cannot be used as such. it can only downlo
 
 ### contributing
 
-thank you for considering making a contribution to cobalt! please check the contributing guidelines here before making a pull request.
+if you're considering contributing to cobalt, first of all, thank you! check the contribution guidelines here before getting started, they'll help you do your best right away.
 
 ### licenses
 

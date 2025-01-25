@@ -7,60 +7,121 @@ url: https://github.com/G4brym/R2-Explorer
 
 _A Google Drive Interface for your Cloudflare R2 Buckets!_
 
-* * *
+R2-Explorer
+===========
 
-**Documentation**: r2explorer.dev
+R2-Explorer brings a familiar Google Drive-like interface to your Cloudflare R2 storage buckets, making file management simple and intuitive.
 
-**Demo**: demo.r2explorer.dev
-
-**Source Code**: github.com/G4brym/R2-Explorer
-
-* * *
-
-Read this in other languages: Español, Português, Français
-
-Features
---------
-
--   Self-hosted/Deployed on your own Cloudflare Account
--   Receive and read emails (via Cloudflare Email Routing)
--   Security:
-    -   Basic Auth
-    -   Cloudflare Access
--   Managing files:
-    -   In-browser File preview (pdf, image, txt, markdown, csv, logpush...)
-    -   In-browser File editing
-    -   Drag-and-Drop upload
-    -   Upload files or folders with files
-    -   Multipart upload for big files
-    -   HTTP/Custom metadata edit
--   Organization:
-    -   Create folders
-    -   Upload/Rename/Download/Delete files
-    -   Right click in file for extra options
-
-Installation
-------------
-
-1.  Method: Github Action
-2.  Method: Create Cloudflare CLI
-3.  Method: Template
-
-Learn more about keeping your instance updated in the Updating your project docs.
-
-Coming soon
+Quick Links
 -----------
 
--   allow bucket names with spaces
--   Search files
--   Rename folders
--   Image thumbnail's ?
--   Object detection on images using workers-ai ?
--   Tooltip when hovering a file with absolute time in "x days time ago" format
--   support for responding to emails
--   More advanced file editing with more validations per file type
+-   📚 **Documentation**: r2explorer.dev
+-   🎮 **Live Demo**: demo.r2explorer.dev
+-   💻 **Source Code**: github.com/G4brym/R2-Explorer
 
-Known issues
+Available in multiple languages: English | Español | Português | Français
+
+Overview
+--------
+
+R2-Explorer transforms your Cloudflare R2 storage experience with a modern, user-friendly interface. It provides powerful file management capabilities while maintaining enterprise-grade security through Cloudflare's infrastructure.
+
+Key Features
 ------------
 
--   Email inline images and assets don't load when using basic auth
+-   **🔒 Security**
+    
+    -   Basic Authentication support
+    -   Cloudflare Access integration
+    -   Self-hosted on your Cloudflare account
+-   **📁 File Management**
+    
+    -   Drag-and-drop file upload
+    -   Folder creation and organization
+    -   Multi-part upload for large files
+    -   Right-click context menu for advanced options
+    -   HTTP/Custom metadata editing
+-   **👀 File Handling**
+    
+    -   In-browser file preview
+        -   PDF documents
+        -   Images
+        -   Text files
+        -   Markdown
+        -   CSV
+        -   Logpush files
+    -   In-browser file editing
+    -   Folder upload support
+-   **📧 Email Integration**
+    
+    -   Receive and process emails via Cloudflare Email Routing
+    -   View email attachments directly in the interface
+
+Installation Methods
+--------------------
+
+Choose the method that best suits your needs:
+
+1.  **GitHub Action (Recommended)**
+    
+    # Follow the guide at:
+    https://r2explorer.dev/getting-started/creating-a-new-project/#1st-method-github-action-recommended
+    
+2.  **Cloudflare CLI**
+    
+    # Follow the guide at:
+    https://r2explorer.dev/getting-started/creating-a-new-project/#2nd-method-create-cloudflare
+    
+3.  **Template Repository**
+    
+    # Use our template at:
+    https://github.com/G4brym/R2-Explorer/tree/main/template
+    
+
+For detailed instructions on maintaining and updating your installation, visit our update guide.
+
+Roadmap
+-------
+
+We're actively working on these exciting features:
+
+-   **File Management**
+    
+    -   Support for bucket names with spaces
+    -   File search functionality
+    -   Folder renaming capability
+    -   Image thumbnails generation
+-   **AI Integration**
+    
+    -   Object detection using workers-ai
+-   **User Experience**
+    
+    -   Enhanced timestamp tooltips
+    -   Email response capabilities
+    -   Advanced file type-specific editing
+
+Known Issues
+------------
+
+-   When using basic authentication, email inline images and assets don't load properly
+-   Additional issues can be found and reported on our GitHub Issues page
+
+Contributing
+------------
+
+We welcome contributions! Whether it's bug fixes, new features, or documentation improvements, please feel free to:
+
+1.  Fork the repository
+2.  Create a feature branch
+3.  Submit a Pull Request
+
+Support
+-------
+
+-   📚 Documentation: r2explorer.dev
+-   🐛 Issue Tracker: GitHub Issues
+
+License
+-------
+
+This project is licensed under the MIT License - see the LICENSE file for details.

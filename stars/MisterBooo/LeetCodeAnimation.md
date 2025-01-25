@@ -1,6 +1,6 @@
 ---
 project: LeetCodeAnimation
-stars: 75656
+stars: 75669
 description: Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）
 url: https://github.com/MisterBooo/LeetCodeAnimation
 ---

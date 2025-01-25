@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 38378
+stars: 38745
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---

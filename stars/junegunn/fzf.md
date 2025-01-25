@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 67225
+stars: 67395
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -57,6 +57,7 @@ Table of Contents
         -   `--tmux` mode
     -   Search syntax
     -   Environment variables
+    -   Customizing the look
     -   Options
     -   Demo
 -   Examples
@@ -72,6 +73,7 @@ Table of Contents
     -   Custom fuzzy completion
 -   Vim plugin
 -   Advanced topics
+    -   Customizing for different types of input
     -   Performance
     -   Executing external programs
     -   Turning into a different process
@@ -476,9 +478,48 @@ Warning
 
 The available options are described later in this document.
 
+### Customizing the look
+
+The user interface of fzf is fully customizable with a large number of configuration options. For a quick setup, you can start with one of the style presets — `default`, `full`, or `minimal` — using the `--style` option.
+
+fzf --style full \\
+    --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'
+
+Preset
+
+Screenshot
+
+`default`
+
+`full`
+
+`minimal`
+
+Here's an example based on the `full` preset:
+
+git ls-files | fzf --style full \\
+    --border --padding 1,2 \\
+    --border-label ' Demo ' --input-label ' Input ' --header-label ' File Type ' \\
+    --preview 'fzf-preview.sh {}' \\
+    --bind 'result:transform-list-label:
+        if \[\[ -z $FZF\_QUERY \]\]; then
+          echo " $FZF\_MATCH\_COUNT items "
+        else
+          echo " $FZF\_MATCH\_COUNT matches for \[$FZF\_QUERY\] "
+        fi
+        ' \\
+    --bind 'focus:transform-preview-label:\[\[ -n {} \]\] && printf " Previewing \[%s\] " {}' \\
+    --bind 'focus:+transform-header:file --brief {} || echo "No file selected"' \\
+    --bind 'ctrl-r:change-list-label( Reloading the list )+reload(sleep 2; git ls-files)' \\
+    --color 'border:#aaaaaa,label:#cccccc' \\
+    --color 'preview-border:#9999cc,preview-label:#ccccff' \\
+    --color 'list-border:#669966,list-label:#99cc99' \\
+    --color 'input-border:#996666,input-label:#ffcccc' \\
+    --color 'header-border:#6699cc,header-label:#99ccff'
+
 ### Options
 
-See the man page (`man fzf`) for the full list of options.
+See the man page (`fzf --man` or `man fzf`) for the full list of options.
 
 ### Demo
 
@@ -683,12 +724,35 @@ See README-VIM.md.
 Advanced topics
 ---------------
 
+### Customizing for different types of input
+
+Since fzf is a general-purpose text filter, its algorithm was designed to "generally" work well with any kind of input. However, admittedly, there is no true one-size-fits-all solution, and you may want to tweak the algorithm and some of the settings depending on the type of the input. To make this process easier, fzf provides a set of "scheme"s for some common input types.
+
+Scheme
+
+Description
+
+`--scheme=default`
+
+Generic scheme designed to work well with any kind of input
+
+`--scheme=path`
+
+Suitable for file paths
+
+`--scheme=history`
+
+Suitable for command history or any input where chronological ordering is important
+
+(See `fzf --man` for the details)
+
 ### Performance
 
 fzf is fast. Performance should not be a problem in most use cases. However, you might want to be aware of the options that can affect performance.
 
 -   `--ansi` tells fzf to extract and parse ANSI color codes in the input, and it makes the initial scanning slower. So it's not recommended that you add it to your `$FZF_DEFAULT_OPTS`.
 -   `--nth` makes fzf slower because it has to tokenize each line.
+-   A plain string `--delimiter` should be preferred over a regular expression delimiter.
 -   `--with-nth` makes fzf slower as fzf has to tokenize and reassemble each line.
 
 ### Executing external programs

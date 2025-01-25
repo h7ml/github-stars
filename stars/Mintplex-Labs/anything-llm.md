@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 30443
+stars: 30900
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
