@@ -1,6 +1,6 @@
 ---
 project: nocodb
-stars: 51054
+stars: 51202
 description: 🔥 🔥 🔥 Open Source Airtable Alternative
 url: https://github.com/nocodb/nocodb
 ---
@@ -43,6 +43,45 @@ docker run -d \\
   -e NC\_DB="pg://host.docker.internal:5432?u=root&p=password&d=d1" \\
   -e NC\_AUTH\_JWT\_SECRET="569a1821-0a93-45e8-87ab-eb857f20a010" \\
   nocodb/nocodb:latest
+
+Nix
+---
+
+```
+nix run github:nocodb/nocodb
+```
+
+NixOS
+-----
+
+To use NocoDB as a NixOS module, a flake.nix would be as follows:
+
+```
+{
+  description = "Bane's NixOS configuration";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nocodb.url = "github:nocodb/nocodb";
+  };
+
+  outputs = inputs@{ nixpkgs, nocodb, ... }: {
+    nixosConfigurations = {
+      hostname = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./configuration.nix
+          nocodb.nixosModules.nocodb
+
+          {
+            services.nocodb.enable = true;
+          }
+        ];
+      };
+    };
+  };
+}
+```
 
 Auto-upstall
 ------------

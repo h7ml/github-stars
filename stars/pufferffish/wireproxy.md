@@ -1,6 +1,6 @@
 ---
 project: wireproxy
-stars: 4708
+stars: 4731
 description: Wireguard client that exposes itself as a socks5 proxy
 url: https://github.com/pufferffish/wireproxy
 ---
@@ -40,14 +40,11 @@ TODO
 Usage
 =====
 
-```
-./wireproxy [-c path to config]
-```
+./wireproxy \[-c path to config\]
 
-```
-usage: wireproxy [-h|--help] [-c|--config "<value>"] [-s|--silent]
-                 [-d|--daemon] [-i|--info "<value>"] [-v|--version]
-                 [-n|--configtest]
+usage: wireproxy \[-h|\--help\] \[-c|\--config "<value>"\] \[-s|\--silent\]
+                 \[-d|\--daemon\] \[-i|\--info "<value>"\] \[-v|\--version\]
+                 \[-n|\--configtest\]
 
                  Userspace wireguard client for proxying
 
@@ -63,16 +60,17 @@ Arguments:
   -n  --configtest  Configtest mode. Only check the configuration file for
                     validity.
 
-```
-
 Build instruction
 =================
 
-```
 git clone https://github.com/octeep/wireproxy
 cd wireproxy
 make
-```
+
+Install
+=======
+
+go install github.com/pufferffish/wireproxy/cmd/wireproxy@v1.0.9 # or @latest
 
 Use with VPN
 ============
@@ -82,20 +80,19 @@ Instructions for using wireproxy with Firefox container tabs and auto-start on M
 Sample config file
 ==================
 
-```
-# The [Interface] and [Peer] configurations follow the same semantics and meaning
+# The \[Interface\] and \[Peer\] configurations follow the same semantics and meaning
 # of a wg-quick configuration. To understand what these fields mean, please refer to:
-# https://wiki.archlinux.org/title/WireGuard#Persistent_configuration
+# https://wiki.archlinux.org/title/WireGuard#Persistent\_configuration
 # https://www.wireguard.com/#simple-network-interface
-[Interface]
+\[Interface\]
 Address = 10.200.200.2/32 # The subnet should be /32 and /128 for IPv4 and v6 respectively
 # MTU = 1420 (optional)
-PrivateKey = uCTIK+56CPyCvwJxmU5dBfuyJvPuSXAq1FzHdnIxe1Q=
-# PrivateKey = $MY_WIREGUARD_PRIVATE_KEY # Alternatively, reference environment variables
+PrivateKey = uCTIK+56CPyCvwJxmU5dBfuyJvPuSXAq1FzHdnIxe1Q\=
+# PrivateKey = $MY\_WIREGUARD\_PRIVATE\_KEY # Alternatively, reference environment variables
 DNS = 10.200.200.1
 
-[Peer]
-PublicKey = QP+A67Z2UBrMgvNIdHv8gPel5URWNLS4B3ZQ2hQIZlg=
+\[Peer\]
+PublicKey = QP+A67Z2UBrMgvNIdHv8gPel5URWNLS4B3ZQ2hQIZlg\=
 # PresharedKey = UItQuvLsyh50ucXHfjF0bbR4IIpVBd74lwKc8uIPXXs= (optional)
 Endpoint = my.ddns.example.com:51820
 # PersistentKeepalive = 25 (optional)
@@ -104,7 +101,7 @@ Endpoint = my.ddns.example.com:51820
 # and it forwards any TCP traffic received to the specified target via wireguard.
 # Flow:
 # <an app on your LAN> --> localhost:25565 --(wireguard)--> play.cubecraft.net:25565
-[TCPClientTunnel]
+\[TCPClientTunnel\]
 BindAddress = 127.0.0.1:25565
 Target = play.cubecraft.net:25565
 
@@ -112,7 +109,7 @@ Target = play.cubecraft.net:25565
 # and it forwards any TCP traffic received to the specified target via local network.
 # Flow:
 # <an app on your wireguard network> --(wireguard)--> 172.16.31.2:3422 --> localhost:25545
-[TCPServerTunnel]
+\[TCPServerTunnel\]
 ListenPort = 3422
 Target = localhost:25545
 
@@ -123,11 +120,11 @@ Target = localhost:25545
 #    ssh -o ProxyCommand='wireproxy -c myconfig.conf' ssh.myserver.net
 # Flow:
 # Piped command -->(wireguard)--> ssh.myserver.net:22
-[STDIOTunnel]
+\[STDIOTunnel\]
 Target = ssh.myserver.net:22
 
 # Socks5 creates a socks5 proxy on your LAN, and all traffic would be routed via wireguard.
-[Socks5]
+\[Socks5\]
 BindAddress = 127.0.0.1:25344
 
 # Socks5 authentication parameters, specifying username and password enables
@@ -137,7 +134,7 @@ BindAddress = 127.0.0.1:25344
 #Password = ...
 
 # http creates a http proxy on your LAN, and all traffic would be routed via wireguard.
-[http]
+\[http\]
 BindAddress = 127.0.0.1:25345
 
 # HTTP authentication parameters, specifying username and password enables
@@ -145,69 +142,61 @@ BindAddress = 127.0.0.1:25345
 #Username = ...
 # Avoid using spaces in the password field
 #Password = ...
-```
 
 Alternatively, if you already have a wireguard config, you can import it in the wireproxy config file like this:
 
-```
 WGConfig = <path to the wireguard config>
 
 # Same semantics as above
-[TCPClientTunnel]
+\[TCPClientTunnel\]
 ...
 
-[TCPServerTunnel]
+\[TCPServerTunnel\]
 ...
 
-[Socks5]
+\[Socks5\]
 ...
-```
 
 Having multiple peers is also supported. `AllowedIPs` would need to be specified such that wireproxy would know which peer to forward to.
 
-```
-[Interface]
+\[Interface\]
 Address = 10.254.254.40/32
-PrivateKey = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+PrivateKey = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\=
 
-[Peer]
+\[Peer\]
 Endpoint = 192.168.0.204:51820
-PublicKey = YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY=
+PublicKey = YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY\=
 AllowedIPs = 10.254.254.100/32
 PersistentKeepalive = 25
 
-[Peer]
-PublicKey = ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ=
+\[Peer\]
+PublicKey = ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ\=
 AllowedIPs = 10.254.254.1/32, fdee:1337:c000:d00d::1/128
 Endpoint = 172.16.0.185:44044
 PersistentKeepalive = 25
 
-
-[TCPServerTunnel]
+\[TCPServerTunnel\]
 ListenPort = 5000
 Target = service-one.servicenet:5000
 
-[TCPServerTunnel]
+\[TCPServerTunnel\]
 ListenPort = 5001
 Target = service-two.servicenet:5001
 
-[TCPServerTunnel]
+\[TCPServerTunnel\]
 ListenPort = 5080
 Target = service-three.servicenet:80
-```
 
 Wireproxy can also allow peers to connect to it:
 
-```
-[Interface]
+\[Interface\]
 ListenPort = 5400
 ...
 
-[Peer]
-PublicKey = YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY=
+\[Peer\]
+PublicKey = YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY\=
 AllowedIPs = 10.254.254.100/32
 # Note there is no Endpoint defined here.
-```
 
 Health endpoint
 ===============
@@ -222,22 +211,20 @@ Currently two endpoints are implemented:
 
 For example:
 
-```
-[Interface]
+\[Interface\]
 PrivateKey = censored
 Address = 10.2.0.2/32
 DNS = 10.2.0.1
 CheckAlive = 1.1.1.1, 3.3.3.3
 CheckAliveInterval = 3
 
-[Peer]
+\[Peer\]
 PublicKey = censored
 AllowedIPs = 0.0.0.0/0
 Endpoint = 149.34.244.174:51820
 
-[Socks5]
+\[Socks5\]
 BindAddress = 127.0.0.1:25344
-```
 
 `/readyz` would respond with
 
@@ -252,13 +239,11 @@ BindAddress = 127.0.0.1:25344
 
 And for:
 
-```
-[Interface]
+\[Interface\]
 PrivateKey = censored
 Address = 10.2.0.2/32
 DNS = 10.2.0.1
 CheckAlive = 1.1.1.1
-```
 
 `/readyz` would respond with
 

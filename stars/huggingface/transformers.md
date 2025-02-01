@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 138008
+stars: 138415
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---
@@ -231,7 +231,7 @@ If you'd like to play with the examples or need the bleeding edge of the code an
 ```
 git clone https://github.com/huggingface/transformers.git
 cd transformers
-pip install
+pip install .
 ```
 
 ### With conda

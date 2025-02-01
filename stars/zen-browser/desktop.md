@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 22371
+stars: 23194
 description: 🌀 Experience tranquillity while browsing the web without people tracking you!
 url: https://github.com/zen-browser/desktop
 ---
@@ -16,7 +16,7 @@ Download • Website • Documentation • Release Notes
 
 Zen is currently built using firefox version `134.0.2`! 🚀
 
--   `Zen Twilight` - Is currently built using firefox version `RC 134.0.2`!
+-   `Zen Twilight` - Is currently built using firefox version `RC 135.0`!
 -   Check out the latest release notes!
 -   Part of our mission is to keep Zen up-to-date with the latest version of Firefox, so you can enjoy the latest features and security updates!
 
@@ -113,6 +113,7 @@ Zen couldn't be in its current state without the help of these amazing projects!
 
 -   Zen's default preferences are based on BetterFox
 -   Gradient image extracted from Arc Palette
+-   `icons.css` has been modified from Edge Firefox (MIT licensed file).
 
 ### 🖥️ Comparison with other browsers
 

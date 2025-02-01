@@ -1,6 +1,6 @@
 ---
 project: uFuzzy
-stars: 2770
+stars: 2779
 description: A tiny, efficient fuzzy search that doesn't suck
 url: https://github.com/leeoniya/uFuzzy
 ---
@@ -370,7 +370,7 @@ chars between each char within a term
 `[a-z\d']`
 
 `[a-z\d]` matches only alpha-numeric (case-insensitive)  
-`[\w-]` would match alpha-numeric, undercore, and hyphen  
+`[\w-]` would match alpha-numeric, underscore, and hyphen  
 
 `intraFilt`
 

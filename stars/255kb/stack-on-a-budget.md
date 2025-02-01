@@ -1,6 +1,6 @@
 ---
 project: stack-on-a-budget
-stars: 12183
+stars: 12189
 description: A collection of services with great free tiers for developers on a budget. Sponsored by Mockoon, the best mock API tool. https://mockoon.com
 url: https://github.com/255kb/stack-on-a-budget
 ---

@@ -1,6 +1,6 @@
 ---
 project: arangodb
-stars: 13652
+stars: 13666
 description: 🥑 ArangoDB is a native multi-model database with flexible data models for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions.
 url: https://github.com/arangodb/arangodb
 ---

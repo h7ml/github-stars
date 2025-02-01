@@ -1,6 +1,6 @@
 ---
 project: barcode-detector
-stars: 117
+stars: 118
 description: A Barcode Detection API polyfill that uses ZXing-C++ WebAssembly under the hood.
 url: https://github.com/Sec-ant/barcode-detector
 ---
@@ -8,9 +8,61 @@ url: https://github.com/Sec-ant/barcode-detector
 barcode-detector
 ================
 
-A Barcode Detection API polyfill that uses ZXing-C++ WebAssembly under the hood.
+A Barcode Detection API ponyfill/polyfill that uses ZXing-C++ WebAssembly under the hood.
 
-Supported barcode formats: `aztec`, `code_128`, `code_39`, `code_93`, `codabar`, `databar`, `databar_expanded`, `databar_limited`, `data_matrix`, `dx_film_edge`, `ean_13`, `ean_8`, `itf`, `maxi_code` (only generated ones, and no position info), `micro_qr_code`, `pdf417`, `qr_code`, `rm_qr_code`, `upc_a`, `upc_e`, `linear_codes` and `matrix_codes` (for convenience).
+Supported barcode formats:
+
+Linear Barcode Formats
+
+Matrix Barcode Formats
+
+Special Barcode Formats
+
+`codabar`
+
+`aztec`
+
+   `linear_codes`1
+
+`code_39`
+
+`data_matrix`
+
+   `matrix_codes`2
+
+`code_93`
+
+   `maxi_code`3
+
+   `any`4
+
+`code_128`
+
+`pdf417`
+
+`databar`
+
+`qr_code`
+
+`databar_limited`
+
+`micro_qr_code`
+
+`databar_expanded`
+
+`rm_qr_code`
+
+`dx_film_edge`
+
+`ean_8`
+
+`ean_13`
+
+`itf`
+
+`upc_a`
+
+`upc_e`
 
 Install
 -------
@@ -19,44 +71,54 @@ To install, run the following command:
 
 npm i barcode-detector
 
-Recommended Usage with Node + ESM
----------------------------------
+Usage
+-----
 
-This package can be imported in three different ways:
+### Ponyfill
 
-### Pure Module
-
-import { BarcodeDetector } from "barcode-detector/pure";
+import { BarcodeDetector } from "barcode-detector/ponyfill";
 
 To avoid potential namespace collisions, you can also rename the export:
 
-import { BarcodeDetector as BarcodeDetectorPolyfill } from "barcode-detector/pure";
+import { BarcodeDetector as BarcodeDetectorPonyfill } from "barcode-detector/ponyfill";
 
-This approach is beneficial when you want to use a package to detect barcodes without polluting `globalThis`, or when your runtime already provides an implementation of the Barcode Detection API, but you still want this package to function.
+A ponyfill is a module required to be explicitly imported without introducing side effects. Use this subpath if you want to avoid polluting the global object with the `BarcodeDetector` class, or if you intend to use the implementation provided by this package instead of the native one.
 
-### Side Effects
+### Polyfill
 
-import "barcode-detector/side-effects";
+import "barcode-detector/polyfill";
 
-This approach is beneficial when you need a drop-in polyfill. If there's already an implementation of Barcode Detection API on `globalThis`, this won't take effect (type declarations will, as we cannot optionally declare types). In such cases, please use the pure module instead.
+This subpath is used to polyfill the native `BarcodeDetector` class. It will automatically register the `BarcodeDetector` class in the global object **_if it's not already present_**.
 
-### Both
+Important
+
+The polyfill will opt in only if no `BarcodeDetector` is present in `globalThis`. It basically works like this:
+
+import { BarcodeDetector } from "barcode-detector/ponyfill";
+globalThis.BarcodeDetector ??= BarcodeDetector;
+
+Note that it **_doesn't_** check if the implementation is provided natively or by another polyfill. It also **_doesn't_** try to augment the existing implementation with all the barcode formats supported by this package. If you want all the features provided by this package, but you already have a native or another polyfilled `BarcodeDetector`, you should use the ponyfill approach. You can register it to the `globalThis` object manually if you want to.
+
+### Ponyfill + Polyfill
 
 import { BarcodeDetector } from "barcode-detector";
 
-This approach combines the pure module and side effects.
+This approach combines the ponyfill and polyfill approaches.
 
-Recommended Usage in Modern Browsers
-------------------------------------
+Note
+
+The `ponyfill` subpath was named `pure` and the `polyfill` subpath was named `side-effects` in early versions. They are no longer recommended for use and are considered deprecated. Please use the new subpaths as described above.
+
+### `<script type="module">`
 
 For modern browsers that support ES modules, this package can be imported via the `<script type="module">` tags:
 
-1.  Include side effects:
+1.  Include the polyfill:
     
     <!-- register -->
     <script
       type\="module"
-      src\="https://fastly.jsdelivr.net/npm/barcode-detector@2/dist/es/side-effects.min.js"
+      src\="https://fastly.jsdelivr.net/npm/barcode-detector@3/dist/es/polyfill.min.js"
     \></script\>
     
     <!-- use -->
@@ -67,7 +129,7 @@ For modern browsers that support ES modules, this package can be imported via th
 2.  Script scoped access:
     
     <script type\="module"\>
-      import { BarcodeDetector } from "https://fastly.jsdelivr.net/npm/barcode-detector@2/dist/es/pure.min.js";
+      import { BarcodeDetector } from "https://fastly.jsdelivr.net/npm/barcode-detector@3/dist/es/ponyfill.min.js";
       const barcodeDetector \= new BarcodeDetector();
     </script\>
     
@@ -77,160 +139,94 @@ For modern browsers that support ES modules, this package can be imported via th
     <script type\="importmap"\>
       {
         "imports": {
-          "barcode-detector/pure": "https://fastly.jsdelivr.net/npm/barcode-detector@2/dist/es/pure.min.js"
+          "barcode-detector/ponyfill": "https://fastly.jsdelivr.net/npm/barcode-detector@3/dist/es/ponyfill.min.js"
         }
       }
     </script\>
     
     <!-- script scoped access -->
     <script type\="module"\>
-      import { BarcodeDetector } from "barcode-detector/pure";
+      import { BarcodeDetector } from "barcode-detector/ponyfill";
       const barcodeDetector \= new BarcodeDetector();
     </script\>
     
 
-Usage with Legacy Compatibility
--------------------------------
-
-Starting from v1.2, this package supports IIFE and CJS build outputs for use cases that require legacy compatibility.
-
 ### IIFE
 
-For legacy browsers that lack support for module type `<script>` tags, or for userscripts, IIFE is the preferred choice. Upon executing the IIFE script, a variable named `BarcodeDetectionAPI` will be registered in the global.
+For legacy browsers or userscripts that lack support for `<script type="module">` tags, IIFE is the preferred choice. Upon executing the IIFE script, a variable named `BarcodeDetectionAPI` will be registered in the global `window` by `var` declaration.
 
 <!-- 
-  IIFE pure.js registers:
+  IIFE ponyfill.js registers:
   window.BarcodeDetectionAPI.BarcodeDetector
-  window.BarcodeDetectionAPI.setZXingModuleOverrides
+  window.BarcodeDetectionAPI.prepareZXingModule
   -->
-<script src\="https://fastly.jsdelivr.net/npm/barcode-detector@2/dist/iife/pure.min.js"\></script\>
+<script src\="https://fastly.jsdelivr.net/npm/barcode-detector@3/dist/iife/ponyfill.min.js"\></script\>
 
 <!-- 
-  IIFE side-effects.js registers:
+  IIFE polyfill.js registers:
   window.BarcodeDetector
-  window.BarcodeDetectionAPI.setZXingModuleOverrides
+  window.BarcodeDetectionAPI.prepareZXingModule
   -->
-<script src\="https://fastly.jsdelivr.net/npm/barcode-detector@2/dist/iife/side-effects.min.js"\></script\>
+<script src\="https://fastly.jsdelivr.net/npm/barcode-detector@3/dist/iife/polyfill.min.js"\></script\>
 
 <!-- 
   IIFE index.js registers:
   window.BarcodeDetector
   window.BarcodeDetectionAPI.BarcodeDetector
-  window.BarcodeDetectionAPI.setZXingModuleOverrides
+  window.BarcodeDetectionAPI.prepareZXingModule
   -->
-<script src\="https://fastly.jsdelivr.net/npm/barcode-detector@2/dist/iife/index.min.js"\></script\>
+<script src\="https://fastly.jsdelivr.net/npm/barcode-detector@3/dist/iife/index.min.js"\></script\>
 
-### CJS
+`prepareZXingModule`
+--------------------
 
-This package can also be consumed as a commonjs package:
+The core barcode reading functionality of this package is powered by `zxing-wasm`. Therefore, a `.wasm` binary file is fetched at runtime. By default, the `.wasm` serving path is initialized with a jsDelivr CDN URL. However, there're cases where this is not desired, such as the allowed serving path is white-listed by the Content Security Policy (CSP), or offline usage is required.
 
-1.  Vanilla Javascript:
-    
-    // src/index.js
-    const { BarcodeDetector } \= require("barcode-detector/pure");
-    
-2.  With Typescript:
-    
-    // src/index.ts
-    import { BarcodeDetector } from "barcode-detector/pure";
-    
-    `tsconfig.json`:
-    
-    {
-      "compilerOptions": {
-        "module": "CommonJS",
-        "moduleResolution": "Node",
-        "skipLibCheck": true
-      },
-      "include": \["src"\]
-    }
-    
+To customize the `.wasm` serving path, this package reexports `prepareZXingModule` along with `ZXING_WASM_VERSION` and `ZXING_WASM_SHA256` from `zxing-wasm`. For more details on how to use them, please check Configuring `.wasm` Serving and Controlling `.wasm` Instantiation Timing and Caching sections in the `zxing-wasm` repository.
 
-`setZXingModuleOverrides`
--------------------------
-
-In addition to `BarcodeDetector`, this package exports another function called `setZXingModuleOverrides`.
-
-This package employs zxing-wasm to enable the core barcode reading functionality. As a result, a `.wasm` binary file is fetched at runtime. The default fetch path for this binary file is:
-
-```
-https://fastly.jsdelivr.net/npm/zxing-wasm@<version>/dist/reader/zxing_reader.wasm
-```
-
-The `setZXingModuleOverrides` function allows you to govern where the `.wasm` binary is served from, thereby enabling offline use of the package, use within a local network, or within a site having strict CSP rules.
-
-For instance, should you want to inline this `.wasm` file in your build output for offline usage, with the assistance of build tools, you could try:
-
-// src/index.ts
-import wasmFile from "../node\_modules/zxing-wasm/dist/reader/zxing\_reader.wasm?url";
+An example usage to override the `.wasm` serving path with an `unpkg.com` CDN url is as follows:
 
 import {
-  setZXingModuleOverrides,
   BarcodeDetector,
-} from "barcode-detector/pure";
+  ZXING\_WASM\_VERSION,
+  prepareZXingModule,
+} from "barcode-detector/ponyfill";
 
-setZXingModuleOverrides({
-  locateFile: (path, prefix) \=> {
-    if (path.endsWith(".wasm")) {
-      return wasmFile;
-    }
-    return prefix + path;
+// Override the locateFile function
+prepareZXingModule({
+  overrides: {
+    locateFile: (path, prefix) \=> {
+      if (path.endsWith(".wasm")) {
+        return \`https://unpkg.com/zxing-wasm@${ZXING\_WASM\_VERSION}/dist/reader/${path}\`;
+      }
+      return prefix + path;
+    },
   },
 });
 
-const barcodeDetector \= new BarcodeDetector();
+// Now you can create a BarcodeDetector instance
+const barcodeDetector \= new BarcodeDetector({
+  formats: \["qr\_code"\],
+});
 
-// detect barcodes
-// ...
+Note
 
-Alternatively, the `.wasm` file could be copied to your dist folder to be served from your local server, without incorporating it into the output as an extensive base64 data URL.
-
-It's noteworthy that you'll always want to choose the correct version of the `.wasm` file, so the APIs exported by it are exactly what the js code expects.
-
-For more information on how to use this function, you can check the notes here and discussions here and here.
-
-This function is exported from all the subpaths, including the side effects.
+The `setZXingModuleOverrides` method is deprecated in favor of `prepareZXingModule`.
 
 API
 ---
 
 Please check the spec, MDN doc and Chromium implementation for more information.
 
-Lifecycle Events
-----------------
+An example usage is as follows:
 
-The `BarcodeDetector` provided by this package also extends class `EventTarget` and provides 2 lifecycle events: `load` and `error`. You can use `addEventListener` and `removeEventListener` to register and remove callback hooks on these events.
+import { BarcodeDetector } from "barcode-detector/ponyfill";
 
-### `load` Event
-
-The `load` event, which is a `CustomEvent`, will be dispatched on the successful instantiation of ZXing wasm module. For advanced usage, the instantiated module is passed as the `detail` parameter.
-
-import { BarcodeDetector } from "barcode-detector/pure";
-
-const barcodeDetector \= new BarcodeDetector();
-
-barcodeDetector.addEventListener("load", ({ detail }) \=> {
-  console.log(detail); // zxing wasm module
-});
-
-### `error` Event
-
-The `error` event, which is a `CustomEvent`, will be dispatched if the instantiation of ZXing wasm module is failed. An error is passed as the `detail` parameter.
-
-import { BarcodeDetector } from "barcode-detector/pure";
-
-const barcodeDetector \= new BarcodeDetector();
-
-barcodeDetector.addEventListener("error", ({ detail }) \=> {
-  console.log(detail); // an error
-});
-
-Example
--------
-
-import { BarcodeDetector } from "barcode-detector/pure";
+// check supported formats
+const supportedFormats \= await BarcodeDetector.getSupportedFormats();
 
 const barcodeDetector: BarcodeDetector \= new BarcodeDetector({
+  // make sure the formats are supported
   formats: \["qr\_code"\],
 });
 
@@ -243,6 +239,15 @@ barcodeDetector.detect(imageFile).then(console.log);
 License
 -------
 
-The source code in this repository, as well as the build output, except for the parts listed below, is licensed under the MIT license.
+The source code in this repository is licensed under the MIT license.
 
-Test samples and resources are collected from web-platform-tests/wpt, which is licensed under the 3-Clause BSD license.
+Footnotes
+---------
+
+1.  `linear_codes` is a shorthand for all linear barcode formats. ↩
+    
+2.  `matrix_codes` is a shorthand for all matrix barcode formats. ↩
+    
+3.  Detection support for `MaxiCode` requires a pure monochrome image that contains an unrotated and unskewed symbol, along with a sufficient white border surrounding it. ↩
+    
+4.  `any` is a shorthand for `linear_codes` and `matrix_codes`, i.e., all barcode formats. Note that you don't need to specify `any` in the `formats` option, as not providing the option also indicates detecting all barcode formats. ↩

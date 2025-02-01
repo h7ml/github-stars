@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 38745
+stars: 39143
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -56,7 +56,7 @@ Table of Contents
 Features
 --------
 
--   **Various models**: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Qwen2-VL, Yi, Gemma, Baichuan, ChatGLM, Phi, etc.
+-   **Various models**: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Qwen2-VL, DeepSeek, Yi, Gemma, ChatGLM, Phi, etc.
 -   **Integrated methods**: (Continuous) pre-training, (multimodal) supervised fine-tuning, reward modeling, PPO, DPO, KTO, ORPO, etc.
 -   **Scalable resources**: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
 -   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ, PiSSA and Agent tuning.
@@ -76,7 +76,7 @@ Qwen2.5 / Qwen2-VL / QwQ / QvQ / InternLM3 / MiniCPM-o-2.6
 
 Day 1
 
-Llama 3 / GLM-4 / PaliGemma2
+Llama 3 / GLM-4 / Mistral Small / PaliGemma2
 
 Benchmark
 ---------
@@ -93,15 +93,17 @@ Definitions
 Changelog
 ---------
 
+\[25/01/31\] We supported fine-tuning the **DeepSeek-R1** and **Qwen2.5-VL** model.
+
 \[25/01/15\] We supported **APOLLO** optimizer. See examples for usage.
 
 \[25/01/14\] We supported fine-tuning the **MiniCPM-o-2.6** and **MiniCPM-V-2.6** models. Thank @BUAADreamer's PR.
 
+Full Changelog
+
 \[25/01/14\] We supported fine-tuning the **InternLM3** models. Thank @hhaAndroid's PR.
 
 \[25/01/10\] We supported fine-tuning the **Phi-4** model.
-
-Full Changelog
 
 \[24/12/21\] We supported using **SwanLab** for experiment tracking and visualization. See this section for details.
 
@@ -234,7 +236,13 @@ deepseek
 
 DeepSeek 2.5/3
 
-236B/685B
+236B/671B
+
+deepseek3
+
+DeepSeek R1
+
+1.5B/7B/8B/14B/32B/70B/671B
 
 deepseek3
 
@@ -274,17 +282,11 @@ Index
 
 index
 
-InternLM2/InternLM2.5
+InternLM 2-3
 
-7B/20B
+7B/8B/20B
 
 intern2
-
-InternLM3
-
-8B
-
-intern3
 
 Llama
 
@@ -340,11 +342,23 @@ MiniCPM-o-2.6/MiniCPM-V-2.6
 
 minicpm\_v
 
+Ministral/Mistral-Nemo
+
+8B/12B
+
+ministral
+
 Mistral/Mixtral
 
 7B/8x7B/8x22B
 
 mistral
+
+Mistral Small
+
+24B
+
+mistral\_small
 
 OLMo
 
@@ -394,9 +408,9 @@ Qwen/QwQ (1-2.5) (Code/Math/MoE)
 
 qwen
 
-Qwen2-VL/QVQ
+Qwen2-VL/Qwen2.5-VL/QVQ
 
-2B/7B/72B
+2B/3B/7B/72B
 
 qwen2\_vl
 
@@ -649,9 +663,9 @@ Recommend
 
 python
 
-3.8
+3.9
 
-3.11
+3.10
 
 torch
 
@@ -663,19 +677,19 @@ transformers
 
 4.41.2
 
-4.43.4
+4.45.2
 
 datasets
 
 2.16.0
 
-2.20.0
+3.2.0
 
 accelerate
 
-0.30.1
+0.34.0
 
-0.32.0
+1.2.1
 
 peft
 
@@ -717,13 +731,13 @@ vllm
 
 0.4.3
 
-0.5.0
+0.6.6
 
 flash-attn
 
 2.3.0
 
-2.6.3
+2.7.2
 
 ### Hardware Requirement
 
@@ -902,7 +916,7 @@ pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/downl
 
 #### Install Flash Attention-2
 
-To enable FlashAttention-2 on the Windows platform, you need to install the precompiled `flash-attn` library, which supports CUDA 12.1 to 12.2. Please download the corresponding version from flash-attention based on your requirements.
+To enable FlashAttention-2 on the Windows platform, please use the script from flash-attention-windows-wheel to compile and install it by yourself.
 
 For Ascend NPU users
 
@@ -1280,7 +1294,7 @@ License
 
 This repository is licensed under the Apache-2.0 License.
 
-Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM2 / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3/Phi-4 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
+Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3/Phi-4 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
 
 Citation
 --------

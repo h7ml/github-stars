@@ -1,13 +1,13 @@
 ---
 project: simple-icons
-stars: 21758
+stars: 21814
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
 
 ### Simple Icons
 
-Over 3200 Free SVG icons for popular brands. See them all on one page at SimpleIcons.org. Contributions, corrections & requests can be made on GitHub.
+Over 3200 SVG icons for popular brands. See them all on one page at SimpleIcons.org. Contributions, corrections & requests can be made on GitHub.
 
   
 
@@ -184,7 +184,7 @@ Author
 
 License
 
-Simple Icons Version
+Simple Icons
 
 Angular package
 

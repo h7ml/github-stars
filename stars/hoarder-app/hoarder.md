@@ -1,11 +1,13 @@
 ---
 project: hoarder
-stars: 12287
+stars: 12667
 description: A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search
 url: https://github.com/hoarder-app/hoarder
 ---
 
 A self-hostable bookmark-everything app with a touch of AI for the data hoarders out there.
+
+> _Hoarder is an independent, non-commercial project. It is not affiliated with, endorsed by, or connected to Hordr.app or its owners._
 
 Features
 --------

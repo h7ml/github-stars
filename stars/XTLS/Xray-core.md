@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 26942
+stars: 27032
 description: Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -36,7 +36,9 @@ Project X
 
 Project X Channel
 
-Project VLESS (non-Chinese)
+Project VLESS (Русский)
+
+Project XHTTP (Persian)
 
 Installation
 ------------
@@ -114,6 +116,7 @@ Others that support VLESS, XTLS, REALITY, XUDP, PLUX...
     -   Shadowrocket
 -   Xray Tools
     -   xray-knife
+    -   xray-checker
 -   Xray Wrapper
     -   XTLS/libXray
     -   xtlsapi

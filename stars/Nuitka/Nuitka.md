@@ -1,6 +1,6 @@
 ---
 project: Nuitka
-stars: 12420
+stars: 12446
 description: Nuitka is a Python compiler written in Python.  It's fully compatible with Python 2.6, 2.7, 3.4-3.13. You feed it your Python app, it does a lot of clever things, and spits out an executable or extension module. 
 url: https://github.com/Nuitka/Nuitka
 ---
@@ -650,10 +650,10 @@ build:
          # many more Nuitka options available, see action doc, but it's best
          # to use nuitka-project: options in your code, so e.g. you can make
          # a difference for macOS and create an app bundle there.
-         onefile: true
+         mode: onefile
 
       - name: Upload Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
          name: ${{ runner.os }} Build
          path: | # match what's created for the 3 OSes

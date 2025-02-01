@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 114226
+stars: 114395
 description: Windows system utilities to maximize productivity
 url: https://github.com/microsoft/PowerToys
 ---
@@ -93,27 +93,27 @@ sha256 hash
 
 Per user - x64
 
-PowerToysUserSetup-0.87.1-x64.exe
+PowerToysUserSetup-0.88.0-x64.exe
 
-8EFAF47ED00BF230D2C2CC3CB6765C903A6A47E0AAED0BBB329CEF918207B486
+5BBA2E06603CAAE0269DFBC991095C6664FD934130335197C1BA3120E19B7CA3
 
 Per user - ARM64
 
-PowerToysUserSetup-0.87.1-arm64.exe
+PowerToysUserSetup-0.88.0-arm64.exe
 
-212FC8055789BD2DC4DE554B9AEE291A9C077907E263A302939266263A9D512B
+E79723F9F94068C699E01334C8CC0C85F37818EB4664FC772D2B545A1C37C3FA
 
 Machine wide - x64
 
-PowerToysSetup-0.87.1-x64.exe
+PowerToysSetup-0.88.0-x64.exe
 
-69AD65DDAC6436AEF292D2CC6AB1530021CE98083CB3F5FD3380A52A3B0DBB9A
+C43742DB7AA3F8B01FE7AE1DA591F0342767AFE5BBACB72F2968CE5E8EE1E3AC
 
 Machine wide - ARM64
 
-PowerToysSetup-0.87.1-arm64.exe
+PowerToysSetup-0.88.0-arm64.exe
 
-AEC9F1D02F1E23F0C1FCFDF95C337C962902394F44C0568012DF78BEDB45CF19
+AEE4A67643C886336F31F86C4117BA5F01BCA5E0E99FF34524217DC91AFA7132
 
 This is our preferred method.
 
@@ -160,119 +160,142 @@ What's Happening
 
 Our prioritized roadmap of features and utilities that the core team is focusing on.
 
-### 0.87 - December 2024 Update
+### 0.88 - January 2025 Update
 
 In this release, we focused on new features, stability, and improvements.
 
 **Highlights**
 
--   Advanced Paste has a new feature called "Advanced AI" that uses Semantic Kernel to allow setting up the orchestration of sequential clipboard transformations.
--   Workspaces supports Progressive Web Applications.
--   Workspaces has a new feature to move existing windows instead of creating new ones.
--   Mouse Jump added new settings to allow customization of screens pop-up. Thanks @mikeclayton!
--   New+ now works on Windows 10. Thanks @cgaarden!
--   Quick Accent allows selecting the character sets that should appear on the UI. Thanks @Sirozha1337!
+-   New utility: ZoomIt - a screen zoom, annotation, and recording tool for technical presentations and demos. This utility from Sysinternals has had its source code released and included in PowerToys. ZoomIt will still continue to be updated and shipped by Sysinternals for users who prefer to have it as a standalone utility outside of PowerToys. Thanks @markrussinovich, @foxmsft and @johnstep for contributing the original code and reviewing the PowerToys integration!
+-   Video Conference Mute has been deprecated and was removed from PowerToys.
+-   .Net 9.0.1 fixed many issue in WPF, improving stability for PowerToys Run.
+
+### General
+
+-   Applied a workaround for the Windows App SDK applications title bar override that was causing accent color to not be shown on the top bar of applications on Windows 10. Thanks @pingzing!
+-   Improved the "admin application running" notification checking logic to be less demanding on resources. Thanks @davidegiacometti!
+-   Fixed an issue causing many utilities to crash when the GPO to disable data diagnostics was applied.
 
 ### Advanced Paste
 
--   Added a new optional feature allowing using AI to set up the orchestration of sequential clipboard transformations.
+-   Fixed a crash when the application was exiting. (This was a hotfix for 0.87)
+-   Added a Json format validation step to verify if a conversion to Json should be applied.
+-   Fixed accessibility issues when using a screen reader.
+-   Added support for all BitmapDecoder supported image file types to the Image to Text functionality. Thanks @daverayment!
+-   Fixed an issue causing Advanced Paste initialization errors to hang the PowerToys main process.
 
-### Awake
+### FancyZones
 
--   Initialization, logging and tray icon setup improvements. Thanks @dend!
+-   Removed Workspaces Editor from the exclusions list so it can be snapped by FancyZones.
 
-### File Explorer add-ons
+### Keyboard Manager
 
--   Preview Pane extensions now use the PerMonitorV2 DPI mode to fix errors on different scales. Thanks @davidegiacometti!
-
-### Keyboard Manager.
-
--   Added labels to the IME On, IME Off keys. Thanks @kit494way!
--   Fixed an issue that caused the Shift key to remain stuck if a numpad key was mapped to the Shift key.
+-   Added an option to make a shortcut remapping only trigger with exact modifiers.
 
 ### Monaco Preview
 
--   Added support for .ahk files to be shown as a plaintext file in Peek and File Explorer add-ons. Thanks @daverayment!
--   Added support for .ion files to be shown as a plaintext file in Peek and File Explorer add-ons. Thanks @octastylos-pseudodipteros!
--   Added support for syntax highlighting for .srt files in Peek and File Explorer add-ons. Thanks @PesBandi!
+-   Added support for .resx and .resw files in Peek and File Explorer add-ons. Thanks @asif4318!
+-   Added a setting to make the code minimap toggle-able in Peek and File Explorer add-ons. Thanks @PesBandi!
+-   Fixed an issue causing Json format preview setting to not be applied correctly.
+-   Fixed an issue causing the wrong Monaco assets to be used at runtime.
 
-### Mouse Jump
+### Mouse Without Borders
 
--   Allow customizing the appearance of the UI of the Mouse Jump pop-up. Thanks @mikeclayton!
+-   Fixed an issue causing clipboard to stop working after going through a UAC screen when using the Service mode. Thanks @YDKK!
 
 ### New+
 
--   Added support for Windows 10. Thanks @cgaarden!
--   Fixed an issue causing the renaming of new files to not trigger some times. Thanks @cgaarden!
--   Updated the New+ icons. Thanks @niels9001!
+-   Fixed an issue causing New+ to override the New file or folder creation from the File Explorer Ribbon buttons or keyboard shortcuts on Windows 10.
+-   When creating file or folders through a template, they should now have the current time as the last modified date. Thanks @cgaarden!
 
 ### Peek
 
--   Peek now checks local capabilities to decide what image formats Image Previewer is able to support. Thanks @daverayment!
--   Fixed an issue causing the Code Files Previewer to not load correctly under certain conditions. Thanks @daverayment!
--   Refactored, improved and fixed logging when loading the user settings file. Thanks @daverayment!
+-   Fixed an issue causing Peek to not appear if it was previously minimized. Thanks @asif4318!
 
 ### PowerToys Run
 
--   Added a scoring function for proper ordering of the WindowWalker plugin results. Thanks @andbartol!
--   Added UUIDv7 support to the ValueGenerator plugin. Thanks @frederik-hoeft!
--   The calculator plugin now allows scientific notation numbers with a lowercase 'e'. Thanks @PesBandi!
--   Ported the UI from WPF-UI to .NET 9 WPF, to fix "Desktop composition is disabled" crashes.
+-   Fixed a transparent border issue on Windows 10. (This was a hotfix for 0.87)
+-   Fixed a crash in the OneNote plugin after the .Net 9 update. (This was a hotfix for 0.87)
+-   Fixed an issue causing the Calculator plugin to return division by zero errors when dividing by hexadecimal numbers. Thanks @plante-msft!
+-   Updated the Calculator plugin Mages library to 3.0.0 and added support for the random integer function. Thanks @htcfreek!
+-   Improved handling of non-base 10 numbers to add support for binary and octal numbers in the Calculator plugin. Thanks @PesBandi!
+-   Added a setting to enable selection of which units to use for trigonometric functions. Thanks @OldUser101!
+-   Fixed a .NET 9 regression causing the PowerToys Run dialog to not be draggable. Thanks @davidegiacometti!
+-   Added context menu buttons for the VS Code Workspaces plugin, for copying the path, opening in File Explorer or in Console. Thanks @programming-with-ia!
+-   Added some telemetry to gather data on which hotkey is used to trigger PowerToys Run.
+-   Removed the workarounds that were in place to fix some WPF issues that were fixed in .NET 9.0.1.
+-   Fixed a typo in the Value Generator plugin messages. Thanks @OldUser101!
 
 ### Quick Accent
 
--   Added a setting to allow selecting which character sets to show. Thanks @Sirozha1337!
+-   Added the ć character to the Slovenian character set. Thanks @dsoklic!
+-   Added the Proto-Indo-European character set.
 
-### Screen Ruler
+### Registry Preview
 
--   Added a Setting to also allow showing measurements in inches, centimeters or millimeters. Thanks @Sophanatprime!
+-   Fixed an issue causing line breaks to not be parsed correctly for REG\_MULTI\_SZ values. Thanks @htcfreek!
+-   Added a tooltip to values to show multiple lines of data. Thanks @htcfreek!
+-   Added a context menu to enable copying type, value and key paths. Thanks @htcfreek!
 
 ### Settings
 
--   Fixed an issue causing all the links to milestones in the "What's new?" OOBE page to point to the same milestone.
--   Removed extra space from the Welcome page. Thanks @agarwalishita!
--   Updated left navigation bar icons. Thanks @niels9001!
--   Fixed accessibility issues in the dashboard page. Thanks @davidegiacometti!
+-   Made the Advanced Paste paste OpenAI configuration modal scrollable.
+-   Fixed the text on the Quick Accent page to refer to "character sets" instead of "character set". Thanks @PesBandi!
+-   Added the plugin's dll file version and website to the PowerToys Run plugin settings. Thanks @htcfreek!
+-   Added the Workspaces file to the list of files that gets backed up by the Back up / Restore functionality.
+-   Fixed an issue causing some of the selected character sets to be unselected when opening the character set expander in the Quick Accent page.
+-   Improved GPO logic, icons, info bar layout and enabled state of all modules settings pages. Thanks @htcfreek!
+-   Fixed some accessibility issues and refactored and improved quality of the code related to image sizes in the Image Resizer page. Thanks @daverayment!
+-   Fixed mentions of "Backup" to "Back up" when it should be used as a verb. Thanks @JackStuart!
+-   Added a "New" label to Settings to better highlight new utilities that get released. Thanks @niels9001 for the UI tweaks!
+
+### Text Extractor
+
+-   Fixed many accessibility and UI issues on the overlay UI. Thanks @davidegiacometti!
 
 ### Workspaces
 
--   Added support for Progressive Web Applications to Workspaces.
--   Implemented a feature to move existing windows instead of creating new ones.
--   Fixed a crash when opening the workspaces editor that was caused by passing incorrect encoder parameters when saving Bitmap files.
--   Workspaces editor position is now saved so that we can start it at the same position when we open it again.
--   Fixed an issue causing many instances of the same application to be put in the same position instead of the intended position due to timer issues.
--   Fixed detection of exact application version when many versions of the same application are installed.
+-   Fixed an issue causing the Workspaces Editor to start outside of visible desktop area.
+-   Fixed an issue to maintain command line arguments for applications when trying using the "Launch and Edit" feature.
+
+### Video Conference Mute
+
+-   The module has been deprecated in 0.88.0, being removed from PowerToys.
+
+### ZoomIt
+
+-   New utility: Zoom It - a screen zoom, annotation, and recording tool for technical presentations and demos. This utility from Sysinternals has had its source code released and included in PowerToys. ZoomIt will still continue to be updated and shipped by Sysinternals for users who prefer to have it as a standalone utility outside of PowerToys. Thanks @markrussinovich, @foxmsft and @johnstep for contributing the original code and reviewing the PowerToys integration!
 
 ### Documentation
 
--   Improved language in CONTRIBUTE.md. Thanks @sanskaarz!
--   Added Bilibili plugin mention to thirdPartyRunPlugins.md. Thanks @Whuihuan!
--   Added CanIUse and TailwindCSS plugins mention to thirdPartyRunPlugins.md. Thanks @skttl!
--   Added HttpStatusCodes plugin mention to thirdPartyRunPlugins.md. Thanks @grzhan!
--   Updated COMMUNITY.md with more contributors.
+-   Updated the PowerToys Run documentation to reflect documentation pages for new plugins.
+-   Added YubicoOauthOTP plugin mention to thirdPartyRunPlugins.md. Thanks @dlnilsson!
 
 ### Development
 
--   Upgraded to .NET 9. Thanks @snickler!
--   Fixed building on Visual Studio 17.12.
--   Upgraded the System.IO.Abstractions dependency to 21.0.29. Thanks @davidegiacometti!
--   Upgraded the WindowsAppSDK dependency to 1.6.241114003. Thanks @shuaiyuanxx!
--   Upgraded the MSTest dependency to 3.6.3. Thanks @Youssef1313!
--   Upgraded the check-spelling CI dependency to 0.0.24 and fixed related spell checking issues. Thanks @jsoref!
--   Removed duplicate names from the spellcheck allowed names file. Thanks @htcfreek!
--   Improved logging of asynchronous methods call stacks when logging an error.
--   Created a MSBuild props file to be imported by other projects to enable AOT support.
--   Made the Peek utility source code AOT compatible.
--   Updated .editorconfig rules to relax squiggly IDE errors in Visual Studio 17.12. Thanks @snickler!
--   Moved Xaml.Styler from the root to the src folder.
+-   Added fuzz testing for AdvancedPaste, with a new pipeline for OneFuzz.
+-   Added a new CI pipeline to build with the latest WindowsAppSDK.
+-   Added a new CI pipeline to build with the latest webview2 from Edge Canary.
+-   Made the HostsUILib project AOT compatible. Thanks @snickler for your help reviewing this!
+-   Made FilePreviewCommon and MarkdownPreviewHandler AOT compatible. Thanks @snickler for your help reviewing this!
+-   Made the PowerAccent.Core project AOT compatible. Thanks @snickler for your help reviewing this!
+-   Cleaned up some code for AOT compatibility in the Advanced Paste module. Thanks @snickler for your help reviewing this!
+-   Removed the prerelease flag from the PowerToys development DSC configurations. Thanks @denelon!
+-   Improved Dart CI reliability by improving error messages and retrying to the step that installs the correct dotnet version.
+-   Improved Dart CI reliability by fixing retries when downloading the localization files.
+-   Improved Dart CI build times by removing the steps to build the no longer needed abstracted utility nuget packages.
+-   Removed the solution.props file from the solution root.
+-   Fixed PowerToys Run Calculator plugin tests when running in systems with different number formats. Thanks @htcfreek!
+-   Updated many .NET packages from .NET 9.0.0 to 9.0.1 for security fixes. Thanks @snickler!
+-   Refactored the Mouse Without Borders Common.Log.cs and Common.Receiver.cs files. Thanks @mikeclayton!
 
-#### What is being planned for version 0.88
+#### What is being planned for version 0.89
 
-For v0.88, we'll work on the items below:
+For v0.89, we'll work on the items below:
 
 -   Stability / bug fixes
 -   New module: File Actions Menu
--   Integrate Sysinternals ZoomIt
+-   PowerToys Run v2 development work
 
 PowerToys Community
 -------------------

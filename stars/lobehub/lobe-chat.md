@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 52161
+stars: 52577
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -226,6 +226,12 @@ Recent Submits
 
 Description
 
+SUNO Song Creation Assistant  
+By **sqkkyzx** on **2025-01-26**
+
+Can generate SUNO song creation parameters based on user needs  
+`lyric-creation` `music-style` `arrangement` `parameter-settings`
+
 The Great Biggus Dickus  
 By **CGitwater** on **2025-01-24**
 
@@ -238,18 +244,13 @@ By **patricleehua** on **2025-01-24**
 Skilled in the rapid production and optimization of high-quality PPTs  
 `ppt-production` `design` `consulting` `content-optimization` `user-support`
 
-English Tutor  
-By **GEORGE-Ta** on **2025-01-24**
+OCR Document Transcription Assistant  
+By **Liangpi000** on **2025-01-24**
 
-An English tutor with a proud and disdainful attitude, skilled in sarcastic corrections of spoken English.  
-`english-teaching` `speaking` `role-play` `education` `sarcasm`
+Specializes in document content transcription and markdown formatting  
+`document-generation` `markdown` `formatting` `transcription` `task-guidance`
 
-Academic Revision Specialist  
-By **sunrisewestern** on **2025-01-24**
-
-Skilled in academic writing and paper revision  
-
-> 📊 Total agents: **466**
+> 📊 Total agents: **471**
 
 ### `9` Support Local / Remote Database
 

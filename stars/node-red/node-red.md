@@ -1,6 +1,6 @@
 ---
 project: node-red
-stars: 20282
+stars: 20314
 description: Low-code programming for event-driven applications
 url: https://github.com/node-red/node-red
 ---

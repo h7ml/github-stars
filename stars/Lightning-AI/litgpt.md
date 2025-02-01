@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 11267
+stars: 11341
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -77,7 +77,7 @@ Author
 
 Reference
 
-Llama 3, 3.1, 3.2
+Llama 3, 3.1, 3.2, 3.3
 
 1B, 3B, 8B, 70B, 405B
 
@@ -92,22 +92,6 @@ Code Llama
 Meta AI
 
 Rozière et al. 2023
-
-Mixtral MoE
-
-8x7B, 8x22B
-
-Mistral AI
-
-Mistral AI 2023
-
-Mistral
-
-7B, 123B
-
-Mistral AI
-
-Mistral AI 2023
 
 CodeGemma
 
@@ -125,13 +109,37 @@ Google
 
 Google Team, Google Deepmind
 
-Phi 3 & 3.5
+Phi 4
 
-3.8B
+14B
 
-Microsoft
+Microsoft Research
 
 Abdin et al. 2024
+
+Qwen2.5
+
+0.5B, 1.5B, 3B, 7B, 14B, 32B, 72B
+
+Alibaba Group
+
+Qwen Team 2024
+
+Qwen2.5 Coder
+
+0.5B, 1.5B, 3B, 7B, 14B, 32B
+
+Alibaba Group
+
+Hui, Binyuan et al. 2024
+
+R1 Distill Llama
+
+8B, 70B
+
+DeepSeek AI
+
+DeepSeek AI 2025
 
 ...
 
@@ -376,6 +384,14 @@ QwQ
 Alibaba Group
 
 Qwen Team 2024
+
+R1 Distill Llama
+
+8B, 70B
+
+DeepSeek AI
+
+DeepSeek AI 2025
 
 SmolLM2
 

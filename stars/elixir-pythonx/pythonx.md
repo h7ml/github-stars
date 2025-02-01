@@ -1,6 +1,6 @@
 ---
 project: pythonx
-stars: 43
+stars: 45
 description: Python Interpreter in Elixir
 url: https://github.com/elixir-pythonx/pythonx
 ---

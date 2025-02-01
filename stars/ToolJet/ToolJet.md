@@ -1,6 +1,6 @@
 ---
 project: ToolJet
-stars: 33727
+stars: 33947
 description: Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀
 url: https://github.com/ToolJet/ToolJet
 ---
@@ -37,8 +37,6 @@ Quickstart
 ----------
 
 The easiest way to get started with ToolJet is by creating a ToolJet Cloud account. ToolJet Cloud offers a hosted solution of ToolJet. If you want to self-host ToolJet, kindly proceed to deployment documentation.
-
-You can deploy ToolJet on DigitalOcean using one-click-deployment.
 
 ### Try using Docker
 

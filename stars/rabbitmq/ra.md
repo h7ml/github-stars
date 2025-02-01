@@ -1,6 +1,6 @@
 ---
 project: ra
-stars: 841
+stars: 842
 description: A Multi-Raft implementation for Erlang and Elixir that strives to be efficient and make it easier to use multiple Raft clusters in a single system.
 url: https://github.com/rabbitmq/ra
 ---
@@ -36,8 +36,8 @@ Supported Erlang/OTP Versions
 
 Ra supports the following Erlang/OTP versions:
 
+-   `27.x`
 -   `26.x`
--   `25.x`
 
 Modern Erlang releases provide distribution traffic fragmentation which algorithms such as Raft significantly benefit from.
 

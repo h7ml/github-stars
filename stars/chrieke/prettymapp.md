@@ -1,6 +1,6 @@
 ---
 project: prettymapp
-stars: 2419
+stars: 2422
 description: 🖼️ Create beautiful maps from OpenStreetMap data in a streamlit webapp
 url: https://github.com/chrieke/prettymapp
 ---

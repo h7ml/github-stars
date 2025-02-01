@@ -1,6 +1,6 @@
 ---
 project: ShapeShifter
-stars: 3987
+stars: 3990
 description: SVG icon animation tool for Android, iOS, and the web
 url: https://github.com/alexjlockwood/ShapeShifter
 ---

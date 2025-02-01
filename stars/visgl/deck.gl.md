@@ -1,6 +1,6 @@
 ---
 project: deck.gl
-stars: 12414
+stars: 12442
 description: WebGL2 powered visualization framework
 url: https://github.com/visgl/deck.gl
 ---

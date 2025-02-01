@@ -1,7 +1,7 @@
 ---
 project: caddy-waf
-stars: 352
-description: Caddy WAF (regex rule-based filtering, IP and DNS filtering, rate limiting, GeoIP, Tor blocking)
+stars: 370
+description: Caddy WAF (Regex Rules, IP and DNS filtering, Rate Limiting, GeoIP, Tor, Anomaly Detection)
 url: https://github.com/fabriziosalmi/caddy-waf
 ---
 
@@ -25,6 +25,8 @@ A robust, highly customizable, and feature-rich **Web Application Firewall (WAF)
 -   **Dynamic Config Reloads:** Seamless updates without restarts.
 -   **File Watchers:** Automatic reloads on rule/blacklist changes.
 
+_Simple at a glance UI :)_
+
 🚀 Quick Start
 --------------
 
@@ -33,15 +35,15 @@ curl -fsSL -H "Pragma: no-cache" https://raw.githubusercontent.com/fabriziosalmi
 **Example Output:**
 
 ```
-INFO    Provisioning WAF middleware     {"log_level": "info", "log_path": "debug.json", "log_json": true, "anomaly_threshold": 10}
-INFO    http.handlers.waf       Updated Tor exit nodes in IP blacklist  {"count": 1077}
-INFO    WAF middleware version  {"version": "v0.0.0-20250115164938-7f35253f2ffc"}
-INFO    Rate limit configuration        {"requests": 100, "window": 10, "cleanup_interval": 300, "paths": ["/api/v1/.*", "/admin/.*"], "match_all_paths": false}
-WARN    GeoIP database not found. Country blocking/whitelisting will be disabled        {"path": "GeoLite2-Country.mmdb"}
-INFO    IP blacklist loaded successfully        {"file": "ip_blacklist.txt", "valid_entries": 3, "total_lines": 3}
-INFO    DNS blacklist loaded successfully       {"file": "dns_blacklist.txt", "valid_entries": 2, "total_lines": 2}
-INFO    Rules loaded    {"file": "rules.json", "total_rules": 70, "invalid_rules": 0}
-INFO    WAF middleware provisioned successfully
+2025/01/29 13:50:49.791 INFO    Provisioning WAF middleware     {"log_level": "info", "log_path": "debug.json", "log_json": true, "anomaly_threshold": 10}
+2025/01/29 12:50:49.918 INFO    http.handlers.waf       Tor exit nodes updated  {"count": 1093}
+2025/01/29 13:50:49.918 INFO    WAF middleware version  {"version": "v0.0.0-20250128221917-c99e875aaf7c"}
+2025/01/29 13:50:49.918 INFO    Rate limit configuration        {"requests": 100, "window": 10, "cleanup_interval": 300, "paths": ["/api/v1/.*", "/admin/.*"], "match_all_paths": false}
+2025/01/29 13:50:49.918 WARN    GeoIP database not found. Country blocking/whitelisting will be disabled        {"path": "GeoLite2-Country.mmdb"}
+2025/01/29 13:50:50.359 INFO    IP blacklist loaded     {"path": "ip_blacklist.txt", "valid_entries": 223770, "invalid_entries": 0, "total_lines": 223770}
+2025/01/29 13:50:50.489 INFO    DNS blacklist loaded    {"path": "dns_blacklist.txt", "valid_entries": 854479, "total_lines": 854479}
+2025/01/29 13:50:50.490 INFO    WAF rules loaded successfully   {"total_rules": 33, "rule_counts": "Phase 1: 17 rules, Phase 2: 16 rules, Phase 3: 0 rules, Phase 4: 0 rules, "}
+2025/01/29 13:50:50.490 INFO    WAF middleware provisioned successfully
 ```
 
 📑 Table of Contents

@@ -1,6 +1,6 @@
 ---
 project: shellcheck
-stars: 36819
+stars: 36847
 description: ShellCheck, a static analysis tool for shell scripts
 url: https://github.com/koalaman/shellcheck
 ---

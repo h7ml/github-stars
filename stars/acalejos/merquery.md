@@ -1,6 +1,6 @@
 ---
 project: merquery
-stars: 233
+stars: 235
 description: Interactive HTTP Client for Livebook w/ power-ups
 url: https://github.com/acalejos/merquery
 ---
