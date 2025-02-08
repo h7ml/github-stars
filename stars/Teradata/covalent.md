@@ -1,6 +1,6 @@
 ---
 project: covalent
-stars: 2231
+stars: 2232
 description: Covalent - A Design System for Teradata
 url: https://github.com/Teradata/covalent
 ---
@@ -36,7 +36,7 @@ Setup
 Angular Support
 ---------------
 
-Certain covalent version are meant for certain angular versions, and here is the matrix:
+Certain versions of Covalent are designed to work with specific versions of Angular. Below is a matrix that outlines these compatibility details:
 
 Covalent
 
@@ -69,6 +69,14 @@ Angular
 8.X
 
 17.X
+
+9.X
+
+18.X
+
+10.X
+
+19.X
 
 Browser Support
 ---------------

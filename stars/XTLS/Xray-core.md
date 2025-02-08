@@ -1,7 +1,7 @@
 ---
 project: Xray-core
-stars: 27032
-description: Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+stars: 27128
+description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens.
 url: https://github.com/XTLS/Xray-core
 ---
 
@@ -89,6 +89,8 @@ GUI Clients
     -   PassWall, PassWall 2
     -   ShadowSocksR Plus+
     -   luci-app-xray (openwrt-xray)
+-   Asuswrt-Merlin
+    -   XRAYUI
 -   Windows
     -   v2rayN
     -   Furious

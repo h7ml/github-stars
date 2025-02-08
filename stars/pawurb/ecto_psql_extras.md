@@ -1,6 +1,6 @@
 ---
 project: ecto_psql_extras
-stars: 374
+stars: 382
 description: Ecto PostgreSQL database performance insights. Locks, index usage, buffer cache hit ratios, vacuum stats and more.
 url: https://github.com/pawurb/ecto_psql_extras
 ---
@@ -100,6 +100,49 @@ Keep reading to learn about methods that `diagnose` uses under the hood.
 
 Available methods
 -----------------
+
+### `missing_fk_indexes`
+
+This method lists columns likely to be foreign keys (i.e. column name ending in `_id` and related table exists) which don't have an index. It's recommended to always index foreign key columns because they are used for searching relation objects.
+
+You can add indexes on the columns returned by this query and later check if they are receiving scans using the unused\_indexes method. Please remember that each index decreases write performance and autovacuuming overhead, so be careful when adding multiple indexes to often updated tables.
+
+```
+EctoPSQLExtras.missing_fk_indexes(YourApp.Repo, args: [ table_name: "users" ])
+
++---------------------------------+
+| Missing foreign key indexes     |
++-------------------+-------------+
+| table             | column_name |
++-------------------+-------------+
+| feedbacks         | team_id     |
+| votes             | user_id     |
++-------------------+-------------+
+
+```
+
+`table_name` argument is optional, if omitted, the method will display missing fk indexes for all the tables.
+
+`missing_fk_constraints`
+------------------------
+
+Similarly to the previous method, this one shows columns likely to be foreign keys that don't have a corresponding foreign key constraint. Foreign key constraints improve data integrity in the database by preventing relations with nonexisting objects. You can read more about the benefits of using foreign keys in this blog post.
+
+```
+EctoPSQLExtras.missing_fk_constraints(YourApp.Repo, args: [ table_name: "users" ])
+
++---------------------------------+
+| Missing foreign key constraints |
++-------------------+-------------+
+| table             | column_name |
++-------------------+-------------+
+| feedbacks         | team_id     |
+| votes             | user_id     |
++-------------------+-------------+
+
+```
+
+`table_name` argument is optional, if omitted, method will display missing fk constraints for all the tables.
 
 ### `cache_hit`
 

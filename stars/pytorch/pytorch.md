@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 86398
+stars: 86624
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---

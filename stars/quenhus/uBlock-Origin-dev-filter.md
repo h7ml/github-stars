@@ -1,6 +1,6 @@
 ---
 project: uBlock-Origin-dev-filter
-stars: 2297
+stars: 2295
 description: Filters to block and remove copycat-websites from DuckDuckGo, Google and other search engines. Specific to dev websites like StackOverflow or GitHub.
 url: https://github.com/quenhus/uBlock-Origin-dev-filter
 ---

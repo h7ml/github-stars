@@ -1,6 +1,6 @@
 ---
 project: shaka-player
-stars: 7324
+stars: 7334
 description: JavaScript player library / DASH & HLS client / MSE-EME player
 url: https://github.com/shaka-project/shaka-player
 ---
@@ -873,6 +873,16 @@ VR modes supported:
 NOTES:
 
 -   VR is only supported for clear streams or HLS-AES stream. DRM prevents access to the video pixels for transformation.
+
+Builds
+------
+
+Shaka currently provides the following versions:
+
+-   Complete build with UI (`shaka-player.ui.js`)
+-   Complete build without UI (`shaka-player.compiled.js`)
+-   DASH build without UI, Cast and Offline (`shaka-player.dash.js`)
+-   HLS build without UI, Cast and Offline (`shaka-player.hls.js`)
 
 Documentation & Important Links
 -------------------------------

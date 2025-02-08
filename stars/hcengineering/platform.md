@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 18766
+stars: 18897
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -69,6 +69,18 @@ Fast start
 
 sh ./scripts/fast-start.sh
 
+Branches & Contributing
+-----------------------
+
+-   The `main` branch is the default branch used for production deployments. Changes to this branch are made from the `staging` branch once a version is ready for community use.
+    
+-   The `staging` branch is used for pre-release testing. It is stable enough for testing but not yet ready for production deployment.
+    
+-   The `develop` branch is used for development and is the default branch for contributions.
+    
+
+We periodically merge `develop` into `staging` to perform testing builds. Once we are satisfied with the build quality in our pre-release deployment, we merge changes into `main` and release a new version to the community.
+
 Installation
 ------------
 
@@ -96,7 +108,7 @@ Development environment setup requires Docker to be installed on system.
 Support is available for both amd64 and arm64 containers on Linux and macOS.
 
 cd ./dev/
-rush build    # Will build all the required packages. 
+rush build    # Will build all the required packages.
 # rush rebuild  # could be used to omit build cache.
 rush bundle   # Will prepare bundles.
 rush package  # Will build all webpack packages.
@@ -164,11 +176,6 @@ If the project's structure is updated, it may be necessary to relink and rebuild
 
 rush update
 rush build
-
-It may also be necessary to upgrade the running database.
-
-cd ./dev/tool
-rushx upgrade -f
 
 Troubleshooting
 ---------------

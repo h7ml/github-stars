@@ -1,6 +1,6 @@
 ---
 project: ex_webrtc
-stars: 389
+stars: 393
 description: An Elixir implementation of the W3C WebRTC API
 url: https://github.com/elixir-webrtc/ex_webrtc
 ---
@@ -18,7 +18,7 @@ Add `ex_webrtc` to the list of dependencies in `mix.exs`
 
 def deps do
   \[
-    {:ex\_webrtc, "~> 0.7.0"}
+    {:ex\_webrtc, "~> 0.8.0"}
   \]
 end
 
@@ -26,7 +26,7 @@ Elixir WebRTC comes with optional support for DataChannels, but it must be expli
 
 def deps do
   \[
-    {:ex\_webrtc, "~> 0.7.0"},
+    {:ex\_webrtc, "~> 0.8.0"},
     {:ex\_sctp, "~> 0.1.0"}
   \]
 end
@@ -42,6 +42,7 @@ To get started with Elixir WebRTC, check out:
 -   the examples directory that contains a bunch of very simple usage examples of the library
 -   the `apps` repo with example applications built on top of `ex_webrtc`
 -   the documentation, especially the `PeerConnection` module page
+-   the roadmap to see what we are working on and how you can contribute
 
 If you have any questions, ideas or topics to discuss about Elixir WebRTC, head to the discussions page.
 

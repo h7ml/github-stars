@@ -1,6 +1,6 @@
 ---
 project: livebook
-stars: 5137
+stars: 5148
 description: Automate code & data workflows with interactive Elixir notebooks
 url: https://github.com/livebook-dev/livebook
 ---
@@ -91,7 +91,7 @@ If you want to run Livebook on embedded devices, such as Raspberry Pi, BeagleBon
 
 ### Direct installation with Elixir
 
-You can run Livebook on your own machine using just Elixir. You will need Elixir v1.16 or later. Livebook also requires the following Erlang applications: `inets`, `os_mon`, `runtime_tools`, `ssl` and `xmerl`. Those applications come with most Erlang distributions but certain package managers may split them apart. For example, on Ubuntu, these Erlang applications can be installed as follows:
+You can run Livebook on your own machine using just Elixir. You will need Elixir v1.18 or later. Livebook also requires the following Erlang applications: `inets`, `os_mon`, `runtime_tools`, `ssl` and `xmerl`. Those applications come with most Erlang distributions but certain package managers may split them apart. For example, on Ubuntu, these Erlang applications can be installed as follows:
 
 sudo apt install erlang-inets erlang-os-mon erlang-runtime-tools erlang-ssl erlang-xmerl erlang-dev erlang-parsetools
 

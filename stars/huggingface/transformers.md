@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 138415
+stars: 138834
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---

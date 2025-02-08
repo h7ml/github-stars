@@ -1,6 +1,6 @@
 ---
 project: rustdesk
-stars: 80136
+stars: 81656
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---
@@ -136,6 +136,11 @@ File Structure
 -   **src/platform**: platform specific code
 -   **flutter**: Flutter code for desktop and mobile
 -   **flutter/web/js**: JavaScript for Flutter web client
+
+Caution
+
+**Misuse Disclaimer:**  
+The developers of RustDesk do not condone or support any unethical or illegal use of this software. Misuse, such as unauthorized access, control or invasion of privacy, is strictly against our guidelines. The authors are not responsible for any misuse of the application.
 
 Screenshots
 -----------

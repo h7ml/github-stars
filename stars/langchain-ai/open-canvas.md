@@ -1,6 +1,6 @@
 ---
 project: open-canvas
-stars: 3576
+stars: 3624
 description: 📃 A better UX for chat, writing content, and coding with LLMs.
 url: https://github.com/langchain-ai/open-canvas
 ---
@@ -93,20 +93,21 @@ Now we'll cover how to setup and run the LangGraph server locally.
 
 Follow the `Installation` instructions in the LangGraph docs to install the LangGraph CLI.
 
-Once installed, navigate to the root of the Open Canvas repo and run `LANGSMITH_API_KEY="<YOUR_LANGSMITH_API_KEY>" langgraph up --watch --port 54367` (replacing `<YOUR_LANGSMITH_API_KEY>` with your LangSmith API key).
+Once installed, navigate to the root of the Open Canvas repo and run `yarn dev:server` (this runs `npx @langchain/langgraph-cli dev --port 54367`).
 
 Once it finishes pulling the docker image and installing dependencies, you should see it log:
 
 ```
-Ready!       
-- API: http://localhost:54367
-- Docs: http://localhost:54367/docs
-- LangGraph Studio: https://smith.langchain.com/studio/?baseUrl=http://*********:54367
+Ready!
+- 🚀 API: http://localhost:54367
+- 🎨 Studio UI: https://smith.langchain.com/studio?baseUrl=http://localhost:54367
 ```
 
 After your LangGraph server is running, execute the following command to start the Open Canvas app:
 
 yarn dev
+
+On initial load, compilation may take a little bit of time.
 
 Then, open localhost:3000 with your browser and start interacting!
 
@@ -125,17 +126,13 @@ If you'd like to add a new model, follow these simple steps:
 2.  Install the necessary package for the provider (e.g. `@langchain/anthropic`).
 3.  Update the `getModelConfig` function in `src/agent/utils.ts` to include an `if` statement for your new model name and provider.
 4.  Manually test by checking you can:
-
-> -   4a. Generate a new artifact
->     
-> -   4b. Generate a followup message (happens automatically after generating an artifact)
->     
-> -   4c. Update an artifact via a message in chat
->     
-> -   4d. Update an artifact via a quick action
->     
-> -   4e. Repeat for text/code (ensure both work)
->     
+    
+    > -   4a. Generate a new artifact
+    > -   4b. Generate a followup message (happens automatically after generating an artifact)
+    > -   4c. Update an artifact via a message in chat
+    > -   4d. Update an artifact via a quick action
+    > -   4e. Repeat for text/code (ensure both work)
+    
 
 ### Local Ollama models
 
@@ -158,9 +155,9 @@ Below are some common issues you may run into if running Open Canvas yourself:
 
 -   **I have the LangGraph server running successfully, and my client can make requests, but no text is being generated:** This can happen if you start & connect to multiple different LangGraph servers locally in the same browser. Try clearing the `oc_thread_id_v2` cookie and refreshing the page. This is because each unique LangGraph server has its own database where threads are stored, so a thread ID from one server will not be found in the database of another server.
     
--   **I'm getting 500 network errors when I try to make requests on the client:** Ensure you have the LangGraph server running, and you're making requests to the correct port. You can specify the port to use by passing the `--port <PORT>` flag to the `langgraph up` command, and you can set the URL to make requests to by either setting the `LANGGRAPH_API_URL` environment variable, or by changing the fallback value of the `LANGGRAPH_API_URL` variable in `constants.ts`.
+-   **I'm getting 500 network errors when I try to make requests on the client:** Ensure you have the LangGraph server running, and you're making requests to the correct port. You can specify the port to use by passing the `--port <PORT>` flag to the `npx @langchain/langgraph-cli dev` command, and you can set the URL to make requests to by either setting the `LANGGRAPH_API_URL` environment variable, or by changing the fallback value of the `LANGGRAPH_API_URL` variable in `constants.ts`.
     
--   **I'm getting "thread ID not found" error toasts when I try to make requests on the client:** Ensure you have the LangGraph server running, and you're making requests to the correct port. You can specify the port to use by passing the `--port <PORT>` flag to the `langgraph up` command, and you can set the URL to make requests to by either setting the `LANGGRAPH_API_URL` environment variable, or by changing the fallback value of the `LANGGRAPH_API_URL` variable in `constants.ts`.
+-   **I'm getting "thread ID not found" error toasts when I try to make requests on the client:** Ensure you have the LangGraph server running, and you're making requests to the correct port. You can specify the port to use by passing the `--port <PORT>` flag to the `npx @langchain/langgraph-cli dev` command, and you can set the URL to make requests to by either setting the `LANGGRAPH_API_URL` environment variable, or by changing the fallback value of the `LANGGRAPH_API_URL` variable in `constants.ts`.
     
 -   **`Model name is missing in config.` error is being thrown when I make requests:** This error occurs when the `customModelName` is not specified in the config. You can resolve this by setting the `customModelName` field inside `config.configurable` to the name of the model you want to use when invoking the graph. See this doc on how to use configurable fields in LangGraph.
     

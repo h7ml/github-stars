@@ -1,6 +1,6 @@
 ---
 project: uv
-stars: 37841
+stars: 38723
 description: An extremely fast Python package and project manager, written in Rust.
 url: https://github.com/astral-sh/uv
 ---
@@ -17,10 +17,10 @@ Highlights
 
 -   🚀 A single tool to replace `pip`, `pip-tools`, `pipx`, `poetry`, `pyenv`, `twine`, `virtualenv`, and more.
 -   ⚡️ 10-100x faster than `pip`.
--   🐍 Installs and manages Python versions.
--   🛠️ Runs and installs Python applications.
--   ❇️ Runs single-file scripts, with support for inline dependency metadata.
 -   🗂️ Provides comprehensive project management, with a universal lockfile.
+-   ❇️ Runs scripts, with support for inline dependency metadata.
+-   🐍 Installs and manages Python versions.
+-   🛠️ Runs and installs tools published as Python packages.
 -   🔩 Includes a pip-compatible interface for a performance boost with a familiar CLI.
 -   🏢 Supports Cargo-style workspaces for scalable projects.
 -   💾 Disk-space efficient, with a global cache for dependency deduplication.
@@ -64,7 +64,7 @@ Additionally, the command line reference documentation can be viewed with `uv he
 Features
 --------
 
-### Project management
+### Projects
 
 uv manages project dependencies and environments, with support for lockfiles, workspaces, and more, similar to `rye` or `poetry`:
 
@@ -85,11 +85,38 @@ Installed 2 packages in 1ms
 $ uv run ruff check
 All checks passed!
 
+$ uv lock
+Resolved 2 packages in 0.33ms
+
+$ uv sync
+Resolved 2 packages in 0.70ms
+Audited 1 package in 0.02ms
+
 See the project documentation to get started.
 
 uv also supports building and publishing projects, even if they're not managed with uv. See the publish guide to learn more.
 
-### Tool management
+### Scripts
+
+uv manages dependencies and environments for single-file scripts.
+
+Create a new script and add inline metadata declaring its dependencies:
+
+$ echo 'import requests; print(requests.get("https://astral.sh"))' \> example.py
+
+$ uv add --script example.py requests
+Updated \`example.py\`
+
+Then, run the script in an isolated virtual environment:
+
+$ uv run example.py
+Reading inline script metadata from: example.py
+Installed 5 packages in 12ms
+<Response \[200\]>
+
+See the scripts documentation to get started.
+
+### Tools
 
 uv executes and installs command-line tools provided by Python packages, similar to `pipx`.
 
@@ -123,7 +150,7 @@ ruff 0.5.0
 
 See the tools documentation to get started.
 
-### Python management
+### Python versions
 
 uv installs Python and allows quickly switching between versions.
 
@@ -158,27 +185,7 @@ Pinned \`.python-version\` to \`3.11\`
 
 See the Python installation documentation to get started.
 
-### Script support
-
-uv manages dependencies and environments for single-file scripts.
-
-Create a new script and add inline metadata declaring its dependencies:
-
-$ echo 'import requests; print(requests.get("https://astral.sh"))' \> example.py
-
-$ uv add --script example.py requests
-Updated \`example.py\`
-
-Then, run the script in an isolated virtual environment:
-
-$ uv run example.py
-Reading inline script metadata from: example.py
-Installed 5 packages in 12ms
-<Response \[200\]>
-
-See the scripts documentation to get started.
-
-### A pip-compatible interface
+### The pip interface
 
 uv provides a drop-in replacement for common `pip`, `pip-tools`, and `virtualenv` commands.
 

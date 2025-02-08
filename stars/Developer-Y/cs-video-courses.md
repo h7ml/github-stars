@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 67987
+stars: 68049
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -132,7 +132,7 @@ Courses
 -   COMP300E - Programming Challenges, Prof Skiena, Hong Kong University of Science and Technology - 2009
 -   16s-4102 - Algorithms, University of Virginia (Youtube)
 -   CS 61B - Data Structures (Java) - UC Berkeley(Youtube)
--   CS 170 Algorithms - UCBerkeley Fall 2018, Youtube Fall 2018,Bilibili 2013 Bilibili
+-   CS 170 Algorithms - UCBerkeley Fall 2019, Youtube Fall 2018, Youtube Fall 2018,Bilibili 2013 Bilibili
 -   ECS 122A - Algorithm Design and Analysis, UC Davis
 -   CSEP 521 - Applied Algorithms, Winter 2013 - University of Washington (Videos)
 -   Data Structures And Algorithms - IIT Delhi
@@ -525,6 +525,7 @@ Courses
     -   Applied Deep Learning Maziar Raissi
     -   UC Berkeley CS 182 / 282a Deep Learning spring 2023, by Anant Sahai
     -   Foundations of Deep Learning - UMD
+    -   TUM IN2346 Introduction to Deep Learning Fall 2024, by Daniel Cremers
 -   #### **Reinforcement Learning**
     
     -   CS234: Reinforcement Learning - Winter 2019 - Stanford University
@@ -558,6 +559,7 @@ Courses
     -   ES 661 (2023): Probabilistic Machine Learning - IIT Gandhinagar
     -   Information Retrieval in High Dimensional Data
     -   Trustworthy Machine Learning - Winter Semester 2023-2024, University of Tübingen
+    -   Trustworthy Machine Learning - Winter Semester 2024-2025, University of Tübingen
 -   #### **Natural Language Processing**
     
     -   CS 224N -Natural Language Processing with Deep Learning - Stanford University (Lectures - Winter 2019) (Lectures - Winter 2021)
@@ -582,6 +584,7 @@ Courses
     -   Stanford CS25 - Transformers United 2023
     -   Natural Language Processing (IN2361) - TUM
     -   CS 886: Recent Advances on Foundation Models Winter 2024 - University of Waterloo
+    -   UC Berkeley CS 194/294-196 Large Language Model Agents Fall 2024, by Dawn Song & Xinyun Chen (YouTube playlist)
     -   UC Berkeley CS 194/294-267 Understanding Large Language Models Foundations and Safety spring 2024, by Dawn Song & Dan Hendrycks
 -   #### **Generative AI**
     
@@ -622,6 +625,7 @@ Courses
     -   Info 290 - Analyzing Big Data with Twitter, UC Berkeley school of information (YouTube)
     -   CS224W Machine Learning with Graphs | Spring 2021 | Stanford University
     -   9.520 - Statistical Learning Theory and Applications, Fall 2015 - MIT
+    -   Course on the Statistical Learning Theory, University of São Paulo, ICMC
     -   Reinforcement Learning - UCL
     -   Regularization Methods for Machine Learning 2016 (YouTube)
     -   Statistical Inference in Big Data - University of Toronto
@@ -1017,6 +1021,7 @@ Courses
 -   Computational Geometry - IIT Delhi
 -   CS 468 - Differential Geometry for Computer Science - Stanford University (Lecture videos)
 -   CMU 15-462/662: Computer Graphics
+-   UC Berkeley CS184/284A Computer Graphics and Imaging Spring 2022, by Ren Ng (YouTube playlist)
 
 * * *
 
@@ -1218,6 +1223,7 @@ Courses
 -   Financial Mathematics - IIT Roorkee
 -   Harvard Economics 2355 Deep Learning for Economics spring 2023, by Melissa Dell
 -   MATH69122 Stochastic Control for Finance
+-   UC Davis MAT 133 Mathematical Finance Spring 2024, by Matthias Köppe (Spring 2021)
 
 * * *
 
@@ -1277,3 +1283,4 @@ Courses
 -   Introduction to GIS Programming (Fall 2024) - Open Geospatial Solutions
 -   UC Berkeley EE 120 Signals and Systems spring 2019, by Murat Arcak
 -   Stanford EE 376a winter 2011, Information Theory, by Thomas Cover
+-   Purdue ME 597 Distributed Energy Resources Spring 2024, by Kevin J. Kircher

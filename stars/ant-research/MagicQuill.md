@@ -1,6 +1,6 @@
 ---
 project: MagicQuill
-stars: 2737
+stars: 2769
 description: Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/ant-research/MagicQuill
 ---

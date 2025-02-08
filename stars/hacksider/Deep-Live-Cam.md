@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 43532
+stars: 43712
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -47,8 +47,8 @@ TLDR; Live Deepfake in just 3 Clicks
 2.  Select which camera to use
 3.  Press live!
 
-Features & Uses - Everything is real-time
------------------------------------------
+Features & Uses - Everything is in real-time
+--------------------------------------------
 
 ### Mouth Mask
 
@@ -68,10 +68,16 @@ Features & Uses - Everything is real-time
 
 ### Memes
 
-**Create Your most viral meme yet**
+**Create Your Most Viral Meme Yet**
 
   
 Created using Many Faces feature in Deep-Live-Cam
+
+### Omegle
+
+**Surprise people on Omegle**
+
+ishowspeed.mp4
 
 Installation (Manual)
 ---------------------
@@ -119,7 +125,7 @@ brew install python-tk@3.10
 
 **CUDA Execution Provider (Nvidia)**
 
-1.  Install CUDA Toolkit 11.8 or CUDA Toolkit 12.1.1
+1.  Install CUDA Toolkit 12.1.1
 2.  Install dependencies:
 
 pip uninstall onnxruntime onnxruntime-gpu

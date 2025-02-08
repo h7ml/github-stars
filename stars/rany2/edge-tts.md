@@ -1,6 +1,6 @@
 ---
 project: edge-tts
-stars: 7198
+stars: 7258
 description: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key
 url: https://github.com/rany2/edge-tts
 ---
@@ -96,3 +96,4 @@ Other projects that use the `edge-tts` module include:
 
 -   hass-edge-tts
 -   Podcastfy
+-   tts-samples - a collection of mp3 sound samples to facilitate picking a voice for your project.

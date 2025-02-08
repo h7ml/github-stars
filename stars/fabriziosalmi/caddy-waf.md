@@ -1,6 +1,6 @@
 ---
 project: caddy-waf
-stars: 370
+stars: 375
 description: Caddy WAF (Regex Rules, IP and DNS filtering, Rate Limiting, GeoIP, Tor, Anomaly Detection)
 url: https://github.com/fabriziosalmi/caddy-waf
 ---
@@ -24,6 +24,7 @@ A robust, highly customizable, and feature-rich **Web Application Firewall (WAF)
 -   **Detailed Monitoring:** JSON endpoint for performance tracking & analysis.
 -   **Dynamic Config Reloads:** Seamless updates without restarts.
 -   **File Watchers:** Automatic reloads on rule/blacklist changes.
+-   **Observability:** Seamless integration with ELK stack and Prometheus.
 
 _Simple at a glance UI :)_
 
@@ -157,9 +158,10 @@ For complete documentation, including configuration options, rule format details
 8.  **Dynamic Updates** - _How to dynamically update the WAF rules and other settings without downtime._
 9.  **Metrics** - _Details about the WAF's metrics endpoint and the different metrics collected._
 10.  **Prometheus Metrics** - _Instructions on how to expose WAF metrics using the Prometheus format._
-11.  **Rule/Blacklist Population Scripts** - _Documentation on the provided scripts to automatically fetch, update and generate rules and blacklists._
-12.  **Testing** - _Guidance on how to test the WAF's effectiveness using the provided testing tools._
-13.  **Docker Support** - _Instructions on how to build and run the WAF using Docker._
+11.  **ELK Observability** - _Instructions on how to configure caddy-waf ELK stack observability._
+12.  **Rule/Blacklist Population Scripts** - _Documentation on the provided scripts to automatically fetch, update and generate rules and blacklists._
+13.  **Testing** - _Guidance on how to test the WAF's effectiveness using the provided testing tools._
+14.  **Docker Support** - _Instructions on how to build and run the WAF using Docker._
 
 * * *
 

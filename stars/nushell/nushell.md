@@ -1,6 +1,6 @@
 ---
 project: nushell
-stars: 33690
+stars: 33785
 description: A new type of shell
 url: https://github.com/nushell/nushell
 ---
@@ -36,7 +36,7 @@ Learning About Nu
 
 The Nushell book is the primary source of Nushell documentation. You can find a full list of Nu commands in the book, and we have many examples of using Nu in our cookbook.
 
-We're also active on Discord and Twitter; come and chat with us!
+We're also active on Discord; come and chat with us!
 
 Installation
 ------------

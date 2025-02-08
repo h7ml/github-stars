@@ -1,22 +1,9 @@
 ---
 project: fzf
-stars: 67535
+stars: 67719
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
-
-Special thanks to:  
-  
-
-**Warp is a modern, Rust-based terminal with AI built in so you and your team can build great software, faster.**
-
-Visit warp.dev to learn more.
-
-  
-
-* * *
-
-  
 
 fzf is a general-purpose command-line fuzzy finder.
 

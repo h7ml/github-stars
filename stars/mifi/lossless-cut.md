@@ -1,6 +1,6 @@
 ---
 project: lossless-cut
-stars: 29328
+stars: 29456
 description: The swiss army knife of lossless video/audio editing
 url: https://github.com/mifi/lossless-cut
 ---
@@ -123,9 +123,11 @@ If you prefer to download the executables manually, this will of course always b
 -   More releases (note that APPX for Windows and PKG for MacOS **do not work**)
 -   Download latest nightly builds 🧪.
 
-If you find LosslessCut useful, I'm very thankful for your support.
-
 What's the **difference between App Stores and GitHub download?** Please see FAQ
+
+LosslessCut is maintained by me alone and will always remain free and open source. If it's useful to you, consider supporting my work. Alternatively donate to FFmpeg because they are doing the world a huge favor.
+
+Paypal | crypto | more
 
 Supported operating systems
 ---------------------------
@@ -187,13 +189,6 @@ Translation
 -----------
 
 If you have any problem or question, please read this before creating an issue. I try to answer most common questions here.
-
-Donate 🙈
----------
-
-This project is maintained by me alone. The project will always remain free and open source, but if it's useful for you, consider supporting me. :) It will give me extra motivation to improve it. Or even better donate to ffmpeg because they are doing the world a big favor 🙏
-
-Paypal | crypto
 
 Featured
 --------

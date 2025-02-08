@@ -1,6 +1,6 @@
 ---
 project: beekeeper-studio
-stars: 17274
+stars: 17330
 description: Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows.
 url: https://github.com/beekeeper-studio/beekeeper-studio
 ---
@@ -177,11 +177,11 @@ Trino / Presto
 
 DuckDB
 
-⏳ Coming Soon
+🅱 Beta Support
 
 ✅
 
-\--
+Features, Docs
 
 MongoDB
 

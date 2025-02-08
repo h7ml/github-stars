@@ -1,6 +1,6 @@
 ---
 project: openage
-stars: 12880
+stars: 12894
 description: Free (as in freedom) open source clone of the Age of Empires II engine 🚀 
 url: https://github.com/SFTtech/openage
 ---
@@ -114,8 +114,6 @@ Operating System
 Build status
 
 Debian Sid
-
-Todo: Kevin #11
 
 Ubuntu 24.04 LTS
 

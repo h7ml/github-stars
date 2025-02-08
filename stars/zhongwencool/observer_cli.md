@@ -1,6 +1,6 @@
 ---
 project: observer_cli
-stars: 1410
+stars: 1412
 description: Visualize Erlang/Elixir Nodes On The Command Line
 url: https://github.com/zhongwencool/observer_cli
 ---
@@ -28,7 +28,7 @@ Goal
 %% rebar.config
 {deps, \[observer\_cli\]}
 %% erlang.mk
-dep\_observer\_cli \= hex 1.8.1
+dep\_observer\_cli \= hex 1.8.2
 
 **Elixir**
 
@@ -219,6 +219,9 @@ A more specific plugin can collect linux system information such as kernel vsn, 
 
 ### Changelog
 
+-   1.8.2
+    
+    -   Fix unit of `fullsweep_after`, The value of `fullsweep_after` is a number, not bytes.
 -   1.8.1
     
     -   Show node name in system pane.

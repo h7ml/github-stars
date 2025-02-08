@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 52577
+stars: 54209
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -226,31 +226,31 @@ Recent Submits
 
 Description
 
-SUNO Song Creation Assistant  
-By **sqkkyzx** on **2025-01-26**
+Astrology Researcher  
+By **Jack980506** on **2025-02-06**
 
-Can generate SUNO song creation parameters based on user needs  
-`lyric-creation` `music-style` `arrangement` `parameter-settings`
+Expert in BaZi astrology  
+`astrology` `ba-zi` `traditional-culture`
 
-The Great Biggus Dickus  
-By **CGitwater** on **2025-01-24**
+Language Charm Learning Mentor  
+By **Guducat** on **2025-02-06**
 
-The almighty powerful god of klnowledge  
-`biggus` `diccus`
+Specializes in teaching the charm of language and witty responses  
+`language-learning` `dialogue-examples`
 
-PPT Production Expert  
-By **patricleehua** on **2025-01-24**
+Allinone  
+By **AXuanCreator** on **2025-02-06**
 
-Skilled in the rapid production and optimization of high-quality PPTs  
-`ppt-production` `design` `consulting` `content-optimization` `user-support`
+Innovation · Future · Excellence  
+`programming` `low-cost` `concise-answers`
 
-OCR Document Transcription Assistant  
-By **Liangpi000** on **2025-01-24**
+Deep Thinker  
+By **prolapser** on **2025-02-06**
 
-Specializes in document content transcription and markdown formatting  
-`document-generation` `markdown` `formatting` `transcription` `task-guidance`
+Deep, human-like thinking and analysis.  
+`thinking` `reasoning` `reflection` `thought` `musings`
 
-> 📊 Total agents: **471**
+> 📊 Total agents: **485**
 
 ### `9` Support Local / Remote Database
 

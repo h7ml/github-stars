@@ -1,6 +1,6 @@
 ---
 project: freegeoip
-stars: 4944
+stars: 4943
 description: IP geolocation web server
 url: https://github.com/fiorix/freegeoip
 ---

@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 73108
+stars: 73208
 description: Architected for speed. Automated for easy. Monitoring and troubleshooting, transformed!
 url: https://github.com/netdata/netdata
 ---
@@ -341,9 +341,9 @@ The study didn’t normalize the results based on the number of metrics collecte
 
 * * *
 
-### Netdata vs Prometheus
+### Netdata vs Prometheus 2025 Review
 
-On the same workload, Netdata uses **1/3rd less CPU**, consumes **1/8th of the RAM**, performes **31 times less disk I/O**, stores **40 times more data**, while being **22 times faster** in query responses! Read the full 2025 review in our blog.
+NEW! On the same workload, Netdata uses **1/3rd less CPU**, consumes **1/8th of the RAM**, performes **31 times less disk I/O** and stores **40 times more data** while being up to **22 times faster** in query responses! Read the full 2025 review in our blog.
 
 * * *
 

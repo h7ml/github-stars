@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 39143
+stars: 39764
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -59,8 +59,9 @@ Features
 -   **Various models**: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Qwen2-VL, DeepSeek, Yi, Gemma, ChatGLM, Phi, etc.
 -   **Integrated methods**: (Continuous) pre-training, (multimodal) supervised fine-tuning, reward modeling, PPO, DPO, KTO, ORPO, etc.
 -   **Scalable resources**: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
--   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ, PiSSA and Agent tuning.
+-   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ and PiSSA.
 -   **Practical tricks**: FlashAttention-2, Unsloth, Liger Kernel, RoPE scaling, NEFTune and rsLoRA.
+-   **Wide tasks**: Multi-turn dialogue, tool using, image understanding, visual grounding, video recognition, audio understanding, etc.
 -   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab, etc.
 -   **Faster inference**: OpenAI-style API, Gradio UI and CLI with vLLM worker.
 
@@ -92,6 +93,8 @@ Definitions
 
 Changelog
 ---------
+
+\[25/02/05\] We supported fine-tuning the **Qwen2-Audio** and **MiniCPM-o-2.6** on audio understanding tasks.
 
 \[25/01/31\] We supported fine-tuning the **DeepSeek-R1** and **Qwen2.5-VL** model.
 
@@ -408,6 +411,12 @@ Qwen/QwQ (1-2.5) (Code/Math/MoE)
 
 qwen
 
+Qwen2-Audio
+
+7B
+
+qwen2\_audio
+
 Qwen2-VL/Qwen2.5-VL/QVQ
 
 2B/3B/7B/72B
@@ -623,6 +632,7 @@ Supervised fine-tuning datasets
 -   Magpie-ultra-v0.1 (en)
 -   WebInstructSub (en)
 -   OpenO1-SFT (en&zh)
+-   Open Thoughts (en)
 -   LLaVA mixed (en&zh)
 -   Pokemon-gpt4o-captions (en&zh)
 -   Open Assistant (de)

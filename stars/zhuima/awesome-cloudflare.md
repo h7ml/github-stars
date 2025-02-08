@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10075
+stars: 10138
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -29,10 +29,16 @@ Awesome Cloudflare
 
 Awesome Cloudflare 在线导航
 
+群组
+--
+
+一个群
+
 Contents
 --------
 
 -   -   在线版本
+    -   群组
     -   Contents
     -   图床
     -   邮箱
@@ -48,8 +54,6 @@ Contents
 -   文章
     -   其他
     -   教程
-    -   群组
-    -   捐赠
     -   Contributors
     -   Star History
 
@@ -834,6 +838,14 @@ sublink-worker
 
 维护中
 
+melody-auth
+
+一个基于Cloudflare workers, D1, KV的OAuth及身份认证系统。
+
+https://auth.valuemelody.com/
+
+有效中
+
 教程
 --
 
@@ -862,16 +874,6 @@ cloudflare-worker-gmail-resend-enterprise-email
 Cloudflare + Gmail + Resend 十分钟轻松拥有免费的企业邮箱。
 
 更新中
-
-群组
---
-
-一个群
-
-捐赠
---
-
-首先十分幸运能在Github上与你相识，其次十分感谢您对我的项目感兴趣，如果说我的项目能够对您有一些帮助，还希望您可以打赏支持一下，这将会对我有莫大的鼓励，谢谢！
 
 Contributors
 ------------
