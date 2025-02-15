@@ -1,6 +1,6 @@
 ---
 project: syslog-ng
-stars: 2184
+stars: 2187
 description: syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL.
 url: https://github.com/syslog-ng/syslog-ng
 ---
@@ -115,7 +115,13 @@ $ ./configure && make && make install
 
 The extra effort in contrast with the dbld based build is the need to fetch and install all build dependencies of syslog-ng (of which there are a few).
 
-If you don't have a configure script (because of cloning from git, for example), run `./autogen.sh` to generate it.
+If you don't have a configure script (because of cloning from git, for example), run
+
+```
+./autogen.sh
+```
+
+to generate it.
 
 Some of the functionality of syslog-ng is compiled only if the required development libraries are present. The configure script displays a summary of enabled features at the end of its run. For details, see the syslog-ng compiling instructions.
 
@@ -178,11 +184,18 @@ debian-testing
     
     wget -qO - https://ose-repo.syslog-ng.com/apt/syslog-ng-ose-pub.asc | sudo apt-key add -
     
-2.  Add the repository containing the latest build of syslog-ng to the APT sources. For example, stable releases on Ubuntu 22.04:
+2.  Add the repository containing the latest build of syslog-ng to your APT sources.  
+    For example if you are running Ubuntu 24.04, you would use `ubuntu-noble`, see chart above:
     
-    echo "deb https://ose-repo.syslog-ng.com/apt/ stable ubuntu-jammy" | sudo tee -a /etc/apt/sources.list.d/syslog-ng-ose.list
+    echo "deb https://ose-repo.syslog-ng.com/apt/ stable ubuntu-noble" | sudo tee -a /etc/apt/sources.list.d/syslog-ng-ose.list
     
-3.  Run `apt update`
+3.  Update your repositories with
+    
+    sudo apt update
+    
+4.  Now install syslog-ng:
+    
+    sudo apt install syslog-ng
     
 
 #### Nightly builds

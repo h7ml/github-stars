@@ -1,9 +1,27 @@
 ---
 project: sharedrop
-stars: 10466
+stars: 10474
 description: Easy P2P file transfer powered by WebRTC - inspired by Apple AirDrop
 url: https://github.com/ShareDropio/sharedrop
 ---
+
+ShareDrop is now LimeWire
+=========================
+
+Dear ShareDrop community, ShareDrop has been acquired by LimeWire, a leading file sharing platform with integrated AI tools. You can continue to share any files between devices, while benefitting from:
+
+-   sharing files between devices in the same network
+-   anonymous up- & downloads
+-   end-to-end encryption
+-   up to 40GB storage for free users
+-   integrated AI tools for signed-up users
+
+Visit sharedrop.io or limewire.com
+
+The Github repository will stay as-is and you can still go ahead and download and run the classic ShareDrop on your own infrastructure.
+
+ShareDrop Classic
+=================
 
 ShareDrop is a web application inspired by Apple AirDrop service. It allows you to transfer files directly between devices, without having to upload them to any server first. It uses WebRTC for secure peer-to-peer file transfer and Firebase for presence management and WebRTC signaling.
 

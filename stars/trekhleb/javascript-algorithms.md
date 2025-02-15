@@ -1,6 +1,6 @@
 ---
 project: javascript-algorithms
-stars: 189950
+stars: 190107
 description: 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings
 url: https://github.com/trekhleb/javascript-algorithms
 ---
@@ -22,7 +22,7 @@ This repository contains JavaScript based examples of many popular algorithms an
 
 Each algorithm and data structure has its own separate README with related explanations and links for further reading (including ones to YouTube videos).
 
-_Read this in other languages:_ _简体中文_, _繁體中文_, _한국어_, _日本語_, _Polski_, _Français_, _Español_, _Português_, _Русский_, _Türkçe_, _Italiana_, _Bahasa Indonesia_, _Українська_, _Arabic_, _Tiếng Việt_, _Deutsch_, _Uzbek_
+_Read this in other languages:_ _简体中文_, _繁體中文_, _한국어_, _日本語_, _Polski_, _Français_, _Español_, _Português_, _Русский_, _Türkçe_, _Italiano_, _Bahasa Indonesia_, _Українська_, _Arabic_, _Tiếng Việt_, _Deutsch_, _Uzbek_, _עברית_
 
 _☝ Note that this project is meant to be used for learning and researching purposes only, and it is **not** meant to be used for production._
 
@@ -167,6 +167,7 @@ An algorithm is an unambiguous specification of how to solve a class of problems
     -   `B` Rain Terraces - trapping rain water problem (dynamic programming and brute force versions)
     -   `B` Recursive Staircase - count the number of ways to reach to the top (4 solutions)
     -   `B` Best Time To Buy Sell Stocks - divide and conquer and one-pass examples
+    -   `B` Valid Parentheses - check if a string has valid parentheses (using stack)
     -   `A` N-Queens Problem
     -   `A` Knight's Tour
 
@@ -177,7 +178,7 @@ An algorithmic paradigm is a generic method or approach which underlies the desi
 -   **Brute Force** - look at all the possibilities and selects the best solution
     -   `B` Linear Search
     -   `B` Rain Terraces - trapping rain water problem
-    -   `B` Recursive Staircase - count the number of ways to reach to the top
+    -   `B` Recursive Staircase - count the number of ways to reach the top
     -   `A` Maximum Subarray
     -   `A` Travelling Salesman Problem - shortest possible route that visits each city and returns to the origin city
     -   `A` Discrete Fourier Transform - decompose a function of time (a signal) into the frequencies that make it up
@@ -208,7 +209,7 @@ An algorithmic paradigm is a generic method or approach which underlies the desi
     -   `B` Jump Game
     -   `B` Unique Paths
     -   `B` Rain Terraces - trapping rain water problem
-    -   `B` Recursive Staircase - count the number of ways to reach to the top
+    -   `B` Recursive Staircase - count the number of ways to reach the top
     -   `B` Seam Carving - content-aware image resizing algorithm
     -   `A` Levenshtein Distance - minimum edit distance between two sequences
     -   `A` Longest Common Subsequence (LCS)
@@ -221,7 +222,7 @@ An algorithmic paradigm is a generic method or approach which underlies the desi
     -   `A` Bellman-Ford Algorithm - finding the shortest path to all graph vertices
     -   `A` Floyd-Warshall Algorithm - find the shortest paths between all pairs of vertices
     -   `A` Regular Expression Matching
--   **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate next solution you test if it satisfies all conditions, and only then continue generating subsequent solutions. Otherwise, backtrack, and go on a different path of finding a solution. Normally the DFS traversal of state-space is being used.
+-   **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate the next solution, you test if it satisfies all conditions and only then continue generating subsequent solutions. Otherwise, backtrack and go on a different path to finding a solution. Normally the DFS traversal of state-space is being used.
     -   `B` Jump Game
     -   `B` Unique Paths
     -   `B` Power Set - all subsets of a set
@@ -229,7 +230,7 @@ An algorithmic paradigm is a generic method or approach which underlies the desi
     -   `A` N-Queens Problem
     -   `A` Knight's Tour
     -   `A` Combination Sum - find all combinations that form specific sum
--   **Branch & Bound** - remember the lowest-cost solution found at each stage of the backtracking search, and use the cost of the lowest-cost solution found so far as a lower bound on the cost of a least-cost solution to the problem, in order to discard partial solutions with costs larger than the lowest-cost solution found so far. Normally BFS traversal in combination with DFS traversal of state-space tree is being used.
+-   **Branch & Bound** - remember the lowest-cost solution found at each stage of the backtracking search, and use the cost of the lowest-cost solution found so far as a lower bound on the cost of a least-cost solution to the problem in order to discard partial solutions with costs larger than the lowest-cost solution found so far. Normally, BFS traversal in combination with DFS traversal of state-space tree is being used.
 
 How to use this repository
 --------------------------
@@ -269,13 +270,13 @@ rm -rf ./node_modules
 npm i
 ```
 
-Also make sure that you're using a correct Node version (`>=16`). If you're using nvm for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
+Also, make sure that you're using the correct Node version (`>=16`). If you're using nvm for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
 
 **Playground**
 
 You may play with data-structures and algorithms in `./src/playground/playground.js` file and write tests for it in `./src/playground/__test__/playground.test.js`.
 
-Then just simply run the following command to test if your playground code works as expected:
+Then just, simply run the following command to test if your playground code works as expected:
 
 ```
 npm test -- 'playground'
@@ -291,7 +292,7 @@ Useful Information
 
 ### Big O Notation
 
-_Big O notation_ is used to classify algorithms according to how their running time or space requirements grow as the input size grows. On the chart below you may find most common orders of growth of algorithms specified in Big O notation.
+_Big O notation_ is used to classify algorithms according to how their running time or space requirements grow as the input size grows. On the chart below, you may find the most common orders of growth of algorithms specified in Big O notation.
 
 Source: Big O Cheat Sheet.
 

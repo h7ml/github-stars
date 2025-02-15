@@ -1,6 +1,6 @@
 ---
 project: orange
-stars: 1796
+stars: 1824
 description: null
 url: https://github.com/cloudflare/orange
 ---
@@ -67,7 +67,9 @@ echo REPLACE\_WITH\_YOUR\_SECRET | wrangler secret put CALLS\_APP\_SECRET
 
 1.  Optionally, you can also use Cloudflare's TURN Service by setting the `TURN_SERVICE_ID` variable in `wrangler.toml` and `TURN_SERVICE_TOKEN` secret using `wrangler secret put TURN_SERVICE_TOKEN`
     
-2.  Finally you can run the following to deploy
+2.  Also optionally, you can include `OPENAI_MODEL_ENDPOINT` and `OPENAI_API_TOKEN` to use OpenAI's Realtime API with WebRTC to invite AI to join your meeting.
+    
+3.  Finally you can run the following to deploy:
     
 
 npm run deploy

@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 32553
+stars: 32950
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -42,6 +42,7 @@ services:
       - 8006:8006
       - 3389:3389/tcp
       - 3389:3389/udp
+    restart: always
     stop\_grace\_period: 2m
 
 Via Docker CLI:

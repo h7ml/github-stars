@@ -1,6 +1,6 @@
 ---
 project: flameshot
-stars: 25499
+stars: 25533
 description: Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:
 url: https://github.com/flameshot-org/flameshot
 ---
@@ -449,7 +449,7 @@ Also you can open and build/debug the project in a C++ IDE. For example, in Qt C
 -   Qt >= 5.9
     -   Development tools
 -   GCC >= 7.4
--   CMake >= 3.13
+-   CMake >= 3.29
 
 #### Run-time
 
@@ -501,26 +501,39 @@ nix-shell
 
 #### macOS
 
-First of all you need to install brew and than install the dependencies
+First of all you need to install brew and then install the dependencies
 
 brew install qt5
 brew install cmake
 
 ### Build
 
-After installing all the dependencies, finally run the following commands in the sources root directory:
+After installing all the dependencies, flameshot can be built.
 
-cmake -S . -B build && cmake --build build
+#### Installation/build dir
 
-NOTE: For macOS you should replace the command
+For the translations to be loaded correctly, the build process needs to be aware of where you want to install flameshot.
 
-cmake -S . -B build
+# Directory where build files will be placed, may be relative
+export BUILD\_DIR=build
 
-with
+# Directory prefix where flameshot will be installed. If you are just building and don't want to
+# install, comment this environment variable.
+# This excludes the bin/flameshot part of the install,
+# e.g. in /opt/flameshot/bin/flameshot, the CMAKE\_INSTALL\_PREFIX is /opt/flameshot
+# This must be an absolute path. Requires CMAKE 3.29.
+export CMAKE\_INSTALL\_PREFIX=/opt/flameshot
 
-cmake -S . -B build -DQt5\_DIR=$(brew --prefix qt5)/lib/cmake/Qt5
+# Linux
+cmake -S . -B "$BUILD\_DIR" \\
+    && cmake --build "$BUILD\_DIR"
 
-When the `cmake --build build` command has completed you can launch flameshot from the `project_folder/build/src` folder.
+#MacOS
+cmake -S . -B "$BUILD\_DIR" \\
+    -DQt5\_DIR="$(brew --prefix qt5)/lib/cmake/Qt5" \\
+    && cmake --build "$BUILD\_DIR"
+
+When the `cmake --build` command has completed you can launch flameshot from the `project_folder/build/src` folder.
 
 ### Install
 
@@ -528,15 +541,18 @@ Note that if you install from source, there _is no_ uninstaller, so consider ins
 
 #### To install into a custom directory
 
-# Best to use an absolute path here
-INST\_DIR=/opt/flameshot
+Make sure you are using cmake `>= 3.29` and build flameshot with `$CMAKE_INSTALL_PREFIX` set to the installation directory. If this is not done, the translations won't be found when using a custom directory. Then, run the following:
+
+# !Build with CMAKE\_INSTALL\_PREFIX and use cmake >= 3.29! Using an older cmake will cause
+# installation into the default /usr/local dir.
+
 # You may need to run this with privileges
-cmake --install build --prefix "$INST\_DIR"
+cmake --install "$BUILD\_DIR"
 
 #### To install to the default install directory
 
 # You may need to run this with privileges
-cmake --install build
+cmake --install "$BUILD\_DIR"
 
 ### FAQ
 

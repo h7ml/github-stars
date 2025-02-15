@@ -1,6 +1,6 @@
 ---
 project: sciter-js-sdk
-stars: 1639
+stars: 1638
 description: Sciter.JS - Sciter but with QuickJS on board instead of my TIScript
 url: https://github.com/c-smile/sciter-js-sdk
 ---

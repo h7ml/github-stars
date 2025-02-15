@@ -1,6 +1,6 @@
 ---
 project: helipopper
-stars: 422
+stars: 423
 description: 🚁 A Powerful Tooltip and Popover for Angular Applications
 url: https://github.com/ngneat/helipopper
 ---

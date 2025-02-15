@@ -1,6 +1,6 @@
 ---
 project: paginator
-stars: 768
+stars: 771
 description: Cursor-based pagination for Elixir Ecto
 url: https://github.com/duffelhq/paginator
 ---

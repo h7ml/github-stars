@@ -1,6 +1,6 @@
 ---
 project: klipse
-stars: 3115
+stars: 3118
 description: Klipse is a JavaScript plugin for embedding interactive code snippets in tech blogs.
 url: https://github.com/viebel/klipse
 ---

@@ -1,6 +1,6 @@
 ---
 project: ToolJet
-stars: 34607
+stars: 34684
 description: Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀
 url: https://github.com/ToolJet/ToolJet
 ---
@@ -62,7 +62,7 @@ AWS S3 Browser
 Documentation
 -------------
 
-Documentation is available at https://docs.tooljet.com.
+Documentation is available at https://docs.tooljet.ai.
 
 -   Getting Started  
     

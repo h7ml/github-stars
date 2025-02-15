@@ -1,6 +1,6 @@
 ---
 project: ngx-dnd
-stars: 575
+stars: 574
 description: 🕶  Drag, Drop and Sorting Library for Angular2 and beyond!
 url: https://github.com/swimlane/ngx-dnd
 ---

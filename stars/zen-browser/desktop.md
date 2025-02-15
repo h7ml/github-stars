@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 23855
+stars: 24465
 description: 🌀 Experience tranquillity while browsing the web without people tracking you!
 url: https://github.com/zen-browser/desktop
 ---

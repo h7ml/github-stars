@@ -1,6 +1,6 @@
 ---
 project: rspack
-stars: 10719
+stars: 10776
 description: The fast Rust-based web bundler with webpack-compatible API 🦀️
 url: https://github.com/web-infra-dev/rspack
 ---
@@ -122,6 +122,7 @@ Thanks to:
 -   The prefresh created by @Jovi De Croock, which inspires implement preact refresh rspack plugin.
 -   The mini-css-extract-plugin project created by @sokra which inspired implement css extract plugin.
 -   The copy-webpack-plugin project created by @kevlened which inspired implement copy rspack plugin.
+-   The webpack-subresource-integrity project created by @jscheid, which inspires implement subresource integrity rspack plugin.
 
 License
 -------

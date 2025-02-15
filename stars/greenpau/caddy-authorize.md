@@ -1,6 +1,6 @@
 ---
 project: caddy-authorize
-stars: 228
+stars: 229
 description: Authorization Plugin for Caddy v2 (JWT/PASETO)
 url: https://github.com/greenpau/caddy-authorize
 ---

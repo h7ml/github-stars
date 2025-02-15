@@ -1,6 +1,6 @@
 ---
 project: svgtofont
-stars: 629
+stars: 628
 description: Read a set of SVG icons and ouput a TTF/EOT/WOFF/WOFF2/SVG font.
 url: https://github.com/jaywcjlove/svgtofont
 ---
@@ -375,28 +375,43 @@ as you add more svgs and process them into your font you would just use the same
 <i class\="icons"\>remove</i\>
 <i class\="icons"\>edit</i\>
 
-### useCSSVars
+### addLigatures
 
 > Type: `Boolean`  
 > Default value: `false`
+
+adds possibility to use name (file name) in addition to codepoints. adds support of ligatures.
+
+let's say you have some svgs and you want to use codepoints but for some of them for example with a file name of `add` you want to use ligatures for it. this option only adds ligatures and still allows for using codepoints as usual. this is in contrary to useNameAsUnicode which basically removes support for codepoints in favour of ligatures.
+
+{
+  ...
+  addLigatures: true
+}
+
+### useCSSVars
+
+\> Type: \`Boolean\`  
+\> Default value: \`false\`  
 
 consoles whenever {{ cssString }} template outputs unicode characters or css vars
 
 ### classNamePrefix
 
-> Type: `String`  
-> Default value: font name
+\> Type: \`String\`  
+\> Default value: font name  
 
 Create font class name prefix, default value font name.
 
 ### css
 
-> Type: `Boolean|CSSOptions`  
-> Default value: `false`
+\> Type: \`Boolean|CSSOptions\`  
+\> Default value: \`false\`  
 
-Create CSS/LESS files, default `true`.
+Create CSS/LESS files, default \`true\`.
 
-type CSSOptions \= {
+\`\`\`ts
+type CSSOptions = {
   /\*\*
    \* Output the css file to the specified directory
    \*/
@@ -422,11 +437,11 @@ type CSSOptions \= {
   /\*\*
    \* Ad hoc template variables.
    \*/
-  templateVars?: Record<string, any\>;
+  templateVars?: Record<string, any>;
   /\*\*
    \* When including CSS files in a CSS file,
    \* you can add a timestamp parameter or custom text to the file path to prevent browser caching issues and ensure style updates are applied. @default true
-   \* @example \`path/to/iconfont.css?t=1612345678\`
+   \* @example \`path/to/iconfont.css?t\=1612345678\`
    \*/
   hasTimestamp?: boolean | string;
 }

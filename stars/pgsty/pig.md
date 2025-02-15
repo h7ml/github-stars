@@ -1,6 +1,6 @@
 ---
 project: pig
-stars: 91
+stars: 103
 description: PostgreSQL Extension Manager
 url: https://github.com/pgsty/pig
 ---
@@ -10,7 +10,7 @@ PIG - Postgres Install Genius
 
 **pig** is an open-source PostgreSQL (& Extension) Package Manager for mainstream (EL/Debian/Ubuntu) Linux.
 
-Install PostgreSQL 13-17 along with 390 extensions on (`amd64` / `arm64`) with native OS package manager
+Install PostgreSQL 13-17 along with 400 extensions on (`amd64` / `arm64`) with native OS package manager
 
 > Blog: The idea way to deliver PostgreSQL extensions
 
@@ -382,7 +382,8 @@ Here are some bad cases and limitation for above Linux distros:
 -   `citus` and `hydra` are mutually exclusive
 -   `pg_duckdb` and `pg_mooncake` are mutually exclusive
 -   `pg_duckdb` will invalidate `duckdb_fdw`
--   `pg_anon` the new 2.0 rust version is conflict with previous 1.x C version
+-   `documentdb_core` is not available on `arm` arch
+-   `vchord` 0.2+ is not available on `d12/u22` (0.1 available)
 
 * * *
 

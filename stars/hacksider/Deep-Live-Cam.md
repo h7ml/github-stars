@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 43712
+stars: 43883
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -125,7 +125,7 @@ brew install python-tk@3.10
 
 **CUDA Execution Provider (Nvidia)**
 
-1.  Install CUDA Toolkit 12.1.1
+1.  Install CUDA Toolkit 11.8.0
 2.  Install dependencies:
 
 pip uninstall onnxruntime onnxruntime-gpu

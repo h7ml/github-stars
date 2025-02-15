@@ -1,6 +1,6 @@
 ---
 project: Nuitka
-stars: 12472
+stars: 12503
 description: Nuitka is a Python compiler written in Python.  It's fully compatible with Python 2.6, 2.7, 3.4-3.13. You feed it your Python app, it does a lot of clever things, and spits out an executable or extension module. 
 url: https://github.com/Nuitka/Nuitka
 ---
@@ -443,6 +443,12 @@ C:\\SomeWhere\\YourOnefile.exe
 No-suffix of run-time filename of executable.
 
 C:\\SomeWhere\\YourOnefile
+
+{PROGRAM\_DIR}
+
+Containing directory of executable.
+
+C:\\SomeWhere
 
 {CACHE\_DIR}
 

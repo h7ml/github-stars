@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 39764
+stars: 40541
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -94,15 +94,17 @@ Definitions
 Changelog
 ---------
 
+\[25/02/11\] We supported saving the **Ollama** modelfile when exporting the model checkpoints. See examples for usage.
+
 \[25/02/05\] We supported fine-tuning the **Qwen2-Audio** and **MiniCPM-o-2.6** on audio understanding tasks.
 
 \[25/01/31\] We supported fine-tuning the **DeepSeek-R1** and **Qwen2.5-VL** model.
 
+Full Changelog
+
 \[25/01/15\] We supported **APOLLO** optimizer. See examples for usage.
 
 \[25/01/14\] We supported fine-tuning the **MiniCPM-o-2.6** and **MiniCPM-V-2.6** models. Thank @BUAADreamer's PR.
-
-Full Changelog
 
 \[25/01/14\] We supported fine-tuning the **InternLM3** models. Thank @hhaAndroid's PR.
 
@@ -243,7 +245,7 @@ DeepSeek 2.5/3
 
 deepseek3
 
-DeepSeek R1
+DeepSeek R1 (Distill)
 
 1.5B/7B/8B/14B/32B/70B/671B
 
@@ -343,7 +345,7 @@ MiniCPM-o-2.6/MiniCPM-V-2.6
 
 8B
 
-minicpm\_v
+minicpm\_o/minicpm\_v
 
 Ministral/Mistral-Nemo
 
@@ -915,6 +917,16 @@ Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel
 Tip
 
 Use `pip install --no-deps -e .` to resolve package conflicts.
+
+Setting up a virtual environment with **uv**
+
+Create an isolated Python environment with uv:
+
+uv sync --extra torch --extra metrics --prerelease=allow
+
+Run LLaMA-Factory in the isolated environment:
+
+uv run --prerelease=allow llamafactory-cli train examples/train\_lora/llama3\_lora\_pretrain.yaml
 
 For Windows users
 

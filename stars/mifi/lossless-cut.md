@@ -1,6 +1,6 @@
 ---
 project: lossless-cut
-stars: 29456
+stars: 29571
 description: The swiss army knife of lossless video/audio editing
 url: https://github.com/mifi/lossless-cut
 ---
@@ -18,7 +18,20 @@ Thanks to my supporters and everyone who purchased LosslessCut!
   
   
 
-LosslessCut aims to be the ultimate cross platform FFmpeg GUI for extremely fast and lossless operations on video, audio, subtitle and other related media files. The main feature is lossless trimming and cutting of video and audio files, which is great for saving space by rough-cutting your large video files taken from a video camera, GoPro, drone, etc. It lets you quickly extract the good parts from your videos and discard many gigabytes of data without doing a slow re-encode and thereby losing quality. Or you can add a music or subtitle track to your video without needing to encode. Everything is extremely fast because it does an almost direct data copy, fueled by the awesome FFmpeg which does all the grunt work.
+LosslessCut aims to be the ultimate cross platform FFmpeg GUI for extremely fast and lossless operations on video, audio, subtitle and other related media files. The main feature is lossless trimming and cutting of video and audio files, which is great for saving space by rough-cutting your large video files taken from a video camera, GoPro, drone, etc. It lets you quickly extract the good parts from your videos and discard many gigabytes of data without doing a slow re-encode and thereby losing quality. There are also many more use cases. Everything is extremely fast because it does an almost direct data copy, fueled by the awesome FFmpeg which does all the grunt work.
+
+Table of contents
+-----------------
+
+-   Features
+-   Example lossless use cases
+-   Download
+-   Supported formats
+-   Typical workflow
+-   Video demos
+-   Featured
+-   Attributions
+-   More documentation
 
 Features
 --------
@@ -115,39 +128,27 @@ If you want to support my continued work on LosslessCut, and you want the advant
 
 For Linux these are some alternatives:
 
-If you prefer to download the executables manually, this will of course always be free:
+If you prefer to download the executables manually, this will of course always be free (see also supported operating systems):
 
--   Mac OS X: Intel DMG / Apple Silicon DMG (note that universal.pkg **does not work**)
+-   macOS: Intel / Apple Silicon DMG (note that PKG does **not** work)
 -   Windows: 7zip (Windows 7, 8 and 8.1 is no longer supported after v3.50.0)
 -   Linux: x64 tar.bz2 / x64 AppImage / arm64 tar.bz2 / Raspberry Pi armv7l
--   More releases (note that APPX for Windows and PKG for MacOS **do not work**)
--   Download latest nightly builds 🧪.
+-   More releases - Note that APPX (Windows) and PKG (macOS) do **not** work)
+-   Latest nightly builds 🧪
 
-What's the **difference between App Stores and GitHub download?** Please see FAQ
+Difference between App Stores and GitHub download? Please see FAQ.
 
 LosslessCut is maintained by me alone and will always remain free and open source. If it's useful to you, consider supporting my work. Alternatively donate to FFmpeg because they are doing the world a huge favor.
 
 Paypal | crypto | more
 
-Supported operating systems
----------------------------
-
 Supported formats
 -----------------
 
-LosslessCut uses Chromium's HTML5 video player, and not all FFmpeg supported formats and codecs are natively supported. Generally, the following formats should work: `MP4`, `MOV`, `WebM`, `Matroska`, `OGG` and `WAV`. The following audio codecs: `FLAC`, `MP3`, `Opus`, `PCM`, `Vorbis` and `AAC`. Video codecs: `H264`, `AV1`, `Theora`, `VP8`, `VP9` and `H265` (needs hardware decoder). More information about Chromium supported formats / codecs. What's the difference between a codec and a format?
+LosslessCut uses the Chromium browser's HTML5 video player, and not all formats/codecs are natively supported. Generally, the following file formats work: `MP4`, `MOV`, `WebM`, `Matroska`, `OGG` and `WAV`. Audio codecs: `FLAC`, `MP3`, `Opus`, `PCM`, `Vorbis` and `AAC`. Video codecs: `H264`, `AV1`, `Theora`, `VP8`, `VP9` and `H265` (with hardware decoder). Learn the difference between a codec and a format. Codecs and formats not listed above can still be converted to a supported format/codec from the `File` menu (try the option _Fastest: FFmpeg-assisted playback_ first). A low quality version of the file will then be created and opened in the player. Note that the actual cut/export operation will still be performed on the original file, so it will be lossless. This allows for potentially opening any file that FFmpeg is able to decode.
 
-Codecs and formats not listed above can still be converted to a supported format/codec from the `File` menu. (Try the `fastest` option first.) A low quality version of the file (with/without audio) will then be created and opened in the player. The actual cut/export operation will still be performed on the original file, so it will be lossless. This allows for potentially opening any file that FFmpeg is able to decode.
-
-Video demos
------------
-
--   Common features
--   How to add a thumbnail / cover art to an MP4
--   How to add multi-language audio to a video
--   **Your video here?** If you would like to make a video showing off LosslessCut use cases, let me know and I can link it here!
-
-### Typical workflow
+Typical workflow
+----------------
 
 -   Drag drop a video file into player or use ⌘/CTRL+O.
 -   Press SPACE to play/pause or ◀▶, ,. or mouse/trackpad wheel to seek back/forth.
@@ -170,49 +171,37 @@ Video demos
 -   Press SHIFT + / to view all keyboard & mouse shortcuts.
 -   **Note:** The original video file will not be modified. Instead, a file is created file in the same directory as the original file with from/to timestamps in the file name.
 
-Installation
-------------
+### Video demos
 
-Import / export
----------------
+-   Common features
+-   How to add a thumbnail / cover art to an MP4
+-   How to add multi-language audio to a video
+-   Your video here?
 
-Command line interface (CLI) & HTTP API
----------------------------------------
+More documentation
+------------------
 
-Known issues, limitations, troubleshooting, FAQ
------------------------------------------------
-
-Contributing
-------------
-
-Translation
------------
-
-If you have any problem or question, please read this before creating an issue. I try to answer most common questions here.
+-   Import / export
+-   Command line interface (CLI) & HTTP API
+-   Known issues, limitations, troubleshooting, FAQ
+-   Contributing
 
 Featured
 --------
 
--   Featured in the Console newsletter
+-   Console newsletter
 -   Hacker News 2024 2022 2020-10 2020-01 2016
--   LosslessCut on Wikipedia
+-   Wikipedia
 -   Your link here?
 
 Attributions
 ------------
 
--   App icon made by Dimi Kazak from www.flaticon.com is licensed by CC 3.0 BY
--   Lottie animation
--   Thanks to Adi Abinun for his UI sketch work, inspiration and guidance
--   Thanks to everyone for supporting my open source work 🙌
+-   App icon made by Dimi Kazak from www.flaticon.com is licensed by CC 3.0 BY.
+-   Lottie animation by Chris Gannon.
+-   Thanks to Adi Abinun for UI work.
 -   Thanks to translators who helped translate the app. You can too!
-
-More software
--------------
-
--   I made a command line video editor with slick transitions and lots of colors! editly
--   I made a tool for cross platform sharing of files between computer/phone over the local network: ezshare
--   I created a super simple Instagram bot for getting more followers SimpleInstaBot
+-   Thanks to everyone for supporting my open source work 🙌
 
 * * *
 

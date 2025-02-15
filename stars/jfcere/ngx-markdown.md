@@ -1,6 +1,6 @@
 ---
 project: ngx-markdown
-stars: 1084
+stars: 1085
 description: Angular markdown component/directive/pipe/service to parse static, dynamic or remote content to HTML with syntax highlight and more...
 url: https://github.com/jfcere/ngx-markdown
 ---
@@ -664,22 +664,58 @@ MarkdownModule.forRoot({
 
 ### Marked extensions
 
-You can provide marked extensions using the `markedExtensions` property that accepts an array of extensions when configuring `MarkdownModule`.
+When configuring the `MarkdownModule`, you can provide marked extensions using the `markedExtensions` property that accepts an array of extension functions and/or providers to allow dependency injection using the `MARKED_EXTENSION` injection token when configuring `MarkdownModule`.
 
 ##### Using the `provideMarkdown` function
 
 import { gfmHeadingId } from 'marked-gfm-heading-id';
 
+// using extension functions
 providemarkdown({
   markedExtensions: \[gfmHeadingId()\],
+}),
+
+// using \`MARKED\_EXTENSION\` allows dependency injection
+providemarkdown({
+  markedExtensions: \[
+    {
+      provide: MARKED\_EXTENSIONS,
+      useFactory: gfmHeadingId,
+      multi: true,
+    },
+    {
+      provide: MARKED\_EXTENSIONS,
+      useFactory: myExtensionFactory,
+      deps: \[SomeService\],
+      multi: true,
+    },
+  \],
 }),
 
 ##### Using the `MarkdownModule` import
 
 import { gfmHeadingId } from 'marked-gfm-heading-id';
 
+// using extension functions
 MarkdownModule.forRoot({
   markedExtensions: \[gfmHeadingId()\],
+}),
+
+// using \`MARKED\_EXTENSION\` allows dependency injection
+MarkdownModule.forRoot({
+  markedExtensions: \[
+    {
+      provide: MARKED\_EXTENSIONS,
+      useFactory: gfmHeadingId,
+      multi: true,
+    },
+    {
+      provide: MARKED\_EXTENSIONS,
+      useFactory: myExtensionFactory,
+      deps: \[SomeService\],
+      multi: true,
+    },
+  \],
 }),
 
 Usage

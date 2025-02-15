@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 37113
+stars: 37341
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -71,7 +71,7 @@ Special thanks to our biggest sponsors!
 -   Juxtdigital - A digital agency offering web development, design, and digital marketing services for businesses.
 -   Saasykit - A Laravel-based boilerplate providing essential components and features for building SaaS applications quickly.
 -   Massivegrid - A cloud hosting provider offering scalable infrastructure solutions for businesses of all sizes.
--   LiquidWeb - Fast web hosting provider.
+-   LiquidWeb - A Fast web hosting provider.
 
 Github Sponsors ($40+)
 ----------------------

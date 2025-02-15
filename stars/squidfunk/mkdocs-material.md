@@ -1,6 +1,6 @@
 ---
 project: mkdocs-material
-stars: 22035
+stars: 22110
 description: Documentation that simply works
 url: https://github.com/squidfunk/mkdocs-material
 ---
@@ -40,7 +40,7 @@ Own your documentation's complete sources and outputs, guaranteeing both integri
 
 ### Open Source
 
-You're in good company – choose a mature and actively maintained solution built with state-of-the-art Open Source technologies, trusted by more than 50.000 individuals and organizations. Licensed under MIT.
+You're in good company – choose a mature and actively maintained solution built with state-of-the-art Open Source technologies, trusted by more than 50,000 individuals and organizations. Licensed under MIT.
 
 Quick start
 -----------

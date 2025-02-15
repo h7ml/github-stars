@@ -1,6 +1,6 @@
 ---
 project: saxy
-stars: 286
+stars: 288
 description: Fast SAX parser and encoder for XML in Elixir
 url: https://github.com/qcam/saxy
 ---

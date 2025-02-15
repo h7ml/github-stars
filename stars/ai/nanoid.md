@@ -1,6 +1,6 @@
 ---
 project: nanoid
-stars: 25064
+stars: 25088
 description: A tiny (124 bytes), secure, URL-friendly, unique string ID generator for JavaScript
 url: https://github.com/ai/nanoid
 ---
@@ -50,6 +50,7 @@ Table of Contents
     -   PouchDB and CouchDB
     -   Web Workers
     -   CLI
+    -   TypeScript
     -   Other Programming Languages
 -   Tools
 
@@ -300,6 +301,27 @@ Custom alphabet can be specified with `--alphabet` (or `-a`) option (note that i
 
 $ npx nanoid --alphabet abc --size 15
 bccbcabaabaccab
+
+### TypeScript
+
+Nano ID allows casting generated strings into opaque strings in TypeScript. For example:
+
+declare const userIdBrand: unique symbol
+type UserId \= string & { \[userIdBrand\]: true }
+
+// Use explicit type parameter:
+mockUser(nanoid<UserId\>())
+
+interface User {
+  id: UserId
+  name: string
+}
+
+const user: User \= {
+  // Automatically casts to UserId:
+  id: nanoid(),
+  name: 'Alice'
+}
 
 ### Other Programming Languages
 

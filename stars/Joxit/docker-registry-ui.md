@@ -1,6 +1,6 @@
 ---
 project: docker-registry-ui
-stars: 2742
+stars: 2755
 description: The simplest and most complete UI for your private registry
 url: https://github.com/Joxit/docker-registry-ui
 ---

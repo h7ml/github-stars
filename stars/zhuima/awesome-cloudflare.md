@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10138
+stars: 10190
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -135,6 +135,14 @@ CloudFlare-ImgBed
 基于CloudFlare和Telegraph的免费图床，本仓库基于https://github.com/cf-pages/Telegraph-Image ，是原项目前端页面的重制版。开源、清晰、美观、动画丝滑、玩法多样！
 
 https://demo-cloudflare-imgbed.pages.dev/
+
+维护中
+
+imgUU
+
+一个基于Cloudflare D1和R2构建的免费图片上传应用Github登陆管理。
+
+https://imguu.net/
 
 维护中
 
@@ -678,6 +686,18 @@ cloudflare-webssh-zerotrust
 使用Cloudflare Workers制作博客AI摘要
 
 介绍使用Cloudflare Workers + Workers AI + D1数据库实现博客AI摘要。
+
+有效中
+
+使用CF Workers Cron触发器进行签到
+
+这篇文章讲述了作者在云原神签到脚本被Github Actions禁用后，选择使用Cloudflare Workers Cron触发器的原因。
+
+有效中
+
+用Workers免服务器部署挪车二维码，可微信通知、拨打电话
+
+基于微信推送实现消息通知。
 
 有效中
 

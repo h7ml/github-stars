@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68049
+stars: 68111
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -456,6 +456,7 @@ Courses
     -   CS 109 Data Science, Harvard University (YouTube)
     -   6.0002 Introduction to Computational Thinking and Data Science - MIT OCW
     -   Data 100 - Summer 19- UC Berkeley
+    -   Data 102 - Spring 21- UC Berkeley (YouTube)
     -   Distributed Data Analytics (WT 2017/18) - HPI University of Potsdam
     -   Data Profiling and Data Cleansing (WS 2014/15) - HPI University of Potsdam
     -   CS 229r - Algorithms for Big Data, Harvard University (Youtube)
@@ -649,6 +650,7 @@ Courses
     -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
     -   University of Wisconsin-Madison CS/ECE 561 - Probability and Information Theory in Machine Learning fall 2020, by Matthew Malley
     -   Statistical Physics of Machine Learning
+    -   11-755 - Machine Learning for Signal Processing, CMU (YouTube-2024, YouTube-2023)
 
 * * *
 

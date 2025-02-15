@@ -1,6 +1,6 @@
 ---
 project: tailwindcss-motion
-stars: 2769
+stars: 2800
 description: tailwindcss-motion is a Tailwind CSS Plugin made at RomboHQ. It’s a simple, yet powerful, animation library with a simple syntax.
 url: https://github.com/romboHQ/tailwindcss-motion
 ---
@@ -42,6 +42,28 @@ export default {
           extend: {},
      },
      plugins: \[tailwindcssMotion\],
+};
+
+📝 TypeScript Support
+---------------------
+
+The plugin includes TypeScript definitions out of the box. Theme customizations and plugin configuration are fully typed:
+
+import type { Config } from "tailwindcss";
+import motion from "tailwindcss-motion";
+
+const config: Config \= {
+  theme: {
+    extend: {
+      motionScale: {
+        "200": "200%",
+      },
+      motionTimingFunction: {
+        custom: "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+    },
+  },
+  plugins: \[motion\],
 };
 
 How does it work?

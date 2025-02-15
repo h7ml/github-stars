@@ -1,6 +1,6 @@
 ---
 project: ex_webrtc
-stars: 393
+stars: 396
 description: An Elixir implementation of the W3C WebRTC API
 url: https://github.com/elixir-webrtc/ex_webrtc
 ---
@@ -18,7 +18,7 @@ Add `ex_webrtc` to the list of dependencies in `mix.exs`
 
 def deps do
   \[
-    {:ex\_webrtc, "~> 0.8.0"}
+    {:ex\_webrtc, "~> 0.8.1"}
   \]
 end
 
@@ -26,7 +26,7 @@ Elixir WebRTC comes with optional support for DataChannels, but it must be expli
 
 def deps do
   \[
-    {:ex\_webrtc, "~> 0.8.0"},
+    {:ex\_webrtc, "~> 0.8.1"},
     {:ex\_sctp, "~> 0.1.0"}
   \]
 end
@@ -51,7 +51,7 @@ Elixir WebRTC vs Membrane
 
 Elixir WebRTC is the W3C WebRTC standard implementation written in almost pure Elixir. It does not use Membrane under the hood, and it aims to be as close to the W3C (and hence JavaScript) API as possible.
 
-Membrane, on the other hand, is a multimedia framework. It supports a lot of diffrent protocols, codecs and containers. Membrane uses Elixir WebRTC in its membrane\_webrtc\_plugin making it possible to use WebRTC with other Membrane elements.
+Membrane, on the other hand, is a multimedia framework. It supports a lot of different protocols, codecs and containers. Membrane uses Elixir WebRTC in its membrane\_webrtc\_plugin making it possible to use WebRTC with other Membrane elements.
 
 Credits
 -------

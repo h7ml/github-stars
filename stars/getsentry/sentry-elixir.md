@@ -24,8 +24,8 @@ defp deps do
   \[
     \# ...
 
-    {:sentry, "~> 10.0"},
-    {:hackney, "~> 1.19"}
+    {:sentry, "~> 10.8"},
+    {:hackney, "~> 1.20"}
   \]
 end
 
@@ -36,7 +36,7 @@ If you're using an Elixir version before 1.18, the Sentry SDK will default to Ja
 defp deps do
   \[
     \# ...
-    {:sentry, "~> 10.0"},
+    {:sentry, "~> 10.8.1"},
     {:jason, "~> 1.4"}
   \]
 end
@@ -54,15 +54,50 @@ config :sentry,
 
 ### Usage
 
-This library comes with a `:logger` handler to capture error messages coming from process crashes. To enable this, add the handler when your application starts:
+This library comes with a `:logger` handler to capture error messages coming from process crashes. To enable this, add `Sentry.LoggerHandler` to your production configuration:
 
-  def start(\_type, \_args) do
-+   :logger.add\_handler(:sentry\_handler, Sentry.LoggerHandler, %{})
+\# config/prod.exs
+config :my\_app, :logger, \[
+  {:handler, :my\_sentry\_handler, Sentry.LoggerHandler, %{
+    config: %{
+      metadata: \[:file, :line\],
+      rate\_limiting: \[max\_events: 10, interval: \_1\_second \= 1\_000\],
+      \# Logs all messages with level \`:error\` and above to Sentry.
+      \# Remove :capture\_log\_messages and :level if you only want to report crashes.
+      capture\_log\_messages: true,
+      level: :error
+    }
+  }}
+\]
 
-    # ...
-  end
+And then add your logger when your application starts:
 
-The handler can also be configured to capture `Logger` metadata. See the documentation here.
+\# lib/my\_app/application.ex
+def start(\_type, \_args) do
+  Logger.add\_handlers(:my\_app)
+
+  \# ...
+end
+
+Alternatively, you can skip the `:logger` configuration and add the handler directly to your application's `start/2` callback:
+
+\# lib/my\_app/application.ex
+def start(\_type, \_args) do
+  :logger.add\_handler(:my\_sentry\_handler, Sentry.LoggerHandler, %{
+    config: %{
+      metadata: \[:file, :line\],
+      rate\_limiting: \[max\_events: 10, interval: \_1\_second \= 1\_000\],
+      capture\_log\_messages: true,
+      level: :error
+    }
+  })
+
+  \# ...
+end
+
+See all logger configuration options here.
+
+#### Capture exceptions manually
 
 Sometimes you want to capture specific exceptions manually. To do so, use `Sentry.capture_exception/2`.
 
