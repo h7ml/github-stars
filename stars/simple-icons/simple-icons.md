@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 21931
+stars: 21979
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---

@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 55378
+stars: 55998
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -256,17 +256,17 @@ Recent Submits
 
 Description
 
+Cron Expression Assistant  
+By **edgesider** on **2025-02-17**
+
+Crontab Expression Generator  
+`crontab` `time-expression` `trigger-time` `generator` `technical-assistance`
+
 Xiao Zhi French Translation Assistant  
 By **WeR-Best** on **2025-02-10**
 
 A friendly, professional, and empathetic AI assistant for French translation  
 `ai-assistant` `french-translation` `cross-cultural-communication` `creativity`
-
-Astrology Researcher  
-By **Jack980506** on **2025-02-06**
-
-Expert in BaZi astrology  
-`astrology` `ba-zi` `traditional-culture`
 
 Language Charm Learning Mentor  
 By **Guducat** on **2025-02-06**
@@ -274,13 +274,13 @@ By **Guducat** on **2025-02-06**
 Specializes in teaching the charm of language and witty responses  
 `language-learning` `dialogue-examples`
 
-Allinone  
-By **AXuanCreator** on **2025-02-06**
+Astrology Researcher  
+By **Jack980506** on **2025-02-06**
 
-Innovation · Future · Excellence  
-`programming` `low-cost` `concise-answers`
+Expert in BaZi astrology  
+`astrology` `ba-zi` `traditional-culture`
 
-> 📊 Total agents: **486**
+> 📊 Total agents: **487**
 
 ### `12` Support Local / Remote Database
 

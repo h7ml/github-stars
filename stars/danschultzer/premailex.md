@@ -1,6 +1,6 @@
 ---
 project: premailex
-stars: 176
+stars: 177
 description: Preflight for your HTML emails - inline styling and plain text.
 url: https://github.com/danschultzer/premailex
 ---

@@ -1,6 +1,6 @@
 ---
 project: rustdesk
-stars: 82201
+stars: 82571
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---
@@ -106,6 +106,7 @@ Begin by cloning the repository and building the Docker container:
 
 git clone https://github.com/rustdesk/rustdesk
 cd rustdesk
+git submodule update --init --recursive
 docker build -t "rustdesk-builder" .
 
 Then, each time you need to build the application, run the following command:

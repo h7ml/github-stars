@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68111
+stars: 68168
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -377,12 +377,13 @@ Courses
     -   CS 156 - Learning from Data, Caltech
     -   10-601 - Introduction to Machine Learning (MS) - Tom Mitchell - 2015, CMU (YouTube)
     -   10-601 Machine Learning | CMU | Fall 2017
-    -   10-701 - Introduction to Machine Learning (PhD) - Tom Mitchell, Spring 2011, CMU (Fall 2014) (Spring 2015 by Alex Smola)
+    -   10-701 - Introduction to Machine Learning (PhD) - Tom Mitchell, Spring 2011, CMU (Fall 2014) (Spring 2015 by Alex Smola) (Fall 2020 by Ziv Bar-Joseph, Eric Xing)
     -   10 - 301/601 - Introduction to Machine Learning - Fall 2023 - CMU
     -   6.036 - Machine Learning, Broderick - MIT Fall 2020
     -   Mediterranean Machine Learning summer school 2023
     -   Applied Machine Learning (Cornell Tech CS 5787, Fall 2020)
     -   Stanford CS229: Machine Learning Course | Summer 2019 (Anand Avati) (Spring 2022)
+    -   CMS 165 Foundations of Machine Learning - 2019 - Caltech (Youtube)
     -   CMS 165 Foundations of Machine Learning and Statistical Inference - 2020 - Caltech
     -   Microsoft Research - Machine Learning Course
     -   CS 446 - Machine Learning, Fall 2016, UIUC
@@ -446,10 +447,10 @@ Courses
     -   UC Berkeley CS 189 / 289A Introduction to Machine Learning fall 2023, by Jennifer Listgarten & Jitendra Malik
     -   UC Berkeley CS 189 Introduction to Machine Learning (CDSS offering) spring 2022, by Marvin Zhang
     -   MIT 6.036 Introduction to Machine Learning spring 2019, by Leslie Kaelbling
-    -   UCLA STAT C161 Introduction to Pattern Recognition and Machine Learning winter 2023, by Arash Amini
+    -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
+    -   UCLA Stats 231C Theories of Machine Learning spring 2022, by Arash Amini
     -   MSU Machine Learning
     -   Data Science for Dynamical Systems, by Oliver Wallscheid & Sebastian Peitz
-    -   STATS C161/C261 - Introduction to Pattern Recognition and Machine Learning Winter 2024
     -   Cambridge Statistical Learning in Practice 2021, by Alberto J. Coca
     -   Data 8: The Foundations of Data Science - UC Berkeley (Summer 17)
     -   CSE519 - Data Science Fall 2016 - Skiena, SBU
@@ -494,6 +495,7 @@ Courses
     -   CS231n Deep Learning for Computer Vision - Winter 2016 Andrej Karpathy - Stanford University
     -   Deep Learning: CS 182 Spring 2021
     -   10-414/714: Deep Learning Systems - CMU (Youtube)
+    -   11-785: Introduction to Deep Learning - CMU (Lectures - YouTube-2024, Recitations - YouTube-2024)
     -   Part 1: Practical Deep Learning for Coders, v3 - fast.ai
     -   Part 2: Deep Learning from the Foundations - fast.ai
     -   Deep learning at Oxford 2015 - Nando de Freitas
@@ -561,6 +563,8 @@ Courses
     -   Information Retrieval in High Dimensional Data
     -   Trustworthy Machine Learning - Winter Semester 2023-2024, University of Tübingen
     -   Trustworthy Machine Learning - Winter Semester 2024-2025, University of Tübingen
+    -   ETH Zürich Advanced Machine Learning fall 2019, by Joachim M. Buhmann
+    -   CS 159 Advanced Topics in Machine Learning, Spring 2021 - Caltech
 -   #### **Natural Language Processing**
     
     -   CS 224N -Natural Language Processing with Deep Learning - Stanford University (Lectures - Winter 2019) (Lectures - Winter 2021)
@@ -610,6 +614,7 @@ Courses
 -   #### **Optimization**
     
     -   Optimisation for Machine Learning: Theory and Implementation (Hindi) - IIT
+    -   Rochester DSCC 435 Optimization for Machine Learning fall 2023, by Jiaming Liang
     -   EE364a: Convex Optimization I - Stanford University
     -   10-725 Convex Optimization, Spring 2015 - CMU
     -   10-725 Convex Optimization: Fall 2016 - CMU
@@ -617,6 +622,7 @@ Courses
     -   10-801 Advanced Optimization and Randomized Methods - CMU (YouTube)
     -   AM 207 - Stochastic Methods for Data Analysis, Inference and Optimization, Harvard University
     -   UCSD CS292F Convex Optimization Spring 2020, by Yu-Xiang Wang (Youtube)
+    -   University of Wisconsin-Madison CS/ECE/ISyE 524 Introduction to Optimization spring 2017-18, by Laurent Lessard
     -   University of Wisconsin-Madison ISyE/Math/CS/Stat 525 Linear Optimization fall 2021, by Alberto Del Pia
     -   University of Wisconsin-Madison ISyE/Math/CS 728 Integer Optimization (second part of the course) spring 2020
 -   #### **Misc Machine Learning Topics**
@@ -649,6 +655,7 @@ Courses
     -   EE512A - Advanced Inference in Graphical Models, Fall Quarter, 2014
     -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
     -   University of Wisconsin-Madison CS/ECE 561 - Probability and Information Theory in Machine Learning fall 2020, by Matthew Malley
+    -   University of Maryland CMSC828U Algorithms in Machine Learning: Guarantees and Analyses fall 2020, by Furong Huang (YouTube playlist)
     -   Statistical Physics of Machine Learning
     -   11-755 - Machine Learning for Signal Processing, CMU (YouTube-2024, YouTube-2023)
 
@@ -741,11 +748,14 @@ Courses
     -   UCLA Stats 102A Introduction to Computational Statistics with R winter 2024, by Miles Chen
     -   UCLA Stats 102B Computation and Optimization for Statistics spring 2024, by Miles Chen
     -   UCLA Stats 102C Introduction to Monte Carlo Methods fall 2023, by Miles Chen
-    -   STATS 200C: High-dimensional Statistics
+    -   UCLA Stats 200B Theoretical Statistics winter 2023, by Arash Amini
+    -   UCLA Stats 200C High-dimensional Statistics spring 2022, by Arash Amini (Spring 2021)
+    -   UCLA Stats 203 Large Sample Theory fall 2021, by Jingyi Jessica Li (Fall 2020)
 -   **Linear Algebra**
     -   Mathematical Foundations of Machine Learning (Fall 2021) - University of Chicago - Rebecca Willett
     -   18.06 - Linear Algebra, Prof. Gilbert Strang, MIT OCW
     -   18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning - MIT OCW
+    -   University of Wisconsin-Madison ECE/CS/ME 532 Matrix Methods in Machine Learning fall 2017, by Laurent Lessard
     -   Linear Algebra (Princeton University)
     -   MOOC: Coding the Matrix: Linear Algebra through Computer Science Applications - Coursera
     -   CS 053 - Coding the Matrix - Brown University (Fall 14 videos)
@@ -1004,6 +1014,7 @@ Courses
 -   Computer Systems Security, Fall 2020, Vinod Ganapathy, IISc Bangalore
 -   UC Berkeley CS 161 Computer Security, Summer 2021, by Nicholas Ngai and Peyrin Kao
 -   UCSD CS291A Differential Privacy Fall 2021, by Yu-Xiang Wang (Youtube)
+-   Zero Knowledge Proofs MOOC, UC Berkeley RDI Center on Decentralization & AI
 
 * * *
 
@@ -1040,6 +1051,8 @@ Courses
 -   Introduction to Image Processing - RPI (YouTube)
 -   CAP 6412 - Advanced Computer Vision - University of Central Florida(Video lectures) (Spring 2018)
 -   Digital Signal Processing - RPI
+-   UC Berkeley EE 123 Digital Signal Processing fall 2003, by Avideh Zakhor
+-   UC Berkeley EE 225B Digital Image Processing spring 2006, by Avideh Zakhor
 -   Advanced Vision 2014 - University of Edinburgh
 -   Photogrammetry Course - 2015/16 - University of Bonn, Germany
 -   MOOC - Introduction to Computer Vision - Udacity
@@ -1158,7 +1171,7 @@ Courses
 -   CS287 Advanced Robotics at UC Berkeley Fall 2019 -- Instructor: Pieter Abbeel
 -   CS 287 - Advanced Robotics, Fall 2011, UC Berkeley (Videos)
 -   CMU 16-715 Robot Dynamics 2022 - CMU
--   CMU 16-745 Optimal Control 2023 - CMU
+-   CMU 16-745 Optimal Control 2024 - CMU (Lecture notebooks) (YouTube-2023) (YouTube-2022)
 -   CS235 - Applied Robot Design for Non-Robot-Designers - Stanford University
 -   Lecture: Visual Navigation for Flying Robots (YouTube)
 -   CS 205A: Mathematical Methods for Robotics, Vision, and Graphics (Fall 2013)
@@ -1284,5 +1297,7 @@ Courses
 -   ETH Zürich AI in the Sciences and Engineering
 -   Introduction to GIS Programming (Fall 2024) - Open Geospatial Solutions
 -   UC Berkeley EE 120 Signals and Systems spring 2019, by Murat Arcak
+-   Stanford EE 102 spring 1999, Introduction to Signals and Systems, by Stephen Boyd
 -   Stanford EE 376a winter 2011, Information Theory, by Thomas Cover
+-   MIT RES.6.007 Signals and Systems, 1987 - MIT
 -   Purdue ME 597 Distributed Energy Resources Spring 2024, by Kevin J. Kircher

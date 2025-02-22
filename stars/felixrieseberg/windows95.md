@@ -1,6 +1,6 @@
 ---
 project: windows95
-stars: 22439
+stars: 22485
 description: 💩🚀 Windows 95 in Electron. Runs on macOS, Linux, and Windows.
 url: https://github.com/felixrieseberg/windows95
 ---
@@ -19,21 +19,18 @@ Windows
 32-bit 💿 Installer | 📦 Standalone Zip  
 64-bit 💿 Installer | 📦 Standalone Zip  
 ARM64 💿 Installer | 📦 Standalone Zip  
-❓ Don't know what kind of chip you have? Hit start, enter "processor" for info.
+❓ Don't know what kind of chip you have? It's probably \`x64\`. To confirm, on your computer, hit Start, enter "processor" for info.
 
   
 macOS
 
-Intel Processor 📦 Standalone Zip  
-Apple M1 Processor 📦 Standalone Zip  
-❓ Don't know what kind of chip you have? Learn more at apple.com.
+Apple Silicon Processor 📦 Standalone Zip  
+Intel Processor 📦 Standalone Zip ❓ Don't know what kind of chip you have? If you bought your computer after 2020, select "Apple Silicon". Learn more at apple.com.
 
   
 Linux
 
 64-bit 💿 rpm | 💿 deb  
-ARM64 💿 rpm | 💿 deb  
-ARMv7 (armhf) 💿 rpm | 💿 deb
 
 * * *
 
@@ -50,7 +47,7 @@ Absolutely.
 Does it run Doom (or my other favorite game)?
 ---------------------------------------------
 
-You'll likely be better off with an actual virtualization app, but the short answer is yes. Thanks to @DisplacedGamers I can recommend that you switch to a resolution of 640x480 @ 256 colors before starting DOS games - just like in the good ol' days.
+You'll likely be better off with an actual virtualization app, but the short answer is yes. In fact, a few games are already preinstalled - and more can be found on the Internet, for instance at archive.org. Thanks to @DisplacedGamers I can recommend that you switch to a resolution of 640x480 @ 256 colors before starting DOS games - just like in the good ol' days.
 
 Credits
 -------

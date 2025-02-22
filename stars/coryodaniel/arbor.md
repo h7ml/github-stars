@@ -1,6 +1,6 @@
 ---
 project: arbor
-stars: 241
+stars: 240
 description: Ecto elixir adjacency list and tree traversal. Supports Ecto versions 2 and 3.
 url: https://github.com/coryodaniel/arbor
 ---

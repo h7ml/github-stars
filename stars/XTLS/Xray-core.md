@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 27201
+stars: 27300
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -144,21 +144,23 @@ Credits
 -   Xray-core v1.0.0 was forked from v2fly-core 9a03cc5, and we have made & accumulated a huge number of enhancements over time, check the release notes for each version.
 -   For third-party projects used in Xray-core, check your local or the latest go.mod.
 
-Compilation
------------
+One-line Compilation
+--------------------
 
 ### Windows (PowerShell)
 
 $env:CGO\_ENABLED\=0
-go build \-o xray.exe \-trimpath \-ldflags "\-s -w -buildid=" ./main
+go build \-o xray.exe \-trimpath \-buildvcs\=false \-ldflags\="\-s -w -buildid=" \-v ./main
 
 ### Linux / macOS
 
-CGO\_ENABLED=0 go build -o xray -trimpath -ldflags "\-s -w -buildid=" ./main
+CGO\_ENABLED=0 go build -o xray -trimpath -buildvcs=false -ldflags="\-s -w -buildid=" -v ./main
 
 ### Reproducible Releases
 
-make
+Make sure that you are using the same Go version, and remember to set the git commit id (7 bytes):
+
+CGO\_ENABLED=0 go build -o xray -trimpath -buildvcs=false -ldflags="\-X github.com/xtls/xray-core/core.build=REPLACE -s -w -buildid=" -v ./main
 
 Stargazers over time
 --------------------

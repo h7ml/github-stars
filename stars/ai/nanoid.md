@@ -1,6 +1,6 @@
 ---
 project: nanoid
-stars: 25088
+stars: 25135
 description: A tiny (124 bytes), secure, URL-friendly, unique string ID generator for JavaScript
 url: https://github.com/ai/nanoid
 ---
@@ -38,6 +38,7 @@ Table of Contents
 -   Install
     -   ESM
     -   CommonJS
+    -   JSR
     -   CDN
 -   API
     -   Blocking
@@ -48,7 +49,6 @@ Table of Contents
     -   React
     -   React Native
     -   PouchDB and CouchDB
-    -   Web Workers
     -   CLI
     -   TypeScript
     -   Other Programming Languages
@@ -130,6 +130,19 @@ Nano ID can be used with CommonJS in one of the following ways:
     
     npm install nanoid@3
     
+
+### JSR
+
+JSR is a replacement for npm with open governance and active development (in contrast to npm).
+
+npx jsr add @sitnik/nanoid
+
+You can use it in Node.js, Deno, Bun, etc.
+
+// Replace \`nanoid\` to \`@sitnik/nanoid\` in all imports
+import { nanoid } from '@sitnik/nanoid'
+
+For Deno install it by `deno add jsr:@sitnik/nanoid` or import from `jsr:@sitnik/nanoid`.
 
 ### CDN
 
@@ -273,17 +286,6 @@ db.put({
   …
 })
 
-### Web Workers
-
-Web Workers do not have access to a secure random generator.
-
-Security is important in IDs when IDs should be unpredictable. For instance, in "access by URL" link generation. If you do not need unpredictable IDs, but you need to use Web Workers, you can use the non‑secure ID generator.
-
-import { nanoid } from 'nanoid/non-secure'
-nanoid() //=> "Uakgb\_J5m9g-0JDMbcJqLJ"
-
-Note: non-secure IDs are more prone to collision attacks.
-
 ### CLI
 
 You can get unique ID in terminal by calling `npx nanoid`. You need only Node.js in the system. You do not need Nano ID to be installed anywhere.
@@ -334,7 +336,6 @@ Nano ID was ported to many languages. You can use these ports to have the same I
 -   ColdFusion/CFML
 -   Crystal
 -   Dart & Flutter
--   Deno
 -   Elixir
 -   Gleam
 -   Go

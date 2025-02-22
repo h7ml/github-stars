@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13025
+stars: 13073
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -211,6 +211,7 @@ Examples
 -   river _Online machine learning in python, the computationally heavy statistics algorithms are implemented in Rust._
 -   robyn A Super Fast Async Python Web Framework with a Rust runtime.
 -   rust-python-coverage _Example PyO3 project with automated test coverage for Rust and Python._
+-   rnet Asynchronous Python HTTP Client with Black Magic
 -   sail _Unifying stream, batch, and AI workloads with Apache Spark compatibility._
 -   tiktoken _A fast BPE tokeniser for use with OpenAI's models._
 -   tokenizers _Python bindings to the Hugging Face tokenizers (NLP) written in Rust._

@@ -1,6 +1,6 @@
 ---
 project: syslog-ng
-stars: 2187
+stars: 2189
 description: syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL.
 url: https://github.com/syslog-ng/syslog-ng
 ---
@@ -144,39 +144,67 @@ The packages and the APT repository are provided "as is" without warranty of any
 
 #### Supported distributions
 
-syslog-ng packages are released for the following distribution versions (x86-64):
+syslog-ng packages are released for the following distribution versions:
 
 Distro version
 
 sources.list component name
 
+Arch
+
 Ubuntu 24.04
 
 ubuntu-noble
+
+x86-64
+
+Ubuntu 24.04
+
+ubuntu-noble-arm64
+
+arm64
 
 Ubuntu 22.04
 
 ubuntu-jammy
 
+x86-64
+
 Ubuntu 20.04
 
 ubuntu-focal
+
+x86-64
 
 Debian 12
 
 debian-bookworm
 
+x86-64
+
+Debian 12
+
+debian-bookworm-arm64
+
+arm64
+
 Debian 11
 
 debian-bullseye
+
+x86-64
 
 Debian Unstable
 
 debian-sid
 
+x86-64
+
 Debian Testing
 
 debian-testing
+
+x86-64
 
 #### Adding the APT repository
 

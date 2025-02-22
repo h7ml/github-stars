@@ -1,6 +1,6 @@
 ---
 project: wireproxy
-stars: 4764
+stars: 4776
 description: Wireguard client that exposes itself as a socks5 proxy
 url: https://github.com/whyvl/wireproxy
 ---
@@ -24,6 +24,11 @@ Why you might want this
 Currently, I'm running wireproxy connected to a wireguard server in another country, and configured my browser to use wireproxy for certain sites. It's pretty useful since wireproxy is completely isolated from my network interfaces, and I don't need root to configure anything.
 
 Users who want something similar but for Amnezia VPN can use this fork of wireproxy by @artem-russkikh.
+
+Sponsor
+=======
+
+This project is supported by IPRoyal. You can get premium quality proxies at unbeatable prices with a discount using this referral link! 🚀
 
 Feature
 =======

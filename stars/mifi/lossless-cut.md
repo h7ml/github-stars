@@ -1,6 +1,6 @@
 ---
 project: lossless-cut
-stars: 29571
+stars: 29671
 description: The swiss army knife of lossless video/audio editing
 url: https://github.com/mifi/lossless-cut
 ---
@@ -27,11 +27,10 @@ Table of contents
 -   Example lossless use cases
 -   Download
 -   Supported formats
--   Typical workflow
+-   Documentation & getting started
 -   Video demos
 -   Featured
 -   Attributions
--   More documentation
 
 Features
 --------
@@ -63,14 +62,14 @@ Features
 -   Saves per project cut segments to project file
 -   View FFmpeg last command log so you can modify and re-run recent commands on the command line
 -   Undo/redo
--   Give labels to cut segments
--   Annotate segments with tags
+-   Advanced segment query and mutation JS-based expression language.
+-   Give labels to cut segments, annotate with tags
 -   Import/export segments: MP4/MKV chapter marks, Text file, YouTube, CSV, CUE, XML (DaVinci, Final Cut Pro) and more
 -   MKV/MP4 embedded chapters marks editor
 -   View subtitles
 -   Customizable keyboard hotkeys
 -   Black scene detection, silent audio detection, and scene change detection
--   Divide timeline into segments with length L or into N segments or even randomized segments!
+-   Divide timeline into segments of length L, size (X MB), N number of segments or even randomized segments!
 -   Speed up / slow down video or audio file (changing FPS)
 -   Basic CLI and HTTP API
 -   Show (DJI) embedded GPS track on a map
@@ -147,29 +146,12 @@ Supported formats
 
 LosslessCut uses the Chromium browser's HTML5 video player, and not all formats/codecs are natively supported. Generally, the following file formats work: `MP4`, `MOV`, `WebM`, `Matroska`, `OGG` and `WAV`. Audio codecs: `FLAC`, `MP3`, `Opus`, `PCM`, `Vorbis` and `AAC`. Video codecs: `H264`, `AV1`, `Theora`, `VP8`, `VP9` and `H265` (with hardware decoder). Learn the difference between a codec and a format. Codecs and formats not listed above can still be converted to a supported format/codec from the `File` menu (try the option _Fastest: FFmpeg-assisted playback_ first). A low quality version of the file will then be created and opened in the player. Note that the actual cut/export operation will still be performed on the original file, so it will be lossless. This allows for potentially opening any file that FFmpeg is able to decode.
 
-Typical workflow
-----------------
+Documentation
+-------------
 
--   Drag drop a video file into player or use ⌘/CTRL+O.
--   Press SPACE to play/pause or ◀▶, ,. or mouse/trackpad wheel to seek back/forth.
--   Select the cut segment's start and end time by moving the time marker and then pressing I to set start time, and O to set end time.
-    -   Note that all segments you create will be **preserved** and exported as new files. You can change this behavior with the **Yin Yang** symbol ☯️, in which case it will instead **remove** all selected segments and export the parts **between** segments.
-    -   Note also that start times will not be accurate, see Known issues
--   _(optional)_ If you want to add more than one segment, move to the desired start time and press +, then select the next segment start/end times with I/O.
--   _(optional)_ If you want to re-merge all the selected segments into one file after cutting, toggle the button `Separate files` to `Merge cuts`.
--   _(optional)_ If you want to export to a certain output folder, press the `Working dir unset` button (default: Input file folder)
--   _(optional)_ If you want to change orientation, press the **rotation** button
--   _(optional)_ By default, audio, video and subtitle tracks from the input file will be cut and exported. Press the `Tracks` button to customise and/or add new tracks from other files.
--   _(optional)_ select a new output format
--   _(optional)_ In the right-hand segments panel, right click a segment for options, or drag-drop to reorder. Segments will appear in this order in the merged output.
--   **When done, press the `Export` button (or E) to show an overview with export options.**
--   _(optional)_ adjust any export options
--   **Then press `Export` again to confirm the export**
--   Press the **Camera** button (or C) if you want to take a JPEG/PNG snapshot from the current time
--   If you want to move the original file to trash, press the **trash** button
--   For best results you may need to trial and error with another output format (Matroska takes nearly everything), change keyframe cut mode or disable some tracks (see known issues).
--   Press SHIFT + / to view all keyboard & mouse shortcuts.
--   **Note:** The original video file will not be modified. Instead, a file is created file in the same directory as the original file with from/to timestamps in the file name.
+-   **Getting started and documentation**
+-   FAQ, known issues, limitations and troubleshooting
+-   Contributing
 
 ### Video demos
 
@@ -177,14 +159,6 @@ Typical workflow
 -   How to add a thumbnail / cover art to an MP4
 -   How to add multi-language audio to a video
 -   Your video here?
-
-More documentation
-------------------
-
--   Import / export
--   Command line interface (CLI) & HTTP API
--   Known issues, limitations, troubleshooting, FAQ
--   Contributing
 
 Featured
 --------

@@ -1,6 +1,6 @@
 ---
 project: shaka-player
-stars: 7343
+stars: 7353
 description: JavaScript player library / DASH & HLS client / MSE-EME player
 url: https://github.com/shaka-project/shaka-player
 ---
@@ -41,7 +41,7 @@ ChromeOS
 
 Other
 
-Chrome¹
+Chrome
 
 **Y**
 
@@ -61,7 +61,7 @@ Chrome¹
 
 \-
 
-Firefox¹
+Firefox
 
 **Y**
 
@@ -81,7 +81,7 @@ untested⁵
 
 \-
 
-Edge¹
+Edge
 
 **Y**
 
@@ -141,7 +141,7 @@ N
 
 \-
 
-Safari¹
+Safari
 
 \-
 
@@ -161,7 +161,7 @@ Safari¹
 
 \-
 
-Opera¹
+Opera
 
 **Y**
 
@@ -181,7 +181,7 @@ untested⁵
 
 \-
 
-Chromecast².
+Chromecast²
 
 \-
 
@@ -343,7 +343,6 @@ Playstation 5⁷
 
 NOTES:
 
--   ¹: On macOS, only Safari 9+ is supported. On iOS, only iOS 9+ is supported. Older versions will be rejected.
 -   ²: The latest stable Chromecast firmware is tested. Both sender and receiver can be implemented with Shaka Player.
 -   ³: Tizen 2017 model is actively tested and supported by the Shaka Player team. Tizen 2016 model is community-supported and untested by us.
 -   ⁵: These are expected to work, but are not actively tested by the Shaka Player team.
@@ -444,7 +443,7 @@ HLS features supported:
 -   WebVTT and TTML
 -   CEA-608/708 captions
 -   Encrypted content with PlayReady, Widevine and WisePlay
--   Encrypted content with FairPlay (Safari on macOS and iOS 9+ only)
+-   Encrypted content with FairPlay (Safari on macOS and iOS only)
 -   AES-128, AES-256 and AES-256-CTR support on browsers with Web Crypto API support
 -   SAMPLE-AES and SAMPLE-AES-CTR (identity) support on browsers with ClearKey support
 -   Key rotation

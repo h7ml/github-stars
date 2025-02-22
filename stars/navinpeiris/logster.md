@@ -1,6 +1,6 @@
 ---
 project: logster
-stars: 205
+stars: 206
 description: Easily parsable single line, plain text and JSON logger for Plug and Phoenix applications
 url: https://github.com/navinpeiris/logster
 ---

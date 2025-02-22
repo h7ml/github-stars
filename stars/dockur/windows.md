@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 32950
+stars: 33161
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -131,13 +131,13 @@ Windows 11 Pro
 
 Windows 11 LTSC
 
-4.2 GB
+4.7 GB
 
 `11e`
 
 Windows 11 Enterprise
 
-5.8 GB
+4.0 GB
 
 `10`
 

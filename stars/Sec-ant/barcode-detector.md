@@ -1,6 +1,6 @@
 ---
 project: barcode-detector
-stars: 123
+stars: 124
 description: A Barcode Detection API polyfill that uses ZXing-C++ WebAssembly under the hood.
 url: https://github.com/Sec-ant/barcode-detector
 ---

@@ -1,6 +1,6 @@
 ---
 project: chineseocr_lite
-stars: 11990
+stars: 12000
 description: 超轻量级中文ocr，支持竖排文字识别, 支持ncnn、mnn、tnn推理 ( dbnet(1.8M) + crnn(2.5M) + anglenet(378KB)) 总模型仅4.7M 
 url: https://github.com/DayBreak-u/chineseocr_lite
 ---

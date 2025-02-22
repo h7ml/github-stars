@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 19047
+stars: 19309
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -128,11 +128,10 @@ By default, Docker volumes named dev\_db, dev\_elastic, and dev\_files will be c
 Before you can begin, you need to create a workspace and an account and associate it with the workspace.
 
 cd ./tool # dev/tool in the repository root
-rushx run-local create-workspace ws1 -w DevWorkspace # Create workspace
 rushx run-local create-account user1 -p 1234 -f John -l Appleseed # Create account
-rushx run-local configure ws1 --list --enable '\*' # Enable all modules, even if they are not yet intended to be used by a wide audience.
-rushx run-local assign-workspace user1 ws1 # Assign workspace to user.
-rushx run-local confirm-email user1 # To allow the creation of additional test workspaces.
+rushx run-local create-workspace ws1 email:user1 # Create workspace
+rushx run-local configure ws1 --list --enable '\*' # Enable all modules, even if they are not yet intended to be used by a wide audience
+rushx run-local assign-workspace user1 ws1 # Assign user to workspace
 
 Alternatively, you can just execute:
 

@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 40541
+stars: 41435
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -634,7 +634,9 @@ Supervised fine-tuning datasets
 -   Magpie-ultra-v0.1 (en)
 -   WebInstructSub (en)
 -   OpenO1-SFT (en&zh)
--   Open Thoughts (en)
+-   Open-Thoughts (en)
+-   Open-R1-Math (en)
+-   Chinese-DeepSeek-R1-Distill (zh)
 -   LLaVA mixed (en&zh)
 -   Pokemon-gpt4o-captions (en&zh)
 -   Open Assistant (de)
@@ -689,7 +691,7 @@ transformers
 
 4.41.2
 
-4.45.2
+4.49.0
 
 datasets
 
@@ -731,7 +733,7 @@ deepspeed
 
 0.10.0
 
-0.14.0
+0.16.2
 
 bitsandbytes
 
@@ -743,7 +745,7 @@ vllm
 
 0.4.3
 
-0.6.6
+0.7.2
 
 flash-attn
 
