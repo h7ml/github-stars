@@ -1,6 +1,6 @@
 ---
 project: pg_graphql
-stars: 2976
+stars: 2983
 description: GraphQL support for PostgreSQL 
 url: https://github.com/supabase/pg_graphql
 ---
@@ -60,6 +60,11 @@ create table blog\_post(
     created\_at timestamp not null,
     updated\_at timestamp not null
 );
+
+\-- This enables default inflection, which automatically renames
+\-- snake\_case to PascalCase for type names, and snake\_case to camelCase for field names.
+\-- See https://supabase.github.io/pg\_graphql/configuration/#inflection for more details.
+COMMENT ON SCHEMA public IS e'@graphql({"inflect\_names": true})';
 
 Translates into a GraphQL schema displayed below.
 

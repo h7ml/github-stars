@@ -1,6 +1,6 @@
 ---
 project: ente
-stars: 17991
+stars: 18102
 description: FOSS, End-to-End Encrypted Cloud
 url: https://github.com/ente-io/ente
 ---

@@ -1,6 +1,6 @@
 ---
 project: dozzle
-stars: 7749
+stars: 7857
 description: Realtime log viewer for docker containers. 
 url: https://github.com/amir20/dozzle
 ---
@@ -196,7 +196,7 @@ Default
 
 `DOZZLE_ENABLE_ACTIONS`
 
-false
+`false`
 
 `--filter`
 
@@ -208,7 +208,7 @@ false
 
 `DOZZLE_NO_ANALYTICS`
 
-false
+`false`
 
 `--mode`
 
@@ -223,6 +223,18 @@ false
 `--remote-agent`
 
 `DOZZLE_REMOTE_AGENT`
+
+`--timeout`
+
+`DOZZLE_TIMEOUT`
+
+`10s`
+
+`--namespace`
+
+`DOZZLE_NAMESPACE`
+
+`""`
 
 Support
 -------

@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 25109
+stars: 25715
 description: A calmer internet, without any gimmicks.
 url: https://github.com/zen-browser/desktop
 ---
@@ -14,9 +14,9 @@ Download • Website • Documentation • Release Notes
 🖥️ Compatibility
 -----------------
 
-Zen is currently built using firefox version `135.0.1`! 🚀
+Zen is currently built using Firefox version `135.0.1`! 🚀
 
--   `Zen Twilight` - Is currently built using firefox version `RC 135.0.1`!
+-   `Zen Twilight` - Is currently built using Firefox version `RC 136.0`!
 -   Check out the latest release notes!
 -   Part of our mission is to keep Zen up-to-date with the latest version of Firefox, so you can enjoy the latest features and security updates!
 
@@ -27,11 +27,11 @@ Zen is an open-source project, and we welcome contributions from the community! 
 
 ### Issue metrics
 
-We keep track of how many issues are closed at the end of the month in docs/issue-metrics. This is to keep track of how many issues are being closed, because who doesn't like to see progress? 📈
+We keep track of how many issues are closed at the end of the month in docs/issue-metrics. We use this to keep track of our issues and see our progress! 📈
 
 ### Versioning
 
-Zen uses Semantic Versioning for versioning. Meaning, versions are displayed as `a.bc.d` where:
+Zen uses Semantic Versioning, meaning versions are displayed as `a.bc.d` where:
 
 -   `a` is the major version
 -   `b` is the minor version
@@ -56,7 +56,7 @@ Zen is built with performance in mind, and we have optimized the browser to be a
 
 Zen is available for Linux, macOS, and Windows. You can download the latest version from the official website at zen-browser.app, or from the GitHub Releases page.
 
-If you dont see your OS listed below, that's because we already have it in our downloads page! Make sure to check it out!
+If you don't see your OS listed below, that's because we already have it in our downloads page! Make sure to check it out!
 
 #### Windows
 
@@ -101,7 +101,7 @@ Some components used by @zen-browser as an attempt to make firefox forks a bette
 
 #### `Run Locally`
 
-In order to download and run zen locally, please follow these instructions.
+In order to download and run Zen locally, please follow these instructions.
 
 #### `Special Thanks`
 
@@ -117,9 +117,9 @@ Zen couldn't be in its current state without the help of these amazing projects!
 
 ### 🖥️ Comparison with other browsers
 
-Thanks everyone for making zen stand out among these giants!
+Thanks everyone for making Zen stand out among these giants!
 
 📄 License
 ----------
 
-Zen browser is under the MPL LICENSE. All the code is open-source and free to use! Attributions are appreciated but not required.
+Zen browser is under the MPL 2.0 LICENSE. All the code is open-source and free to use! Attribution is appreciated but not required.

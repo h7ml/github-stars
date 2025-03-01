@@ -1,6 +1,6 @@
 ---
 project: torrex
-stars: 37
+stars: 38
 description: A bittorrent client built with Elixir
 url: https://github.com/ryotsu/torrex
 ---

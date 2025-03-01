@@ -1,6 +1,6 @@
 ---
 project: xml_builder
-stars: 179
+stars: 180
 description: Elixir library for generating XML
 url: https://github.com/joshnuss/xml_builder
 ---

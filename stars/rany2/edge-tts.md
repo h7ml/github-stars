@@ -1,6 +1,6 @@
 ---
 project: edge-tts
-stars: 7427
+stars: 7519
 description: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key
 url: https://github.com/rany2/edge-tts
 ---
@@ -42,7 +42,7 @@ If you wish to play it back immediately with subtitles, you could use the `edge-
 $ edge-playback --text "Hello, world!"
 ```
 
-Note that `edge-playback` requires the installation of the `mpv` command line player.
+Note that `edge-playback` requires the installation of the `mpv` command line player, except on Windows.
 
 All `edge-tts` commands work with `edge-playback` with the exception of the `--write-media`, `--write-subtitles` and `--list-voices` options.
 

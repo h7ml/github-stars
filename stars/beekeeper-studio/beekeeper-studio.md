@@ -1,20 +1,24 @@
 ---
 project: beekeeper-studio
-stars: 17477
+stars: 17558
 description: Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows.
 url: https://github.com/beekeeper-studio/beekeeper-studio
 ---
 
-Beekeeper Studio (Community Edition)
-====================================
+Beekeeper Studio
+================
 
-Beekeeper Studio is a cross-platform SQL editor and database manager available for Linux, Mac, and Windows. Beekeeper Studio Community Edition is GPL licensed so it is free (libre) and free (gratis).
+Beekeeper Studio is a cross-platform SQL editor and database manager available for Linux, Mac, and Windows.
 
-Download the community edition here
+Download Beekeeper Studio
 
 We publish binaries for MacOS, Windows, and Linux.
 
-👉 Join the community Slack
+Beekeeper Studio is free to download and provides a lot of features for free, no sign-up, registration, or credit card required. The app provides some premium features for a reasonable cost license fee. Learn more here
+
+Most of the code in this repo is open source under the GPLv3 license. Paid features are also in this repository under a commercial source-available license.
+
+We welcome community contributions!
 
 Supported Databases
 -------------------
@@ -210,10 +214,9 @@ DynamoDB
 Editions of Beekeeper Studio
 ----------------------------
 
-1.  **Beekeeper Studio Ultimate Edition** - The full version of Beekeeper Studio with all features. Buying Beekeeper Studio is also the best way to support the community edition. Download link
-    
-2.  **Beekeeper Studio Community Edition** - This repository. This is the open source version of Beekeeper Studio. It is a full featured database management client that is totally free and open source. Download Link
-    
+Beekeeper Studio is a single download with in-app upgrades for premium features.
+
+We'd love to make Beekeeper Studio totally free for everyone, but building good software is hard work and expensive. We think our paid editions are fairly priced, I hope you do too.
 
 👉 Compare Beekeeper Studio Editions
 
@@ -229,29 +232,29 @@ Top feature: It's smooth 🍫, fast 🏎, and you'll actually enjoy using it �
 -   Sensible keyboard-shortcuts
 -   Save queries for later
 -   Query run-history, so you can find that one query you got working 3 days ago
--   Default dark theme
+-   Great dark theme
+-   Import/export
+-   Backup/restore
+-   View data as JSON
+-   Loads more
 
-Features exclusive to the full commercial edition (available on our website):
-
--   More themes
--   Online storage for queries and connections with Workspaces
--   Easy data formatting with Query magics
--   Multi-table export (v4+)
--   Easy database backup using native tools (v4+)
--   Easy database restore using native tools (coming soon)
--   Oracle Database support
--   Cassandra database support
+Our approach to UX
+------------------
 
 One of our frustrations with other open-source SQL editors and database managers is that they take a 'kitchen sink' approach to features, adding so many features that the UI becomes cluttered and hard to navigate. We wanted a good looking, open source SQL workbench that's powerful, but also easy to use. We couldn't find one, so we created Beekeeper Studio!
+
+Generally our guiding star is to only build software that 'feels good' to use. That means at the very least we value Beekeeper being fast, straightforward to use, and modern. If a new feature compromises this vision, we kill it.
 
 Supporting Beekeeper Studio
 ---------------------------
 
-I love working on Beekeeper Studio, and I'd love to keep growing and improving it forever. To do that I need your help.
+We love working on Beekeeper Studio, and we'd love to keep growing and improving it forever. To do that I need your help.
 
-The best way to support Beekeeper Studio is to purchase the Ultimate Edition. Every purchase directly supports my work on Beekeeper Studio.
+The best way to support Beekeeper Studio is to purchase a paid license. Every purchase directly supports our work on Beekeeper Studio.
 
-If you can't afford a license, please consider becoming a project sponsor.
+If you're at a business and using Beekeeper Studio for your job, you should probably get your boss to buy you a license.
+
+If you can't afford a license, please use the free version, that's why we make a free version!
 
 Thank you for your continued support!
 

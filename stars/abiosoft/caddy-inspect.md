@@ -1,6 +1,6 @@
 ---
 project: caddy-inspect
-stars: 24
+stars: 25
 description: HTTP request inspector for Caddy web server
 url: https://github.com/abiosoft/caddy-inspect
 ---

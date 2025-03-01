@@ -1,6 +1,6 @@
 ---
 project: metadata-action
-stars: 962
+stars: 965
 description: GitHub Action to extract metadata (tags, labels) from Git reference and GitHub events for Docker
 url: https://github.com/docker/metadata-action
 ---
@@ -374,7 +374,7 @@ List of custom labels
 
 List
 
-List of custom anntoations
+List of custom annotations
 
 `sep-tags`
 
@@ -458,7 +458,7 @@ File
 
 Bake file definition path with annotations
 
-Alternatively, each output is also exported as an environment variable:
+Alternatively, each output is also exported as an environment variable when `DOCKER_METADATA_SET_OUTPUT_ENV` is `true`:
 
 -   `DOCKER_METADATA_OUTPUT_VERSION`
 -   `DOCKER_METADATA_OUTPUT_TAGS`
@@ -501,6 +501,12 @@ Specifies the length of the short commit SHA to ensure uniqueness. Default is `7
 String
 
 Comma separated list of annotations levels to set for annotations output separated (default `manifest`)
+
+`DOCKER_METADATA_SET_OUTPUT_ENV`
+
+Bool
+
+If `true`, sets each output as an environment variable (default `true`)
 
 `context` input
 ---------------
@@ -1028,6 +1034,7 @@ To ease the integration in your workflow, this action will automatically:
 
 -   `type=ref,event=tag`
 -   `type=semver,pattern=...`
+-   `type=pep440,pattern=...`
 -   `type=match,pattern=...`
 
 For conditionally tagging with latest for a specific branch name, e.g. if your default branch name is not `master`, use `type=raw` with a boolean expression:

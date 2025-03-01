@@ -1,6 +1,6 @@
 ---
 project: supabase
-stars: 77841
+stars: 78215
 description: The open source Firebase alternative. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
 url: https://github.com/supabase/supabase
 ---
@@ -52,8 +52,8 @@ Supabase is a hosted platform. You can sign up and start using Supabase without 
 -   Postgres is an object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
 -   Realtime is an Elixir server that allows you to listen to PostgreSQL inserts, updates, and deletes using websockets. Realtime polls Postgres' built-in replication functionality for database changes, converts changes to JSON, then broadcasts the JSON over websockets to authorized clients.
 -   PostgREST is a web server that turns your PostgreSQL database directly into a RESTful API.
--   GoTrue is a JWT based API for managing users and issuing JWT tokens.
--   Storage provides a RESTful interface for managing Files stored in S3, using Postgres to manage permissions.
+-   GoTrueis a JWT-based authentication API that simplifies user sign-ups, logins, and session management in your applications.
+-   Storagea RESTful API for managing files in S3, with Postgres handling permissions.
 -   pg\_graphql a PostgreSQL extension that exposes a GraphQL API.
 -   postgres-meta is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries, etc.
 -   Kong is a cloud-native API gateway.

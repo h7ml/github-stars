@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 41435
+stars: 42599
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -20,7 +20,7 @@ Choose your path:
 -   **Documentation (WIP)**: https://llamafactory.readthedocs.io/zh-cn/latest/
 -   **Colab**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
 -   **Local machine**: Please refer to usage
--   **PAI-DSW**: Llama3 Example | Qwen2-VL Example
+-   **PAI-DSW**: Llama3 Example | Qwen2-VL Example | DeepSeek-R1-Distill Example
 -   **Amazon SageMaker**: Blog
 
 Note
@@ -93,6 +93,8 @@ Definitions
 
 Changelog
 ---------
+
+\[25/02/24\] Announcing **EasyR1**, an efficient, scalable and multi-modality RL training framework for efficient GRPO training.
 
 \[25/02/11\] We supported saving the **Ollama** modelfile when exporting the model checkpoints. See examples for usage.
 
@@ -948,12 +950,12 @@ To install LLaMA Factory on Ascend NPU devices, please upgrade Python to version
 
 # replace the url according to your CANN version and devices
 # install CANN Toolkit
-wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C17SPC701/Ascend-cann-toolkit\_8.0.RC1.alpha001\_linux-"$(uname -i)".run
-bash Ascend-cann-toolkit\_8.0.RC1.alpha001\_linux-"$(uname -i)".run --install
+wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C20SPC702/Ascend-cann-toolkit\_8.0.0.alpha002\_linux-"$(uname -i)".run
+bash Ascend-cann-toolkit\_8.0.0.alpha002\_linux-"$(uname -i)".run --install
 
 # install CANN Kernels
-wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C17SPC701/Ascend-cann-kernels-910b\_8.0.RC1.alpha001\_linux.run
-bash Ascend-cann-kernels-910b\_8.0.RC1.alpha001\_linux.run --install
+wget https://ascend-repo.obs.cn-east-2.myhuaweicloud.com/Milan-ASL/Milan-ASL%20V100R001C20SPC702/Ascend-cann-kernels-910b\_8.0.0.alpha002\_linux-"$(uname -i)".run
+bash Ascend-cann-kernels-910b\_8.0.0.alpha002\_linux-"$(uname -i)".run --install
 
 # set env variables
 source /usr/local/Ascend/ascend-toolkit/set\_env.sh
@@ -968,25 +970,25 @@ CANN
 
 8.0.RC1
 
-8.0.RC1
+8.0.0.alpha002
 
 torch
 
 2.1.0
 
-2.1.0
+2.4.0
 
 torch-npu
 
 2.1.0
 
-2.1.0.post3
+2.4.0.post2
 
 deepspeed
 
 0.13.2
 
-0.13.2
+0.16.2
 
 Remember to use `ASCEND_RT_VISIBLE_DEVICES` instead of `CUDA_VISIBLE_DEVICES` to specify the device to use.
 

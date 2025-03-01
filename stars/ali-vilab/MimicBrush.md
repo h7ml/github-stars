@@ -1,6 +1,6 @@
 ---
 project: MimicBrush
-stars: 1204
+stars: 1209
 description: Official implementations for paper: Zero-shot Image Editing with Reference Imitation
 url: https://github.com/ali-vilab/MimicBrush
 ---

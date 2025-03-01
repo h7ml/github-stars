@@ -1,6 +1,6 @@
 ---
 project: caddy-waf
-stars: 429
+stars: 436
 description: Caddy WAF (Regex Rules, IP and DNS filtering, Rate Limiting, GeoIP, Tor, Anomaly Detection)
 url: https://github.com/fabriziosalmi/caddy-waf
 ---
@@ -25,6 +25,7 @@ A robust, highly customizable, and feature-rich **Web Application Firewall (WAF)
 -   **Dynamic Config Reloads:** Seamless updates without restarts.
 -   **File Watchers:** Automatic reloads on rule/blacklist changes.
 -   **Observability:** Seamless integration with ELK stack and Prometheus.
+-   **Rules generator**: powered by custom GPT, try it here
 
 _Simple at a glance UI :)_
 
@@ -171,6 +172,28 @@ For complete documentation, including configuration options, rule format details
 This project is licensed under the **AGPLv3 License**.
 
 * * *
+
+Others projects
+---------------
+
+If You like my projects, you may also like these ones:
+
+-   patterns Automated OWASP CRS and Bad Bot Detection for Nginx, Apache, Traefik and HaProxy
+-   blacklists Hourly updated domains blacklist 🚫
+-   proxmox-vm-autoscale Automatically scale virtual machines resources on Proxmox hosts
+-   UglyFeed Retrieve, aggregate, filter, evaluate, rewrite and serve RSS feeds using Large Language Models for fun, research and learning purposes
+-   proxmox-lxc-autoscale Automatically scale LXC containers resources on Proxmox hosts
+-   DevGPT Code togheter, right now! GPT powered code assistant to build project in minutes
+-   websites-monitor Websites monitoring via GitHub Actions (expiration, security, performances, privacy, SEO)
+-   caddy-mib Track and ban client IPs generating repetitive errors on Caddy
+-   zonecontrol Cloudflare Zones Settings Automation using GitHub Actions
+-   lws linux (containers) web services
+-   cf-box cf-box is a set of Python tools to play with API and multiple Cloudflare accounts.
+-   limits Automated rate limits implementation for web servers
+-   dnscontrol-actions Automate DNS updates and rollbacks across multiple providers using DNSControl and GitHub Actions
+-   proxmox-lxc-autoscale-ml Automatically scale the LXC containers resources on Proxmox hosts with AI
+-   csv-anonymizer CSV fuzzer/anonymizer
+-   iamnotacoder AI code generation and improvement
 
 🙏 Contributing
 ---------------

@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10233
+stars: 10281
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -863,6 +863,12 @@ melody-auth
 一个基于Cloudflare workers, D1, KV的OAuth及身份认证系统。
 
 https://auth.valuemelody.com/
+
+有效中
+
+Cloudflare-KV-Manager
+
+您的 Cloudflare KV 缺少工具。用于管理 Cloudflare KV 存储的更完整、更简单的解决方案。包括一个 Web 界面和一个小型 Python 库。
 
 有效中
 

@@ -1,6 +1,6 @@
 ---
 project: AFFiNE
-stars: 45894
+stars: 46116
 description: There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. 
 url: https://github.com/toeverything/AFFiNE
 ---
@@ -175,6 +175,7 @@ We would also like to give thanks to open-source projects that make AFFiNE possi
 -   Jotai - Primitive and flexible state management for React.
 -   async-call-rpc - A lightweight JSON RPC client & server.
 -   Vite - Next generation frontend tooling.
+-   lame - High quality MPEG Audio Layer III (MP3) encoder.
 -   Other upstream dependencies.
 
 Thanks a lot to the community for providing such powerful and simple libraries, so that we can focus more on the implementation of the product logic, and we hope that in the future our projects will also provide a more easy-to-use knowledge base for everyone.

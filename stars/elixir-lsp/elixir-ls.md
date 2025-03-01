@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1554
+stars: 1558
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -196,19 +196,43 @@ any
 
 No
 
-No support for required APIs
+Broken, no support for required APIs
 
 22
 
 1.13
 
-Yes
+?
 
-Erlang docs not working (requires EIP 48)
+Erlang docs not working (requires EIP 48), May still work but no longer supported
 
 23
 
-1.13 - 1.14
+1.13
+
+?
+
+May still work but no longer supported
+
+24
+
+1.13
+
+?
+
+May still work but no longer supported
+
+25
+
+1.13.4
+
+?
+
+May still work but no longer supported
+
+23
+
+1.14
 
 Yes
 
@@ -216,7 +240,7 @@ None
 
 24
 
-1.13 - 1.16
+1.14 - 1.16
 
 Yes
 
@@ -224,7 +248,7 @@ None
 
 25
 
-1.13.4 - 1.18
+1.14 - 1.18
 
 Yes
 
@@ -572,6 +596,10 @@ Additional file types capable of triggering a build on change
 elixirLS.languageServerOverridePath
 
 Absolute path to an alternative ElixirLS release that will override the packaged release
+
+elixirLS.stdlibSrcDir
+
+Path to Elixir's std lib source code. See \[here\](elixir-lsp/elixir\_sense#277) for more info
 
 Debug Adapter configuration options
 -----------------------------------

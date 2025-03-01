@@ -1,6 +1,6 @@
 ---
 project: red
-stars: 5586
+stars: 5589
 description: Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single ~1MB file! 
 url: https://github.com/red/red
 ---
@@ -200,6 +200,8 @@ redc [command] [options] [file]
 
 --no-view                      : Do not include VIEW module in the CLI console
                                  and the libRedRT.
+
+--view <engine>                : Select the VIEW engine (native, terminal, GTK, test)
 
 --red-only                     : Stop just after Red-level compilation.
                                  Use higher verbose level to see compiler

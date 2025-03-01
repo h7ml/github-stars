@@ -1,6 +1,6 @@
 ---
 project: swc
-stars: 31716
+stars: 31763
 description: Rust-based platform for the Web
 url: https://github.com/swc-project/swc
 ---
@@ -43,8 +43,17 @@ Performance
 
 Please see benchmark results on the website.
 
+Supporting development
+======================
+
 Supporting swc
 --------------
+
+Powered by
+----------
+
+Sponsors
+--------
 
 SWC is a community-driven project, and is maintained by a group of volunteers. If you'd like to help support the future of the project, please consider:
 

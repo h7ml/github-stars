@@ -1,14 +1,14 @@
 ---
 project: AppFlowy
-stars: 60837
+stars: 60987
 description: Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.
 url: https://github.com/AppFlowy-IO/AppFlowy
 ---
 
-**AppFlowy.IO  
+**AppFlowy  
 **⭐️ The Open Source Alternative To Notion ⭐️  
 
-================================================================
+=============================================================
 
 AppFlowy is the AI workspace where you achieve more without losing control of your data
 
@@ -63,7 +63,7 @@ Contributing
 
 Contributions make the open-source community a fantastic place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please look at Contributing to AppFlowy for details.
 
-If your Pull Request is accepted as it fixes a bug, adds functionality, or makes AppFlowy's codebase significantly easier to use or understand, **Congratulations!** If your administrative and managerial work behind the scenes sustains the community, **Congratulations!** You are now an official contributor to AppFlowy. Get in touch with us (link) to receive the very special Contributor T-shirt! Proudly wear your T-shirt and show it to us by tagging @appflowy on Twitter.
+If your Pull Request is accepted as it fixes a bug, adds functionality, or makes AppFlowy's codebase significantly easier to use or understand, **Congratulations!** If your administrative and managerial work behind the scenes sustains the community, **Congratulations!** You are now an official contributor to AppFlowy.
 
 Translations 🌎🗺
 -----------------
@@ -103,7 +103,7 @@ Distributed under the AGPLv3 License. See `LICENSE.md` for more information.
 Acknowledgments
 ---------------
 
-Special thanks to these amazing projects which help power AppFlowy.IO:
+Special thanks to these amazing projects which help power AppFlowy:
 
 -   cargo-make
 -   contrib.rocks

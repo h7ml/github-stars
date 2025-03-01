@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 87121
+stars: 87408
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -278,7 +278,7 @@ If you want to build legacy python code, please refer to Building on legacy code
 
 **CPU-only builds**
 
-In this mode PyTorch computations will run on your CPU, not your GPU
+In this mode PyTorch computations will run on your CPU, not your GPU.
 
 python setup.py develop
 
@@ -314,6 +314,16 @@ for /f "usebackq tokens=\*" %i in (\`"%ProgramFiles(x86)%\\Microsoft Visual Stud
 
 :: \[Optional\] If you want to override the CUDA host compiler
 set CUDAHOSTCXX\=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe
+
+python setup.py develop
+
+**Intel GPU builds**
+
+In this mode PyTorch with Intel GPU support will be built.
+
+Please make sure the common prerequisites as well as the prerequisites for Intel GPU are properly installed and the environment variables are configured prior to starting the build. For build tool support, `Visual Studio 2022` is required.
+
+Then PyTorch can be built with the command:
 
 python setup.py develop
 

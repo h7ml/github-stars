@@ -1,15 +1,15 @@
 ---
 project: pangolin
-stars: 2572
+stars: 2702
 description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
 
-##### Install Guide | Full Documentation
-
 ### Tunneled Mesh Reverse Proxy Server with Access Control
 
 _Your own self-hosted zero trust tunnel._
+
+##### Install Guide | Full Documentation
 
 Pangolin is a self-hosted tunneled reverse proxy server with identity and access control, designed to securely expose private resources on distributed networks. Acting as a central hub, it connects isolated networks — even those behind restrictive firewalls — through encrypted tunnels, enabling easy access to remote services without opening ports.
 
@@ -77,15 +77,20 @@ Deployment and Usage Example
 
 1.  **Deploy the Central Server**:
     
-    -   Deploy the Docker Compose stack onto a VPS hosted on a cloud platform like Amazon EC2, DigitalOcean Droplet, or similar. There are many cheap VPS hosting options available to suit your needs.
-2.  **Domain Configuration**:
+    -   Deploy the Docker Compose stack onto a VPS hosted on a cloud platform like RackNerd, Amazon EC2, DigitalOcean Droplet, or similar. There are many cheap VPS hosting options available to suit your needs.
+
+Tip
+
+Many of our users have had a great experience with RackNerd. Depending on promotions, you can likely get a **VPS with 1 vCPU, 1GB RAM, and ~20GB SSD for just around $12/year**. That's a great deal! We are part of the RackNerd affiliate program, so if you sign up using our link, we receive a small commission which helps us maintain the project and keep it free for everyone.
+
+1.  **Domain Configuration**:
     
     -   Point your domain name to the VPS and configure Pangolin with your preferred settings.
-3.  **Connect Private Sites**:
+2.  **Connect Private Sites**:
     
     -   Install Newt or use another WireGuard client on private sites.
     -   Automatically establish a connection from these sites to the central server.
-4.  **Configure Users & Roles**
+3.  **Configure Users & Roles**
     
     -   Define organizations and invite users.
     -   Implement user- or role-based permissions to control resource access.
@@ -117,7 +122,7 @@ View the project board for more detailed info.
 Licensing
 ---------
 
-Pangolin is dual licensed under the AGPLv3 and the Fossorial Commercial license. For inquiries about commercial licensing, please contact us.
+Pangolin is dual licensed under the AGPLv3 and the Fossorial Commercial license. For inquiries about commercial licensing, please contact us at numbat@fossorial.io.
 
 Contributions
 -------------

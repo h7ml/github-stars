@@ -1,7 +1,7 @@
 ---
 project: MagicQuill
-stars: 2923
-description: Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
+stars: 2981
+description: [CVPR'25] Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/ant-research/MagicQuill
 ---
 
@@ -47,6 +47,7 @@ Update Log
 -   \[2024.12.07\] 🎉 Exciting News: ComfyUI MagicQuill Node has been released! Check the repository https://github.com/magic-quill/ComfyUI\_MagicQuill for more details.
 -   \[2024.12.16\] 🎉 Exciting News: MagicQuill is also available at Modelscope. Thanks for their amazing support and infrastructure.
 -   \[2025.01.02\] 🎉 Exciting News: MagicQuill docker container is now available. You can now build & run your own image in a cleaner, isolated environment. Thanks gbudge for his contribution.
+-   \[2025.02.27\] 🎉 Exciting News: MagicQuill has been accepted to CVPR 2025! Looking forward to meeting everyone in Tennessee!
 
 To update the latest features, pull the latest code and re-install the gradio\_magicquill:
 

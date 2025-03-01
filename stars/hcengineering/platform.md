@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 19309
+stars: 19422
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -23,16 +23,26 @@ If you're primarily interested in self-hosting Huly without the intention to mod
 Activity
 --------
 
-Table of Content
-----------------
+API Client
+----------
+
+If you want to interact with Huly programmatically, check out our API Client documentation. The API client provides a typed interface for all Huly operations and can be used to build integrations and custom applications.
+
+You can find API usage examples in the Huly examples repository.
+
+Table of Contents
+-----------------
 
 -   Huly Platform
     -   About
     -   Self-Hosting
     -   Activity
-    -   Table of Content
+    -   API Client
+    -   Table of Contents
     -   Pre-requisites
     -   Verification
+    -   Fast start
+    -   Branches & Contributing
     -   Installation
     -   Build and run
     -   Run in development mode
@@ -84,7 +94,7 @@ We periodically merge `develop` into `staging` to perform testing builds. Once w
 Installation
 ------------
 
-You need Microsoft's rush to install application.
+You need Microsoft's rush to install the application.
 
 1.  Install Rush globally using the command:
     
@@ -140,10 +150,10 @@ sh ./scripts/create-workspace.sh
 Add the following line to your /etc/hosts file
 
 ```
-127.0.0.1 host.docker.internal
+127.0.0.1 huly.local
 ```
 
-Accessing the URL http://host.docker.internal:8087 will lead you to the app in development mode.
+Accessing the URL http://huly.local:8087 will lead you to the app in development mode.
 
 Limitations:
 

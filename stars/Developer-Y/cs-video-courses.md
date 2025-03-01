@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68168
+stars: 68218
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -398,6 +398,8 @@ Courses
     -   ECE 5984 Introduction to Machine Learning, Spring 2015 - Virginia Tech
     -   CSx824/ECEx242 Machine Learning, Bert Huang, Fall 2015 - Virginia Tech
     -   STA 4273H - Large Scale Machine Learning, Winter 2015 - University of Toronto
+    -   CS 480/680 Introduction to Machine Learning, Gautam Kamath, University of Waterloo (Spring 2021)
+    -   CS 480/680 Introduction to Machine Learning, Kathryn Simone, University of Waterloo (Fall 2024)
     -   CS 485/685 Machine Learning, Shai Ben-David, University of Waterloo
     -   STAT 441/841 Classification Winter 2017 , Waterloo
     -   10-605 - Machine Learning with Large Datasets, Fall 2016 - CMU
@@ -453,6 +455,7 @@ Courses
     -   Data Science for Dynamical Systems, by Oliver Wallscheid & Sebastian Peitz
     -   Cambridge Statistical Learning in Practice 2021, by Alberto J. Coca
     -   Data 8: The Foundations of Data Science - UC Berkeley (Summer 17)
+    -   Data 144: Foundations of Data Science spring 2021 - Vassar College (Course materials)
     -   CSE519 - Data Science Fall 2016 - Skiena, SBU
     -   CS 109 Data Science, Harvard University (YouTube)
     -   6.0002 Introduction to Computational Thinking and Data Science - MIT OCW
@@ -531,7 +534,7 @@ Courses
     -   TUM IN2346 Introduction to Deep Learning Fall 2024, by Daniel Cremers
 -   #### **Reinforcement Learning**
     
-    -   CS234: Reinforcement Learning - Winter 2019 - Stanford University
+    -   CS234: Reinforcement Learning - Spring 2024 - Stanford University (Winter 2019)
     -   Introduction to reinforcement learning - UCL
     -   Reinforcement Learning - IIT Madras
     -   CS885 Reinforcement Learning - Spring 2018 - University of Waterloo
@@ -591,6 +594,8 @@ Courses
     -   CS 886: Recent Advances on Foundation Models Winter 2024 - University of Waterloo
     -   UC Berkeley CS 194/294-196 Large Language Model Agents Fall 2024, by Dawn Song & Xinyun Chen (YouTube playlist)
     -   UC Berkeley CS 194/294-267 Understanding Large Language Models Foundations and Safety spring 2024, by Dawn Song & Dan Hendrycks
+    -   Introduction to Large Language Models (LLMs), IIT Delhi
+    -   Natural Language Processing (Spring 2024) - University of Utah
 -   #### **Generative AI**
     
     -   Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon
@@ -615,6 +620,7 @@ Courses
     
     -   Optimisation for Machine Learning: Theory and Implementation (Hindi) - IIT
     -   Rochester DSCC 435 Optimization for Machine Learning fall 2023, by Jiaming Liang
+    -   Princeton ELE539/COS512 Optimization for Machine Learning spring 2021, by Chi Jin
     -   EE364a: Convex Optimization I - Stanford University
     -   10-725 Convex Optimization, Spring 2015 - CMU
     -   10-725 Convex Optimization: Fall 2016 - CMU
@@ -731,8 +737,9 @@ Courses
     -   Purdue ECE302 Introduction to Probability for Data Science
     -   Undergraduate Probability with Professor Roman Vershynin
     -   High-Dimensional Probability
-    -   Mathematical Statistics
+    -   Mathematical Statistics - 2024 (YouTube-2020)
     -   Bayesian Data Analysis
+    -   Bayesian Machine Learning and Information Processing (YouTube-2021/22) (YouTube-2020/21)
     -   Markov Processes - Spring 2023
     -   Causal Inference Course - Brady Neal
     -   Causal Inference -- Online Lectures (M.Sc/PhD Level)
@@ -875,6 +882,8 @@ Courses
 -   Languages & Translators - UCLouvain LINFO2132
 -   Compiler Design by Sorav Bansal
 -   OCaml Programming: Correct + Efficient + Beautiful
+-   Columbia IEOR E4004 Introduction to Operations Research: Deterministic Models summer 2005, by Jay Sethuraman
+-   Columbia IEOR E4106 Introduction to Operations Research: Stochastic Models spring 2005, by Ward Whitt
 -   Columbia ELEN E6711 Stochastic Models in Information Systems fall 2005, by Yuliy Barsyhnikov
 -   Columbia ELEN E6717 Information Theory fall 2003, by Vittorio Castelli
 -   CMU 21 738 Extremal Combinatorics spring 2020, by Po-Shen Loh

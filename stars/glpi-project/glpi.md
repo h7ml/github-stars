@@ -1,6 +1,6 @@
 ---
 project: glpi
-stars: 4547
+stars: 4563
 description: GLPI is a Free Asset and IT Management Software package, Data center management, ITIL Service Desk, licenses tracking and software auditing.
 url: https://github.com/glpi-project/glpi
 ---
@@ -91,13 +91,13 @@ Prerequisites
     
     7.4
     
-    8.3
+    8.4
     
-    10.1.X
+    11.0.X
     
     8.2
     
-    8.3
+    8.4
     
 -   Mandatory PHP extensions:
     

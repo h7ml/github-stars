@@ -1,6 +1,6 @@
 ---
 project: zincsearch
-stars: 17193
+stars: 17202
 description: ZincSearch . A lightweight alternative to elasticsearch that requires minimal resources, written in Go.
 url: https://github.com/zincsearch/zincsearch
 ---
@@ -150,3 +150,4 @@ You can use ZincSearch to index and search any data. Here are some examples that
 4.  https://github.com/devjopa/golab-search
 5.  https://github.com/avaco2312/zincsearch
 6.  https://github.com/paolorossig/email-indexer
+7.  https://github.com/ulimonte05/zincsearching

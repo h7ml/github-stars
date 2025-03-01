@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13073
+stars: 13112
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -69,7 +69,7 @@ name = "string\_sum"
 crate-type = \["cdylib"\]
 
 \[dependencies\]
-pyo3 = { version = "0.23.3", features = \["extension-module"\] }
+pyo3 = { version = "0.23.5", features = \["extension-module"\] }
 
 **`src/lib.rs`**
 
@@ -127,7 +127,7 @@ To install the Python shared library on RPM based distributions (e.g. Fedora, Re
 Start a new project with `cargo new` and add `pyo3` to the `Cargo.toml` like this:
 
 \[dependencies.pyo3\]
-version = "0.23.3"
+version = "0.23.5"
 features = \["auto-initialize"\]
 
 Example program displaying the value of `sys.version` and the current user name:
@@ -162,7 +162,7 @@ Tools and libraries
 -   dict-derive _Derive FromPyObject to automatically transform Python dicts into Rust structs_
 -   pyo3-log _Bridge from Rust to Python logging_
 -   pythonize _Serde serializer for converting Rust objects to JSON-compatible Python objects_
--   pyo3-asyncio _Utilities for working with Python's Asyncio library and async functions_
+-   pyo3-async-runtimes _Utilities for interoperability with Python's Asyncio library and Rust's async runtimes._
 -   rustimport _Directly import Rust files or crates from Python, without manual compilation step. Provides pyo3 integration by default and generates pyo3 binding code automatically._
 -   pyo3-arrow _Lightweight Apache Arrow integration for pyo3._
 -   pyo3-bytes _Integration between `bytes` and pyo3._

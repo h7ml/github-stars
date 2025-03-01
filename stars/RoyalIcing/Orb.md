@@ -1,6 +1,6 @@
 ---
 project: Orb
-stars: 256
+stars: 257
 description: Write WebAssembly with Elixir
 url: https://github.com/RoyalIcing/Orb
 ---
@@ -52,7 +52,7 @@ Add `orb` to your list of dependencies in `mix.exs`:
 
 def deps do
   \[
-    {:orb, "~> 0.1.1"}
+    {:orb, "~> 0.2.0"}
   \]
 end
 

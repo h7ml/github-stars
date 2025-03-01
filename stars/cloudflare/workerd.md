@@ -1,6 +1,6 @@
 ---
 project: workerd
-stars: 6520
+stars: 6535
 description: The JavaScript / Wasm runtime that powers Cloudflare Workers
 url: https://github.com/cloudflare/workerd
 ---
@@ -91,7 +91,7 @@ To build `workerd`, you need:
     -   `python3`, `python3-distutils`, and `tcl8.6`
         
 -   On macOS:
-    -   Xcode 16 installation (available on macOS 14 and higher). **Full Xcode is required**, the Xcode command line tools alone are **not sufficient** for building.
+    -   Xcode 16 installation (available on macOS 14 and higher). Building with just the Xcode Command Line Tools is not being tested, but should work too.
     -   Homebrew installed `tcl-tk` package (provides Tcl 8.6)
 -   On Windows:
     -   Install App Installer from the Microsoft Store for the `winget` package manager and then run install-deps.bat from an administrator prompt to install bazelisk, LLVM, and other dependencies required to build workerd on Windows.
