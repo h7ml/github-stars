@@ -1,6 +1,6 @@
 ---
 project: caddy
-stars: 61982
+stars: 62122
 description: Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 url: https://github.com/caddyserver/caddy
 ---
@@ -47,6 +47,7 @@ Features
     -   Fully-managed local CA for internal names & IPs
     -   Can coordinate with other Caddy instances in a cluster
     -   Multi-issuer fallback
+    -   Encrypted ClientHello (ECH) support
 -   **Stays up when other servers go down** due to TLS/OCSP/certificate-related issues
 -   **Production-ready** after serving trillions of requests and managing millions of TLS certificates
 -   **Scales to hundreds of thousands of sites** as proven in production
@@ -69,7 +70,7 @@ Build from source
 
 Requirements:
 
--   Go 1.22.3 or newer
+-   Go 1.24.0 or newer
 
 ### For development
 
@@ -165,8 +166,8 @@ Matthew Holt began developing Caddy in 2014 while studying computer science at B
 
 **The name "Caddy" is trademarked.** The name of the software is "Caddy", not "Caddy Server" or "CaddyServer". Please call it "Caddy" or, if you wish to clarify, "the Caddy web server". Caddy is a registered trademark of Stack Holdings GmbH.
 
--   _Project on Twitter: @caddyserver_
--   _Author on Twitter: @mholt6_
+-   _Project on X: @caddyserver_
+-   _Author on X: @mholt6_
 
 Caddy is a project of ZeroSSL, a Stack Holdings company.
 

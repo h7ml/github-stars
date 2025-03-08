@@ -1,6 +1,6 @@
 ---
 project: nimble_csv
-stars: 783
+stars: 785
 description: A simple and fast CSV parsing and dumping library for Elixir
 url: https://github.com/dashbitco/nimble_csv
 ---

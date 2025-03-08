@@ -1,6 +1,6 @@
 ---
 project: analytics
-stars: 21591
+stars: 21659
 description: Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
 url: https://github.com/plausible/analytics
 ---

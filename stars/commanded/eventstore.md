@@ -1,6 +1,6 @@
 ---
 project: eventstore
-stars: 1094
+stars: 1096
 description: Event store using PostgreSQL for persistence
 url: https://github.com/commanded/eventstore
 ---
@@ -43,6 +43,7 @@ MIT License
     -   Reading from all streams
     -   Stream from all streams
     -   Linking events between streams
+    -   Deleting streams
 -   Subscriptions
     -   Transient subscriptions
     -   Persistent subscriptions

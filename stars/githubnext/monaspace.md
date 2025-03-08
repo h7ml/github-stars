@@ -1,6 +1,6 @@
 ---
 project: monaspace
-stars: 15354
+stars: 15464
 description: An innovative superfamily of fonts for code
 url: https://github.com/githubnext/monaspace
 ---
@@ -181,6 +181,10 @@ Ligature handling has changed significantly in Monaspace point releases. If you'
 Set the font family:
 
     "editor.fontFamily": "'Monaspace Neon', monospace",
+
+Set an alternate family for inline suggestions:
+
+    "editor.inlineSuggest.fontFamily": "'Monaspace Krypton', monospace",
 
 Note
 

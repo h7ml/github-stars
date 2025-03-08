@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 56663
+stars: 57336
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -137,9 +137,10 @@ We have implemented support for the following model service providers:
 -   **Cloudflare Workers AI**: Run serverless GPU-powered machine learning models on Cloudflare's global network.
 -   **GitHub**: With GitHub Models, developers can become AI engineers and leverage the industry's leading AI models.
 
-See more providers (+26)
+See more providers (+27)
 
 -   **Novita**: Novita AI is a platform providing a variety of large language models and AI image generation API services, flexible, reliable, and cost-effective. It supports the latest open-source models like Llama3 and Mistral, offering a comprehensive, user-friendly, and auto-scaling API solution for generative AI application development, suitable for the rapid growth of AI startups.
+-   **PPIO**: PPIO supports stable and cost-efficient open-source LLM APIs, such as DeepSeek, Llama, Qwen etc.
 -   **Together AI**: Together AI is dedicated to achieving leading performance through innovative AI models, offering extensive customization capabilities, including rapid scaling support and intuitive deployment processes to meet various enterprise needs.
 -   **Fireworks AI**: Fireworks AI is a leading provider of advanced language model services, focusing on functional calling and multimodal processing. Its latest model, Firefunction V2, is based on Llama-3, optimized for function calling, conversation, and instruction following. The visual language model FireLLaVA-13B supports mixed input of images and text. Other notable models include the Llama series and Mixtral series, providing efficient multilingual instruction following and generation support.
 -   **Groq**: Groq's LPU inference engine has excelled in the latest independent large language model (LLM) benchmarks, redefining the standards for AI solutions with its remarkable speed and efficiency. Groq represents instant inference speed, demonstrating strong performance in cloud-based deployments.
@@ -166,7 +167,7 @@ See more providers (+26)
 -   **Taichu**: The Institute of Automation, Chinese Academy of Sciences, and Wuhan Artificial Intelligence Research Institute have launched a new generation of multimodal large models, supporting comprehensive question-answering tasks such as multi-turn Q&A, text creation, image generation, 3D understanding, and signal analysis, with stronger cognitive, understanding, and creative abilities, providing a new interactive experience.
 -   **360 AI**: 360 AI is an AI model and service platform launched by 360 Company, offering various advanced natural language processing models, including 360GPT2 Pro, 360GPT Pro, 360GPT Turbo, and 360GPT Turbo Responsibility 8K. These models combine large-scale parameters and multimodal capabilities, widely applied in text generation, semantic understanding, dialogue systems, and code generation. With flexible pricing strategies, 360 AI meets diverse user needs, supports developer integration, and promotes the innovation and development of intelligent applications.
 
-> 📊 Total providers: **36**
+> 📊 Total providers: **37**
 
 At the same time, we are also planning to support more model service providers. If you would like LobeChat to support your favorite service provider, feel free to join our 💬 community discussion.
 
@@ -238,7 +239,7 @@ By **portfoliometa** on **2024-12-22**
 Analyze stocks and get comprehensive real-time investment data and analytics.  
 `stock`
 
-> 📊 Total plugins: **48**
+> 📊 Total plugins: **47**
 
 ### `11` Agent Market (GPTs)
 
@@ -408,22 +409,17 @@ We suggest you redeploy using the following steps, 📘 Auto Sync With Latest
 
 We provide a Docker image for deploying the LobeChat service on your own private device. Use the following command to start the LobeChat service:
 
-$ docker run \-d \-p 3210:3210 \\
-  \-e OPENAI\_API\_KEY=sk-xxxx \\
-  \-e ACCESS\_CODE=lobe66 \\
-  \--name lobe-chat \\
-  lobehub/lobe-chat
+1.  create a folder to for storage files
 
-Tip
+$ mkdir lobe-chat-db && cd lobe-chat-db
 
-If you need to use the OpenAI service through a proxy, you can configure the proxy address using the `OPENAI_PROXY_URL` environment variable:
+1.  init the LobeChat infrastructure
 
-$ docker run \-d \-p 3210:3210 \\
-  \-e OPENAI\_API\_KEY=sk-xxxx \\
-  \-e OPENAI\_PROXY\_URL=https://api-proxy.com/v1 \\
-  \-e ACCESS\_CODE=lobe66 \\
-  \--name lobe-chat \\
-  lobehub/lobe-chat
+bash <(curl \-fsSL https://lobe.li/setup.sh)
+
+1.  Start the LobeChat service
+
+docker compose up \-d
 
 Note
 
@@ -551,7 +547,7 @@ If you would like to learn more details, please feel free to look at our 📘 De
 🤝 Contributing
 ---------------
 
-Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub Issues and Projects to get stuck in to show us what you’re made of.
+Contributions of all types are more than welcome; if you are interested in contributing code, feel free to check out our GitHub Issues and Projects to get stuck in to show us what you're made of.
 
 Tip
 

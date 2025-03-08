@@ -1,6 +1,6 @@
 ---
 project: pipenv
-stars: 24993
+stars: 24997
 description:  Python Development Workflow for Humans.
 url: https://github.com/pypa/pipenv
 ---

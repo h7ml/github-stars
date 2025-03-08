@@ -1,6 +1,6 @@
 ---
 project: isomorphic-git
-stars: 7608
+stars: 7622
 description: A pure JavaScript implementation of git for node and browsers!
 url: https://github.com/isomorphic-git/isomorphic-git
 ---
@@ -119,7 +119,7 @@ Unfortunately, due to the same-origin policy by default `isomorphic-git` can onl
 
 For this purpose @isomorphic-git/cors-proxy exists which you can clone or `npm install`. For testing or small projects, you can also use https://cors.isomorphic-git.org - a free proxy sponsored by Clever Cloud.
 
-I'm hoping to get CORS headers added to all the major Git hosting platforms eventually, and will list my progress here:
+We hope to get CORS headers added to all the major Git hosting platforms eventually, and will list the progress made here:
 
 Service
 
@@ -139,7 +139,7 @@ Azure DevOps
 
 Gitlab
 
-❌ My PR was rejected, but the issue is still open!
+❌ Our PR was rejected, but the issue is still open!
 
 Bitbucket
 
@@ -164,7 +164,7 @@ The CLI is more of a lark for quickly testing `isomorphic-git` and isn't really 
 Supported Git commands
 ----------------------
 
-This project follows semantic versioning, so I may continue to make changes to the API but they will always be backwards compatible unless there is a major version bump.
+This project follows semantic versioning, so we may continue to make changes to the API but they will always be backwards compatible unless there is a major version bump.
 
 ### commands
 
@@ -272,7 +272,7 @@ Similar projects
 Acknowledgments
 ---------------
 
-Isomorphic-git would not have been possible without the pioneering work by @creationix and @chrisdickinson. Git is a tricky binary mess, and without their examples (and their modules!) I would not have been able to come even close to finishing this. They are geniuses ahead of their time.
+Isomorphic-git would not have been possible without the pioneering work by @creationix and @chrisdickinson. Git is a tricky binary mess, and without their examples (and their modules!) we would not have been able to come even close to finishing this. They are geniuses ahead of their time.
 
 Cross-browser device testing is provided by:
 

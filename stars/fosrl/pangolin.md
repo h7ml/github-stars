@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 2702
+stars: 3683
 description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
@@ -9,7 +9,7 @@ url: https://github.com/fosrl/pangolin
 
 _Your own self-hosted zero trust tunnel._
 
-##### Install Guide | Full Documentation
+##### Install Guide | Full Documentation | Contact Us
 
 Pangolin is a self-hosted tunneled reverse proxy server with identity and access control, designed to securely expose private resources on distributed networks. Acting as a central hub, it connects isolated networks — even those behind restrictive firewalls — through encrypted tunnels, enabling easy access to remote services without opening ports.
 
@@ -50,27 +50,15 @@ Key Features
 ### Easy Deployment
 
 -   Run on any cloud provider or on-premises.
--   Docker Compose based setup for simplified deployment.
+-   **Docker Compose based setup** for simplified deployment.
 -   Future-proof installation script for streamlined setup and feature additions.
--   Use your preferred WireGuard client to connect, or use Newt, our custom user space client for the best experience.
+-   Use any WireGuard client to connect, or use **Newt, our custom user space client** for the best experience.
 
 ### Modular Design
 
--   Extend functionality with existing Traefik plugins, such as Fail2Ban or CrowdSec.
+-   Extend functionality with existing Traefik plugins, such as CrowdSec and Geoblock.
+    -   **Automatically install and configure Crowdsec via Pangolin's installer script.**
 -   Attach as many sites to the central server as you wish.
-
-Screenshots
------------
-
-**Sites**
-
-**Users**
-
-**Share Link**
-
-**Authentication**
-
-**Connectivity**
 
 Deployment and Usage Example
 ----------------------------
@@ -81,7 +69,7 @@ Deployment and Usage Example
 
 Tip
 
-Many of our users have had a great experience with RackNerd. Depending on promotions, you can likely get a **VPS with 1 vCPU, 1GB RAM, and ~20GB SSD for just around $12/year**. That's a great deal! We are part of the RackNerd affiliate program, so if you sign up using our link, we receive a small commission which helps us maintain the project and keep it free for everyone.
+Many of our users have had a great experience with RackNerd. Depending on promotions, you can likely get a **VPS with 1 vCPU, 1GB RAM, and ~20GB SSD for just around $12/year**. That's a great deal! We are part of the RackNerd affiliate program, so if you purchase through our link, we receive a small commission which helps us maintain the project and keep it free for everyone.
 
 1.  **Domain Configuration**:
     
@@ -90,16 +78,18 @@ Many of our users have had a great experience with RackNerd. Depending on promot
     
     -   Install Newt or use another WireGuard client on private sites.
     -   Automatically establish a connection from these sites to the central server.
-3.  **Configure Users & Roles**
+3.  **Expose Resources**:
     
-    -   Define organizations and invite users.
-    -   Implement user- or role-based permissions to control resource access.
+    -   Add resources to the central server and configure access control rules.
+    -   Access these resources securely from anywhere.
 
 **Use Case Example - Bypassing Port Restrictions in Home Lab**:  
 Imagine private sites where the ISP restricts port forwarding. By connecting these sites to Pangolin via WireGuard, you can securely expose HTTP and HTTPS resources on the private network without any networking complexity.
 
 **Use Case Example - IoT Networks**:  
 IoT networks are often fragmented and difficult to manage. By deploying Pangolin on a central server, you can connect all your IoT sites via Newt or another WireGuard client. This creates a simple, secure, and centralized way to access IoT resources without the need for intricate networking setups.
+
+_Resources page of Pangolin dashboard (dark mode) showing HTTPS and TCP resources with access control rules._
 
 Similar Projects and Inspirations
 ---------------------------------

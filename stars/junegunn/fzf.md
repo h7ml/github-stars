@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 68335
+stars: 68495
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -25,13 +25,6 @@ Highlights
 -   ⚡ **Blazingly fast** — Highly optimized code instantly processes millions of items
 -   🛠️ **Extremely versatile** — Fully customizable via an event-action binding mechanism
 -   🔋 **Batteries included** — Includes integration with bash, zsh, fish, Vim, and Neovim
-
-Sponsors ❤️
------------
-
-I would like to thank all the sponsors of this project who make it possible for me to continue to improve fzf.
-
-If you'd like to sponsor this project, please visit https://github.com/sponsors/junegunn.
 
 Table of Contents
 -----------------
@@ -85,6 +78,7 @@ Table of Contents
     -   fzf Theme Playground
 -   Related projects
 -   License
+-   Sponsors ❤️
 
 Installation
 ------------
@@ -920,3 +914,14 @@ License
 The MIT License (MIT)
 
 Copyright (c) 2013-2024 Junegunn Choi
+
+Sponsors ❤️
+-----------
+
+I would like to thank all the sponsors of this project who make it possible for me to continue to improve fzf.
+
+If you'd like to sponsor this project, please visit https://github.com/sponsors/junegunn.
+
+* * *
+
+JetBrains supports this project with an Open Source Development License.

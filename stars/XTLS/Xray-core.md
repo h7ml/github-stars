@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 27412
+stars: 27537
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -100,6 +100,7 @@ GUI Clients
     -   X-flutter
     -   SaeedDev94/Xray
 -   iOS & macOS arm64
+    -   Happ
     -   FoXray
     -   Streisand
 -   macOS arm64 & x64

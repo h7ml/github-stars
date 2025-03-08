@@ -1,6 +1,6 @@
 ---
 project: ehco
-stars: 1269
+stars: 1267
 description: ehco is a network ʚrelayɞ tool and a typo :)
 url: https://github.com/Ehco1996/ehco
 ---

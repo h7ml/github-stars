@@ -1,7 +1,7 @@
 ---
 project: electric
-stars: 7510
-description: Sync little subsets of your Postgres data into local apps and services.
+stars: 7786
+description: Realtime sync for Postgres.
 url: https://github.com/electric-sql/electric
 ---
 

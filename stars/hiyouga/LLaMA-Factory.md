@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 42599
+stars: 43448
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -17,10 +17,10 @@ en.mp4
 
 Choose your path:
 
--   **Documentation (WIP)**: https://llamafactory.readthedocs.io/zh-cn/latest/
--   **Colab**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
+-   **Documentation**: https://llamafactory.readthedocs.io/en/latest/
+-   **Colab (free)**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
 -   **Local machine**: Please refer to usage
--   **PAI-DSW**: Llama3 Example | Qwen2-VL Example | DeepSeek-R1-Distill Example
+-   **PAI-DSW (free trial)**: Llama3 Example | Qwen2-VL Example | DeepSeek-R1-Distill Example
 -   **Amazon SageMaker**: Blog
 
 Note
@@ -687,7 +687,7 @@ torch
 
 1.13.1
 
-2.4.0
+2.5.1
 
 transformers
 
@@ -747,7 +747,7 @@ vllm
 
 0.4.3
 
-0.7.2
+0.7.3
 
 flash-attn
 

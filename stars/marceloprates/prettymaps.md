@@ -1,17 +1,17 @@
 ---
 project: prettymaps
-stars: 11537
-description: A small set of Python functions to draw pretty maps from OpenStreetMap data. Based on osmnx, matplotlib and shapely libraries.
+stars: 11555
+description: Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely
 url: https://github.com/marceloprates/prettymaps
 ---
-
-\# Install prettymaps using pip:
-#!pip install prettymaps
 
 prettymaps
 ==========
 
 A minimal Python library to draw customized maps from OpenStreetMap created using the osmnx, matplotlib, shapely and vsketch packages.
+
+Prettymaps is now available as a streamlit app!
+===============================================
 
 This work is licensed under a GNU Affero General Public License v3.0 (you can make commercial use, distribute and modify this project, but must **disclose** the source code with the license and copyright notice)
 
@@ -36,12 +36,6 @@ Google Colaboratory Demo
 Installation
 ============
 
-To enable plotter mode:
-
-```
-pip install git+https://github.com/abey79/vsketch@1.0.0
-```
-
 ### Install locally:
 
 Install prettymaps with:
@@ -60,6 +54,15 @@ Install prettymaps with:
 
 Then **restart the runtime** (Runtime -> Restart Runtime) before importing prettymaps
 
+Run front-end
+=============
+
+After prettymaps is installed, you can run the front-end (streamlit) application from the prettymaps repository using:
+
+```
+streamlit run app.py
+```
+
 Tutorial
 ========
 
@@ -72,6 +75,9 @@ prettymaps.plot(your\_query)
 1.  An address (Example: "Porto Alegre"),
 2.  Latitude / Longitude coordinates (Example: (-30.0324999, -51.2303767))
 3.  A custom boundary in GeoDataFrame format
+
+%reload\_ext autoreload
+%autoreload 2
 
 import prettymaps
 
@@ -166,11 +172,17 @@ minimal
 
 8
 
+my-preset
+
+{'layers': {'building': {'tags': {'building': ...
+
+9
+
 plotter
 
 {'layers': {'perimeter': {}, 'streets': {'widt...
 
-9
+10
 
 tijuca
 
@@ -183,7 +195,7 @@ import prettymaps
 prettymaps.preset('default')
 
 ```
-Preset(params={'layers': {'perimeter': {}, 'streets': {'width': {'motorway': 5, 'trunk': 5, 'primary': 4.5, 'secondary': 4, 'tertiary': 3.5, 'cycleway': 3.5, 'residential': 3, 'service': 2, 'unclassified': 2, 'pedestrian': 2, 'footway': 1}}, 'building': {'tags': {'building': True, 'landuse': 'construction'}}, 'water': {'tags': {'natural': ['water', 'bay']}}, 'forest': {'tags': {'landuse': 'forest'}}, 'green': {'tags': {'landuse': ['grass', 'orchard'], 'natural': ['island', 'wood'], 'leisure': 'park'}}, 'beach': {'tags': {'natural': 'beach'}}, 'parking': {'tags': {'amenity': 'parking', 'highway': 'pedestrian', 'man_made': 'pier'}}}, 'style': {'perimeter': {'fill': False, 'lw': 0, 'zorder': 0}, 'background': {'fc': '#F2F4CB', 'zorder': -1}, 'green': {'fc': '#8BB174', 'ec': '#2F3737', 'hatch_c': '#A7C497', 'hatch': 'ooo...', 'lw': 1, 'zorder': 1}, 'forest': {'fc': '#64B96A', 'ec': '#2F3737', 'lw': 1, 'zorder': 2}, 'water': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 3}, 'beach': {'fc': '#FCE19C', 'ec': '#2F3737', 'hatch_c': '#d4d196', 'hatch': 'ooo...', 'lw': 1, 'zorder': 3}, 'parking': {'fc': '#F2F4CB', 'ec': '#2F3737', 'lw': 1, 'zorder': 3}, 'streets': {'fc': '#2F3737', 'ec': '#475657', 'alpha': 1, 'lw': 0, 'zorder': 4}, 'building': {'palette': ['#433633', '#FF5E5B'], 'ec': '#2F3737', 'lw': 0.5, 'zorder': 5}}, 'circle': None, 'radius': 500})
+Preset(params={'layers': {'perimeter': {}, 'streets': {'width': {'motorway': 5, 'trunk': 5, 'primary': 4.5, 'secondary': 4, 'tertiary': 3.5, 'cycleway': 3.5, 'residential': 3, 'service': 2, 'unclassified': 2, 'pedestrian': 2, 'footway': 1}}, 'waterway': {'tags': {'waterway': ['river', 'stream']}, 'width': {'river': 20, 'stream': 10}}, 'building': {'tags': {'building': True, 'landuse': 'construction'}}, 'water': {'tags': {'natural': ['water', 'bay']}}, 'sea': {}, 'forest': {'tags': {'landuse': 'forest'}}, 'green': {'tags': {'landuse': ['grass', 'orchard'], 'natural': ['island', 'wood', 'wetland'], 'leisure': 'park'}}, 'rock': {'tags': {'natural': 'bare_rock'}}, 'beach': {'tags': {'natural': 'beach'}}, 'parking': {'tags': {'amenity': 'parking', 'highway': 'pedestrian', 'man_made': 'pier'}}}, 'style': {'perimeter': {'fill': False, 'lw': 0, 'zorder': 0}, 'background': {'fc': '#F2F4CB', 'zorder': -1}, 'green': {'fc': '#8BB174', 'ec': '#2F3737', 'hatch_c': '#A7C497', 'hatch': 'ooo...', 'lw': 1, 'zorder': 1}, 'forest': {'fc': '#64B96A', 'ec': '#2F3737', 'lw': 1, 'zorder': 2}, 'water': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 99}, 'sea': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 99}, 'waterway': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 200}, 'beach': {'fc': '#FCE19C', 'ec': '#2F3737', 'hatch_c': '#d4d196', 'hatch': 'ooo...', 'lw': 1, 'zorder': 3}, 'parking': {'fc': '#F2F4CB', 'ec': '#2F3737', 'lw': 1, 'zorder': 3}, 'streets': {'fc': '#2F3737', 'ec': '#475657', 'alpha': 1, 'lw': 0, 'zorder': 4}, 'building': {'palette': ['#433633', '#FF5E5B'], 'ec': '#2F3737', 'lw': 0.5, 'zorder': 5}, 'rock': {'fc': '#BDC0BA', 'ec': '#2F3737', 'lw': 1, 'zorder': 6}}, 'circle': None, 'radius': 500})
 ```
 
 Insted of using the default configuration you can customize several parameters. The most important are:
@@ -363,6 +375,14 @@ plot.geodataframes\['building'\]
 
 </style>
 
+geometry
+
+bicycle
+
+highway
+
+leisure
+
 addr:housenumber
 
 addr:street
@@ -373,29 +393,21 @@ operator
 
 website
 
-geometry
-
-addr:postcode
-
-name
-
-office
-
-opening\_hours
+historic
 
 ...
 
-contact:phone
+contact:website
 
 bus
 
-public\_transport
+smoothness
 
-source:name
-
-government
+inscription
 
 ways
+
+boat
 
 name:fr
 
@@ -405,13 +417,15 @@ building:part
 
 architect
 
-element\_type
+(node, 2407915698)
 
-osmid
+POINT (-51.23212 -30.03670)
 
-node
+NaN
 
-2407915698
+NaN
+
+NaN
 
 820
 
@@ -423,14 +437,6 @@ NaN
 
 NaN
 
-POINT (-51.23212 -30.0367)
-
-90010-460
-
-NaN
-
-NaN
-
 NaN
 
 ...
@@ -455,9 +461,15 @@ NaN
 
 NaN
 
-way
+(way, 126665330)
 
-126665330
+POLYGON ((-51.23518 -30.03275, -51.23512 -30.0...
+
+NaN
+
+NaN
+
+NaN
 
 387
 
@@ -469,14 +481,6 @@ NaN
 
 NaN
 
-POLYGON ((-51.23518 -30.03275, -51.23512 -30.0...
-
-90020-002
-
-Igreja Nossa Senhora das Dores
-
-NaN
-
 NaN
 
 ...
@@ -501,7 +505,15 @@ NaN
 
 NaN
 
-126665331
+(way, 126665331)
+
+POLYGON ((-51.23167 -30.03066, -51.23160 -30.0...
+
+NaN
+
+NaN
+
+NaN
 
 1001
 
@@ -511,17 +523,9 @@ NaN
 
 NaN
 
-http://www.ruadapraiashopping.com.br
-
-POLYGON ((-51.23167 -30.03066, -51.2316 -30.03...
-
-90020-015
-
-Rua da Praia Shopping
+https://www.ruadapraiashopping.com.br/
 
 NaN
-
-Mo-Fr 09:00-21:00; Sa 08:00-20:00
 
 ...
 
@@ -545,7 +549,15 @@ NaN
 
 NaN
 
-129176990
+(way, 129176990)
+
+POLYGON ((-51.23117 -30.02891, -51.23120 -30.0...
+
+NaN
+
+NaN
+
+NaN
 
 1020
 
@@ -557,15 +569,7 @@ NaN
 
 http://www.memorial.rs.gov.br
 
-POLYGON ((-51.23117 -30.02891, -51.2312 -30.02...
-
-90010-191
-
-Memorial do Rio Grande do Sul
-
 NaN
-
-Tu-Sa 10:00-18:00
 
 ...
 
@@ -589,7 +593,15 @@ NaN
 
 NaN
 
-129176991
+(way, 129176991)
+
+POLYGON ((-51.23153 -30.02914, -51.23156 -30.0...
+
+NaN
+
+NaN
+
+NaN
 
 NaN
 
@@ -599,17 +611,9 @@ NaN
 
 NaN
 
-http://www.margs.rs.gov.br
-
-POLYGON ((-51.23153 -30.02914, -51.23156 -30.0...
-
-90010-150
-
-Museu de Arte do Rio Grande do Sul
+https://www.margs.rs.gov.br/
 
 NaN
-
-Tu-Su 10:00-19:00
 
 ...
 
@@ -677,21 +681,7 @@ NaN
 
 ...
 
-...
-
-relation
-
-6760281
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
+(relation, 6760281)
 
 POLYGON ((-51.23238 -30.03337, -51.23223 -30.0...
 
@@ -703,9 +693,17 @@ NaN
 
 NaN
 
-...
+NaN
 
 NaN
+
+NaN
+
+NaN
+
+NaN
+
+...
 
 NaN
 
@@ -719,13 +717,17 @@ NaN
 
 NaN
 
+NaN
+
 multipolygon
 
 NaN
 
 NaN
 
-6760282
+(relation, 6760282)
+
+POLYGON ((-51.23203 -30.03340, -51.23203 -30.0...
 
 NaN
 
@@ -737,19 +739,15 @@ NaN
 
 NaN
 
-POLYGON ((-51.23203 -30.0334, -51.23203 -30.03...
-
 NaN
 
-Atheneu Espírita Cruzeiro do Sul
+NaN
 
 NaN
 
 NaN
 
 ...
-
-NaN
 
 NaN
 
@@ -763,37 +761,37 @@ NaN
 
 NaN
 
+NaN
+
 multipolygon
 
 NaN
 
 NaN
 
-6760283
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
+(relation, 6760283)
 
 POLYGON ((-51.23284 -30.03367, -51.23288 -30.0...
 
 NaN
 
-Palacete Chaves
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
 
 NaN
 
 NaN
 
 ...
-
-NaN
 
 NaN
 
@@ -807,23 +805,15 @@ NaN
 
 NaN
 
+NaN
+
 multipolygon
 
 NaN
 
 Theodor Wiederspahn
 
-6760284
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
+(relation, 6760284)
 
 POLYGON ((-51.23499 -30.03412, -51.23498 -30.0...
 
@@ -835,9 +825,17 @@ NaN
 
 NaN
 
-...
+NaN
 
 NaN
+
+NaN
+
+NaN
+
+NaN
+
+...
 
 NaN
 
@@ -851,13 +849,23 @@ NaN
 
 NaN
 
+NaN
+
 multipolygon
 
 NaN
 
 NaN
 
-14393526
+(relation, 14393526)
+
+POLYGON ((-51.23125 -30.02813, -51.23128 -30.0...
+
+NaN
+
+NaN
+
+NaN
 
 1044
 
@@ -868,14 +876,6 @@ NaN
 NaN
 
 https://www.sefaz.rs.gov.br
-
-POLYGON ((-51.23125 -30.02813, -51.23128 -30.0...
-
-NaN
-
-Secretaria Estadual da Fazenda
-
-NaN
 
 NaN
 
@@ -889,9 +889,9 @@ NaN
 
 NaN
 
-NaN
-
 \[236213286, 1081974882\]
+
+NaN
 
 NaN
 
@@ -901,7 +901,7 @@ NaN
 
 NaN
 
-2423 rows × 105 columns
+2420 rows × 167 columns
 
 Search a building by name and display it:
 
@@ -910,7 +910,7 @@ plot.geodataframes\['building'\]\[
 \].geometry\[0\]
 
 ```
-/home/marcelo/anaconda3/envs/prettymaps/lib/python3.11/site-packages/geopandas/geoseries.py:720: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+/home/marcelo/anaconda3/envs/prettymaps/lib/python3.11/site-packages/geopandas/geoseries.py:648: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   val = getattr(super(), mtd)(*args, **kwargs)
 ```
 
@@ -952,6 +952,7 @@ import prettymaps
 plot \= prettymaps.plot(
     (41.39491,2.17557),
     preset \= 'barcelona',
+    show \= False \# We don't want to render the map yet
 )
 
 \# Change background color
@@ -981,18 +982,11 @@ Some other examples
 import prettymaps
 
 plot \= prettymaps.plot(
-    \# City name
     'Barra da Tijuca',
     dilate \= 0,
     figsize \= (22,10),
     preset \= 'tijuca',
-)
-
-import prettymaps
-
-plot \= prettymaps.plot(
-    'Stad van de Zon, Heerhugowaard, Netherlands',
-    preset \= 'heerhugowaard',
+    adjust\_aspect\_ratio \= False
 )
 
 Use prettymaps.create\_preset() to create a preset:
@@ -1053,187 +1047,6 @@ prettymaps.preset('my-preset')
 Preset(params={'layers': {'building': {'tags': {'building': True, 'leisure': ['track', 'pitch']}}, 'streets': {'width': {'trunk': 6, 'primary': 6, 'secondary': 5, 'tertiary': 4, 'residential': 3.5, 'pedestrian': 3, 'footway': 3, 'path': 3}}}, 'style': {'perimeter': {'fill': False, 'lw': 0, 'zorder': 0}, 'streets': {'fc': '#F1E6D0', 'ec': '#2F3737', 'lw': 1.5, 'zorder': 3}, 'building': {'palette': ['#fff'], 'ec': '#2F3737', 'lw': 1, 'zorder': 4}}, 'circle': None, 'radius': None, 'dilate': None})
 ```
 
-Use prettymaps.delete\_preset() to delete presets:
-
-\# Show presets before deletion
-print('Before deletion:')
-display(prettymaps.presets())
-\# Delete 'my-preset'
-prettymaps.delete\_preset('my-preset')
-\# Show presets after deletion
-print('After deletion:')
-display(prettymaps.presets())
-
-```
-Before deletion:
-```
-
-<style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
-
-```
-.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-```
-
-</style>
-
-preset
-
-params
-
-0
-
-abraca-redencao
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-1
-
-barcelona
-
-{'layers': {'perimeter': {'circle': False}, 's...
-
-2
-
-barcelona-plotter
-
-{'layers': {'streets': {'width': {'primary': 5...
-
-3
-
-cb-bf-f
-
-{'layers': {'streets': {'width': {'trunk': 6, ...
-
-4
-
-default
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-5
-
-heerhugowaard
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-6
-
-macao
-
-{'layers': {'perimeter': {}, 'streets': {'cust...
-
-7
-
-minimal
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-8
-
-my-preset
-
-{'layers': {'building': {'tags': {'building': ...
-
-9
-
-plotter
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-10
-
-tijuca
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-```
-After deletion:
-```
-
-<style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
-
-```
-.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-```
-
-</style>
-
-preset
-
-params
-
-0
-
-abraca-redencao
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-1
-
-barcelona
-
-{'layers': {'perimeter': {'circle': False}, 's...
-
-2
-
-barcelona-plotter
-
-{'layers': {'streets': {'width': {'primary': 5...
-
-3
-
-cb-bf-f
-
-{'layers': {'streets': {'width': {'trunk': 6, ...
-
-4
-
-default
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-5
-
-heerhugowaard
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-6
-
-macao
-
-{'layers': {'perimeter': {}, 'streets': {'cust...
-
-7
-
-minimal
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-8
-
-plotter
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
-9
-
-tijuca
-
-{'layers': {'perimeter': {}, 'streets': {'widt...
-
 Use **prettymaps.multiplot** and **prettymaps.Subplot** to draw multiple regions on the same canvas
 
 import prettymaps
@@ -1250,6 +1063,7 @@ plot \= prettymaps.multiplot(
     ),
     prettymaps.Subplot(
         'Farroupilha, Porto Alegre',
+        layers \= {'building': {'tags': {'building': True}}},
         style\={'building': {'palette': \['#EEE4E1', '#E7D8C9', '#E6BEAE'\]}}
     ),
     \# Load a global preset
@@ -1258,14 +1072,59 @@ plot \= prettymaps.multiplot(
     figsize\=(12, 12)
 )
 
+Add hillshade
+=============
+
+plot \= prettymaps.plot(
+    'Honolulu',
+    radius \= 5500,
+    figsize \= 'a4',
+    layers \= {'hillshade': {
+        'azdeg': 315,
+        'altdeg': 45,
+        'vert\_exag': 1,
+        'dx': 1,
+        'dy': 1,
+        'alpha': 0.75,
+    }},
+)
+
 ```
-<Figure size 3600x3600 with 0 Axes>
+The autoreload extension is already loaded. To reload it, use:
+  %reload_ext autoreload
+make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
+make: Nothing to be done for 'download'.
+make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
+make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
+make: Nothing to be done for 'all'.
+make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
+make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
+cp SRTM1.vrt SRTM1.2d5b6f11e0e74b44a9386ba897fb0852.vrt
+make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
+make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
+gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.2d5b6f11e0e74b44a9386ba897fb0852.vrt /home/marcelo/Projects/Art/prettymaps/notebooks/elevationa.tif
+rm -f SRTM1.2d5b6f11e0e74b44a9386ba897fb0852.vrt
+make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
 
 
-
-<Figure size 3600x3600 with 0 Axes>
-
-
-
-<Figure size 3600x3600 with 0 Axes>
+WARNING:matplotlib.axes._base:Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
 ```
+
+Add keypoints
+=============
+
+plot \= prettymaps.plot(
+    'Garopaba',
+    radius \= 5000,
+    figsize \= 'a4',
+    layers \= {'building': False},
+    keypoints \= {
+        \# Search for general keypoints specified by OSM tags
+        'tags': {'natural': \['beach'\]},
+        \# Or, search by specific name or free-text search
+        \# pretymaps will use a fuzzy string matching to search for the specified name
+        'specific': {
+            'pedra branca': {'tags': {'natural': \['peak'\]}},
+        }
+    },
+)

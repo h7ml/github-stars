@@ -1,6 +1,6 @@
 ---
 project: cortex
-stars: 383
+stars: 384
 description: The intelligent coding assistant for Elixir
 url: https://github.com/urbint/cortex
 ---

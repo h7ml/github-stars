@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 25715
+stars: 26539
 description: A calmer internet, without any gimmicks.
 url: https://github.com/zen-browser/desktop
 ---
@@ -14,7 +14,7 @@ Download • Website • Documentation • Release Notes
 🖥️ Compatibility
 -----------------
 
-Zen is currently built using Firefox version `135.0.1`! 🚀
+Zen is currently built using Firefox version `136.0`! 🚀
 
 -   `Zen Twilight` - Is currently built using Firefox version `RC 136.0`!
 -   Check out the latest release notes!
@@ -31,7 +31,7 @@ We keep track of how many issues are closed at the end of the month in docs/issu
 
 ### Versioning
 
-Zen uses Semantic Versioning, meaning versions are displayed as `a.bc.d` where:
+Zen uses Semantic Versioning, meaning versions are displayed as `a.b.cd` where:
 
 -   `a` is the major version
 -   `b` is the minor version

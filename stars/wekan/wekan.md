@@ -1,6 +1,6 @@
 ---
 project: wekan
-stars: 19822
+stars: 19829
 description: The Open Source kanban (built with Meteor). Keep variable/table/field names camelCase. For translations, only add Pull Request changes to wekan/i18n/en.i18n.json , other translations are done at https://app.transifex.com/wekan/wekan only.
 url: https://github.com/wekan/wekan
 ---
@@ -104,6 +104,15 @@ Developer Documentation
 -   Commercial Support.
 
 We also welcome sponsors for features and bugfixes. By working directly with WeKan ® you get the benefit of active maintenance and new features added by growing WeKan ® developer community.
+
+Getting Started with Development
+--------------------------------
+
+The default branch uses Meteor 2 with Node.js 14.
+
+To contribute, create a fork and run `./rebuild-wekan.sh` (or `./rebuild-wekan.bat` on Windows) as detailed here. Once you're ready, please test your code and submit a pull request (PR).
+
+Please refer to the developer documentation for more information.
 
 Screenshot
 ----------

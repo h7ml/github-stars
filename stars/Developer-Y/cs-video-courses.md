@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68218
+stars: 68260
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -449,6 +449,7 @@ Courses
     -   UC Berkeley CS 189 / 289A Introduction to Machine Learning fall 2023, by Jennifer Listgarten & Jitendra Malik
     -   UC Berkeley CS 189 Introduction to Machine Learning (CDSS offering) spring 2022, by Marvin Zhang
     -   MIT 6.036 Introduction to Machine Learning spring 2019, by Leslie Kaelbling
+    -   LMU Munich Introduction to Machine Learning
     -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
     -   UCLA Stats 231C Theories of Machine Learning spring 2022, by Arash Amini
     -   MSU Machine Learning
@@ -570,7 +571,7 @@ Courses
     -   CS 159 Advanced Topics in Machine Learning, Spring 2021 - Caltech
 -   #### **Natural Language Processing**
     
-    -   CS 224N -Natural Language Processing with Deep Learning - Stanford University (Lectures - Winter 2019) (Lectures - Winter 2021)
+    -   CS 224N -Natural Language Processing with Deep Learning - Stanford University (Lectures - Winter 2019) (Lectures - Winter 2021) (Lectures - Spring 2024)
     -   CS 224N - Natural Language Processing, Stanford University (Lecture videos)
     -   Stanford XCS224U: Natural Language Understanding I Spring 2023
     -   CS388: Natural Language Processing - UT Austin
@@ -583,7 +584,7 @@ Courses
     -   CS224U: Natural Language Understanding - Spring 2019 - Stanford University
     -   Deep Learning for Natural Language Processing, 2017 - Oxford University
     -   Natural Language Processing - IIT Bombay
-    -   CMU Advanced NLP 2021
+    -   CMU Advanced NLP Fall 2024 (Lectures - Fall 2024) (Lectures - Fall 2021)
     -   CMU Neural Nets for NLP 2021
     -   Natural Language Processing - Michael Collins - Columbia University
     -   CMU CS11-737 - Multilingual Natural Language Processing
@@ -600,6 +601,7 @@ Courses
     
     -   Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon
     -   CS 6785 - Deep Generative Models - Cornell Tech, Spring 2023)
+    -   MIT 6.S184 Flow Matching and Diffusion Models, 2025
 -   #### **Computer Vision**
     
     -   CS 231n - Convolutional Neural Networks for Visual Recognition, Stanford University
@@ -612,6 +614,8 @@ Courses
     -   EECS 498/598 - Deep Learning for Computer Vision - University of Michigan - Fall 2019 (Youtube)
     -   CAP5415 Computer Vision - UCF Fall 2023
     -   CAP6412 Advanced Computer Vision - UCF Spring 2024 (Youtube)
+    -   Advanced Deep Learning for Computer vision (ADL4CV) (IN2364) - TU Munich (Youtube)
+    -   Computer Vision III: Detection, Segmentation and Tracking (CV3DST) (IN2375) - TU Munich
 -   #### **Time Series Analysis**
     
     -   02417 Time Series Analysis
@@ -627,6 +631,8 @@ Courses
     -   10-725 Optimization Fall 2012 - CMU
     -   10-801 Advanced Optimization and Randomized Methods - CMU (YouTube)
     -   AM 207 - Stochastic Methods for Data Analysis, Inference and Optimization, Harvard University
+    -   MIT 6.S098 Applied Convex Optimization IAP 2022, by Alexandre Amice, Benoit Legat (YouTube)
+    -   University of Twente Discrete Optimization, by Marc Uetz (Fall 2020)
     -   UCSD CS292F Convex Optimization Spring 2020, by Yu-Xiang Wang (Youtube)
     -   University of Wisconsin-Madison CS/ECE/ISyE 524 Introduction to Optimization spring 2017-18, by Laurent Lessard
     -   University of Wisconsin-Madison ISyE/Math/CS/Stat 525 Linear Optimization fall 2021, by Alberto Del Pia
@@ -660,6 +666,7 @@ Courses
     -   ACP SUMMER SCHOOL 2023 on Machine Learning for Constraint Programming
     -   EE512A - Advanced Inference in Graphical Models, Fall Quarter, 2014
     -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
+    -   Johns Hopkins Unsupervised Learning spring 2017, by Rene Vidal
     -   University of Wisconsin-Madison CS/ECE 561 - Probability and Information Theory in Machine Learning fall 2020, by Matthew Malley
     -   University of Maryland CMSC828U Algorithms in Machine Learning: Guarantees and Analyses fall 2020, by Furong Huang (YouTube playlist)
     -   Statistical Physics of Machine Learning
@@ -741,6 +748,7 @@ Courses
     -   Bayesian Data Analysis
     -   Bayesian Machine Learning and Information Processing (YouTube-2021/22) (YouTube-2020/21)
     -   Markov Processes - Spring 2023
+    -   Measure Theoretic Probability
     -   Causal Inference Course - Brady Neal
     -   Causal Inference -- Online Lectures (M.Sc/PhD Level)
     -   Machine Learning & Causal Inference: A Short Course
@@ -758,6 +766,7 @@ Courses
     -   UCLA Stats 200B Theoretical Statistics winter 2023, by Arash Amini
     -   UCLA Stats 200C High-dimensional Statistics spring 2022, by Arash Amini (Spring 2021)
     -   UCLA Stats 203 Large Sample Theory fall 2021, by Jingyi Jessica Li (Fall 2020)
+    -   UCSD Math 280 Probability Theory and Stochastic Processes, by Todd Kemp (YouTube)
 -   **Linear Algebra**
     -   Mathematical Foundations of Machine Learning (Fall 2021) - University of Chicago - Rebecca Willett
     -   18.06 - Linear Algebra, Prof. Gilbert Strang, MIT OCW

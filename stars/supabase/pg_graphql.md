@@ -1,6 +1,6 @@
 ---
 project: pg_graphql
-stars: 2983
+stars: 3049
 description: GraphQL support for PostgreSQL 
 url: https://github.com/supabase/pg_graphql
 ---
@@ -68,7 +68,7 @@ COMMENT ON SCHEMA public IS e'@graphql({"inflect\_names": true})';
 
 Translates into a GraphQL schema displayed below.
 
-Each table receives an entrypoint in the top level `Query` type that is a pageable collection with relationships defined by its foreign keys. Tables similarly recieve entrypoints in the `Mutation` schema that enable bulk operations for insert, update, and delete.
+Each table receives an entrypoint in the top level `Query` type that is a pageable collection with relationships defined by its foreign keys. Tables similarly receive entrypoints in the `Mutation` schema that enable bulk operations for insert, update, and delete.
 
 ### Contributing
 

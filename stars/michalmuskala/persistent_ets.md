@@ -1,6 +1,6 @@
 ---
 project: persistent_ets
-stars: 132
+stars: 133
 description: null
 url: https://github.com/michalmuskala/persistent_ets
 ---

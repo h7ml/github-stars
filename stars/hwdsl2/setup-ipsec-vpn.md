@@ -1,6 +1,6 @@
 ---
 project: setup-ipsec-vpn
-stars: 25847
+stars: 25874
 description: Scripts to build your own IPsec VPN server, with IPsec/L2TP, Cisco IPsec and IKEv2
 url: https://github.com/hwdsl2/setup-ipsec-vpn
 ---
@@ -16,7 +16,7 @@ An IPsec VPN encrypts your network traffic, so that nobody between you and the V
 
 We will use Libreswan as the IPsec server, and xl2tpd as the L2TP provider.
 
-**» 📖 Book: Build Your Own VPN Server** \[English | 中文 | Español | Deutsch | Français | Italiano | NL | PT | 日本語\]
+**» 📖 Book: Build Your Own VPN Server** \[Intro Video | English | 中文 | ES | DE | FR | IT | NL | PT | 日本語\]
 
 Quick start
 -----------
@@ -468,7 +468,7 @@ https://gitlab.com/hwdsl2/setup-ipsec-vpn/-/raw/master/extras/vpnupgrade.sh
 
 If you are unable to download, open vpnupgrade.sh, then click the `Raw` button on the right. Press `Ctrl/Cmd+A` to select all, `Ctrl/Cmd+C` to copy, then paste into your favorite editor.
 
-The latest supported Libreswan version is `5.1`. Check installed version: `ipsec --version`.
+The latest supported Libreswan version is `5.2`. Check installed version: `ipsec --version`.
 
 **Note:** `xl2tpd` can be updated using your system's package manager, such as `apt-get` on Ubuntu/Debian.
 
@@ -533,7 +533,7 @@ Feedback & Questions
 License
 -------
 
-Copyright (C) 2014-2024 Lin Song  
+Copyright (C) 2014-2025 Lin Song  
 Based on the work of Thomas Sarlandie (Copyright 2012)
 
   

@@ -1,6 +1,6 @@
 ---
 project: PIME
-stars: 1374
+stars: 1376
 description: Develop input methods for Windows easily with Python and node.js
 url: https://github.com/EasyIME/PIME
 ---

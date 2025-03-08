@@ -1,6 +1,6 @@
 ---
 project: PySimpleGUI
-stars: 13554
+stars: 13560
 description: Python GUIs for Humans! PySimpleGUI is the top-rated Python application development environment. Launched in 2018 and actively developed, maintained, and supported in 2024. Transforms tkinter, Qt, WxPython, and Remi into a simple, intuitive, and fun experience for both hobbyists and expert users.
 url: https://github.com/PySimpleGUI/PySimpleGUI
 ---
@@ -24,6 +24,14 @@ or for Linux/Mac
 `python3 -m pip install –-upgrade PySimpleGUI`
 
 The **new command** with the new parameter is:
+
+`python -m pip install --upgrade -i https://PySimpleGUI.net/install PySimpleGUI`
+
+### Uninstall Needed If Error
+
+If you installed the stub version 5.0.99. from PyPI, the only way we're able to show a message from PyPI, then you will need to uninstall PySimpleGUI and reinstall using the private PyPI server
+
+`python -m pip uninstall PySimpleGUI`
 
 `python -m pip install --upgrade -i https://PySimpleGUI.net/install PySimpleGUI`
 

@@ -1,6 +1,6 @@
 ---
 project: pifuhd
-stars: 9615
+stars: 9621
 description: High-Resolution 3D Human Digitization from A Single Image.
 url: https://github.com/facebookresearch/pifuhd
 ---

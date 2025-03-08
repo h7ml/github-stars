@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 19422
+stars: 19544
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -69,10 +69,9 @@ Verification
 To verify the installation, perform the following checks in your terminal:
 
 -   Ensure that the `docker` commands are available:
-    
-    docker --version
-    docker compose version
-    
+
+docker --version
+docker compose version
 
 Fast start
 ----------
@@ -97,14 +96,13 @@ Installation
 You need Microsoft's rush to install the application.
 
 1.  Install Rush globally using the command:
-    
-    npm install -g @microsoft/rush
-    
-2.  Navigate to the repository root and run the following commands:
-    
-    rush install
-    rush build
-    
+
+npm install -g @microsoft/rush
+
+1.  Navigate to the repository root and run the following commands:
+
+rush install
+rush build
 
 Alternatively, you can just execute:
 
