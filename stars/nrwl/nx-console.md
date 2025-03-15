@@ -1,14 +1,14 @@
 ---
 project: nx-console
-stars: 1316
+stars: 1318
 description: Nx Console is the user interface for Nx & Lerna.
 url: https://github.com/nrwl/nx-console
 ---
 
-The UI for Nx & Lerna
-=====================
+The UI for Monorepos, providing visual workflows and enriching your AI Chat with deep insights
+==============================================================================================
 
-**Spend less time looking up command line arguments and more time shipping incredible products.**
+**Stay focused and productive right in your editor.**
 
 * * *
 
@@ -17,33 +17,68 @@ Why Nx Console?
 
 Developers use both command-line tools and user interfaces. They commit in the terminal, but resolve conflicts in Visual Studio Code or WebStorm. They use the right tool for the job.
 
-Nx is a command-line tool, which works great when you want to serve an application or generate a simple component. But it falls short once you start doing advanced things.
+Nx Console is that tool. It helps developers stay in the flow, provides visual workflows, enhances your AI chats and more.
 
-For instance:
+Installation
+------------
 
--   Exploring custom generator collections is hard in the terminal, but it's easy using Nx Console.
--   Using rarely-used flags is challenging. Do you pass absolute or relative paths? You don't have to remember any flags, names or paths - Nx Console will help you by providing autocompletion and validating your inputs.
--   Context-switching between your IDE and the browser is annoying. With Nx Console, you can view the nx graph right in VSCode!
-
-Nx Console does all that and more!
-
-Download
---------
-
-You can install Nx Console in the following places:
+You can download Nx Console from the following places:
 
 -   Nx Console for Visual Studio Code from the Visual Studio Marketplace.
+-   Nx Console for Visual Studio Code from the OpenVSX Registry
 -   Nx Console for JetBrains from the JetBrains Marketplace
 
-True UI for Nx & Lerna
-----------------------
+Key Features
+------------
 
-Nx Console is the UI for all Nx workspaces. It works for any generator or any architect commands. Nx Console does not have a specific UI for, say, generating a component. Instead, Nx Console does what the command-line version of Nx does - it analyzes the same meta information to create the needed UI. This means that anything you can do with Nx, you can do with Nx Console. After all, Nx Console is the UI for Nx.
+### AI Enhancements
 
-Useful for Both Experts and Beginners
--------------------------------------
+Nx Console enhances your editors AI features by providing relevant context to the large language models powering VSCode and Cursor. Automatically teach AI about your workspace architecture, generators and feed it up-to-date nx docs!
 
-Even though we started building Nx Console as a tool for experts, we also aimed to make Nx Console a great tool for developers who are new to development or Nx. You can create projects, interact with your editor, run generators and commands and install extensions without ever touching the terminal or having to install any node packages globally. Also, Nx Console highlights the properties you are likely to use for built-in generators and commands, so if you haven't used the CLI, you don't get overwhelmed.
+In VSCode, access the enhancements via the `@nx` chat participant. Learn more in our blog post or the Nx docs
+
+In Cursor or anywhere else, use the Nx MCP server. Learn more in our Cursor blog post or the Nx docs
+
+### Project Details View
+
+Nx Console provides seamless integration with the Project Details View (PDV). You can learn more about your project, the available tasks and detailed configuration information. With the PDV in Nx Console, you can run tasks or navigate the task graph with just a few clicks!
+
+Learn more about the Project Details view on nx.dev
+
+### Generate UI
+
+Nx Console makes it easier to run generators through our interactive Generate UI. It automatically parses the schema for any generator and provides autocomplete, validation and dry-run previews as you type.
+
+You can launch the Generate UI via the `Nx: Generate (UI)` command or through the context menu in the file explorer. Paths will be automatically prefilled! Learn more about the Generate UI on nx.dev
+
+### Nx Cloud Integration
+
+Nx Console improves the experience of using Nx Cloud by giving you an overview of current CI Pipeline Executions and showing notifications when CI is done or an error occurs. No more refreshing GitHub forever, just keep working and Nx Console will let you know once your PR is ready!
+
+Additionally, Nx Console helps by guiding you through the Nx Cloud onboarding process, right in your editor.
+
+Learn more about the Nx Cloud Integration on nx.dev
+
+### Projects & Tasks Overview
+
+Nx Console presents an overview of your workspace from an Nx perspective. You can browse projects, their targets & configurations in the `Projects` view. Run available targets or create shortcuts for frequent commands in the `Common Nx Commands` view.
+
+### Workspace Visualization
+
+Nx Console visualizes the Nx project & task graphs right in your editor. It knows which file you're working on, so you can easily open the graph focused on that specific project. Also, with the tight integration into your editor, you can run tasks or explore the files that cause project dependencies with a single click.
+
+Requirements
+------------
+
+To use Nx Console, make sure you're in an Nx or Lerna workspace and have Node.js installed. If you're not using Nx yet, learn more here: Intro to Nx
+
+You can create an Nx workspace by running the following command:
+
+npx create-nx-workspace@latest my-workspace
+
+To install Nx into an existing repository, simply run
+
+npx nx init
 
 Compatibility
 -------------
@@ -52,18 +87,18 @@ The latest version of Nx Console supports all Nx versions starting at Nx 15. For
 
 If you're looking to upgrade your version of Nx easily, refer to the Nx migrate documentation.
 
+Contributing
+============
+
+Please read the contributing guidelines. Pick one of the issues from the good first issue list to get started.
+
 Learn More
-==========
+----------
 
 -   Documentation - Official documentation with video tutorials
 -   nx.dev - Documentation, Guides and Interactive Tutorials on Nx
 -   Join the community - Chat about Nx & Nx Console on the official discord server
 -   Learn more about the team at Nx - The team at Nx led the development of Nx Console, after working with many Enterprise clients.
-
-Contributing
-============
-
-Please read the contributing guidelines. Pick one of the issues from the good first issue list to get started.
 
 ### Jetbrains WSL support
 

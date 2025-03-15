@@ -1,6 +1,6 @@
 ---
 project: fastai
-stars: 26719
+stars: 26756
 description: The fastai deep learning library
 url: https://github.com/fastai/fastai
 ---
@@ -17,7 +17,7 @@ You can install fastai on your own machines with conda (highly recommended), as 
 
 We recommend using miniconda (or miniforge). First install PyTorch using the conda line shown here, and then run:
 
-conda install -c fastai fastai
+conda install fastai::fastai
 
 To install with pip, use: `pip install fastai`.
 

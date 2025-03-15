@@ -1,6 +1,6 @@
 ---
 project: mkdocs-material
-stars: 22371
+stars: 22477
 description: Documentation that simply works
 url: https://github.com/squidfunk/mkdocs-material
 ---
@@ -61,11 +61,11 @@ Trusted by ...
 
 ### ... industry leaders
 
-ArXiv, Atlassian, AWS, Bloomberg, CERN, CloudFlare, Datadog, Google, Harvard, Hewlett Packard, HSBC, ING, Intel, JetBrains, LinkedIn, Microsoft, Mozilla, Netflix, Red Hat, Roboflow, Salesforce, SIEMENS, Slack, Square, Uber, Zalando
+ArXiv, Atlassian, AWS, Bloomberg, CERN, CloudFlare, Datadog, Google, Harvard, Hewlett Packard, HSBC, ING, Intel, JetBrains, LinkedIn, Microsoft, Mozilla, Netflix, OpenAI, Red Hat, Roboflow, Salesforce, SIEMENS, Slack, Square, Uber, Zalando
 
 ### ... and successful Open Source projects
 
-Amp, Arduino, Auto-GPT, AutoKeras, BFE, CentOS, Crystal, eBPF, Electron, FastAPI, FlatBuffers, Freqtrade, GoReleaser, GraphRAG, HedgeDoc, Hummingbot, Knative, Kubernetes, kSQL, LeakCanary, LlamaIndex, NetBox, Nokogiri, OpenFaaS, OpenSSL, Orchard Core, Percona, Pi-Hole, Polars, Pydantic, PyPI, Quivr, Renovate, RetroPie, Ruff, Supervision, Textual, Traefik, Trivy, Typer, tinygrad, Ultralytics, UV, Vapor, WebKit, WTF, ZeroNet
+Amp, Arduino, Auto-GPT, AutoKeras, BFE, CentOS, Crystal, eBPF, Electron, FastAPI, FlatBuffers, Freqtrade, GoReleaser, GraphRAG, HedgeDoc, Hummingbot, Knative, Kubernetes, kSQL, LeakCanary, LlamaIndex, NetBox, Nokogiri, OpenAI, OpenFaaS, OpenSSL, Orchard Core, Percona, Pi-Hole, Polars, Pydantic, PyPI, Quivr, Renovate, RetroPie, Ruff, Supervision, Textual, Traefik, Trivy, Typer, tinygrad, Ultralytics, UV, Vapor, WebKit, WTF, ZeroNet
 
 License
 -------

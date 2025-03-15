@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 73706
+stars: 73796
 description: X-Ray Vision for your infrastructure!
 url: https://github.com/netdata/netdata
 ---
@@ -24,7 +24,26 @@ MENU: **GETTING STARTED** | **HOW IT WORKS** | **FAQ** | **DOCS** | **COMMUNITY*
 > **Important** 💡  
 > People get addicted to Netdata. Once you use it on your systems, **there's no going back!**  
 
-Netdata is a high-performance, open-source observability platform designed for real-time monitoring of modern infrastructures. It delivers per-second insights into your systems, containers, and applications, empowering you with immediate visibility for troubleshooting, capacity planning, and performance optimization.
+**TL;DR**
+
+Netdata is an open-source, real-time infrastructure monitoring platform designed for instant visibility and proactive troubleshooting across your entire IT environment. It captures every metric, every second, providing detailed insights into systems, containers, applications, and logs without compromising performance or requiring complex setup.
+
+Key Advantages:
+
+-   **Instant Insights**  
+    Real-time, per-second metrics and visualizations for rapid problem detection.
+-   **Automated and Zero-Configuration**  
+    Easy deployment with immediate monitoring—no complex setup needed.
+-   **ML-Driven Intelligence**  
+    Built-in machine learning detects anomalies, predicts issues, and assists in root-cause analysis automatically.
+-   **Highly Efficient**  
+    Proven minimal resource usage, exceptional scalability, and best-in-class energy efficiency validated by independent research.
+-   **Distributed & Secure**  
+    Data stays securely within your infrastructure; no centralization required.
+
+Netdata complements or replaces traditional monitoring tools, offering significant performance and usability advantages over Prometheus, Datadog, Dynatrace, and similar products, while remaining fully compatible and integration-friendly.
+
+Designed for organizations seeking simplified operations, reduced overhead, and cost-effective monitoring solutions, Netdata provides a comprehensive, scalable, and user-friendly approach to observability.
 
 **✨ Key Features**:
 
@@ -32,53 +51,53 @@ Netdata is a high-performance, open-source observability platform designed for r
     
     Per-second data collection and real-time processing provides immediate visibility into your infrastructure's behavior.
     
-    > **Unique**: Netdata works in a beat and everything happens at this pace. You hit enter on a terminal and a second later you see the result on the dashboard.
+    _**Unique**: Netdata works in a beat and everything happens at this pace. You hit enter on a terminal and a second later you see the result on the dashboard._
     
 -   **Zero-Configuration**
     
     Start monitoring in minutes with automatic detection and discovery, fully automated dashboards, and hundreds of pre-configured alerts.
     
-    > **Unique**: Netdata auto-discovers everything on the nodes it runs. All kernel technologies, all processes, all applications, all containers, all hardware components. And with its dynamic configuration, any changes can be done via the dashboard.
+    _**Unique**: Netdata auto-discovers everything on the nodes it runs. All kernel technologies, all processes, all applications, all containers, all hardware components. And with its dynamic configuration, any changes can be done via the dashboard._
     
 -   **ML-Powered**
     
     Unsupervised anomaly detection and pattern recognition for all metrics, providing advanced correlations and instant root cause analysis.
     
-    > **Unique**: Netdata trains multiple true ML models per metric, at the edge, for all metrics!  
-    > **Unique**: Netdata has a scoring engine that identifies correlations across metrics, applications, nodes, services, even cloud providers and data centers!
+    _**Unique**: Netdata trains multiple true ML models per metric, at the edge, for all metrics!_  
+    _**Unique**: A scoring engine that identifies correlations across metrics, applications, nodes, services, even cloud providers and data centers!_
     
 -   **Long-Term Retention**
     
     High-performance and efficient tiered storage for years of retention and fast query responses.
     
-    > **Unique**: Netdata needs ~0.5 per sample on disk, offering superb compression for high-resolution data!  
-    > **Unique**: Netdata's tiered storage engine automatically downsamples old data for archiving, long term retention and capacity planning.
+    _**Unique**: Netdata needs ~0.5 per sample on disk, offering superb compression for high-resolution data!_  
+    _**Unique**: A tiered storage engine automatically downsamples old data for archiving, long term retention and capacity planning._
     
 -   **Advanced Visualization**
     
     Rich, interactive low-latency dashboards for deep system and applications insights and rapid troubleshooting.
     
-    > **Unique**: Netdata dashboards allow you to slice and dice any dataset, without learning a query language.  
-    > **Unique**: Netdata's multi-faceted query engine, analyzes all aspects of your data in one go, and the dashboard provides interactive analysis for all them (NIDL framework).
+    _**Unique**: Netdata dashboards allow you to slice and dice any dataset, without learning a query language._  
+    _**Unique**: A multi-faceted query engine, analyzes all aspects of your data in one go, and the dashboard provides interactive analysis for all them (NIDL framework)._
     
 -   **Extreme Scalability**
     
     Native horizontal scalability, while maintaining performance and ease of use.
     
-    > **Unique**: Simple Parent-Child centralization and native horizontal scalability.  
-    > **Unique**: Each Netdata can scale to multi-million samples/s with reasonable resources utilization.
+    _**Unique**: Simple Parent-Child centralization and native horizontal scalability._  
+    _**Unique**: Each Netdata can scale to multi-million samples/s with reasonable resources utilization._
     
 -   **Complete End-to-End Visibility**
     
     From infrastructure to applications, logs to metrics, hardware to databases, all in one solution.
     
-    > **Unique**: Netdata is built to simplify your operations, empower your team, provide clarity and eliminate silos.
+    _**Unique**: Netdata is built to simplify your operations, empower your team, provide clarity and eliminate silos._
     
 -   **Edge-Based**
     
     All processing and storage of your data, at your premises, as close to the edge as possible.
     
-    > **Unique**: Instead of centralizing observability data, Netdata distributes the code. This provides higher processing capacity by utilizing resources that are usually available and spare, while eliminating most of the cost involved for metrics and logs management.
+    _**Unique**: Instead of centralizing observability data, Netdata distributes the code. This provides higher processing capacity by utilizing resources that are usually available and spare, while eliminating most of the cost involved for metrics and logs management._
     
 
 * * *
@@ -365,7 +384,7 @@ Yes
 
 Yes
 
-When the Netdata Agent runs on Linux, it monitors every kernel feature available, providing full coverage of all kernel technologies and offers full **enterprise hardware** coverage, monitoring all components that provide hardware error reporting, like PCI AER, RAM EDAC, IPMI, S.M.A.R.T., NVMe, Fans, Power, Voltages, and more.
+When operating on Linux, the Netdata Agent continuously monitors every available kernel feature and all hardware sensors for errors. This covers Intel, AMD, and Nvidia GPUs, PCI Advanced Error Reporting (PCI AER), RAM Error Detection and Correction (RAM EDAC), Intelligent Platform Management Interface (IPMI), S.M.A.R.T. for disks, Intel Running Average Power Limit (Intel RAPL), NVMe disks, as well as fans, power supplies, voltage readings, and more.
 
 * * *
 

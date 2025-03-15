@@ -1,6 +1,6 @@
 ---
 project: Mailu
-stars: 6257
+stars: 6281
 description: Insular email distribution - mail server as Docker images
 url: https://github.com/Mailu/Mailu
 ---

@@ -1,6 +1,6 @@
 ---
 project: fun_with_flags
-stars: 1108
+stars: 1110
 description: Feature Flags/Toggles for Elixir
 url: https://github.com/tompave/fun_with_flags
 ---
@@ -48,6 +48,7 @@ Content
 -   Testing
 -   Development
     -   Working with PubSub Locally
+    -   Benchmarks
 
 What's a Feature Flag?
 ----------------------
@@ -786,3 +787,7 @@ Steps:
 5.  In either terminal, run `Node.list()` to check that there is a connection.
 
 Done that, modifying any flag data in either terminal will notify the other one via PubSub.
+
+### Benchmarks
+
+The package comes with a suite of synthetic benchmark scripts. Their use is recommended when working on the internals of the package.

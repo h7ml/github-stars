@@ -1,6 +1,6 @@
 ---
 project: glicol
-stars: 2549
+stars: 2557
 description: Graph-oriented live coding language and music/audio DSP library written in Rust
 url: https://github.com/chaosprint/glicol
 ---

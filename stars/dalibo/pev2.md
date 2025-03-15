@@ -1,6 +1,6 @@
 ---
 project: pev2
-stars: 2817
+stars: 2826
 description: Postgres Explain Visualizer 2
 url: https://github.com/dalibo/pev2
 ---
@@ -24,7 +24,7 @@ All-in-one local (no installation, no network)
 
 PEV2 can be run locally without any external internet resource.
 
-Simply download index.html, open it in your favorite internet browser.
+Simply download pev2.html, open it in your favorite internet browser.
 
 Integrated in a web application
 -------------------------------
@@ -37,7 +37,7 @@ Integrated in a web application
   href\="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css"
   rel\="stylesheet"
 />
-<link rel\="stylesheet" href\="https://unpkg.com/pev2/dist/style.css" />
+<link rel\="stylesheet" href\="https://unpkg.com/pev2/dist/pev2.css" />
 
 <div id\="app"\>
   <pev2 :plan-source\="plan" plan-query\="" />
@@ -74,7 +74,7 @@ npm install pev2
 Declare the `PEV2` component and use it:
 
 import { Plan } from "pev2"
-import "pev2/dist/style.css"
+import "pev2/dist/pev2.css"
 
 export default {
   name: "PEV2 example",

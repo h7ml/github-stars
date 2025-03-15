@@ -1,6 +1,6 @@
 ---
 project: ex_term
-stars: 72
+stars: 76
 description: Phoenix LiveView Terminal LiveComponent
 url: https://github.com/E-xyza/ex_term
 ---

@@ -1,6 +1,6 @@
 ---
 project: docker-android
-stars: 10425
+stars: 10461
 description: Android in docker solution with noVNC supported and video recording
 url: https://github.com/budtmo/docker-android
 ---
@@ -135,6 +135,10 @@ Nexus S
 Tablet
 
 Nexus 7
+
+Tablet
+
+Pixel C
 
 Requirements
 ------------

@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 22061
+stars: 22131
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
@@ -154,6 +154,10 @@ Drawio library
 Figma plugin
 
 @LitoMore
+
+Jekyll plugin
+
+@pirafrank
 
 Miro app
 

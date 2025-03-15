@@ -1,6 +1,6 @@
 ---
 project: blurhash
-stars: 16114
+stars: 16136
 description: A very compact representation of a placeholder for an image.
 url: https://github.com/woltapp/blurhash
 ---

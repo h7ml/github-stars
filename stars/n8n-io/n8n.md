@@ -1,6 +1,6 @@
 ---
 project: n8n
-stars: 65315
+stars: 67546
 description: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
 url: https://github.com/n8n-io/n8n
 ---

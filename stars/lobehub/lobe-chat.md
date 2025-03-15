@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 57336
+stars: 57697
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -239,7 +239,7 @@ By **portfoliometa** on **2024-12-22**
 Analyze stocks and get comprehensive real-time investment data and analytics.  
 `stock`
 
-> 📊 Total plugins: **47**
+> 📊 Total plugins: **46**
 
 ### `11` Agent Market (GPTs)
 
@@ -257,6 +257,12 @@ Recent Submits
 
 Description
 
+学术论文综述专家  
+By **arvinxx** on **2025-03-11**
+
+擅长高质量文献检索与分析的学术研究助手  
+`学术研究` `文献检索` `数据分析` `信息提取` `咨询`
+
 Cron Expression Assistant  
 By **edgesider** on **2025-02-17**
 
@@ -269,19 +275,13 @@ By **WeR-Best** on **2025-02-10**
 A friendly, professional, and empathetic AI assistant for French translation  
 `ai-assistant` `french-translation` `cross-cultural-communication` `creativity`
 
-Language Charm Learning Mentor  
-By **Guducat** on **2025-02-06**
+Investment Assistant  
+By **farsightlin** on **2025-02-06**
 
-Specializes in teaching the charm of language and witty responses  
-`language-learning` `dialogue-examples`
+Helps users calculate the data needed for valuation  
+`investment` `valuation` `financial-analysis` `calculator`
 
-Astrology Researcher  
-By **Jack980506** on **2025-02-06**
-
-Expert in BaZi astrology  
-`astrology` `ba-zi` `traditional-culture`
-
-> 📊 Total agents: **487**
+> 📊 Total agents: **488**
 
 ### `12` Support Local / Remote Database
 

@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 3683
+stars: 3928
 description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
@@ -9,7 +9,7 @@ url: https://github.com/fosrl/pangolin
 
 _Your own self-hosted zero trust tunnel._
 
-##### Install Guide | Full Documentation | Contact Us
+##### Website | Install Guide | Contact Us
 
 Pangolin is a self-hosted tunneled reverse proxy server with identity and access control, designed to securely expose private resources on distributed networks. Acting as a central hub, it connects isolated networks — even those behind restrictive firewalls — through encrypted tunnels, enabling easy access to remote services without opening ports.
 
@@ -112,7 +112,7 @@ View the project board for more detailed info.
 Licensing
 ---------
 
-Pangolin is dual licensed under the AGPLv3 and the Fossorial Commercial license. For inquiries about commercial licensing, please contact us at numbat@fossorial.io.
+Pangolin is dual licensed under the AGPL-3 and the Fossorial Commercial license. To see our commercial offerings, please see our website for details. For inquiries about commercial licensing, please contact us at numbat@fossorial.io.
 
 Contributions
 -------------

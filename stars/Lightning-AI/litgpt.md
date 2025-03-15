@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 11741
+stars: 11803
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -10,9 +10,9 @@ url: https://github.com/Lightning-AI/litgpt
 
 **20+ high-performance LLMs with recipes to pretrain, finetune, and deploy at scale.**
 
-✅ From scratch implementations     ✅ No abstractions    ✅ Beginner friendly   
-✅ Flash attention                  ✅ FSDP               ✅ LoRA, QLoRA, Adapter
-✅ Reduce GPU memory (fp4/8/16/32)  ✅ 1-1000+ GPUs/TPUs  ✅ 20+ LLMs            
+         ✅ From scratch implementations     ✅ No abstractions    ✅ Beginner friendly
+            ✅ Flash attention                  ✅ FSDP               ✅ LoRA, QLoRA, Adapter
+✅ Reduce GPU memory (fp4/8/16/32)  ✅ 1-1000+ GPUs/TPUs  ✅ 20+ LLMs
 
 * * *
 
@@ -26,7 +26,7 @@ Every LLM is implemented from scratch with **no abstractions** and **full contro
 ✅ **Enterprise ready -** Apache 2.0 for unlimited enterprise use.  
 ✅ **Developer friendly -** Easy debugging with no abstraction layers and single file implementations.  
 ✅ **Optimized performance -** Models designed to maximize performance, reduce costs, and speed up training.  
-✅ **Proven recipes -** Highly-optimized training/finetuning recipes tested at enterprise scale.
+✅ **Proven recipes -** Highly-optimized training/finetuning recipes tested at enterprise scale.  
 
 Quick start
 ===========
@@ -42,15 +42,15 @@ Load and use any of the 20+ LLMs:
 from litgpt import LLM
 
 llm \= LLM.load("microsoft/phi-2")
-text \= llm.generate("Fix the spelling: Every fall, the familly goes to the mountains.")
+text \= llm.generate("Fix the spelling: Every fall, the family goes to the mountains.")
 print(text)
-\# Corrected Sentence: Every fall, the family goes to the mountains.       
+\# Corrected Sentence: Every fall, the family goes to the mountains.
 
 ✅ Optimized for fast inference  
 ✅ Quantization  
 ✅ Runs on low-memory GPUs  
 ✅ No layers of internal abstractions  
-✅ Optimized for production scale
+✅ Optimized for production scale  
 
 Advanced install options
 
@@ -510,7 +510,7 @@ Test the server in a separate terminal and integrate the model API into your AI 
 import requests, json
 response \= requests.post(
     "http://127.0.0.1:8000/predict",
-    json\={"prompt": "Fix typos in the following sentence: Exampel input"}
+    json\={"prompt": "Fix typos in the following sentence: Example input"}
 )
 print(response.json()\["output"\])
 
@@ -616,23 +616,15 @@ Read the full continued pretraining docs
 State-of-the-art features
 =========================
 
-✅  State-of-the-art optimizations: Flash Attention v2, multi-GPU support via fully-sharded data parallelism, optional CPU offloading, and TPU and XLA support.
-
-✅  Pretrain, finetune, and deploy
-
-✅  Reduce compute requirements with low-precision settings: FP16, BF16, and FP16/FP32 mixed.
-
-✅  Lower memory requirements with quantization: 4-bit floats, 8-bit integers, and double quantization.
-
-✅  Configuration files for great out-of-the-box performance.
-
-✅  Parameter-efficient finetuning: LoRA, QLoRA, Adapter, and Adapter v2.
-
-✅  Exporting to other popular model weight formats.
-
-✅  Many popular datasets for pretraining and finetuning, and support for custom datasets.
-
-✅  Readable and easy-to-modify code to experiment with the latest research ideas.
+✅ State-of-the-art optimizations: Flash Attention v2, multi-GPU support via fully-sharded data parallelism, optional CPU offloading, and TPU and XLA support.  
+✅ Pretrain, finetune, and deploy  
+✅ Reduce compute requirements with low-precision settings: FP16, BF16, and FP16/FP32 mixed.  
+✅ Lower memory requirements with quantization: 4-bit floats, 8-bit integers, and double quantization.  
+✅ Configuration files for great out-of-the-box performance.  
+✅ Parameter-efficient finetuning: LoRA, QLoRA, Adapter, and Adapter v2.  
+✅ Exporting to other popular model weight formats.  
+✅ Many popular datasets for pretraining and finetuning, and support for custom datasets.  
+✅ Readable and easy-to-modify code to experiment with the latest research ideas.  
 
 * * *
 
@@ -845,7 +837,7 @@ Tutorials
 📘 Supported and custom datasets  
 🧹 Quantization  
 🤯 Tips for dealing with out-of-memory (OOM) errors  
-🧑🏽‍💻 Using cloud TPUs
+🧑🏽‍💻 Using cloud TPUs  
 
 * * *
 

@@ -1,6 +1,6 @@
 ---
 project: build-push-action
-stars: 4624
+stars: 4638
 description: GitHub Action to build and push Docker images with Buildx
 url: https://github.com/docker/build-push-action
 ---
@@ -149,6 +149,16 @@ Summaries
 This action generates a job summary that provides a detailed overview of the build execution. The summary shows an overview of all the steps executed during the build, including the build inputs and eventual errors.
 
 The summary also includes a link for downloading the build record with additional details about the build, including build stats, logs, outputs, and more. The build record can be imported to Docker Desktop for inspecting the build in greater detail.
+
+Warning
+
+If you're using the `actions/download-artifact` action in your workflow, you need to ignore the build record artifacts if `name` and `pattern` inputs are not specified (defaults to download all artifacts of the workflow), otherwise the action will fail:
+
+\- uses: actions/download-artifact@v4
+  with:
+    pattern: "!\*.dockerbuild"
+
+More info: actions/toolkit#1874
 
 Summaries are enabled by default, but can be disabled with the `DOCKER_BUILD_SUMMARY` environment variable.
 

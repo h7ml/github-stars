@@ -1,6 +1,6 @@
 ---
 project: feather
-stars: 25290
+stars: 25303
 description: Simply beautiful open-source icons
 url: https://github.com/feathericons/feather
 ---
@@ -83,7 +83,9 @@ Include `feather.js` or `feather.min.js` with a `<script>` tag:
 
 <script src\="path/to/dist/feather.js"\></script\>
 
-> \[!NOTE\] > `feather.js` and `feather.min.js` are located in the `dist` directory of the npm package.
+Note
+
+`feather.js` and `feather.min.js` are located in the `dist` directory of the npm package.
 
 Or load the script from a CDN provider:
 
@@ -183,7 +185,9 @@ Include an icon on your page with the following markup:
   <use href\="path/to/feather-sprite.svg#circle" />
 </svg\>
 
-> \[!NOTE\] > `circle` in the above example can be replaced with any valid icon name. See the complete list of icon names at feathericons.com.
+Note
+
+`circle` in the above example can be replaced with any valid icon name. See the complete list of icon names at feathericons.com.
 
 However, this markup can be simplified using a simple CSS class to avoid repetition of SVG attributes between icons:
 
@@ -237,7 +241,9 @@ feather.icons.x;
 feather.icons.x.toString();
 // '<line ... /><line ... />'
 
-> \[!NOTE\] > `x` in the above example can be replaced with any valid icon name. See the complete list of icon names at feathericons.com. Icons with multi-word names (e.g. `arrow-right`) **cannot** be accessed using dot notation (e.g. `feather.icons.x`). Instead, use bracket notation (e.g. `feather.icons['arrow-right']`).
+Note
+
+`x` in the above example can be replaced with any valid icon name. See the complete list of icon names at feathericons.com. Icons with multi-word names (e.g. `arrow-right`) **cannot** be accessed using dot notation (e.g. `feather.icons.x`). Instead, use bracket notation (e.g. `feather.icons['arrow-right']`).
 
 View Source
 
@@ -307,7 +313,9 @@ Key-value pairs in the `attrs` object will be mapped to HTML attributes on the `
 
 #### Usage
 
-> \[!IMPORTANT\] > `feather.replace()` only works in a browser environment.
+Important
+
+`feather.replace()` only works in a browser environment.
 
 Simple usage:
 
@@ -351,7 +359,9 @@ View Source
 
 ### `feather.toSvg(name, [attrs])` (DEPRECATED)
 
-> \[!WARNING\] > `feather.toSvg()` is deprecated. Please use `feather.icons[name].toSvg()` instead.
+Warning
+
+`feather.toSvg()` is deprecated. Please use `feather.icons[name].toSvg()` instead.
 
 Returns an SVG string.
 

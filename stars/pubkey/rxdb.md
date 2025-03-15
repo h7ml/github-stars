@@ -1,6 +1,6 @@
 ---
 project: rxdb
-stars: 22099
+stars: 22125
 description: A fast, local first, reactive Database for JavaScript Applications https://rxdb.info/
 url: https://github.com/pubkey/rxdb
 ---
@@ -41,7 +41,7 @@ RxDB is a proven technology used by thousands of developers worldwide. With its 
   Replicate with your **existing infrastructure**
 -------------------------------------------------
 
-RxDB provides an easy to implement, **battle-tested** replication protocol for realtime sync with your existing infrastructure.  
+RxDB provides an easy to implement, **battle-tested** Sync Engine for realtime replication with your existing infrastructure.  
 You do not have to use a specific cloud or backend database. The protocol works by implementing three simple HTTP endpoints. There are also production-ready plugins to easily replicate with GraphQL, CouchDB, Websocket, WebRTC (P2P),Supabase, Firestore or NATS.
 
   **Flexible** storage layer

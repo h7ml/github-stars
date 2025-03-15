@@ -1,6 +1,6 @@
 ---
 project: gpu.js
-stars: 15200
+stars: 15206
 description: GPU Accelerated JavaScript
 url: https://github.com/gpujs/gpu.js
 ---

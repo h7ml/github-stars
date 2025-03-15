@@ -1,6 +1,6 @@
 ---
 project: geo
-stars: 650
+stars: 651
 description: A collection of GIS functions for Elixir
 url: https://github.com/felt/geo
 ---

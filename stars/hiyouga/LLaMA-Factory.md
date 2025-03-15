@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 43448
+stars: 44253
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -63,7 +63,7 @@ Features
 -   **Practical tricks**: FlashAttention-2, Unsloth, Liger Kernel, RoPE scaling, NEFTune and rsLoRA.
 -   **Wide tasks**: Multi-turn dialogue, tool using, image understanding, visual grounding, video recognition, audio understanding, etc.
 -   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab, etc.
--   **Faster inference**: OpenAI-style API, Gradio UI and CLI with vLLM worker.
+-   **Faster inference**: OpenAI-style API, Gradio UI and CLI with vLLM worker or SGLang worker.
 
 ### Day-N Support for Fine-Tuning Cutting-Edge Models
 
@@ -73,7 +73,7 @@ Model Name
 
 Day 0
 
-Qwen2.5 / Qwen2-VL / QwQ / QvQ / InternLM3 / MiniCPM-o-2.6
+Qwen2.5 / Qwen2.5-VL / Gemma 3 / InternLM 3 / MiniCPM-o-2.6
 
 Day 1
 
@@ -94,6 +94,10 @@ Definitions
 Changelog
 ---------
 
+\[25/03/15\] We supported **SGLang** as inference backend. Try `infer_backend: sglang` to accelerate inference.
+
+\[25/03/12\] We supported fine-tuning the **Gemma-3** model.
+
 \[25/02/24\] Announcing **EasyR1**, an efficient, scalable and multi-modality RL training framework for efficient GRPO training.
 
 \[25/02/11\] We supported saving the **Ollama** modelfile when exporting the model checkpoints. See examples for usage.
@@ -108,7 +112,7 @@ Full Changelog
 
 \[25/01/14\] We supported fine-tuning the **MiniCPM-o-2.6** and **MiniCPM-V-2.6** models. Thank @BUAADreamer's PR.
 
-\[25/01/14\] We supported fine-tuning the **InternLM3** models. Thank @hhaAndroid's PR.
+\[25/01/14\] We supported fine-tuning the **InternLM 3** models. Thank @hhaAndroid's PR.
 
 \[25/01/10\] We supported fine-tuning the **Phi-4** model.
 
@@ -265,6 +269,12 @@ Gemma/Gemma 2/CodeGemma
 
 gemma
 
+Gemma 3
+
+1B/4B/12B/27B
+
+gemma3
+
 GLM-4
 
 9B
@@ -288,6 +298,12 @@ Index
 1.9B
 
 index
+
+Hunyuan
+
+7B
+
+hunyuan
 
 InternLM 2-3
 
@@ -735,7 +751,7 @@ deepspeed
 
 0.10.0
 
-0.16.2
+0.16.4
 
 bitsandbytes
 
@@ -765,19 +781,15 @@ Bits
 
 7B
 
-13B
+14B
 
 30B
 
 70B
 
-110B
+`x`B
 
-8x7B
-
-8x22B
-
-Full
+Full (`bf16` or `fp16`)
 
 32
 
@@ -789,13 +801,9 @@ Full
 
 1200GB
 
-2000GB
+`18x`GB
 
-900GB
-
-2400GB
-
-Full
+Full (`pure_bf16`)
 
 16
 
@@ -807,31 +815,9 @@ Full
 
 600GB
 
-900GB
+`8x`GB
 
-400GB
-
-1200GB
-
-Freeze
-
-16
-
-20GB
-
-40GB
-
-80GB
-
-200GB
-
-360GB
-
-160GB
-
-400GB
-
-LoRA/GaLore/APOLLO/BAdam
+Freeze/LoRA/GaLore/APOLLO/BAdam
 
 16
 
@@ -843,11 +829,7 @@ LoRA/GaLore/APOLLO/BAdam
 
 160GB
 
-240GB
-
-120GB
-
-320GB
+`2x`GB
 
 QLoRA
 
@@ -861,11 +843,7 @@ QLoRA
 
 80GB
 
-140GB
-
-60GB
-
-160GB
+`x`GB
 
 QLoRA
 
@@ -879,11 +857,7 @@ QLoRA
 
 48GB
 
-72GB
-
-30GB
-
-96GB
+`x/2`GB
 
 QLoRA
 
@@ -897,11 +871,7 @@ QLoRA
 
 24GB
 
-48GB
-
-18GB
-
-48GB
+`x/4`GB
 
 Getting Started
 ---------------
@@ -916,7 +886,7 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".\[torch,metrics\]"
 
-Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
+Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
 
 Tip
 
@@ -988,7 +958,7 @@ deepspeed
 
 0.13.2
 
-0.16.2
+0.13.2
 
 Remember to use `ASCEND_RT_VISIBLE_DEVICES` instead of `CUDA_VISIBLE_DEVICES` to specify the device to use.
 
@@ -1047,6 +1017,8 @@ See examples/README.md for advanced usage (including distributed training).
 Tip
 
 Use `llamafactory-cli help` to show help information.
+
+Read FAQs first if you encounter any problems.
 
 ### Fine-Tuning with LLaMA Board GUI (powered by Gradio)
 

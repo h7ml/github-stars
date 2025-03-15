@@ -1,6 +1,6 @@
 ---
 project: open-canvas
-stars: 4040
+stars: 4099
 description: 📃 A better UX for chat, writing content, and coding with LLMs.
 url: https://github.com/langchain-ai/open-canvas
 ---
@@ -72,12 +72,13 @@ Next, install the dependencies:
 
 yarn install
 
-After installing dependencies, copy the `.env.example` files in `apps/web` and `apps/agents` contents into `.env` and set the required values:
+After installing dependencies, copy the contents of both `.env.example` files in the root of the project, and in `apps/web` into `.env` and set the required values:
 
-cd apps/web/
+# The root \`.env\` file will be read by the LangGraph server for the agents.
 cp .env.example .env
 
-cd apps/agents/
+# The \`apps/web/.env\` file will be read by the frontend.
+cd apps/web/
 cp .env.example .env
 
 Then, setup authentication with Supabase.
@@ -86,7 +87,7 @@ Then, setup authentication with Supabase.
 
 After creating a Supabase account, visit your dashboard and create a new project.
 
-Next, navigate to the `Project Settings` page inside your project, and then to the `API` tag. Copy the `Project URL`, and `anon public` project API key. Paste them into the `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` environment variables in the `.env` file.
+Next, navigate to the `Project Settings` page inside your project, and then to the `API` tag. Copy the `Project URL`, and `anon public` project API key. Paste them into the `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` environment variables in the `apps/web/.env` file.
 
 After this, navigate to the `Authentication` page, and the `Providers` tab. Make sure `Email` is enabled (also ensure you've enabled `Confirm Email`). You may also enable `GitHub`, and/or `Google` if you'd like to use those for authentication. (see these pages for documentation on how to setup each provider: GitHub, Google)
 

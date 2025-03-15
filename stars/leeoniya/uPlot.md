@@ -1,6 +1,6 @@
 ---
 project: uPlot
-stars: 8994
+stars: 9007
 description: 📈 A small, fast chart for time series, lines, areas, ohlc & bars
 url: https://github.com/leeoniya/uPlot
 ---
@@ -64,7 +64,6 @@ The docs are a perpetual work in progress, it seems. Start with /docs/README.md 
 
 ### Third-party Integrations
 
--   Jupyter widget (Sohail Somani)
 -   React, Vue.js and Svelte (Sergey Kalinichev)
 -   Python (Stéphane Caron)
 

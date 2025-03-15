@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 18497
+stars: 18582
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -210,6 +210,12 @@ PSPDFKit
 yjs-pspdfkit
 
 demo
+
+Rows n'Columns
+
+✔
+
+@rowsncolumns/y-spreadsheet
 
 ### Providers
 

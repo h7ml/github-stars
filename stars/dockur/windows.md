@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 33432
+stars: 33628
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -42,12 +42,14 @@ services:
       - 8006:8006
       - 3389:3389/tcp
       - 3389:3389/udp
+    volumes:
+      - ./windows:/storage
     restart: always
     stop\_grace\_period: 2m
 
 Via Docker CLI:
 
-docker run -it --rm -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET\_ADMIN --stop-timeout 120 dockurr/windows
+docker run -it --rm --name windows -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET\_ADMIN -v ${PWD:-.}/windows:/storage --stop-timeout 120 dockurr/windows
 
 Via Kubernetes:
 
@@ -232,9 +234,9 @@ To install ARM64 versions of Windows use dockur/windows-arm.
 To change the storage location, include the following bind mount in your compose file:
 
 volumes:
-  - /var/win:/storage
+  - ./windows:/storage
 
-Replace the example path `/var/win` with the desired storage folder.
+Replace the example path `./windows` with the desired storage folder or named volume.
 
 ### How do I change the size of the disk?
 
@@ -254,47 +256,13 @@ Open 'File Explorer' and click on the 'Network' section, you will see a computer
 Double-click it and it will show a folder called `Data`, which can be bound to any folder on your host via the compose file:
 
 volumes:
-  -  /home/user/example:/data
+  -  ./example:/data
 
-The example folder `/home/user/example` will be available as `\\host.lan\Data`.
+The example folder `./example` will be available as `\\host.lan\Data`.
 
 Tip
 
 You can map this path to a drive letter in Windows, for easier access.
-
-### How do I install a custom image?
-
-In order to download an unsupported ISO image, specify its URL in the `VERSION` environment variable:
-
-environment:
-  VERSION: "https://example.com/win.iso"
-
-Alternatively, you can also skip the download and use a local file instead, by binding it in your compose file in this way:
-
-volumes:
-  - /home/user/example.iso:/custom.iso
-
-Replace the example path `/home/user/example.iso` with the filename of your desired ISO file. The value of `VERSION` will be ignored in this case.
-
-### How do I run a script after installation?
-
-To run your own script after installation, you can create a file called `install.bat` and place it in a folder together with any additional files it needs (software to be installed for example).
-
-Then bind that folder in your compose file like this:
-
-volumes:
-  -  /home/user/example:/oem
-
-The example folder `/home/user/example` will be copied to `C:\OEM` and the containing `install.bat` will be executed during the last step of the automatic installation.
-
-### How do I perform a manual installation?
-
-It's best to stick to the automatic installation, as it adjusts various settings to prevent common issues when running Windows inside a virtual environment.
-
-However, if you insist on performing the installation manually, add the following environment variable to your compose file:
-
-environment:
-  MANUAL: "Y"
 
 ### How do I change the amount of CPU or RAM?
 
@@ -310,7 +278,7 @@ environment:
 
 By default, a user called `Docker` (with an empty password) is created during installation.
 
-If you want to use different credentials, you can configure them (only BEFORE installation) in your compose file:
+If you want to use different credentials, you can configure them in your compose file (only before installation):
 
 environment:
   USERNAME: "bill"
@@ -329,11 +297,59 @@ You can choose between: 🇦🇪 Arabic, 🇧🇬 Bulgarian, 🇨🇳 Chinese, �
 
 ### How do I select the keyboard layout?
 
-If you want to use a keyboard layout or locale that is not the default for your selected language, before installation you can add `KEYBOARD` and `REGION` variables like this:
+If you want to use a keyboard layout or locale that is not the default for your selected language, you can add `KEYBOARD` and `REGION` variables like this (before installation):
 
 environment:
   REGION: "en-US"
   KEYBOARD: "en-US"
+
+### How do I set the product key?
+
+By default, an evaluation version of Windows will be installed, but if you have a product key you can add a `KEY` variable like this (before installation):
+
+environment:
+  KEY: "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx"
+
+### How do I select the edition?
+
+Windows Server offers a minimalistic Core edition without a GUI. To select those non-standard editions, you can add a `EDITION` variable like this (before installation):
+
+environment:
+  EDITION: "core"
+
+### How do I install a custom image?
+
+In order to download an unsupported ISO image, specify its URL in the `VERSION` environment variable:
+
+environment:
+  VERSION: "https://example.com/win.iso"
+
+Alternatively, you can also skip the download and use a local file instead, by binding it in your compose file in this way:
+
+volumes:
+  - ./example.iso:/custom.iso
+
+Replace the example path `./example.iso` with the filename of your desired ISO file. The value of `VERSION` will be ignored in this case.
+
+### How do I run a script after installation?
+
+To run your own script after installation, you can create a file called `install.bat` and place it in a folder together with any additional files it needs (software to be installed for example).
+
+Then bind that folder in your compose file like this:
+
+volumes:
+  -  ./example:/oem
+
+The example folder `./example` will be copied to `C:\OEM` and the containing `install.bat` will be executed during the last step of the automatic installation.
+
+### How do I perform a manual installation?
+
+It's recommended to stick to the automatic installation, as it adjusts various settings to prevent common issues when running Windows inside a virtual environment.
+
+However, if you insist on performing the installation manually on your own risk, add the following environment variable to your compose file:
+
+environment:
+  MANUAL: "Y"
 
 ### How do I connect using RDP?
 
@@ -398,8 +414,8 @@ environment:
   DISK2\_SIZE: "32G"
   DISK3\_SIZE: "64G"
 volumes:
-  - /home/example:/storage2
-  - /mnt/data/example:/storage3
+  - ./example2:/storage2
+  - ./example3:/storage3
 
 ### How do I pass-through a disk?
 
@@ -450,6 +466,10 @@ If you do not receive any error from `kvm-ok` but the container still complains 
 ### How do I run macOS in a container?
 
 You can use dockur/macos for that. It shares many of the same features, except for the automatic installation.
+
+### How do I run a Linux desktop in a container?
+
+You can use qemus/qemu in that case.
 
 ### Is this project legal?
 

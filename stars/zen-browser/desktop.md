@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 26539
+stars: 27037
 description: A calmer internet, without any gimmicks.
 url: https://github.com/zen-browser/desktop
 ---
@@ -14,7 +14,7 @@ Download • Website • Documentation • Release Notes
 🖥️ Compatibility
 -----------------
 
-Zen is currently built using Firefox version `136.0`! 🚀
+Zen is currently built using Firefox version `136.0.1`! 🚀
 
 -   `Zen Twilight` - Is currently built using Firefox version `RC 136.0`!
 -   Check out the latest release notes!
@@ -81,14 +81,17 @@ brew install --cask zen-browser
 
 yay -S zen-browser-bin
 
-##### Other Linux distributions (AppImage with automated system integration)
+##### Other Linux distributions (Tarball or AppImage)
 
--   `native` tarball install: `bash <(curl -s https://updates.zen-browser.app/install.sh)`
-    
--   `zsync` is required for the Update feature of the script below
-    
+-   `Tarball` install:
+
+bash <(curl -s https://updates.zen-browser.app/install.sh)\`
+
+-   `AppImage` install:
 
 bash <(curl https://updates.zen-browser.app/appimage.sh)
+
+> AppImage install requires `zsync` for the Update feature
 
 -   Again, if you don't see your OS listed above, that's because we already have it in our downloads page! 🔄
 

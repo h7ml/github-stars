@@ -1,6 +1,6 @@
 ---
 project: mox
-stars: 4463
+stars: 4593
 description: modern full-featured open source secure mail server for low-maintenance self-hosted email
 url: https://github.com/mjl-/mox
 ---
@@ -113,9 +113,10 @@ Roadmap
 -   "mox setup" command, using admin web interface for interactive setup
 -   Automate DNS management, for setup and maintenance, such as DANE/DKIM key rotation
 -   Config options for "transactional email domains", for which mox will only send messages
--   More IMAP extensions (UNAUTHENTICATE, NOTIFY, OBJECTID, UIDONLY)
+-   More IMAP extensions (NOTIFY, UIDONLY)
 -   Encrypted storage of files (email messages, TLS keys), also with per account keys
 -   Recognize common deliverability issues and help postmasters solve them
+-   JMAP, IMAP OBJECTID extension, IMAP JMAPACCESS extension
 -   Calendaring with CalDAV/iCal
 -   Introbox, to which first-time senders are delivered
 -   Add special IMAP mailbox ("Queue?") that contains queued but undelivered messages, updated with IMAP flags/keywords/tags and message headers.
@@ -127,7 +128,6 @@ Roadmap
 -   Improve support for mobile clients with extensions: IMAP URLAUTH, SMTP CHUNKING and BINARYMIME, IMAP CATENATE
 -   Privilege separation, isolating parts of the application to more restricted sandbox (e.g. new unauthenticated connections)
 -   Using mox as backup MX
--   JMAP
 -   Sieve for filtering (for now see Rulesets in the account config)
 -   ARC, with forwarded email from trusted source
 -   Milter support, for integration with external tools

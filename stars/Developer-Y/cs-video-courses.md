@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68260
+stars: 68325
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -113,6 +113,7 @@ Courses
 
 -   ECS 36C - Data Structures and Algorithms (C++) - Spring 2020 - Joël Porquet-Lupine - UC Davis
 -   Programming and Data Structures with Python, 2021-2022, Sem I - by Prof. Madhavan Mukund, CMI
+-   Graph Algorithms - Robert Sedgewick - Princeton University
 -   6.006 - Introduction to Algorithms, MIT OCW
 -   MIT 6.006 Introduction to Algorithms, Spring 2020
 -   Algorithms: Design and Analysis 1 - Stanford University
@@ -133,6 +134,7 @@ Courses
 -   16s-4102 - Algorithms, University of Virginia (Youtube)
 -   CS 61B - Data Structures (Java) - UC Berkeley(Youtube)
 -   CS 170 Algorithms - UCBerkeley Fall 2019, Youtube Fall 2018, Youtube Fall 2018,Bilibili 2013 Bilibili
+-   CS 159 Data-Driven Algorithm Design - Caltech Spring 2020, Youtube
 -   ECS 122A - Algorithm Design and Analysis, UC Davis
 -   CSEP 521 - Applied Algorithms, Winter 2013 - University of Washington (Videos)
 -   Data Structures And Algorithms - IIT Delhi
@@ -168,7 +170,7 @@ Courses
 -   15-850 Advanced Algorithms - CMU Spring 2023
 -   CS 270. Combinatorial Algorithms and Data Structures, Spring 2021 (Youtube)
 -   CMU 15 850 Advanced Algorithms spring 2023, by Anupam Gupta
--   UC Berkeley CS 294-165 Sketching Algorithms fall 2020, by Jelani Nelson
+-   UC Berkeley CS 294-165 Sketching Algorithms fall 2020, by Jelani Nelson (Youtube)
 -   UIUC CS 498 ABD / CS 598 CSC Algorithms for Big Data fall 2020, by Chandra Chekuri
 -   Algorithms for Data Science spring 2021, by Anil Maheshwari
 -   CMU 15 859 Algorithms for Big Data fall 2020, by David Woodruff
@@ -339,7 +341,7 @@ Courses
 ### Artificial Intelligence
 
 -   CS50 - Introduction to Artificial Intelligence with Python (and Machine Learning), Harvard OCW
--   CS 188 - Introduction to Artificial Intelligence, UC Berkeley - Spring 2023
+-   CS 188 - Introduction to Artificial Intelligence, UC Berkeley - Spring 2024 (Spring 2023)
 -   6.034 Artificial Intelligence, MIT OCW
 -   CS221: Artificial Intelligence: Principles and Techniques - Autumn 2019 - Stanford University
 -   15-780 - Graduate Artificial Intelligence, Spring 14, CMU
@@ -373,14 +375,14 @@ Courses
     -   MOOC - Statistical Learning, Stanford University
     -   Statistical Learning with Python - Stanford Online
     -   Foundations of Machine Learning Boot Camp, Berkeley Simons Institute
-    -   CS155 - Machine Learning & Data Mining, 2017 - Caltech (Notes) (2016)
+    -   CS 155 - Machine Learning & Data Mining, 2023 - Caltech (Notes-2020) (YouTube-2020) (Notes-2019) (YouTube-2019) (Notes-2018) (YouTube-2018) (Notes-2017) (YouTube-2017) (Notes-2016) (YouTube-2016)
     -   CS 156 - Learning from Data, Caltech
     -   10-601 - Introduction to Machine Learning (MS) - Tom Mitchell - 2015, CMU (YouTube)
     -   10-601 Machine Learning | CMU | Fall 2017
     -   10-701 - Introduction to Machine Learning (PhD) - Tom Mitchell, Spring 2011, CMU (Fall 2014) (Spring 2015 by Alex Smola) (Fall 2020 by Ziv Bar-Joseph, Eric Xing)
     -   10 - 301/601 - Introduction to Machine Learning - Fall 2023 - CMU
     -   6.036 - Machine Learning, Broderick - MIT Fall 2020
-    -   Mediterranean Machine Learning summer school 2023
+    -   Mediterranean Machine Learning summer school 2024 (YouTube-2023) (YouTube-2022) (YouTube-2021)
     -   Applied Machine Learning (Cornell Tech CS 5787, Fall 2020)
     -   Stanford CS229: Machine Learning Course | Summer 2019 (Anand Avati) (Spring 2022)
     -   CMS 165 Foundations of Machine Learning - 2019 - Caltech (Youtube)
@@ -448,6 +450,7 @@ Courses
     -   SFU CMPT 727 Statistical Machine Learning spring 2022, 2023, by Maxwell Libbrecht
     -   UC Berkeley CS 189 / 289A Introduction to Machine Learning fall 2023, by Jennifer Listgarten & Jitendra Malik
     -   UC Berkeley CS 189 Introduction to Machine Learning (CDSS offering) spring 2022, by Marvin Zhang
+    -   UC San Diego/edX DSE 220X Machine Learning Fundamentals, by Sanjoy Dasgupta
     -   MIT 6.036 Introduction to Machine Learning spring 2019, by Leslie Kaelbling
     -   LMU Munich Introduction to Machine Learning
     -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
@@ -455,12 +458,12 @@ Courses
     -   MSU Machine Learning
     -   Data Science for Dynamical Systems, by Oliver Wallscheid & Sebastian Peitz
     -   Cambridge Statistical Learning in Practice 2021, by Alberto J. Coca
-    -   Data 8: The Foundations of Data Science - UC Berkeley (Summer 17)
+    -   Data 8: The Foundations of Data Science - UC Berkeley (Spring 23) (Fall 22) (Spring 22) (Summer 17)
     -   Data 144: Foundations of Data Science spring 2021 - Vassar College (Course materials)
     -   CSE519 - Data Science Fall 2016 - Skiena, SBU
     -   CS 109 Data Science, Harvard University (YouTube)
     -   6.0002 Introduction to Computational Thinking and Data Science - MIT OCW
-    -   Data 100 - Summer 19- UC Berkeley
+    -   Data 100: Principles and Techniques of Data Science - UC Berkeley (Fall 24) (Spring 24) (Summer 19)
     -   Data 102 - Spring 21- UC Berkeley (YouTube)
     -   Distributed Data Analytics (WT 2017/18) - HPI University of Potsdam
     -   Data Profiling and Data Cleansing (WS 2014/15) - HPI University of Potsdam
@@ -481,6 +484,7 @@ Courses
     -   CS246 - Mining Massive Data Sets, Winter 2016, Stanford University (YouTube)
     -   Information Retrieval - Spring 2018 - ETH Zurich
     -   CAP6673 - Data Mining and Machine Learning - FAU(Video lectures)
+    -   CS 412 - Introduction to Data Mining - UIUC
 -   #### **Probabilistic Graphical Modeling**
     
     -   CS 6190 - Probabilistic Modeling, Spring 2016, University of Utah
@@ -512,6 +516,7 @@ Courses
     -   MOOC - Neural Networks for Machine Learning, Geoffrey Hinton 2016 - Coursera
     -   Deep Unsupervised Learning -- Berkeley Spring 2020
     -   Stat 946 Deep Learning - University of Waterloo
+    -   EECS 298 Theory of Computational Neural Networks and Machine Learning (Fall 2020) - UC Irvine (YouTube)
     -   Neural networks class - Université de Sherbrooke (YouTube)
     -   CS294-158 Deep Unsupervised Learning SP19
     -   DLCV - Deep Learning for Computer Vision - UPC Barcelona
@@ -532,7 +537,7 @@ Courses
     -   Applied Deep Learning Maziar Raissi
     -   UC Berkeley CS 182 / 282a Deep Learning spring 2023, by Anant Sahai
     -   Foundations of Deep Learning - UMD
-    -   TUM IN2346 Introduction to Deep Learning Fall 2024, by Daniel Cremers
+    -   TUM IN2346 Introduction to Deep Learning Fall 2024, by Daniel Cremers (Summer 2023)
 -   #### **Reinforcement Learning**
     
     -   CS234: Reinforcement Learning - Spring 2024 - Stanford University (Winter 2019)
@@ -607,6 +612,7 @@ Courses
     -   CS 231n - Convolutional Neural Networks for Visual Recognition, Stanford University
     -   CS 198-126: Modern Computer Vision Fall 2022 (UC Berkeley)
     -   Machine Learning for Robotics and Computer Vision, WS 2013/2014 - TU München (YouTube)
+    -   COGSCI 1 - Intro to Cognitive Science Summer 2022 - UC Berkeley
     -   Informatics 1 - Cognitive Science 2015/16- University of Edinburgh
     -   Informatics 2A - Processing Formal and Natural Languages 2016-17 - University of Edinburgh
     -   NOC:Deep Learning For Visual Computing - IIT Kharagpur
@@ -671,6 +677,7 @@ Courses
     -   University of Maryland CMSC828U Algorithms in Machine Learning: Guarantees and Analyses fall 2020, by Furong Huang (YouTube playlist)
     -   Statistical Physics of Machine Learning
     -   11-755 - Machine Learning for Signal Processing, CMU (YouTube-2024, YouTube-2023)
+    -   CSCE 585 - Machine Learning Systems, University of South Carolina (YouTube-2020)
 
 * * *
 
@@ -687,6 +694,7 @@ Courses
 -   Introduction to Data Communications 2013, Steven Gordon - Thammasat University, Thailand
 -   Introduction to Complex Networks - RIT
 -   Structural Analysis and Visualization of Networks
+-   Columbia ELEN E4703 Wireless Communications spring 2006, by Angel Lozano
 -   Data Communication - IIT Kharagpur
 -   Error Correcting Codes - IISC Bangalore
 -   Information Theory and Coding - IIT Bombay
@@ -790,6 +798,7 @@ Courses
 -   Advanced Engineering Mathematics - Notre Dame
 -   Statistical Computing for Scientists and Engineers - Notre Dame
 -   Statistical Computing, Fall 2017 - Notre Dame
+-   Statistics 243 Introduction to Statistical Computing, Fall 2015 - UC Berkeley (Notes-2015) (YouTube-2014) (Notes-2014) (YouTube-2013)
 -   Mathematics for Machine Learning, Lectures by Ulrike von Luxburg - Tübingen Machine Learning
 -   Essential Mathematics for Machine Learning- July 2018 - IIT Roorkee - YouTube Lectures
 -   Numerics of Machine Learning (Winter 2022/23) - Tübingen Machine Learning
@@ -911,6 +920,7 @@ Courses
 -   CSE 351 - The Hardware/Software Interface, Spring 16 - University of Washington (Coursera)
 -   ECE 5030 - Electronic Bioinstrumentation, Spring 2014 - Cornell University
 -   ECE/CS 5780/6780 - Embedded Systems Design, Spring 14 - University of Utah
+-   EECS 373 - Introduction to Embedded System Design - University of Michigan (Lectures - YouTube-Fall 24) (Lectures - YouTube-Fall 23)
 -   Embedded Systems Class - Version 1 - 2011 - UNCC
 -   Embedded Systems using the Renesas RX63N Processor - Version 3 - UNCC
 -   Software Engineering for Embedded Systems (WS 2011/12) - HPI University of Potsdam
@@ -1002,7 +1012,7 @@ Courses
 -   6.858 Computer Systems Security - MIT OCW
 -   CS 253 Web Security - Stanford University
 -   CS 161: Computer Security, UC Berkeley (Videos)
--   6.875 - Cryptography - Spring 2018- MIT
+-   6.875 - Cryptography - Fall 2021 - MIT (Spring 2018)
 -   CSEP590A - Practical Aspects of Modern Cryptography, Winter 2011 - University of Washington (Videos)
 -   CS461/ECE422 - Computer Security - University of Illinois at Urbana-Champaign (Videos)
 -   Introduction to Cryptography, Christof Paar - Ruhr University Bochum, Germany

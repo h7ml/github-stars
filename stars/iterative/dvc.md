@@ -1,6 +1,6 @@
 ---
 project: dvc
-stars: 14235
+stars: 14256
 description: 🦉 Data Versioning and ML Experiments
 url: https://github.com/iterative/dvc
 ---

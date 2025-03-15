@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10341
+stars: 10394
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -819,6 +819,12 @@ https://locnode.com/
 Siri Ultra
 
 The assistant is run on Cloudflare Workers and can work with any LLM model。
+
+维护中
+
+GitPush
+
+基于 Cloudflare Workflow、Workers AI 和 Email Routing 构建的 GitHub 项目更新订阅工具。可以订阅关注的 GitHub 项目，通过 AI 总结更新内容并通过邮件发送通知。
 
 维护中
 

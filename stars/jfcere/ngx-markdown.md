@@ -1,6 +1,6 @@
 ---
 project: ngx-markdown
-stars: 1093
+stars: 1096
 description: Angular markdown component/directive/pipe/service to parse static, dynamic or remote content to HTML with syntax highlight and more...
 url: https://github.com/jfcere/ngx-markdown
 ---
@@ -50,7 +50,7 @@ npm install ngx-markdown marked@^15.0.0 --save
 
 To add Prism.js library to your `package.json` use the following command.
 
-npm install prismjs@^1.28.0 --save
+npm install prismjs@^1.30.0 --save
 
 To activate Prism.js syntax highlight you will need to include...
 

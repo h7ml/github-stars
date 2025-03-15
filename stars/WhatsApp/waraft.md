@@ -1,6 +1,6 @@
 ---
 project: waraft
-stars: 570
+stars: 571
 description: An Erlang implementation of RAFT from WhatsApp
 url: https://github.com/WhatsApp/waraft
 ---
@@ -23,112 +23,108 @@ Get Started
 
 The following code snippet gives a quick glance about how WARaft works. It creates a single-node WARaft cluster and writes and reads a record.
 
-```
 % Setup the WARaft application and the host application
-rr(wa_raft_server).
-application:ensure_all_started(wa_raft).
-application:set_env(test_app, raft_database, ".").
+rr(wa\_raft\_server).
+application:ensure\_all\_started(wa\_raft).
+application:set\_env(test\_app, raft\_database, ".").
 % Create a spec for partition 1 of the RAFT table "test" and start it.
-Spec = wa_raft_sup:child_spec(test_app, [#{table => test, partition => 1}]).
+Spec \= wa\_raft\_sup:child\_spec(test\_app, \[#{table \=> test, partition \=> 1}\]).
 % Here we add WARaft to the kernel's supervisor, but you should place WARaft's
 % child spec underneath your application's supervisor in a real deployment.
-supervisor:start_child(kernel_sup, Spec).
+supervisor:start\_child(kernel\_sup, Spec).
 % Check that the RAFT server started successfully
-wa_raft_server:status(raft_server_test_1).
+wa\_raft\_server:status(raft\_server\_test\_1).
 % Make a cluster configuration with the current node as the only member
-Config = wa_raft_server:make_config([#raft_identity{name = raft_server_test_1, node = node()}]).
+Config \= wa\_raft\_server:make\_config(\[#raft\_identity{name \= raft\_server\_test\_1, node \= node()}\]).
 % Bootstrap the RAFT server by force-promoting it
-wa_raft_server:promote(raft_server_test_1, 1, true, Config).
+wa\_raft\_server:promote(raft\_server\_test\_1, 1, true, Config).
 % Check that now the RAFT server is the leader
-wa_raft_server:status(raft_server_test_1).
+wa\_raft\_server:status(raft\_server\_test\_1).
 % Read and write against a key
-wa_raft_acceptor:commit(raft_acceptor_test_1, {make_ref(), {write, test, key, 1000}}).
-wa_raft_acceptor:read(raft_acceptor_test_1, {read, test, key}).
-```
+wa\_raft\_acceptor:commit(raft\_acceptor\_test\_1, {make\_ref(), {write, test, key, 1000}}).
+wa\_raft\_acceptor:read(raft\_acceptor\_test\_1, {read, test, key}).
 
 A typical output would look like the following:
 
-```
-1> % Setup the WARaft application and the host application
-   rr(wa_raft_server).
-[raft_application,raft_identifier,raft_identity,raft_log,
- raft_log_pos,raft_options,raft_state]
-2> application:ensure_all_started(wa_raft).
-{ok,[wa_raft]}
-3> application:set_env(test_app, raft_database, ".").
+1\> % Setup the WARaft application and the host application
+   rr(wa\_raft\_server).
+\[raft\_application,raft\_identifier,raft\_identity,raft\_log,
+ raft\_log\_pos,raft\_options,raft\_state\]
+2\> application:ensure\_all\_started(wa\_raft).
+{ok,\[wa\_raft\]}
+3\> application:set\_env(test\_app, raft\_database, ".").
 ok
-4> % Create a spec for partition 1 of the RAFT table "test" and start it.
-   Spec = wa_raft_sup:child_spec(test_app, [#{table => test, partition => 1}]).
-#{id => wa_raft_sup,restart => permanent,shutdown => infinity,
-  start =>
-      {wa_raft_sup,start_link,
-                   [test_app,[#{table => test,partition => 1}],#{}]},
-  type => supervisor,
-  modules => [wa_raft_sup]}
-5> % Here we add WARaft to the kernel's supervisor, but you should place WARaft's
+4\> % Create a spec for partition 1 of the RAFT table "test" and start it.
+   Spec \= wa\_raft\_sup:child\_spec(test\_app, \[#{table \=> test, partition \=> 1}\]).
+#{id \=> wa\_raft\_sup,restart \=> permanent,shutdown \=> infinity,
+  start \=>
+      {wa\_raft\_sup,start\_link,
+                   \[test\_app,\[#{table \=> test,partition \=> 1}\],#{}\]},
+  type \=> supervisor,
+  modules \=> \[wa\_raft\_sup\]}
+5\> % Here we add WARaft to the kernel's supervisor, but you should place WARaft's
    % child spec underneath your application's supervisor in a real deployment.
-   supervisor:start_child(kernel_sup, Spec).
-{ok,<0.103.0>}
-6> % Check that the RAFT server started successfully
-   wa_raft_server:status(raft_server_test_1).
-[{state,stalled},
+   supervisor:start\_child(kernel\_sup, Spec).
+{ok,<0.103.0\>}
+6\> % Check that the RAFT server started successfully
+   wa\_raft\_server:status(raft\_server\_test\_1).
+\[{state,stalled},
  {id,nonode@nohost},
  {table,test},
  {partition,1},
- {data_dir,"./test.1"},
- {current_term,0},
- {voted_for,undefined},
- {commit_index,0},
- {last_applied,0},
- {leader_id,undefined},
- {next_index,#{}},
- {match_index,#{}},
- {log_module,wa_raft_log_ets},
- {log_first,0},
- {log_last,0},
+ {data\_dir,"./test.1"},
+ {current\_term,0},
+ {voted\_for,undefined},
+ {commit\_index,0},
+ {last\_applied,0},
+ {leader\_id,undefined},
+ {next\_index,#{}},
+ {match\_index,#{}},
+ {log\_module,wa\_raft\_log\_ets},
+ {log\_first,0},
+ {log\_last,0},
  {votes,#{}},
- {inflight_applies,0},
- {disable_reason,undefined},
- {config,#{version => 1}},
- {config_index,0},
- {witness,false}]
-7> % Make a cluster configuration with the current node as the only member
-   Config = wa_raft_server:make_config([#raft_identity{name = raft_server_test_1, node = node()}]).
-#{version => 1,
-  membership => [{raft_server_test_1,nonode@nohost}]}
-8> % Bootstrap the RAFT server by force-promoting it
-   wa_raft_server:promote(raft_server_test_1, 1, true, Config).
+ {inflight\_applies,0},
+ {disable\_reason,undefined},
+ {config,#{version \=> 1}},
+ {config\_index,0},
+ {witness,false}\]
+7\> % Make a cluster configuration with the current node as the only member
+   Config \= wa\_raft\_server:make\_config(\[#raft\_identity{name \= raft\_server\_test\_1, node \= node()}\]).
+#{version \=> 1,
+  membership \=> \[{raft\_server\_test\_1,nonode@nohost}\]}
+8\> % Bootstrap the RAFT server by force-promoting it
+   wa\_raft\_server:promote(raft\_server\_test\_1, 1, true, Config).
 ok
-9> % Check that now the RAFT server is the leader
-   wa_raft_server:status(raft_server_test_1).
-[{state,leader},
+9\> % Check that now the RAFT server is the leader
+   wa\_raft\_server:status(raft\_server\_test\_1).
+\[{state,leader},
  {id,nonode@nohost},
  {table,test},
  {partition,1},
- {data_dir,"./test.1"},
- {current_term,1},
- {voted_for,undefined},
- {commit_index,1},
- {last_applied,1},
- {leader_id,nonode@nohost},
- {next_index,#{}},
- {match_index,#{}},
- {log_module,wa_raft_log_ets},
- {log_first,0},
- {log_last,1},
+ {data\_dir,"./test.1"},
+ {current\_term,1},
+ {voted\_for,undefined},
+ {commit\_index,1},
+ {last\_applied,1},
+ {leader\_id,nonode@nohost},
+ {next\_index,#{}},
+ {match\_index,#{}},
+ {log\_module,wa\_raft\_log\_ets},
+ {log\_first,0},
+ {log\_last,1},
  {votes,#{}},
- {inflight_applies,0},
- {disable_reason,undefined},
- {config,#{version => 1,
-           membership => [{raft_server_test_1,nonode@nohost}]}},
- {config_index,1},
- {witness,false}]
-10> % Read and write against a key
-    wa_raft_acceptor:commit(raft_acceptor_test_1, {make_ref(), {write, test, key, 1000}}).
+ {inflight\_applies,0},
+ {disable\_reason,undefined},
+ {config,#{version \=> 1,
+           membership \=> \[{raft\_server\_test\_1,nonode@nohost}\]}},
+ {config\_index,1},
+ {witness,false}\]
+10\> % Read and write against a key
+    wa\_raft\_acceptor:commit(raft\_acceptor\_test\_1, {make\_ref(), {write, test, key, 1000}}).
 ok
-11> wa_raft_acceptor:read(raft_acceptor_test_1, {read, test, key}).
+11\> wa\_raft\_acceptor:read(raft\_acceptor\_test\_1, {read, test, key}).
 {ok,1000}
-```
 
 The example directory contains an example generic key-value store built on top of WARaft.
 

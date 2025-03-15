@@ -1,6 +1,6 @@
 ---
 project: shaka-player
-stars: 7369
+stars: 7383
 description: JavaScript player library / DASH & HLS client / MSE-EME player
 url: https://github.com/shaka-project/shaka-player
 ---
@@ -899,6 +899,7 @@ Shaka Player supports VR when:
 VR modes supported:
 
 -   Equirectangular projection with 360 degrees of horizontal field of view.
+-   Half equirectangular projection with 180 degrees of horizontal field of view.
 -   Cubemap projection with 360 degrees of horizontal field of view.
 
 NOTES:
