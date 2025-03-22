@@ -1,6 +1,6 @@
 ---
 project: quiver
-stars: 3202
+stars: 3210
 description: A modern commutative diagram editor for the web.
 url: https://github.com/varkor/quiver
 ---

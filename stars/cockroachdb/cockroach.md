@@ -1,6 +1,6 @@
 ---
 project: cockroach
-stars: 30606
+stars: 30641
 description: CockroachDB — the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement.
 url: https://github.com/cockroachdb/cockroach
 ---

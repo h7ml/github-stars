@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 18582
+stars: 18750
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -65,7 +65,6 @@ Who is using Yjs
 -   btw Open-source Medium alternative
 -   AWS SageMaker Tools for building Machine Learning Models
 -   linear Streamline issues, projects, and product roadmaps.
--   btw - Personal website builder
 -   AWS SageMaker - Machine Learning Service
 -   Arkiter - Live interview software
 -   Appflowy - They use Yrs

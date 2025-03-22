@@ -1,6 +1,6 @@
 ---
 project: postgrest
-stars: 24857
+stars: 24895
 description: REST API for any Postgres database
 url: https://github.com/PostgREST/postgrest
 ---

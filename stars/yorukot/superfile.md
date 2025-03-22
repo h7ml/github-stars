@@ -1,6 +1,6 @@
 ---
 project: superfile
-stars: 13103
+stars: 13218
 description: Pretty fancy and modern terminal file manager
 url: https://github.com/yorukot/superfile
 ---
@@ -32,6 +32,7 @@ Content
 -   Plugins
 -   Themes
 -   Hotkeys
+-   Notes
 -   Contributing
 -   Troubleshooting
 -   Thanks
@@ -139,6 +140,13 @@ If you are vim/nvim user please change your default hotkeys config to vim versio
 
 **Click me to see the hotkey wiki**
 
+Notes
+-----
+
+We have an auto update functionality, that fetches superfile's latest released version from github (if last timestamp of last version check was less than 24 hours) and prints a prompt to user, if there is a newer version available.
+
+You can turn this off, by setting `auto_check_update` to false in superfile config. **Click me to see the config wiki**
+
 Troubleshooting
 ---------------
 
@@ -169,6 +177,8 @@ Contributing
 ------------
 
 If you want to contribute please follow the contribution guide
+
+**Click me to see changelog**
 
 Thanks
 ------

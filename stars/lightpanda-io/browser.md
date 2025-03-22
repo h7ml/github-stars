@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 7338
+stars: 7485
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -89,6 +89,10 @@ await page.close();
 await context.close();
 await browser.disconnect();
 
+### Telemetry
+
+By default, Lightpanda collects and sends usage telemetry. This can be disabled by setting an environment variable `LIGHTPANDA_DISABLE_TELEMETRY=true`. You can read Lightpanda's privacy policy at: https://lightpanda.io/privacy-policy.
+
 Status
 ------
 
@@ -117,7 +121,7 @@ Build from sources
 
 ### Prerequisites
 
-Lightpanda is written with Zig `0.13.0`. You have to install it with the right version in order to build the project.
+Lightpanda is written with Zig `0.14.0`. You have to install it with the right version in order to build the project.
 
 Lightpanda also depends on zig-js-runtime (with v8), Netsurf libs and Mimalloc.
 

@@ -1,53 +1,71 @@
 ---
 project: chatwoot
-stars: 22748
+stars: 22858
 description: Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬
 url: https://github.com/chatwoot/chatwoot
 ---
-
-🚨 Note: This branch is unstable. For the stable branch's source code, please use the branch 3.x
-------------------------------------------------------------------------------------------------
 
 * * *
 
 Chatwoot
 ========
 
-Customer engagement suite, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
+The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
 
-Chatwoot is an open-source, self-hosted customer engagement suite. Chatwoot lets you view and manage your customer data, communicate with them irrespective of which medium they use, and re-engage them based on their profile.
+* * *
 
-Features
---------
+Chatwoot is the modern, open-source, and self-hosted customer support platform designed to help businesses deliver exceptional customer support experience. Built for scale and flexibility, Chatwoot gives you full control over your customer data while providing powerful tools to manage conversations across channels.
 
-Chatwoot supports the following conversation channels:
+### ✨ Captain – AI Agent for Support
 
--   **Website**: Talk to your customers using our live chat widget and make use of our SDK to identify a user and provide contextual support.
--   **Facebook**: Connect your Facebook pages and start replying to the direct messages to your page.
--   **Instagram**: Connect your Instagram profile and start replying to the direct messages.
--   **Twitter**: Connect your Twitter profiles and reply to direct messages or the tweets where you are mentioned.
--   **Telegram**: Connect your Telegram bot and reply to your customers right from a single dashboard.
--   **WhatsApp**: Connect your WhatsApp business account and manage the conversation in Chatwoot.
--   **Line**: Connect your Line account and manage the conversations in Chatwoot.
--   **SMS**: Connect your Twilio SMS account and reply to the SMS queries in Chatwoot.
--   **API Channel**: Build custom communication channels using our API channel.
--   **Email**: Forward all your email queries to Chatwoot and view it in our integrated dashboard.
+Supercharge your support with Captain, Chatwoot’s AI agent. Captain helps automate responses, handle common queries, and reduce agent workload—ensuring customers get instant, accurate answers. With Captain, your team can focus on complex conversations while routine questions are resolved automatically. Read more about Captain here.
 
-And more.
+### 💬 Omnichannel Support Desk
 
-Other features include:
+Chatwoot centralizes all customer conversations into one powerful inbox, no matter where your customers reach out from. It supports live chat on your website, email, Facebook, Instagram, Twitter, WhatsApp, Telegram, Line, SMS etc.
 
--   **CRM**: Save all your customer information right inside Chatwoot, use contact notes to log emails, phone calls, or meeting notes.
--   **Custom Attributes**: Define custom attribute attributes to store information about a contact or a conversation and extend the product to match your workflow.
--   **Shared multi-brand inboxes**: Manage multiple brands or pages using a shared inbox.
--   **Private notes**: Use @mentions and private notes to communicate internally about a conversation.
--   **Canned responses (Saved replies)**: Improve the response rate by adding saved replies for frequently asked questions.
--   **Conversation Labels**: Use conversation labels to create custom workflows.
--   **Auto assignment**: Chatwoot intelligently assigns a ticket to the agents who have access to the inbox depending on their availability and load.
--   **Conversation continuity**: If the user has provided an email address through the chat widget, Chatwoot will send an email to the customer under the agent name so that the user can continue the conversation over the email.
--   **Multi-lingual support**: Chatwoot supports 10+ languages.
--   **Powerful API & Webhooks**: Extend the capability of the software using Chatwoot’s webhooks and APIs.
--   **Integrations**: Chatwoot natively integrates with Slack right now. Manage your conversations in Slack without logging into the dashboard.
+### 📚 Help center portal
+
+Publish help articles, FAQs, and guides through the built-in Help Center Portal. Enable customers to find answers on their own, reduce repetitive queries, and keep your support team focused on more complex issues.
+
+### 🗂️ Other features
+
+#### Collaboration & Productivity
+
+-   Private Notes and @mentions for internal team discussions.
+-   Labels to organize and categorize conversations.
+-   Keyboard Shortcuts and a Command Bar for quick navigation.
+-   Canned Responses to reply faster to frequently asked questions.
+-   Auto-Assignment to route conversations based on agent availability.
+-   Multi-lingual Support to serve customers in multiple languages.
+-   Custom Views and Filters for better inbox organization.
+-   Business Hours and Auto-Responders to manage response expectations.
+-   Teams and Automation tools for scaling support workflows.
+-   Agent Capacity Management to balance workload across the team.
+
+#### Customer Data & Segmentation
+
+-   Contact Management with profiles and interaction history.
+-   Contact Segments and Notes for targeted communication.
+-   Campaigns to proactively engage customers.
+-   Custom Attributes for storing additional customer data.
+-   Pre-Chat Forms to collect user information before starting conversations.
+
+#### Integrations
+
+-   Slack Integration to manage conversations directly from Slack.
+-   Dialogflow Integration for chatbot automation.
+-   Dashboard Apps to embed internal tools within Chatwoot.
+-   Shopify Integration to view and manage customer orders right within Chatwoot.
+-   Use Google Translate to translate messages from your customers in realtime.
+-   Create and manage Linear tickets within Chatwoot.
+
+#### Reports & Insights
+
+-   Live View of ongoing conversations for real-time monitoring.
+-   Conversation, Agent, Inbox, Label, and Team Reports for operational visibility.
+-   CSAT Reports to measure customer satisfaction.
+-   Downloadable Reports for offline analysis and reporting.
 
 Documentation
 -------------
@@ -86,13 +104,13 @@ Security
 
 Looking to report a vulnerability? Please refer our SECURITY.md file.
 
-Community? Questions? Support ?
--------------------------------
+Community
+---------
 
 If you need help or just want to hang out, come, say hi on our Discord server.
 
-Contributors ✨
---------------
+Contributors
+------------
 
 Thanks goes to all these wonderful people:
 

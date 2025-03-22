@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 7843
+stars: 7921
 description: Real-time sync for Postgres.
 url: https://github.com/electric-sql/electric
 ---
@@ -8,7 +8,7 @@ url: https://github.com/electric-sql/electric
 Electric
 ========
 
-Your Postgres data, in sync, wherever you need it.
+Real-time sync for Postgres.
 
 **Table of Contents:**
 
@@ -25,18 +25,21 @@ Quick links
 -----------
 
 -   Quickstart
+-   Website
 -   About
 -   Docs
--   Examples
+-   Demos (also see the `./examples` folder)
 
 What is Electric?
 -----------------
 
-Electric provides an HTTP API for syncing Shapes of data from Postgres. This can be used directly or via client libraries and integrations.
+Sync is the magic ingredient behind fast, modern software. From apps like Figma and Linear to AI agents running on live local data.
 
-### This looks a bit different than the last time I visited?
+Electric is a Postgres sync engine. It solves the hard problems of sync for you, including partial replication, fan-out, and data delivery. So you can build awesome software, without rolling your own sync.
 
-We started a clean rebuild of the sync engine in July 2024. One that's informed by the lessons learned building the previous system. See James' blog post for background on the change.
+Specifically, Electric is a read-path sync engine for Postgres. It syncs data out of Postgres into ... anything you like. The core sync protocol is based on a low-level HTTP API. This integrates with CDNs for highly-scalable data delivery.
+
+Partial replication is managed using Shapes. Sync can be consumed directly or via client libraries and framework integrations.
 
 Getting Started
 ---------------

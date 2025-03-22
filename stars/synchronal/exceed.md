@@ -1,6 +1,6 @@
 ---
 project: exceed
-stars: 23
+stars: 24
 description: A high-level stream-oriented Excel (.xlsx) generator
 url: https://github.com/synchronal/exceed
 ---

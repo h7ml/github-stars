@@ -1,6 +1,6 @@
 ---
 project: data-formulator
-stars: 8816
+stars: 10683
 description: 🪄 Create rich visualizations with AI 
 url: https://github.com/microsoft/data-formulator
 ---
@@ -15,6 +15,12 @@ Transform data and create rich visualizations iteratively with AI 🪄. Try Data
 News 🔥🔥🔥
 -----------
 
+-   \[03-20-2025\] Data Formulator 0.1.7: Anchoring ⚓︎
+    
+    -   Anchor an intermediate dataset, so that followup data analysis are built on top of the anchored data, not the original one.
+    -   Clean a data and work with only the cleaned data; create a subset from the original data or join multiple data, and then focus your analysis from there. The AI agent will be less likely to get confused and work faster. ⚡️⚡️
+    -   Check out the demos at \[https://github.com/microsoft/data-formulator/releases/tag/0.1.7\]
+    -   Don't forget to update Data Formulator to test it out!
 -   \[02-20-2025\] Data Formulator 0.1.6 released!
     
     -   Now supports working with multiple datasets at once! Tell Data Formulator which data tables you would like to use in the encoding shelf, and it will figure out how to join the tables to create a visualization to answer your question. 🪄

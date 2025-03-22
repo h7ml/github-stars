@@ -1,11 +1,9 @@
 ---
 project: documenso
-stars: 10471
+stars: 10528
 description: The Open Source DocuSign Alternative.
 url: https://github.com/documenso/documenso
 ---
-
-> 🚨 We are live on Product Hunt 🎉 Check out our latest launch: The Platform Plan!
 
 The Open Source DocuSign Alternative.  
 **Learn more »**  
@@ -48,18 +46,16 @@ Tech Stack
 ----------
 
 -   Typescript - Language
--   Next.js - Framework
+-   ReactRouter - Framework
 -   Prisma - ORM
 -   Tailwind - CSS
 -   shadcn/ui - Component Library
--   NextAuth.js - Authentication
 -   react-email - Email Templates
 -   tRPC - API
 -   @documenso/pdf-sign - PDF Signatures (launching soon)
 -   React-PDF - Viewing PDFs
 -   PDF-Lib - PDF manipulation
 -   Stripe - Payments
--   Vercel - Hosting
 
 Local Development
 -----------------
@@ -68,7 +64,7 @@ Local Development
 
 To run Documenso locally, you will need
 
--   Node.js (v18 or above)
+-   Node.js (v22 or above)
 -   Postgres SQL Database
 -   Docker (optional)
 
@@ -128,10 +124,8 @@ git clone https://github.com/<your-username\>/documenso
     
 3.  Set the following environment variables:
     
-    -   NEXTAUTH\_URL
     -   NEXTAUTH\_SECRET
     -   NEXT\_PUBLIC\_WEBAPP\_URL
-    -   NEXT\_PUBLIC\_MARKETING\_URL
     -   NEXT\_PRIVATE\_DATABASE\_URL
     -   NEXT\_PRIVATE\_DIRECT\_DATABASE\_URL
     -   NEXT\_PRIVATE\_SMTP\_FROM\_NAME
@@ -198,16 +192,14 @@ cp .env.example .env
 
 The following environment variables must be set:
 
--   `NEXTAUTH_URL`
 -   `NEXTAUTH_SECRET`
 -   `NEXT_PUBLIC_WEBAPP_URL`
--   `NEXT_PUBLIC_MARKETING_URL`
 -   `NEXT_PRIVATE_DATABASE_URL`
 -   `NEXT_PRIVATE_DIRECT_DATABASE_URL`
 -   `NEXT_PRIVATE_SMTP_FROM_NAME`
 -   `NEXT_PRIVATE_SMTP_FROM_ADDRESS`
 
-> If you are using a reverse proxy in front of Documenso, don't forget to provide the public URL for both `NEXTAUTH_URL` and `NEXT_PUBLIC_WEBAPP_URL` variables!
+> If you are using a reverse proxy in front of Documenso, don't forget to provide the public URL for the `NEXT_PUBLIC_WEBAPP_URL` variable!
 
 Now you can install the dependencies and build it:
 

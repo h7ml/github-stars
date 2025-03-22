@@ -1,6 +1,6 @@
 ---
 project: angular-three
-stars: 234
+stars: 237
 description: Angular Renderer for THREE.js
 url: https://github.com/angular-threejs/angular-three
 ---

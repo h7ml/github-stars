@@ -1,6 +1,6 @@
 ---
 project: dive
-stars: 49869
+stars: 49961
 description: A tool for exploring each layer in a docker image
 url: https://github.com/wagoodman/dive
 ---
@@ -8,16 +8,16 @@ url: https://github.com/wagoodman/dive
 dive
 ====
 
-**A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.**
+**A tool for exploring a Docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.**
 
 To analyze a Docker image simply run dive with an image tag/id/digest:
 
 dive <your-image-tag\>
 
-or you can dive with docker command directly
+or you can dive with Docker directly:
 
 ```
-alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
+alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock docker.io/wagoodman/dive"
 dive <your-image-tag>
 
 # for example
@@ -28,14 +28,14 @@ or if you want to build your image then jump straight into analyzing it:
 
 dive build -t <some-tag\> .
 
-Building on Macbook (supporting only the Docker container engine)
+Building on macOS (supporting only the Docker container engine):
 
 docker run --rm -it \\
       -v /var/run/docker.sock:/var/run/docker.sock \\
       -v  "$(pwd)":"$(pwd)" \\
       -w "$(pwd)" \\
       -v "$HOME/.dive.yaml":"$HOME/.dive.yaml" \\
-      wagoodman/dive:latest build -t <some-tag\> .
+      docker.io/wagoodman/dive:latest build -t <some-tag\> .
 
 Additionally you can run this in your CI pipeline to ensure you're keeping wasted space to a minimum (this skips the UI):
 
@@ -94,7 +94,7 @@ Installation
 Using debs:
 
 DIVE\_VERSION=$(curl -sL "https://api.github.com/repos/wagoodman/dive/releases/latest" | grep '"tag\_name":' | sed -E 's/.\*"v(\[^"\]+)".\*/\\1/')
-curl -OL https://github.com/wagoodman/dive/releases/download/v${DIVE\_VERSION}/dive\_${DIVE\_VERSION}\_linux\_amd64.deb
+curl -fOL "https://github.com/wagoodman/dive/releases/download/v${DIVE\_VERSION}/dive\_${DIVE\_VERSION}\_linux\_amd64.deb"
 sudo apt install ./dive\_${DIVE\_VERSION}\_linux\_amd64.deb
 
 Using snap:
@@ -104,10 +104,16 @@ sudo snap install dive
 sudo snap connect dive:docker-executables docker:docker-executables
 sudo snap connect dive:docker-daemon docker:docker-daemon
 
+Caution
+
+The Snap method is not recommended if you installed Docker via `apt-get`, since it might break your existing Docker daemon.
+
+See also: #546
+
 **RHEL/Centos**
 
 DIVE\_VERSION=$(curl -sL "https://api.github.com/repos/wagoodman/dive/releases/latest" | grep '"tag\_name":' | sed -E 's/.\*"v(\[^"\]+)".\*/\\1/')
-curl -OL https://github.com/wagoodman/dive/releases/download/v${DIVE\_VERSION}/dive\_${DIVE\_VERSION}\_linux\_amd64.rpm
+curl -fOL "https://github.com/wagoodman/dive/releases/download/v${DIVE\_VERSION}/dive\_${DIVE\_VERSION}\_linux\_amd64.rpm"
 rpm -i dive\_${DIVE\_VERSION}\_linux\_amd64.rpm
 
 **Arch Linux**
@@ -120,7 +126,8 @@ pacman -S dive
 
 If you use Homebrew:
 
-brew install dive
+brew tap wagoodman/dive
+brew install wagoodman/dive/dive
 
 If you use MacPorts:
 
@@ -130,11 +137,23 @@ Or download the latest Darwin build from the releases page.
 
 **Windows**
 
-Download the latest release.
+If you use Chocolatey
+
+choco install dive
+
+If you use scoop
+
+scoop install main/dive
+
+If you use winget:
+
+winget install \--id wagoodman.dive
+
+Or download the latest Windows build from the releases page.
 
 **Go tools** Requires Go version 1.10 or higher.
 
-go get github.com/wagoodman/dive
+go install github.com/wagoodman/dive@latest
 
 _Note_: installing in this way you will not see a proper version when running `dive -v`.
 
@@ -150,23 +169,19 @@ nix-env -iA nixpkgs.dive
 
 **Docker**
 
-docker pull wagoodman/dive
+docker pull docker.io/wagoodman/dive
 
-or
-
-docker pull quay.io/wagoodman/dive
-
-When running you'll need to include the docker socket file:
+When running you'll need to include the Docker socket file:
 
 docker run --rm -it \\
     -v /var/run/docker.sock:/var/run/docker.sock \\
-    wagoodman/dive:latest <dive arguments...\>
+    docker.io/wagoodman/dive:latest <dive arguments...\>
 
 Docker for Windows (showing PowerShell compatible line breaks; collapse to a single line for Command Prompt compatibility)
 
 docker run --rm -it \`
     -v /var/run/docker.sock:/var/run/docker.sock \`
-    wagoodman/dive:latest <dive arguments...\>
+    docker.io/wagoodman/dive:latest <dive arguments...\>
 
 **Note:** depending on the version of docker you are running locally you may need to specify the docker API version as an environment variable:
 
@@ -177,7 +192,11 @@ or if you are running with a docker image:
 docker run --rm -it \\
     -v /var/run/docker.sock:/var/run/docker.sock \\
     -e DOCKER\_API\_VERSION=1.37 \\
-    wagoodman/dive:latest <dive arguments...\>
+    docker.io/wagoodman/dive:latest <dive arguments...\>
+
+if you are using an alternative runtime (Colima etc) then you may need to specify the docker host as an environment variable in order to pull local images:
+
+   export DOCKER\_HOST=$(docker context inspect -f '{{ .Endpoints.docker.Host }}')
 
 CI Integration
 --------------
@@ -221,13 +240,25 @@ Ctrl + F
 
 Filter files
 
-PageUp
+ESC
+
+Close filter files
+
+PageUp or U
 
 Scroll up a page
 
-PageDown
+PageDown or D
 
 Scroll down a page
+
+Up or K
+
+Move up one line within a page
+
+Down or J
+
+Move down one line within a page
 
 Ctrl + A
 
@@ -265,11 +296,11 @@ Ctrl + B
 
 Filetree view: show/hide file attributes
 
-PageUp
+PageUp or U
 
 Filetree view: scroll up a page
 
-PageDown
+PageDown or D
 
 Filetree view: scroll down a page
 
@@ -294,6 +325,11 @@ keybinding:
   quit: ctrl+c
   toggle-view: tab
   filter-files: ctrl+f, ctrl+slash
+  close-filter-files: esc
+  up: up,k
+  down: down,j
+  left: left,h
+  right: right,l
 
   # Layer view specific bindings
   compare-all: ctrl+a
@@ -307,8 +343,8 @@ keybinding:
   toggle-modified-files: ctrl+m
   toggle-unmodified-files: ctrl+u
   toggle-filetree-attributes: ctrl+b
-  page-up: pgup
-  page-down: pgdn
+  page-up: pgup,u
+  page-down: pgdn,d
 
 diff:
   # You can change the default files shown in the filetree (right pane). All diff types are shown by default.

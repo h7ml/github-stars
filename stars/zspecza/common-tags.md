@@ -1,6 +1,6 @@
 ---
 project: common-tags
-stars: 2016
+stars: 2017
 description: 🔖 Useful template literal tags for dealing with strings in ES2015+
 url: https://github.com/zspecza/common-tags
 ---

@@ -1,6 +1,6 @@
 ---
 project: stun
-stars: 248
+stars: 249
 description: STUN and TURN library for Erlang / Elixir
 url: https://github.com/processone/stun
 ---

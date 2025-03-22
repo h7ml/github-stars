@@ -1,6 +1,6 @@
 ---
 project: tauri
-stars: 90513
+stars: 90747
 description: Build smaller, faster, and more secure desktop and mobile applications with a web frontend.
 url: https://github.com/tauri-apps/tauri
 ---
@@ -56,13 +56,13 @@ Linux
 
 webkit2gtk 4.0 for Tauri v1 (for example Ubuntu 18.04). webkit2gtk 4.1 for Tauri v2 (for example Ubuntu 22.04).
 
-iOS/iPadOS (beta)
+iOS/iPadOS
 
 9 and above
 
-Android (beta)
+Android
 
-7 and above
+7 and above (currently 8 and above)
 
 Contributing
 ------------

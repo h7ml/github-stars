@@ -1,6 +1,6 @@
 ---
 project: ohm
-stars: 5266
+stars: 5273
 description: A library and language for building parsers, interpreters, compilers, etc.
 url: https://github.com/ohmjs/ohm
 ---

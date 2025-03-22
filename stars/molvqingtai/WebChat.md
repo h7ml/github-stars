@@ -1,6 +1,6 @@
 ---
 project: WebChat
-stars: 1794
+stars: 1797
 description: 💬 Chat with anyone on any website.
 url: https://github.com/molvqingtai/WebChat
 ---

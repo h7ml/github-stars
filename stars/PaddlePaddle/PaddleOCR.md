@@ -1,11 +1,11 @@
 ---
 project: PaddleOCR
-stars: 47371
+stars: 47631
 description: Awesome multilingual OCR toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
 
-English | 简体中文
+|
 
 简介
 --
@@ -15,7 +15,9 @@ PaddleOCR 旨在打造一套丰富、领先、且实用的 OCR 工具库，助�
 🚀 社区
 -----
 
-PaddleOCR 由 PMC 监督。Issues 和 PRs 将在尽力的基础上进行审查。欲了解 PaddlePaddle 社区的完整概况，请访问 community。
+PaddleOCR 由 PMC 监督。Issues 和 PRs 将在尽力的基础上进行审查。
+
+欲了解 PaddlePaddle 社区的完整概况，请访问 community。
 
 ⚠️注意：Issues模块仅用来报告程序🐞Bug，其余提问请移步Discussions模块提问。如所提Issue不是Bug，会被移到Discussions模块，敬请谅解。
 
@@ -47,7 +49,7 @@ PaddleOCR 由 PMC 监督。Issues 和 PRs 将在尽力的基础上进行审查�
         -   🚀**提高效率降低门槛**：提供基于**统一命令**和**图形界面**两种方式，实现模型简洁高效的使用、组合与定制。支持**高性能推理、服务化部署和端侧部署**等多种部署方式。此外，对于各种主流硬件如**英伟达GPU、昆仑芯、昇腾、寒武纪和海光**等，进行模型开发时，都可以**无缝切换**。
     -   支持文档场景信息抽取v3PP-ChatOCRv3-doc、基于RT-DETR的高精度版面区域检测模型和PicoDet的高效率版面区域检测模型、高精度表格结构识别模型SLANet\_Plus、文本图像矫正模型UVDoc、公式识别模型LatexOCR、基于PP-LCNet的文档图像方向分类模型
         
--   **🔥2024.7 添加 PaddleOCR 算法模型挑战赛冠军方案**：
+-   **🔥2024.7 添加 PaddleOCR 算法模型挑战赛冠军方案（2024 年比赛）**：
     
     -   赛题一：OCR 端到端识别任务冠军方案——场景文本识别算法-SVTRv2；
     -   赛题二：通用表格识别任务冠军方案——表格识别算法-SLANet-LCNetV2。
@@ -55,7 +57,7 @@ PaddleOCR 由 PMC 监督。Issues 和 PRs 将在尽力的基础上进行审查�
 🌟 特性
 -----
 
-支持多种 OCR 相关前沿算法，在此基础上打造产业级特色模型PP-OCR、PP-Structure和PP-ChatOCR，并打通数据生产、模型训练、压缩、预测部署全流程。
+支持多种 OCR 相关前沿算法，包括但不限于文本检测、文本识别、表格识别等。在此基础上打造产业级特色模型 PP-OCR、PP-Structure 和 PP-ChatOCR，并打通数据生产、模型训练、压缩、预测部署全流程，为开发者提供一站式解决方案。
 
 ⚡ 快速开始
 ------
@@ -79,7 +81,7 @@ PaddleOCR 由 PMC 监督。Issues 和 PRs 将在尽力的基础上进行审查�
 ⭐️ Star
 -------
 
-许可证书
-----
+📄 许可证书
+-------
 
-本项目的发布受 Apache License Version 2.0 许可认证。
+本项目的发布受 Apache License Version 2.0 许可认证, 欢迎大家使用和贡献。

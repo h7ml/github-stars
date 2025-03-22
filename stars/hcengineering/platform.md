@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 19679
+stars: 19783
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -149,6 +149,7 @@ Add the following line to your /etc/hosts file
 
 ```
 127.0.0.1 huly.local
+::1 huly.local
 ```
 
 Accessing the URL http://huly.local:8087 will lead you to the app in development mode.

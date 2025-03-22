@@ -1,6 +1,6 @@
 ---
 project: mox
-stars: 4593
+stars: 4654
 description: modern full-featured open source secure mail server for low-maintenance self-hosted email
 url: https://github.com/mjl-/mox
 ---

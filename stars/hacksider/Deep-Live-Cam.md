@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 44646
+stars: 45339
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -34,9 +34,6 @@ Quick Start - Pre-built (Windows / Nvidia)
 ------------------------------------------
 
 ##### This is the fastest build you can get if you have a discrete NVIDIA GPU.
-
-Quick Start - Pre-built (Mac / Silicon)
----------------------------------------
 
 ###### These Pre-builts are perfect for non-technical users or those who don’t have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually.
 
@@ -197,6 +194,20 @@ Usage
 -   Wait for the preview to appear (10-30 seconds).
 -   Use a screen capture tool like OBS to stream.
 -   To change the face, select a new source image.
+
+Tips and Tricks
+---------------
+
+Check out these helpful guides to get the most out of Deep-Live-Cam:
+
+-   Unlocking the Secrets to the Perfect Deepfake Image - Learn how to create the best deepfake with full head coverage
+-   Video Call with DeepLiveCam - Make your meetings livelier by using DeepLiveCam with OBS and meeting software
+-   Have a Special Guest! - Tutorial on how to use face mapping to add special guests to your stream
+-   Watch Deepfake Movies in Realtime - See yourself star in any video without processing the video
+-   Better Quality without Sacrificing Speed - Tips for achieving better results without impacting performance
+-   Instant Vtuber! - Create a new persona/vtuber easily using Metahuman Creator
+
+Visit our official blog for more tips and tutorials.
 
 Command Line Arguments (Unmaintained)
 -------------------------------------

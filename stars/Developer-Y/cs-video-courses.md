@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68325
+stars: 68379
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -48,6 +48,7 @@ Table of Contents
     -   Computer Vision
     -   Time Series Analysis
     -   Optimization
+    -   Unsupervised Learning
     -   Misc Machine Learning Topics
 -   Computer Networks
 -   Math for Computer Scientist
@@ -422,6 +423,7 @@ Courses
     -   COM4509/COM6509 Machine Learning and Adaptive Intelligence 2015-16
     -   Introduction to Machine Learning - Spring 2018 - ETH Zurich
     -   Machine Learning - Pedro Domingos- University of Washington
+    -   CSE 446/546 - Machine Learning, Spring 2020 - University of Washington (Videos)
     -   Machine Learning (COMP09012)
     -   Probabilistic Machine Learning 2020 - University of Tübingen
     -   Statistical Machine Learning 2020 - Ulrike von Luxburg - University of Tübingen
@@ -514,11 +516,9 @@ Courses
     -   STAT-157 Deep Learning 2019 - UC Berkeley
     -   Deep Learning, Stanford University
     -   MOOC - Neural Networks for Machine Learning, Geoffrey Hinton 2016 - Coursera
-    -   Deep Unsupervised Learning -- Berkeley Spring 2020
     -   Stat 946 Deep Learning - University of Waterloo
     -   EECS 298 Theory of Computational Neural Networks and Machine Learning (Fall 2020) - UC Irvine (YouTube)
     -   Neural networks class - Université de Sherbrooke (YouTube)
-    -   CS294-158 Deep Unsupervised Learning SP19
     -   DLCV - Deep Learning for Computer Vision - UPC Barcelona
     -   DLAI - Deep Learning for Artificial Intelligence @ UPC Barcelona
     -   Neural Networks and Applications - IIT Kharagpur
@@ -533,7 +533,6 @@ Courses
     -   Deep Learning (Fall 2020) - Georgia Tech
     -   CS7015 - Deep Learning - Prof. Mitesh M. Khapra - IIT Madras
     -   ETH Zürich | Deep Learning in Scientific Computing 2023
-    -   CS294 Deep Unsupervised Learning Spring 2024
     -   Applied Deep Learning Maziar Raissi
     -   UC Berkeley CS 182 / 282a Deep Learning spring 2023, by Anant Sahai
     -   Foundations of Deep Learning - UMD
@@ -640,9 +639,19 @@ Courses
     -   MIT 6.S098 Applied Convex Optimization IAP 2022, by Alexandre Amice, Benoit Legat (YouTube)
     -   University of Twente Discrete Optimization, by Marc Uetz (Fall 2020)
     -   UCSD CS292F Convex Optimization Spring 2020, by Yu-Xiang Wang (Youtube)
+    -   UIUC ECE 490 Introduction to Optimization fall 2020, by Venugopal V. Veeravalli (YouTube)
     -   University of Wisconsin-Madison CS/ECE/ISyE 524 Introduction to Optimization spring 2017-18, by Laurent Lessard
     -   University of Wisconsin-Madison ISyE/Math/CS/Stat 525 Linear Optimization fall 2021, by Alberto Del Pia
     -   University of Wisconsin-Madison ISyE/Math/CS 728 Integer Optimization (second part of the course) spring 2020
+    -   Columbia IEOR E4007 Optimization Models and Methods 2005, by Garud Iyengar
+-   #### **Unsupervised Learning**
+    
+    -   CS294 Deep Unsupervised Learning Spring 2024
+    -   Deep Unsupervised Learning -- Berkeley Spring 2020
+    -   CS294-158 Deep Unsupervised Learning SP19
+    -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
+    -   Johns Hopkins Unsupervised Learning spring 2017, by Rene Vidal
+    -   Unsupervised Learning (STAT 841), Winter 2017
 -   #### **Misc Machine Learning Topics**
     
     -   Quantum Machine Learning | 2021 Qiskit Global Summer School
@@ -671,8 +680,6 @@ Courses
     -   High Dimensional Analysis: Random Matrices and Machine Learning by Roland Speicher(Youtube)
     -   ACP SUMMER SCHOOL 2023 on Machine Learning for Constraint Programming
     -   EE512A - Advanced Inference in Graphical Models, Fall Quarter, 2014
-    -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
-    -   Johns Hopkins Unsupervised Learning spring 2017, by Rene Vidal
     -   University of Wisconsin-Madison CS/ECE 561 - Probability and Information Theory in Machine Learning fall 2020, by Matthew Malley
     -   University of Maryland CMSC828U Algorithms in Machine Learning: Guarantees and Analyses fall 2020, by Furong Huang (YouTube playlist)
     -   Statistical Physics of Machine Learning
@@ -690,11 +697,14 @@ Courses
 -   Computer Networks, Tanenbaum, Wetherall Computer Networks 5e - Video Lectures
 -   CSEP 561 - PMP Network Systems, Fall 2013 - University of Washington (Videos)
 -   CSEP 561 – Network Systems, Autumn 2008 - University of Washington (Videos)
+-   ECE/CS 438 - Communication Networks, Fall 2020 - UIUC
 -   Computer Networks - IIT Kharagpur
 -   Introduction to Data Communications 2013, Steven Gordon - Thammasat University, Thailand
 -   Introduction to Complex Networks - RIT
 -   Structural Analysis and Visualization of Networks
 -   Columbia ELEN E4703 Wireless Communications spring 2006, by Angel Lozano
+-   Columbia COMS W4119 Computer Networks fall 2004, by Vishal Misra
+-   Columbia ELEN E4710 An Introduction to Network Engineering fall 2004, by Dan Rubenstein (Videos)
 -   Data Communication - IIT Kharagpur
 -   Error Correcting Codes - IISC Bangalore
 -   Information Theory and Coding - IIT Bombay
@@ -707,6 +717,8 @@ Courses
 -   Wireless Ad Hoc and Sensor Networks - IIT Kharagpur
 -   Internetworking with TCP/IP by Prof. Dr. Christoph Meinel - HPI
 -   CS798: Mathematical Foundations of Computer Networking - University of Waterloo
+-   CS 168 Introduction to the Internet: Architecture and Protocols, Fall 2022 - UC Berkeley (YouTube)
+-   Advanced Topics in Communication Networks, Fall 2022 - ETH Zürich
 
 * * *
 
@@ -834,6 +846,7 @@ Courses
 -   Introduction to Modern Application Development - IIT Madras
 -   CSE 199 - How the Internet Works, Fall 2016 - University of Buffalo
 -   Open Sourced Elective: Database and Rails - Intro to Ruby on Rails, University of Texas (Lectures - Youtube)
+-   CSE154 - Web Programming, Spring 2020 - University of Washington (Videos)
 -   CSEP545 - Transaction Processing for E-Commerce, Winter 2012 - University of Washington (Videos)
 -   CT 310 Web Development - Colorado State University
 -   Internet Technologies and Applications 2012, Steven Gordon - Thammasat University, Thailand
@@ -1265,6 +1278,7 @@ Courses
 -   Financial Derivatives & Risk Management - IIT Roorkee
 -   Financial Mathematics - IIT Roorkee
 -   Harvard Economics 2355 Deep Learning for Economics spring 2023, by Melissa Dell
+-   UW ECON 484 Econometrics and Data Science spring 2020, by Gregory Duncan
 -   MATH69122 Stochastic Control for Finance
 -   UC Davis MAT 133 Mathematical Finance Spring 2024, by Matthias Köppe (Spring 2021)
 

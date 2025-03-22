@@ -1,6 +1,6 @@
 ---
 project: Rocket
-stars: 24981
+stars: 24993
 description: A web framework for Rust.
 url: https://github.com/rwf2/Rocket
 ---
@@ -10,17 +10,19 @@ Rocket
 
 Rocket is an async web framework for Rust with a focus on usability, security, extensibility, and speed.
 
-#\[macro\_use\] extern crate rocket;
+```
+#[macro_use] extern crate rocket;
 
-#\[get("/<name>/<age>")\]
+#[get("/<name>/<age>")]
 fn hello(name: &str, age: u8) -> String {
     format!("Hello, {} year old named {}!", age, name)
 }
 
-#\[launch\]
-fn rocket() -> \_ {
-    rocket::build().mount("/hello", routes!\[hello\])
+#[launch]
+fn rocket() -> _ {
+    rocket::build().mount("/hello", routes![hello])
 }
+```
 
 Visiting `localhost:8000/hello/John/58`, for example, will trigger the `hello` route resulting in the string `Hello, 58 year old named John!` being sent to the browser. If an `<age>` string was passed in that can't be parsed as a `u8`, the route won't get called, resulting in a 404 error.
 
@@ -46,8 +48,10 @@ Examples
 
 The examples directory contains complete crates that showcase Rocket's features and usage. Each example can be compiled and run with Cargo. For instance, the following sequence of commands builds and runs the `hello` example:
 
+```
 cd examples/hello
 cargo run
+```
 
 Getting Help
 ------------

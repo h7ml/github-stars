@@ -1,6 +1,6 @@
 ---
 project: ghostty
-stars: 28235
+stars: 28610
 description: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 url: https://github.com/ghostty-org/ghostty
 ---
@@ -166,7 +166,7 @@ The crash report can contain sensitive information. The report doesn't purposely
 Developing Ghostty
 ------------------
 
-See the documentation on the Ghostty website for building Ghostty from source. For development, omit the `-Doptimize` flag to build a debug build.
+See the documentation on the Ghostty website for building Ghostty from a source tarball. Building Ghostty from a Git checkout is very similar, except you want to omit the `-Doptimize` flag to build a debug build, and you may require additional dependencies since the source tarball includes some processed files that are not in the Git repository.
 
 On Linux or macOS, you can use `zig build -Dapp-runtime=glfw run` for a quick GLFW-based app for a faster development cycle while developing core terminal features. Note that this app is missing many features and is also known to crash in certain scenarios, so it is only meant for development tasks.
 
@@ -175,6 +175,18 @@ Other useful commands:
 -   `zig build test` for running unit tests.
 -   `zig build test -Dtest-filter=<filter>` for running a specific subset of those unit tests
 -   `zig build run -Dconformance=<name>` runs a conformance test case from the `conformance` directory. The `name` is the name of the file. This runs in the current running terminal emulator so if you want to check the behavior of this project, you must run this command in Ghostty.
+
+### Extra Dependencies
+
+Building Ghostty from a Git checkout on Linux requires some additional dependencies:
+
+-   `blueprint-compiler`
+
+macOS users don't require any additional dependencies.
+
+Note
+
+This only applies to building from a _Git checkout_. This section does not apply if you're building from a released _source tarball_. For source tarballs, see the website.
 
 ### Linting
 
@@ -198,7 +210,7 @@ nix develop -c prettier --write .
 
 Nix modules are formatted with Alejandra. An Alejandra CI check will fail builds with improper formatting.
 
-Nix users can use the following command to format with Alejanda:
+Nix users can use the following command to format with Alejandra:
 
 ```
 nix develop -c alejandra .

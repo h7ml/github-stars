@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10394
+stars: 10434
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -204,6 +204,14 @@ moemail
 MoeMail - 基于 NextJS + Cloudflare 技术栈构建的可爱临时邮箱服务 。
 
 https://moemail.app
+
+维护中
+
+zmail
+
+Z-Mail - 基于 CloudFlare 的 pages、worker 以及 D1 SQL 搭建的极简临时邮箱服务，支持接收附件。
+
+https://mail.mdzz.uk/
 
 维护中
 

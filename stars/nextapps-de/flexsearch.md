@@ -1,19 +1,17 @@
 ---
 project: flexsearch
-stars: 12765
+stars: 12793
 description: Next-Generation full text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
 
-FlexSearch v0.8-Preview: https://github.com/nextapps-de/flexsearch/tree/v0.8-preview
-
-Let's discuss the upcoming FlexSearch v0.8 here: #415
+FlexSearch v0.8: Overview and Migration Guide
 
 ==
 
-### Web's fastest and most memory-flexible full-text search library with zero dependencies.
+### Next-Generation full-text search library for Browser and Node.js
 
-Basic Start  •  API Reference  •  Document Indexes  •  Using Worker  •  Changelog
+Basic Start  •  API Reference  •  Encoder  •  Document Search  •  Persistent Indexes  •  Using Worker  •  Tag Search  •  Resolver  •  Customization  •  Changelog
 
 Support this Project
 --------------------
@@ -25,28 +23,50 @@ You can help me by making a personal donation to keep this project alive and als
   
 Antithesis Operations LLC
 
-When it comes to raw search speed FlexSearch outperforms every single searching library out there and also provides flexible search capabilities like multi-field search, phonetic transformations or partial matching.
+FlexSearch performs queries up to 1,000,000 times faster compared to other libraries by also providing powerful search capabilities like multi-field search (document search), phonetic transformations, partial matching, tag-search or suggestions.
 
-Depending on the used options it also provides the most memory-efficient index. FlexSearch introduce a new scoring algorithm called "contextual index" based on a pre-scored lexical dictionary architecture which actually performs queries up to 1,000,000 times faster compared to other libraries. FlexSearch also provides you a non-blocking asynchronous processing model as well as web workers to perform any updates or queries on the index in parallel through dedicated balanced threads.
+Bigger workloads are scalable through workers to perform any updates or queries on the index in parallel through dedicated balanced threads.
+
+The latest generation v0.8 introduce Persistent Indexes, well optimized for scaling of large datasets and running in parallel. All available features was natively ported right into the database engine of your choice.
+
+FlexSearch was nominated by the GitNation for the "Best Technology of the Year".
 
 Supported Platforms:
 
 -   Browser
 -   Node.js
 
-Library Comparison "Gulliver's Travels":
+Supported Database:
+
+-   InMemory (Default)
+-   IndexedDB (Browser)
+-   Redis
+-   SQLite
+-   Postgres
+-   MongoDB
+-   Clickhouse
+
+Demos:
+
+-   Auto-Complete
+
+Library Comparison:
 
 -   Performance Benchmark
 -   Scoring Benchmark
--   Memory Consumption
 
-Plugins (extern projects):
+Extern Projects & Plugins:
 
 -   React: https://github.com/angeloashmore/react-use-flexsearch
 -   Vue: https://github.com/Noction/vue-use-flexsearch
 -   Gatsby: https://www.gatsbyjs.org/packages/gatsby-plugin-flexsearch/
 
-### Get Latest
+Load Library (Node.js, ESM, Legacy Browser)
+-------------------------------------------
+
+npm install flexsearch
+
+The **_dist_** folder are located in: `node_modules/flexsearch/dist/`
 
 Build
 
@@ -54,41 +74,98 @@ File
 
 CDN
 
-flexsearch.bundle.js
+flexsearch.bundle.debug.js
 
 Download
 
-https://rawcdn.githack.com/nextapps-de/flexsearch/0.7.31/dist/flexsearch.bundle.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.bundle.debug.js
 
-flexsearch.light.js
-
-Download
-
-https://rawcdn.githack.com/nextapps-de/flexsearch/0.7.31/dist/flexsearch.light.js
-
-flexsearch.compact.js
+flexsearch.bundle.min.js
 
 Download
 
-https://rawcdn.githack.com/nextapps-de/flexsearch/0.7.31/dist/flexsearch.compact.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.bundle.min.js
 
-flexsearch.es5.js \*
-
-Download
-
-https://rawcdn.githack.com/nextapps-de/flexsearch/0.7.31/dist/flexsearch.es5.js
-
-ES6 Modules
+flexsearch.bundle.module.debug.js
 
 Download
 
-The _/dist/module/_ folder of this Github repository
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.bundle.module.debug.js
 
-\* The bundle "flexsearch.es5.js" includes polyfills for EcmaScript 5 Support.
+flexsearch.bundle.module.min.js
 
-#### Get Latest (NPM)
+Download
 
-npm install flexsearch
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.bundle.module.min.js
+
+flexsearch.es5.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.es5.debug.js
+
+flexsearch.es5.min.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.es5.min.js
+
+flexsearch.light.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.light.debug.js
+
+flexsearch.light.min.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.light.min.js
+
+flexsearch.light.module.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.light.module.debug.js
+
+flexsearch.light.module.min.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.light.module.min.js
+
+Javascript Modules (ESM)
+
+Download
+
+https://github.com/nextapps-de/flexsearch/tree/0.8.0/dist/module
+
+Javascript Modules Minified (ESM)
+
+Download
+
+https://github.com/nextapps-de/flexsearch/tree/0.8.0/dist/module-min
+
+Javascript Modules Debug (ESM)
+
+Download
+
+https://github.com/nextapps-de/flexsearch/tree/0.8.0/dist/module-debug
+
+flexsearch.custom.js
+
+Read more about "Custom Build"
+
+> All debug versions are providing debug information through the console and gives you helpful advices on certain situations. Do not use them in production, since they are special builds containing extra debugging processes which noticeably reduce performance.
+
+The abbreviations used at the end of the filenames indicates:
+
+-   `bundle` All features included, FlexSearch is available on `window.FlexSearch`
+-   `light` Only basic features are included, FlexSearch is available on `window.FlexSearch`
+-   `es5` bundle has support for EcmaScript5, FlexSearch is available on `window.FlexSearch`
+-   `module` indicates that this bundle is a Javascript module (ESM), FlexSearch members are available by `import { Index, Document, Worker, Encoder, Charset } from "./flexsearch.bundle.module.min.js"` or alternatively using the default export `import FlexSearch from "./flexsearch.bundle.module.min.js"`
+-   `min` bundle is minified
+-   `debug` bundle has enabled debug mode and contains additional code just for debugging purposes (do not use for production)
 
 ### Compare Web-Bundles
 
@@ -108,7 +185,7 @@ Presets
 
 ✓
 
-\-
+✓
 
 Async Search
 
@@ -134,7 +211,7 @@ Contextual Indexes
 
 ✓
 
-Index Documents (Field-Search)
+Document Search
 
 ✓
 
@@ -166,7 +243,7 @@ Relevance Scoring
 
 ✓
 
-Auto-Balanced Cache by Popularity
+Auto-Balanced Cache by Popularity/Last Queries
 
 ✓
 
@@ -174,7 +251,7 @@ Auto-Balanced Cache by Popularity
 
 \-
 
-Tags
+Tag Search
 
 ✓
 
@@ -188,9 +265,9 @@ Suggestions
 
 ✓
 
-\-
+✓
 
-Phonetic Matching
+Phonetic Match (Fuzzy Search)
 
 ✓
 
@@ -198,7 +275,7 @@ Phonetic Matching
 
 \-
 
-Customizable Charset/Language (Matcher, Encoder, Tokenizer, Stemmer, Filter, Split, RTL)
+Encoder
 
 ✓
 
@@ -210,216 +287,196 @@ Export / Import Indexes
 
 ✓
 
+✓
+
+\-
+
+Resolver
+
+✓
+
+\-
+
+\-
+
+Persistent Index (IndexedDB)
+
+✓
+
 \-
 
 \-
 
 File Size (gzip)
 
-6.8 kb
+14.0 kb
 
-5.3 kb
+9.0 kb
 
-2.9 kb
+4.4 kb
 
 Performance Benchmark (Ranking)
 -------------------------------
 
 Run Comparison: Performance Benchmark "Gulliver's Travels"
 
-Operation per seconds, higher is better, except the test "Memory" on which lower is better.
-
-Rank
+The benchmark was measured in terms per seconds, higher values are better (except the test "Memory"). The memory value refers to the amount of memory which was additionally allocated during search.
 
 Library
 
 Memory
 
-Query (Single Term)
+Query: Single
 
-Query (Multi Term)
+Query: Multi
 
-Query (Long)
+Query: Large
 
-Query (Dupes)
+Query: Not Found
 
-Query (Not Found)
-
-1
-
-FlexSearch
-
-**17**
-
-**7084129**
-
-**1586856**
-
-**511585**
-
-**2017142**
-
-3202006
-
-2
-
-JSii
-
-27
-
-6564
-
-158149
-
-61290
-
-95098
-
-534109
-
-3
-
-Wade
-
-424
-
-20471
-
-78780
-
-16693
-
-225824
-
-213754
-
-4
-
-JS Search
-
-193
-
-8221
-
-64034
-
-10377
-
-95830
-
-167605
-
-5
-
-Elasticlunr.js
-
-646
-
-5412
-
-7573
-
-2865
-
-23786
-
-13982
+flexsearch
 
 6
 
-BulkSearch
+58517675
 
-1021
+43198115
 
-3069
+51027989
 
-3141
+62833661
 
-3333
+jsii
 
-3265
+1433
 
-**21825569**
+13588
 
-7
+881007
 
-MiniSearch
+1567895
 
-24348
+3474710
 
-4406
+wade
 
-10945
+717
 
-72
+60598
 
-39989
+439914
 
-17624
+424209
 
-8
+1287136
+
+js-search
+
+2100
+
+22562
+
+372234
+
+417775
+
+963609
+
+minisearch
+
+4126
+
+29360
+
+186900
+
+5695
+
+297981
+
+elasticlunr
+
+681
+
+13913
+
+46548
+
+96998
+
+93732
+
+orama
+
+12881
+
+27918
+
+167979
+
+4327
+
+221231
+
+lunr
+
+2495
+
+11178
+
+49087
+
+85513
+
+100487
+
+ufuzzy
+
+24802
+
+2720
+
+7569
+
+57027
+
+9413
 
 bm25
 
-15719
+33502
 
-1429
+3681
 
-789
+4781
 
-366
+12923
 
-884
+12804
 
-1823
+fuzzysearch
 
-9
+142915
 
-Lunr.js
+145
 
-2219
+221
 
-255
-
-271
-
-272
+436
 
 266
 
-267
+fuse
 
-10
+363722
 
-FuzzySearch
+410
 
-157373
+312
 
-53
+330
 
-38
-
-15
-
-32
-
-43
-
-11
-
-Fuse
-
-7641904
-
-6
-
-2
-
-1
-
-2
-
-3
+319
 
 Load Library
 ------------
@@ -432,83 +489,130 @@ There are 3 types of indexes:
 
 The most of you probably need just one of them according to your scenario.
 
-### Browser
+### Non-Module Bundles (ES5 Legacy)
 
-#### Legacy ES5 Script Tag (Bundled)
+> Non-Module Bundles export all their features to the public namespace "FlexSearch" e.g. `window.FlexSearch.Index` or `window.FlexSearch.Document`.
 
-<script src\="node\_modules/flexsearch/dist/flexsearch.bundle.min.js"\></script\>
+Load the bundle by a script tag:
+
+<script src\="dist/flexsearch.bundle.min.js"\></script\>
 <script\>
-
-    // FlexSearch is available on window.FlexSearch
-    // Access FlexSearch static methods via bundled export (static class methods of FlexSearch)
-
-    const index \= FlexSearch.Index(options);
-    const document \= FlexSearch.Document(options);
-    const worker \= FlexSearch.Worker(options);
-
+  // ... access FlexSearch
+  var Index \= window.FlexSearch.Index;
+  var index \= new Index(/\* ... \*/);
 </script\>
 
-#### ESM/ES6 Modules:
+FlexSearch Members are accessible on:
+
+var Index \= window.FlexSearch.Index;
+var Document \= window.FlexSearch.Document;
+var Encoder \= window.FlexSearch.Encoder;
+var Charset \= window.FlexSearch.Charset;
+var Resolver \= window.FlexSearch.Resolver;
+var Worker \= window.FlexSearch.Worker;
+var IdxDB \= window.FlexSearch.IndexedDB;
+// only exported by non-module builds:
+var Language \= window.FlexSearch.Language;
+
+Load language packs:
+
+<!-- English: -->
+<script src\="dist/lang/en.min.js"\></script\>
+<!-- German: -->
+<script src\="dist/lang/de.min.js"\></script\>
+<!-- French: -->
+<script src\="dist/lang/fr.min.js"\></script\>
+<script\>
+  var EnglishEncoderPreset \= window.FlexSearch.Language.en;
+  var GermanEncoderPreset \= window.FlexSearch.Language.de;
+  var FrenchEncoderPreset \= window.FlexSearch.Language.fr;
+</script\>
+
+### Module (ESM)
+
+When using modules you can choose from 2 variants: `flexsearch.xxx.module.min.js` has all features bundled ready for production, whereas the folder `/dist/module/` export all the features in the same structure as the source code but here compiler flags was resolved.
+
+Also, for each variant there exist:
+
+1.  A debug version for the development
+2.  A pre-compiled minified version for production
+
+Use the bundled version exported as a module (default export):
 
 <script type\="module"\>
-
-    // FlexSearch is NOT available on window.FlexSearch
-    // Access FlexSearch static methods by importing them explicitly
-
-    import Index from "./node\_modules/flexsearch/dist/module/index";
-    import Document from "./node\_modules/flexsearch/dist/module/document";
-    import Worker from "./node\_modules/flexsearch/dist/module/worker";
-
-    const index \= new Index(options);
-    const document \= new Document(options);
-    const worker \= new Worker(options);
-
+    import FlexSearch from "./dist/flexsearch.bundle.module.min.js";
+    const index \= new FlexSearch.Index(/\* ... \*/);
 </script\>
 
-#### ESM/ES6 Bundled Module:
+Or import FlexSearch members separately by:
 
 <script type\="module"\>
-
-    // FlexSearch is NOT available on window.FlexSearch
-    // Access FlexSearch static methods via bundled export (static class methods of FlexSearch)
-
-    import FlexSearch from "./node\_modules/flexsearch/dist/flexsearch.bundle.module.min.js";
-
-    const index \= FlexSearch.Index(options);
-    const document \= FlexSearch.Document(options);
-    const worker \= FlexSearch.Worker(options);
-
+    import { Index, Document, Encoder, Charset, Resolver, Worker, IdxDB } 
+        from "./dist/flexsearch.bundle.module.min.js";
+    const index \= new Index(/\* ... \*/);
 </script\>
 
-Or via CDN:
+Use non-bundled modules:
 
-<script src\="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.41/dist/flexsearch.bundle.min.js"\></script\>
+<script type\="module"\>
+    import Index from "./dist/module/index.js";
+    import Document from "./dist/module/document.js";
+    import Encoder from "./dist/module/encoder.js";
+    import Charset from "./dist/module/charset.js";
+    import Resolver from "./dist/module/resolver.js";
+    import Worker from "./dist/module/worker.js";
+    import IdxDB from "./dist/module/db/indexeddb/index.js";
+    const index \= new Index(/\* ... \*/);
+</script\>
 
-AMD / CommonJS:
+Language packs are accessible via:
 
-var FlexSearch \= require("./node\_modules/flexsearch/dist/flexsearch.bundle.min.js");
+import EnglishEncoderPreset from "./dist/module/lang/en.js";
+import GermanEncoderPreset from "./dist/module/lang/de.js";
+import FrenchEncoderPreset from "./dist/module/lang/fr.js";
+
+Also, pre-compiled non-bundled production-ready modules are located in `dist/module-min/`, whereas the debug version is located at `dist/module-debug/`.
+
+You can also load modules via CDN:
+
+<script type\="module"\>
+    import Index from "https://unpkg.com/flexsearch@0.8.0/dist/module/index.js";
+    const index \= new Index(/\* ... \*/);
+</script\>
 
 ### Node.js
+
+Install FlexSearch via NPM:
 
 ```
 npm install flexsearch
 ```
 
-In your code include as follows:
-
-const { Index, Document, Worker } \= require("flexsearch");
-
-const index \= new Index(options);
-const document \= new Document(options);
-const worker \= new Worker(options);
-
-Or:
+Use the default export:
 
 const FlexSearch \= require("flexsearch");
+const index \= new FlexSearch.Index(/\* ... \*/);
 
-const index \= new FlexSearch.Index(options);
-const document \= new FlexSearch.Document(options);
-const worker \= new FlexSearch.Worker(options);
+Or require FlexSearch members separately by:
+
+const { Index, Document, Encoder, Charset, Resolver, Worker, IdxDB } \= require("flexsearch");
+const index \= new Index(/\* ... \*/);
+
+When you are using ESM in Node.js then just use the Modules explained one section above.
+
+Language packs are accessible via:
+
+const EnglishEncoderPreset \= require("flexsearch/lang/en");
+const GermanEncoderPreset \= require("flexsearch/lang/de");
+const FrenchEncoderPreset \= require("flexsearch/lang/fr");
+
+Persistent Connectors are accessible via:
+
+const Postgres \= require("flexsearch/db/postgres");
+const Sqlite \= require("flexsearch/db/sqlite");
+const MongoDB \= require("flexsearch/db/mongodb");
+const Redis \= require("flexsearch/db/redis");
+const Clickhouse \= require("flexsearch/db/clickhouse");
 
 Basic Usage and Variants
 ------------------------
@@ -539,6 +643,68 @@ worker.search(options);
 The `worker` inherits from type `Index` and does not inherit from type `Document`. Therefore, a WorkerIndex basically works like a standard FlexSearch Index. Worker-Support in documents needs to be enabled by just passing the appropriate option during creation `{ worker: true }`.
 
 > Every method called on a `Worker` index is treated as async. You will get back a `Promise` or you can provide a callback function as the last parameter alternatively.
+
+### Examples Node.js
+
+-   nodejs-commonjs:
+    -   basic
+    -   basic-suggestion
+    -   basic-persistent
+    -   basic-resolver
+    -   basic-worker
+    -   basic-worker-extern-config
+    -   basic-worker-export-import
+    -   basic-export-import
+    -   document
+    -   document-persistent
+    -   document-worker
+    -   document-worker-extern-config
+    -   document-export-import
+    -   document-worker-export-import
+    -   language-pack
+-   nodejs-esm:
+    -   basic
+    -   basic-suggestion
+    -   basic-persistent
+    -   basic-resolver
+    -   basic-worker
+    -   basic-worker-extern-config
+    -   basic-worker-export-import
+    -   basic-export-import
+    -   document
+    -   document-persistent
+    -   document-worker
+    -   document-worker-extern-config
+    -   document-export-import
+    -   document-worker-export-import
+    -   language-pack
+
+### Examples Browser
+
+-   browser-legacy:
+    -   basic
+    -   basic-suggestion
+    -   basic-persistent
+    -   basic-resolver
+    -   basic-worker
+    -   document
+    -   document-highlighting
+    -   document-persistent
+    -   document-worker
+    -   language-pack
+-   browser-module:
+    -   basic
+    -   basic-suggestion
+    -   basic-persistent
+    -   basic-resolver
+    -   basic-worker
+    -   basic-worker-extern-config
+    -   document
+    -   document-highlighting
+    -   document-persistent
+    -   document-worker
+    -   document-worker-extern-config
+    -   language-pack
 
 API Overview
 ------------
@@ -1156,6 +1322,10 @@ var index \= new FlexSearch({
     resolution: 5
 });
 
+The resolution refers to the maximum count of scoring slots on which the content is divided into.
+
+> A formula to determine a well-balanced value for the `resolution` is: $2\*floor(\\sqrt{content.length})$ where content is the value pushed by `index.add()`. Here the maximum length of all contents should be used.
+
 See all available custom options.
 
 #### Add text item to an index
@@ -1221,8 +1391,8 @@ async function search(){
     console.log("Results: ", result);
 }
 
-Append Contents
----------------
+Append Contents (\*deprecated)
+------------------------------
 
 You can append contents to an existing index like:
 
@@ -2199,12 +2369,34 @@ Of course, you can do that but keep in mind that the main thread does not have a
 
 > When adding/updating/removing large bulks of content to the index (or high frequency), it is recommended to use the async version along with `async/await` to keep a low memory footprint during long processes.
 
-Export / Import
----------------
+Export / Import (In-Memory)
+---------------------------
 
-### Export
+### Node.js
 
-The export has slightly changed. The export now consist of several smaller parts, instead of just one large bulk. You need to pass a callback function which has 2 arguments "key" and "data". This callback function is called by each part, e.g.:
+> Persistent-Indexes and Worker-Indexes don't support Import/Export.
+
+Export an `Index` or `Document-Index` to the folder `/export/`:
+
+import { promises as fs } from "fs";
+
+await index.export(async function(key, data){
+  await fs.writeFile("./export/" + key, data, "utf8");
+});
+
+Import from folder `/export/` into an `Index` or `Document-Index`:
+
+const index \= new Index({/\* keep old config and place it here \*/});
+
+const files \= await fs.readdir("./export/");
+for(let i \= 0; i < files.length; i++){
+  const data \= await fs.readFile("./export/" + files\[i\], "utf8");
+  await index.import(files\[i\], data);
+}
+
+> You'll need to use the same configuration as you used before the export. Any changes on the configuration needs to be re-indexed.
+
+### Browser
 
 index.export(function(key, data){ 
     
@@ -2214,11 +2406,9 @@ index.export(function(key, data){
     localStorage.setItem(key, data);
 });
 
-Exporting data to the localStorage isn't really a good practice, but if size is not a concern than use it if you like. The export primarily exists for the usage in Node.js or to store indexes you want to delegate from a server to the client.
-
 > The size of the export corresponds to the memory consumption of the library. To reduce export size you have to use a configuration which has less memory footprint (use the table at the bottom to get information about configs and its memory allocation).
 
-When your save routine runs asynchronously you have to return a promise:
+When your save routine runs asynchronously you have to use `async/await` or return a promise:
 
 index.export(function(key, data){ 
     
@@ -2230,29 +2420,192 @@ index.export(function(key, data){
     });
 });
 
-> You cannot export the additional table for the "fastupdate" feature. These table exists of references and when stored they fully get serialized and becomes too large. The lib will handle these automatically for you. When importing data, the index automatically disables "fastupdate".
-
-### Import
-
 Before you can import data, you need to create your index first. For document indexes provide the same document descriptor you used when export the data. This configuration isn't stored in the export.
 
-var index \= new Index({ ... });
+const index \= new Index({/\* keep old config and place it here \*/});
 
 To import the data just pass a key and data:
 
-index.import(key, localStorage.getItem(key));
+```
+const data = localStorage.getItem(key);
+index.import(key, data);
+```
 
 You need to import every key! Otherwise, your index does not work. You need to store the keys from the export and use this keys for the import (the order of the keys can differ).
+
+> The feature "fastupdate" is automatically disabled on import.
 
 This is just for demonstration and is not recommended, because you might have other keys in your localStorage which aren't supported as an import:
 
 var keys \= Object.keys(localStorage);
 
-for(let i \= 0, key; i < keys.length; i++){
-    
-    key \= keys\[i\];
-    index.import(key, localStorage.getItem(key));
+for(let i \= 0, key, data; i < keys.length; i++){
+    key \= keys\[i\]
+    data \= localStorage.getItem(key);
+    index.import(key, data);
 }
+
+Encoder
+-------
+
+Search capabilities highly depends on language processing. The old workflow wasn't really practicable. The new Encoder class is a huge improvement and fully replaces the encoding part. Some FlexSearch options was moved to the new `Encoder` instance.
+
+New Encoding Pipeline:
+
+1.  charset normalization
+2.  custom preparation
+3.  split into terms (apply includes/excludes)
+4.  filter (pre-filter)
+5.  matcher (substitute terms)
+6.  stemmer (substitute term endings)
+7.  filter (post-filter)
+8.  replace chars (mapper)
+9.  custom regex (replacer)
+10.  letter deduplication
+11.  apply finalize
+
+### Example
+
+const encoder \= new Encoder({
+    normalize: true,
+    dedupe: true,
+    cache: true,
+    include: {
+        letter: true,
+        number: true,
+        symbol: false,
+        punctuation: false,
+        control: false,
+        char: "@"
+    }
+});
+
+You can use an `include` **instead** of an `exclude` definition:
+
+const encoder \= new Encoder({
+    exclude: {
+        letter: false,
+        number: false,
+        symbol: true,
+        punctuation: true,
+        control: true
+    }
+});
+
+Instead of using `include` or `exclude` you can pass a regular expression to the field `split`:
+
+const encoder \= new Encoder({
+    split: /\\s+/
+});
+
+> The definitions `include` and `exclude` is a replacement for `split`. You can just define one of those 3.
+
+Adding custom functions to the encoder pipeline:
+
+const encoder \= new Encoder({
+    normalize: function(str){
+        return str.toLowerCase();
+    },
+    prepare: function(str){
+        return str.replace(/&/g, " and ");
+    },
+    finalize: function(arr){
+        return arr.filter(term \=> term.length \> 2);
+    }
+});
+
+Assign encoder to an index:
+
+const index \= new Index({ 
+    encoder: encoder
+});
+
+Define language specific transformations:
+
+const encoder \= new Encoder({
+    replacer: \[
+        /\[´\`’ʼ\]/g, "'"
+    \],
+    filter: new Set(\[
+        "and",
+    \]),
+    matcher: new Map(\[
+        \["xvi", "16"\]
+    \]),
+    stemmer: new Map(\[
+        \["ly", ""\]
+    \]),
+    mapper: new Map(\[
+        \["é", "e"\]
+    \])
+});
+
+Or use predefined language and extend it with custom options:
+
+import EnglishBookPreset from "./lang/en.js";
+const encoder \= new Encoder(EnglishBookPreset, {
+    filter: false
+});
+
+Equivalent:
+
+import EnglishBookPreset from "./lang/en.js";
+const encoder \= new Encoder(EnglishBookPreset);
+encoder.assign({ filter: false });
+
+Assign extensions to the encoder instance:
+
+import LatinEncoderPreset from "./charset/latin/simple.js";
+import EnglishBookPreset from "./lang/en.js";
+// stack definitions to the encoder instance
+const encoder \= new Encoder()
+    .assign(LatinEncoderPreset)
+    .assign(EnglishBookPreset)
+    // override preset options ...
+    .assign({ minlength: 3 });
+    // assign further presets ...
+
+> When adding extension to the encoder every previously assigned configuration is still intact, very much like Mixins, also when assigning custom functions.
+
+Add custom transformations to an existing index:
+
+import LatinEncoderPreset from "./charset/latin/default.js";
+const encoder \= new Encoder(LatinEncoderPreset);
+encoder.addReplacer(/\[´\`’ʼ\]/g, "'");
+encoder.addFilter("and");
+encoder.addMatcher("xvi", "16");
+encoder.addStemmer("ly", "");
+encoder.addMapper("é", "e");
+
+Shortcut for just assigning one encoder configuration to an index:
+
+import LatinEncoderPreset from "./charset/latin/default.js";
+const index \= new Index({ 
+    encoder: LatinEncoderPreset
+});
+
+### Custom Encoder
+
+Since it is very simple to create a custom Encoder, you are welcome to create your own. e.g.
+
+function customEncoder(content){
+   const tokens \= \[\];
+   // split content into terms/tokens
+   // apply your changes to each term/token
+   // you will need to return an Array of terms/tokens
+   // so just iterate through the input string and
+   // push tokens to the array
+   // ...
+   return tokens;
+}
+
+const index \= new Index({
+   // set to strict when your tokenization was already done
+   tokenize: "strict",
+   encode: customEncoder
+});
+
+If you get some good results please feel free to share your encoder.
 
 Languages
 ---------
@@ -2477,140 +2830,125 @@ Basically the charset needs just to provide an encoder function along with an in
 export function encode(str){ return \[str\] }
 export const rtl \= false;
 
-Encoder Matching Comparison
----------------------------
+Fuzzy-Search
+------------
 
-> Reference String: **"Björn-Phillipp Mayer"**
+Fuzzysearch describes a basic concept of how making queries more tolerant. FlexSearch provides several methods to achieve fuzziness:
 
-Query
+1.  Use a tokenizer: `forward`, `reverse` or `full`
+2.  Don't forget to use any of the builtin encoder `simple` > `balance` > `advanced` > `extra` > `soundex` (sorted by fuzziness)
+3.  Use one of the language specific presets e.g. `/lang/en.js` for en-US specific content
+4.  Enable suggestions by passing the search option `suggest: true`
 
-default
+Additionally, you can apply custom `Mapper`, `Replacer`, `Stemmer`, `Filter` or by assigning a custom `normalize(str)`, `prepare(str)` or `finalize(arr)` function to the Encoder.
 
-simple
+### Compare Fuzzy-Search Encoding
 
-advanced
+Original term which was indexed: "Struldbrugs"
 
-extra
+Encoder:
 
-björn
+`LatinExact`
 
-**yes**
+`LatinDefault`
 
-**yes**
+`LatinSimple`
 
-**yes**
+`LatinBalance`
 
-**yes**
+`LatinAdvanced`
 
-björ
+`LatinExtra`
 
-**yes**
+`LatinSoundex`
 
-**yes**
+Index Size
 
-**yes**
+3.1 Mb
 
-**yes**
+1.9 Mb
 
-bjorn
+1.8 Mb
 
-no
+1.7 Mb
 
-**yes**
+1.6 Mb
 
-**yes**
+1.1 Mb
 
-**yes**
+0.7 Mb
 
-bjoern
+Struldbrugs
 
-no
+✓
 
-no
+✓
 
-**yes**
+✓
 
-**yes**
+✓
 
-philipp
+✓
 
-no
+✓
 
-no
+✓
 
-**yes**
+struldbrugs
 
-**yes**
+✓
 
-filip
+✓
 
-no
+✓
 
-no
+✓
 
-**yes**
+✓
 
-**yes**
+✓
 
-björnphillip
+strũldbrųĝgs
 
-no
+✓
 
-**yes**
+✓
 
-**yes**
+✓
 
-**yes**
+✓
 
-meier
+✓
 
-no
+strultbrooks
 
-no
+✓
 
-**yes**
+✓
 
-**yes**
+✓
 
-björn meier
+✓
 
-no
+shtruhldbrohkz
 
-no
+✓
 
-**yes**
+✓
 
-**yes**
+✓
 
-meier fhilip
+zdroltbrykz
 
-no
+✓
 
-no
+✓
 
-**yes**
+struhlbrogger
 
-**yes**
+✓
 
-byorn mair
-
-no
-
-no
-
-no
-
-**yes**
-
-_(false positives)_
-
-**no**
-
-**no**
-
-**no**
-
-yes
+The index size was measured after indexing the book "Gulliver's Travels".
 
 Memory Allocation
 -----------------
@@ -2635,8 +2973,6 @@ index \= new Index({
 
 The book "Gulliver's Travels" (Swift Jonathan 1726) was completely indexed for this test:
 
-  
-
 ### Compare Impact of Memory Allocation
 
 by default a lexical index is very small:  
@@ -2660,260 +2996,6 @@ using bidirectional will decrease memory allocation:
 enable the option "fastupdate" will increase memory allocation:  
 `depth: 2, bidirectional: 1, resolution: 9, minlength: 3` => 6.3 Mb
 
-### Full Comparison Table
-
-Every search library is constantly in competition with these 4 properties:
-
-1.  Memory Allocation
-2.  Performance
-3.  Matching Capabilities
-4.  Relevance Order (Scoring)
-
-FlexSearch provides you many parameters you can use to adjust the optimal balance for your specific use-case.
-
-Modifier
-
-Memory Impact \*
-
-Performance Impact \*\*
-
-Matching Impact \*\*
-
-Scoring Impact \*\*
-
-resolution
-
-+1 (per level)
-
-+1 (per level)
-
-0
-
-+2 (per level)
-
-depth
-
-+4 (per level)
-
-\-1 (per level)
-
-\-10 + depth
-
-+10
-
-minlength
-
-\-2 (per level)
-
-+2 (per level)
-
-\-3 (per level)
-
-+2 (per level)
-
-bidirectional
-
-\-2
-
-0
-
-+3
-
-\-1
-
-fastupdate
-
-+1
-
-+10 (update, remove)
-
-0
-
-0
-
-optimize: true
-
-\-7
-
-\-1
-
-0
-
-\-3
-
-encoder: "icase"
-
-0
-
-0
-
-0
-
-0
-
-encoder: "simple"
-
-\-2
-
-\-1
-
-+2
-
-0
-
-encoder: "advanced"
-
-\-3
-
-\-2
-
-+4
-
-0
-
-encoder: "extra"
-
-\-5
-
-\-5
-
-+6
-
-0
-
-encoder: "soundex"
-
-\-6
-
-\-2
-
-+8
-
-0
-
-tokenize: "strict"
-
-0
-
-0
-
-0
-
-0
-
-tokenize: "forward"
-
-+3
-
-\-2
-
-+5
-
-0
-
-tokenize: "reverse"
-
-+5
-
-\-4
-
-+7
-
-0
-
-tokenize: "full"
-
-+8
-
-\-5
-
-+10
-
-0
-
-document index
-
-+3 (per field)
-
-\-1 (per field)
-
-0
-
-0
-
-document tags
-
-+1 (per tag)
-
-\-1 (per tag)
-
-0
-
-0
-
-store: true
-
-+5 (per document)
-
-0
-
-0
-
-0
-
-store: \[fields\]
-
-+1 (per field)
-
-0
-
-0
-
-0
-
-cache: true
-
-+10
-
-+10
-
-0
-
-0
-
-cache: 100
-
-+1
-
-+9
-
-0
-
-0
-
-type of ids: number
-
-0
-
-0
-
-0
-
-0
-
-type of ids: string
-
-+3
-
-\-3
-
-0
-
-0
-
-\* range from -10 to 10, lower is better (-10 => big decrease, 0 => unchanged, +10 => big increase)  
-\*\* range from -10 to 10, higher is better
-
 Presets
 -------
 
@@ -2930,48 +3012,11 @@ You can pass a preset during creation/initialization of the index.
 Best Practices
 --------------
 
-##### Use numeric IDs
+### Use numeric IDs
 
 It is recommended to use numeric id values as reference when adding content to the index. The byte length of passed ids influences the memory consumption significantly. If this is not possible you should consider to use a index table and map the ids with indexes, this becomes important especially when using contextual indexes on a large amount of content.
 
-##### Split Complexity
-
-Whenever you can, try to divide content by categories and add them to its own index, e.g.:
-
-var action \= new FlexSearch();
-var adventure \= new FlexSearch();
-var comedy \= new FlexSearch();
-
-This way you can also provide different settings for each category. This is actually the fastest way to perform a fuzzy search.
-
-To make this workaround more extendable you can use a short helper:
-
-var index \= {};
-
-function add(id, cat, content){
-    (index\[cat\] || (
-        index\[cat\] \= new FlexSearch
-    )).add(id, content);
-}
-
-function search(cat, query){
-    return index\[cat\] ?
-        index\[cat\].search(query) : \[\];
-}
-
-Add content to the index:
-
-add(1, "action", "Movie Title");
-add(2, "adventure", "Movie Title");
-add(3, "comedy", "Movie Title");
-
-Perform queries:
-
-var results \= search("action", "movie title"); // --> \[1\]
-
-Split indexes by categories improves performance significantly.
-
 * * *
 
-Copyright 2018-2023 Thomas Wilkerling, Hosted by Nextapps GmbH  
+Copyright 2018-2025 Thomas Wilkerling, Hosted by Nextapps GmbH  
 Released under the Apache 2.0 License

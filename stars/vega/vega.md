@@ -1,6 +1,6 @@
 ---
 project: vega
-stars: 11397
+stars: 11411
 description: A visualization grammar.
 url: https://github.com/vega/vega
 ---
@@ -13,15 +13,6 @@ Vega: A Visualization Grammar
 For documentation, tutorials, and examples, see the Vega website. For a description of changes between Vega 2 and later versions, please refer to the Vega Porting Guide.
 
 Try using Vega in the online Vega Editor.
-
-Internet Explorer Support
--------------------------
-
-For backwards compatibility, Vega includes a babel-ified IE-compatible version of the code in the `packages/vega/build-es5` directory. Older browsers also require these polyfill libraries:
-
-<script src\="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.4/polyfill.min.js"\></script\>
-<script src\="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.3/runtime.min.js"\></script\>
-<script src\="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"\></script\>
 
 Contributions, Development, and Support
 ---------------------------------------

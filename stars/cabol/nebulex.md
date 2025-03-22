@@ -1,6 +1,6 @@
 ---
 project: nebulex
-stars: 1276
+stars: 1278
 description: In-memory and distributed caching toolkit for Elixir.
 url: https://github.com/cabol/nebulex
 ---

@@ -1,6 +1,6 @@
 ---
 project: parent
-stars: 268
+stars: 273
 description: Custom parenting of processes in Elixir
 url: https://github.com/sasa1977/parent
 ---

@@ -1,6 +1,6 @@
 ---
 project: syslog-ng
-stars: 2195
+stars: 2199
 description: syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL.
 url: https://github.com/syslog-ng/syslog-ng
 ---
@@ -16,7 +16,7 @@ Quickstart
 The simplest configuration accepts system logs from /dev/log (from applications or forwarded by systemd) and writes everything to a single file:
 
 ```
-@version: 4.8
+@version: current
 @include "scl.conf"
 
 log {
@@ -28,7 +28,7 @@ log {
 This one additionally processes logs from the network (TCP/514 by default):
 
 ```
-@version: 4.8
+@version: current
 @include "scl.conf"
 
 log {
@@ -43,7 +43,7 @@ log {
 This config is designed for structured/application logging, using local submission via JSON, and outputting in key=value format:
 
 ```
-@version: 4.8
+@version: current
 @include "scl.conf"
 
 log {
@@ -228,7 +228,7 @@ x86-64
 
 #### Nightly builds
 
-Nightly packages are built and released from the git `master` branch everyday.
+Nightly packages are built and released from the git `develop` branch everyday.
 
 Use `nightly` instead of `stable` in step 2 to use the nightly APT repository. E.g.:
 
@@ -274,4 +274,4 @@ The official documentation of the earlier versions (3.X) of syslog-ng Open Sourc
 Contributing
 ------------
 
-If you would like to contribute to syslog-ng, to fix a bug or create a new module, the syslog-ng pages helps you take the first steps to working with the code base.
+If you would like to contribute to syslog-ng, to fix a bug or create a new module, the syslog-ng developer pages helps you take the first steps to working with the code base.
