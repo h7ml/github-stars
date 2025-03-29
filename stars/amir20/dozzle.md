@@ -1,6 +1,6 @@
 ---
 project: dozzle
-stars: 8010
+stars: 8055
 description: Realtime log viewer for docker containers. 
 url: https://github.com/amir20/dozzle
 ---

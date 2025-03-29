@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10434
+stars: 10490
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -617,6 +617,14 @@ cf-workers-status-page
 监控您的网站，展示状态（包括每日历史记录），并在网站状态发生变化时收到 Slack 通知。使用 Cloudflare Workers、CRON 触发器和 KV 存储。
 
 https://status-page.eidam.dev/
+
+维护中
+
+xugou
+
+基于 CloudFlare 的站点监控以及服务器监控工具。
+
+https://xugou.mdzz.uk/
 
 维护中
 

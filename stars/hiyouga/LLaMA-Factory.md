@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 44997
+stars: 45621
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -273,7 +273,7 @@ Gemma 3
 
 1B/4B/12B/27B
 
-gemma3
+gemma3/gemma (1B)
 
 GLM-4
 
@@ -439,7 +439,7 @@ qwen2\_audio
 
 Qwen2-VL/Qwen2.5-VL/QVQ
 
-2B/3B/7B/72B
+2B/3B/7B/32B/72B
 
 qwen2\_vl
 
@@ -703,13 +703,13 @@ torch
 
 1.13.1
 
-2.5.1
+2.6.0
 
 transformers
 
 4.41.2
 
-4.49.0
+4.50.0
 
 datasets
 
@@ -725,9 +725,9 @@ accelerate
 
 peft
 
-0.11.1
+0.14.0
 
-0.12.0
+0.15.0
 
 trl
 

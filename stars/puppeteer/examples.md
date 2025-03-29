@@ -1,6 +1,6 @@
 ---
 project: examples
-stars: 2385
+stars: 2386
 description: Use case-driven examples for using Puppeteer and headless chrome
 url: https://github.com/puppeteer/examples
 ---

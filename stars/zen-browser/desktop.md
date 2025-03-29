@@ -1,13 +1,13 @@
 ---
 project: desktop
-stars: 27472
+stars: 27865
 description: A calmer internet, without any gimmicks.
 url: https://github.com/zen-browser/desktop
 ---
 
 ### `Zen Browser`
 
-✨ Experience tranquillity while browsing the web without people tracking you! Zen is a privacy-focused browser that blocks trackers, ads, and other unwanted content while offering the best browsing experience!
+✨ Experience tranquillity while browsing the internet with Zen! Our mission is to give you a balance between speed, privacy and productivity!
 
 Download • Website • Documentation • Release Notes
 

@@ -5,25 +5,25 @@ description: Write WebAssembly with Elixir
 url: https://github.com/RoyalIcing/Orb
 ---
 
-Orb: Write WebAssembly with Elixir
-==================================
+Orb: Write Composable WebAssembly using Elixir
+==============================================
 
 Docs | Examples
 
 Features
 --------
 
-Write WebAssembly with the power of Elixir as your compiler:
+Write WebAssembly using Elixir as your compiler:
 
 -   Allow access to nearly all WebAssembly 1.0 instructions.
--   Produce tiny `.wasm` executables: kilobytes not megabytes.
--   Use Elixir modules to organize and reuse code.
--   Use Elixir functions and macros to create composable abstractions.
--   Chain function calls together with the **pipe `|>` operator**.
--   Run any Elixir code at compile time, including Hex packages. e.g. talk to the rest of your Elixir application, call out to an Elixir library, or make network requests.
--   **Write unit tests** using Elixir’s built-in ExUnit.
--   **Compile modules on-the-fly** e.g. use feature flags to conditionally compile code paths or enable particular WebAssembly instructions, creating a custom “tree shaken” WebAssembly module per user.
--   Define your own WebAssembly instructions that output to `wat` and `wasm` formats.
+-   Produce tiny `.wasm` executables: **kilobytes not megabytes**. It has zero runtime overhead: define a function or global and that’s all that is compiled.
+-   Use Elixir **modules to organize and reuse** code, functions and **macros to create composable abstractions**, and chain function calls together with the **pipe `|>` operator**. Publish your code to Hex.
+-   Run **any Elixir code at compile time** e.g. call out to an Elixir library, or make network requests, or integrate within an existing Elixir application — and have it influence what WebAssembly instructions are output.
+-   **Dynamically assemble modules on-the-fly** e.g. use feature flags to conditionally compile code paths, creating custom “tree shaken” WebAssembly modules.
+-   **Write automated tests** using Elixir’s ExUnit.
+-   Define your own custom WebAssembly instructions and abstractions that output to `wat` and `wasm` formats.
+
+I think of it as like how React’s JSX lets you write dynamic HTML in JavaScript, Orb lets you write dynamic WebAssembly in Elixir.
 
 Status
 ------
@@ -33,15 +33,17 @@ Orb is alpha in active development. My aim is to refine the current feature set 
 Anti-Features
 -------------
 
--   Allow executing any Elixir code in WebAssembly runtime. It’s not a goal of Orb to take a piece of everyday Elixir code and have it run in WebAssembly. However, because you can use macros you could decide to build that functionality on top of Orb.
--   Allow access to the DOM. I believe the DOM is a poor fit for WebAssembly with its big object graph.
+The following are a list of things that Orb has chosen **not** to support:
+
+-   Execute any Elixir code at WebAssembly runtime. It’s not a goal of Orb to take any piece of everyday Elixir code and have it run in WebAssembly. However, because you can use macros you could decide to build that functionality on top of Orb.
+-   Access to the DOM. I believe the DOM is a poor fit for WebAssembly with its big object graph requiring lots of communication between WebAssembly and its host. Instead we prefer things that serialize like HTML, SVG, XML, CSV.
 -   WASI support. It’s not stabilized yet and for now I’d rather it be a library built on top of Orb.
--   Produce the most optimized code possible through deep analysis. I recommend using `wasm-opt` if you really need to squeeze every byte possible.
+-   Produce the most optimized code theoretically possible through deep analysis. Use `wasm-opt` if you really need to squeeze every byte possible from your final `.wasm` file. However, Orb does aim to produce slim `.wasm` files without unnecessary bloat like heavy runtimes.
 
 Libraries
 ---------
 
--   **Orb** (alpha): Write WebAssembly 1.0 in Elixir.
+-   **Orb** (alpha): Write Core WebAssembly 1.0 in Elixir.
 -   **SilverOrb** (work-in-progress): Batteries-included standard library for Orb.
 -   OrbExtismPDK (coming later): Write Extism plugins in Elixir with Orb.
 
@@ -52,7 +54,7 @@ Add `orb` to your list of dependencies in `mix.exs`:
 
 def deps do
   \[
-    {:orb, "~> 0.2.0"}
+    {:orb, "~> 0.2.1"}
   \]
 end
 

@@ -1,6 +1,6 @@
 ---
 project: rxdb
-stars: 22153
+stars: 22180
 description: A fast, local first, reactive Database for JavaScript Applications https://rxdb.info/
 url: https://github.com/pubkey/rxdb
 ---
@@ -49,7 +49,7 @@ You do not have to use a specific cloud or backend database. The protocol works 
 
 RxDB is based on a storage interface that enables you to swap out the underlying storage engine. This increases **code reuse** because the same database code can be used in different JavaScript environments by just switching out the storage settings.
 
-You can use RxDB on top of IndexedDB, OPFS, LokiJS, Dexie.js, in-memory, SQLite, in a WebWorker thread and even on top of FoundationDB and DenoKV.
+You can use RxDB on top of LocalStorage, IndexedDB, OPFS, LokiJS, Dexie.js, in-memory, SQLite, in a WebWorker thread and even on top of FoundationDB and DenoKV.
 
 No matter what kind of runtime you have, as long as it runs JavaScript, it can run RxDB:
 
@@ -95,17 +95,16 @@ import {
 } from 'rxdb/plugins/core';
 
 /\*\*
- \* For browsers, we use the dexie.js based storage
- \* which stores data in IndexedDB in the browser.
+ \* For browsers, we use the localstorage based storage.
  \* In other JavaScript runtimes, we can use different storages:
  \* @link https://rxdb.info/rx-storage.html
  \*/
-import { getRxStorageDexie } from 'rxdb/plugins/storage-dexie';
+import { getRxStorageLocalstorage } from 'rxdb/plugins/storage-localstorage';
 
 // create a database
 const db \= await createRxDatabase({
     name: 'heroesdb', // the name of the database
-    storage: getRxStorageDexie()
+    storage: getRxStorageLocalstorage()
 });
 
 // add collections
@@ -157,7 +156,6 @@ Get started now by reading the docs or exploring the example-projects.
 -   Buy access to the premium plugins
 -   Join us at discord to get help
 -   Follow us at LinkedIn
--   Give Feedback (anonymous)
 
 #### More content
 

@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 88135
+stars: 88369
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -251,12 +251,6 @@ conda install -c conda-forge libuv=1.39
 #### Install PyTorch
 
 **On Linux**
-
-If you would like to compile PyTorch with new C++ ABI enabled, then first run this command:
-
-export \_GLIBCXX\_USE\_CXX11\_ABI=1
-
-Please **note** that starting from PyTorch 2.5, the PyTorch build with XPU supports both new and old C++ ABIs. Previously, XPU only supported the new C++ ABI. If you want to compile with Intel GPU support, please follow Intel GPU Support.
 
 If you're compiling for AMD ROCm then first run this command:
 

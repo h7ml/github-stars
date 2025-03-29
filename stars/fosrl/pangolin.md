@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 4138
+stars: 4607
 description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---

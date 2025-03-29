@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 27720
+stars: 27798
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens.
 url: https://github.com/XTLS/Xray-core
 ---

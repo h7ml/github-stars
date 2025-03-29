@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 18750
+stars: 18813
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -305,6 +305,10 @@ Persist YJS updates in your React Native app using op-sqlite , the fastest SQLit
 y-postgresql
 
 Provides persistent storage for a web server using PostgreSQL and is easily compatible with y-websocket.
+
+k\_yrs\_go
+
+Golang database server for YJS CRDT using Postgres + Redis
 
 ### Tooling
 

@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 73874
+stars: 73927
 description: X-Ray Vision for your infrastructure!
 url: https://github.com/netdata/netdata
 ---

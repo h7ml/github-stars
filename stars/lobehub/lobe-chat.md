@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 58025
+stars: 58355
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -218,6 +218,12 @@ Recent Submits
 
 Description
 
+PortfolioMeta  
+By **portfoliometa** on **2025-03-23**
+
+Analyze stocks and get comprehensive real-time investment data and analytics.  
+`stock`
+
 Web  
 By **Proghit** on **2025-01-24**
 
@@ -236,13 +242,7 @@ By **FineHow** on **2024-12-22**
 Search for information from the internet base BingApi  
 `bingsearch`
 
-Google CSE  
-By **vsnthdev** on **2024-12-02**
-
-Searches Google through their official CSE API.  
-`web` `search`
-
-> 📊 Total plugins: **45**
+> 📊 Total plugins: **46**
 
 ### `11` Agent Market (GPTs)
 
@@ -581,5 +581,5 @@ Every bit counts and your one-time donation sparkles in our galaxy of support! Y
 
 #### 📝 License
 
-Copyright © 2024 LobeHub.  
+Copyright © 2025 LobeHub.  
 This project is Apache 2.0 licensed.

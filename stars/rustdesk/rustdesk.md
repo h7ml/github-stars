@@ -1,6 +1,6 @@
 ---
 project: rustdesk
-stars: 84602
+stars: 84999
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---
@@ -9,6 +9,11 @@ url: https://github.com/rustdesk/rustdesk
 Build • Docker • Structure • Snapshot  
 \[Українська\] | \[česky\] | \[中文\] | \[Magyar\] | \[Español\] | \[فارسی\] | \[Français\] | \[Deutsch\] | \[Polski\] | \[Indonesian\] | \[Suomi\] | \[മലയാളം\] | \[日本語\] | \[Nederlands\] | \[Italiano\] | \[Русский\] | \[Português (Brasil)\] | \[Esperanto\] | \[한국어\] | \[العربي\] | \[Tiếng Việt\] | \[Dansk\] | \[Ελληνικά\] | \[Türkçe\] | \[Norsk\]  
 **We need your help to translate this README, RustDesk UI and RustDesk Doc to your native language**
+
+Caution
+
+**Misuse Disclaimer:**  
+The developers of RustDesk do not condone or support any unethical or illegal use of this software. Misuse, such as unauthorized access, control or invasion of privacy, is strictly against our guidelines. The authors are not responsible for any misuse of the application.
 
 Chat with us: Discord | Twitter | Reddit
 
@@ -137,11 +142,6 @@ File Structure
 -   **src/platform**: platform specific code
 -   **flutter**: Flutter code for desktop and mobile
 -   **flutter/web/js**: JavaScript for Flutter web client
-
-Caution
-
-**Misuse Disclaimer:**  
-The developers of RustDesk do not condone or support any unethical or illegal use of this software. Misuse, such as unauthorized access, control or invasion of privacy, is strictly against our guidelines. The authors are not responsible for any misuse of the application.
 
 Screenshots
 -----------

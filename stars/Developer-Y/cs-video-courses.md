@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68379
+stars: 68423
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -186,6 +186,14 @@ Courses
 -   UC Santa Cruz CSE 202 Combinatorial Algorithms spring 2021, by Seshadhri Comandur
 -   UC Santa Cruz CSE 104, 204 Computational Complexity fall 2020, spring 2022, by Seshadhri Comandur
 -   UC Santa Cruz CSE 290A Randomized Algorithms spring 2020, by Seshadhri Comandur
+-   Algorithms for Big-Data (Fall 2020) - Saket Saurabh
+-   CS498ABD - Algorithms for Big Data - UIUC, Fall 2020
+-   Advanced Data Structures
+-   CS60025 Algorithmic Game Theory - IIT KGP - Winter 2020
+-   CS60083 Parameterized Algorithms - IIT KGP
+-   Parameterized Complexity
+-   Structural Graph Theory - IIT Madras
+-   Information Theory - IISC Bangalore
 
 * * *
 
@@ -236,6 +244,9 @@ Courses
     -   CMU 15 440 / 640 Distributed Systems Spring 2022, by Mahadev Satyanarayanan, Padmanabhan Pillai
     -   UNC Comp533 - Distributed Systems Spring 2020
     -   Brown CSCI 1380 Distributed Computer Systems spring 2016, by Tom Doeppner & Rodrigo Fonseca
+    -   Distributed Systems lecture series - Martin Kleppmann
+    -   Distributed Algorithms - Jukka Suomela
+    -   Programming Parallel Computers - Jukka Suomela
 -   #### **Real-Time Systems**
     
     -   CPCS 663 - Real-Time Systems: Video Material - TAMU
@@ -455,6 +466,8 @@ Courses
     -   UC San Diego/edX DSE 220X Machine Learning Fundamentals, by Sanjoy Dasgupta
     -   MIT 6.036 Introduction to Machine Learning spring 2019, by Leslie Kaelbling
     -   LMU Munich Introduction to Machine Learning
+    -   UCLA Stats 15 Introduction to Data Science fall 2022, by Miles Chen
+    -   UCLA Stats 21 Python and Other Technologies for Data Science spring 2024, by Miles Chen
     -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
     -   UCLA Stats 231C Theories of Machine Learning spring 2022, by Arash Amini
     -   MSU Machine Learning
@@ -472,6 +485,7 @@ Courses
     -   CS 229r - Algorithms for Big Data, Harvard University (Youtube)
     -   Algorithms for Big Data - IIT Madras
     -   Python Data Science with the TCLab (YouTube)
+    -   Foundations of Data Analysis (Fall 2020)- University of Utah
 -   #### **Data Mining**
     
     -   CSEP 546, Data Mining - Pedro Domingos, Sp 2016 - University of Washington (YouTube)
@@ -540,6 +554,8 @@ Courses
 -   #### **Reinforcement Learning**
     
     -   CS234: Reinforcement Learning - Spring 2024 - Stanford University (Winter 2019)
+    -   CSE 542: Reinforcement Learning - Spring 2024 - University of Washington
+    -   CSE 579: Reinforcement Learning - Autumn 2024 - University of Washington
     -   Introduction to reinforcement learning - UCL
     -   Reinforcement Learning - IIT Madras
     -   CS885 Reinforcement Learning - Spring 2018 - University of Waterloo
@@ -581,6 +597,7 @@ Courses
     -   CS388: Natural Language Processing - UT Austin
     -   CS 124 - From Languages to Information - Stanford University
     -   CS 6340/5340 - Natural Language Processing - University of Utah - Spring 2024 (Youtube)
+    -   CSE 447/517 - Natural Language Processing - University of Washington - Winter 2024
     -   Neural Networks: Zero to Hero - Andrej Karpathy
     -   fast.ai Code-First Intro to Natural Language Processing (Github)
     -   MOOC - Natural Language Processing - Coursera, University of Michigan
@@ -601,6 +618,7 @@ Courses
     -   UC Berkeley CS 194/294-267 Understanding Large Language Models Foundations and Safety spring 2024, by Dawn Song & Dan Hendrycks
     -   Introduction to Large Language Models (LLMs), IIT Delhi
     -   Natural Language Processing (Spring 2024) - University of Utah
+    -   Multilingual NLP 2020 - CMU
 -   #### **Generative AI**
     
     -   Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon
@@ -741,6 +759,7 @@ Courses
     -   Discrete Mathematical Structures - IIT Madras
     -   Discrete Structures - Pepperdine University
     -   CMU 21 228 Discrete Mathematics spring 2021, by Po-Shen Loh
+    -   COMP2804: Discrete Structures II
 -   **Probability & Statistics**
     -   Statistics - CrashCourse
     -   6.041 Probabilistic Systems Analysis and Applied Probability - MIT OCW
@@ -779,6 +798,7 @@ Courses
     -   UC Berkeley STAT 150 Stochastic Processes spring 2021, by Brett Kolesnik
     -   UIUC Math 564 Applied Stochastic Processes fall 2016, by Kay Kirkpatrick
     -   CS/ECE 561 - Probability and Info Theory in Machine Learning
+    -   UCLA Stats 10 Introduction to Statistical Reasoning summer 2022, by Miles Chen
     -   UCLA Stats 101C Statistical Models and Data Mining summer 2022, by Miles Chen
     -   UCLA Stats 102A Introduction to Computational Statistics with R winter 2024, by Miles Chen
     -   UCLA Stats 102B Computation and Optimization for Statistics spring 2024, by Miles Chen
@@ -787,6 +807,9 @@ Courses
     -   UCLA Stats 200C High-dimensional Statistics spring 2022, by Arash Amini (Spring 2021)
     -   UCLA Stats 203 Large Sample Theory fall 2021, by Jingyi Jessica Li (Fall 2020)
     -   UCSD Math 280 Probability Theory and Stochastic Processes, by Todd Kemp (YouTube)
+    -   6.262 Discrete Stochastic Processes - MIT OCW
+    -   18.650 Statistics for Applications - MIT OCW
+    -   STAT240 - Robust Statistics - UC Berkeley
 -   **Linear Algebra**
     -   Mathematical Foundations of Machine Learning (Fall 2021) - University of Chicago - Rebecca Willett
     -   18.06 - Linear Algebra, Prof. Gilbert Strang, MIT OCW
@@ -834,6 +857,8 @@ Courses
 -   UCLA STAT 100C Linear Models spring 2023, by Arash Amini
 -   MSU Math for Computing
 -   Mathematics of Data Science - ETH Zurich
+-   Engineering Mathematics (UW ME564 and ME565) - Steve Brunton
+-   Beginning Scientific Computing - Steve Brunton
 
 * * *
 
@@ -919,6 +944,9 @@ Courses
 -   Columbia ELEN E6717 Information Theory fall 2003, by Vittorio Castelli
 -   CMU 21 738 Extremal Combinatorics spring 2020, by Po-Shen Loh
 -   JHU Domain-Specific Languages (DSL) Class (Summer 2018)
+-   Spring 2019 - Probabilistically Checkable and Interactive Proof Systems (Alessandro Chiesa)
+-   Algebraic Coding Theory - Stanford University
+-   CS60094 Computational Number Theory
 
 * * *
 
@@ -988,9 +1016,11 @@ Courses
     -   High Performance Computer Architecture - IIT Kharagpur
     -   BE5B35APO - Computer Architectures, Spring 2022, CTU - FEE (YouTube - Spring 2022) (RISC-V simulator - QtRvSim)
     -   CS773: Computer Architecture for Performance and Security - IIT Bombay
+    -   COL718 - Architecture of High Performance Computers - IIT Delhi
+    -   CS 695: Virtualization and Cloud Computing - IIT Bombay -Spring 2021
 -   **Parallel Computer Architecture**
     -   15-418 - Parallel Computer Architecture and Programming, CMU (Lecture Videos)
-    -   CS 267 Applications of Parallel Computers, Spring 16 - UC Berkeley (YouTube)
+    -   CS 267 Applications of Parallel Computers, Spring 18 - UC Berkeley (YouTube-Spring 18) (Notes-Spring 16) (YouTube-Spring 16)
     -   MOOC - Heterogeneous Parallel Programming - Coursera
     -   ECE 498AL - Programming Massively Parallel Processors
     -   Parallel Computing - IIT Delhi
@@ -1013,7 +1043,7 @@ Courses
 -   UC Berkeley EECS 16B Designing Information Devices and Systems II fall 2020, by Seth Sanders, Miki Lustig
 -   ELEN E4896 - MUSIC SIGNAL PROCESSING - Spring 2016 - Columbia
 -   Columbia ELEN E6820 Speech and Audio Processing spring 2006, by Dan Ellis
--   CMU 11 751 / 18 781 Speech Recognition and Understanding fall 2022, by Shinji Watanabe
+-   CMU 11 751 / 18 781 Speech Recognition and Understanding fall 2023, by Shinji Watanabe (Fall 2022)
 -   CMU 11 492 Speech Processing fall 2021, by Alan W. Black
 
 * * *
@@ -1076,6 +1106,7 @@ Courses
 -   CS 468 - Differential Geometry for Computer Science - Stanford University (Lecture videos)
 -   CMU 15-462/662: Computer Graphics
 -   UC Berkeley CS184/284A Computer Graphics and Imaging Spring 2022, by Ren Ng (YouTube playlist)
+-   CS 15-458/858: Discrete Differential Geometry - Carnegie Mellon University - Spring 2021
 
 * * *
 
@@ -1167,6 +1198,8 @@ Courses
 -   ETH Zürich Statistical Models in Computational Biology spring 2018, by Niko Beerenwinkel
 -   UC Berkeley CS 198-96 Introduction to Neurotechnology fall 2020
 -   MLCB24 - Machine Learning in Computational Biology Fall 2024
+-   Introduction to Neural Computation - MIT OCW
+-   Data Science for Biologists - Steve Brunton
 
 * * *
 
@@ -1194,6 +1227,10 @@ Courses
 -   Quantum Computer Systems – UChicago
 -   Quantum computing for the determined - Michael Nielsen
 -   Quantum Computing
+-   Advanced Topics in Quantum Info Th.
+-   Theory of Quantum Communication - University of Waterloo - Fall 2020
+-   Intro to Quantum Computing - Nathan Wiebe
+-   COMS 4281 - Introduction to Quantum Computing -Columbia University
 
 * * *
 
@@ -1221,6 +1258,7 @@ Courses
 -   Robot Mechanics and Control, SNU
 -   Introduction to Robotics Course - UNCC
 -   SLAM Lectures
+-   CSE 478 – Autonomous Robotics – Winter 2025 - University of Washington (Winter 2024)
 -   ME 597 – Autonomous Mobile Robotics – Fall 2014
 -   ME 780 – Perception For Autonomous Driving – Spring 2017
 -   ME780 – Nonlinear State Estimation for Robotics and Computer Vision – Spring 2017
@@ -1258,6 +1296,8 @@ Courses
 -   UIUC CS 588 Autonomous Vehicle System Engineering fall 2021, by David Forsyth
 -   EPFL ME 425 Model Predictive Control fall 2020, by Colin Jones
 -   Robots That Learn - UC Berkeley CS 294-277
+-   Data-Driven Dynamical Systems with Machine Learning - Steve Brunton
+-   Data-Driven Control with Machine Learning - Steve Brunton
 
 * * *
 

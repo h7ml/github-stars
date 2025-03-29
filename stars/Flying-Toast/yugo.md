@@ -1,6 +1,6 @@
 ---
 project: yugo
-stars: 47
+stars: 48
 description: Yugo is an easy and high-level IMAP client library for Elixir.
 url: https://github.com/Flying-Toast/yugo
 ---

@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1577
+stars: 1583
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -296,7 +296,17 @@ None
 
 ### Version management
 
-It is generally recommended to install Elixir and Erlang via ASDF so that you can have different projects using different versions of Elixir without having to change your system-installed version. ElixirLS can detect and use the versions of Elixir and Erlang that you have configured in ASDF.
+It is generally recommended to install Elixir and Erlang via a version manager so that you can have different projects using different versions of Elixir without having to change your system-installed version. Supported managers include:
+
+-   asdf
+-   mise
+-   vfox
+
+ElixirLS launch script will attempt to activate found version manager.
+
+#### Windows
+
+Version managers are currently not supported on Windows. mise and vfox may work if activated.
 
 Debugger support
 ----------------
@@ -752,7 +762,7 @@ Optional parameters to pass to the erl CLI
 
 ASDF\_DIR
 
-(not supported on Windows) If this is set, ElixirLS will look for the ASDF script in a directory given by that variable.
+(not supported on Windows)(deprecated, not used with asdf v0.16+) If this is set, ElixirLS will look for the asdf script in a directory given by that variable.
 
 Telemetry
 ---------

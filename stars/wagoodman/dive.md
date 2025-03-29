@@ -1,6 +1,6 @@
 ---
 project: dive
-stars: 49961
+stars: 50059
 description: A tool for exploring each layer in a docker image
 url: https://github.com/wagoodman/dive
 ---
@@ -167,9 +167,17 @@ On non-NixOS (Linux, Mac)
 
 nix-env -iA nixpkgs.dive
 
+**X-CMD**
+
+x-cmd is a **toolbox for Posix Shell**, offering a lightweight package manager built using shell and awk.
+
+x env use dive
+
 **Docker**
 
 docker pull docker.io/wagoodman/dive
+# or alternatively
+docker pull ghcr.io/wagoodman/dive
 
 When running you'll need to include the Docker socket file:
 

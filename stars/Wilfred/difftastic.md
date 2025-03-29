@@ -1,6 +1,6 @@
 ---
 project: difftastic
-stars: 21957
+stars: 21977
 description: a structural diff that understands syntax 🟥🟩
 url: https://github.com/Wilfred/difftastic
 ---
@@ -65,7 +65,7 @@ Difftastic parses your code. It understands when whitespace matters, such as ins
 
 You can! The difftastic manual includes instructions for git usage. You can also use it with mercurial.
 
-If you're a magit user, check out this blog post showing one way to use difftastic with magit.
+If you're an Emacs user, check out this blog post showing one way to use difftastic with magit, as well as difftastic.el.
 
 ### Does difftastic integrate with my favourite tool?
 

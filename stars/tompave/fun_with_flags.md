@@ -1,6 +1,6 @@
 ---
 project: fun_with_flags
-stars: 1110
+stars: 1111
 description: Feature Flags/Toggles for Elixir
 url: https://github.com/tompave/fun_with_flags
 ---
@@ -44,6 +44,7 @@ Content
     -   PubSub Adapters
 -   Extensibility
     -   Custom Persistence Adapters
+-   Telemetry
 -   Application Start Behaviour
 -   Testing
 -   Development
@@ -471,7 +472,7 @@ In order to have a small installation footprint, the dependencies for the differ
 
 def deps do
   \[
-    {:fun\_with\_flags, "~> 1.12.0"},
+    {:fun\_with\_flags, "~> 1.13.0"},
 
     \# either:
     {:redix, "~> 0.9"},
@@ -661,6 +662,13 @@ end
 And then configure the library to use it:
 
 config :fun\_with\_flags, :persistence, adapter: MyApp.MyAlternativeFlagStore
+
+Telemetry
+---------
+
+FunWithFlags is instrumented with Telemetry and emits events at runtime. Please refer to the Telemetry docs for detailed instructions on how to consume the emitted events.
+
+The full list of events emitted by FunWithFlags are documented in the FunWithFlags.Telemetry module.
 
 Application Start Behaviour
 ---------------------------

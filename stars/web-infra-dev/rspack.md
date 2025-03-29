@@ -1,6 +1,6 @@
 ---
 project: rspack
-stars: 11138
+stars: 11195
 description: The fast Rust-based web bundler with webpack-compatible API 🦀️
 url: https://github.com/web-infra-dev/rspack
 ---
@@ -123,6 +123,7 @@ Thanks to:
 -   The mini-css-extract-plugin project created by @sokra which inspired implement css extract plugin.
 -   The copy-webpack-plugin project created by @kevlened which inspired implement copy rspack plugin.
 -   The webpack-subresource-integrity project created by @jscheid, which inspires implement subresource integrity rspack plugin.
+-   The circular-dependency-plugin project created by @aackerman, which inspres implement circular dependency rspack plugin.
 
 License
 -------

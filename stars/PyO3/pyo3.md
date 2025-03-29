@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13297
+stars: 13339
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -170,9 +170,6 @@ Tools and libraries
 Examples
 --------
 
--   autopy _A simple, cross-platform GUI automation library for Python and Rust._
-    -   Contains an example of building wheels on TravisCI and appveyor using cibuildwheel
--   ballista-python _A Python library that binds to Apache Arrow distributed query engine Ballista._
 -   bed-reader _Read and write the PLINK BED format, simply and efficiently._
     -   Shows Rayon/ndarray::parallel (including capturing errors, controlling thread num), Python types to Rust generics, Github Actions
 -   cellular\_raza _A cellular agent-based simulation framework for building complex models from a clean slate._
@@ -186,11 +183,9 @@ Examples
 -   feos _Lightning fast thermodynamic modeling in Rust with fully developed Python interface._
 -   forust _A lightweight gradient boosted decision tree library written in Rust._
 -   granian _A Rust HTTP server for Python applications._
--   greptimedb _Support Python scripting in the database_
 -   haem _A Python library for working on Bioinformatics problems._
 -   html2text-rs _Python library for converting HTML to markup or plain text._
 -   html-py-ever _Using html5ever through kuchiki to speed up html parsing and css-selecting._
--   hyperjson _A hyper-fast Python module for reading/writing JSON data using Rust's serde-json._
 -   inline-python _Inline Python code directly in your Rust code._
 -   johnnycanencrypt OpenPGP library with Yubikey support.
 -   jsonschema _A high-performance JSON Schema validator for Python._
@@ -198,16 +193,10 @@ Examples
 -   opendal _A data access layer that allows users to easily and efficiently retrieve data from various storage services in a unified way._
 -   orjson _Fast Python JSON library._
 -   ormsgpack _Fast Python msgpack library._
--   point-process _High level API for pointprocesses as a Python library._
--   polaroid _Hyper Fast and safe image manipulation library for Python written in Rust._
 -   polars _Fast multi-threaded DataFrame library in Rust | Python | Node.js._
 -   pydantic-core _Core validation logic for pydantic written in Rust._
--   pyheck _Fast case conversion library, built by wrapping heck._
-    -   Quite easy to follow as there's not much code.
--   pyre _Fast Python HTTP server written in Rust._
 -   primp _The fastest python HTTP client that can impersonate web browsers by mimicking their headers and TLS/JA3/JA4/HTTP2 fingerprints._
 -   rateslib _A fixed income library for Python using Rust extensions._
--   ril-py _A performant and high-level image processing library for Python written in Rust._
 -   river _Online machine learning in python, the computationally heavy statistics algorithms are implemented in Rust._
 -   robyn A Super Fast Async Python Web Framework with a Rust runtime.
 -   rust-python-coverage _Example PyO3 project with automated test coverage for Rust and Python._
@@ -217,7 +206,6 @@ Examples
 -   tokenizers _Python bindings to the Hugging Face tokenizers (NLP) written in Rust._
 -   tzfpy _A fast package to convert longitude/latitude to timezone name._
 -   utiles _Fast Python web-map tile utilities_
--   wasmer-python _Python library to run WebAssembly binaries._
 
 Articles and other media
 ------------------------

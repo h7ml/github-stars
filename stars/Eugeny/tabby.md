@@ -1,6 +1,6 @@
 ---
 project: tabby
-stars: 62589
+stars: 62730
 description: A terminal for a more modern age
 url: https://github.com/Eugeny/tabby
 ---

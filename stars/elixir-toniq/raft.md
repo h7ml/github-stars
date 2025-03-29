@@ -1,6 +1,6 @@
 ---
 project: raft
-stars: 429
+stars: 430
 description: An Elixir implementation of the raft consensus protocol
 url: https://github.com/elixir-toniq/raft
 ---

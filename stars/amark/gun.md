@@ -1,6 +1,6 @@
 ---
 project: gun
-stars: 18348
+stars: 18353
 description: An open source cybersecurity protocol for syncing decentralized graph data.
 url: https://github.com/amark/gun
 ---

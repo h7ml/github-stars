@@ -1,6 +1,6 @@
 ---
 project: spacedrive
-stars: 34156
+stars: 34182
 description: Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
 url: https://github.com/spacedriveapp/spacedrive
 ---
@@ -17,7 +17,13 @@ _~ Links for iOS & Android will be added once a release is available. ~_
 Spacedrive is an open source cross-platform file manager, powered by a virtual distributed filesystem (VDFS) written in Rust.  
   
 
-> UPDATE: Spacedrive moving into beta with v0.5 (coming early December 2024). Some major features are currently only accessible via feature flags.
+Important
+
+We regret to inform our valued Spacedrive community that we must temporarily pause our development roadmap beyond our latest update. Due to current funding constraints and related challenges, we cannot deliver new features or updates for the foreseeable future.
+
+While this was a tough decision, our team remains committed to Spacedrive's vision and will explore options to resume development when circumstances allow. We deeply appreciate your understanding and continued support during this challenging period.
+
+The Spacedrive Team
 
 Organize files across many devices in one place. From cloud services to offline hard drives, Spacedrive combines the storage capacity and processing power of your devices into one personal distributed cloud, that is both secure and intuitive to use.
 
