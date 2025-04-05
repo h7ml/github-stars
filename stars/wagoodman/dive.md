@@ -1,6 +1,6 @@
 ---
 project: dive
-stars: 50059
+stars: 50204
 description: A tool for exploring each layer in a docker image
 url: https://github.com/wagoodman/dive
 ---
@@ -126,8 +126,7 @@ pacman -S dive
 
 If you use Homebrew:
 
-brew tap wagoodman/dive
-brew install wagoodman/dive/dive
+brew install dive
 
 If you use MacPorts:
 

@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 12815
+stars: 12837
 description: Next-Generation full text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -260,11 +260,15 @@ You will just need to spend 5 minutes to improve your results significantly by u
     -   Persistent Options
     -   Encoder Options
     -   Resolver Options
+-   Presets
 -   Context Search
+-   Fast-Update Mode
+-   Suggestions
 -   Document Search (Multi-Field Search)
 -   Multi-Tag Search
 -   Phonetic Search (Fuzzy Search)
 -   Tokenizer (Partial Search)
+-   Charset Collection
 -   Encoder
     -   Universal Charset Collection
     -   Latin Charset Encoder Presets
@@ -291,6 +295,9 @@ You will just need to spend 5 minutes to improve your results significantly by u
 -   Custom Score Function
 -   Custom Builds
 -   Extended Keystores (In-Memory)
+-   Best Practices
+    -   Page-Load / Fast-Boot
+    -   Use numeric IDs
 
 Load Library (Node.js, ESM, Legacy Browser)
 -------------------------------------------
@@ -789,86 +796,56 @@ Constructors:
 
 Global Members:
 
--   Charset
--   Language (Legacy Browser)
+-   **Charset**
+-   **Language** (Legacy Browser Only)
 
 * * *
 
 `Index` / `Worker`\-Index Methods:
 
 -   index.**add**(id, string)
-    
 -   index.**append**(id, string)
-    
 -   index.**update**(id, string)
-    
 -   index.**remove**(id)
-    
 -   index.**search**(string, <limit>, <options>)
-    
 -   index.**search**(options)
-    
 -   index.**searchCache**(...)
-    
 -   index.**contain**(id)
-    
 -   index.**clear**()
-    
 -   index.**cleanup**()
-    
+
 -   _async_ index.**export**(handler)
-    
 -   _async_ index.**import**(key, data)
-    
 -   _async_ index.**serialize**(boolean)
-    
+
 -   _async_ index.**mount**(db)
-    
 -   _async_ index.**commit**(boolean)
-    
 -   _async_ index.**destroy**()
-    
 
 * * *
 
 `Document` Methods:
 
--   document.**add**(<id>, document)\\
-    
--   document.**append**(<id>, document)\\
-    
--   document.**update**(<id>, document)\\
-    
--   document.**remove**(id)\\
-    
--   document.**remove**(document)\\
-    
--   document.**search**(string, <limit>, <options>)\\
-    
--   document.**search**(options)\\
-    
--   document.**searchCache**(...)\\
-    
--   document.**contain**(id)\\
-    
--   document.**clear**()\\
-    
--   document.**cleanup**()\\
-    
--   document.**get**(id)\\
-    
--   document.**set**(<id>, document)\\
-    
+-   document.**add**(<id>, document)
+-   document.**append**(<id>, document)
+-   document.**update**(<id>, document)
+-   document.**remove**(id)
+-   document.**remove**(document)
+-   document.**search**(string, <limit>, <options>)
+-   document.**search**(options)
+-   document.**searchCache**(...)
+-   document.**contain**(id)
+-   document.**clear**()
+-   document.**cleanup**()
+-   document.**get**(id)
+-   document.**set**(<id>, document)
+
 -   _async_ document.**export**(handler)
-    
 -   _async_ document.**import**(key, data)
-    
+
 -   _async_ document.**mount**(db)
-    
 -   _async_ document.**commit**(boolean)
-    
 -   _async_ document.**destroy**()
-    
 
 `Document` Properties:
 
@@ -878,15 +855,15 @@ Global Members:
 
 Async Equivalents (Non-Blocking Balanced):
 
--   _async_ .**addAsync**( ... , <callback>)
--   _async_ .**appendAsync**( ... , <callback>)
--   _async_ .**updateAsync**( ... , <callback>)
--   _async_ .**removeAsync**( ... , <callback>)
--   _async_ .**searchAsync**( ... , <callback>)
+-   _async_ **.addAsync**( ... , <callback>)
+-   _async_ **.appendAsync**( ... , <callback>)
+-   _async_ **.updateAsync**( ... , <callback>)
+-   _async_ **.removeAsync**( ... , <callback>)
+-   _async_ **.searchAsync**( ... , <callback>)
 
 Async methods will return a `Promise`, additionally you can pass a callback function as the last parameter.
 
-Methods `export` and also `import` are always async as well as every method you call on a Worker-based or Persistent Index.
+Methods `.export()` and also `.import()` are always async as well as every method you call on a `Worker`\-based or `Persistent` Index.
 
 * * *
 
@@ -934,7 +911,6 @@ Methods `export` and also `import` are always async as well as every method you 
 -   Charset.**Exact**
 -   Charset.**Default**
 -   Charset.**Normalize**
--   Charset.**Dedupe**
 
 `Charset` Latin-specific Encoder Preset:
 
@@ -986,45 +962,45 @@ Example
 
 Memory Factor (n = length of term)
 
-**"strict"**  
-**"exact"**  
-**"default"**
+`"strict"`  
+`"exact"`  
+`"default"`
 
 index the full term
 
-`foobar`
+foobar
 
-\* 1
+1
 
-**"forward"**
+`"forward"`
 
 index term in forward direction (supports right-to-left by Index option `rtl: true`)
 
-`fo`obar  
-`foob`ar  
+foobar  
+foobar  
 
-\* n
+n
 
-**"reverse"**  
-**"bidirectional"**
+`"reverse"`  
+`"bidirectional"`
 
 index term in both directions
 
-`fo`obar  
-`foob`ar  
-foob`ar`  
-fo`obar`
+foobar  
+foobar  
+foobar  
+foobar
 
-\* 2n - 1
+2n - 1
 
-**"full"**
+`"full"`
 
 index every consecutive partial
 
-fo`oba`r  
-f`oob`ar
+foobar  
+foobar
 
-\* n \* (n - 1)
+n \* (n - 1)
 
 Charset Collection
 ------------------
@@ -1050,7 +1026,8 @@ Universal (multi-lang)
 
 0%
 
-`Normalize (Default)`
+`Normalize`  
+`Default`
 
 Case in-sensitive encoding  
 Charset normalization  
@@ -1104,8 +1081,6 @@ Latin
 `function(str) => [str]`
 
 Pass a custom encoding function to the `Encoder`
-
-Latin
 
 Basic Usage
 -----------
@@ -1172,7 +1147,7 @@ index.search("John", 10);
 You can check if an ID was already indexed by:
 
 if(index.contain(1)){
-    console.log("ID is already in index");
+    console.log("ID was found in index");
 }
 
 #### Update item from an index
@@ -1186,6 +1161,12 @@ index.update(0, "Max Miller");
 > Index.**remove(id)**
 
 index.remove(0);
+
+#### Clear all items from an index
+
+> Index.**clear()**
+
+index.clear();
 
 ### Chaining
 
@@ -1315,6 +1296,29 @@ struhlbrogger
 ✓
 
 The index size was measured after indexing the book "Gulliver's Travels".
+
+Fast-Update Mode
+----------------
+
+The default mode is highly optimized for search performance and adding contents to the index. Whenever you need to `update` or `remove` existing contents of an index you can enable an additional register which boost those tasks also to a high-performance level. This register will take an extra amount of memory (~30% increase of index size).
+
+const index \= new Index({
+  fastupdate: true
+});
+
+const index \= new Document({
+  fastupdate: true
+});
+
+> `Persistent`\-Index does not support the `fastupdate` option, because of its nature.
+
+When using `fastupdate: true`, the index won't fully clear up, when removing items. A barely rest of structure will still remain. It's not a memory issue, because this rest will take less than 1% of the index size. But instead the internal performance of key lookups will lose efficiency, because of not used (empty) keys in the index.
+
+In most cases this is not an issue. But you can trigger a `index.cleanup()` task, which will find those empty index slots and remove them:
+
+index.cleanup();
+
+> The `cleanup` method has no effect when not using `fastupdate: true`.
 
 Context Search
 --------------

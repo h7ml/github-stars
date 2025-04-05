@@ -1,6 +1,6 @@
 ---
 project: sonic
-stars: 20630
+stars: 20645
 description: 🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.
 url: https://github.com/valeriansaliou/sonic
 ---

@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 7770
+stars: 7921
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -43,7 +43,7 @@ _For MacOS_
 curl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-aarch64-macos && \\
 chmod a+x ./lightpanda
 
-### Dump an URL
+### Dump a URL
 
 ./lightpanda fetch --dump https://lightpanda.io
 

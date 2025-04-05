@@ -8,7 +8,7 @@ url: https://github.com/NeoVintageous/NeoVintageous
 About NeoVintageous
 -------------------
 
-NeoVintageous is the Vim engine for Sublime Text, designed to be fast, reliable, and zero configuration required. A fork of Vintageous, it is the ideal drop-in replacement.
+NeoVintageous is a powerful Vim emulator for Sublime Text. Designed to be fast, reliable, and with zero configuration required. A fork of Vintageous, it is the ideal drop-in replacement.
 
 Documentation
 -------------

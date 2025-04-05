@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 33876
+stars: 34007
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -268,13 +268,6 @@ environment:
   REGION: "en-US"
   KEYBOARD: "en-US"
 
-### How do I set the product key?
-
-By default, an evaluation version of Windows will be installed, but if you have a product key you can add a `KEY` variable like this (before installation):
-
-environment:
-  KEY: "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx"
-
 ### How do I select the edition?
 
 Windows Server offers a minimalistic Core edition without a GUI. To select those non-standard editions, you can add a `EDITION` variable like this (before installation):
@@ -311,7 +304,7 @@ The example folder `./example` will be copied to `C:\OEM` and the containing `in
 
 It's recommended to stick to the automatic installation, as it adjusts various settings to prevent common issues when running Windows inside a virtual environment.
 
-However, if you insist on performing the installation manually on your own risk, add the following environment variable to your compose file:
+However, if you insist on performing the installation manually at your own risk, add the following environment variable to your compose file:
 
 environment:
   MANUAL: "Y"
@@ -384,11 +377,11 @@ volumes:
 
 ### How do I pass-through a disk?
 
-It is possible to pass-through disk devices directly by adding them to your compose file in this way:
+It is possible to pass-through disk devices or partitions directly by adding them to your compose file in this way:
 
 devices:
   - /dev/sdb:/disk1
-  - /dev/sdc:/disk2
+  - /dev/sdc1:/disk2
 
 Use `/disk1` if you want it to become your main drive (which will be formatted during installation), and use `/disk2` and higher to add them as secondary drives (which will stay untouched).
 

@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 88369
+stars: 88669
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -318,6 +318,16 @@ In this mode PyTorch with Intel GPU support will be built.
 Please make sure the common prerequisites as well as the prerequisites for Intel GPU are properly installed and the environment variables are configured prior to starting the build. For build tool support, `Visual Studio 2022` is required.
 
 Then PyTorch can be built with the command:
+
+:: CMD Commands:
+:: Set the CMAKE\_PREFIX\_PATH to help find corresponding packages
+:: %CONDA\_PREFIX% only works after \`conda activate custom\_env\`
+
+if defined CMAKE\_PREFIX\_PATH (
+    set "CMAKE\_PREFIX\_PATH\=%CONDA\_PREFIX%\\Library;%CMAKE\_PREFIX\_PATH%"
+) else (
+    set "CMAKE\_PREFIX\_PATH\=%CONDA\_PREFIX%\\Library"
+)
 
 python setup.py develop
 

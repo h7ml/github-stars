@@ -1,6 +1,6 @@
 ---
 project: waraft
-stars: 572
+stars: 573
 description: An Erlang implementation of RAFT from WhatsApp
 url: https://github.com/WhatsApp/waraft
 ---
@@ -36,9 +36,9 @@ supervisor:start\_child(kernel\_sup, Spec).
 wa\_raft\_server:status(raft\_server\_test\_1).
 % Make a cluster configuration with the current node as the only member
 Config \= wa\_raft\_server:make\_config(\[#raft\_identity{name \= raft\_server\_test\_1, node \= node()}\]).
-% Bootstrap the RAFT server by force-promoting it
-wa\_raft\_server:promote(raft\_server\_test\_1, 1, true, Config).
-% Check that now the RAFT server is the leader
+% Bootstrap the RAFT server to get it started
+wa\_raft\_server:bootstrap(raft\_server\_test\_1, #raft\_log\_pos{index \= 1, term \= 1}, Config, #{}).
+% Wait for the RAFT server to become the leader
 wa\_raft\_server:status(raft\_server\_test\_1).
 % Read and write against a key
 wa\_raft\_acceptor:commit(raft\_acceptor\_test\_1, {make\_ref(), {write, test, key, 1000}}).
@@ -65,7 +65,7 @@ ok
 5\> % Here we add WARaft to the kernel's supervisor, but you should place WARaft's
    % child spec underneath your application's supervisor in a real deployment.
    supervisor:start\_child(kernel\_sup, Spec).
-{ok,<0.103.0\>}
+{ok,<0.101.0\>}
 6\> % Check that the RAFT server started successfully
    wa\_raft\_server:status(raft\_server\_test\_1).
 \[{state,stalled},
@@ -86,17 +86,18 @@ ok
  {votes,#{}},
  {inflight\_applies,0},
  {disable\_reason,undefined},
- {config,#{version \=> 1}},
+ {config,#{version \=> 1,membership \=> \[\],witness \=> \[\]}},
  {config\_index,0},
  {witness,false}\]
 7\> % Make a cluster configuration with the current node as the only member
    Config \= wa\_raft\_server:make\_config(\[#raft\_identity{name \= raft\_server\_test\_1, node \= node()}\]).
 #{version \=> 1,
-  membership \=> \[{raft\_server\_test\_1,nonode@nohost}\]}
-8\> % Bootstrap the RAFT server by force-promoting it
-   wa\_raft\_server:promote(raft\_server\_test\_1, 1, true, Config).
+  membership \=> \[{raft\_server\_test\_1,nonode@nohost}\],
+  witness \=> \[\]}
+8\> % Bootstrap the RAFT server to get it started
+   wa\_raft\_server:bootstrap(raft\_server\_test\_1, #raft\_log\_pos{index \= 1, term \= 1}, Config, #{}).
 ok
-9\> % Check that now the RAFT server is the leader
+9\> % Wait for the RAFT server to become the leader
    wa\_raft\_server:status(raft\_server\_test\_1).
 \[{state,leader},
  {id,nonode@nohost},
@@ -104,20 +105,21 @@ ok
  {partition,1},
  {data\_dir,"./test.1"},
  {current\_term,1},
- {voted\_for,undefined},
- {commit\_index,1},
- {last\_applied,1},
+ {voted\_for,nonode@nohost},
+ {commit\_index,2},
+ {last\_applied,2},
  {leader\_id,nonode@nohost},
  {next\_index,#{}},
  {match\_index,#{}},
  {log\_module,wa\_raft\_log\_ets},
- {log\_first,0},
- {log\_last,1},
+ {log\_first,1},
+ {log\_last,2},
  {votes,#{}},
  {inflight\_applies,0},
  {disable\_reason,undefined},
  {config,#{version \=> 1,
-           membership \=> \[{raft\_server\_test\_1,nonode@nohost}\]}},
+           membership \=> \[{raft\_server\_test\_1,nonode@nohost}\],
+           witness \=> \[\]}},
  {config\_index,1},
  {witness,false}\]
 10\> % Read and write against a key

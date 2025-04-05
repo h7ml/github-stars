@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 18813
+stars: 18881
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -57,6 +57,7 @@ Who is using Yjs
 -   Skiff Private, decentralized workspace.
 -   JupyterLab Collaborative computational Notebooks
 -   JupyterCad Extension to JupyterLab that enables collaborative editing of 3d FreeCAD Models.
+-   JupyterGIS Collaborative GIS (Geographic Information System) editor in Jupyter
 -   Hyperquery A collaborative data workspace for sharing analyses, documentation, spreadsheets, and dashboards.
 -   Nosgestesclimat The french carbon footprint calculator has a group P2P mode based on yjs
 -   oorja.io Online meeting spaces extensible with collaborative apps, end-to-end encrypted.
@@ -65,7 +66,6 @@ Who is using Yjs
 -   btw Open-source Medium alternative
 -   AWS SageMaker Tools for building Machine Learning Models
 -   linear Streamline issues, projects, and product roadmaps.
--   AWS SageMaker - Machine Learning Service
 -   Arkiter - Live interview software
 -   Appflowy - They use Yrs
 -   Multi.app - Multiplayer app sharing: Point, draw and edit in shared apps as if they're on your computer. They are using Yrs.
@@ -84,6 +84,7 @@ Who is using Yjs
 -   ScienHub - Collaborative LaTeX editor in the browser.
 -   Open Collaboration Tools - Collaborative editing for your IDE or custom editor
 -   Typst - Compose, edit, and automate technical documents
+-   Kedyou - Digital workspaces for tutoring
 
 Table of Contents
 -----------------
@@ -149,6 +150,12 @@ Monaco
 y-monaco
 
 demo
+
+Ace
+
+✔
+
+y-ace
 
 Slate
 
@@ -226,7 +233,7 @@ Setting up the communication between clients, managing awareness information, an
 
 y-websocket
 
-A module that contains a simple websocket backend and a websocket client that connects to that backend. **y-redis**, **y-sweet**, **ypy-websocket** and **Hocuspocus** (see below) are alternative backends to y-websocket.
+A module that contains a simple websocket backend and a websocket client that connects to that backend. **y-redis**, **y-sweet**, **ypy-websocket**, **yrs-warp** and **Hocuspocus** (see below) are alternative backends to y-websocket.
 
 y-webrtc
 

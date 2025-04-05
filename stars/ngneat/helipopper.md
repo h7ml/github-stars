@@ -1,6 +1,6 @@
 ---
 project: helipopper
-stars: 425
+stars: 427
 description: 🚁 A Powerful Tooltip and Popover for Angular Applications
 url: https://github.com/ngneat/helipopper
 ---
@@ -38,7 +38,7 @@ $ pnpm i @ngneat/helipopper
 
 Configure it as shown below:
 
-import { provideTippyLoader provideTippyConfig, tooltipVariation, popperVariation } from '@ngneat/helipopper/config';
+import { provideTippyLoader, provideTippyConfig, tooltipVariation, popperVariation } from '@ngneat/helipopper/config';
 
 bootstrapApplication(AppComponent, {
   providers: \[

@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 45621
+stars: 46110
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -437,6 +437,12 @@ Qwen2-Audio
 
 qwen2\_audio
 
+Qwen2.5-Omni
+
+7B
+
+qwen2\_omni
+
 Qwen2-VL/Qwen2.5-VL/QVQ
 
 2B/3B/7B/32B/72B
@@ -763,7 +769,7 @@ vllm
 
 0.4.3
 
-0.7.3
+0.8.2
 
 flash-attn
 

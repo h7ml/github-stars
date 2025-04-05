@@ -1,6 +1,6 @@
 ---
 project: nocobase
-stars: 13931
+stars: 14002
 description: NocoBase is an extensibility-first, open-source no-code/low-code platform for building business applications and enterprise solutions.
 url: https://github.com/nocobase/nocobase
 ---
@@ -9,18 +9,10 @@ English | 中文 | 日本語
 
 EN-NocoBase.V1203.mp4
 
-We'd love your support!
------------------------
-
-Release Notes
--------------
-
-Our blog is regularly updated with release notes and provides a weekly summary.
-
 What is NocoBase
 ----------------
 
-NocoBase is a scalability-first, open-source no-code development platform.  
+NocoBase is an extensibility-first, open-source no-code development platform.  
 Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!
 
 Homepage:  
@@ -34,6 +26,17 @@ https://docs.nocobase.com/
 
 Forum:  
 https://forum.nocobase.com/
+
+Tutorials:  
+https://www.nocobase.com/en/tutorials
+
+Use Cases:  
+https://www.nocobase.com/en/blog/tags/customer-stories
+
+Release Notes
+-------------
+
+Our blog is regularly updated with release notes and provides a weekly summary.
 
 Distinctive features
 --------------------

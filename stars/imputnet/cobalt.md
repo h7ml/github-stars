@@ -1,6 +1,6 @@
 ---
 project: cobalt
-stars: 30116
+stars: 30341
 description: best way to save what you love
 url: https://github.com/imputnet/cobalt
 ---
@@ -29,13 +29,10 @@ this monorepo includes source code for api, frontend, and related packages:
 
 it also includes documentation in the docs tree:
 
--   cobalt api documentation
 -   how to run a cobalt instance
--   how to protect a cobalt instance (recommended if you host a public instance)
-
-### thank you
-
-cobalt is sponsored by royalehosting.net. a part of our infrastructure is hosted on their network. we really appreciate their kindness and support!
+-   how to protect a cobalt instance
+-   cobalt api instance environment variables
+-   cobalt api documentation
 
 ### ethics
 
@@ -46,6 +43,10 @@ cobalt is in no way a piracy tool and cannot be used as such. it can only downlo
 ### contributing
 
 if you're considering contributing to cobalt, first of all, thank you! check the contribution guidelines here before getting started, they'll help you do your best right away.
+
+### thank you
+
+cobalt is sponsored by royalehosting.net. a part of our infrastructure is hosted on their network. we really appreciate their kindness and support!
 
 ### licenses
 

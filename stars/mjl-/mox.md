@@ -1,6 +1,6 @@
 ---
 project: mox
-stars: 4695
+stars: 4740
 description: modern full-featured open source secure mail server for low-maintenance self-hosted email
 url: https://github.com/mjl-/mox
 ---
@@ -22,7 +22,7 @@ Features
 -   Reputation tracking, learning (per user) host-, domain- and sender address-based reputation from (Non-)Junk email classification.
 -   Bayesian spam filtering that learns (per user) from (Non-)Junk email.
 -   Slowing down senders with no/low reputation or questionable email content (similar to greylisting). Rejected emails are stored in a mailbox called Rejects for a short period, helping with misclassified legitimate synchronous signup/login/transactional emails.
--   Internationalized email, with unicode in email address usernames ("localparts"), and in domain names (IDNA).
+-   Internationalized email (EIA), with unicode in email address usernames ("localparts"), and in domain names (IDNA).
 -   Automatic TLS with ACME, for use with Let's Encrypt and other CA's.
 -   DANE and MTA-STS for inbound and outbound delivery over SMTP with STARTTLS, including REQUIRETLS and with incoming/outgoing TLSRPT reporting.
 -   Web admin interface that helps you set up your domains, accounts and list aliases (instructions to create DNS records, configure SPF/DKIM/DMARC/TLSRPT/MTA-STS), for status information, and modifying the configuration file.
@@ -98,17 +98,22 @@ New docker images aren't (automatically) generated for new Go runtime/compile re
 
 It is important to run with docker host networking, so mox can use the public IPs and has correct remote IP information for incoming connections (important for junk filtering and rate-limiting).
 
-Future/development
-==================
+Development
+===========
 
 See develop.txt for instructions/tips for developing on mox.
 
-Mox will receiving funding in 2024 and 2025 through NLnet/EU's NGI0 Zero Core, see https://nlnet.nl/project/Mox-Automation/.
+Sponsors
+========
 
-Mox received funding in 2023 and 2024 through NLnet/EU's NGI0 Entrust, see https://nlnet.nl/project/Mox/.
+Thanks to NLnet foundation, the European Commission's NGI programme, and the Netherlands Ministry of the Interior and Kingdom Relations for financial support:
+
+-   2024/2025, NLnet NGI0 Zero Core, https://nlnet.nl/project/Mox-Automation/
+-   2024, NLnet e-Commons Fund, https://nlnet.nl/project/Mox-API/
+-   2023/2024, NLnet NGI0 Entrust, https://nlnet.nl/project/Mox/
 
 Roadmap
--------
+=======
 
 -   "mox setup" command, using admin web interface for interactive setup
 -   Automate DNS management, for setup and maintenance, such as DANE/DKIM key rotation
@@ -123,7 +128,7 @@ Roadmap
 -   External addresses in aliases/lists.
 -   Autoresponder (out of office/vacation)
 -   Mailing list manager
--   IMAP extensions for "online"/non-syncing/webmail clients (MULTISEARCH, SORT (including DISPLAYFROM, DISPLAYTO), THREAD, PARTIAL, CONTEXT=SEARCH CONTEXT=SORT ESORT, FILTERS, PREVIEW)
+-   IMAP extensions for "online"/non-syncing/webmail clients (SORT (including DISPLAYFROM, DISPLAYTO), THREAD, PARTIAL, CONTEXT=SEARCH CONTEXT=SORT ESORT, FILTERS)
 -   IMAP ACL support, for account sharing (interacts with many extensions and code)
 -   Improve support for mobile clients with extensions: IMAP URLAUTH, SMTP CHUNKING and BINARYMIME, IMAP CATENATE
 -   Privilege separation, isolating parts of the application to more restricted sandbox (e.g. new unauthenticated connections)
@@ -143,9 +148,9 @@ Not supported/planned
 
 There is currently no plan to implement the following. Though this may change in the future.
 
--   Functioning as SMTP relay
+-   Functioning as an SMTP relay without authentication
 -   POP3
--   Delivery to (unix) OS system users
+-   Delivery to (unix) OS system users (mbox/Maildir)
 -   Support for pluggable delivery mechanisms
 
 FAQ - Frequently Asked Questions

@@ -1,6 +1,6 @@
 ---
 project: mkdocs-material
-stars: 22636
+stars: 22714
 description: Documentation that simply works
 url: https://github.com/squidfunk/mkdocs-material
 ---
@@ -61,7 +61,7 @@ Trusted by ...
 
 ### ... industry leaders
 
-ArXiv, Atlassian, AWS, Bloomberg, CERN, CloudFlare, Datadog, Google, Harvard, Hewlett Packard, HSBC, ING, Intel, JetBrains, LinkedIn, Microsoft, Mozilla, Netflix, OpenAI, Red Hat, Roboflow, Salesforce, SIEMENS, Slack, Square, Uber, Zalando
+ArXiv, Atlassian, AWS, Bloomberg, CERN, Datadog, Google, Harvard, Hewlett Packard, HSBC, ING, Intel, JetBrains, LinkedIn, Microsoft, Mozilla, Netflix, OpenAI, Red Hat, Roboflow, Salesforce, SIEMENS, Slack, Square, Uber, Zalando
 
 ### ... and successful Open Source projects
 

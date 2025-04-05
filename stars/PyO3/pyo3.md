@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13339
+stars: 13395
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -172,6 +172,8 @@ Examples
 
 -   bed-reader _Read and write the PLINK BED format, simply and efficiently._
     -   Shows Rayon/ndarray::parallel (including capturing errors, controlling thread num), Python types to Rust generics, Github Actions
+-   blake3-py _Python bindings for the BLAKE3 cryptographic hash function._
+    -   Parallelized builds on GitHub Actions for MacOS, Linux, Windows, including free-threaded 3.13t wheels.
 -   cellular\_raza _A cellular agent-based simulation framework for building complex models from a clean slate._
 -   connector-x _Fastest library to load data from DB to DataFrames in Rust and Python._
 -   cryptography _Python cryptography library with some functionality in Rust._
@@ -194,6 +196,7 @@ Examples
 -   orjson _Fast Python JSON library._
 -   ormsgpack _Fast Python msgpack library._
 -   polars _Fast multi-threaded DataFrame library in Rust | Python | Node.js._
+-   pycrdt _Python bindings for the Rust CRDT implementation Yrs._
 -   pydantic-core _Core validation logic for pydantic written in Rust._
 -   primp _The fastest python HTTP client that can impersonate web browsers by mimicking their headers and TLS/JA3/JA4/HTTP2 fingerprints._
 -   rateslib _A fixed income library for Python using Rust extensions._

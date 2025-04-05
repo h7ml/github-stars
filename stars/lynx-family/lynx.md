@@ -1,6 +1,6 @@
 ---
 project: lynx
-stars: 11317
+stars: 11623
 description: Empower the Web community and invite more to build across platforms.
 url: https://github.com/lynx-family/lynx
 ---
@@ -76,7 +76,11 @@ Please refer to our contributing guide for details.
 Discussions
 -----------
 
+Bugs and feature requests are filed in Github Issues
+
 Large discussions and proposals are discussed in Github Discussions
+
+You are always very welcome to join the Discord Channel and meet others who are enthusiastic about making Lynx great.
 
 Credits
 -------

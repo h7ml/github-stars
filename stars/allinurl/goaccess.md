@@ -1,6 +1,6 @@
 ---
 project: goaccess
-stars: 19170
+stars: 19202
 description: GoAccess is a real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems or through your browser.
 url: https://github.com/allinurl/goaccess
 ---
@@ -26,6 +26,9 @@ GoAccess parses the specified web log file and outputs the data to the X termina
     
 -   **Track Application Response Time**  
     Track the time taken to serve the request. Extremely useful if you want to track pages that are slowing down your site.
+    
+-   **WebSocket Authentication:**  
+    GoAccess offers enhanced WebSocket authentication, supporting local and external JWT verification, with secure token refresh capabilities and seamless integration with external authentication systems.
     
 -   **Nearly All Web Log Formats**  
     GoAccess allows any custom log format string. Predefined options include, Apache, Nginx, Amazon S3, Elastic Load Balancing, CloudFront, etc.
@@ -90,9 +93,9 @@ GoAccess can be compiled and used on \*nix systems.
 Download, extract and compile GoAccess with:
 
 ```
-$ wget https://tar.goaccess.io/goaccess-1.9.3.tar.gz
-$ tar -xzvf goaccess-1.9.3.tar.gz
-$ cd goaccess-1.9.3/
+$ wget https://tar.goaccess.io/goaccess-1.9.4.tar.gz
+$ tar -xzvf goaccess-1.9.4.tar.gz
+$ cd goaccess-1.9.4/
 $ ./configure --enable-utf8 --enable-geoip=mmdb
 $ make
 # make install
@@ -195,6 +198,35 @@ $ sudo apt-get install goaccess
 
 GoAccess can be used in Windows through Cygwin. See Cygwin's packages. Or through the GNU+Linux Subsystem on Windows 10.
 
+#### Docker
+
+A Docker image has been updated, capable of directing output from an access log. If you only want to output a report, you can pipe a log from the external environment to a Docker-based process:
+
+```
+touch report.html
+cat access.log | docker run --rm -i -v ./report.html:/report.html -e LANG=$LANG allinurl/goaccess -a -o report.html --log-format COMBINED -
+```
+
+OR real-time
+
+```
+tail -F access.log | docker run -p 7890:7890 --rm -i -e LANG=$LANG allinurl/goaccess -a -o report.html --log-format COMBINED --real-time-html -
+```
+
+There is also documentation how to use docker-compose.
+
+##### Build in isolated container
+
+You can also build the binary for Debian based systems in an isolated container environment to prevent cluttering your local system with the development libraries:
+
+```
+$ curl -L "https://github.com/allinurl/goaccess/archive/refs/heads/master.tar.gz" | tar -xz && cd goaccess-master
+$ docker build -t goaccess/build.debian-12 -f Dockerfile.debian-12 .
+$ docker run -i --rm -v $PWD:/goaccess goaccess/build.debian-12 > goaccess
+```
+
+You can read more about using the docker image in DOCKER.md.
+
 #### Distribution Packages
 
 GoAccess has minimal requirements, it's written in C and requires only ncurses. However, below is a table of some optional dependencies in some distros to build GoAccess from source.
@@ -260,35 +292,6 @@ libmaxminddb
 openssl
 
 **Note**: You may need to install build tools like `gcc`, `autoconf`, `gettext`, `autopoint` etc. for compiling/building software from source. e.g., `base-devel`, `build-essential`, `"Development Tools"`.
-
-#### Docker
-
-A Docker image has been updated, capable of directing output from an access log. If you only want to output a report, you can pipe a log from the external environment to a Docker-based process:
-
-```
-touch report.html
-cat access.log | docker run --rm -i -v ./report.html:/report.html -e LANG=$LANG allinurl/goaccess -a -o report.html --log-format COMBINED -
-```
-
-OR real-time
-
-```
-tail -F access.log | docker run -p 7890:7890 --rm -i -e LANG=$LANG allinurl/goaccess -a -o report.html --log-format COMBINED --real-time-html -
-```
-
-There is also documentation how to use docker-compose.
-
-##### Build in isolated container
-
-You can also build the binary for Debian based systems in an isolated container environment to prevent cluttering your local system with the development libraries:
-
-```
-$ curl -L "https://github.com/allinurl/goaccess/archive/refs/heads/master.tar.gz" | tar -xz && cd goaccess-master
-$ docker build -t goaccess/build.debian-12 -f Dockerfile.debian-12 .
-$ docker run -i --rm -v $PWD:/goaccess goaccess/build.debian-12 > goaccess
-```
-
-You can read more about using the docker image in DOCKER.md.
 
 Storage
 -------

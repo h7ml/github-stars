@@ -1,6 +1,6 @@
 ---
 project: maddy
-stars: 5448
+stars: 5460
 description: ✉️ Composable all-in-one mail server.
 url: https://github.com/foxcpp/maddy
 ---

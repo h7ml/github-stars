@@ -1,6 +1,6 @@
 ---
 project: accent
-stars: 1377
+stars: 1382
 description: The first developer-oriented translation tool. True asynchronous flow between translators and your team.
 url: https://github.com/mirego/accent
 ---
@@ -224,6 +224,18 @@ The size of the pool used by the database connection module
 _DEFAULT\_UNSAFE\_VAULT\_KEY_
 
 The secret key that is used to encrypt machine translations services config key
+
+`TZDATA_AUTOUPDATE_DISABLED`
+
+_none_
+
+Turn off automatic updates for Tzdata, needed when running read-only containers
+
+`SECRET_KEY_BASE`
+
+_DEFAULT\_UNSAFE\_KEY_
+
+The secret key that is used to encrypt session (cookie)
 
 ### Authentication setup
 

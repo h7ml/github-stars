@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68423
+stars: 68455
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -311,6 +311,7 @@ Courses
     -   System Analysis and Design - IISC Bangalore
     -   Software Engineering - IIT Bombay
     -   Dependable Systems (SS 2014)- HPI University of Potsdam
+    -   Automated Software Testing - ETH Zürich | Spring 2024
     -   Software Testing - IIT Kharagpur
     -   Software Testing - Udacity, course-cs258 | 2015
     -   Software Debugging - Udacity, course-cs259 | 2015
@@ -395,6 +396,7 @@ Courses
     -   10 - 301/601 - Introduction to Machine Learning - Fall 2023 - CMU
     -   6.036 - Machine Learning, Broderick - MIT Fall 2020
     -   Mediterranean Machine Learning summer school 2024 (YouTube-2023) (YouTube-2022) (YouTube-2021)
+    -   LxMLS Lisbon Machine Learning School 2024 (YouTube-2023) (YouTube-2022) (YouTube-2021) (YouTube-2020)
     -   Applied Machine Learning (Cornell Tech CS 5787, Fall 2020)
     -   Stanford CS229: Machine Learning Course | Summer 2019 (Anand Avati) (Spring 2022)
     -   CMS 165 Foundations of Machine Learning - 2019 - Caltech (Youtube)
@@ -466,6 +468,7 @@ Courses
     -   UC San Diego/edX DSE 220X Machine Learning Fundamentals, by Sanjoy Dasgupta
     -   MIT 6.036 Introduction to Machine Learning spring 2019, by Leslie Kaelbling
     -   LMU Munich Introduction to Machine Learning
+    -   CMU 15 388 / 15 688 Practical Data Science, by Zico Kolter (Fall 2019) (Spring 2018)
     -   UCLA Stats 15 Introduction to Data Science fall 2022, by Miles Chen
     -   UCLA Stats 21 Python and Other Technologies for Data Science spring 2024, by Miles Chen
     -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
@@ -656,6 +659,7 @@ Courses
     -   AM 207 - Stochastic Methods for Data Analysis, Inference and Optimization, Harvard University
     -   MIT 6.S098 Applied Convex Optimization IAP 2022, by Alexandre Amice, Benoit Legat (YouTube)
     -   University of Twente Discrete Optimization, by Marc Uetz (Fall 2020)
+    -   UC Davis MAT 168 Optimization winter 2024, by Matthias Köppe
     -   UCSD CS292F Convex Optimization Spring 2020, by Yu-Xiang Wang (Youtube)
     -   UIUC ECE 490 Introduction to Optimization fall 2020, by Venugopal V. Veeravalli (YouTube)
     -   University of Wisconsin-Madison CS/ECE/ISyE 524 Introduction to Optimization spring 2017-18, by Laurent Lessard
@@ -807,6 +811,7 @@ Courses
     -   UCLA Stats 200C High-dimensional Statistics spring 2022, by Arash Amini (Spring 2021)
     -   UCLA Stats 203 Large Sample Theory fall 2021, by Jingyi Jessica Li (Fall 2020)
     -   UCSD Math 280 Probability Theory and Stochastic Processes, by Todd Kemp (YouTube)
+    -   METU EE 531 Probability and Stochastic Processes, by Elif Uysal
     -   6.262 Discrete Stochastic Processes - MIT OCW
     -   18.650 Statistics for Applications - MIT OCW
     -   STAT240 - Robust Statistics - UC Berkeley
@@ -942,6 +947,7 @@ Courses
 -   Columbia IEOR E4106 Introduction to Operations Research: Stochastic Models spring 2005, by Ward Whitt
 -   Columbia ELEN E6711 Stochastic Models in Information Systems fall 2005, by Yuliy Barsyhnikov
 -   Columbia ELEN E6717 Information Theory fall 2003, by Vittorio Castelli
+-   University of Washington EE514A/EE515A - Information Theory I/II fall 2013, by Jeff Bilmes
 -   CMU 21 738 Extremal Combinatorics spring 2020, by Po-Shen Loh
 -   JHU Domain-Specific Languages (DSL) Class (Summer 2018)
 -   Spring 2019 - Probabilistically Checkable and Interactive Proof Systems (Alessandro Chiesa)
@@ -955,6 +961,7 @@ Courses
 -   EE319K Embedded Systems - UT Austin
 -   EE445L Embedded Systems Design Lab, Fall 2015, UTexas
 -   CS149 Introduction to Embedded Systems - Spring 2011 - UCBerkeley
+-   CSE/ECE 474 Introduction to Embedded Systems - University of Washington (Lectures - YouTube-Spring 21)
 -   ECE 4760 Designing with Microcontrollers Fall 2016, Cornell University (Lectures - Youtube)
 -   ECE 5760 - Advanced Microcontroller Design and system-on-chip, Spring 2016 - Cornell University
 -   Internet of Things by Prof. Dr.-Ing. Dietmar P. F. Möller
@@ -1188,6 +1195,7 @@ Courses
 -   NOC:Computational Systems Biology - IIT Madras
 -   NOC:BioInformatics:Algorithms and Applications - IIT Madras
 -   Data Science and AI for Neuroscience Summer School - Caltech Neuroscience
+-   Theoretical and Computational Neuroscience Summer School - 2024 - CNeuro
 -   Neuroscience 299: Computing with High-Dimensional Vectors - Fall 2021 - UC Berkeley
 -   BIO410/510 Bioinformatics - California State University, Monterey Bay
 -   BIO412: Comparative Genomics - California State University, Monterey Bay
@@ -1259,6 +1267,7 @@ Courses
 -   Introduction to Robotics Course - UNCC
 -   SLAM Lectures
 -   CSE 478 – Autonomous Robotics – Winter 2025 - University of Washington (Winter 2024)
+-   CSE 571 – AI-Robotics – Spring 2023 - University of Washington
 -   ME 597 – Autonomous Mobile Robotics – Fall 2014
 -   ME 780 – Perception For Autonomous Driving – Spring 2017
 -   ME780 – Nonlinear State Estimation for Robotics and Computer Vision – Spring 2017
@@ -1292,6 +1301,7 @@ Courses
 -   Signal Processing: An Introduction by Nathan Kutz
 -   UC Santa Barbara ME 269 Network Systems, Dynamics and Control fall 2021, by Francesco Bullo
 -   CMU 16 299 Introduction to Feedback Control Systems spring 2022, by Chris Atkeson
+-   University of Wisconsin-Madison ECE 332 Feedback Control Systems fall 2021, by Steven Fredette
 -   MAE 509 Linear Matrix Inequality Methods in Optimal and Robust Control, by Matthew M. Peet
 -   UIUC CS 588 Autonomous Vehicle System Engineering fall 2021, by David Forsyth
 -   EPFL ME 425 Model Predictive Control fall 2020, by Colin Jones

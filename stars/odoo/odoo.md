@@ -1,12 +1,12 @@
 ---
 project: odoo
-stars: 41651
+stars: 41910
 description: Odoo. Open Source Apps To Grow Your Business.
 url: https://github.com/odoo/odoo
 ---
 
 Odoo
-----
+====
 
 Odoo is a suite of web based open source business apps.
 
@@ -19,4 +19,9 @@ Getting started with Odoo
 
 For a standard installation please follow the Setup instructions from the documentation.
 
-To learn the software, we recommend the Odoo eLearning, or Scale-up, the business game. Developers can start with the developer tutorials
+To learn the software, we recommend the Odoo eLearning, or Scale-up, the business game. Developers can start with the developer tutorials.
+
+Security
+--------
+
+If you believe you have found a security issue, check our Responsible Disclosure page for details and get in touch with us via email.

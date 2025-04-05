@@ -1,7 +1,7 @@
 ---
 project: anything-llm
-stars: 41921
-description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, and more.
+stars: 42300
+description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
 
@@ -27,9 +27,10 @@ AnythingLLM divides your documents into objects called `workspaces`. A Workspace
 Cool features of AnythingLLM
 ----------------------------
 
--   🆕 **Custom AI Agents**
+-   🆕 **Full MCP-compatibility**
 -   🆕 **No-code AI Agent builder**
 -   🖼️ **Multi-modal support (both closed and open-source LLMs!)**
+-   **Custom AI Agents**
 -   👤 Multi-user instance support and permissioning _Docker version only_
 -   🦾 Agents inside your workspace (browse the web, etc)
 -   💬 Custom Embeddable Chat widget for your website _Docker version only_

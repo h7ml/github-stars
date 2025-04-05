@@ -1,7 +1,7 @@
 ---
 project: docker-registry-ui
-stars: 2849
-description: The simplest and most complete UI for your private registry
+stars: 2873
+description: The simplest and most complete UI for your private docker registry v2 and v3
 url: https://github.com/Joxit/docker-registry-ui
 ---
 
@@ -11,9 +11,9 @@ Docker Registry User Interface
 Overview
 --------
 
-This project aims to provide a simple and complete user interface for your private docker registry. You can customize the interface with various options. The major option is `SINGLE_REGISTRY` which allows you to disable the dynamic selection of docker registeries (same behavior as the old **static** tag).
+This project aims to provide a simple and complete user interface for your private docker registry. You can customize the interface with various options. The major option is `SINGLE_REGISTRY` which allows you to disable the dynamic selection of docker registries (same behavior as the old **static** tag).
 
-You may need the migration guide from 1.x to 2.x or the 1.x readme
+You may need the migration guide from 1.x to 2.x or the 1.x readme. The project support both docker registry v2 and docker registry v3.
 
 This web user interface uses Riot the react-like user interface micro-library and riot-mui components.
 
@@ -72,7 +72,7 @@ FAQ
     -   This means you are using a UI with HTTPS and your registry is using HTTP (unsecured). When you are on a HTTPS site, you can't get HTTP content. Upgrade you registry with a HTTPS connection.
 -   Why the default nginx `Host` is set to `$http_host` ?
     -   This fixes the issue #88. More about this in #113.
--   Why OPTIONS (aka preflight requests) and DELETE fails with 401 status code (using Basic Auth) ?
+-   Why OPTIONS (aka preflight requests) and DELETE fails with 401 status code (using Basic Auth) or why the UI says to check my `Access-Control-Allow-Origin` ?
     -   This is caused by a bug in docker registry, it returns 401 status requests on preflight requests, this breaks W3C preflight-request specification. I contacted docker registry maintainers and this will never be fixed (distribution/distribution#4458). I suggest to have your UI on the same domain than your registry e.g. registry.example.com/ui/ **or** use `NGINX_PROXY_PASS_URL` **or** configure a nginx/apache/haproxy in front of your registry that returns 200 on each OPTIONS requests. (see #104, #204, #207, #214, #266, #278).
 -   Can I use the docker registry ui as a standalone application (with Electron) ?
     -   Yes, check out the example here. (see #129)
@@ -247,13 +247,17 @@ services:
 Using CORS
 ----------
 
-Your server should be configured to accept CORS.
+⚠️ Before posting issues about CORS, please read the and all created issues.
 
-If your docker registry does not need credentials, you will need to send this HEADER:
+⚠️ If you **are using credentials** and your registry is on a different host than your UI, please read the FAQ about OPTIONS, all the linked issues and distribution/distribution#4458 first. The best way for the UI to work is using `NGINX_PROXY_PASS_URL` or configure your own proxy (nginx, haproxy...) that will be on top of your **docker registry** (and not the UI!) to override OPTIONS requests.
 
-```
-Access-Control-Allow-Origin: ['*']
-```
+If your docker registry **does not need credentials**, you will need to send this HEADER:
+
+http:
+  headers:
+    Access-Control-Allow-Origin: \['\*'\]
+    Access-Control-Allow-Headers: \['Accept', 'Cache-Control'\]
+    Access-Control-Allow-Methods: \['HEAD', 'GET', 'OPTIONS'\] # Optional
 
 If your docker registry need credentials, you will need to send these HEADERS (you must add the protocol `http`/`https` and the port when not default `80`/`443`):
 
@@ -265,8 +269,6 @@ http:
     Access-Control-Allow-Methods: \['HEAD', 'GET', 'OPTIONS'\] # Optional
 
 An alternative for CORS issues is a plugin on your browser, more info here (thank you xmontero).
-
-⚠️ If you are using credential and still having issues, please read the the line about preflight requests and the bug in docker registry server in the FAQ before posting any issues.
 
 Using delete
 ------------

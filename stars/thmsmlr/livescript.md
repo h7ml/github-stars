@@ -1,6 +1,6 @@
 ---
 project: livescript
-stars: 125
+stars: 126
 description: 1 part Phoenix Livereload, 1 part Livebook. All for .exs scripts
 url: https://github.com/thmsmlr/livescript
 ---

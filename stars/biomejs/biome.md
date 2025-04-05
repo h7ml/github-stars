@@ -1,6 +1,6 @@
 ---
 project: biome
-stars: 17975
+stars: 18150
 description: A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.
 url: https://github.com/biomejs/biome
 ---
@@ -80,7 +80,7 @@ We use Polar.sh to up-vote and promote specific features that you would like to 
 Sponsors
 --------
 
-### Gold Sponsors
+### Platinum Sponsor
 
 ### Silver Sponsors
 
