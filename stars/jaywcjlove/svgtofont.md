@@ -1,6 +1,6 @@
 ---
 project: svgtofont
-stars: 640
+stars: 643
 description: Read a set of SVG icons and ouput a TTF/EOT/WOFF/WOFF2/SVG font.
 url: https://github.com/jaywcjlove/svgtofont
 ---
@@ -182,7 +182,7 @@ import { createSVG, createTTF, createEOT, createWOFF, createWOFF2, createSvgSymb
 
 const options \= { ... };
 
-async function creatFont() {
+async function createFont() {
   const unicodeObject \= await createSVG(options); 
   const ttf \= await createTTF(options); // SVG Font => TTF
   await createEOT(options, ttf); // TTF => EOT
@@ -391,27 +391,26 @@ let's say you have some svgs and you want to use codepoints but for some of them
 
 ### useCSSVars
 
-\> Type: \`Boolean\`  
-\> Default value: \`false\`  
+> Type: `Boolean`  
+> Default value: `false`
 
 consoles whenever {{ cssString }} template outputs unicode characters or css vars
 
 ### classNamePrefix
 
-\> Type: \`String\`  
-\> Default value: font name  
+> Type: `String`  
+> Default value: font name
 
 Create font class name prefix, default value font name.
 
 ### css
 
-\> Type: \`Boolean|CSSOptions\`  
-\> Default value: \`false\`  
+> Type: `Boolean|CSSOptions`  
+> Default value: `false`
 
-Create CSS/LESS files, default \`true\`.
+Create CSS/LESS files, default `true`.
 
-\`\`\`ts
-type CSSOptions = {
+type CSSOptions \= {
   /\*\*
    \* Output the css file to the specified directory
    \*/
@@ -437,11 +436,11 @@ type CSSOptions = {
   /\*\*
    \* Ad hoc template variables.
    \*/
-  templateVars?: Record<string, any>;
+  templateVars?: Record<string, any\>;
   /\*\*
    \* When including CSS files in a CSS file,
    \* you can add a timestamp parameter or custom text to the file path to prevent browser caching issues and ensure style updates are applied. @default true
-   \* @example \`path/to/iconfont.css?t\=1612345678\`
+   \* @example \`path/to/iconfont.css?t=1612345678\`
    \*/
   hasTimestamp?: boolean | string;
 }

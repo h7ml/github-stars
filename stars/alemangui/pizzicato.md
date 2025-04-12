@@ -5,6 +5,10 @@ description: Library to simplify the way you create and manipulate sounds with t
 url: https://github.com/alemangui/pizzicato
 ---
 
+Note
+
+Due to lack of time to focus on this project, **I'm actively looking for maintainers** who might be interested in working on Pizzicato. Don't hesitate to contact me! In the meantime, consider the project deprecated.
+
 A Web Audio library
 -------------------
 

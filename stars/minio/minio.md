@@ -1,6 +1,6 @@
 ---
 project: minio
-stars: 51332
+stars: 51603
 description: MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
 url: https://github.com/minio/minio
 ---
@@ -120,7 +120,7 @@ You can also connect using any S3-compatible tool, such as the MinIO Client `mc`
 Install from Source
 -------------------
 
-Use the following commands to compile and run a standalone MinIO server from source. Source installation is only intended for developers and advanced users. If you do not have a working Golang environment, please follow How to install Golang. Minimum version required is go1.21
+Use the following commands to compile and run a standalone MinIO server from source. Source installation is only intended for developers and advanced users. If you do not have a working Golang environment, please follow How to install Golang. Minimum version required is go1.24
 
 go install github.com/minio/minio@latest
 

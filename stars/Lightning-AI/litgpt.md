@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 11923
+stars: 11952
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -220,6 +220,14 @@ Google Team, Google Deepmind
 Gemma 2
 
 9B, 27B
+
+Google
+
+Google Team, Google Deepmind
+
+Gemma 3
+
+1B, 4B, 12B, 27B
 
 Google
 

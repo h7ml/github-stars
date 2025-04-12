@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68455
+stars: 68477
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -181,10 +181,12 @@ Courses
 -   Harvard Information Theory 2022, by Gregory Falkovich
 -   Math 510 - Linear Programming and Network Flows - Colorado State University
 -   LINFO 2266 Advanced Algorithms for Optimization 2021, by Pierre Schaus - UCLouvain
--   MIT 6.854 / 18.415 Advanced Algorithms spring 2016, by Ankur Moitra
+-   MIT 6.5210 / 6.854 / 18.415 Advanced Algorithms Fall 2013, 2020, 2021, 2022, by David Karger (Spring 2016, by Ankur Moitra)
 -   CMU 10 801 Advanced Optimization and Randomized Algorithms spring 2014, by Suvrit Sra and Alex Smola
+-   UC Santa Cruz CSE 101 Intro to Data Structures and Algorithms fall 2022, by Seshadhri Comandur (Fall 2020)
+-   UC Santa Cruz CSE 201 Analysis of Algorithms winter 2022, by Seshadhri Comandur
 -   UC Santa Cruz CSE 202 Combinatorial Algorithms spring 2021, by Seshadhri Comandur
--   UC Santa Cruz CSE 104, 204 Computational Complexity fall 2020, spring 2022, by Seshadhri Comandur
+-   UC Santa Cruz CSE 104, 204 Computational Complexity spring 2022, by Seshadhri Comandur (Fall 2020)
 -   UC Santa Cruz CSE 290A Randomized Algorithms spring 2020, by Seshadhri Comandur
 -   Algorithms for Big-Data (Fall 2020) - Saket Saurabh
 -   CS498ABD - Algorithms for Big Data - UIUC, Fall 2020
@@ -303,7 +305,7 @@ Courses
     -   Software Engineering with Objects and Components 2015/16- University of Edinburgh
 -   #### **Software Engineering**
     
-    -   Computer Science 169- Software Engineering - Spring 2015 - UCBerkeley
+    -   \[Computer Science 169- Software Engineering - Spring 2015 - UCBerkeley\](https://youtube.com/playlist?list=PLVEFwJhglgHJQEQ6RjMMjcclix94gp1k2&feature=shared, https://archive.org/details/ucberkeley\_webcast\_W5Hl93ngMhU, https://failedturing.blogspot.com/2015/06/berkeley-cs169-software-engineering\_8.html)
     -   Computer Science 169- Software Engineering - Fall 2019 - UCBerkeley
     -   CS 5150 - Software Engineering, Fall 2014 - Cornell University
     -   Introduction to Service Design and Engineering - University of Trento, Italy
@@ -469,8 +471,10 @@ Courses
     -   MIT 6.036 Introduction to Machine Learning spring 2019, by Leslie Kaelbling
     -   LMU Munich Introduction to Machine Learning
     -   CMU 15 388 / 15 688 Practical Data Science, by Zico Kolter (Fall 2019) (Spring 2018)
+    -   UW Madison CS 320 Data Programming II spring 2021, by Tyler R. Caraza-Harter
+    -   UC San Diego COGS9 Introduction to Data Science fall 2020, by Jason Fleischer
     -   UCLA Stats 15 Introduction to Data Science fall 2022, by Miles Chen
-    -   UCLA Stats 21 Python and Other Technologies for Data Science spring 2024, by Miles Chen
+    -   UCLA Stats 21 Python and Other Technologies for Data Science spring 2024, by Miles Chen (Spring 2021)
     -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
     -   UCLA Stats 231C Theories of Machine Learning spring 2022, by Arash Amini
     -   MSU Machine Learning
@@ -504,6 +508,7 @@ Courses
     -   Information Retrieval - Spring 2018 - ETH Zurich
     -   CAP6673 - Data Mining and Machine Learning - FAU(Video lectures)
     -   CS 412 - Introduction to Data Mining - UIUC
+    -   CS 512 - Data Mining Principles - UIUC (YouTube)
 -   #### **Probabilistic Graphical Modeling**
     
     -   CS 6190 - Probabilistic Modeling, Spring 2016, University of Utah
@@ -592,6 +597,7 @@ Courses
     -   Trustworthy Machine Learning - Winter Semester 2024-2025, University of Tübingen
     -   ETH Zürich Advanced Machine Learning fall 2019, by Joachim M. Buhmann
     -   CS 159 Advanced Topics in Machine Learning, Spring 2021 - Caltech
+    -   CS 229br Advanced Topics in the theory of machine learning, Spring 2021 - Harvard
 -   #### **Natural Language Processing**
     
     -   CS 224N -Natural Language Processing with Deep Learning - Stanford University (Lectures - Winter 2019) (Lectures - Winter 2021) (Lectures - Spring 2024)
@@ -651,6 +657,7 @@ Courses
     -   Optimisation for Machine Learning: Theory and Implementation (Hindi) - IIT
     -   Rochester DSCC 435 Optimization for Machine Learning fall 2023, by Jiaming Liang
     -   Princeton ELE539/COS512 Optimization for Machine Learning spring 2021, by Chi Jin
+    -   UT Dallas CS 7301 Advanced Topics in Optimization for Machine Learning spring 2021, by Rishabh Iyer (YouTube)
     -   EE364a: Convex Optimization I - Stanford University
     -   10-725 Convex Optimization, Spring 2015 - CMU
     -   10-725 Convex Optimization: Fall 2016 - CMU
@@ -660,6 +667,7 @@ Courses
     -   MIT 6.S098 Applied Convex Optimization IAP 2022, by Alexandre Amice, Benoit Legat (YouTube)
     -   University of Twente Discrete Optimization, by Marc Uetz (Fall 2020)
     -   UC Davis MAT 168 Optimization winter 2024, by Matthias Köppe
+    -   Purdue University CHE 597 Computational Optimization spring 2025, by Can Li
     -   UCSD CS292F Convex Optimization Spring 2020, by Yu-Xiang Wang (Youtube)
     -   UIUC ECE 490 Introduction to Optimization fall 2020, by Venugopal V. Veeravalli (YouTube)
     -   University of Wisconsin-Madison CS/ECE/ISyE 524 Introduction to Optimization spring 2017-18, by Laurent Lessard
@@ -707,6 +715,7 @@ Courses
     -   Statistical Physics of Machine Learning
     -   11-755 - Machine Learning for Signal Processing, CMU (YouTube-2024, YouTube-2023)
     -   CSCE 585 - Machine Learning Systems, University of South Carolina (YouTube-2020)
+    -   CS-E4740 - Federated Learning, Spring 2023, Aalto University
 
 * * *
 
@@ -1393,3 +1402,4 @@ Courses
 -   Stanford EE 376a winter 2011, Information Theory, by Thomas Cover
 -   MIT RES.6.007 Signals and Systems, 1987 - MIT
 -   Purdue ME 597 Distributed Energy Resources Spring 2024, by Kevin J. Kircher
+-   Stanford AA228V/CS238V Validation of Safety Critical Systems Winter 2025, by Sydney Michelle Katz

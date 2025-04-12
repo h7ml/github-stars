@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 18881
+stars: 18957
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -316,6 +316,10 @@ Provides persistent storage for a web server using PostgreSQL and is easily comp
 k\_yrs\_go
 
 Golang database server for YJS CRDT using Postgres + Redis
+
+y-op-sqlite
+
+Yjs persistence provider for op-sqlite
 
 ### Tooling
 

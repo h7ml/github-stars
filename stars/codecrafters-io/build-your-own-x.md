@@ -1,6 +1,6 @@
 ---
 project: build-your-own-x
-stars: 368384
+stars: 370528
 description: Master programming by recreating your favorite technologies from scratch.
 url: https://github.com/codecrafters-io/build-your-own-x
 ---
@@ -129,6 +129,7 @@ Tutorials
 -   **Node.js**: _Create a CLI tool in Javascript_
 -   **Rust**: _Command line apps in Rust_
 -   **Rust**: _Writing a Command Line Tool in Rust_
+-   **Zig**: _Build Your Own CLI App in Zig from Scratch_
 
 #### Build your own `Database`
 

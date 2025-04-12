@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 88669
+stars: 88908
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -156,8 +156,6 @@ If you are installing from source, you will need:
 
 \* PyTorch CI uses Visual C++ BuildTools, which come with Visual Studio Enterprise, Professional, or Community Editions. You can also install the build tools from https://visualstudio.microsoft.com/visual-cpp-build-tools/. The build tools _do not_ come with Visual Studio Code by default.
 
-\* We highly recommend installing an Anaconda environment. You will get a high-quality BLAS library (MKL) and you get controlled dependency versions regardless of your Linux distro.
-
 An example of environment setup is shown below:
 
 -   Linux:
@@ -209,7 +207,7 @@ If you want to disable Intel GPU support, export the environment variable `USE_X
 
 #### Get the PyTorch Source
 
-git clone --recursive https://github.com/pytorch/pytorch
+git clone https://github.com/pytorch/pytorch
 cd pytorch
 # if you are updating an existing checkout
 git submodule sync

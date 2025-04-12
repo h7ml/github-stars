@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 142463
+stars: 142852
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---
@@ -27,7 +27,7 @@ Explore the Hub today to find a model and use Transformers to help you get start
 Installation
 ------------
 
-Transformers works with Python 3.9+ PyTorch 2.0+, TensorFlow 2.6+, and Flax 0.4.1+.
+Transformers works with Python 3.9+ PyTorch 2.1+, TensorFlow 2.6+, and Flax 0.4.1+.
 
 Create and activate a virtual environment with venv or uv, a fast Rust-based Python package and project manager.
 

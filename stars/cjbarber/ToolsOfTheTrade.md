@@ -1,6 +1,6 @@
 ---
 project: ToolsOfTheTrade
-stars: 16706
+stars: 16710
 description: Tools of The Trade, from Hacker News.
 url: https://github.com/cjbarber/ToolsOfTheTrade
 ---

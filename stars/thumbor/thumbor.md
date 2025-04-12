@@ -1,6 +1,6 @@
 ---
 project: thumbor
-stars: 10226
+stars: 10228
 description: thumbor is an open-source photo thumbnail service by globo.com
 url: https://github.com/thumbor/thumbor
 ---

@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 12837
+stars: 12849
 description: Next-Generation full text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -25,7 +25,7 @@ Antithesis Operations LLC
 
 FlexSearch performs queries up to 1,000,000 times faster compared to other libraries by also providing powerful search capabilities like multi-field search (document search), phonetic transformations, partial matching, tag-search or suggestions.
 
-Bigger workloads are scalable through workers to perform any updates or queries on the index in parallel through dedicated balanced threads.
+Bigger workloads are scalable through workers to perform any updates or queries to the index in parallel through dedicated balanced threads.
 
 The latest generation v0.8 introduce Persistent Indexes, well optimized for scaling of large datasets and running in parallel. All available features was natively ported right into the database engine of your choice.
 
@@ -73,7 +73,7 @@ Benchmarks:
 -   Matching Benchmark
 
 Latest Benchmark Results  
-The benchmark was measured in terms per seconds, higher values are better (except the test "Memory"). The memory value refers to the amount of memory which was additionally allocated during search.
+The benchmark was measured in terms per seconds, higher values are better (except the test "Memory"). The memory value refers to the amount of memory which was additionally allocated during search.  
 
 Library
 
@@ -244,7 +244,7 @@ Table of contents
 
 Tip
 
-You will just need to spend 5 minutes to improve your results significantly by understanding these 3 elementary things about FlexSearch : Tokenizer, Encoder and Suggestions
+Understanding those 3 elementary things about FlexSearch will improve your results significantly: Tokenizer, Encoder and Suggestions
 
 -   Load Library (Node.js, ESM, Legacy Browser)
     -   Non-Module Bundles (ES5 Legacy)
@@ -256,7 +256,7 @@ You will just need to spend 5 minutes to improve your results significantly by u
 -   Options
     -   Index Options
     -   Document Options
-    -   Worker Options
+    -   Worker Index Options
     -   Persistent Options
     -   Encoder Options
     -   Resolver Options
@@ -305,6 +305,8 @@ Load Library (Node.js, ESM, Legacy Browser)
 npm install flexsearch
 
 The **_dist_** folder is located in: `node_modules/flexsearch/dist/`
+
+> It is not recommended to use the `/src/` folder of this repository as it requires some kind of conditional compilation to resolve the build flags. The `/dist/` folder contains every version you might need including unminified ES6 modules. When none of the `/dist/` folder versions works for you please open an issue. Alternatively you can read more about Custom Builds.
 
 Download Builds  
 
@@ -919,6 +921,10 @@ Methods `.export()` and also `.import()` are always async as well as every metho
 -   Charset.**LatinExtra**
 -   Charset.**LatinSoundex**
 
+`Charset` Chinese, Japanese, Korean Encoder Preset:
+
+-   Charset.**CJK**
+
 * * *
 
 `Language` Encoder Preset:
@@ -939,6 +945,274 @@ Options
 -   Document Search Options
 -   Worker Options
 -   Persistent Options
+
+Basic Usage
+-----------
+
+#### Create a new index
+
+const index \= new Index();
+
+Create a new index and choosing one of the Presets:
+
+const index \= new Index("match");
+
+Create a new index with custom options:
+
+const index \= new Index({
+    tokenize: "forward",
+    resolution: 9,
+    fastupdate: true
+});
+
+Create a new index and extend a preset with custom options:
+
+var index \= new FlexSearch({
+    preset: "memory",
+    tokenize: "forward",
+    resolution: 5
+});
+
+Create a new index and assign an Encoder:
+
+//import { Charset } from "./dist/module/charset.js";
+import { Charset } from "flexsearch";
+const index \= new Index({
+    tokenize: "forward",
+    encoder: Charset.LatinBalance
+});
+
+» Resolution  
+» All available custom options
+
+#### Add text item to an index
+
+Every content which should be added to the index needs an ID. When your content has no ID, then you need to create one by passing an index or count or something else as an ID (a value from type `number` is highly recommended). Those IDs are unique references to a given content. This is important when you update or adding over content through existing IDs. When referencing is not a concern, you can simply use something simple like `count++`.
+
+> Index.**add(id, string)**
+
+index.add(0, "John Doe");
+
+#### Search items
+
+> Index.**search(string | options, <limit>, <options>)**
+
+index.search("John");
+
+Limit the result:
+
+index.search("John", 10);
+
+#### Check existence of already indexed IDs
+
+You can check if an ID was already indexed by:
+
+if(index.contain(1)){
+    console.log("ID was found in index");
+}
+
+#### Update item from an index
+
+> Index.**update(id, string)**
+
+index.update(0, "Max Miller");
+
+#### Remove item from an index
+
+> Index.**remove(id)**
+
+index.remove(0);
+
+#### Clear all items from an index
+
+> Index.**clear()**
+
+index.clear();
+
+### Chaining
+
+Simply chain methods like:
+
+const index \= new Index().addMatcher({'â': 'a'}).add(0, 'foo').add(1, 'bar');
+
+index.remove(0).update(1, 'foo').add(2, 'foobar');
+
+Index Options
+-------------
+
+Option
+
+Values
+
+Description
+
+Default
+
+preset
+
+"memory"  
+"performance"  
+"match"  
+"score"  
+"default"
+
+The configuration profile as a shortcut or as a base for your custom settings.  
+
+"default"
+
+tokenize
+
+"strict" / "exact"  
+"forward"  
+"reverse" / "bidirectional  
+"full"
+
+Indicates how terms should be indexed by tokenization.
+
+"strict"
+
+resolution
+
+Number
+
+Sets the scoring resolution
+
+9
+
+encoder  
+  
+  
+  
+  
+  
+  
+  
+
+new Encoder(options)  
+Charset.Exact  
+Charset.Default  
+Charset.Normalize  
+Charset.LatinBalance  
+Charset.LatinAdvanced  
+Charset.LatinExtra  
+Charset.LatinSoundex  
+false
+
+Choose one of the built-in encoder  
+Read more about Encoder
+
+"default"
+
+encode
+
+function(string) => string\[\]
+
+Pass a custom encoding function  
+Read more about Encoder
+
+"default"
+
+context
+
+Boolean  
+Context Options
+
+Enable/Disable context index. When passing "true" as a value will use the defaults for the context.
+
+false
+
+cache
+
+Boolean  
+Number
+
+Enable/Disable and/or set capacity of cached entries.  
+  
+The cache automatically balance stored entries related to their popularity.
+
+false
+
+fastupdate
+
+Boolean
+
+Additionally add a fastupdate index which boost any replace/update/remove task to a high performance level by also increasing index size by ~30%.
+
+false
+
+priority
+
+Number
+
+Sets the task execution priority (1 low priority - 9 high priority) when using the async methods
+
+4
+
+score
+
+function(string) => number
+
+Use a custom score function
+
+keystore
+
+Number
+
+Increase available size for In-Memory-Index by additionally using uniform balanced registers (Keystore). You can apply values from 1 to 64.
+
+false
+
+Persistent Options:
+
+db
+
+StorageInterface
+
+Pass an instance of a persistent adapter
+
+commit
+
+Boolean
+
+When disabled any changes won't commit, instead it needs calling `index.commit()` manually to make modifications to the index (add, update, remove) persistent.
+
+true
+
+Suggestions
+-----------
+
+Any query on each of the index types is supporting the option `suggest: true`. Also within some of the `Resolver` stages (and, not, xor) you can add this option for the same purpose.
+
+When suggestions is enabled, it allows results which does not perfectly match to the given query e.g. when one term was not included. Suggestion-Search will keep track of the scoring, therefore the first result entry is the closest one to a perfect match.
+
+const index \= new Index().add(1, "cat dog bird");
+const result \= index.search("cat fish");
+// result => \[\]
+
+Same query with suggestion enabled:
+
+const result \= index.search("cat fish", { suggest: true });
+// result => \[ 1 \]
+
+At least one match (or partial match) has to be found to get back any result:
+
+const result \= index.search("horse fish", { suggest: true });
+// result => \[\]
+
+Resolution
+----------
+
+The resolution refers to the maximum count of scoring slots on which the content is divided into.
+
+> A formula to determine a well-balanced value for the `resolution` is: $2\*floor(\\sqrt{content.length})$ where content is the largest value pushed by `index.add()`. This formula does not apply to the `context` resolution.
+
+A resolution of 1 will disable scoring, when `context` was not enabled. A suggested minimum meaningful resolution is 3, because the first and last slot are reserved when available.
+
+### Context Resolution
+
+When `context` was enabled the minimum valuable resolution is 1. You can adjust the resolution of the context index independently. Giving both a value of 1 will disable scoring by term position related to the document root. Instead, the scoring refers to the distance between each term within the query.
+
+Although using a resolution > 1 can further improve context scoring. The default resolution still matters when context chain breaks and falls back to default index internally. A context resolution higher than 50% of the default resolution is probably too much.
 
 Tokenizer (Partial Match)
 -------------------------
@@ -968,7 +1242,7 @@ Memory Factor (n = length of term)
 
 index the full term
 
-foobar
+`foobar`
 
 1
 
@@ -976,8 +1250,8 @@ foobar
 
 index term in forward direction (supports right-to-left by Index option `rtl: true`)
 
-foobar  
-foobar  
+`fo`obar  
+`foob`ar  
 
 n
 
@@ -986,10 +1260,10 @@ n
 
 index term in both directions
 
-foobar  
-foobar  
-foobar  
-foobar
+`fo`obar  
+`foob`ar  
+foob`ar`  
+fo`obar`
 
 2n - 1
 
@@ -997,8 +1271,8 @@ foobar
 
 index every consecutive partial
 
-foobar  
-foobar
+fo`oba`r  
+f`oob`ar
 
 n \* (n - 1)
 
@@ -1082,125 +1356,10 @@ Latin
 
 Pass a custom encoding function to the `Encoder`
 
-Basic Usage
------------
-
-#### Create a new index
-
-const index \= new Index();
-
-Create a new index and choosing one of the Presets:
-
-const index \= new Index("match");
-
-Create a new index with custom options:
-
-const index \= new Index({
-    tokenize: "forward",
-    resolution: 9,
-    fastupdate: true
-});
-
-Create a new index and extend a preset with custom options:
-
-var index \= new FlexSearch({
-    preset: "memory",
-    tokenize: "forward",
-    resolution: 5
-});
-
-Create a new index and assign an Encoder:
-
-//import { Charset } from "./dist/module/charset.js";
-import { Charset } from "flexsearch";
-const index \= new Index({
-    tokenize: "forward",
-    encoder: Charset.LatinBalance
-});
-
-The resolution refers to the maximum count of scoring slots on which the content is divided into.
-
-> A formula to determine a well-balanced value for the `resolution` is: $2\*floor(\\sqrt{content.length})$ where content is the value pushed by `index.add()`. Here the maximum length of all contents should be used.
-
-See all available custom options.
-
-#### Add text item to an index
-
-Every content which should be added to the index needs an ID. When your content has no ID, then you need to create one by passing an index or count or something else as an ID (a value from type `number` is highly recommended). Those IDs are unique references to a given content. This is important when you update or adding over content through existing IDs. When referencing is not a concern, you can simply use something simple like `count++`.
-
-> Index.**add(id, string)**
-
-index.add(0, "John Doe");
-
-#### Search items
-
-> Index.**search(string | options, <limit>, <options>)**
-
-index.search("John");
-
-Limit the result:
-
-index.search("John", 10);
-
-#### Check existence of already indexed IDs
-
-You can check if an ID was already indexed by:
-
-if(index.contain(1)){
-    console.log("ID was found in index");
-}
-
-#### Update item from an index
-
-> Index.**update(id, string)**
-
-index.update(0, "Max Miller");
-
-#### Remove item from an index
-
-> Index.**remove(id)**
-
-index.remove(0);
-
-#### Clear all items from an index
-
-> Index.**clear()**
-
-index.clear();
-
-### Chaining
-
-Simply chain methods like:
-
-const index \= Index.create().addMatcher({'â': 'a'}).add(0, 'foo').add(1, 'bar');
-
-index.remove(0).update(1, 'foo').add(2, 'foobar');
-
-Suggestions
------------
-
-Any query on each of the index types is supporting the option `suggest: true`. Also within some of the `Resolver` stages (and, not, xor) you can add this option for the same purpose.
-
-When suggestions is enabled, it allows results which does not perfectly match to the given query e.g. when one term was not included. Suggestion-Search will keep track of the scoring, therefore the first result entry is the closest one to a perfect match.
-
-const index \= Index.create().add(1, "cat dog bird");
-const result \= index.search("cat fish");
-// result => \[\]
-
-Same query with suggestion enabled:
-
-const result \= index.search("cat fish", { suggest: true });
-// result => \[ 1 \]
-
-At least one match (or partial match) has to be found to get back any result:
-
-const result \= index.search("horse fish", { suggest: true });
-// result => \[\]
-
 Fuzzy-Search
 ------------
 
-Fuzzysearch describes a basic concept of how making queries more tolerant. FlexSearch provides several methods to achieve fuzziness:
+FlexSearch provides several methods to achieve fuzziness to make queries more tolerant:
 
 1.  Use a tokenizer: `forward`, `reverse` or `full`
 2.  Don't forget to use any of the builtin encoder `simple` > `balance` > `advanced` > `extra` > `soundex` (sorted by fuzziness)
@@ -1345,9 +1504,65 @@ var index \= new FlexSearch({
     }
 });
 
-> Only the tokenizer "strict" is actually supported by the contextual index.
+> Only the tokenizer `strict` is actually supported by the context index.
 
-> The contextual index requires additional amount of memory depending on depth.
+> The context index requires additional amount of memory depending on passed property `depth`.
+
+### Compare Context Search
+
+Pay attention of the numbers "1", "2" and "3":
+
+const index \= new Index();
+index.add(1, "1 A B C D 2 E F G H I 3 J K L");
+index.add(2, "A B C D E F G H I J 1 2 3 K L");
+const result \= index.search("1 2 3");
+// --> \[1, 2\]
+
+Same example with context enabled:
+
+const index \= new Index({ context: true });
+index.add(1, "1 A B C D 2 E F G H I 3 J K L");
+index.add(2, "A B C D E F G H I J 1 2 3 K L");
+const result \= index.search("1 2 3");
+// --> \[2, 1\]
+
+The first index returns ID 1 in the first slot for the best pick, because matched terms are closer to the document root. The 2nd index has context enabled and returns the ID 2 in the first slot, because of the distance between terms.
+
+### Context Options
+
+Option
+
+Values
+
+Description
+
+Default
+
+resolution
+
+Number
+
+Sets the scoring resolution for the context.
+
+3
+
+depth  
+  
+
+false  
+Number
+
+Enable/Disable context index and also sets the maximum initial distance of related terms.
+
+1
+
+bidirectional
+
+Boolean
+
+If enabled the context direction (aka "context chain") can move bidirectional. You should ony disable this options when you need a more exact match with fewer results.
+
+true
 
 Auto-Balanced Cache (By Popularity)
 -----------------------------------

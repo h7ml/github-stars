@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 116983
+stars: 117306
 description: Windows system utilities to maximize productivity
 url: https://github.com/microsoft/PowerToys
 ---
@@ -168,7 +168,7 @@ In this release, we focused on new features, stability, and automation.
 
 **✨Highlights**
 
--   New module: Command Palette ("CmdPal") - Created as the evolution of PowerToys Run with extensibility at the forefront, Command Palette is a quick launcher with a richer display and additional capabilities without sacrificing performance, allowing you to start anything with the shortcut **Win+Alt+Space**! Thanks @zadjii-msft, @niels9001, @joadoumie, @plante-msft, @ethanfangg and @krschau!
+-   New module: Command Palette ("CmdPal") - Created as the evolution of PowerToys Run with extensibility at the forefront, Command Palette is a quick launcher with a richer display and additional capabilities without sacrificing performance, allowing you to start anything with the shortcut **Win+Alt+Space**! Thanks @zadjii-msft, @niels9001, @michael-hawker, @joadoumie, @plante-msft, @ethanfangg and @krschau!
 -   Enhanced the Color Picker by switching from WPF UI to .NET WPF, resulting in improved themes and visual consistency across different modes. Thanks @mantaionut! Thanks @Jay-o-Way and @niels9001 for helping with the review!
 -   Added the ability to delete files directly from Peek, enhancing file management efficiency. Thanks @daverayment and thanks @htcfreek for the review!
 -   Added support for variables in template filenames, enabling dynamic elements like date components and environment variables for enhanced customization in New+. Thanks @cgaarden!
@@ -179,7 +179,7 @@ In this release, we focused on new features, stability, and automation.
 
 ### Command Palette
 
--   Introduced the Windows Command Palette ("CmdPal"), the next iteration of PowerToys Run, designed with extensibility at its core. CmdPal includes features such as searching for installed apps, shell commands, files and WinGet package installation. This module aims to provide a more powerful and flexible launcher experience. Thanks @zadjii-msft, @niels9001, @joadoumie, @plante-msft, and the whole team!
+-   Introduced the Windows Command Palette ("CmdPal"), the next iteration of PowerToys Run, designed with extensibility at its core. CmdPal includes features such as searching for installed apps, shell commands, files and WinGet package installation. This module aims to provide a more powerful and flexible launcher experience. Thanks @zadjii-msft, @niels9001, @michael-hawker, @joadoumie, @plante-msft, and the whole team!
 
 ### FancyZones
 

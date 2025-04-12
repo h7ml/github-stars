@@ -1,6 +1,6 @@
 ---
 project: lynx
-stars: 11623
+stars: 11828
 description: Empower the Web community and invite more to build across platforms.
 url: https://github.com/lynx-family/lynx
 ---

@@ -1,6 +1,6 @@
 ---
 project: usql
-stars: 9305
+stars: 9323
 description: Universal command-line interface for SQL databases
 url: https://github.com/xo/usql
 ---
@@ -282,6 +282,14 @@ Apache Ignite
 
 github.com/amsokol/ignite-go-client/sql
 
+Apache Impala
+
+`impala`
+
+`im`
+
+github.com/sclgo/impala-go
+
 AWS Athena
 
 `athena`
@@ -294,7 +302,7 @@ Azure CosmosDB
 
 `cosmos`
 
-`cm`
+`cm`, `gocosmos`
 
 github.com/btnguyen2k/gocosmos
 
@@ -352,7 +360,7 @@ DuckDB
 
 `dk`, `ddb`, `duck`, `file`
 
-github.com/marcboeker/go-duckdb †
+github.com/marcboeker/go-duckdb/v2 †
 
 DynamoDb
 
@@ -577,14 +585,6 @@ Vitess Database
 `vt`, `vitess`
 
 github.com/go-sql-driver/mysql ‡
-
-Apache Impala
-
-`impala`
-
-`im`
-
-github.com/bippio/go-impala
 
 **NO DRIVERS**
 

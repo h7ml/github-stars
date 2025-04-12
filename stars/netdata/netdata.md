@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 73992
+stars: 74066
 description: X-Ray Vision for your infrastructure!
 url: https://github.com/netdata/netdata
 ---
@@ -64,7 +64,7 @@ Designed for organizations seeking simplified operations, reduced overhead, and 
     Unsupervised anomaly detection and pattern recognition for all metrics, providing advanced correlations and instant root cause analysis.
     
     _**Unique**: Netdata trains multiple true ML models per metric, at the edge, for all metrics!_  
-    _**Unique**: A scoring engine that identifies correlations across metrics, applications, nodes, services, even cloud providers and data centers!_
+    _**Unique**: A scoring engine identifies correlations across metrics, applications, nodes, services, even cloud providers and data centers!_
     
 -   **Long-Term Retention**
     
@@ -85,7 +85,7 @@ Designed for organizations seeking simplified operations, reduced overhead, and 
     Native horizontal scalability, while maintaining performance and ease of use.
     
     _**Unique**: Simple Parent-Child centralization and native horizontal scalability._  
-    _**Unique**: Each Netdata can scale to multi-million samples/s with reasonable resources utilization._
+    _**Unique**: Each Netdata can scale to multi-million samples/s with best in-class resources utilization._
     
 -   **Complete End-to-End Visibility**
     

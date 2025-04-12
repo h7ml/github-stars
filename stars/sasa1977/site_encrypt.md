@@ -1,6 +1,6 @@
 ---
 project: site_encrypt
-stars: 478
+stars: 479
 description: Integrated certification via Let's encrypt for Elixir-powered sites 
 url: https://github.com/sasa1977/site_encrypt
 ---

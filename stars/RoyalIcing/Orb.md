@@ -1,6 +1,6 @@
 ---
 project: Orb
-stars: 260
+stars: 261
 description: Write WebAssembly with Elixir
 url: https://github.com/RoyalIcing/Orb
 ---

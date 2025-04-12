@@ -1,6 +1,6 @@
 ---
 project: AutoGPT
-stars: 174192
+stars: 174375
 description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 url: https://github.com/Significant-Gravitas/AutoGPT
 ---
@@ -25,7 +25,11 @@ Note
 
 Setting up and hosting the AutoGPT Platform yourself is a technical process. If you'd rather something that just works, we recommend joining the waitlist for the cloud-hosted beta.
 
-AutoGPT.Tutorial.Sep.2024.mp4
+### Updated Setup Instructions:
+
+We’ve moved to a fully maintained and regularly updated documentation site.
+
+👉 Follow the official self-hosting guide here
 
 This tutorial assumes you have Docker, VSCode, git and npm installed.
 

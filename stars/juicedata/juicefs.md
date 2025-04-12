@@ -1,6 +1,6 @@
 ---
 project: juicefs
-stars: 11427
+stars: 11443
 description: JuiceFS is a distributed POSIX file system built on top of Redis and S3.
 url: https://github.com/juicedata/juicefs
 ---

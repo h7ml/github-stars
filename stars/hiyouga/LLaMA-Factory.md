@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 46110
+stars: 46651
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -22,6 +22,7 @@ Choose your path:
 -   **Local machine**: Please refer to usage
 -   **PAI-DSW (free trial)**: Llama3 Example | Qwen2-VL Example | DeepSeek-R1-Distill Example
 -   **Amazon SageMaker**: Blog
+-   **Easy Dataset**: Fine-tune on Synthetic Data
 
 Note
 
@@ -77,7 +78,7 @@ Qwen2.5 / Qwen2.5-VL / Gemma 3 / InternLM 3 / MiniCPM-o-2.6
 
 Day 1
 
-Llama 3 / GLM-4 / Mistral Small / PaliGemma2
+Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 
 Benchmark
 ---------
@@ -94,19 +95,23 @@ Definitions
 Changelog
 ---------
 
+\[25/04/06\] We supported fine-tuning the **Llama 4** model. See PR #7611 to get started.
+
+\[25/03/31\] We supported fine-tuning the **Qwen2.5 Omni** model. See PR #7537 to get started.
+
 \[25/03/15\] We supported **SGLang** as inference backend. Try `infer_backend: sglang` to accelerate inference.
 
-\[25/03/12\] We supported fine-tuning the **Gemma-3** model.
+\[25/03/12\] We supported fine-tuning the **Gemma 3** model.
 
 \[25/02/24\] Announcing **EasyR1**, an efficient, scalable and multi-modality RL training framework for efficient GRPO training.
+
+Full Changelog
 
 \[25/02/11\] We supported saving the **Ollama** modelfile when exporting the model checkpoints. See examples for usage.
 
 \[25/02/05\] We supported fine-tuning the **Qwen2-Audio** and **MiniCPM-o-2.6** on audio understanding tasks.
 
 \[25/01/31\] We supported fine-tuning the **DeepSeek-R1** and **Qwen2.5-VL** model.
-
-Full Changelog
 
 \[25/01/15\] We supported **APOLLO** optimizer. See examples for usage.
 
@@ -328,6 +333,12 @@ Llama 3-3.3
 1B/3B/8B/70B
 
 llama3
+
+Llama 4
+
+109B/402B
+
+llama4
 
 Llama 3.2 Vision
 
@@ -677,6 +688,7 @@ Preference datasets
 
 -   DPO mixed (en&zh)
 -   UltraFeedback (en)
+-   COIG-P (en&zh)
 -   RLHF-V (en)
 -   VLFeedback (en)
 -   Orca DPO Pairs (en)
@@ -1004,11 +1016,13 @@ pip install .
 
 ### Data Preparation
 
-Please refer to data/README.md for checking the details about the format of dataset files. You can either use datasets on HuggingFace / ModelScope / Modelers hub or load the dataset in local disk.
+Please refer to data/README.md for checking the details about the format of dataset files. You can use datasets on HuggingFace / ModelScope / Modelers hub, load the dataset in local disk, or specify a path to s3/gcs cloud storage.
 
 Note
 
 Please update `data/dataset_info.json` to use your custom dataset.
+
+You can also use **Easy Dataset** to create synthetic data for fine-tuning.
 
 ### Quickstart
 
@@ -1298,7 +1312,7 @@ License
 
 This repository is licensed under the Apache-2.0 License.
 
-Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM / Llama / Llama 2 (LLaVA-1.5) / Llama 3 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3/Phi-4 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
+Please follow the model licenses to use the corresponding model weights: Baichuan 2 / BLOOM / ChatGLM3 / Command R / DeepSeek / Falcon / Gemma / GLM-4 / GPT-2 / Granite / Index / InternLM / Llama / Llama 2 / Llama 3 / Llama 4 / MiniCPM / Mistral/Mixtral/Pixtral / OLMo / Phi-1.5/Phi-2 / Phi-3/Phi-4 / Qwen / Skywork / StarCoder 2 / TeleChat2 / XVERSE / Yi / Yi-1.5 / Yuan 2
 
 Citation
 --------

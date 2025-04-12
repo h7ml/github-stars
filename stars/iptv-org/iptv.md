@@ -1,6 +1,6 @@
 ---
 project: iptv
-stars: 91899
+stars: 92348
 description: Collection of publicly available IPTV channels from all over the world
 url: https://github.com/iptv-org/iptv
 ---
@@ -45,9 +45,9 @@ https://iptv-org.github.io/iptv/index.m3u
 
 ### Grouped by category
 
-Expand  
+Playlists in which channels are grouped by category. A list of all supported categories with descriptions can be found here.
 
-Playlist in which each channel has its _category_ as a group title:
+Expand  
 
 ```
 https://iptv-org.github.io/iptv/index.category.m3u
@@ -63,7 +63,7 @@ Playlist
 
 Animation
 
-45
+46
 
 `https://iptv-org.github.io/iptv/categories/animation.m3u`
 
@@ -87,7 +87,7 @@ Classic
 
 Comedy
 
-60
+59
 
 `https://iptv-org.github.io/iptv/categories/comedy.m3u`
 
@@ -99,13 +99,13 @@ Cooking
 
 Culture
 
-171
+170
 
 `https://iptv-org.github.io/iptv/categories/culture.m3u`
 
 Documentary
 
-80
+81
 
 `https://iptv-org.github.io/iptv/categories/documentary.m3u`
 
@@ -117,7 +117,7 @@ Education
 
 Entertainment
 
-546
+547
 
 `https://iptv-org.github.io/iptv/categories/entertainment.m3u`
 
@@ -129,7 +129,7 @@ Family
 
 General
 
-2340
+2342
 
 `https://iptv-org.github.io/iptv/categories/general.m3u`
 
@@ -141,7 +141,7 @@ Kids
 
 Legislative
 
-191
+192
 
 `https://iptv-org.github.io/iptv/categories/legislative.m3u`
 
@@ -159,13 +159,13 @@ Movies
 
 Music
 
-657
+659
 
 `https://iptv-org.github.io/iptv/categories/music.m3u`
 
 News
 
-766
+765
 
 `https://iptv-org.github.io/iptv/categories/news.m3u`
 
@@ -231,15 +231,15 @@ XXX
 
 Undefined
 
-4728
+4722
 
 `https://iptv-org.github.io/iptv/categories/undefined.m3u`
 
 ### Grouped by language
 
-Expand  
+Playlists in which channels are grouped by the language in which they are broadcast.
 
-Playlist in which each channel has its _language_ as a group title:
+Expand  
 
 ```
 https://iptv-org.github.io/iptv/index.language.m3u
@@ -297,7 +297,7 @@ Amharic
 
 Arabic
 
-394
+393
 
 `https://iptv-org.github.io/iptv/languages/ara.m3u`
 
@@ -363,7 +363,7 @@ Basque
 
 Belarusian
 
-7
+6
 
 `https://iptv-org.github.io/iptv/languages/bel.m3u`
 
@@ -507,7 +507,7 @@ Egyptian Arabic
 
 English
 
-2112
+2114
 
 `https://iptv-org.github.io/iptv/languages/eng.m3u`
 
@@ -555,7 +555,7 @@ Fon
 
 French
 
-420
+421
 
 `https://iptv-org.github.io/iptv/languages/fra.m3u`
 
@@ -597,7 +597,7 @@ Georgian
 
 German
 
-256
+257
 
 `https://iptv-org.github.io/iptv/languages/deu.m3u`
 
@@ -630,12 +630,6 @@ Gujarati
 6
 
 `https://iptv-org.github.io/iptv/languages/guj.m3u`
-
-Gulf Arabic
-
-1
-
-`https://iptv-org.github.io/iptv/languages/afb.m3u`
 
 Gun
 
@@ -675,7 +669,7 @@ Hmong
 
 Hungarian
 
-104
+103
 
 `https://iptv-org.github.io/iptv/languages/hun.m3u`
 
@@ -717,7 +711,7 @@ Isekiri
 
 Italian
 
-285
+287
 
 `https://iptv-org.github.io/iptv/languages/ita.m3u`
 
@@ -885,13 +879,13 @@ Maithili
 
 Malay
 
-18
+17
 
 `https://iptv-org.github.io/iptv/languages/msa.m3u`
 
 Malayalam
 
-62
+64
 
 `https://iptv-org.github.io/iptv/languages/mal.m3u`
 
@@ -1023,7 +1017,7 @@ Persian
 
 Polish
 
-144
+141
 
 `https://iptv-org.github.io/iptv/languages/pol.m3u`
 
@@ -1047,7 +1041,7 @@ Quechua
 
 Romanian
 
-126
+127
 
 `https://iptv-org.github.io/iptv/languages/ron.m3u`
 
@@ -1125,7 +1119,7 @@ Somali
 
 Spanish
 
-2069
+2070
 
 `https://iptv-org.github.io/iptv/languages/spa.m3u`
 
@@ -1239,7 +1233,7 @@ Tumzabt
 
 Turkish
 
-255
+259
 
 `https://iptv-org.github.io/iptv/languages/tur.m3u`
 
@@ -1257,7 +1251,7 @@ Uighur
 
 Ukrainian
 
-61
+60
 
 `https://iptv-org.github.io/iptv/languages/ukr.m3u`
 
@@ -1329,15 +1323,15 @@ Zarma
 
 Undefined
 
-2897
+2891
 
 `https://iptv-org.github.io/iptv/languages/undefined.m3u`
 
 ### Grouped by country
 
-Expand  
+Playlists in which channels are grouped by country for which they are broadcasted.
 
-Playlist in which each channel has its _country_ as a group title:
+Expand  
 
 ```
 https://iptv-org.github.io/iptv/index.country.m3u
@@ -1383,7 +1377,7 @@ Playlist
 
 🇦🇴 Angola
 
-26
+27
 
 `https://iptv-org.github.io/iptv/countries/ao.m3u`
 
@@ -1575,7 +1569,7 @@ Playlist
 
 🇧🇭 Bahrain
 
-47
+46
 
 `https://iptv-org.github.io/iptv/countries/bh.m3u`
 
@@ -1593,7 +1587,7 @@ Playlist
 
 🇧🇾 Belarus
 
-51
+50
 
 `https://iptv-org.github.io/iptv/countries/by.m3u`
 
@@ -1611,7 +1605,7 @@ Playlist
 
 🇧🇯 Benin
 
-32
+33
 
 `https://iptv-org.github.io/iptv/countries/bj.m3u`
 
@@ -1671,7 +1665,7 @@ Playlist
 
 🇧🇼 Botswana
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/bw.m3u`
 
@@ -1833,13 +1827,13 @@ Playlist
 
 🇧🇫 Burkina Faso
 
-28
+29
 
 `https://iptv-org.github.io/iptv/countries/bf.m3u`
 
 🇧🇮 Burundi
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/bi.m3u`
 
@@ -1851,7 +1845,7 @@ Playlist
 
 🇨🇲 Cameroon
 
-54
+55
 
 `https://iptv-org.github.io/iptv/countries/cm.m3u`
 
@@ -1935,7 +1929,7 @@ Playlist
 
 🇨🇻 Cape Verde
 
-27
+28
 
 `https://iptv-org.github.io/iptv/countries/cv.m3u`
 
@@ -1947,13 +1941,13 @@ Playlist
 
 🇨🇫 Central African Republic
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/cf.m3u`
 
 🇹🇩 Chad
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/td.m3u`
 
@@ -2175,7 +2169,7 @@ Playlist
 
 🇨🇾 Cyprus
 
-72
+73
 
 `https://iptv-org.github.io/iptv/countries/cy.m3u`
 
@@ -2187,7 +2181,7 @@ Playlist
 
 🇨🇩 Democratic Republic of the Congo
 
-59
+60
 
 `https://iptv-org.github.io/iptv/countries/cd.m3u`
 
@@ -2313,13 +2307,13 @@ Playlist
 
 🇬🇶 Equatorial Guinea
 
-26
+27
 
 `https://iptv-org.github.io/iptv/countries/gq.m3u`
 
 🇪🇷 Eritrea
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/er.m3u`
 
@@ -2331,7 +2325,7 @@ Playlist
 
 🇪🇹 Ethiopia
 
-26
+27
 
 `https://iptv-org.github.io/iptv/countries/et.m3u`
 
@@ -2391,19 +2385,19 @@ Playlist
 
 🇹🇫 French Southern Territories
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/tf.m3u`
 
 🇬🇦 Gabon
 
-27
+28
 
 `https://iptv-org.github.io/iptv/countries/ga.m3u`
 
 🇬🇲 Gambia
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/gm.m3u`
 
@@ -2415,13 +2409,13 @@ Playlist
 
 🇩🇪 Germany
 
-248
+249
 
 `https://iptv-org.github.io/iptv/countries/de.m3u`
 
 🇬🇭 Ghana
 
-41
+42
 
 `https://iptv-org.github.io/iptv/countries/gh.m3u`
 
@@ -2571,13 +2565,13 @@ Playlist
 
 🇬🇳 Guinea
 
-34
+35
 
 `https://iptv-org.github.io/iptv/countries/gn.m3u`
 
 🇬🇼 Guinea-Bissau
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/gw.m3u`
 
@@ -2607,7 +2601,7 @@ Playlist
 
 🇭🇺 Hungary
 
-139
+138
 
 `https://iptv-org.github.io/iptv/countries/hu.m3u`
 
@@ -2811,7 +2805,7 @@ Playlist
 
 🇮🇶 Iraq
 
-109
+108
 
 `https://iptv-org.github.io/iptv/countries/iq.m3u`
 
@@ -2829,7 +2823,7 @@ Playlist
 
 🇮🇹 Italy
 
-322
+324
 
 `https://iptv-org.github.io/iptv/countries/it.m3u`
 
@@ -2841,7 +2835,7 @@ Playlist
 
 🇨🇮 Ivory Coast
 
-51
+52
 
 `https://iptv-org.github.io/iptv/countries/ci.m3u`
 
@@ -2907,7 +2901,7 @@ Playlist
 
 🇯🇴 Jordan
 
-69
+68
 
 `https://iptv-org.github.io/iptv/countries/jo.m3u`
 
@@ -2919,7 +2913,7 @@ Playlist
 
 🇰🇪 Kenya
 
-62
+63
 
 `https://iptv-org.github.io/iptv/countries/ke.m3u`
 
@@ -2937,7 +2931,7 @@ Playlist
 
 🇰🇼 Kuwait
 
-54
+53
 
 `https://iptv-org.github.io/iptv/countries/kw.m3u`
 
@@ -2961,19 +2955,19 @@ Playlist
 
 🇱🇧 Lebanon
 
-70
+69
 
 `https://iptv-org.github.io/iptv/countries/lb.m3u`
 
 🇱🇸 Lesotho
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/ls.m3u`
 
 🇱🇷 Liberia
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/lr.m3u`
 
@@ -3009,19 +3003,19 @@ Playlist
 
 🇲🇬 Madagascar
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/mg.m3u`
 
 🇲🇼 Malawi
 
-25
+26
 
 `https://iptv-org.github.io/iptv/countries/mw.m3u`
 
 🇲🇾 Malaysia
 
-31
+32
 
 `https://iptv-org.github.io/iptv/countries/my.m3u`
 
@@ -3033,7 +3027,7 @@ Playlist
 
 🇲🇱 Mali
 
-28
+29
 
 `https://iptv-org.github.io/iptv/countries/ml.m3u`
 
@@ -3063,13 +3057,13 @@ Playlist
 
 🇲🇺 Mauritius
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/mu.m3u`
 
 🇾🇹 Mayotte
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/yt.m3u`
 
@@ -3147,7 +3141,7 @@ Playlist
 
 🇲🇩 Moldova
 
-64
+65
 
 `https://iptv-org.github.io/iptv/countries/md.m3u`
 
@@ -3183,13 +3177,13 @@ Playlist
 
 🇲🇦 Morocco
 
-76
+75
 
 `https://iptv-org.github.io/iptv/countries/ma.m3u`
 
 🇲🇿 Mozambique
 
-26
+27
 
 `https://iptv-org.github.io/iptv/countries/mz.m3u`
 
@@ -3201,7 +3195,7 @@ Playlist
 
 🇳🇦 Namibia
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/na.m3u`
 
@@ -3243,13 +3237,13 @@ Playlist
 
 🇳🇪 Niger
 
-24
+25
 
 `https://iptv-org.github.io/iptv/countries/ne.m3u`
 
 🇳🇬 Nigeria
 
-81
+82
 
 `https://iptv-org.github.io/iptv/countries/ng.m3u`
 
@@ -3291,7 +3285,7 @@ Playlist
 
 🇴🇲 Oman
 
-48
+47
 
 `https://iptv-org.github.io/iptv/countries/om.m3u`
 
@@ -3309,7 +3303,7 @@ Playlist
 
 🇵🇸 Palestine
 
-64
+63
 
 `https://iptv-org.github.io/iptv/countries/ps.m3u`
 
@@ -3369,7 +3363,7 @@ Playlist
 
 🇵🇪 Peru
 
-206
+207
 
 `https://iptv-org.github.io/iptv/countries/pe.m3u`
 
@@ -3415,9 +3409,15 @@ Playlist
 
 `https://iptv-org.github.io/iptv/subdivisions/pe-jun.m3u`
 
+      La Libertad
+
+1
+
+`https://iptv-org.github.io/iptv/subdivisions/pe-lal.m3u`
+
       Lima
 
-8
+9
 
 `https://iptv-org.github.io/iptv/subdivisions/pe-lim.m3u`
 
@@ -3465,7 +3465,7 @@ Playlist
 
 🇵🇱 Poland
 
-188
+185
 
 `https://iptv-org.github.io/iptv/countries/pl.m3u`
 
@@ -3483,13 +3483,13 @@ Playlist
 
 🇶🇦 Qatar
 
-55
+54
 
 `https://iptv-org.github.io/iptv/countries/qa.m3u`
 
 🇨🇬 Republic of the Congo
 
-32
+33
 
 `https://iptv-org.github.io/iptv/countries/cg.m3u`
 
@@ -3501,7 +3501,7 @@ Playlist
 
 🇷🇪 Reunion
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/re.m3u`
 
@@ -3525,7 +3525,7 @@ Playlist
 
 🇷🇼 Rwanda
 
-30
+31
 
 `https://iptv-org.github.io/iptv/countries/rw.m3u`
 
@@ -3537,7 +3537,7 @@ Playlist
 
 🇸🇭 Saint Helena
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/sh.m3u`
 
@@ -3585,7 +3585,7 @@ Playlist
 
 🇸🇹 Sao Tome and Principe
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/st.m3u`
 
@@ -3597,7 +3597,7 @@ Playlist
 
 🇸🇳 Senegal
 
-53
+54
 
 `https://iptv-org.github.io/iptv/countries/sn.m3u`
 
@@ -3609,13 +3609,13 @@ Playlist
 
 🇸🇨 Seychelles
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/sc.m3u`
 
 🇸🇱 Sierra Leone
 
-24
+25
 
 `https://iptv-org.github.io/iptv/countries/sl.m3u`
 
@@ -3657,7 +3657,7 @@ Playlist
 
 🇿🇦 South Africa
 
-60
+61
 
 `https://iptv-org.github.io/iptv/countries/za.m3u`
 
@@ -3753,7 +3753,7 @@ Playlist
 
 🇸🇸 South Sudan
 
-22
+23
 
 `https://iptv-org.github.io/iptv/countries/ss.m3u`
 
@@ -3885,7 +3885,7 @@ Playlist
 
 🇸🇿 Swaziland
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/sz.m3u`
 
@@ -3897,13 +3897,13 @@ Playlist
 
 🇨🇭 Switzerland
 
-75
+76
 
 `https://iptv-org.github.io/iptv/countries/ch.m3u`
 
 🇸🇾 Syria
 
-47
+46
 
 `https://iptv-org.github.io/iptv/countries/sy.m3u`
 
@@ -3921,7 +3921,7 @@ Playlist
 
 🇹🇿 Tanzania
 
-30
+31
 
 `https://iptv-org.github.io/iptv/countries/tz.m3u`
 
@@ -3933,7 +3933,7 @@ Playlist
 
 🇹🇬 Togo
 
-35
+36
 
 `https://iptv-org.github.io/iptv/countries/tg.m3u`
 
@@ -3963,7 +3963,7 @@ Playlist
 
 🇹🇷 Turkey
 
-278
+281
 
 `https://iptv-org.github.io/iptv/countries/tr.m3u`
 
@@ -3993,7 +3993,7 @@ Playlist
 
 🇺🇬 Uganda
 
-50
+51
 
 `https://iptv-org.github.io/iptv/countries/ug.m3u`
 
@@ -4005,7 +4005,7 @@ Playlist
 
 🇦🇪 United Arab Emirates
 
-89
+88
 
 `https://iptv-org.github.io/iptv/countries/ae.m3u`
 
@@ -4359,31 +4359,31 @@ Playlist
 
 🇪🇭 Western Sahara
 
-27
+28
 
 `https://iptv-org.github.io/iptv/countries/eh.m3u`
 
 🇾🇪 Yemen
 
-47
+46
 
 `https://iptv-org.github.io/iptv/countries/ye.m3u`
 
 🇿🇲 Zambia
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/zm.m3u`
 
 🇿🇼 Zimbabwe
 
-23
+24
 
 `https://iptv-org.github.io/iptv/countries/zw.m3u`
 
 Undefined
 
-2897
+2891
 
 `https://iptv-org.github.io/iptv/countries/undefined.m3u`
 
@@ -4391,7 +4391,7 @@ Undefined
 
 Expand  
 
-Playlist in which each channel has its _region_ as a group title:
+Playlists in which channels are grouped by the region for which they are broadcasted.
 
 ```
 https://iptv-org.github.io/iptv/index.region.m3u
@@ -4407,13 +4407,13 @@ Playlist
 
 Africa
 
-550
+549
 
 `https://iptv-org.github.io/iptv/regions/afr.m3u`
 
 Americas
 
-3597
+3598
 
 `https://iptv-org.github.io/iptv/regions/amer.m3u`
 
@@ -4425,25 +4425,25 @@ Arab world
 
 Asia
 
-2160
+2164
 
 `https://iptv-org.github.io/iptv/regions/asia.m3u`
 
 Asia-Pacific
 
-1136
+1137
 
 `https://iptv-org.github.io/iptv/regions/apac.m3u`
 
 Association of Southeast Asian Nations
 
-343
+344
 
 `https://iptv-org.github.io/iptv/regions/asean.m3u`
 
 Balkan
 
-684
+687
 
 `https://iptv-org.github.io/iptv/regions/balkan.m3u`
 
@@ -4467,7 +4467,7 @@ Central America
 
 Central and Eastern Europe
 
-999
+995
 
 `https://iptv-org.github.io/iptv/regions/cee.m3u`
 
@@ -4485,13 +4485,13 @@ Commonwealth of Independent States
 
 Europe
 
-2866
+2868
 
 `https://iptv-org.github.io/iptv/regions/eur.m3u`
 
 Europe, the Middle East and Africa
 
-3780
+3782
 
 `https://iptv-org.github.io/iptv/regions/emea.m3u`
 
@@ -4503,37 +4503,37 @@ European Union
 
 Hispanic America
 
-1679
+1680
 
 `https://iptv-org.github.io/iptv/regions/hispam.m3u`
 
 Latin America
 
-1994
+1995
 
 `https://iptv-org.github.io/iptv/regions/latam.m3u`
 
 Latin America and the Caribbean
 
-2038
+2039
 
 `https://iptv-org.github.io/iptv/regions/lac.m3u`
 
 Maghreb
 
-91
+90
 
 `https://iptv-org.github.io/iptv/regions/maghreb.m3u`
 
 Middle East
 
-803
+807
 
 `https://iptv-org.github.io/iptv/regions/mideast.m3u`
 
 Middle East and North Africa
 
-833
+836
 
 `https://iptv-org.github.io/iptv/regions/mena.m3u`
 
@@ -4569,7 +4569,7 @@ Oceania
 
 South America
 
-1257
+1258
 
 `https://iptv-org.github.io/iptv/regions/southam.m3u`
 
@@ -4581,13 +4581,13 @@ South Asia
 
 Southeast Asia
 
-343
+344
 
 `https://iptv-org.github.io/iptv/regions/sea.m3u`
 
 Southern Europe
 
-1051
+1056
 
 `https://iptv-org.github.io/iptv/regions/ser.m3u`
 
@@ -4605,7 +4605,7 @@ West Africa
 
 Western Europe
 
-780
+782
 
 `https://iptv-org.github.io/iptv/regions/wer.m3u`
 
@@ -4617,7 +4617,7 @@ Worldwide
 
 Undefined
 
-2897
+2891
 
 `https://iptv-org.github.io/iptv/regions/undefined.m3u`
 

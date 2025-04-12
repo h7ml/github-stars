@@ -1,6 +1,6 @@
 ---
 project: openid_connect
-stars: 81
+stars: 89
 description: Client library for consuming and working with OpenID Connect Providers
 url: https://github.com/DockYard/openid_connect
 ---

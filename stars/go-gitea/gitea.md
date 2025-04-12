@@ -1,6 +1,6 @@
 ---
 project: gitea
-stars: 47910
+stars: 48053
 description: Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD
 url: https://github.com/go-gitea/gitea
 ---
@@ -8,7 +8,7 @@ url: https://github.com/go-gitea/gitea
 Gitea
 =====
 
-View this document in Chinese
+繁體中文 | 简体中文
 
 Purpose
 -------

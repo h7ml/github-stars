@@ -1,6 +1,6 @@
 ---
 project: paperless-ngx
-stars: 26198
+stars: 26312
 description: A community-supported supercharged version of paperless: scan, index and archive all your physical documents
 url: https://github.com/paperless-ngx/paperless-ngx
 ---
@@ -61,7 +61,7 @@ People interested in continuing the work on paperless-ngx are encouraged to reac
 Translation
 -----------
 
-Paperless-ngx is available in many languages that are coordinated on Crowdin. If you want to help out by translating paperless-ngx into your language, please head over to https://crwd.in/paperless-ngx, and thank you! More details can be found in CONTRIBUTING.md.
+Paperless-ngx is available in many languages that are coordinated on Crowdin. If you want to help out by translating paperless-ngx into your language, please head over to https://crowdin.com/project/paperless-ngx, and thank you! More details can be found in CONTRIBUTING.md.
 
 Feature Requests
 ----------------

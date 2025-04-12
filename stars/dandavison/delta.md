@@ -1,6 +1,6 @@
 ---
 project: delta
-stars: 25797
+stars: 25854
 description: A syntax-highlighting pager for git, diff, grep, and blame output
 url: https://github.com/dandavison/delta
 ---
