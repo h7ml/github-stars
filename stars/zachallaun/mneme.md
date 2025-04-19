@@ -1,6 +1,6 @@
 ---
 project: mneme
-stars: 116
+stars: 117
 description: Snapshot testing for Elixir
 url: https://github.com/zachallaun/mneme
 ---

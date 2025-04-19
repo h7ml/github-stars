@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 69361
+stars: 69519
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -753,7 +753,7 @@ You can set up key bindings for starting external processes without leaving fzf 
 # Press CTRL-Y to copy the line to clipboard and aborts fzf (requires pbcopy)
 fzf --bind 'f1:execute(less -f {}),ctrl-y:execute-silent(echo {} | pbcopy)+abort'
 
-See _KEY BINDINGS_ section of the man page for details.
+See _KEY/EVENT BINDINGS_ section of the man page for details.
 
 ### Turning into a different process
 

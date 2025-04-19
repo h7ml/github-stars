@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 28620
+stars: 28918
 description: Welcome to a calmer internet
 url: https://github.com/zen-browser/desktop
 ---
@@ -14,9 +14,9 @@ Download • Website • Documentation • Release Notes
 🖥️ Compatibility
 -----------------
 
-Zen is currently built using Firefox version `137.0.1`! 🚀
+Zen is currently built using Firefox version `137.0.2`! 🚀
 
--   `Zen Twilight` - Is currently built using Firefox version `137.0.1`!
+-   `Zen Twilight` - Is currently built using Firefox version `RC 137.0.2`!
 -   Check out the latest release notes!
 -   Part of our mission is to keep Zen up-to-date with the latest version of Firefox, so you can enjoy the latest features and security updates!
 
@@ -72,7 +72,7 @@ winget install \--id Zen-Team.Zen-Browser
 You can also install Zen using Homebrew:
 
 ```
-brew install --cask zen-browser
+brew install zen-browser
 ```
 
 #### Linux

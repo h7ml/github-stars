@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 8048
+stars: 8081
 description: Real-time sync for Postgres.
 url: https://github.com/electric-sql/electric
 ---

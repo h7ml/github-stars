@@ -1,6 +1,6 @@
 ---
 project: wax
-stars: 196
+stars: 197
 description: WebAuthn for Elixir
 url: https://github.com/tanguilp/wax
 ---
@@ -256,6 +256,16 @@ authentication
 
 See fido-alliance/conformance-test-tools-resources#434
 
+`bytes`
+
+`binary()`
+
+registration & authentication
+
+random bytes
+
+Allows to provide with your own challenge. This is **not** recommended unless you know what you're doing. Refer to the Security considerations for more information
+
 FIDO2 Metadata
 --------------
 
@@ -290,6 +300,10 @@ Security considerations
 
 -   Make sure to understand the implications of not using attested credentials before accepting `none` or `self` attestation types, or disabling it for `packed` and `u2f` formats by disabling it with the `verify_trust_root` option
 -   This library has **not** be reviewed by independent security / FIDO2 specialists - use it at your own risks or blindly trust its author! If you're knowledgeable about FIDO2 and willing to help reviewing it, please contact the author
+-   When providing your own challenge, please make sure to understand that:
+    -   it explicitly violates the recommandation in the standard
+    -   it exposes you to some attacks (such as replay attacks)
+    -   you have no guarantee that the user understood what he has been signing (no specific browser UI was presented)
 
 Changes
 -------

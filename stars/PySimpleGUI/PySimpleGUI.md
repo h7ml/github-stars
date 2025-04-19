@@ -1,6 +1,6 @@
 ---
 project: PySimpleGUI
-stars: 13585
+stars: 13588
 description: Python GUIs for Humans! PySimpleGUI is the top-rated Python application development environment. Launched in 2018 and actively developed, maintained, and supported in 2024. Transforms tkinter, Qt, WxPython, and Remi into a simple, intuitive, and fun experience for both hobbyists and expert users.
 url: https://github.com/PySimpleGUI/PySimpleGUI
 ---
@@ -35,9 +35,15 @@ The **new command** with the new parameter is:
 
 `python -m pip install --upgrade --extra-index-url https://PySimpleGUI.net/install PySimpleGUI`
 
-### Uninstall Needed If Error
+### Uninstall May Be Needed If Error
 
 If you're getting errors, please uninstall PySimpleGUI entirely and install again using the new parameter.
+
+### BUG - Commercial Key Expiration - Upgrade to 5.0.10
+
+There is a bug in versions of PySimpleGUI older than 5.0.10 that causes an erroneous expired error when using a Commercial Developer key. These keys do not expire and shouldn't not be generating the error.
+
+A fix was released in version 5.0.10 on 2-Apr-2025. **Please upgrade to version 5.0.10** so that your key doesn't generate an expiration error.
 
 2\. PySimpleGUI Shutdown
 ------------------------

@@ -1,6 +1,6 @@
 ---
 project: ng-icons
-stars: 443
+stars: 447
 description: The ultimate icon library for Angular
 url: https://github.com/ng-icons/ng-icons
 ---
@@ -46,6 +46,7 @@ Currently, we support the following libraries:
 -   Material Symbols
 -   MynaUI
 -   Boxicons
+-   Mono Icons
 
 Got suggestions for additional iconsets? Create an issue and we can consider adding them!
 
@@ -256,6 +257,10 @@ Apache 2.0
 MIT
 
 `@ng-icons/boxicons`
+
+MIT
+
+`@ng-icons/mono-icons`
 
 MIT
 

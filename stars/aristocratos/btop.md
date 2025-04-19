@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 24137
+stars: 24273
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -422,10 +422,6 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
     
     To manually set the target architecture
     
-    `FORTIFY_SOURCE=false`
-    
-    Disable fortification with `_FORTIFY_SOURCE=3`
-    
     `GPU_SUPPORT=<true|false>`
     
     Enable/disable GPU support (Enabled by default on X86\_64 Linux)
@@ -537,10 +533,6 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
     
     Compile with warnings as errors (OFF by default)
     
-    `-DBTOP_FORTIFY=<ON|OFF>`
-    
-    Detect buffer overflows with `_FORTIFY_SOURCE=3` (ON by default)
-    
     `-DBTOP_GPU=<ON|OFF>`
     
     Enable GPU support (ON by default)
@@ -629,10 +621,6 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
     `ARCH=<architecture>`
     
     To manually set the target architecture
-    
-    `FORTIFY_SOURCE=false`
-    
-    Disable fortification with `_FORTIFY_SOURCE=3`
     
     `ADDFLAGS=<flags>`
     
@@ -730,10 +718,6 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
     
     Compile with warnings as errors (OFF by default)
     
-    `-DBTOP_FORTIFY=<ON|OFF>`
-    
-    Detect buffer overflows with `_FORTIFY_SOURCE=3` (ON by default)
-    
     `-DCMAKE_INSTALL_PREFIX=<path>`
     
     The installation prefix ('/usr/local' by default)
@@ -810,10 +794,6 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
     `ARCH=<architecture>`
     
     To manually set the target architecture
-    
-    `FORTIFY_SOURCE=false`
-    
-    Disable fortification with `_FORTIFY_SOURCE=3`
     
     `ADDFLAGS=<flags>`
     
@@ -925,10 +905,6 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
     
     Compile with warnings as errors (OFF by default)
     
-    `-DBTOP_FORTIFY=<ON|OFF>`
-    
-    Detect buffer overflows with `_FORTIFY_SOURCE=3` (ON by default)
-    
     `-DCMAKE_INSTALL_PREFIX=<path>`
     
     The installation prefix ('/usr/local' by default)
@@ -1007,10 +983,6 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
     `ARCH=<architecture>`
     
     To manually set the target architecture
-    
-    `FORTIFY_SOURCE=false`
-    
-    Disable fortification with `_FORTIFY_SOURCE=3`
     
     `ADDFLAGS=<flags>`
     
@@ -1101,10 +1073,6 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
     
     Compile with warnings as errors (OFF by default)
     
-    `-DBTOP_FORTIFY=<ON|OFF>`
-    
-    Detect buffer overflows with `_FORTIFY_SOURCE=3` (ON by default)
-    
     `-DCMAKE_INSTALL_PREFIX=<path>`
     
     The installation prefix ('/usr/local' by default)
@@ -1181,10 +1149,6 @@ Note that GNU make (`gmake`) is required to compile on OpenBSD.
     `ARCH=<architecture>`
     
     To manually set the target architecture
-    
-    `FORTIFY_SOURCE=false`
-    
-    Disable fortification with `_FORTIFY_SOURCE=3`
     
     `ADDFLAGS=<flags>`
     
@@ -1276,10 +1240,6 @@ Note that GNU make (`gmake`) is required to compile on OpenBSD.
     `-DBTOP_WERROR=<ON|OFF>`
     
     Compile with warnings as errors (OFF by default)
-    
-    `-DBTOP_FORTIFY=<ON|OFF>`
-    
-    Detect buffer overflows with `_FORTIFY_SOURCE=3` (ON by default)
     
     `-DCMAKE_INSTALL_PREFIX=<path>`
     

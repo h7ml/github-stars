@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 40033
+stars: 40237
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -34,54 +34,6 @@ Support
 
 Contact us at coolify.io/docs/contact.
 
-Donations
-=========
-
-To stay completely free and open-source, with no feature behind the paywall and evolve the project, we need your help. If you like Coolify, please consider donating to help us fund the project's future development.
-
-coolify.io/sponsorships
-
-Thank you so much!
-
-Special thanks to our biggest sponsors!
-
-### Special Sponsors
-
--   CCCareers - A career development platform connecting coding bootcamp graduates with job opportunities in the tech industry.
--   Hetzner - A German web hosting company offering affordable dedicated servers, cloud services, and web hosting solutions.
--   Logto - An open-source authentication and authorization solution for building secure login systems and managing user identities.
--   Tolgee - Developer & translator friendly web-based localization platform.
--   BC Direct - A digital marketing agency specializing in e-commerce solutions and online business growth strategies.
--   QuantCDN - A content delivery network (CDN) optimizing website performance through global content distribution.
--   Arcjet - A cloud-based platform providing real-time protection against API abuse and bot attacks.
--   SupaGuide - A comprehensive resource hub offering guides and tutorials for web development using Supabase.
--   GoldenVM - A cloud hosting provider offering scalable infrastructure solutions for businesses of all sizes.
--   Tigris - A fully managed serverless object storage service compatible with Amazon S3 API. Offers high performance, scalability, and built-in search capabilities for efficient data management.
--   Convex - Convex is the open-source reactive database for web app developers.
--   Cloudify.ro - A cloud hosting provider offering scalable infrastructure solutions for businesses of all sizes.
--   Syntaxfm - Podcast for web developers.
--   PFGlabs - Build real project with Golang.
--   Treive - An AI-powered search and discovery platform for enhancing information retrieval in large datasets.
--   Blacksmith - A cloud-native platform for automating infrastructure provisioning and management across multiple cloud providers.
--   Brand Dev - The #1 Brand API for B2B software startups - instantly pull logos, fonts, descriptions, social links, slogans, and so much more from any domain via a single api call.
--   Jobscollider - A job search platform connecting professionals with remote work opportunities across various industries.
--   Hostinger - A web hosting provider offering affordable hosting solutions, domain registration, and website building tools.
--   Glueops - A DevOps consulting company providing infrastructure automation and cloud optimization services.
--   Ubicloud - An open-source alternative to hyperscale cloud providers, offering high-performance cloud computing services.
--   Juxtdigital - A digital agency offering web development, design, and digital marketing services for businesses.
--   Saasykit - A Laravel-based boilerplate providing essential components and features for building SaaS applications quickly.
--   Massivegrid - A cloud hosting provider offering scalable infrastructure solutions for businesses of all sizes.
--   LiquidWeb - A Fast web hosting provider.
-
-Github Sponsors ($40+)
-----------------------
-
-Organizations
--------------
-
-Individuals
------------
-
 Cloud
 =====
 
@@ -100,6 +52,55 @@ By subscribing to the cloud version, you get the Coolify server for the same pri
 -   Free email notifications
 -   Better support
 -   Less maintenance for you
+
+Donations
+=========
+
+To stay completely free and open-source, with no feature behind the paywall and evolve the project, we need your help. If you like Coolify, please consider donating to help us fund the project's future development.
+
+coolify.io/sponsorships
+
+Thank you so much!
+
+Big Sponsors
+------------
+
+-   GlueOps - DevOps automation and infrastructure management
+-   Algora - Open source contribution platform
+-   Ubicloud - Open source cloud infrastructure platform
+-   LiquidWeb - Premium managed hosting solutions
+-   Convex - Open-source reactive database for web app developers
+-   Arcjet - Advanced web security and performance solutions
+-   SaasyKit - Complete SaaS starter kit for developers
+-   SupaGuide - Your comprehensive guide to Supabase
+-   Logto - The better identity infrastructure for developers
+-   Trieve - AI-powered search and analytics
+-   Supadata AI - Scrape YouTube, web, and files. Get AI-ready, clean data
+-   Darweb - Design. Develop. Deliver. Specialized in 3D CPQ Solutions
+-   Hetzner - Server, cloud, hosting, and data center solutions
+-   COMIT - New York Times award–winning contractor
+-   Blacksmith - Infrastructure automation platform
+-   WZ-IT - German agency for customised cloud solutions
+-   BC Direct - Your trusted technology consulting partner
+-   Tigris - Modern developer data platform
+-   Hostinger - Web hosting and VPS solutions
+-   QuantCDN - Enterprise-grade content delivery network
+-   PFGLabs - Build Real Projects with Golang
+-   JobsCollider - 30,000+ remote jobs for developers
+-   Juxtdigital - Digital transformation and web solutions
+-   Cloudify.ro - Cloud hosting solutions
+-   CodeRabbit - Cut Code Review Time & Bugs in Half
+-   American Cloud - US-based cloud infrastructure services
+-   MassiveGrid - Enterprise cloud hosting solutions
+-   Syntax.fm - Podcast for web developers
+-   Tolgee - The open source localization platform
+-   CompAI - Open source compliance automation platform
+-   GoldenVM - Premium virtual machine hosting solutions
+
+Small Sponsors
+--------------
+
+...and many more at GitHub Sponsors
 
 Recognitions
 ============

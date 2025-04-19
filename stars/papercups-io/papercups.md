@@ -1,6 +1,6 @@
 ---
 project: papercups
-stars: 5805
+stars: 5810
 description: Open-source live customer chat
 url: https://github.com/papercups-io/papercups
 ---

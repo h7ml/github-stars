@@ -1,6 +1,6 @@
 ---
 project: build-push-action
-stars: 4692
+stars: 4708
 description: GitHub Action to build and push Docker images with Buildx
 url: https://github.com/docker/build-push-action
 ---
@@ -134,6 +134,7 @@ Examples
 -   Cache management
 -   Export to Docker
 -   Test before push
+-   Validating build configuration
 -   Local registry
 -   Share built image between jobs
 -   Named contexts

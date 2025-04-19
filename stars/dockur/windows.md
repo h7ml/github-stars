@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 34121
+stars: 34251
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -49,7 +49,7 @@ services:
 
 ##### Via Docker CLI:
 
-docker run -it --rm --name windows -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET\_ADMIN -v ${PWD:-.}/windows:/storage --stop-timeout 120 dockurr/windows
+docker run -it --rm --name windows -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET\_ADMIN -v "${PWD:-.}/windows:/storage" --stop-timeout 120 dockurr/windows
 
 ##### Via Kubernetes:
 
@@ -291,7 +291,7 @@ environment:
 Alternatively, you can also skip the download and use a local file instead, by binding it in your compose file in this way:
 
 volumes:
-  - ./example.iso:/custom.iso
+  - ./example.iso:/boot.iso
 
 Replace the example path `./example.iso` with the filename of your desired ISO file. The value of `VERSION` will be ignored in this case.
 

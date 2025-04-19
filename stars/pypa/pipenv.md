@@ -1,6 +1,6 @@
 ---
 project: pipenv
-stars: 25026
+stars: 25033
 description:  Python Development Workflow for Humans.
 url: https://github.com/pypa/pipenv
 ---
@@ -106,7 +106,7 @@ Alternatively, some users prefer to use Pipx:
 pipx install pipenv
 ```
 
-Or, some users prefer to use Python pip module
+Or, some users prefer to use Python pip module.
 
 ```
 python -m pip install pipenv

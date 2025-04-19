@@ -1,6 +1,6 @@
 ---
 project: filepond
-stars: 15509
+stars: 15518
 description: 🌊 A flexible and fun JavaScript file upload library
 url: https://github.com/pqina/filepond
 ---
@@ -66,7 +66,6 @@ Learn more about Pintura
 -   Zip Directory Uploads (tzsk/filepond-plugin-zipper)
 -   PDF Preview (Adri-Glez/filepond-plugin-pdf-preview)
 -   PDF Convert (alexandreDavid/filepond-plugin-pdf-convert)
--   Copy Path (jnkn6/filepond-plugin-copy-path)
 
 ### Adapters
 

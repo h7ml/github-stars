@@ -1,7 +1,7 @@
 ---
 project: flexsearch
-stars: 12849
-description: Next-Generation full text search library for Browser and Node.js
+stars: 12870
+description: Next-Generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
 
@@ -238,6 +238,7 @@ Extern Projects & Plugins:
 -   React: https://github.com/angeloashmore/react-use-flexsearch
 -   Vue: https://github.com/Noction/vue-use-flexsearch
 -   Gatsby: https://www.gatsbyjs.org/packages/gatsby-plugin-flexsearch/
+-   Nikola: https://plugins.getnikola.com/v8/flexsearch\_plugin/
 
 Table of contents
 -----------------
@@ -309,6 +310,7 @@ The **_dist_** folder is located in: `node_modules/flexsearch/dist/`
 > It is not recommended to use the `/src/` folder of this repository as it requires some kind of conditional compilation to resolve the build flags. The `/dist/` folder contains every version you might need including unminified ES6 modules. When none of the `/dist/` folder versions works for you please open an issue. Alternatively you can read more about Custom Builds.
 
 Download Builds  
+\*\*\*\*
 
 Build
 
@@ -316,23 +318,17 @@ File
 
 CDN
 
-flexsearch.bundle.debug.js
-
-Download
-
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.debug.js
-
 flexsearch.bundle.min.js
 
 Download
 
 https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.min.js
 
-flexsearch.bundle.module.debug.js
+flexsearch.bundle.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.module.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.debug.js
 
 flexsearch.bundle.module.min.js
 
@@ -340,23 +336,35 @@ Download
 
 https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.module.min.js
 
-flexsearch.es5.debug.js
+flexsearch.bundle.module.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.es5.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.module.debug.js
 
-flexsearch.es5.min.js
-
-Download
-
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.es5.min.js
-
-flexsearch.light.debug.js
+flexsearch.compact.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.min.js
+
+flexsearch.compact.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.debug.js
+
+flexsearch.compact.module.min.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.module.min.js
+
+flexsearch.compact.module.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.module.debug.js
 
 flexsearch.light.min.js
 
@@ -364,11 +372,11 @@ Download
 
 https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.min.js
 
-flexsearch.light.module.debug.js
+flexsearch.light.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.module.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.debug.js
 
 flexsearch.light.module.min.js
 
@@ -376,23 +384,41 @@ Download
 
 https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.module.min.js
 
+flexsearch.light.module.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.module.debug.js
+
+flexsearch.es5.min.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.es5.min.js
+
+flexsearch.es5.debug.js
+
+Download
+
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.es5.debug.js
+
 Javascript Modules (ESM)
 
 Download
 
-https://github.com/nextapps-de/flexsearch/tree/0.8.1/dist/module
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/module/
 
 Javascript Modules Minified (ESM)
 
 Download
 
-https://github.com/nextapps-de/flexsearch/tree/0.8.1/dist/module-min
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/module-min/
 
 Javascript Modules Debug (ESM)
 
 Download
 
-https://github.com/nextapps-de/flexsearch/tree/0.8.1/dist/module-debug
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/module-debug/
 
 flexsearch.custom.js
 
@@ -1079,14 +1105,7 @@ Sets the scoring resolution
 
 9
 
-encoder  
-  
-  
-  
-  
-  
-  
-  
+encoder
 
 new Encoder(options)  
 Charset.Exact  
@@ -1096,6 +1115,7 @@ Charset.LatinBalance
 Charset.LatinAdvanced  
 Charset.LatinExtra  
 Charset.LatinSoundex  
+Charset.CJK  
 false
 
 Choose one of the built-in encoder  
@@ -1510,7 +1530,7 @@ var index \= new FlexSearch({
 
 ### Compare Context Search
 
-Pay attention of the numbers "1", "2" and "3":
+Pay attention to the numbers "1", "2" and "3":
 
 const index \= new Index();
 index.add(1, "1 A B C D 2 E F G H I 3 J K L");

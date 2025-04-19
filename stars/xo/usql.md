@@ -1,6 +1,6 @@
 ---
 project: usql
-stars: 9323
+stars: 9337
 description: Universal command-line interface for SQL databases
 url: https://github.com/xo/usql
 ---
@@ -1646,7 +1646,7 @@ Type "help" for help.
 
 pg:booktest@=\>
 
-While the `.usqlpass` functionality will not be removed, it is recommended to define named connections preferrably via the `config.yaml` file.
+While the `.usqlpass` functionality will not be removed, it is recommended to define named connections preferably via the `config.yaml` file.
 
 * * *
 

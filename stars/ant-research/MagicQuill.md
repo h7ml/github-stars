@@ -1,12 +1,12 @@
 ---
 project: MagicQuill
-stars: 3271
+stars: 3298
 description: [CVPR'25] Official Implementations for Paper - MagicQuill: An Intelligent Interactive Image Editing System
 url: https://github.com/ant-research/MagicQuill
 ---
 
-🪶 MagicQuill: An Intelligent Interactive Image Editing System
-==============================================================
+🪶 MagicQuill: An Intelligent Interactive Image Editing System (_CVPR 2025_)
+============================================================================
 
 demo480p.mp4
 

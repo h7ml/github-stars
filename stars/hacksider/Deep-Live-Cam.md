@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 50051
+stars: 50458
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -29,6 +29,13 @@ We are aware of the potential for unethical applications and are committed to pr
 By using this software, you agree to these terms and commit to using it in a manner that respects the rights and dignity of others.
 
 Users are expected to use this software responsibly and legally. If using a real person's face, obtain their consent and clearly label any output as a deepfake when sharing online. We are not responsible for end-user actions.
+
+Exclusive v2.0 Quick Start - Pre-built (Windows / Nvidia)
+---------------------------------------------------------
+
+##### This is the fastest build you can get if you have a discrete NVIDIA GPU.
+
+###### These Pre-builts are perfect for non-technical users or those who don't have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually. This will be 60 days ahead on the open source version.
 
 TLDR; Live Deepfake in just 3 Clicks
 ------------------------------------

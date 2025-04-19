@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 46651
+stars: 47180
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -95,9 +95,15 @@ Definitions
 Changelog
 ---------
 
+\[25/04/16\] We supported fine-tuning the **InternVL3** model. See PR #7258 to get started.
+
+\[25/04/14\] We supported fine-tuning the **GLM-Z1** and **Kimi-VL** models.
+
 \[25/04/06\] We supported fine-tuning the **Llama 4** model. See PR #7611 to get started.
 
 \[25/03/31\] We supported fine-tuning the **Qwen2.5 Omni** model. See PR #7537 to get started.
+
+Full Changelog
 
 \[25/03/15\] We supported **SGLang** as inference backend. Try `infer_backend: sglang` to accelerate inference.
 
@@ -105,13 +111,11 @@ Changelog
 
 \[25/02/24\] Announcing **EasyR1**, an efficient, scalable and multi-modality RL training framework for efficient GRPO training.
 
-Full Changelog
-
 \[25/02/11\] We supported saving the **Ollama** modelfile when exporting the model checkpoints. See examples for usage.
 
 \[25/02/05\] We supported fine-tuning the **Qwen2-Audio** and **MiniCPM-o-2.6** on audio understanding tasks.
 
-\[25/01/31\] We supported fine-tuning the **DeepSeek-R1** and **Qwen2.5-VL** model.
+\[25/01/31\] We supported fine-tuning the **DeepSeek-R1** and **Qwen2.5-VL** models.
 
 \[25/01/15\] We supported **APOLLO** optimizer. See examples for usage.
 
@@ -280,9 +284,9 @@ Gemma 3
 
 gemma3/gemma (1B)
 
-GLM-4
+GLM-4/GLM-4-0414/GLM-Z1
 
-9B
+9B/32B
 
 glm4
 
@@ -292,17 +296,11 @@ GPT-2
 
 \-
 
-Granite 3.0-3.1
+Granite 3.0-3.3
 
 1B/2B/3B/8B
 
 granite3
-
-Index
-
-1.9B
-
-index
 
 Hunyuan
 
@@ -310,11 +308,29 @@ Hunyuan
 
 hunyuan
 
+Index
+
+1.9B
+
+index
+
 InternLM 2-3
 
 7B/8B/20B
 
 intern2
+
+InternVL 2.5-3\*\*
+
+1B/2B/4B/8B/9B/14B/26B/38B/78B
+
+intern\_vl
+
+Kimi-VL
+
+16B
+
+kimi\_vl
 
 Llama
 
@@ -436,7 +452,7 @@ Pixtral
 
 pixtral
 
-Qwen/QwQ (1-2.5) (Code/Math/MoE)
+Qwen (1-2.5) (Code/Math/MoE/QwQ)
 
 0.5B/1.5B/3B/7B/14B/32B/72B/110B
 
@@ -448,7 +464,7 @@ Qwen2-Audio
 
 qwen2\_audio
 
-Qwen2.5-Omni
+Qwen2.5-Omni\*\*
 
 7B
 
@@ -507,6 +523,10 @@ Note
 For the "base" models, the `template` argument can be chosen from `default`, `alpaca`, `vicuna` etc. But make sure to use the **corresponding template** for the "instruct/chat" models.
 
 Remember to use the **SAME** template in training and inference.
+
+\*: You should install the `transformers` from main branch and use `DISABLE_VERSION_CHECK=1` to skip version check.
+
+\*\*: You need to install a specific version of `transformers` to use the corresponding model.
 
 Please refer to constants.py for a full list of models we supported.
 
@@ -719,13 +739,13 @@ python
 
 torch
 
-1.13.1
+2.0.0
 
 2.6.0
 
 transformers
 
-4.41.2
+4.45.0
 
 4.50.0
 
@@ -745,7 +765,7 @@ peft
 
 0.14.0
 
-0.15.0
+0.15.1
 
 trl
 
@@ -785,7 +805,7 @@ vllm
 
 flash-attn
 
-2.3.0
+2.5.6
 
 2.7.2
 
@@ -977,6 +997,12 @@ deepspeed
 0.13.2
 
 0.13.2
+
+vllm-ascend
+
+\-
+
+0.7.3
 
 Remember to use `ASCEND_RT_VISIBLE_DEVICES` instead of `CUDA_VISIBLE_DEVICES` to specify the device to use.
 

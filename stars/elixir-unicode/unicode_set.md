@@ -1,6 +1,6 @@
 ---
 project: unicode_set
-stars: 38
+stars: 39
 description: Unicode set parsing, expansion, macros and guards for Elixir
 url: https://github.com/elixir-unicode/unicode_set
 ---

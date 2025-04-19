@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 8039
+stars: 8285
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -33,7 +33,7 @@ Quick start
 
 You can download the last binary from the nightly builds for Linux x86\_64 and MacOS aarch64.
 
-_For linux_
+_For Linux_
 
 curl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-x86\_64-linux && \\
 chmod a+x ./lightpanda
@@ -42,6 +42,10 @@ _For MacOS_
 
 curl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-aarch64-macos && \\
 chmod a+x ./lightpanda
+
+_For Windows + WSL2_
+
+The Lightpanda browser is compatible to run on windows inside WSL. Follow the Linux instruction for installation from a WSL terminal. It is recommended to install clients like Puppeteer on the Windows host.
 
 ### Dump a URL
 
@@ -191,17 +195,21 @@ For dev env, use `make install-mimalloc-dev`.
 
 Note: when Mimalloc is built in dev mode, you can dump memory stats with the env var `MIMALLOC_SHOW_STATS=1`. See https://microsoft.github.io/mimalloc/environment.html.
 
-**zig-js-runtime**
+**v8**
 
-Our own Zig/Javascript runtime, which includes the v8 Javascript engine.
-
-This build task is very long and cpu consuming, as you will build v8 from sources.
+First, get the tools necessary for building V8, as well as the V8 source code:
 
 ```
-make install-zig-js-runtime
+make get-v8
 ```
 
-For dev env, use `make install-zig-js-runtime-dev`.
+Next, build v8. This build task is very long and cpu consuming, as you will build v8 from sources.
+
+```
+make build-v8
+```
+
+For dev env, use `make build-v8-dev`.
 
 Test
 ----
@@ -209,6 +217,18 @@ Test
 ### Unit Tests
 
 You can test Lightpanda by running `make test`.
+
+### End to end tests
+
+To run end to end tests, you need to clone the demo repository into `../demo` dir.
+
+You have to install the demo's node requirements
+
+You also need to install Go > v1.24.
+
+```
+make end2end
+```
 
 ### Web Platform Tests
 

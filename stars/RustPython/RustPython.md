@@ -1,6 +1,6 @@
 ---
 project: RustPython
-stars: 19877
+stars: 19900
 description: A Python Interpreter written in Rust
 url: https://github.com/RustPython/RustPython
 ---

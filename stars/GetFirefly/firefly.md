@@ -1,6 +1,6 @@
 ---
 project: firefly
-stars: 3606
+stars: 3605
 description: An alternative BEAM implementation, designed for WebAssembly
 url: https://github.com/GetFirefly/firefly
 ---

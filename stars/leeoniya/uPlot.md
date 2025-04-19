@@ -1,24 +1,22 @@
 ---
 project: uPlot
-stars: 9056
+stars: 9073
 description: 📈 A small, fast chart for time series, lines, areas, ohlc & bars
 url: https://github.com/leeoniya/uPlot
 ---
 
-📈 μPlot
---------
+μPlot
+-----
 
-A small (~45 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_
+A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_
 
 * * *
 
 ### Introduction
 
-μPlot is a fast, memory-efficient Canvas 2D\-based chart for plotting time series, lines, areas, ohlc & bars; from a cold start it can create an interactive chart containing 150,000 data points in 90ms, scaling linearly at ~31,000 pts/ms. In addition to fast initial render, the zooming and cursor performance is by far the best of any similar charting lib; at ~50 KB, it's likely the smallest and fastest time series plotter that doesn't make use of context-limited WebGL shaders or WASM, both of which have much higher startup cost and code size.
+uPlot is a fast, memory-efficient Canvas 2D\-based chart for plotting time series, lines, areas, ohlc & bars. From a cold start it can create an interactive chart containing 166,650 data points in 25ms, scaling linearly at ~100,000 pts/ms afterwards. In addition to fast initial render, the zooming and cursor performance is by far the best of any similar charting lib; at ~50 KB, it's likely the smallest and fastest time series plotter that doesn't make use of context-limited WebGL shaders or WASM, both of which have much higher startup cost and code size.
 
-### 166,650 point bench: https://leeoniya.github.io/uPlot/bench/uPlot.html
-
-However, if you need 60fps performance with massive streaming datasets, uPlot can only get you so far. If you decide to venture into this realm with uPlot, make sure to unclog your rendering pipeline. WebGL should still be the tool of choice for applications like realtime signal or waveform visualizations: See danchitnis/webgl-plot, huww98/TimeChart, epezent/implot, or commercial products like LightningChart®.
+In most sane cases, you can live-stream data with uPlot at 60fps, though it may begin to struggle beyond 100k in-view points. When updating 3,600 points at 60fps, uPlot uses 10% CPU and 12.3MB RAM. The next fastest Canvas-based libs (Chart.js and ECharts) use 40% / 77MB and 70% / 85MB, respectively. If you need to stream, give unclog your rendering pipeline a try. If that does not help, consider reducing the update frequency or switch to a WebGL/WebGPU solution, like danchitnis/webgl-plot, huww98/TimeChart, epezent/implot.
 
 * * *
 

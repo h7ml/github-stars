@@ -1,6 +1,6 @@
 ---
 project: openage
-stars: 13502
+stars: 13522
 description: Clone of the Age of Empires II engine 🚀 
 url: https://github.com/SFTtech/openage
 ---
@@ -153,6 +153,9 @@ Quickstart
     make
     ```
     
+
+**Alternative approach:** You can build and run the project using Docker. See Running with docker for more details.
+
 -   **I compiled everything. Now how do I run it?**
     
     -   Execute `cd bin && ./run main`.

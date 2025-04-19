@@ -1,6 +1,6 @@
 ---
 project: slidev
-stars: 35933
+stars: 36116
 description: Presentation Slides for Developers
 url: https://github.com/slidevjs/slidev
 ---
@@ -19,7 +19,7 @@ Made possible by my Sponsor Program 💖
 Features
 --------
 
--   📝 **Markdown-based** - foucus on content and use your favorite editor
+-   📝 **Markdown-based** - focus on content and use your favorite editor
 -   🧑‍💻 **Developer Friendly** - built-in code highlighting, live coding, etc.
 -   🎨 **Themable** - theme can be shared and used with npm packages
 -   🌈 **Stylish** - on-demand utilities via UnoCSS.

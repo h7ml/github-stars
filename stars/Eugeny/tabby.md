@@ -1,6 +1,6 @@
 ---
 project: tabby
-stars: 62994
+stars: 63117
 description: A terminal for a more modern age
 url: https://github.com/Eugeny/tabby
 ---
@@ -115,6 +115,7 @@ Plugins and themes can be installed directly from the Settings view inside Tabby
 -   background - change Tabby background image and more...
 -   highlight - Tabby terminal keyword highlight plugin
 -   web-auth-handler - In-app web authentication popups (Built primarily for warpgate in-browser auth)
+-   mcp-server - Powerful Model Context Protocol server integration for Tabby that seamlessly connects with AI assistants through MCP clients like Cursor and Windsurf, enhancing your terminal workflow with intelligent AI capabilities.
 
 Themes
 ======

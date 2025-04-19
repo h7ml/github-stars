@@ -1,6 +1,6 @@
 ---
 project: fq
-stars: 10036
+stars: 10082
 description: jq for binary formats - tool, language and decoders for working with binary and text formats
 url: https://github.com/wader/fq
 ---
@@ -56,9 +56,11 @@ Install
 
 Use one of the methods listed below or download a pre-built release for macOS, Linux or Windows. Unarchive it and move the executable to `PATH` etc.
 
-On macOS if you don't install using one of the method below then you might have to manually allow the binary to run. This can be done by trying to run the binary, ignore the warning and then go into security preference and allow it. Same can be done with this command:
+On macOS if you don't install using one of the method below then you might have to manually allow the binary to run. This can be done by trying to run the binary, ignore the warning and then go into security preference and allow it. Same can be done with these commands:
 
-xattr -d com.apple.quarantine fq && spctl --add fq
+xattr -d com.apple.quarantine fq
+# for macOS version before Sequoia you might need this also
+spctl --add fq
 
 ### Homebrew (macOS)
 

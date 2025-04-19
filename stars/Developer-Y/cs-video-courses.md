@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68477
+stars: 68511
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -92,6 +92,8 @@ Courses
 -   CS 106X - Programming Abstractions in C++ (Lecture Videos)
 -   CS 107 - Programming Paradigms, Stanford University
 -   CmSc 150 - Introduction to Programming with Arcade Games, Simpson College
+-   IN2377 - Concepts of C++ programming (Winter 2023), TUM (Winter 2022) (Summer 2022) (Summer 2021)
+-   IN1503 - Advanced C++ Programming, TUM
 -   LINFO 1104 - Paradigms of computer programming, Peter Van Roy, Université catholique de Louvain, Belgium - EdX
 -   FP 101x - Introduction to Functional Programming, TU Delft
 -   Introduction to Problem Solving and Programming - IIT Kanpur
@@ -106,6 +108,7 @@ Courses
 -   Modern C++ (Lecture & Tutorials, 2020, Vizzo & Stachniss) - University of Bonn
 -   UW Madison CS 368 C++ for Java Programmers Fall 2020, by Michael Doescher
 -   UW Madison CS 354 Machine Organization and Programming spring 2020, 2021, by Michael Doescher
+-   Cornell CS 1110 Introduction to Computing using Python fall 2020, by Walker White (Lecture Videos)
 -   Cornell ECE 4960 Computational and Software Engineering spring 2017, by Edwin Kan
 
 * * *
@@ -816,7 +819,7 @@ Courses
     -   UCLA Stats 102A Introduction to Computational Statistics with R winter 2024, by Miles Chen
     -   UCLA Stats 102B Computation and Optimization for Statistics spring 2024, by Miles Chen
     -   UCLA Stats 102C Introduction to Monte Carlo Methods fall 2023, by Miles Chen
-    -   UCLA Stats 200B Theoretical Statistics winter 2023, by Arash Amini
+    -   UCLA Stats 200B Theoretical Statistics winter 2024, by Arash Amini (Winter 2023)
     -   UCLA Stats 200C High-dimensional Statistics spring 2022, by Arash Amini (Spring 2021)
     -   UCLA Stats 203 Large Sample Theory fall 2021, by Jingyi Jessica Li (Fall 2020)
     -   UCSD Math 280 Probability Theory and Stochastic Processes, by Todd Kemp (YouTube)
@@ -1123,6 +1126,7 @@ Courses
 -   CMU 15-462/662: Computer Graphics
 -   UC Berkeley CS184/284A Computer Graphics and Imaging Spring 2022, by Ren Ng (YouTube playlist)
 -   CS 15-458/858: Discrete Differential Geometry - Carnegie Mellon University - Spring 2021
+-   IN2124: Basic Mathematical Tools for Imaging and Visualization - TUM - Winter 2021
 
 * * *
 

@@ -1,6 +1,6 @@
 ---
 project: spawnedshelter
-stars: 350
+stars: 349
 description: :blue_book: Erlang Spawned Shelter. Erlang and Elixir training with the best articles, videos, books and talks🎓
 url: https://github.com/unbalancedparentheses/spawnedshelter
 ---

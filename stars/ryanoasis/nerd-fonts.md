@@ -1,6 +1,6 @@
 ---
 project: nerd-fonts
-stars: 57251
+stars: 57360
 description: Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more
 url: https://github.com/ryanoasis/nerd-fonts
 ---
@@ -30,7 +30,7 @@ Table of Contents
 -   **2 - Homebrew Fonts (macOS (OS X))**
 -   **3 - Chocolatey or Scoop (Windows)**
 -   **4 - Arch Linux Repository (Extra, AUR)**
--   **5 - PowerShell Web Installer (Multi-Platform)**
+-   **5 - PowerShell Installer (Multi-Platform)**
 -   **6 - Ad Hoc Curl Download**
 -   **7 - Install Script**
 -   **8 - Use Fontfallback**
@@ -73,7 +73,7 @@ _If you..._
 -   `Option 2.` are on **macOS** and want to use **Homebrew** see Homebrew Fonts
 -   `Option 3.` are on **Windows** and want to use **Chocolatey** or **Scoop** see Unofficial Chocolatey or Scoop Repositories
 -   `Option 4.` are on **Arch Linux** and want to use **Extra packages** see Arch Extra Repositories
--   `Option 5.` are using **PowerShell** and want an **interactive setup** or **use in scripts** see the PowerShell Web Installer
+-   `Option 5.` are using **PowerShell** and want an **interactive setup** or **use in scripts** see the PowerShell Installer
 -   `Option 6.` want to use the **`curl` command** or use in **scripts** see Ad Hoc Curl Download
 -   `Option 7.` want to **automate** installing or use in **scripts** see the Install Script
 -   `Option 8.` want to install only one font for all fonts see Font Fallback
@@ -121,7 +121,7 @@ ver
 
 0xProto
 
-2.201
+2.300
 
 NO
 
@@ -157,6 +157,14 @@ Arimo
 
 NO
 
+AtynsonMono Nerd Font
+
+Atkinson Hyperlegible Mono
+
+2.001
+
+YES
+
 AurulentSansMono Nerd Font
 
 Aurulent Sans Mono (Stephen G. Hartke)
@@ -189,7 +197,7 @@ CaskaydiaCove Nerd Font
 
 Cascadia Code
 
-2111.01
+2407.24
 
 YES
 
@@ -197,7 +205,7 @@ CaskaydiaMono Nerd Font
 
 Cascadia Mono
 
-2111.01
+2407.24
 
 YES
 
@@ -309,7 +317,7 @@ GeistMono Nerd Font
 
 Geist Mono
 
-1.200
+1.401
 
 NO
 
@@ -389,7 +397,7 @@ Inconsolata LGC Nerd Font
 
 Inconsolata LGC
 
-1.5.2
+1.13
 
 NO
 
@@ -405,7 +413,7 @@ Iosevka Nerd Font
 
 Iosevka
 
-29.0.4
+33.2.1
 
 NO
 
@@ -413,7 +421,7 @@ IosevkaTerm Nerd Font
 
 Iosevka Term
 
-29.0.4
+33.2.1
 
 NO
 
@@ -421,7 +429,7 @@ IosevkaTermSlab Nerd Font
 
 Iosevka Term Slab
 
-29.0.4
+33.2.1
 
 NO
 
@@ -453,7 +461,7 @@ Lilex Nerd Font
 
 Lilex
 
-2.400
+2.600
 
 NO
 
@@ -461,7 +469,7 @@ MartianMono Nerd Font
 
 MartianMono
 
-1.0.0
+1.1.0
 
 NO
 
@@ -477,7 +485,7 @@ Monaspice Nerd Font
 
 Monaspace
 
-1.101
+1.200
 
 YES
 
@@ -509,7 +517,7 @@ M+ Nerd Font
 
 MPlus Fonts
 
-2023/09
+1.007
 
 NO
 
@@ -629,7 +637,7 @@ UbuntuSans Nerd Font
 
 Ubuntu Sans
 
-1.004
+1.006
 
 NO
 
@@ -710,35 +718,37 @@ scoop install Hack\-NF
 
 Most fonts are available via Arch Extra packages. Some special packages are in AUR.
 
-### `Option 5: PowerShell Web Installer`
+### `Option 5: PowerShell Installer`
 
 > Best option for **interactive setup guidance** or **automating** installations through **PowerShell scripts**.
 
-_Note_:
+#### PSModule NerdFonts
+
+This is a 3rd-party community tool. More information can be found on its GitHub repository here.
+
+To install the module:
+
+Install-PSResource \-Name NerdFonts
+Import-Module \-Name NerdFonts
+
+To install one font:
+
+Install-NerdFont \-Name 'FiraCode' # Tab completion works on name
+
+#### Powershell Web Installer
+
+This is a 3rd-party community tool. More information can be found on its GitHub repository here.
 
 -   **Requires PowerShell 7+** to be installed on Windows, macOS, or Linux.
 -   **Windows PowerShell 5.1** is also supported.
--   This is a 3rd-party community tool. More information can be found on its GitHub repository here, including advanced installation options.
-
-#### Run the Interactive Installer
 
 To run the interactive installer, use the following command:
 
 & (\[scriptblock\]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1')))
 
-#### Install Fonts Directly
-
 To install specific fonts directly, use the following command:
 
 & (\[scriptblock\]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) \-Name hack, heavy\-data
-
-To install fonts without a confirmation prompt, use:
-
-& (\[scriptblock\]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) \-Confirm:$false \-Name hack, heavy\-data
-
-To get a list of possible font names, use:
-
-& (\[scriptblock\]::Create((iwr 'https://to.loredo.me/Install-NerdFont.ps1'))) \-List All
 
 ### `Option 6: Ad Hoc Curl Download`
 
