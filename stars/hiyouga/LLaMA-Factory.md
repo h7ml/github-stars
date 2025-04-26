@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 47180
+stars: 47657
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -60,7 +60,7 @@ Features
 -   **Various models**: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Qwen2-VL, DeepSeek, Yi, Gemma, ChatGLM, Phi, etc.
 -   **Integrated methods**: (Continuous) pre-training, (multimodal) supervised fine-tuning, reward modeling, PPO, DPO, KTO, ORPO, etc.
 -   **Scalable resources**: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
--   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ and PiSSA.
+-   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, Muon, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ and PiSSA.
 -   **Practical tricks**: FlashAttention-2, Unsloth, Liger Kernel, RoPE scaling, NEFTune and rsLoRA.
 -   **Wide tasks**: Multi-turn dialogue, tool using, image understanding, visual grounding, video recognition, audio understanding, etc.
 -   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab, etc.
@@ -94,6 +94,8 @@ Definitions
 
 Changelog
 ---------
+
+\[25/04/21\] We supported the **Muon** optimizer. See examples for usage. Thank @tianshijing's PR.
 
 \[25/04/16\] We supported fine-tuning the **InternVL3** model. See PR #7258 to get started.
 
@@ -320,9 +322,9 @@ InternLM 2-3
 
 intern2
 
-InternVL 2.5-3\*\*
+InternVL 2.5-3\*
 
-1B/2B/4B/8B/9B/14B/26B/38B/78B
+1B/2B/8B/14B/38B/78B
 
 intern\_vl
 
@@ -1184,7 +1186,7 @@ Details about volume
 
 ### Deploy with OpenAI-style API and vLLM
 
-API\_PORT=8000 llamafactory-cli api examples/inference/llama3\_vllm.yaml
+API\_PORT=8000 llamafactory-cli api examples/inference/llama3.yaml infer\_backend=vllm vllm\_enforce\_eager=true
 
 Tip
 

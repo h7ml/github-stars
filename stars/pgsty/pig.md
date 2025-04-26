@@ -10,7 +10,7 @@ PIG - Postgres Install Genius
 
 **pig** is an open-source PostgreSQL (& Extension) Package Manager for mainstream (EL/Debian/Ubuntu) Linux.
 
-Install PostgreSQL 13-17 along with 405 extensions on (`amd64` / `arm64`) with native OS package manager
+Install PostgreSQL 13-17 along with 407 extensions on (`amd64` / `arm64`) with native OS package manager
 
 > Blog: The idea way to deliver PostgreSQL extensions
 

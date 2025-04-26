@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 24273
+stars: 24397
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -124,7 +124,7 @@ The Linux version of btop++ is complete. Released as version 1.0.0
 
 I will be providing statically compiled binaries for a range of architectures in every release for those having problems compiling.
 
-For compilation GCC 10 is required, GCC 11 preferred.
+For compilation GCC 11 is required.
 
 Please report any bugs to the Issues page.
 
@@ -348,7 +348,7 @@ Installation
 Compilation Linux
 -----------------
 
-Requires at least GCC 10 or Clang 16.
+Requires at least GCC 11 or Clang 16.
 
 The makefile also needs GNU coreutils and `sed` (should already be installed on any modern distribution).
 
@@ -569,7 +569,7 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
 Compilation macOS OSX
 ---------------------
 
-Requires at least GCC 10 or Clang 16.
+Requires at least GCC 12 or Clang 16.
 
 With GCC, version 12 (or better) is needed for macOS Ventura. If you get linker errors on Ventura you'll need to upgrade your command line tools (Version 14.0) is bugged.
 
@@ -746,7 +746,7 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
 Compilation FreeBSD
 -------------------
 
-Requires at least GCC 10 or Clang 16.
+Requires at least GCC 11 or Clang 16.
 
 Note that GNU make (`gmake`) is required to compile on FreeBSD.
 
@@ -935,7 +935,7 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
 Compilation NetBSD
 ------------------
 
-Requires at least GCC 10.
+Requires at least GCC 11.
 
 Note that GNU make (`gmake`) is required to compile on NetBSD.
 
@@ -943,7 +943,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
 
 1.  **Install dependencies**
     
-    pkg\_add gmake gcc10 coreutils git
+    pkg\_add gmake gcc11 coreutils git
     
 2.  **Clone repository**
     
@@ -1036,7 +1036,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
     
     Requires GCC, CMake, Ninja and Git
     
-    pkg\_add cmake ninja-build gcc10 coreutils git
+    pkg\_add cmake ninja-build gcc11 coreutils git
     
 2.  **Clone the repository**
     
@@ -1045,7 +1045,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
 3.  **Compile**
     
     # Configure
-    cmake -DCMAKE\_CXX\_COMPILER="/usr/pkg/gcc10/bin/g++" -B build -G Ninja
+    cmake -DCMAKE\_CXX\_COMPILER="/usr/pkg/gcc11/bin/g++" -B build -G Ninja
     # Build
     cmake --build build
     
@@ -1101,7 +1101,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
 Compilation OpenBSD
 -------------------
 
-Requires at least GCC 10.
+Requires at least GCC 11.
 
 Note that GNU make (`gmake`) is required to compile on OpenBSD.
 

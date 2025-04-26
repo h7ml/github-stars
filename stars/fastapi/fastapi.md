@@ -1,6 +1,6 @@
 ---
 project: fastapi
-stars: 83485
+stars: 83776
 description: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 url: https://github.com/fastapi/fastapi
 ---
@@ -113,7 +113,7 @@ Example
 
 ### Create it
 
--   Create a file `main.py` with:
+Create a file `main.py` with:
 
 from typing import Union
 

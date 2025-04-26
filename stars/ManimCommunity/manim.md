@@ -1,6 +1,6 @@
 ---
 project: manim
-stars: 31291
+stars: 31422
 description: A community-maintained Python framework for creating mathematical animations. 
 url: https://github.com/ManimCommunity/manim
 ---
@@ -105,7 +105,7 @@ Contributions to Manim are always welcome. In particular, there is a dire need f
 
 However, please note that Manim is currently undergoing a major refactor. In general, contributions implementing new features will not be accepted in this period. The contribution guide may become outdated quickly; we highly recommend joining our Discord server to discuss any potential contributions and keep up to date with the latest developments.
 
-Most developers on the project use `poetry` for management. You'll want to have poetry installed and available in your environment. Learn more about `poetry` at its documentation and find out how to install manim with poetry at the manim dev-installation guide in the manim documentation.
+Most developers on the project use `uv` for management. You'll want to have uv installed and available in your environment. Learn more about `uv` at its documentation and find out how to install manim with uv at the manim dev-installation guide in the manim documentation.
 
 How to Cite Manim
 -----------------

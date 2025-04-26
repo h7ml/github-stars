@@ -1,6 +1,6 @@
 ---
 project: server
-stars: 29297
+stars: 29360
 description: ☁️ Nextcloud server, a safe home for all your data
 url: https://github.com/nextcloud/server
 ---

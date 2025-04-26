@@ -1,6 +1,6 @@
 ---
 project: burrito
-stars: 1075
+stars: 1077
 description: Wrap your application in a BEAM Burrito!
 url: https://github.com/burrito-elixir/burrito
 ---
@@ -186,7 +186,7 @@ You must have the following installed and in your PATH:
 1.  Add `burrito` to your list of dependencies:
     
     defp deps do
-      \[{:burrito, "~> 1.0"}\]
+      \[{:burrito, "~> 1.0.0"}\]
     end
     
 2.  Create a `releases` function in your `mix.exs`, add and configure the following for your project:

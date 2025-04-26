@@ -1,6 +1,6 @@
 ---
 project: nx-console
-stars: 1328
+stars: 1333
 description: Nx Console is the user interface for Nx & Lerna.
 url: https://github.com/nrwl/nx-console
 ---
@@ -35,9 +35,9 @@ Key Features
 
 Nx Console enhances your editors AI features by providing relevant context to the large language models powering VSCode and Cursor. Automatically teach AI about your workspace architecture, generators and feed it up-to-date nx docs!
 
-In VSCode, access the enhancements via the `@nx` chat participant. Learn more in our blog post or the Nx docs
+Nx Console comes with an MCP server for both, VSCode and Cursor.
 
-In Cursor or anywhere else, use the Nx MCP server. Learn more in our Cursor blog post or the Nx docs
+You can also install the MCP server separately from the Nx Console extension via the `nx-mcp` NPM package. More about that here. Learn more in the Nx docs.
 
 ### Project Details View
 

@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 5794
+stars: 6777
 description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
@@ -83,22 +83,18 @@ Many of our users have had a great experience with RackNerd. Depending on promot
     -   Add resources to the central server and configure access control rules.
     -   Access these resources securely from anywhere.
 
-**Use Case Example - Bypassing Port Restrictions in Home Lab**:  
-Imagine private sites where the ISP restricts port forwarding. By connecting these sites to Pangolin via WireGuard, you can securely expose HTTP and HTTPS resources on the private network without any networking complexity.
+**Use Case Example - Bypassing Port Restrictions in Home Lab**: Imagine private sites where the ISP restricts port forwarding. By connecting these sites to Pangolin via WireGuard, you can securely expose HTTP and HTTPS resources on the private network without any networking complexity.
 
-**Use Case Example - IoT Networks**:  
-IoT networks are often fragmented and difficult to manage. By deploying Pangolin on a central server, you can connect all your IoT sites via Newt or another WireGuard client. This creates a simple, secure, and centralized way to access IoT resources without the need for intricate networking setups.
+**Use Case Example - IoT Networks**: IoT networks are often fragmented and difficult to manage. By deploying Pangolin on a central server, you can connect all your IoT sites via Newt or another WireGuard client. This creates a simple, secure, and centralized way to access IoT resources without the need for intricate networking setups.
 
 _Resources page of Pangolin dashboard (dark mode) showing HTTPS and TCP resources with access control rules._
 
 Similar Projects and Inspirations
 ---------------------------------
 
-**Cloudflare Tunnels**:  
-A similar approach to proxying private resources securely, but Pangolin is a self-hosted alternative, giving you full control over your infrastructure.
+**Cloudflare Tunnels**: A similar approach to proxying private resources securely, but Pangolin is a self-hosted alternative, giving you full control over your infrastructure.
 
-**Authentik and Authelia**:  
-These projects inspired Pangolin’s centralized authentication system for proxies, enabling robust user and role management.
+**Authentik and Authelia**: These projects inspired Pangolin’s centralized authentication system for proxies, enabling robust user and role management.
 
 Project Development / Roadmap
 -----------------------------

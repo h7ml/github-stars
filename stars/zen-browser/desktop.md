@@ -1,6 +1,6 @@
 ---
 project: desktop
-stars: 28918
+stars: 29202
 description: Welcome to a calmer internet
 url: https://github.com/zen-browser/desktop
 ---
@@ -16,7 +16,7 @@ Download • Website • Documentation • Release Notes
 
 Zen is currently built using Firefox version `137.0.2`! 🚀
 
--   `Zen Twilight` - Is currently built using Firefox version `RC 137.0.2`!
+-   `Zen Twilight` - Is currently built using Firefox version `RC 138.0`!
 -   Check out the latest release notes!
 -   Part of our mission is to keep Zen up-to-date with the latest version of Firefox, so you can enjoy the latest features and security updates!
 
@@ -43,11 +43,6 @@ Zen uses Semantic Versioning, meaning versions are displayed as `a.b.cd` where:
 Zen is divided into 2 main branches. We use `dev` for development and `stable` for stable releases. The `dev` branch is where all the new features are added and where `twilight` builds are generated. The `stable` branch is where the stable releases are generated.
 
 We divide into 2 branches in case there's any really important security update (for example) that needs to be released before the next stable release. This allows us to do patches without releasing unstable versions to the public.
-
-⚡ Performance
--------------
-
-Zen is built with performance in mind, and we have optimized the browser to be as fast as possible! Checkout the latest performance benchmarks!
 
 📥 Installation
 ---------------
@@ -100,7 +95,7 @@ To upgrade the browser to a newer version, use the embedded update functionality
 👨‍💻 Development and Contributing
 ----------------------------------
 
-Some components used by @zen-browser as an attempt to make firefox forks a better place, and for other to enjoy the beauty of OSS. You can find them here.
+Some components used by @zen-browser as an attempt to make Firefox forks a better place, and for other to enjoy the beauty of OSS. You can find them here.
 
 #### `Run Locally`
 

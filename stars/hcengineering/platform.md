@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 20250
+stars: 20527
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -155,18 +155,6 @@ sh ./scripts/build.sh
 
 By default, Docker volumes named dev\_db, dev\_elastic, and dev\_files will be created for the MongoDB, Elasticsearch, and MinIO instances.
 
-Before you can begin, you need to create a workspace and an account and associate it with the workspace.
-
-cd ./tool # dev/tool in the repository root
-rushx run-local create-account user1 -p 1234 -f John -l Appleseed # Create account
-rushx run-local create-workspace ws1 email:user1 # Create workspace
-rushx run-local configure ws1 --list --enable '\*' # Enable all modules, even if they are not yet intended to be used by a wide audience
-rushx run-local assign-workspace user1 ws1 # Assign user to workspace
-
-Alternatively, you can just execute:
-
-sh ./scripts/create-workspace.sh
-
 Add the following line to your /etc/hosts file
 
 ```
@@ -191,13 +179,7 @@ rushx dev-server
 
 Then go to http://localhost:8080
 
-Click on "Login with password" link on the bottom of the right panel and use the following login credentials:
-
-```
-Email: user1
-Password: 1234
-Workspace: ws1
-```
+Select "Sign up" on the right panel and click the "Sign up with password" link at the bottom. Enter the new user's credentials, then proceed to create a workspace for them.
 
 Update project structure and database
 -------------------------------------

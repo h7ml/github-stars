@@ -1,6 +1,6 @@
 ---
 project: detectron2
-stars: 31774
+stars: 31834
 description: Detectron2 is a platform for object detection, segmentation and other visual recognition tasks.
 url: https://github.com/facebookresearch/detectron2
 ---
@@ -12,19 +12,12 @@ Detectron2 is Facebook AI Research's next generation library that provides state
 Learn More about Detectron2
 ---------------------------
 
-Explain Like I’m 5: Detectron2
-
-Using Machine Learning with Detectron2
-
-What's New
-----------
-
 -   Includes new capabilities such as panoptic segmentation, Densepose, Cascade R-CNN, rotated bounding boxes, PointRend, DeepLab, ViTDet, MViTv2 etc.
 -   Used as a library to support building research projects on top of it.
 -   Models can be exported to TorchScript format or Caffe2 format for deployment.
 -   It trains much faster.
 
-See our blog post to see more demos and learn about detectron2.
+See our blog post to see more demos. See this interview to learn more about the stories behind detectron2.
 
 Installation
 ------------

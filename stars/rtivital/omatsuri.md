@@ -1,6 +1,6 @@
 ---
 project: omatsuri
-stars: 2887
+stars: 2889
 description: PWA with 12 open source frontend focused tools
 url: https://github.com/rtivital/omatsuri
 ---

@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68511
+stars: 68568
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -140,6 +140,7 @@ Courses
 -   CS 170 Algorithms - UCBerkeley Fall 2019, Youtube Fall 2018, Youtube Fall 2018,Bilibili 2013 Bilibili
 -   CS 159 Data-Driven Algorithm Design - Caltech Spring 2020, Youtube
 -   ECS 122A - Algorithm Design and Analysis, UC Davis
+-   CSE 373 - Data Structures and Algorithms, Winter 2024 - University of Washington (Winter 2024, Youtube) (Spring 2023, Notes) (Spring 2023, Youtube)
 -   CSEP 521 - Applied Algorithms, Winter 2013 - University of Washington (Videos)
 -   Data Structures And Algorithms - IIT Delhi
 -   Design and Analysis of Algorithms - IIT Bombay
@@ -412,6 +413,7 @@ Courses
     -   CS 229 - Machine Learning - Stanford University (Autumn 2018)
     -   CS 189/289A Introduction to Machine Learning, Prof Jonathan Shewchuk - UCBerkeley
     -   CPSC 340: Machine Learning and Data Mining (2018) - UBC
+    -   CS391L Machine Learning, Spring 2025 - UT Austin
     -   CS4780/5780 Machine Learning, Fall 2013 - Cornell University
     -   CS4780/5780 Machine Learning, Fall 2018 - Cornell University (Youtube)
     -   CSE474/574 Introduction to Machine Learning - SUNY University at Buffalo
@@ -509,6 +511,7 @@ Courses
     -   CS 290 DataMining Lectures
     -   CS246 - Mining Massive Data Sets, Winter 2016, Stanford University (YouTube)
     -   Information Retrieval - Spring 2018 - ETH Zurich
+    -   Information Retrieval - WS 2022/23 - Universität Freiburg
     -   CAP6673 - Data Mining and Machine Learning - FAU(Video lectures)
     -   CS 412 - Introduction to Data Mining - UIUC
     -   CS 512 - Data Mining Principles - UIUC (YouTube)
@@ -588,6 +591,10 @@ Courses
     -   REINFORCEMENT LEARNING AND OPTIMAL CONTROL - Dimitri P. Bertsekas, ASU
     -   CMU 16 745 Optimal Control and Reinforcement Learning spring by Zac Manchester
     -   CMU 16 899 Adaptive Control and Reinforcement Learning fall 2020, by Changliu Liu
+    -   Jadavpur University, 2025: Introduction to Reinforcement Learning
+    -   EE675 (2024) Introduction to Reinforcement Learning Course | IIT Kanpur
+    -   Reinforcement Learning Course by Frédéric Godin - Concordia University
+    -   CS 285: Deep RL, 2023
 -   #### **Advanced Machine Learning**
     
     -   Advanced Machine Learning, 2021-2022, Sem I - by Prof. Madhavan Mukund, CMI
@@ -620,6 +627,7 @@ Courses
     -   CMU Advanced NLP Fall 2024 (Lectures - Fall 2024) (Lectures - Fall 2021)
     -   CMU Neural Nets for NLP 2021
     -   Natural Language Processing - Michael Collins - Columbia University
+    -   CMU CS11-711 - Advanced Natural Language Processing (Lectures - Spring 2025)
     -   CMU CS11-737 - Multilingual Natural Language Processing
     -   UMass CS685: Advanced Natural Language Processing (Spring 2022)
     -   Natural Language Processing (CMSC 470)
@@ -682,6 +690,8 @@ Courses
     -   CS294 Deep Unsupervised Learning Spring 2024
     -   Deep Unsupervised Learning -- Berkeley Spring 2020
     -   CS294-158 Deep Unsupervised Learning SP19
+    -   UC San Diego COGS 118A Supervised Machine Learning fall 2020, by Jason Fleischer
+    -   UC San Diego COGS 118B Unsupervised Machine Learning winter 2024, by Jason Fleischer
     -   UIUC STAT 437 Unsupervised Learning spring 2024, by Tori Ellison
     -   Johns Hopkins Unsupervised Learning spring 2017, by Rene Vidal
     -   Unsupervised Learning (STAT 841), Winter 2017
@@ -876,6 +886,7 @@ Courses
 -   Mathematics of Data Science - ETH Zurich
 -   Engineering Mathematics (UW ME564 and ME565) - Steve Brunton
 -   Beginning Scientific Computing - Steve Brunton
+-   Jadavpur University: Foundation\_Math\_forML\_Autumn23
 
 * * *
 
@@ -960,6 +971,7 @@ Courses
 -   Columbia ELEN E6711 Stochastic Models in Information Systems fall 2005, by Yuliy Barsyhnikov
 -   Columbia ELEN E6717 Information Theory fall 2003, by Vittorio Castelli
 -   University of Washington EE514A/EE515A - Information Theory I/II fall 2013, by Jeff Bilmes
+-   CMU 15 150 Principles of Functional Programming summer 2023, by Brandon Wu
 -   CMU 21 738 Extremal Combinatorics spring 2020, by Po-Shen Loh
 -   JHU Domain-Specific Languages (DSL) Class (Summer 2018)
 -   Spring 2019 - Probabilistically Checkable and Interactive Proof Systems (Alessandro Chiesa)
@@ -1060,6 +1072,7 @@ Courses
 -   Memory Systems Course - Technion, Summer 2018
 -   UC Berkeley EECS16A Designing Information Devices and Systems I summer 2020, by Grace Kuo, Panos Zarkos, Urmita Sikder
 -   UC Berkeley EECS 16B Designing Information Devices and Systems II fall 2020, by Seth Sanders, Miki Lustig
+-   ELEN E4810 - DIGITAL SIGNAL PROCESSING - Fall 2013 - Columbia
 -   ELEN E4896 - MUSIC SIGNAL PROCESSING - Spring 2016 - Columbia
 -   Columbia ELEN E6820 Speech and Audio Processing spring 2006, by Dan Ellis
 -   CMU 11 751 / 18 781 Speech Recognition and Understanding fall 2023, by Shinji Watanabe (Fall 2022)
@@ -1313,6 +1326,8 @@ Courses
 -   Self-Driving Cars — Andreas Geiger
 -   Signal Processing: An Introduction by Nathan Kutz
 -   UC Santa Barbara ME 269 Network Systems, Dynamics and Control fall 2021, by Francesco Bullo
+-   Cornell MAE 4710/5710 Applied Dynamics spring 2020, by Andy Ruina (Part 2)
+-   Cornell MAE 4730/5730 Intermediate Dynamics fall 2020, by Andy Ruina
 -   CMU 16 299 Introduction to Feedback Control Systems spring 2022, by Chris Atkeson
 -   University of Wisconsin-Madison ECE 332 Feedback Control Systems fall 2021, by Steven Fredette
 -   MAE 509 Linear Matrix Inequality Methods in Optimal and Robust Control, by Matthew M. Peet
@@ -1321,6 +1336,15 @@ Courses
 -   Robots That Learn - UC Berkeley CS 294-277
 -   Data-Driven Dynamical Systems with Machine Learning - Steve Brunton
 -   Data-Driven Control with Machine Learning - Steve Brunton
+-   Wheeled Mobile Robots
+-   Introduction to Mobile Robots and Robot Operating System (ROS), HSE 2021
+-   Surgical Robotics Lectures - Carleton University
+-   Introduction to Mechatronic and Robotics - IIT Bombay
+-   Robotics Fall 2020 - UIC
+-   Introduction to Robotics @ Princeton
+-   Evolutionary robotics course. Spring 2025
+-   Robotics: Basics and Selected Advanced - IISC Bangalore
+-   Nonlinear Control Design Jan 2024 - IIT Bombay
 
 * * *
 

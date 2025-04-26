@@ -1,6 +1,6 @@
 ---
 project: flowy
-stars: 11659
+stars: 11669
 description: The minimal javascript library to create flowcharts ✨
 url: https://github.com/alyssaxuu/flowy
 ---

@@ -1,6 +1,6 @@
 ---
 project: ng-event-plugins
-stars: 233
+stars: 232
 description: This is an Angular library for optimizing performance sensitive events and declarative preventDefault, stopPropagation and capture phase listeners.
 url: https://github.com/Tinkoff/ng-event-plugins
 ---

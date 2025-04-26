@@ -1,6 +1,6 @@
 ---
 project: Parsr
-stars: 5951
+stars: 5959
 description: Transforms PDF, Documents and Images into Enriched Structured Data
 url: https://github.com/axa-group/Parsr
 ---

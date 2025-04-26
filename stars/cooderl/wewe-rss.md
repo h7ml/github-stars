@@ -1,7 +1,7 @@
 ---
 project: wewe-rss
-stars: 6845
-description: 🤗更优雅的微信公众号订阅方式，支持私有化部署、微信公众号RSS生成（基于微信读书）v2.x
+stars: 6926
+description: 🤗更优雅的微信公众号订阅方式，支持私有化部署、微信公众号RSS生成（基于微信读书）
 url: https://github.com/cooderl/wewe-rss
 ---
 

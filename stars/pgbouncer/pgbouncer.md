@@ -1,6 +1,6 @@
 ---
 project: pgbouncer
-stars: 3237
+stars: 3248
 description: lightweight connection pooler for PostgreSQL
 url: https://github.com/pgbouncer/pgbouncer
 ---

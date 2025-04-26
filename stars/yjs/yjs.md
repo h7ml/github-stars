@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 19009
+stars: 19063
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -222,6 +222,18 @@ Rows n'Columns
 ✔
 
 @rowsncolumns/y-spreadsheet
+
+### Utilities
+
+Tools that extend the core functionality of Yjs.
+
+y-utility
+
+Library with `YMultiDocUndoManager` (undo/redo across Yjs docs) and `YKeyValue` (optimized key-value store).
+
+yjs-orderedtree 🌳
+
+Class for ordered trees via Y.Map. Handles `insert`, `delete`, and `move` operations for folder-like hierarchies.
 
 ### Providers
 

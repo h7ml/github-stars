@@ -1,6 +1,6 @@
 ---
 project: openebs
-stars: 9266
+stars: 9278
 description: A popular & widely deployed Open Source Container Native Storage platform for Stateful Persistent Applications on Kubernetes.
 url: https://github.com/openebs/openebs
 ---
@@ -167,8 +167,7 @@ These features make OpenEBS a robust and flexible solution for managing persiste
     -   #openebs-dev
 -   Twitter: @openebs
 -   Community Meeting: OpenEBS holds a monthly community meeting via Zoom on the last Thursday of the month, at 14:00 UTC.
-    -   Google Calendar
-    -   Other Calendars
+    -   Add to calendar
 -   Community Meeting Recordings: Youtube
 
 Star History

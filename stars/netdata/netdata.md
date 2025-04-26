@@ -1,6 +1,6 @@
 ---
 project: netdata
-stars: 74306
+stars: 74387
 description: X-Ray Vision for your infrastructure!
 url: https://github.com/netdata/netdata
 ---
@@ -35,7 +35,7 @@ Key Advantages:
 -   **Automated and Zero-Configuration**  
     Easy deployment with immediate monitoring—no complex setup needed.
 -   **ML-Driven Intelligence**  
-    Built-in machine learning detects anomalies, predicts issues, and assists in root-cause analysis automatically.
+    Built-in machine learning automatically detects anomalies, predicts issues, and assists in root-cause analysis.
 -   **Highly Efficient**  
     Proven minimal resource usage, exceptional scalability, and best-in-class energy efficiency validated by independent research.
 -   **Distributed & Secure**  
@@ -51,7 +51,7 @@ Designed for organizations seeking simplified operations, reduced overhead, and 
     
     Per-second data collection and real-time processing provides immediate visibility into your infrastructure's behavior.
     
-    _**Unique**: Netdata works in a beat and everything happens at this pace. You hit enter on a terminal and a second later you see the result on the dashboard._
+    _**Unique**: Netdata works in a beat, and everything happens at this pace. You hit Enter in the terminal, and just a second later, the result appears on the dashboard._
     
 -   **Zero-Configuration**
     

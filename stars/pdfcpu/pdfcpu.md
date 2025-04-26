@@ -1,6 +1,6 @@
 ---
 project: pdfcpu
-stars: 7473
+stars: 7492
 description: A PDF processor written in Go.
 url: https://github.com/pdfcpu/pdfcpu
 ---
@@ -34,9 +34,11 @@ Command Set
 -   booklet
 -   bookmarks
 -   boxes
+-   certificates
 -   change owner password
 -   change user password
 -   collect
+-   config
 -   create
 -   crop
 -   cut
@@ -63,6 +65,7 @@ Command Set
 -   properties
 -   resize
 -   rotate
+-   signatures
 -   split
 -   stamp
 -   trim
@@ -330,6 +333,12 @@ Thanks 💚 goes to these wonderful people:
 
   
 **LNAhri**
+
+  
+**vishal**
+
+  
+**Andreas Deininger**
 
 Code of Conduct
 ---------------

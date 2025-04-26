@@ -1,13 +1,9 @@
 ---
 project: dvc
-stars: 14381
+stars: 14406
 description: 🦉 Data Versioning and ML Experiments
 url: https://github.com/iterative/dvc
 ---
-
-🚀 Check out our new product DataChain (and give it a ⭐!) if you need to version and process a large number of files. Contact us at support@iterative.ai to discuss commercial solutions and support for AI reproducibility and data management scenarios.
-
-* * *
 
 Website • Docs • Blog • Tutorial • Related Technologies • How DVC works • VS Code Extension • Installation • Contributing • Community and Support
 

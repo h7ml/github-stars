@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10667
+stars: 10733
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -592,6 +592,12 @@ SpeedTest
 官方的SpeedTest工具。
 
 运行中
+
+ip-check
+
+Python 实现的Cloudflare CDN 测速工具，支持多种方式传入ip（文本、ipv4/ipv6、端口、优选域名等）、自定义端口、ip 归属地筛选、ip 组织名筛选等。
+
+维护中
 
 监控
 --

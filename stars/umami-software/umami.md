@@ -1,7 +1,7 @@
 ---
 project: umami
-stars: 25995
-description: Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+stars: 26128
+description: Umami is a modern, privacy-focused alternative to Google Analytics.
 url: https://github.com/umami-software/umami
 ---
 

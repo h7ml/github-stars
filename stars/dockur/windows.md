@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 34251
+stars: 34555
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -130,15 +130,15 @@ Windows 8.1 Enterprise
 
 3.7 GB
 
-`7e`
+`7u`
 
-Windows 7 Enterprise
+Windows 7 Ultimate
 
-3.0 GB
+3.1 GB
 
-`ve`
+`vu`
 
-Windows Vista Enterprise
+Windows Vista Ultimate
 
 3.0 GB
 

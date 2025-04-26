@@ -1,6 +1,6 @@
 ---
 project: feedback
-stars: 3221
+stars: 3224
 description: Feedback & wiki for Snipaste https://snipaste.com
 url: https://github.com/Snipaste/feedback
 ---
@@ -24,12 +24,12 @@ Want to get the most out of Snipaste?
 
 -   Read the rest of our documentation when you have time. You won't be disappointed! 😉
 
-Beta for Mac!
+Mac:
 
 -   Download:
 -   Or install via **brew**: `brew install snipaste --cask`
 
-Beta for Linux!
+Linux:
 
 -   Download:
 

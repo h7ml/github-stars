@@ -1,6 +1,6 @@
 ---
 project: wad
-stars: 1920
+stars: 1921
 description: Web Audio DAW.  Use the Web Audio API for dynamic sound synthesis.  It's like jQuery for your ears. 
 url: https://github.com/rserota/wad
 ---

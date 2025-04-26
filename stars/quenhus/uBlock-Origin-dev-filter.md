@@ -28,6 +28,8 @@ Google
 
 DuckDuckGo
 
+DuckDuckGo Lite
+
 Google+DDG
 
 Startpage
@@ -64,6 +66,18 @@ add in uBO
 add in uBO
 
 DuckDuckGo
+
+add in uBO
+
+add in uBO
+
+add in uBO
+
+add in uBO
+
+add in uBO
+
+DuckDuckGo Lite
 
 add in uBO
 
