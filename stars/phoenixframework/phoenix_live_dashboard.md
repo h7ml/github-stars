@@ -1,6 +1,6 @@
 ---
 project: phoenix_live_dashboard
-stars: 2080
+stars: 2084
 description: Realtime dashboard with metrics, request logging, plus storage, OS and VM insights
 url: https://github.com/phoenixframework/phoenix_live_dashboard
 ---

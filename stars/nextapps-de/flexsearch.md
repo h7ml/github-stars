@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 12891
+stars: 12911
 description: Next-Generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -11,7 +11,7 @@ FlexSearch v0.8: Overview and Migration Guide
 
 ### Next-Generation full-text search library for Browser and Node.js
 
-Basic Start  •  API Reference  •  Encoder  •  Document Search  •  Persistent Indexes  •  Using Worker  •  Tag Search  •  Resolver  •  Changelog
+Basic Start  •  API Reference  •  Encoder  •  Document Search  •  Persistent Indexes  •  Using Worker  •  Tag Search  •  Highlighting  •  Resolver  •  Changelog
 
 Please Support this Project
 ---------------------------
@@ -476,7 +476,7 @@ Document Search
 
 \-
 
-Document Store
+Document Datastore
 
 ✓
 
@@ -545,6 +545,14 @@ Resolver
 ✓
 
 \-
+
+\-
+
+Result Highlighting
+
+✓
+
+✓
 
 \-
 

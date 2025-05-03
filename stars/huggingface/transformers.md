@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 143523
+stars: 143795
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---
@@ -72,7 +72,7 @@ Tip
 
 You can also chat with a model directly from the command line.
 
-transformers-cli chat --model\_name\_or\_path Qwen/Qwen2.5-0.5B-Instruct
+transformers chat --model\_name\_or\_path Qwen/Qwen2.5-0.5B-Instruct
 
 import torch
 from transformers import pipeline

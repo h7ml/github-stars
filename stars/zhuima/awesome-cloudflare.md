@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10733
+stars: 10789
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -720,6 +720,12 @@ cloudflare-webssh-zerotrust
 用Workers免服务器部署挪车二维码，可微信通知、拨打电话
 
 基于微信推送实现消息通知。
+
+有效中
+
+使用 Cloudflare Worker、Hono 和 Telegram Bot API 构建 RSS 订阅推送系统
+
+本文详细介绍如何利用 Cloudflare Worker、Hono 框架和 Telegram Bot API 构建一个自动监控 RSS 订阅源并推送更新到 Telegram 频道的系统。该方案完全 Serverless，无需服务器，适合个人开发者和小型团队，支持定时任务和消息去重。
 
 有效中
 

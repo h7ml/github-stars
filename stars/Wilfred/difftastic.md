@@ -1,6 +1,6 @@
 ---
 project: difftastic
-stars: 22081
+stars: 22106
 description: a structural diff that understands syntax 🟥🟩
 url: https://github.com/Wilfred/difftastic
 ---
@@ -73,7 +73,7 @@ Probably not. Difftastic is young. Consider writing a plugin for your favourite 
 
 ### What about parse errors?
 
-By default, difftastic falls back to a line-oriented text diff whenever parse errors are encountered.
+By default, difftastic falls back to a line-oriented diff whenever parse errors are encountered.
 
 This is a conservative choice to ensure that difftastic never claims two syntactically different files are the same.
 

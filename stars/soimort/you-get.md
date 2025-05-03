@@ -1,6 +1,6 @@
 ---
 project: you-get
-stars: 55518
+stars: 55536
 description: :arrow_double_down: Dumb downloader that scrapes the web
 url: https://github.com/soimort/you-get
 ---
@@ -162,7 +162,7 @@ $ you-get https://github.com/soimort/you-get/archive/master.zip
 In order to get the latest `develop` branch without messing up the PIP, you can try:
 
 ```
-$ pip install --upgrade git+https://github.com/soimort/you-get@develop
+$ pip install --upgrade --force-reinstall git+https://github.com/soimort/you-get@develop
 ```
 
 Getting Started

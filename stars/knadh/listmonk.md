@@ -1,11 +1,11 @@
 ---
 project: listmonk
-stars: 16539
+stars: 16664
 description: High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app.
 url: https://github.com/knadh/listmonk
 ---
 
-listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL (⩾ 12) database as its data store.
+listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.
 
 Visit listmonk.app for more info. Check out the **live demo**.
 

@@ -1,6 +1,6 @@
 ---
 project: telemetry_ui
-stars: 232
+stars: 233
 description: Telemetry based metrics UI. Take your telemetry metrics and display them in a web page.
 url: https://github.com/mirego/telemetry_ui
 ---

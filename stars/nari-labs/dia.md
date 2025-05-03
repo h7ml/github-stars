@@ -1,6 +1,6 @@
 ---
 project: dia
-stars: 11890
+stars: 14327
 description: A TTS model capable of generating ultra-realistic dialogue in one pass.
 url: https://github.com/nari-labs/dia
 ---
@@ -17,8 +17,19 @@ We also provide a demo page comparing our model to ElevenLabs Studio and Sesame 
 -   Join our discord server for community support and access to new features.
 -   Play with a larger version of Dia: generate fun conversations, remix content, and share with friends. 🔮 Join the waitlist for early access.
 
-⚡️ Quickstart
--------------
+Generation Guidelines
+---------------------
+
+-   Keep input text length moderate
+    -   Short input (corresponding to under 5s of audio) will sound unnatural
+    -   Very long input (corresponding to over 20s of audio) will make the speech unnaturally fast.
+-   Use non-verbal tags sparingly, from the list in the README. Overusing or using unlisted non-verbals may cause weird artifacts.
+-   Always begin input text with `[S1]`, and always alternate between `[S1]` and `[S2]` (i.e. `[S1]`... `[S1]`... is not good)
+-   When using audio prompts (voice cloning), follow these instructions carefully:
+    -   Provide the transcript of the to-be cloned audio before the generation text.
+    -   Transcript must use `[S1]`, `[S2]` speaker tags correctly (i.e. single speaker: `[S1]`..., two speakers: `[S1]`... `[S2]`...)
+    -   Duration of the to-be cloned audio should be 5~10 seconds for the best results. (Keep in mind: 1 second ≈ 86 tokens)
+-   Put `[S1]` or `[S2]` (the second-to-last speaker's tag) at the end of the audio to improve audio quality at the end
 
 ### Install via pip
 

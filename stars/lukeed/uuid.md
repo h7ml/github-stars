@@ -1,6 +1,6 @@
 ---
 project: uuid
-stars: 404
+stars: 405
 description: A tiny (~230B)and fast UUID (V4) generator for Node and the browser
 url: https://github.com/lukeed/uuid
 ---

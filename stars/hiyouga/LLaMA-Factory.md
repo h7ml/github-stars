@@ -1,9 +1,17 @@
 ---
 project: LLaMA-Factory
-stars: 47657
+stars: 48179
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
+
+### Supporters ❤️
+
+#### Warp, the agentic terminal for developers
+
+Available for MacOS, Linux, & Windows
+
+* * *
 
 ### Easily fine-tune 100+ large language models with zero-code CLI and Web UI
 
@@ -74,7 +82,7 @@ Model Name
 
 Day 0
 
-Qwen2.5 / Qwen2.5-VL / Gemma 3 / InternLM 3 / MiniCPM-o-2.6
+Qwen3 / Qwen2.5-VL / Gemma 3 / InternLM 3 / MiniCPM-o-2.6
 
 Day 1
 
@@ -95,6 +103,8 @@ Definitions
 Changelog
 ---------
 
+\[25/04/28\] We supported fine-tuning the **Qwen3** model family.
+
 \[25/04/21\] We supported the **Muon** optimizer. See examples for usage. Thank @tianshijing's PR.
 
 \[25/04/16\] We supported fine-tuning the **InternVL3** model. See PR #7258 to get started.
@@ -103,9 +113,9 @@ Changelog
 
 \[25/04/06\] We supported fine-tuning the **Llama 4** model. See PR #7611 to get started.
 
-\[25/03/31\] We supported fine-tuning the **Qwen2.5 Omni** model. See PR #7537 to get started.
-
 Full Changelog
+
+\[25/03/31\] We supported fine-tuning the **Qwen2.5 Omni** model. See PR #7537 to get started.
 
 \[25/03/15\] We supported **SGLang** as inference backend. Try `infer_backend: sglang` to accelerate inference.
 
@@ -217,6 +227,10 @@ Full Changelog
 
 \[23/06/03\] We supported quantized training and inference (aka **QLoRA**). See examples for usage.
 
+Note
+
+If you cannot use the latest feature, please pull the latest code and install LLaMA-Factory again.
+
 Supported Models
 ----------------
 
@@ -266,7 +280,7 @@ DeepSeek R1 (Distill)
 
 1.5B/7B/8B/14B/32B/70B/671B
 
-deepseek3
+deepseekr1
 
 Falcon
 
@@ -290,7 +304,7 @@ GLM-4/GLM-4-0414/GLM-Z1
 
 9B/32B
 
-glm4
+glm4/glmz1
 
 GPT-2
 
@@ -460,6 +474,12 @@ Qwen (1-2.5) (Code/Math/MoE/QwQ)
 
 qwen
 
+Qwen3 (MoE)
+
+0.6B/1.7B/4B/8B/14B/32B/235B
+
+qwen3
+
 Qwen2-Audio
 
 7B
@@ -468,7 +488,7 @@ qwen2\_audio
 
 Qwen2.5-Omni\*\*
 
-7B
+3B/7B
 
 qwen2\_omni
 
@@ -926,7 +946,7 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".\[torch,metrics\]"
 
-Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, awq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
+Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
 
 Tip
 

@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 59354
+stars: 60082
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -230,19 +230,19 @@ By **Proghit** on **2025-01-24**
 Smart web search that reads and analyzes pages to deliver comprehensive answers from Google results.  
 `web` `search`
 
-MintbaseSearch  
-By **mintbase** on **2024-12-31**
-
-Find any NFT data on the NEAR Protocol.  
-`crypto` `nft`
-
 Bing\_websearch  
 By **FineHow** on **2024-12-22**
 
 Search for information from the internet base BingApi  
 `bingsearch`
 
-> 📊 Total plugins: **45**
+Google CSE  
+By **vsnthdev** on **2024-12-02**
+
+Searches Google through their official CSE API.  
+`web` `search`
+
+> 📊 Total plugins: **44**
 
 ### `11` Agent Market (GPTs)
 

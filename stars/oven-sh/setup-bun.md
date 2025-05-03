@@ -1,6 +1,6 @@
 ---
 project: setup-bun
-stars: 535
+stars: 539
 description: Set up your GitHub Actions workflow with a specific version of Bun
 url: https://github.com/oven-sh/setup-bun
 ---
@@ -67,7 +67,7 @@ The version of Bun to download and install.
 
 `latest`
 
-`canary`, `1.0.0`, `1.0.x`
+`canary`, `1.0.0`
 
 `bun-version-file`
 

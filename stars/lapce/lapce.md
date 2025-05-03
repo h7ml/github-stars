@@ -1,6 +1,6 @@
 ---
 project: lapce
-stars: 35347
+stars: 36012
 description: Lightning-fast and Powerful Code Editor written in Rust
 url: https://github.com/lapce/lapce
 ---
@@ -13,7 +13,7 @@ Lapce
 
   
 
-Lapce (IPA: /læps/) is written in pure Rust with a UI in Floem. It is designed with Rope Science from the Xi-Editor which makes for lightning-fast computation, and leverages Wgpu for rendering. More information about the features of Lapce can be found on the main website and user documentation can be found on GitBook.
+Lapce (IPA: /læps/) is written in pure Rust, with a UI in Floem. It is designed with Rope Science from the Xi-Editor, enabling lightning-fast computation, and leverages wgpu for rendering. More information about the features of Lapce can be found on the main website and user documentation can be found on GitBook.
 
 Features
 --------

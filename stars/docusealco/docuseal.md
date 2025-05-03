@@ -1,6 +1,6 @@
 ---
 project: docuseal
-stars: 9037
+stars: 9078
 description: Open source DocuSign alternative. Create, fill, and sign digital documents ✍️
 url: https://github.com/docusealco/docuseal
 ---
@@ -30,7 +30,7 @@ Features
 -   PDF signature verification
 -   Users management
 -   Mobile-optimized
--   6 UI languages with signing available in 13 languages
+-   6 UI languages with signing available in 14 languages
 -   API and Webhooks for integrations
 -   Easy to deploy in minutes
 

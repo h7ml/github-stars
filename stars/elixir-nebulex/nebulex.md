@@ -5,115 +5,51 @@ description: In-memory and distributed caching toolkit for Elixir.
 url: https://github.com/elixir-nebulex/nebulex
 ---
 
-Nebulex 🌌
-==========
-
 > In-memory and distributed caching toolkit for Elixir.
 
-Nebulex provides support for transparently adding caching into an existing Elixir application. Similar to Ecto, the caching abstraction allows consistent use of various caching solutions with minimal impact on the code.
+* * *
 
-Nebulex cache abstraction shields developers from directly dealing with the underlying caching implementations, such as Redis or even other Elixir cache implementations like Cachex. Additionally, it provides totally out-of-box features such as cache usage patterns, declarative annotation-based caching, and distributed cache topologies, among others.
+About
+-----
 
-See the getting started guide and the online documentation for more information.
+Nebulex provides support for transparently adding caching into an existing Elixir application. Like Ecto, the caching abstraction allows consistent use of various caching solutions with minimal impact on the code.
+
+Nebulex's cache abstraction shields developers from directly interacting with underlying caching implementations, such as Redis, Memcached, or other Elixir cache implementations like Cachex. It also provides out-of-the-box features including declarative decorator-based caching, cache usage patterns, and distributed cache topologies, among others.
+
+* * *
+
+Note
+
+This README refers to the main branch of Nebulex, not the latest released version on Hex. Please reference the getting started guide and the official documentation for the latest stable release.
+
+* * *
 
 Usage
 -----
 
-You need to add `nebulex` as a dependency to your `mix.exs` file. However, in the case you want to use an external (a non built-in adapter) cache adapter, you also have to add the proper dependency to your `mix.exs` file.
-
-The supported caches and their adapters are:
-
-Cache
-
-Nebulex Adapter
-
-Dependency
-
-Generational Local Cache
-
-Nebulex.Adapters.Local
-
-Built-In
-
-Partitioned
-
-Nebulex.Adapters.Partitioned
-
-Built-In
-
-Replicated
-
-Nebulex.Adapters.Replicated
-
-Built-In
-
-Multilevel
-
-Nebulex.Adapters.Multilevel
-
-Built-In
-
-Nil (special adapter that disables the cache)
-
-Nebulex.Adapters.Nil
-
-Built-In
-
-Cachex
-
-Nebulex.Adapters.Cachex
-
-nebulex\_adapters\_cachex
-
-Redis
-
-NebulexRedisAdapter
-
-nebulex\_redis\_adapter
-
-Distributed with Horde
-
-Nebulex.Adapters.Horde
-
-nebulex\_adapters\_horde
-
-Multilevel with cluster broadcasting
-
-NebulexLocalMultilevelAdapter
-
-nebulex\_local\_multilevel\_adapter
-
-Ecto Postgres table
-
-Nebulex.Adapters.Ecto
-
-nebulex\_adapters\_ecto
-
-For example, if you want to use a built-in cache, add to your `mix.exs` file:
+To use Nebulex, add both `:nebulex` and your chosen cache adapter as dependencies in your `mix.exs` file. For example, to use the Generational Local Cache (`Nebulex.Adapters.Local` adapter), add the following to your `mix.exs`:
 
 def deps do
   \[
-    {:nebulex, "~> 2.6"},
-    {:shards, "~> 1.1"},     #=> When using :shards as backend
-    {:decorator, "~> 1.4"},  #=> When using Caching Annotations
-    {:telemetry, "~> 1.0"}   #=> When using the Telemetry events (Nebulex stats)
+    {:nebulex, "~> 3.0.0-rc.1"},
+    {:nebulex\_local, "~> 3.0"},  \# Generational local cache adapter
+    {:decorator, "~> 1.4"},      \# Required for caching decorators
+    {:telemetry, "~> 1.2"}       \# Required for telemetry events
   \]
 end
 
-In order to give more flexibility and fetch only needed dependencies, Nebulex makes all dependencies optional. For example:
+> For more information about available adapters, check out the Nebulex adapters guide.
 
--   For intensive workloads, you may want to use `:shards` as the backend for the local adapter and having partitioned tables. In such a case, you have to add `:shards` to the dependency list.
+To give more flexibility and load only needed dependencies, Nebulex makes all dependencies optional. For example:
+
+-   For enabling declarative decorator-based caching, you have to add `:decorator` to the dependency list (recommended adding it).
     
--   For enabling the usage of declarative annotation-based caching via decorators, you have to add `:decorator` to the dependency list.
-    
--   For enabling Telemetry events to be dispatched when using Nebulex, you have to add `:telemetry` to the dependency list. See telemetry guide.
-    
--   If you want to use an external adapter (e.g: Cachex or Redis adapter), you have to add the adapter dependency too.
+-   For enabling Telemetry events dispatched by Nebulex, you have to add `:telemetry` to the dependency list (recommended adding it). See telemetry guide.
     
 
 Then run `mix deps.get` in your shell to fetch the dependencies. If you want to use another cache adapter, just choose the proper dependency from the table above.
 
-Finally, in the cache definition, you will need to specify the `adapter:` respective to the chosen dependency. For the local built-in cache it is:
+Finally, in the cache definition, you will need to specify the `adapter:` respective to the chosen dependency. For the local cache would be:
 
 defmodule MyApp.Cache do
   use Nebulex.Cache,
@@ -121,35 +57,55 @@ defmodule MyApp.Cache do
     adapter: Nebulex.Adapters.Local
 end
 
-Quickstart example
-------------------
+Don't forget to add `MyApp.Cache` to your application's supervision tree:
 
-Assuming you are using `Ecto` and you want to use declarative caching:
-
-\# In the config/config.exs file
-config :my\_app, MyApp.PartitionedCache,
-  primary: \[
-    gc\_interval: :timer.hours(12),
-    backend: :shards,
-    partitions: 2
+def start(\_type, \_args) do
+  children \= \[
+    MyApp.Cache
   \]
 
-\# Defining a Cache with a partitioned topology
-defmodule MyApp.PartitionedCache do
+  ...
+
+You're now ready to use the cache:
+
+iex\> MyApp.Cache.put("foo", "bar")
+:ok
+iex\> MyApp.Cache.fetch("foo")
+{:ok, "bar"}
+
+For more detailed information, see the getting started guide and online documentation.
+
+A quickstart example using caching decorators
+---------------------------------------------
+
+This example demonstrates how to use Nebulex with Ecto and declarative caching:
+
+\# In config/config.exs
+config :my\_app, MyApp.Cache,
+  \# Create new generation every 12 hours
+  gc\_interval: :timer.hours(12),
+  \# Max 1M entries
+  max\_size: 1\_000\_000,
+  \# Max 2GB of memory
+  allocated\_memory: 2\_000\_000\_000,
+  \# Run size and memory checks every 10 seconds
+  gc\_memory\_check\_interval: :timer.seconds(10)
+
+\# Cache definition
+defmodule MyApp.Cache do
   use Nebulex.Cache,
     otp\_app: :my\_app,
-    adapter: Nebulex.Adapters.Partitioned,
-    primary\_storage\_adapter: Nebulex.Adapters.Local
+    adapter: Nebulex.Adapters.Local
 end
 
-\# Some Ecto schema
+\# Ecto schema
 defmodule MyApp.Accounts.User do
   use Ecto.Schema
 
   schema "users" do
-    field(:username, :string)
-    field(:password, :string)
-    field(:role, :string)
+    field :username, :string
+    field :password, :string
+    field :role, :string
   end
 
   def changeset(user, attrs) do
@@ -159,30 +115,29 @@ defmodule MyApp.Accounts.User do
   end
 end
 
-\# The Accounts context
+\# Accounts context with caching
 defmodule MyApp.Accounts do
-  use Nebulex.Caching
+  use Nebulex.Caching, cache: MyApp.Cache
 
   alias MyApp.Accounts.User
-  alias MyApp.PartitionedCache, as: Cache
   alias MyApp.Repo
 
+  \# Cache entries expire after 1 hour
   @ttl :timer.hours(1)
 
-  @decorate cacheable(cache: Cache, key: {User, id}, opts: \[ttl: @ttl\])
+  @decorate cacheable(key: {User, id}, opts: \[ttl: @ttl\])
   def get\_user!(id) do
     Repo.get!(User, id)
   end
 
-  @decorate cacheable(cache: Cache, key: {User, username}, opts: \[ttl: @ttl\])
+  @decorate cacheable(key: {User, username}, references: & &1.id)
   def get\_user\_by\_username(username) do
     Repo.get\_by(User, \[username: username\])
   end
 
   @decorate cache\_put(
-              cache: Cache,
-              keys: \[{User, user.id}, {User, user.username}\],
-              match: &match\_update/1,
+              key: {User, user.id},
+              match: &\_\_MODULE\_\_.match\_update/1,
               opts: \[ttl: @ttl\]
             )
   def update\_user(%User{} \= user, attrs) do
@@ -191,10 +146,7 @@ defmodule MyApp.Accounts do
     |> Repo.update()
   end
 
-  @decorate cache\_evict(
-              cache: Cache,
-              keys: \[{User, user.id}, {User, user.username}\]
-            )
+  @decorate cache\_evict(key: {User, user.id})
   def delete\_user(%User{} \= user) do
     Repo.delete(user)
   end
@@ -205,38 +157,34 @@ defmodule MyApp.Accounts do
     |> Repo.insert()
   end
 
-  defp match\_update({:ok, value}), do: {true, value}
-  defp match\_update({:error, \_}), do: false
+  def match\_update({:ok, value}), do: {true, value}
+  def match\_update({:error, \_}), do: false
 end
-
-See more Nebulex examples.
 
 Important links
 ---------------
 
--   Getting Started
--   Documentation
--   Cache Usage Patterns
--   Instrumenting the Cache with Telemetry
--   Migrating to v2.x
--   Examples
+-   Getting Started - Learn how to set up and use Nebulex
+-   Documentation - Complete API reference
+-   Examples - Example applications
+-   Upgrading to v3.0 - Migration guide for v3.0
 
 Testing
 -------
 
-Testing by default spawns nodes internally for distributed tests. To run tests that do not require clustering, exclude the `clustered` tag:
+To run only the tests:
 
 ```
-$ mix test --exclude clustered
+$ mix test
 ```
 
-If you have issues running the clustered tests try running:
+Additionally, to run all Nebulex checks run:
 
 ```
-$ epmd -daemon
+$ mix test.ci
 ```
 
-before running the tests.
+The `mix check` will run the tests, coverage, credo, dialyzer, etc. This is the recommended way to test Nebulex.
 
 Benchmarks
 ----------
@@ -246,22 +194,10 @@ Nebulex provides a set of basic benchmark tests using the library benchee, and t
 To run a benchmark test you have to run:
 
 ```
-$ MIX_ENV=test mix run benchmarks/{BENCH_TEST_FILE}
+$ mix bench
 ```
 
-Where `BENCH_TEST_FILE` can be any of:
-
--   `local_with_ets_bench.exs`: benchmark for the local adapter using `:ets` backend.
--   `local_with_shards_bench.exs`: benchmark for the local adapter using `:shards` backend.
--   `partitioned_bench.exs`: benchmark for the partitioned adapter.
-
-For example, for running the benchmark for the local adapter using `:shards` backend:
-
-```
-$ MIX_ENV=test mix run benchmarks/local_with_shards_bench.exs
-```
-
-Additionally, you can also run performance tests using `:basho_bench`. See nebulex\_bench example for more information.
+> The benchmark uses the `Nebulex.Adapters.Nil` adapter; it is more focused on measuring the Nebulex abstraction layer performance rather than a specific adapter.
 
 Contributing
 ------------
@@ -272,7 +208,7 @@ Use the issue tracker for bug reports or feature requests. Open a pull request w
 
 When submitting a pull request you should not update the CHANGELOG.md, and also make sure you test your changes thoroughly, include unit tests alongside new or changed code.
 
-Before to submit a PR it is highly recommended to run `mix check` and ensure all checks run successfully.
+Before to submit a PR it is highly recommended to run `mix test.ci` and ensure all checks run successfully.
 
 Copyright and License
 ---------------------

@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68568
+stars: 68623
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -368,6 +368,7 @@ Courses
 -   CS322 - Introduction to Artificial Intelligence, Winter 2012-13 - UBC (YouTube)
 -   CS 4804: Introduction to Artificial Intelligence, Fall 2016
 -   CS 5804: Introduction to Artificial Intelligence, Spring 2015
+-   Artificial Intelligence, Fall 2023 - FAU (Spring 2023) (Fall 2022) (Spring 2021) (Fall 2020) (Fall 2018) (Spring 2018)
 -   Artificial Intelligence - IIT Kharagpur
 -   Artificial Intelligence - IIT Madras
 -   Artificial Intelligence(Prof.P.Dasgupta) - IIT Kharagpur
@@ -427,6 +428,9 @@ Courses
     -   STAT 441/841 Classification Winter 2017 , Waterloo
     -   10-605 - Machine Learning with Large Datasets, Fall 2016 - CMU
     -   Information Theory, Pattern Recognition, and Neural Networks - University of Cambridge
+    -   Pattern Analysis (2018) - FAU (Class 2017) (Class 2016) (Class 2015) (Class 2009)
+    -   Pattern Recognition (2020-2021) - FAU (Class 2012-2013)
+    -   Beyond the Patterns (2020-2021) - FAU
     -   Python and machine learning - Stanford Crowd Course Initiative
     -   MOOC - Machine Learning Part 1a - Udacity/Georgia Tech (Part 1b Part 2 Part 3)
     -   Pattern Recognition Class (2012)- Universität Heidelberg
@@ -558,7 +562,9 @@ Courses
     -   Neural Networks: Zero to Hero - Andrej Karpathy
     -   CIS 522 - Deep Learning - U Penn
     -   UVA DEEP LEARNING COURSE
+    -   Deep Learning (Fall 2020) - FAU (Spring 2020) (Fall 2019) (Spring 2019) (Fall 2018) (Spring 2018)
     -   Deep Learning (Fall 2020) - Georgia Tech
+    -   Mathematics of Deep Learning (2021) - FAU
     -   CS7015 - Deep Learning - Prof. Mitesh M. Khapra - IIT Madras
     -   ETH Zürich | Deep Learning in Scientific Computing 2023
     -   Applied Deep Learning Maziar Raissi
@@ -655,6 +661,7 @@ Courses
     -   NOC:Deep Learning For Visual Computing - IIT Kharagpur
     -   Extreme Classification
     -   EECS 498/598 - Deep Learning for Computer Vision - University of Michigan - Fall 2019 (Youtube)
+    -   Computer Vision - FAU Spring 2021 (Spring 2018)
     -   CAP5415 Computer Vision - UCF Fall 2023
     -   CAP6412 Advanced Computer Vision - UCF Spring 2024 (Youtube)
     -   Advanced Deep Learning for Computer vision (ADL4CV) (IN2364) - TU Munich (Youtube)
@@ -727,6 +734,7 @@ Courses
     -   University of Maryland CMSC828U Algorithms in Machine Learning: Guarantees and Analyses fall 2020, by Furong Huang (YouTube playlist)
     -   Statistical Physics of Machine Learning
     -   11-755 - Machine Learning for Signal Processing, CMU (YouTube-2024, YouTube-2023)
+    -   Machine Learning for Physicists, Spring 2019, FAU (Spring 2017)
     -   CSCE 585 - Machine Learning Systems, University of South Carolina (YouTube-2020)
     -   CS-E4740 - Federated Learning, Spring 2023, Aalto University
 
@@ -884,9 +892,11 @@ Courses
 -   UCLA STAT 100C Linear Models spring 2023, by Arash Amini
 -   MSU Math for Computing
 -   Mathematics of Data Science - ETH Zurich
+-   Mathematical Data Science 1 - Spring 2021 - FAU (Spring 2020)
 -   Engineering Mathematics (UW ME564 and ME565) - Steve Brunton
 -   Beginning Scientific Computing - Steve Brunton
 -   Jadavpur University: Foundation\_Math\_forML\_Autumn23
+-   FAU: Inverse Problems Autumn21
 
 * * *
 
@@ -1118,6 +1128,7 @@ Courses
 -   UC Berkeley CS 161 Computer Security, Summer 2021, by Nicholas Ngai and Peyrin Kao
 -   UCSD CS291A Differential Privacy Fall 2021, by Yu-Xiang Wang (Youtube)
 -   Zero Knowledge Proofs MOOC, UC Berkeley RDI Center on Decentralization & AI
+-   Multimedia Security, Fall 2017, FAU
 
 * * *
 
@@ -1174,6 +1185,7 @@ Courses
 -   Photogrammetry 1 Course – 2020 - University of Bonn
 -   Photogrammetry II Course 2020/21 - University of Bonn
 -   3D Computer Vision - National University of Singapore
+-   Interventional Medical Image Processing - Spring 2016 - FAU (Spring 2015) (Spring 2012) (Spring 2011) (Spring 2009)
 
 * * *
 
@@ -1294,6 +1306,7 @@ Courses
 -   SLAM Lectures
 -   CSE 478 – Autonomous Robotics – Winter 2025 - University of Washington (Winter 2024)
 -   CSE 571 – AI-Robotics – Spring 2023 - University of Washington
+-   EE 259 – Principles of Sensing for Autonomy – Spring 2023 - Stanford University
 -   ME 597 – Autonomous Mobile Robotics – Fall 2014
 -   ME 780 – Perception For Autonomous Driving – Spring 2017
 -   ME780 – Nonlinear State Estimation for Robotics and Computer Vision – Spring 2017

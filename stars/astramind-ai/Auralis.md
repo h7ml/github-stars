@@ -1,6 +1,6 @@
 ---
 project: Auralis
-stars: 492
+stars: 494
 description: A Fast TTS Engine
 url: https://github.com/astramind-ai/Auralis
 ---
