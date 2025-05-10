@@ -1,6 +1,6 @@
 ---
 project: srs
-stars: 26840
+stars: 26894
 description: SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181.
 url: https://github.com/ossrs/srs
 ---
@@ -88,6 +88,7 @@ SRS is licenced under MIT, and some third-party libraries are distributed under 
 Releases
 --------
 
+-   2025-05-03, Release v6.0-a2, v6.0-a2, 6.0 alpha2, v6.0.165, 169712 lines.
 -   2024-09-01, Release v6.0-a1, v6.0-a1, 6.0 alpha1, v6.0.155, 169636 lines.
 -   2024-07-27, Release v6.0-a0, v6.0-a0, 6.0 alpha0, v6.0.145, 169259 lines.
 -   2024-07-04, Release v6.0-d6, v6.0-d6, 6.0 dev6, v6.0.134, 168904 lines.

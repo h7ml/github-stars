@@ -1,13 +1,13 @@
 ---
 project: backpex
-stars: 684
+stars: 687
 description:  Backpex is a highly customizable administration panel for Phoenix LiveView applications.
 url: https://github.com/naymspace/backpex
 ---
 
   
   
-Phoenix Admin Panel built with PETAL · Backpex  
+Phoenix Admin Panel built with PET~~A~~L · Backpex  
   
 📚 Documentation • 🛠️ Installation Guide • 🩵 Contribute
 

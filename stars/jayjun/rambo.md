@@ -1,6 +1,6 @@
 ---
 project: rambo
-stars: 210
+stars: 211
 description: Run your command. Send input. Get output.
 url: https://github.com/jayjun/rambo
 ---

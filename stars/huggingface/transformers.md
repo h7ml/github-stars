@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 143795
+stars: 144128
 description: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.
 url: https://github.com/huggingface/transformers
 ---
@@ -34,7 +34,6 @@ Create and activate a virtual environment with venv or uv, a fast Rust-based Pyt
 \# venv
 python \-m venv .my\-env
 source .my\-env/bin/activate
-
 \# uv
 uv venv .my\-env
 source .my\-env/bin/activate
@@ -42,16 +41,16 @@ source .my\-env/bin/activate
 Install Transformers in your virtual environment.
 
 \# pip
-pip install transformers
+pip install "transformers\[torch\]"
 
 \# uv
-uv pip install transformers
+uv pip install "transformers\[torch\]"
 
 Install Transformers from source if you want the latest changes in the library or are interested in contributing. However, the _latest_ version may not be stable. Feel free to open an issue if you encounter an error.
 
 git clone https://github.com/huggingface/transformers.git
 cd transformers
-pip install .
+pip install .\[torch\]
 
 Quickstart
 ----------

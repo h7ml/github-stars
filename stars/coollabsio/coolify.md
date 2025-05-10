@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 40735
+stars: 41036
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -96,6 +96,8 @@ Big Sponsors
 -   Tolgee - The open source localization platform
 -   CompAI - Open source compliance automation platform
 -   GoldenVM - Premium virtual machine hosting solutions
+-   Gozunga - Seriously Simple Cloud Infrastructure
+-   Macarne - Best IP Transit & Carrier Ethernet Solutions for Simplified Network Connectivity
 
 Small Sponsors
 --------------

@@ -1,6 +1,6 @@
 ---
 project: ruffle
-stars: 16564
+stars: 16599
 description: A Flash Player emulator written in Rust
 url: https://github.com/ruffle-rs/ruffle
 ---
@@ -60,15 +60,8 @@ Building from source
 The following are typical dependencies for Linux:
 
 -   libasound2-dev
--   libxcb-shape0-dev
--   libxcb-xfixes0-dev
--   libgtk-3-dev
 -   libudev-dev
--   libxcb-xinput-dev
--   libxcb-xkb-dev
--   libxcb-cursor-dev
 -   default-jre-headless
--   cmake
 -   g++
 
 ### Desktop

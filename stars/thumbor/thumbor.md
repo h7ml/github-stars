@@ -1,6 +1,6 @@
 ---
 project: thumbor
-stars: 10242
+stars: 10244
 description: thumbor is an open-source photo thumbnail service by globo.com
 url: https://github.com/thumbor/thumbor
 ---
@@ -60,7 +60,7 @@ Running it is as easy as hit:
 
 thumbor
 
-After this, you can reach it on https://localhost:8888/unsafe/https://raw.githubusercontent.com/thumbor/thumbor/master/example.jpg
+After this, you can reach it on http://localhost:8888/unsafe/https://raw.githubusercontent.com/thumbor/thumbor/master/example.jpg
 
 ### Troubles?
 

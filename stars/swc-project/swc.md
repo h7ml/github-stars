@@ -1,6 +1,6 @@
 ---
 project: swc
-stars: 32158
+stars: 32176
 description: Rust-based platform for the Web
 url: https://github.com/swc-project/swc
 ---
@@ -23,6 +23,11 @@ To update all SWC crates you use, you can run `curl https://raw.githubuserconten
 -   `cargo upgrade`
 
 command to run the script.
+
+Supported Node Versions:
+
+-   Node v10+ for usage
+-   Node v20+ for development
 
 * * *
 

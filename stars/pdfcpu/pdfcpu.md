@@ -1,6 +1,6 @@
 ---
 project: pdfcpu
-stars: 7510
+stars: 7536
 description: A PDF processor written in Go.
 url: https://github.com/pdfcpu/pdfcpu
 ---

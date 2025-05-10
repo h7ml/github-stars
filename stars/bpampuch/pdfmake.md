@@ -1,6 +1,6 @@
 ---
 project: pdfmake
-stars: 11929
+stars: 11945
 description: Client/server side PDF printing in pure JavaScript
 url: https://github.com/bpampuch/pdfmake
 ---
@@ -31,6 +31,7 @@ Check out the playground and examples.
 -   background-layer,
 -   page dimensions and orientations,
 -   margins,
+-   document sections,
 -   custom page breaks,
 -   font embedding,
 -   support for complex, multi-level (nested) structures,

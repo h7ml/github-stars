@@ -1,6 +1,6 @@
 ---
 project: umami
-stars: 26213
+stars: 26333
 description: Umami is a modern, privacy-focused alternative to Google Analytics.
 url: https://github.com/umami-software/umami
 ---
@@ -27,15 +27,11 @@ A detailed getting started guide can be found at umami.is/docs.
 -   A server with Node.js version 18.18 or newer
 -   A database. Umami supports MariaDB (minimum v10.5), MySQL (minimum v8.0) and PostgreSQL (minimum v12.14) databases.
 
-### Install Yarn
-
-npm install -g yarn
-
 ### Get the Source Code and Install Packages
 
 git clone https://github.com/umami-software/umami.git
 cd umami
-yarn install
+npm install
 
 ### Configure Umami
 
@@ -50,13 +46,13 @@ mysql://username:mypassword@localhost:3306/mydb
 
 ### Build the Application
 
-yarn build
+npm run build
 
 _The build step will create tables in your database if you are installing for the first time. It will also create a login user with username **admin** and password **umami**._
 
 ### Start the Application
 
-yarn start
+npm run start
 
 _By default, this will launch the application on `http://localhost:3000`. You will need to either proxy requests from your web server or change the port to serve the application directly._
 
@@ -85,8 +81,8 @@ docker pull docker.umami.is/umami-software/umami:mysql-latest
 To get the latest features, simply do a pull, install any new dependencies, and rebuild:
 
 git pull
-yarn install
-yarn build
+npm install
+npm run build
 
 To update the Docker image, simply pull the new images and rebuild:
 

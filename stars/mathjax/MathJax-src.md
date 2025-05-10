@@ -1,6 +1,6 @@
 ---
 project: MathJax-src
-stars: 2181
+stars: 2188
 description: MathJax source code for version 3 and beyond
 url: https://github.com/mathjax/MathJax-src
 ---

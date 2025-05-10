@@ -1,6 +1,6 @@
 ---
 project: RustPython
-stars: 19969
+stars: 20010
 description: A Python Interpreter written in Rust
 url: https://github.com/RustPython/RustPython
 ---
@@ -22,6 +22,10 @@ To check the version of Rust you're currently running, use `rustc --version`. If
 To build RustPython locally, first, clone the source code:
 
 git clone https://github.com/RustPython/RustPython
+
+RustPython uses symlinks to manage python libraries in `Lib/`. If on windows, running the following helps:
+
+git config core.symlinks true
 
 Then you can change into the RustPython directory and run the demo (Note: `--release` is needed to prevent stack overflow on Windows):
 
@@ -172,7 +176,7 @@ To enhance CPython compatibility, try to increase unittest coverage by checking 
 
 Another approach is to checkout the source code: builtin functions and object methods are often the simplest and easiest way to contribute.
 
-You can also simply run `./whats_left.py` to assist in finding any unimplemented method.
+You can also simply run `uv run python -I whats_left.py` to assist in finding any unimplemented method.
 
 Compiling to WebAssembly
 ------------------------

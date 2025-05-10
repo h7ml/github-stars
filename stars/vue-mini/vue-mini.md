@@ -1,6 +1,6 @@
 ---
 project: vue-mini
-stars: 1783
+stars: 1788
 description: 基于 Vue 3 的小程序框架。简单，强大，高性能。
 url: https://github.com/vue-mini/vue-mini
 ---
@@ -28,6 +28,11 @@ npm create vue-mini@latest
 --
 
 Vue Mini 拥有媲美小程序原生框架的极致性能，详情请查看 Benchmark。
+
+深入理解
+----
+
+若想深入理解此仓库，可以参考 DeepWiki。
 
 赞助
 --

@@ -1,6 +1,6 @@
 ---
 project: Public-APIs
-stars: 21925
+stars: 21946
 description: 📚 A public list of APIs from round the web.
 url: https://github.com/n0shake/Public-APIs
 ---

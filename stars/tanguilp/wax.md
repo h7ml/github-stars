@@ -333,7 +333,7 @@ Support of FIDO2
     -   **Mandatory**: TPM attestation
     -   _Optional_: Android key attestation
     -   **Mandatory**: U2F attestation
-    -   **Mandatory**: Android Safetynet attestation
+    -   _Deprecated_: Android Safetynet attestation (removed in `v0.7.0`)
     -   **Mandatory**: Apple Anonymous
 
 3\. Authentication and Assertions

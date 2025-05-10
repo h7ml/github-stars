@@ -1,6 +1,6 @@
 ---
 project: open-webui
-stars: 92987
+stars: 94056
 description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 url: https://github.com/open-webui/open-webui
 ---
@@ -60,10 +60,17 @@ Key Features of Open WebUI ⭐
 
 Want to learn more about Open WebUI's features? Check out our Open WebUI documentation for a comprehensive overview!
 
-🔗 Also Check Out Open WebUI Community!
----------------------------------------
+Sponsors 🙌
+-----------
 
-Don't forget to explore our sibling project, Open WebUI Community, where you can discover, download, and explore customized Modelfiles. Open WebUI Community offers a wide range of exciting possibilities for enhancing your chat interactions with Open WebUI! 🚀
+#### Emerald
+
+Does your interface have a backend yet?  
+Try n8n
+
+* * *
+
+We are incredibly grateful for the generous support of our sponsors. Their contributions help us to maintain and improve our project, ensuring we can continue to deliver quality work to our community. Thank you!
 
 How to Install 🚀
 -----------------
@@ -188,7 +195,7 @@ Discover upcoming features on our roadmap in the Open WebUI Documentation.
 License 📜
 ----------
 
-This project is licensed under the BSD-3-Clause License - see the LICENSE file for details. 📄
+This project is licensed under the Open WebUI License, a revised BSD-3-Clause license. You receive all the same rights as the classic BSD-3 license: you can use, modify, and distribute the software, including in proprietary and commercial products, with minimal restrictions. The only additional requirement is to preserve the "Open WebUI" branding, as detailed in the LICENSE file. For full terms, see the LICENSE document. 📄
 
 Support 💬
 ----------

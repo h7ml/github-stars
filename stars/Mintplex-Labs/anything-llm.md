@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 43586
+stars: 43891
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -57,7 +57,7 @@ Cool features of AnythingLLM
 -   Hugging Face (chat models)
 -   Ollama (chat models)
 -   LM Studio (all models)
--   LocalAi (all models)
+-   LocalAI (all models)
 -   Together AI (chat models)
 -   Fireworks AI (chat models)
 -   Perplexity (chat models)
@@ -79,7 +79,7 @@ Cool features of AnythingLLM
 -   AnythingLLM Native Embedder (default)
 -   OpenAI
 -   Azure OpenAI
--   LocalAi (all)
+-   LocalAI (all)
 -   Ollama (all)
 -   LM Studio (all)
 -   Cohere
@@ -104,6 +104,7 @@ Cool features of AnythingLLM
 **Vector Databases:**
 
 -   LanceDB (default)
+-   PGVector
 -   Astra DB
 -   Pinecone
 -   Chroma
@@ -114,11 +115,11 @@ Cool features of AnythingLLM
 
 ### Technical Overview
 
-This monorepo consists of three main sections:
+This monorepo consists of six main sections:
 
 -   `frontend`: A viteJS + React frontend that you can run to easily create and manage all your content the LLM can use.
 -   `server`: A NodeJS express server to handle all the interactions and do all the vectorDB management and LLM interactions.
--   `collector`: NodeJS express server that process and parses documents from the UI.
+-   `collector`: NodeJS express server that processes and parses documents from the UI.
 -   `docker`: Docker instructions and build process + information for building from source.
 -   `embed`: Submodule for generation & creation of the web embed widget.
 -   `browser-extension`: Submodule for the chrome browser extension.
@@ -200,7 +201,7 @@ We will only track usage details that help us make product and roadmap decisions
 
 You can verify these claims by finding all locations `Telemetry.sendTelemetry` is called. Additionally these events are written to the output log so you can also see the specific data which was sent - if enabled. **No IP or other identifying information is collected**. The Telemetry provider is PostHog - an open-source telemetry collection service.
 
-We take privacy very seriously and hopefully you can understand our position to also glimpse into how our tool is used with asking for annoying popup surveys so we can build something worth using. The anonymous data is _never_ shared with third parties, ever.
+We take privacy very seriously, and we hope you understand that we want to learn how our tool is used, without using annoying popup surveys, so we can build something worth using. The anonymous data is _never_ shared with third parties, ever.
 
 View all telemetry events in source code
 

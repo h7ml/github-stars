@@ -1,6 +1,6 @@
 ---
 project: idb-keyval
-stars: 2929
+stars: 2939
 description: A super-simple-small promise-based keyval store implemented with IndexedDB
 url: https://github.com/jakearchibald/idb-keyval
 ---
@@ -10,7 +10,7 @@ IDB-Keyval
 
 This is a super-simple promise-based keyval store implemented with IndexedDB, originally based on async-storage by Mozilla.
 
-It's small and tree-shakeable. If you only use get/set, the library is ~250 bytes (brotli'd), if you use all methods it's ~534 bytes.
+It's small and tree-shakeable. If you only use get/set, the library is 295 bytes (brotli'd), if you use all methods it's 573 bytes.
 
 localForage offers similar functionality, but supports older browsers with broken/absent IDB implementations. Because of that, it's orders of magnitude bigger (~7k).
 

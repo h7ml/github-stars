@@ -1,6 +1,6 @@
 ---
 project: buildbot
-stars: 5344
+stars: 5346
 description: Python-based continuous integration testing framework; your pull requests are more than welcome!
 url: https://github.com/buildbot/buildbot
 ---

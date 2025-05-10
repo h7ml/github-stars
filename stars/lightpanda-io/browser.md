@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 8740
+stars: 8831
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -139,6 +139,12 @@ sudo apt install xz-utils \
     pkg-config libglib2.0-dev \
     gperf libexpat1-dev \
     cmake clang
+```
+
+For systems with Nix, you can use the devShell:
+
+```
+nix develop
 ```
 
 For MacOS, you only need cmake:

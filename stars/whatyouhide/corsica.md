@@ -1,6 +1,6 @@
 ---
 project: corsica
-stars: 529
+stars: 530
 description: Elixir library for dealing with CORS requests. 🏖
 url: https://github.com/whatyouhide/corsica
 ---

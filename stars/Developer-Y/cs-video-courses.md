@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68623
+stars: 68671
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -335,7 +335,7 @@ Courses
     -   CSEP 524 - Parallel Computation - University of Washington (Videos)
     -   Parallel Programming Concepts (WT 2013/14) - HPI University of Potsdam
     -   Parallel Programming Concepts (WT 2012/13) - HPI University of Potsdam
-    -   UIUC ECE 408 / CS 408 Applied Parallel Programming spring 2018, fall 2022, by Wen-mei Hwu, Sanjay Patel
+    -   UIUC ECE 408 / CS 408 Applied Parallel Programming fall 2022, by Wen-mei Hwu, Sanjay Patel (Spring 2018)
     -   UIUC ECE 508 / CS 508 Manycore Parallel Algorithms spring 2019, by Wen-mei Hwu
     -   UIUC CS 420 / ECE 492 / CSE 402 Introduction to Parallel Programming for Scientists and Engineers fall 2015, by Sanjay Kale
     -   Stanford CME 213 Introduction to Parallel Computing using MPI, openMP, and CUDA winter 2020, by Eric Darve
@@ -419,6 +419,7 @@ Courses
     -   CS4780/5780 Machine Learning, Fall 2018 - Cornell University (Youtube)
     -   CSE474/574 Introduction to Machine Learning - SUNY University at Buffalo
     -   CS 5350/6350 - Machine Learning, Spring 2024, University of Utah (Youtube)
+    -   ECE 4252/8803 Fundamentals of Machine Learning (FunML), Spring 2024 - Georgia Tech
     -   ECE 5984 Introduction to Machine Learning, Spring 2015 - Virginia Tech
     -   CSx824/ECEx242 Machine Learning, Bert Huang, Fall 2015 - Virginia Tech
     -   STA 4273H - Large Scale Machine Learning, Winter 2015 - University of Toronto
@@ -473,7 +474,7 @@ Courses
     -   TinyML - Tiny Machine Learning at UPenn
     -   ECE 4760 (Digital Systems Design Using Microcontrollers) at Cornell for the Fall, 2022
     -   EfficientML.ai Lecture, Fall 2023, MIT 6.5940
-    -   SFU CMPT 727 Statistical Machine Learning spring 2022, 2023, by Maxwell Libbrecht
+    -   SFU CMPT 727 Statistical Machine Learning, by Maxwell Libbrecht (Spring 2023) (Spring 2022)
     -   UC Berkeley CS 189 / 289A Introduction to Machine Learning fall 2023, by Jennifer Listgarten & Jitendra Malik
     -   UC Berkeley CS 189 Introduction to Machine Learning (CDSS offering) spring 2022, by Marvin Zhang
     -   UC San Diego/edX DSE 220X Machine Learning Fundamentals, by Sanjoy Dasgupta
@@ -487,7 +488,7 @@ Courses
     -   UCLA Stats C161/C261 Introduction to Pattern Recognition and Machine Learning winter 2024, by Arash Amini (Winter 2023)
     -   UCLA Stats 231C Theories of Machine Learning spring 2022, by Arash Amini
     -   MSU Machine Learning
-    -   Data Science for Dynamical Systems, by Oliver Wallscheid & Sebastian Peitz
+    -   Data Science for Dynamical Systems, by Oliver Wallscheid & Sebastian Peitz (YouTube)
     -   Cambridge Statistical Learning in Practice 2021, by Alberto J. Coca
     -   Data 8: The Foundations of Data Science - UC Berkeley (Spring 23) (Fall 22) (Spring 22) (Summer 17)
     -   Data 144: Foundations of Data Science spring 2021 - Vassar College (Course materials)
@@ -709,6 +710,7 @@ Courses
     -   Info 290 - Analyzing Big Data with Twitter, UC Berkeley school of information (YouTube)
     -   CS224W Machine Learning with Graphs | Spring 2021 | Stanford University
     -   9.520 - Statistical Learning Theory and Applications, Fall 2015 - MIT
+    -   Statistical Learning Theory, Spring 2019 - ETH Zürich
     -   Course on the Statistical Learning Theory, University of São Paulo, ICMC
     -   Reinforcement Learning - UCL
     -   Regularization Methods for Machine Learning 2016 (YouTube)
@@ -734,6 +736,7 @@ Courses
     -   University of Maryland CMSC828U Algorithms in Machine Learning: Guarantees and Analyses fall 2020, by Furong Huang (YouTube playlist)
     -   Statistical Physics of Machine Learning
     -   11-755 - Machine Learning for Signal Processing, CMU (YouTube-2024, YouTube-2023)
+    -   Machine Learning for 3D Data, Fall 2023, KAIST
     -   Machine Learning for Physicists, Spring 2019, FAU (Spring 2017)
     -   CSCE 585 - Machine Learning Systems, University of South Carolina (YouTube-2020)
     -   CS-E4740 - Federated Learning, Spring 2023, Aalto University
@@ -886,7 +889,9 @@ Courses
 -   TUe Numerical Linear Algebra 2021, by Martijn Anthonissen
 -   Numerical Linear Algebra fall 2018, by Jaegul Choo
 -   MIT 6.S955 Applied Numerical Algorithms fall 2023, by Justin Solomon
+-   UC Berkeley Math 54 Linear Algebra & Differential Equations spring 2022, by Alexander Paulin (Summer 2021, by Peter Koroteev) (Summer 2020, by Luvreet Sangha) (Spring 2018, by Alexander Paulin)
 -   UC Berkeley Math 55 Discrete Mathematics fall 2021, by Nikhil Srivastava
+-   UC Berkeley Math 56 Linear Algebra fall 2023, by Alexander Paulin
 -   Fundamental Mathematics for Robotics spring 2020, by Ken Tomiyama
 -   Short Course on Casual Inference, by Sanjay Shakkottai
 -   UCLA STAT 100C Linear Models spring 2023, by Arash Amini
@@ -1082,6 +1087,7 @@ Courses
 -   Memory Systems Course - Technion, Summer 2018
 -   UC Berkeley EECS16A Designing Information Devices and Systems I summer 2020, by Grace Kuo, Panos Zarkos, Urmita Sikder
 -   UC Berkeley EECS 16B Designing Information Devices and Systems II fall 2020, by Seth Sanders, Miki Lustig
+-   EE 503 - Statistical Signal Processing and Modeling - Fall 2020 - METU (YouTube)
 -   ELEN E4810 - DIGITAL SIGNAL PROCESSING - Fall 2013 - Columbia
 -   ELEN E4896 - MUSIC SIGNAL PROCESSING - Spring 2016 - Columbia
 -   Columbia ELEN E6820 Speech and Audio Processing spring 2006, by Dan Ellis
@@ -1185,6 +1191,7 @@ Courses
 -   Photogrammetry 1 Course – 2020 - University of Bonn
 -   Photogrammetry II Course 2020/21 - University of Bonn
 -   3D Computer Vision - National University of Singapore
+-   Diagnostic Medical Image Processing - Fall 2014 - FAU (Fall 2011) (Fall 2010) (Fall 2009)
 -   Interventional Medical Image Processing - Spring 2016 - FAU (Spring 2015) (Spring 2012) (Spring 2011) (Spring 2009)
 
 * * *
@@ -1421,6 +1428,7 @@ Courses
     -   Introduction to Geographic Information Systems - IIT Roorkee
 -   MOOC - Matlab - Coursera
 -   Computing for Computer Scientists - University of Michigan
+-   Linux System Administration Decal, Spring 2025, UC Berkeley
 -   Linux Implementation/Administration Practicum - Redhat by Tulio Llosa
 -   Innovative Computing - Harvard University
 -   Linux Programming & Scripting - IIT Madras

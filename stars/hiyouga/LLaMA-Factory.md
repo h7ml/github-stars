@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 48179
+stars: 48580
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -395,6 +395,12 @@ LLaVA-NeXT-Video
 7B/34B
 
 llava\_next\_video
+
+MiMo
+
+7B
+
+mimo
 
 MiniCPM
 
@@ -1070,7 +1076,7 @@ Note
 
 Please update `data/dataset_info.json` to use your custom dataset.
 
-You can also use **Easy Dataset** to create synthetic data for fine-tuning.
+You can also use **Easy Dataset** or **GraphGen** to create synthetic data for fine-tuning.
 
 ### Quickstart
 

@@ -1,13 +1,13 @@
 ---
 project: pixijs
-stars: 45040
+stars: 45069
 description: The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.
 url: https://github.com/pixijs/pixijs
 ---
 
   
 
-Examples | Getting Started | Documentation | Discord
+Guides | Tutorials | Examples | API Docs | Discord | Bluesky | 𝕏
 
 PixiJS ⚡️
 =========

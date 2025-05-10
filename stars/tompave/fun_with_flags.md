@@ -1,6 +1,6 @@
 ---
 project: fun_with_flags
-stars: 1120
+stars: 1121
 description: Feature Flags/Toggles for Elixir
 url: https://github.com/tompave/fun_with_flags
 ---

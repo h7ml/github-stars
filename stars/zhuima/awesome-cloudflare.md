@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 10789
+stars: 10858
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -143,6 +143,12 @@ imgUU
 一个基于Cloudflare D1和R2构建的免费图片上传应用Github登陆管理。
 
 https://imguu.net/
+
+维护中
+
+cloudflare-r2-telegram-bot
+
+基于cloudflare worker与R2存储桶的图床机器人。
 
 维护中
 
@@ -905,6 +911,28 @@ Cloudflare-KV-Manager
 您的 Cloudflare KV 缺少工具。用于管理 Cloudflare KV 存储的更完整、更简单的解决方案。包括一个 Web 界面和一个小型 Python 库。
 
 https://kv-demo.somecanadian.com
+
+有效中
+
+CFWorkerACME
+
+SSL证书助手是一个免费、开源的全自动化SSL证书申请和下发平台，依托于Cloudflare运行
+
+https://newssl.524228.xyz/
+
+有效中
+
+LibreTV
+
+LibreTV - 免费在线视频搜索与观看平台
+
+有效中
+
+MoePush
+
+一个基于 NextJS + Cloudflare 技术栈构建的可爱消息推送服务, 支持多种消息推送渠道✨
+
+https://moepush.app/
 
 有效中
 

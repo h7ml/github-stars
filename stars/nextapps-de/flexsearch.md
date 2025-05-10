@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 12911
+stars: 12921
 description: Next-Generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -23,7 +23,7 @@ FlexSearch has been helping developers around the world build powerful, efficien
   
 Antithesis Operations LLC
 
-FlexSearch performs queries up to 1,000,000 times faster compared to other libraries by also providing powerful search capabilities like multi-field search (document search), phonetic transformations, partial matching, tag-search or suggestions.
+FlexSearch performs queries up to 1,000,000 times faster compared to other libraries by also providing powerful search capabilities like multi-field search (document search), phonetic transformations, partial matching, tag-search, result highlighting or suggestions.
 
 Bigger workloads are scalable through workers to perform any updates or queries to the index in parallel through dedicated balanced threads.
 
@@ -252,32 +252,38 @@ Understanding those 3 elementary things about FlexSearch will improve your resul
     -   Module (ESM)
     -   Node.js
 -   Basic Usage and Variants
+    -   Index Options
+    -   Search Options
 -   Common Code Examples (Browser, Node.js)
 -   API Overview
--   Options
-    -   Index Options
-    -   Document Options
-    -   Worker Index Options
-    -   Persistent Options
-    -   Encoder Options
-    -   Resolver Options
 -   Presets
 -   Context Search
+    -   Context Options
 -   Fast-Update Mode
 -   Suggestions
 -   Document Search (Multi-Field Search)
--   Multi-Tag Search
+    -   Document Index Options
+    -   Document Descriptor
+    -   Document Search Options
+    -   Multi-Tag Search
+    -   Result Highlighting
+        -   Highlighting Options
+            -   Boundary Options
+            -   Ellipsis Options
 -   Phonetic Search (Fuzzy Search)
 -   Tokenizer (Partial Search)
 -   Charset Collection
 -   Encoder
+    -   Encoder Options
     -   Universal Charset Collection
     -   Latin Charset Encoder Presets
     -   Language Specific Preset
     -   Custom Encoder
--   Non-Blocking Runtime Balancer (Async)
+-   Async Non-Blocking Runtime Balancer
 -   Worker Indexes
+    -   Worker Index Options
 -   Resolver (Complex Queries)
+    -   Resolver Options
     -   Boolean Operations (and, or, xor, not)
     -   Boost
     -   Limit / Offset
@@ -286,19 +292,19 @@ Understanding those 3 elementary things about FlexSearch will improve your resul
 -   Export / Import Indexes
     -   Fast-Boot Serialization
 -   Persistent Indexes
+    -   Persistent Index Options
     -   IndexedDB (Browser)
     -   Postgres
     -   Redis
     -   MongoDB
     -   SQLite
     -   Clickhouse
--   Result Highlighting
 -   Custom Score Function
 -   Custom Builds
--   Extended Keystores (In-Memory)
+-   Extended Keystores (In-Memory Index)
 -   Best Practices
     -   Page-Load / Fast-Boot
-    -   Use numeric IDs
+    -   Prefer numeric typed IDs
 
 Load Library (Node.js, ESM, Legacy Browser)
 -------------------------------------------
@@ -566,11 +572,11 @@ Persistent Index (IndexedDB)
 
 File Size (gzip)
 
-14.0 kb
+16.3 kb
 
-9.0 kb
+11.4 kb
 
-4.4 kb
+4.5 kb
 
 Tip
 
@@ -967,19 +973,6 @@ Methods `.export()` and also `.import()` are always async as well as every metho
 -   **de**
 -   **fr**
 
-Options
--------
-
--   Index Options
--   Context Options
--   Document Options
--   Encoder Options
--   Resolver Options
--   Search Options
--   Document Search Options
--   Worker Options
--   Persistent Options
-
 Basic Usage
 -----------
 
@@ -994,9 +987,7 @@ const index \= new Index("match");
 Create a new index with custom options:
 
 const index \= new Index({
-    tokenize: "forward",
-    resolution: 9,
-    fastupdate: true
+    tokenize: "forward"
 });
 
 Create a new index and extend a preset with custom options:
@@ -1009,15 +1000,13 @@ var index \= new FlexSearch({
 
 Create a new index and assign an Encoder:
 
-//import { Charset } from "./dist/module/charset.js";
 import { Charset } from "flexsearch";
 const index \= new Index({
     tokenize: "forward",
     encoder: Charset.LatinBalance
 });
 
-» Resolution  
-» All available custom options
+Related Topics: Index Options  •  Resolution  •  Charset Collection  •  Tokenizer
 
 #### Add text item to an index
 
@@ -1205,6 +1194,41 @@ Boolean
 When disabled any changes won't commit, instead it needs calling `index.commit()` manually to make modifications to the index (add, update, remove) persistent.
 
 true
+
+Search Options
+--------------
+
+Option
+
+Values
+
+Description
+
+Default
+
+limit
+
+number
+
+Sets the limit of results.
+
+100
+
+offset
+
+number
+
+Apply offset (skip items).
+
+0
+
+suggest
+
+Boolean
+
+Enables suggestions in results.
+
+false
 
 Suggestions
 -----------
@@ -1554,7 +1578,7 @@ index.add(2, "A B C D E F G H I J 1 2 3 K L");
 const result \= index.search("1 2 3");
 // --> \[2, 1\]
 
-The first index returns ID 1 in the first slot for the best pick, because matched terms are closer to the document root. The 2nd index has context enabled and returns the ID 2 in the first slot, because of the distance between terms.
+The first index returns ID 1 in the first slot for the best pick, because matched terms are closer to the document root. The 2nd index has context enabled and returns the ID 2 in the first slot, because of the shorter distance between terms.
 
 ### Context Options
 
