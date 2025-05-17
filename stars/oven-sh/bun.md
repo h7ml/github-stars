@@ -1,6 +1,6 @@
 ---
 project: bun
-stars: 77948
+stars: 78082
 description: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 url: https://github.com/oven-sh/bun
 ---
@@ -77,10 +77,13 @@ Quick links
     
     -   `bun init`
     -   `bun create`
+-   CLI
+    
+    -   `bun upgrade`
 -   Runtime
     
     -   `bun run`
-    -   File types
+    -   File types (Loaders)
     -   TypeScript
     -   JSX
     -   Environment variables
@@ -89,12 +92,12 @@ Quick links
     -   Node.js compatibility
     -   Single-file executable
     -   Plugins
-    -   Watch mode
+    -   Watch mode / Hot Reloading
     -   Module resolution
     -   Auto-install
     -   bunfig.toml
     -   Debugger
-    -   Framework API
+    -   $ Shell
 -   Package manager
     
     -   `bun install`
@@ -102,7 +105,12 @@ Quick links
     -   `bun remove`
     -   `bun update`
     -   `bun link`
+    -   `bun unlink`
     -   `bun pm`
+    -   `bun outdated`
+    -   `bun publish`
+    -   `bun patch`
+    -   `bun patch-commit`
     -   Global cache
     -   Workspaces
     -   Lifecycle scripts
@@ -110,6 +118,7 @@ Quick links
     -   Lockfile
     -   Scopes and registries
     -   Overrides and resolutions
+    -   `.npmrc`
 -   Bundler
     
     -   `Bun.build`
@@ -117,6 +126,11 @@ Quick links
     -   Plugins
     -   Macros
     -   vs esbuild
+    -   Single-file executable
+    -   CSS
+    -   HTML
+    -   Hot Module Replacement (HMR)
+    -   Full-stack with HTML imports
 -   Test runner
     
     -   `bun test`
@@ -128,216 +142,235 @@ Quick links
     -   Dates and times
     -   DOM testing
     -   Code coverage
+    -   Configuration
+    -   Discovery
+    -   Reporters
+    -   Runtime Behavior
 -   Package runner
     
     -   `bunx`
 -   API
     
-    -   HTTP server
+    -   HTTP server (`Bun.serve`)
     -   WebSockets
     -   Workers
     -   Binary data
     -   Streams
-    -   File I/O
+    -   File I/O (`Bun.file`)
     -   import.meta
-    -   SQLite
+    -   SQLite (`bun:sqlite`)
+    -   PostgreSQL (`Bun.sql`)
+    -   Redis (`Bun.redis`)
+    -   S3 Client (`Bun.s3`)
     -   FileSystemRouter
     -   TCP sockets
     -   UDP sockets
     -   Globals
     -   $ Shell
-    -   Child processes
-    -   Transpiler
+    -   Child processes (spawn)
+    -   Transpiler (`Bun.Transpiler`)
     -   Hashing
+    -   Colors (`Bun.color`)
     -   Console
-    -   FFI
+    -   FFI (`bun:ffi`)
+    -   C Compiler (`bun:ffi` cc)
     -   HTMLRewriter
-    -   Testing
+    -   Testing (`bun:test`)
+    -   Cookies (`Bun.Cookie`)
     -   Utils
     -   Node-API
-    -   Glob
-    -   Semver
--   Project
-    
-    -   Roadmap
-    -   Benchmarking
-    -   Contributing
-    -   Building Windows
-    -   License
+    -   Glob (`Bun.Glob`)
+    -   Semver (`Bun.semver`)
+    -   DNS
+    -   fetch API extensions
 
 Guides
 ------
 
 -   Binary
     
-    -   Convert a Blob to a DataView
-    -   Convert a Blob to a ReadableStream
     -   Convert a Blob to a string
-    -   Convert a Blob to a Uint8Array
-    -   Convert a Blob to an ArrayBuffer
     -   Convert a Buffer to a blob
-    -   Convert a Buffer to a ReadableStream
+    -   Convert a Blob to a DataView
     -   Convert a Buffer to a string
-    -   Convert a Buffer to a Uint8Array
-    -   Convert a Buffer to an ArrayBuffer
+    -   Convert a Blob to a ReadableStream
+    -   Convert a Blob to a Uint8Array
     -   Convert a DataView to a string
     -   Convert a Uint8Array to a Blob
-    -   Convert a Uint8Array to a Buffer
-    -   Convert a Uint8Array to a DataView
-    -   Convert a Uint8Array to a ReadableStream
-    -   Convert a Uint8Array to a string
-    -   Convert a Uint8Array to an ArrayBuffer
+    -   Convert a Blob to an ArrayBuffer
     -   Convert an ArrayBuffer to a Blob
+    -   Convert a Buffer to a Uint8Array
+    -   Convert a Uint8Array to a Buffer
+    -   Convert a Uint8Array to a string
+    -   Convert a Buffer to an ArrayBuffer
     -   Convert an ArrayBuffer to a Buffer
     -   Convert an ArrayBuffer to a string
+    -   Convert a Uint8Array to a DataView
+    -   Convert a Buffer to a ReadableStream
+    -   Convert a Uint8Array to an ArrayBuffer
     -   Convert an ArrayBuffer to a Uint8Array
     -   Convert an ArrayBuffer to an array of numbers
+    -   Convert a Uint8Array to a ReadableStream
 -   Ecosystem
     
-    -   Build a frontend using Vite and Bun
-    -   Build an app with Astro and Bun
-    -   Build an app with Next.js and Bun
+    -   Use React and JSX
+    -   Use EdgeDB with Bun
+    -   Use Prisma with Bun
+    -   Add Sentry to a Bun app
+    -   Create a Discord bot
+    -   Run Bun as a daemon with PM2
+    -   Use Drizzle ORM with Bun
     -   Build an app with Nuxt and Bun
     -   Build an app with Qwik and Bun
+    -   Build an app with Astro and Bun
     -   Build an app with Remix and Bun
-    -   Build an app with SolidStart and Bun
-    -   Build an app with SvelteKit and Bun
-    -   Build an HTTP server using Elysia and Bun
-    -   Build an HTTP server using Express and Bun
+    -   Build a frontend using Vite and Bun
+    -   Build an app with Next.js and Bun
+    -   Run Bun as a daemon with systemd
+    -   Deploy a Bun application on Render
     -   Build an HTTP server using Hono and Bun
+    -   Build an app with SvelteKit and Bun
+    -   Build an app with SolidStart and Bun
+    -   Build an HTTP server using Elysia and Bun
     -   Build an HTTP server using StricJS and Bun
     -   Containerize a Bun application with Docker
-    -   Create a Discord bot
-    -   Deploy a Bun application on Render
-    -   Read and write data to MongoDB using Mongoose and Bun
-    -   Run Bun as a daemon with PM2
-    -   Run Bun as a daemon with systemd
+    -   Build an HTTP server using Express and Bun
+    -   Use Neon Postgres through Drizzle ORM
     -   Server-side render (SSR) a React component
-    -   Use Drizzle ORM with Bun
-    -   Use EdgeDB with Bun
+    -   Read and write data to MongoDB using Mongoose and Bun
     -   Use Neon's Serverless Postgres with Bun
-    -   Use Prisma with Bun
-    -   Use React and JSX
-    -   Add Sentry to a Bun app
+-   HTMLRewriter
+    
+    -   Extract links from a webpage using HTMLRewriter
+    -   Extract social share images and Open Graph tags
 -   HTTP
     
-    -   Common HTTP server usage
-    -   Configure TLS on an HTTP server
-    -   fetch with unix domain sockets in Bun
     -   Hot reload an HTTP server
-    -   Proxy HTTP requests using fetch()
+    -   Common HTTP server usage
+    -   Write a simple HTTP server
+    -   Configure TLS on an HTTP server
     -   Send an HTTP request using fetch
+    -   Proxy HTTP requests using fetch()
     -   Start a cluster of HTTP servers
     -   Stream a file as an HTTP Response
+    -   fetch with unix domain sockets in Bun
+    -   Upload files via HTTP using FormData
     -   Streaming HTTP Server with Async Iterators
     -   Streaming HTTP Server with Node.js Streams
-    -   Upload files via HTTP using FormData
-    -   Write a simple HTTP server
 -   Install
     
     -   Add a dependency
-    -   Add a development dependency
     -   Add a Git dependency
     -   Add a peer dependency
-    -   Add a tarball dependency
     -   Add a trusted dependency
+    -   Add a development dependency
+    -   Add a tarball dependency
     -   Add an optional dependency
-    -   Configure a private registry for an organization scope with bun install
-    -   Configure git to diff Bun's lockb lockfile
+    -   Generate a yarn-compatible lockfile
     -   Configuring a monorepo using workspaces
-    -   Generate a human-readable lockfile
     -   Install a package under a different name
     -   Install dependencies with Bun in GitHub Actions
+    -   Using bun install with Artifactory
+    -   Configure git to diff Bun's lockb lockfile
     -   Override the default npm registry for bun install
     -   Using bun install with an Azure Artifacts npm registry
-    -   Using bun install with Artifactory
+    -   Migrate from npm install to bun install
+    -   Configure a private registry for an organization scope with bun install
 -   Process
     
-    -   Get the process uptime in nanoseconds
+    -   Read from stdin
     -   Listen for CTRL+C
+    -   Spawn a child process
     -   Listen to OS signals
     -   Parse command-line arguments
-    -   Read from stdin
     -   Read stderr from a child process
     -   Read stdout from a child process
-    -   Spawn a child process
+    -   Get the process uptime in nanoseconds
     -   Spawn a child process and communicate using IPC
 -   Read file
     
+    -   Read a JSON file
     -   Check if a file exists
-    -   Get the MIME type of a file
-    -   Read a file as a ReadableStream
     -   Read a file as a string
     -   Read a file to a Buffer
+    -   Get the MIME type of a file
+    -   Watch a directory for changes
+    -   Read a file as a ReadableStream
     -   Read a file to a Uint8Array
     -   Read a file to an ArrayBuffer
-    -   Read a JSON file
-    -   Watch a directory for changes
 -   Runtime
     
-    -   Debugging Bun with the VS Code extension
-    -   Debugging Bun with the web debugger
-    -   Define and replace static globals & constants
+    -   Delete files
+    -   Run a Shell Command
     -   Import a JSON file
     -   Import a TOML file
-    -   Import HTML file as text
-    -   Install and run Bun in GitHub Actions
-    -   Install TypeScript declarations for Bun
-    -   Re-map import paths
-    -   Read environment variables
-    -   Run a Shell Command
     -   Set a time zone in Bun
     -   Set environment variables
+    -   Re-map import paths
+    -   Delete directories
+    -   Read environment variables
+    -   Import a HTML file as text
+    -   Install and run Bun in GitHub Actions
+    -   Debugging Bun with the web debugger
+    -   Install TypeScript declarations for Bun
+    -   Debugging Bun with the VS Code extension
+    -   Inspect memory usage using V8 heap snapshots
+    -   Define and replace static globals & constants
+    -   Codesign a single-file JavaScript executable on macOS
 -   Streams
     
-    -   Convert a Node.js Readable to a Blob
-    -   Convert a Node.js Readable to a string
-    -   Convert a Node.js Readable to an ArrayBuffer
-    -   Convert a Node.js Readable to JSON
+    -   Convert a ReadableStream to JSON
     -   Convert a ReadableStream to a Blob
     -   Convert a ReadableStream to a Buffer
     -   Convert a ReadableStream to a string
     -   Convert a ReadableStream to a Uint8Array
     -   Convert a ReadableStream to an array of chunks
+    -   Convert a Node.js Readable to JSON
     -   Convert a ReadableStream to an ArrayBuffer
-    -   Convert a ReadableStream to JSON
+    -   Convert a Node.js Readable to a Blob
+    -   Convert a Node.js Readable to a string
+    -   Convert a Node.js Readable to an Uint8Array
+    -   Convert a Node.js Readable to an ArrayBuffer
 -   Test
     
-    -   Bail early with the Bun test runner
-    -   Generate code coverage reports with the Bun test runner
-    -   Mark a test as a "todo" with the Bun test runner
-    -   Migrate from Jest to Bun's test runner
-    -   Mock functions in `bun test`
-    -   Re-run tests multiple times with the Bun test runner
-    -   Run tests in watch mode with Bun
-    -   Run your tests with the Bun test runner
-    -   Set a code coverage threshold with the Bun test runner
-    -   Set a per-test timeout with the Bun test runner
-    -   Set the system time in Bun's test runner
-    -   Skip tests with the Bun test runner
     -   Spy on methods in `bun test`
-    -   Update snapshots in `bun test`
+    -   Bail early with the Bun test runner
+    -   Mock functions in `bun test`
+    -   Run tests in watch mode with Bun
     -   Use snapshot testing in `bun test`
+    -   Skip tests with the Bun test runner
+    -   Using Testing Library with Bun
+    -   Update snapshots in `bun test`
+    -   Run your tests with the Bun test runner
+    -   Set the system time in Bun's test runner
+    -   Set a per-test timeout with the Bun test runner
+    -   Migrate from Jest to Bun's test runner
     -   Write browser DOM tests with Bun and happy-dom
+    -   Mark a test as a "todo" with the Bun test runner
+    -   Re-run tests multiple times with the Bun test runner
+    -   Generate code coverage reports with the Bun test runner
+    -   import, require, and test Svelte components with bun test
+    -   Set a code coverage threshold with the Bun test runner
 -   Util
     
-    -   Check if the current file is the entrypoint
+    -   Generate a UUID
+    -   Hash a password
+    -   Escape an HTML string
+    -   Get the current Bun version
+    -   Encode and decode base64 strings
+    -   Compress and decompress data with gzip
+    -   Sleep for a fixed number of milliseconds
+    -   Detect when code is executed with Bun
     -   Check if two objects are deeply equal
     -   Compress and decompress data with DEFLATE
-    -   Compress and decompress data with gzip
+    -   Get the absolute path to the current entrypoint
+    -   Get the directory of the current file
+    -   Check if the current file is the entrypoint
+    -   Get the file name of the current file
     -   Convert a file URL to an absolute path
     -   Convert an absolute path to a file URL
-    -   Detect when code is executed with Bun
-    -   Encode and decode base64 strings
-    -   Escape an HTML string
     -   Get the absolute path of the current file
-    -   Get the absolute path to the current entrypoint
-    -   Get the current Bun version
-    -   Get the directory of the current file
-    -   Get the file name of the current file
     -   Get the path to an executable bin file
-    -   Hash a password
-    -   Sleep for a fixed number of milliseconds
 -   WebSocket
     
     -   Build a publish-subscribe WebSocket server
@@ -346,16 +379,16 @@ Guides
     -   Set per-socket contextual data on a WebSocket
 -   Write file
     
-    -   Append content to a file
-    -   Copy a file to another location
     -   Delete a file
-    -   Write a Blob to a file
-    -   Write a file incrementally
-    -   Write a file to stdout
-    -   Write a ReadableStream to a file
-    -   Write a Response to a file
-    -   Write a string to a file
     -   Write to stdout
+    -   Write a file to stdout
+    -   Write a Blob to a file
+    -   Write a string to a file
+    -   Append content to a file
+    -   Write a file incrementally
+    -   Write a Response to a file
+    -   Copy a file to another location
+    -   Write a ReadableStream to a file
 
 Contributing
 ------------

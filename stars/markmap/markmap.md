@@ -1,6 +1,6 @@
 ---
 project: markmap
-stars: 11033
+stars: 11078
 description: Build mindmaps with plain text
 url: https://github.com/markmap/markmap
 ---
@@ -22,6 +22,7 @@ Markmap is also available in:
 -   VSCode and Open VSX
 -   Vim / Neovim: coc-markmap \- powered by coc.nvim
 -   Emacs: eaf-markmap -- powered by EAF
+-   MCP Server: markmap-mcp-server \- powered by MCP TypeScript SDK
 
 Usage
 -----

@@ -1,6 +1,6 @@
 ---
 project: Sink
-stars: 4307
+stars: 4482
 description: ⚡ A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.
 url: https://github.com/ccbikai/Sink
 ---
@@ -49,6 +49,7 @@ We welcome your contributions and PRs.
 -   Browser Extension - Sink Tool
 -   Raycast Extension - Raycast-Sink
 -   Apple Shortcuts - Sink Shortcuts
+-   iOS App - Sink
 -   Enhanced Link Management (with Cloudflare D1)
 -   Analytics Enhancements (Support for merging filter conditions)
 -   Dashboard Performance Optimization (Infinite loading)

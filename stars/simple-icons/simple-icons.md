@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 22490
+stars: 22525
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
@@ -158,6 +158,10 @@ Figma plugin
 Jekyll plugin
 
 @pirafrank
+
+Kando icon theme
+
+@Schneegans
 
 Miro app
 

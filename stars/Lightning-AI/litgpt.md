@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 12093
+stars: 12123
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -34,7 +34,7 @@ Quick start
 Install LitGPT
 
 ```
-pip install 'litgpt[all]'
+pip install 'litgpt[extra]'
 ```
 
 Load and use any of the 20+ LLMs:

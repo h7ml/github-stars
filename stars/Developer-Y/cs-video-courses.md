@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68671
+stars: 68711
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -65,6 +65,7 @@ Table of Contents
 -   Quantum Computing
 -   Robotics and Control
 -   Computational Finance
+-   Network Science
 -   Blockchain Development
 -   Misc
 
@@ -472,7 +473,7 @@ Courses
     -   Statistical Machine Learning - S2023 - Benyamin Ghojogh
     -   MIT 6.5940 EfficientML.ai Lecture, Fall 2023
     -   TinyML - Tiny Machine Learning at UPenn
-    -   ECE 4760 (Digital Systems Design Using Microcontrollers) at Cornell for the Fall, 2022
+    -   ECE 4760 (Digital Systems Design Using Microcontrollers) at Cornell for the Fall, 2022 (Spring 2021)
     -   EfficientML.ai Lecture, Fall 2023, MIT 6.5940
     -   SFU CMPT 727 Statistical Machine Learning, by Maxwell Libbrecht (Spring 2023) (Spring 2022)
     -   UC Berkeley CS 189 / 289A Introduction to Machine Learning fall 2023, by Jennifer Listgarten & Jitendra Malik
@@ -677,6 +678,7 @@ Courses
     -   Rochester DSCC 435 Optimization for Machine Learning fall 2023, by Jiaming Liang
     -   Princeton ELE539/COS512 Optimization for Machine Learning spring 2021, by Chi Jin
     -   UT Dallas CS 7301 Advanced Topics in Optimization for Machine Learning spring 2021, by Rishabh Iyer (YouTube)
+    -   Convex Analysis, Summer 2021 - TU Braunschweig (YouTube)
     -   EE364a: Convex Optimization I - Stanford University
     -   10-725 Convex Optimization, Spring 2015 - CMU
     -   10-725 Convex Optimization: Fall 2016 - CMU
@@ -1284,6 +1286,7 @@ Courses
 -   Theory of Quantum Communication - University of Waterloo - Fall 2020
 -   Intro to Quantum Computing - Nathan Wiebe
 -   COMS 4281 - Introduction to Quantum Computing -Columbia University
+-   Introduction to Quantum Information Science (Online book, PDF)
 
 * * *
 
@@ -1352,6 +1355,7 @@ Courses
 -   University of Wisconsin-Madison ECE 332 Feedback Control Systems fall 2021, by Steven Fredette
 -   MAE 509 Linear Matrix Inequality Methods in Optimal and Robust Control, by Matthew M. Peet
 -   UIUC CS 588 Autonomous Vehicle System Engineering fall 2021, by David Forsyth
+-   UCCS ECE4590/ECE5590 Model Predictive Control, by M. Scott Trimboli
 -   EPFL ME 425 Model Predictive Control fall 2020, by Colin Jones
 -   Robots That Learn - UC Berkeley CS 294-277
 -   Data-Driven Dynamical Systems with Machine Learning - Steve Brunton
@@ -1391,6 +1395,16 @@ Courses
 
 * * *
 
+### Network Science
+
+-   Network Science, 2021 - HSE
+-   Data Science for Business, HSE 2023
+-   MATH/COMP 479 Network Science Macalester College
+-   ACM Winter School on Network Science \_Dec 2023, Ahmedabad University
+-   Network Science 2021/2022 (ENS Lyon)
+
+* * *
+
 ### Blockchain Development
 
 -   **Blockchain and Cryptocurrencies**
@@ -1421,6 +1435,7 @@ Courses
     -   CS50's Introduction to Game Development
     -   MIT CMS.611J Creating Video Games, Fall 2014
     -   MOOC - Beginning Game Programming with C# - Coursera
+    -   Gatech ECE4795 GPU Programming for Video Games, Summer 2021
 -   **Geospatial**
     -   Introduction to Spatial Data Science, Autumn 2016, University of Chicago
     -   Spatial Regression Analysis, Spring 2017, University of Chicago
@@ -1446,9 +1461,21 @@ Courses
 -   Asymptotics and perturbation methods - Prof. Steven Strogatz
 -   ETH Zürich AI in the Sciences and Engineering
 -   Introduction to GIS Programming (Fall 2024) - Open Geospatial Solutions
+-   Gatech ECE3084 Signals and Systems summer 2020, by Aaron Lanterman
 -   UC Berkeley EE 120 Signals and Systems spring 2019, by Murat Arcak
 -   Stanford EE 102 spring 1999, Introduction to Signals and Systems, by Stephen Boyd
 -   Stanford EE 376a winter 2011, Information Theory, by Thomas Cover
 -   MIT RES.6.007 Signals and Systems, 1987 - MIT
+-   MIT 9.19 Computational Psycholinguistics, 2023 - MIT (YouTube)
+-   UCCS ECE4510/ECE5510 Feedback Control Systems, by Gregory Plett
+-   UCCS ECE4520/ECE5520 Multivariable Control Systems I, by Gregory Plett
+-   UCCS ECE4530/ECE5530 Multivariable Control Systems II, by Gregory Plett
+-   UCCS ECE4540/ECE5540 Digital Control Systems, by Gregory Plett
+-   UCCS ECE4550/ECE5550 Applied Kalman Filtering, by Gregory Plett
+-   UCCS ECE4560/ECE5560 System Identification, by Gregory Plett
+-   UCCS ECE4570/ECE5570 Optimization for Systems and Control, by M. Scott Trimboli
+-   UCCS ECE4580/ECE5580 Multivariable Control in the Frequency Domain, by M. Scott Trimboli
+-   UCCS ECE4710/ECE5710 Modeling, Simulation, and Identification of Battery Dynamics, by Gregory Plett
+-   UCCS ECE4720/ECE5720 Battery Management and Control, by Gregory Plett
 -   Purdue ME 597 Distributed Energy Resources Spring 2024, by Kevin J. Kircher
 -   Stanford AA228V/CS238V Validation of Safety Critical Systems Winter 2025, by Sydney Michelle Katz

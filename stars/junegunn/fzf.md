@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 70013
+stars: 70196
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -11,6 +11,8 @@ Special thanks to:
 ### Warp, the intelligent terminal for developers
 
 Available for MacOS, Linux, & Windows  
+
+* * *
 
 * * *
 

@@ -1,6 +1,6 @@
 ---
 project: prettymaps
-stars: 11624
+stars: 11632
 description: Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely
 url: https://github.com/marceloprates/prettymaps
 ---
@@ -9,9 +9,6 @@ prettymaps
 ==========
 
 A minimal Python library to draw customized maps from OpenStreetMap created using the osmnx, matplotlib, shapely and vsketch packages.
-
-Prettymaps is now available as a streamlit app!
-===============================================
 
 This work is licensed under a GNU Affero General Public License v3.0 (you can make commercial use, distribute and modify this project, but must **disclose** the source code with the license and copyright notice)
 
@@ -83,6 +80,10 @@ import prettymaps
 
 plot \= prettymaps.plot('Stad van de Zon, Heerhugowaard, Netherlands')
 
+```
+Fetching geodataframes took 13.76 seconds
+```
+
 You can also choose from different "presets" (parameter combinations saved in JSON files)
 
 See below an example using the "minimal" preset
@@ -93,6 +94,10 @@ plot \= prettymaps.plot(
     'Stad van de Zon, Heerhugowaard, Netherlands',
     preset \= 'minimal'
 )
+
+```
+Fetching geodataframes took 4.71 seconds
+```
 
 Run
 
@@ -172,17 +177,11 @@ minimal
 
 8
 
-my-preset
-
-{'layers': {'building': {'tags': {'building': ...
-
-9
-
 plotter
 
 {'layers': {'perimeter': {}, 'streets': {'widt...
 
-10
+9
 
 tijuca
 
@@ -343,6 +342,10 @@ plot \= prettymaps.plot(
     }
 )
 
+```
+Fetching geodataframes took 28.29 seconds
+```
+
 In order to plot an entire region and not just a rectangular or circular area, set
 
 radius \= False
@@ -353,6 +356,10 @@ plot \= prettymaps.plot(
     'Bom Fim, Porto Alegre, Brasil', radius \= False,
 )
 
+```
+Fetching geodataframes took 10.83 seconds
+```
+
 You can access layers's GeoDataFrames directly like this:
 
 import prettymaps
@@ -360,6 +367,10 @@ import prettymaps
 \# Run prettymaps in show = False mode (we're only interested in obtaining the GeoDataFrames)
 plot \= prettymaps.plot('Centro Histórico, Porto Alegre', show \= False)
 plot.geodataframes\['building'\]
+
+```
+Fetching geodataframes took 11.94 seconds
+```
 
 <style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
 
@@ -910,7 +921,7 @@ plot.geodataframes\['building'\]\[
 \].geometry\[0\]
 
 ```
-/home/marcelo/anaconda3/envs/prettymaps/lib/python3.11/site-packages/geopandas/geoseries.py:648: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+/opt/hostedtoolcache/Python/3.11.12/x64/lib/python3.11/site-packages/geopandas/geoseries.py:648: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   val = getattr(super(), mtd)(*args, **kwargs)
 ```
 
@@ -945,6 +956,10 @@ for ax,building in zip(np.concatenate(axes),buildings):
     ax.plot(\*building.exterior.xy, c \= '#ffffff')
     ax.autoscale(); ax.axis('off'); ax.axis('equal')
 
+```
+Fetching geodataframes took 12.50 seconds
+```
+
 Access plot.ax or plot.fig to add new elements to the matplotlib plot:
 
 import prettymaps
@@ -964,6 +979,10 @@ plot.fig.patch.set\_facecolor('#F2F4CB')
     size \= 50
 )
 
+```
+Fetching geodataframes took 12.74 seconds
+```
+
 Use **plotter** mode to export a pen plotter-compatible SVG (thanks to abey79's amazing vsketch library)
 
 import prettymaps
@@ -977,6 +996,10 @@ plot \= prettymaps.plot(
     scale\_y \= \-.6,
 )
 
+```
+Fetching geodataframes took 3.91 seconds
+```
+
 Some other examples
 
 import prettymaps
@@ -988,6 +1011,10 @@ plot \= prettymaps.plot(
     preset \= 'tijuca',
     adjust\_aspect\_ratio \= False
 )
+
+```
+Fetching geodataframes took 26.94 seconds
+```
 
 Use prettymaps.create\_preset() to create a preset:
 
@@ -1072,6 +1099,16 @@ plot \= prettymaps.multiplot(
     figsize\=(12, 12)
 )
 
+```
+Fetching geodataframes took 8.62 seconds
+
+
+Fetching geodataframes took 5.93 seconds
+
+
+Fetching geodataframes took 8.74 seconds
+```
+
 Add hillshade
 =============
 
@@ -1090,21 +1127,29 @@ plot \= prettymaps.plot(
 )
 
 ```
-The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
-make: Nothing to be done for 'download'.
-make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
-make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
-make: Nothing to be done for 'all'.
-make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
-make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
-cp SRTM1.vrt SRTM1.2d5b6f11e0e74b44a9386ba897fb0852.vrt
-make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
-make: Entering directory '/home/marcelo/.cache/elevation/SRTM1'
-gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.2d5b6f11e0e74b44a9386ba897fb0852.vrt /home/marcelo/Projects/Art/prettymaps/notebooks/elevationa.tif
-rm -f SRTM1.2d5b6f11e0e74b44a9386ba897fb0852.vrt
-make: Leaving directory '/home/marcelo/.cache/elevation/SRTM1'
+Fetching geodataframes took 47.61 seconds
+
+
+make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+curl -s -o spool/N21/N21W158.hgt.gz.temp https://s3.amazonaws.com/elevation-tiles-prod/skadi/N21/N21W158.hgt.gz && mv spool/N21/N21W158.hgt.gz.temp spool/N21/N21W158.hgt.gz
+
+
+gunzip spool/N21/N21W158.hgt.gz 2>/dev/null || touch spool/N21/N21W158.hgt
+gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 spool/N21/N21W158.hgt cache/N21/N21W158.tif 2>/dev/null || touch cache/N21/N21W158.tif
+
+
+rm spool/N21/N21W158.hgt
+make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+gdalbuildvrt -q -overwrite SRTM1.vrt cache/N21/N21W158.tif
+make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+cp SRTM1.vrt SRTM1.286507e05dd14c97a364976914d44158.vrt
+make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
+gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.286507e05dd14c97a364976914d44158.vrt /home/runner/work/prettymaps/prettymaps/notebooks/elevation.tif
+rm -f SRTM1.286507e05dd14c97a364976914d44158.vrt
+make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 
 
 WARNING:matplotlib.axes._base:Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
@@ -1128,3 +1173,7 @@ plot \= prettymaps.plot(
         }
     },
 )
+
+```
+Fetching geodataframes took 18.23 seconds
+```

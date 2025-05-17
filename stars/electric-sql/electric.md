@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 8175
+stars: 8308
 description: Real-time sync for Postgres.
 url: https://github.com/electric-sql/electric
 ---
@@ -88,7 +88,10 @@ We use asdf to install Elixir, Erlang, and Node.js. Versions are defined in .too
 ### Mac setup
 
 brew install asdf
-asdf plugin-add nodejs elixir erlang
+asdf plugin add nodejs
+asdf plugin add pnpm
+asdf plugin add elixir
+asdf plugin add erlang
 asdf install
 
 You'll probably need to fiddle with your bash/zsh/etc rc file to load the right tool into your environment.

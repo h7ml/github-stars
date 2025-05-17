@@ -1,6 +1,6 @@
 ---
 project: dia
-stars: 15224
+stars: 15768
 description: A TTS model capable of generating ultra-realistic dialogue in one pass.
 url: https://github.com/nari-labs/dia
 ---
@@ -35,6 +35,11 @@ Generation Guidelines
 
 # Install directly from GitHub
 pip install git+https://github.com/nari-labs/dia.git
+
+### Set HF\_TOKEN ENV var
+
+# Set the HF\_TOKEN ENV var to auto download config from HF Hub
+export HF\_TOKEN="your token"
 
 ### Run the Gradio UI
 
@@ -76,6 +81,20 @@ model \= Dia.from\_pretrained("nari-labs/Dia-1.6B", compute\_dtype\="float16")
 text \= "\[S1\] Dia is an open weights text to dialogue model. \[S2\] You get full control over scripts and voices. \[S1\] Wow. Amazing. (laughs) \[S2\] Try it now on Git hub or Hugging Face."
 
 output \= model.generate(text, use\_torch\_compile\=True, verbose\=True)
+
+model.save\_audio("simple.mp3", output)
+
+If you're on Mac with Apple Silicon, you can use the following code to make it work. For MPS to work `use_torch_compile` must be set to `False`. As that feature isn't supported yet.
+
+from dia.model import Dia
+
+model \= Dia.from\_pretrained("nari-labs/Dia-1.6B", compute\_dtype\="float16")
+
+text \= "\[S1\] Dia is an open weights text to dialogue model. \[S2\] You get full control over scripts and voices. \[S1\] Wow. Amazing. (laughs) \[S2\] Try it now on Git hub or Hugging Face."
+
+\# It is important to set the \`use\_torch\_compile\` argument to \`False\` when using Dia on MacOS.
+\# This is because the \`torch.compile\` function is not supported on MacOS.
+output \= model.generate(text, use\_torch\_compile\=False, verbose\=True)
 
 model.save\_audio("simple.mp3", output)
 

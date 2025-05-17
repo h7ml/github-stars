@@ -1,6 +1,6 @@
 ---
 project: ToolJet
-stars: 35647
+stars: 35682
 description: Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀
 url: https://github.com/ToolJet/ToolJet
 ---
@@ -18,7 +18,7 @@ All features
 -   **Multiplayer editing:** Allows simultaneous app building by multiple developers.
 -   **50+ data sources:** Integrate with external databases, cloud storage, and APIs.
 -   **Desktop & mobile:** Customize layout widths to fit various screen sizes.
--   **Self-host:** Supports Docker, Kubernetes, AWS EC2, Google Cloud Run, and more.
+-   **Self-host:** Supports Docker, Kubernetes, AWS AMI, Google Cloud Run, and more.
 -   **Collaborate:** Add comments anywhere on the canvas and tag your team members.
 -   **Extend with plugins:** Use our command-line tool to easily bootstrap new connectors.
 -   **Version control:** Manage multiple application versions with a structured release cycle.
@@ -73,7 +73,7 @@ Documentation is available at https://docs.tooljet.ai.
 Self-hosted
 -----------
 
-You can use ToolJet Cloud for a fully managed solution. If you want to self-host ToolJet, we have guides on deploying ToolJet on Kubernetes, AWS EC2, Docker, and more.
+You can use ToolJet Cloud for a fully managed solution. If you want to self-host ToolJet, we have guides on deploying ToolJet on Kubernetes, AWS AMI, Docker, and more.
 
 Provider
 
@@ -87,7 +87,7 @@ Docker
 
 Link
 
-AWS EC2
+AWS AMI
 
 Link
 

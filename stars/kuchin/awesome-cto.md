@@ -1,6 +1,6 @@
 ---
 project: awesome-cto
-stars: 30620
+stars: 30656
 description: A curated and opinionated list of resources for Chief Technology Officers, with the emphasis on startups
 url: https://github.com/kuchin/awesome-cto
 ---
@@ -52,6 +52,7 @@ CTO Position
 -   Your first 90 days as CTO or VP Engineering - Will Larson
 -   How to spend your first 30 days in a new senior-level role
 -   The difference between a CTO and a VP Engineering
+-   Evolution of my role as a founder CTO, Year 4 Update, Year 5 Update - Miguel Carranza
 
 Hiring
 ------
@@ -85,7 +86,6 @@ People Management
 -   44 Engineering Management Lessons (correct link to non-violent communication for lesson 34)
 -   The Secret To Discussing Pay With Employees
 -   Awesome Leading and Managing _(Github)_
--   Progressing from tech to leadership
 -   A Review Process - Cap Watkins
 -   12 manager readmes from top tech companies
 -   Predictable Delivery
@@ -346,6 +346,7 @@ Books
 
 -   Epic CTO Reading List
 -   The Mythical Man-Month
+-   Startup CTO's Handbook
 
 More links
 ----------
@@ -365,6 +366,7 @@ More links
 -   The Leadership Library for Engineers
 -   Rands Leadership Slack
 -   Engineering Managers Slack
+-   CTO Framework
 
 Other
 -----

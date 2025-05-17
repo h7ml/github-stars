@@ -1,6 +1,6 @@
 ---
 project: build-push-action
-stars: 4748
+stars: 4762
 description: GitHub Action to build and push Docker images with Buildx
 url: https://github.com/docker/build-push-action
 ---
@@ -453,6 +453,14 @@ If `false`, build record upload as GitHub artifact is disabled
 Number
 
 Duration after which build record artifact will expire in days. Defaults to repository/org retention settings if unset or `0`
+
+`DOCKER_BUILD_EXPORT_LEGACY`
+
+Bool
+
+`false`
+
+If `true`, exports build using legacy export-build tool instead of `buildx history export` command
 
 Troubleshooting
 ---------------

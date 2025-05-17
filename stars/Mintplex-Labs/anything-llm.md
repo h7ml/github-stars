@@ -1,12 +1,12 @@
 ---
 project: anything-llm
-stars: 43891
+stars: 44159
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
 
 **AnythingLLM:** The all-in-one AI app you were looking for.  
-Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustrating set up required.
+Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustrating setup required.
 
 | | Docs | Hosted Instance
 
@@ -14,7 +14,7 @@ Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustra
 
 👉 AnythingLLM for desktop (Mac, Windows, & Linux)! Download Now
 
-A full-stack application that enables you to turn any document, resource, or piece of content into context that any LLM can use as references during chatting. This application allows you to pick and choose which LLM or Vector Database you want to use as well as supporting multi-user management and permissions.
+A full-stack application that enables you to turn any document, resource, or piece of content into context that any LLM can use as a reference during chatting. This application allows you to pick and choose which LLM or Vector Database you want to use as well as supporting multi-user management and permissions.
 
 Watch the demo!
 
@@ -35,7 +35,7 @@ Cool features of AnythingLLM
 -   🦾 Agents inside your workspace (browse the web, etc)
 -   💬 Custom Embeddable Chat widget for your website _Docker version only_
 -   📖 Multiple document type support (PDF, TXT, DOCX, etc)
--   Simple chat UI with Drag-n-Drop funcitonality and clear citations.
+-   Simple chat UI with Drag-n-Drop functionality and clear citations.
 -   100% Cloud deployment ready.
 -   Works with all popular closed and open-source LLM providers.
 -   Built-in cost & time-saving measures for managing very large documents compared to any other chat UI.
@@ -124,7 +124,7 @@ This monorepo consists of six main sections:
 -   `embed`: Submodule for generation & creation of the web embed widget.
 -   `browser-extension`: Submodule for the chrome browser extension.
 
-🛳 Self Hosting
+🛳 Self-Hosting
 ---------------
 
 Mintplex Labs & the community maintain a number of deployment methods, scripts, and templates that you can use to run AnythingLLM locally. Refer to the table below to read how to deploy on your preferred environment or to automatically deploy.
@@ -192,9 +192,9 @@ We will only track usage details that help us make product and roadmap decisions
     
 -   When a document is added or removed. No information _about_ the document. Just that the event occurred. This gives us an idea of use.
     
--   Type of vector database in use. Let's us know which vector database provider is the most used to prioritize changes when updates arrive for that provider.
+-   Type of vector database in use. This helps us prioritize changes when updates arrive for that provider.
     
--   Type of LLM provider & model tag in use. Let's us know the most popular choice and prioritize changes when updates arrive for that provider or model, or combination thereof. eg: reasoning vs regular, multi-modal models, etc.
+-   Type of LLM provider & model tag in use. This helps us prioritize changes when updates arrive for that provider or model, or combination thereof. eg: reasoning vs regular, multi-modal models, etc.
     
 -   When a chat is sent. This is the most regular "event" and gives us an idea of the daily-activity of this project across all installations. Again, only the **event** is sent - we have no information on the nature or content of the chat itself.
     
@@ -211,6 +211,13 @@ View all telemetry events in source code
 -   create issue
 -   create PR with branch name format of `<issue number>-<short name>`
 -   LGTM from core-team
+
+💖 Sponsors
+-----------
+
+### Premium Sponsors
+
+### All Sponsors
 
 🌟 Contributors
 ---------------

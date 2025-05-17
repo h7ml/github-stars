@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 60317
+stars: 60847
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -137,7 +137,7 @@ We have implemented support for the following model service providers:
 -   **OpenRouter**: OpenRouter is a service platform providing access to various cutting-edge large model interfaces, supporting OpenAI, Anthropic, LLaMA, and more, suitable for diverse development and application needs. Users can flexibly choose the optimal model and pricing based on their requirements, enhancing the AI experience.
 -   **Cloudflare Workers AI**: Run serverless GPU-powered machine learning models on Cloudflare's global network.
 
-See more providers (+30)
+See more providers (+31)
 
 -   **GitHub**: With GitHub Models, developers can become AI engineers and leverage the industry's leading AI models.
 -   **Novita**: Novita AI is a platform providing a variety of large language models and AI image generation API services, flexible, reliable, and cost-effective. It supports the latest open-source models like Llama3 and Mistral, offering a comprehensive, user-friendly, and auto-scaling API solution for generative AI application development, suitable for the rapid growth of AI startups.
@@ -169,8 +169,9 @@ See more providers (+30)
 -   **360 AI**: 360 AI is an AI model and service platform launched by 360 Company, offering various advanced natural language processing models, including 360GPT2 Pro, 360GPT Pro, 360GPT Turbo, and 360GPT Turbo Responsibility 8K. These models combine large-scale parameters and multimodal capabilities, widely applied in text generation, semantic understanding, dialogue systems, and code generation. With flexible pricing strategies, 360 AI meets diverse user needs, supports developer integration, and promotes the innovation and development of intelligent applications.
 -   **Search1API**: Search1API provides access to the DeepSeek series of models that can connect to the internet as needed, including standard and fast versions, supporting a variety of model sizes.
 -   **InfiniAI**: Provides high-performance, easy-to-use, and secure large model services for application developers, covering the entire process from large model development to service deployment.
+-   **Qiniu**: Qiniu, as a long-established cloud service provider, delivers cost-effective and reliable AI inference services for both real-time and batch processing, with a simple and user-friendly experience.
 
-> 📊 Total providers: **40**
+> 📊 Total providers: **41**
 
 At the same time, we are also planning to support more model service providers. If you would like LobeChat to support your favorite service provider, feel free to join our 💬 community discussion.
 
@@ -242,7 +243,7 @@ By **vsnthdev** on **2024-12-02**
 Searches Google through their official CSE API.  
 `web` `search`
 
-> 📊 Total plugins: **44**
+> 📊 Total plugins: **43**
 
 ### `11` Agent Market (GPTs)
 

@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 48580
+stars: 49068
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -492,7 +492,7 @@ Qwen2-Audio
 
 qwen2\_audio
 
-Qwen2.5-Omni\*\*
+Qwen2.5-Omni\*
 
 3B/7B
 
@@ -503,6 +503,12 @@ Qwen2-VL/Qwen2.5-VL/QVQ
 2B/3B/7B/32B/72B
 
 qwen2\_vl
+
+Seed Coder
+
+8B
+
+seed\_coder
 
 Skywork o1
 
@@ -739,6 +745,7 @@ Preference datasets
 -   COIG-P (en&zh)
 -   RLHF-V (en)
 -   VLFeedback (en)
+-   RLAIF-V (en)
 -   Orca DPO Pairs (en)
 -   HH-RLHF (en)
 -   Nectar (en)
@@ -969,6 +976,18 @@ Run LLaMA-Factory in the isolated environment:
 uv run --prerelease=allow llamafactory-cli train examples/train\_lora/llama3\_lora\_pretrain.yaml
 
 For Windows users
+
+#### Install PyTorch
+
+You need to manually install the GPU version of PyTorch on the Windows platform. Please refer to the official website and the following command to install PyTorch with CUDA support:
+
+pip uninstall torch torchvision torchaudio
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+python -c "import torch; print(torch.cuda.is\_available())"
+
+If you see `True` then you have successfully installed PyTorch with CUDA support.
+
+Try `dataloader_num_workers: 0` if you encounter `Can't pickle local object` error.
 
 #### Install BitsAndBytes
 

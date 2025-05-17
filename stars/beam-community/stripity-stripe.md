@@ -1,6 +1,6 @@
 ---
 project: stripity-stripe
-stars: 1016
+stars: 1019
 description: An Elixir Library for Stripe
 url: https://github.com/beam-community/stripity-stripe
 ---

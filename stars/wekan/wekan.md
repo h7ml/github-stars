@@ -1,6 +1,6 @@
 ---
 project: wekan
-stars: 20231
+stars: 20271
 description: The Open Source kanban (built with Meteor). Keep variable/table/field names camelCase. For translations, only add Pull Request changes to wekan/i18n/en.i18n.json , other translations are done at https://app.transifex.com/wekan/wekan only.
 url: https://github.com/wekan/wekan
 ---

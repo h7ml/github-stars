@@ -1,6 +1,6 @@
 ---
 project: pytudes
-stars: 23680
+stars: 23740
 description: Python programs, usually short, of considerable difficulty, to perfect particular skills.
 url: https://github.com/norvig/pytudes
 ---
