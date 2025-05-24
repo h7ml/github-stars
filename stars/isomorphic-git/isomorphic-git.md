@@ -1,6 +1,6 @@
 ---
 project: isomorphic-git
-stars: 7703
+stars: 7710
 description: A pure JavaScript implementation of git for node and browsers!
 url: https://github.com/isomorphic-git/isomorphic-git
 ---
@@ -117,7 +117,9 @@ Then check out the Useful Snippets page, which includes even more sample code wr
 
 Unfortunately, due to the same-origin policy by default `isomorphic-git` can only clone from the same origin as the webpage it is running on. This is terribly inconvenient, as it means for all practical purposes cloning and pushing repos must be done through a proxy.
 
-For this purpose @isomorphic-git/cors-proxy exists which you can clone or `npm install`. For testing or small projects, you can also use https://cors.isomorphic-git.org - a free proxy sponsored by Clever Cloud.
+For this purpose, @isomorphic-git/cors-proxy exists; which you can clone it or `npm install` it. Alternatively, use CloudFlare workers, which can be setup without leaving the browser (instructions).
+
+For testing or small projects, you can also use https://cors.isomorphic-git.org - a free proxy sponsored by Clever Cloud.
 
 We hope to get CORS headers added to all the major Git hosting platforms eventually, and will list the progress made here:
 
@@ -593,6 +595,14 @@ Thanks goes to these wonderful people (emoji key):
   
 **Luke Cotter**  
 💻
+
+  
+**Tom Larkworthy**  
+📖
+
+  
+**Mostafa Mahmoud**  
+💻 ⚠️ 💬
 
 This project follows the all-contributors specification. Contributions of any kind welcome!
 

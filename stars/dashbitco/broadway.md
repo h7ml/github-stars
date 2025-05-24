@@ -1,6 +1,6 @@
 ---
 project: broadway
-stars: 2519
+stars: 2525
 description: Concurrent and multi-stage data ingestion and data processing with Elixir
 url: https://github.com/dashbitco/broadway
 ---

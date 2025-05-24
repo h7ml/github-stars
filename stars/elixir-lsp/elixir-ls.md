@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1601
+stars: 1603
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -289,6 +289,14 @@ Broken formatter #975
 27
 
 1.17 - 1.18
+
+Yes
+
+None
+
+28
+
+1.18.4
 
 Yes
 

@@ -1,6 +1,6 @@
 ---
 project: every-programmer-should-know
-stars: 87104
+stars: 87154
 description: A collection of (mostly) technical things every software developer should know about
 url: https://github.com/mtdvio/every-programmer-should-know
 ---

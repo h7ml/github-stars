@@ -1,6 +1,6 @@
 ---
 project: exfmt
-stars: 433
+stars: 432
 description: 🌸 An opinionated Elixir source code formatter
 url: https://github.com/lpil/exfmt
 ---

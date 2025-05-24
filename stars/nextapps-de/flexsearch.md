@@ -1,11 +1,11 @@
 ---
 project: flexsearch
-stars: 12948
+stars: 12967
 description: Next-generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
 
-FlexSearch v0.8: Overview and Migration Guide
+Getting instant help by the DeepWiki AI assistant:
 
 ==
 
@@ -328,103 +328,103 @@ flexsearch.bundle.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.bundle.min.js
 
 flexsearch.bundle.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.bundle.debug.js
 
 flexsearch.bundle.module.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.module.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.bundle.module.min.js
 
 flexsearch.bundle.module.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.bundle.module.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.bundle.module.debug.js
 
 flexsearch.compact.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.compact.min.js
 
 flexsearch.compact.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.compact.debug.js
 
 flexsearch.compact.module.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.module.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.compact.module.min.js
 
 flexsearch.compact.module.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.compact.module.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.compact.module.debug.js
 
 flexsearch.light.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.light.min.js
 
 flexsearch.light.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.light.debug.js
 
 flexsearch.light.module.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.module.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.light.module.min.js
 
 flexsearch.light.module.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.light.module.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.light.module.debug.js
 
 flexsearch.es5.min.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.es5.min.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.es5.min.js
 
 flexsearch.es5.debug.js
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/flexsearch.es5.debug.js
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/flexsearch.es5.debug.js
 
 Javascript Modules (ESM)
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/module/
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/module/
 
 Javascript Modules Minified (ESM)
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/module-min/
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/module-min/
 
 Javascript Modules Debug (ESM)
 
 Download
 
-https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.1/dist/module-debug/
+https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.2/dist/module-debug/
 
 flexsearch.custom.js
 
@@ -689,7 +689,7 @@ Also, pre-compiled non-bundled production-ready modules are located in `dist/mod
 You can also load modules via CDN:
 
 <script type\="module"\>
-    import Index from "https://unpkg.com/flexsearch@0.8.1/dist/module/index.js";
+    import Index from "https://unpkg.com/flexsearch@0.8.2/dist/module/index.js";
     const index \= new Index(/\* ... \*/);
 </script\>
 
@@ -770,6 +770,7 @@ Examples Node.js (CommonJS)
 -   basic-export-import
 -   document
 -   document-persistent
+-   document-resolver
 -   document-worker
 -   document-worker-extern-config
 -   document-export-import
@@ -788,6 +789,7 @@ Examples Node.js (ESM/Module)
 -   basic-export-import
 -   document
 -   document-persistent
+-   document-resolver
 -   document-worker
 -   document-worker-extern-config
 -   document-export-import
@@ -804,6 +806,7 @@ Examples Browser (Legacy)
 -   document
 -   document-highlighting
 -   document-persistent
+-   document-resolver
 -   document-worker
 -   language-pack
 
@@ -818,6 +821,7 @@ Examples Browser (ESM/Module)
 -   document
 -   document-highlighting
 -   document-persistent
+-   document-resolver
 -   document-worker
 -   document-worker-extern-config
 -   language-pack
@@ -1086,6 +1090,7 @@ The configuration profile as a shortcut or as a base for your custom settings.
 tokenize
 
 "strict" / "exact"  
+"tolerant"  
 "forward"  
 "reverse" / "bidirectional  
 "full"
@@ -1210,7 +1215,7 @@ limit
 
 number
 
-Sets the limit of results.
+Sets the limit of results
 
 100
 
@@ -1218,17 +1223,39 @@ offset
 
 number
 
-Apply offset (skip items).
+Apply offset (skip items)
 
 0
+
+resolution
+
+number
+
+Limit the resolution (score) of the results
 
 suggest
 
 Boolean
 
-Enables suggestions in results.
+Enables Suggestions in results
 
 false
+
+cache
+
+Boolean
+
+Use a Query Cache
+
+false
+
+resolve
+
+Boolean
+
+When set to `false`, an instance of a Resolver is returned to apply further operations
+
+true
 
 Suggestions
 -----------
@@ -1318,6 +1345,17 @@ foob`ar`
 fo`obar`
 
 2n - 1
+
+`"tolerant"`
+
+index the full term by also being tolerant against typos like swapped letters and missing letters
+
+`foobra`  
+`foboar`  
+`foobr`  
+`fooba`
+
+1 + 2(n - 2)
 
 `"full"`
 
@@ -1413,9 +1451,9 @@ Fuzzy-Search
 
 FlexSearch provides several methods to achieve fuzziness to make queries more tolerant:
 
-1.  Use a tokenizer: `forward`, `reverse` or `full`
-2.  Don't forget to use any of the builtin encoder `simple` > `balance` > `advanced` > `extra` > `soundex` (sorted by fuzziness)
-3.  Use one of the language specific presets e.g. `/lang/en.js` for en-US specific content
+1.  Use a tokenizer: `tolerant`, `forward`, `reverse` or `full`
+2.  Consider using any of the builtin encoder `normalize` > `balance` > `advanced` > `extra` > `soundex` (sorted by fuzziness)
+3.  Use one of the language-specific presets e.g. `/lang/en.js` for en-US specific content
 4.  Enable suggestions by passing the search option `suggest: true`
 
 Additionally, you can apply custom `Mapper`, `Replacer`, `Stemmer`, `Filter` or by assigning a custom `normalize(str)`, `prepare(str)` or `finalize(arr)` function to the Encoder.
@@ -1511,7 +1549,7 @@ The index size was measured after indexing the book "Gulliver's Travels".
 Fast-Update Mode
 ----------------
 
-The default mode is highly optimized for search performance and adding contents to the index. Whenever you need to `update` or `remove` existing contents of an index you can enable an additional register which boost those tasks also to a high-performance level. This register will take an extra amount of memory (~30% increase of index size).
+The default mode is highly optimized for search performance and adding contents to the index. Whenever you need to `update` or `remove` existing contents of an index you can enable an additional register that boosts those tasks also to a high-performance level. This register will take an extra amount of memory (~30% increase of index size).
 
 const index \= new Index({
   fastupdate: true

@@ -1,11 +1,11 @@
 ---
 project: imgproxy
-stars: 9561
+stars: 9580
 description: Fast and secure standalone server for resizing and converting remote images
 url: https://github.com/imgproxy/imgproxy
 ---
 
-#### Website | Blog | Documentation | imgproxy Pro
+**Website | Blog | Documentation | imgproxy Pro**
 
 * * *
 
@@ -60,11 +60,9 @@ Special thanks
 Many thanks to:
 
 -   Evil Martians for providing a steady launch pad for imgproxy
--   Roman Shamin for the awesome logo
--   Alena Kirdina, Alexander Madyankin, and Aleksandr Slepchenkov for the great website
+-   Roman Shamin for the awesome logo and website design
 -   John Cupitt and Kleis Auke Wolthuizen for developing libvips and for helping me optimize its usage with imgproxy
--   Kirill Kuznetsov and Andrew Kozin for the Helm chart
--   Travis Turner and Andy Baranov for keeping the documentation in good shape
+-   Kirill Kuznetsov for the Helm chart
 
 License
 -------

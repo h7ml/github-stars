@@ -1,6 +1,6 @@
 ---
 project: public-apis
-stars: 341548
+stars: 346667
 description: A collective list of free APIs
 url: https://github.com/public-apis/public-apis
 ---
@@ -12,7 +12,9 @@ The Public APIs repository is manually curated by community members like you and
 
   
 
-APILayer is the fastest way to integrate APIs into any product. There are a lot of APIs available at APILayer Marketplace.
+APILayer is the fastest way to integrate APIs into any product. Explore APILayer APIs here for your next project.
+
+Join our Discord server to get updates, ask questions, get answers, random community calls, and more.
 
   
 
@@ -25,7 +27,7 @@ Description
 
 Call this API
 
-IP Stack
+IPstack
 
 Locate and Identify Website Visitors by IP Address
 
@@ -44,6 +46,10 @@ Global Phone Number Validation & Lookup JSON API
 Fixer
 
 Fixer is a simple and lightweight API for current and historical foreign exchange (forex) rates.
+
+Aviationstack
+
+Free, real-time flight status and global Aviation data API
 
   
 
@@ -1699,7 +1705,7 @@ HTTPS
 
 CORS
 
-Abstract Public Holidays
+Public Holidays
 
 Data on national, regional, and religious holidays via API
 
@@ -3089,7 +3095,7 @@ Yes
 
 Yes
 
-Abstract Screenshot
+Screenshot
 
 Take programmatic screenshots of web pages from any website
 
@@ -4734,16 +4740,6 @@ HTTPS
 
 CORS
 
-Abstract Email Validation
-
-Validate email addresses for deliverability and spam
-
-`apiKey`
-
-Yes
-
-Yes
-
 apilayer mailboxlayer
 
 Email address validation
@@ -4753,6 +4749,16 @@ Email address validation
 Yes
 
 Unknown
+
+Email Validation
+
+Validate email addresses for deliverability and spam
+
+`apiKey`
+
+Yes
+
+Yes
 
 Cloudmersive Validate
 
@@ -5264,7 +5270,7 @@ HTTPS
 
 CORS
 
-Abstract VAT Validation
+VAT Validation
 
 Validate VAT numbers and calculate VAT rates
 
@@ -6957,7 +6963,7 @@ HTTPS
 
 CORS
 
-Abstract IP Geolocation
+IP Geolocation
 
 Geolocate website visitors from their IPs
 
@@ -10772,7 +10778,7 @@ HTTPS
 
 CORS
 
-Abstract Phone Validation
+Phone Validation
 
 Validate phone numbers globally
 

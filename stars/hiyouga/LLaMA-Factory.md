@@ -1,9 +1,11 @@
 ---
 project: LLaMA-Factory
-stars: 49068
+stars: 49839
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
+
+### Used by Amazon, NVIDIA, Aliyun, etc.
 
 ### Supporters ❤️
 
@@ -28,9 +30,7 @@ Choose your path:
 -   **Documentation**: https://llamafactory.readthedocs.io/en/latest/
 -   **Colab (free)**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
 -   **Local machine**: Please refer to usage
--   **PAI-DSW (free trial)**: Llama3 Example | Qwen2-VL Example | DeepSeek-R1-Distill Example
--   **Amazon SageMaker**: Blog
--   **Easy Dataset**: Fine-tune on Synthetic Data
+-   **PAI-DSW (free trial)**: https://gallery.pai-ml.com/#/preview/deepLearning/nlp/llama\_factory
 
 Note
 
@@ -40,7 +40,7 @@ Table of Contents
 -----------------
 
 -   Features
--   Benchmark
+-   Blogs
 -   Changelog
 -   Supported Models
 -   Supported Training Approaches
@@ -88,17 +88,18 @@ Day 1
 
 Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 
-Benchmark
----------
+Blogs
+-----
 
-Compared to ChatGLM's P-Tuning, LLaMA Factory's LoRA tuning offers up to **3.7 times faster** training speed with a better Rouge score on the advertising text generation task. By leveraging 4-bit quantization technique, LLaMA Factory's QLoRA further improves the efficiency regarding the GPU memory.
+-   How Apoidea Group enhances visual information extraction from banking documents with multimodal models using LLaMA-Factory on Amazon SageMaker HyperPod (English)
+-   Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
+-   LLaMA Factory: Fine-tuning the DeepSeek-R1-Distill-Qwen-7B Model for News Classifier (Chinese)
 
-Definitions
+All Blogs
 
--   **Training Speed**: the number of training samples processed per second during the training. (bs=4, cutoff\_len=1024)
--   **Rouge Score**: Rouge-2 score on the development set of the advertising text generation task. (bs=4, cutoff\_len=1024)
--   **GPU Memory**: Peak GPU memory usage in 4-bit quantized training. (bs=1, cutoff\_len=1024)
--   We adopt `pre_seq_len=128` for ChatGLM's P-Tuning and `lora_rank=32` for LLaMA Factory's LoRA tuning.
+-   A One-Stop Code-Free Model Fine-Tuning & Deployment Platform based on SageMaker and LLaMA-Factory (Chinese)
+-   LLaMA Factory Multi-Modal Fine-Tuning Practice: Fine-Tuning Qwen2-VL for Personal Tourist Guide (Chinese)
+-   LLaMA Factory: Fine-tuning the LLaMA3 Model for Role-Playing (Chinese)
 
 Changelog
 ---------
@@ -227,7 +228,7 @@ Full Changelog
 
 \[23/06/03\] We supported quantized training and inference (aka **QLoRA**). See examples for usage.
 
-Note
+Tip
 
 If you cannot use the latest feature, please pull the latest code and install LLaMA-Factory again.
 
@@ -336,7 +337,7 @@ InternLM 2-3
 
 intern2
 
-InternVL 2.5-3\*
+InternVL 2.5-3
 
 1B/2B/8B/14B/38B/78B
 
@@ -492,7 +493,7 @@ Qwen2-Audio
 
 qwen2\_audio
 
-Qwen2.5-Omni\*
+Qwen2.5-Omni
 
 3B/7B
 
@@ -778,6 +779,12 @@ torch
 
 2.6.0
 
+torchvision
+
+0.15.0
+
+0.21.0
+
 transformers
 
 4.45.0
@@ -957,13 +964,13 @@ Installation is mandatory.
 
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
-pip install -e ".\[torch,metrics\]"
+pip install -e ".\[torch,metrics\]" --no-build-isolation
 
 Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
 
 Tip
 
-Use `pip install --no-deps -e .` to resolve package conflicts.
+Use `pip install -e . --no-deps --no-build-isolation` to resolve package conflicts.
 
 Setting up a virtual environment with **uv**
 
@@ -1379,6 +1386,7 @@ Click to show
 93.  **RAG-Retrieval**: A full pipeline for RAG retrieval model fine-tuning, inference, and distillation. \[blog\]
 94.  **360-LLaMA-Factory**: A modified library that supports long sequence SFT & DPO using ring attention.
 95.  **Sky-T1**: An o1-like model fine-tuned by NovaSky AI with very small cost.
+96.  **WeClone**: One-stop solution for creating your digital avatar from chat logs.
 
 License
 -------

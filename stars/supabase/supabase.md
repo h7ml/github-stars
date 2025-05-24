@@ -1,6 +1,6 @@
 ---
 project: supabase
-stars: 82949
+stars: 83332
 description: The open source Firebase alternative. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
 url: https://github.com/supabase/supabase
 ---

@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 12123
+stars: 12154
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -12,7 +12,7 @@ url: https://github.com/Lightning-AI/litgpt
 
 ✅ From scratch implementations      ✅ No abstractions         ✅ Beginner friendly
    ✅ Flash attention                   ✅ FSDP                    ✅ LoRA, QLoRA, Adapter
-✅ Reduce GPU memory (fp4/8/16/32)   ✅ 1-1000+ GPUs/TPUs       ✅ 20+ LLMs
+✅ Reduce GPU memory (fp4/8/16/32)   ✅ 1-1000+ GPUs/TPUs       ✅ 20+ LLMs         
 
 * * *
 

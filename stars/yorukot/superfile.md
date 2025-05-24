@@ -1,6 +1,6 @@
 ---
 project: superfile
-stars: 13772
+stars: 13827
 description: Pretty fancy and modern terminal file manager
 url: https://github.com/yorukot/superfile
 ---

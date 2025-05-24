@@ -1,6 +1,6 @@
 ---
 project: rustdesk
-stars: 88413
+stars: 88973
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---
@@ -15,7 +15,7 @@ Caution
 **Misuse Disclaimer:**  
 The developers of RustDesk do not condone or support any unethical or illegal use of this software. Misuse, such as unauthorized access, control or invasion of privacy, is strictly against our guidelines. The authors are not responsible for any misuse of the application.
 
-Chat with us: Discord | Twitter | Reddit
+Chat with us: Discord | Twitter | Reddit | YouTube
 
 Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our rendezvous/relay server, set up your own, or write your own rendezvous/relay server.
 

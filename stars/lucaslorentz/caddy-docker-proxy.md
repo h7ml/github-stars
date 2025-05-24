@@ -1,6 +1,6 @@
 ---
 project: caddy-docker-proxy
-stars: 3562
+stars: 3584
 description: Caddy as a reverse proxy for Docker
 url: https://github.com/lucaslorentz/caddy-docker-proxy
 ---
@@ -454,7 +454,7 @@ To proxy swarm services, labels should be defined at service level. In a docker-
 
 services:
   foo:
-    deploy:
+    deploy: # <-- labels should be \_inside\_ \`deploy\`
       labels:
         caddy: service.example.com
         caddy.reverse\_proxy: {{upstreams}}

@@ -1,6 +1,6 @@
 ---
 project: floating-ui
-stars: 31149
+stars: 31175
 description: A JavaScript library to position floating elements and create interactions for them.
 url: https://github.com/floating-ui/floating-ui
 ---

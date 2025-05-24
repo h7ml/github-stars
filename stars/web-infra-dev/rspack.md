@@ -1,6 +1,6 @@
 ---
 project: rspack
-stars: 11460
+stars: 11499
 description: The fast Rust-based web bundler with webpack-compatible API 🦀️
 url: https://github.com/web-infra-dev/rspack
 ---
@@ -23,6 +23,39 @@ Rspack is a high performance JavaScript bundler written in Rust. It offers stron
 -   🎯 **Framework Agnostic**: Not bound to any frontend framework, ensuring enough flexibility.
 
 Read Introduction for details.
+
+🦀 Rstack
+---------
+
+Rstack is a unified JavaScript toolchain built around Rspack, with high performance and consistent architecture.
+
+Name
+
+Description
+
+Rspack
+
+Bundler
+
+Rsbuild
+
+Build tool
+
+Rslib
+
+Library development tool
+
+Rspress
+
+Static site generator
+
+Rsdoctor
+
+Build analyzer
+
+Rstest
+
+Testing framework
 
 Getting started
 ---------------
@@ -61,22 +94,6 @@ Documentation for Rspack 1.x (latest)
 Rspack 0.x documentation
 
 Documentation for Rspack 0.x version
-
-Rsbuild
-
-An out-of-the-box build tool based on Rspack
-
-Rspress
-
-A fast static site generator based on Rsbuild
-
-Rsdoctor
-
-A one-stop build analyzer for Rspack
-
-Rslib
-
-A library development tool powered by Rsbuild
 
 rspack-dev-server
 

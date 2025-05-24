@@ -1,6 +1,6 @@
 ---
 project: nimble_totp
-stars: 428
+stars: 429
 description: A tiny Elixir library for time-based one time passwords (TOTP)
 url: https://github.com/dashbitco/nimble_totp
 ---

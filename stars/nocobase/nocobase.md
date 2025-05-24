@@ -1,6 +1,6 @@
 ---
 project: nocobase
-stars: 15614
+stars: 15672
 description: NocoBase is an extensibility-first, open-source no-code/low-code platform for building business applications and enterprise solutions.
 url: https://github.com/nocobase/nocobase
 ---

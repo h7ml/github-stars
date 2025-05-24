@@ -1,6 +1,6 @@
 ---
 project: ImageGlass
-stars: 10232
+stars: 10296
 description: 🏞 A lightweight, versatile image viewer
 url: https://github.com/d2phap/ImageGlass
 ---
@@ -8,7 +8,10 @@ url: https://github.com/d2phap/ImageGlass
 ImageGlass - A lightweight, versatile image viewer
 ==================================================
 
-ImageGlass is a lightweight software designed for seamless viewing of images in a clean and intuitive interface. With support for over 80 common image formats including `WEBP`, `GIF`, `SVG`, `PNG`, `JXL`, `HEIC`,... ImageGlass also offers advanced features that cater to the needs of both regular users and designers, making it the excellent tool to enhance workflow efficiency.
+👉🏻 Seeking Feedback: Replacing MSI installer with MSIX
+========================================================
+
+ImageGlass is a lightweight software designed for seamless viewing of images in a clean and intuitive interface. With support for over 88 common image formats including `WEBP`, `GIF`, `SVG`, `PNG`, `JXL`, `HEIC`,... ImageGlass also offers advanced features that cater to the needs of both regular users and designers, making it the excellent tool to enhance workflow efficiency.
 
 📥 Download
 -----------
@@ -75,8 +78,7 @@ Hotfix update
 ----------------------
 
 -   Windows 10/11 64-bit, version 1809 (build 17763) or later
--   .NET Desktop Runtime 8 (64-bit)
--   WebView2 Runtime 64-bit v119.0.2151 or later
+-   Optional: WebView2 Runtime 64-bit v119.0.2151 or later
 
 👨‍💻 Development
 -----------------
@@ -113,8 +115,6 @@ For more information about ImageGlass, go to ImageGlass Docs.
 💖 This project needs your help!
 --------------------------------
 
-ImageGlass stands as an open-source, ad-free photo viewer, yet its development and upkeep demand resources. Your financial backing not only sustains this project but also fuels my motivation for crafting future releases.
+If you find ImageGlass useful and would like to support its ongoing development, consider making a donation. Your support, whether financial or simply sharing ImageGlass with others, means the world to me. Every bit helps keep the project alive and free for everyone.
 
-Should you opt for **GitHub Sponsor** or **Patreon**, be sure to explore the tier-specific benefits on offer.
-
-Your support is greatly appreciated!
+Explorer the ways to support at: https://imageglass.org/donate

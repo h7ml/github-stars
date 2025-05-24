@@ -1,6 +1,6 @@
 ---
 project: wax
-stars: 197
+stars: 198
 description: WebAuthn for Elixir
 url: https://github.com/tanguilp/wax
 ---
@@ -41,7 +41,7 @@ Add the following line to your list of dependencies in `mix.exs`:
 
 def deps do
   \[
-    {:wax\_, "~> 0.6.0"}
+    {:wax\_, "~> 0.7.0"}
   \]
 end
 
@@ -174,11 +174,11 @@ registration
 
 `origin`
 
-`String.t()`
+`String.t()` or `[String.t()]`
 
 registration & authentication
 
-**Mandatory**. Example: `https://www.example.com`
+**Mandatory**. Example: `https://www.example.com` or `["www.example.com", "biz.example.com"]`
 
 `rp_id`
 
@@ -186,7 +186,7 @@ registration & authentication
 
 registration & authentication
 
-If set to `:auto`, automatically determined from the `origin` (set to the host)
+If set to `:auto`, automatically determined from the `origin` (set to the host) if it is a string
 
 With `:auto`, it defaults to the full host (e.g.: `www.example.com`). This option allow you to set the `rp_id` to another valid value (e.g.: `example.com`)
 
@@ -266,6 +266,16 @@ random bytes
 
 Allows to provide with your own challenge. This is **not** recommended unless you know what you're doing. Refer to the Security considerations for more information
 
+`origin_verify_fun`
+
+MFA tuple
+
+registration & authentication
+
+`{Wax, :origins_match?, []}`
+
+The origin can be checked against a unique origin or a list of origin, using the `:origin` option. This option allows to modify the verify function so as to, for example, check subdomains of an allowed origin. It accepts an MFA tuple. The origins from the client data and the challenge are appended to the arguments
+
 FIDO2 Metadata
 --------------
 
@@ -304,6 +314,7 @@ Security considerations
     -   it explicitly violates the recommandation in the standard
     -   it exposes you to some attacks (such as replay attacks)
     -   you have no guarantee that the user understood what he has been signing (no specific browser UI was presented)
+-   When using the `origin_verify_fun` option, make sure to understand the security implications of it. In particular, if you're using it to check against subdomains using a wildcard (`*.example.com`), use a library such as `Domainatrex` - incorrect wildcard parsing is a frequent cause of security blunder
 
 Changes
 -------

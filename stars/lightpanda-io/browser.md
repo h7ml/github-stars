@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 8913
+stars: 8979
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -14,7 +14,7 @@ Lightpanda is the open-source browser made for headless usage:
 
 -   Javascript execution
 -   Support of Web APIs (partial, WIP)
--   Compatible with Playwright, Puppeteer through CDP (WIP)
+-   Compatible with Playwright1, Puppeteer through CDP (WIP)
 
 Fast web automation for AI agents, LLM training, scraping and testing:
 
@@ -137,7 +137,7 @@ For Debian/Ubuntu based Linux:
 sudo apt install xz-utils \
     python3 ca-certificates git \
     pkg-config libglib2.0-dev \
-    gperf libexpat1-dev unzip \
+    gperf libexpat1-dev unzip rsync \
     cmake clang
 ```
 
@@ -300,3 +300,8 @@ If we want both Javascript and performance in a true headless browser, we need t
 -   Not based on Chromium, Blink or WebKit
 -   Low-level system programming language (Zig) with optimisations in mind
 -   Opinionated: without graphical rendering
+
+Footnotes
+---------
+
+1.  **Playwright support disclaimer:** Due to the nature of Playwright, a script that works with the current version of the browser may not function correctly with a future version. Playwright uses an intermediate JavaScript layer that selects an execution strategy based on the browser's available features. If Lightpanda adds a new Web API, Playwright may choose to execute different code for the same script. This new code path could attempt to use features that are not yet implemented. Lightpanda makes an effort to add compatibility tests, but we can't cover all scenarios. If you encounter an issue, please create a GitHub issue and include the last known working version of the script. ↩

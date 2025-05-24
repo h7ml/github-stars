@@ -1,6 +1,6 @@
 ---
 project: R2-Explorer
-stars: 387
+stars: 390
 description: A Google Drive Interface for your Cloudflare R2 Buckets!
 url: https://github.com/G4brym/R2-Explorer
 ---
@@ -15,8 +15,8 @@ R2-Explorer brings a familiar Google Drive-like interface to your Cloudflare R2 
 Quick Links
 -----------
 
--   📚 **Documentation**: r2explorer.dev
--   🎮 **Live Demo**: demo.r2explorer.dev
+-   📚 **Documentation**: r2explorer.com
+-   🎮 **Live Demo**: demo.r2explorer.com
 -   💻 **Source Code**: github.com/G4brym/R2-Explorer
 
 Available in multiple languages: English | Español | Português | Français
@@ -64,18 +64,15 @@ Choose the method that best suits your needs:
 
 1.  **GitHub Action (Recommended)**
     
-    # Follow the guide at:
-    https://r2explorer.dev/getting-started/creating-a-new-project/#1st-method-github-action-recommended
+    Follow the guide here
     
 2.  **Cloudflare CLI**
     
-    # Follow the guide at:
-    https://r2explorer.dev/getting-started/creating-a-new-project/#2nd-method-create-cloudflare
+    Follow the guide here
     
 3.  **Template Repository**
     
-    # Use our template at:
-    https://github.com/G4brym/R2-Explorer/tree/main/template
+    Use our template here
     
 
 For detailed instructions on maintaining and updating your installation, visit our update guide.
@@ -118,7 +115,7 @@ We welcome contributions! Whether it's bug fixes, new features, or documentation
 Support
 -------
 
--   📚 Documentation: r2explorer.dev
+-   📚 Documentation: r2explorer.com
 -   🐛 Issue Tracker: GitHub Issues
 
 License

@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68711
+stars: 68751
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -361,7 +361,7 @@ Courses
 ### Artificial Intelligence
 
 -   CS50 - Introduction to Artificial Intelligence with Python (and Machine Learning), Harvard OCW
--   CS 188 - Introduction to Artificial Intelligence, UC Berkeley - Spring 2024 (Spring 2023)
+-   CS 188 - Introduction to Artificial Intelligence, UC Berkeley - Spring 2025, by John Canny, Oliver Grillmeyer (Spring 2024) (Spring 2023)
 -   6.034 Artificial Intelligence, MIT OCW
 -   CS221: Artificial Intelligence: Principles and Techniques - Autumn 2019 - Stanford University
 -   15-780 - Graduate Artificial Intelligence, Spring 14, CMU
@@ -424,6 +424,7 @@ Courses
     -   ECE 5984 Introduction to Machine Learning, Spring 2015 - Virginia Tech
     -   CSx824/ECEx242 Machine Learning, Bert Huang, Fall 2015 - Virginia Tech
     -   STA 4273H - Large Scale Machine Learning, Winter 2015 - University of Toronto
+    -   ECE 421 Introduction to Machine Learning, Amir Ashouri, Winter 2019, University of Toronto
     -   CS 480/680 Introduction to Machine Learning, Gautam Kamath, University of Waterloo (Spring 2021)
     -   CS 480/680 Introduction to Machine Learning, Kathryn Simone, University of Waterloo (Fall 2024)
     -   CS 485/685 Machine Learning, Shai Ben-David, University of Waterloo
@@ -1104,7 +1105,7 @@ Courses
 -   6.1600 Foundations of Computer Security - MIT Fall 2023
 -   6.858 Computer Systems Security - MIT OCW
 -   CS 253 Web Security - Stanford University
--   CS 161: Computer Security, UC Berkeley (Videos)
+-   CS 161: Computer Security, UC Berkeley (Videos) (Spring 2025)
 -   6.875 - Cryptography - Fall 2021 - MIT (Spring 2018)
 -   CSEP590A - Practical Aspects of Modern Cryptography, Winter 2011 - University of Washington (Videos)
 -   CS461/ECE422 - Computer Security - University of Illinois at Urbana-Champaign (Videos)
@@ -1287,6 +1288,7 @@ Courses
 -   Intro to Quantum Computing - Nathan Wiebe
 -   COMS 4281 - Introduction to Quantum Computing -Columbia University
 -   Introduction to Quantum Information Science (Online book, PDF)
+-   A practical introduction to Quantum Computing: from Qubits to Quantum Machine Learning: CERN
 
 * * *
 
@@ -1461,7 +1463,9 @@ Courses
 -   Asymptotics and perturbation methods - Prof. Steven Strogatz
 -   ETH Zürich AI in the Sciences and Engineering
 -   Introduction to GIS Programming (Fall 2024) - Open Geospatial Solutions
+-   Gatech Guitar Amplification and Effects, by Aaron Lanterman
 -   Gatech ECE3084 Signals and Systems summer 2020, by Aaron Lanterman
+-   Gatech ECE4450 Analog Circuits for Music Synthesis spring 2021, by Aaron Lanterman
 -   UC Berkeley EE 120 Signals and Systems spring 2019, by Murat Arcak
 -   Stanford EE 102 spring 1999, Introduction to Signals and Systems, by Stephen Boyd
 -   Stanford EE 376a winter 2011, Information Theory, by Thomas Cover
