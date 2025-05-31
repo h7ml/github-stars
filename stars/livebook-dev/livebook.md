@@ -1,6 +1,6 @@
 ---
 project: livebook
-stars: 5330
+stars: 5345
 description: Automate code & data workflows with interactive Elixir notebooks
 url: https://github.com/livebook-dev/livebook
 ---
@@ -241,10 +241,6 @@ mix phx.server
 
 # Run tests
 mix test
-
-### Acknowledgements
-
-Thank you to Uffizzi for providing ephemeral environments to preview pull requests.
 
 ### Desktop app builds
 

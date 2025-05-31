@@ -1,6 +1,6 @@
 ---
 project: pig
-stars: 137
+stars: 140
 description: PostgreSQL Extension Manager
 url: https://github.com/pgsty/pig
 ---
@@ -10,7 +10,7 @@ PIG - Postgres Install Genius
 
 **pig** is an open-source PostgreSQL (& Extension) Package Manager for mainstream (EL/Debian/Ubuntu) Linux.
 
-Install PostgreSQL 13-17 along with 414 extensions on (`amd64` / `arm64`) with native OS package manager
+Install PostgreSQL 13-17 along with 421 extensions on (`amd64` / `arm64`) with native OS package manager
 
 > Blog: The idea way to deliver PostgreSQL extensions
 
@@ -421,6 +421,7 @@ PG 17 - 13
 Here are some bad cases and limitation for above Linux distros:
 
 -   `pg_duckdb` `el8:*:*`
+-   `pg_mooncake` `el8:*:*`
 -   `pljava`: `el8:*:*`
 -   `pllua`: `el8:arm:13,14,15`
 -   `h3`: `el8.amd.pg17`

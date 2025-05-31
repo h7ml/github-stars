@@ -1,6 +1,6 @@
 ---
 project: data-formulator
-stars: 11599
+stars: 12215
 description: 🪄 Create rich visualizations with AI 
 url: https://github.com/microsoft/data-formulator
 ---
@@ -12,17 +12,18 @@ url: https://github.com/microsoft/data-formulator
 
 Transform data and create rich visualizations iteratively with AI 🪄. Try Data Formulator now!
 
+Any questions? Ask on the Discord channel!
+
 News 🔥🔥🔥
 -----------
 
--   \[05-13-2025\] Data Formulator 0.2.1: External Data Loader
+-   \[05-13-2025\] Data Formulator 0.2.3: External Data Loader
     
     -   We introduced external data loader class to make import data easier. Readme and Demo
-        -   Example data loaders from MySQL and Azure Data Explorer (Kusto) are provided.
+        -   Current data loaders: MySQL, Azure Data Explorer (Kusto), Azure Blob and Amazon S3 (json, parquet, csv).
     -   Call for action link:
         -   Users: let us know which data source you'd like to load data from.
         -   Developers: let's build more data loaders.
-    -   Discord channel for discussions: join us!
 -   \[04-23-2025\] Data Formulator 0.2: working with _large_ data 📦📦📦
     
     -   Explore large data by:

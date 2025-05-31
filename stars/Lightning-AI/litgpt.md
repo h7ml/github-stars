@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 12154
+stars: 12187
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -353,6 +353,30 @@ Microsoft Research
 
 Microsoft 2025
 
+Phi 4 Mini Reasoning
+
+3.8B
+
+Microsoft Research
+
+Xu, Peng et al. 2025
+
+Phi 4 Reasoning
+
+3.8B
+
+Microsoft Research
+
+Abdin et al. 2025
+
+Phi 4 Reasoning Plus
+
+3.8B
+
+Microsoft Research
+
+Abdin et al. 2025
+
 Platypus
 
 7B, 13B, 70B
@@ -408,6 +432,14 @@ QwQ-Preview
 Alibaba Group
 
 Qwen Team 2024
+
+Qwen3
+
+0.6B, 1.7B, 4B, 8B, 14B, 32B
+
+Alibaba Group
+
+Qwen Team 2025
 
 R1 Distill Llama
 

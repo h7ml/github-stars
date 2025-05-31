@@ -1,6 +1,6 @@
 ---
 project: datasette
-stars: 10033
+stars: 10075
 description: An open source multi-tool for exploring and publishing data
 url: https://github.com/simonw/datasette
 ---
@@ -11,7 +11,7 @@ Datasette is a tool for exploring and publishing data. It helps people take data
 
 Datasette is aimed at data journalists, museum curators, archivists, local governments, scientists, researchers and anyone else who has data that they wish to share with the world.
 
-Explore a demo, watch a video about the project or try it out by uploading and publishing your own CSV data.
+Explore a demo, watch a video about the project or try it out on GitHub Codespaces.
 
 -   datasette.io is the official project website
 -   Latest Datasette News

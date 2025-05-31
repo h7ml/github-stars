@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 8979
+stars: 9036
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -125,7 +125,7 @@ Build from sources
 
 ### Prerequisites
 
-Lightpanda is written with Zig `0.14.0`. You have to install it with the right version in order to build the project.
+Lightpanda is written with Zig `0.14.1`. You have to install it with the right version in order to build the project.
 
 Lightpanda also depends on zig-js-runtime (with v8), Netsurf libs and Mimalloc.
 

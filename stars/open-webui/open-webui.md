@@ -1,6 +1,6 @@
 ---
 project: open-webui
-stars: 95990
+stars: 96989
 description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 url: https://github.com/open-webui/open-webui
 ---
@@ -65,8 +65,10 @@ Sponsors 🙌
 
 #### Emerald
 
-Does your interface have a backend yet?  
+N8N • Does your interface have a backend yet?  
 Try n8n
+
+Warp • The intelligent terminal for developers
 
 * * *
 

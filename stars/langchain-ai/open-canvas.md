@@ -1,6 +1,6 @@
 ---
 project: open-canvas
-stars: 4563
+stars: 4593
 description: 📃 A better UX for chat, writing content, and coding with LLMs.
 url: https://github.com/langchain-ai/open-canvas
 ---

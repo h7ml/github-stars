@@ -1,6 +1,6 @@
 ---
 project: notie
-stars: 6305
+stars: 6303
 description: 🔔 a clean and simple notification, input, and selection suite for javascript, with no dependencies
 url: https://github.com/jaredreich/notie
 ---

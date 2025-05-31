@@ -1,6 +1,6 @@
 ---
 project: love
-stars: 6633
+stars: 6663
 description: LÖVE is an awesome 2D game framework for Lua.
 url: https://github.com/love2d/love
 ---

@@ -1,6 +1,6 @@
 ---
 project: whisper-web
-stars: 2944
+stars: 2951
 description: ML-powered speech recognition directly in your browser
 url: https://github.com/xenova/whisper-web
 ---

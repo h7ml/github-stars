@@ -1,6 +1,6 @@
 ---
 project: pdfcpu
-stars: 7627
+stars: 7653
 description: A PDF processor written in Go.
 url: https://github.com/pdfcpu/pdfcpu
 ---
@@ -339,6 +339,12 @@ Thanks 💚 goes to these wonderful people:
 
   
 **Andreas Deininger**
+
+  
+**Robert Raines**
+
+  
+**Frank Anderson**
 
 Code of Conduct
 ---------------

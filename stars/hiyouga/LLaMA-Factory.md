@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 49839
+stars: 51251
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -962,15 +962,21 @@ Important
 
 Installation is mandatory.
 
+#### Install from Source
+
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".\[torch,metrics\]" --no-build-isolation
 
-Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, quality
+Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, dev
 
-Tip
+#### Install from Docker Image
 
-Use `pip install -e . --no-deps --no-build-isolation` to resolve package conflicts.
+docker run -it --rm --gpus=all --ipc=host hiyouga/llamafactory:latest
+
+Find the pre-built images: https://hub.docker.com/r/hiyouga/llamafactory/tags
+
+Please refer to build docker to build the image yourself.
 
 Setting up a virtual environment with **uv**
 
@@ -1149,22 +1155,18 @@ Build without Docker Compose
 For CUDA users:
 
 docker build -f ./docker/docker-cuda/Dockerfile \\
-    --build-arg INSTALL\_BNB=false \\
-    --build-arg INSTALL\_VLLM=false \\
-    --build-arg INSTALL\_DEEPSPEED=false \\
-    --build-arg INSTALL\_FLASHATTN=false \\
     --build-arg PIP\_INDEX=https://pypi.org/simple \\
+    --build-arg EXTRAS=metrics \\
     -t llamafactory:latest .
 
-docker run -dit --gpus=all \\
+docker run -dit --ipc=host --gpus=all \\
     -v ./hf\_cache:/root/.cache/huggingface \\
     -v ./ms\_cache:/root/.cache/modelscope \\
     -v ./om\_cache:/root/.cache/openmind \\
-    -v ./data:/app/data \\
+    -v ./shared\_data:/app/shared\_data \\
     -v ./output:/app/output \\
     -p 7860:7860 \\
     -p 8000:8000 \\
-    --shm-size 16G \\
     --name llamafactory \\
     llamafactory:latest
 
@@ -1172,18 +1174,16 @@ docker exec -it llamafactory bash
 
 For Ascend NPU users:
 
-# Choose docker image upon your environment
 docker build -f ./docker/docker-npu/Dockerfile \\
-    --build-arg INSTALL\_DEEPSPEED=false \\
     --build-arg PIP\_INDEX=https://pypi.org/simple \\
+    --build-arg EXTRAS=torch-npu,metrics \\
     -t llamafactory:latest .
 
-# Change \`device\` upon your resources
-docker run -dit \\
+docker run -dit --ipc=host \\
     -v ./hf\_cache:/root/.cache/huggingface \\
     -v ./ms\_cache:/root/.cache/modelscope \\
     -v ./om\_cache:/root/.cache/openmind \\
-    -v ./data:/app/data \\
+    -v ./shared\_data:/app/shared\_data \\
     -v ./output:/app/output \\
     -v /usr/local/dcmi:/usr/local/dcmi \\
     -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \\
@@ -1195,7 +1195,6 @@ docker run -dit \\
     --device /dev/davinci\_manager \\
     --device /dev/devmm\_svm \\
     --device /dev/hisi\_hdc \\
-    --shm-size 16G \\
     --name llamafactory \\
     llamafactory:latest
 
@@ -1204,25 +1203,20 @@ docker exec -it llamafactory bash
 For AMD ROCm users:
 
 docker build -f ./docker/docker-rocm/Dockerfile \\
-    --build-arg INSTALL\_BNB=false \\
-    --build-arg INSTALL\_VLLM=false \\
-    --build-arg INSTALL\_DEEPSPEED=false \\
-    --build-arg INSTALL\_FLASHATTN=false \\
     --build-arg PIP\_INDEX=https://pypi.org/simple \\
+    --build-arg EXTRAS=metrics \\
     -t llamafactory:latest .
 
-docker run -dit \\
+docker run -dit --ipc=host \\
     -v ./hf\_cache:/root/.cache/huggingface \\
     -v ./ms\_cache:/root/.cache/modelscope \\
     -v ./om\_cache:/root/.cache/openmind \\
-    -v ./data:/app/data \\
+    -v ./shared\_data:/app/shared\_data \\
     -v ./output:/app/output \\
-    -v ./saves:/app/saves \\
     -p 7860:7860 \\
     -p 8000:8000 \\
     --device /dev/kfd \\
     --device /dev/dri \\
-    --shm-size 16G \\
     --name llamafactory \\
     llamafactory:latest
 
@@ -1233,7 +1227,7 @@ Details about volume
 -   `hf_cache`: Utilize Hugging Face cache on the host machine. Reassignable if a cache already exists in a different directory.
 -   `ms_cache`: Similar to Hugging Face cache but for ModelScope users.
 -   `om_cache`: Similar to Hugging Face cache but for Modelers users.
--   `data`: Place datasets on this dir of the host machine so that they can be selected on LLaMA Board GUI.
+-   `shared_data`: Place datasets on this dir of the host machine so that they can be selected on LLaMA Board GUI.
 -   `output`: Set export dir to this location so that the merged result can be accessed directly on the host machine.
 
 ### Deploy with OpenAI-style API and vLLM

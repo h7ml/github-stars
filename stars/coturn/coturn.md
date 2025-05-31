@@ -1,6 +1,6 @@
 ---
 project: coturn
-stars: 12392
+stars: 12432
 description: coturn TURN server project
 url: https://github.com/coturn/coturn
 ---
@@ -74,8 +74,8 @@ TURN specs:
 -   RFC 6156 - IPv6 extension for TURN
 -   RFC 7443 - ALPN support for STUN & TURN
 -   RFC 7635 - oAuth third-party TURN/STUN authorization
+-   RFC 8016 - Mobility with Traversal Using Relays around NAT (TURN)
 -   DTLS support (http://tools.ietf.org/html/draft-petithuguenin-tram-turn-dtls-00)
--   Mobile ICE (MICE) support (http://tools.ietf.org/html/draft-wing-tram-turn-mobility-02)
 -   TURN REST API (http://tools.ietf.org/html/draft-uberti-behave-turn-rest-00)
 -   Origin field in TURN (Multi-tenant TURN Server) (https://tools.ietf.org/html/draft-ietf-tram-stun-origin-06)
 -   TURN Bandwidth draft specs (http://tools.ietf.org/html/draft-thomson-tram-turn-bandwidth-01)

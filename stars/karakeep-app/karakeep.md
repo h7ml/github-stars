@@ -1,6 +1,6 @@
 ---
 project: karakeep
-stars: 16750
+stars: 17332
 description: A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search
 url: https://github.com/karakeep-app/karakeep
 ---
@@ -97,6 +97,11 @@ Support
 -------
 
 If you're enjoying using Karakeep, drop a ⭐️ on the repo!
+
+License
+-------
+
+Karakeep is licensed under AGPL-3.0 and owned by Localhost Labs Ltd.
 
 Star History
 ------------

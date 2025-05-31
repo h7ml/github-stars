@@ -1,6 +1,6 @@
 ---
 project: quiver
-stars: 3253
+stars: 3257
 description: A modern commutative diagram editor for the web.
 url: https://github.com/varkor/quiver
 ---
@@ -73,10 +73,10 @@ If this fails, you might be using an incompatible version of Make or Bash. In th
 **quiver** must be run through `localhost`. If you have Python installed, an easy solution is to run:
 
 ```
-python3 -m http.server
+make serve
 ```
 
-in the **quiver** `src` directory and then open `localhost:8000` in browser.
+in the **quiver** directory and then open `localhost:8000` in browser.
 
 If you have any other problems building **quiver**, open an issue detailing the problem and I'll try to help.
 

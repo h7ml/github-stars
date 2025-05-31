@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 19266
+stars: 19330
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -302,6 +302,14 @@ Provider for sharing data in webxdc chat apps.
 secsync
 
 An architecture to relay end-to-end encrypted CRDTs over a central service.
+
+y-electric
+
+Sync Yjs over ElectricSQL.
+
+yjs-cf-ws-provider
+
+Cloudflare provider for Yjs based on durable objects.
 
 #### Persistence Providers
 

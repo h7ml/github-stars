@@ -1,6 +1,6 @@
 ---
 project: honeydew
-stars: 723
+stars: 724
 description: Job Queue for Elixir. Clustered or Local. Straight BEAM. Optional Ecto. 💪🍈
 url: https://github.com/koudelka/honeydew
 ---

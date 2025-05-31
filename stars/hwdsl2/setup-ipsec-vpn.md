@@ -1,6 +1,6 @@
 ---
 project: setup-ipsec-vpn
-stars: 26215
+stars: 26243
 description: Scripts to build your own IPsec VPN server, with IPsec/L2TP, Cisco IPsec and IKEv2
 url: https://github.com/hwdsl2/setup-ipsec-vpn
 ---

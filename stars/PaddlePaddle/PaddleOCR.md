@@ -1,6 +1,6 @@
 ---
 project: PaddleOCR
-stars: 49505
+stars: 49843
 description: Awesome multilingual OCR toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
@@ -124,14 +124,6 @@ retriever\_config \= {
     "api\_key": "api\_key",  \# your api\_key
 }
 
-mllm\_chat\_bot\_config \= {
-    "module\_name": "chat\_bot",
-    "model\_name": "PP-DocBee",
-    "base\_url": "http://127.0.0.1:8080/",  \# your local mllm service url
-    "api\_type": "openai",
-    "api\_key": "api\_key",  \# your api\_key
-}
-
 pipeline \= PPChatOCRv4Doc(
     use\_doc\_orientation\_classify\=False,
     use\_doc\_unwarping\=False
@@ -144,6 +136,25 @@ visual\_predict\_res \= pipeline.visual\_predict(
     use\_table\_recognition\=True,
 )
 
+mllm\_predict\_info \= None
+use\_mllm \= False
+\# 如果使用多模态大模型，需要启动本地 mllm 服务，可以参考文档：https://github.com/PaddlePaddle/PaddleX/blob/release/3.0/docs/pipeline\_usage/tutorials/vlm\_pipelines/doc\_understanding.md 进行部署，并更新 mllm\_chat\_bot\_config 配置。
+if use\_mllm:
+    mllm\_chat\_bot\_config \= {
+        "module\_name": "chat\_bot",
+        "model\_name": "PP-DocBee",
+        "base\_url": "http://127.0.0.1:8080/",  \# your local mllm service url
+        "api\_type": "openai",
+        "api\_key": "api\_key",  \# your api\_key
+    }
+
+    mllm\_predict\_res \= pipeline.mllm\_pred(
+        input\="https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo\_image/vehicle\_certificate-1.png",
+        key\_list\=\["驾驶室准乘人数"\],
+        mllm\_chat\_bot\_config\=mllm\_chat\_bot\_config,
+    )
+    mllm\_predict\_info \= mllm\_predict\_res\["mllm\_res"\]
+
 visual\_info\_list \= \[\]
 for res in visual\_predict\_res:
     visual\_info\_list.append(res\["visual\_info"\])
@@ -152,12 +163,6 @@ for res in visual\_predict\_res:
 vector\_info \= pipeline.build\_vector(
     visual\_info\_list, flag\_save\_bytes\_vector\=True, retriever\_config\=retriever\_config
 )
-mllm\_predict\_res \= pipeline.mllm\_pred(
-    input\="vehicle\_certificate-1.png",
-    key\_list\=\["驾驶室准乘人数"\],
-    mllm\_chat\_bot\_config\=mllm\_chat\_bot\_config,
-)
-mllm\_predict\_info \= mllm\_predict\_res\["mllm\_res"\]
 chat\_result \= pipeline.chat(
     key\_list\=\["驾驶室准乘人数"\],
     visual\_info\=visual\_info\_list,

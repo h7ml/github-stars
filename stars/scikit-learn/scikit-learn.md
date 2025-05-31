@@ -1,6 +1,6 @@
 ---
 project: scikit-learn
-stars: 62120
+stars: 62196
 description: scikit-learn: machine learning in Python
 url: https://github.com/scikit-learn/scikit-learn
 ---
@@ -102,21 +102,32 @@ Help and Support
 
 ### Communication
 
--   Mailing list: https://mail.python.org/mailman/listinfo/scikit-learn
--   Logos & Branding: https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos
--   Blog: https://blog.scikit-learn.org
--   Calendar: https://blog.scikit-learn.org/calendar/
--   Stack Overflow: https://stackoverflow.com/questions/tagged/scikit-learn
--   GitHub Discussions: https://github.com/scikit-learn/scikit-learn/discussions
--   Website: https://scikit-learn.org
--   LinkedIn: https://www.linkedin.com/company/scikit-learn
--   Bluesky: https://bsky.app/profile/scikit-learn.org
--   Mastodon: https://mastodon.social/@sklearn@fosstodon.org
--   YouTube: https://www.youtube.com/channel/UCJosFjYm0ZYVUARxuOZqnnw/playlists
--   Facebook: https://www.facebook.com/scikitlearnofficial/
--   Instagram: https://www.instagram.com/scikitlearnofficial/
--   TikTok: https://www.tiktok.com/@scikit.learn
--   Discord: https://discord.gg/h9qyrK8Jc8
+#### Main Channels
+
+-   **Website**: https://scikit-learn.org
+-   **Blog**: https://blog.scikit-learn.org
+-   **Mailing list**: https://mail.python.org/mailman/listinfo/scikit-learn
+
+#### Developer & Support
+
+-   **GitHub Discussions**: https://github.com/scikit-learn/scikit-learn/discussions
+-   **Stack Overflow**: https://stackoverflow.com/questions/tagged/scikit-learn
+-   **Discord**: https://discord.gg/h9qyrK8Jc8
+
+#### Social Media Platforms
+
+-   **LinkedIn**: https://www.linkedin.com/company/scikit-learn
+-   **YouTube**: https://www.youtube.com/channel/UCJosFjYm0ZYVUARxuOZqnnw/playlists
+-   **Facebook**: https://www.facebook.com/scikitlearnofficial/
+-   **Instagram**: https://www.instagram.com/scikitlearnofficial/
+-   **TikTok**: https://www.tiktok.com/@scikit.learn
+-   **Bluesky**: https://bsky.app/profile/scikit-learn.org
+-   **Mastodon**: https://mastodon.social/@sklearn@fosstodon.org
+
+#### Resources
+
+-   **Calendar**: https://blog.scikit-learn.org/calendar/
+-   **Logos & Branding**: https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos
 
 ### Citation
 

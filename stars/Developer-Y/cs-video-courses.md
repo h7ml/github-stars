@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68751
+stars: 68924
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -424,7 +424,9 @@ Courses
     -   ECE 5984 Introduction to Machine Learning, Spring 2015 - Virginia Tech
     -   CSx824/ECEx242 Machine Learning, Bert Huang, Fall 2015 - Virginia Tech
     -   STA 4273H - Large Scale Machine Learning, Winter 2015 - University of Toronto
+    -   CSC 2515 Introduction to Machine Learning, Amir-massoud Farahmand, Fall 2021, University of Toronto
     -   ECE 421 Introduction to Machine Learning, Amir Ashouri, Winter 2019, University of Toronto
+    -   EECS 4404E/5327 Introduction to Machine Learning, Amir Ashouri, Fall 2019, York University
     -   CS 480/680 Introduction to Machine Learning, Gautam Kamath, University of Waterloo (Spring 2021)
     -   CS 480/680 Introduction to Machine Learning, Kathryn Simone, University of Waterloo (Fall 2024)
     -   CS 485/685 Machine Learning, Shai Ben-David, University of Waterloo
@@ -553,6 +555,7 @@ Courses
     -   MOOC - Neural Networks for Machine Learning, Geoffrey Hinton 2016 - Coursera
     -   Stat 946 Deep Learning - University of Waterloo
     -   EECS 298 Theory of Computational Neural Networks and Machine Learning (Fall 2020) - UC Irvine (YouTube)
+    -   ECE 1508 Applied Deep Learning - University of Toronto (Winter 2025) (Fall 2024)
     -   Neural networks class - Université de Sherbrooke (YouTube)
     -   DLCV - Deep Learning for Computer Vision - UPC Barcelona
     -   DLAI - Deep Learning for Artificial Intelligence @ UPC Barcelona
@@ -579,6 +582,7 @@ Courses
     -   CS234: Reinforcement Learning - Spring 2024 - Stanford University (Winter 2019)
     -   CSE 542: Reinforcement Learning - Spring 2024 - University of Washington
     -   CSE 579: Reinforcement Learning - Autumn 2024 - University of Washington
+    -   CSC 2547: Introduction to Reinforcement Learning - Spring 2021 - University of Toronto (YouTube)
     -   Introduction to reinforcement learning - UCL
     -   Reinforcement Learning - IIT Madras
     -   CS885 Reinforcement Learning - Spring 2018 - University of Waterloo
@@ -775,7 +779,7 @@ Courses
 -   Wireless Ad Hoc and Sensor Networks - IIT Kharagpur
 -   Internetworking with TCP/IP by Prof. Dr. Christoph Meinel - HPI
 -   CS798: Mathematical Foundations of Computer Networking - University of Waterloo
--   CS 168 Introduction to the Internet: Architecture and Protocols, Fall 2022 - UC Berkeley (YouTube)
+-   CS 168 Introduction to the Internet: Architecture and Protocols, Fall 2022 - UC Berkeley (YouTube - Fall 2022) (Spring 2025)
 -   Advanced Topics in Communication Networks, Fall 2022 - ETH Zürich
 
 * * *

@@ -1,6 +1,6 @@
 ---
 project: components
-stars: 24680
+stars: 24681
 description: Component infrastructure and Material Design components for Angular
 url: https://github.com/angular/components
 ---

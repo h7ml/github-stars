@@ -1,6 +1,6 @@
 ---
 project: angular-filepond
-stars: 59
+stars: 60
 description: 🔌 A handy FilePond adapter component for Angular
 url: https://github.com/pqina/angular-filepond
 ---

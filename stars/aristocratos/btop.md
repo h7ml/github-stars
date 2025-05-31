@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 24887
+stars: 24991
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -521,25 +521,7 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
     
     Enables link time optimization (ON by default)
     
-    `-DBTOP_PEDANTIC=<ON|OFF>`
-    
-    Compile with additional warnings (OFF by default)
-    
-    `-DBTOP_WERROR=<ON|OFF>`
-    
-    Compile with warnings as errors (OFF by default)
-    
-    `-DBTOP_GPU=<ON|OFF>`
-    
-    Enable GPU support (ON by default)
-    
-    `-DBTOP_RSMI_STATIC=<ON|OFF>`
-    
-    Build and link the ROCm SMI library statically (OFF by default)
-    
-    `-DCMAKE_INSTALL_PREFIX=<path>`
-    
-    The installation prefix ('/usr/local' by default)
+    | `-DBTOP_GPU=<ON\|OFF>` | Enable GPU support (ON by default) | | `-DBTOP_RSMI_STATIC=<ON\|OFF>` | Build and link the ROCm SMI library statically (OFF by default) | | `-DCMAKE_INSTALL_PREFIX=<path>` | The installation prefix ('/usr/local' by default) |
     
     To force any other compiler, run `CXX=<compiler> cmake -B build -G Ninja`
     
@@ -702,17 +684,7 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
     
     Enables link time optimization (ON by default)
     
-    `-DBTOP_PEDANTIC=<ON|OFF>`
-    
-    Compile with additional warnings (OFF by default)
-    
-    `-DBTOP_WERROR=<ON|OFF>`
-    
-    Compile with warnings as errors (OFF by default)
-    
-    `-DCMAKE_INSTALL_PREFIX=<path>`
-    
-    The installation prefix ('/usr/local' by default)
+    | `-DCMAKE_INSTALL_PREFIX=<path>` | The installation prefix ('/usr/local' by default) |
     
     To force any specific compiler, run `CXX=<compiler> cmake -B build -G Ninja`
     
@@ -885,17 +857,7 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
     
     Enables link time optimization (ON by default)
     
-    `-DBTOP_PEDANTIC=<ON|OFF>`
-    
-    Compile with additional warnings (OFF by default)
-    
-    `-DBTOP_WERROR=<ON|OFF>`
-    
-    Compile with warnings as errors (OFF by default)
-    
-    `-DCMAKE_INSTALL_PREFIX=<path>`
-    
-    The installation prefix ('/usr/local' by default)
+    | `-DCMAKE_INSTALL_PREFIX=<path>` | The installation prefix ('/usr/local' by default) |
     
     _**Note:** Static linking does not work with GCC._
     
@@ -1049,17 +1011,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
     
     Enables link time optimization (ON by default)
     
-    `-DBTOP_PEDANTIC=<ON|OFF>`
-    
-    Compile with additional warnings (OFF by default)
-    
-    `-DBTOP_WERROR=<ON|OFF>`
-    
-    Compile with warnings as errors (OFF by default)
-    
-    `-DCMAKE_INSTALL_PREFIX=<path>`
-    
-    The installation prefix ('/usr/local' by default)
+    | `-DCMAKE_INSTALL_PREFIX=<path>` | The installation prefix ('/usr/local' by default) |
     
     To force any other compiler, run `CXX=<compiler> cmake -B build -G Ninja`
     
@@ -1213,17 +1165,7 @@ Note that GNU make (`gmake`) is required to compile on OpenBSD.
     
     Enables link time optimization (ON by default)
     
-    `-DBTOP_PEDANTIC=<ON|OFF>`
-    
-    Compile with additional warnings (OFF by default)
-    
-    `-DBTOP_WERROR=<ON|OFF>`
-    
-    Compile with warnings as errors (OFF by default)
-    
-    `-DCMAKE_INSTALL_PREFIX=<path>`
-    
-    The installation prefix ('/usr/local' by default)
+    | `-DCMAKE_INSTALL_PREFIX=<path>` | The installation prefix ('/usr/local' by default) |
     
     To force any other compiler, run `CXX=<compiler> cmake -B build -G Ninja`
     

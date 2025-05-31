@@ -1,6 +1,6 @@
 ---
 project: PathPlanning
-stars: 8578
+stars: 8597
 description: Common used path planning algorithms with animations.
 url: https://github.com/zhm-real/PathPlanning
 ---

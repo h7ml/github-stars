@@ -1,6 +1,6 @@
 ---
 project: flameshot
-stars: 26277
+stars: 26362
 description: Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:
 url: https://github.com/flameshot-org/flameshot
 ---
@@ -100,6 +100,12 @@ Example commands:
 In case of doubt choose the first or the second command as shortcut in your favorite desktop environment.
 
 A systray icon will be in your system's panel while Flameshot is running. Do a right click on the tray icon and you'll see some menu items to open the configuration window and the information window. Check out the About window to see all available shortcuts in the graphical capture mode.
+
+### Usage on Windows
+
+On Windows, `flameshot.exe` will behave as expected for all supported command-line arguments, but it will not output any text to the console. This is problematic if, for example, you are running `flameshot.exe -h`.
+
+If you require console output, run `flameshot-cli.exe` instead. `flameshot-cli.exe` is a minimal wrapper around `flameshot.exe` that ensures all stdout is captured and output to the console.
 
 ### CLI configuration
 
@@ -322,23 +328,15 @@ Steps for using the configuration:
     ln -s /var/lib/flatpak/exports/bin/org.flameshot.Flameshot ~/.local/bin/flameshot
     
 
-#### On Ubuntu (Tested on 18.04, 20.04, 22.04)
+#### On Ubuntu (Tested 22.04)
 
 To use Flameshot instead of the default screenshot application in Ubuntu we need to remove the binding on Prt Sc key, and then create a new binding for `/usr/bin/flameshot gui` (adapted from Pavel's answer on AskUbuntu).
 
 1.  Remove the binding on Prt Sc:
     
-    Ubuntu 18.04/20.04 using the following command:
-    
-    gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '\[\]'
-    
     Ubuntu 22.04: Go to _Settings_ > _Keyboard_ > _View and Customise Shortcuts_ > _Screenshots_ > _Take a screenshot interactively_ and press `backspace`
     
 2.  Add custom binding on Prt Sc:
-    
-    Ubuntu 18.04: Go to _Settings_ > _Device_ > _Keyboard_ and press the '+' button at the bottom.
-    
-    Ubuntu 20.04: Go to _Settings_ > _Keyboard Shortcuts_ and press the '+' button at the bottom.
     
     Ubuntu 22.04: Go to _Settings_ > _Keyboard_ > _View and Customise Shortcuts_ > _Custom shortcuts_ and press the '+' button at the bottom.
     
@@ -415,7 +413,7 @@ There are packages available in the repository of some Linux distributions:
     -   Snapshot also available via AUR: flameshot-git.
 -   Debian 10+: `apt install flameshot`
     -   Package for Debian 9 ("Stretch") also available via stretch-backports.
--   Ubuntu 18.04+: `apt install flameshot`
+-   Ubuntu: `apt install flameshot`
 -   openSUSE: `zypper install flameshot`
 -   Void Linux: `xbps-install flameshot`
 -   Solus: `eopkg it flameshot`
@@ -456,7 +454,7 @@ Compilation
 
 To build the application in your system, you'll need to install the dependencies needed for it and package names might be different for each distribution, see Dependencies below for more information. You can also install most of the Qt dependencies via their installer. If you were developing Qt apps before, you probably already have them.
 
-This project uses CMake build system, so you need to install it in order to build the project (on most Linux distributions it is available in the standard repositories as a package called `cmake`). If your distribution provides too old version of CMake (e.g. Ubuntu 18.04) you can download it on the official website.
+This project uses CMake build system, so you need to install it in order to build the project (on most Linux distributions it is available in the standard repositories as a package called `cmake`). If your distribution provides too old version of CMake (e.g. Ubuntu or Debian) you can download it on the official website.
 
 Also you can open and build/debug the project in a C++ IDE. For example, in Qt Creator you should be able to simply open `CMakeLists.txt` via `Open File or Project` in the menu after installing CMake into your system. More information about CMake projects in Qt Creator.
 

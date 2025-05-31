@@ -1,6 +1,6 @@
 ---
 project: uv
-stars: 55477
+stars: 56312
 description: An extremely fast Python package and project manager, written in Rust.
 url: https://github.com/astral-sh/uv
 ---
@@ -233,6 +233,17 @@ Contributing
 ------------
 
 We are passionate about supporting contributors of all levels of experience and would love to see you get involved in the project. See the contributing guide to get started.
+
+FAQ
+---
+
+#### How do you pronounce uv?
+
+It's pronounced as "you - vee" (`/juː viː/`)
+
+#### How should I stylize uv?
+
+Just "uv", please. See the style guide for details.
 
 Acknowledgements
 ----------------

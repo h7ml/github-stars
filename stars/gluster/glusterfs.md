@@ -1,6 +1,6 @@
 ---
 project: glusterfs
-stars: 4922
+stars: 4928
 description: Gluster Filesystem : Build your distributed storage in minutes
 url: https://github.com/gluster/glusterfs
 ---

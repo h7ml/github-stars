@@ -1,6 +1,6 @@
 ---
 project: imagor
-stars: 3635
+stars: 3644
 description: Fast, secure image processing server and Go library, using libvips
 url: https://github.com/cshum/imagor
 ---
@@ -10,7 +10,7 @@ imagor
 
 imagor is a fast, secure image processing server and Go library.
 
-imagor uses one of the most efficient image processing library libvips. It is typically 4-8x faster than using the quickest ImageMagick and GraphicsMagick settings. imagor implements libvips streaming that facilitates parallel processing pipelines, achieving high network throughput.
+imagor uses one of the most efficient image processing library libvips with Go binding generator vipsgen. It is typically 4-8x faster than using the quickest ImageMagick settings. imagor implements libvips streaming that facilitates parallel processing pipelines, achieving high network throughput.
 
 imagor features a ton of image processing use cases, available as a HTTP server with first-class Docker support. It adopts the thumbor URL syntax representing a high-performance drop-in replacement.
 
@@ -433,7 +433,7 @@ imagor is a Go library built with speed, security and extensibility in mind. It 
 
 -   imagor - the imagor core library
 -   imagorpath - parse and generate imagor endpoint
--   vips - libvips C bindings with `imagor.Processor` implementation
+-   vipsprocessor - libvips processor, an `imagor.Processor` implementation using Go binding generator vipsgen
 -   httploader - HTTP Loader, an `imagor.Loader` implementation
 -   filestorage - File Storage, an `imagor.Storage` implementation
 -   s3storage - AWS S3 Storage, an `imagor.Storage` implementation
@@ -453,7 +453,7 @@ import (
 	"github.com/cshum/imagor"
 	"github.com/cshum/imagor/imagorpath"
 	"github.com/cshum/imagor/loader/httploader"
-	"github.com/cshum/imagor/vips"
+	"github.com/cshum/vipsgen/vips"
 	"io"
 	"os"
 )
@@ -774,6 +774,8 @@ Usage of imagor:
         VIPS avif speed, the lowest is at 0 and the fastest is at 9 (Default 5).
   -vips-strip-metadata
         VIPS strips all metadata from the resulting image
+  -vips-unlimited
+    	VIPS bypass image max resolution check and remove all denial of service limits
         
   -sentry-dsn
         include sentry dsn to integrate imagor with sentry
