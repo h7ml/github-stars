@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 62061
+stars: 62314
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 4 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -137,7 +137,7 @@ We have implemented support for the following model service providers:
 -   **OpenRouter**: OpenRouter is a service platform providing access to various cutting-edge large model interfaces, supporting OpenAI, Anthropic, LLaMA, and more, suitable for diverse development and application needs. Users can flexibly choose the optimal model and pricing based on their requirements, enhancing the AI experience.
 -   **Cloudflare Workers AI**: Run serverless GPU-powered machine learning models on Cloudflare's global network.
 
-See more providers (+31)
+See more providers (+32)
 
 -   **GitHub**: With GitHub Models, developers can become AI engineers and leverage the industry's leading AI models.
 -   **Novita**: Novita AI is a platform providing a variety of large language models and AI image generation API services, flexible, reliable, and cost-effective. It supports the latest open-source models like Llama3 and Mistral, offering a comprehensive, user-friendly, and auto-scaling API solution for generative AI application development, suitable for the rapid growth of AI startups.
@@ -147,10 +147,11 @@ See more providers (+31)
 -   **Groq**: Groq's LPU inference engine has excelled in the latest independent large language model (LLM) benchmarks, redefining the standards for AI solutions with its remarkable speed and efficiency. Groq represents instant inference speed, demonstrating strong performance in cloud-based deployments.
 -   **Perplexity**: Perplexity is a leading provider of conversational generation models, offering various advanced Llama 3.1 models that support both online and offline applications, particularly suited for complex natural language processing tasks.
 -   **Mistral**: Mistral provides advanced general, specialized, and research models widely used in complex reasoning, multilingual tasks, and code generation. Through functional calling interfaces, users can integrate custom functionalities for specific applications.
+-   **ModelScope**:
 -   **Ai21Labs**: AI21 Labs builds foundational models and AI systems for enterprises, accelerating the application of generative AI in production.
 -   **Upstage**: Upstage focuses on developing AI models for various business needs, including Solar LLM and document AI, aiming to achieve artificial general intelligence (AGI) for work. It allows for the creation of simple conversational agents through Chat API and supports functional calling, translation, embedding, and domain-specific applications.
--   **xAI**: xAI is a company dedicated to building artificial intelligence to accelerate human scientific discovery. Our mission is to advance our collective understanding of the universe.
--   **Qwen**: Tongyi Qianwen is a large-scale language model independently developed by Alibaba Cloud, featuring strong natural language understanding and generation capabilities. It can answer various questions, create written content, express opinions, and write code, playing a role in multiple fields.
+-   **xAI (Grok)**: xAI is a company dedicated to building artificial intelligence to accelerate human scientific discovery. Our mission is to advance our collective understanding of the universe.
+-   **Aliyun Bailian**: Tongyi Qianwen is a large-scale language model independently developed by Alibaba Cloud, featuring strong natural language understanding and generation capabilities. It can answer various questions, create written content, express opinions, and write code, playing a role in multiple fields.
 -   **Wenxin**: An enterprise-level one-stop platform for large model and AI-native application development and services, providing the most comprehensive and user-friendly toolchain for the entire process of generative artificial intelligence model development and application development.
 -   **Hunyuan**: A large language model developed by Tencent, equipped with powerful Chinese creative capabilities, logical reasoning abilities in complex contexts, and reliable task execution skills.
 -   **ZhiPu**: Zhipu AI offers an open platform for multimodal and language models, supporting a wide range of AI application scenarios, including text processing, image understanding, and programming assistance.
@@ -171,7 +172,7 @@ See more providers (+31)
 -   **InfiniAI**: Provides high-performance, easy-to-use, and secure large model services for application developers, covering the entire process from large model development to service deployment.
 -   **Qiniu**: Qiniu, as a long-established cloud service provider, delivers cost-effective and reliable AI inference services for both real-time and batch processing, with a simple and user-friendly experience.
 
-> 📊 Total providers: **41**
+> 📊 Total providers: **42**
 
 At the same time, we are also planning to support more model service providers. If you would like LobeChat to support your favorite service provider, feel free to join our 💬 community discussion.
 

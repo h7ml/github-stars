@@ -1,6 +1,6 @@
 ---
 project: grumpy
-stars: 10540
+stars: 10539
 description: Grumpy is a Python to Go source code transcompiler and runtime.
 url: https://github.com/google/grumpy
 ---

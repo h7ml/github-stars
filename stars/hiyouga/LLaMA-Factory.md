@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 51251
+stars: 51787
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -17,7 +17,7 @@ Available for MacOS, Linux, & Windows
 
 ### Easily fine-tune 100+ large language models with zero-code CLI and Web UI
 
-👋 Join our WeChat or NPU user group.
+👋 Join our WeChat group, NPU user group or Alaya NeW user group.
 
 \[ English | 中文 \]
 
@@ -31,6 +31,7 @@ Choose your path:
 -   **Colab (free)**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
 -   **Local machine**: Please refer to usage
 -   **PAI-DSW (free trial)**: https://gallery.pai-ml.com/#/preview/deepLearning/nlp/llama\_factory
+-   **Alaya NeW (cloud GPU deal)**: https://docs.alayanew.com/docs/documents/newActivities/llamafactory/?utm\_source=LLaMA-Factory
 
 Note
 
@@ -91,12 +92,13 @@ Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 Blogs
 -----
 
+-   Fine-tune Qwen2.5-VL for Autonomous Driving using LLaMA-Factory (Chinese)
 -   How Apoidea Group enhances visual information extraction from banking documents with multimodal models using LLaMA-Factory on Amazon SageMaker HyperPod (English)
 -   Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
--   LLaMA Factory: Fine-tuning the DeepSeek-R1-Distill-Qwen-7B Model for News Classifier (Chinese)
 
 All Blogs
 
+-   LLaMA Factory: Fine-tuning the DeepSeek-R1-Distill-Qwen-7B Model for News Classifier (Chinese)
 -   A One-Stop Code-Free Model Fine-Tuning & Deployment Platform based on SageMaker and LLaMA-Factory (Chinese)
 -   LLaMA Factory Multi-Modal Fine-Tuning Practice: Fine-Tuning Qwen2-VL for Personal Tourist Guide (Chinese)
 -   LLaMA Factory: Fine-tuning the LLaMA3 Model for Role-Playing (Chinese)
@@ -743,7 +745,7 @@ Preference datasets
 
 -   DPO mixed (en&zh)
 -   UltraFeedback (en)
--   COIG-P (en&zh)
+-   COIG-P (zh)
 -   RLHF-V (en)
 -   VLFeedback (en)
 -   RLAIF-V (en)
@@ -974,6 +976,8 @@ Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel
 
 docker run -it --rm --gpus=all --ipc=host hiyouga/llamafactory:latest
 
+This image is built on Ubuntu 22.04 (x86\_64), CUDA 12.4, Python 3.11, PyTorch 2.6.0, and Flash-attn 2.7.4.
+
 Find the pre-built images: https://hub.docker.com/r/hiyouga/llamafactory/tags
 
 Please refer to build docker to build the image yourself.
@@ -1160,11 +1164,6 @@ docker build -f ./docker/docker-cuda/Dockerfile \\
     -t llamafactory:latest .
 
 docker run -dit --ipc=host --gpus=all \\
-    -v ./hf\_cache:/root/.cache/huggingface \\
-    -v ./ms\_cache:/root/.cache/modelscope \\
-    -v ./om\_cache:/root/.cache/openmind \\
-    -v ./shared\_data:/app/shared\_data \\
-    -v ./output:/app/output \\
     -p 7860:7860 \\
     -p 8000:8000 \\
     --name llamafactory \\
@@ -1180,11 +1179,6 @@ docker build -f ./docker/docker-npu/Dockerfile \\
     -t llamafactory:latest .
 
 docker run -dit --ipc=host \\
-    -v ./hf\_cache:/root/.cache/huggingface \\
-    -v ./ms\_cache:/root/.cache/modelscope \\
-    -v ./om\_cache:/root/.cache/openmind \\
-    -v ./shared\_data:/app/shared\_data \\
-    -v ./output:/app/output \\
     -v /usr/local/dcmi:/usr/local/dcmi \\
     -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \\
     -v /usr/local/Ascend/driver:/usr/local/Ascend/driver \\
@@ -1208,11 +1202,6 @@ docker build -f ./docker/docker-rocm/Dockerfile \\
     -t llamafactory:latest .
 
 docker run -dit --ipc=host \\
-    -v ./hf\_cache:/root/.cache/huggingface \\
-    -v ./ms\_cache:/root/.cache/modelscope \\
-    -v ./om\_cache:/root/.cache/openmind \\
-    -v ./shared\_data:/app/shared\_data \\
-    -v ./output:/app/output \\
     -p 7860:7860 \\
     -p 8000:8000 \\
     --device /dev/kfd \\
@@ -1222,12 +1211,14 @@ docker run -dit --ipc=host \\
 
 docker exec -it llamafactory bash
 
-Details about volume
+Use Docker volumes
 
--   `hf_cache`: Utilize Hugging Face cache on the host machine. Reassignable if a cache already exists in a different directory.
--   `ms_cache`: Similar to Hugging Face cache but for ModelScope users.
--   `om_cache`: Similar to Hugging Face cache but for Modelers users.
--   `shared_data`: Place datasets on this dir of the host machine so that they can be selected on LLaMA Board GUI.
+You can uncomment `VOLUME [ "/root/.cache/huggingface", "/app/shared_data", "/app/output" ]` in the Dockerfile to use data volumes.
+
+When building the Docker image, use `-v ./hf_cache:/root/.cache/huggingface` argument to mount the local directory to the container. The following data volumes are available.
+
+-   `hf_cache`: Utilize Hugging Face cache on the host machine.
+-   `shared_data`: The directionary to store datasets on the host machine.
 -   `output`: Set export dir to this location so that the merged result can be accessed directly on the host machine.
 
 ### Deploy with OpenAI-style API and vLLM

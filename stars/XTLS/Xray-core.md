@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 28706
+stars: 28817
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -57,7 +57,7 @@ Installation
     -   Hiddify
 -   One Click
     -   Xray-REALITY, xray-reality, reality-ezpz
-    -   Xray\_bash\_onekey, XTool
+    -   Xray\_bash\_onekey, XTool, VPainLess
     -   v2ray-agent, Xray\_onekey, ProxySU
 -   Magisk
     -   Xray4Magisk
@@ -100,6 +100,7 @@ GUI Clients
     -   v2rayNG
     -   X-flutter
     -   SaeedDev94/Xray
+    -   SimpleXray
 -   iOS & macOS arm64
     -   Happ
     -   Streisand
@@ -132,6 +133,7 @@ Others that support VLESS, XTLS, REALITY, XUDP, PLUX...
     -   XrayR-release
     -   XrayR-V2Board
 -   Cores
+    -   Amnezia VPN
     -   mihomo
     -   sing-box
 

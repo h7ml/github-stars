@@ -1,6 +1,6 @@
 ---
 project: Nimbus
-stars: 808
+stars: 998
 description: An open source alternative to Google Drive, One Drive, iCloud, etc.
 url: https://github.com/nimbusdotstorage/Nimbus
 ---
@@ -15,7 +15,7 @@ Quickstart
 
 ### 1\. Clone the Repository
 
-git clone https://github.com/logscore/Nimbus.git
+git clone https://github.com/nimbusdotstorage/Nimbus.git
 cd Nimbus
 
 ### 2\. Install Dependencies
@@ -53,6 +53,9 @@ We use Docker to run a PostgreSQL database for local development. Follow these s
 
 Copy the `.env.example` file to `.env` using this command, `cp .env.example .env` and fill in these values:
 
+# For more information on how to get these values, see https://www.better-auth.com/docs/authentication/google
+# Authorised JavaScript origins: http://localhost:1284
+# Authorised redirect URIs: http://localhost:1284/api/auth/callback/google
 GOOGLE\_CLIENT\_ID=
 GOOGLE\_CLIENT\_SECRET=
 

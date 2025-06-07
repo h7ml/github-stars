@@ -1,6 +1,6 @@
 ---
 project: v2ray-wss
-stars: 2706
+stars: 2730
 description: A proxy script with multiple protocols.
 url: https://github.com/yeahwu/v2ray-wss
 ---
@@ -12,7 +12,7 @@ url: https://github.com/yeahwu/v2ray-wss
 运行脚本：
 
 ```
-wget https://raw.githubusercontent.com/yeahwu/v2ray-wss/main/tcp-wss.sh && bash tcp-wss.sh
+wget git.io/tcp-wss.sh && bash tcp-wss.sh
 ```
 
 **便宜VPS推荐：** https://hostalk.net/deals.html

@@ -1,6 +1,6 @@
 ---
 project: waraft
-stars: 575
+stars: 574
 description: An Erlang implementation of RAFT from WhatsApp
 url: https://github.com/WhatsApp/waraft
 ---

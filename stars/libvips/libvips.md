@@ -1,6 +1,6 @@
 ---
 project: libvips
-stars: 10349
+stars: 10367
 description: A fast image processing library with low memory needs.
 url: https://github.com/libvips/libvips
 ---
@@ -39,7 +39,7 @@ NetVips
 
 Go
 
-govips
+govips, vips-gen
 
 Lua
 

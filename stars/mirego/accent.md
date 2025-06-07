@@ -1,6 +1,6 @@
 ---
 project: accent
-stars: 1398
+stars: 1401
 description: The first developer-oriented translation tool. True asynchronous flow between translators and your team.
 url: https://github.com/mirego/accent
 ---
@@ -69,6 +69,9 @@ Easiest way to run an instance of Accent is by using the offical docker image: h
 ```
 DATABASE_URL=postgresql://postgres@docker.for.mac.host.internal/accent_development
 DUMMY_LOGIN_ENABLED=1
+# Required for session management. Must be a 64-byte string.
+# Generate one using: openssl rand -base64 64
+SECRET_KEY_BASE=KEY
 ```
 
 1.  Run the image
@@ -156,6 +159,12 @@ A valid database URL
 `4000`
 
 A port to run the app on
+
+`SECRET_KEY_BASE`
+
+_DEFAULT\_UNSAFE\_KEY_
+
+The secret key that is used to encrypt session (cookie)
 
 ### Production setup
 

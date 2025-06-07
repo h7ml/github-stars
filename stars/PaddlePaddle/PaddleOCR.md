@@ -1,7 +1,7 @@
 ---
 project: PaddleOCR
-stars: 49843
-description: Awesome multilingual OCR toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
+stars: 50116
+description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
 
@@ -10,7 +10,7 @@ url: https://github.com/PaddlePaddle/PaddleOCR
 🚀 简介
 -----
 
-PaddleOCR自发布以来凭借学术前沿算法和产业落地实践，受到了产学研各方的喜爱，并被广泛应用于众多知名开源项目，例如：Umi-OCR、OmniParser、MinerU、RAGFlow等，已成为广大开发者心中的开源OCR领域的首选工具。2025年5月20日，飞桨团队发布**PaddleOCR 3.0**，全面适配**飞桨框架3.0正式版**，进一步**提升文字识别精度**，支持**多文字类型识别**和**手写体识别**，满足大模型应用对**复杂文档高精度解析**的旺盛需求，结合**文心大模型4.5 Turbo**显著提升关键信息抽取精度，并新增**对昆仑芯、昇腾等国产硬件**的支持。
+PaddleOCR自发布以来凭借学术前沿算法和产业落地实践，受到了产学研各方的喜爱，并被广泛应用于众多知名开源项目，例如：Umi-OCR、OmniParser、MinerU、RAGFlow等，已成为广大开发者心中的开源OCR领域的首选工具。2025年5月20日，飞桨团队发布**PaddleOCR 3.0**，全面适配**飞桨框架3.0正式版**，进一步**提升文字识别精度**，支持**多文字类型识别**和**手写体识别**，满足大模型应用对**复杂文档高精度解析**的旺盛需求，结合**文心大模型4.5 Turbo**显著提升关键信息抽取精度，并新增**对昆仑芯、昇腾等国产硬件**的支持。完整使用文档请参考 PaddleOCR 3.0 文档。
 
 PaddleOCR 3.0**新增**三大特色能力：
 
@@ -22,6 +22,14 @@ PaddleOCR 3.0除了提供优秀的模型库外，还提供好学易用的工具�
 
 📣 最新动态
 -------
+
+🔥🔥2025.06.05: **PaddleOCR 3.0.1** 发布，包含：
+
+-   **优化部分模型和模型配置：**
+    -   更新 PP-OCRv5默认模型配置，检测和识别均由mobile改为server模型。为了改善大多数的场景默认效果，配置中的参数`limit_side_len`由736改为64
+    -   新增文本行方向分类`PP-LCNet_x1_0_textline_ori`模型，精度99.42%，OCR、PP-StructureV3、PP-ChatOCRv4产线的默认文本行方向分类器改为该模型
+    -   优化文本行方向分类`PP-LCNet_x0_25_textline_ori`模型，精度提升3.3个百分点，当前精度98.85%
+-   **优化和修复3.0.0版本部分存在的问题，详情**
 
 🔥🔥2025.05.20: **PaddleOCR 3.0** 正式发布，包含：
 
@@ -50,7 +58,7 @@ PaddleOCR 3.0除了提供优秀的模型库外，还提供好学易用的工具�
 请参考安装指南完成**PaddlePaddle 3.0**的安装，然后安装paddleocr。
 
 # 安装 paddleocr
-pip install paddleocr==3.0.0
+pip install paddleocr
 
 ### 3\. 命令行方式推理
 

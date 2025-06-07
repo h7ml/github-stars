@@ -1,6 +1,6 @@
 ---
 project: motionity
-stars: 3324
+stars: 3326
 description: The web-based motion graphics editor for everyone 📽
 url: https://github.com/alyssaxuu/motionity
 ---

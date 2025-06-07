@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 12974
+stars: 12992
 description: Next-generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -865,7 +865,7 @@ Global Members:
 -   _async_ index.**serialize**(boolean)
 
 -   _async_ index.**mount**(db)
--   _async_ index.**commit**(boolean)
+-   _async_ index.**commit**()
 -   _async_ index.**destroy**()
 
 * * *
@@ -890,7 +890,7 @@ Global Members:
 -   _async_ document.**import**(key, data)
 
 -   _async_ document.**mount**(db)
--   _async_ document.**commit**(boolean)
+-   _async_ document.**commit**()
 -   _async_ document.**destroy**()
 
 `Document` Properties:
@@ -906,6 +906,7 @@ Async Equivalents (Non-Blocking Balanced):
 -   _async_ **.updateAsync**( ... , <callback>)
 -   _async_ **.removeAsync**( ... , <callback>)
 -   _async_ **.searchAsync**( ... , <callback>)
+-   _async_ **.searchCacheAsync**( ... , <callback>)
 
 Async methods will return a `Promise`, additionally you can pass a callback function as the last parameter.
 
@@ -939,6 +940,7 @@ Methods `.export()` and also `.import()` are always async as well as every metho
 `Resolver` Properties:
 
 -   resolver.**result**
+-   resolver.**await** (Async)
 
 * * *
 
@@ -949,6 +951,7 @@ Methods `.export()` and also `.import()` are always async as well as every metho
 -   _async_ db.**close**()
 -   _async_ db.**destroy**()
 -   _async_ db.**clear**()
+-   _async_ db.**commit**(index)
 
 * * *
 
@@ -1355,7 +1358,7 @@ index the full term by also being tolerant against typos like swapped letters an
 `foobr`  
 `fooba`
 
-1 + 2(n - 2)
+2(n - 2) + 2
 
 `"full"`
 

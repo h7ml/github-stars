@@ -1,6 +1,6 @@
 ---
 project: edge-tts
-stars: 8344
+stars: 8404
 description: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key
 url: https://github.com/rany2/edge-tts
 ---

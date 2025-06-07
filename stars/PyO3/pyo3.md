@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13712
+stars: 13776
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -166,10 +166,15 @@ Tools and libraries
 -   rustimport _Directly import Rust files or crates from Python, without manual compilation step. Provides pyo3 integration by default and generates pyo3 binding code automatically._
 -   pyo3-arrow _Lightweight Apache Arrow integration for pyo3._
 -   pyo3-bytes _Integration between `bytes` and pyo3._
+-   pyo3-object\_store _Integration between `object_store` and `pyo3`._
 
 Examples
 --------
 
+-   arro3 _A minimal Python library for Apache Arrow, connecting to the Rust arrow crate._
+    -   arro3-compute _`arro3-compute`_
+    -   arro3-core _`arro3-core`_
+    -   arro3-io _`arro3-io`_
 -   bed-reader _Read and write the PLINK BED format, simply and efficiently._
     -   Shows Rayon/ndarray::parallel (including capturing errors, controlling thread num), Python types to Rust generics, Github Actions
 -   blake3-py _Python bindings for the BLAKE3 cryptographic hash function._
@@ -184,6 +189,7 @@ Examples
 -   fastuuid _Python bindings to Rust's UUID library._
 -   feos _Lightning fast thermodynamic modeling in Rust with fully developed Python interface._
 -   forust _A lightweight gradient boosted decision tree library written in Rust._
+-   geo-index _A Rust crate and Python library for packed, immutable, zero-copy spatial indexes._
 -   granian _A Rust HTTP server for Python applications._
 -   haem _A Python library for working on Bioinformatics problems._
 -   html2text-rs _Python library for converting HTML to markup or plain text._
@@ -192,6 +198,7 @@ Examples
 -   johnnycanencrypt OpenPGP library with Yubikey support.
 -   jsonschema _A high-performance JSON Schema validator for Python._
 -   mocpy _Astronomical Python library offering data structures for describing any arbitrary coverage regions on the unit sphere._
+-   obstore _The simplest, highest-throughput Python interface to Amazon S3, Google Cloud Storage, Azure Storage, & other S3-compliant APIs, powered by Rust._
 -   opendal _A data access layer that allows users to easily and efficiently retrieve data from various storage services in a unified way._
 -   orjson _Fast Python JSON library._
 -   ormsgpack _Fast Python msgpack library._

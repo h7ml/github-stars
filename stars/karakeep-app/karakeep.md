@@ -1,6 +1,6 @@
 ---
 project: karakeep
-stars: 17332
+stars: 17652
 description: A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search
 url: https://github.com/karakeep-app/karakeep
 ---
@@ -14,13 +14,14 @@ Features
 -   ⬇️ Automatic fetching for link titles, descriptions and images.
 -   📋 Sort your bookmarks into lists.
 -   🔎 Full text search of all the content stored.
--   ✨ AI-based (aka chatgpt) automatic tagging. With supports for local models using ollama!
+-   ✨ AI-based (aka chatgpt) automatic tagging and summarization. With supports for local models using ollama!
+-   🤖 Rule-based engine for customized management.
 -   🎆 OCR for extracting text from images.
 -   🔖 Chrome plugin and Firefox addon for quick bookmarking.
 -   📱 An iOS app, and an Android app.
 -   📰 Auto hoarding from RSS feeds.
 -   🔌 REST API.
--   🌐 Mutli-language support.
+-   🌐 Multi-language support.
 -   🖍️ Mark and store highlights from your hoarded content.
 -   🗄️ Full page archival (using monolith) to protect against link rot. Auto video archiving using youtube-dl.
 -   ☑️ Bulk actions support.
@@ -29,7 +30,7 @@ Features
 -   💾 Self-hosting first.
 -   \[Planned\] Downloading the content for offline reading in the mobile app.
 
-**⚠️ This app is under heavy development and it's far from stable.**
+**⚠️ This app is under heavy development.**
 
 Documentation
 -------------

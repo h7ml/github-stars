@@ -1,6 +1,6 @@
 ---
 project: zombodb
-stars: 4737
+stars: 4738
 description: Making Postgres and Elasticsearch work together like it's 2023
 url: https://github.com/zombodb/zombodb
 ---

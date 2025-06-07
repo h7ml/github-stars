@@ -1,6 +1,6 @@
 ---
 project: squabble
-stars: 76
+stars: 77
 description: Simple leader election for Elixir applications
 url: https://github.com/oestrich/squabble
 ---

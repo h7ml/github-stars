@@ -1,6 +1,6 @@
 ---
 project: imaginary
-stars: 5850
+stars: 5855
 description: Fast, simple, scalable, Docker-ready HTTP microservice for high-level image processing
 url: https://github.com/h2non/imaginary
 ---

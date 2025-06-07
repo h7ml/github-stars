@@ -1,6 +1,6 @@
 ---
 project: AutoGPT
-stars: 175767
+stars: 175948
 description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 url: https://github.com/Significant-Gravitas/AutoGPT
 ---
@@ -25,9 +25,39 @@ Note
 
 Setting up and hosting the AutoGPT Platform yourself is a technical process. If you'd rather something that just works, we recommend joining the waitlist for the cloud-hosted beta.
 
+### System Requirements
+
+Before proceeding with the installation, ensure your system meets the following requirements:
+
+#### Hardware Requirements
+
+-   CPU: 4+ cores recommended
+-   RAM: Minimum 8GB, 16GB recommended
+-   Storage: At least 10GB of free space
+
+#### Software Requirements
+
+-   Operating Systems:
+    -   Linux (Ubuntu 20.04 or newer recommended)
+    -   macOS (10.15 or newer)
+    -   Windows 10/11 with WSL2
+-   Required Software (with minimum versions):
+    -   Docker Engine (20.10.0 or newer)
+    -   Docker Compose (2.0.0 or newer)
+    -   Git (2.30 or newer)
+    -   Node.js (16.x or newer)
+    -   npm (8.x or newer)
+    -   VSCode (1.60 or newer) or any modern code editor
+
+#### Network Requirements
+
+-   Stable internet connection
+-   Access to required ports (will be configured in Docker)
+-   Ability to make outbound HTTPS connections
+
 ### Updated Setup Instructions:
 
-We’ve moved to a fully maintained and regularly updated documentation site.
+We've moved to a fully maintained and regularly updated documentation site.
 
 👉 Follow the official self-hosting guide here
 
@@ -154,7 +184,7 @@ Just clone the repo, install dependencies with `./run setup`, and you should be 
 
 ### Get help - Discord 💬
 
-To report a bug or request a feature, create a GitHub Issue. Please ensure someone else hasn’t created an issue for the same topic.
+To report a bug or request a feature, create a GitHub Issue. Please ensure someone else hasn't created an issue for the same topic.
 
 🤝 Sister projects
 ------------------

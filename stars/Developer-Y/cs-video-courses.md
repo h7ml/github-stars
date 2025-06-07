@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68924
+stars: 68982
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -1293,6 +1293,7 @@ Courses
 -   COMS 4281 - Introduction to Quantum Computing -Columbia University
 -   Introduction to Quantum Information Science (Online book, PDF)
 -   A practical introduction to Quantum Computing: from Qubits to Quantum Machine Learning: CERN
+-   PSI 2018/2019 - Quantum Information Review (Gottesman)
 
 * * *
 
@@ -1404,7 +1405,7 @@ Courses
 ### Network Science
 
 -   Network Science, 2021 - HSE
--   Data Science for Business, HSE 2023
+-   Network Science TU Graz
 -   MATH/COMP 479 Network Science Macalester College
 -   ACM Winter School on Network Science \_Dec 2023, Ahmedabad University
 -   Network Science 2021/2022 (ENS Lyon)

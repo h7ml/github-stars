@@ -1,6 +1,6 @@
 ---
 project: hashids-elixir
-stars: 281
+stars: 282
 description: Stringify your ids
 url: https://github.com/alco/hashids-elixir
 ---

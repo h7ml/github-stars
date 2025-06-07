@@ -1,6 +1,6 @@
 ---
 project: srs
-stars: 27030
+stars: 27072
 description: SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181.
 url: https://github.com/ossrs/srs
 ---
@@ -8,7 +8,7 @@ url: https://github.com/ossrs/srs
 SRS(Simple Realtime Server)
 ===========================
 
-SRS/6.0 (Hang) is a simple, high-efficiency, and real-time video server, supporting RTMP/WebRTC/HLS/HTTP-FLV/SRT/MPEG-DASH/GB28181, Linux/Windows/macOS, X86\_64/ARMv7/AARCH64/M1/RISCV/LOONGARCH/MIPS, and essential features.
+SRS/7.0 (Kai) is a simple, high-efficiency, and real-time video server, supporting RTMP/WebRTC/HLS/HTTP-FLV/SRT/MPEG-DASH/GB28181, Linux/Windows/macOS, X86\_64/ARMv7/AARCH64/M1/RISCV/LOONGARCH/MIPS, and essential features.
 
 > Note: For more details on the single-node architecture for SRS, please visit the following link.
 

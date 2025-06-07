@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 21030
+stars: 21123
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -41,9 +41,9 @@ Table of Contents
     -   Table of Contents
     -   Pre-requisites
     -   Verification
-    -   Fast start
     -   Branches & Contributing
-    -   Authentication
+    -   Setup dev environment
+    -   Fast start
     -   Installation
     -   Build and run
     -   Run in development mode
@@ -74,11 +74,6 @@ To verify the installation, perform the following checks in your terminal:
 docker --version
 docker compose version
 
-Fast start
-----------
-
-sh ./scripts/fast-start.sh
-
 Branches & Contributing
 -----------------------
 
@@ -91,8 +86,19 @@ Branches & Contributing
 
 We periodically merge `develop` into `staging` to perform testing builds. Once we are satisfied with the build quality in our pre-release deployment, we merge changes into `main` and release a new version to the community.
 
-Authentication
---------------
+Setup dev environment
+---------------------
+
+### To initialise the communication submodule
+
+git submodule init
+git submodule update
+
+### To update the communication submodule
+
+git submodule update
+
+### Authentication
 
 This project uses GitHub Packages for dependency management. To successfully download dependencies, you need to generate a GitHub personal access token and log in to npm using that token.
 
@@ -111,6 +117,11 @@ Follow these steps:
 npm login --registry=https://npm.pkg.github.com
 
 When prompted, enter your GitHub username, use the generated token as your password
+
+Fast start
+----------
+
+sh ./scripts/fast-start.sh
 
 Installation
 ------------

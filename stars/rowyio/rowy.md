@@ -1,6 +1,6 @@
 ---
 project: rowy
-stars: 6638
+stars: 6645
 description: Low-code backend platform. Manage database on spreadsheet-like UI and build cloud functions workflows in JS/TS, all in your browser.
 url: https://github.com/rowyio/rowy
 ---

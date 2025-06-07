@@ -1,6 +1,6 @@
 ---
 project: rxdb
-stars: 22362
+stars: 22389
 description: A fast, local first, reactive Database for JavaScript Applications https://rxdb.info/
 url: https://github.com/pubkey/rxdb
 ---

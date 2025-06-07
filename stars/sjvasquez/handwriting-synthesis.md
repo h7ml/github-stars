@@ -1,6 +1,6 @@
 ---
 project: handwriting-synthesis
-stars: 4519
+stars: 4530
 description: Handwriting Synthesis with RNNs ✏️
 url: https://github.com/sjvasquez/handwriting-synthesis
 ---

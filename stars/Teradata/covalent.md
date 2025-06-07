@@ -6,9 +6,9 @@ url: https://github.com/Teradata/covalent
 ---
 
 Covalent Design System
-----------------------
+======================
 
-Covalent is Teradata's design system used to create Teradata branded experiences. This space is intended to be used to support developers creating coded experiences for Teradata products. Currently we are only supporting angular and a library of web components.
+Covalent is Teradata's design system used to create consistent, branded experiences. This repository provides tools and components to support developers building applications for Teradata products. We currently support Angular and offer a comprehensive library of web components.
 
 **Vision: To build an atomic, reusable component platform for Teradata to consume, while collaborating in an open source model.**
 
@@ -16,8 +16,8 @@ Setup
 -----
 
 -   Ensure you have Node 18.12.0+
--   Install Node packages `npm ci`
--   Run local build `npm run start`
+-   Install Node packages: `npm ci`
+-   Run local build: `npm run start`
 
 * * *
 
@@ -81,7 +81,7 @@ Angular
 Browser Support
 ---------------
 
-Covalent is built on a CSS Flexbox layout and all layouts and components heavily rely up that support, so the current browsers are supported in order or recommendation:
+Covalent is built on a CSS Flexbox layout and all layouts and components heavily rely on that support, so the current browsers are supported in order of recommendation:
 
 #### Current version - 1 for the following:
 
@@ -116,4 +116,4 @@ Mobile Safari
 Running Chromatic
 -----------------
 
-`npx chromatic --project-token=${CHROMATIC_PROJECT_TOKEN}`
+npx chromatic --project-token=${CHROMATIC\_PROJECT\_TOKEN}

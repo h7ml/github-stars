@@ -1,6 +1,6 @@
 ---
 project: setup-ipsec-vpn
-stars: 26243
+stars: 26269
 description: Scripts to build your own IPsec VPN server, with IPsec/L2TP, Cisco IPsec and IKEv2
 url: https://github.com/hwdsl2/setup-ipsec-vpn
 ---
@@ -66,7 +66,7 @@ Requirements
 
 A cloud server, virtual private server (VPS) or dedicated server, with an install of:
 
--   Ubuntu 24.04, 22.04 or 20.04
+-   Ubuntu 24.04 or 22.04
 -   Debian 12 or 11
 -   CentOS Stream 10 or 9
 -   Rocky Linux or AlmaLinux
@@ -84,7 +84,7 @@ This also includes Linux VMs in public clouds, such as DigitalOcean, Vultr, Lino
 
 Quick deploy to:
 
-     
+   
 
 **» I want to run my own VPN but don't have a server for that**
 

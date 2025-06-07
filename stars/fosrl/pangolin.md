@@ -1,11 +1,11 @@
 ---
 project: pangolin
-stars: 9049
+stars: 9465
 description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
 
-### Tunneled Mesh Reverse Proxy Server with Access Control
+#### Tunneled Reverse Proxy Server with Access Control
 
 _Your own self-hosted zero trust tunnel._
 
@@ -74,7 +74,7 @@ Deployment and Usage Example
 
 Tip
 
-Many of our users have had a great experience with RackNerd. Depending on promotions, you can likely get a **VPS with 1 vCPU, 1GB RAM, and ~20GB SSD for just around $12/year**. That's a great deal! We are part of the RackNerd affiliate program, so if you purchase through our link, we receive a small commission which helps us maintain the project and keep it free for everyone.
+Many of our users have had a great experience with RackNerd. Depending on promotions, you can get a **VPS with 1 vCPU, 1GB RAM, and ~20GB SSD for just around $12/year**. That's a great deal! We are part of the RackNerd affiliate program, so if you purchase through our link, we receive a small commission which helps us maintain the project and keep it free for everyone.
 
 1.  **Domain Configuration**:
     

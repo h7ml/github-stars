@@ -1,6 +1,6 @@
 ---
 project: imagor
-stars: 3644
+stars: 3646
 description: Fast, secure image processing server and Go library, using libvips
 url: https://github.com/cshum/imagor
 ---
@@ -10,7 +10,7 @@ imagor
 
 imagor is a fast, secure image processing server and Go library.
 
-imagor uses one of the most efficient image processing library libvips with Go binding generator vipsgen. It is typically 4-8x faster than using the quickest ImageMagick settings. imagor implements libvips streaming that facilitates parallel processing pipelines, achieving high network throughput.
+imagor uses one of the most efficient image processing library libvips with Go binding vipsgen. It is typically 4-8x faster than using the quickest ImageMagick settings. imagor implements libvips streaming that facilitates parallel processing pipelines, achieving high network throughput.
 
 imagor features a ton of image processing use cases, available as a HTTP server with first-class Docker support. It adopts the thumbor URL syntax representing a high-performance drop-in replacement.
 
@@ -391,6 +391,24 @@ The example URL then becomes:
 http://localhost:8000/unsafe/fit-in/200x150/filters:fill(yellow):watermark(testdata/gopher-front.png,repeat,bottom,0,40,40)/testdata/dancing-banana.gif
 ```
 
+### ImageMagick Support
+
+imagor uses libvips which is typically 4-8x faster than ImageMagick with better memory efficiency and security. However, there are image formats that libvips cannot handle natively, such as PSD, BMP, XCF and other legacy formats.
+
+imagor provides an ImageMagick-enabled variant that includes ImageMagick support through libvips `magickload` operation. This allows processing additional file formats but with performance and security tradeoffs.
+
+**ImageMagick is not recommended for speed, memory and security** but is capable of opening files that libvips won't support natively.
+
+#### Docker build `imagor-magick`
+
+docker pull ghcr.io/cshum/imagor-magick:latest
+
+Usage:
+
+docker run -p 8000:8000 ghcr.io/cshum/imagor-magick:latest -imagor-unsafe -imagor-auto-webp
+
+We recommend using the standard imagor image for most use cases.
+
 ### Metadata and Exif
 
 imagor provides metadata endpoint that extracts information such as image format, resolution and Exif metadata. Under the hood, it tries to retrieve data just enough to extract the header, without reading and processing the whole image in memory.
@@ -495,6 +513,10 @@ func main() {
 		panic(err)
 	}
 }
+
+### Golden Test Data
+
+imagor employs golden test data with reference images in `testdata/golden/` to validate image processing operations. Golden test data is automatically updated via CI when imagor or libvips library improves, ensuring regression testing while maintaining visual consistency.
 
 ### Configuration
 
