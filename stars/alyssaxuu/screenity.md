@@ -1,6 +1,6 @@
 ---
 project: screenity
-stars: 14616
+stars: 14729
 description: The free and privacy-friendly screen recorder with no limits 🎥
 url: https://github.com/alyssaxuu/screenity
 ---

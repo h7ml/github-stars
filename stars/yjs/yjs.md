@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 19386
+stars: 19434
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -85,6 +85,7 @@ Who is using Yjs
 -   Open Collaboration Tools - Collaborative editing for your IDE or custom editor
 -   Typst - Compose, edit, and automate technical documents
 -   Kedyou - Digital workspaces for tutoring
+-   Lightpage - Personal living notebook
 
 Table of Contents
 -----------------

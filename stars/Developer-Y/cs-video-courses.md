@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 68982
+stars: 69018
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -577,6 +577,7 @@ Courses
     -   UC Berkeley CS 182 / 282a Deep Learning spring 2023, by Anant Sahai
     -   Foundations of Deep Learning - UMD
     -   TUM IN2346 Introduction to Deep Learning Fall 2024, by Daniel Cremers (Summer 2023)
+    -   UT Austin - Advances in Deep Learning
 -   #### **Reinforcement Learning**
     
     -   CS234: Reinforcement Learning - Spring 2024 - Stanford University (Winter 2019)

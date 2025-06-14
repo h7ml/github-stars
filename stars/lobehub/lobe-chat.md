@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 62314
+stars: 62451
 description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 4 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -147,7 +147,7 @@ See more providers (+32)
 -   **Groq**: Groq's LPU inference engine has excelled in the latest independent large language model (LLM) benchmarks, redefining the standards for AI solutions with its remarkable speed and efficiency. Groq represents instant inference speed, demonstrating strong performance in cloud-based deployments.
 -   **Perplexity**: Perplexity is a leading provider of conversational generation models, offering various advanced Llama 3.1 models that support both online and offline applications, particularly suited for complex natural language processing tasks.
 -   **Mistral**: Mistral provides advanced general, specialized, and research models widely used in complex reasoning, multilingual tasks, and code generation. Through functional calling interfaces, users can integrate custom functionalities for specific applications.
--   **ModelScope**:
+-   **ModelScope**: ModelScope is a model-as-a-service platform launched by Alibaba Cloud, offering a wide range of AI models and inference services.
 -   **Ai21Labs**: AI21 Labs builds foundational models and AI systems for enterprises, accelerating the application of generative AI in production.
 -   **Upstage**: Upstage focuses on developing AI models for various business needs, including Solar LLM and document AI, aiming to achieve artificial general intelligence (AGI) for work. It allows for the creation of simple conversational agents through Chat API and supports functional calling, translation, embedding, and domain-specific applications.
 -   **xAI (Grok)**: xAI is a company dedicated to building artificial intelligence to accelerate human scientific discovery. Our mission is to advance our collective understanding of the universe.
@@ -244,7 +244,7 @@ By **vsnthdev** on **2024-12-02**
 Searches Google through their official CSE API.  
 `web` `search`
 
-> 📊 Total plugins: **43**
+> 📊 Total plugins: **42**
 
 ### `11` Agent Market (GPTs)
 
@@ -262,31 +262,31 @@ Recent Submits
 
 Description
 
-学术论文综述专家  
+Academic Paper Reading Mentor  
+By **AdijeShen** on **2025-05-09**
+
+Expert in explaining complex academic papers in simple and understandable language  
+`academic-knowledge` `paper-analysis`
+
+Nutritional Advisor  
+By **egornomic** on **2025-04-15**
+
+Specializes in providing detailed nutritional information for food items.  
+`nutrition` `food` `health` `information`
+
+Rewritten in Translation Style  
+By **q2019715** on **2025-03-13**
+
+Rewrites a paragraph in a translation style  
+`translation-style` `creative-writing` `language-style` `text-rewriting` `culture`
+
+Academic Paper Review Expert  
 By **arvinxx** on **2025-03-11**
 
-擅长高质量文献检索与分析的学术研究助手  
-`学术研究` `文献检索` `数据分析` `信息提取` `咨询`
+An academic research assistant skilled in high-quality literature retrieval and analysis  
+`academic-research` `literature-search` `data-analysis` `information-extraction` `consulting`
 
-Cron Expression Assistant  
-By **edgesider** on **2025-02-17**
-
-Crontab Expression Generator  
-`crontab` `time-expression` `trigger-time` `generator` `technical-assistance`
-
-Xiao Zhi French Translation Assistant  
-By **WeR-Best** on **2025-02-10**
-
-A friendly, professional, and empathetic AI assistant for French translation  
-`ai-assistant` `french-translation` `cross-cultural-communication` `creativity`
-
-Investment Assistant  
-By **farsightlin** on **2025-02-06**
-
-Helps users calculate the data needed for valuation  
-`investment` `valuation` `financial-analysis` `calculator`
-
-> 📊 Total agents: **488**
+> 📊 Total agents: **499**
 
 ### `12` Support Local / Remote Database
 

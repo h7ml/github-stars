@@ -1,6 +1,6 @@
 ---
 project: ImageGlass
-stars: 10422
+stars: 10480
 description: 🏞 A lightweight, versatile image viewer
 url: https://github.com/d2phap/ImageGlass
 ---

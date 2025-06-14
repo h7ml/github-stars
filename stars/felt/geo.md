@@ -1,6 +1,6 @@
 ---
 project: geo
-stars: 656
+stars: 657
 description: A collection of GIS functions for Elixir
 url: https://github.com/felt/geo
 ---
@@ -70,15 +70,15 @@ Encode and decode GeoJSON:
 
 Geo only encodes and decodes maps shaped as GeoJSON. JSON encoding and decoding must be done before and after.
 
-\# Examples using Jason as the JSON parser
+\# Examples using JSON as the JSON parser
 
 iex(1)\> Geo.JSON.encode(point)
 {:ok, %{ "type" \=> "Point", "coordinates" \=> \[100.0, 0.0\] }}
 
-iex(2)\> point \= Jason.decode!("{\\"type\\": \\"Point\\", \\"coordinates\\": \[100.0, 0.0\] }") |> Geo.JSON.decode
-%Geo.Point{ coordinates: {100.0, 0.0}, srid: nil }
+iex(2)\> point \= JSON.decode!("{\\"type\\": \\"Point\\", \\"coordinates\\": \[100.0, 0.0\] }") |> Geo.JSON.decode
+{:ok, %Geo.Point{coordinates: {100.0, 0.0}, srid: 4326, properties: %{}}
 
-iex(3)\> Geo.JSON.encode!(point) |> Jason.encode!
+iex(3)\> Geo.JSON.encode!(point) |> JSON.encode!
 "{\\"coordinates\\":\[100.0,0.0\],\\"type\\":\\"Point\\"}"
 
 Copyright and License

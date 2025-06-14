@@ -1,6 +1,6 @@
 ---
 project: ferret
-stars: 5816
+stars: 5820
 description: Declarative web scraping
 url: https://github.com/MontFerret/ferret
 ---

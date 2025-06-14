@@ -1,6 +1,6 @@
 ---
 project: lunr.js
-stars: 9068
+stars: 9072
 description: A bit like Solr, but much smaller and not as bright
 url: https://github.com/olivernn/lunr.js
 ---

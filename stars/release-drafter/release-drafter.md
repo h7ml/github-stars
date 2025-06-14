@@ -1,6 +1,6 @@
 ---
 project: release-drafter
-stars: 3662
+stars: 3664
 description: Drafts your next release notes as pull requests are merged into master. 
 url: https://github.com/release-drafter/release-drafter
 ---

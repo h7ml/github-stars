@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9526
+stars: 9528
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -233,7 +233,7 @@ see also http://bettermotherfuckingwebsite.com/
 focus is fun
 
 -   https://www.getpapercss.com/ (handrwritingey css similar to roughjs)
--   https://terminalcss.xyz/
+-   https://terminalcss.xyz/ and https://github.com/webtui/webtui
 
 focus is brutalism
 

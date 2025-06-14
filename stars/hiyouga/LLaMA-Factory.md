@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 51787
+stars: 52260
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -407,9 +407,9 @@ mimo
 
 MiniCPM
 
-1B/2B/4B
+0.5B/1B/2B/4B/8B
 
-cpm/cpm3
+cpm/cpm3/cpm4
 
 MiniCPM-o-2.6/MiniCPM-V-2.6
 
@@ -1358,20 +1358,22 @@ Click to show
 80.  Xia et al. Using Pre-trained Language Model for Accurate ESG Prediction. FinNLP 2024. \[paper\]
 81.  Liang et al. I-SHEEP: Self-Alignment of LLM from Scratch through an Iterative Self-Enhancement Paradigm. 2024. \[arxiv\]
 82.  Bai et al. Aligning Large Language Model with Direct Multi-Preference Optimization for Recommendation. CIKM 2024. \[paper\]
-83.  **StarWhisper**: A large language model for Astronomy, based on ChatGLM2-6B and Qwen-14B.
-84.  **DISC-LawLLM**: A large language model specialized in Chinese legal domain, based on Baichuan-13B, is capable of retrieving and reasoning on legal knowledge.
-85.  **Sunsimiao**: A large language model specialized in Chinese medical domain, based on Baichuan-7B and ChatGLM-6B.
-86.  **CareGPT**: A series of large language models for Chinese medical domain, based on LLaMA2-7B and Baichuan-13B.
-87.  **MachineMindset**: A series of MBTI Personality large language models, capable of giving any LLM 16 different personality types based on different datasets and training methods.
-88.  **Luminia-13B-v3**: A large language model specialized in generate metadata for stable diffusion. \[demo\]
-89.  **Chinese-LLaVA-Med**: A multimodal large language model specialized in Chinese medical domain, based on LLaVA-1.5-7B.
-90.  **AutoRE**: A document-level relation extraction system based on large language models.
-91.  **NVIDIA RTX AI Toolkit**: SDKs for fine-tuning LLMs on Windows PC for NVIDIA RTX.
-92.  **LazyLLM**: An easy and lazy way for building multi-agent LLMs applications and supports model fine-tuning via LLaMA Factory.
-93.  **RAG-Retrieval**: A full pipeline for RAG retrieval model fine-tuning, inference, and distillation. \[blog\]
-94.  **360-LLaMA-Factory**: A modified library that supports long sequence SFT & DPO using ring attention.
-95.  **Sky-T1**: An o1-like model fine-tuned by NovaSky AI with very small cost.
-96.  **WeClone**: One-stop solution for creating your digital avatar from chat logs.
+83.  Zhang et al. CPsyCoun: A Report-based Multi-turn Dialogue Reconstruction and Evaluation Framework for Chinese Psychological Counseling. ACL 2024. \[paper\]
+84.  **StarWhisper**: A large language model for Astronomy, based on ChatGLM2-6B and Qwen-14B.
+85.  **DISC-LawLLM**: A large language model specialized in Chinese legal domain, based on Baichuan-13B, is capable of retrieving and reasoning on legal knowledge.
+86.  **Sunsimiao**: A large language model specialized in Chinese medical domain, based on Baichuan-7B and ChatGLM-6B.
+87.  **CareGPT**: A series of large language models for Chinese medical domain, based on LLaMA2-7B and Baichuan-13B.
+88.  **MachineMindset**: A series of MBTI Personality large language models, capable of giving any LLM 16 different personality types based on different datasets and training methods.
+89.  **Luminia-13B-v3**: A large language model specialized in generate metadata for stable diffusion. \[demo\]
+90.  **Chinese-LLaVA-Med**: A multimodal large language model specialized in Chinese medical domain, based on LLaVA-1.5-7B.
+91.  **AutoRE**: A document-level relation extraction system based on large language models.
+92.  **NVIDIA RTX AI Toolkit**: SDKs for fine-tuning LLMs on Windows PC for NVIDIA RTX.
+93.  **LazyLLM**: An easy and lazy way for building multi-agent LLMs applications and supports model fine-tuning via LLaMA Factory.
+94.  **RAG-Retrieval**: A full pipeline for RAG retrieval model fine-tuning, inference, and distillation. \[blog\]
+95.  **360-LLaMA-Factory**: A modified library that supports long sequence SFT & DPO using ring attention.
+96.  **Sky-T1**: An o1-like model fine-tuned by NovaSky AI with very small cost.
+97.  **WeClone**: One-stop solution for creating your digital avatar from chat logs.
+98.  **EmoLLM**: A project about large language models (LLMs) and mental health.
 
 License
 -------

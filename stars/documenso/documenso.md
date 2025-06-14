@@ -1,6 +1,6 @@
 ---
 project: documenso
-stars: 11014
+stars: 11050
 description: The Open Source DocuSign Alternative.
 url: https://github.com/documenso/documenso
 ---
@@ -22,8 +22,6 @@ Recognition
 
 Community and Next Steps 🎯
 ---------------------------
-
-We're currently working on a redesign of the application, including a revamp of the codebase, so Documenso can be more intuitive to use and robust to develop upon.
 
 -   Check out the first source code release in this repository and test it.
 -   Tell us what you think in the Discussions.
@@ -205,14 +203,14 @@ Now you can install the dependencies and build it:
 
 ```
 npm i
-npm run build:web
+npm run build
 npm run prisma:migrate-deploy
 ```
 
 Finally, you can start it with:
 
 ```
-cd apps/web
+cd apps/remix
 npm run start
 ```
 
@@ -232,7 +230,7 @@ After=network.target
 Environment=PATH=/path/to/your/node/binaries
 Type=simple
 User=www-data
-WorkingDirectory=/var/www/documenso/apps/web
+WorkingDirectory=/var/www/documenso/apps/remix
 ExecStart=/usr/bin/next start -p 3500
 TimeoutSec=15
 Restart=always

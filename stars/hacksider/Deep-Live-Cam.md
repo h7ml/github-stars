@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 70679
+stars: 70951
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -159,14 +159,15 @@ pip install -r requirements.txt
 
 **CUDA Execution Provider (Nvidia)**
 
-1.  Install CUDA Toolkit 11.8.0
-2.  Install cuDNN v8.9.7 for CUDA 11.x (required for onnxruntime-gpu):
-    -   Download cuDNN v8.9.7 for CUDA 11.x
+1.  Install CUDA Toolkit 12.8.0
+2.  Install cuDNN v8.9.7 for CUDA 12.x (required for onnxruntime-gpu):
+    -   Download cuDNN v8.9.7 for CUDA 12.x
     -   Make sure the cuDNN bin directory is in your system PATH
 3.  Install dependencies:
 
+pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 pip uninstall onnxruntime onnxruntime-gpu
-pip install onnxruntime-gpu==1.16.3
+pip install onnxruntime-gpu==1.21.0
 
 1.  Usage:
 

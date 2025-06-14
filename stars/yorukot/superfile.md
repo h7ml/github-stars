@@ -1,6 +1,6 @@
 ---
 project: superfile
-stars: 13917
+stars: 13976
 description: Pretty fancy and modern terminal file manager
 url: https://github.com/yorukot/superfile
 ---
@@ -104,7 +104,7 @@ go build -o bin/spf.exe
 
 Edit System Environment Variables and add superfile repo's `bin` directory to your PATH
 
-Start Superfile
+Start superfile
 ---------------
 
 spf

@@ -1,6 +1,6 @@
 ---
 project: supavisor
-stars: 1924
+stars: 1933
 description: A cloud-native, multi-tenant Postgres connection pooler.
 url: https://github.com/supabase/supavisor
 ---
@@ -51,6 +51,7 @@ Docs
 ----
 
 -   Installation and usage
+-   Environment Variables Documentation
 -   Metrics
 
 Features

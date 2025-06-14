@@ -1,6 +1,6 @@
 ---
 project: accent
-stars: 1401
+stars: 1402
 description: The first developer-oriented translation tool. True asynchronous flow between translators and your team.
 url: https://github.com/mirego/accent
 ---

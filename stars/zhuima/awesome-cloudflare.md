@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 11074
+stars: 11110
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -218,6 +218,14 @@ zmail
 Z-Mail - 基于 CloudFlare 的 pages、worker 以及 D1 SQL 搭建的极简临时邮箱服务，支持接收附件。
 
 https://mail.mdzz.uk/
+
+维护中
+
+cloud-mail
+
+用Vue3开发的响应式简约邮箱服务，支持邮件发送附件收发，可以部署到Cloudflare云平台。
+
+https://skymail.ink
 
 维护中
 
@@ -525,6 +533,12 @@ Page-api-forwarder
 
 维护中
 
+AI-worker
+
+通过Cloudflare免费、私有化访问和管理Gemini~摆脱地域限制无烦恼，完全由自己掌控。
+
+维护中
+
 文件分享
 ----
 
@@ -637,6 +651,14 @@ xugou
 基于 CloudFlare 的站点监控以及服务器监控工具。
 
 https://xugou.mdzz.uk/
+
+维护中
+
+cf-vps-monitor
+
+一个部署在 Cloudflare Workers 上的简单 VPS 监控 + 网站监测 面板，使用 Cloudflare D1 数据库存储数据。
+
+https://vps-monitor.abo-vendor289.workers.dev/
 
 维护中
 
@@ -933,6 +955,14 @@ MoePush
 一个基于 NextJS + Cloudflare 技术栈构建的可爱消息推送服务, 支持多种消息推送渠道✨
 
 https://moepush.app/
+
+有效中
+
+Text2img-Cloudflare-Workers
+
+一个基于 Cloudflare AI & Workers 的在线文生图服务✨
+
+https://text2img.huarzone.com/
 
 有效中
 

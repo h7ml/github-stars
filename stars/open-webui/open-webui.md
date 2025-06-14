@@ -1,6 +1,6 @@
 ---
 project: open-webui
-stars: 97955
+stars: 98842
 description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 url: https://github.com/open-webui/open-webui
 ---
@@ -65,10 +65,12 @@ Sponsors 🙌
 
 #### Emerald
 
-N8N • Does your interface have a backend yet?  
+n8n • Does your interface have a backend yet?  
 Try n8n
 
 Warp • The intelligent terminal for developers
+
+Tailscale • Connect self-hosted AI to any device with Tailscale
 
 * * *
 
@@ -150,6 +152,8 @@ After installation, you can access Open WebUI at http://localhost:3000. Enjoy! �
 ### Other Installation Methods
 
 We offer various installation alternatives, including non-Docker native installation methods, Docker Compose, Kustomize, and Helm. Visit our Open WebUI Documentation or join our Discord community for comprehensive guidance.
+
+Look at the Local Development Guide for instructions on setting up a local development environment.
 
 ### Troubleshooting
 

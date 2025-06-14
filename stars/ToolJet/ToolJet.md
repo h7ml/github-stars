@@ -1,6 +1,6 @@
 ---
 project: ToolJet
-stars: 35809
+stars: 35847
 description: Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀
 url: https://github.com/ToolJet/ToolJet
 ---

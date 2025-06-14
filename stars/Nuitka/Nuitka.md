@@ -1,6 +1,6 @@
 ---
 project: Nuitka
-stars: 13266
+stars: 13297
 description: Nuitka is a Python compiler written in Python.  It's fully compatible with Python 2.6, 2.7, 3.4-3.13. You feed it your Python app, it does a lot of clever things, and spits out an executable or extension module. 
 url: https://github.com/Nuitka/Nuitka
 ---
@@ -279,11 +279,11 @@ The resulting extension module can only be loaded into a CPython of the same ver
 
 If you need to compile a whole package and embed all modules, that is also feasible, use Nuitka like this:
 
-python -m nuitka --mode=module some\_package --include-package=some\_package
+python -m nuitka --mode=package some\_package
 
 Note
 
-The inclusion of the package contents needs to be provided manually; otherwise, the package is mostly empty. You can be more specific if you like, and only include part of it, or exclude part of it, e.g. with `--nofollow-import-to='*.tests'` you would not include the unused test part of your code.
+You can be more specific if you like, and exclude part of it, e.g. with `--nofollow-import-to='*.tests'` you would not include the unused test part of your code.
 
 Note
 
@@ -291,9 +291,9 @@ Data files located inside the package will not be embedded by this process, you 
 
 #### Use Case 4 — Program Distribution
 
-For distribution to other systems, there is the standalone mode, which produces a folder for which you can specify `--standalone`.
+For distribution to other systems, there is the standalone mode, which produces a folder for which you can specify `--mode=standalone`.
 
-python -m nuitka --standalone program.py
+python -m nuitka --mode=standalone program.py
 
 Following all imports is default in this mode. You can selectively exclude modules by specifically saying `--nofollow-import-to`, but then an `ImportError` will be raised when import of it is attempted at program run time. This may cause different behavior, but it may also improve your compile time if done wisely.
 
@@ -575,7 +575,7 @@ build\_with\_nuitka = true
 And last, but not least, Nuitka also supports the new `build` meta, so when you have a `pyproject.toml` already, simple replace or add this value:
 
 \[build-system\]
-requires = \["setuptools>=42", "wheel", "nuitka", "toml"\]
+requires = \["Nuitka\[build-wheel\]", "toml"\]
 build-backend = "nuitka.distutils.Build"
 
 # Data files are to be handled by setuptools and not Nuitka

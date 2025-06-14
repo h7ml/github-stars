@@ -1,6 +1,6 @@
 ---
 project: ng-icons
-stars: 463
+stars: 467
 description: The ultimate icon library for Angular
 url: https://github.com/ng-icons/ng-icons
 ---
@@ -98,7 +98,11 @@ Ng Icon Version
 
 19.x.x
 
-30.x.x
+30.x.x - 31.x.x
+
+20.x.x
+
+32.x.x
 
 > **Note**: Ng Icons relies on modern browser features and is designed to work on evergreen browsers. We do not support older browsers such as IE11.
 

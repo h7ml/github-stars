@@ -1,6 +1,6 @@
 ---
 project: bento
-stars: 98
+stars: 99
 description: :bento: A fast, correct, pure-Elixir library for reading and writing Bencoded metainfo (.torrent) files.
 url: https://github.com/folz/bento
 ---
