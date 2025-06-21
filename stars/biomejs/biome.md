@@ -1,6 +1,6 @@
 ---
 project: biome
-stars: 19310
+stars: 19572
 description: A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.
 url: https://github.com/biomejs/biome
 ---
@@ -16,7 +16,7 @@ url: https://github.com/biomejs/biome
 
 **Biome is a fast formatter** for _JavaScript_, _TypeScript_, _JSX_, _JSON_, _CSS_ and _GraphQL_ that scores **97% compatibility with _Prettier_**.
 
-**Biome is a performant linter** for _JavaScript_, _TypeScript_, _JSX_, _CSS_ and _GraphQL_ that features **more than 270 rules** from ESLint, typescript-eslint, and other sources. It **outputs detailed and contextualized diagnostics** that help you to improve your code and become a better programmer!
+**Biome is a performant linter** for _JavaScript_, _TypeScript_, _JSX_, _JSON_, _CSS_, and _GraphQL_ that features **more than 300 rules** from ESLint, typescript-eslint, and other sources. It **outputs detailed and contextualized diagnostics** that help you to improve your code and become a better programmer!
 
 **Biome** is designed from the start to be used interactively within an editor. It can format and lint malformed code as you are writing it.
 
@@ -27,16 +27,16 @@ npm install --save-dev --save-exact @biomejs/biome
 ### Usage
 
 # format files
-npx @biomejs/biome format --write ./src
+npx @biomejs/biome format --write
 
 # lint files and apply the safe fixes
-npx @biomejs/biome lint --write ./src
+npx @biomejs/biome lint --write
 
 # run format, lint, etc. and apply the safe fixes
-npx @biomejs/biome check --write ./src
+npx @biomejs/biome check --write
 
 # check all files against format, lint, etc. in CI environments
-npx @biomejs/biome ci ./src
+npx @biomejs/biome ci
 
 If you want to give Biome a run without installing it, use the online playground, compiled to WebAssembly.
 
@@ -56,7 +56,9 @@ More about Biome
 
 **Biome** has first-class LSP support, with a sophisticated parser that represents the source text in full fidelity and top-notch error recovery.
 
-**Biome** unifies functionality that has previously been separate tools. Building upon a shared base allows us to provide a cohesive experience for processing code, displaying errors, parallelize work, caching, and configuration.
+**Biome** wants to offer a high-quality _Developer Experience_, with descriptive diagnostics and great performance.
+
+**Biome** unifies functionalities that have previously been separate tools. Building upon a shared base allows us to provide a cohesive experience for processing code, displaying errors, parallelize work, caching, and configuration.
 
 Read more about our project philosophy.
 
@@ -73,9 +75,7 @@ You can sponsor or fund the project via Open collective or GitHub sponsors
 
 Biome offers a simple sponsorship program that allows companies to get visibility and recognition among various developers.
 
-### Issue funding
-
-We use Polar.sh to up-vote and promote specific features that you would like to see and implement. Check our backlog and help us:
+Biome offers enterprise support, where Core Contributors can be employed to work on company-focused projects.
 
 Sponsors
 --------

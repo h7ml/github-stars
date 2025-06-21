@@ -1,6 +1,6 @@
 ---
 project: GKD_subscription
-stars: 6369
+stars: 6575
 description: GKD 第三方订阅规则
 url: https://github.com/AIsouler/GKD_subscription
 ---
@@ -21,6 +21,8 @@ url: https://github.com/AIsouler/GKD_subscription
 --
 
 -   **致力于编写效率最高、误触最低、覆盖最全面的规则**
+    
+-   **北京时间每天凌晨3点会自动发布更新，如果规则没有改动则不会发布更新**
     
 -   **仅启用 `开屏广告` 一类规则，其它所有规则均需用户手动打开，规则类别里可以批量开启某一类规则，建议按需开启规则，不要无脑开启规则，开启过多规则可能造成规则阻塞从而导致规则触发缓慢甚至不触发，并且规则开启越多耗电也越多 -> 点击查看耗电说明**
     
@@ -46,9 +48,9 @@ https://registry.npmmirror.com/@aisouler/gkd\_subscription/latest/files/dist/AIs
 
 https://raw.githubusercontent.com/AIsouler/GKD\_subscription/main/dist/AIsouler\_gkd.json5
 
--   当前版本: v243
+-   当前版本: v248
     
--   当前订阅文件已适配 792 个应用，共有 1833 应用规则组，3 全局规则组
+-   当前订阅文件已适配 797 个应用，共有 1840 应用规则组，3 全局规则组
     
 -   查看 适配 APP 列表
     
@@ -67,6 +69,14 @@ https://raw.githubusercontent.com/AIsouler/GKD\_subscription/main/dist/AIsouler\
 支付宝
 
 爱发电：https://ifdian.net/a/AIsouler
+
+交流群
+---
+
+-   TG群组：https://t.me/+8L4eHePgYEZmY2M9
+    
+-   企鹅群：343615129
+    
 
 其他
 --

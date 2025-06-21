@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 12263
+stars: 12308
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -409,6 +409,14 @@ Alibaba Group
 
 Hui, Binyuan et al. 2024
 
+Qwen2.5 1M (Long Context)
+
+7B, 14B
+
+Alibaba Group
+
+Qwen Team 2025
+
 Qwen2.5 Math
 
 1.5B, 7B, 72B
@@ -436,6 +444,14 @@ Qwen Team 2024
 Qwen3
 
 0.6B, 1.7B, 4B, 8B, 14B, 32B
+
+Alibaba Group
+
+Qwen Team 2025
+
+Qwen3 MoE
+
+30B, 235B
 
 Alibaba Group
 

@@ -1,6 +1,6 @@
 ---
 project: analytics
-stars: 22663
+stars: 22704
 description: Simple, open source, lightweight and privacy-friendly web analytics alternative to Google Analytics.
 url: https://github.com/plausible/analytics
 ---
@@ -76,11 +76,11 @@ It's a long term release published twice per year so latest features and improve
 
 All features available as listed in our pricing plans.
 
-Selected premium features such as funnels and ecommerce revenue goals are not available as we aim to ensure a protective barrier around our cloud offering.
+Premium features (marketing funnels, ecommerce revenue goals and sites API) are not available in order to help support the project's long-term sustainability.
 
 **Bot filtering**
 
-Advanced bot filtering for more accurate stats. Our algorithm detects and excludes non-human traffic patterns. We also exclude known bots by the User-Agent header and filter out traffic from data centers and referrer spam domains.
+Advanced bot filtering for more accurate stats. Our algorithm detects and excludes non-human traffic patterns. We also exclude known bots by the User-Agent header and filter out traffic from data centers and referrer spam domains. We exclude ~32K data center IP ranges (i.e. a lot of bot IP addresses) by default.
 
 Basic bot filtering that targets the most common non-human traffic based on the User-Agent header and referrer spam domains.
 
@@ -92,7 +92,7 @@ You have full control and can host your instance on any server in any country th
 
 **Data portability**
 
-You see all your site stats and metrics on our modern-looking, simple to use and fast loading dashboard. You can only see the stats aggregated in the dashboard. You can download the stats using the CSV export, stats API or tools such as the Data Studio Connector.
+You see all your site stats and metrics on our modern-looking, simple to use and fast loading dashboard. You can only see the stats aggregated in the dashboard. You can download the stats using the CSV export, stats API or the Looker Studio Connector.
 
 Do you want access to the raw data? Self-hosting gives you that option. You can take the data directly from the ClickHouse database.
 

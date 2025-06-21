@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 52260
+stars: 52704
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -31,7 +31,7 @@ Choose your path:
 -   **Colab (free)**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
 -   **Local machine**: Please refer to usage
 -   **PAI-DSW (free trial)**: https://gallery.pai-ml.com/#/preview/deepLearning/nlp/llama\_factory
--   **Alaya NeW (cloud GPU deal)**: https://docs.alayanew.com/docs/documents/newActivities/llamafactory/?utm\_source=LLaMA-Factory
+-   **Alaya NeW (cloud GPU deal)**: https://docs.alayanew.com/docs/documents/useGuide/LLaMAFactory/mutiple/?utm\_source=LLaMA-Factory
 
 Note
 
@@ -92,6 +92,7 @@ Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 Blogs
 -----
 
+-   A One-Stop Code-Free Model Reinforcement Learning and Deployment Platform based on LLaMA-Factory and EasyR1 (Chinese)
 -   Fine-tune Qwen2.5-VL for Autonomous Driving using LLaMA-Factory (Chinese)
 -   How Apoidea Group enhances visual information extraction from banking documents with multimodal models using LLaMA-Factory on Amazon SageMaker HyperPod (English)
 -   Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
@@ -290,6 +291,12 @@ Falcon
 7B/11B/40B/180B
 
 falcon
+
+Falcon-H1
+
+0.5B/1.5B/3B/7B/34B
+
+falcon\_h1
 
 Gemma/Gemma 2/CodeGemma
 

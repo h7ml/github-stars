@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 19434
+stars: 19488
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -86,6 +86,7 @@ Who is using Yjs
 -   Typst - Compose, edit, and automate technical documents
 -   Kedyou - Digital workspaces for tutoring
 -   Lightpage - Personal living notebook
+-   reearth-flow - Collaboratively calculate and convert various data
 
 Table of Contents
 -----------------
@@ -175,6 +176,38 @@ BlockSuite
 demo
 
 Lexical
+
+✔
+
+(native)
+
+demo
+
+BlockNote
+
+✔
+
+y-prosemirror
+
+demo
+
+Tiptap
+
+✔
+
+y-prosemirror
+
+demo
+
+Milkdown
+
+✔
+
+y-prosemirror
+
+demo
+
+Superdoc
 
 ✔
 
@@ -311,6 +344,10 @@ Sync Yjs over ElectricSQL.
 yjs-cf-ws-provider
 
 Cloudflare provider for Yjs based on durable objects.
+
+nostr-crdt
+
+Sync Yjs over nostr.
 
 #### Persistence Providers
 

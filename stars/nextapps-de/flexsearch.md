@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 13001
+stars: 13013
 description: Next-generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---

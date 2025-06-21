@@ -1,6 +1,6 @@
 ---
 project: imageflow
-stars: 4306
+stars: 4308
 description: High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow
 url: https://github.com/imazen/imageflow
 ---
@@ -72,7 +72,7 @@ Using libimageflow from your language
 
 -   .NET Standard bindings can be found at https://github.com/imazen/imageflow-dotnet
 -   Node bindings available at https://github.com/imazen/imageflow-node
--   Ruby - Basic bindings can be found in bindings/ruby/
+-   Ruby - Basic bindings can be found at https://github.com/imazen/imageflow-ruby
 -   C and C++ interface is stable - use bindings/headers/imageflow\_default.h or one of the many alternate conventions provided with each release.
 -   Rust - Imageflow is written in Rust, so you can use the `imageflow_core` crate, althogh the interfaces are not stable or semver in line with tagged releases (those version numbers are for the C ABI, not the Rust API)
 -   other languages - Use an FFI binding-generation tool for your language, and feed it whichever header file it likes best.

@@ -1,6 +1,6 @@
 ---
 project: filebrowser
-stars: 29534
+stars: 29710
 description: 📂 Web File Browser
 url: https://github.com/filebrowser/filebrowser
 ---
@@ -17,33 +17,34 @@ This project is currently on **maintenance-only** mode, and is looking for new m
 
 If you're interested in maintaining this project, please reach out via the discussion above.
 
-Demo
-----
-
-URL: https://demo.filebrowser.org/
-
-Credentials: `demo`/`demo`
-
 Features
 --------
 
-Please refer to our docs at https://filebrowser.org/features
+File Browser is a **create-your-own-cloud-kind** of software where you can install it on a server, direct it to a path and then access your files through a nice web interface. You have many available features!
+
+Easy Login System
+
+Sleek Interface
+
+User Management
+
+File Editing
+
+Custom Commands
+
+Customization
 
 Install
 -------
 
-For installation instructions please refer to our docs at https://filebrowser.org/installation.
+For information on how to install File Browser, please check docs/installation.md.
 
 Configuration
 -------------
 
-Authentication Method - You can change the way the user authenticates with the filebrowser server
-
-Command Runner - The command runner is a feature that enables you to execute any shell command you want before or after a certain event.
-
-Custom Branding - You can customize your File Browser installation by change its name to any other you want, by adding a global custom style sheet and by using your own logotype if you want.
+For information on how to configure File Browser, please check docs/configuration.md.
 
 Contributing
 ------------
 
-If you're interested in contributing to this project, our docs are best places to start https://filebrowser.org/contributing.
+For information on how to contribute to the project, including how translations are managed, please check docs/contributing.md.

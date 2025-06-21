@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 70951
+stars: 71186
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -30,10 +30,10 @@ By using this software, you agree to these terms and commit to using it in a man
 
 Users are expected to use this software responsibly and legally. If using a real person's face, obtain their consent and clearly label any output as a deepfake when sharing online. We are not responsible for end-user actions.
 
-Exclusive v2.0 Quick Start - Pre-built (Windows)
-------------------------------------------------
+Exclusive v2.1 Quick Start - Pre-built (Windows/Mac Silicon)
+------------------------------------------------------------
 
-##### This is the fastest build you can get if you have a discrete NVIDIA or AMD GPU.
+##### This is the fastest build you can get if you have a discrete NVIDIA or AMD GPU or Mac Silicon, And you'll receive special priority support.
 
 ###### These Pre-builts are perfect for non-technical users or those who don't have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually. This will be 60 days ahead on the open source version.
 
@@ -257,20 +257,6 @@ Usage
 -   Use a screen capture tool like OBS to stream.
 -   To change the face, select a new source image.
 
-Tips and Tricks
----------------
-
-Check out these helpful guides to get the most out of Deep-Live-Cam:
-
--   Unlocking the Secrets to the Perfect Deepfake Image - Learn how to create the best deepfake with full head coverage
--   Video Call with DeepLiveCam - Make your meetings livelier by using DeepLiveCam with OBS and meeting software
--   Have a Special Guest! - Tutorial on how to use face mapping to add special guests to your stream
--   Watch Deepfake Movies in Realtime - See yourself star in any video without processing the video
--   Better Quality without Sacrificing Speed - Tips for achieving better results without impacting performance
--   Instant Vtuber! - Create a new persona/vtuber easily using Metahuman Creator
-
-Visit our official blog for more tips and tutorials.
-
 Command Line Arguments (Unmaintained)
 -------------------------------------
 
@@ -316,6 +302,7 @@ Press
 -   _"This real-time webcam deepfake tool raises alarms about the future of identity theft"_ - DIYPhotography
 -   _"That's Crazy, Oh God. That's Fucking Freaky Dude... That's So Wild Dude"_ - SomeOrdinaryGamers
 -   _"Alright look look look, now look chat, we can do any face we want to look like chat"_ - IShowSpeed
+-   _"They do a pretty good job matching poses, expression and even the lighting"_ - TechLinked (LTT)
 
 Credits
 -------

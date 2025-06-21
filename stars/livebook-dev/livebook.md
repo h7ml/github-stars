@@ -1,6 +1,6 @@
 ---
 project: livebook
-stars: 5372
+stars: 5383
 description: Automate code & data workflows with interactive Elixir notebooks
 url: https://github.com/livebook-dev/livebook
 ---
@@ -192,6 +192,8 @@ The following environment variables can be used to configure Livebook on boot:
 -   `LIVEBOOK_LOG_LEVEL` - sets the logger level, allowing for more verbose logging, either of: error, warning, notice, info, debug. Defaults to warning.
     
 -   `LIVEBOOK_LOG_METADATA` - a comma-separated list of metadata keys that should be included in the log messages. Currently the only Livebook-spcecific key is users (attached to evaluation and request logs). By default includes only request\_id.
+    
+-   `LIVEBOOK_LOG_FORMAT` - sets the log output format, either "text" (default) for human-readable logs or "json" for structured JSON.
     
 -   `LIVEBOOK_NODE` - sets the node name for running Livebook in a cluster. Note that Livebook always runs using long names distribution, so the node host name must use a fully qualified domain name (FQDN) or an IP address.
     

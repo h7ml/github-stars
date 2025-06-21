@@ -1,6 +1,6 @@
 ---
 project: ghostty
-stars: 31503
+stars: 31765
 description: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 url: https://github.com/ghostty-org/ghostty
 ---
@@ -187,6 +187,22 @@ macOS users don't require any additional dependencies.
 Note
 
 This only applies to building from a _Git checkout_. This section does not apply if you're building from a released _source tarball_. For source tarballs, see the website.
+
+### Xcode Version and SDKs
+
+Building the Ghostty macOS app requires that Xcode, the macOS SDK, and the iOS SDK are all installed.
+
+A common issue is that the incorrect version of Xcode is either installed or selected. Use the `xcode-select` command to ensure that the correct version of Xcode is selected:
+
+```
+sudo xcode-select --switch /Applications/Xcode-beta.app
+```
+
+Important
+
+Main branch development of Ghostty is preparing for the next major macOS release, Tahoe (macOS 26). Therefore, the main branch requires **Xcode 26 and the macOS 26 SDK**.
+
+You do not need to be running on macOS 26 to build Ghostty, you can still use Xcode 26 beta on macOS 15 stable.
 
 ### Linting
 

@@ -1,15 +1,15 @@
 ---
 project: lobe-chat
-stars: 62451
-description: 🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 4 / Gemini / Ollama / DeepSeek / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Plugins/Artifacts) and Thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
+stars: 62681
+description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modal (Plugins / Artifacts / MCP) and thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
 url: https://github.com/lobehub/lobe-chat
 ---
 
 Lobe Chat
 =========
 
-An open-source, modern-design ChatGPT/LLMs UI/Framework.  
-Supports speech-synthesis, multi-modal, and extensible (function call) plugin system.  
+An open-source, modern design ChatGPT/LLMs UI/framework.  
+Supports speech synthesis, multi-modal, and extensible (function call) plugin system.  
 One-click **FREE** deployment of your private OpenAI ChatGPT/Claude/Gemini/Groq/Ollama chat application.
 
 **English** · 简体中文 · Official Site · Changelog · Documents · Blog · Feedback
@@ -262,31 +262,31 @@ Recent Submits
 
 Description
 
-Academic Paper Reading Mentor  
-By **AdijeShen** on **2025-05-09**
+Turtle Soup Host  
+By **CSY2022** on **2025-06-19**
 
-Expert in explaining complex academic papers in simple and understandable language  
-`academic-knowledge` `paper-analysis`
+A turtle soup host needs to provide the scenario, the complete story (truth of the event), and the key point (the condition for guessing correctly).  
+`turtle-soup` `reasoning` `interaction` `puzzle` `role-playing`
 
-Nutritional Advisor  
-By **egornomic** on **2025-04-15**
+Gourmet Reviewer🍟  
+By **renhai-lab** on **2025-06-17**
 
-Specializes in providing detailed nutritional information for food items.  
-`nutrition` `food` `health` `information`
+Food critique expert  
+`gourmet` `review` `writing`
 
-Rewritten in Translation Style  
-By **q2019715** on **2025-03-13**
+Academic Writing Assistant  
+By **swarfte** on **2025-06-17**
 
-Rewrites a paragraph in a translation style  
-`translation-style` `creative-writing` `language-style` `text-rewriting` `culture`
+Expert in academic research paper writing and formal documentation  
+`academic-writing` `research` `formal-style`
 
-Academic Paper Review Expert  
-By **arvinxx** on **2025-03-11**
+Minecraft Senior Developer  
+By **iamyuuk** on **2025-06-17**
 
-An academic research assistant skilled in high-quality literature retrieval and analysis  
-`academic-research` `literature-search` `data-analysis` `information-extraction` `consulting`
+Expert in advanced Java development and Minecraft mod and server plugin development  
+`development` `programming` `minecraft` `java`
 
-> 📊 Total agents: **499**
+> 📊 Total agents: **505**
 
 ### `12` Support Local / Remote Database
 

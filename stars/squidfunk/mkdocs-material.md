@@ -1,6 +1,6 @@
 ---
 project: mkdocs-material
-stars: 23623
+stars: 23688
 description: Documentation that simply works
 url: https://github.com/squidfunk/mkdocs-material
 ---

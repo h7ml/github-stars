@@ -1,6 +1,6 @@
 ---
 project: ChatTTS
-stars: 36792
+stars: 36881
 description: A generative speech model for daily dialogue.
 url: https://github.com/2noise/ChatTTS
 ---

@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 90798
+stars: 90947
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -340,13 +340,13 @@ You can adjust the configuration of cmake variables optionally (without building
 On Linux
 
 export CMAKE\_PREFIX\_PATH="${CONDA\_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE\_PREFIX\_PATH}"
-python setup.py build --cmake-only
+CMAKE\_ONLY=1 python setup.py build
 ccmake build  # or cmake-gui build
 
 On macOS
 
 export CMAKE\_PREFIX\_PATH="${CONDA\_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE\_PREFIX\_PATH}"
-MACOSX\_DEPLOYMENT\_TARGET=10.9 CC=clang CXX=clang++ python setup.py build --cmake-only
+MACOSX\_DEPLOYMENT\_TARGET=10.9 CC=clang CXX=clang++ CMAKE\_ONLY=1 python setup.py build
 ccmake build  # or cmake-gui build
 
 ### Docker Image

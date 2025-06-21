@@ -1,25 +1,23 @@
 ---
 project: OpenList
-stars: 4417
+stars: 8239
 description: A new AList Fork to Anti Trust Crisis
 url: https://github.com/OpenListTeam/OpenList
 ---
 
-_🗂️A file list program that supports multiple storages, powered by Gin and Solidjs, fork from alist._
+_🗂️A file list program that supports multiple storages, powered by Gin and SolidJS, fork of AList._
 
 * * *
 
 Important
 
-**THIS IS A FORK VERSION !!!**
+Drop-in replacement for AList with long-term governance, no hidden risks, and full transparency, built to defend open source against trust-based attacks.
 
-We sincerely thank the original author xhofe/alist for his substantial prior contributions.
+We sincerely thank the author Xhofe of the original project AlistGo/alist and all other contributors.
 
-This fork is not yet stable. A large number of external links point to unaudited content, posing a supply chain attack risk, including related documentation websites, etc. Do not trust!
+This fork is not yet stable, specific migration progress can be viewed in OpenList Migration Work Summary.
 
-Currently, only links confirmed to be outside the original author's control (such as `alistgo.com`) have been removed, The detailed migration progress of the project can be viewed in the OpenList Migration Summary.
-
-English | 中文 | 日本語 | Contributing | CODE\_OF\_CONDUCT
+English | 中文 | 日本語 | Contributing | CODE OF CONDUCT
 
 Features
 --------
@@ -81,17 +79,18 @@ Features
 Document
 --------
 
-https://openlistteam.github.io/docs/ (temporally)
+-   https://docs.oplist.org
+-   https://docs.openlist.team
 
 Demo
 ----
 
-N/A
+N/A (to be rebuilt)
 
 Discussion
 ----------
 
-Please go to our discussion forum for general questions, **issues are for bug reports and feature requests only.**
+Please refer to _Discussions_ for raising general questions, **_Issues_ is for bug reports and feature requests only.**
 
 Contributors
 ------------
@@ -114,4 +113,4 @@ Disclaimer
 
 * * *
 
-> @GitHub · @Temporary TelegramGroup
+> @GitHub · Telegram Group · Telegram Channel
