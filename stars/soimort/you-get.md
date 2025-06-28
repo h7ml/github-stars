@@ -1,6 +1,6 @@
 ---
 project: you-get
-stars: 55760
+stars: 55790
 description: :arrow_double_down: Dumb downloader that scrapes the web
 url: https://github.com/soimort/you-get
 ---

@@ -1,6 +1,6 @@
 ---
 project: metadata-action
-stars: 1006
+stars: 1009
 description: GitHub Action to extract metadata (tags, labels) from Git reference and GitHub events for Docker
 url: https://github.com/docker/metadata-action
 ---
@@ -327,12 +327,14 @@ Customizing
 
 The following inputs can be used as `step.with` keys:
 
-> `List` type is a newline-delimited string
-> 
-> labels: |
->   org.opencontainers.image.title=MyCustomTitle
->   org.opencontainers.image.description=Another description
->   org.opencontainers.image.vendor=MyCompany
+Note
+
+`List` type is a newline-delimited string
+
+labels: |
+  org.opencontainers.image.title=MyCustomTitle
+  org.opencontainers.image.description=Another description
+  org.opencontainers.image.vendor=MyCompany
 
 Name
 
@@ -710,11 +712,19 @@ Output
 
 `v2.0.8-beta.67`
 
+`{{major}}`
+
+`2.0.8-beta.67`\*
+
+`v2.0.8-beta.67`
+
 `{{major}}.{{minor}}`
 
 `2.0.8-beta.67`\*
 
-> \*Pre-release (rc, beta, alpha) will only extend `{{version}}` (or `{{raw}}` if specified) as tag because they are updated frequently, and contain many breaking changes that are (by the author's design) not yet fit for public consumption.
+Important
+
+\*Pre-release (rc, beta, alpha) will only extend `{{version}}` (or `{{raw}}` if specified) as tag because they are updated frequently, and contain many breaking changes that are (by the author's design) not yet fit for public consumption.
 
 Extended attributes and default values:
 
@@ -811,7 +821,9 @@ Output
 
 `1.0.dev4`\*
 
-> \*dev/pre/post release will only extend `{{version}}` (or `{{raw}}` if specified) as tag because they are updated frequently, and contain many breaking changes that are (by the author's design) not yet fit for public consumption.
+Important
+
+\*dev/pre/post release will only extend `{{version}}` (or `{{raw}}` if specified) as tag because they are updated frequently, and contain many breaking changes that are (by the author's design) not yet fit for public consumption.
 
 Extended attributes and default values:
 
@@ -1196,7 +1208,9 @@ Output
 
 `master`
 
-> \*`base_ref` is available in the push payload but doesn't always seem to return the expected branch when the push tag event occurs. It's also not documented in GitHub docs. We keep it for backward compatibility, but it's **not recommended relying on it**. More context in #192.
+Important
+
+\*`base_ref` is available in the push payload but doesn't always seem to return the expected branch when the push tag event occurs. It's also not documented in GitHub docs. We keep it for backward compatibility, but it's **not recommended relying on it**. More context in #192.
 
 #### `{{is_default_branch}}`
 

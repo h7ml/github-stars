@@ -1,6 +1,6 @@
 ---
 project: urllib3
-stars: 3892
+stars: 3895
 description: urllib3 is a user-friendly HTTP client library for Python
 url: https://github.com/urllib3/urllib3
 ---
@@ -65,9 +65,9 @@ To report a security vulnerability, please use the Tidelift security contact. Ti
 Maintainers
 -----------
 
+-   Lead: @illia-v (Illia Volochii)
 -   @sethmlarson (Seth M. Larson)
 -   @pquentin (Quentin Pradet)
--   @illia-v (Illia Volochii)
 -   @theacodes (Thea Flowers)
 -   @haikuginger (Jess Shapiro)
 -   @lukasa (Cory Benfield)

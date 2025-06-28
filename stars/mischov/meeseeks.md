@@ -1,6 +1,6 @@
 ---
 project: meeseeks
-stars: 321
+stars: 322
 description: An Elixir library for parsing and extracting data from HTML and XML with CSS or XPath selectors.
 url: https://github.com/mischov/meeseeks
 ---

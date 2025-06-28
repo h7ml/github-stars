@@ -1,6 +1,6 @@
 ---
 project: GKD_subscription
-stars: 6575
+stars: 6680
 description: GKD 第三方订阅规则
 url: https://github.com/AIsouler/GKD_subscription
 ---
@@ -22,17 +22,15 @@ url: https://github.com/AIsouler/GKD_subscription
 
 -   **致力于编写效率最高、误触最低、覆盖最全面的规则**
     
--   **北京时间每天凌晨3点会自动发布更新，如果规则没有改动则不会发布更新**
+-   **已适配的规则需要等待发布更新才能生效，北京时间每天凌晨3点会自动发布更新，如果规则没有改动则不会发布更新，在 `GKD订阅界面` 下拉就能检测是否有更新 -> 点击查看更新日志**
     
 -   **仅启用 `开屏广告` 一类规则，其它所有规则均需用户手动打开，规则类别里可以批量开启某一类规则，建议按需开启规则，不要无脑开启规则，开启过多规则可能造成规则阻塞从而导致规则触发缓慢甚至不触发，并且规则开启越多耗电也越多 -> 点击查看耗电说明**
-    
--   **已适配的规则需要等待发布更新才能生效，在 `GKD订阅界面` 下拉就能检测是否有更新 -> 点击查看更新日志**
     
 -   **请求适配或报告问题 -> 点击反馈**
     
 -   **交流讨论 -> 点击查看或开启讨论**
     
--   **欢迎贡献规则，提交pr前请确认您已仔细阅读 贡献指南 和 API文档，规则编写可参考 个人收集的通用规则以及适用场景，让规则写起来更轻松！**
+-   **欢迎贡献规则，提交pr前请确认您已仔细阅读 贡献指南 和 API文档，规则编写可参考 个人收集的通用规则以及适用场景**
     
 
 订阅
@@ -40,7 +38,7 @@ url: https://github.com/AIsouler/GKD_subscription
 
 复制以下任意一个链接到 GKD 即可使用本订阅规则
 
--   npmmirror源（大陆用户推荐）
+-   npmmirror源（国内镜像，推荐大陆用户使用）
 
 https://registry.npmmirror.com/@aisouler/gkd\_subscription/latest/files/dist/AIsouler\_gkd.json5
 
@@ -48,9 +46,9 @@ https://registry.npmmirror.com/@aisouler/gkd\_subscription/latest/files/dist/AIs
 
 https://raw.githubusercontent.com/AIsouler/GKD\_subscription/main/dist/AIsouler\_gkd.json5
 
--   当前版本: v248
+-   当前版本: v255
     
--   当前订阅文件已适配 797 个应用，共有 1840 应用规则组，3 全局规则组
+-   当前订阅文件已适配 804 个应用，共有 1854 应用规则组，3 全局规则组
     
 -   查看 适配 APP 列表
     

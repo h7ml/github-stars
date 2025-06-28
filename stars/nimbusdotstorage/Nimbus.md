@@ -1,6 +1,6 @@
 ---
 project: Nimbus
-stars: 1246
+stars: 1294
 description: An open source alternative to Google Drive, One Drive, iCloud, etc.
 url: https://github.com/nimbusdotstorage/Nimbus
 ---
@@ -26,9 +26,18 @@ bun i
 
 We use Docker to run a PostgreSQL database and Valkey for local development. Follow these steps to set it up:
 
+1.  Copy .env.development.example to .env
+
+cp .env.development.example .env
+
+Copy .env to child directories
+
+bun run env:sync
+
 1.  **Start the database and valkey**:
     
     bun db:up
+    bun cache:up
     
     This will start a Postgres container with default credentials:
     
@@ -46,9 +55,9 @@ We use Docker to run a PostgreSQL database and Valkey for local development. Fol
     -   Password: `valkey`
 2.  **Verify the database and valkey is running if running a detached container**:
     
-    docker compose ps
+    docker ps
     
-    You should see the `nimbus-db` and `nimbus-valkey` containers in the list with a status of "Up".
+    You should see the `nimbus-db-local-compose` and `nimbus-cache-local-compose` containers in the list with a status of "Up".
     
 3.  **Connect to the database** (optional):
     
@@ -63,7 +72,7 @@ We use Docker to run a PostgreSQL database and Valkey for local development. Fol
 
 ### 4\. Environment Setup
 
-Copy the `.env.example` file to `.env` using this command, `cp .env.example .env` and fill in these values. Follow the instructions on the first step of this guide.
+Follow the instructions on the first step of this guide.
 
 How to setup Google keys?  
 
@@ -78,8 +87,42 @@ How to setup Google keys?
 -   Now navigate to **Audience** and add **Test users**.
     
 
+How to setup Microsoft keys?  
+
+-   Go to the **Microsoft Azure Portal**.
+    
+-   Navigate to **Azure Active Directory** → **App registrations** → click **New registration**.
+    
+-   Enter a name for your app.
+    
+-   Under **Supported account types**, choose:  
+    **Accounts in any organizational directory and personal Microsoft accounts**  
+    (i.e. all Microsoft account users).
+    
+-   Under **Redirect URI**, select **Web** and enter:  
+    `http://localhost:1284/api/auth/callback/microsoft`  
+    (Also add `http://localhost:3000` under front-end origins if needed.)
+    
+-   After registration, go to the app's **Overview** to copy your **Application (client) ID**.
+    
+-   Then go to **Certificates & secrets** → **New client secret** → add a description and expiry → click **Add** → copy the generated secret value.
+    
+-   Now, go to **API permissions** and make sure these **delegated Microsoft Graph** permissions are added and granted:
+    
+    -   `email` – View users' email address
+    -   `offline_access` – Maintain access to data you have given it access to
+    -   `openid` – Sign users in
+    -   `profile` – View users' basic profile
+    -   `User.Read` – Sign in and read user profile
+    -   `Files.ReadWrite` – Have full access to user files (OneDrive access)
+-   Click **Grant admin consent** to apply the permissions.
+    
+
 GOOGLE\_CLIENT\_ID=
 GOOGLE\_CLIENT\_SECRET=
+
+MICROSOFT\_CLIENT\_ID=
+MICROSOFT\_CLIENT\_SECRET=
 
 # To generate a secret, just run \`openssl rand -base64 32\`
 BETTER\_AUTH\_SECRET=
@@ -105,7 +148,7 @@ RESEND\_API\_KEY=your-api-key-here
 
 After setting up the database, run the migrations:
 
-bun db:migrate
+bun db:push
 
 ### 6\. Enable Google Drive API
 
@@ -141,6 +184,11 @@ Once the development server is running, you can access the authentication pages:
 Make sure you have configured the Google OAuth credentials in your `.env` file as described in step 4 for authentication to work properly. Additionally, configure your Resend API key for the forgot password functionality to work.
 
 If you want to contribute, please refer to the contributing guide
+
+Deploying Docker images (ex. Fly.io)
+------------------------------------
+
+Follow the DEPLOYMENT.md file for instructions on how to deploy to Fly.
 
 Our Amazing Contributors
 ------------------------

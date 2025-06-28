@@ -1,6 +1,6 @@
 ---
 project: zx
-stars: 44252
+stars: 44280
 description: A tool for writing better scripts
 url: https://github.com/google/zx
 ---
@@ -31,12 +31,25 @@ Install
 
 npm install zx
 
-Complete installation instructions: zx/setup
+All setup options: zx/setup. See also **zx@lite**.
 
-Documentation
+Usage
+-----
+
+-   Documentation at google.github.io/zx/
+-   Code examples
+
+Compatibility
 -------------
 
-Read documentation on google.github.io/zx.
+-   Linux, macOS, or Windows
+-   JavaScript Runtime:
+    -   Node.js >= 12.17.0
+    -   Bun >= 1.0.0
+    -   Deno 1.x, 2.x
+    -   GraalVM Node.js
+-   Some kind of bash or PowerShell
+-   Both CJS or ESM modules in JS or TS
 
 License
 -------

@@ -1,6 +1,6 @@
 ---
 project: rustdesk
-stars: 91136
+stars: 91667
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---
@@ -17,7 +17,7 @@ The developers of RustDesk do not condone or support any unethical or illegal us
 
 Chat with us: Discord | Twitter | Reddit | YouTube
 
-Yet another remote desktop software, written in Rust. Works out of the box, no configuration required. You have full control of your data, with no concerns about security. You can use our rendezvous/relay server, set up your own, or write your own rendezvous/relay server.
+Yet another remote desktop solution, written in Rust. Works out of the box with no configuration required. You have full control of your data, with no concerns about security. You can use our rendezvous/relay server, set up your own, or write your own rendezvous/relay server.
 
 RustDesk welcomes contribution from everyone. See CONTRIBUTING.md for help getting started.
 
@@ -36,7 +36,7 @@ Please download Sciter dynamic library yourself.
 
 Windows | Linux | macOS
 
-Raw steps to build
+Raw Steps to build
 ------------------
 
 -   Prepare your Rust development env and C++ build env
@@ -51,7 +51,7 @@ Raw steps to build
 Build
 -----
 
-How to build on Linux
+How to Build on Linux
 ---------------------
 
 ### Ubuntu 18 (Debian 10)
@@ -126,7 +126,7 @@ Or, if you're running a release executable:
 
 target/release/rustdesk
 
-Please ensure that you are running these commands from the root of the RustDesk repository, otherwise the application might not be able to find the required resources. Also note that other cargo subcommands such as `install` or `run` are not currently supported via this method as they would install or run the program inside the container instead of the host.
+Please ensure that you run these commands from the root of the RustDesk repository, or the application may not find the required resources. Also note that other cargo subcommands such as `install` or `run` are not currently supported via this method as they would install or run the program inside the container instead of the host.
 
 File Structure
 --------------

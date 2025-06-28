@@ -1,6 +1,6 @@
 ---
 project: wekan
-stars: 20390
+stars: 20399
 description: The Open Source kanban (built with Meteor). Keep variable/table/field names camelCase. For translations, only add Pull Request changes to wekan/i18n/en.i18n.json , other translations are done at https://app.transifex.com/wekan/wekan only.
 url: https://github.com/wekan/wekan
 ---
@@ -13,7 +13,7 @@ WeKan ® - Open Source kanban
 Downloads
 ---------
 
-https://wekan.github.io / Install WeKan ® Server
+https://wekan.fi/install/
 
 Docker Containers
 -----------------
@@ -47,12 +47,10 @@ WeKan ® feature requests and bugs
 
 Please add most of your questions as GitHub issue: WeKan ® Feature Requests and Bugs. It's better than at chat where details get lost when chat scrolls up.
 
-Chat
-----
+Discussions
+-----------
 
-Discussions - WeKan Community GitHub Discussions, that are not Feature Requests and Bugs.
-
-WeKan IRC FAQ
+IRC
 
 Docker: Latest tag has newest release
 -------------------------------------

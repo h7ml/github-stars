@@ -1,6 +1,6 @@
 ---
 project: swc
-stars: 32366
+stars: 32382
 description: Rust-based platform for the Web
 url: https://github.com/swc-project/swc
 ---

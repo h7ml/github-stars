@@ -1,6 +1,6 @@
 ---
 project: covalent
-stars: 2235
+stars: 2236
 description: Covalent - A Design System for Teradata
 url: https://github.com/Teradata/covalent
 ---
@@ -15,26 +15,27 @@ Covalent is Teradata's design system used to create consistent, branded experien
 Setup
 -----
 
--   Ensure you have Node 18.12.0+
--   Install Node packages: `npm ci`
--   Run local build: `npm run start`
+-   Ensure you have Node 22.16.0+
+-   Install Node packages `npm ci`
+-   Run local build `npm run start`
 
 * * *
 
--   Getting Started
 -   Web Components
--   Contributing Guidelines
--   Developer Guide
--   Upgrading
+-   Web Components theming
+-   Web Components developer Guide
+-   Contributing guidelines
 -   Releasing
 -   Changelog
--   StackBlitz Template
--   Plunker Template
 
 * * *
 
 Angular Support
 ---------------
+
+-   Getting Started
+-   StackBlitz Template
+-   Plunker Template
 
 Certain versions of Covalent are designed to work with specific versions of Angular. Below is a matrix that outlines these compatibility details:
 
@@ -78,6 +79,25 @@ Angular
 
 19.X
 
+11.X
+
+20.X
+
+...existing code...
+
+* * *
+
+Angular Support
+---------------
+
+...existing code...
+
+| 11.X | 20.X |
+
+* * *
+
+* * *
+
 Browser Support
 ---------------
 
@@ -112,6 +132,21 @@ Mobile Safari
 ~
 
 ~ Indicates limited testing & lower priority
+
+Using this workspace with VS code and NX
+----------------------------------------
+
+-   Covalent uses Nx for monorepo builds and task running.
+-   For a better experience, install the Nx Console extension for VS Code.
+-   **Nx Console** lets you:
+    -   Run builds, tests, lint, and affected commands with a click.
+    -   Generate libraries, components, and schematics interactively.
+    -   Explore project/dependency graphs visually.
+    -   Edit workspace configs quickly.
+-   **Get started:**
+    1.  Open the repo in VS Code.
+    2.  Install Nx Console from the Extensions Marketplace.
+    3.  Use the Nx Console sidebar or search Nx commands in the Command Palette (`Cmd+Shift+P`).
 
 Running Chromatic
 -----------------

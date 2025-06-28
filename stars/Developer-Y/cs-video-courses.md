@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69131
+stars: 69206
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -231,6 +231,7 @@ Courses
     -   CS194 Advanced Operating Systems Structures and Implementation, Spring 2013 InfoCoBuild, UC Berkeley
     -   CSE 60641 - Graduate Operating Systems, Fall 08
     -   Advanced Programming in the UNIX Environment
+    -   Operating System - IIT Madras
 -   #### **Distributed Systems**
     
     -   CS 677 - Distributed Operating Systems, Spring 24 - Umass OS
@@ -310,7 +311,7 @@ Courses
     -   Software Engineering with Objects and Components 2015/16- University of Edinburgh
 -   #### **Software Engineering**
     
-    -   \[Computer Science 169- Software Engineering - Spring 2015 - UCBerkeley\](https://youtube.com/playlist?list=PLVEFwJhglgHJQEQ6RjMMjcclix94gp1k2&feature=shared, https://archive.org/details/ucberkeley\_webcast\_W5Hl93ngMhU, https://failedturing.blogspot.com/2015/06/berkeley-cs169-software-engineering\_8.html)
+    -   Computer Science 169- Software Engineering - Spring 2015 - UCBerkeley
     -   Computer Science 169- Software Engineering - Fall 2019 - UCBerkeley
     -   CS 5150 - Software Engineering, Fall 2014 - Cornell University
     -   Introduction to Service Design and Engineering - University of Trento, Italy
@@ -585,7 +586,8 @@ Courses
     -   CSE 579: Reinforcement Learning - Autumn 2024 - University of Washington
     -   CSC 2547: Introduction to Reinforcement Learning - Spring 2021 - University of Toronto (YouTube)
     -   Introduction to reinforcement learning - UCL
-    -   Reinforcement Learning - IIT Madras
+    -   Reinforcement Learning - IIT Madras (TA - Manav Mishra, TA - Prabhleen Kukreja, TA - Sandarbh Yadav , TA - Avik Kar)
+    -   Special topics in ML (Reinforcement Learning) IIT madras
     -   CS885 Reinforcement Learning - Spring 2018 - University of Waterloo
     -   CS 285 - Deep Reinforcement Learning- UC Berkeley
     -   CS 294 112 - Reinforcement Learning
@@ -609,6 +611,9 @@ Courses
     -   EE675 (2024) Introduction to Reinforcement Learning Course | IIT Kanpur
     -   Reinforcement Learning Course by Frédéric Godin - Concordia University
     -   CS 285: Deep RL, 2023
+    -   Mathematical Foundations of Reinforcement Learning - WINDY Lab
+    -   Reinforcement Learning (HMC CS 181V)—Spring, 2020 - Neil Rhodes
+    -   Reinforcement Learning Course: Lectures (Summer 2023) by Paderborn University
 -   #### **Advanced Machine Learning**
     
     -   Advanced Machine Learning, 2021-2022, Sem I - by Prof. Madhavan Mukund, CMI
@@ -653,6 +658,8 @@ Courses
     -   Introduction to Large Language Models (LLMs), IIT Delhi
     -   Natural Language Processing (Spring 2024) - University of Utah
     -   Multilingual NLP 2020 - CMU
+    -   Introduction to large language models - IIT Madras
+    -   Speech Technology - IIT Madras
 -   #### **Generative AI**
     
     -   Stanford CS236: Deep Generative Models I 2023 I Stefano Ermon
@@ -935,6 +942,8 @@ Courses
 
 ### Theoretical CS and Programming Languages
 
+-   MIT 18.404J Theory of Computation - Fall 2020 - Lecture Slides
+-   MIT 18.404J Theory of Computation - Fall 2020 - Video Lectures
 -   MOOC - Compilers - Stanford University
 -   CS 6120: Advanced Compilers: The Self-Guided Online Course - Cornell University
 -   CS 164 Hack your language, UC Berkeley (Lectures - Youtube)
@@ -1261,6 +1270,7 @@ Courses
 -   MLCB24 - Machine Learning in Computational Biology Fall 2024
 -   Introduction to Neural Computation - MIT OCW
 -   Data Science for Biologists - Steve Brunton
+-   Big Data and Biological Networks IIT Madras
 
 * * *
 

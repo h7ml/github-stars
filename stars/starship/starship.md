@@ -1,6 +1,6 @@
 ---
 project: starship
-stars: 49431
+stars: 49685
 description: ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 url: https://github.com/starship/starship
 ---
@@ -129,6 +129,13 @@ Debian 13+
 Debian Main
 
 `apt install starship`
+
+Fedora 40+
+
+Copr
+
+`dnf copr enable atim/starship`  
+`dnf install starship`
 
 Gentoo
 

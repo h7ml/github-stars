@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 52704
+stars: 53106
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -302,7 +302,7 @@ Gemma/Gemma 2/CodeGemma
 
 2B/7B/9B/27B
 
-gemma
+gemma/gemma2
 
 Gemma 3
 

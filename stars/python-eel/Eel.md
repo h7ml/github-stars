@@ -1,12 +1,16 @@
 ---
 project: Eel
-stars: 6737
+stars: 6736
 description: A little Python library for making simple Electron-like HTML/JS GUI apps
 url: https://github.com/python-eel/Eel
 ---
 
 Eel
 ===
+
+Caution
+
+This project is effectively unmaintained. It has not received regular update in a number of years, and there are no plans by active maintainers for this to change. Please treat this project in that light and use it with careful consideration towards how you will secure and maintain anything you build using it.
 
 Eel is a little Python library for making simple Electron-like offline HTML/JS GUI apps, with full access to Python capabilities and libraries.
 

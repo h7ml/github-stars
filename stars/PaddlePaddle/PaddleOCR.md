@@ -1,6 +1,6 @@
 ---
 project: PaddleOCR
-stars: 50754
+stars: 51013
 description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
@@ -28,7 +28,11 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
 📣 Recent updates
 -----------------
 
-#### 🔥🔥\*\*2025.06.19: Release of PaddleOCR 3.0.2, includes:\*\*Add commentMore actions
+#### **2025.06.26: Release of PaddleOCR 3.0.3**, includes:
+
+-   Bug Fix: Resolved the issue where the `enable_mkldnn` parameter was not effective, restoring the default behavior of using MKL-DNN for CPU inference.
+
+#### 🔥🔥 **2025.06.19: Release of PaddleOCR 3.0.2**, includes:
 
 -   **New Features:**
     

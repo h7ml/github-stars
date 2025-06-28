@@ -1,6 +1,6 @@
 ---
 project: squoosh
-stars: 23139
+stars: 23172
 description: Make images smaller using best-in-class codecs, right in the browser.
 url: https://github.com/GoogleChromeLabs/squoosh
 ---
@@ -30,15 +30,21 @@ To develop for Squoosh:
 1.  Clone the repository
 2.  To install node packages, run:
     
+    ```
     npm install
+    ```
     
 3.  Then build the app by running:
     
+    ```
     npm run build
+    ```
     
 4.  After building, start the development server by running:
     
+    ```
     npm run dev
+    ```
     
 
 Contributing

@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 22802
+stars: 22855
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
@@ -245,6 +245,10 @@ React package
 Ruby gem
 
 @thepew
+
+Rust crate
+
+@carloskiki
 
 Svelte package
 

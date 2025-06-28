@@ -1,6 +1,6 @@
 ---
 project: borb
-stars: 3482
+stars: 3484
 description: borb is a library for reading, creating and manipulating PDF files in python.
 url: https://github.com/jorisschellekens/borb
 ---

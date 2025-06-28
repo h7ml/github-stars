@@ -1,19 +1,18 @@
 ---
 project: superfile
-stars: 14017
+stars: 14064
 description: Pretty fancy and modern terminal file manager
 url: https://github.com/yorukot/superfile
 ---
 
 #### superfile is supported by the community.
 
-Special thanks to our sponsor:  
+Special thanks to:  
   
 
-**Warp, the intelligent terminal**
+### Warp, the AI terminal for developers
 
-superfile's Terminal of Choice  
-Visit warp.dev to learn more
+Available for MacOS, Linux, & Windows  
 
 * * *
 

@@ -1,6 +1,6 @@
 ---
 project: filebrowser
-stars: 29710
+stars: 29970
 description: 📂 Web File Browser
 url: https://github.com/filebrowser/filebrowser
 ---
@@ -37,14 +37,14 @@ Customization
 Install
 -------
 
-For information on how to install File Browser, please check docs/installation.md.
+For information on how to install File Browser, please check installation.
 
 Configuration
 -------------
 
-For information on how to configure File Browser, please check docs/configuration.md.
+For information on how to configure File Browser, please check configuration.
 
 Contributing
 ------------
 
-For information on how to contribute to the project, including how translations are managed, please check docs/contributing.md.
+For information on how to contribute to the project, including how translations are managed, please check contributing.
