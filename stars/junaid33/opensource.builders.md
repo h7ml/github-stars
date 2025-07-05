@@ -1,67 +1,44 @@
 ---
 project: opensource.builders
-stars: 1255
-description: Find open-source alternatives
+stars: 1256
+description: Find and build open-source alternatives
 url: https://github.com/junaid33/opensource.builders
 ---
 
-Opensource.builders
-===================
+This is a Next.js project bootstrapped with `create-next-app`.
 
-Opensource.builders is a website to find and request open-source alternatives to popular software you already use.
+Getting Started
+---------------
 
-🚀 Quick start
---------------
+First, run the development server:
 
-### Local setup
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 
-1.  **Clone the site.**
-    
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
-    
-    # clone this repo
-    git clone https://github.com/junaid33/opensource.builders
-    
-2.  **Start developing.**
-    
-    Navigate into your new site’s directory and start it up.
-    
-    cd opensource.builders
-    yarn install
-    yarn start
-    
-3.  **Open the source code and start editing!**
-    
-    Your site is now running at `http://localhost:8000`!
-    
+Open http://localhost:3000 with your browser to see the result.
 
-### Online one-click setup
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-To edit website online, check out the CodeSandbox:
+This project uses `next/font` to automatically optimize and load Geist, a new font family for Vercel.
 
-https://codesandbox.io/s/github/junaid33/opensource.builders
+Learn More
+----------
 
-Want to add a open-source project?
-----------------------------------
+To learn more about Next.js, take a look at the following resources:
 
-There are 2 ways to add a new open-source project
+-   Next.js Documentation - learn about Next.js features and API.
+-   Learn Next.js - an interactive Next.js tutorial.
 
-1.  Go to http://localhost:8000/edit. You will see a blue pencil icon on the bottom left. When you click it, it opens TinaCMS. You can add comparisons and alternatives here and change the data on existing ones. Once done, the data is automatically saved and you can send a PR which I can preview and accept quickly.
-2.  All the data is saved here:
+You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
 
-https://github.com/junaid33/opensource.builders/blob/master/content/alts/alts.json
+Deploy on Vercel
+----------------
 
-You can edit this JSON directly and send a PR if you don't want to run anything locally.
+The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
 
-Want to add a request for open-source alternatives?
----------------------------------------------------
-
-1.  Create an issue with the title being the name of the commercial software and the body being a small description
-2.  Add the label "request" and give it the initial thumbs-up
-
-What's the tech stack?
-----------------------
-
-1.  TinaCMS to add the comparisons and alternatives. They are kept as a JSON file.
-2.  ChakraUI to style the website
-3.  Github issues to handle new requests
+Check out our Next.js deployment documentation for more details.

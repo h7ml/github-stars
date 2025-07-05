@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9536
+stars: 9591
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -1638,6 +1638,7 @@ exampels of ascii art in code: https://blog.regehr.org/archives/1653 (HN discuss
 -   text to diagramming tools list
 -   https://github.com/asciitosvg/asciitosvg ascii to svg diagrams
 -   from picture to ANSI art https://mrogalski.eu/ansi-art/
+-   ascii font generator https://patorjk.com/software/taag/#p=testall&f=Graffiti&t=Hello%20World
 
 ### matrix8967's list
 
@@ -2095,6 +2096,8 @@ Pure CSS Tricks
     }
     
 -   https://ui.glass/generator/ Get started with this free CSS generator based on the glassmorphism design specifications to quickly design and customize the style properties.
+    
+-   https://glass3d.dev/ https://news.ycombinator.com/item?id=44445238
     
 -   frosted glass sticky header https://www.joshwcomeau.com/css/backdrop-filter/
     

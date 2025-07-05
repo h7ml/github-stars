@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 19545
+stars: 19597
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -304,6 +304,10 @@ SuperViz Yjs Provider comes with a secure, scalable real-time infrastructure for
 PartyKit
 
 Cloud service for building multiplayer apps.
+
+@pluv/crdt-yjs
+
+Use pluv.io as a full-featured backend for Yjs. pluv.io can either be be used on its fully-managed WebSocket infrastructure, or self-hosted on Cloudflare Workers and Node.js runtimes. Offers a typesafe API with authentication, webhooks, rooms, and more.
 
 y-libp2p
 

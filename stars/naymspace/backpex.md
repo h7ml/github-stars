@@ -1,6 +1,6 @@
 ---
 project: backpex
-stars: 735
+stars: 741
 description:  Backpex is a highly customizable administration panel for Phoenix LiveView applications.
 url: https://github.com/naymspace/backpex
 ---

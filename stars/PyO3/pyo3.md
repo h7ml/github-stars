@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13911
+stars: 13943
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -137,7 +137,7 @@ use pyo3::types::IntoPyDict;
 use pyo3::ffi::c\_str;
 
 fn main() -> PyResult<()\> {
-    Python::with\_gil(|py| {
+    Python::attach(|py| {
         let sys = py.import("sys")?;
         let version: String = sys.getattr("version")?.extract()?;
 
@@ -194,6 +194,7 @@ Examples
 -   haem _A Python library for working on Bioinformatics problems._
 -   html2text-rs _Python library for converting HTML to markup or plain text._
 -   html-py-ever _Using html5ever through kuchiki to speed up html parsing and css-selecting._
+-   hudi-rs _The native Rust implementation for Apache Hudi, with C++ & Python API bindings._
 -   inline-python _Inline Python code directly in your Rust code._
 -   johnnycanencrypt OpenPGP library with Yubikey support.
 -   jsonschema _A high-performance JSON Schema validator for Python._

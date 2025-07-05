@@ -1,6 +1,6 @@
 ---
 project: dust
-stars: 10026
+stars: 10052
 description: A more intuitive version of du in rust
 url: https://github.com/bootandy/dust
 ---
@@ -98,7 +98,7 @@ Usage: dust -B (--bars-on-right - Percent bars moved to right side of screen)
 Usage: dust -i (Do not show hidden files)
 Usage: dust -c (No colors [monochrome])
 Usage: dust -C (Force colors)
-Usage: dust -f (Count files instead of diskspace)
+Usage: dust -f (Count files instead of diskspace [Counts by inode, to include duplicate inodes use dust -f -s])
 Usage: dust -t (Group by filetype)
 Usage: dust -z 10M (min-size, Only include files larger than 10M)
 Usage: dust -e regex (Only include files matching this regex (eg dust -e "\.png$" would match png files))

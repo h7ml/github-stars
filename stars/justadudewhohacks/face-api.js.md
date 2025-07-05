@@ -1,6 +1,6 @@
 ---
 project: face-api.js
-stars: 17315
+stars: 17333
 description: JavaScript API for face detection and face recognition in the browser and nodejs with tensorflow.js
 url: https://github.com/justadudewhohacks/face-api.js
 ---

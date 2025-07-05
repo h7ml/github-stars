@@ -1,6 +1,6 @@
 ---
 project: devkit
-stars: 544
+stars: 545
 description: null
 url: https://github.com/angular/devkit
 ---

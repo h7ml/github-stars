@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69206
+stars: 69277
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -329,6 +329,7 @@ Courses
     
     -   CS 411 - Software Architecture Design - Bilkent University
     -   MOOC - Software Architecture & Design - Udacity
+    -   CS-310 Scalable Software Architectures
 -   #### **Concurrency**
     
     -   CS176 - Multiprocessor Synchronization - Brown University (Videos from 2012)
@@ -614,6 +615,8 @@ Courses
     -   Mathematical Foundations of Reinforcement Learning - WINDY Lab
     -   Reinforcement Learning (HMC CS 181V)—Spring, 2020 - Neil Rhodes
     -   Reinforcement Learning Course: Lectures (Summer 2023) by Paderborn University
+    -   CS292F (Spring 2021) Statistical Foundation of Reinforcement Learning - UCSD
+    -   Algorithmic Foundations of Interactive Learning - CMU
 -   #### **Advanced Machine Learning**
     
     -   Advanced Machine Learning, 2021-2022, Sem I - by Prof. Madhavan Mukund, CMI
@@ -789,6 +792,7 @@ Courses
 -   CS798: Mathematical Foundations of Computer Networking - University of Waterloo
 -   CS 168 Introduction to the Internet: Architecture and Protocols, Fall 2022 - UC Berkeley (YouTube - Fall 2022) (Spring 2025)
 -   Advanced Topics in Communication Networks, Fall 2022 - ETH Zürich
+-   CS/ECE 438 Communication Networks \[F23\] - UIUC
 
 * * *
 
@@ -1052,6 +1056,7 @@ Courses
 -   High Performance Computing | Udacity
 -   UCLA Stats 205 Hierarchical Linear Models spring 2024, by Jingyi Jessica Li
 -   UF EML 6934 Optimal Control spring 2012, by Anil V. Rao
+-   Real-World Algorithms for IoT and Data Science - UIUC
 
 * * *
 

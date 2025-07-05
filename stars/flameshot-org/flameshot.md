@@ -1,6 +1,6 @@
 ---
 project: flameshot
-stars: 27060
+stars: 27108
 description: Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:
 url: https://github.com/flameshot-org/flameshot
 ---
@@ -462,7 +462,7 @@ Also you can open and build/debug the project in a C++ IDE. For example, in Qt C
 
 #### Compile-time
 
--   Qt >= 5.9
+-   Qt >= 6.0
     -   Development tools
 -   GCC >= 7.4
 -   CMake >= 3.29
@@ -477,39 +477,40 @@ Also you can open and build/debug the project in a C++ IDE. For example, in Qt C
 -   Git
 -   OpenSSL
 -   CA Certificates
+-   Qt Image Formats - for additional export image formats (e.g. tiff, webp, and more)
 
 #### Debian
 
 # Compile-time
-apt install g++ cmake build-essential qtbase5-dev qttools5-dev-tools libqt5svg5-dev qttools5-dev
+apt install g++ cmake build-essential qt6-base-dev qt6-tools-dev-tools qt6-svg-dev qt6-tools-dev
 
 # Run-time
-apt install libqt5dbus5 libqt5network5 libqt5core5a libqt5widgets5 libqt5gui5 libqt5svg5
+apt install libqt6dbus6 libqt6network6 libqt6core6 libqt6widgets6 libqt6gui6 libqt6svg6 qt6-qpa-plugins
 
 # Optional
-apt install git openssl ca-certificates
+apt install git openssl ca-certificates qt6-image-formats-plugins
 
 #### Fedora
 
 # Compile-time
-dnf install gcc-c++ cmake qt5-qtbase-devel qt5-linguist
+dnf install gcc-c++ cmake qt6-qtbase-devel qt6-qtsvg-devel qt6-qttools qt6-linguist qt6-qttools-devel kf6-kguiaddons-devel
 
 # Run-time
-dnf install qt5-qtbase qt5-qtsvg-devel
+dnf install qt6-qtbase qt6-qtsvg kf6-kguiaddons
 
 # Optional
-dnf install git openssl ca-certificates
+dnf install git openssl ca-certificates qt6-qtimageformats
 
 #### Arch
 
 # Compile-time
-pacman -S cmake base-devel git qt5-base qt5-tools
+pacman -S cmake base-devel git qt6-base qt6-tools kguiaddons
 
 # Run-time
-pacman -S qt5-svg
+pacman -S qt6-svg
 
 # Optional
-pacman -S openssl ca-certificates
+pacman -S openssl ca-certificates qt6-imageformats
 
 #### NixOS
 
@@ -519,7 +520,7 @@ nix-shell
 
 First of all you need to install brew and then install the dependencies
 
-brew install qt5
+brew install qt6
 brew install cmake
 
 ### Build
@@ -546,7 +547,7 @@ cmake -S . -B "$BUILD\_DIR" \\
 
 #MacOS
 cmake -S . -B "$BUILD\_DIR" \\
-    -DQt5\_DIR="$(brew --prefix qt5)/lib/cmake/Qt5" \\
+    -DQt6\_DIR="$(brew --prefix qt6)/lib/cmake/Qt6" \\
     && cmake --build "$BUILD\_DIR"
 
 When the `cmake --build` command has completed you can launch Flameshot from the `project_folder/build/src` folder.

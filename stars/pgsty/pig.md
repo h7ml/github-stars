@@ -1,6 +1,6 @@
 ---
 project: pig
-stars: 144
+stars: 145
 description: PostgreSQL Extension Manager
 url: https://github.com/pgsty/pig
 ---
@@ -10,7 +10,7 @@ PIG - Postgres Install Genius
 
 **pig** is an open-source PostgreSQL (& Extension) Package Manager for mainstream (EL/Debian/Ubuntu) Linux.
 
-Install PostgreSQL 13-17 along with 421 extensions on (`amd64` / `arm64`) with native OS package manager
+Install PostgreSQL 13~17 along with 422 extensions on (`amd64` / `arm64`) with native OS package manager
 
 > Blog: The idea way to deliver PostgreSQL extensions
 
@@ -258,7 +258,7 @@ $ pig ext info pg\_duckdb
 │ Version   : 0.3.1                                                          │
 │ License   : MIT                                                            │
 │ Website   : https://github.com/duckdb/pg\_duckdb                            │
-│ Details   : https://pigsty.io/ext/olap/pg\_duckdb                           │
+│ Details   : https://pgsty.com/ext/olap/pg\_duckdb                           │
 ├────────────────────────────────────────────────────────────────────────────┤
 │ Extension Properties                                                       │
 ├────────────────────────────────────────────────────────────────────────────┤
@@ -354,7 +354,7 @@ repo\_modules:   # Available Modules: 18
 
 **Pigsty Management**
 
-The **pig** can also be used as a cli tool for Pigsty - the battery-include free PostgreSQL RDS. Which brings HA, PITR, Monitoring, IaC, and all the extensions to your PostgreSQL cluster.
+The **pig** can also be used as a cli tool for Pigsty — the battery-include free PostgreSQL RDS. Which brings HA, PITR, Monitoring, IaC, and all the extensions to your PostgreSQL cluster.
 
 pig sty init     # install pigsty to ~/pigsty 
 pig sty boot     # install ansible and other pre-deps 
@@ -418,7 +418,7 @@ PG 17 - 13
 
 PG 17 - 13
 
-Here are some bad cases and limitation for above Linux distros:
+Here are some bad cases and limitations for above Linux distros:
 
 -   `pg_duckdb` `el8:*:*`
 -   `pg_mooncake` `el8:*:*`
@@ -430,7 +430,6 @@ Here are some bad cases and limitation for above Linux distros:
 -   `wiltondb`: `d12:*:*`
 -   `citus` and `hydra` are mutually exclusive
 -   `pg_duckdb` will invalidate `duckdb_fdw`
--   `documentdb` is not available on `arm` arch
 
 * * *
 

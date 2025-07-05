@@ -1,6 +1,6 @@
 ---
 project: mazes
-stars: 129
+stars: 130
 description: A maze generator made with PhoenixLiveView.
 url: https://github.com/angelikatyborska/mazes
 ---

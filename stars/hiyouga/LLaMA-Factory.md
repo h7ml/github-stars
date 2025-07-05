@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 53106
+stars: 53611
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -27,7 +27,8 @@ train\_en.mp4
 
 Choose your path:
 
--   **Documentation**: https://llamafactory.readthedocs.io/en/latest/
+-   **Documentation (WIP)**: https://llamafactory.readthedocs.io/en/latest/
+-   **Documentation (AMD GPU)**: https://rocm.docs.amd.com/projects/ai-developer-hub/en/latest/notebooks/fine\_tune/llama\_factory\_llama3.html
 -   **Colab (free)**: https://colab.research.google.com/drive/1eRTPn37ltBbYsISy9Aw2NuI2Aq5CQrD9?usp=sharing
 -   **Local machine**: Please refer to usage
 -   **PAI-DSW (free trial)**: https://gallery.pai-ml.com/#/preview/deepLearning/nlp/llama\_factory
@@ -83,7 +84,7 @@ Model Name
 
 Day 0
 
-Qwen3 / Qwen2.5-VL / Gemma 3 / InternLM 3 / MiniCPM-o-2.6
+Qwen3 / Qwen2.5-VL / Gemma 3 / GLM-4.1V / InternLM 3 / MiniCPM-o-2.6
 
 Day 1
 
@@ -106,6 +107,8 @@ All Blogs
 
 Changelog
 ---------
+
+\[25/07/02\] We supported fine-tuning the **GLM-4.1V-9B-Thinking** model. Please install transformers from **main** branch to use.
 
 \[25/04/28\] We supported fine-tuning the **Qwen3** model family.
 
@@ -304,17 +307,23 @@ Gemma/Gemma 2/CodeGemma
 
 gemma/gemma2
 
-Gemma 3
+Gemma 3/Gemma 3n
 
-1B/4B/12B/27B
+1B/4B/6B/8B/12B/27B
 
-gemma3/gemma (1B)
+gemma3/gemma3n
 
 GLM-4/GLM-4-0414/GLM-Z1
 
 9B/32B
 
 glm4/glmz1
+
+GLM-4.1V\*
+
+9B
+
+glm4v
 
 GPT-2
 

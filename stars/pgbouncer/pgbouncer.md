@@ -1,6 +1,6 @@
 ---
 project: pgbouncer
-stars: 3349
+stars: 3359
 description: lightweight connection pooler for PostgreSQL
 url: https://github.com/pgbouncer/pgbouncer
 ---
@@ -128,13 +128,11 @@ To enable systemd integration, use the `configure` option `--with-systemd`. This
 Building from Git
 -----------------
 
-Building PgBouncer from Git requires that you fetch the libusual and uthash submodules and generate the header and configuration files before you can run `configure`:
+Building PgBouncer from Git requires that you generate the header and configuration files before you can run `configure`:
 
 ```
 $ git clone https://github.com/pgbouncer/pgbouncer.git
 $ cd pgbouncer
-$ git submodule init
-$ git submodule update
 $ ./autogen.sh
 $ ./configure
 $ make

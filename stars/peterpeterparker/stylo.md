@@ -1,6 +1,6 @@
 ---
 project: stylo
-stars: 715
+stars: 716
 description: Another kind of rich text editor
 url: https://github.com/peterpeterparker/stylo
 ---

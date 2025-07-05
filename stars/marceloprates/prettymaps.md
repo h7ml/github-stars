@@ -1,6 +1,6 @@
 ---
 project: prettymaps
-stars: 11687
+stars: 11688
 description: Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely
 url: https://github.com/marceloprates/prettymaps
 ---
@@ -81,7 +81,7 @@ import prettymaps
 plot \= prettymaps.plot('Stad van de Zon, Heerhugowaard, Netherlands')
 
 ```
-Fetching geodataframes took 13.76 seconds
+Fetching geodataframes took 13.14 seconds
 ```
 
 You can also choose from different "presets" (parameter combinations saved in JSON files)
@@ -96,7 +96,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 4.71 seconds
+Fetching geodataframes took 4.78 seconds
 ```
 
 Run
@@ -343,7 +343,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 28.29 seconds
+Fetching geodataframes took 27.07 seconds
 ```
 
 In order to plot an entire region and not just a rectangular or circular area, set
@@ -357,7 +357,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 10.83 seconds
+Fetching geodataframes took 11.25 seconds
 ```
 
 You can access layers's GeoDataFrames directly like this:
@@ -369,7 +369,7 @@ plot \= prettymaps.plot('Centro Histórico, Porto Alegre', show \= False)
 plot.geodataframes\['building'\]
 
 ```
-Fetching geodataframes took 11.94 seconds
+Fetching geodataframes took 12.99 seconds
 ```
 
 <style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
@@ -921,7 +921,7 @@ plot.geodataframes\['building'\]\[
 \].geometry\[0\]
 
 ```
-/opt/hostedtoolcache/Python/3.11.12/x64/lib/python3.11/site-packages/geopandas/geoseries.py:648: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/geopandas/geoseries.py:648: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   val = getattr(super(), mtd)(*args, **kwargs)
 ```
 
@@ -957,7 +957,7 @@ for ax,building in zip(np.concatenate(axes),buildings):
     ax.autoscale(); ax.axis('off'); ax.axis('equal')
 
 ```
-Fetching geodataframes took 12.50 seconds
+Fetching geodataframes took 12.91 seconds
 ```
 
 Access plot.ax or plot.fig to add new elements to the matplotlib plot:
@@ -980,7 +980,7 @@ plot.fig.patch.set\_facecolor('#F2F4CB')
 )
 
 ```
-Fetching geodataframes took 12.74 seconds
+Fetching geodataframes took 12.92 seconds
 ```
 
 Use **plotter** mode to export a pen plotter-compatible SVG (thanks to abey79's amazing vsketch library)
@@ -1013,7 +1013,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 26.94 seconds
+Fetching geodataframes took 27.11 seconds
 ```
 
 Use prettymaps.create\_preset() to create a preset:
@@ -1100,13 +1100,13 @@ plot \= prettymaps.multiplot(
 )
 
 ```
-Fetching geodataframes took 8.62 seconds
+Fetching geodataframes took 8.20 seconds
 
 
-Fetching geodataframes took 5.93 seconds
+Fetching geodataframes took 6.59 seconds
 
 
-Fetching geodataframes took 8.74 seconds
+Fetching geodataframes took 8.09 seconds
 ```
 
 Add hillshade
@@ -1144,11 +1144,11 @@ make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM
 gdalbuildvrt -q -overwrite SRTM1.vrt cache/N21/N21W158.tif
 make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
-cp SRTM1.vrt SRTM1.286507e05dd14c97a364976914d44158.vrt
+cp SRTM1.vrt SRTM1.65e8f0bb4b43451a865dc35dca4158a5.vrt
 make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
-gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.286507e05dd14c97a364976914d44158.vrt /home/runner/work/prettymaps/prettymaps/notebooks/elevation.tif
-rm -f SRTM1.286507e05dd14c97a364976914d44158.vrt
+gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.65e8f0bb4b43451a865dc35dca4158a5.vrt /home/runner/work/prettymaps/prettymaps/notebooks/elevation.tif
+rm -f SRTM1.65e8f0bb4b43451a865dc35dca4158a5.vrt
 make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 
 
@@ -1175,5 +1175,5 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 18.23 seconds
+Fetching geodataframes took 17.57 seconds
 ```

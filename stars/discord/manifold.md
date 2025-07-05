@@ -1,6 +1,6 @@
 ---
 project: manifold
-stars: 1802
+stars: 1804
 description: Fast batch message passing between nodes for Erlang/Elixir.
 url: https://github.com/discord/manifold
 ---

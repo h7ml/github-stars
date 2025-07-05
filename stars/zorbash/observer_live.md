@@ -1,6 +1,6 @@
 ---
 project: observer_live
-stars: 212
+stars: 213
 description: A port of observer_cli using LiveView
 url: https://github.com/zorbash/observer_live
 ---

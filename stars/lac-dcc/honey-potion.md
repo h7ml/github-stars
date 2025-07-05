@@ -1,6 +1,6 @@
 ---
 project: honey-potion
-stars: 277
+stars: 278
 description: Writing eBPF programs with Elixir!
 url: https://github.com/lac-dcc/honey-potion
 ---

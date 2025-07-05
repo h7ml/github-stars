@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 91099
+stars: 91272
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -182,7 +182,7 @@ If you want to compile with CUDA support, select a supported version of CUDA fro
 -   NVIDIA cuDNN v8.5 or above
 -   Compiler compatible with CUDA
 
-Note: You could refer to the cuDNN Support Matrix for cuDNN versions with the various supported CUDA, CUDA driver and NVIDIA hardware
+Note: You could refer to the cuDNN Support Matrix for cuDNN versions with the various supported CUDA, CUDA driver, and NVIDIA hardware.
 
 If you want to disable CUDA support, export the environment variable `USE_CUDA=0`. Other potentially useful environment variables may be found in `setup.py`. If CUDA is installed in a non-standard location, set PATH so that the nvcc you want to use can be found (e.g., `export PATH=/usr/local/cuda-12.8/bin:$PATH`).
 

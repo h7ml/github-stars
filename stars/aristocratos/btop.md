@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 25479
+stars: 25606
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -161,8 +161,8 @@ Features
 --------
 
 -   Easy to use, with a game inspired menu system.
--   Full mouse support, all buttons with a highlighted key is clickable and mouse scroll works in process list and menu boxes.
--   Fast and responsive UI with UP, DOWN keys process selection.
+-   Full mouse support: all buttons with a highlighted key are clickable and mouse scrolling works in process list and menu boxes.
+-   Fast and responsive UI with UP, DOWN key process selection.
 -   Function for showing detailed stats for selected process.
 -   Ability to filter processes.
 -   Easy switching between sorting options.
@@ -190,23 +190,23 @@ Let me know if you want to contribute with new themes.
 Support and funding
 -------------------
 
-You can sponsor this project through github, see my sponsors page for options.
+You can sponsor this project through GitHub. See my sponsors page for options.
 
-Or donate through paypal or ko-fi.
+Or donate through PayPal or ko-fi.
 
 Any support is greatly appreciated!
 
 Prerequisites
 -------------
 
-For best experience, a terminal with support for:
+For the best experience run within a terminal with support for:
 
 -   24-bit truecolor (See list of terminals with truecolor support)
 -   256-color terminals are supported through 24-bit to 256-color conversion when setting "truecolor" to False in the options or with "-lc/--low-color" arguments.
 -   16 color TTY mode will be activated if a real tty device is detected. Can be forced with "-t/--tty\_on" arguments.
 -   Wide characters (Are sometimes problematic in web-based terminals)
 
-Also needs a UTF8 locale and a font that covers:
+Also necessary is a UTF8 locale and a font that includes:
 
 -   Unicode Block “Braille Patterns” U+2800 - U+28FF (Not needed in TTY mode or with graphs set to type: block or tty.)
 -   Unicode Block “Geometric Shapes” U+25A0 - U+25FF
@@ -269,7 +269,7 @@ Screenshots
 Installation
 ------------
 
-**Binaries for Linux are statically compiled with musl and works on kernel 2.6.39 and newer**
+**Binaries for Linux are statically compiled with musl and work on kernel releases 2.6.39 and newer**
 
 1.  **Download btop-(VERSION)-(ARCH)-(PLATFORM).tbz from latest release and unpack to a new folder**
     
@@ -324,7 +324,7 @@ Installation
     
     sudo dnf install btop
     
--   **RHEL/AlmaLinux 8+**
+-   **RHEL/Rocky/AlmaLinux 8+**
     
     sudo dnf install epel-release
     sudo dnf install btop
@@ -350,7 +350,7 @@ Compilation Linux
 
 Requires at least GCC 11 or Clang 16.
 
-The makefile also needs GNU coreutils and `sed` (should already be installed on any modern distribution).
+The Makefile also needs GNU `coreutils` and `sed` (should already be installed on any modern distribution).
 
 ### GPU compatibility
 
@@ -551,7 +551,7 @@ Requires at least GCC 12 or Clang 16.
 
 With GCC, version 12 (or better) is needed for macOS Ventura. If you get linker errors on Ventura you'll need to upgrade your command line tools (Version 14.0) is bugged.
 
-The makefile also needs GNU coreutils and `sed`.
+The Makefile also needs GNU coreutils and `sed`.
 
 Install and use Homebrew or MacPorts package managers for easy dependency installation
 

@@ -1,6 +1,6 @@
 ---
 project: uptime-kuma
-stars: 71294
+stars: 71542
 description: A fancy self-hosted monitoring tool
 url: https://github.com/louislam/uptime-kuma
 ---

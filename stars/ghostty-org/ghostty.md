@@ -1,6 +1,6 @@
 ---
 project: ghostty
-stars: 32393
+stars: 32713
 description: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 url: https://github.com/ghostty-org/ghostty
 ---
@@ -167,8 +167,6 @@ Developing Ghostty
 ------------------
 
 See the documentation on the Ghostty website for building Ghostty from a source tarball. Building Ghostty from a Git checkout is very similar, except you want to omit the `-Doptimize` flag to build a debug build, and you may require additional dependencies since the source tarball includes some processed files that are not in the Git repository.
-
-On Linux or macOS, you can use `zig build -Dapp-runtime=glfw run` for a quick GLFW-based app for a faster development cycle while developing core terminal features. Note that this app is missing many features and is also known to crash in certain scenarios, so it is only meant for development tasks.
 
 Other useful commands:
 

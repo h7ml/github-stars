@@ -1,6 +1,6 @@
 ---
 project: Nimbus
-stars: 1294
+stars: 1334
 description: An open source alternative to Google Drive, One Drive, iCloud, etc.
 url: https://github.com/nimbusdotstorage/Nimbus
 ---

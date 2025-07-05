@@ -1,6 +1,6 @@
 ---
 project: instascan
-stars: 3006
+stars: 3008
 description: HTML5 QR code scanner using your webcam
 url: https://github.com/schmich/instascan
 ---

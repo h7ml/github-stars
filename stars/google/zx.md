@@ -1,6 +1,6 @@
 ---
 project: zx
-stars: 44280
+stars: 44321
 description: A tool for writing better scripts
 url: https://github.com/google/zx
 ---
@@ -24,7 +24,7 @@ await Promise.all(\[
 const name \= 'foo bar'
 await $\`mkdir /tmp/${name}\`
 
-Bash is great, but when it comes to writing more complex scripts, many people prefer a more convenient programming language. JavaScript is a perfect choice, but the Node.js standard library requires additional hassle before using. The `zx` package provides useful cross-platform wrappers around `child_process`, escapes arguments and gives sensible defaults.
+Bash is great, but when it comes to writing more complex scripts, many people prefer a more convenient programming language. JavaScript is a perfect choice, but the Node.js standard library requires additional hassle before using. No compromise, take the best of both. The `zx` package provides useful cross-platform wrappers around `child_process`, escapes arguments and gives sensible defaults.
 
 Install
 -------

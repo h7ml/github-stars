@@ -1,11 +1,19 @@
 ---
 project: filebrowser
-stars: 29970
+stars: 30127
 description: 📂 Web File Browser
 url: https://github.com/filebrowser/filebrowser
 ---
 
-filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory. It can be used as a standalone app.
+File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview and edit your files. It is a **create-your-own-cloud**\-kind of software where you can just install it on your server, direct it to a path and access your files through a nice web interface.
+
+Documentation
+-------------
+
+Documentation on how to install, configure, and contribute to this project is hosted at filebrowser.org.
+
+Project Status
+--------------
 
 Warning
 
@@ -17,34 +25,12 @@ This project is currently on **maintenance-only** mode, and is looking for new m
 
 If you're interested in maintaining this project, please reach out via the discussion above.
 
-Features
---------
-
-File Browser is a **create-your-own-cloud-kind** of software where you can install it on a server, direct it to a path and then access your files through a nice web interface. You have many available features!
-
-Easy Login System
-
-Sleek Interface
-
-User Management
-
-File Editing
-
-Custom Commands
-
-Customization
-
-Install
--------
-
-For information on how to install File Browser, please check installation.
-
-Configuration
--------------
-
-For information on how to configure File Browser, please check configuration.
-
 Contributing
 ------------
 
-For information on how to contribute to the project, including how translations are managed, please check contributing.
+Contributions are always welcome. To start contributing to this project, read our guidelines first.
+
+License
+-------
+
+Apache License 2.0 © File Browser Contributors

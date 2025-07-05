@@ -1,6 +1,6 @@
 ---
 project: mind-elixir-core
-stars: 2658
+stars: 2671
 description: ⚗ Mind Elixir is a JavaScript, framework-agnostic mind map core.
 url: https://github.com/SSShooter/mind-elixir-core
 ---
@@ -14,11 +14,14 @@ Mind elixir is a open source JavaScript mind map core. You can use it with any f
 
 Features:
 
+-   Fluent UX
+-   Well designed
+-   Mobile friendly
 -   Lightweight
 -   High performance
 -   Framework agnostic
 -   Pluginable
--   Build-in drag and drop / node edit plugin
+-   Built-in drag and drop / node edit plugin
 -   Export as SVG / PNG / Html
 -   Summarize nodes
 -   Bulk operations supported
@@ -41,14 +44,13 @@ Table of Contents
     -   Data Export And Import
     -   Operation Guards
 -   Export as a Image
-    -   Solution 1
-    -   Solution 2
 -   Theme
 -   Shortcuts
 -   Ecosystem
 -   Development
 -   Thanks
 -   Contributors
+-   v5 Breaking Changes
 
 Try now
 -------
@@ -92,8 +94,6 @@ import MindElixir from 'mind-elixir'
   }
 </style\>
 
-**Breaking Change** since 1.0.0, `data` should be passed to `init()`, not `options`.
-
 import MindElixir from 'mind-elixir'
 import example from 'mind-elixir/dist/example1'
 
@@ -122,11 +122,7 @@ let options \= {
     \],
   },
   before: {
-    insertSibling(el, obj) {
-      return true
-    },
-    async addChild(el, obj) {
-      await sleep()
+    insertSibling(type, obj) {
       return true
     },
   },
@@ -215,18 +211,8 @@ mind.refresh(data)
 let mind \= new MindElixir({
   // ...
   before: {
-    insertSibling(el, obj) {
-      console.log(el, obj)
-      if (this.currentNode.nodeObj.parent.root) {
-        return false
-      }
-      return true
-    },
     async addChild(el, obj) {
-      await sleep()
-      if (this.currentNode.nodeObj.parent.root) {
-        return false
-      }
+      await saveDataToDb()
       return true
     },
   },
@@ -234,24 +220,6 @@ let mind \= new MindElixir({
 
 Export as a Image
 -----------------
-
-### Solution 1
-
-const mind \= {
-  /\*\* mind elixir instance \*/
-}
-const downloadPng \= async () \=> {
-  const blob \= await mind.exportPng() // Get a Blob!
-  if (!blob) return
-  const url \= URL.createObjectURL(blob)
-  const a \= document.createElement('a')
-  a.href \= url
-  a.download \= 'filename.png'
-  a.click()
-  URL.revokeObjectURL(url)
-}
-
-### Solution 2
 
 Install `@ssshooter/modern-screenshot`, then:
 
@@ -435,3 +403,16 @@ Contributors
 ------------
 
 Thanks for your contributions to Mind Elixir! Your support and dedication make this project better.
+
+v5 Breaking Changes
+-------------------
+
+-   Move scroll-based movement to transition-based movement
+-   `Summary.text` -> `Summary.label`
+-   Remove `getDataMd()`
+-   MindElixir.dragMoveHelper -> instance.dragMoveHelper
+-   Remove `unselectNode()`
+-   Remove `removeNode()`
+-   `node.style.fontSize`: use string instead of number which means you should add `px` to the end
+-   Use `instance.findEl` instead of `MindElixir.E` to get a node element
+-   CSS file is separated from JS file, you need to import it manually

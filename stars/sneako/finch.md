@@ -1,6 +1,6 @@
 ---
 project: finch
-stars: 1319
+stars: 1318
 description: Elixir HTTP client, focused on performance
 url: https://github.com/sneako/finch
 ---
@@ -84,7 +84,7 @@ The package can be installed by adding `finch` to your list of dependencies in `
 
 def deps do
   \[
-    {:finch, "~> 0.19"}
+    {:finch, "~> 0.20"}
   \]
 end
 
