@@ -1,6 +1,6 @@
 ---
 project: gitea
-stars: 49385
+stars: 49541
 description: Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD
 url: https://github.com/go-gitea/gitea
 ---
@@ -82,9 +82,9 @@ Note
 Translating
 -----------
 
-Translations are done through Crowdin. If you want to translate to a new language ask one of the managers in the Crowdin project to add a new language there.
+Translations are done through Crowdin. If you want to translate to a new language, ask one of the managers in the Crowdin project to add a new language there.
 
-You can also just create an issue for adding a language or ask on discord on the #translation channel. If you need context or find some translation issues, you can leave a comment on the string or ask on Discord. For general translation questions there is a section in the docs. Currently a bit empty but we hope to fill it as questions pop up.
+You can also just create an issue for adding a language or ask on Discord on the #translation channel. If you need context or find some translation issues, you can leave a comment on the string or ask on Discord. For general translation questions there is a section in the docs. Currently a bit empty, but we hope to fill it as questions pop up.
 
 Get more information from documentation.
 

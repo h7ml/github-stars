@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 46083
+stars: 46414
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -208,9 +208,7 @@ View all telemetry events in source code
 👋 Contributing
 ---------------
 
--   create issue
--   create PR with branch name format of `<issue number>-<short name>`
--   LGTM from core-team
+-   Contributing to AnythingLLM - How to contribute to AnythingLLM.
 
 💖 Sponsors
 -----------

@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 120557
+stars: 120826
 description: Windows system utilities to maximize productivity
 url: https://github.com/microsoft/PowerToys
 ---
@@ -93,19 +93,19 @@ Filename
 
 Per user - x64
 
-PowerToysUserSetup-0.92.0-x64.exe
+PowerToysUserSetup-0.92.1-x64.exe
 
 Per user - ARM64
 
-PowerToysUserSetup-0.92.0-arm64.exe
+PowerToysUserSetup-0.92.1-arm64.exe
 
 Machine wide - x64
 
-PowerToysSetup-0.92.0-x64.exe
+PowerToysSetup-0.92.1-x64.exe
 
 Machine wide - ARM64
 
-PowerToysSetup-0.92.0-arm64.exe
+PowerToysSetup-0.92.1-arm64.exe
 
 This is our preferred method.
 

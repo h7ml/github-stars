@@ -1,26 +1,35 @@
 ---
 project: PaddleOCR
-stars: 51259
+stars: 51484
 description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
 
 English | 简体中文 | 繁體中文 | 日本語 | 한국어 | Français | Русский | Español | العربية
 
-🚀 Introduction
----------------
+**PaddleOCR is an industry-leading, production-ready OCR and document AI engine, offering end-to-end solutions from text extraction to intelligent document understanding**
 
-Since its initial release, PaddleOCR has gained widespread acclaim across academia, industry, and research communities, thanks to its cutting-edge algorithms and proven performance in real-world applications. It's already powering popular open-source projects like Umi-OCR, OmniParser, MinerU, and RAGFlow, making it the go-to OCR toolkit for developers worldwide.
+PaddleOCR
+=========
 
-On May 20, 2025, the PaddlePaddle team unveiled PaddleOCR 3.0, fully compatible with the official release of the **PaddlePaddle 3.0** framework. This update further **boosts text-recognition accuracy**, adds support for **multiple text-type recognition** and **handwriting recognition**, and meets the growing demand from large-model applications for **high-precision parsing of complex documents**. When combined with the **ERNIE 4.5 Turbo**, it significantly enhances key-information extraction accuracy. PaddleOCR 3.0 also introduces support for Chinese Heterogeneous AI Accelerators such as **KUNLUNXIN** and **Ascend**. For the complete usage documentation, please refer to the PaddleOCR 3.0 Documentation.
+Tip
 
-Three Major New Features in PaddleOCR 3.0:
+PaddleOCR now provides an MCP server that supports integration with Agent applications like Claude Desktop. For details, please refer to PaddleOCR MCP Server.
 
--   Universal-Scene Text Recognition Model PP-OCRv5: A single model that handles five different text types plus complex handwriting. Overall recognition accuracy has increased by 13 percentage points over the previous generation. Online Demo
+The PaddleOCR 3.0 Technical Report is now available. See details at: PaddleOCR 3.0 Technical Report
+
+**PaddleOCR** converts documents and images into **structured, AI-friendly data** (like JSON and Markdown) with **industry-leading accuracy**—powering AI applications for everyone from indie developers and startups to large enterprises worldwide. With over **50,000 stars** and deep integration into leading projects like **MinerU, RAGFlow, and OmniParser**, PaddleOCR has become the **premier solution** for developers building intelligent document applications in the **AI era**.
+
+### PaddleOCR 3.0 Core Features
+
+-   **PP-OCRv5 — Universal Scene Text Recognition**  
+    **Single model supports five text types** (Simplified Chinese, Traditional Chinese, English, Japanese, and Pinyin) with **13% accuracy improvement**. Solves multilingual mixed document recognition challenges.
     
--   General Document-Parsing Solution PP-StructureV3: Delivers high-precision parsing of multi-layout, multi-scene PDFs, outperforming many open- and closed-source solutions on public benchmarks. Online Demo
+-   **PP-StructureV3 — Complex Document Parsing**  
+    Intelligently converts complex PDFs and document images into **Markdown and JSON files that preserve original structure**. **Outperforms** numerous commercial solutions in public benchmarks. **Perfectly maintains document layout and hierarchical structure**.
     
--   Intelligent Document-Understanding Solution PP-ChatOCRv4: Natively powered by the ERNIE 4.5 Turbo, achieving 15 percentage points higher accuracy than its predecessor. Online Demo
+-   **PP-ChatOCRv4 — Intelligent Information Extraction**  
+    Natively integrates ERNIE 4.5 to **precisely extract key information** from massive documents, with 15% accuracy improvement over previous generation. Makes documents "**understand**" your questions and provide accurate answers.
     
 
 In addition to providing an outstanding model library, PaddleOCR 3.0 also offers user-friendly tools covering model training, inference, and service deployment, so developers can rapidly bring AI applications to production.
@@ -43,22 +52,24 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
 -   **Documentation Optimization:** Improved the descriptions in some user guides for a smoother reading experience.
     
 
-#### **2025.06.26: Release of PaddleOCR 3.0.3**, includes:
+**2025.06.26: PaddleOCR 3.0.3 Released** - Bug Fix: Resolved the issue where the \`enable\_mkldnn\` parameter was not effective, restoring the default behavior of using MKL-DNN for CPU inference. **2025.06.19: PaddleOCR 3.0.2 Released** - \*\*New Features:\*\*
 
--   Bug Fix: Resolved the issue where the `enable_mkldnn` parameter was not effective, restoring the default behavior of using MKL-DNN for CPU inference.
-
-#### 🔥🔥 **2025.06.19: Release of PaddleOCR 3.0.2**, includes:
-
--   **New Features:**
+-   The default download source has been changed from `BOS` to `HuggingFace`. Users can also change the environment variable `PADDLE_PDX_MODEL_SOURCE` to `BOS` to set the model download source back to Baidu Object Storage (BOS).
     
-    -   The default download source has been changed from `BOS` to `HuggingFace`. Users can also change the environment variable `PADDLE_PDX_MODEL_SOURCE` to `BOS` to set the model download source back to Baidu Object Storage (BOS).
-    -   Added service invocation examples for six languages—C++, Java, Go, C#, Node.js, and PHP—for pipelines like PP-OCRv5, PP-StructureV3, and PP-ChatOCRv4.
-    -   Improved the layout partition sorting algorithm in the PP-StructureV3 pipeline, enhancing the sorting logic for complex vertical layouts to deliver better results.
-    -   Enhanced model selection logic: when a language is specified but a model version is not, the system will automatically select the latest model version supporting that language.
-    -   Set a default upper limit for MKL-DNN cache size to prevent unlimited growth, while also allowing users to configure cache capacity.
-    -   Updated default configurations for high-performance inference to support Paddle MKL-DNN acceleration and optimized the logic for automatic configuration selection for smarter choices.
-    -   Adjusted the logic for obtaining the default device to consider the actual support for computing devices by the installed Paddle framework, making program behavior more intuitive.
-    -   Added Android example for PP-OCRv5. Details.
+-   Added service invocation examples for six languages—C++, Java, Go, C#, Node.js, and PHP—for pipelines like PP-OCRv5, PP-StructureV3, and PP-ChatOCRv4.
+    
+-   Improved the layout partition sorting algorithm in the PP-StructureV3 pipeline, enhancing the sorting logic for complex vertical layouts to deliver better results.
+    
+-   Enhanced model selection logic: when a language is specified but a model version is not, the system will automatically select the latest model version supporting that language.
+    
+-   Set a default upper limit for MKL-DNN cache size to prevent unlimited growth, while also allowing users to configure cache capacity.
+    
+-   Updated default configurations for high-performance inference to support Paddle MKL-DNN acceleration and optimized the logic for automatic configuration selection for smarter choices.
+    
+-   Adjusted the logic for obtaining the default device to consider the actual support for computing devices by the installed Paddle framework, making program behavior more intuitive.
+    
+-   Added Android example for PP-OCRv5. Details.
+    
 -   **Bug Fixes:**
     
     -   Fixed an issue with some CLI parameters in PP-StructureV3 not taking effect.
@@ -73,7 +84,7 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
     
     -   Updated the description of the `enable_mkldnn` parameter in the documentation to accurately reflect the program's actual behavior.
     -   Fixed errors in the documentation regarding the `lang` and `ocr_version` parameters.
-    -   Added instructions for exporting production line configuration files via CLI.
+    -   Added instructions for exporting pipeline configuration files via CLI.
     -   Fixed missing columns in the performance data table for PP-OCRv5.
     -   Refined benchmark metrics for PP-StructureV3 across different configurations.
 -   **Others:**
@@ -82,15 +93,13 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
 
 **History Log**
 
-#### **🔥🔥 2025.06.05: Release of PaddleOCR 3.0.1, includes:**
+2025.06.05: **PaddleOCR 3.0.1 Released**, includes:
 
 -   **Optimisation of certain models and model configurations:**
-    
     -   Updated the default model configuration for PP-OCRv5, changing both detection and recognition from mobile to server models. To improve default performance in most scenarios, the parameter `limit_side_len` in the configuration has been changed from 736 to 64.
     -   Added a new text line orientation classification model `PP-LCNet_x1_0_textline_ori` with an accuracy of 99.42%. The default text line orientation classifier for OCR, PP-StructureV3, and PP-ChatOCRv4 pipelines has been updated to this model.
-    -   Optimised the text line orientation classification model `PP-LCNet_x0_25_textline_ori`, improving accuracy by 3.3 percentage points to a current accuracy of 98.85%.
+    -   Optimized the text line orientation classification model `PP-LCNet_x0_25_textline_ori`, improving accuracy by 3.3 percentage points to a current accuracy of 98.85%.
 -   **Optimizations and fixes for some issues in version 3.0.0, details**
-    
 
 🔥🔥2025.05.20: Official Release of **PaddleOCR v3.0**, including:
 
@@ -324,10 +333,13 @@ This project is released under the Apache 2.0 license.
 -----------
 
 ```
-@misc{paddleocr2020,
-title={PaddleOCR, Awesome multilingual OCR toolkits based on PaddlePaddle.},
-author={PaddlePaddle Authors},
-howpublished = {\url{https://github.com/PaddlePaddle/PaddleOCR}},
-year={2020}
+@misc{cui2025paddleocr30technicalreport,
+      title={PaddleOCR 3.0 Technical Report}, 
+      author={Cheng Cui and Ting Sun and Manhui Lin and Tingquan Gao and Yubo Zhang and Jiaxuan Liu and Xueqing Wang and Zelun Zhang and Changda Zhou and Hongen Liu and Yue Zhang and Wenyu Lv and Kui Huang and Yichao Zhang and Jing Zhang and Jun Zhang and Yi Liu and Dianhai Yu and Yanjun Ma},
+      year={2025},
+      eprint={2507.05595},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.05595}, 
 }
 ```

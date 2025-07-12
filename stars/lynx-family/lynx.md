@@ -1,6 +1,6 @@
 ---
 project: lynx
-stars: 12765
+stars: 12818
 description: Empower the Web community and invite more to build across platforms.
 url: https://github.com/lynx-family/lynx
 ---
@@ -50,18 +50,6 @@ We recommend using macOS as the development operating system. Windows and Linux 
 
 How to Contribute
 -----------------
-
-### Get the Code
-
-Instead of cloning the repository right away, please consider taking an extra step.
-
-To effectively manage dependencies using our custom tool, Habitat, it is recommended to create an additional directory. For instance, you could name this directory `src`:
-
-```
-git clone https://github.com/lynx-family/lynx.git src/lynx
-```
-
-For now, `src` contains only `lynx`. However as you proceed to build Lynx, you'll notice several installed dependencies there. This additional `src` directory helps keep your workplace organized.
 
 ### Code of Conduct
 

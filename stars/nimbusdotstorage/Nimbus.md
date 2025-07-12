@@ -1,6 +1,6 @@
 ---
 project: Nimbus
-stars: 1334
+stars: 1381
 description: An open source alternative to Google Drive, One Drive, iCloud, etc.
 url: https://github.com/nimbusdotstorage/Nimbus
 ---
@@ -95,13 +95,9 @@ How to setup Microsoft keys?
     
 -   Enter a name for your app.
     
--   Under **Supported account types**, choose:  
-    **Accounts in any organizational directory and personal Microsoft accounts**  
-    (i.e. all Microsoft account users).
+-   Under **Supported account types**, choose: **Accounts in any organizational directory and personal Microsoft accounts** (i.e. all Microsoft account users).
     
--   Under **Redirect URI**, select **Web** and enter:  
-    `http://localhost:1284/api/auth/callback/microsoft`  
-    (Also add `http://localhost:3000` under front-end origins if needed.)
+-   Under **Redirect URI**, select **Web** and enter: `http://localhost:1284/api/auth/callback/microsoft` (Also add `http://localhost:3000` under front-end origins if needed.)
     
 -   After registration, go to the app's **Overview** to copy your **Application (client) ID**.
     
@@ -192,3 +188,14 @@ Follow the DEPLOYMENT.md file for instructions on how to deploy to Fly.
 
 Our Amazing Contributors
 ------------------------
+
+Deploying Nimbus to VPS/VDS for Production or Development
+---------------------------------------------------------
+
+> Deployment is the same locally or on a server, but OAuth providers (e.g., Google) require a domain for callback URLs.
+
+### Steps to Deploy on a Server:
+
+1.  Point your **domain** to the server.
+2.  Use the domain in Google API keys for callback URLs (e.g., `https://example.com:1284/api/auth/callback/google`).
+3.  Update the `.env` file with the domain (e.g., `FRONTEND_URL=https://example.com:3000`).

@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 91272
+stars: 91486
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -262,11 +262,13 @@ python tools/amd\_build/build\_amd.py
 Install PyTorch
 
 export CMAKE\_PREFIX\_PATH="${CONDA\_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE\_PREFIX\_PATH}"
-python setup.py develop
+python -m pip install -r requirements.txt
+python -m pip install --no-build-isolation -v -e .
 
 **On macOS**
 
-python3 setup.py develop
+python -m pip install -r requirements.txt
+python -m pip install --no-build-isolation -v -e .
 
 **On Windows**
 
@@ -276,7 +278,7 @@ If you want to build legacy python code, please refer to Building on legacy code
 
 In this mode PyTorch computations will run on your CPU, not your GPU.
 
-python setup.py develop
+python -m pip install --no-build-isolation -v -e .
 
 Note on OpenMP: The desired OpenMP implementation is Intel OpenMP (iomp). In order to link against iomp, you'll need to manually download the library and set up the building environment by tweaking `CMAKE_INCLUDE_PATH` and `LIB`. The instruction here is an example for setting up both MKL and Intel OpenMP. Without these configurations for CMake, Microsoft Visual C OpenMP runtime (vcomp) will be used.
 
@@ -311,7 +313,7 @@ for /f "usebackq tokens=\*" %i in (\`"%ProgramFiles(x86)%\\Microsoft Visual Stud
 :: \[Optional\] If you want to override the CUDA host compiler
 set CUDAHOSTCXX\=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe
 
-python setup.py develop
+python -m pip install --no-build-isolation -v -e .
 
 **Intel GPU builds**
 
@@ -331,7 +333,7 @@ if defined CMAKE\_PREFIX\_PATH (
     set "CMAKE\_PREFIX\_PATH\=%CONDA\_PREFIX%\\Library"
 )
 
-python setup.py develop
+python -m pip install --no-build-isolation -v -e .
 
 ##### Adjust Build Options (Optional)
 

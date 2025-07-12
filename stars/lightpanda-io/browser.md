@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 9298
+stars: 9336
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -14,7 +14,7 @@ Lightpanda is the open-source browser made for headless usage:
 
 -   Javascript execution
 -   Support of Web APIs (partial, WIP)
--   Compatible with Playwright1, Puppeteer through CDP (WIP)
+-   Compatible with Playwright1, Puppeteer, chromedp through CDP
 
 Fast web automation for AI agents, LLM training, scraping and testing:
 
@@ -29,7 +29,9 @@ _Puppeteer requesting 100 pages from a local website on a AWS EC2 m5.large insta
 Quick start
 -----------
 
-### Install from the nightly builds
+### Install
+
+**Install from the nightly builds**
 
 You can download the last binary from the nightly builds for Linux x86\_64 and MacOS aarch64.
 
@@ -46,6 +48,12 @@ chmod a+x ./lightpanda
 _For Windows + WSL2_
 
 The Lightpanda browser is compatible to run on windows inside WSL. Follow the Linux instruction for installation from a WSL terminal. It is recommended to install clients like Puppeteer on the Windows host.
+
+**Install from Docker**
+
+Lightpanda provides official Docker images for both Linux amd64 and arm64 architectures. The following command fetches the Docker image and starts a new container exposing Lightpanda's CDP server on port `9222`. The `--privileged` option is required because the browser requires `io_uring` syscalls which are blocked by default by Docker.
+
+docker run -d --name lightpanda -p 9222:9222 --privileged lightpanda/browser:nightly
 
 ### Dump a URL
 
@@ -100,21 +108,26 @@ By default, Lightpanda collects and sends usage telemetry. This can be disabled 
 Status
 ------
 
-Lightpanda is still a work in progress and is currently at a Beta stage.
-
-⚠️ You should expect most websites to fail or crash.
+Lightpanda is in Beta and currently a work in progress. Stability and coverage are improving and many websites now work. You may still encounter errors or crashes. Please open an issue with specifics if so.
 
 Here are the key features we have implemented:
 
 -   HTTP loader
+-   HTTP loader
 -   HTML parser and DOM tree (based on Netsurf libs)
 -   Javascript support (v8)
--   Basic DOM APIs
+-   DOM APIs
 -   Ajax
     -   XHR API
-    -   Fetch API
+    -   Fetch API (polyfill)
 -   DOM dump
--   Basic CDP/websockets server
+-   CDP/websockets server
+-   Click
+-   Input form
+-   Cookies
+-   Custom HTTP headers
+-   Proxy support
+-   Network interception
 
 NOTE: There are hundreds of Web APIs. Developing a browser (even just for headless mode) is a huge task. Coverage will increase over time.
 

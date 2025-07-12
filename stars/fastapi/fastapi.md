@@ -1,6 +1,6 @@
 ---
 project: fastapi
-stars: 86946
+stars: 87164
 description: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 url: https://github.com/fastapi/fastapi
 ---
@@ -386,14 +386,19 @@ Used by Starlette:
 -   `jinja2` - Required if you want to use the default template configuration.
 -   `python-multipart` - Required if you want to support form "parsing", with `request.form()`.
 
-Used by FastAPI / Starlette:
+Used by FastAPI:
 
 -   `uvicorn` - for the server that loads and serves your application. This includes `uvicorn[standard]`, which includes some dependencies (e.g. `uvloop`) needed for high performance serving.
--   `fastapi-cli` - to provide the `fastapi` command.
+-   `fastapi-cli[standard]` - to provide the `fastapi` command.
+    -   This includes `fastapi-cloud-cli`, which allows you to deploy your FastAPI application to FastAPI Cloud.
 
 ### Without `standard` Dependencies
 
 If you don't want to include the `standard` optional dependencies, you can install with `pip install fastapi` instead of `pip install "fastapi[standard]"`.
+
+### Without `fastapi-cloud-cli`
+
+If you want to install FastAPI with the standard dependencies but without the `fastapi-cloud-cli`, you can install with `pip install "fastapi[standard-no-fastapi-cloud-cli]"`.
 
 ### Additional Optional Dependencies
 

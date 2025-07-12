@@ -1,7 +1,7 @@
 ---
 project: lobe-chat
-stars: 63145
-description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modal (Plugins / Artifacts / MCP) and thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.
+stars: 63390
+description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.
 url: https://github.com/lobehub/lobe-chat
 ---
 
@@ -31,22 +31,26 @@ Table of contents
 
 -   👋🏻 Getting Started & Join Our Community
 -   ✨ Features
-    -   `1` Chain of Thought
-    -   `2` Branching Conversations
-    -   `3` Artifacts Support
-    -   `4` File Upload /Knowledge Base
-    -   `5` Multi-Model Service Provider Support
-    -   `6` Local Large Language Model (LLM) Support
-    -   `7` Model Visual Recognition
-    -   `8` TTS & STT Voice Conversation
-    -   `9` Text to Image Generation
-    -   `10` Plugin System (Function Calling)
-    -   `11` Agent Market (GPTs)
-    -   `12` Support Local / Remote Database
-    -   `13` Support Multi-User Management
-    -   `14` Progressive Web App (PWA)
-    -   `15` Mobile Device Adaptation
-    -   `16` Custom Themes
+    -   ✨ MCP Plugin One-Click Installation
+    -   🏪 MCP Marketplace
+    -   🖥️ Desktop App
+    -   🌐 Smart Internet Search
+    -   Chain of Thought
+    -   Branching Conversations
+    -   Artifacts Support
+    -   File Upload /Knowledge Base
+    -   Multi-Model Service Provider Support
+    -   Local Large Language Model (LLM) Support
+    -   Model Visual Recognition
+    -   TTS & STT Voice Conversation
+    -   Text to Image Generation
+    -   Plugin System (Function Calling)
+    -   Agent Market (GPTs)
+    -   Support Local / Remote Database
+    -   Support Multi-User Management
+    -   Progressive Web App (PWA)
+    -   Mobile Device Adaptation
+    -   Custom Themes
     -   `*` What's more
 -   ⚡️ Performance
 -   🛳 Self Hosting
@@ -82,13 +86,47 @@ Star History
 ✨ Features
 ----------
 
-### `1` Chain of Thought
+Transform your AI experience with LobeChat's powerful features designed for seamless connectivity, enhanced productivity, and unlimited creativity.
+
+### ✨ MCP Plugin One-Click Installation
+
+**Seamlessly Connect Your AI to the World**
+
+Unlock the full potential of your AI by enabling smooth, secure, and dynamic interactions with external tools, data sources, and services. LobeChat's MCP (Model Context Protocol) plugin system breaks down the barriers between your AI and the digital ecosystem, allowing for unprecedented connectivity and functionality.
+
+Transform your conversations into powerful workflows by connecting to databases, APIs, file systems, and more. Experience the freedom of AI that truly understands and interacts with your world.
+
+### 🏪 MCP Marketplace
+
+**Discover, Connect, Extend**
+
+Browse a growing library of MCP plugins to expand your AI's capabilities and streamline your workflows effortlessly. Visit lobehub.com/mcp to explore the MCP Marketplace, which offers a curated collection of integrations that enhance your AI's ability to work with various tools and services.
+
+From productivity tools to development environments, discover new ways to extend your AI's reach and effectiveness. Connect with the community and find the perfect plugins for your specific needs.
+
+### 🖥️ Desktop App
+
+**Peak Performance, Zero Distractions**
+
+Get the full LobeChat experience without browser limitations—lightweight, focused, and always ready to go. Our desktop application provides a dedicated environment for your AI interactions, ensuring optimal performance and minimal distractions.
+
+Experience faster response times, better resource management, and a more stable connection to your AI assistant. The desktop app is designed for users who demand the best performance from their AI tools.
+
+### 🌐 Smart Internet Search
+
+**Online Knowledge On Demand**
+
+With real-time internet access, your AI keeps up with the world—news, data, trends, and more. Stay informed and get the most current information available, enabling your AI to provide accurate and up-to-date responses.
+
+Access live information, verify facts, and explore current events without leaving your conversation. Your AI becomes a gateway to the world's knowledge, always current and comprehensive.
+
+### Chain of Thought
 
 Experience AI reasoning like never before. Watch as complex problems unfold step by step through our innovative Chain of Thought (CoT) visualization. This breakthrough feature provides unprecedented transparency into AI's decision-making process, allowing you to observe how conclusions are reached in real-time.
 
 By breaking down complex reasoning into clear, logical steps, you can better understand and validate the AI's problem-solving approach. Whether you're debugging, learning, or simply curious about AI reasoning, CoT visualization transforms abstract thinking into an engaging, interactive experience.
 
-### `2` Branching Conversations
+### Branching Conversations
 
 Introducing a more natural and flexible way to chat with AI. With Branch Conversations, your discussions can flow in multiple directions, just like human conversations do. Create new conversation branches from any message, giving you the freedom to explore different paths while preserving the original context.
 
@@ -99,7 +137,7 @@ Choose between two powerful modes:
 
 This groundbreaking feature transforms linear conversations into dynamic, tree-like structures, enabling deeper exploration of ideas and more productive interactions.
 
-### `3` Artifacts Support
+### Artifacts Support
 
 Experience the power of Claude Artifacts, now integrated into LobeChat. This revolutionary feature expands the boundaries of AI-human interaction, enabling real-time creation and visualization of diverse content formats.
 
@@ -109,7 +147,7 @@ Create and visualize with unprecedented flexibility:
 -   Build and render interactive HTML pages in real-time
 -   Produce professional documents in multiple formats
 
-### `4` File Upload /Knowledge Base
+### File Upload /Knowledge Base
 
 LobeChat supports file upload and knowledge base functionality. You can upload various types of files including documents, images, audio, and video, as well as create knowledge bases, making it convenient for users to manage and search for files. Additionally, you can utilize files and knowledge base features during conversations, enabling a richer dialogue experience.
 
@@ -119,7 +157,7 @@ Tip
 
 Learn more on 📘 LobeChat Knowledge Base Launch — From Now On, Every Step Counts
 
-### `5` Multi-Model Service Provider Support
+### Multi-Model Service Provider Support
 
 In the continuous development of LobeChat, we deeply understand the importance of diversity in model service providers for meeting the needs of the community when providing AI conversation services. Therefore, we have expanded our support to multiple model service providers, rather than being limited to a single one, in order to offer users a more diverse and rich selection of conversations.
 
@@ -178,7 +216,7 @@ See more providers (+31)
 
 At the same time, we are also planning to support more model service providers. If you would like LobeChat to support your favorite service provider, feel free to join our 💬 community discussion.
 
-### `6` Local Large Language Model (LLM) Support
+### Local Large Language Model (LLM) Support
 
 To meet the specific needs of users, LobeChat also supports the use of local models based on Ollama, allowing users to flexibly use their own or third-party models.
 
@@ -186,25 +224,25 @@ Tip
 
 Learn more about 📘 Using Ollama in LobeChat by checking it out.
 
-### `7` Model Visual Recognition
+### Model Visual Recognition
 
 LobeChat now supports OpenAI's latest `gpt-4-vision` model with visual recognition capabilities, a multimodal intelligence that can perceive visuals. Users can easily upload or drag and drop images into the dialogue box, and the agent will be able to recognize the content of the images and engage in intelligent conversation based on this, creating smarter and more diversified chat scenarios.
 
 This feature opens up new interactive methods, allowing communication to transcend text and include a wealth of visual elements. Whether it's sharing images in daily use or interpreting images within specific industries, the agent provides an outstanding conversational experience.
 
-### `8` TTS & STT Voice Conversation
+### TTS & STT Voice Conversation
 
 LobeChat supports Text-to-Speech (TTS) and Speech-to-Text (STT) technologies, enabling our application to convert text messages into clear voice outputs, allowing users to interact with our conversational agent as if they were talking to a real person. Users can choose from a variety of voices to pair with the agent.
 
 Moreover, TTS offers an excellent solution for those who prefer auditory learning or desire to receive information while busy. In LobeChat, we have meticulously selected a range of high-quality voice options (OpenAI Audio, Microsoft Edge Speech) to meet the needs of users from different regions and cultural backgrounds. Users can choose the voice that suits their personal preferences or specific scenarios, resulting in a personalized communication experience.
 
-### `9` Text to Image Generation
+### Text to Image Generation
 
 With support for the latest text-to-image generation technology, LobeChat now allows users to invoke image creation tools directly within conversations with the agent. By leveraging the capabilities of AI tools such as `DALL-E 3`, `MidJourney`, and `Pollinations`, the agents are now equipped to transform your ideas into images.
 
 This enables a more private and immersive creative process, allowing for the seamless integration of visual storytelling into your personal dialogue with the agent.
 
-### `10` Plugin System (Function Calling)
+### Plugin System (Function Calling)
 
 The plugin ecosystem of LobeChat is an important extension of its core functionality, greatly enhancing the practicality and flexibility of the LobeChat assistant.
 
@@ -248,7 +286,7 @@ Searches Google through their official CSE API.
 
 > 📊 Total plugins: **42**
 
-### `11` Agent Market (GPTs)
+### Agent Market (GPTs)
 
 In LobeChat Agent Marketplace, creators can discover a vibrant and innovative community that brings together a multitude of well-designed agents, which not only play an important role in work scenarios but also offer great convenience in learning processes. Our marketplace is not just a showcase platform but also a collaborative space. Here, everyone can contribute their wisdom and share the agents they have developed.
 
@@ -290,7 +328,7 @@ Expert in advanced Java development and Minecraft mod and server plugin developm
 
 > 📊 Total agents: **505**
 
-### `12` Support Local / Remote Database
+### Support Local / Remote Database
 
 LobeChat supports the use of both server-side and local databases. Depending on your needs, you can choose the appropriate deployment solution:
 
@@ -299,7 +337,7 @@ LobeChat supports the use of both server-side and local databases. Depending on 
 
 Regardless of which database you choose, LobeChat can provide you with an excellent user experience.
 
-### `13` Support Multi-User Management
+### Support Multi-User Management
 
 LobeChat supports multi-user management and provides two main user authentication and management solutions to meet different needs:
 
@@ -310,7 +348,7 @@ LobeChat supports multi-user management and provides two main user authenticatio
 
 Regardless of which user management solution you choose, LobeChat can provide you with an excellent user experience and powerful functional support.
 
-### `14` Progressive Web App (PWA)
+### Progressive Web App (PWA)
 
 We deeply understand the importance of providing a seamless experience for users in today's multi-device environment. Therefore, we have adopted Progressive Web Application (PWA) technology, a modern web technology that elevates web applications to an experience close to that of native apps.
 
@@ -325,11 +363,11 @@ If you are unfamiliar with the installation process of PWA, you can add LobeChat
 -   In the upper right corner of the address bar, click on the Install icon.
 -   Follow the instructions on the screen to complete the PWA Installation.
 
-### `15` Mobile Device Adaptation
+### Mobile Device Adaptation
 
 We have carried out a series of optimization designs for mobile devices to enhance the user's mobile experience. Currently, we are iterating on the mobile user experience to achieve smoother and more intuitive interactions. If you have any suggestions or ideas, we welcome you to provide feedback through GitHub Issues or Pull Requests.
 
-### `16` Custom Themes
+### Custom Themes
 
 As a design-engineering-oriented application, LobeChat places great emphasis on users' personalized experiences, hence introducing flexible and diverse theme modes, including a light mode for daytime and a dark mode for nighttime. Beyond switching theme modes, a range of color customization options allow users to adjust the application's theme colors according to their preferences. Whether it's a desire for a sober dark blue, a lively peach pink, or a professional gray-white, users can find their style of color choices in LobeChat.
 

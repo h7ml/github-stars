@@ -1,6 +1,6 @@
 ---
 project: ceph
-stars: 15208
+stars: 15240
 description: Ceph is a distributed object, block, and file storage platform 
 url: https://github.com/ceph/ceph
 ---
@@ -88,7 +88,7 @@ To build Ceph, follow this procedure:
     ./do_cmake.sh
     ```
     
-    `do_cmake.sh` by default creates a "debug build" of Ceph, which can be up to five times slower than a non-debug build. Pass `-DCMAKE_BUILD_TYPE=RelWithDebInfo` to `do_cmake.sh` to create a non-debug build.
+    See build types.
     
 3.  Move into the `build` directory:
     
@@ -126,6 +126,47 @@ To build Ceph, follow this procedure:
     ninja install
     ```
     
+
+Build Types
+-----------
+
+`do_cmake.sh` by default creates a "debug build" of Ceph (assuming `.git` exists). A `Debug` build runtime performance may be as little as 20% of that of a non-debug build. Pass `-DCMAKE_BUILD_TYPE=RelWithDebInfo` to `do_cmake.sh` to create a non-debug build. The default build type is `RelWithDebInfo` once `.git` does not exist.
+
+CMake mode
+
+Debug info
+
+Optimizations
+
+Sanitizers
+
+Checks
+
+Use for
+
+`Debug`
+
+Yes
+
+`-Og`
+
+None
+
+`ceph_assert`, `assert`
+
+gdb, development
+
+`RelWithDebInfo`
+
+Yes
+
+`-O2`, `-DNDEBUG`
+
+None
+
+`ceph_assert` only
+
+production
 
 ### CMake Options
 

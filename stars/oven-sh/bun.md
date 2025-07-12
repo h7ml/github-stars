@@ -1,6 +1,6 @@
 ---
 project: bun
-stars: 78945
+stars: 79068
 description: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 url: https://github.com/oven-sh/bun
 ---
@@ -38,10 +38,10 @@ Bun supports Linux (x64 & arm64), macOS (x64 & Apple Silicon) and Windows (x64).
 > **x64 users** — if you see "illegal instruction" or similar errors, check our CPU requirements
 
 # with install script (recommended)
-curl -fsSL https://bun.sh/install | bash
+curl -fsSL https://bun.com/install | bash
 
 # on windows
-powershell -c "irm bun.sh/install.ps1 | iex"
+powershell -c "irm bun.com/install.ps1 | iex"
 
 # with npm
 npm install -g bun

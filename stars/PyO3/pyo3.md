@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 13943
+stars: 13981
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -18,7 +18,7 @@ Rust bindings for Python, including tools for creating native Python extension m
 Usage
 -----
 
-Requires Rust 1.63 or greater.
+Requires Rust 1.74 or greater.
 
 PyO3 supports the following Python distributions:
 

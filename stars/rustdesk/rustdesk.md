@@ -1,6 +1,6 @@
 ---
 project: rustdesk
-stars: 92059
+stars: 92640
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---

@@ -1,6 +1,6 @@
 ---
 project: expostal
-stars: 98
+stars: 99
 description: Elixir binding for Libpostal - a library for parsing/normalizing street addresses around the world. Powered by statistical NLP and open geo data.
 url: https://github.com/SweetIQ/expostal
 ---

@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 53611
+stars: 54129
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -805,7 +805,7 @@ torchvision
 
 transformers
 
-4.45.0
+4.49.0
 
 4.50.0
 
@@ -986,7 +986,7 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".\[torch,metrics\]" --no-build-isolation
 
-Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, modelscope, openmind, swanlab, dev
+Extra dependencies available: torch, torch-npu, metrics, deepspeed, liger-kernel, bitsandbytes, hqq, eetq, gptq, aqlm, vllm, sglang, galore, apollo, badam, adam-mini, qwen, minicpm\_v, openmind, swanlab, dev
 
 #### Install from Docker Image
 

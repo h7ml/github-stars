@@ -1,6 +1,6 @@
 ---
 project: setup-bun
-stars: 568
+stars: 573
 description: Set up your GitHub Actions workflow with a specific version of Bun
 url: https://github.com/oven-sh/setup-bun
 ---
@@ -24,19 +24,56 @@ Using version file
   with:
     bun-version-file: ".bun-version"
 
-### Using a custom NPM registry
+Using custom registries
+-----------------------
+
+You can configure multiple package registries using the `registries` input. This supports both default and scoped registries with various authentication methods.
+
+### Registry configuration
 
 \- uses: oven-sh/setup-bun@v2
   with:
-    registry-url: "https://npm.pkg.github.com/"
-    scope: "@foo"
-
-If you need to authenticate with a private registry, you can set the `BUN_AUTH_TOKEN` environment variable.
-
-\- name: Install Dependencies
+    registries: |
+      https://registry.npmjs.org/
+      @myorg:https://npm.pkg.github.com/|$GITHUB\_TOKEN
+      @internal:https://username:$INTERNAL\_PASSWORD@registry.internal.com/
+\- name: Install dependencies
   env:
-    BUN\_AUTH\_TOKEN: ${{ secrets.NPM\_TOKEN }}
-  run: bun install --frozen-lockfile
+    GITHUB\_TOKEN: ${{ secrets.GITHUB\_TOKEN }}
+    INTERNAL\_PASSWORD: ${{ secrets.INTERNAL\_PASSWORD }}
+  run: bun install
+
+#### Registry format options
+
+Type
+
+Format
+
+Default registry
+
+`https://registry.example.com/`
+
+Default registry with token
+
+`https://registry.example.com/|$TOKEN`
+
+Scoped registry
+
+`@scope:https://registry.example.com/`
+
+Scoped registry with token
+
+`@scope:https://registry.example.com/|$TOKEN`
+
+Scoped registry with URL credentials
+
+`@scope:https://username:$PASSWORD@registry.example.com/`
+
+Important
+
+When using authentication, make sure to set the corresponding environment variables in your workflow steps that need access to the registries.
+
+For more information about configuring registries in Bun, see the official documentation.
 
 ### Override download url
 
@@ -45,10 +82,6 @@ If you need to override the download URL, you can use the `bun-download-url` inp
 \- uses: oven-sh/setup-bun@v2
   with:
     bun-download-url: "https://github.com/oven-sh/bun/releases/latest/download/bun-linux-x64.zip"
-
-### Node.js not needed
-
-In most cases, you shouldn't need to use the setup-node GitHub Action.
 
 Inputs
 ------

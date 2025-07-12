@@ -1,6 +1,6 @@
 ---
 project: healthicons
-stars: 718
+stars: 721
 description: A collection of open source icons for public health projects.
 url: https://github.com/resolvetosavelives/healthicons
 ---
@@ -8,8 +8,7 @@ url: https://github.com/resolvetosavelives/healthicons
 Health Icons
 ============
 
-Free, open source health icons available for any use. Use for your next commercial or personal project. You don’t need to give credit and you can edit the icons however you want. Health Icons is a volunteer effort to create a 'global good' for health projects all over the world. Website: healthicons.org  
-  
+Free, open source health icons available for any use. Use for your next commercial or personal project. You don’t need to give credit and you can edit the icons however you want. Health Icons is a volunteer effort to create a 'global good' for health projects all over the world. Website: healthicons.org
 
 Using Health Icons
 ------------------
@@ -26,15 +25,10 @@ Icons can be downloaded:
 -   Together as a ZIP file
 -   Via NPM: `npm i healthicons` or `yarn add healthicons`
 
-  
-
 Request a new icon
 ------------------
 
 Need an icon for your project? Submit a request with an Issue on GitHub using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
-
-  
-  
 
 How to contribute
 -----------------
@@ -44,16 +38,24 @@ We’d love for you to join our team of volunteer designers and developers!
 1.  Join our open Slack channel by emailing contact@healthicons.org
 2.  Browse the Figma and contribute icons in the "New icons" section. Please read the code of conduct (below) and the styleguide (in the Figma) carefully before contributing.
 
-  
-
 Installing and running the website locally
 ------------------------------------------
 
 This project uses Next.js.
 
-1.  Check out the repo locally
-2.  Run `yarn install`
-3.  Run `yarn dev`
+This is the intended way to contribute to the code base:
+
+1.  Fork the main repo so you have your own copy which will be at `https://github.com/{your-username}/healthicons/`
+2.  Check it your fork on your computer: `gh repo clone {your-username}}/healthicons`
+3.  Add a remote referencing the main repo: `git remote add upstream git@github.com:resolvetosavelives/healthicons.git`
+4.  Fetch the remote upstream using: `git fetch upstream`
+5.  Create a new branch based on the RTSL repo’s main branch: `git checkout -b my-branch-name upstream/main`
+6.  Install dependencies using `yarn install`
+7.  Run the project locally using `yarn dev`
+8.  Make all of your changes and make a bunch of commits
+9.  Push to your branch: `git push origin my-branch-name`
+10.  On Github, create a pull request from your branch to `upstream/main`
+11.  After that, an admin of the project will review the pull request and then offer feedback and/or merge it
 
 **Importing the latest icon information from Figma**
 
@@ -64,8 +66,6 @@ To pull the latest icon information from Figma, update the open-graph images, an
 3.  In `.env.local`, add `FIGMA_PERSONAL_ACCESS_TOKEN="{token-goes-here}"`
 4.  Run `yarn update-icons`
 5.  If you're committing to a branch on git, make sure to remember to add the newly generated files in the `/public/` directory.
-
-  
 
 Publishing new icons to the website
 -----------------------------------
@@ -82,8 +82,6 @@ Publishing new icons to the website
 10.  Raise a PR and request a review from another volunteer via Slack
 11.  Wait for review
 12.  Merge the PR
-
-  
 
 Tagging icons in Figma
 ----------------------
@@ -105,8 +103,6 @@ Each icon should have a title and tags which are added in the “Description” 
 -   The “Description” only needs to go on the “filled” version of the icon in Figma
 -   Icon titles should be in Title Case with each word capitalized
 -   Tags are essentially synonyms or important related words that would help someone find the icon. They could also be alternative uses of the icon, the way a donkey could represent “farm”. If someone searches “blood” or “positive” they’ll see any icons that are tagged with those words. Tags should also be Title Case.
-
-  
 
 Code of Conduct
 ---------------
@@ -151,8 +147,6 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 This Code of Conduct is adapted from the Contributor Covenant, version 1.4, available here. For answers to common questions about this code of conduct, see this FAQ.
 
-  
-
 MIT License
 -----------
 
@@ -163,8 +157,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-  
 
 Hosted by Resolve to Save Lives
 -------------------------------
