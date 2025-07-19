@@ -1,6 +1,6 @@
 ---
 project: pig
-stars: 145
+stars: 146
 description: PostgreSQL Extension Manager
 url: https://github.com/pgsty/pig
 ---
@@ -10,7 +10,7 @@ PIG - Postgres Install Genius
 
 **pig** is an open-source PostgreSQL (& Extension) Package Manager for mainstream (EL/Debian/Ubuntu) Linux.
 
-Install PostgreSQL 13~17 along with 422 extensions on (`amd64` / `arm64`) with native OS package manager
+Install PostgreSQL 13~17 along with 423 extensions on (`amd64` / `arm64`) with native OS package manager
 
 > Blog: The idea way to deliver PostgreSQL extensions
 
@@ -29,7 +29,7 @@ $ pig repo add pigsty pgdg -u  # add pgdg & pigsty repo, then update repo cache
 $ pig ext install pg17         # install PostgreSQL 17 kernels with native PGDG packages
 $ pig ext install pg\_duckdb    # install the pg\_duckdb extension (for current pg17)
 
-That's it, All set! Check the advanced usage for details and the full list 400+ available extensions.
+That's it, All set! Check the advanced usage for details and the full list 420+ available extensions.
 
 * * *
 
@@ -64,7 +64,7 @@ sudo yum makecache; sudo yum install -y pig
 
 > For mainland china user: consider replace the `repo.pigsty.io` with `repo.pigsty.cc`
 
-`pig` has self update feature, you can update pig itself to the latest version with:
+`pig` has self-update feature, you can update pig itself to the latest version with:
 
 pig update
 
@@ -145,7 +145,7 @@ You can link the installed PostgreSQL to the system path with:
 pig ext link pg17             # create /usr/pgsql soft links, and write it to /etc/profile.d/pgsql.sh
 . /etc/profile.d/pgsql.sh     # reload the path and take effect immediately
 
-You can also use other package alias, it will translate to corresponding package on your OS distro and the `$v` will be replaced with the active or given pg version number, such as `17`, `16`, etc...
+You can also use other package aliases, it will translate to corresponding package on your OS distro and the `$v` will be replaced with the active or given pg version number, such as `17`, `16`, etc...
 
 pg17:         "postgresql17 postgresql17-server postgresql17-libs postgresql17-contrib postgresql17-plperl postgresql17-plpython3 postgresql17-pltcl postgresql17-llvmjit"
 pg17-client:  "postgresql17"
@@ -161,44 +161,40 @@ More Alias
 
 Take el for examples:
 
-pgsql-common:        "patroni patroni-etcd pgbouncer pgbackrest pg\_exporter pgbadger vip-manager",
-pgsql:               "postgresql$v postgresql$v-server postgresql$v-libs postgresql$v-contrib postgresql$v-plperl postgresql$v-plpython3 postgresql$v-pltcl postgresql$v-llvmjit"
-pgsql-mini:          "postgresql$v postgresql$v-server postgresql$v-libs postgresql$v-contrib"
-pgsql-core:          "postgresql$v postgresql$v-server postgresql$v-libs postgresql$v-contrib postgresql$v-plperl postgresql$v-plpython3 postgresql$v-pltcl postgresql$v-llvmjit"
-pgsql-full:          "postgresql$v postgresql$v-server postgresql$v-libs postgresql$v-contrib postgresql$v-plperl postgresql$v-plpython3 postgresql$v-pltcl postgresql$v-llvmjit postgresql$v-test postgresql$v-devel"
-pgsql-main:          "postgresql$v postgresql$v-server postgresql$v-libs postgresql$v-contrib postgresql$v-plperl postgresql$v-plpython3 postgresql$v-pltcl postgresql$v-llvmjit pg\_repack\_$v\* wal2json\_$v\* pgvector\_$v\*"
-pgsql-client:        "postgresql$v"
-pgsql-server:        "postgresql$v-server postgresql$v-libs postgresql$v-contrib"
-pgsql-devel:         "postgresql$v-devel"
-pgsql-basic:         "pg\_repack\_$v\* wal2json\_$v\* pgvector\_$v\*"
-postgresql:          "postgresql$v\*"
-patroni:             "patroni patroni-etcd",
-pgbouncer:           "pgbouncer",
-pgbackrest:          "pgbackrest",
-pgbackrest\_exporter: "pgbackrest\_exporter",
-pg\_exporter:         "pg\_exporter",
-vip-manager:         "vip-manager",
-pgbadger:            "pgbadger",
-pg\_activity:         "pg\_activity",
-pg\_filedump:         "pg\_filedump",
-pgxnclient:          "pgxnclient",
-pgformatter:         "pgformatter",
-pgcopydb:            "pgcopydb",
-pgloader:            "pgloader",
-pg\_timetable:        "pg\_timetable",
-timescaledb-utils:   "timescaledb-tools timescaledb-event-streamer",
-ivorysql:            "ivorysql4",
-wiltondb:            "wiltondb",
-polardb:             "PolarDB",
-ferretdb:            "ferretdb2",
-duckdb:              "duckdb",
-etcd:                "etcd",
-haproxy:             "haproxy",
-pig:                 "pig",
-vray:                "vray",
-juicefs:             "juicefs",
-restic:              "restic",
-rclone:              "rclone",
+"postgresql":          "postgresql$v\*",
+"pgsql-common":        "patroni patroni-etcd pgbouncer pgbackrest pg\_exporter pgbackrest\_exporter vip-manager",
+"patroni":             "patroni patroni-etcd",
+"pgbouncer":           "pgbouncer",
+"pgbackrest":          "pgbackrest",
+"pg\_exporter":         "pg\_exporter",
+"pgbackrest\_exporter": "pgbackrest\_exporter",
+"vip-manager":         "vip-manager",
+"pgbadger":            "pgbadger",
+"pg\_activity":         "pg\_activity",
+"pg\_filedump":         "pg\_filedump",
+"pgxnclient":          "pgxnclient",
+"pgformatter":         "pgformatter",
+"pgcopydb":            "pgcopydb",
+"pgloader":            "pgloader",
+"pg\_timetable":        "pg\_timetable",
+"timescaledb-utils":   "timescaledb-tools timescaledb-event-streamer",
+"ivorysql":            "ivorysql4",
+"wiltondb":            "wiltondb",
+"polardb":             "PolarDB",
+"orioledb":            "orioledb\_17 oriolepg\_17",
+"openhalodb":          "openhalodb",
+"percona-core":        "percona-postgresql17,percona-postgresql17-server,percona-postgresql17-contrib,percona-postgresql17-plperl,percona-postgresql17-plpython3,percona-postgresql17-pltcl",
+"percona-main":        "percona-postgresql17,percona-postgresql17-server,percona-postgresql17-contrib,percona-postgresql17-plperl,percona-postgresql17-plpython3,percona-postgresql17-pltcl,percona-postgis33\_17,percona-postgis33\_17-client,percona-postgis33\_17-utils,percona-pgvector\_17,percona-wal2json17,percona-pg\_repack17,percona-pgaudit17,percona-pgaudit17\_set\_user,percona-pg\_stat\_monitor17,percona-pg\_gather",
+"ferretdb":            "ferretdb2",
+"duckdb":              "duckdb",
+"etcd":                "etcd",
+"haproxy":             "haproxy",
+"pig":                 "pig",
+"vray":                "vray",
+"juicefs":             "juicefs",
+"restic":              "restic",
+"rclone":              "rclone",
+"genai-toolbox":       "genai-toolbox",
 
 **Install for another PG**
 
@@ -258,7 +254,7 @@ $ pig ext info pg\_duckdb
 │ Version   : 0.3.1                                                          │
 │ License   : MIT                                                            │
 │ Website   : https://github.com/duckdb/pg\_duckdb                            │
-│ Details   : https://pgsty.com/ext/olap/pg\_duckdb                           │
+│ Details   : https://ext.pgsty.com/e/pg\_duckdb                              │
 ├────────────────────────────────────────────────────────────────────────────┤
 │ Extension Properties                                                       │
 ├────────────────────────────────────────────────────────────────────────────┤

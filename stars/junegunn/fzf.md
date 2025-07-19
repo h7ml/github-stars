@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 71966
+stars: 72138
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -366,7 +366,7 @@ fzf --tmux 100%,50%       # Center, 100% width and 50% height
 fzf --tmux left,40%       # Left, 40% width
 fzf --tmux left,40%,90%   # Left, 40% width, 90% height
 fzf --tmux top,40%        # Top, 40% height
-fzf --tmux bottom,80%,40% # Bottom, 80% height, 40% height
+fzf --tmux bottom,80%,40% # Bottom, 80% width, 40% height
 
 `--tmux` is silently ignored when you're not on tmux.
 

@@ -1,6 +1,6 @@
 ---
 project: AutoGPT
-stars: 176853
+stars: 177043
 description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 url: https://github.com/Significant-Gravitas/AutoGPT
 ---
@@ -62,6 +62,26 @@ We've moved to a fully maintained and regularly updated documentation site.
 👉 Follow the official self-hosting guide here
 
 This tutorial assumes you have Docker, VSCode, git and npm installed.
+
+* * *
+
+#### ⚡ Quick Setup with One-Line Script (Recommended for Local Hosting)
+
+Skip the manual steps and get started in minutes using our automatic setup script.
+
+For macOS/Linux:
+
+```
+curl -fsSL https://setup.agpt.co/install.sh -o install.sh && bash install.sh
+```
+
+For Windows (PowerShell):
+
+```
+powershell -c "iwr https://setup.agpt.co/install.bat -o install.bat; ./install.bat"
+```
+
+This will install dependencies, configure Docker, and launch your local instance — all in one go.
 
 ### 🧱 AutoGPT Frontend
 

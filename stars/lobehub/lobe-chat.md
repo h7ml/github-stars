@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 63390
+stars: 63597
 description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -260,6 +260,12 @@ Recent Submits
 
 Description
 
+Speak  
+By **speak** on **2025-07-18**
+
+Learn how to say anything in another language with Speak, your AI-powered language tutor.  
+`education` `language`
+
 PortfolioMeta  
 By **portfoliometa** on **2025-05-27**
 
@@ -278,13 +284,7 @@ By **FineHow** on **2024-12-22**
 Search for information from the internet base BingApi  
 `bingsearch`
 
-Google CSE  
-By **vsnthdev** on **2024-12-02**
-
-Searches Google through their official CSE API.  
-`web` `search`
-
-> 📊 Total plugins: **42**
+> 📊 Total plugins: **43**
 
 ### Agent Market (GPTs)
 

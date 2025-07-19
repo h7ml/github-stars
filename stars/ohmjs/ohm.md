@@ -25,6 +25,15 @@ Some awesome things people have built using Ohm:
 -   A browser-based tool that turns written _Konnakkol_ (a South Indian vocal percussion art) into audio.
 -   Wildcard, a browser extension that empowers anyone to modify websites to meet their own specific needs, uses Ohm for its spreadsheet formulas.
 
+Sponsors
+--------
+
+Since 2017, Ohm has been maintained by @pdubroy on an unpaid basis. Please consider becoming a sponsor!
+
+### Diamond 💎
+
+### Gold 🥇
+
 Getting Started
 ---------------
 

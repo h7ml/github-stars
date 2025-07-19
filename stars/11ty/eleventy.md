@@ -1,6 +1,6 @@
 ---
 project: eleventy
-stars: 18436
+stars: 18476
 description: A simpler site generator. Transforms a directory of templates (of varying types) into HTML.
 url: https://github.com/11ty/eleventy
 ---
@@ -35,14 +35,20 @@ Tests
 -----
 
 ```
-npm run test
+npm test
 ```
 
--   We use the ava JavaScript test runner (Assertions documentation)
--   ℹ️ To keep tests fast, thou shalt try to avoid writing files in tests.
+We have a few test suites, for various reasons:
+
+-   ava JavaScript test runner (assertions docs) (primary test suite in `test/`)
+-   Node.js Test runner (secondary test suite in `test_node/`)
+-   Vitest (in Browser Mode) (client tests in `packages/client/test/`)
+-   Benchmark for Performance Regressions
+
+These run in various environments:
+
 -   Continuous Integration on GitHub Actions
 -   Code Coverage Statistics
--   Benchmark for Performance Regressions
 
 Community Roadmap
 -----------------

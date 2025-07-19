@@ -1,6 +1,6 @@
 ---
 project: posthog
-stars: 27726
+stars: 27839
 description: 🦔 PostHog provides open-source web & product analytics, session recording, feature flagging and A/B testing that you can self-host. Get started - free.
 url: https://github.com/PostHog/posthog
 ---
@@ -28,24 +28,29 @@ Best of all, all of this is free to use with a generous monthly free tier for ea
 Table of Contents
 -----------------
 
--   Getting started with PostHog Cloud
--   Self-hosting the open-source hobby deploy
+-   PostHog is an all-in-one, open source platform for building successful products
+-   Table of Contents
+-   Getting started with PostHog
+    -   PostHog Cloud (Recommended)
+    -   Self-hosting the open-source hobby deploy (Advanced)
 -   Setting up PostHog
 -   Learning more about PostHog
 -   Contributing
--   Open-source vs paid
+-   Open-source vs. paid
+-   We’re hiring!
 
-Getting started with PostHog Cloud (Recommended)
-------------------------------------------------
+Getting started with PostHog
+----------------------------
+
+### PostHog Cloud (Recommended)
 
 The fastest and most reliable way to get started with PostHog is signing up for free to PostHog Cloud or PostHog Cloud EU. Your first 1 million events, 5k recordings, 1M flag requests, 100k exceptions, and 250 survey responses are free every month, after which you pay based on usage.
 
-Self-hosting the open-source hobby deploy (Advanced)
-----------------------------------------------------
+### Self-hosting the open-source hobby deploy (Advanced)
 
 If you want to self-host PostHog, you can deploy a hobby instance in one line on Linux with Docker (recommended 4GB memory):
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/posthog/posthog/HEAD/bin/deploy-hobby)" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/posthog/posthog/HEAD/bin/deploy-hobby)"
 
 Open source deployments should scale to approximately 100k events per month, after which we recommend migrating to a PostHog Cloud.
 
@@ -123,8 +128,3 @@ We’re hiring!
 Hey! If you're reading this, you've proven yourself as a dedicated README reader.
 
 You might also make a great addition to our team. We're growing fast and would love for you to join us.
-
-Contributors 🦸
----------------
-
-And 200+ more... Thank you!

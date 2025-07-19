@@ -1,6 +1,6 @@
 ---
 project: spacedrive
-stars: 34939
+stars: 35085
 description: Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.
 url: https://github.com/spacedriveapp/spacedrive
 ---

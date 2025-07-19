@@ -1,6 +1,6 @@
 ---
 project: rclone-manager
-stars: 250
+stars: 303
 description: Rclone Manager is a cross-platform GUI application designed to help users manage Rclone remotes efficiently.
 url: https://github.com/Hakanbaban53/rclone-manager
 ---
@@ -91,6 +91,12 @@ Make sure you have the following installed:
 -   **Node.js:** Required for Angular development and running the frontend.
 -   **Rust:** Required for Tauri (backend) development.
 -   **Cargo:** Rust’s package manager, required for Tauri.
+
+### 🔒 Secure Export with 7z Encryption
+
+If you want to protect your exported app configuration, **RClone Manager** supports encrypting exports using 7z. When exporting your configuration, you can choose to encrypt the file with a password for added security.
+
+> **Note:** Make sure you have `7z` (7-Zip) installed on your system to use this feature.
 
 ### 💻 Development Setup
 

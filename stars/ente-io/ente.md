@@ -1,6 +1,6 @@
 ---
 project: ente
-stars: 20524
+stars: 20637
 description: 🔒 End-to-end encrypted cloud for photos, videos and 2FA secrets.
 url: https://github.com/ente-io/ente
 ---

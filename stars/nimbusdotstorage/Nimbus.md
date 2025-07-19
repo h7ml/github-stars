@@ -1,7 +1,7 @@
 ---
 project: Nimbus
-stars: 1381
-description: An open source alternative to Google Drive, One Drive, iCloud, etc.
+stars: 1587
+description: The future of file storage
 url: https://github.com/nimbusdotstorage/Nimbus
 ---
 
@@ -110,7 +110,7 @@ How to setup Microsoft keys?
     -   `openid` – Sign users in
     -   `profile` – View users' basic profile
     -   `User.Read` – Sign in and read user profile
-    -   `Files.ReadWrite` – Have full access to user files (OneDrive access)
+    -   `Files.ReadWrite.All` – Have full access to user files (OneDrive access)
 -   Click **Grant admin consent** to apply the permissions.
     
 
@@ -181,10 +181,10 @@ Make sure you have configured the Google OAuth credentials in your `.env` file a
 
 If you want to contribute, please refer to the contributing guide
 
-Deploying Docker images (ex. Fly.io)
-------------------------------------
+Deploying Docker images (ex. Coolify)
+-------------------------------------
 
-Follow the DEPLOYMENT.md file for instructions on how to deploy to Fly.
+Follow the DEPLOYMENT.md file for instructions on how to deploy with Coolify.
 
 Our Amazing Contributors
 ------------------------

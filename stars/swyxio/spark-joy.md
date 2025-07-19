@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9603
+stars: 9605
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -2537,6 +2537,7 @@ free or mock data apis for demos
 ### Helpful podcasts/talks/articles
 
 -   UI Density in Time and Space
+    -   high information density UIs https://news.ycombinator.com/item?id=43925732 incl mcmaster carr
 -   How do I learn design? (CodeNewbie)
 -   Design foundations for developers (Syntax)
 -   Design tips for developers (Syntax)
