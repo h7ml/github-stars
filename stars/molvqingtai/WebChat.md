@@ -1,6 +1,6 @@
 ---
 project: WebChat
-stars: 2057
+stars: 2085
 description: 💬 Chat with anyone on any website.
 url: https://github.com/molvqingtai/WebChat
 ---
@@ -38,6 +38,12 @@ After installing the extension, you'll see a ghost icon in the bottom-right corn
 ### Video
 
 web-chat.mp4
+
+### Community
+
+Join our Discord community to discuss WebChat and connect with other users:
+
+Discord
 
 ### Standing on the Shoulders of Giants
 

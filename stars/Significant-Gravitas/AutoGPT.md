@@ -1,6 +1,6 @@
 ---
 project: AutoGPT
-stars: 177043
+stars: 177236
 description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 url: https://github.com/Significant-Gravitas/AutoGPT
 ---
@@ -15,11 +15,11 @@ AutoGPT: Build, Deploy, and Run AI Agents
 Hosting Options
 ---------------
 
--   Download to self-host
--   Join the Waitlist for the cloud-hosted beta
+-   Download to self-host (Free!)
+-   Join the Waitlist for the cloud-hosted beta (Closed Beta - Public release Coming Soon!)
 
-How to Setup for Self-Hosting
------------------------------
+How to Self-Host the AutoGPT Platform
+-------------------------------------
 
 Note
 
@@ -131,7 +131,17 @@ These examples show just a glimpse of what you can achieve with AutoGPT! You can
 
 * * *
 
-### Mission and Licencing
+### **License Overview:**
+
+🛡️ **Polyform Shield License:** All code and content within the `autogpt_platform` folder is licensed under the Polyform Shield License. This new project is our in-developlemt platform for building, deploying and managing agents.  
+_Read more about this effort_
+
+🦉 **MIT License:** All other portions of the AutoGPT repository (i.e., everything outside the `autogpt_platform` folder) are licensed under the MIT License. This includes the original stand-alone AutoGPT Agent, along with projects such as Forge, agbenchmark and the AutoGPT Classic GUI.  
+We also publish additional work under the MIT Licence in other repositories, such as GravitasML which is developed for and used in the AutoGPT Platform. See also our MIT Licenced Code Ability project.
+
+* * *
+
+### Mission
 
 Our mission is to provide the tools, so that you can focus on what matters:
 
@@ -142,14 +152,6 @@ Our mission is to provide the tools, so that you can focus on what matters:
 Be part of the revolution! **AutoGPT** is here to stay, at the forefront of AI innovation.
 
 **📖 Documentation**  |  **🚀 Contributing**
-
-**Licensing:**
-
-MIT License: The majority of the AutoGPT repository is under the MIT License.
-
-Polyform Shield License: This license applies to the autogpt\_platform folder.
-
-For more information, see https://agpt.co/blog/introducing-the-autogpt-platform
 
 * * *
 

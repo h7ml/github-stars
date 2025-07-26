@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 46764
+stars: 47036
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -73,6 +73,7 @@ Cool features of AnythingLLM
 -   xAI
 -   Novita AI (chat models)
 -   PPIO
+-   Moonshot AI
 
 **Embedder models:**
 

@@ -1,6 +1,6 @@
 ---
 project: zulip
-stars: 23149
+stars: 23180
 description: Zulip server and web application. Open-source team chat that helps teams stay productive and focused.
 url: https://github.com/zulip/zulip
 ---
@@ -10,7 +10,7 @@ Zulip overview
 
 Zulip is an open-source team collaboration tool with unique topic-based threading that combines the best of email and chat to make remote work productive and delightful. Fortune 500 companies, leading open source projects, and thousands of other organizations use Zulip every day. Zulip is the only modern team chat app that is designed for both live and asynchronous conversations.
 
-Zulip is built by a distributed community of developers from all around the world, with 74+ people who have each contributed 100+ commits. With over 1000 contributors merging over 500 commits a month, Zulip is the largest and fastest growing open source team chat project.
+Zulip is built by a distributed community of developers from all around the world, with 97+ people who have each contributed 100+ commits. With over 1,500 contributors merging over 500 commits a month, Zulip is the largest and fastest growing open source team chat project.
 
 Come find us on the development community chat!
 

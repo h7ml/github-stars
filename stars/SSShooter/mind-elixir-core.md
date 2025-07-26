@@ -1,6 +1,6 @@
 ---
 project: mind-elixir-core
-stars: 2688
+stars: 2693
 description: ⚗ Mind Elixir is a JavaScript, framework-agnostic mind map core.
 url: https://github.com/SSShooter/mind-elixir-core
 ---
@@ -44,6 +44,11 @@ Features
 
 Table of Contents
 
+-   Features
+    -   🎨 **User Experience**
+    -   ⚡ **Performance & Architecture**
+    -   🛠️ **Core Features**
+    -   📤 **Export & Customization**
 -   Try now
     -   Playground
 -   Documentation
@@ -91,7 +96,7 @@ Usage
 npm i mind-elixir -S
 
 import MindElixir from 'mind-elixir';
-import "mind-elixir/style";
+import "mind-elixir/style.css";
 
 #### Script tag
 
@@ -112,7 +117,7 @@ And in your CSS file:
 </style\>
 
 import MindElixir from 'mind-elixir'
-import "mind-elixir/style";
+import "mind-elixir/style.css";
 import example from 'mind-elixir/dist/example1'
 
 let options \= {
@@ -404,6 +409,8 @@ pnpm doc
 pnpm doc:md
 ```
 
+Use DeepWiki to learn more about Mind Elixir
+
 Thanks
 ------
 
@@ -427,5 +434,5 @@ v5 Breaking Changes
 -   `node.style.fontSize`: use string instead of number which means you should add `px` to the end
 -   Use `instance.findEl` instead of `MindElixir.E` to get a node element
 -   CSS file is separated from JS file, you need to import it manually
-    -   If using a bundler with CSS support: `import "mind-elixir/style";`
+    -   If using a bundler with CSS support: `import "mind-elixir/style.css";`
     -   If using a CDN you can add to your CSS file: `@import "https://cdn.jsdelivr.net/npm/mind-elixir@^5.0.0/dist/style.css";`

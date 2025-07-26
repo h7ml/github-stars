@@ -1,6 +1,6 @@
 ---
 project: OpenCut
-stars: 25687
+stars: 27221
 description: The open-source CapCut alternative
 url: https://github.com/OpenCut-app/OpenCut
 ---
@@ -25,6 +25,7 @@ Features
 -   Real-time preview
 -   No watermarks or subscriptions
 -   Analytics provided by Databuddy, 100% Anonymized & Non-invasive.
+-   Blog powered by Marble, Headless CMS.
 
 Project Structure
 -----------------
@@ -112,6 +113,10 @@ Development Setup
     # Redis (matches docker-compose.yaml)
     UPSTASH\_REDIS\_REST\_URL="http://localhost:8079"
     UPSTASH\_REDIS\_REST\_TOKEN="example\_token"
+    
+    # Marble Blog
+    MARBLE\_WORKSPACE\_KEY=cm6ytuq9x0000i803v0isidst # example organization key
+    NEXT\_PUBLIC\_MARBLE\_API\_URL=https://api.marblecms.com
     
     # Development
     NODE\_ENV="development"

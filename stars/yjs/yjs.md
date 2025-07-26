@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 19687
+stars: 19740
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -87,6 +87,8 @@ Who is using Yjs
 -   Kedyou - Digital workspaces for tutoring
 -   Lightpage - Personal living notebook
 -   reearth-flow - Collaboratively calculate and convert various data
+-   ProtonMail | Proton Docs - E2E encrypted collaborative documents in Proton Drive.
+-   Theneo - AI-powered API docs with live team collaboration.
 
 Table of Contents
 -----------------

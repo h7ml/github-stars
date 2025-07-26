@@ -1,6 +1,6 @@
 ---
 project: nu_plugin_clipboard
-stars: 63
+stars: 65
 description: A nushell plugin to copy text into clipboard or get text from it. supports json<->object/table conversion out of box
 url: https://github.com/FMotalleb/nu_plugin_clipboard
 ---
@@ -15,7 +15,7 @@ A nushell plugin for interacting with the clipboard, allowing you to copy/paste 
 
 -   **`clipboard copy`**: Copies input text to the clipboard.
     
-    -   **Daemon Behavior:** Since version **0.105.2**, using env variables will try to detect display server. This config will override this behavior, if you need to override this please report and issue:
+    -   **Daemon Mode** (Linux only): Since version **0.105.2**, using env variables will try to detect display server. If there is any issue with copy/paste command This config will override this behavior. If you need to override this, please file an issue:
         
         $env.config.plugins.clipboard.NO\_DAEMON = true
         
@@ -32,13 +32,13 @@ If you face the error `Error: × Clipboard Error: The clipboard contents were no
 📌 Usage Examples
 -----------------
 
-### Copying a string (supports only strings for now)
+### Copying a string
 
-echo "test value" | clipboard copy 
+"test value" | clipboard copy 
 
 ### Using clipboard content
 
-clipboard paste | echo $in
+clipboard paste
 
 ### Copying tables and objects
 
@@ -65,11 +65,6 @@ nupm install --path nu\_plugin\_clipboard -f
 ### ⚙️ Supported Features
 
 -   **`use-wayland`**: Prioritizes the Wayland API, but falls back to X11 if needed.
-    
--   **`enforce-daemon`**: _(Deprecated)_ Now always enabled on Linux. Disable with:
-    
-    $env.config.plugins.clipboard.NO\_DAEMON = true
-    
 
 ### 🛠️ Manual Compilation
 

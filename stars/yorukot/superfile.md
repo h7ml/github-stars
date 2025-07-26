@@ -1,6 +1,6 @@
 ---
 project: superfile
-stars: 14220
+stars: 14400
 description: Pretty fancy and modern terminal file manager
 url: https://github.com/yorukot/superfile
 ---
@@ -55,6 +55,10 @@ If you want to inspect the script, see : install.sh
 powershell \-ExecutionPolicy Bypass \-Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.netlify.app/install.ps1'))"
 
 If you want to inspect the script, see : install.ps1
+
+#### Winget
+
+winget install \--id yorukot.superfile
 
 #### Scoop
 

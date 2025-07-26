@@ -1,6 +1,6 @@
 ---
 project: pprof
-stars: 12
+stars: 13
 description: Pprof serves via its HTTP server fprof profiling data in the format expected by the pprof visualization tools for Elixir.
 url: https://github.com/dogukanzorlu/pprof
 ---

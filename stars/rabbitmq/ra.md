@@ -329,9 +329,15 @@ Milliseconds
 
 metrics\_key
 
-Metrics key. The key used to write metrics into the ra\_metrics table.
+DEPRECATED: Metrics key. The key was used to write metrics into the ra\_metrics table. Metrics are now in Seshat.
 
 Atom
+
+metrics\_labels
+
+Metrics labels. Labels that are later returned with metrics for this server (eg. \`#{vhost => ..., queue => ...}\` for quorum queues).
+
+Map
 
 low\_priority\_commands\_flush\_size
 

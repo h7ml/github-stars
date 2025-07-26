@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 91606
+stars: 91799
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -262,12 +262,10 @@ python tools/amd\_build/build\_amd.py
 Install PyTorch
 
 export CMAKE\_PREFIX\_PATH="${CONDA\_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE\_PREFIX\_PATH}"
-python -m pip install -r requirements-build.txt
 python -m pip install --no-build-isolation -v -e .
 
 **On macOS**
 
-python -m pip install -r requirements-build.txt
 python -m pip install --no-build-isolation -v -e .
 
 **On Windows**

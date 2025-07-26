@@ -1,6 +1,6 @@
 ---
 project: eleventy
-stars: 18476
+stars: 18517
 description: A simpler site generator. Transforms a directory of templates (of varying types) into HTML.
 url: https://github.com/11ty/eleventy
 ---
@@ -21,6 +21,7 @@ Works with HTML, Markdown, JavaScript, Liquid, Nunjucks, with addons for WebC, S
 -   Support 11ty on Open Collective
 -   11ty on npm
 -   11ty on GitHub
+-   Latest:
 
 Installation
 ------------

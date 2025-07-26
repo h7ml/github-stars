@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 54560
+stars: 54948
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -336,6 +336,12 @@ Granite 3.0-3.3
 1B/2B/3B/8B
 
 granite3
+
+Granite 4
+
+7B
+
+granite4
 
 Hunyuan
 
@@ -1128,7 +1134,7 @@ Note
 
 Please update `data/dataset_info.json` to use your custom dataset.
 
-You can also use **Easy Dataset** or **GraphGen** to create synthetic data for fine-tuning.
+You can also use **Easy Dataset**, **DataFlow** and **GraphGen** to create synthetic data for fine-tuning.
 
 ### Quickstart
 

@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9605
+stars: 9612
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -1899,6 +1899,7 @@ Instead of dropdowns, use: (https://learnui.design/blog/4-rules-intuitive-ux.htm
 
 ### Buttons
 
+-   make your button look like an actual button https://www.nikolailehbr.ink/blog/realistic-button-design-css
 -   CSS keyboard buttons (Linus' toes) https://twitter.com/thesephist/status/1587950509503270914?s=20&t=k8x3X6k8qD-5zF8Y5vyB8w
 -   https://frontend.horse/articles/buttons-that-spark-joy/
 -   https://getcssscan.com/css-buttons-examples
@@ -2061,6 +2062,13 @@ Tools:
 -   https://1stwebdesigner.com/css-effects/
 -   great svg ideas https://twitter.com/cassiecodes/status/1383432725059674112?s=20
 -   exponential smoothing animation in js https://lisyarus.github.io/blog/programming/2023/02/21/exponential-smoothing.html
+-   https://x.com/DavidKPiano/status/1946795010038399384
+-   Things I wish were table-stakes in every web app:
+    -   Typing auto-focuses main input
+    -   Enter submits forms
+    -   Esc closes modals
+    -   Validation on blur, not while I'm typing
+    -   Let me decide whether a link opens in a new tab or not
 
 Pure CSS Tricks
 ---------------

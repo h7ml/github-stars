@@ -1,6 +1,6 @@
 ---
 project: postgrest
-stars: 25530
+stars: 25549
 description: REST API for any Postgres database
 url: https://github.com/PostgREST/postgrest
 ---
@@ -78,6 +78,11 @@ Supporting development
 You can help PostgREST ongoing maintenance and development by making a regular donation through Patreon https://www.patreon.com/postgrest
 
 Every donation will be spent on making PostgREST better for the whole community.
+
+Contributing
+------------
+
+Contributions are always welcome and appreciated. Please see the Contributing guidelines.
 
 Thanks
 ------

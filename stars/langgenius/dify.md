@@ -1,6 +1,6 @@
 ---
 project: dify
-stars: 107650
+stars: 108492
 description: Production-ready platform for agentic workflow development.
 url: https://github.com/langgenius/dify
 ---

@@ -1,12 +1,14 @@
 ---
 project: Xray-core
-stars: 30019
+stars: 30153
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
 url: https://github.com/XTLS/Xray-core
 ---
 
 Project X
 =========
+
+### Collect a Project X NFT to support the development of Project X!
 
 Project X originates from XTLS protocol, providing a set of network tools such as Xray-core and REALITY.
 
@@ -16,8 +18,9 @@ Donation & NFTs
 ---------------
 
 -   **ETH/USDT/USDC: `0xDc3Fe44F0f25D13CACb1C4896CD0D321df3146Ee`**
--   **Project X NFT: Announcement of NFTs by Project X**
--   **REALITY NFT: XHTTP: Beyond REALITY**
+-   **Project X NFT: https://opensea.io/item/ethereum/0x5ee362866001613093361eb8569d59c4141b76d1/1**
+-   **REALITY NFT: https://opensea.io/item/ethereum/0x5ee362866001613093361eb8569d59c4141b76d1/2**
+-   **Related links: https://opensea.io/collection/xtls, Announcement of NFTs by Project X, XHTTP: Beyond REALITY**
 
 License
 -------
@@ -103,26 +106,29 @@ GUI Clients
     -   SaeedDev94/Xray
     -   SimpleXray
     -   AnyPortal
--   iOS & macOS arm64
-    -   Happ
+-   iOS & macOS arm64 & tvOS
+    -   Happ (tvOS)
     -   Streisand
     -   OneXray
 -   macOS arm64 & x64
+    -   Happ
     -   V2rayU
     -   V2RayXS
     -   Furious
     -   OneXray
+    -   GoXRay
     -   AnyPortal
 -   Linux
     -   v2rayA
     -   Furious
     -   GorzRay
+    -   GoXRay
     -   AnyPortal
 
 Others that support VLESS, XTLS, REALITY, XUDP, PLUX...
 -------------------------------------------------------
 
--   iOS & macOS arm64
+-   iOS & macOS arm64 & tvOS
     -   Shadowrocket
     -   Loon
 -   Xray Tools
