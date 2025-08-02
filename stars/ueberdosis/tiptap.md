@@ -1,6 +1,6 @@
 ---
 project: tiptap
-stars: 31649
+stars: 31770
 description: The headless rich text editor framework for web artisans.
 url: https://github.com/ueberdosis/tiptap
 ---
@@ -23,9 +23,9 @@ Tiptap Editor is complemented by the collaboration open-source backend Hocuspocu
 
 The **Pro Extensions** are a set of advanced functionalities that enhance the capabilities of the Tiptap Editor. They are additional features that can be integrated into the base editor to provide more sophisticated editing options.
 
-Key functionalities include collaborative editing, which allows multiple users to edit documents simultaneously, drag-and-drop file management for easier handling of documents and media, and unique node ID assignment. Review the docs right here.
+Key functionalities include collaborative editing, commenting, versioning, document conversion and AI related features. Review the docs right here.
 
-Pro Extensions are free with a Tiptap account. Once signed up, review the guide in your account.
+Pro Extensions need a valid subscription.
 
 ### Make your editor collaborative
 

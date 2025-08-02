@@ -1,6 +1,6 @@
 ---
 project: docker-android
-stars: 11125
+stars: 11402
 description: Android in docker solution with noVNC supported and video recording
 url: https://github.com/budtmo/docker-android
 ---
@@ -284,7 +284,7 @@ No
 
 Yes
 
-Support other newer Android version e.g. Android 15, etc
+Support other newer Android version e.g. Android 15, Android 16, etc
 
 root-privileged
 

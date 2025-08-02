@@ -1,6 +1,6 @@
 ---
 project: hoppscotch
-stars: 73173
+stars: 73310
 description: Open source API development ecosystem - https://hoppscotch.io (open-source alternative to Postman, Insomnia)
 url: https://github.com/hoppscotch/hoppscotch
 ---
@@ -229,42 +229,42 @@ _Add-ons are developed and maintained under **Hoppscotch Organization**._
 -   Web : hoppscotch.io
 -   Windows/Linux/macOS : Desktop Apps
 
-**Usage**
----------
+Usage
+-----
 
 1.  Provide your API endpoint in the URL field
 2.  Click "Send" to simulate the request
 3.  View the response
 
-**Developing**
---------------
+Developing
+----------
 
 Follow our self-hosting documentation to get started with the development environment.
 
-**Contributing**
-----------------
+Contributing
+------------
 
 Please contribute using GitHub Flow. Create a branch, add commits, and open a pull request.
 
 Please read `CONTRIBUTING` for details on our `CODE OF CONDUCT`, and the process for submitting pull requests to us.
 
-**Continuous Integration**
---------------------------
+Continuous Integration
+----------------------
 
 We use GitHub Actions for continuous integration. Check out our build workflows.
 
-**Changelog**
--------------
+Changelog
+---------
 
 See the `CHANGELOG` file for details.
 
-**Authors**
------------
+Authors
+-------
 
 This project owes its existence to the collective efforts of all those who contribute — contribute now.
 
-**License**
------------
+License
+-------
 
 This project is licensed under the MIT License — see the `LICENSE` file for details.
 

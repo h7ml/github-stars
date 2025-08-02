@@ -1,6 +1,6 @@
 ---
 project: coze-loop
-stars: 987
+stars: 4398
 description: Next-generation AI Agent Optimization Platform: Cozeloop addresses challenges in AI agent development by providing full-lifecycle management capabilities from development, debugging, and evaluation to monitoring.  
 url: https://github.com/coze-dev/coze-loop
 ---
@@ -50,12 +50,35 @@ Observation
 
 Model
 
-Support for integrating models such as OpenAI and Volcano Ark
+Support for integrating models such as OpenAI and Volcengine Ark
 
-Quickstart
-----------
+Quick Start
+-----------
 
-Refer to the Quickstart to learn how to install and deploy the latest version of Coze Loop.
+> Refer to Quick Start for detailed instructions on how to install and deploy the latest version of Coze Loop.
+
+**Environment Requirements:**
+
+-   Install Docker and Docker Compose in advance, and start the Docker service.
+
+**Operation Steps:**
+
+1.  Get the source code. Execute the following command to get the latest version of the Coze Loop source code.
+    
+    # Clone the code
+    git clone https://github.com/coze-dev/coze-loop.git
+    # Enter the Coze Loop directory
+    cd coze-loop
+    
+2.  Configure the model. Go to the `conf/default/app/runtime/` directory, edit the `model_config.yaml` file, and modify the `api_key` and `model` fields. Taking Volcengine Ark as an example:
+    -   `api_key`: Volcengine Ark API Key. For how to obtain it, please refer to Get API Key.
+    -   `model`: The Endpoint ID of the Volcengine Ark model access point. For how to obtain it, please refer to Get Endpoint.
+3.  Start the service. Execute the following command to quickly deploy the Coze Loop open-source edition using Docker Compose.
+    
+    # Start the service, default is development mode
+    docker compose up --build
+    
+4.  Access the Coze Loop open-source edition by visiting `http://localhost:8082` in your browser.
 
 Using Coze Loop Open-source Edition
 -----------------------------------
@@ -94,7 +117,25 @@ Please **do not** create public GitHub Issues.
 Join the Community
 ------------------
 
-Scan the QR code below on the Lark mobile app to join the Coze Loop technical discussion group
+We are committed to building an open and friendly developer community. All developers interested in AI Agent development are welcome to join us!
+
+### Issue Reports & Feature Requests
+
+To efficiently track and resolve issues while ensuring transparency and collaboration, we recommend participating through:
+
+-   **GitHub Issues**: Submit bug reports or feature requests
+-   **Pull Requests**: Contribute code or documentation improvements
+
+### Technical Discussion & Communication
+
+Join our technical discussion groups to share experiences with other developers and stay updated with the latest project developments:
+
+-   Lark Group Chat: Scan the QR code below on the Lark mobile app to join the Coze Loop technical discussion group.
+
+-   Discord Server: Coze Community
+    
+-   Telegram Group: Coze
+    
 
 Acknowledgments
 ---------------

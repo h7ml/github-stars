@@ -1,6 +1,6 @@
 ---
 project: Babylon.js
-stars: 24362
+stars: 24388
 description: Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.
 url: https://github.com/BabylonJS/Babylon.js
 ---

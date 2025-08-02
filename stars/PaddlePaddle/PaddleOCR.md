@@ -1,6 +1,6 @@
 ---
 project: PaddleOCR
-stars: 51966
+stars: 52208
 description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
@@ -43,7 +43,7 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
     
     -   **Added PP-OCRv5 Multilingual Text Recognition Model**, which supports the training and inference process for text recognition models in 37 languages, including French, Spanish, Portuguese, Russian, Korean, etc. **Average accuracy improved by over 30%.** Details
     -   Upgraded the **PP-Chart2Table model** in PP-StructureV3, further enhancing the capability of converting charts to tables. On internal custom evaluation sets, the metric (RMS-F1) **increased by 9.36 percentage points (71.24% -> 80.60%).**
-    -   Newly launched **document translation pipeline, PP-DocTranslation, based on PP-StructureV3 and ERNIE 4.5 Turbo**, which supports the translation of Markdown format documents, various complex-layout PDF documents, and document images, with the results saved as Markdown format documents. Details
+    -   Newly launched **document translation pipeline, PP-DocTranslation, based on PP-StructureV3 and ERNIE 4.5**, which supports the translation of Markdown format documents, various complex-layout PDF documents, and document images, with the results saved as Markdown format documents. Details
 -   **New MCP server:** Details
     
     -   **Supports both OCR and PP-StructureV3 pipelines.**
@@ -115,7 +115,7 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
 -   **PP-ChatOCRv4**: Intelligent Document Understanding – Extract Key Information, not just text from Images/PDFs.
     
     1.  🔥 **15-point accuracy gain** in key-information extraction on PDF/PNG/JPG files over the previous generation.
-    2.  💻 Native support for **ERNIE 4.5 Turbo**, with compatibility for large-model deployments via PaddleNLP, Ollama, vLLM, and more.
+    2.  💻 Native support for **ERNIE 4.5**, with compatibility for large-model deployments via PaddleNLP, Ollama, vLLM, and more.
     3.  🤝 Integrated PP-DocBee2, enabling extraction and understanding of printed text, handwriting, seals, tables, charts, and other common elements in complex documents.
 
 History Log

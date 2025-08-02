@@ -1,6 +1,6 @@
 ---
 project: FastSend
-stars: 1031
+stars: 1036
 description: FastSend 是一个基于 WebRTC 技术的点对点文件传输工具，支持快速的目录同步和文件传输。通过浏览器即可实现安全、高效的文件共享。
 url: https://github.com/ShouChenICU/FastSend
 ---
@@ -49,10 +49,24 @@ yarn build
 # 启动服务
 node .output/server/index.mjs
 
-**注意：** 目录传输需要`HTTPS`以及浏览器支持，一般新版本的桌面浏览器都支持
+Important
 
-🐳 Docker和Docker Compose
-------------------------
+目录传输和同步需要 `HTTPS` 以及浏览器支持，一般新版本的桌面浏览器都支持
+
+本项目自身的 HTTPS 配置方式（测试环境）请参考：
+
+-   置顶 Issue
+-   Nuxt 部署教程（英文）
+
+FastSend 不建议直接以 HTTPS 形式进行生产环境部署，而应当位于反向代理服务器之后，请参考：
+
+-   Nginx
+-   Apache httpd
+-   Caddy
+-   Windows IIS
+
+🐳 Docker 和 Docker Compose
+--------------------------
 
 ### Docker 构建
 
@@ -71,9 +85,9 @@ docker-compose up -d
 -------
 
 1.  确保浏览器启用了 WebRTC 功能
-2.  如需传输文件夹，请确保浏览器支持现代文件系统 API
+2.  如需传输文件夹或同步目录，请确保浏览器支持现代文件系统 API 并已启用 HTTPS 传输
 3.  在同一局域网内传输速度最快
-4.  建议在网络状态良好时使用
+4.  建议在网络状态良好时使用，部分网络环境可能会阻止 P2P / WebRTC 正确建立连接，从而导致传输失败
 
 👨‍💻 作者
 --------

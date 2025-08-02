@@ -1,6 +1,6 @@
 ---
 project: metadata-action
-stars: 1017
+stars: 1020
 description: GitHub Action to extract metadata (tags, labels) from Git reference and GitHub events for Docker
 url: https://github.com/docker/metadata-action
 ---
@@ -42,6 +42,7 @@ GitHub Action to extract metadata from Git reference and GitHub events. This act
         -   `{{sha}}`
         -   `{{base_ref}}`
         -   `{{is_default_branch}}`
+        -   `{{is_not_default_branch}}`
         -   `{{date '<format>' tz='<timezone>'}}`
         -   `{{commit_date '<format>' tz='<timezone>'}}`
     -   Major version zero
@@ -645,6 +646,8 @@ tags: |
   type=semver,pattern={{version}}
   # use custom value instead of git tag
   type=semver,pattern={{version}},value=v1.0.0
+  # use custom value and match part of it
+  type=semver,pattern={{version}},value=p1/v1.0.0,match=v(\\d.\\d.\\d)$
 
 Will be used on a push tag event and requires a valid semver Git tag, but you can also use a custom value through `value` attribute.
 
@@ -659,6 +662,8 @@ Will be used on a push tag event and requires a valid semver Git tag, but you ca
 Git tag
 
 Pattern
+
+Match
 
 Output
 
@@ -698,6 +703,14 @@ Output
 
 `3`
 
+`p1/v1.2.3`
+
+`{{version}}`
+
+`v(\d.\d.\d)$`
+
+`1.2.3`
+
 `v2.0.8-beta.67`
 
 `{{raw}}`
@@ -729,7 +742,7 @@ Important
 Extended attributes and default values:
 
 tags: |
-  type=semver,enable=true,priority=900,prefix=,suffix=,pattern=,value=
+  type=semver,enable=true,priority=900,prefix=,suffix=,pattern=,value=,match=
 
 ### `type=pep440`
 
@@ -738,6 +751,8 @@ tags: |
   type=pep440,pattern={{version}}
   # use custom value instead of git tag
   type=pep440,pattern={{version}},value=1.0.0
+  # use custom value and match part of it
+  type=pep440,pattern={{version}},value=p1/v1.0.0,match=v(\\d.\\d.\\d)$
 
 Will be used on a push tag event and requires a Git tag that conforms to PEP 440, but you can also use a custom value through `value` attribute.
 
@@ -752,6 +767,8 @@ Will be used on a push tag event and requires a Git tag that conforms to PEP 440
 Git tag
 
 Pattern
+
+Match
 
 Output
 
@@ -796,6 +813,14 @@ Output
 `{{version}}`
 
 `1.2.3rc2`
+
+`p1/v1.2.3`
+
+`{{version}}`
+
+`v(\d.\d.\d)$`
+
+`1.2.3`
 
 `1.2.3rc2`
 
@@ -1215,6 +1240,10 @@ Important
 #### `{{is_default_branch}}`
 
 Returns `true` if the branch that triggered the workflow run is the default one, otherwise `false`.
+
+#### `{{is_not_default_branch}}`
+
+Returns `true` if the branch that triggered the workflow run is not the default one, otherwise `false`.
 
 #### `{{date '<format>' tz='<timezone>'}}`
 

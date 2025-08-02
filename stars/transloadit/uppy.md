@@ -1,6 +1,6 @@
 ---
 project: uppy
-stars: 29981
+stars: 29996
 description: The next open source file uploader for web browsers :dog: 
 url: https://github.com/transloadit/uppy
 ---
@@ -45,6 +45,17 @@ const uppy \= new Uppy()
   })
 
 **Try it online** or **read the docs** for more details on how to use Uppy and its plugins.
+
+Integrations
+------------
+
+Uppy has first-class support for plain JS/HTML, React, Svelte, Vue, and Angular.
+
+For the supported frameworks (except Angular) Uppy offers three ways to build user interfaces:
+
+1.  **Pre-composed, plug-and-play components.** Mainly `<Dashboard />`. The downside is that you can’t customize the UI.
+2.  **Headless components.** Smaller components, easier to override the styles or compose them together with your own components.
+3.  **Hooks.** Attach our logic to your own components, no restrictions, create a tailor-made UI.
 
 Features
 --------
@@ -105,9 +116,7 @@ Plugins
 ### UI Elements
 
 -   `Dashboard` — universal UI with previews, progress bars, metadata editor and all the cool stuff. Required for most UI plugins like Webcam and Instagram
--   `Progress Bar` — minimal progress bar that fills itself when upload progresses
--   `Status Bar` — more detailed progress, pause/resume/cancel buttons, percentage, speed, uploaded/total sizes (included by default with `Dashboard`)
--   `Informer` — send notifications like “smile” before taking a selfie or “upload failed” when all is lost (also included by default with `Dashboard`)
+-   Headless components (react, svelte, vue)
 
 ### Sources
 
@@ -129,7 +138,6 @@ The ⓒ mark means that `@uppy/companion`, a server-side component, is needed fo
 -   `Tus` — resumable uploads via the open tus standard
 -   `XHR Upload` — regular uploads for any backend out there (like Apache, Nginx)
 -   `AWS S3` — plain upload to AWS S3 or compatible services
--   `AWS S3 Multipart` — S3-style “Multipart” upload to AWS or compatible services
 
 ### File Processing
 
@@ -140,13 +148,6 @@ The ⓒ mark means that `@uppy/companion`, a server-side component, is needed fo
 -   `Golden Retriever` — restores files after a browser crash, like it’s nothing
 -   `Thumbnail Generator` — generates image previews (included by default with `Dashboard`)
 -   `Form` — collects metadata from `<form>` right before an Uppy upload, then optionally appends results back to the form
--   `Redux` — for your emerging time traveling needs
-
-React
------
-
--   React — components to integrate Uppy UI plugins with React apps
--   React Native — basic Uppy component for React Native with Expo
 
 Browser Support
 ---------------

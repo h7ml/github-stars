@@ -1,6 +1,6 @@
 ---
 project: difftastic
-stars: 22638
+stars: 22676
 description: a structural diff that understands syntax 🟥🟩
 url: https://github.com/Wilfred/difftastic
 ---

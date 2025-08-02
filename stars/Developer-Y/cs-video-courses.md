@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69450
+stars: 69504
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -1344,6 +1344,7 @@ Courses
 -   ME 780 – Perception For Autonomous Driving – Spring 2017
 -   ME780 – Nonlinear State Estimation for Robotics and Computer Vision – Spring 2017
 -   METR 4202/7202 -- Robotics & Automation - University of Queensland
+-   UIUC CS-588 Autonomous Vehicle System Engineering Outline
 -   Robotics - IIT Bombay
 -   Introduction to Machine Vision
 -   6.834J Cognitive Robotics - MIT OCW

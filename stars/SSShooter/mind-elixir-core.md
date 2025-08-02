@@ -1,6 +1,6 @@
 ---
 project: mind-elixir-core
-stars: 2693
+stars: 2697
 description: ⚗ Mind Elixir is a JavaScript, framework-agnostic mind map core.
 url: https://github.com/SSShooter/mind-elixir-core
 ---
@@ -42,6 +42,8 @@ Features
 -   **Easy styling** - Customize mindmap with CSS variables
 -   **Theme support** - Built-in themes and custom styling
 
+v5 Breaking Changes
+
 Table of Contents
 
 -   Features
@@ -64,11 +66,11 @@ Table of Contents
 -   Export as a Image
 -   Theme
 -   Shortcuts
+-   Who's using
 -   Ecosystem
 -   Development
 -   Thanks
 -   Contributors
--   v5 Breaking Changes
 
 Try now
 -------
@@ -95,8 +97,8 @@ Usage
 
 npm i mind-elixir -S
 
-import MindElixir from 'mind-elixir';
-import "mind-elixir/style.css";
+import MindElixir from 'mind-elixir'
+import 'mind-elixir/style.css'
 
 #### Script tag
 
@@ -104,7 +106,7 @@ import "mind-elixir/style.css";
 
 And in your CSS file:
 
-@import "https://cdn.jsdelivr.net/npm/mind-elixir/dist/style.css";
+@import 'https://cdn.jsdelivr.net/npm/mind-elixir/dist/style.css';
 
 ### Init
 
@@ -117,7 +119,7 @@ And in your CSS file:
 </style\>
 
 import MindElixir from 'mind-elixir'
-import "mind-elixir/style.css";
+import 'mind-elixir/style.css'
 import example from 'mind-elixir/dist/example1'
 
 let options \= {
@@ -300,77 +302,12 @@ Be aware that Mind Elixir will not observe the change of `prefers-color-scheme`.
 Shortcuts
 ---------
 
-Shortcut
+See Shortcuts Guide for detailed information.
 
-Function
+Who's using
+-----------
 
-Enter
-
-Insert Sibling Node
-
-Tab
-
-Insert Child Node
-
-F1
-
-Center the Map
-
-F2
-
-Begin Editing the Current Node
-
-↑
-
-Select the Previous Sibling Node
-
-↓
-
-Select the Next Sibling Node
-
-← / →
-
-Select Parent or First Child
-
-PageUp / Alt + ↑
-
-Move Up Node
-
-PageDown / Alt + ↓
-
-Move Down Node
-
-Ctrl + ↑
-
-Change Layout Pattern to Side
-
-Ctrl + ←
-
-Change Layout Pattern to Left
-
-Ctrl + →
-
-Change Layout Pattern to Right
-
-Ctrl + C
-
-Copy the Current Node
-
-Ctrl + V
-
-Paste the Copied Node
-
-Ctrl + "+"
-
-Zoom In Mind Map
-
-Ctrl + "-"
-
-Zoom Out Mind Map
-
-Ctrl + 0
-
-Reset Zoom Level
+-   Mind Elixir Desktop
 
 Ecosystem
 ---------
@@ -420,19 +357,3 @@ Contributors
 ------------
 
 Thanks for your contributions to Mind Elixir! Your support and dedication make this project better.
-
-v5 Breaking Changes
--------------------
-
--   Move scroll-based movement to transition-based movement
--   `Summary.text` -> `Summary.label`
--   Remove `getDataMd()`
--   MindElixir.dragMoveHelper -> instance.dragMoveHelper
--   Remove `unselectNode()`
--   Remove `selectNode` event, use `selectNodes` event instead
--   Remove `removeNode()`
--   `node.style.fontSize`: use string instead of number which means you should add `px` to the end
--   Use `instance.findEl` instead of `MindElixir.E` to get a node element
--   CSS file is separated from JS file, you need to import it manually
-    -   If using a bundler with CSS support: `import "mind-elixir/style.css";`
-    -   If using a CDN you can add to your CSS file: `@import "https://cdn.jsdelivr.net/npm/mind-elixir@^5.0.0/dist/style.css";`

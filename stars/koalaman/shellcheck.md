@@ -1,6 +1,6 @@
 ---
 project: shellcheck
-stars: 37781
+stars: 37845
 description: ShellCheck, a static analysis tool for shell scripts
 url: https://github.com/koalaman/shellcheck
 ---
@@ -112,7 +112,7 @@ Services and platforms that have ShellCheck pre-installed and ready to use:
 -   Codety via the Codety Scanner
 -   CircleCI via the ShellCheck Orb
 -   Github (only Linux)
--   Trunk Check (universal linter; allows you to explicitly version your shellcheck install) via the shellcheck plugin
+-   Trunk Code Quality (universal linter; allows you to explicitly version your shellcheck install) via the shellcheck plugin
 -   CodeRabbit
 
 Most other services, including GitLab, let you install ShellCheck yourself, either through the system's package manager (see Installing), or by downloading and unpacking a binary release.

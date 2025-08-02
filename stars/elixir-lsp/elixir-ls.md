@@ -1,6 +1,6 @@
 ---
 project: elixir-ls
-stars: 1639
+stars: 1645
 description: A frontend-independent IDE "smartness" server for Elixir. Implements the "Language Server Protocol" standard and provides debugger support via the "Debug Adapter Protocol"
 url: https://github.com/elixir-lsp/elixir-ls
 ---
@@ -714,6 +714,10 @@ Absolute path to an alternative ElixirLS release that will override the packaged
 elixirLS.stdlibSrcDir
 
 Path to Elixir's std lib source code. See \[here\](elixir-lsp/elixir\_sense#277) for more info
+
+elixirLS.dotFormatter
+
+Path to a custom `.formatter.exs` file used when formatting documents
 
 Debug Adapter configuration options
 -----------------------------------

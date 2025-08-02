@@ -1,6 +1,6 @@
 ---
 project: dify
-stars: 108492
+stars: 109456
 description: Production-ready platform for agentic workflow development.
 url: https://github.com/langgenius/dify
 ---
@@ -207,6 +207,10 @@ Quickly deploy Dify to Alibaba cloud with Alibaba Cloud Computing Nest
 #### Using Alibaba Cloud Data Management
 
 One-Click deploy Dify to Alibaba Cloud with Alibaba Cloud Data Management
+
+#### Deploy to AKS with Azure Devops Pipeline
+
+One-Click deploy Dify to AKS with Azure Devops Pipeline Helm Chart by @LeoZhang
 
 Contributing
 ------------

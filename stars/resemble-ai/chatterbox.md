@@ -1,6 +1,6 @@
 ---
 project: chatterbox
-stars: 9673
+stars: 9829
 description: SoTA open-source TTS
 url: https://github.com/resemble-ai/chatterbox
 ---
@@ -119,6 +119,21 @@ Official Discord
 ================
 
 👋 Join us on Discord and let's build something awesome together!
+
+Citation
+========
+
+If you find this model useful, please consider citing.
+
+```
+@misc{chatterboxtts2025,
+  author       = {{Resemble AI}},
+  title        = {{Chatterbox-TTS}},
+  year         = {2025},
+  howpublished = {\url{https://github.com/resemble-ai/chatterbox}},
+  note         = {GitHub repository}
+}
+```
 
 Disclaimer
 ==========

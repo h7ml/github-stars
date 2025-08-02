@@ -1,6 +1,6 @@
 ---
 project: dopamine
-stars: 10774
+stars: 10782
 description: Dopamine is a research framework for fast prototyping of reinforcement learning algorithms. 
 url: https://github.com/google/dopamine
 ---

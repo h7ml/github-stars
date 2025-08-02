@@ -32,8 +32,6 @@ Since 2017, Ohm has been maintained by @pdubroy on an unpaid basis. Please consi
 
 ### Diamond 💎
 
-### Gold 🥇
-
 Getting Started
 ---------------
 

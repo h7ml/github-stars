@@ -1,6 +1,6 @@
 ---
 project: croc
-stars: 30666
+stars: 30702
 description: Easily and securely send things from one computer to another :crocodile: :package:
 url: https://github.com/schollz/croc
 ---
@@ -53,11 +53,19 @@ choco install croc
 
 winget install schollz.croc
 
-### On Unix
+### Using nix-env
 
 You can install the latest release with Nix:
 
 nix-env -i croc
+
+### On NixOS
+
+You can add this to your configuration.nix:
+
+environment.systemPackages \= \[
+  pkgs.croc
+\];
 
 ### On Alpine Linux
 

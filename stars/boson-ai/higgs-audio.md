@@ -1,6 +1,6 @@
 ---
 project: higgs-audio
-stars: 5122
+stars: 6247
 description: Text-audio foundation model from Boson AI
 url: https://github.com/boson-ai/higgs-audio
 ---
@@ -55,10 +55,14 @@ pip install -e .
 git clone https://github.com/boson-ai/higgs-audio.git
 cd higgs-audio
 
-conda create -n higgs\_audio\_env python=3.10
-conda activate higgs\_audio\_env
+conda create -y --prefix ./conda\_env --override-channels --strict-channel-priority --channel "conda-forge" "python==3.10.\*"
+conda activate ./conda\_env
 pip install -r requirements.txt
 pip install -e .
+
+# Uninstalling environment:
+conda deactivate
+conda remove -y --prefix ./conda\_env --all
 
 ### Option 4: Using uv
 
@@ -189,7 +193,7 @@ Technical Details
 Higgs Audio v2 adopts the "generation variant" depicted in the architecture figure above. Its strong performance is driven by three key technical innovations:
 
 -   We developed an automated annotation pipeline that leverages multiple ASR models, sound event classification models, and our in-house audio understanding model. Using this pipeline, we cleaned and annotated 10 million hours audio data, which we refer to as **AudioVerse**. The in-house understanding model is finetuned on top of Higgs Audio v1 Understanding, which adopts the "understanding variant" shown in the architecture figure.
--   We trained a unified audio tokenizer from scratch that captures both semantic and acoustic features. Learn more in the tokenizer blog.
+-   We trained a unified audio tokenizer from scratch that captures both semantic and acoustic features. We also open-sourced our evaluation set on HuggingFace. Learn more in the tokenizer blog.
 -   We proposed the DualFFN architecture, which enhances the LLM’s ability to model acoustics tokens with minimal computational overhead. See the architecture blog.
 
 Evaluation
@@ -398,6 +402,21 @@ Higgs Audio v2 (base)
 **14.65**
 
 55.28
+
+Citation
+--------
+
+If you feel the repository is helpful, please kindly cite as:
+
+```
+@misc{higgsaudio2025,
+  author       = {{Boson AI}},
+  title        = {{Higgs Audio V2: Redefining Expressiveness in Audio Generation}},
+  year         = {2025},
+  howpublished = {\url{https://github.com/boson-ai/higgs-audio}},
+  note         = {GitHub repository. Release blog available at \url{https://www.boson.ai/blog/higgs-audio-v2}},
+}
+```
 
 Third-Party Licenses
 --------------------

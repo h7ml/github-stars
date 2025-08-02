@@ -1,6 +1,6 @@
 ---
 project: build-your-own-x
-stars: 404293
+stars: 406391
 description: Master programming by recreating your favorite technologies from scratch.
 url: https://github.com/codecrafters-io/build-your-own-x
 ---
@@ -331,7 +331,6 @@ Tutorials
 -   **Racket**: _Beautiful Racket: How to make your own programming languages with Racket_
 -   **Ruby**: _A Compiler From Scratch_
 -   **Ruby**: _Markdown compiler from scratch in Ruby_
--   **Rust**: _So You Want to Build a Language VM_
 -   **Rust**: _Learning Parser Combinators With Rust_
 -   **Swift**: _Building a LISP from scratch with Swift_
 -   **TypeScript**: _Build your own WebAssembly Compiler_
