@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 72219
+stars: 72389
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -303,6 +303,7 @@ Press
 -   _"That's Crazy, Oh God. That's Fucking Freaky Dude... That's So Wild Dude"_ - SomeOrdinaryGamers
 -   _"Alright look look look, now look chat, we can do any face we want to look like chat"_ - IShowSpeed
 -   _"They do a pretty good job matching poses, expression and even the lighting"_ - TechLinked (LTT)
+-   _"Als Sean Connery an der Redaktionskonferenz teilnahm"_ - Golem.de (German)
 
 Credits
 -------

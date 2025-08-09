@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 14093
+stars: 14142
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -188,6 +188,7 @@ Examples
 -   fastbloom _A fast bloom filter | counting bloom filter implemented by Rust for Rust and Python!_
 -   fastuuid _Python bindings to Rust's UUID library._
 -   feos _Lightning fast thermodynamic modeling in Rust with fully developed Python interface._
+-   finalytics _Investment Analysis library in Rust | Python._
 -   forust _A lightweight gradient boosted decision tree library written in Rust._
 -   geo-index _A Rust crate and Python library for packed, immutable, zero-copy spatial indexes._
 -   granian _A Rust HTTP server for Python applications._

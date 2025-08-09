@@ -1,6 +1,6 @@
 ---
 project: crawl4ai
-stars: 50202
+stars: 50626
 description: 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
 url: https://github.com/unclecode/crawl4ai
 ---
@@ -8,31 +8,27 @@ url: https://github.com/unclecode/crawl4ai
 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.
 ==============================================================
 
-Crawl4AI is the #1 trending GitHub repository, actively maintained by a vibrant community. It delivers blazing-fast, AI-ready web crawling tailored for LLMs, AI agents, and data pipelines. Open source, flexible, and built for real-time performance, Crawl4AI empowers developers with unmatched speed, precision, and deployment ease.
+Crawl4AI turns the web into clean, LLM ready Markdown for RAG, agents, and data pipelines. Fast, controllable, battle tested by a 50k+ star community.
 
 ✨ Check out latest update v0.7.0
 
-🎉 **Version 0.7.0 is now available!** The Adaptive Intelligence Update introduces groundbreaking features: Adaptive Crawling that learns website patterns, Virtual Scroll support for infinite pages, intelligent Link Preview with 3-layer scoring, Async URL Seeder for massive discovery, and significant performance improvements. Read the release notes →
+✨ New in v0.7.0, Adaptive Crawling, Virtual Scroll, Link Preview scoring, Async URL Seeder, big performance gains. Release notes →
 
 🤓 **My Personal Story**
 
-My journey with computers started in childhood when my dad, a computer scientist, introduced me to an Amstrad computer. Those early days sparked a fascination with technology, leading me to pursue computer science and specialize in NLP during my postgraduate studies. It was during this time that I first delved into web crawling, building tools to help researchers organize papers and extract information from publications a challenging yet rewarding experience that honed my skills in data extraction.
+I grew up on an Amstrad, thanks to my dad, and never stopped building. In grad school I specialized in NLP and built crawlers for research. That’s where I learned how much extraction matters.
 
-Fast forward to 2023, I was working on a tool for a project and needed a crawler to convert a webpage into markdown. While exploring solutions, I found one that claimed to be open-source but required creating an account and generating an API token. Worse, it turned out to be a SaaS model charging $16, and its quality didn’t meet my standards. Frustrated, I realized this was a deeper problem. That frustration turned into turbo anger mode, and I decided to build my own solution. In just a few days, I created Crawl4AI. To my surprise, it went viral, earning thousands of GitHub stars and resonating with a global community.
+In 2023, I needed web-to-Markdown. The “open source” option wanted an account, API token, and $16, and still under-delivered. I went turbo anger mode, built Crawl4AI in days, and it went viral. Now it’s the most-starred crawler on GitHub.
 
-I made Crawl4AI open-source for two reasons. First, it’s my way of giving back to the open-source community that has supported me throughout my career. Second, I believe data should be accessible to everyone, not locked behind paywalls or monopolized by a few. Open access to data lays the foundation for the democratization of AI, a vision where individuals can train their own models and take ownership of their information. This library is the first step in a larger journey to create the best open-source data extraction and generation tool the world has ever seen, built collaboratively by a passionate community.
+I made it open source for **availability**, anyone can use it without a gate. Now I’m building the platform for **affordability**, anyone can run serious crawls without breaking the bank. If that resonates, join in, send feedback, or just crawl something amazing.
 
-Thank you to everyone who has supported this project, used it, and shared feedback. Your encouragement motivates me to dream even bigger. Join us, file issues, submit PRs, or spread the word. Together, we can build a tool that truly empowers people to access their own data and reshape the future of AI.
+Why developers pick Crawl4AI
 
-🧐 Why Crawl4AI?
-----------------
-
-1.  **Built for LLMs**: Creates smart, concise Markdown optimized for RAG and fine-tuning applications.
-2.  **Lightning Fast**: Delivers results 6x faster with real-time, cost-efficient performance.
-3.  **Flexible Browser Control**: Offers session management, proxies, and custom hooks for seamless data access.
-4.  **Heuristic Intelligence**: Uses advanced algorithms for efficient extraction, reducing reliance on costly models.
-5.  **Open Source & Deployable**: Fully open-source with no API keys—ready for Docker and cloud integration.
-6.  **Thriving Community**: Actively maintained by a vibrant community and the #1 trending GitHub repository.
+-   **LLM ready output**, smart Markdown with headings, tables, code, citation hints
+-   **Fast in practice**, async browser pool, caching, minimal hops
+-   **Full control**, sessions, proxies, cookies, user scripts, hooks
+-   **Adaptive intelligence**, learns site patterns, explores only what matters
+-   **Deploy anywhere**, zero keys, CLI and Docker, cloud friendly
 
 🚀 Quick Start
 --------------
@@ -80,6 +76,28 @@ crwl https://docs.crawl4ai.com --deep-crawl bfs --max-pages 10
 
 # Use LLM extraction with a specific question
 crwl https://www.example.com/products -q "Extract all product prices"
+
+💖 Support Crawl4AI
+-------------------
+
+> 🎉 **Sponsorship Program Now Open!** After powering 51K+ developers and 1 year of growth, Crawl4AI is launching dedicated support for **startups** and **enterprises**. Be among the first 50 **Founding Sponsors** for permanent recognition in our Hall of Fame.
+
+Crawl4AI is the #1 trending open-source web crawler on GitHub. Your support keeps it independent, innovative, and free for the community — while giving you direct access to premium benefits.
+
+  
+
+### 🤝 Sponsorship Tiers
+
+-   **🌱 Believer ($5/mo)** — Join the movement for data democratization
+-   **🚀 Builder ($50/mo)** — Priority support & early access to features
+-   **💼 Growing Team ($500/mo)** — Bi-weekly syncs & optimization help
+-   **🏢 Data Infrastructure Partner ($2000/mo)** — Full partnership with dedicated support  
+    _Custom arrangements available - see SPONSORS.md for details & contact_
+
+**Why sponsor?**  
+No rate-limited APIs. No lock-in. Build and own your data pipeline with direct guidance from the creator of Crawl4AI.
+
+See All Tiers & Benefits →
 
 ✨ Features
 ----------
@@ -230,10 +248,6 @@ docker run -d -p 11235:11235 --name crawl4ai --shm-size=1g unclecode/crawl4ai:0.
 
 # Visit the playground at http://localhost:11235/playground
 
-For complete documentation, see our Docker Deployment Guide.
-
-* * *
-
 ### Quick Test
 
 Run a quick test (works for both Docker options):
@@ -260,10 +274,12 @@ else:
 
 For more examples, see our Docker Examples. For advanced configuration, environment variables, and usage examples, see our Docker Deployment Guide.
 
+* * *
+
 🔬 Advanced Usage Examples 🔬
 -----------------------------
 
-You can check the project structure in the directory https://github.com/unclecode/crawl4ai/docs/examples. Over there, you can find a variety of examples; here, some popular examples are shared.
+You can check the project structure in the directory docs/examples. Over there, you can find a variety of examples; here, some popular examples are shared.
 
 📝 **Heuristic Markdown Generation with Clean and Fit Markdown**
 
@@ -405,7 +421,7 @@ async def main():
 if \_\_name\_\_ \== "\_\_main\_\_":
     asyncio.run(main())
 
-🤖 **Using You own Browser with Custom User Profile**
+🤖 **Using Your own Browser with Custom User Profile**
 
 import os, sys
 from pathlib import Path
@@ -504,94 +520,12 @@ async def test\_news\_crawl():
 
 Read the full details in our 0.7.0 Release Notes or check the CHANGELOG.
 
-### Previous Version: 0.6.0 Release Highlights
-
--   **🌎 World-aware Crawling**: Set geolocation, language, and timezone for authentic locale-specific content:
-    
-      crun\_cfg \= CrawlerRunConfig(
-          url\="https://browserleaks.com/geo",          \# test page that shows your location
-          locale\="en-US",                              \# Accept-Language & UI locale
-          timezone\_id\="America/Los\_Angeles",           \# JS Date()/Intl timezone
-          geolocation\=GeolocationConfig(                 \# override GPS coords
-              latitude\=34.0522,
-              longitude\=\-118.2437,
-              accuracy\=10.0,
-          )
-      )
-    
--   **📊 Table-to-DataFrame Extraction**: Extract HTML tables directly to CSV or pandas DataFrames:
-    
-      crawler \= AsyncWebCrawler(config\=browser\_config)
-      await crawler.start()
-    
-      try:
-          \# Set up scraping parameters
-          crawl\_config \= CrawlerRunConfig(
-              table\_score\_threshold\=8,  \# Strict table detection
-          )
-    
-          \# Execute market data extraction
-          results: List\[CrawlResult\] \= await crawler.arun(
-              url\="https://coinmarketcap.com/?page=1", config\=crawl\_config
-          )
-    
-          \# Process results
-          raw\_df \= pd.DataFrame()
-          for result in results:
-              if result.success and result.media\["tables"\]:
-                  raw\_df \= pd.DataFrame(
-                      result.media\["tables"\]\[0\]\["rows"\],
-                      columns\=result.media\["tables"\]\[0\]\["headers"\],
-                  )
-                  break
-          print(raw\_df.head())
-    
-      finally:
-          await crawler.stop()
-    
--   **🚀 Browser Pooling**: Pages launch hot with pre-warmed browser instances for lower latency and memory usage
-    
--   **🕸️ Network and Console Capture**: Full traffic logs and MHTML snapshots for debugging:
-    
-    crawler\_config \= CrawlerRunConfig(
-        capture\_network\=True,
-        capture\_console\=True,
-        mhtml\=True
-    )
-    
--   **🔌 MCP Integration**: Connect to AI tools like Claude Code through the Model Context Protocol
-    
-    # Add Crawl4AI to Claude Code
-    claude mcp add --transport sse c4ai-sse http://localhost:11235/mcp/sse
-    
--   **🖥️ Interactive Playground**: Test configurations and generate API requests with the built-in web interface at `http://localhost:11235//playground`
-    
--   **🐳 Revamped Docker Deployment**: Streamlined multi-architecture Docker image with improved resource efficiency
-    
--   **📱 Multi-stage Build System**: Optimized Dockerfile with platform-specific performance enhancements
-    
-
-### Previous Version: 0.5.0 Major Release Highlights
-
--   **🚀 Deep Crawling System**: Explore websites beyond initial URLs with BFS, DFS, and BestFirst strategies
--   **⚡ Memory-Adaptive Dispatcher**: Dynamically adjusts concurrency based on system memory
--   **🔄 Multiple Crawling Strategies**: Browser-based and lightweight HTTP-only crawlers
--   **💻 Command-Line Interface**: New `crwl` CLI provides convenient terminal access
--   **👤 Browser Profiler**: Create and manage persistent browser profiles
--   **🧠 Crawl4AI Coding Assistant**: AI-powered coding assistant
--   **🏎️ LXML Scraping Mode**: Fast HTML parsing using the `lxml` library
--   **🌐 Proxy Rotation**: Built-in support for proxy switching
--   **🤖 LLM Content Filter**: Intelligent markdown generation using LLMs
--   **📄 PDF Processing**: Extract text, images, and metadata from PDF files
-
-Read the full details in our 0.5.0 Release Notes.
-
 Version Numbering in Crawl4AI
 -----------------------------
 
 Crawl4AI follows standard Python version numbering conventions (PEP 440) to help users understand the stability and features of each release.
 
-### Version Numbers Explained
+📈 **Version Numbers Explained**
 
 Our version numbers follow this pattern: `MAJOR.MINOR.PATCH` (e.g., 0.4.3)
 
@@ -666,15 +600,13 @@ Here's the updated license section:
 📄 License & Attribution
 ------------------------
 
-This project is licensed under the Apache License 2.0 with a required attribution clause. See the Apache 2.0 License file for details.
+This project is licensed under the Apache License 2.0, attribution is recommended via the badges below. See the Apache 2.0 License file for details.
 
 ### Attribution Requirements
 
 When using Crawl4AI, you must include one of the following attribution methods:
 
-#### 1\. Badge Attribution (Recommended)
-
-Add one of these badges to your README, documentation, or website:
+📈 **1\. Badge Attribution (Recommended)** Add one of these badges to your README, documentation, or website:
 
 Theme
 
@@ -715,13 +647,7 @@ HTML code for adding the badges:
   <img src\="https://img.shields.io/badge/Powered%20by-Crawl4AI-blue?style=flat-square" alt\="Powered by Crawl4AI"/>
 </a\>
 
-#### 2\. Text Attribution
-
-Add this line to your documentation:
-
-```
-This project uses Crawl4AI (https://github.com/unclecode/crawl4ai) for web data extraction.
-```
+📖 **2\. Text Attribution** Add this line to your documentation: \`\`\` This project uses Crawl4AI (https://github.com/unclecode/crawl4ai) for web data extraction. \`\`\`
 
 📚 Citation
 -----------

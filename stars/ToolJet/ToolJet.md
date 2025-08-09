@@ -1,34 +1,32 @@
 ---
 project: ToolJet
-stars: 36242
+stars: 36285
 description: Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀
 url: https://github.com/ToolJet/ToolJet
 ---
 
-ToolJet is an **open-source low-code** platform for building and deploying internal tools with minimal engineering effort. With its drag-and-drop app-builder, you can create complex, responsive applications in minutes. ToolJet supports integration with a wide range of data sources, including databases like PostgreSQL, MongoDB, and Elasticsearch; API endpoints with OpenAPI spec and OAuth2 support; SaaS tools such as Stripe, Slack, Google Sheets, Airtable, and Notion; and object storage services like S3, Google Cloud Storage, and MinIO — enabling you to fetch, transform, and write data with ease.
-
-ToolJet supports **AI integrations** with services like OpenAI, Hugging Face, Mistral, and more — allowing you to build secure AI-powered applications such as chat assistants, document analyzers, or content generators, all within the same low-code environment.
+ToolJet is an **open-source low-code framework** to build and deploy internal tools with minimal engineering effort. ToolJet's drag-and-drop frontend builder allows you to create complex, responsive frontends within minutes. Additionally, you can integrate various data sources, including databases like PostgreSQL, MongoDB, and Elasticsearch; API endpoints with OpenAPI spec and OAuth2 support; SaaS tools such as Stripe, Slack, Google Sheets, Airtable, and Notion; as well as object storage services like S3, GCS, and Minio, to fetch and write data.
 
 ⭐ If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.
 
 All features
 ------------
 
--   **Visual App Builder:** 60+ built-in responsive components, including Tables, Charts, Lists, Forms, and Progress Bars.
+-   **Visual App Builder:** 45+ built-in responsive components, including Tables, Charts, Lists, Forms, and Progress Bars.
 -   **ToolJet Database:** Built-in no-code database.
 -   **Multi-Page:** Build an application with multiple pages.
 -   **Multiplayer editing:** Allows simultaneous app building by multiple developers.
--   **65+ data sources:** Integrate with external databases, cloud storage, and APIs.
--   **AI-powered applications:** Connect with OpenAI, Hugging Face, Mistral, and more to build intelligent apps powered by state-of-the-art language models.
+-   **50+ data sources:** Integrate with external databases, cloud storage, and APIs.
 -   **Desktop & mobile:** Customize layout widths to fit various screen sizes.
--   **Self-host:** Supports Docker, Kubernetes, AWS AMI, Google Cloud Run, and more.
+-   **Self-host:** Supports Docker, Kubernetes, AWS EC2, Google Cloud Run, and more.
 -   **Collaborate:** Add comments anywhere on the canvas and tag your team members.
 -   **Extend with plugins:** Use our command-line tool to easily bootstrap new connectors.
 -   **Version control:** Manage multiple application versions with a structured release cycle.
 -   **Run JS & Python code:** Execute custom JavaScript and Python snippets.
 -   **Granular access control:** Set permissions at both group and app levels.
+-   **Low-code:** Use JS code almost anywhere within the builder, such as setting text color based on status with `status === 'success' ? 'green' : 'red'`.
 -   **No-code query editors:** Query Editors are available for all supported data sources.
--   **Transform data:** Process and transform complex data using JavaScript or Python code.
+-   **Join and transform data:** Transform query results using JavaScript or Python code.
 -   **Secure:** All the credentials are securely encrypted using `aes-256-gcm`.
 -   **Data Privacy:** ToolJet serves solely as a proxy and does not store data.
 -   **SSO:** Supports multiple Single Sign-On providers.
@@ -57,9 +55,9 @@ _For users upgrading their ToolJet version, we recommend choosing the LTS versio
 Tutorials and examples
 ----------------------
 
-Build an Employee Directory  
-Build your own Ed Tech CRM  
-Build an Employee Engagement Survey Dashboard  
+Time Tracker Application  
+Build your own CMS using low-code  
+AWS S3 Browser  
 
 Documentation
 -------------
@@ -75,7 +73,7 @@ Documentation is available at https://docs.tooljet.ai.
 Self-hosted
 -----------
 
-You can use ToolJet Cloud for a fully managed solution. If you want to self-host ToolJet, we have guides on deploying ToolJet on Kubernetes, AWS AMI, Docker, and more.
+You can use ToolJet Cloud for a fully managed solution. If you want to self-host ToolJet, we have guides on deploying ToolJet on Kubernetes, AWS EC2, Docker, and more.
 
 Provider
 
@@ -89,7 +87,7 @@ Docker
 
 Link
 
-AWS AMI
+AWS EC2
 
 Link
 

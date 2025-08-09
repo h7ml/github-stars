@@ -1,6 +1,6 @@
 ---
 project: pgdog
-stars: 2499
+stars: 2515
 description: Horizontal scaling for PostgreSQL with automatic sharding.
 url: https://github.com/pgdogdev/pgdog
 ---
@@ -19,9 +19,8 @@ Quick start
 
 Helm chart is **here**. To install it, run:
 
-git clone https://github.com/pgdogdev/helm && \\
-cd helm && \\
-helm install -f values.yaml pgdog ./
+helm repo add pgdogdev https://helm.pgdog.dev
+helm install pgdog pgdogdev/pgdog
 
 ### Docker
 
@@ -91,7 +90,6 @@ PgDog understands the PostgreSQL logical replication protocol and can split data
 PgDog is highly configurable and many aspects of its operation can be tweaked at runtime, without having to restart the process and break PostgreSQL connections. If you've used PgBouncer (or PgCat) before, the options will be familiar. If not, they are documented with examples.
 
 📘 **Configuration**
---------------------
 
 Running PgDog locally
 ---------------------

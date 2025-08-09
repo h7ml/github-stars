@@ -1,6 +1,6 @@
 ---
 project: electric
-stars: 8847
+stars: 8899
 description: Real-time sync for Postgres.
 url: https://github.com/electric-sql/electric
 ---

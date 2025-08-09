@@ -1,6 +1,6 @@
 ---
 project: bevy
-stars: 40825
+stars: 40919
 description: A refreshingly simple data-driven game engine built in Rust
 url: https://github.com/bevyengine/bevy
 ---
@@ -107,7 +107,7 @@ Bevy is free, open source and permissively licensed! Except where noted (below a
 
 at your option. This means you can select the license you prefer! This dual-licensing approach is the de-facto standard in the Rust ecosystem and there are very good reasons to include both.
 
-Some of the engine's code carries additional copyright notices and license terms due to their external origins. These are generally BSD-like, but exact details vary by crate: If the README of a crate contains a 'License' header (or similar), the additional copyright notices and license terms applicable to that crate will be listed. The above licensing requirement still applies to contributions to those crates, and sections of those crates will carry those license terms. The license field of each crate will also reflect this. For example, `bevy_mikktspace` has code under the Zlib license (as well as a copyright notice when choosing the MIT license).
+Some of the engine's code carries additional copyright notices and license terms due to their external origins. These are generally BSD-like, but exact details vary by crate: If the README of a crate contains a 'License' header (or similar), the additional copyright notices and license terms applicable to that crate will be listed. The above licensing requirement still applies to contributions to those crates, and sections of those crates will carry those license terms. The license field of each crate will also reflect this.
 
 The assets included in this repository (for our examples) typically fall under different open licenses. These will not be included in your game (unless copied in by you), and they are not distributed in the published bevy crates. See CREDITS.md for the details of the licenses of those files.
 

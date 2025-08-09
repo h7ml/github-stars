@@ -1,6 +1,6 @@
 ---
 project: duplicati
-stars: 12955
+stars: 12995
 description: Store securely encrypted backups in the cloud!
 url: https://github.com/duplicati/duplicati
 ---
@@ -67,7 +67,7 @@ We use GitHub for bug tracking. Please search existing issues before creating a 
 Contributing Translations
 -------------------------
 
-Want to help translate Duplicati? Contributions are welcome on Transifex: https://www.transifex.com/duplicati/duplicati/dashboard/.
+Want to help translate Duplicati? Contributions are welcome on Transifex: https://explore.transifex.com/duplicati/duplicati/.
 
 Contributing Code
 -----------------

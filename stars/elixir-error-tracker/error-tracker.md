@@ -1,6 +1,6 @@
 ---
 project: error-tracker
-stars: 545
+stars: 546
 description: 🐛 An Elixir-based built-in error reporting and tracking solution
 url: https://github.com/elixir-error-tracker/error-tracker
 ---

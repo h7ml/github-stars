@@ -1,6 +1,6 @@
 ---
 project: firecracker
-stars: 28913
+stars: 28978
 description: Secure and fast microVMs for serverless computing.
 url: https://github.com/firecracker-microvm/firecracker
 ---

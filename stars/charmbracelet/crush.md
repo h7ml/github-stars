@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 5867
+stars: 8485
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
@@ -39,6 +39,15 @@ yay -S crush-bin
 
 # Nix
 nix run github:numtide/nix-ai-tools#crush
+
+Windows users:
+
+# Winget
+winget install charmbracelet.crush
+
+# Scoop
+scoop bucket add charm https://github.com/charmbracelet/scoop-bucket.git
+scoop install crush
 
 **Nix (NUR)**
 
@@ -159,16 +168,24 @@ Configuration
 
 Crush runs great with no configuration. That said, if you do need or want to customize Crush, configuration can be added either local to the project itself, or globally, with the following priority:
 
-1.  `./.crush.json`
-2.  `./crush.json`
-3.  `$HOME/.config/crush/crush.json`
+1.  `.crush.json`
+2.  `crush.json`
+3.  `$HOME/.config/crush/crush.json` (Windows: `%USERPROFILE%\AppData\Local\crush\crush.json`)
 
 Configuration itself is stored as a JSON object:
 
 {
-   "this-setting": { }
-   "that-setting": { }
+   "this-setting": {"this": "that"},
+   "that-setting": \["ceci", "cela"\]
 }
+
+As an additional note, Crush also stores ephemeral data, such as application state, in one additional location:
+
+# Unix
+$HOME/.local/share/crush/crush.json
+
+# Windows
+%LOCALAPPDATA%\\crush\\crush.json
 
 ### LSPs
 
@@ -228,9 +245,9 @@ Crush respects `.gitignore` files by default, but you can also create a `.crushi
 
 The `.crushignore` file uses the same syntax as `.gitignore` and can be placed in the root of your project or in subdirectories.
 
-### Whitelisting Tools
+### Allowing Tools
 
-By default, Crush will ask you for permission before running tool calls. If you'd like, you can whitelist tools to be executed without prompting you for permissions. Use this with care.
+By default, Crush will ask you for permission before running tool calls. If you'd like, you can allow tools to be executed without prompting you for permissions. Use this with care.
 
 {
   "$schema": "https://charm.land/crush.json",
@@ -246,6 +263,50 @@ By default, Crush will ask you for permission before running tool calls. If you'
 }
 
 You can also skip all permission prompts entirely by running Crush with the `--yolo` flag. Be very, very careful with this feature.
+
+### Local Models
+
+Local models can also be configured via OpenAI-compatible API. Here are two common examples:
+
+#### Ollama
+
+{
+  "providers": {
+    "ollama": {
+      "name": "Ollama",
+      "base\_url": "http://localhost:11434/v1/",
+      "type": "openai",
+      "models": \[
+        {
+          "name": "Qwen 3 30B",
+          "id": "qwen3:30b",
+          "context\_window": 256000,
+          "default\_max\_tokens": 20000
+        }
+      \]
+    }
+  }
+}
+
+#### LM Studio
+
+{
+  "providers": {
+    "lmstudio": {
+      "name": "LM Studio",
+      "base\_url": "http://localhost:1234/v1/",
+      "type": "openai",
+      "models": \[
+        {
+          "name": "Qwen 3 30B",
+          "id": "qwen/qwen3-30b-a3b-2507",
+          "context\_window": 256000,
+          "default\_max\_tokens": 20000
+        }
+      \]
+    }
+  }
+}
 
 ### Custom Providers
 
@@ -309,6 +370,51 @@ Custom Anthropic-compatible providers follow this format:
     }
   }
 }
+
+### Amazon Bedrock
+
+Crush currently supports running Anthropic models through Bedrock, with caching disabled.
+
+-   A Bedrock provider will appear once you have AWS configured, i.e. `aws configure`
+-   Crush also expects the `AWS_REGION` or `AWS_DEFAULT_REGION` to be set
+-   To use a specific AWS profile set `AWS_PROFILE` in your environment, i.e. `AWS_PROFILE=myprofile crush`
+
+### Vertex AI Platform
+
+Vertex AI will appear in the list of available providers when `VERTEXAI_PROJECT` and `VERTEXAI_LOCATION` are set. You will also need to be authenticated:
+
+gcloud auth application-default login
+
+To add specific models to the configuration, configure as such:
+
+{
+  "$schema": "https://charm.land/crush.json",
+  "providers": {
+    "vertexai": {
+      "models": \[
+        {
+          "id": "claude-sonnet-4@20250514",
+          "name": "VertexAI Sonnet 4",
+          "cost\_per\_1m\_in": 3,
+          "cost\_per\_1m\_out": 15,
+          "cost\_per\_1m\_in\_cached": 3.75,
+          "cost\_per\_1m\_out\_cached": 0.3,
+          "context\_window": 200000,
+          "default\_max\_tokens": 50000,
+          "can\_reason": true,
+          "supports\_attachments": true
+        }
+      \]
+    }
+  }
+}
+
+A Note on Claude Max and GitHub Copilot
+---------------------------------------
+
+Crush only supports model providers through official, compliant APIs. We do not support or endorse any methods that rely on personal Claude Max and GitHub Copilot accounts or OAuth workarounds, which may violate Anthropic and Microsoft’s Terms of Service.
+
+We’re committed to building sustainable, trusted integrations with model providers. If you’re a provider interested in working with us, reach out.
 
 Logging
 -------

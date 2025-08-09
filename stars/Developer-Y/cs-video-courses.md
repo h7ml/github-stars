@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69504
+stars: 69532
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -22,6 +22,8 @@ Table of Contents
 
 * * *
 
+-   CS50: Introduction to Computer Science - Harvard (David J. Malan)  
+    Broad introduction to computer science including programming (C, Python, JavaScript), algorithms, data structures, software engineering, and web development.
 -   Introduction to Computer Science
 -   Data Structures and Algorithms
 -   Systems Programming

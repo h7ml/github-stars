@@ -1,6 +1,6 @@
 ---
 project: Data-Science-For-Beginners
-stars: 30057
+stars: 30166
 description: 10 Weeks, 20 Lessons, Data Science for All!
 url: https://github.com/microsoft/Data-Science-For-Beginners
 ---
@@ -380,6 +380,7 @@ Our team produces other curricula! Check out:
 -   Generative AI for Beginners
 -   Generative AI for Beginners .NET
 -   Generative AI with JavaScript
+-   Generative AI with Java
 -   AI for Beginners
 -   Data Science for Beginners
 -   ML for Beginners

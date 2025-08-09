@@ -1,6 +1,6 @@
 ---
 project: delta
-stars: 27016
+stars: 27079
 description: A syntax-highlighting pager for git, diff, grep, and blame output
 url: https://github.com/dandavison/delta
 ---
@@ -21,7 +21,7 @@ Install it (the package is called "git-delta" in most package managers, but the 
     dark \= true      # or light = true, or omit for auto-detection
 
 \[merge\]
-    conflictstyle \= zdiff3
+    conflictStyle \= zdiff3
 
 Or run:
 

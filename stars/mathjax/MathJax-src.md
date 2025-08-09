@@ -1,6 +1,6 @@
 ---
 project: MathJax-src
-stars: 2233
+stars: 2242
 description: MathJax source code for version 3 and beyond
 url: https://github.com/mathjax/MathJax-src
 ---
@@ -11,7 +11,7 @@ MathJax (Source Repository)
 Beautiful math in all browsers
 ------------------------------
 
-MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. It was designed with the goal of consolidating the recent advances in web technologies into a single, definitive, math-on-the-web platform supporting the major browsers and operating systems. It requires no setup on the part of the user (no plugins to download or software to install), so the page author can write web documents that include mathematics and be confident that users will be able to view it naturally and easily. Simply include MathJax and some mathematics in a web page, and MathJax does the rest.
+MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers, with built-in support for assistive technology like screen readers, including automatic speech generation and an expression explorer that can be used to investigate typeset mathematics on a more granular level than the complete expression. It requires no setup on the part of the user (no plugins to download or software to install), so the page author can write web documents that include mathematics and be confident that users will be able to view it naturally and easily. Simply include MathJax and some mathematics in a web page, and MathJax does the rest.
 
 Some of the main features of MathJax include:
 
@@ -40,52 +40,66 @@ Installation and Use
 
 If you are loading MathJax from a CDN into a web page, there is no need to install anything. Simply use a `script` tag that loads MathJax from the CDN. E.g.,
 
-<script id\="MathJax-script" async src\="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"\></script\>
+<script src\="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js" defer\></script\>
 
-See the MathJax documentation, the MathJax Web Demos, and the MathJax Component Repository for more information.
+See the MathJax documentation and the MathJax Web Demos, and the MathJax Node Demos for more information.
 
 ### Using MathJax Components in node applications
 
 To use MathJax components in a node application, install the `mathjax` package:
 
-npm install mathjax@3
+npm install mathjax@4
 
-(we are still making updates to version 2, so you should include `@3` since the latest chronological version may not be version 3).
+Then import `mathjax` within your application and initialize it:
 
-Then require `mathjax` within your application:
+import MathJax from 'mathjax';
+await MathJax.init({ ... });
 
-require('mathjax').init({ ... }).then((MathJax) \=> { ... });
+where `{ ... }` is the MathJax configuration you want to use. E.g.,
+
+import MathJax from 'mathjax';
+await MathJax.init({
+  loader: {load: \['input/tex', 'output/svg'\]}
+});
+const svg \= await MathJax.tex2svgPromise('\\\\frac{1}{x^2-1}', {display: true});
+console.log(MathJax.startup.adaptor.outerHTML(svg));
+
+Alternatively, in an ES5 node application, you can use
+
+const MathJax \= require('mathjax');
+MathJax.init({ ... }).then(() \=> { ... });
 
 where the first `{ ... }` is a MathJax configuration, and the second `{ ... }` is the code to run after MathJax has been loaded. E.g.
 
-require('mathjax').init({
+const MathJax \= require('mathjax');
+MathJax.init({
   loader: {load: \['input/tex', 'output/svg'\]}
-}).then((MathJax) \=> {
+}).then(() \=> {
   const svg \= MathJax.tex2svg('\\\\frac{1}{x^2-1}', {display: true});
   console.log(MathJax.startup.adaptor.outerHTML(svg));
 }).catch((err) \=> console.log(err.message));
 
-**Note:** this technique is for node-based applications only, not for browser applications. This method sets up an alternative DOM implementation, which you don't need in the browser, and tells MathJax to use node's `require()` command to load external modules. This setup will not work properly in the browser, even if you webpack it or bundle it in other ways.
+**Note:** the technique in the two examples above is for node-based application only, not for browser applications. This method sets up an alternative DOM implementation, which you don't need in the browser, and it depends on node and the local file system in other ways. This setup will not work properly in the browser, even if you webpack it or use some other bundler.
 
 See the documentation and the MathJax Node Repository for more details.
 
 ### Using MathJax modules directly in node applications
 
-You can use the MathJax JavaScript files (as opposed to MathJax components) directly in node applications. This gives you the greatest flexibility, but requires more coding. To use this approach, install the `mathjax-full` package:
+You can use the MathJax JavaScript files (as opposed to MathJax components) directly in node applications. This gives you the greatest flexibility, but requires more coding. To use this approach, install the `@mathjax/src` package:
 
 ```
-npm install mathjax-full
+npm install @mathjax/src
 ```
 
 This will provide the following directories:
 
 ```
 node_modules/
-  mathjax-full/
+  @mathjax/src/
     ts/                  the MathJax source TypeScript files
     js/                  the compiled JavaScript files
     components/          the component build tools and control files
-    es5/                 the packages component files
+    bundle/              the packages component files
 ```
 
 You can use the components and JavaScript files directly in your node applications (see the MathJax node demos for examples).
@@ -94,8 +108,7 @@ If you want to work from the GitHub repository directly, then do the following:
 
 git clone https://github.com/mathjax/MathJax-src.git mathjax-src
 cd mathjax-src
-npm run --silent compile
-npm run --silent make-components
+npm run --silent build-all
 
 in order to compile the JavaScript files from the TypeScript source, and build the component files from the JavaScript files.
 

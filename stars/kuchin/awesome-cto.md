@@ -1,6 +1,6 @@
 ---
 project: awesome-cto
-stars: 31380
+stars: 31415
 description: A curated and opinionated list of resources for Chief Technology Officers, with the emphasis on startups
 url: https://github.com/kuchin/awesome-cto
 ---
@@ -367,6 +367,7 @@ More links
 -   Rands Leadership Slack
 -   Engineering Managers Slack
 -   CTO Framework
+-   CTO Insights Podcast
 
 Other
 -----

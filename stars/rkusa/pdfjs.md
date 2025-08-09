@@ -1,6 +1,6 @@
 ---
 project: pdfjs
-stars: 795
+stars: 798
 description: A Portable Document Format (PDF) generation library targeting both the server- and client-side.
 url: https://github.com/rkusa/pdfjs
 ---

@@ -1,6 +1,6 @@
 ---
 project: curio
-stars: 4105
+stars: 4108
 description: Good Curio!
 url: https://github.com/dabeaz/curio
 ---

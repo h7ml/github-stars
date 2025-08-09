@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 121748
+stars: 121985
 description: Windows system utilities to maximize productivity
 url: https://github.com/microsoft/PowerToys
 ---

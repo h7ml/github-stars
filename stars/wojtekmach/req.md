@@ -1,6 +1,6 @@
 ---
 project: req
-stars: 1234
+stars: 1237
 description: Req is a batteries-included HTTP client for Elixir.
 url: https://github.com/wojtekmach/req
 ---
@@ -208,6 +208,13 @@ Presentations
 
 -   Req: A batteries-included HTTP client for Elixir - ElixirConf 2023, 2023-09-08
 -   Req: A batteries included HTTP client for Elixir - Elixir Kenya, 2022-08-26
+
+Development
+-----------
+
+When developing on macOS, you may need the following linker flags in order to successfully compile Brotli.
+
+export LDFLAGS="\-undefined dynamic\_lookup -dynamiclib"
 
 Acknowledgments
 ---------------

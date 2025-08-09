@@ -1,6 +1,6 @@
 ---
 project: outline-server
-stars: 6034
+stars: 6039
 description: Outline Server, developed by Jigsaw. The Outline Server is a proxy server that runs a Shadowsocks instance and provides a REST API for access key management.
 url: https://github.com/Jigsaw-Code/outline-server
 ---

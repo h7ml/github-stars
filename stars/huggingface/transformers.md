@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 147780
+stars: 148122
 description: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. 
 url: https://github.com/huggingface/transformers
 ---
@@ -197,7 +197,7 @@ Computer vision
 -   Automatic mask generation with SAM
 -   Depth estimation with DepthPro
 -   Image classification with DINO v2
--   Keypoint detection with SuperGlue
+-   Keypoint detection with SuperPoint
 -   Keypoint matching with SuperGlue
 -   Object detection with RT-DETRv2
 -   Pose Estimation with VitPose

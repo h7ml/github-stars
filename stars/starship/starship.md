@@ -1,6 +1,6 @@
 ---
 project: starship
-stars: 50255
+stars: 50377
 description: ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 url: https://github.com/starship/starship
 ---

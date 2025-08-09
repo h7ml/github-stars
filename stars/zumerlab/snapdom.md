@@ -1,6 +1,6 @@
 ---
 project: snapdom
-stars: 4326
+stars: 4943
 description: snapDOM captures HTML elements to images with exceptional speed and accuracy.
 url: https://github.com/zumerlab/snapdom
 ---
@@ -485,7 +485,7 @@ Planned improvements for future versions of SnapDOM:
     
 -   **Refactor to modular architecture** Internal logic will be split into smaller, focused modules to improve maintainability and code reuse.
     
--   **Decouple internal logic from global options** Functions will be redesigned to avoid relying directly on `options`. A centralized capture context will improve clarity, autonomy, and testability.
+-   **Decouple internal logic from global options** Functions will be redesigned to avoid relying directly on `options`. A centralized capture context will improve clarity, autonomy, and testability. See `next` branch
     
 -   **Expose cache control** Users will be able to manually clear image and font caches or configure their own caching strategies.
     
@@ -538,6 +538,9 @@ Contributors 🙌
 Special thanks to @megaphonecolin for supporting this project!
 
 If you'd like to support this project too, you can become a sponsor.
+
+Star History
+------------
 
 License
 -------

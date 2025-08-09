@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 55405
+stars: 55859
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -9,8 +9,8 @@ url: https://github.com/hiyouga/LLaMA-Factory
 
 ### Supporters ❤️
 
-#### Warp, the agentic terminal for developers
-
+  
+Warp, the agentic terminal for developers  
 Available for MacOS, Linux, & Windows
 
 * * *
@@ -109,9 +109,13 @@ All Blogs
 Changelog
 ---------
 
-\[25/07/02\] We supported fine-tuning the **GLM-4.1V-9B-Thinking** model. Please install transformers from **main** branch to use.
+\[25/08/06\] We supported fine-tuning the **GPT-OSS** models. See PR #8826 to get started.
+
+\[25/07/02\] We supported fine-tuning the **GLM-4.1V-9B-Thinking** model.
 
 \[25/04/28\] We supported fine-tuning the **Qwen3** model family.
+
+Full Changelog
 
 \[25/04/21\] We supported the **Muon** optimizer. See examples for usage. Thank @tianshijing's PR.
 
@@ -120,8 +124,6 @@ Changelog
 \[25/04/14\] We supported fine-tuning the **GLM-Z1** and **Kimi-VL** models.
 
 \[25/04/06\] We supported fine-tuning the **Llama 4** model. See PR #7611 to get started.
-
-Full Changelog
 
 \[25/03/31\] We supported fine-tuning the **Qwen2.5 Omni** model. See PR #7537 to get started.
 
@@ -337,6 +339,12 @@ GPT-2
 0.1B/0.4B/0.8B/1.5B
 
 \-
+
+GPT-OSS
+
+20B/120B
+
+gpt
 
 Granite 3.0-3.3
 
