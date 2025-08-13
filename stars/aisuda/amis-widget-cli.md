@@ -1,0 +1,480 @@
+---
+project: amis-widget-cli
+stars: 59
+description: amis自定义组件开发工具
+url: https://github.com/aisuda/amis-widget-cli
+---
+
+AMIS 前端脚手架
+==========
+
+> amis-widget-cli 用于开发amis自定义组件的脚手架，其核心是基于AKFun现有的工程能力，为用户提供组件模板下载、编译、预览、多技术栈支持等功能。 （AKFun是一个基于 Webpack 和 rollup 的前端多场景打包工具，支持多种技术栈：Vue技术栈、React技术栈、React&TS技术栈。）
+
+特性
+--
+
+-   ⚡️ 零配置，开箱即用
+-   支持Vue和React自定义组件的调试和构建
+-   提供三种构建场景: 本地开发模式(包含热更新、接口代理等功能)、生产环境代码构建、library库构建(支持umd和esm的打包能力)
+-   开放配置能力: 可配置构建入口文件、开启ESLint代码检测、接口代理等
+-   支持 Autoprefixer、Sass、PostCSS、ESLint、StyleLint
+-   支持项目系统参数自动批量替换 params-replace-loader
+-   提供完整的Vue自定义组件模板、React自定义组件模板、多技术栈自定义组件模板
+
+当前已支持的amis自定义组件模板类型
+-------------------
+
+> 使用方式: amis init -e=amis
+
+-   react自定义组件(react-custom-widget-template): react 技术栈的自定义组件模板
+-   react&ts自定义组件(react-ts-custom-widget-template): react 和 typescript 技术栈的自定义组件模板
+-   vue2自定义组件（vue2.0技术栈）(vue2-amis-custom-widget): vue2.0 技术栈的自定义组件模板
+-   vue3自定义组件（vue3.0技术栈）(vue3-amis-custom-widget): vue3.0 技术栈的自定义组件模板
+-   amis自定义组件（多技术栈）(multiple-custom-widget-template): 含多种技术栈（vue2.0、react）的自定义组件模板
+-   react自定义容器类组件(react-custom-widget-template): react 版容器类自定义组件模板，自定义容器组件内部可插入其他组件
+-   vue自定义容器类组件(vue-container-custom-widget-template): vue2.0 版容器类自定义组件模板，自定义容器组件内部可插入其他组件
+
+当前已支持的跨端自定义组件模板
+---------------
+
+> 使用方式: amis init -e=uniapp
+
+-   跨端自定义组件(uni-custom-widget-template): uniapp技术栈/aipage-editor专用，可用于开发小程序自定义组件；
+-   uniapp+H5版自定义组件模板(uni-h5-custom-widget-template): uniapp技术栈/aipage-editor专用，可用于开发小程序自定义组件；
+-   uview版自定义组件(uview-custom-widget): aipage-editor专用，可用于开发小程序自定义组件；
+-   图表自定义组件(uchart-custom-widget): aipage-editor专用，uniapp+H5版，可用于开发小程序图表类自定义组件；
+-   vue3自定义组件(vue3-aipage-custom-widget-template): aipage-editor专用，支持vue3.0和react技术栈，可用于开发H5自定义组件；
+-   vue2自定义组件(vue2-aipage-custom-widget): aipage-editor专用，支持vue2.0和react技术栈，可用于开发H5自定义组件；
+
+当前已支持的快应用版自定义组件模板
+-----------------
+
+> 使用方式: amis init -e=quickapp
+
+-   快应用自定义组件(quick-custom-widget-template): aipage-editor专用，可用于快应用自定义组件；
+-   qapp-ui版快应用自定义组件(qapp-ui-custom-widget): aipage-editor专用，使用第三方UI组件库开发快应用自定义组件；
+
+快速开始 / 使用方法一
+------------
+
+> 全局安装amis-widget-cli，用于同时管理多个自定义组件代码
+
+1.  **全局安装**
+
+$ yarn global add amis-widget-cli 或者  npm i -g amis-widget-cli
+
+1.  **创建一个自定义组件**
+
+> 可选择项目类型：vue、react、multiple-widget，默认react技术栈，可通过--dir参数指定存放项目模板的目录
+
+$ amis init -t=react
+
+【特别说明】如果自定义组件模板安装异常（github网络原因），请使用copy模式：amis init -m=copy。
+
+1.  **开始使用：确保已安装项目依赖（yarn install或者npm install）**
+
+dev: 本地开发模式（带热更新）
+
+> dev开发模式：用于在本地editor中调试自定义组件。
+
+$ npm run dev
+
+preview: 组件预览模式（带热更新）
+
+> preview模式：用于预览自定义组件内容。
+
+$ npm run preview
+
+linkDebug: 外链调试（amis-saas中预览自定义组件）
+
+> linkDebug模式：用于在amis-saas中预览和调试自定义组件。
+
+$ npm run linkDebug
+
+build2lib: 构建自定义组件输出产物
+
+> build2lib模式：用于构建发布到 npm 中的文件，默认存放到 当前dist目录中。
+
+$ npm run build2lib
+
+快速开始 / 使用方法二
+------------
+
+> 在现有组件项目中使用amis-widget-cli
+
+1.  **组件项目目录局部安装**
+
+$ yarn add amis-widget-cli --dev 或者 npm i amis-widget-cli --save-dev
+
+1.  **在package.json中创建可执行脚本**
+
+> 打开package.json，在scripts中新增三条可执行命令
+
+# 用于开启本地调试模式
+"dev": "amis dev"
+
+# preview模式：用于预览自定义组件内容
+"preview": "amis preview"
+
+# linkDebug: 外链调试（amis-saas中预览自定义组件）
+"linkDebug": "amis linkDebug"
+
+# build2lib: 构建自定义组件输出产物
+"build2lib": "amis build2lib"
+
+1.  **创建amis-widget-cli的配置文件**
+
+> 需要根据实际情况调整配置文件内（比如：入口文件、路径缩写、接口代理等）
+
+$ amis config init
+
+1.  **调试当前组件**
+    
+    4.1 开启本地调试模式
+    
+    $ npm run dev
+    
+    4.2 预览自定义组件内容
+    
+    $ npm run preview
+    
+    4.3 外链调试（amis-saas中预览自定义组件）
+    
+    $ npm run linkDebug
+    
+    4.4 构建自定义组件输出产物（以umd格式输出）
+    
+    $ npm run build2lib
+    
+
+amis-widget-cli使用说明
+-------------------
+
+1.  **使用amis-widget-cli创建一个新的自定义组件**
+    
+    1.1 创建一个自定义组件
+    
+    $ amis init
+    
+    1.2 创建一个vue技术栈自定义组件
+    
+    $ amis init -t=vue
+    
+    1.3 在指定的目录中创建一个新的自定义组件
+    
+    $ amis init -t=react --dir=myTest1
+    
+
+> 【特别说明】自定义组件模板存放在 Github，由于国内网络环境问题，可能下载失败。如果初始化组件失败请尝试如下措施：  
+> 1、在设备或路由器的网络设置中增加 DNS（如：8.8.8.8，使用Google DNS的主 DNS 服务器）；  
+> 2、在设备中增加固定的 hosts（如：140.82.113.4 github.com），执行以下命令：  
+> `$ ssh-keyscan github.com >> ~/.ssh/known_hosts`  
+> 3、如果工作网络环境不支持访问github，请使用copy模式：amis init -m=copy。
+
+1.  **创建amis-widget-cli的配置文件**
+    
+    $ amis config init
+    
+2.  **关于amis-widget-cli提供三种构建场景**
+    
+    3.1. **dev**: 本地开发调试模式，用于本地开发和调试项目(包含热更新、接口代理等功能)，编译的代码没有压缩，默认会开启ESLint检测代码规范（可关闭）；  
+    3.2. **preview**: 用于预览自定义组件内容；  
+    3.3. **linkDebug**: 用于在amis-saas中预览和调试自定义组件；  
+    3.4. **build2lib**: 构建自定义组件输出产物（以umd格式输出）。
+    
+3.  **关于amis-widget-cli的配置文件**
+    
+    4.1. 提供全量的默认配置，实现零配置、开箱即用的能力；  
+    4.2. 自定义构建配置，请在当前项目根目录创建amis-widget-cli配置文件（amis.config.js），amis-widget-cli提供初始化配置文件的方法：
+    
+    $ amis config init
+    
+    4.3. amis.config.js为当前项目的配置文件，优先级最高（可覆盖amis-widget-cli提供的默认配置）。
+    
+4.  **配置构建入口文件（webpack.entry）**
+    
+    5.1. 默认的构建入口文件: ./src/index.js；  
+    5.2. 自定义构建入口(amis.config.js中提供对应的配置入口)；  
+    5.3. 在webpack.entry配置构建入口，dev\\preview\\linkDebug\\build2lib都会以此为构建入口 (关于entry的配置方法)；  
+    5.4. 在dev.entry、preview.entry、linkDebug.entry、build2lib.entry中配置对应执行环境的构建入口，优先级高于webpack.entry。
+    
+5.  **关于多页面**
+    
+    6.1. 当amis.config.js的entry只有一个入口配置，且对应的构建入口文件不存在时，会自动从src/pages中获取构建入口（支持多页面多模板）；  
+    6.2. 多页面模式下，会自动将src/pages中以.ts、.tsx、.js、.jsx结尾（对应的匹配正则：/.\[tj\]sx?$/）的文件作为构建入口文件，同时将同名的html文件作为当前页面模板。
+    
+6.  **关于多页面多模板**
+    
+    7.1. dev、preview、linkDebug的构建过程中会使用到页面模板，build2lib构建中不会将打包完成的代码输出到页面模板中；  
+    7.2. 默认使用./src/index.html作为页面模板；  
+    7.3. 当项目中./src/index.html不存在时，会使用默认页面模板；  
+    7.4. 多页面模式时，如果pages下存在对应的html页面（与入口文件同名的html文件），会自动将其设置为页面模板。
+    
+
+amis-widget-cli 配置项使用说明
+-----------------------
+
+> amis-widget-cli配置文件（amis.config.js），以下使用AMISConfig代表amis.config.js配置对象
+
+1.  开启/关闭 ESLint代码规范检测: AMISConfig.settings.enableEslint (也可配置StyleLint的使用)
+
+module.exports = {
+  settings: {
+    enableESLint: true, // 是否开启ESLint，默认开启ESLint检测代码格式
+    enableESLintFix: false, // 是否ESLint自动修正代码格式
+    enableStyleLint: true, // 是否开启StyleLint，默认开启ESLint检测代码格式
+    enableStyleLintFix: false // 是否需要StyleLint自动修正代码格式
+  },
+  ...
+}
+
+1.  配置构建入口文件: 关于配置优先级请查看 amis-widget-cli使用说明 / 配置构建入口文件
+
+> 以下是entry的配置位置，具体配置方法请查看Webpack官网 (关于entry的配置方法) 备注：建议以key/value形式（object { : string | \[string\] }）配置entry
+
+module.exports = {
+  ...
+  webpack: {
+    entry: {
+      index: './src/index.js',
+    }
+  },
+  ...
+  dev: {
+    entry: {}
+  },
+  preview: {
+    entry: {}
+  },
+  linkDebug: {
+    entry: {}
+  },
+  build2lib: {
+    entry: {}
+  }
+  ...
+}
+
+1.  解析(resolve) / extensions配置: 自动解析确定的扩展（配置可识别的文件后缀）
+
+> 以下是extensions的配置位置，具体配置方法请查看Webpack官网 (关于resolve-extensions的配置方法)
+
+module.exports = {
+  ...
+  webpack: {
+    resolve: {
+      extensions: \['.js', '.jsx', '.vue', 'json'\],
+    }
+  },
+  ...
+}
+
+1.  解析(resolve) / alias配置: 创建 import 或 require 的别名，来确保模块引入变得更简单
+
+> 以下是alias的配置位置，具体配置方法请查看Webpack官网 (关于resolve-alias的配置方法)
+
+module.exports = {
+  ...
+  webpack: {
+    resolve: {
+      alias: {},
+    }
+  },
+  ...
+}
+
+1.  页面模板路径配置：关于页面模板请查看 amis-widget-cli使用说明 / 关于页面模板
+
+module.exports = {
+  ...
+  webpack: {
+    template: '',
+  }
+  ...
+}
+
+1.  注入公共的SASS文件
+
+> 为项目中每个.scss后缀的样式文件注入公共的SASS内容（变量、mixin、function等）
+
+module.exports = {
+  ...
+  webpack: {
+    sassResources: \[\],
+  }
+  ...
+}
+
+1.  打包忽略node\_modules配置项: ignoreNodeModules（默认为false）
+
+> 打包过程中，忽略node\_modules中的依赖文件，不注入到bundle中，减少最后生成代码体积
+
+module.exports = {
+  ...
+  webpack: {
+    ignoreNodeModules: true,
+    allowList: \[\], // 用于配置会注入bundle中的依赖包（ignoreNodeModules为true时生效）
+  }
+  ...
+}
+
+1.  是否生成ts声明文件配置项: createDeclaration（默认为false）
+
+> 构建ts项目中，可以选择是否生成ts声明文件
+
+module.exports = {
+  ...
+  webpack: {
+    createDeclaration: true,
+  }
+  ...
+}
+
+1.  配置项目源码目录（工程有效目录范围）: projectDir
+
+> 构建项目中，设置生效的目录（可同时设置多个目录），用于提高前端工程执行效率。可以不配置，默认为\['./src'\]
+
+module.exports = {
+  ...
+  webpack: {
+    projectDir: \['./src'\],
+  }
+  ...
+}
+
+1.  项目源码环境变量批量替换
+
+> 关于params-replace-loader的使用方法
+
+module.exports = {
+  ...
+  envParams: {
+    common: { // 通用参数
+      '#version#': '20200810.1',
+    },
+    local: { // 本地开发环境
+      '#dataApiBase#': 'http://localhost:1024', // 数据接口根地址
+      '#assetsPublicPath#': 'http://localhost:1024', // 静态资源根地址
+      '#routeBasePath#': '/', // 路由根地址
+    },
+  }
+  ...
+}
+
+1.  接口代理配置：目前只有dev本地开发调试模式下会启动
+
+> 关于proxyTable的配置方法
+
+module.exports = {
+  ...
+  dev: {
+    proxyTable: {
+    },
+  }
+  ...
+}
+
+1.  用于开启本地调试模式的相关配置信息
+
+module.exports = {
+  ...
+    dev: {
+      NODE\_ENV: 'development', // development 模式，不会启动UglifyJsPlugin服务
+      port: 80, // 启动server服务的端口
+      autoOpenBrowser: true, // 是否自动打开页面
+      assetsPublicPath: '/', // 设置静态资源的引用路径（根域名+路径）
+      assetsSubDirectory: '', // 资源引用二级路径
+      hostname: 'localhost', // 自动打开的页面主机
+      proxyTable: { // 接口代理
+        '/apiTest': {
+          target: 'http://api-test.com.cn', // 不支持跨域的接口根地址
+          ws: true,
+          changeOrigin: true
+        }
+      },
+      cssSourceMap: false,
+    },
+  ...
+}
+
+1.  用于构建第三方功能包的配置（以umd格式输出）
+
+module.exports = {
+  ...
+    build2lib: {
+      NODE\_ENV: 'production', // production 模式，会启动UglifyJsPlugin服务
+      libraryName: '', // 构建第三方功能包时最后导出的引用变量名
+      assetsRoot: resolve('dist'), // 编译完成的文件存放路径
+      assetsPublicPath: '/', // 设置静态资源的引用路径（根域名+路径）
+      assetsSubDirectory: '', // 资源引用二级路径
+      productionSourceMap: false, // 是否显示原始源代码
+      productionGzip: false, // 是否开启Gzip服务
+      productionGzipExtensions: \['js', 'css', 'json'\], // Gzip识别的文件后缀
+      bundleAnalyzerReport: false, // 开启打包分析功能
+      ignoreNodeModules: true, // 打包时是否忽略 node\_modules
+      allowList: \[\], // ignoreNodeModules为true时生效
+    },
+  ...
+}
+
+1.  本地开启https服务
+
+> 使用 https://localhost/index.html 访问当前项目。
+
+module.exports = {
+  ...
+  dev: {
+    ...
+    https: true, // 默认不开启
+  }
+  ...
+}
+
+备注：amis-widget-cli使用自签名证书开启https服务，浏览器会提示安全性问题不能正常访问，需要进行如下设置，以 Chrome设置 为例：浏览器打开 Chrome://flags/#allow-insecure-localhost 后将其设置为Enabled。
+
+1.  支持配置自定义webpack plugin 和 loader
+
+module.exports = {
+  ...
+  webpack: {
+    ...
+    moduleRules: \[\], // 用于添加自定义 loaders
+    plugins: \[\], // 用于添加自定义 plugins
+  }
+  ...
+}
+
+1.  支持配置自定义babel plugin
+
+module.exports = {
+  ...
+  webpack: {
+    ...
+    babelPlugins: \[  // 用于添加自定义 Babel plugins
+      \[
+        "component",
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "theme-chalk"
+        }
+      \]
+    \]
+  }
+  ...
+}
+
+备注: 以上自定义babel plugin 用于实现 element-ui 组件按需引入。
+
+其中babelPlugins也支持配置成function，可用于调整或者重写脚手架内置的 babel plugins
+
+module.exports = {
+  ...
+  webpack: {
+    ...
+    babelPlugins: (curBabelPlugins) =\> {
+      // 通过 curBabelPlugins 来调整当前 Babel plugins
+      curBabelPlugins.push({...});
+    },
+  }
+  ...
+}

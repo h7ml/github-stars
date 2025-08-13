@@ -1,0 +1,59 @@
+---
+project: elepub
+stars: 16
+description: 多看阅读漫画生成器
+url: https://github.com/taiyuuki/elepub
+---
+
+elepub
+======
+
+将漫画图片打包成 epub 的小工具，适配多看阅读，推荐用于条漫，页漫虽然也能用，但如果存在跨页，阅读体验不会好。
+
+下载和使用
+-----
+
+-   Windows版下载
+-   Mac版请下载源码自行打包，由于我并没有对其进行配置，如果打包失败，请参考Tauri的文档。
+-   在线版 在线版的生产速度会慢很多，且最大支持2GB的文档。如果图片较多、较大，建议使用Windows版。
+
+导入图片如果遇到杀毒软件安全警告，请关闭杀毒软件或选择允许。开源项目，请放心使用。
+
+更新 3.0.2
+--------
+
+-   3.0.2 修正创建日期
+    
+-   3.0.1 修正bug 显示进度
+    
+-   `3.0.0`使用`Tauri`重构了整个项目，界面基本维持原样，但得益于`Tauri`使用`Rust`的优势，大幅提高了EPUB的生产速度（提速90%以上），大幅减少软件包大小(68MB→2.8MB)，软件安装后占用也更小（150MB→6MB）。
+    
+
+如果遇到问题，欢迎提issue，我会尽快修复。
+
+Web + electron的版本理论上不再更新，但代码保留在本仓库electron分支。
+
+项目运行
+----
+
+本项目使用 electron Tauri、Vue、Quasar 等框架开发。
+
+### 安装依赖
+
+pnpm install
+
+### 开发模式运行
+
+pnpm tauri dev
+
+### 打包
+
+pnpm tauri build
+
+### 打包报错
+
+打包时如果遇到以下错误：
+
+\[vite:resolve\] Missing "./preload-helper" export in "vite" package
+
+打开报错的文件（`\node_modules\vite\dist\node\chunks\dep-[hash].js`），找到`vite/preload-helper`，将其改为`\0vite/preload-helper`，然后重新打包即可。

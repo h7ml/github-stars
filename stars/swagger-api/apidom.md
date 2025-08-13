@@ -1,0 +1,601 @@
+---
+project: apidom
+stars: 86
+description: Semantic parser for API specifications
+url: https://github.com/swagger-api/apidom
+---
+
+ApiDOM
+======
+
+The purpose of ApiDOM is to provide a single, unifying structure for describing APIs across API description language and serialization formats. There currently exists several API description languages one can choose when defining an API, from OpenAPI, RAML, API Blueprint or others. There are also many serialization formats such as XML, YAML or JSON. Without a way to parse these formats to the same structure, developers are required to handle each format one-by-one, each in a different way and each translating to their internal domain model. This is tedious, time-consuming, and requires each maintainer to stay in step with every format they support.
+
+ApiDOM solves this complex problem in a simple way. It allows parsers to parse to a single structure and allows tool builders to consume one structure for all formats.
+
+Table of Contents
+-----------------
+
+-   Getting started
+    -   Prerequisites
+    -   Installation
+    -   Usage
+    -   ApiDOM Playground
+-   Development
+    -   Prerequisites
+    -   Setting up
+    -   Setting up via docker
+    -   Setting up via GitHub Codespaces
+    -   npm scripts
+    -   Build artifacts
+    -   Using this monorepo as a local dev dependency
+-   Contributing
+-   Documentation
+    -   What is an Element ?
+    -   As a way to annotate JSON
+    -   As a unifying structure
+    -   As a queryable structure
+    -   ApiDOM stages
+-   ApiDOM packages
+    -   ApiDOM AST
+    -   ApiDOM Core
+    -   Retrieving ApiDOM Elements
+    -   ApiDOM Namespaces
+    -   ApiDOM Parsers
+    -   Advanced ApiDOM Manipulations
+    -   ApiDOM Language Service
+-   License
+-   Software Bill Of Materials (SBOM)
+
+Getting started
+---------------
+
+### Prerequisites
+
+These prerequisites are required both for installing ApiDOM as a npm package and local development setup.
+
+-   node-gyp `>=10` with Python 3.x
+-   GLIBC `>=2.29`
+-   GCC compiler
+-   emscripten or docker needs to be installed, we recommend going with a docker option
+
+### Installation
+
+Assuming prerequisites are already installed, ApiDOM npm packages are installable and works with `Node.js >=12.20.0 <=22`.
+
+You can install ApiDOM packages using npm CLI:
+
+ $ npm install @swagger-api/apidom-ast
+ $ npm install @swagger-api/apidom-converter
+ $ npm install @swagger-api/apidom-core
+ $ npm install @swagger-api/apidom-error
+ $ npm install @swagger-api/apidom-json-path
+ $ npm install @swagger-api/apidom-json-pointer
+ $ npm install @swagger-api/apidom-json-pointer-relative
+ $ npm install @swagger-api/apidom-logging
+ $ npm install @swagger-api/apidom-ls
+ $ npm install @swagger-api/apidom-ns-api-design-systems
+ $ npm install @swagger-api/apidom-ns-arazzo-1
+ $ npm install @swagger-api/apidom-ns-asyncapi-2
+ $ npm install @swagger-api/apidom-ns-json-schema-2019-09
+ $ npm install @swagger-api/apidom-ns-json-schema-2020-12
+ $ npm install @swagger-api/apidom-ns-json-schema-draft-4
+ $ npm install @swagger-api/apidom-ns-json-schema-draft-6
+ $ npm install @swagger-api/apidom-ns-json-schema-draft-7
+ $ npm install @swagger-api/apidom-ns-openapi-2
+ $ npm install @swagger-api/apidom-ns-openapi-3-0
+ $ npm install @swagger-api/apidom-ns-openapi-3-1
+ $ npm install @swagger-api/apidom-parser
+ $ npm install @swagger-api/apidom-parser-adapter-api-design-systems-json
+ $ npm install @swagger-api/apidom-parser-adapter-api-design-systems-yaml
+ $ npm install @swagger-api/apidom-parser-adapter-arazzo-json-1
+ $ npm install @swagger-api/apidom-parser-adapter-arazzo-yaml-1
+ $ npm install @swagger-api/apidom-parser-adapter-asyncapi-json-2
+ $ npm install @swagger-api/apidom-parser-adapter-asyncapi-yaml-2
+ $ npm install @swagger-api/apidom-parser-adapter-json
+ $ npm install @swagger-api/apidom-parser-adapter-json-schema-json-2020-12
+ $ npm install @swagger-api/apidom-parser-adapter-json-schema-yaml-2020-12
+ $ npm install @swagger-api/apidom-parser-adapter-openapi-json-2
+ $ npm install @swagger-api/apidom-parser-adapter-openapi-json-3-0
+ $ npm install @swagger-api/apidom-parser-adapter-openapi-json-3-1
+ $ npm install @swagger-api/apidom-parser-adapter-openapi-yaml-2
+ $ npm install @swagger-api/apidom-parser-adapter-openapi-yaml-3-0
+ $ npm install @swagger-api/apidom-parser-adapter-openapi-yaml-3-1
+ $ npm install @swagger-api/apidom-parser-adapter-yaml-1-2
+ $ npm install @swagger-api/apidom-reference
+
+### Usage
+
+Every package of the monorepo has an associated README file demonstrating its purpose and containing usage examples. An overview of available packages is provided in the ApiDOM packages section.
+
+### ApiDOM Playground
+
+ApiDOM Playground is a React application that runs in a browser and can visually demonstrate capabilities of the ApiDOM. ApiDOM Playground is build and deployed whenever the new commit lands on `main` branch.
+
+ApiDOM Playground is available at https://swagger-api.github.io/apidom/
+
+Development
+-----------
+
+This is a monorepo for all ApiDOM packages. All the code is written in TypeScript. All the information necessary for working with monorepo can be found in this article.
+
+Assuming prerequisites are already installed, Node.js `>=22.14.0` and `npm >=10.9.2` are the minimum required versions that this repo runs on, but we recommend using the latest version of Node.js@22.
+
+### Setting up
+
+Run the following commands to setup the repository for local development:
+
+ $ git clone https://github.com/swagger-api/apidom.git
+ $ cd apidom
+ $ npm i
+ $ npm run build
+
+### Setting up via docker
+
+There are situations, when satisfying all the **prerequisites** of this repository on you local development machine is just not possible. In that case, you can use **docker** to get around it. Repository directory is mounted as volume inside a running container called `apidom-dev`. That way you can edit code locally on your development machine and run **npm scripts** inside the `apidom-dev` docker container.
+
+**Build the ApiDOM docker image:**
+
+ $ git clone https://github.com/swagger-api/apidom.git
+ $ cd apidom
+ $ docker-compose up
+
+**Install dependencies and build ApiDOM inside the docker container:**
+
+$ docker exec -it apidom-dev npm i --verbose
+$ docker exec -it apidom-dev npm run build
+
+**Run npm scripts inside the docker container:**
+
+$ docker exec -it apidom-dev npm run test
+
+> Note: monorepo needs to be build in order for monorepo package topology to work correctly.
+
+### Setting up via GitHub Codespaces
+
+This repository is configured to work with GitHub Codespaces. Create a new codespace by picking this repository from the list of available repositories. Once the codespace is created, run following commands inside the codespace terminal:
+
+ $ npm i
+ $ npm run build
+
+### npm scripts
+
+Some npm scripts run in parallel. Default maximum parallelization is set `2`. This is due to the fact that our `CI` runs on GitHub Actions which uses GitHub hosted runners with 2-core CPUs. If you have computer with more than 2 CPU cores, you can speed running npm scripts by creating an environment variable called `CPU_CORES` and assign it a number of your CPU cores.
+
+Assuming 4 CPU cores are available:
+
+  $ export CPU\_CORES=4
+  $ npm run build
+
+`build` scripts now runs much faster than before.
+
+**Build artifacts**
+
+ $ npm run build
+
+**Test**
+
+You must first **build the artifacts** before running tests.
+
+ $ npm run test
+
+**Lint**
+
+ $ npm run lint
+
+**Check TypeScript types**
+
+ $ npm run typescript:check-types
+
+**Generate TypeScript types**
+
+ $ npm run typescript:declaration
+
+**Clean**
+
+ $ npm run clean
+
+### Build artifacts
+
+All the packages have identical build system and expose build artifacts in identical way. After building artifacts, every package will contain five (5) additional directories. All the build artifacts are polymorphic - they can run in different environments like Web Browser, Node.js or Web Worker.
+
+\***.cjs**
+
+These files are generated inside `src/` directory. Contain ES5 compatible code with CommonJS style imports. These build fragments are ideal for legacy Node.js and similar environments.
+
+\***.mjs**
+
+These files are generated inside `src/` directory. Contain ES5 compatible code with ES6 imports. These build fragments are ideal for modern Node.js, bundling with Webpack or similar bundlers.
+
+**dist/**
+
+This directory contains bundled build fragments that use UMD modules. They're ideal for browser usage. The fragments are both in minified and un-minified form.
+
+**types/**
+
+TypeScript types generated from the source code.
+
+### Using this monorepo as a local dev dependency
+
+For using this monorepo as a local dev dependency for `dependent project`, following commands needs to be issued inside the monorepo directory after it has been cloned to a local filesystem:
+
+ $ npm i
+ $ npm run build
+ $ npm run link
+
+This will install the dependencies, built the monorepo and link all it's packages to global `node_modules`.
+
+#### Usage in `dependent project`
+
+Now that we have monorepo packages globally linked we can use them in `dependent project`. Let's say `dependent project` needs to directly use following packages:
+
+-   @swagger-api/apidom-ast
+-   @swagger-api/apidom-core
+
+Issuing following command from inside the `dependent project` will link these packages:
+
+ $ npm link @swagger-api/apidom-ast @swagger-api/apidom-core
+
+If more packages (or all of them) need to be used in `dependent project`, they need to be explicitly enumerated using above command and separated by single empty space.
+
+Notice that we link packages using single `npm link` command. This is necessary because of how `npm link` works internally. Always use single `npm link` command with multiple package names as argument.
+
+**Don't ever do this!**
+
+ $ npm link @swagger-api/apidom-ast
+ $ npm link @swagger-api/apidom-core
+
+> Setting up npm script in `dependent project` can help keep things DRY.
+
+#### Cleaning up
+
+##### Dependent project
+
+The best way to unlink monorepo packages from `dependent project` is to run following command inside the `dependent project`:
+
+ $ npm i
+
+Running `npm i` will remove the links to monorepo packages and install the packages from npm registry.
+
+> Note: running `npm unlink <package-name>` in `dependent project` will remove the link to monorepo package, but will leave the `dependent project` node\_modules in corrupted state as there is no version of the package installed anymore. Running `npm i` is always a prefered way to restore your node\_modules to original state.
+
+##### ApiDOM monorepo
+
+It is not necessary to unlink monorepo packages from global `node_modules`. But if you want to keep your global `node_modules` tidy you can run the following command in monorepo directory:
+
+ $ npm run unlink
+
+Running above npm script will unlink all monorepo packages from global `node_modules`.
+
+If you want to just unlink particular monorepo packages, you have to enumerate them explicitly:
+
+ $ npm unlink --global @swagger-api/apidom-ast @swagger-api/apidom-core
+
+Contributing
+------------
+
+This project uses swagger-api GitHub organizations contributing guide. You can obtain copy of this contributing guide at https://github.com/swagger-api/.github/blob/master/CONTRIBUTING.md. Read our contributing guide to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to ApiDOM.
+
+Documentation
+-------------
+
+If there is one thing API description languages have taught us, it is that a single contract provides the best and fastest way to design and iterate on an API. Developers building the API can move independently as they progress towards the defined contract found in the OpenAPI or RAML document. Conversely, API consumers can build tools for consuming the API based on the API definition document.
+
+This same pattern has proven to be just as valuable for building API description languages and tooling. ApiDOM is the contract for producing and consuming the many API description languages and serialization formats and allows everyone to move quickly and independently.
+
+### What is an Element ?
+
+ApiDOM is made up of many small elements that have a rich semantic meaning given their value and context. An element is an individual piece that makes up an API, and can range from defining a resource to providing an example of an HTTP request.
+
+The ApiDOM defines elements to be used for:
+
+Describing an API Describing data structures used within that API Describing parse results when parsing API-related documents These elements also seek to provide a way to decouple APIs and their semantics from the implementation details.
+
+The structure of an ApiDOM is recursive by nature. When looking for specific elements, it is best to traverse the ApiDOM tree to look for a match. Querying the ApiDOM tree will decouple our code from specific API description language. Also, it decouples our code from the specific structure of these documents as long as they are semantically equivalent.
+
+### As a way to annotate JSON
+
+ApiDOM provides the ability to take a normal JSON structure and add a layer on top of it for the purpose of annotating and adding semantic data. Instead of creating an entirely different structure to describe the data, ApiDOM's approach is to expand the existing structure (we call it "refracting" a structure). Here is an example to show our point.
+
+Take the following simple JSON object.
+
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+
+Using ApiDOM, we can expand this out and add some human-readable titles and descriptions.
+
+{
+  "element": "object",
+  "content": \[
+    {
+      "element": "member",
+      "meta": {
+        "title": "Name",
+        "description": "Name of a person"
+      },
+      "content": {
+        "key": {
+          "element": "string",
+          "content": "name"
+        },
+        "value": {
+          "element": "string",
+          "content": "John Doe"
+        }
+      }
+    },
+    {
+      "element": "member",
+      "meta": {
+        "title": "Email",
+        "description": "Email address for the person"
+      },
+      "content": {
+        "key": {
+          "element": "string",
+          "content": "email"
+        },
+        "value": {
+          "element": "string",
+          "content": "john@example.com"
+        }
+      }
+    }
+  \]
+}
+
+We added some semantic data to the existing data, but we did so while retaining the semantic structure of the data with the object and string elements. **This means there is no semantic difference in the ApiDOM structure and the original JSON structure**. It also means we can add extra semantics on top of these structural ones.
+
+### As a unifying structure
+
+You may have noticed the similarities between the JSON example above and XML. XML has elements, attributes, and content. It would be a good question to ask if we simply turned JSON into XML.
+
+ApiDOM is actually meant to provide these cross-format similarities. It means that a JSON structure may be refracted and converted to XML. It also means an XML document may be converted into ApiDOM. This also goes for YAML, HTML, CSV, and many other formats. ApiDOM is a way to use refracting to unify these structures.
+
+Let's look at another example, this time refacting XML with ApiDOM.
+
+<person name\="John Doe" email\="john@example.com"\></person\>
+
+This example in refracted form would look like the following snippet. Notice that we're using attributes in resulting ApiDOM structure.
+
+{
+  "element": "person",
+  "attributes": {
+    "name": {
+      "element": "string",
+      "content": "John Doe"
+    },
+    "email": {
+      "element": "string",
+      "content": "john@example.com"
+    }
+  }
+}
+
+Since we can go back and forth between JSON, YAML, XML, and other formats, we are now able to use same toolset across the different formats. That means we could use XSLT to transform JSON documents.
+
+### As a queryable structure
+
+ApiDOM is meant to free us from the structure of our documents, similar to how XML does with things like XPATH or the DOM. It means we can now query JSON documents as if there was an underlying DOM, which decouples our SDK from our structure and our structure from our data.
+
+### ApiDOM stages
+
+There are three stages to ApiDOM
+
+-   Parse stage
+-   Refract stage
+-   Generate stage
+
+#### Parse stage
+
+The parse stage takes JSON string and produces ApiDOM structure using the base ApiDOM namespace. There are two phases of parsing:
+
+-   Lexical Analysis phase
+-   Syntactic Analysis phase
+
+##### Lexical Analysis phase
+
+Lexical Analysis will take a JSON string and turn it into a stream of tokens. tree-sitter / web-tree-sitter is used as an underlying lexical analyzer.
+
+##### Syntactic Analysis
+
+Syntactic Analysis will take a stream of tokens and turn it into an ApiDOM representation. CST produced by lexical analysis is syntactically analyzed, and ApiDOM structure using base (generic) ApiDOM namespace is produced. Syntactic analysis can further be direct or indirect. JSON parser has both direct and indirect syntactical analyzers, but YAML parser only has an indirect one.
+
+###### Direct Syntactical analysis
+
+This analysis directly turns tree-sitter CST into ApiDOM. Single traversal is required, which makes it super performant, and it's the default analysis used.
+
+###### Indirect Syntactic analysis
+
+This analysis turns trees-sitter CST into JSON AST representation. Then JSON AST is turned into ApiDOM. Two traversals are required, which makes the indirect analysis less performant than the direct one. Though less performant, having JSON AST representation allows us to do further complex analysis.
+
+#### Refract stage
+
+The refract stage takes a generic ApiDOM structure (base namespace) and traverses through it, adding, updating, and removing nodes as it goes along and turning it into semantic ApiDOM structure (like OpenAPI or AsyncAPI). This is by far the most complex part of ApiDOM. This is where plugins operate. If plugins are used, additional traversal is currently needed.
+
+#### Generate stage
+
+We can generate JSON/YAML documents from the ApiDOM structure. It doesn't matter if the original document was originally defined in JSON or YAML. Generated JSON/YAML documented will have exactly the same semantic information as the original one, but the style information from the original document is not preserved (white spaces/comments, etc..).
+
+flowchart TD
+  %% Input node
+  In\["JSON/YAML string"\]
+
+  %%--- Parse Stage and internals
+  subgraph Parse\_Stage\["Parse Stage"\]
+    P1\["Lexical Analysis<br/>JSON/YAML → CST"\]
+    SA\["Syntactic Analysis"\]
+    SA1\["Direct<br/>\*CST → Generic ApiDOM\*"\]
+    SA2\["Indirect<br/>\*CST → JSON AST → Generic ApiDOM\*"\]
+
+    P1 --> SA
+    SA --> SA1
+    SA --> SA2
+  end
+
+  %%--- Refract Stage
+  subgraph Refract\_Stage\["Refract Stage"\]
+    R\["Generic ApiDOM + plugins → Semantic ApiDOM"\]
+  end
+
+  %%--- Generate Stage
+  subgraph Generate\_Stage\["Generate Stage"\]
+    G\["Generate JSON/YAML output<br/>(style info lost)"\]
+  end
+
+  %% Output node
+  Out\["JSON/YAML string"\]
+
+  %%--- Connections
+  In --> Parse\_Stage
+  Parse\_Stage --> Refract\_Stage
+  Refract\_Stage --> Generate\_Stage
+  Generate\_Stage --> Out
+
+Loading
+
+* * *
+
+Having said that, this is how JSON OpenAPI 3.1 document gets transformed into ApiDOM:
+
+**with direct syntactic analysis (requires 2 traversals)**
+
+```
+JSON string -> tree-sitter CST ->  generic ApiDOM -> OpenAPI 3.1 ApiDOM
+```
+
+**with indirect syntactic analysis (requires 3 traversals)**
+
+```
+JSON string -> tree-sitter CST -> JSON AST -> generic ApiDOM -> OpenAPI 3.1 ApiDOM
+```
+
+**with direct syntactic analysis and additional plugins (requires 3 traversal)**
+
+```
+JSON string -> tree-sitter CST -> generic ApiDOM -> OpenAPI 3.1 ApiDOM -> plugins -> OpenAPI 3.1 ApiDOM
+```
+
+* * *
+
+This very closely reflects how Babel works (Babel Plugin Handbook). Their transform phase is our refract phase. The only difference is that when plugins are involved, our transform phase requires 2 traversals instead of a single one. We can find a way in the future how to fold these 2 traversals into a single one.
+
+ApiDOM packages
+---------------
+
+### ApiDOM AST
+
+@swagger-api/apidom-ast contains tools necessary for syntactic analysis, which will take a stream of tokens and turn it into an AST representation. The AST represents the structure of input string in a way that makes it easier to work with. The package contains AST nodes for JSON and YAML 1.2 formats and comes with its own traversal algorithm convenient for traversing CST or AST.
+
+### ApiDOM Core
+
+@swagger-api/apidom-core is a package that contains tools for manipulating ApiDOM structures. It provides a base ApiDOM namespace, predicates for all primitive and base namespace elements, and algorithms for transforming and handling ApiDOM structures. The available algorithms allow for transcluding, merging, copying, traversing and transforming ApiDOM structures into its different forms.
+
+### Retrieving ApiDOM Elements
+
+It is possible to evaluate JSON Pointer, Relative JSON Pointer and JSONPath expressions against ApiDOM structures. A successful evaluation returns the corresponding ApiDOM Element at the specified location.
+
+### ApiDOM Namespaces
+
+The namespace packages provide ApiDOM namespaces for specifications, consisiting of a number of elements implemented on top of primitive ones. The refractor layer in each namespace allows to transform JavaScript structures or generic ApiDOM into elements from that specific namespace. The elements can be traversed using the `visit` function provided by apidom-core package.
+
+Available namespaces:
+
+-   API Design Systems
+-   Arazzo 1.0.1
+-   AsyncAPI 2.x.y
+-   JSON Schema Draft 4/5
+-   JSON Schema Draft 6
+-   JSON Schema Draft 7
+-   JSON Schema 2019-09
+-   JSON Schema 2020-12
+-   OpenAPI 2.0
+-   OpenAPI 3.0.x
+-   OpenAPI 3.1.0
+
+### ApiDOM Parsers
+
+The parser packages provide parser adapters for specifications in JSON and YAML formats, allowing to transform them into generic ApiDOM or specific ApiDOM namespace.
+
+The base parser adapters support JSON and YAML 1.2 formats. They are responsible for lexical and syntactic analysis, transforming the provided string into a generic ApiDOM structure. These base adapters are extended in parser adapters for specifications, enabling parsing of definitions directly into the ApiDOM namespaces for those specifications.
+
+Available parser adapters for ApiDOM namespaces:
+
+-   API Design Systems - JSON / YAML
+-   Arazzo 1.0.1 - JSON / YAML
+-   AsyncAPI 2.x.y - JSON / YAML
+-   JSON Schema 2020-12 - JSON / YAML
+-   OpenAPI 2.0 - JSON / YAML
+-   OpenAPI 3.0.x - JSON / YAML
+-   OpenAPI 3.1.0 - JSON / YAML
+
+@swagger-api/apidom-parser consumes any parser adapter with compatible shape and provides a unified API for parsing. It contains logic of mapping a source string to appropriate media type and a source string with media type to appropriate ApiDOM namespace.
+
+### Advanced ApiDOM manipulations
+
+@swagger-api/apidom-reference provides algorithms for semantic ApiDOM manipulations. It contains components enabling parsing, resolving, dereferencing and bundling.
+
+The parse component implements the default parser plugins, enabling parsing for files located on local filesystems and on the internet. It can parse provided definitions into generic ApiDOM structure or into one of the ApiDOM namespaces.
+
+Available parse strategies:
+
+-   JSON format
+-   YAML 1.2 format
+-   Binary format
+-   ApiDOM - JSON
+-   API Design Systems - JSON / YAML
+-   Arazzo 1.0.1 - JSON / YAML
+-   AsyncAPI 2.x.y - JSON / YAML
+-   OpenAPI 2.0 - JSON / YAML
+-   OpenAPI 3.0.x - JSON / YAML
+-   OpenAPI 3.1.0 - JSON / YAML
+
+The resolve component provides file resolution and external resolution sub-components. File resolution contains plugins allowing to read files located on local filesystem and on the internet, and provide their content. External resolution resolves external dependencies of a document using a specific external resolution strategy, providing a set of resolved references as a result.
+
+Available external resolution strategies:
+
+-   ApiDOM
+-   AsyncAPI 2.x.y
+-   OpenAPI 2.0
+-   OpenAPI 3.0.x
+-   OpenAPI 3.1.0
+
+The dereference component transcludes referencing elements (internal or external) with referenced elements, using a specific dereference strategy.
+
+Available dereference strategies:
+
+-   ApiDOM
+-   AsyncAPI 2.x.y
+-   OpenAPI 2.0
+-   OpenAPI 3.0.x
+-   OpenAPI 3.1.0
+
+The bundle component allows to package up resources spread across multiple files in a single file (Compound Document) using a specific bundle strategy.
+
+Available bundle strategies:
+
+-   OpenAPI 3.1.0
+
+### ApiDOM Language Service
+
+ApiDOM Language Service provides language processing for ApiDOM supported languages for editing experience. It adheres to the LSP Protocol and can therefore be used via LSP Server wrapper, providing editing capabilities to various editors and IDEs. It provides validation, documentation, definitions, completion, semantic highlighting and dereferencing for supported specifications.
+
+ApiDOM Language Service supports:
+
+-   AsyncAPI 2.x.y
+-   OpenAPI 2.0
+-   OpenAPI 3.0.x
+-   OpenAPI 3.1.0
+
+License
+-------
+
+ApiDOM is licensed under Apache 2.0 license. ApiDOM comes with an explicit NOTICE file containing additional legal notices and information.
+
+This project uses REUSE specification that defines a standardized method for declaring copyright and licensing for software projects.
+
+Software Bill Of Materials (SBOM)
+---------------------------------
+
+Software Bill Of materials is available in this repository dependency graph. Click on `Export SBOM` button to download the SBOM in SPDX format.

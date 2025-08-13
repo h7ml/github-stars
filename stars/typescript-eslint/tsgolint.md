@@ -1,0 +1,241 @@
+---
+project: tsgolint
+stars: 409
+description: ✨ Experimental proof-of-concept typescript-go powered JS/TS linter written in Go
+url: https://github.com/typescript-eslint/tsgolint
+---
+
+✨ tsgolint ✨
+============
+
+**tsgolint** is an experimental proof-of-concept typescript-go powered JS/TS linter written in Go.
+
+Important
+
+**tsgolint** is a prototype in the early stages of development. It is not actively being worked on, nor is it expected to be production ready. See **Goals and Non-Goals**.
+
+What's been prototyped
+----------------------
+
+-   Primitive linter engine
+-   Lint rules tester
+-   Source code fixer
+-   40 type-aware typescript-eslint's rules
+-   Basic `tsgolint` CLI
+
+### Speedup over ESLint
+
+**tsgolint** is **20-40 times faster** than ESLint + typescript-eslint.
+
+Most of the speedup is due to the following facts:
+
+-   Native speed parsing and type-checking (thanks to typescript-go)
+-   No more TS AST -> ESTree AST conversions. TS AST is directly used in rules.
+-   Parallel parsing, type checking and linting. **tsgolint** uses all available CPU cores.
+
+See benchmarks for more info.
+
+### Implemented rules
+
+Name
+
+Status
+
+await-thenable
+
+✅
+
+no-array-delete
+
+✅
+
+no-base-to-string
+
+✅
+
+no-confusing-void-expression
+
+✅
+
+no-duplicate-type-constituents
+
+✅
+
+no-floating-promises
+
+✅
+
+no-for-in-array
+
+✅
+
+no-implied-eval
+
+✅
+
+no-meaningless-void-operator
+
+✅
+
+no-misused-promises
+
+✅
+
+no-misused-spread
+
+✅
+
+no-mixed-enums
+
+✅
+
+no-redundant-type-constituents
+
+✅
+
+no-unnecessary-boolean-literal-compare
+
+✅
+
+no-unnecessary-template-expression
+
+✅
+
+no-unnecessary-type-arguments
+
+✅
+
+no-unnecessary-type-assertion
+
+✅
+
+no-unsafe-argument
+
+✅
+
+no-unsafe-assignment
+
+✅
+
+no-unsafe-call
+
+✅
+
+no-unsafe-enum-comparison
+
+✅
+
+no-unsafe-member-access
+
+✅
+
+no-unsafe-return
+
+✅
+
+no-unsafe-type-assertion
+
+✅
+
+no-unsafe-unary-minus
+
+✅
+
+non-nullable-type-assertion-style
+
+✅
+
+only-throw-error
+
+✅
+
+prefer-promise-reject-errors
+
+✅
+
+prefer-reduce-type-parameter
+
+✅
+
+prefer-return-this-type
+
+✅
+
+promise-function-async
+
+✅
+
+related-getter-setter-pairs
+
+✅
+
+require-array-sort-compare
+
+✅
+
+require-await
+
+✅
+
+restrict-plus-operands
+
+✅
+
+restrict-template-expressions
+
+✅
+
+return-await
+
+✅
+
+switch-exhaustiveness-check
+
+✅
+
+unbound-method
+
+✅
+
+use-unknown-in-catch-callback-variable
+
+✅
+
+What hasn't been prototyped
+---------------------------
+
+-   Non-type-aware rules
+-   Editor extension
+-   Rich CLI features
+-   Config file
+-   Plugin system
+
+### What about JS plugins?
+
+JS-based plugins are not currently supported.
+
+-   Experimental support is available on the `experimental-eslint-compat` branch using the goja JavaScript engine.
+-   While functional, performance was significantly worse than ESLint running in Node.js, so this approach is currently on hold.
+-   If a faster, lower-allocation JS interpreter in Go becomes available in the future, we may revisit this idea.
+
+Goals and Non-Goals
+-------------------
+
+**tsgolint** is an experiment. It is not under active development.
+
+**Goals**: to explore architectures and performance characteristics. We want to investigate how much faster linting could be if we moved the linter to Go alongside typescript-go.
+
+**Non-Goals**: we have no plans to take significant development budget away from typescript-eslint to work on tsgolint. Our plan is to continue to work on typescript-eslint to supported typed linting with ESLint. Experiments such as tsgolint should not be taken as indications of any project direction.
+
+> If you want faster typed linting with ESLint, see typescript-eslint/typescript-eslint#10940 Enhancement: Use TypeScript's Go port (tsgo / typescript-go) for type information.
+
+Building `tsgolint`
+-------------------
+
+git submodule update --init                       # init typescript-go submodule
+
+cd typescript-go
+git am --3way --no-gpg-sign ../patches/\*.patch    # apply typescript-go patches
+cd ..
+
+go build -o tsgolint ./cmd/tsgolint

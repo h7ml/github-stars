@@ -1,0 +1,110 @@
+---
+project: fresh
+stars: 13235
+description: The next-gen web framework.
+url: https://github.com/denoland/fresh
+---
+
+Documentation | Getting started | API Reference
+
+fresh
+=====
+
+**Fresh** is a next generation web framework, built for speed, reliability, and simplicity.
+
+Some stand-out features:
+
+-   Just-in-time rendering on the edge.
+-   Island based client hydration for maximum interactivity.
+-   Zero runtime overhead: no JS is shipped to the client by default.
+-   No configuration necessary.
+-   TypeScript support out of the box.
+-   File-system routing à la Next.js.
+
+📖 Documentation
+----------------
+
+The documentation is available on fresh.deno.dev.
+
+🚀 Getting started
+------------------
+
+Install the latest Deno CLI version.
+
+You can scaffold a new project by running the Fresh init script. To scaffold a project run the following:
+
+deno run -A -r https://fresh.deno.dev
+
+Then navigate to the newly created project folder:
+
+```
+cd deno-fresh-demo
+```
+
+From within your project folder, start the development server using the `deno task` command:
+
+```
+deno task start
+```
+
+Now open http://localhost:8000 in your browser to view the page. You make changes to the project source code and see them reflected in your browser.
+
+To deploy the project to the live internet, you can use Deno Deploy:
+
+1.  Push your project to GitHub.
+2.  Create a Deno Deploy project.
+3.  Link the Deno Deploy project to the **`main.ts`** file in the root of the created repository.
+4.  The project will be deployed to a public $project.deno.dev subdomain.
+
+For a more in-depth getting started guide, visit the Getting Started page in the Fresh docs.
+
+Contributing
+------------
+
+We appreciate your help! To contribute, please read our contributing guideline.
+
+Adding your project to the showcase
+-----------------------------------
+
+If you feel that your project would be helpful to other Fresh users, please consider putting your project on the showcase. However, websites that are just for promotional purposes may not be listed.
+
+To take a screenshot, run the following command.
+
+deno task screenshot \[url\] \[your-app-name\]
+
+Then add your site to showcase.json, preferably with source code on GitHub, but not required.
+
+Badges
+------
+
+\[!\[Made with Fresh\](https://fresh.deno.dev/fresh-badge.svg)\](https://fresh.deno.dev)
+
+<a href\="https://fresh.deno.dev"\>
+  <img
+    width\="197"
+    height\="37"
+    src\="https://fresh.deno.dev/fresh-badge.svg"
+    alt\="Made with Fresh"
+  />
+</a\>
+
+\[!\[Made with Fresh\](https://fresh.deno.dev/fresh-badge-dark.svg)\](https://fresh.deno.dev)
+
+<a href\="https://fresh.deno.dev"\>
+  <img
+    width\="197"
+    height\="37"
+    src\="https://fresh.deno.dev/fresh-badge-dark.svg"
+    alt\="Made with Fresh"
+  />
+</a\>
+
+Hashtags
+--------
+
+Use the following hashtags in your social media posts that reference Fresh and as Topics in the About section of your GitHub repos that contain Fresh code. It will assure maximum visibility for your posts and code, and promote Fresh development ecosystem visibility.
+
+-   #denofresh
+-   #deno
+
+Github repo Topics will not include the hash symbol.

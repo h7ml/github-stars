@@ -1,0 +1,691 @@
+---
+project: react-query-kit
+stars: 443
+description: 🕊️ A toolkit for ReactQuery that make ReactQuery hooks reusable and typesafe
+url: https://github.com/HuolalaTech/react-query-kit
+---
+
+  
+  
+
+🕊️ A toolkit for ReactQuery that make ReactQuery reusable and typesafe
+
+* * *
+
+What could you benefit from it
+------------------------------
+
+-   Manage `queryKey` in a type-safe way
+-   Make `queryClient`'s operations clearly associated with custom ReactQuery hooks
+-   You can extract the TypeScript type of any custom ReactQuery hooks
+-   Middleware
+
+English | 简体中文
+
+Table of Contents
+-----------------
+
+-   Installation
+-   Examples
+-   Usage
+    -   createQuery
+    -   createInfiniteQuery
+    -   createSuspenseQuery
+    -   createSuspenseInfiniteQuery
+    -   createMutation
+    -   router
+    -   Middleware
+    -   TypeScript
+    -   Type inference
+    -   Disabling Queries
+-   FAQ
+-   Migration
+-   Issues
+    -   🐛 Bugs
+    -   💡 Feature Requests
+-   LICENSE
+
+Installation
+------------
+
+This module is distributed via npm which is bundled with node and should be installed as one of your project's `dependencies`:
+
+$ npm i react-query-kit
+# or
+$ yarn add react-query-kit
+
+If you still on React Query Kit v2? Check out the v2 docs here: https://github.com/liaoliao666/react-query-kit/tree/v2#readme.
+
+Examples
+========
+
+-   Basic
+-   Optimistic Updates
+-   Next.js
+-   Load-More & Infinite Scroll
+
+createQuery
+-----------
+
+### Usage
+
+import { QueryClient, dehydrate } from '@tanstack/react-query'
+import { createQuery } from 'react-query-kit'
+
+type Data \= { title: string; content: string }
+type Variables \= { id: number }
+
+const usePost \= createQuery({
+  queryKey: \['posts'\],
+  fetcher: (variables: Variables): Promise<Data\> \=> {
+    return fetch(\`/posts/${variables.id}\`).then(res \=> res.json())
+  },
+  // u can also pass middleware to cutomize this hook's behavior
+  use: \[myMiddleware\]
+})
+
+const variables \= { id: 1 }
+
+// example
+export default function Page() {
+  // queryKey will be \`\['posts', { id: 1 }\]\` if u passed variables
+  const { data } \= usePost({ variables })
+
+  return (
+    <div\>
+      <div\>{data?.title}</div\>
+      <div\>{data?.content}</div\>
+    </div\>
+  )
+}
+
+console.log(usePost.getKey()) //  \['posts'\]
+console.log(usePost.getKey(variables)) //  \['posts', { id: 1 }\]
+
+// nextjs example
+export async function getStaticProps() {
+  const queryClient \= new QueryClient()
+
+  await queryClient.prefetchQuery(usePost.getFetchOptions(variables))
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  }
+}
+
+// usage outside of react component
+const data \= await queryClient.fetchQuery(usePost.getFetchOptions(variables))
+
+// useQueries example
+const queries \= useQueries({
+  queries: \[
+   usePost.getOptions(variables),
+   useUser.getOptions(),
+  \],
+})
+
+// getQueryData
+queryClient.getQueryData(usePost.getKey(variables)) // Data
+
+// setQueryData
+queryClient.setQueryData(usePost.getKey(variables), {...})
+
+### Additional API Reference
+
+Options
+
+-   `fetcher: (variables: TVariables, context: QueryFunctionContext<QueryKey, TPageParam>) => TFnData | Promise<TFnData>`
+    -   Required
+    -   The function that the query will use to request data. And The second param is the `QueryFunctionContext` of `queryFn`.
+-   `variables?: TVariables`
+    -   Optional
+    -   `variables` will be the frist param of fetcher and the last element of the `queryKey` array
+-   `use: Middleware[]`
+    -   Optional
+    -   array of middleware functions (details)
+
+Expose Methods
+
+-   `fetcher: (variables: TVariables, context: QueryFunctionContext<QueryKey, TPageParam>) => TFnData | Promise<TFnData>`
+-   `getKey: (variables: TVariables) => QueryKey`
+-   `getOptions: (variables: TVariables) => UseQueryOptions`
+-   `getFetchOptions: (variables: TVariables) => ({ queryKey, queryFn, queryKeyHashFn })`
+
+createInfiniteQuery
+-------------------
+
+### Usage
+
+import { QueryClient, dehydrate } from '@tanstack/react-query'
+import { createInfiniteQuery } from 'react-query-kit'
+
+type Data \= { projects: { id: string; name: string }\[\]; nextCursor: number }
+type Variables \= { active: boolean }
+
+const useProjects \= createInfiniteQuery({
+  queryKey: \['projects'\],
+  fetcher: (variables: Variables, { pageParam }): Promise<Data\> \=> {
+    return fetch(
+      \`/projects?cursor=${pageParam}?active=${variables.active}\`
+    ).then(res \=> res.json())
+  },
+  getNextPageParam: (lastPage, pages) \=> lastPage.nextCursor,
+  initialPageParam: 0,
+})
+
+const variables \= { active: true }
+
+// example
+export default function Page() {
+  // queryKey equals to \['projects', { active: true }\]
+  const { data, fetchNextPage, hasNextPage, isFetching, isFetchingNextPage } \=
+    useProjects({ variables })
+
+  return (
+    <div\>
+      {data.pages.map((group, i) \=> (
+        <React.Fragment key\={i}\>
+          {group.projects.map(project \=> (
+            <p key\={project.id}\>{project.name}</p\>
+          ))}
+        </React.Fragment\>
+      ))}
+      <div\>
+        <button
+          onClick\={() \=> fetchNextPage()}
+          disabled\={!hasNextPage || isFetchingNextPage}
+        \>
+          {isFetchingNextPage
+            ? 'Loading more...'
+            : hasNextPage
+            ? 'Load More'
+            : 'Nothing more to load'}
+        </button\>
+      </div\>
+      <div\>{isFetching && !isFetchingNextPage ? 'Fetching...' : null}</div\>
+    </div\>
+  )
+}
+
+// nextjs example
+export async function getStaticProps() {
+  const queryClient \= new QueryClient()
+
+  await queryClient.prefetchInfiniteQuery(
+    useProjects.getFetchOptions(variables)
+  )
+
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  }
+}
+
+// usage outside of react component
+const data \= await queryClient.fetchInfiniteQuery(
+  useProjects.getFetchOptions(variables)
+)
+
+### Additional API Reference
+
+Options
+
+-   `fetcher: (variables: TVariables, context: QueryFunctionContext<QueryKey, TPageParam>) => TFnData | Promise<TFnData>`
+    -   Required
+    -   The function that the query will use to request data. And The second param is the `QueryFunctionContext` of `queryFn`.
+-   `variables?: TVariables`
+    -   Optional
+    -   `variables` will be the frist param of fetcher and the last element of the `queryKey` array
+-   `use: Middleware[]`
+    -   Optional
+    -   array of middleware functions (details)
+
+Expose Methods
+
+-   `fetcher: (variables: TVariables, context: QueryFunctionContext<QueryKey, TPageParam>) => TFnData | Promise<TFnData>`
+-   `getKey: (variables: TVariables) => QueryKey`
+-   `getOptions: (variables: TVariables) => UseInfiniteQueryOptions`
+-   `getFetchOptions: (variables: TVariables) => ({ queryKey, queryFn, queryKeyHashFn, getNextPageParam, getPreviousPageParam, initialPageParam })`
+
+createSuspenseQuery
+-------------------
+
+This has the same effect as setting the `suspense` option to `true` in the query config, but it works better in TypeScript, because `data` is guaranteed to be defined (as errors and loading states are handled by Suspense- and ErrorBoundaries).
+
+import { createSuspenseQuery } from 'react-query-kit'
+
+createSuspenseQuery({
+  ...options,
+})
+
+// equals to
+createQuery({
+  ...options,
+  enabled: true,
+  suspense: true,
+  throwOnError: true,
+})
+
+createSuspenseInfiniteQuery
+---------------------------
+
+import { createSuspenseInfiniteQuery } from 'react-query-kit'
+
+createSuspenseInfiniteQuery({
+  ...options,
+})
+
+// equals to
+createInfiniteQuery({
+  ...options,
+  enabled: true,
+  suspense: true,
+  throwOnError: true,
+})
+
+createMutation
+--------------
+
+### Usage
+
+import { createMutation } from 'react-query-kit'
+
+const useAddTodo \= createMutation({
+  mutationFn: async (variables: { title: string; content: string }) \=>
+    fetch('/post', {
+      method: 'POST',
+      body: JSON.stringify(variables),
+    }).then(res \=> res.json()),
+  onSuccess(data, variables, context) {
+    // do somethings
+  },
+})
+
+function App() {
+  const mutation \= useAddTodo({
+    onSettled: (data, error, variables, context) \=> {
+      // Error or success... doesn't matter!
+    },
+  })
+
+  return (
+    <div\>
+      {mutation.isPending ? (
+        'Adding todo...'
+      ) : (
+        <\>
+          {mutation.isError ? (
+            <div\>An error occurred: {mutation.error.message}</div\>
+          ) : null}
+
+          {mutation.isSuccess ? <div\>Todo added!</div\> : null}
+
+          <button
+            onClick\={() \=> {
+              mutation.mutate({ title: 'Do Laundry', content: 'content...' })
+            }}
+          \>
+            create Todo
+          </button\>
+        </\>
+      )}
+    </div\>
+  )
+}
+
+// usage outside of react component
+useAddTodo.mutationFn({ title: 'Do Laundry', content: 'content...' })
+
+### Additional API Reference
+
+Options
+
+-   `use: Middleware[]`
+    -   Optional
+    -   array of middleware functions (details)
+
+Expose Methods
+
+-   `getKey: () => MutationKey`
+-   `getOptions: () => UseMutationOptions`
+-   `mutationFn: MutationFunction<TData, TVariables>`
+
+router
+------
+
+`router` which allow you to create a shape of your entire API
+
+### Usage
+
+import { router } from 'react-query-kit'
+
+const post \= router(\`post\`, {
+  byId: router.query({
+    fetcher: (variables: { id: number }) \=>
+      fetch(\`/posts/${variables.id}\`).then(res \=> res.json()),
+    use: \[myMiddleware\],
+  }),
+
+  list: router.infiniteQuery({
+    fetcher: (\_variables, { pageParam }) \=>
+      fetch(\`/posts/?cursor=${pageParam}\`).then(res \=> res.json()),
+    getNextPageParam: lastPage \=> lastPage.nextCursor,
+    initialPageParam: 0,
+  }),
+
+  add: router.mutation({
+    mutationFn: async (variables: { title: string; content: string }) \=>
+      fetch('/posts', {
+        method: 'POST',
+        body: JSON.stringify(variables),
+      }).then(res \=> res.json()),
+  }),
+
+  // nest router
+  command: {
+    report: router.mutation({ mutationFn }),
+
+    promote: router.mutation({ mutationFn }),
+  },
+})
+
+// get root key
+post.getKey() // \['post'\]
+
+// hooks
+post.byId.useQuery({ variables: { id: 1 } })
+post.byId.useSuspenseQuery({ variables: { id: 1 } })
+post.list.useInfiniteQuery()
+post.list.useSuspenseInfiniteQuery()
+post.add.useMutation()
+post.command.report.useMutation()
+
+// expose methods
+post.byId.getKey({ id: 1 }) // \['post', 'byId', { id: 1 }\]
+post.byId.getFetchOptions({ id: 1 })
+post.byId.getOptions({ id: 1 })
+post.byId.fetcher({ id: 1 })
+post.add.getKey() // \['post', 'add'\]
+post.add.getOptions()
+post.add.mutationFn({ title: 'title', content: 'content' })
+
+// infer types
+type Data \= inferData<typeof post.list\>
+type FnData \= inferFnData<typeof post.list\>
+type Variables \= inferVariables<typeof post.list\>
+type Error \= inferError<typeof post.list\>
+
+### Merging Routers
+
+import { router } from 'react-query-kit'
+
+const user \= router(\`user\`, {})
+const post \= router(\`post\`, {})
+
+const k \= {
+  user,
+  post,
+}
+
+### API Reference
+
+`type Router = (key: string | unknown[], config: TConfig) => TRouter`
+
+Expose Methods
+
+-   `query` Similar to `createQuery` but without option `queryKey`
+-   `infiniteQuery` Similar to `createInfiniteQuery` but without option `queryKey`
+-   `mutation` Similar to `createMutation` but without option `mutationKey`
+
+Middleware
+----------
+
+This feature is inspired by the Middleware feature from SWR. The middleware feature is a new addition in ReactQueryKit 1.5.0 that enables you to execute logic before and after hooks.
+
+Middleware receive the hook and can execute logic before and after running it. If there are multiple middleware, each middleware wraps the next middleware. The last middleware in the list will receive the original hook.
+
+### Usage
+
+import { QueryClient } from '@tanstack/react-query'
+import { Middleware, MutationHook, QueryHook, getKey } from 'react-query-kit'
+
+const logger: Middleware<QueryHook<Data, Variables\>\> \= useQueryNext \=> {
+  return options \=> {
+    const log \= useLogger()
+    const fetcher \= (variables, context) \=> {
+      log(context.queryKey, variables)
+      return options.fetcher(variables, context)
+    }
+
+    return useQueryNext({
+      ...options,
+      fetcher,
+    })
+  }
+}
+
+const useUser \= createQuery<Data, Variables\>({
+  use: \[logger\],
+})
+
+// global middlewares
+const queryMiddleware: Middleware<QueryHook\> \= useQueryNext \=> {
+  return options \=> {
+    // u can also get queryKey via function getKey
+    const fullKey \= getKey(options.queryKey, options.variables)
+    // ...
+    return useQueryNext(options)
+  }
+}
+const mutationMiddleware: Middleware<MutationHook\> \= useMutationNext \=> {
+  return options \=> {
+    // ...
+    return useMutationNext(options)
+  }
+}
+
+const queryClient \= new QueryClient({
+  defaultOptions: {
+    queries: {
+      use: \[queryMiddleware\],
+    },
+    mutations: {
+      use: \[mutationMiddleware\],
+    },
+  },
+})
+
+### Extend
+
+Middleware will be merged from superior. For example:
+
+const queryClient \= new QueryClient({
+  defaultOptions: {
+    queries: {
+      use: \[a\],
+    },
+  },
+})
+
+const useSomething \= createQuery({
+  use: \[b\],
+})
+
+useSomething({ use: \[c\] })
+
+is equivalent to:
+
+createQuery({ use: \[a, b, c\] })
+
+### Multiple Middleware
+
+Each middleware wraps the next middleware, and the last one just wraps the useQuery. For example:
+
+createQuery({ use: \[a, b, c\] })
+
+The order of middleware executions will be a → b → c, as shown below:
+
+```
+enter a
+  enter b
+    enter c
+      useQuery()
+    exit  c
+  exit  b
+exit  a
+```
+
+### Multiple QueryClient
+
+In ReactQuery v5, the `QueryClient` will be the second argument to `useQuery` and `useMutation`. If u have multiple `QueryClient` in global, u should receive `QueryClient` in middleware hook.
+
+const useSomething \= createQuery({
+  use: \[
+    function myMiddleware(useQueryNext) {
+      // u should receive queryClient as the second argument here
+      return (options, queryClient) \=> {
+        const client \= useQueryClient(queryClient)
+        // ...
+        return useQueryNext(options, queryClient)
+      }
+    },
+  \],
+})
+
+// if u need to pass an another QueryClient
+useSomething({...}, anotherQueryClient)
+
+TypeScript
+----------
+
+By default, ReactQueryKit will also infer the types of `data` and `variables` from `fetcher`, so you can have the preferred types automatically.
+
+type Data \= { title: string; content: string }
+type Variables \= { id: number }
+
+const usePost \= createQuery({
+  queryKey: \['posts'\],
+  fetcher: (variables: Variables): Promise<Data\> \=> {
+    return fetch(\`/posts/${variables}\`).then(res \=> res.json())
+  },
+})
+
+// \`data\` will be inferred as \`Data | undefined\`.
+// \`variables\` will be inferred as \`Variables\`.
+const { data } \= usePost({ variables: { id: 1 } })
+
+You can also explicitly specify the types for `fetcher`‘s `variables` and `data`.
+
+type Data \= { title: string; content: string }
+type Variables \= { id: number }
+
+const usePost \= createQuery<Data, Variables, Error\>({
+  queryKey: \['posts'\],
+  fetcher: variables \=> {
+    return fetch(\`/posts/${variables}\`).then(res \=> res.json())
+  },
+})
+
+// \`data\` will be inferred as \`Data | undefined\`.
+// \`error\` will be inferred as \`Error | null\`
+// \`variables\` will be inferred as \`Variables\`.
+const { data, error } \= usePost({ variables: { id: 1 } })
+
+Type inference
+--------------
+
+You can extract the TypeScript type of any custom hook with `inferData` or `inferVariables`
+
+import { inferData, inferFnData, inferError, inferVariables, inferOptions } from 'react-query-kit'
+
+const useProjects \= createInfiniteQuery<Data, Variables, Error\>(...)
+
+inferData<typeof useProjects\> // InfiniteData<Data>
+inferFnData<typeof useProjects\> // Data
+inferVariables<typeof useProjects\> // Variables
+inferError<typeof useProjects\> // Error
+inferOptions<typeof useProjects\> // InfiniteQueryHookOptions<...>
+
+Disabling Queries
+-----------------
+
+To disable queries, you can pass `skipToken` as the option `variables` to your custom query. This will prevent the query from being executed.
+
+import { skipToken } from '@tanstack/react-query'
+
+const \[name, setName\] \= useState<string | undefined\>()
+const result \= usePost({
+  variables: id ? { id: id } : skipToken,
+})
+
+// and for useQueries example
+const queries \= useQueries({
+  queries: \[usePost.getOptions(id ? { id: id } : skipToken)\],
+})
+
+FAQ
+---
+
+### What is the difference between `getFetchOptions` and `getOptions`?
+
+`getFetchOptions` would only return necessary options, while options like `staleTime` and `retry` would be omited
+
+### What is the difference between `fetcher` and `queryFn`?
+
+ReactQueryKit would automatically converts fetcher to queryFn, as shown below:
+
+const useTest \= createQuery({
+  queryKey: \['test'\],
+  fetcher: (variables, context) \=> {
+    // ...
+  },
+})
+
+// => useTest.getOptions(variables):
+// {
+//   queryKey: \['test', variables\],
+//   queryFn: (context) => fetcher(variables, context)
+// }
+
+Migration
+---------
+
+Upgrading from ReactQueryKit 2 → ReactQueryKit 3
+
+createQuery({
+\-  primaryKey: 'posts',
+\-  queryFn: ({ queryKey: \[\_primaryKey, variables\] }) => {},
++  queryKey: \['posts'\],
++  fetcher: variables => {},
+})
+
+What you benefit from ReactQueryKit 3
+
+-   Support hierarchical key
+-   Support infer the types of fetcher, you can enjoy the preferred types automatically.
+-   Support to create a shape of your entire API
+
+Issues
+------
+
+_Looking to contribute? Look for the Good First Issue label._
+
+### 🐛 Bugs
+
+Please file an issue for bugs, missing documentation, or unexpected behavior.
+
+**See Bugs**
+
+### 💡 Feature Requests
+
+Please file an issue to suggest new features. Vote on feature requests by adding a 👍. This helps maintainers prioritize what to work on.
+
+**See Feature Requests**
+
+LICENSE
+-------
+
+MIT

@@ -1,0 +1,72 @@
+---
+project: utools-plugin-template
+stars: 96
+description: 📦开箱即用的Utools插件开发模板
+url: https://github.com/QC2168/utools-plugin-template
+---
+
+utools-plugin-template
+======================
+
+基于`Vite+Vue`的`Utools`插件开发模板，让您更快的开发出一款属于自己的`Utools`插件
+
+**中文文档** | English
+
+✨ 特性
+----
+
+-   🌈 开箱即用的`Vite+Vue3+TS`的`Utools`插件开发模板
+-   ⚡ 开发环境自动注入`HMR`字段
+-   🦍 自动构建`upx`包
+-   🧸 构建`utools/preload`文件，自动处理插件第三方依赖（依赖脚本位于`script/build.js`）
+-   🚀 构建桌面应用（`electron` 不需要可移除）
+
+🥩 开始使用
+-------
+
+### 🔗 克隆项目
+
+git clone https://github.com/QC2168/utools-plugin-template.git
+
+### 🔧 安装依赖
+
+> 推荐使用`pnpm`包管理工具，如果您还没有安装可以执行`npm install -g pnpm`进行安装
+
+pnpm install
+
+### 🛫 启动项目
+
+pnpm dev
+
+### 📦 打包项目
+
+pnpm build
+
+> 执行`build`命令时，会将插件直接构建成`upx`包，开发者无需在`utools`开发者工具中二次构建 🚀
+
+### 多个preload文件处理
+
+> 原理：通过读取提供的`preload.js`文件，获取所需的依赖包后，在插件打包目录下执行`npm install`实现依赖安装
+
+import { install } from '@qc2168/vite-plugin-utools';
+// 添加编译后的preload文件
+install(\['./dist/preload.js'\]);
+
+### 如何启动插件
+
+在`utools`中，打开`utools`开发者工具，并新建一个项目
+
+根据您的实际情况，填写插件所需信息
+
+执行`dev`指令，生成`dist`文件夹，将文件路径选中`/dist/plugin.json`
+
+启动插件，并触发插件第一个关键字
+
+开始你的开发之旅吧~
+
+🍭 最后
+-----
+
+如果您有更好的想法，欢迎提交`issue`或者`pr` 🥰🥰
+
+如果您觉得这个项目对您有帮助，可以点击右上角的`star`按钮支持一下我，谢谢您~ 😘😘

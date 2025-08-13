@@ -1,0 +1,15 @@
+---
+project: lfs
+stars: 1
+description: lfs.bookln.cn的网页爬虫
+url: https://github.com/shiqingyuna/lfs
+---
+
+lfs
+===
+
+lfs.bookln.cn的网页爬虫
+
+理论上可以爬该网站的所有书籍
+
+此程序因为偷懒仍有许多问题 --2020.2.27

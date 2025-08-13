@@ -1,0 +1,72 @@
+---
+project: nixpkgs
+stars: 21430
+description: Nix Packages collection & NixOS
+url: https://github.com/NixOS/nixpkgs
+---
+
+Nixpkgs is a collection of over 120,000 software packages that can be installed with the Nix package manager. It also implements NixOS, a purely-functional Linux distribution.
+
+Manuals
+=======
+
+-   NixOS Manual - how to install, configure, and maintain a purely-functional Linux distribution
+-   Nixpkgs Manual - contributing to Nixpkgs and using programming-language-specific Nix expressions
+-   Nix Package Manager Manual - how to write Nix expressions (programs), and how to use Nix command line tools
+
+Community
+=========
+
+-   Discourse Forum
+-   Matrix Chat
+-   NixOS Weekly
+-   Official wiki
+-   Community-maintained list of ways to get in touch (Discord, Telegram, IRC, etc.)
+
+Other Project Repositories
+==========================
+
+The sources of all official Nix-related projects are in the NixOS organization on GitHub. Here are some of the main ones:
+
+-   Nix - the purely functional package manager
+-   NixOps - the tool to remotely deploy NixOS machines
+-   nixos-hardware - NixOS profiles to optimize settings for different hardware
+-   Nix RFCs - the formal process for making substantial changes to the community
+-   NixOS homepage - the NixOS.org website
+-   hydra - our continuous integration system
+-   NixOS Artwork - NixOS artwork
+
+Continuous Integration and Distribution
+=======================================
+
+Nixpkgs and NixOS are built and tested by our continuous integration system, Hydra.
+
+-   Continuous package builds for unstable/master
+-   Continuous package builds for the NixOS 25.05 release
+-   Tests for unstable/master
+-   Tests for the NixOS 25.05 release
+
+Artifacts successfully built with Hydra are published to cache at https://cache.nixos.org/. When successful build and test criteria are met, the Nixpkgs expressions are distributed via Nix channels.
+
+Contributing
+============
+
+Nixpkgs is among the most active projects on GitHub. While thousands of open issues and pull requests might seem a lot at first, it helps consider it in the context of the scope of the project. Nixpkgs describes how to build tens of thousands of pieces of software and implements a Linux distribution. The GitHub Insights page gives a sense of the project activity.
+
+Community contributions are always welcome through GitHub Issues and Pull Requests.
+
+For more information about contributing to the project, please visit the contributing page.
+
+Donations
+=========
+
+The infrastructure for NixOS and related projects is maintained by a nonprofit organization, the NixOS Foundation. To ensure the continuity and expansion of the NixOS infrastructure, we are looking for donations to our organization.
+
+You can donate to the NixOS foundation through SEPA bank transfers or by using Open Collective:
+
+License
+=======
+
+Nixpkgs is licensed under the MIT License.
+
+Note: MIT license does not apply to the packages built by Nixpkgs, merely to the files in this repository (the Nix expressions, build scripts, NixOS modules, etc.). It also might not apply to patches included in Nixpkgs, which may be derivative works of the packages to which they apply. The aforementioned artifacts are all covered by the licenses of the respective packages.

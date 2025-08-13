@@ -1,0 +1,39 @@
+---
+project: Leo_Reading
+stars: 48
+description: 上传一些自己搜集的网站。 🌲
+url: https://github.com/pingan8787/Leo_Reading
+---
+
+欢迎阅读 Leo\_Reading
+=================
+
+* * *
+
+Author
+
+王平安
+
+E-mail
+
+pingan8787@qq.com
+
+博 客
+
+www.pingan8787.com
+
+微 信
+
+pingan8787
+
+每日文章
+
+https://0x9.me/KMrv3
+
+* * *
+
+这里我将持续分享每天我阅读的文章，将内容不错的文章，整理分享，内容涵盖`前端开发`、`计算机原理`和`人工智能`等方面的文章。
+
+拓宽视野，展望前言，回顾过往，总结经验，重复练习，加油充满正能量的各位。
+
+> 注意：请将整个文件clone下来打开阅读，因为都是html网页。

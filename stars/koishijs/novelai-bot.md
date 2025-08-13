@@ -1,0 +1,53 @@
+---
+project: novelai-bot
+stars: 2530
+description: Generate images by NovelAI | 基于 NovelAI 的画图机器人
+url: https://github.com/koishijs/novelai-bot
+---
+
+koishi-plugin-novelai
+=====================
+
+基于 NovelAI 的画图插件。已实现功能：
+
+-   绘制图片
+-   更改模型、采样器、图片尺寸
+-   高级请求语法
+-   自定义违禁词表
+-   中文关键词自动翻译
+-   发送一段时间后自动撤回
+-   连接到私服 · SD-WebUI · Stable Horde
+-   img2img · 图片增强
+
+得益于 Koishi 的插件化机制，只需配合其他插件即可实现更多功能：
+
+-   多平台支持 (QQ、Discord、Telegram、开黑啦等)
+-   速率限制 (限制每个用户每天可以调用的次数和每次调用的间隔)
+-   上下文管理 (限制在哪些群聊中哪些用户可以访问)
+-   多语言支持 (为使用不同语言的用户提供对应的回复)
+
+**所以所以快去给 Koishi 点个 star 吧！**
+
+效果展示
+----
+
+以下图片均使用本插件在聊天平台生成：
+
+使用教程
+----
+
+搭建教程、使用方法、参数配置、常见问题请见：https://bot.novelai.dev
+
+License
+-------
+
+使用 MIT 许可证发布。
+
+```
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```

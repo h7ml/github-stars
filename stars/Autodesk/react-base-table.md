@@ -1,0 +1,145 @@
+---
+project: react-base-table
+stars: 1530
+description: A react table component to display large datasets with high performance and flexibility
+url: https://github.com/Autodesk/react-base-table
+---
+
+react-base-table
+================
+
+BaseTable is a react table component to display large datasets with high performance and flexibility
+
+Install
+-------
+
+# npm
+npm install react-base-table --save
+
+# yarn
+yarn add react-base-table
+
+Usage
+-----
+
+import BaseTable, { Column } from 'react-base-table'
+import 'react-base-table/styles.css'
+// Important: if you fail to import react-base-table/styles.css then 
+// BaseTable will not render as advertised in the included examples.
+// For advanced styling see link below:
+// https://github.com/Autodesk/react-base-table#advance
+ ...
+<BaseTable data\={data} width\={600} height\={400}\>
+  <Column key\="col0" dataKey\="col0" width\={100} />
+  <Column key\="col1" dataKey\="col1" width\={100} />
+  ...
+</BaseTable\>
+...
+
+Learn more at the website
+
+### unique key
+
+`key` is required for column definition or the column will be ignored
+
+Make sure each item in `data` is unique by a key, the default key is `id`, you can customize it via `rowKey`
+
+### size
+
+`width` is required for column definition, but in flex mode(`fixed={false}`), you can set `width={0}` and `flexGrow={1}` to achieve flexible column width, checkout the Flex Column example
+
+`width` and `height`(or `maxHeight`) are required to display the table properly
+
+In the examples we are using a wrapper `const Table = props => <BaseTable width={700} height={400} {...props} />` to do that
+
+If you want it responsive, you can use the `AutoResizer` to make the table fill the container, checkout the Auto Resize example
+
+### closure problem in custom renderers
+
+In practice we tend to write inline functions for custom renderers, which would make `shouldUpdateComponent` always true as the inline function will create a new instance on every re-render, to avoid "unnecessary" re-renders, **`BaseTable` ignores functions when comparing column definition by default**, it works well in most cases before, but if we use external data instead of reference state in custom renderers, we always get the staled initial value although the data has changed
+
+It's recommended to inject the external data in column definition to solve the problem, like `<Column foo={foo} bar={bar} cellRenderer={({ column: { foo, bar }}) => { ... } } />`, the column definition will update on external data change, with this pattern we can easily move the custom renderers out of column definition for sharing, the downside is it would bloat the column definition and bug prone
+
+Things getting worse with the introduction of React hooks, we use primitive state instead of `this.state`, so it's easy to encounter the closure problem, but with React hooks, we can easily memoize functions via `useCallback` or `useMemo`, so the implicit optimization could be replaced with user land optimization which is more intuitive, to turn off the implicit optimization, set `ignoreFunctionInColumnCompare` to `false` which is introduced since `v1.11.0`
+
+Here is an example to demonstrate
+
+Browser Support
+---------------
+
+`BaseTable` is well tested on all modern browsers and IE11. _You have to polyfill `Array.prototype.findIndex` to make it works on IE_
+
+**The examples don't work on IE as they are powered by react-runner which is a `react-live` like library but only for modern browsers.**
+
+Advance
+-------
+
+BaseTable is designed to be the base component to build your own complex table component
+
+### Styling
+
+The simplest way is overriding the default styles (assuming you are using `scss`)
+
+// override default variables for BaseTable
+$table-prefix: AdvanceTable;
+
+$table-font-size: 13px;
+$table-padding-left: 15px;
+$table-padding-right: 15px;
+$column-padding: 7.5px;
+...
+$show-frozen-rows-shadow: false;
+$show-frozen-columns-shadow: true;
+
+@import '~react-base-table/es/\_BaseTable.scss';
+
+.#{$table-prefix} {
+  &:not(.#{$table-prefix}--show-left-shadow) {
+    .#{$table-prefix}\_\_table-frozen-left {
+      box-shadow: none;
+    }
+  }
+
+  &:not(.#{$table-prefix}--show-right-shadow) {
+    .#{$table-prefix}\_\_table-frozen-right {
+      box-shadow: none;
+    }
+  }
+
+  ...
+}
+
+You can write your own styles from scratch or use CSS-in-JS solutions to achieve that
+
+### Custom components
+
+<BaseTable
+  classPrefix\="AdvanceTable"
+  components\={{
+    TableCell: AdvanceTableCell,
+    TableHeaderCell: AdvanceTableHeaderCell,
+    ExpandIcon: AdvanceExpandIcon,
+    SortIndicator: AdvanceSortIndicator,
+  }}
+  ...
+/\>
+
+### Custom renderers & props
+
+There are a lot of highly flexible props like `xxxRenderer` and `xxxProps` for you to build your own table component, please check the api and examples for more details
+
+### Example
+
+We are using a advanced table component based on `BaseTable` internally, with much more features, including row selection, row grouping, data aggregation, column settings, column reordering, and column grouping, tooltip, inline editing.
+
+In real products
+
+Development
+-----------
+
+We use `Yarn` as the package manager, checkout this repo and run `yarn` under both root folder and `website` folder in install packages, then run `yarn start` to start the demo site powered by `Gatsby`
+
+Contributing
+------------
+
+Please check guidelines for more details

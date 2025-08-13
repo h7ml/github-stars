@@ -1,0 +1,18 @@
+---
+project: qdleader
+stars: 1365
+description: 前端面试 前端知识点 面试题大全 js vue react node git element typescript ts next 支付 微信公众平台 每日持续更新 前端周刊  vue3 react18 vite redux 前端
+url: https://github.com/qdleader/qdleader
+---
+
+### 提供在一个自己整理过往知识，方便自己查阅，也方便别人学习。欢迎关注公众号 qdleader（回复加群即可加群）。
+
+### 每日更新一道面试题或知识点。我们一起探索前端奇妙世界(_^▽^_) 一起加油吧 ！
+
+吾生也有涯，而知也无涯。以有涯随无涯，殆已！在有限的时间，祝你每日做自己喜欢的事！
+-----------------------------------------
+
+Sponsorship
+-----------
+
+您的支持是对我最大的鼓励， 感觉文章对您有帮助的话，那就请作者喝杯奶茶吧 😄
