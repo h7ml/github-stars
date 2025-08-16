@@ -1,6 +1,6 @@
 ---
 project: monaspace
-stars: 16709
+stars: 16760
 description: An innovative superfamily of fonts for code
 url: https://github.com/githubnext/monaspace
 ---
@@ -23,7 +23,8 @@ Monaspace is five interchangable type families, each of which is packaged into t
 
 -   `Monaspace _____`: the static family.
 -   `Monaspace _____ Var` or `VF`: the variable family
--   `Monaspace _____ Frozen`: the "frozen" TTF family. These fonts enable all of the typographical features in Monaspace by default. They are intended to be used in environments where you might not be able to configure stylistic sets or character variants, like XCode or IntelliJ IDEs. See more about how the frozen fonts work below.
+-   `Monaspace _____ NF`: static families patched with NerdFonts
+-   `Monaspace _____ Frozen`: the "frozen" TTF family. These fonts enable all of the typographical features ("stylistic sets") in Monaspace by default. They are intended to be used in environments where you might not be able to configure stylistic sets or character variants, like XCode or IntelliJ IDEs. See more about how the frozen fonts work below.
 
 The variable fonts have one file per family (Neon, Argon, etc.). Modern and convenient!
 
@@ -41,7 +42,7 @@ You can read more about how it works on the Monaspace website, and learn how it 
 Nerd Fonts
 ----------
 
-As of Monaspace 1.2, the static font builds (both OTF and WOFF/WOFF2) include Nerd Fonts!
+As of Monaspace 1.2, the static font builds (both desktop and web) offer versions patched with Nerd Fonts!
 
 Monaspace gives a lot of consideration to horizontal and vertical metrics of a font, and Nerd Fonts are thousands of icons which don't necessarily respect those considerations. Monaspace makes a best-effort attempt to optically align the size and placement of the icons so that they feel compatible with the other Monaspace glyphs.
 
@@ -141,7 +142,7 @@ There is also a script that automates the deletion of all Monaspace fonts from `
 
 $ bash util/install\_macos.sh
 
-You can also use Homebrew as an alternative:
+You can also use Homebrew as an alternative, though it may not always have the latest version of Monaspace.
 
 brew install --cask font-monaspace
 
@@ -153,15 +154,15 @@ You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fon
 
 You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into `~/.local/share/fonts`.
 
-There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+After doing so, it's probably wise to rebuild your font cache like so:
 
-$ bash util/install\_linux.sh
+fc-cache -f
 
 ### Webfonts
 
 All files with a `.woff` or `.woff2` suffix are intended for use on the web. You do not install them with your operating system but add them to your web development project.
 
-As with the desktop fonts, they are available in variable and static versions.
+As with the desktop fonts, they are available in variable, static, and nerdfont versions.
 
 The webfonts do not come in a "frozen" format; you can easily control Opentype features on the web using the `font-feature-settings` CSS property.
 
@@ -215,12 +216,6 @@ Contribution
 ------------
 
 There's no formal contribution guide yet! If you're interested in contributing to the typefaces, you should read the Texture Healing guide, as it explains how to produce the necessary alternate glyphs.
-
-### Renamer utility
-
-This convenience utility renames and moves the built fonts into their respective directories. You will need Deno installed, and invoke it thus:
-
-$ ./util/renamer.ts --src="~/path/to/the/built/fonts"
 
 License
 -------

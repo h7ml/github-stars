@@ -1,6 +1,6 @@
 ---
 project: awesome-balatro
-stars: 1010
+stars: 1014
 description: A list of Balatro Mods and Tools
 url: https://github.com/jie65535/awesome-balatro
 ---
@@ -76,6 +76,7 @@ Tools
 -   Balatro Calculator - Calculate the best score for any Balatro hand. by @Saffron
 -   Balatro Mobile Maker - Create a mobile Balatro app from your Steam version of Balatro. by @blake502
 -   Balatro Modpack Manager - Install, update, and customize modpacks in one streamlined tool. by \[@Dimserene\]
+-   Balatro Seed Oracle - Balatro Seed Searcher with visual drag&drop filter builder coded in C# and AvaloniaUI. by @OptimusPi
 -   Balatro Ultimate Speedup Mod - A mod that speeds up the entire game. Doesn't need a mod loader. (Windows only) by @sse2
 -   balatro-save-loader - A simple save loader/modder for balatro. by @WilsontheWolf
 -   balatro-sprites-i18n - Internationalization toolchain to translate Balatro's sprites. by @Signez
@@ -84,7 +85,10 @@ Tools
 -   Balatrolator - Score calculator for Balatro. by @kleinfreund
 -   Balatrones - Manage custom modpack instances for Balatro with their own mods and save files in separate directories (Currently Windows only). by @bconlon1
 -   BalatroWebSiteTemplate - Use web pages to show your Jokers. like this. by @notmario
+-   Blueprint - An online seed analyzer inspired by the soul, with joker spoilers and queue support @miaklwalker
 -   Immolate - An OpenCL seed searcher for Balatro. by @MathIsFun\_
+-   Motely - A C# CPU SIMD seed searcher for Balatro. by @tacodiva
+-   Ouija - A JSON-powered, Immolate-based seed searcher for Balatro. by @OptimusPi
 -   PerkeoApp - A Balatro iOS companion app coded in Swift. by @alex-cova
 -   The Soul - An online seed analyzer for Balatro. by @MathIsFun\_
 

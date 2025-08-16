@@ -1,6 +1,6 @@
 ---
 project: open-webui
-stars: 105979
+stars: 106857
 description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 url: https://github.com/open-webui/open-webui
 ---
@@ -28,6 +28,8 @@ Key Features of Open WebUI ⭐
 -   🤝 **Ollama/OpenAI API Integration**: Effortlessly integrate OpenAI-compatible APIs for versatile conversations alongside Ollama models. Customize the OpenAI API URL to link with **LMStudio, GroqCloud, Mistral, OpenRouter, and more**.
     
 -   🛡️ **Granular Permissions and User Groups**: By allowing administrators to create detailed user roles and permissions, we ensure a secure user environment. This granularity not only enhances security but also allows for customized user experiences, fostering a sense of ownership and responsibility amongst users.
+    
+-   🔄 **SCIM 2.0 Support**: Enterprise-grade user and group provisioning through SCIM 2.0 protocol, enabling seamless integration with identity providers like Okta, Azure AD, and Google Workspace for automated user lifecycle management.
     
 -   📱 **Responsive Design**: Enjoy a seamless experience across Desktop PC, Laptop, and Mobile devices.
     
@@ -67,10 +69,9 @@ Sponsors 🙌
 
 #### Emerald
 
-n8n • Does your interface have a backend yet?  
-Try n8n
-
 Tailscale • Connect self-hosted AI to any device with Tailscale
+
+Warp • The intelligent terminal for developers
 
 * * *
 

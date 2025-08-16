@@ -1,6 +1,6 @@
 ---
 project: pgbouncer
-stars: 3410
+stars: 3426
 description: lightweight connection pooler for PostgreSQL
 url: https://github.com/pgbouncer/pgbouncer
 ---
@@ -24,8 +24,8 @@ PgBouncer depends on few things to get compiled:
 -   pkg-config
 -   OpenSSL 1.0.1+ for TLS support
 -   (optional) c-ares as alternative to Libevent's evdns
--   (optional) PAM libraries
 -   (optional) LDAP libraries
+-   (optional) PAM libraries
 
 When dependencies are installed just run:
 

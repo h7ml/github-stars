@@ -1,6 +1,6 @@
 ---
 project: tabby
-stars: 65375
+stars: 65530
 description: A terminal for a more modern age
 url: https://github.com/Eugeny/tabby
 ---
@@ -739,5 +739,9 @@ Thanks goes to these wonderful people (emoji key):
   
 **geodic**  
 💻
+
+  
+**P Foundation**  
+💵
 
 This project follows the all-contributors specification. Contributions of any kind are welcome!

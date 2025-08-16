@@ -1,9 +1,15 @@
 ---
 project: localsend
-stars: 65731
+stars: 66034
 description: An open-source cross-platform alternative to AirDrop
 url: https://github.com/localsend/localsend
 ---
+
+Special thanks to:  
+  
+  
+**Warp, the agentic development environment built for coding with multiple AI Agents.**  
+Available for macOS, Linux and Windows
 
 LocalSend
 =========

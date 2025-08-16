@@ -1,6 +1,6 @@
 ---
 project: bevy
-stars: 40919
+stars: 41066
 description: A refreshingly simple data-driven game engine built in Rust
 url: https://github.com/bevyengine/bevy
 ---
@@ -74,9 +74,9 @@ To draw a window with standard functionality enabled, use:
 use bevy::prelude::\*;
 
 fn main() {
-  App::new()
-    .add\_plugins(DefaultPlugins)
-    .run();
+    App::new()
+        .add\_plugins(DefaultPlugins)
+        .run();
 }
 
 ### Fast Compiles

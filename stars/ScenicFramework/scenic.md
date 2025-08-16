@@ -1,6 +1,6 @@
 ---
 project: scenic
-stars: 2025
+stars: 2027
 description: Core Scenic library
 url: https://github.com/ScenicFramework/scenic
 ---

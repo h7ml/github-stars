@@ -1,6 +1,6 @@
 ---
 project: SkyReels-V2
-stars: 4118
+stars: 4209
 description: SkyReels-V2: Infinite-length Film Generative model
 url: https://github.com/SkyworkAI/SkyReels-V2
 ---
@@ -230,6 +230,90 @@ python3 generate\_video\_df.py \\
   --addnoise\_condition 20 \\
   --offload
 
+Text-to-video with `diffusers`:
+
+import torch
+from diffusers import AutoModel, SkyReelsV2DiffusionForcingPipeline, UniPCMultistepScheduler
+from diffusers.utils import export\_to\_video
+
+vae \= AutoModel.from\_pretrained("Skywork/SkyReels-V2-DF-14B-540P-Diffusers", subfolder\="vae", torch\_dtype\=torch.float32)
+
+pipeline \= SkyReelsV2DiffusionForcingPipeline.from\_pretrained(
+    "Skywork/SkyReels-V2-DF-14B-540P-Diffusers",
+    vae\=vae,
+    torch\_dtype\=torch.bfloat16
+)
+flow\_shift \= 8.0  \# 8.0 for T2V, 5.0 for I2V
+pipeline.scheduler \= UniPCMultistepScheduler.from\_config(pipeline.scheduler.config, flow\_shift\=flow\_shift)
+pipeline \= pipeline.to("cuda")
+
+prompt \= "A cat and a dog baking a cake together in a kitchen. The cat is carefully measuring flour, while the dog is stirring the batter with a wooden spoon. The kitchen is cozy, with sunlight streaming through the window."
+
+output \= pipeline(
+    prompt\=prompt,
+    num\_inference\_steps\=30,
+    height\=544,  \# 720 for 720P
+    width\=960,   \# 1280 for 720P
+    num\_frames\=97,
+    base\_num\_frames\=97,  \# 121 for 720P
+    ar\_step\=5,  \# Controls asynchronous inference (0 for synchronous mode)
+    causal\_block\_size\=5,  \# Number of frames in each block for asynchronous processing
+    overlap\_history\=None,  \# Number of frames to overlap for smooth transitions in long videos; 17 for long video generations
+    addnoise\_condition\=20,  \# Improves consistency in long video generation
+).frames\[0\]
+export\_to\_video(output, "T2V.mp4", fps\=24, quality\=8)
+
+Image-to-video with `diffusers`:
+
+import numpy as np
+import torch
+import torchvision.transforms.functional as TF
+from diffusers import AutoencoderKLWan, SkyReelsV2DiffusionForcingImageToVideoPipeline, UniPCMultistepScheduler
+from diffusers.utils import export\_to\_video, load\_image
+
+model\_id \= "Skywork/SkyReels-V2-DF-14B-720P-Diffusers"
+vae \= AutoencoderKLWan.from\_pretrained(model\_id, subfolder\="vae", torch\_dtype\=torch.float32)
+pipeline \= SkyReelsV2DiffusionForcingImageToVideoPipeline.from\_pretrained(
+    model\_id, vae\=vae, torch\_dtype\=torch.bfloat16
+)
+flow\_shift \= 5.0  \# 8.0 for T2V, 5.0 for I2V
+pipeline.scheduler \= UniPCMultistepScheduler.from\_config(pipeline.scheduler.config, flow\_shift\=flow\_shift)
+pipeline.to("cuda")
+
+first\_frame \= load\_image("https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/flf2v\_input\_first\_frame.png")
+last\_frame \= load\_image("https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/flf2v\_input\_last\_frame.png")
+
+def aspect\_ratio\_resize(image, pipeline, max\_area\=720 \* 1280):
+    aspect\_ratio \= image.height / image.width
+    mod\_value \= pipeline.vae\_scale\_factor\_spatial \* pipeline.transformer.config.patch\_size\[1\]
+    height \= round(np.sqrt(max\_area \* aspect\_ratio)) // mod\_value \* mod\_value
+    width \= round(np.sqrt(max\_area / aspect\_ratio)) // mod\_value \* mod\_value
+    image \= image.resize((width, height))
+    return image, height, width
+
+def center\_crop\_resize(image, height, width):
+    \# Calculate resize ratio to match first frame dimensions
+    resize\_ratio \= max(width / image.width, height / image.height)
+
+    \# Resize the image
+    width \= round(image.width \* resize\_ratio)
+    height \= round(image.height \* resize\_ratio)
+    size \= \[width, height\]
+    image \= TF.center\_crop(image, size)
+
+    return image, height, width
+
+first\_frame, height, width \= aspect\_ratio\_resize(first\_frame, pipeline)
+if last\_frame.size != first\_frame.size:
+    last\_frame, \_, \_ \= center\_crop\_resize(last\_frame, height, width)
+
+prompt \= "CG animation style, a small blue bird takes off from the ground, flapping its wings. The bird's feathers are delicate, with a unique pattern on its chest. The background shows a blue sky with white clouds under bright sunshine. The camera follows the bird upward, capturing its flight and the vastness of the sky from a close-up, low-angle perspective."
+
+output \= pipeline(
+    image\=first\_frame, last\_image\=last\_frame, prompt\=prompt, height\=height, width\=width, guidance\_scale\=5.0
+).frames\[0\]
+export\_to\_video(output, "output.mp4", fps\=24, quality\=8)
+
 > **Note**:
 > 
 > -   If you want to run the **image-to-video (I2V)** task, add `--image ${image_path}` to your command and it is also better to use **text-to-video (T2V)**\-like prompt which includes some descriptions of the first-frame image.
@@ -286,6 +370,34 @@ python3 generate\_video\_df.py \\
 > 
 > -   When controlling the start and end frames, you need to pass the `--image ${image}` parameter to control the generation of the start frame and the `--end_image ${end_image}` parameter to control the generation of the end frame.
 
+Video extension with `diffusers`:
+
+import numpy as np
+import torch
+import torchvision.transforms.functional as TF
+from diffusers import AutoencoderKLWan, SkyReelsV2DiffusionForcingVideoToVideoPipeline, UniPCMultistepScheduler
+from diffusers.utils import export\_to\_video, load\_video
+
+model\_id \= "Skywork/SkyReels-V2-DF-14B-540P-Diffusers"
+vae \= AutoencoderKLWan.from\_pretrained(model\_id, subfolder\="vae", torch\_dtype\=torch.float32)
+pipeline \= SkyReelsV2DiffusionForcingVideoToVideoPipeline.from\_pretrained(
+    model\_id, vae\=vae, torch\_dtype\=torch.bfloat16
+)
+flow\_shift \= 5.0  \# 8.0 for T2V, 5.0 for I2V
+pipeline.scheduler \= UniPCMultistepScheduler.from\_config(pipeline.scheduler.config, flow\_shift\=flow\_shift)
+pipeline.to("cuda")
+
+video \= load\_video("input\_video.mp4")
+
+prompt \= "CG animation style, a small blue bird takes off from the ground, flapping its wings. The bird's feathers are delicate, with a unique pattern on its chest. The background shows a blue sky with white clouds under bright sunshine. The camera follows the bird upward, capturing its flight and the vastness of the sky from a close-up, low-angle perspective."
+
+output \= pipeline(
+    video\=video, prompt\=prompt, height\=544, width\=960, guidance\_scale\=5.0,
+    num\_inference\_steps\=30, num\_frames\=257, base\_num\_frames\=97#, ar\_step=5, causal\_block\_size=5,
+).frames\[0\]
+export\_to\_video(output, "output.mp4", fps\=24, quality\=8)
+\# Total frames will be the number of frames of given video + 257
+
 -   **Text To Video & Image To Video**
 
 # run Text-to-Video Generation
@@ -307,6 +419,90 @@ python3 generate\_video.py \\
 > 
 > -   When using an **image-to-video (I2V)** model, you must provide an input image using the `--image ${image_path}` parameter. The `--guidance_scale 5.0` and `--shift 3.0` is recommended for I2V model.
 > -   Generating a 540P video using the 1.3B model requires approximately 14.7GB peak VRAM, while the same resolution video using the 14B model demands around 43.4GB peak VRAM.
+
+T2V models with `diffusers`:
+
+import torch
+from diffusers import (
+    SkyReelsV2Pipeline,
+    UniPCMultistepScheduler,
+    AutoencoderKLWan,
+)
+from diffusers.utils import export\_to\_video
+
+\# Load the pipeline
+\# Available models:
+\# - Skywork/SkyReels-V2-T2V-14B-540P-Diffusers
+\# - Skywork/SkyReels-V2-T2V-14B-720P-Diffusers
+vae \= AutoencoderKLWan.from\_pretrained(
+    "Skywork/SkyReels-V2-T2V-14B-720P-Diffusers",
+    subfolder\="vae",
+    torch\_dtype\=torch.float32,
+)
+pipe \= SkyReelsV2Pipeline.from\_pretrained(
+    "Skywork/SkyReels-V2-T2V-14B-720P-Diffusers",
+    vae\=vae,
+    torch\_dtype\=torch.bfloat16,
+)
+flow\_shift \= 8.0  \# 8.0 for T2V, 5.0 for I2V
+pipe.scheduler \= UniPCMultistepScheduler.from\_config(pipe.scheduler.config, flow\_shift\=flow\_shift)
+pipe \= pipe.to("cuda")
+
+prompt \= "A cat and a dog baking a cake together in a kitchen. The cat is carefully measuring flour, while the dog is stirring the batter with a wooden spoon. The kitchen is cozy, with sunlight streaming through the window."
+
+output \= pipe(
+    prompt\=prompt,
+    num\_inference\_steps\=50,
+    height\=544,
+    width\=960,
+    guidance\_scale\=6.0,  \# 6.0 for T2V, 5.0 for I2V
+    num\_frames\=97,
+).frames\[0\]
+export\_to\_video(output, "video.mp4", fps\=24, quality\=8)
+
+I2V models with `diffusers`:
+
+import torch
+from diffusers import (
+    SkyReelsV2ImageToVideoPipeline,
+    UniPCMultistepScheduler,
+    AutoencoderKLWan,
+)
+from diffusers.utils import export\_to\_video
+from PIL import Image
+
+\# Load the pipeline
+\# Available models:
+\# - Skywork/SkyReels-V2-I2V-1.3B-540P-Diffusers
+\# - Skywork/SkyReels-V2-I2V-14B-540P-Diffusers
+\# - Skywork/SkyReels-V2-I2V-14B-720P-Diffusers
+vae \= AutoencoderKLWan.from\_pretrained(
+    "Skywork/SkyReels-V2-I2V-14B-720P-Diffusers",
+    subfolder\="vae",
+    torch\_dtype\=torch.float32,
+)
+pipe \= SkyReelsV2ImageToVideoPipeline.from\_pretrained(
+    "Skywork/SkyReels-V2-I2V-14B-720P-Diffusers",
+    vae\=vae,
+    torch\_dtype\=torch.bfloat16,
+)
+flow\_shift \= 5.0  \# 8.0 for T2V, 5.0 for I2V
+pipe.scheduler \= UniPCMultistepScheduler.from\_config(pipe.scheduler.config, flow\_shift\=flow\_shift)
+pipe \= pipe.to("cuda")
+
+prompt \= "A cat and a dog baking a cake together in a kitchen. The cat is carefully measuring flour, while the dog is stirring the batter with a wooden spoon. The kitchen is cozy, with sunlight streaming through the window."
+image \= Image.open("path/to/image.png")
+
+output \= pipe(
+    image\=image,
+    prompt\=prompt,
+    num\_inference\_steps\=50,
+    height\=544,
+    width\=960,
+    guidance\_scale\=5.0,  \# 6.0 for T2V, 5.0 for I2V
+    num\_frames\=97,
+).frames\[0\]
+export\_to\_video(output, "video.mp4", fps\=24, quality\=8)
 
 -   **Prompt Enhancer**
 

@@ -1,6 +1,6 @@
 ---
 project: uFuzzy
-stars: 2856
+stars: 2859
 description: A tiny, efficient fuzzy search that doesn't suck
 url: https://github.com/leeoniya/uFuzzy
 ---

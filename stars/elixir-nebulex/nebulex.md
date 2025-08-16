@@ -1,18 +1,18 @@
 ---
 project: nebulex
-stars: 1335
+stars: 1337
 description: In-memory and distributed caching toolkit for Elixir.
 url: https://github.com/elixir-nebulex/nebulex
 ---
 
-> In-memory and distributed caching toolkit for Elixir.
+> **In-memory and distributed caching toolkit for Elixir**
 
 * * *
 
-About
------
+🚀 About
+--------
 
-Nebulex provides support for transparently adding caching into an existing Elixir application. Like Ecto, the caching abstraction allows consistent use of various caching solutions with minimal impact on the code.
+Nebulex provides support for transparently adding caching to existing Elixir applications. Like Ecto, the caching abstraction allows consistent use of various caching solutions with minimal impact on your code.
 
 Nebulex's cache abstraction shields developers from directly interacting with underlying caching implementations, such as Redis, Memcached, or other Elixir cache implementations like Cachex. It also provides out-of-the-box features including declarative decorator-based caching, cache usage patterns, and distributed cache topologies, among others.
 
@@ -20,36 +20,36 @@ Nebulex's cache abstraction shields developers from directly interacting with un
 
 Note
 
-This README refers to the main branch of Nebulex, not the latest released version on Hex. Please reference the getting started guide and the official documentation for the latest stable release.
+This README refers to the main branch of Nebulex, not the latest released version on Hex. Please refer to the getting started guide and the official documentation for the latest stable release.
 
 * * *
 
-Usage
------
+📖 Usage
+--------
 
 To use Nebulex, add both `:nebulex` and your chosen cache adapter as dependencies in your `mix.exs` file. For example, to use the Generational Local Cache (`Nebulex.Adapters.Local` adapter), add the following to your `mix.exs`:
 
 def deps do
   \[
     {:nebulex, "~> 3.0.0-rc.1"},
-    {:nebulex\_local, "~> 3.0"},  \# Generational local cache adapter
-    {:decorator, "~> 1.4"},      \# Required for caching decorators
-    {:telemetry, "~> 1.2"}       \# Required for telemetry events
+    {:nebulex\_local, "~> 3.0.0-rc.1"}, \# Generational local cache adapter
+    {:decorator, "~> 1.4"},            \# Required for caching decorators
+    {:telemetry, "~> 1.2"}             \# Required for telemetry events
   \]
 end
 
 > For more information about available adapters, check out the Nebulex adapters guide.
 
-To give more flexibility and load only needed dependencies, Nebulex makes all dependencies optional. For example:
+To provide more flexibility and load only the needed dependencies, Nebulex makes all dependencies optional, including the adapters. For example:
 
--   For enabling declarative decorator-based caching, you have to add `:decorator` to the dependency list (recommended adding it).
+-   **For enabling declarative decorator-based caching**: Add `:decorator` to the dependency list (recommended).
     
--   For enabling Telemetry events dispatched by Nebulex, you have to add `:telemetry` to the dependency list (recommended adding it). See telemetry guide.
+-   **For enabling Telemetry events**: Add `:telemetry` to the dependency list (recommended). See the telemetry guide.
     
 
-Then run `mix deps.get` in your shell to fetch the dependencies. If you want to use another cache adapter, just choose the proper dependency from the table above.
+Then run `mix deps.get` in your shell to fetch the dependencies. If you want to use another cache adapter, just choose the appropriate dependency from the table above.
 
-Finally, in the cache definition, you will need to specify the `adapter:` respective to the chosen dependency. For the local cache would be:
+Finally, in your cache definition, you'll need to specify the `adapter:` corresponding to the chosen dependency. For the local cache, it would be:
 
 defmodule MyApp.Cache do
   use Nebulex.Cache,
@@ -64,7 +64,7 @@ def start(\_type, \_args) do
     MyApp.Cache
   \]
 
-  ...
+  \# ... rest of your supervision tree
 
 You're now ready to use the cache:
 
@@ -75,7 +75,9 @@ iex\> MyApp.Cache.fetch("foo")
 
 For more detailed information, see the getting started guide and online documentation.
 
-A quickstart example using caching decorators
+* * *
+
+⚡ Quick Start Example with Caching Decorators
 ---------------------------------------------
 
 This example demonstrates how to use Nebulex with Ecto and declarative caching:
@@ -161,57 +163,65 @@ defmodule MyApp.Accounts do
   def match\_update({:error, \_}), do: false
 end
 
-Important links
----------------
+* * *
+
+🔗 Important Links
+------------------
 
 -   Getting Started - Learn how to set up and use Nebulex
 -   Documentation - Complete API reference
 -   Examples - Example applications
 -   Upgrading to v3.0 - Migration guide for v3.0
 
-Testing
--------
+* * *
+
+🧪 Testing
+----------
 
 To run only the tests:
 
-```
 $ mix test
-```
 
-Additionally, to run all Nebulex checks run:
+Additionally, to run all Nebulex checks:
 
-```
 $ mix test.ci
-```
 
-The `mix check` will run the tests, coverage, credo, dialyzer, etc. This is the recommended way to test Nebulex.
+The `mix test.ci` command will run the tests, coverage, credo, dialyzer, and more. This is the recommended way to test Nebulex.
 
-Benchmarks
-----------
+* * *
 
-Nebulex provides a set of basic benchmark tests using the library benchee, and they are located within the directory benchmarks.
+📊 Benchmarks
+-------------
 
-To run a benchmark test you have to run:
+Nebulex provides a set of basic benchmark tests using the library benchee, located in the benchmarks directory.
 
-```
+To run a benchmark test:
+
 $ mix bench
-```
 
 > The benchmark uses the `Nebulex.Adapters.Nil` adapter; it is more focused on measuring the Nebulex abstraction layer performance rather than a specific adapter.
 
-Contributing
-------------
+* * *
+
+🤝 Contributing
+---------------
 
 Contributions to Nebulex are very welcome and appreciated!
 
-Use the issue tracker for bug reports or feature requests. Open a pull request when you are ready to contribute.
+Use the issue tracker for bug reports or feature requests. Open a pull request when you're ready to contribute.
 
-When submitting a pull request you should not update the CHANGELOG.md, and also make sure you test your changes thoroughly, include unit tests alongside new or changed code.
+When submitting a pull request:
 
-Before to submit a PR it is highly recommended to run `mix test.ci` and ensure all checks run successfully.
+-   **Do not update** the CHANGELOG.md
+-   **Ensure** you test your changes thoroughly
+-   **Include** unit tests alongside new or changed code
 
-Copyright and License
----------------------
+Before submitting a PR, it is highly recommended to run `mix test.ci` and ensure all checks run successfully.
+
+* * *
+
+📄 Copyright and License
+------------------------
 
 Copyright (c) 2017, Carlos Bolaños.
 

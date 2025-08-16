@@ -1,6 +1,6 @@
 ---
 project: langextract
-stars: 6944
+stars: 11740
 description: A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
 url: https://github.com/google/langextract
 ---
@@ -16,6 +16,7 @@ Table of Contents
 -   Quick Start
 -   Installation
 -   API Key Setup for Cloud Models
+-   Adding Custom Model Providers
 -   Using OpenAI Models
 -   Using Local LLMs with Ollama
 -   More Examples
@@ -115,7 +116,10 @@ lx.io.save\_annotated\_documents(\[result\], output\_name\="extraction\_results.
 \# Generate the visualization from the file
 html\_content \= lx.visualize("extraction\_results.jsonl")
 with open("visualization.html", "w") as f:
-    f.write(html\_content)
+    if hasattr(html\_content, 'data'):
+        f.write(html\_content.data)  \# For Jupyter/Colab
+    else:
+        f.write(html\_content)
 
 This creates an animated and interactive HTML file:
 
@@ -228,6 +232,23 @@ result \= lx.extract(
     api\_key\="your-api-key-here"  \# Only use this for testing/development
 )
 
+Adding Custom Model Providers
+-----------------------------
+
+LangExtract supports custom LLM providers via a lightweight plugin system. You can add support for new models without changing core code.
+
+-   Add new model support independently of the core library
+-   Distribute your provider as a separate Python package
+-   Keep custom dependencies isolated
+-   Override or extend built-in providers via priority-based resolution
+
+See the detailed guide in Provider System Documentation to learn how to:
+
+-   Register a provider with `@registry.register(...)`
+-   Publish an entry point for discovery
+-   Optionally provide a schema with `get_schema_class()` for structured output
+-   Integrate with the factory via `create_model(...)`
+
 Using OpenAI Models
 -------------------
 
@@ -297,16 +318,6 @@ Contributing
 ------------
 
 Contributions are welcome! See CONTRIBUTING.md to get started with development, testing, and pull requests. You must sign a Contributor License Agreement before submitting patches.
-
-### Adding Custom Model Providers
-
-LangExtract supports custom LLM providers through a plugin system. You can add support for new models by creating an external Python package that registers with LangExtract's provider registry. This allows you to:
-
--   Add new model support without modifying the core library
--   Distribute your provider independently
--   Maintain custom dependencies
-
-For detailed instructions, see the Provider System Documentation.
 
 Testing
 -------

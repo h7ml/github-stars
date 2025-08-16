@@ -1,6 +1,6 @@
 ---
 project: carbon
-stars: 1137
+stars: 1230
 description: The open-source manufacturing ERP/MES/QMS. Perfect for complex assembly, HMLV, and configure to order manufacturing.
 url: https://github.com/crbnos/carbon
 ---
@@ -250,6 +250,15 @@ $ cp ./.env.example ./.env
 -   `STRIPE_SECRET_KEY="sk_test_*************"`
 -   `STRIP_WEBHOOK_SECRET="whsec_************"`
 
+1.  Signing in requires you to setup one of two methods:
+    -   Email requires a Resend API key:
+        -   `RESEND_API_KEY="re_**********"`
+        -   `RESEND_DOMAIN="carbon.ms"`
+    -   Sign-in with Google requires a Google auth client with these variables:
+        -   `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID="******.apps.googleusercontent.com"`
+        -   `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_SECRET="GOCSPX-****************"`
+        -   `SUPABASE_AUTH_EXTERNAL_GOOGLE_REDIRECT_URI="http://127.0.0.1:54321/auth/v1/callback"`
+
 Then you can run the following:
 
 $ npm run db:build     # run db migrations and seed script
@@ -259,10 +268,6 @@ Finally, start the apps and packages:
 
 $ npm run dev
 $ npm run dev:mes        # npm run dev in all apps & packages
-
-You can now sign in with:
-
-username: your-email@address.com password: carbon
 
 After installation you should be able run the apps locally.
 

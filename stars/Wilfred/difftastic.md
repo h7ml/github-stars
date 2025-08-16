@@ -1,6 +1,6 @@
 ---
 project: difftastic
-stars: 22716
+stars: 22777
 description: a structural diff that understands syntax 🟥🟩
 url: https://github.com/Wilfred/difftastic
 ---
@@ -50,7 +50,7 @@ Patching. Difftastic output is intended for human consumption, and it does not g
 
 (Patch files are also line-oriented, which is too limited for difftastic. Difftastic might find additions and removals on the same line, and it tracks the relationship between line numbers in the old and new file.)
 
-Merging. AST merging is a hard problem that difftastic does not address.
+Merging. AST merging is a hard problem that difftastic does not address. You might be interested in the mergiraf tool ("merge giraffe"), which does do AST merging.
 
 FAQ
 ---

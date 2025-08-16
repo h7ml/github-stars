@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 55859
+stars: 56272
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -93,6 +93,7 @@ Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 Blogs
 -----
 
+-   Fine-tune GPT-OSS for Role-Playing using LLaMA-Factory (Chinese)
 -   Fine-tune Llama3.1-70B for Medical Diagnosis using LLaMA-Factory (Chinese)
 -   A One-Stop Code-Free Model Reinforcement Learning and Deployment Platform based on LLaMA-Factory and EasyR1 (Chinese)
 -   How Apoidea Group enhances visual information extraction from banking documents with multimodal models using LLaMA-Factory on Amazon SageMaker HyperPod (English)
@@ -322,17 +323,17 @@ GLM-4/GLM-4-0414/GLM-Z1
 
 glm4/glmz1
 
-GLM-4.1V\*
+GLM-4.1V
 
 9B
 
 glm4v
 
-GLM-4.5\*
+GLM-4.5/GLM-4.5V\*
 
 106B/355B
 
-glm4\_moe
+glm4\_moe/glm4v\_moe
 
 GPT-2
 
@@ -520,11 +521,11 @@ Qwen (1-2.5) (Code/Math/MoE/QwQ)
 
 qwen
 
-Qwen3 (MoE)
+Qwen3 (MoE/Instruct/Thinking)
 
 0.6B/1.7B/4B/8B/14B/32B/235B
 
-qwen3
+qwen3/qwen3\_nothink
 
 Qwen2-Audio
 

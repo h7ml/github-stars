@@ -1,6 +1,6 @@
 ---
 project: srs
-stars: 27426
+stars: 27502
 description: SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181.
 url: https://github.com/ossrs/srs
 ---
@@ -61,18 +61,19 @@ At SRS, our goal is to create a free, open-source community that helps developer
 Contributing
 ------------
 
-The authors, TOC(Technical Oversight Committee), and contributors are listed here. The TOC members who made significant contributions and maintained parts of SRS are listed below:
+The maintainers, and contributors are listed here. The maintainers who made significant contributions and maintained parts of SRS are listed below, ranked by the number of commits:
 
 -   Winlin: Founder of the project, focusing on ST and Issues/PR. Responsible for architecture and maintenance.
--   ZhaoWenjie: One of the earliest contributors, focusing on HDS and Windows. Has expertise in client technology.
--   ShiWei: Specializes in SRT and H.265, maintaining SRT and FLV patches for FFmpeg. An expert in codecs and FFmpeg.
 -   XiaoZhihong: Concentrates on WebRTC/QUIC and SRT, with expertise in network QoS. Contributed to ARM on ST and was the original contributor for WebRTC.
--   WuPengqiang: Focused on H.265, initially contributed to the FFmpeg module in SRS for transcoding AAC with OPUS for WebRTC.
--   XiaLixin: Specializes in GB28181, with expertise in live streaming and WebRTC.
--   LiPeng: Concentrates on WebRTC and contributes to memory management and smart pointers.
--   ChenGuanghua: Focused on WebRTC/QoS and introduced the Asan toolchain to SRS.
 -   ChenHaibo: Specializes in GB28181 and HTTP API, contributing to patches for FFmpeg with WHIP.
 -   ZhangJunqin: Focused on H.265, Prometheus Exporter, and API module.
+-   XiaLixin: Specializes in GB28181, with expertise in live streaming and WebRTC.
+-   Jacob Su: Jacob Su has contributed to various modules of SRS.
+-   ShiWei: Specializes in SRT and H.265, maintaining SRT and FLV patches for FFmpeg. An expert in codecs and FFmpeg.
+-   ChenGuanghua: Focused on WebRTC/QoS and introduced the Asan toolchain to SRS.
+-   LiPeng: Concentrates on WebRTC and contributes to memory management and smart pointers.
+-   ZhaoWenjie: One of the earliest contributors, focusing on HDS and Windows. Has expertise in client technology.
+-   WuPengqiang: Focused on H.265, initially contributed to the FFmpeg module in SRS for transcoding AAC with OPUS for WebRTC.
 
 A huge `THANK YOU` goes out to:
 
@@ -90,6 +91,7 @@ SRS is licenced under MIT, and some third-party libraries are distributed under 
 Releases
 --------
 
+-   2025-08-12, Release v6.0-b0, v6.0-b0, 6.0 beta0, v6.0.172, 170417 lines.
 -   2025-05-03, Release v6.0-a2, v6.0-a2, 6.0 alpha2, v6.0.165, 169712 lines.
 -   2024-09-01, Release v6.0-a1, v6.0-a1, 6.0 alpha1, v6.0.155, 169636 lines.
 -   2024-07-27, Release v6.0-a0, v6.0-a0, 6.0 alpha0, v6.0.145, 169259 lines.

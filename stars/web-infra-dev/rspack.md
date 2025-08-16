@@ -1,6 +1,6 @@
 ---
 project: rspack
-stars: 11837
+stars: 11863
 description: The fast Rust-based web bundler with webpack-compatible API 🦀️
 url: https://github.com/web-infra-dev/rspack
 ---
@@ -115,7 +115,7 @@ Rust port of webpack-sources
 
 rstack-design-resources
 
-Design resources for Rspack Stack
+Design resources for Rstack
 
 Contributors
 ------------

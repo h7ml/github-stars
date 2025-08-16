@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 8485
+stars: 9777
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
@@ -195,7 +195,10 @@ Crush can use LSPs for additional context to help inform its decisions, just lik
   "$schema": "https://charm.land/crush.json",
   "lsp": {
     "go": {
-      "command": "gopls"
+      "command": "gopls",
+      "env": {
+        "GOTOOLCHAIN": "go1.24.5"
+      }
     },
     "typescript": {
       "command": "typescript-language-server",

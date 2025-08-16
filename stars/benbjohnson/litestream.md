@@ -1,6 +1,6 @@
 ---
 project: litestream
-stars: 12380
+stars: 12401
 description: Streaming replication for SQLite.
 url: https://github.com/benbjohnson/litestream
 ---
@@ -14,10 +14,13 @@ If you need support or have ideas for improving Litestream, please join the Lite
 
 If you find this project interesting, please consider starring the project on GitHub.
 
+Contributing
+------------
+
+We welcome bug reports, fixes, and patches! Please see our Contributing Guide for details on how to contribute.
+
 Acknowledgements
 ----------------
-
-While the Litestream project does not accept external code patches, many of the most valuable contributions are in the forms of testing, feedback, and documentation. These help harden software and streamline usage for other users.
 
 I want to give special thanks to individuals who invest much of their time and energy into the project to help make it better:
 
@@ -29,12 +32,3 @@ I want to give special thanks to individuals who invest much of their time and e
 -   Thanks to Simon Gottschlag, Marin,Victor Björklund, Jonathan Beri Yuri, Nathan Probst, Yann Coleu, and Nicholas Grilly for frequent feedback, testing, & support.
 
 Huge thanks to fly.io for their support and for contributing credits for testing and development!
-
-Contribution Policy
--------------------
-
-Initially, Litestream was closed to outside contributions. The goal was to reduce burnout by limiting the maintenance overhead of reviewing and validating third-party code. However, this policy is overly broad and has prevented small, easily testable patches from being contributed.
-
-Litestream is now open to code contributions for bug fixes only. Features carry a long-term maintenance burden so they will not be accepted at this time. Please submit an issue if you have a feature you'd like to request.
-
-If you find mistakes in the documentation, please submit a fix to the documentation repository.

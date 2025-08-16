@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 14142
+stars: 14195
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -222,6 +222,9 @@ Examples
 Articles and other media
 ------------------------
 
+-   (Video) Using Rust in Free-Threaded vs Regular Python 3.13 - Jun 4, 2025
+-   (Video) Techniques learned from five years finding the way for Rust in Python - Feb 26, 2025
+-   (Podcast) Bridging Python and Rust: An Interview with PyO3 Maintainer David Hewitt - Aug 30, 2024
 -   (Video) PyO3: From Python to Rust and Back Again - Jul 3, 2024
 -   Parsing Python ASTs 20x Faster with Rust - Jun 17, 2024
 -   (Video) How Python Harnesses Rust through PyO3 - May 18, 2024

@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 30554
+stars: 30664
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -175,7 +175,11 @@ CGO\_ENABLED=0 go build -o xray -trimpath -buildvcs=false -ldflags="\-s -w -buil
 
 Make sure that you are using the same Go version, and remember to set the git commit id (7 bytes):
 
-CGO\_ENABLED=0 go build -o xray -trimpath -buildvcs=false -ldflags="\-X github.com/xtls/xray-core/core.build=REPLACE -s -w -buildid=" -v ./main
+CGO\_ENABLED=0 go build -o xray -trimpath -buildvcs=false -gcflags="all=-l=4" -ldflags="\-X github.com/xtls/xray-core/core.build=REPLACE -s -w -buildid=" -v ./main
+
+If you are compiling a 32-bit MIPS/MIPSLE target, use this command instead:
+
+CGO\_ENABLED=0 go build -o xray -trimpath -buildvcs=false -gcflags="\-l=4" -ldflags="\-X github.com/xtls/xray-core/core.build=REPLACE -s -w -buildid=" -v ./main
 
 Stargazers over time
 --------------------

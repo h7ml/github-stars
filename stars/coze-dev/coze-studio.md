@@ -1,6 +1,6 @@
 ---
 project: coze-studio
-stars: 15071
+stars: 15612
 description: An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.
 url: https://github.com/coze-dev/coze-studio
 ---
@@ -64,8 +64,6 @@ Quickstart
 
 Learn how to obtain and deploy the open-source version of Coze Studio, quickly build projects, and experience Coze Studio's open-source version.
 
-> Detailed steps and deployment requirements can be found in Quickstart.
-
 Environment requirements:
 
 -   Before installing Coze Studio, please ensure that your machine meets the following minimum system requirements: 2 Core、4 GB
@@ -90,9 +88,13 @@ Deployment steps:
         
         1.  Enter the directory `backend/conf/model`. Open the file `ark_doubao-seed-1.6.yaml`.
         2.  Set the fields `id`, `meta.conn_config.api_key`, `meta.conn_config.model`, and save the file.
-            -   **id**: The model ID in Coze Studio, defined by the developers themselves, must be a non-zero integer and globally unique. Do not modify the model ID after the model goes online.
-            -   **meta.conn\_config.api\_key**: The API Key for the model service, which in this example is the API Key for Volcengine Ark. Refer to Retrieve Volcengine Ark API Key for the acquisition method.
-            -   **meta.conn\_config.model**: The model ID of the model service, which in this example is the Endpoint ID of the Volcengine Ark doubao-seed-1.6 model access point. For retrieval methods, refer to Retrieve Endpoint ID.
+            
+            -   **id**: The model ID in Coze Studio, defined by the developer, must be a non-zero integer and globally unique. Agents or workflows call models based on model IDs. For models that have already been launched, do not modify their IDs; otherwise, it may result in model call failures.
+            -   **meta.conn\_config.api\_key**: The API Key for the model service. In this example, it is the API Key for Ark API Key. For more information, see Get Volcengine Ark API Key or Get BytePlus ModelArk API Key.
+            -   **meta.conn\_config.model**: The Model name for the model service. In this example, it refers to the Model ID or Endpoint ID of Ark. For more information, see Get Volcengine Ark Model ID / Get Volcengine Ark Endpoint ID or Get BytePlus ModelArk Model ID / Get BytePlus ModelArk Endpoint ID.
+            
+            > For users in China, you may use Volcengine Ark; for users outside China, you may use BytePlus ModelArk instead.
+            
 3.  Deploy and start the service. When deploying and starting Coze Studio for the first time, it may take a while to retrieve images and build local images. Please be patient. During deployment, you will see the following log information. If you see the message "Container coze-server Started," it means the Coze Studio service has started successfully.
     
     # Start the service
@@ -104,6 +106,10 @@ Deployment steps:
     
 4.  After starting the service, you can open Coze Studio by accessing `http://localhost:8888/` through your browser.
     
+
+Warning
+
+If you want to deploy Coze Studio in a public network environment, it is recommended to assess security risks before you begin, and take corresponding protection measures. Possible security risks include account registration functions, Python execution environments in workflow code nodes, Coze Server listening address configurations, SSRF (Server - Side Request Forgery), and some horizontal privilege escalations in APIs. For more details, refer to Quickstart.
 
 Developer Guide
 ---------------

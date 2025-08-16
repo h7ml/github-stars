@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69532
+stars: 69580
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -22,8 +22,6 @@ Table of Contents
 
 * * *
 
--   CS50: Introduction to Computer Science - Harvard (David J. Malan)  
-    Broad introduction to computer science including programming (C, Python, JavaScript), algorithms, data structures, software engineering, and web development.
 -   Introduction to Computer Science
 -   Data Structures and Algorithms
 -   Systems Programming
@@ -84,6 +82,7 @@ Courses
 -   Introduction to Computational Thinking - MIT
 -   CS 50 - Introduction to Computer Science, Harvard University (cs50.tv)
 -   CS50R - Introduction to Programming with R (Lecture Videos)
+-   CS50: Introduction to Computer Science with Python - Harvard (David J. Malan)
 -   CS 61A - Structure and Interpretation of Computer Programs \[Python\], UC Berkeley
 -   CPSC 110 - Systematic Program Design \[Racket\], University of British Columbia
 -   CS50's Understanding Technology
@@ -1217,6 +1216,7 @@ Courses
 -   3D Computer Vision - National University of Singapore
 -   Diagnostic Medical Image Processing - Fall 2014 - FAU (Fall 2011) (Fall 2010) (Fall 2009)
 -   Interventional Medical Image Processing - Spring 2016 - FAU (Spring 2015) (Spring 2012) (Spring 2011) (Spring 2009)
+-   Advances in Computer Vision - MIT
 
 * * *
 

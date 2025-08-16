@@ -1,6 +1,6 @@
 ---
 project: snapdom
-stars: 4943
+stars: 5360
 description: snapDOM captures HTML elements to images with exceptional speed and accuracy.
 url: https://github.com/zumerlab/snapdom
 ---
@@ -165,6 +165,22 @@ boolean
 
 Inlines fonts (icon fonts always embedded)
 
+`localFonts`
+
+array
+
+`[]`
+
+Array of local font descriptors `{ family, src, weight?, style? }`
+
+`iconFonts`
+
+string | RegExp | (string | RegExp)\[\]
+
+`[]`
+
+Additional icon font families or patterns
+
 `scale`
 
 number
@@ -219,7 +235,7 @@ string
 
 ''
 
-Specify a proxy for handling CORS images as fallback
+Specify a proxy for handling CORS images/fonts as fallback
 
 `type`
 
@@ -305,7 +321,8 @@ import { snapdom, preCache } from './snapdom.mjs';
 **Options for `preCache()`:**
 
 -   `embedFonts` _(boolean, default: true)_ — Inlines non-icon fonts during preload.
--   `useProxy` _(string)_ — Proxy for handling CORS images as fallback.
+-   `localFonts` _(array)_ — Array of `{ family, src, weight?, style? }` for local font sources.
+-   `useProxy` _(string)_ — Proxy for handling CORS images/fonts as fallback.
 
 Features
 --------

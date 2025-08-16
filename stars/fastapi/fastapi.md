@@ -1,6 +1,6 @@
 ---
 project: fastapi
-stars: 88198
+stars: 88444
 description: FastAPI framework, high performance, easy to learn, fast to code, ready for production
 url: https://github.com/fastapi/fastapi
 ---

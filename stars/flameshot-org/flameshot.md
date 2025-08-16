@@ -1,6 +1,6 @@
 ---
 project: flameshot
-stars: 27465
+stars: 27537
 description: Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:
 url: https://github.com/flameshot-org/flameshot
 ---
@@ -434,6 +434,10 @@ There are packages available in the repository of some Linux distributions:
 1.  Go to the Applications folder (Finder > Go > Applications, or Shift+Command+A)
 2.  Right-Click on "flameshot.app" and choose "Open" from the context menu
 3.  In the dialog click "Open"
+
+On MacOs 15 and above, you will have to go to system settings -> privacy and security after doing this and click "Open Anyway" or you can open flameshot first time with the following command.
+
+`sudo xattr -rd com.apple.quarantine /Applications/flameshot.app`
 
 After following all those steps above, `flameshot` will open without problems in your Mac.
 
