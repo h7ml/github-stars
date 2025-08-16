@@ -1,6 +1,6 @@
 ---
 project: mako
-stars: 2183
+stars: 2182
 description: An extremely fast, production-grade web bundler based on Rust.
 url: https://github.com/umijs/mako
 ---

@@ -1,6 +1,6 @@
 ---
 project: editly
-stars: 5051
+stars: 5083
 description: Slick, declarative command line video editing & API
 url: https://github.com/mifi/editly
 ---

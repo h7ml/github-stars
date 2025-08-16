@@ -1,7 +1,7 @@
 ---
 project: claude-relay-service
-stars: 1866
-description: 自建Claude code镜像服务，同时支持Gemini cli、Codex cli中转，支持多账户切换、自定义API密钥、Claude API、OPENAI兼容格式、能有效规避封号，OAuth集成可快捷添加账号池。
+stars: 2065
+description: 自建Claude-code镜像服务，同时支持Gemini-cli、Codex-cli中转，支持多账户切换、自定义API密钥、Claude API、OPENAI兼容格式、能有效规避封号，OAuth集成可快捷添加账号池。
 url: https://github.com/Wei-Shaw/claude-relay-service
 ---
 
@@ -177,11 +177,11 @@ crs uninstall # 卸载服务
 $ crs install
 
 # 会依次询问：
-安装目录 (默认: ~/claude-relay-service): 
+安装目录 (默认: ~/claude-relay-service):
 服务端口 (默认: 3000): 8080
-Redis 地址 (默认: localhost): 
-Redis 端口 (默认: 6379): 
-Redis 密码 (默认: 无密码): 
+Redis 地址 (默认: localhost):
+Redis 端口 (默认: 6379):
+Redis 密码 (默认: 无密码):
 
 # 安装完成后自动启动并显示：
 服务已成功安装并启动！
@@ -252,17 +252,23 @@ REDIS\_HOST=localhost
 REDIS\_PORT=6379
 REDIS\_PASSWORD=
 
+# Webhook通知配置（可选）
+WEBHOOK\_ENABLED=true
+WEBHOOK\_URLS=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your-key
+WEBHOOK\_TIMEOUT=10000
+WEBHOOK\_RETRIES=3
+
 **编辑 `config/config.js` 文件：**
 
 module.exports \= {
   server: {
-    port: 3000,          // 服务端口，可以改
-    host: '0.0.0.0'     // 不用改
+    port: 3000, // 服务端口，可以改
+    host: '0.0.0.0' // 不用改
   },
   redis: {
-    host: '127.0.0.1',  // Redis地址
-    port: 6379          // Redis端口
-  },
+    host: '127.0.0.1', // Redis地址
+    port: 6379 // Redis端口
+  }
   // 其他配置保持默认就行
 }
 
@@ -479,7 +485,7 @@ export OPENAI\_API\_KEY="后台创建的API密钥"  # 使用后台创建的API�
 
 ```
 # 如果工具支持Claude标准格式，请使用该接口
-http://你的服务器:3000/claude/  
+http://你的服务器:3000/claude/
 ```
 
 **OpenAI兼容格式：**
@@ -500,6 +506,66 @@ http://你的服务器:3000/openai/claude/v1/
 -   `/api/v1/messages` = `/claude/v1/messages` = `/openai/claude/v1/messages`
 -   选择适合你使用工具的格式即可
 -   支持所有Claude API端点（messages、models等）
+
+* * *
+
+📢 Webhook 通知功能
+---------------
+
+### 功能说明
+
+当系统检测到账号异常时，会自动发送 webhook 通知，支持企业微信、钉钉、Slack 等平台。
+
+### 通知触发场景
+
+-   **Claude OAuth 账户**: token 过期或未授权时
+-   **Claude Console 账户**: 系统检测到账户被封锁时
+-   **Gemini 账户**: token 刷新失败时
+-   **手动禁用账户**: 管理员手动禁用账户时
+
+### 配置方法
+
+**1\. 环境变量配置**
+
+# 启用 webhook 通知
+WEBHOOK\_ENABLED=true
+
+# 企业微信 webhook 地址（替换为你的实际地址）
+WEBHOOK\_URLS=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your-key
+
+# 多个地址用逗号分隔
+WEBHOOK\_URLS=https://webhook1.com,https://webhook2.com
+
+# 请求超时时间（毫秒，默认10秒）
+WEBHOOK\_TIMEOUT=10000
+
+# 重试次数（默认3次）
+WEBHOOK\_RETRIES=3
+
+**2\. 企业微信设置**
+
+1.  在企业微信群中添加「群机器人」
+2.  获取 webhook 地址：`https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx`
+3.  将地址配置到 `WEBHOOK_URLS` 环境变量
+
+### 通知内容格式
+
+系统会发送结构化的通知消息：
+
+```
+账户名称 账号异常，异常代码 ERROR_CODE
+平台：claude-oauth
+时间：2025-08-14 17:30:00
+原因：Token expired
+```
+
+### 测试 Webhook
+
+可以通过管理后台测试 webhook 连通性：
+
+1.  登录管理后台：`http://你的服务器:3000/web`
+2.  访问：`/admin/webhook/test`
+3.  发送测试通知确认配置正确
 
 * * *
 
@@ -674,12 +740,12 @@ your-domain.com {
     reverse_proxy 127.0.0.1:3000 {
         # 支持流式响应（SSE）
         flush_interval -1
-        
+
         # 传递真实IP
         header_up X-Real-IP {remote_host}
         header_up X-Forwarded-For {remote_host}
         header_up X-Forwarded-Proto {scheme}
-        
+
         # 超时设置（适合长连接）
         transport http {
             read_timeout 300s
@@ -687,7 +753,7 @@ your-domain.com {
             dial_timeout 30s
         }
     }
-    
+
     # 安全头部
     header {
         Strict-Transport-Security "max-age=31536000; includeSubDomains"
@@ -718,7 +784,7 @@ sudo systemctl status caddy
 module.exports \= {
   server: {
     port: 3000,
-    host: '127.0.0.1'  // 只监听本地，通过nginx代理
+    host: '127.0.0.1' // 只监听本地，通过nginx代理
   }
   // ... 其他配置
 }

@@ -1,6 +1,6 @@
 ---
 project: dewhale
-stars: 1519
+stars: 1523
 description: GitHub-Powered AI for effortless development. Start as an open-source alternative to v0.dev.
 url: https://github.com/Yuyz0112/dewhale
 ---

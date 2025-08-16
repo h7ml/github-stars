@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-Prompt-Engineering-for-Developers-in-Chinese
-stars: 1953
+stars: 1955
 description: 《面向开发者的 ChatGPT 提示词工程》非官方版中英双语字幕 Unofficial subtitles of "ChatGPT Prompt Engineering for Developers"
 url: https://github.com/GitHubDaily/ChatGPT-Prompt-Engineering-for-Developers-in-Chinese
 ---

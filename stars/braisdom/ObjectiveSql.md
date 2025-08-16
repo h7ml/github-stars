@@ -1,6 +1,6 @@
 ---
 project: ObjectiveSql
-stars: 1255
+stars: 1256
 description: Writing SQL using Java syntax
 url: https://github.com/braisdom/ObjectiveSql
 ---

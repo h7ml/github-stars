@@ -1,6 +1,6 @@
 ---
 project: hertzbeat
-stars: 6492
+stars: 6522
 description: Apache HertzBeat(incubating) is a real-time monitoring system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
 url: https://github.com/apache/hertzbeat
 ---

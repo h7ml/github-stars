@@ -1,6 +1,6 @@
 ---
 project: shanghai_house_knowledge
-stars: 5100
+stars: 5101
 description: 2020年11月在上海买房经历总结出来的买房购房做的一些功课分享给大家，技术人帮助技术人，希望对大家有所帮助。
 url: https://github.com/ayuer/shanghai_house_knowledge
 ---

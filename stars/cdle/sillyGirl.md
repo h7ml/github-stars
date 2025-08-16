@@ -1,6 +1,6 @@
 ---
 project: sillyGirl
-stars: 1291
+stars: 1290
 description: 傻妞机器人
 url: https://github.com/cdle/sillyGirl
 ---

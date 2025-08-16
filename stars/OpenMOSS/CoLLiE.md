@@ -1,6 +1,6 @@
 ---
 project: CoLLiE
-stars: 417
+stars: 416
 description: Collaborative Training of Large Language Models in an Efficient Way
 url: https://github.com/OpenMOSS/CoLLiE
 ---

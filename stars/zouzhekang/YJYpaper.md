@@ -1,6 +1,6 @@
 ---
 project: YJYpaper
-stars: 3505
+stars: 3555
 description: 一个用来记录武汉大学杨景媛论文问题的仓库
 url: https://github.com/zouzhekang/YJYpaper
 ---
@@ -44,7 +44,11 @@ url: https://github.com/zouzhekang/YJYpaper
 
 ❗博主（李然于心）被粉衣哥带几个金哥深夜登门拜访了！！！视频在夸克网盘，顿时有点害怕捏！！！
 
+包含上条内容的防和谐网盘：Filen 网盘
+
 杨景媛的硕士学位论文调查审核网盘：夸克网盘，有本项目缺少的印度数据。
+
+包含上条内容的防和谐网盘：Filen 网盘，解压后大小为5.45GB(MacOS 基准)。
 
 友情链接：杨景媛事件相关
 

@@ -1,6 +1,6 @@
 ---
 project: depcheck
-stars: 4923
+stars: 4926
 description: Check your npm module for unused dependencies
 url: https://github.com/depcheck/depcheck
 ---

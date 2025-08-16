@@ -1,6 +1,6 @@
 ---
 project: prompt-patterns
-stars: 3084
+stars: 3083
 description: Prompt 编写模式：如何将思维框架赋予机器，以设计模式的形式来思考 prompt
 url: https://github.com/phodal/prompt-patterns
 ---

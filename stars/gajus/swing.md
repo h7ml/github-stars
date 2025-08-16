@@ -1,6 +1,6 @@
 ---
 project: swing
-stars: 2638
+stars: 2637
 description: A swipeable cards interface. The swipe-left/swipe-right for yes/no input. As seen in apps like Jelly and Tinder.
 url: https://github.com/gajus/swing
 ---

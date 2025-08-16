@@ -1,6 +1,6 @@
 ---
 project: typescript-tutorial
-stars: 10636
+stars: 10639
 description: TypeScript 入门教程
 url: https://github.com/xcatliu/typescript-tutorial
 ---

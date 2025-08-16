@@ -1,6 +1,6 @@
 ---
 project: pnpm
-stars: 32341
+stars: 32369
 description: Fast, disk space efficient package manager
 url: https://github.com/pnpm/pnpm
 ---

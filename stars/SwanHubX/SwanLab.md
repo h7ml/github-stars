@@ -1,6 +1,6 @@
 ---
 project: SwanLab
-stars: 2426
+stars: 2448
 description: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / LLaMA Factory / veRL/ Swift / Ultralytics / MMEngine / Keras etc.
 url: https://github.com/SwanHubX/SwanLab
 ---

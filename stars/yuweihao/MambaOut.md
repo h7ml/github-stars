@@ -1,6 +1,6 @@
 ---
 project: MambaOut
-stars: 2492
+stars: 2498
 description: MambaOut: Do We Really Need Mamba for Vision? (CVPR 2025)
 url: https://github.com/yuweihao/MambaOut
 ---

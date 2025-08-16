@@ -1,6 +1,6 @@
 ---
 project: unplugin-unused
-stars: 95
+stars: 99
 description: Check unused dependencies.
 url: https://github.com/unplugin/unplugin-unused
 ---

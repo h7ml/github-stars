@@ -1,6 +1,6 @@
 ---
 project: vscode-office
-stars: 1187
+stars: 1188
 description: Let VSCode support previewing PDF, Excel, Word and other formats, and add markdown WYSIWYG editor.
 url: https://github.com/cweijan/vscode-office
 ---

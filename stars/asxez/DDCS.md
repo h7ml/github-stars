@@ -1,6 +1,6 @@
 ---
 project: DDCS
-stars: 248
+stars: 249
 description: Docker汉化脚本  DockerDesktop汉化脚本  Docker汉化  Docker Windows Docker MAC
 url: https://github.com/asxez/DDCS
 ---

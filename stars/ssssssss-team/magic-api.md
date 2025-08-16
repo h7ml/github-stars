@@ -1,6 +1,6 @@
 ---
 project: magic-api
-stars: 1719
+stars: 1724
 description: magic-api 是一个接口快速开发框架，通过Web页面编写脚本以及配置，自动映射为HTTP接口，无需定义Controller、Service、Dao、Mapper、XML、VO等Java对象
 url: https://github.com/ssssssss-team/magic-api
 ---

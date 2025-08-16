@@ -1,6 +1,6 @@
 ---
 project: VLOOK
-stars: 2152
+stars: 2158
 description: VLOOK™ 是优雅好用的 Typora/Markdown 主题包和增强插件。  VLOOK™ is an elegant and practical THEME PACKAGE × ENHANCEMENT PLUGIN for Typora/Markdown.
 url: https://github.com/MadMaxChow/VLOOK
 ---
@@ -111,6 +111,7 @@ keeps VLOOK™ running ☕️**
 -   1920 × 1080
 -   2560 × 1440
 -   2560 × 1600
+-   3840 × 2160
 
 * * *
 

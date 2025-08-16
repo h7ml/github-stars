@@ -1,6 +1,6 @@
 ---
 project: electerm
-stars: 12767
+stars: 12790
 description: 📻Terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC client(linux, mac, win)
 url: https://github.com/electerm/electerm
 ---
@@ -53,7 +53,7 @@ Install
 -   For Mac user: `brew install --cask electerm`
 -   With snap: `sudo snap install electerm --classic`
 -   For some Linux distribution, you can find it from OS default App store(Ubuntu, Deepin, Mint...).
--   For some linux OS, the `rpm`, `deb`, or `snap` release may not work, you can try the `tar.gz` release.
+-   For some linux OS, the `rpm`, `deb`, or `snap` release may not work, you can try the `tar.gz` or `.appImage` release.
 -   For Windows users, you can install it from windows store, command-line installer winget and scoop is also recommended:
 
 # winget https://github.com/microsoft/winget-cli
@@ -62,6 +62,10 @@ winget install electerm.electerm
 # scoop https://github.com/lukesampson/scoop
 scoop bucket add dorado https://github.com/chawyehsu/dorado
 scoop install dorado/electerm
+
+-   Install from Debian repository (for Debian/Ubuntu-based systems) with `apt` command
+
+Check https://electerm-repos.html5beta.com/deb
 
 -   Install from npm
 

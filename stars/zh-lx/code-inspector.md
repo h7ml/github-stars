@@ -1,6 +1,6 @@
 ---
 project: code-inspector
-stars: 2424
+stars: 2431
 description: 🚀 Click the dom to open your IDE and position the cursor at dom's source code location! 点击页面 dom 来打开 IDE 并将光标自动定位到源代码位置!
 url: https://github.com/zh-lx/code-inspector
 ---
@@ -39,18 +39,18 @@ The following are which compilers, web frameworks and editors we supported now:
     ✅ rspack / rsbuild  
     ✅ farm  
     ✅ esbuild  
-    ✅ turbopack (next.js v15+)  
-    ✅ nextjs / nuxt / umijs eg.  
+    ✅ turbopack  
+    ✅ mako  
     
 -   The following Web frameworks are currently supported:  
-    ✅ vue2  
-    ✅ vue3  
-    ✅ react  
+    ✅ vue2 / vue3 / nuxt  
+    ✅ react / nextjs / umijs  
     ✅ preact  
     ✅ solid  
     ✅ qwik  
     ✅ svelte  
-    ✅ astro
+    ✅ astro  
+    
 -   The following code editors are currently supported:  
     VSCode | Cursor | Windsurf | WebStorm | Atom | HBuilderX | PhpStorm | PyCharm | IntelliJ IDEA | and Others
 
@@ -175,97 +175,119 @@ Please check here for more usage information: code-inspector-plugin configuratio
     
     Click to expand configuration about: **nuxt**
     
-    For nuxt3.x :
-    
-    // nuxt.config.js
-    import { codeInspectorPlugin } from 'code-inspector-plugin';
-    
-    // https://nuxt.com/docs/api/configuration/nuxt-config
-    export default defineNuxtConfig({
-      vite: {
-        plugins: \[codeInspectorPlugin({ bundler: 'vite' })\],
-      },
-    });
-    
-    For nuxt2.x :
-    
-    // nuxt.config.js
-    import { codeInspectorPlugin } from 'code-inspector-plugin';
-    
-    export default {
-      build: {
-        extend(config) {
-          config.plugins.push(codeInspectorPlugin({ bundler: 'webpack' }));
-          return config;
-        },
-      },
-    };
+    -   For nuxt3.x :
+        
+        // nuxt.config.js
+        import { codeInspectorPlugin } from 'code-inspector-plugin';
+        
+        // https://nuxt.com/docs/api/configuration/nuxt-config
+        export default defineNuxtConfig({
+          vite: {
+            plugins: \[codeInspectorPlugin({ bundler: 'vite' })\],
+          },
+        });
+        
+    -   For nuxt2.x :
+        
+        // nuxt.config.js
+        import { codeInspectorPlugin } from 'code-inspector-plugin';
+        
+        export default {
+          build: {
+            extend(config) {
+              config.plugins.push(codeInspectorPlugin({ bundler: 'webpack' }));
+              return config;
+            },
+          },
+        };
+        
     
     Click to expand configuration about: **next.js**
     
-    For next.js(<= 14.x):
-    
-    // next.config.js
-    const { codeInspectorPlugin } \= require('code-inspector-plugin');
-    
-    const nextConfig \= {
-      webpack: (config, { dev, isServer }) \=> {
-        config.plugins.push(codeInspectorPlugin({ bundler: 'webpack' }));
-        return config;
-      },
-    };
-    
-    module.exports \= nextConfig;
-    
-    For next.js(15.0.x ~ 15.2.x):
-    
-    import type { NextConfig } from 'next';
-    import { codeInspectorPlugin } from 'code-inspector-plugin';
-    
-    const nextConfig: NextConfig \= {
-      experimental: {
-        turbo: {
-          rules: codeInspectorPlugin({
-            bundler: 'turbopack',
-          }),
-        },
-      },
-    };
-    
-    export default nextConfig;
-    
-    For next.js(>= 15.3.x):
-    
-    // next.config.js
-    import type { NextConfig } from 'next';
-    import { codeInspectorPlugin } from 'code-inspector-plugin';
-    
-    const nextConfig: NextConfig \= {
-      turbopack: {
-        rules: codeInspectorPlugin({
-          bundler: 'turbopack',
-        }),
-      },
-    };
-    
-    export default nextConfig;
+    -   For next.js(<= 14.x):
+        
+        // next.config.js
+        const { codeInspectorPlugin } \= require('code-inspector-plugin');
+        
+        const nextConfig \= {
+          webpack: (config, { dev, isServer }) \=> {
+            config.plugins.push(codeInspectorPlugin({ bundler: 'webpack' }));
+            return config;
+          },
+        };
+        
+        module.exports \= nextConfig;
+        
+    -   For next.js(15.0.x ~ 15.2.x):
+        
+        import type { NextConfig } from 'next';
+        import { codeInspectorPlugin } from 'code-inspector-plugin';
+        
+        const nextConfig: NextConfig \= {
+          experimental: {
+            turbo: {
+              rules: codeInspectorPlugin({
+                bundler: 'turbopack',
+              }),
+            },
+          },
+        };
+        
+        export default nextConfig;
+        
+    -   For next.js(>= 15.3.x):
+        
+        // next.config.js
+        import type { NextConfig } from 'next';
+        import { codeInspectorPlugin } from 'code-inspector-plugin';
+        
+        const nextConfig: NextConfig \= {
+          turbopack: {
+            rules: codeInspectorPlugin({
+              bundler: 'turbopack',
+            }),
+          },
+        };
+        
+        export default nextConfig;
+        
     
     Click to expand configuration about: **umi.js**
     
-    // umi.config.js or umirc.js
-    import { defineConfig } from '@umijs/max';
-    import { codeInspectorPlugin } from 'code-inspector-plugin';
-    
-    export default defineConfig({
-      chainWebpack(memo) {
-        memo.plugin('code-inspector-plugin').use(
-          codeInspectorPlugin({
-            bundler: 'webpack',
-          })
-        );
-      },
-      // other config
-    });
+    -   With webpack:
+        
+        // umi.config.js or umirc.js
+        import { defineConfig } from '@umijs/max';
+        import { codeInspectorPlugin } from 'code-inspector-plugin';
+        
+        export default defineConfig({
+          chainWebpack(memo) {
+            memo.plugin('code-inspector-plugin').use(
+              codeInspectorPlugin({
+                bundler: 'webpack',
+              })
+            );
+          },
+          // other config
+        });
+        
+    -   With mako:
+        
+        // .umirc.ts
+        import { defineConfig } from 'umi';
+        import { codeInspectorPlugin } from 'code-inspector-plugin';
+        
+        export default defineConfig({
+          // other config...
+          mako: {
+            plugins: \[
+              codeInspectorPlugin({
+                bundler: 'mako',
+              }),
+            \],
+          },
+        });
+        
     
     Click to expand configuration about: **astro**
     

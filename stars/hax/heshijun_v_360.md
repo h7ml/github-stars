@@ -1,6 +1,6 @@
 ---
 project: heshijun_v_360
-stars: 2447
+stars: 2446
 description: 贺师俊与360的劳动争议诉讼
 url: https://github.com/hax/heshijun_v_360
 ---

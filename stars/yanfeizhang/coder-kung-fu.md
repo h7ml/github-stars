@@ -1,6 +1,6 @@
 ---
 project: coder-kung-fu
-stars: 6649
+stars: 6650
 description: 开发内功修炼
 url: https://github.com/yanfeizhang/coder-kung-fu
 ---

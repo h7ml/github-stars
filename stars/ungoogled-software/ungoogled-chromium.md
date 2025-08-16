@@ -1,6 +1,6 @@
 ---
 project: ungoogled-chromium
-stars: 23329
+stars: 23374
 description: Google Chromium, sans integration with Google
 url: https://github.com/ungoogled-software/ungoogled-chromium
 ---

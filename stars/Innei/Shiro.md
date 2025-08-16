@@ -1,6 +1,6 @@
 ---
 project: Shiro
-stars: 3951
+stars: 3955
 description: 📜 A minimalist personal website embodying the purity of paper and freshness of snow.
 url: https://github.com/Innei/Shiro
 ---

@@ -1,6 +1,6 @@
 ---
 project: open-webui
-stars: 106419
+stars: 106857
 description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 url: https://github.com/open-webui/open-webui
 ---

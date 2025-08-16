@@ -1,6 +1,6 @@
 ---
 project: LetsgoFarmAutomate
-stars: 46
+stars: 47
 description: 腾讯先锋云游戏-元梦之星-星宝农场挂机脚本，仅支持Windows
 url: https://github.com/izhangguapi/LetsgoFarmAutomate
 ---
@@ -59,9 +59,13 @@ url: https://github.com/izhangguapi/LetsgoFarmAutomate
 更新日志
 ----
 
+#### 25.08.15 更新日志：
+
+1.  解决云游戏无限重连的问题
+
 #### 25.08.10 更新日志：
 
-1.  游戏网络波动自动重连
+1.  游戏内的网络波动自动重连
 
 #### 25.07.29 更新日志：
 

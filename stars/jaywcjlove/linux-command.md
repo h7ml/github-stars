@@ -1,9 +1,21 @@
 ---
 project: linux-command
-stars: 33972
+stars: 34000
 description: Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux
 url: https://github.com/jaywcjlove/linux-command
 ---
+
+Special thanks to:  
+  
+  
+**Warp, the intelligent terminal for developers!**  
+Available for MacOS, Linux, & Windows  
+  
+
+  
+  
+
+* * *
 
 Linux Command
 =============

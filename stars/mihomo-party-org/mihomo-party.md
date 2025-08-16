@@ -1,6 +1,6 @@
 ---
 project: mihomo-party
-stars: 15039
+stars: 15141
 description: :electron: Another Mihomo GUI. 
 url: https://github.com/mihomo-party-org/mihomo-party
 ---

@@ -1,6 +1,6 @@
 ---
 project: dify
-stars: 110661
+stars: 111092
 description: Production-ready platform for agentic workflow development.
 url: https://github.com/langgenius/dify
 ---
@@ -198,7 +198,8 @@ Deploy Dify to AWS with CDK
 
 ##### AWS
 
--   AWS CDK by @KevinZhao
+-   AWS CDK by @KevinZhao (EKS based)
+-   AWS CDK by @tmokmss (ECS based)
 
 #### Using Alibaba Cloud Computing Nest
 

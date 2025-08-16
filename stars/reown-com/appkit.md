@@ -1,6 +1,6 @@
 ---
 project: appkit
-stars: 5210
+stars: 5214
 description: The full stack toolkit to build onchain app UX
 url: https://github.com/reown-com/appkit
 ---

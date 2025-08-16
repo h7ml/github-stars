@@ -1,6 +1,6 @@
 ---
 project: ChuanhuChatGPT
-stars: 15397
+stars: 15395
 description: GUI for ChatGPT API and many LLMs. Supports agents, file-based QA, GPT finetuning and query with web search. All with a neat UI.
 url: https://github.com/GaiZhenbiao/ChuanhuChatGPT
 ---

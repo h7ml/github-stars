@@ -1,6 +1,6 @@
 ---
 project: fs-project
-stars: 215
+stars: 216
 description: 低代码，在线表单，工作流程，智能报表，大屏设计，应用设计，自动化运维，数据治理，商业智能，任务编排。
 url: https://github.com/iisquare/fs-project
 ---

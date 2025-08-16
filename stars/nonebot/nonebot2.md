@@ -1,6 +1,6 @@
 ---
 project: nonebot2
-stars: 6939
+stars: 6946
 description: 跨平台 Python 异步聊天机器人框架 / Asynchronous multi-platform chatbot framework written in Python
 url: https://github.com/nonebot/nonebot2
 ---
@@ -138,12 +138,6 @@ NoneBot2 是一个现代、跨平台、可扩展的 Python 聊天机器人框架
     
     由社区贡献
     
-    BiliBili Live（仓库）
-    
-    ↗️
-    
-    由社区贡献
-    
     Walle-Q（仓库）
     
     ↗️
@@ -197,6 +191,18 @@ NoneBot2 是一个现代、跨平台、可扩展的 Python 聊天机器人框架
     ↗️
     
     恒五聊平台协议，由社区贡献
+    
+    VoceChat （仓库，协议）
+    
+    ↗️
+    
+    VoceChat 平台协议，由社区贡献
+    
+    B站直播间（仓库，Web API 协议，开放平台协议）
+    
+    ↗️
+    
+    B站直播间（Web API/开放平台）协议，由社区贡献
     
 -   坚实后盾：支持多种 web 框架，可自定义替换、组合
     

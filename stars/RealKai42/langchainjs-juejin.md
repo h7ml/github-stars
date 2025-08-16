@@ -1,6 +1,6 @@
 ---
 project: langchainjs-juejin
-stars: 102
+stars: 103
 description: 从前端到 AI：langchain.js 入门和实战
 url: https://github.com/RealKai42/langchainjs-juejin
 ---

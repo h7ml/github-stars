@@ -1,6 +1,6 @@
 ---
 project: aspoem
-stars: 2801
+stars: 2800
 description: Learn Chinese Poetry With AsPoem.com
 url: https://github.com/meetqy/aspoem
 ---

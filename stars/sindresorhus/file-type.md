@@ -1,6 +1,6 @@
 ---
 project: file-type
-stars: 4089
+stars: 4090
 description: Detect the file type of a file, stream, or data
 url: https://github.com/sindresorhus/file-type
 ---

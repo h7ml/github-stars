@@ -1,6 +1,6 @@
 ---
 project: menujs
-stars: 333
+stars: 334
 description: Vue2 原生实现右键菜单组件, 零依赖
 url: https://github.com/GitHub-Laziji/menujs
 ---

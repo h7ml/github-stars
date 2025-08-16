@@ -1,6 +1,6 @@
 ---
 project: tampermonkey-learn-guide
-stars: 145
+stars: 147
 description: tampermonkey learn guide help script rookie learn how to write script 帮助脚本新人零基础入门油猴开发由浅入深
 url: https://github.com/scriptscat/tampermonkey-learn-guide
 ---

@@ -1,6 +1,6 @@
 ---
 project: conventional-changelog
-stars: 8201
+stars: 8207
 description: Generate changelogs and release notes from a project's commit messages and metadata.
 url: https://github.com/conventional-changelog/conventional-changelog
 ---

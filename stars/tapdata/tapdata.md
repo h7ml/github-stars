@@ -1,6 +1,6 @@
 ---
 project: tapdata
-stars: 597
+stars: 598
 description: Tapdata Live Data Platform Project
 url: https://github.com/tapdata/tapdata
 ---

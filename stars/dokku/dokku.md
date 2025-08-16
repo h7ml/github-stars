@@ -1,6 +1,6 @@
 ---
 project: dokku
-stars: 30981
+stars: 31009
 description: A docker-powered PaaS that helps you build and manage the lifecycle of applications
 url: https://github.com/dokku/dokku
 ---

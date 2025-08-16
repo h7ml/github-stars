@@ -1,6 +1,6 @@
 ---
 project: airtable.js
-stars: 2118
+stars: 2120
 description: Airtable javascript client
 url: https://github.com/Airtable/airtable.js
 ---

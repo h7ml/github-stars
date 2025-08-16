@@ -1,6 +1,6 @@
 ---
 project: core
-stars: 51272
+stars: 51320
 description: 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 url: https://github.com/vuejs/core
 ---

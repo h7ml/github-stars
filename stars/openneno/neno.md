@@ -1,6 +1,6 @@
 ---
 project: neno
-stars: 530
+stars: 531
 description: 使用svelte+tailwindcss 仿照 浮墨 写的pwa应用
 url: https://github.com/openneno/neno
 ---

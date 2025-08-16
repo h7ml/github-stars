@@ -1,7 +1,7 @@
 ---
 project: panhub.shenzjd.com
-stars: 14
-description: PanHub 是一个全网最全的网盘搜索工具。它可以聚合多个优质资源站和公开频道,一次搜索即可覆盖阿里云盘、夸克、百度网盘、115、迅雷等热门网盘资源。它提供智能排序、分类型展示、极速部署等功能,并且是免费开源、零广告、轻量部署的。
+stars: 23
+description: 一个 聚合的网盘搜索工具。它可以聚合多个优质资源站和公开频道,一次搜索即可覆盖阿里云盘、夸克、百度网盘、115、迅雷等热门网盘资源。它提供智能排序、分类型展示、极速部署等功能,并且是免费开源、零广告、轻量部署的。
 url: https://github.com/wu529778790/panhub.shenzjd.com
 ---
 
@@ -27,47 +27,18 @@ PanHub · 全网最全的网盘搜索
 
 * * *
 
-一键部署到 Cloudflare Workers
-------------------------
-
--   点击上方按钮，按向导授权并创建项目即可自动构建与发布。
--   若你已 fork 本仓库，点击后可在向导中选择你的 fork 进行部署。
-
-部署完成后，可在 Cloudflare Dashboard 为 Worker 绑定自定义域名，一般 1 分钟内全球生效。
-
-* * *
-
 一键部署到 Vercel
 ------------
 
-> 必须配置环境变量：在 `Settings → Environment Variables` 新增`NITRO_PRESET=vercel`
+* * *
+
+一键部署到 Cloudflare Workers
+------------------------
 
 * * *
 
 Docker 部署
 ---------
-
-> 已提供 `Dockerfile`，镜像构建后运行一个 Node 版 Nitro 服务，默认监听 `3000` 端口。
-
-### 1) 直接构建并运行
-
-docker build -t panhub:latest .
-docker run --name panhub -p 3000:3000 -d panhub:latest
-
-访问：`http://localhost:3000`
-
-### 2) 使用预构建镜像（GHCR / Docker Hub）
-
-本仓库已配置 CI 自动将镜像推送到 GHCR 与 Docker Hub：
-
--   GHCR：`ghcr.io/<owner>/<repo>:<tag>`
--   Docker Hub：`docker.io/wu529778790/<repo>:<tag>`
-
-其中：
-
--   `latest`: 始终指向最近一次构建
--   `<version>`: 来自 `package.json` 的版本号（如 `1.0.0`）
--   还包含分支名（如 `:main`）和提交 SHA 标签
 
 # GHCR
 docker pull ghcr.io/wu529778790/panhub.shenzjd.com:latest

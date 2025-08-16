@@ -1,6 +1,6 @@
 ---
 project: nodejieba
-stars: 3173
+stars: 3174
 description: "结巴"中文分词的Node.js版本
 url: https://github.com/yanyiwu/nodejieba
 ---

@@ -1,6 +1,6 @@
 ---
 project: Github-Ranking
-stars: 8754
+stars: 8778
 description: :star:Github Ranking:star: Github stars and forks ranking list. Github Top100 stars list of different languages. Automatically update daily. | Github仓库排名，每日自动更新
 url: https://github.com/EvanLi/Github-Ranking
 ---
@@ -10,7 +10,7 @@ Github Ranking
 
 **A list of the most github stars and forks repositories.**
 
-_Last Automatic Update Time: 2025-08-12T04:06:54Z_
+_Last Automatic Update Time: 2025-08-16T04:06:56Z_
 
 Sponsor me
 ----------
@@ -84,29 +84,29 @@ Last Commit
 
 freeCodeCamp
 
-425562
+425837
 
-41159
+41203
 
 TypeScript
 
-192
+197
 
 freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
 
-2025-08-11T16:03:33Z
+2025-08-15T15:31:00Z
 
 2
 
 build-your-own-x
 
-409236
+410623
 
-38361
+38509
 
 Markdown
 
-219
+221
 
 Master programming by recreating your favorite technologies from scratch.
 
@@ -116,9 +116,9 @@ Master programming by recreating your favorite technologies from scratch.
 
 awesome
 
-390878
+392022
 
-31116
+31186
 
 None
 
@@ -132,9 +132,9 @@ None
 
 free-programming-books
 
-364875
+365126
 
-63890
+63907
 
 Python
 
@@ -148,13 +148,13 @@ Python
 
 public-apis
 
-360789
+361435
 
-37857
+37930
 
 Python
 
-2
+8
 
 A collective list of free APIs
 
@@ -164,25 +164,25 @@ A collective list of free APIs
 
 developer-roadmap
 
-333587
+333867
 
-42550
+42573
 
 TypeScript
 
-250
+246
 
 Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 
-2025-08-11T12:37:52Z
+2025-08-16T00:13:22Z
 
 7
 
 coding-interview-university
 
-324133
+324304
 
-79841
+79864
 
 None
 
@@ -196,9 +196,9 @@ A complete computer science study plan to become a software engineer.
 
 system-design-primer
 
-315405
+316106
 
-51738
+51808
 
 Python
 
@@ -212,7 +212,7 @@ Learn how to design large-scale systems. Prep for the system design interview. I
 
 996.ICU
 
-273986
+274045
 
 21074
 
@@ -228,9 +228,9 @@ Repo for counting stars and contributing. Press F to pay respect to glorious dev
 
 awesome-python
 
-254559
+255178
 
-26098
+26120
 
 Python
 
@@ -265,9 +265,9 @@ Last Commit
 
 datasharing
 
-6631
+6632
 
-243569
+243562
 
 None
 
@@ -281,13 +281,13 @@ The Leek group guide to data sharing
 
 Spoon-Knife
 
-13159
+13165
 
-152631
+152690
 
 HTML
 
-2446
+2456
 
 This repo is for demonstration purposes only.
 
@@ -299,11 +299,11 @@ ProgrammingAssignment2
 
 863
 
-144021
+143997
 
 R
 
-200
+201
 
 Repository for Programming Assignment 2 for R Programming on Coursera
 
@@ -313,25 +313,25 @@ Repository for Programming Assignment 2 for R Programming on Coursera
 
 first-contributions
 
-49851
+49910
 
-89604
+89838
 
 None
 
-21
+24
 
 🚀✨ Help beginners to contribute to open source projects
 
-2025-08-12T03:13:19Z
+2025-08-16T01:51:33Z
 
 5
 
 SmartThingsPublic
 
-2609
+2610
 
-88944
+88927
 
 Groovy
 
@@ -345,13 +345,13 @@ SmartThings open-source DeviceType Handlers and SmartApps code
 
 Complete-Python-3-Bootcamp
 
-28773
+28798
 
-87136
+87149
 
 Jupyter Notebook
 
-143
+144
 
 Course Files for Complete Python 3 Bootcamp Course on Udemy
 
@@ -361,9 +361,9 @@ Course Files for Complete Python 3 Bootcamp Course on Udemy
 
 css-exercises
 
-2402
+2416
 
-83141
+83316
 
 HTML
 
@@ -377,9 +377,9 @@ None
 
 gitignore
 
-168583
+168674
 
-83031
+83026
 
 None
 
@@ -393,9 +393,9 @@ A collection of useful .gitignore templates
 
 coding-interview-university
 
-324133
+324304
 
-79841
+79864
 
 None
 
@@ -409,9 +409,9 @@ A complete computer science study plan to become a software engineer.
 
 bootstrap
 
-172824
+172845
 
-79119
+79127
 
 MDX
 
@@ -419,7 +419,7 @@ MDX
 
 The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
-2025-08-10T20:01:37Z
+2025-08-15T06:34:23Z
 
 ActionScript
 ------------
@@ -446,7 +446,7 @@ Last Commit
 
 VVVVVV
 
-7817
+7815
 
 584
 
@@ -462,7 +462,7 @@ The source code to VVVVVV! http://thelettervsixtim.es/
 
 open-source-flash
 
-7326
+7324
 
 111
 
@@ -478,7 +478,7 @@ Petition to open source Flash and Shockwave spec
 
 Starling-Framework
 
-2953
+2957
 
 821
 
@@ -590,9 +590,9 @@ Signals is a new approach for AS3 events, inspired by C# events and signals/slot
 
 bfxr
 
-1012
+1013
 
-93
+92
 
 ActionScript
 
@@ -627,9 +627,9 @@ Last Commit
 
 linux
 
-199471
+199817
 
-57276
+57314
 
 C
 
@@ -637,31 +637,31 @@ C
 
 Linux kernel source tree
 
-2025-08-12T03:58:54Z
+2025-08-15T23:02:19Z
 
 2
 
 scrcpy
 
-126411
+126626
 
-11834
+11856
 
 C
 
-2445
+2449
 
 Display and control your Android device
 
-2025-07-20T17:18:47Z
+2025-08-12T17:04:09Z
 
 3
 
 netdata
 
-75450
+75546
 
-6105
+6118
 
 C
 
@@ -669,35 +669,35 @@ C
 
 The fastest path to AI-powered full stack observability, even for lean teams.
 
-2025-08-12T00:24:34Z
+2025-08-16T00:23:36Z
 
 4
 
 redis
 
-70406
+70481
 
-24159
+24177
 
 C
 
-2146
+2147
 
 For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.
 
-2025-08-12T03:45:35Z
+2025-08-15T07:15:16Z
 
 5
 
 Ventoy
 
-69770
+69854
 
-4435
+4438
 
 C
 
-925
+926
 
 A new bootable USB solution.
 
@@ -707,13 +707,13 @@ A new bootable USB solution.
 
 obs-studio
 
-66142
+66209
 
-8603
+8616
 
 C
 
-663
+669
 
 OBS Studio - Free and open source software for live streaming and screen recording
 
@@ -723,9 +723,9 @@ OBS Studio - Free and open source software for live streaming and screen recordi
 
 git
 
-55986
+56035
 
-26511
+26530
 
 C
 
@@ -733,15 +733,15 @@ C
 
 Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
 
-2025-08-11T23:56:17Z
+2025-08-15T22:30:55Z
 
 8
 
 FFmpeg
 
-52045
+52222
 
-12908
+12921
 
 C
 
@@ -749,15 +749,15 @@ C
 
 Mirror of https://git.ffmpeg.org/ffmpeg.git
 
-2025-08-11T21:24:03Z
+2025-08-16T00:25:18Z
 
 9
 
 wrk
 
-39360
+39366
 
-3011
+3013
 
 C
 
@@ -771,17 +771,17 @@ Modern HTTP benchmarking tool
 
 php-src
 
-39343
+39357
 
-7925
+7930
 
 C
 
-821
+820
 
 The PHP Interpreter
 
-2025-08-11T21:06:00Z
+2025-08-15T20:34:21Z
 
 C#
 --
@@ -808,41 +808,41 @@ Last Commit
 
 PowerToys
 
-122072
+122222
 
-7277
+7289
 
 C#
 
-6903
+6954
 
 Windows system utilities to maximize productivity
 
-2025-08-12T03:04:54Z
+2025-08-15T21:25:21Z
 
 2
 
 v2rayN
 
-84755
+85001
 
-13090
+13126
 
 C#
 
-16
+10
 
 A GUI client for Windows, Linux and macOS, support Xray and sing-box and others
 
-2025-08-11T12:46:36Z
+2025-08-15T09:23:11Z
 
 3
 
 shadowsocks-windows
 
-58965
+58977
 
-16352
+16354
 
 C#
 
@@ -856,113 +856,113 @@ A C# port of shadowsocks
 
 PowerShell
 
-48168
+48197
 
-7776
+7782
 
 C#
 
-1096
+1106
 
 PowerShell for every system!
 
-2025-08-11T12:19:10Z
+2025-08-15T20:10:46Z
 
 5
 
 jellyfin
 
-42588
+42677
 
-3802
+3807
 
 C#
 
-385
+386
 
 The Free Software Media System - Server Backend & API
 
-2025-08-11T19:06:49Z
+2025-08-16T00:52:43Z
 
 6
 
 Files
 
-38089
+38160
 
-2388
+2391
 
 C#
 
-493
+495
 
 A modern file manager that helps users organize their files and folders.
 
-2025-08-12T04:00:48Z
+2025-08-15T15:15:27Z
 
 7
 
 aspnetcore
 
-36953
+36977
 
-10418
+10423
 
 C#
 
-3606
+3571
 
 ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.
 
-2025-08-12T02:02:21Z
+2025-08-16T02:13:26Z
 
 8
 
 RevokeMsgPatcher
 
-34018
+34120
 
-3748
+3751
 
 C#
 
-45
+40
 
 A hex editor for WeChat/QQ/TIM - PC版微信/QQ/TIM防撤回补丁（我已经看到了，撤回也没用了）
 
-2025-08-10T07:21:20Z
+2025-08-15T14:56:42Z
 
 9
 
 ShareX
 
-33274
+33327
 
-3438
+3439
 
 C#
 
-504
+509
 
 ShareX is a free and open-source application that enables users to capture or record any area of their screen with a single keystroke. It also supports uploading images, text, and various file types to a wide range of destinations.
 
-2025-08-12T02:52:53Z
+2025-08-15T03:26:38Z
 
 10
 
 DevToys
 
-29638
+29682
 
-1610
+1616
 
 C#
 
-274
+275
 
 A Swiss Army knife for developers.
 
-2025-08-01T23:37:05Z
+2025-08-14T21:37:41Z
 
 C++
 ---
@@ -989,41 +989,41 @@ Last Commit
 
 tensorflow
 
-191142
+191190
 
-74766
+74768
 
 C++
 
-887
+888
 
 An Open Source Machine Learning Framework for Everyone
 
-2025-08-12T03:58:11Z
+2025-08-16T03:52:49Z
 
 2
 
 react-native
 
-123371
+123425
 
-24791
+24813
 
 C++
 
-649
+656
 
 A framework for building native applications using React
 
-2025-08-11T22:42:10Z
+2025-08-16T00:32:38Z
 
 3
 
 electron
 
-117845
+117901
 
-16294
+16316
 
 C++
 
@@ -1031,99 +1031,99 @@ C++
 
 Build cross-platform desktop apps with JavaScript, HTML, and CSS
 
-2025-08-12T03:30:26Z
+2025-08-15T23:59:05Z
 
 4
 
 godot
 
-99808
+100241
 
-22969
+22987
 
 C++
 
-12041
+12066
 
 Godot Engine – Multi-platform 2D and 3D game engine
 
-2025-08-11T14:58:29Z
+2025-08-15T18:04:34Z
 
 5
 
 terminal
 
-99161
+99207
 
-8686
+8692
 
 C++
 
-1603
+1598
 
 The new Windows Terminal and the original Windows console host, all in the same place!
 
-2025-08-12T03:04:23Z
+2025-08-16T01:31:22Z
 
 6
 
 bitcoin
 
-84992
+85037
 
-37628
+37641
 
 C++
 
-408
+411
 
 Bitcoin Core integration/staging tree
 
-2025-08-11T22:16:17Z
+2025-08-15T23:38:33Z
 
 7
 
 llama.cpp
 
-84621
+84915
 
-12670
+12715
 
 C++
 
-316
+321
 
 LLM inference in C/C++
 
-2025-08-12T03:01:30Z
+2025-08-15T18:47:19Z
 
 8
 
 opencv
 
-83472
+83537
 
-56246
+56245
 
 C++
 
-2608
+2604
 
 Open Source Computer Vision Library
 
-2025-08-11T10:55:03Z
+2025-08-15T12:15:03Z
 
 9
 
 gpt4all
 
-75470
+76387
 
-8161
+8237
 
 C++
 
-697
+698
 
 GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.
 
@@ -1133,17 +1133,17 @@ GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial 
 
 swift
 
-68941
+68957
 
-10517
+10519
 
 C++
 
-7331
+7346
 
 The Swift Programming Language
 
-2025-08-12T01:42:24Z
+2025-08-16T03:16:00Z
 
 Clojure
 -------
@@ -1170,13 +1170,13 @@ Last Commit
 
 FiraCode
 
-79847
+79893
 
-3168
+3169
 
 Clojure
 
-409
+410
 
 Free monospaced font with programming ligatures
 
@@ -1186,55 +1186,55 @@ Free monospaced font with programming ligatures
 
 metabase
 
-43192
+43270
 
-5794
+5802
 
 Clojure
 
-3580
+3600
 
 The easy-to-use open source Business Intelligence and Embedded Analytics tool that lets everyone work with data 📊
 
-2025-08-12T03:52:34Z
+2025-08-16T01:41:00Z
 
 3
 
 penpot
 
-39530
+39595
 
-2107
+2116
 
 Clojure
 
-481
+487
 
 Penpot: The open-source design tool for design and code collaboration
 
-2025-08-11T18:52:42Z
+2025-08-14T14:24:59Z
 
 4
 
 logseq
 
-37930
+37985
 
 2262
 
 Clojure
 
-1234
+1232
 
 A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap
 
-2025-08-12T03:58:39Z
+2025-08-15T15:34:54Z
 
 5
 
 LightTable
 
-11713
+11710
 
 916
 
@@ -1252,7 +1252,7 @@ clojurescript
 
 9315
 
-792
+791
 
 Clojure
 
@@ -1260,15 +1260,15 @@ Clojure
 
 Clojure to JS compiler
 
-2025-08-12T02:59:07Z
+2025-08-12T10:46:22Z
 
 7
 
 instant
 
-9131
+9144
 
-285
+286
 
 Clojure
 
@@ -1276,29 +1276,29 @@ Clojure
 
 Instant is a modern Firebase. We make you productive by giving your frontend a real-time database.
 
-2025-08-12T00:21:51Z
+2025-08-15T23:36:13Z
 
 8
 
 leiningen
 
-7291
+7293
 
-1598
+1599
 
 Clojure
 
-96
+95
 
 Moved to Codeberg; this is a convenience mirror
 
-2025-07-16T00:05:20Z
+2025-08-15T20:14:23Z
 
 9
 
 jepsen
 
-7128
+7132
 
 735
 
@@ -1316,7 +1316,7 @@ om
 
 6645
 
-359
+358
 
 Clojure
 
@@ -1351,13 +1351,13 @@ Last Commit
 
 SwitchyOmega
 
-22330
+22343
 
-3487
+3489
 
 CoffeeScript
 
-784
+785
 
 No longer maintained, see pinned issues
 
@@ -1367,9 +1367,9 @@ No longer maintained, see pinned issues
 
 mojs
 
-18643
+18645
 
-890
+889
 
 CoffeeScript
 
@@ -1383,7 +1383,7 @@ The motion graphics toolbelt for the web
 
 coffeescript
 
-16570
+16569
 
 1982
 
@@ -1399,7 +1399,7 @@ Unfancy JavaScript
 
 zxcvbn
 
-15601
+15607
 
 997
 
@@ -1415,7 +1415,7 @@ Low-Budget Password Strength Estimation
 
 dynamics.js
 
-7577
+7576
 
 413
 
@@ -1431,9 +1431,9 @@ Javascript library to create physics-based animations
 
 morris.js
 
-6900
+6899
 
-1215
+1214
 
 CoffeeScript
 
@@ -1463,7 +1463,7 @@ Add Github like mentions autocomplete to your application.
 
 node-xml2js
 
-4959
+4958
 
 609
 
@@ -1495,7 +1495,7 @@ An API Blueprint renderer with theme support that outputs static HTML
 
 vibrant.js
 
-4611
+4609
 
 235
 
@@ -1532,9 +1532,9 @@ Last Commit
 
 animate.css
 
-82027
+82039
 
-16177
+16174
 
 CSS
 
@@ -1548,13 +1548,13 @@ CSS
 
 nerd-fonts
 
-59107
+59166
 
-3781
+3787
 
 CSS
 
-26
+27
 
 Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more
 
@@ -1564,9 +1564,9 @@ Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: 
 
 normalize.css
 
-53347
+53355
 
-10545
+10540
 
 CSS
 
@@ -1580,9 +1580,9 @@ A modern alternative to CSS resets
 
 bulma
 
-49884
+49887
 
-3945
+3944
 
 CSS
 
@@ -1596,25 +1596,25 @@ Modern CSS framework based on Flexbox
 
 AdminLTE
 
-44904
+44915
 
-18272
+18271
 
 CSS
 
-140
+144
 
 AdminLTE - Free admin dashboard template based on Bootstrap 5
 
-2025-08-07T16:50:08Z
+2025-08-15T09:11:33Z
 
 6
 
 CppCoreGuidelines
 
-44050
+44067
 
-5501
+5499
 
 CSS
 
@@ -1628,9 +1628,9 @@ The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best 
 
 50projects50days
 
-39513
+39540
 
-9595
+9598
 
 CSS
 
@@ -1644,9 +1644,9 @@ CSS
 
 freecodecamp.cn
 
-37452
+37456
 
-1388
+1391
 
 CSS
 
@@ -1660,9 +1660,9 @@ FCC China open source codebase and curriculum. Learn to code and help nonprofits
 
 hangzhou\_house\_knowledge
 
-26937
+26938
 
-5277
+5278
 
 CSS
 
@@ -1676,9 +1676,9 @@ CSS
 
 awesome-english-ebooks
 
-25179
+25232
 
-2035
+2037
 
 CSS
 
@@ -1686,7 +1686,7 @@ CSS
 
 经济学人(含音频)、纽约客、卫报、连线、大西洋月刊等英语杂志免费下载,支持epub、mobi、pdf格式, 每周更新
 
-2025-08-08T21:45:36Z
+2025-08-15T21:45:40Z
 
 Dart
 ----
@@ -1713,41 +1713,41 @@ Last Commit
 
 flutter
 
-171799
+171875
 
-29004
+29021
 
 Dart
 
-11891
+11888
 
 Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
-2025-08-12T03:05:29Z
+2025-08-16T02:48:48Z
 
 2
 
 localsend
 
-65820
+66008
 
-3513
+3518
 
 Dart
 
-776
+779
 
 An open-source cross-platform alternative to AirDrop
 
-2025-08-09T09:02:10Z
+2025-08-14T20:26:06Z
 
 3
 
 AppFlowy
 
-64838
+64917
 
-4490
+4496
 
 Dart
 
@@ -1755,15 +1755,15 @@ Dart
 
 Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative.
 
-2025-08-05T13:51:16Z
+2025-08-13T12:16:13Z
 
 4
 
 awesome-flutter
 
-56793
+56841
 
-6783
+6784
 
 Dart
 
@@ -1777,9 +1777,9 @@ An awesome list that curates the best Flutter libraries, tools, tutorials, artic
 
 spotube
 
-40965
+41001
 
-1755
+1756
 
 Dart
 
@@ -1787,15 +1787,15 @@ Dart
 
 🎧 Open source music client! Available for both desktop & mobile!
 
-2025-08-08T17:54:07Z
+2025-08-15T15:39:12Z
 
 6
 
 flutter-go
 
-23712
+23715
 
-3792
+3791
 
 Dart
 
@@ -1809,13 +1809,13 @@ flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与
 
 hiddify-app
 
-22765
+22822
 
-2000
+2008
 
 Dart
 
-506
+507
 
 Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure and ad-free.
 
@@ -1825,29 +1825,29 @@ Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Re
 
 revanced-manager
 
-22544
+22593
 
-885
+888
 
 Dart
 
-116
+117
 
 💊 Application to use ReVanced on Android
 
-2025-08-11T12:05:50Z
+2025-08-15T03:47:59Z
 
 9
 
 Best-Flutter-UI-Templates
 
-21908
+21920
 
-4733
+4740
 
 Dart
 
-8
+9
 
 completely free for everyone. Its build-in Flutter Dart.
 
@@ -1857,7 +1857,7 @@ completely free for everyone. Its build-in Flutter Dart.
 
 FlutterExampleApps
 
-21198
+21207
 
 3813
 
@@ -1894,17 +1894,17 @@ Last Commit
 
 tgstation
 
-1834
+1833
 
-5012
+5016
 
 DM
 
-2148
+2156
 
 The /tg/station branch of SS13.
 
-2025-08-12T01:07:50Z
+2025-08-16T01:07:46Z
 
 2
 
@@ -1912,7 +1912,7 @@ Paradise
 
 429
 
-1274
+1275
 
 DM
 
@@ -1920,7 +1920,7 @@ DM
 
 Paradise Station's GitHub main repository.
 
-2025-08-12T03:43:50Z
+2025-08-16T01:53:24Z
 
 3
 
@@ -1928,7 +1928,7 @@ Baystation12
 
 413
 
-1651
+1650
 
 DM
 
@@ -1936,7 +1936,7 @@ DM
 
 Baystation's flavor of Space Station 13
 
-2025-08-12T02:04:57Z
+2025-08-15T15:34:25Z
 
 4
 
@@ -1944,31 +1944,31 @@ goonstation
 
 389
 
-1602
+1604
 
 DM
 
-2567
+2586
 
 Repository for the Goonstation branch of SS13
 
-2025-08-11T19:33:43Z
+2025-08-15T23:22:40Z
 
 5
 
 vgstation13
 
-269
+270
 
 550
 
 DM
 
-3202
+3227
 
 Butts
 
-2025-08-11T21:25:41Z
+2025-08-13T12:54:35Z
 
 6
 
@@ -1976,15 +1976,15 @@ BeeStation-Hornet
 
 211
 
-711
+712
 
 DM
 
-393
+392
 
 99.95% station. 0.05% bees
 
-2025-08-11T18:08:36Z
+2025-08-15T22:06:59Z
 
 7
 
@@ -2008,7 +2008,7 @@ TerraGov-Marine-Corps
 
 179
 
-869
+868
 
 DM
 
@@ -2016,7 +2016,7 @@ DM
 
 TGMC: TerraGov Marine Corps, a SS13 mod
 
-2025-08-09T01:18:45Z
+2025-08-16T01:16:01Z
 
 9
 
@@ -2024,7 +2024,7 @@ CEV-Eris
 
 158
 
-517
+518
 
 DM
 
@@ -2038,17 +2038,17 @@ Death is our destination
 
 Aurora.3
 
-153
+154
 
 541
 
 DM
 
-826
+820
 
 The code for Aurorastation's new base, forked from Baystation12.
 
-2025-08-12T02:06:22Z
+2025-08-16T02:03:23Z
 
 Elixir
 ------
@@ -2075,39 +2075,39 @@ Last Commit
 
 anoma
 
-33338
+33546
 
-3995
+4007
 
 Elixir
 
-122
+121
 
 Reference implementation of Anoma
 
-2025-08-04T11:13:45Z
+2025-08-14T14:27:56Z
 
 2
 
 elixir
 
-25592
+25611
 
 3451
 
 Elixir
 
-24
+25
 
 Elixir is a dynamic, functional language for building scalable and maintainable applications
 
-2025-08-08T06:48:45Z
+2025-08-15T17:39:37Z
 
 3
 
 analytics
 
-23075
+23111
 
 1259
 
@@ -2117,15 +2117,15 @@ Elixir
 
 Simple, open source, lightweight and privacy-friendly web analytics alternative to Google Analytics.
 
-2025-08-11T12:02:19Z
+2025-08-15T13:53:37Z
 
 4
 
 phoenix
 
-22364
+22378
 
-2990
+2991
 
 Elixir
 
@@ -2133,15 +2133,15 @@ Elixir
 
 Peace of mind from prototype to production
 
-2025-08-11T17:08:02Z
+2025-08-15T09:06:26Z
 
 5
 
 awesome-elixir
 
-12972
+12977
 
-1189
+1188
 
 Elixir
 
@@ -2155,33 +2155,33 @@ A curated list of amazingly awesome Elixir and Erlang libraries, resources and s
 
 electric
 
-8914
+8960
 
-251
+252
 
 Elixir
 
-104
+107
 
 Real-time sync for Postgres.
 
-2025-08-12T02:12:12Z
+2025-08-14T16:37:59Z
 
 7
 
 firezone
 
-7455
+7460
 
-328
+330
 
 Elixir
 
-422
+426
 
 Enterprise-ready zero-trust access platform built on WireGuard®.
 
-2025-08-11T23:06:44Z
+2025-08-16T01:57:13Z
 
 8
 
@@ -2189,7 +2189,7 @@ realtime
 
 7239
 
-383
+385
 
 Elixir
 
@@ -2197,29 +2197,29 @@ Elixir
 
 Broadcast, Presence, and Postgres Changes via WebSockets
 
-2025-08-12T00:37:01Z
+2025-08-15T03:54:46Z
 
 9
 
 teslamate
 
-6962
+6982
 
-846
+847
 
 Elixir
 
-33
+32
 
 A self-hosted data logger for your Tesla 🚘 \[main maintainer=@JakobLichterfeld\]
 
-2025-08-10T07:43:02Z
+2025-08-16T00:29:27Z
 
 10
 
 phoenix\_live\_view
 
-6569
+6571
 
 1000
 
@@ -2229,7 +2229,7 @@ Elixir
 
 Rich, real-time user experiences with server-rendered HTML
 
-2025-08-11T12:51:18Z
+2025-08-15T12:40:45Z
 
 Go
 --
@@ -2256,25 +2256,25 @@ Last Commit
 
 ollama
 
-149940
+150269
 
-12786
+12825
 
 Go
 
-1722
+1742
 
 Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 
-2025-08-11T22:00:35Z
+2025-08-15T22:01:07Z
 
 2
 
 awesome-go
 
-149663
+149996
 
-12484
+12500
 
 Go
 
@@ -2282,135 +2282,135 @@ Go
 
 A curated list of awesome Go frameworks, libraries and software
 
-2025-08-07T16:08:52Z
+2025-08-15T04:23:48Z
 
 3
 
 go
 
-129345
+129422
 
-18319
+18327
 
 Go
 
-9172
+9164
 
 The Go programming language
 
-2025-08-11T22:26:15Z
+2025-08-16T01:10:58Z
 
 4
 
 kubernetes
 
-116825
+116904
 
-41116
+41165
 
 Go
 
-1883
+1915
 
 Production-Grade Container Scheduling and Management
 
-2025-08-11T23:05:11Z
+2025-08-15T20:01:04Z
 
 5
 
 frp
 
-97230
+97477
 
-14315
+14341
 
 Go
 
-57
+63
 
 A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.
 
-2025-08-11T17:48:56Z
+2025-08-15T08:11:06Z
 
 6
 
 gin
 
-83531
+83592
 
-8300
+8299
 
 Go
 
-666
+667
 
 Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin.
 
-2025-08-06T14:16:59Z
+2025-08-12T07:40:45Z
 
 7
 
 hugo
 
-82792
+82886
 
-7974
+7972
 
 Go
 
-439
+438
 
 The world’s fastest framework for building websites.
 
-2025-08-11T08:57:48Z
+2025-08-15T15:32:43Z
 
 8
 
 syncthing
 
-74279
+74947
 
-4684
+4694
 
 Go
 
-327
+328
 
 Open Source Continuous File Synchronization
 
-2025-08-12T01:30:14Z
+2025-08-16T04:02:58Z
 
 9
 
 fzf
 
-72735
+72878
 
-2561
+2569
 
 Go
 
-232
+233
 
 🌸 A command-line fuzzy finder
 
-2025-08-11T20:07:09Z
+2025-08-15T12:17:36Z
 
 10
 
 moby
 
-70455
+70473
 
 18793
 
 Go
 
-3182
+3189
 
 The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
 
-2025-08-11T22:54:29Z
+2025-08-14T22:56:37Z
 
 Groovy
 ------
@@ -2437,41 +2437,41 @@ Last Commit
 
 gradle
 
-17924
+17932
 
-4993
+4992
 
 Groovy
 
-3017
+3027
 
 Adaptable, fast automation for all
 
-2025-08-12T03:38:44Z
+2025-08-15T22:19:15Z
 
 2
 
 doris
 
-14088
+14104
 
-3524
+3530
 
 Groovy
 
-2701
+2710
 
 Apache Doris is an easy-to-use, high performance and unified analytics database.
 
-2025-08-12T03:41:59Z
+2025-08-16T02:34:40Z
 
 3
 
 devops-resources
 
-9148
+9156
 
-2283
+2287
 
 Groovy
 
@@ -2485,25 +2485,25 @@ DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible
 
 rundeck
 
-5862
+5869
 
-954
+955
 
 Groovy
 
-620
+623
 
 Enable Self-Service Operations: Give specific users access to your existing tools, services, and scripts
 
-2025-08-11T21:18:36Z
+2025-08-14T19:38:02Z
 
 5
 
 pipeline-examples
 
-4270
+4274
 
-3548
+3549
 
 Groovy
 
@@ -2517,7 +2517,7 @@ A collection of examples, tips and tricks and snippets of scripting for the Jenk
 
 gradle\_plugin\_android\_aspectjx
 
-3968
+3969
 
 578
 
@@ -2533,13 +2533,13 @@ A Android gradle plugin that effects AspectJ on Android project and can hook met
 
 fat-aar-android
 
-3246
+3251
 
-669
+670
 
 Groovy
 
-158
+157
 
 A gradle plugin that merge dependencies into the final aar file works with AGP 3.+
 
@@ -2549,17 +2549,17 @@ A gradle plugin that merge dependencies into the final aar file works with AGP 3
 
 nextflow
 
-3096
+3104
 
 717
 
 Groovy
 
-404
+405
 
 A DSL for data-driven computational pipelines
 
-2025-08-11T10:53:28Z
+2025-08-15T18:11:51Z
 
 9
 
@@ -2571,19 +2571,19 @@ grails-core
 
 Groovy
 
-834
+833
 
 Grails - the Web Application Framework
 
-2025-08-11T10:58:06Z
+2025-08-16T02:42:44Z
 
 10
 
 SmartThingsPublic
 
-2609
+2610
 
-88944
+88927
 
 Groovy
 
@@ -2618,89 +2618,89 @@ Last Commit
 
 pandoc
 
-38710
+38781
 
-3592
+3591
 
 Haskell
 
-975
+972
 
 Universal markup converter
 
-2025-08-12T01:08:53Z
+2025-08-15T18:07:13Z
 
 2
 
 shellcheck
 
-37913
+37934
 
-1845
+1847
 
 Haskell
 
-1127
+1129
 
 ShellCheck, a static analysis tool for shell scripts
 
-2025-08-06T08:59:35Z
+2025-08-12T17:10:23Z
 
 3
 
 postgrest
 
-25585
+25598
 
 1107
 
 Haskell
 
-294
+296
 
 REST API for any Postgres database
 
-2025-08-11T15:38:50Z
+2025-08-14T20:35:20Z
 
 4
 
 hadolint
 
-11421
+11429
 
 465
 
 Haskell
 
-226
+220
 
 Dockerfile linter, validate inline bash, written in Haskell
 
-2025-08-04T09:49:17Z
+2025-08-15T08:57:32Z
 
 5
 
 simplex-chat
 
-9229
+9263
 
-462
+466
 
 Haskell
 
-852
+856
 
 SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!
 
-2025-08-11T19:06:42Z
+2025-08-15T17:21:36Z
 
 6
 
 semantic
 
-9057
+9055
 
-458
+457
 
 Haskell
 
@@ -2714,13 +2714,13 @@ Parsing, analyzing, and comparing source code across many languages
 
 purescript
 
-8747
+8746
 
-572
+573
 
 Haskell
 
-274
+279
 
 A strongly-typed language that compiles to JavaScript
 
@@ -2732,7 +2732,7 @@ compiler
 
 7669
 
-666
+667
 
 Haskell
 
@@ -2746,25 +2746,25 @@ Compiler for Elm, a functional language for reliable webapps.
 
 unison
 
-6160
+6161
 
 281
 
 Haskell
 
-1138
+1132
 
 A friendly programming language from the future
 
-2025-08-11T20:41:39Z
+2025-08-16T00:58:56Z
 
 10
 
 Carp
 
-5701
+5702
 
-174
+173
 
 Haskell
 
@@ -2799,9 +2799,9 @@ Last Commit
 
 computer-science
 
-190207
+190416
 
-23735
+23756
 
 HTML
 
@@ -2815,9 +2815,9 @@ HTML
 
 free-for-dev
 
-109737
+110086
 
-11317
+11351
 
 HTML
 
@@ -2825,15 +2825,15 @@ HTML
 
 A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 
-2025-08-10T13:08:46Z
+2025-08-15T08:31:14Z
 
 3
 
 FreeDomain
 
-78127
+79264
 
-1446
+1463
 
 HTML
 
@@ -2847,9 +2847,9 @@ DigitalPlat FreeDomain: Free Domain For Everyone
 
 ML-For-Beginners
 
-76474
+76562
 
-17053
+17104
 
 HTML
 
@@ -2863,13 +2863,13 @@ HTML
 
 cs-self-learning
 
-66187
+66394
 
-7534
+7551
 
 HTML
 
-106
+107
 
 计算机自学指南
 
@@ -2879,9 +2879,9 @@ HTML
 
 retrofit
 
-43662
+43671
 
-7331
+7332
 
 HTML
 
@@ -2889,15 +2889,15 @@ HTML
 
 A type-safe HTTP client for Android and the JVM
 
-2025-08-11T14:13:33Z
+2025-08-15T15:03:13Z
 
 7
 
 awesome-compose
 
-40735
+40803
 
-7583
+7601
 
 HTML
 
@@ -2911,13 +2911,13 @@ Awesome Docker Compose samples
 
 tabler
 
-39922
+39943
 
-4234
+4236
 
 HTML
 
-84
+85
 
 Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap
 
@@ -2927,9 +2927,9 @@ Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap
 
 zju-icicles
 
-39301
+39322
 
-9551
+9549
 
 HTML
 
@@ -2943,9 +2943,9 @@ HTML
 
 English-level-up-tips
 
-39076
+39105
 
-4235
+4233
 
 HTML
 
@@ -2980,9 +2980,9 @@ Last Commit
 
 JavaGuide
 
-151205
+151290
 
-45962
+45965
 
 Java
 
@@ -2990,15 +2990,15 @@ Java
 
 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！
 
-2025-08-07T08:13:13Z
+2025-08-13T08:02:21Z
 
 2
 
 hello-algo
 
-115328
+115469
 
-14268
+14285
 
 Java
 
@@ -3012,9 +3012,9 @@ Java
 
 GitHub-Chinese-Top-Charts
 
-101153
+101206
 
-13204
+13211
 
 Java
 
@@ -3028,9 +3028,9 @@ Java
 
 java-design-patterns
 
-92461
+92492
 
-27143
+27154
 
 Java
 
@@ -3044,13 +3044,13 @@ Design patterns implemented in Java
 
 mall
 
-81245
+81286
 
-29406
+29412
 
 Java
 
-10
+14
 
 mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于Spring Boot+MyBatis实现，采用Docker容器化部署。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
 
@@ -3058,11 +3058,27 @@ mall项目是一套电商系统，包括前台商城系统及后台管理系统�
 
 6
 
+spring-boot
+
+78108
+
+41399
+
+Java
+
+584
+
+Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.
+
+2025-08-16T02:35:37Z
+
+7
+
 advanced-java
 
-78074
+78097
 
-19245
+19244
 
 Java
 
@@ -3072,29 +3088,13 @@ Java
 
 2025-07-16T12:17:25Z
 
-7
-
-spring-boot
-
-78067
-
-41396
-
-Java
-
-599
-
-Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.
-
-2025-08-11T14:43:48Z
-
 8
 
 LeetCodeAnimation
 
-76369
+76386
 
-14021
+14023
 
 Java
 
@@ -3108,33 +3108,33 @@ Demonstrate all the questions on LeetCode in the form of animation.（用动画�
 
 elasticsearch
 
-73493
+73547
 
-25371
+25384
 
 Java
 
-4282
+4303
 
 Free and Open Source, Distributed, RESTful Search Engine
 
-2025-08-11T22:55:10Z
+2025-08-16T01:49:09Z
 
 10
 
-interviews
+Stirling-PDF
 
-64344
+64363
 
-12950
+5490
 
 Java
 
-32
+312
 
-Everything you need to know to get the job.
+#1 Locally hosted web application that allows you to perform various operations on PDF files
 
-2025-05-12T12:56:04Z
+2025-08-15T19:12:47Z
 
 JavaScript
 ----------
@@ -3161,25 +3161,25 @@ Last Commit
 
 react
 
-238037
+238151
 
-49103
+49118
 
 JavaScript
 
-802
+804
 
 The library for web and native user interfaces.
 
-2025-08-12T00:41:13Z
+2025-08-15T23:52:28Z
 
 2
 
 javascript-algorithms
 
-192975
+193011
 
-30841
+30838
 
 JavaScript
 
@@ -3193,13 +3193,13 @@ JavaScript
 
 javascript
 
-147259
+147275
 
 26776
 
 JavaScript
 
-97
+96
 
 JavaScript Style Guide
 
@@ -3209,25 +3209,25 @@ JavaScript Style Guide
 
 next.js
 
-133733
+133808
 
-29041
+29082
 
 JavaScript
 
-2324
+2315
 
 The React Framework
 
-2025-08-12T03:03:34Z
+2025-08-16T01:53:19Z
 
 5
 
 awesome-chatgpt-prompts
 
-132386
+132631
 
-17559
+17603
 
 JavaScript
 
@@ -3241,9 +3241,9 @@ This repo includes ChatGPT prompt curation to use ChatGPT and other LLM tools be
 
 30-seconds-of-code
 
-124879
+124914
 
-12287
+12292
 
 JavaScript
 
@@ -3257,65 +3257,65 @@ Coding articles to level up your development skills
 
 node
 
-112664
+112744
 
-32571
+32629
 
 JavaScript
 
-1721
+1716
 
 Node.js JavaScript runtime ✨🐢🚀✨
 
-2025-08-11T23:40:15Z
+2025-08-15T22:10:17Z
 
 8
 
 three.js
 
-108046
+108119
 
-35950
+35959
 
 JavaScript
 
-439
+443
 
 JavaScript 3D Library.
 
-2025-08-12T03:05:51Z
+2025-08-15T14:37:36Z
 
 9
 
 axios
 
-107383
+107400
 
-11187
+11189
 
 JavaScript
 
-417
+366
 
 Promise based HTTP client for the browser and node.js
 
-2025-08-11T17:57:49Z
+2025-08-16T01:30:24Z
 
 10
 
 open-webui
 
-106282
+106787
 
-14324
+14427
 
 JavaScript
 
-204
+209
 
 User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 
-2025-08-11T23:48:07Z
+2025-08-15T10:55:41Z
 
 Julia
 -----
@@ -3342,33 +3342,33 @@ Last Commit
 
 julia
 
-47452
+47492
 
-5615
+5617
 
 Julia
 
-3975
+3978
 
 The Julia Programming Language
 
-2025-08-11T20:26:28Z
+2025-08-16T02:11:39Z
 
 2
 
 Pluto.jl
 
-5176
+5177
 
-303
+306
 
 Julia
 
-305
+306
 
 🎈 Simple reactive notebooks for Julia
 
-2025-08-11T21:21:56Z
+2025-08-15T15:18:10Z
 
 3
 
@@ -3384,7 +3384,7 @@ Julia
 
 Relax! Flux is the ML library that doesn't make you tensor
 
-2025-07-23T19:08:00Z
+2025-08-12T08:36:50Z
 
 4
 
@@ -3422,7 +3422,7 @@ Julia kernel for Jupyter
 
 computational-thinking
 
-2713
+2714
 
 491
 
@@ -3438,23 +3438,23 @@ Course 18.S191 at MIT, Fall 2022 - Introduction to computational thinking with J
 
 Makie.jl
 
-2597
+2600
 
-351
+350
 
 Julia
 
-779
+783
 
 Interactive data visualizations and plotting in Julia
 
-2025-08-11T17:58:06Z
+2025-08-16T00:11:38Z
 
 8
 
 Genie.jl
 
-2348
+2349
 
 189
 
@@ -3476,27 +3476,27 @@ JuMP.jl
 
 Julia
 
-9
+10
 
 Modeling language for Mathematical Optimization (linear, mixed-integer, conic, semidefinite, nonlinear)
 
-2025-08-11T21:42:09Z
+2025-08-16T03:43:22Z
 
 10
 
 Turing.jl
 
-2151
+2154
 
 228
 
 Julia
 
-80
+79
 
 Bayesian inference with probabilistic programming.
 
-2025-08-12T00:42:54Z
+2025-08-15T15:43:49Z
 
 Kotlin
 ------
@@ -3523,25 +3523,25 @@ Last Commit
 
 Magisk
 
-55208
+55305
 
-14724
+14773
 
 Kotlin
 
-37
+38
 
 The Magic Mask for Android
 
-2025-08-09T04:06:43Z
+2025-08-16T00:26:20Z
 
 2
 
 kotlin
 
-51069
+51106
 
-5982
+5986
 
 Kotlin
 
@@ -3549,15 +3549,15 @@ Kotlin
 
 The Kotlin Programming Language.
 
-2025-08-12T01:59:28Z
+2025-08-16T01:06:48Z
 
 3
 
 okhttp
 
-46575
+46595
 
-9230
+9233
 
 Kotlin
 
@@ -3565,15 +3565,15 @@ Kotlin
 
 Square’s meticulous HTTP client for the JVM, Android, and GraalVM.
 
-2025-08-11T13:10:46Z
+2025-08-15T21:56:11Z
 
 4
 
 architecture-samples
 
-45224
+45233
 
-11787
+11792
 
 Kotlin
 
@@ -3581,15 +3581,15 @@ Kotlin
 
 A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.
 
-2025-08-11T17:41:14Z
+2025-08-15T01:39:27Z
 
 5
 
 v2rayNG
 
-43689
+43849
 
-6288
+6308
 
 Kotlin
 
@@ -3597,13 +3597,13 @@ Kotlin
 
 A V2Ray client for Android, support Xray core and v2fly core
 
-2025-08-09T12:27:32Z
+2025-08-14T09:33:24Z
 
 6
 
 fanqiang
 
-40243
+40263
 
 7381
 
@@ -3619,9 +3619,9 @@ Kotlin
 
 legado
 
-38885
+39053
 
-4524
+4533
 
 Kotlin
 
@@ -3635,9 +3635,9 @@ Legado 3.0 Book Reader with powerful controls & full functions❤️阅读3.0, �
 
 shadowsocks-android
 
-35986
+36001
 
-11544
+11547
 
 Kotlin
 
@@ -3651,9 +3651,9 @@ A shadowsocks client for Android
 
 p3c
 
-30710
+30726
 
-8071
+8069
 
 Kotlin
 
@@ -3667,9 +3667,9 @@ Alibaba Java Coding Guidelines pmd implements and IDE plugin
 
 gkd
 
-30148
+30234
 
-1485
+1486
 
 Kotlin
 
@@ -3704,13 +3704,13 @@ Last Commit
 
 kong
 
-41519
+41543
 
-4963
+4964
 
 Lua
 
-71
+72
 
 🦍 The Cloud-Native API Gateway and AI Gateway.
 
@@ -3720,9 +3720,9 @@ Lua
 
 waifu2x
 
-27965
+27992
 
-2711
+2710
 
 Lua
 
@@ -3736,7 +3736,7 @@ Image Super-Resolution for Anime-Style Art
 
 NvChad
 
-26953
+26969
 
 2247
 
@@ -3752,9 +3752,9 @@ Blazing fast Neovim framework providing solid defaults and a beautiful UI, enhan
 
 kickstart.nvim
 
-26662
+26720
 
-38184
+38348
 
 Lua
 
@@ -3768,29 +3768,29 @@ A launch point for your personal nvim configuration
 
 koreader
 
-22709
+22756
 
-1501
+1503
 
 Lua
 
-970
+974
 
 An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices
 
-2025-08-11T22:05:59Z
+2025-08-16T04:00:29Z
 
 6
 
 LazyVim
 
-22037
+22099
 
 1541
 
 Lua
 
-25
+27
 
 Neovim config for the lazy
 
@@ -3800,9 +3800,9 @@ Neovim config for the lazy
 
 LunarVim
 
-19022
+19029
 
-1518
+1517
 
 Lua
 
@@ -3816,13 +3816,13 @@ Lua
 
 lazy.nvim
 
-18466
+18509
 
-469
+470
 
 Lua
 
-10
+8
 
 💤 A modern plugin manager for Neovim
 
@@ -3832,7 +3832,7 @@ Lua
 
 neural-style
 
-18314
+18313
 
 2691
 
@@ -3848,13 +3848,13 @@ Torch implementation of neural style algorithm
 
 telescope.nvim
 
-18083
+18097
 
 908
 
 Lua
 
-379
+380
 
 Find, Filter, Preview, Pick. All lua, all the time.
 
@@ -3885,9 +3885,9 @@ Last Commit
 
 Book-Mathematical-Foundation-of-Reinforcement-Learning
 
-11248
+11345
 
-1083
+1096
 
 MATLAB
 
@@ -3907,7 +3907,7 @@ deep-photo-styletransfer
 
 MATLAB
 
-29
+30
 
 Code and data for paper "Deep Photo Style Transfer": https://arxiv.org/abs/1703.07511
 
@@ -3919,7 +3919,7 @@ OpenFace
 
 7363
 
-1881
+1882
 
 MATLAB
 
@@ -3935,7 +3935,7 @@ PRMLT
 
 6164
 
-2152
+2153
 
 MATLAB
 
@@ -3963,27 +3963,11 @@ MATLAB
 
 6
 
-DeepLearnToolbox
-
-3846
-
-2273
-
-MATLAB
-
-69
-
-Matlab/Octave toolbox for deep learning. Includes Deep Belief Nets, Stacked Autoencoders, Convolutional Neural Nets, Convolutional Autoencoders and vanilla Neural Nets. Each method has examples to get you started.
-
-2018-10-13T18:08:01Z
-
-7
-
 Math\_Model
 
-3838
+3852
 
-717
+718
 
 MATLAB
 
@@ -3993,11 +3977,27 @@ MATLAB
 
 2023-12-01T04:43:53Z
 
+7
+
+DeepLearnToolbox
+
+3845
+
+2272
+
+MATLAB
+
+69
+
+Matlab/Octave toolbox for deep learning. Includes Deep Belief Nets, Stacked Autoencoders, Convolutional Neural Nets, Convolutional Autoencoders and vanilla Neural Nets. Each method has examples to get you started.
+
+2018-10-13T18:08:01Z
+
 8
 
 Stanford-CS-229
 
-3404
+3405
 
 859
 
@@ -4013,7 +4013,7 @@ A Chinese Translation of Stanford CS229 notes 斯坦福机器学习CS229课程�
 
 MTCNN\_face\_detection\_alignment
 
-2867
+2866
 
 990
 
@@ -4029,7 +4029,7 @@ Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Neura
 
 faster\_rcnn
 
-2771
+2773
 
 1222
 
@@ -4066,9 +4066,9 @@ Last Commit
 
 AFNetworking
 
-33521
+33527
 
-10492
+10495
 
 Objective-C
 
@@ -4082,13 +4082,13 @@ A delightful networking framework for iOS, macOS, watchOS, and tvOS.
 
 SDWebImage
 
-25408
+25414
 
-5992
+5993
 
 Objective-C
 
-103
+104
 
 Asynchronous image downloader with cache support as a UIImageView category
 
@@ -4098,9 +4098,9 @@ Asynchronous image downloader with cache support as a UIImageView category
 
 WeChatExtension-ForMac
 
-22621
+22623
 
-3601
+3602
 
 Objective-C
 
@@ -4114,7 +4114,7 @@ A plugin for Mac WeChat
 
 GPUImage
 
-20319
+20320
 
 4600
 
@@ -4130,9 +4130,9 @@ An open source iOS framework for GPU-based image and video processing
 
 TrollStore
 
-19994
+20007
 
-1315
+1314
 
 Objective-C
 
@@ -4146,9 +4146,9 @@ Jailed iOS app that can install IPAs permanently with arbitary entitlements and 
 
 Masonry
 
-18186
+18189
 
-3161
+3162
 
 Objective-C
 
@@ -4162,9 +4162,9 @@ Harness the power of AutoLayout NSLayoutConstraints with a simplified, chainable
 
 realm-swift
 
-16534
+16535
 
-2202
+2200
 
 Objective-C
 
@@ -4178,7 +4178,7 @@ Realm is a mobile database: a replacement for Core Data & SQLite
 
 iTerm2
 
-16205
+16212
 
 1232
 
@@ -4188,15 +4188,15 @@ Objective-C
 
 iTerm2 is a terminal emulator for Mac OS X that does amazing things.
 
-2025-08-12T02:24:39Z
+2025-08-15T23:31:48Z
 
 9
 
 MBProgressHUD
 
-16012
+16013
 
-3582
+3581
 
 Objective-C
 
@@ -4210,9 +4210,9 @@ MBProgressHUD + Customizations
 
 FLEX
 
-14401
+14404
 
-1753
+1755
 
 Objective-C
 
@@ -4247,9 +4247,9 @@ Last Commit
 
 cloc
 
-21480
+21498
 
-1071
+1072
 
 Perl
 
@@ -4263,7 +4263,7 @@ cloc counts blank lines, comment lines, and physical lines of source code in man
 
 FlameGraph
 
-18593
+18614
 
 2042
 
@@ -4279,7 +4279,7 @@ Stack trace visualizer
 
 diff-so-fancy
 
-17765
+17774
 
 334
 
@@ -4295,9 +4295,9 @@ Good-lookin' diffs. Actually… nah… The best-lookin' diffs. 🎉
 
 nikto
 
-9527
+9539
 
-1345
+1347
 
 Perl
 
@@ -4311,23 +4311,23 @@ Nikto web server scanner
 
 MySQLTuner-perl
 
-9283
+9287
 
-1297
+1298
 
 Perl
 
-41
+42
 
 MySQLTuner is a script written in Perl that will assist you with your MySQL configuration and make recommendations for increased performance and stability.
 
-2025-08-11T18:13:08Z
+2025-08-13T16:29:46Z
 
 6
 
 gitolite
 
-8493
+8494
 
 1011
 
@@ -4337,7 +4337,7 @@ Perl
 
 Hosting git repositories -- Gitolite allows you to setup git hosting on a central server, with very fine-grained access control and many (many!) more powerful features.
 
-2025-08-07T00:47:54Z
+2025-08-12T12:11:10Z
 
 7
 
@@ -4359,7 +4359,7 @@ Perl
 
 Expose
 
-4409
+4410
 
 259
 
@@ -4375,7 +4375,7 @@ A simple static site generator for photoessays
 
 sicp-pdf
 
-4355
+4354
 
 548
 
@@ -4393,7 +4393,7 @@ EQGRP
 
 4165
 
-2083
+2084
 
 Perl
 
@@ -4428,55 +4428,55 @@ Last Commit
 
 SecLists
 
-64833
+64929
 
-24545
+24555
 
 PHP
 
-5
+6
 
 SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.
 
-2025-08-11T14:04:46Z
+2025-08-15T14:03:45Z
 
 2
 
 coolify
 
-44174
+44283
 
-2804
+2821
 
 PHP
 
-559
+558
 
 An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 
-2025-08-11T20:03:56Z
+2025-08-15T18:37:08Z
 
 3
 
 framework
 
-33943
+33959
 
-11484
+11499
 
 PHP
 
-42
+41
 
 The Laravel Framework.
 
-2025-08-11T14:58:18Z
+2025-08-15T13:58:39Z
 
 4
 
 jQuery-File-Upload
 
-30891
+30892
 
 7875
 
@@ -4492,57 +4492,57 @@ File Upload widget with multiple file selection, drag&drop support, progress bar
 
 symfony
 
-30486
+30493
 
 9670
 
 PHP
 
-567
+569
 
 The Symfony PHP framework
 
-2025-08-11T14:15:33Z
+2025-08-15T11:15:19Z
 
 6
 
 server
 
-30426
+30460
 
-4386
+4397
 
 PHP
 
-2261
+2266
 
 ☁️ Nextcloud server, a safe home for all your data
 
-2025-08-12T00:12:32Z
+2025-08-16T03:04:57Z
 
 7
 
 composer
 
-29063
+29065
 
-4673
+4675
 
 PHP
 
-119
+120
 
 Dependency Manager for PHP
 
-2025-08-12T03:34:39Z
+2025-08-12T05:07:29Z
 
 8
 
 Faker
 
-26771
+26768
 
-3588
+3591
 
 PHP
 
@@ -4556,29 +4556,29 @@ Faker is a PHP library that generates fake data for you
 
 filament
 
-25431
+25713
 
-3643
+3668
 
 PHP
 
-65
+82
 
 A powerful open source UI framework for Laravel • Build and ship admin panels & apps fast with Livewire
 
-2025-08-11T21:00:51Z
+2025-08-15T11:43:42Z
 
 10
 
 guzzle
 
-23405
+23402
 
-2391
+2392
 
 PHP
 
-14
+15
 
 Guzzle, an extensible PHP HTTP client
 
@@ -4609,13 +4609,13 @@ Last Commit
 
 winutil
 
-38661
+38861
 
-2081
+2089
 
 PowerShell
 
-190
+192
 
 Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates
 
@@ -4625,57 +4625,57 @@ Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Update
 
 Win11Debloat
 
-24634
+24934
 
-1011
+1035
 
 PowerShell
 
-33
+34
 
 A simple, easy to use PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 
-2025-08-01T19:55:32Z
+2025-08-16T00:17:52Z
 
 3
 
 Scoop
 
-22718
+22734
 
 1473
 
 PowerShell
 
-307
+310
 
 A command-line installer for Windows.
 
-2025-08-11T03:27:56Z
+2025-08-14T09:51:19Z
 
 4
 
 core
 
-21550
+21558
 
 4923
 
 PowerShell
 
-324
+327
 
 .NET news, announcements, release notes, and more!
 
-2025-08-11T23:23:58Z
+2025-08-13T22:13:04Z
 
 5
 
 Windows10Debloater
 
-18598
+18607
 
-2074
+2075
 
 PowerShell
 
@@ -4689,9 +4689,9 @@ Script to remove Windows 10 bloatware.
 
 SpotX
 
-17792
+17850
 
-916
+919
 
 PowerShell
 
@@ -4699,15 +4699,15 @@ PowerShell
 
 SpotX patcher used for patching the desktop version of Spotify
 
-2025-08-11T20:24:57Z
+2025-08-14T18:35:56Z
 
 7
 
 Atlas
 
-16476
+16504
 
-595
+594
 
 PowerShell
 
@@ -4715,15 +4715,15 @@ PowerShell
 
 🚀 An open and lightweight modification to Windows, designed to optimize performance, privacy and usability.
 
-2025-08-09T21:32:18Z
+2025-08-16T00:49:52Z
 
 8
 
 PowerSploit
 
-12516
+12525
 
-4702
+4704
 
 PowerShell
 
@@ -4737,9 +4737,9 @@ PowerSploit - A PowerShell Post-Exploitation Framework
 
 tiny11builder
 
-12490
+12514
 
-1010
+1014
 
 PowerShell
 
@@ -4753,9 +4753,9 @@ Scripts to build a trimmed-down Windows 11 image.
 
 Office-Tool
 
-11679
+11702
 
-961
+962
 
 PowerShell
 
@@ -4763,7 +4763,7 @@ PowerShell
 
 Office Tool Plus localization projects.
 
-2025-08-06T14:43:13Z
+2025-08-16T03:49:28Z
 
 Python
 ------
@@ -4790,9 +4790,9 @@ Last Commit
 
 free-programming-books
 
-364875
+365126
 
-63890
+63907
 
 Python
 
@@ -4806,13 +4806,13 @@ Python
 
 public-apis
 
-360790
+361436
 
-37857
+37930
 
 Python
 
-2
+8
 
 A collective list of free APIs
 
@@ -4822,9 +4822,9 @@ A collective list of free APIs
 
 system-design-primer
 
-315407
+316107
 
-51738
+51808
 
 Python
 
@@ -4838,9 +4838,9 @@ Learn how to design large-scale systems. Prep for the system design interview. I
 
 awesome-python
 
-254559
+255178
 
-26098
+26120
 
 Python
 
@@ -4854,9 +4854,9 @@ An opinionated list of awesome Python frameworks, libraries, software and resour
 
 Python
 
-203951
+204065
 
-47291
+47310
 
 Python
 
@@ -4864,31 +4864,31 @@ Python
 
 All Algorithms implemented in Python
 
-2025-08-11T19:03:31Z
+2025-08-12T07:30:14Z
 
 6
 
 AutoGPT
 
-177694
+177806
 
-45931
+45945
 
 Python
 
-157
+159
 
 AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 
-2025-08-12T03:58:58Z
+2025-08-16T02:57:12Z
 
 7
 
 stable-diffusion-webui
 
-155465
+155595
 
-28834
+28862
 
 Python
 
@@ -4902,29 +4902,29 @@ Stable Diffusion web UI
 
 transformers
 
-148202
+148383
 
-29984
+30037
 
 Python
 
-1084
+1092
 
 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.
 
-2025-08-12T03:02:15Z
+2025-08-15T21:16:55Z
 
 9
 
 youtube-dl
 
-136825
+136863
 
-10426
+10430
 
 Python
 
-3643
+3644
 
 Command-line program to download videos from YouTube.com and other video sites
 
@@ -4934,13 +4934,13 @@ Command-line program to download videos from YouTube.com and other video sites
 
 HelloGitHub
 
-124682
+125198
 
-10632
+10652
 
 Python
 
-210
+211
 
 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.
 
@@ -4971,7 +4971,7 @@ Last Commit
 
 FriendsDontLetFriends
 
-6809
+6813
 
 274
 
@@ -4987,13 +4987,13 @@ Friends don't let friends make certain types of data visualization - What are th
 
 ggplot2
 
-6752
+6753
 
 2093
 
 R
 
-67
+66
 
 An implementation of the Grammar of Graphics in R
 
@@ -5003,7 +5003,7 @@ An implementation of the Grammar of Graphics in R
 
 awesome-R
 
-6259
+6263
 
 1504
 
@@ -5019,9 +5019,9 @@ A curated list of awesome R packages, frameworks and software.
 
 shiny
 
-5513
+5516
 
-1880
+1879
 
 R
 
@@ -5029,7 +5029,7 @@ R
 
 Easy interactive web applications with R
 
-2025-08-05T21:00:35Z
+2025-08-14T20:08:08Z
 
 5
 
@@ -5041,7 +5041,7 @@ dplyr
 
 R
 
-109
+110
 
 dplyr: A grammar of data manipulation
 
@@ -5051,17 +5051,17 @@ dplyr: A grammar of data manipulation
 
 r4ds
 
-4848
+4851
 
-4324
+4327
 
 R
 
-22
+23
 
 R for data science: a book
 
-2025-06-09T13:21:40Z
+2025-08-15T11:06:35Z
 
 7
 
@@ -5069,7 +5069,7 @@ swirl\_courses
 
 4453
 
-7244
+7245
 
 R
 
@@ -5083,7 +5083,7 @@ R
 
 stat\_rethinking\_2022
 
-4108
+4105
 
 438
 
@@ -5099,7 +5099,7 @@ Statistical Rethinking course winter 2022
 
 awesome-network-analysis
 
-3807
+3813
 
 618
 
@@ -5117,7 +5117,7 @@ data.table
 
 3767
 
-1014
+1015
 
 R
 
@@ -5125,7 +5125,7 @@ R
 
 R's data.table package extends data.frame:
 
-2025-08-11T17:01:23Z
+2025-08-15T22:39:14Z
 
 Ruby
 ----
@@ -5152,25 +5152,25 @@ Last Commit
 
 rails
 
-57270
+57287
 
-21913
+21916
 
 Ruby
 
-482
+477
 
 Ruby on Rails
 
-2025-08-12T03:17:02Z
+2025-08-15T15:02:10Z
 
 2
 
 maybe
 
-52914
+53022
 
-4277
+4328
 
 Ruby
 
@@ -5184,9 +5184,9 @@ The personal finance app for everyone
 
 jekyll
 
-50450
+50464
 
-10161
+10163
 
 Ruby
 
@@ -5200,25 +5200,25 @@ Ruby
 
 mastodon
 
-48860
+48867
 
-7266
+7271
 
 Ruby
 
-4018
+4021
 
 Your self-hosted, globally interconnected microblogging community
 
-2025-08-11T21:12:40Z
+2025-08-15T07:24:38Z
 
 5
 
 huginn
 
-47016
+47053
 
-4050
+4055
 
 Ruby
 
@@ -5226,15 +5226,15 @@ Ruby
 
 Create agents that monitor and act on your behalf. Your agents are standing by!
 
-2025-08-10T13:42:10Z
+2025-08-16T02:31:20Z
 
 6
 
 discourse
 
-44773
+44815
 
-8610
+8617
 
 Ruby
 
@@ -5242,35 +5242,35 @@ Ruby
 
 A platform for community discussion. Free, open, simple.
 
-2025-08-12T03:56:28Z
+2025-08-16T02:35:09Z
 
 7
 
 brew
 
-44507
+44535
 
-10412
+10422
 
 Ruby
 
-29
+23
 
 🍺 The missing package manager for macOS (or Linux)
 
-2025-08-12T03:23:13Z
+2025-08-16T01:32:05Z
 
 8
 
 fastlane
 
-40396
+40404
 
-5922
+5923
 
 Ruby
 
-679
+683
 
 🚀 The easiest way to automate building and releasing your iOS and Android apps
 
@@ -5280,9 +5280,9 @@ Ruby
 
 devdocs
 
-36833
+36846
 
-2454
+2452
 
 Ruby
 
@@ -5290,15 +5290,15 @@ Ruby
 
 API Documentation Browser
 
-2025-08-11T21:35:12Z
+2025-08-14T18:35:25Z
 
 10
 
 metasploit-framework
 
-36134
+36162
 
-14443
+14445
 
 Ruby
 
@@ -5306,7 +5306,7 @@ Ruby
 
 Metasploit Framework
 
-2025-08-11T17:33:20Z
+2025-08-16T00:36:58Z
 
 Rust
 ----
@@ -5333,41 +5333,41 @@ Last Commit
 
 rust
 
-105703
+105811
 
-13637
+13651
 
 Rust
 
-10657
+10660
 
 Empowering everyone to build reliable and efficient software.
 
-2025-08-12T03:58:48Z
+2025-08-16T03:18:49Z
 
 2
 
 deno
 
-103846
+103879
 
-5683
+5686
 
 Rust
 
-2273
+2278
 
 A modern runtime for JavaScript and TypeScript.
 
-2025-08-11T09:12:43Z
+2025-08-15T21:49:23Z
 
 3
 
 rustdesk
 
-95494
+95736
 
-14008
+14058
 
 Rust
 
@@ -5375,99 +5375,99 @@ Rust
 
 An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 
-2025-08-11T15:28:37Z
+2025-08-15T07:00:30Z
 
 4
 
 tauri
 
-95438
+95574
 
-3018
+3020
 
 Rust
 
-1120
+1122
 
 Build smaller, faster, and more secure desktop and mobile applications with a web frontend.
 
-2025-08-11T19:50:02Z
+2025-08-16T03:21:21Z
 
 5
 
 union
 
-73925
+73902
 
-3793
+3755
 
 Rust
 
-227
+230
 
 The trust-minimized, zero-knowledge bridging protocol, designed for censorship resistance, extremely high security, and usage in decentralized finance.
 
-2025-08-11T21:07:41Z
+2025-08-15T20:11:13Z
 
 6
 
 uv
 
-64458
+64920
 
-1874
+1893
 
 Rust
 
-1869
+1895
 
 An extremely fast Python package and project manager, written in Rust.
 
-2025-08-12T02:33:13Z
+2025-08-15T23:31:23Z
 
 7
 
 zed
 
-63686
+63845
 
-4891
+4927
 
 Rust
 
-2602
+2616
 
 Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
 
-2025-08-12T03:06:03Z
+2025-08-15T23:28:07Z
 
 8
 
 sway
 
-62147
+62146
 
-5409
+5410
 
 Rust
 
-845
+848
 
 🌴 Empowering everyone to build reliable and efficient smart contracts.
 
-2025-08-12T04:00:51Z
+2025-08-15T20:29:15Z
 
 9
 
 alacritty
 
-59885
+59942
 
-3163
+3166
 
 Rust
 
-321
+322
 
 A cross-platform, OpenGL terminal emulator.
 
@@ -5477,13 +5477,13 @@ A cross-platform, OpenGL terminal emulator.
 
 rustlings
 
-59586
+59622
 
-10840
+10847
 
 Rust
 
-49
+50
 
 🦀 Small exercises to get you used to reading and writing Rust code!
 
@@ -5514,9 +5514,9 @@ Last Commit
 
 the-algorithm
 
-63484
+63490
 
-12157
+12164
 
 Scala
 
@@ -5530,9 +5530,9 @@ Source code for Twitter's Recommendation Algorithm
 
 spark
 
-41636
+41665
 
-28728
+28730
 
 Scala
 
@@ -5540,29 +5540,29 @@ Scala
 
 Apache Spark - A unified analytics engine for large-scale data processing
 
-2025-08-12T02:13:40Z
+2025-08-16T03:35:04Z
 
 3
 
 lila
 
-16963
+16974
 
-2451
+2456
 
 Scala
 
-1076
+1078
 
 ♞ lichess.org: the forever free, adless and open source chess server ♞
 
-2025-08-11T18:14:28Z
+2025-08-15T21:14:47Z
 
 4
 
 prisma1
 
-16463
+16464
 
 852
 
@@ -5578,9 +5578,9 @@ Scala
 
 scala
 
-14400
+14402
 
-3112
+3110
 
 Scala
 
@@ -5588,31 +5588,31 @@ Scala
 
 Scala 2 compiler and standard library. Scala 2 bugs at https://github.com/scala/bug; Scala 3 at https://github.com/scala/scala3
 
-2025-08-08T21:46:54Z
+2025-08-15T14:03:21Z
 
 6
 
 akka
 
-13199
+13203
 
-3588
+3589
 
 Scala
 
-872
+873
 
 A platform to build and run apps that are elastic, agile, and resilient. SDK, libraries, and hosted environments.
 
-2025-08-08T14:58:58Z
+2025-08-15T14:29:53Z
 
 7
 
 playframework
 
-12579
+12581
 
-4086
+4085
 
 Scala
 
@@ -5620,13 +5620,13 @@ Scala
 
 The Community Maintained High Velocity Web Framework For Java and Scala.
 
-2025-08-06T10:06:10Z
+2025-08-12T08:03:47Z
 
 8
 
 predictionio
 
-12529
+12528
 
 1922
 
@@ -5642,9 +5642,9 @@ PredictionIO, a machine learning server for developers and ML engineers.
 
 CMAK
 
-11926
+11931
 
-2501
+2500
 
 Scala
 
@@ -5658,7 +5658,7 @@ CMAK is a tool for managing Apache Kafka clusters
 
 bfg-repo-cleaner
 
-11675
+11684
 
 569
 
@@ -5695,29 +5695,29 @@ Last Commit
 
 ohmyzsh
 
-180611
+180707
 
-26170
+26172
 
 Shell
 
-140
+143
 
 🙃 A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.
 
-2025-08-11T11:47:39Z
+2025-08-13T08:14:21Z
 
 2
 
 d3
 
-111259
+111277
 
-22844
+22841
 
 Shell
 
-8
+9
 
 Bring data to life with SVG, Canvas and HTML. 📊📈🎉
 
@@ -5727,9 +5727,9 @@ Bring data to life with SVG, Canvas and HTML. 📊📈🎉
 
 papers-we-love
 
-96902
+97104
 
-6048
+6054
 
 Shell
 
@@ -5743,13 +5743,13 @@ Papers from the computer science community to read and discuss.
 
 nvm
 
-86306
+86390
 
-9160
+9179
 
 Shell
 
-319
+317
 
 Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
 
@@ -5759,9 +5759,9 @@ Node Version Manager - POSIX-compliant bash script to manage multiple active nod
 
 leetcode-master
 
-57715
+57796
 
-12122
+12125
 
 Shell
 
@@ -5769,31 +5769,31 @@ Shell
 
 《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀
 
-2025-07-06T03:28:46Z
+2025-08-13T05:58:41Z
 
 6
 
 pi-hole
 
-52903
+52945
 
-2856
+2858
 
 Shell
 
-34
+36
 
 A black hole for Internet advertisements
 
-2025-08-11T13:55:41Z
+2025-08-15T17:50:01Z
 
 7
 
 Docker-OSX
 
-51157
+51184
 
-2852
+2851
 
 Shell
 
@@ -5807,9 +5807,9 @@ Run macOS VM in a Docker! Run near native OSX-KVM in Docker! X11 Forwarding! CI/
 
 powerlevel10k
 
-50474
+50520
 
-2328
+2330
 
 Shell
 
@@ -5823,25 +5823,25 @@ A Zsh theme
 
 acme.sh
 
-43659
+43690
 
 5326
 
 Shell
 
-1079
+1073
 
 A pure Unix shell script implementing ACME client protocol
 
-2025-08-06T11:28:09Z
+2025-08-15T16:18:04Z
 
 10
 
 pure-bash-bible
 
-39911
+39943
 
-3556
+3558
 
 Shell
 
@@ -5876,9 +5876,9 @@ Last Commit
 
 awesome-ios
 
-49583
+49628
 
-6921
+6926
 
 Swift
 
@@ -5892,9 +5892,9 @@ A curated list of awesome iOS ecosystem, including Objective-C and Swift Project
 
 Alamofire
 
-42051
+42054
 
-7633
+7637
 
 Swift
 
@@ -5908,13 +5908,13 @@ Elegant HTTP Networking in Swift
 
 iina
 
-41468
+41543
 
-2655
+2660
 
 Swift
 
-1755
+1757
 
 The modern video player for macOS.
 
@@ -5924,23 +5924,23 @@ The modern video player for macOS.
 
 stats
 
-33035
+33122
 
-1050
+1053
 
 Swift
 
-28
+27
 
 macOS system monitor in your menu bar
 
-2025-08-03T19:49:27Z
+2025-08-15T14:42:15Z
 
 5
 
 ShadowsocksX-NG
 
-32809
+32814
 
 7903
 
@@ -5956,9 +5956,9 @@ Next Generation of ShadowsocksX
 
 MonitorControl
 
-30830
+30860
 
-885
+886
 
 Swift
 
@@ -5972,17 +5972,17 @@ Swift
 
 UTM
 
-30445
+30481
 
-1500
+1504
 
 Swift
 
-895
+896
 
 Virtual machines for iOS and macOS
 
-2025-08-12T03:35:33Z
+2025-08-16T00:01:16Z
 
 8
 
@@ -5990,7 +5990,7 @@ swift-algorithm-club
 
 29088
 
-5006
+5007
 
 Swift
 
@@ -6004,9 +6004,9 @@ Algorithms and data structures in Swift, with explanations!
 
 Charts
 
-27929
+27933
 
-6044
+6047
 
 Swift
 
@@ -6020,7 +6020,7 @@ Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroid
 
 Rectangle
 
-27428
+27448
 
 847
 
@@ -6057,9 +6057,9 @@ Last Commit
 
 deeplearningbook-chinese
 
-36656
+36668
 
-9166
+9168
 
 TeX
 
@@ -6073,9 +6073,9 @@ Deep Learning Book Chinese Translation
 
 libpku
 
-32651
+32676
 
-8300
+8301
 
 TeX
 
@@ -6089,9 +6089,9 @@ TeX
 
 awesome-deep-learning-papers
 
-25934
+25938
 
-4468
+4469
 
 TeX
 
@@ -6105,9 +6105,9 @@ The most cited deep learning papers
 
 Awesome-CV
 
-25061
+25087
 
-5048
+5054
 
 TeX
 
@@ -6121,9 +6121,9 @@ TeX
 
 PlotNeuralNet
 
-23780
+23797
 
-2992
+2994
 
 TeX
 
@@ -6153,9 +6153,9 @@ A technical report on convolution arithmetic in the context of deep learning
 
 os01
 
-13030
+13043
 
-760
+761
 
 TeX
 
@@ -6169,7 +6169,7 @@ Bootstrap yourself to write an OS from scratch. A book for self-learner.
 
 tensorflow-zh
 
-12377
+12376
 
 4159
 
@@ -6185,9 +6185,9 @@ TeX
 
 leetcode
 
-11340
+11343
 
-3420
+3421
 
 TeX
 
@@ -6201,13 +6201,13 @@ LeetCode题解，151道题完整版。
 
 milewski-ctfp-pdf
 
-11321
+11324
 
 615
 
 TeX
 
-40
+42
 
 Bartosz Milewski's 'Category Theory for Programmers' unofficial PDF and LaTeX source
 
@@ -6238,41 +6238,41 @@ Last Commit
 
 freeCodeCamp
 
-425563
+425837
 
-41159
+41203
 
 TypeScript
 
-192
+197
 
 freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
 
-2025-08-11T16:03:33Z
+2025-08-15T15:31:00Z
 
 2
 
 developer-roadmap
 
-333587
+333867
 
-42550
+42573
 
 TypeScript
 
-250
+246
 
 Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 
-2025-08-11T12:37:52Z
+2025-08-16T00:13:22Z
 
 3
 
 vue
 
-209247
+209267
 
-33737
+33736
 
 TypeScript
 
@@ -6286,41 +6286,41 @@ This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core
 
 vscode
 
-175636
+175777
 
-34303
+34385
 
 TypeScript
 
-11967
+12101
 
 Visual Studio Code
 
-2025-08-12T03:54:03Z
+2025-08-16T03:42:07Z
 
 5
 
 n8n
 
-128839
+130007
 
-39758
+40271
 
 TypeScript
 
-575
+600
 
 Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
 
-2025-08-11T23:12:52Z
+2025-08-15T21:38:41Z
 
 6
 
 tech-interview-handbook
 
-128441
+128516
 
-15633
+15640
 
 TypeScript
 
@@ -6334,65 +6334,65 @@ TypeScript
 
 dify
 
-110532
+111035
 
-16875
+16961
 
 TypeScript
 
-689
+694
 
 Production-ready platform for agentic workflow development.
 
-2025-08-12T04:03:04Z
+2025-08-16T03:57:57Z
 
 8
 
 TypeScript
 
-105582
+105613
 
-12956
+12960
 
 TypeScript
 
-5579
+5584
 
 TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
-2025-08-11T20:16:40Z
+2025-08-14T19:17:25Z
 
 9
 
 excalidraw
 
-105236
+105450
 
-10532
+10585
 
 TypeScript
 
-1825
+1832
 
 Virtual whiteboard for sketching hand-drawn like diagrams
 
-2025-08-11T16:23:02Z
+2025-08-15T20:42:13Z
 
 10
 
 angular
 
-98454
+98487
 
-26495
+26503
 
 TypeScript
 
-1462
+1464
 
 Deliver web apps with confidence 🚀
 
-2025-08-11T23:41:16Z
+2025-08-15T11:51:00Z
 
 Vim script
 ----------
@@ -6419,41 +6419,41 @@ Last Commit
 
 neovim
 
-91886
+92000
 
-6248
+6258
 
 Vim Script
 
-1649
+1644
 
 Vim-fork focused on extensibility and usability
 
-2025-08-12T03:32:01Z
+2025-08-16T03:29:35Z
 
 2
 
 vim
 
-38719
+38777
 
-5754
+5776
 
 Vim Script
 
-1516
+1519
 
 The official Vim repository
 
-2025-08-11T18:51:50Z
+2025-08-14T20:10:14Z
 
 3
 
 vim-plug
 
-35125
+35134
 
-1952
+1951
 
 Vim Script
 
@@ -6467,9 +6467,9 @@ Vim Script
 
 vimrc
 
-31422
+31432
 
-7314
+7316
 
 Vim Script
 
@@ -6499,9 +6499,9 @@ Vundle, the plug-in manager for Vim
 
 vim-fugitive
 
-21039
+21043
 
-1036
+1037
 
 Vim Script
 
@@ -6515,7 +6515,7 @@ fugitive.vim: A Git wrapper so awesome, it should be illegal
 
 SpaceVim
 
-20357
+20354
 
 1426
 
@@ -6531,9 +6531,9 @@ A modular configuration of Vim and Neovim
 
 nerdtree
 
-19948
+19952
 
-1447
+1446
 
 Vim Script
 
@@ -6547,13 +6547,13 @@ A tree explorer plugin for vim.
 
 vim-airline
 
-17918
+17917
 
-1103
+1105
 
 Vim Script
 
-46
+47
 
 lean & mean status/tabline for vim that's light as air
 
@@ -6563,7 +6563,7 @@ lean & mean status/tabline for vim that's light as air
 
 vim-galore
 
-17375
+17380
 
 619
 

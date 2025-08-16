@@ -1,6 +1,6 @@
 ---
 project: ChatGPTAPIFree
-stars: 3327
+stars: 3325
 description: A simple and open-source proxy API that allows you to access OpenAI's ChatGPT API for free!
 url: https://github.com/ayaka14732/ChatGPTAPIFree
 ---

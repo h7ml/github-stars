@@ -1,6 +1,6 @@
 ---
 project: wechat-versions
-stars: 627
+stars: 635
 description: 保存微信历史版本
 url: https://github.com/zsbai/wechat-versions
 ---

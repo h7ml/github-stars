@@ -1,6 +1,6 @@
 ---
 project: hutool
-stars: 29985
+stars: 29991
 description: 🍬A set of tools that keep Java sweet.
 url: https://github.com/chinabugotech/hutool
 ---

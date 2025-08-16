@@ -1,6 +1,6 @@
 ---
 project: Prepare-for-AWD
-stars: 1029
+stars: 1030
 description: AWD攻防赛脚本集合
 url: https://github.com/admintony/Prepare-for-AWD
 ---

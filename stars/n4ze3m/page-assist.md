@@ -1,6 +1,6 @@
 ---
 project: page-assist
-stars: 6988
+stars: 7004
 description: Use your locally running AI models to assist you in your web browsing
 url: https://github.com/n4ze3m/page-assist
 ---

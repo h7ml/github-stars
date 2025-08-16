@@ -1,6 +1,6 @@
 ---
 project: fauxpilot
-stars: 14734
+stars: 14738
 description: FauxPilot - an open-source alternative to GitHub Copilot server
 url: https://github.com/fauxpilot/fauxpilot
 ---

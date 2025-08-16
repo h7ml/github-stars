@@ -1,6 +1,6 @@
 ---
 project: directus
-stars: 31982
+stars: 32038
 description: The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.
 url: https://github.com/directus/directus
 ---
@@ -41,7 +41,8 @@ Directus Cloud allows you to create projects, hosted by the Directus team, from 
 
 The Directus Documentation is a great place to start, or explore these other channels:
 
--   Discord (Questions, Live Discussions)
+-   Community (Questions, Discussions)
+-   Discord (Live Chat)
 -   GitHub Issues (Report Bugs)
 -   GitHub Discussions (Feature Requests)
 -   Twitter (Latest News)

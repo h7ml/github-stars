@@ -1,6 +1,6 @@
 ---
 project: javascript-knowhow
-stars: 943
+stars: 942
 description: null
 url: https://github.com/daniellidg/javascript-knowhow
 ---

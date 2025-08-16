@@ -1,6 +1,6 @@
 ---
 project: awesome-cloud-security
-stars: 1977
+stars: 1980
 description: awesome cloud security 收集一些国内外不错的云安全资源，该项目主要面向国内的安全人员
 url: https://github.com/teamssix/awesome-cloud-security
 ---

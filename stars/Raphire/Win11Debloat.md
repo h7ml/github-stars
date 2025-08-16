@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 24710
+stars: 24973
 description: A simple, easy to use PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---
@@ -42,7 +42,7 @@ Download & run the script automatically via PowerShell.
 1.  Wait for the script to automatically download Win11Debloat.
 2.  Carefully read through and follow the on-screen instructions.
 
-This method supports parameters to customize the behaviour of the script. Please click here for more information.
+This method supports command-line parameters to customize the behaviour of the script. Please click here for more information.
 
 ### Traditional method
 
@@ -71,7 +71,7 @@ Set-ExecutionPolicy Unrestricted \-Scope Process \-Force
 
 1.  Carefully read through and follow the on-screen instructions.
 
-This method supports parameters to customize the behaviour of the script. Please click here for more information.
+This method supports command-line parameters to customize the behaviour of the script. Please click here for more information.
 
 Features
 --------
@@ -91,6 +91,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 
 -   Disable telemetry, diagnostic data, activity history, app-launch tracking & targeted ads.
 -   Disable tips, tricks, suggestions and ads in start, settings, notifications, File Explorer, and on the lockscreen.
+-   Disable ads and the MSN news feed in Microsoft Edge.
 -   Disable the 'Windows Spotlight' desktop background option.
 
 #### Bing Web Search, Copilot & AI Features
@@ -98,6 +99,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
 -   Disable & remove Microsoft Copilot. (W11 only)
 -   Disable Windows Recall snapshots. (W11 only)
+-   Disable AI Features in Edge (W11 only)
 -   Disable AI Features in Paint (W11 only)
 -   Disable AI Features in Notepad (W11 only)
 
@@ -152,6 +154,7 @@ Win11Debloat offers a default mode that allows you to quickly and easily apply t
 -   Remove the default selection of bloatware apps. (See below for full list)
 -   Disable telemetry, diagnostic data, activity history, app-launch tracking & targeted ads.
 -   Disable tips, tricks, suggestions and ads in start, settings, notifications, File Explorer, and on the lockscreen.
+-   Disable ads and the MSN news feed in Microsoft Edge.
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
 -   Disable & remove Microsoft Copilot. (W11 only)
 -   Disable Fast Start-up to ensure a full shutdown.

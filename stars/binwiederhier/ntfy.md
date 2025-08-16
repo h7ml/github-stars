@@ -1,6 +1,6 @@
 ---
 project: ntfy
-stars: 25698
+stars: 25734
 description: Send push notifications to your phone or desktop using PUT/POST
 url: https://github.com/binwiederhier/ntfy
 ---

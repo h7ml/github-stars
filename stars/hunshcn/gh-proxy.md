@@ -1,6 +1,6 @@
 ---
 project: gh-proxy
-stars: 8233
+stars: 8242
 description: github release、archive以及项目文件的加速项目
 url: https://github.com/hunshcn/gh-proxy
 ---

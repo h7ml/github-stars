@@ -1,6 +1,6 @@
 ---
 project: awesome-cursorrules
-stars: 32405
+stars: 32585
 description: 📄  Configuration files that enhance Cursor AI editor experience with custom rules and behaviors
 url: https://github.com/PatrickJS/awesome-cursorrules
 ---
@@ -15,7 +15,9 @@ Cursor AI is an AI-powered code editor. `.cursorrules` files define custom rules
 Sponsorships
 ------------
 
-### coderabbit.ai
+### coderabbit.ai - Cut Code Review Time & Bugs in Half. Instantly.
+
+### Unblocked MCP- Supercharge Cursor with your team’s knowledge
 
 Why .cursorrules?
 -----------------
@@ -318,7 +320,9 @@ Please ensure your contribution is original or properly credited if based on exi
 Sponsorships
 ------------
 
-### coderabbit.ai
+### coderabbit.ai - Cut Code Review Time & Bugs in Half. Instantly.
+
+### Unblocked MCP- Supercharge Cursor with your team’s knowledge
 
 * * *
 

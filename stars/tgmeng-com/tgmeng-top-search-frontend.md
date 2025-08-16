@@ -1,6 +1,6 @@
 ---
 project: tgmeng-top-search-frontend
-stars: 41
+stars: 69
 description: 糖果梦热搜-前端
 url: https://github.com/tgmeng-com/tgmeng-top-search-frontend
 ---

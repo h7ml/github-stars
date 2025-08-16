@@ -1,6 +1,6 @@
 ---
 project: flant
-stars: 69
+stars: 70
 description: vant风格的flutter组件库
 url: https://github.com/Binbiubiubiu/flant
 ---

@@ -1,6 +1,6 @@
 ---
 project: tefact
-stars: 347
+stars: 346
 description: 🏭 (Beta) 轻量级无代码/低代码 H5、表单编辑器。Lightweight no-code/low-code editor for website、H5 page and Form. Build your page without code! 
 url: https://github.com/staringos/tefact
 ---

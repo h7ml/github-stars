@@ -1,6 +1,6 @@
 ---
 project: sureness
-stars: 874
+stars: 875
 description: Dromara Sureness A efficient security framework focus on protection of API. 
 url: https://github.com/dromara/sureness
 ---

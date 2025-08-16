@@ -1,6 +1,6 @@
 ---
 project: onepoint
-stars: 392
+stars: 391
 description: A simple virtual drive based on many complex drives
 url: https://github.com/ukuq/onepoint
 ---

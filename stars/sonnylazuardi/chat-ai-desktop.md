@@ -1,6 +1,6 @@
 ---
 project: chat-ai-desktop
-stars: 2024
+stars: 2023
 description: Unofficial ChatGPT desktop app for Mac & Windows menubar using Tauri & Rust
 url: https://github.com/sonnylazuardi/chat-ai-desktop
 ---

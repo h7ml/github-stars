@@ -1,6 +1,6 @@
 ---
 project: nue
-stars: 8788
+stars: 8790
 description: Standards first web framework taking HTML, CSS, JS, and WASM to their peak
 url: https://github.com/nuejs/nue
 ---

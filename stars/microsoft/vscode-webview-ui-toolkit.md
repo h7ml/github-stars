@@ -1,6 +1,6 @@
 ---
 project: vscode-webview-ui-toolkit
-stars: 2087
+stars: 2086
 description: A component library for building webview-based extensions in Visual Studio Code.
 url: https://github.com/microsoft/vscode-webview-ui-toolkit
 ---

@@ -1,6 +1,6 @@
 ---
 project: cpython
-stars: 68329
+stars: 68395
 description: The Python programming language
 url: https://github.com/python/cpython
 ---

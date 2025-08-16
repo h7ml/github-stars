@@ -1,6 +1,6 @@
 ---
 project: taro3-vue3-template
-stars: 237
+stars: 238
 description: 一个基于 Taro3 和 Vue3 框架微信小程序模版。 核心技术采用Taro3、Vue3、TypeScript、NutUi、Vux4/Pinia、VueUse
 url: https://github.com/Yill625/taro3-vue3-template
 ---

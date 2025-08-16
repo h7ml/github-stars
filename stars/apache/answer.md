@@ -1,6 +1,6 @@
 ---
 project: answer
-stars: 14754
+stars: 14769
 description: A Q&A platform software for teams at any scales. Whether it's a community forum, help center, or knowledge management platform, you can always count on Apache Answer.
 url: https://github.com/apache/answer
 ---

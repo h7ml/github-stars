@@ -1,6 +1,6 @@
 ---
 project: awesome-yangjingyuan
-stars: 344
+stars: 353
 description: 杨景媛（武汉大学）事件前因后果记录。A curated collection of remarkable stories, images, and insights documenting Yang Jingyuan.
 url: https://github.com/yangjingyuan0828/awesome-yangjingyuan
 ---

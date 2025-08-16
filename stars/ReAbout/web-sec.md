@@ -1,6 +1,6 @@
 ---
 project: web-sec
-stars: 1792
+stars: 1794
 description: WEB安全手册(红队安全技能栈)，漏洞理解，漏洞利用，代码审计和渗透测试总结。【持续更新】
 url: https://github.com/ReAbout/web-sec
 ---

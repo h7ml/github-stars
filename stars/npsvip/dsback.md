@@ -1,6 +1,6 @@
 ---
 project: dsback
-stars: 120
+stars: 121
 description: 系统监控、数据库备份、文件备份、定时备份、DDOS防护、中间件安装、钉钉通知、企业微信通知
 url: https://github.com/npsvip/dsback
 ---

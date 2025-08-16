@@ -1,6 +1,6 @@
 ---
 project: cursor-auto-icloud
-stars: 176
+stars: 175
 description: Reset Cursor MachineID & Auto Sign Up New Account with Cursor Pro // 自动注册 Cursor AI (免费使用Pro功能) & 自动重置机器ID  // You've reached your trial request limit. / Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake. 
 url: https://github.com/Ryan0204/cursor-auto-icloud
 ---

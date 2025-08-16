@@ -1,6 +1,6 @@
 ---
 project: zh-fiddler
-stars: 727
+stars: 726
 description: Fiddler Web Debugger 中文版
 url: https://github.com/gabrielxvx/zh-fiddler
 ---

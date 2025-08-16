@@ -1,6 +1,6 @@
 ---
 project: typeorm
-stars: 35653
+stars: 35664
 description: ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.
 url: https://github.com/typeorm/typeorm
 ---
@@ -176,6 +176,7 @@ There are several extensions that simplify working with TypeORM and integrating 
 -   Automatically update `data-source.ts` after generating migrations/entities - typeorm-codebase-sync
 -   Easy manipulation of `relations` objects - typeorm-relations
 -   Automatically generate `relations` based on a GraphQL query - typeorm-relations-graphql
+-   Generate TypeORM entities from Valibot schemas - piying-orm
 
 Contributing
 ------------

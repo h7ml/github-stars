@@ -1,6 +1,6 @@
 ---
 project: Clash-for-Windows_Chinese
-stars: 25799
+stars: 25866
 description: clash for windows汉化版. 提供clash for windows的汉化版, 汉化补丁及汉化版安装程序
 url: https://github.com/Z-Siqi/Clash-for-Windows_Chinese
 ---

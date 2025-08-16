@@ -1,6 +1,6 @@
 ---
 project: p-limit
-stars: 2463
+stars: 2471
 description: Run multiple promise-returning & async functions with limited concurrency
 url: https://github.com/sindresorhus/p-limit
 ---
@@ -63,6 +63,14 @@ Promise-returning/async function.
 Any arguments to pass through to `fn`.
 
 Support for passing arguments on to the `fn` is provided in order to be able to avoid creating unnecessary closures. You probably don't need this optimization unless you're pushing a _lot_ of functions.
+
+### limit.map(array, fn)
+
+Process an array of inputs with limited concurrency.
+
+Returns a promise equivalent to `Promise.all(array.map(item => limit(fn, item)))`.
+
+This is a convenience function for processing inputs that arrive in batches. For more complex use cases, see p-map.
 
 ### limit.activeCount
 
@@ -132,5 +140,6 @@ Related
 
 -   p-throttle - Throttle promise-returning & async functions
 -   p-debounce - Debounce promise-returning & async functions
+-   p-map - Run promise-returning & async functions concurrently with different inputs
 -   p-all - Run promise-returning & async functions concurrently with optional limited concurrency
 -   More…

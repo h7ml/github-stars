@@ -1,6 +1,6 @@
 ---
 project: matomo
-stars: 20752
+stars: 20754
 description: Empowering People Ethically 🚀 — Matomo is hiring! Join us → https://matomo.org/jobs Matomo is the leading open-source alternative to Google Analytics, giving you complete control and built-in privacy. Easily collect, visualise, and analyse data from websites & apps. Star us on GitHub ⭐️  – Pull Requests welcome! 
 url: https://github.com/matomo-org/matomo
 ---

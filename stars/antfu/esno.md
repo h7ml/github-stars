@@ -1,6 +1,6 @@
 ---
 project: esno
-stars: 1608
+stars: 1609
 description: Alias to `tsx`
 url: https://github.com/antfu/esno
 ---

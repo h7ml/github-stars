@@ -1,6 +1,6 @@
 ---
 project: autoform
-stars: 3346
+stars: 3354
 description: 🌟 Automatically render forms for your existing data schema
 url: https://github.com/vantezzen/autoform
 ---
@@ -25,6 +25,7 @@ If you want to continue using the pure shadcn/ui component, you can find the old
 What is AutoForm? Let's say you have a zod schema that you already use for your backend:
 
 import { z } from "zod";
+import { ZodProvider } from "@autoform/zod";
 
 const userSchema \= z.object({
   name: z.string(),
@@ -32,10 +33,12 @@ const userSchema \= z.object({
   email: z.string().email(),
 });
 
+export const schemaProvider \= new ZodProvider(userSchema);
+
 With AutoForm, you can automatically render a form for this schema:
 
 import { AutoForm } from "@autoform/mui";
-import { ZodProvider } from "@autoform/zod";
+import { schemaProvider } from "./schema";
 
 function MyForm() {
   return (

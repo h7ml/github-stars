@@ -1,6 +1,6 @@
 ---
 project: frida_dump
-stars: 1704
+stars: 1708
 description: frida dump dex, frida dump so
 url: https://github.com/lasting-yang/frida_dump
 ---

@@ -1,6 +1,6 @@
 ---
 project: find-code-references
-stars: 59
+stars: 60
 description: Find references to feature flags in your code
 url: https://github.com/launchdarkly/find-code-references
 ---

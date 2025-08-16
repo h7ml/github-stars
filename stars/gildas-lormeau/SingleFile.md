@@ -1,6 +1,6 @@
 ---
 project: SingleFile
-stars: 18865
+stars: 18891
 description: Web Extension for saving a faithful copy of a complete web page in a single HTML file
 url: https://github.com/gildas-lormeau/SingleFile
 ---

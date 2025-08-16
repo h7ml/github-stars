@@ -1,6 +1,6 @@
 ---
 project: explain-vue3
-stars: 42
+stars: 41
 description: 电子书 《 Vue3 源码解读》(WIP)
 url: https://github.com/WJCHumble/explain-vue3
 ---

@@ -1,6 +1,6 @@
 ---
 project: mpegts.js
-stars: 2067
+stars: 2073
 description: HTML5 MPEG2-TS / FLV Stream Player
 url: https://github.com/xqq/mpegts.js
 ---

@@ -1,6 +1,6 @@
 ---
 project: daisyui
-stars: 38257
+stars: 38304
 description: 🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library
 url: https://github.com/saadeghi/daisyui
 ---

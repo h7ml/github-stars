@@ -1,6 +1,6 @@
 ---
 project: vscode-leetcode
-stars: 8376
+stars: 8381
 description: Solve LeetCode problems in VS Code
 url: https://github.com/LeetCode-OpenSource/vscode-leetcode
 ---

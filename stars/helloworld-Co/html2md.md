@@ -1,6 +1,6 @@
 ---
 project: html2md
-stars: 768
+stars: 769
 description: helloworld 开发者社区开源的一个轻量级，强大的 html 一键转 md 工具，支持多平台文章一键转换，并保存下载到本地。
 url: https://github.com/helloworld-Co/html2md
 ---

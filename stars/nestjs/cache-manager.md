@@ -1,6 +1,6 @@
 ---
 project: cache-manager
-stars: 151
+stars: 152
 description: Cache manager module for Nest framework (node.js) 🗃
 url: https://github.com/nestjs/cache-manager
 ---

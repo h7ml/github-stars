@@ -1,6 +1,6 @@
 ---
 project: table
-stars: 26828
+stars: 26849
 description: 🤖 Headless UI for building powerful tables & datagrids for TS/JS -  React-Table, Vue-Table, Solid-Table, Svelte-Table
 url: https://github.com/TanStack/table
 ---

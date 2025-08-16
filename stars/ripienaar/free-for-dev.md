@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 109822
+stars: 110128
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -808,6 +808,7 @@ Messaging and Streaming
 -   EMQX Serverless - Scalable and secure serverless MQTT broker you can get in seconds. 1M session minutes/month free forever (no credit card required).
 -   Pocket Alert - Send push notifications to your iOS and Android devices. Effortlessly integrate via API or Webhooks and maintain full control over your alerts. Free plan: 50 messages per day to 1 device and 1 application.
 -   SuprSend - SuprSend is a notification infrastructure that streamlines your product notifications with an API-first approach. Create and deliver transactional, crons, and engagement notifications on multiple channels with a single notification API. In free plan you get 10,000 notifications per month, including different workflow nodes such as digests, batches, multi-channels, preferences, tenants, broadcasts and more.
+-   SMSGate - SMS Gateway for Android™ enables sending and receiving SMS messages through your devices using cloud routing. Completely free cloud service (with recommended notification for usage above 10,000 messages/day to maintain quality for all users).
 
 **⬆️ Back to Top**
 
@@ -905,6 +906,7 @@ Monitoring
 -   Pulsetic - 10 monitors, 6 Months of historical Uptime/Logs, unlimited status pages, and custom domains included! For infinite time and unlimited email alerts for free. You don't need a credit card.
 -   robusta.dev — Powerful Kubernetes monitoring based on Prometheus. Bring your own Prometheus or install the all-in-one bundle. The free tier includes up to 20 Kubernetes nodes. Alerts via Slack, Microsoft Teams, Discord, and more. Integrations with PagerDuty, OpsGenie, VictorOps, DataDog, and many other tools.
 -   sematext.com — Free for 24-hour metrics, unlimited servers, ten custom metrics, 500,000 custom metrics data points, unlimited dashboards, users, etc.
+-   Simple Observability — Powerful server monitoring in a unified platform for metrics and logs, with no setup complexity. Free for one server.
 -   sitemonki.com — Website, domain, Cron & SSL monitoring, 5 monitors in each category for free
 -   sitesure.net - Website and cron monitoring - 2 monitors free
 -   skylight.io — Free for first 100,000 requests (Rails only)
@@ -1218,7 +1220,7 @@ PaaS
 -   WunderGraph - An open-source platform that allows you to quickly build, ship and manage modern APIs. Built-in CI/CD, GitHub integration, and automatic HTTPS. Up to 3 projects, 1GB egress, 300 minutes of build time per month on the free plan
 -   Zeabur - Deploy your services with one click. Free for three services, with US$ 5 free credits per month.
 -   mogenius - Easily build, deploy, and run services on Kubernetes. The free tier supports connecting a local Kubernetes with mogenius, enabling individual developers to create a production-like test environment on their machine.
--   genezio - A serverless function provider offers 1 million function calls, 100GB of bandwidth, and 10 cron jobs per month for free, exclusively for non-commercial or academic use.
+-   DeployApps - A serverless function provider offers 1 million function calls, 100GB of bandwidth, and 10 cron jobs per month for free, exclusively for non-commercial or academic use.
 
 **⬆️ Back to Top**
 
@@ -1369,7 +1371,7 @@ IaaS
 Managed Data Services
 ---------------------
 
--   Aiven - Aiven offers free PostgreSQL, MySQL and Redis plans on its open-source data platform. Single node, 1 CPU, 1GB RAM, and for PostgreSQL and MySQL, 5GB storage. Easy migration to more extensive plans or across clouds.
+-   Aiven - Aiven offers free PostgreSQL, MySQL and Valkey (Redis compatible) plans on its open-source data platform. Single node, 1 CPU, 1GB RAM, and for PostgreSQL and MySQL, 1GB storage. Easy migration to more extensive plans or across clouds.
 -   airtable.com — Looks like a spreadsheet, but it's a relational database unlimited bases, 1,200 rows/base, and 1,000 API requests/month
 -   Astra — Cloud Native Cassandra as a Service with 80GB free tier
 -   codehooks.io — Easy to use JavaScript serverless API/backend and NoSQL database service with functions, Mongdb-ish queries, key/value lookups, a job system, realtime messages, worker queues, a powerful CLI and a web-based data manager. Free plan has 5GB storage and 60/API calls per minute. 2 developers included. No credit-card required.
@@ -1610,6 +1612,7 @@ Design and UI
 -   pixlr.com — Free online browser editor on the level of commercial ones.
 -   Plasmic - A fast, easy-to-use, robust web design tool and page builder that integrates into your codebase. Build responsive pages or complex components; optionally extend with code; and publish to production sites and apps.
 -   Pravatar - Generate a random/placeholder fake avatar whose URL can be directly hot-linked in your web/app.
+-   PNG to WebP Converter - Convert PNG images to WebP images directly in your browser. No upload required, fully client-side processing for maximum privacy and security.
 -   Proto.io - Create fully interactive UI prototypes without coding. The free tier is available when the free trial ends. The free tier includes one user, one project, five prototypes, 100MB of online storage, and a preview of the proto.io app.
 -   resizeappicon.com — A simple service to resize and manage your app icons.
 -   Rive — Create and ship beautiful animations to any platform. Free forever for Individuals. The service is an editor that also hosts all the graphics on their servers. They also provide runtimes for many platforms to run representations made using Rive.

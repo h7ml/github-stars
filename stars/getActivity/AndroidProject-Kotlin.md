@@ -1,6 +1,6 @@
 ---
 project: AndroidProject-Kotlin
-stars: 1505
+stars: 1510
 description: Android 技术中台 Kotlin 版本，但愿人长久，搬砖不再有
 url: https://github.com/getActivity/AndroidProject-Kotlin
 ---

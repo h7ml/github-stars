@@ -1,6 +1,6 @@
 ---
 project: nginxconfig.io
-stars: 28173
+stars: 28180
 description: ⚙️ NGINX config generator on steroids 💉
 url: https://github.com/digitalocean/nginxconfig.io
 ---

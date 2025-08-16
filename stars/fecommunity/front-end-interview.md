@@ -1,6 +1,6 @@
 ---
 project: front-end-interview
-stars: 247
+stars: 248
 description: 前端面试宝典，收集整理了全网最新、最全面的面试资料，帮助各位求职面试者斩获理想Offer。
 url: https://github.com/fecommunity/front-end-interview
 ---

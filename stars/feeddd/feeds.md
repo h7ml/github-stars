@@ -1,6 +1,6 @@
 ---
 project: feeds
-stars: 2102
+stars: 2103
 description: 免费的公众号 RSS，支持扩展任意 APP
 url: https://github.com/feeddd/feeds
 ---

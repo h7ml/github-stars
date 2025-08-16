@@ -1,6 +1,6 @@
 ---
 project: CloudBase-AI-ToolKit
-stars: 630
+stars: 647
 description: 🪐 Instantly generate, deploy, and host your full-stack Web apps, mini-programs, databases, and backend services with AI IDE, launch your ideas at lightning speed 💫
 url: https://github.com/TencentCloudBase/CloudBase-AI-ToolKit
 ---
@@ -63,47 +63,38 @@ Tip
 
 🚩 **Get Started with CloudBase AI ToolKit**
 
-1.  **Enable CloudBase Tools (MCP Config)**  
-    Add the following config to your AI IDE (e.g., Cursor) to enable all CloudBase AI ToolKit capabilities:
+🚀 Recommended: CloudBase AI CLI (Simplest)
+-------------------------------------------
 
-{
-  "mcpServers": {
-    "cloudbase": {
-      "command": "npx",
-      "args": \["npm-global-exec@latest", "@cloudbase/cloudbase-mcp@latest"\]
-    }
-  }
-}
+CloudBase AI CLI is a unified command-line tool that integrates multiple mainstream AI programming tools, supporting built-in models and custom models. It allows you to use Claude Code, OpenAI Codex, aider, Qwen Code, and other AI programming assistants with a simple command, while built-in CloudBase AI Toolkit supports the complete workflow from development to deployment, and can run in any environment.
 
-1.  **One-Click Project Template Generation**  
-    In the AI chat box, enter:
+**Core Advantages:**
 
-```
-Download mini-program cloud development template
-```
+-   🏗️ **Unified Management** - One command to manage multiple AI programming CLI tools, no need to switch between tools
+-   🤖 **Multi-Model Support** - Support for built-in and custom large models, including Kimi K2, Zhipu GLM-4.5, etc.
+-   🚀 **One-Click Development & Deployment** - Complete workflow from code generation to cloud deployment, supporting Web apps, mini-programs, and backend services
+-   🌍 **Everywhere** - Can run in any environment, including mini-program developer tools, VS Code, GitHub Actions, etc.
 
-If you only want to download specific IDE config files to avoid project file confusion, you can specify the IDE type:
+**One-Click Installation**
 
-```
-Download mini-program cloud development template, only include Cursor config
-Download React cloud development template, only include WindSurf config
-Download universal cloud development template, only include Claude Code config
-```
+# Mac/Linux/Windows WSL
+curl https://static.cloudbase.net/cli/install/install.sh -fsS | bash
 
-Supported IDE types: cursor, windsurf, codebuddy, claude-code, cline, gemini-cli, opencode, qwen-code, baidu-comate, openai-codex-cli, augment-code, github-copilot, roocode, tongyi-lingma, trae, vscode
+# Windows PowerShell
+irm https://static.cloudbase.net/cli/install/install.ps1 | iex
 
-1.  **Available Template Types**
+**Start Using**
 
--   Mini-program cloud development template
--   React cloud development template
--   Vue cloud development template
--   UniApp cloud development template
--   Universal cloud development template
+tcb ai
 
-👉 View all official templates and docs
+On first launch, the configuration wizard will guide you through AI tool selection and configuration. After configuration, you can start using AI tools for assisted development. You can run `tcb ai --setup` later to switch tools and models.
 
-1.  **Detailed Tutorial**  
-    👉 View full configuration and usage tutorial
+👉 View complete usage documentation | Try Now | Full-Stack Mini-Program Development Case Tutorial
+
+🛠️ Other IDE Configuration Methods
+-----------------------------------
+
+If you use other AI IDEs, please refer to the configuration guides below:
 
 * * *
 
@@ -186,6 +177,12 @@ All the following tools support CloudBase AI ToolKit. Choose your tool and follo
 Tool
 
 Platform
+
+Guide
+
+CloudBase AI CLI
+
+CLI
 
 Guide
 
@@ -344,6 +341,10 @@ CloudBase MCP uses a plugin architecture. See detailed docs
 ------------
 
 ### 📄 Articles
+
+#### 🚀 CloudBase AI CLI Case Studies
+
+-   Develop a Neighborhood Item Recycling Mini-Program with CloudBase AI CLI - Detailed case tutorial showing how to use CloudBase AI CLI to develop a complete mini-program project from scratch
 
 #### 🌐 Full-Stack Web Apps
 

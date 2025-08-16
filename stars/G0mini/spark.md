@@ -1,6 +1,6 @@
 ---
 project: spark
-stars: 199
+stars: 200
 description: 全自动字典生成---定向字典/社工字典/字典碰撞---火花(spark)
 url: https://github.com/G0mini/spark
 ---

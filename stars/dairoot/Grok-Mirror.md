@@ -1,6 +1,6 @@
 ---
 project: Grok-Mirror
-stars: 664
+stars: 668
 description: 🚀 一键部署个人的 Grok 镜像站
 url: https://github.com/dairoot/Grok-Mirror
 ---

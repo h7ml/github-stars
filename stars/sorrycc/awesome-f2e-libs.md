@@ -1,6 +1,6 @@
 ---
 project: awesome-f2e-libs
-stars: 1568
+stars: 1569
 description: 🎉 整理我平时关注的前端库。
 url: https://github.com/sorrycc/awesome-f2e-libs
 ---

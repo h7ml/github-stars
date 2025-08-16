@@ -1,6 +1,6 @@
 ---
 project: claudecodeui
-stars: 2957
+stars: 3086
 description: Use Claude Code or Cursor CLI on mobile and web with Claude Code UI. Claude Code UI free open source webui/GUI that helps you manage your Claude Code session and projects remotely
 url: https://github.com/siteboon/claudecodeui
 ---

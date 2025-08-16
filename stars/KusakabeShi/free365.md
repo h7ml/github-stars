@@ -1,6 +1,6 @@
 ---
 project: free365
-stars: 667
+stars: 666
 description: A collection of free office 365 registration site.
 url: https://github.com/KusakabeShi/free365
 ---

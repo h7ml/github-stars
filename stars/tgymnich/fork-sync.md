@@ -1,6 +1,6 @@
 ---
 project: fork-sync
-stars: 429
+stars: 431
 description: 🔄 Github action to sync your forks
 url: https://github.com/tgymnich/fork-sync
 ---

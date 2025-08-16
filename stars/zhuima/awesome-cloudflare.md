@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 11662
+stars: 11704
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -149,6 +149,12 @@ https://imguu.net/
 cloudflare-r2-telegram-bot
 
 基于cloudflare worker与R2存储桶的图床机器人。
+
+维护中
+
+PixR2
+
+基于 Cloudflare Workers + R2 的多入口图床与图片管理平台
 
 维护中
 

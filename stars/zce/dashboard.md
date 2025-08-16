@@ -1,6 +1,6 @@
 ---
 project: dashboard
-stars: 561
+stars: 560
 description: A dashboard scaffolding based on Vue.js 3.0 created by Vite.
 url: https://github.com/zce/dashboard
 ---

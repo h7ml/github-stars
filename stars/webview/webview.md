@@ -1,6 +1,6 @@
 ---
 project: webview
-stars: 13272
+stars: 13279
 description: Tiny cross-platform webview library for C/C++. Uses WebKit (GTK/Cocoa) and Edge WebView2 (Windows).
 url: https://github.com/webview/webview
 ---

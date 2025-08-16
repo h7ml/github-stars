@@ -1,6 +1,6 @@
 ---
 project: prompt-optimizer
-stars: 12846
+stars: 13000
 description: 一款提示词优化器，助力于编写高质量的提示词
 url: https://github.com/linshenkx/prompt-optimizer
 ---
@@ -250,9 +250,13 @@ Docker部署时通过 `-e` 参数配置环境变量：
 -e VITE\_DEEPSEEK\_API\_KEY=your\_key
 -e VITE\_ZHIPU\_API\_KEY=your\_key
 -e VITE\_SILICONFLOW\_API\_KEY=your\_key
--e VITE\_CUSTOM\_API\_KEY=your\_custom\_api\_key
--e VITE\_CUSTOM\_API\_BASE\_URL=your\_custom\_api\_base\_url
--e VITE\_CUSTOM\_API\_MODEL=your\_custom\_model\_name
+
+# 多自定义模型配置（支持无限数量）
+-e VITE\_CUSTOM\_API\_KEY\_ollama=dummy\_key
+-e VITE\_CUSTOM\_API\_BASE\_URL\_ollama=http://localhost:11434/v1
+-e VITE\_CUSTOM\_API\_MODEL\_ollama=qwen2.5:7b
+
+> 📖 **详细配置指南**: 查看 多自定义模型配置文档 了解完整的配置方法和高级用法
 
 本地开发
 ----

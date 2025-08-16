@@ -1,6 +1,6 @@
 ---
 project: openapi-ts-request
-stars: 402
+stars: 404
 description: Swagger2/OpenAPI3/Apifox to TS/JS, request client, mock service, enum, react-query, type field label, JSON Schemas;  根据 Swagger2/OpenAPI3/Apifox 生成 TypeScript/JavaScript, 客户端请求函数(支持任意客户端), 模拟请求响应服务, 枚举和枚举翻译, react-query, 类型的字段翻译, JSON Schemas定义, 欢迎提功能请求
 url: https://github.com/openapi-ui/openapi-ts-request
 ---

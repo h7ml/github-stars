@@ -1,6 +1,6 @@
 ---
 project: trigger.dev
-stars: 11940
+stars: 11977
 description: Trigger.dev – open source background jobs and AI infrastructure
 url: https://github.com/triggerdotdev/trigger.dev
 ---

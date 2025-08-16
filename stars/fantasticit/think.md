@@ -1,6 +1,6 @@
 ---
 project: think
-stars: 2130
+stars: 2131
 description: 云策文档是一款开源知识管理工具。通过独立的知识库空间，结构化地组织在线协作文档，实现知识的积累与沉淀，促进知识的复用与流通。
 url: https://github.com/fantasticit/think
 ---

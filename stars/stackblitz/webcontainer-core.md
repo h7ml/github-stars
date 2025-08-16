@@ -1,6 +1,6 @@
 ---
 project: webcontainer-core
-stars: 4361
+stars: 4363
 description: Dev environments. In your web app.
 url: https://github.com/stackblitz/webcontainer-core
 ---

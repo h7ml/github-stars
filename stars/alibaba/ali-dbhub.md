@@ -1,6 +1,6 @@
 ---
 project: ali-dbhub
-stars: 8122
+stars: 8123
 description: 已迁移新仓库，此版本将不再维护
 url: https://github.com/alibaba/ali-dbhub
 ---

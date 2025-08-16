@@ -1,6 +1,6 @@
 ---
 project: live2d-widget
-stars: 9925
+stars: 9933
 description: 把萌萌哒的看板娘抱回家 (ノ≧∇≦)ノ | Live2D widget for web platform
 url: https://github.com/stevenjoezhang/live2d-widget
 ---
@@ -30,7 +30,7 @@ _注：以上人物模型仅供展示之用，本仓库并不包含任何模型�
 
 如果你是小白，或者只需要最基础的功能，那么只用将这一行代码加入 html 页面的 `head` 或 `body` 中，即可加载看板娘：
 
-<script src\="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"\></script\>
+<script src\="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.7/dist/autoload.js"\></script\>
 
 添加代码的位置取决于你的网站的构建方式。例如，如果你使用的是 Hexo，那么需要在主题的模版文件中添加以上代码。对于用各种模版引擎生成的页面，修改方法类似。  
 如果网站启用了 PJAX，由于看板娘不必每页刷新，需要注意将该脚本放到 PJAX 刷新区域之外。

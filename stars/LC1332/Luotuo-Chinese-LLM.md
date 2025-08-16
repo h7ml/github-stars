@@ -1,6 +1,6 @@
 ---
 project: Luotuo-Chinese-LLM
-stars: 3634
+stars: 3635
 description: 骆驼(Luotuo): Open Sourced Chinese Language Models. Developed by 陈启源 @ 华中师范大学 & 李鲁鲁 @ 商汤科技 & 冷子昂 @ 商汤科技
 url: https://github.com/LC1332/Luotuo-Chinese-LLM
 ---

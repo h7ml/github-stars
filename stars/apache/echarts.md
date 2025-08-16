@@ -1,6 +1,6 @@
 ---
 project: echarts
-stars: 64330
+stars: 64366
 description: Apache ECharts is a powerful, interactive charting and data visualization library for browser
 url: https://github.com/apache/echarts
 ---

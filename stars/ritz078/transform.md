@@ -1,6 +1,6 @@
 ---
 project: transform
-stars: 8800
+stars: 8806
 description: A polyglot web converter.
 url: https://github.com/ritz078/transform
 ---

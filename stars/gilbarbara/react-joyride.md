@@ -1,6 +1,6 @@
 ---
 project: react-joyride
-stars: 7366
+stars: 7369
 description: Create guided tours in your apps
 url: https://github.com/gilbarbara/react-joyride
 ---

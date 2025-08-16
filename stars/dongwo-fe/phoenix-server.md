@@ -1,6 +1,6 @@
 ---
 project: phoenix-server
-stars: 35
+stars: 34
 description: 朱雀项目服务端
 url: https://github.com/dongwo-fe/phoenix-server
 ---

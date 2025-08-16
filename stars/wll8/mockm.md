@@ -1,6 +1,6 @@
 ---
 project: mockm
-stars: 292
+stars: 294
 description: 用于处理前端在接口环节中的各种问题，例如快速生成 api 以及创造数据、页面部署等，开箱即用，便于迁移。A framework based on Express. It can quickly generate APIs and create data, ready for deployment out of the box.
 url: https://github.com/wll8/mockm
 ---

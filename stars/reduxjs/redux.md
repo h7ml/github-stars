@@ -1,6 +1,6 @@
 ---
 project: redux
-stars: 61302
+stars: 61307
 description: A JS library for predictable global state management
 url: https://github.com/reduxjs/redux
 ---

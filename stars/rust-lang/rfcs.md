@@ -1,6 +1,6 @@
 ---
 project: rfcs
-stars: 6248
+stars: 6250
 description: RFCs for changes to Rust
 url: https://github.com/rust-lang/rfcs
 ---

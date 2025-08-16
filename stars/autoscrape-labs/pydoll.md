@@ -1,6 +1,6 @@
 ---
 project: pydoll
-stars: 5046
+stars: 5075
 description: Pydoll is a library for automating chromium-based browsers without a WebDriver, offering realistic interactions. 
 url: https://github.com/autoscrape-labs/pydoll
 ---

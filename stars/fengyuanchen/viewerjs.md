@@ -1,6 +1,6 @@
 ---
 project: viewerjs
-stars: 8113
+stars: 8114
 description: JavaScript image viewer.
 url: https://github.com/fengyuanchen/viewerjs
 ---

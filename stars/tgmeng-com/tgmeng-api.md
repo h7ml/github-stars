@@ -1,6 +1,6 @@
 ---
 project: tgmeng-api
-stars: 50
+stars: 78
 description: 糖果梦热搜-后端
 url: https://github.com/tgmeng-com/tgmeng-api
 ---
