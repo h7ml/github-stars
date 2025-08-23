@@ -1,6 +1,6 @@
 ---
 project: csijs
-stars: 279
+stars: 280
 description: CSI.JS是一个特别的前端日志系统，帮你快速重建犯罪现场。
 url: https://github.com/tnfe/csijs
 ---

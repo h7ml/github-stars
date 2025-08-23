@@ -1,6 +1,6 @@
 ---
 project: awesome-pretrained-chinese-nlp-models
-stars: 5363
+stars: 5372
 description: Awesome Pretrained Chinese NLP Models，高质量中文预训练模型&大模型&多模态模型&大语言模型集合
 url: https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models
 ---
@@ -8851,6 +8851,106 @@ ReasoningLLM
 
 文
 
+gpt-oss-20B
+
+A2/20B
+
+2025-08
+
+中英
+
+通用
+
+🤗HF
+
+gpt-oss
+
+openai
+
+MoE
+
+**OpenAI blog**
+
+gpt-oss-120B
+
+A5/120B
+
+2025-08
+
+中英
+
+通用
+
+🤗HF
+
+gpt-oss
+
+openai
+
+MoE
+
+**OpenAI blog**
+
+Baichuan-M2
+
+32B
+
+2025-08
+
+中英
+
+医疗
+
+**Hugging Face**
+
+Baichuan-M2-32B
+
+baichuan-inc
+
+CD
+
+technical blog
+
+**Ovis2.5**
+
+2/9B
+
+2025-08
+
+中英
+
+多模态
+
+🤗HF
+
+Ovis
+
+AIDC-AI
+
+CD
+
+Paper
+
+GLM-4.5V
+
+108B
+
+2025-07
+
+中英
+
+多模态
+
+**Hugging Face**
+
+GLM-V
+
+zai-org
+
+MoE
+
+Paper
+
 GLM-4.5
 
 A32/355B
@@ -14810,6 +14910,7 @@ github
 更新
 --
 
+-   2025.08.19 增加\[gpt-oss-20B,gpt-oss-120B,Baichuan-M2,Ovis2.5,GLM-4.5V\]
 -   2025.08.05 增加\[GLM-4.5,Hunyuan,Qwen3-Thinking-2507,Step3,Kimi-k2,Qwen3-Coder\]
 -   2025.07.07 增加\[Kimi-VL-Thinking,GLM-4.1V-Thinking,Dhanishtha-2.0,ERNIE-4.5\]
 -   2025.06.29 增加\[Qwen3-Embedding,Skywork-SWE，Hunyuan-A13B\]

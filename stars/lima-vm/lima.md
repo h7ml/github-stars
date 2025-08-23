@@ -1,6 +1,6 @@
 ---
 project: lima
-stars: 17894
+stars: 17928
 description: Linux virtual machines, with a focus on running containers
 url: https://github.com/lima-vm/lima
 ---
@@ -79,6 +79,9 @@ GUI:
 -   `#lima` channel in the CNCF Slack
     -   New account: https://slack.cncf.io/
     -   Login: https://cloud-native.slack.com/
+-   Zoom meetings (tentatively monthly)
+    -   Meeting notes & agenda proposals: https://github.com/lima-vm/lima/discussions/categories/meetings
+    -   Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/lima
 
 ### Code of Conduct
 

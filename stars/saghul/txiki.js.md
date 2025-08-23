@@ -1,6 +1,6 @@
 ---
 project: txiki.js
-stars: 2768
+stars: 2772
 description: A tiny JavaScript runtime
 url: https://github.com/saghul/txiki.js
 ---
@@ -124,7 +124,7 @@ _NOTE:_ The txiki.js build depends on a number of git submodules (libffi, libuv 
 
 ### GNU/Linux
 
-Install dependencies (`libcurl`, `build-essential`, `cmake`, `makeinfo`, `autoreconf`, `libtool`, `libltdl-dev`):
+Install dependencies (`libcurl`, `build-essential`, `cmake`, `autoreconf`, `libtool`, `libltdl-dev`):
 
 # On Debian / Ubuntu
 sudo apt install libcurl4-openssl-dev build-essential cmake autoconf texinfo libtool libltdl-dev

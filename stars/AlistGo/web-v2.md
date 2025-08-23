@@ -1,6 +1,6 @@
 ---
 project: web-v2
-stars: 382
+stars: 383
 description: 🗂️ The front end of Alist V2
 url: https://github.com/AlistGo/web-v2
 ---

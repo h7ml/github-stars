@@ -1,6 +1,6 @@
 ---
 project: gg
-stars: 1780
+stars: 1781
 description: 一个支持节点与订阅链接的 Linux 命令行代理工具 | A command-line tool for one-click proxy in your research and development without installing v2ray or anything else (only for linux)
 url: https://github.com/mzz2017/gg
 ---

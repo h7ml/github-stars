@@ -1,6 +1,6 @@
 ---
 project: dotenv
-stars: 19953
+stars: 19972
 description: Loads environment variables from .env for nodejs projects.
 url: https://github.com/motdotla/dotenv
 ---

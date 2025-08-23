@@ -1,6 +1,6 @@
 ---
 project: LetsgoFarmAutomate
-stars: 47
+stars: 49
 description: 腾讯先锋云游戏-元梦之星-星宝农场挂机脚本，仅支持Windows
 url: https://github.com/izhangguapi/LetsgoFarmAutomate
 ---
@@ -58,6 +58,11 @@ url: https://github.com/izhangguapi/LetsgoFarmAutomate
 
 更新日志
 ----
+
+#### 25.08.23 更新日志：
+
+1.  解决windows缩放按钮文字显示不全的问题
+2.  自动去除遮挡：
 
 #### 25.08.15 更新日志：
 

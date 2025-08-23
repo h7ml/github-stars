@@ -1,6 +1,6 @@
 ---
 project: jeesite-vue
-stars: 198
+stars: 199
 description: 基于 Vue3、Vite、Ant-Design-Vue3、TypeScript、Vue Vben Admin，最先进的技术栈，让初学者能够更快的入门并投入到团队开发中去。包括模块如：组织机构、角色用户、菜单授权、数据权限、系统参数等。强大的组件封装，数据驱动视图。为微小中大型项目的开发，提供现成的开箱解决方案及丰富的示例。
 url: https://github.com/thinkgem/jeesite-vue
 ---
@@ -112,7 +112,7 @@ Vue 前端简介
 ----
 
 -   VSCode - 推荐 IDE 集成开发工具
--   Node.js 18 和 git - 开发环境
+-   Node.js 20 和 git - 开发环境
 -   Vite - 熟悉 Vite 特性
 -   Vue-v3 - 熟悉 Vue 基础语法
 -   TypeScript - 熟悉 TS 基本语法
@@ -124,7 +124,7 @@ Vue 前端简介
 安装使用
 ----
 
--   如果没有安装 Node.js 18+，下载地址：https://nodejs.org
+-   如果没有安装 Node.js 20+，下载地址：https://nodejs.org
 
 # 验证
 node -v

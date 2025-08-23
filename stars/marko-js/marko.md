@@ -1,6 +1,6 @@
 ---
 project: marko
-stars: 13668
+stars: 13677
 description: A declarative, HTML-based language that makes building web apps fun
 url: https://github.com/marko-js/marko
 ---

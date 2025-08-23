@@ -1,6 +1,6 @@
 ---
 project: drawdb
-stars: 32262
+stars: 32345
 description: Free, simple, and intuitive online database diagram editor and SQL generator.
 url: https://github.com/drawdb-io/drawdb
 ---

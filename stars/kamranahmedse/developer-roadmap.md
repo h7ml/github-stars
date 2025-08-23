@@ -1,6 +1,6 @@
 ---
 project: developer-roadmap
-stars: 333918
+stars: 334398
 description: Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 url: https://github.com/kamranahmedse/developer-roadmap
 ---
@@ -35,7 +35,9 @@ Here is the list of available roadmaps with more being actively worked upon.
 -   Linux Roadmap
 -   Terraform Roadmap
 -   Data Analyst Roadmap
+-   BI Analyst Roadmap
 -   Data Engineer Roadmap
+-   Machine Learning Roadmap
 -   MLOps Roadmap
 -   Product Manager Roadmap
 -   Engineering Manager Roadmap

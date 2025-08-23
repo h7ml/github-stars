@@ -1,6 +1,6 @@
 ---
 project: bpmn-chinese-document
-stars: 2113
+stars: 2116
 description: 📒  全网最详bpmn.js中文教材/文档
 url: https://github.com/LinDaiDai/bpmn-chinese-document
 ---

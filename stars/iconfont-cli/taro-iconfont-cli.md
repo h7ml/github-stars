@@ -1,6 +1,6 @@
 ---
 project: taro-iconfont-cli
-stars: 372
+stars: 373
 description: 在Taro框架中使用iconfont图标，支持多端，支持多色彩，不依赖字体。
 url: https://github.com/iconfont-cli/taro-iconfont-cli
 ---

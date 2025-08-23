@@ -1,6 +1,6 @@
 ---
 project: ddddocr
-stars: 12502
+stars: 12535
 description: 带带弟弟 通用验证码识别OCR pypi版
 url: https://github.com/sml2h3/ddddocr
 ---

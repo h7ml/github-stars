@@ -1,6 +1,6 @@
 ---
 project: inspector
-stars: 5728
+stars: 5890
 description: Visual testing tool for MCP servers
 url: https://github.com/modelcontextprotocol/inspector
 ---
@@ -156,6 +156,16 @@ The token will be saved in your browser's local storage for future use.
 If you need to disable authentication (NOT RECOMMENDED), you can set the `DANGEROUSLY_OMIT_AUTH` environment variable:
 
 DANGEROUSLY\_OMIT\_AUTH=true npm start
+
+* * *
+
+**🚨 WARNING 🚨**
+
+Disabling authentication with `DANGEROUSLY_OMIT_AUTH` is incredibly dangerous! Disabling auth leaves your machine open to attack not just when exposed to the public internet, but also **via your web browser**. Meaning, visiting a malicious website OR viewing a malicious advertizement could allow an attacker to remotely compromise your computer. Do not disable this feature unless you truly understand the risks.
+
+Read more about the risks of this vulnerability on Oligo's blog: Critical RCE Vulnerability in Anthropic MCP Inspector - CVE-2025-49596
+
+* * *
 
 You can also set the token via the `MCP_PROXY_AUTH_TOKEN` environment variable when starting the server:
 

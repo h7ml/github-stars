@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 56272
+stars: 56631
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -70,7 +70,7 @@ Features
 -   **Various models**: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Qwen2-VL, DeepSeek, Yi, Gemma, ChatGLM, Phi, etc.
 -   **Integrated methods**: (Continuous) pre-training, (multimodal) supervised fine-tuning, reward modeling, PPO, DPO, KTO, ORPO, etc.
 -   **Scalable resources**: 16-bit full-tuning, freeze-tuning, LoRA and 2/3/4/5/6/8-bit QLoRA via AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
--   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, Muon, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ and PiSSA.
+-   **Advanced algorithms**: GaLore, BAdam, APOLLO, Adam-mini, Muon, OFT, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ and PiSSA.
 -   **Practical tricks**: FlashAttention-2, Unsloth, Liger Kernel, RoPE scaling, NEFTune and rsLoRA.
 -   **Wide tasks**: Multi-turn dialogue, tool using, image understanding, visual grounding, video recognition, audio understanding, etc.
 -   **Experiment monitors**: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab, etc.
@@ -110,13 +110,17 @@ All Blogs
 Changelog
 ---------
 
+\[25/08/22\] We supported **OFT** and **OFTv2**. See examples for usage.
+
+\[25/08/20\] We supported fine-tuning the **Intern-S1-mini** models. See PR #8976 to get started.
+
 \[25/08/06\] We supported fine-tuning the **GPT-OSS** models. See PR #8826 to get started.
+
+Full Changelog
 
 \[25/07/02\] We supported fine-tuning the **GLM-4.1V-9B-Thinking** model.
 
 \[25/04/28\] We supported fine-tuning the **Qwen3** model family.
-
-Full Changelog
 
 \[25/04/21\] We supported the **Muon** optimizer. See examples for usage. Thank @tianshijing's PR.
 
@@ -313,7 +317,7 @@ gemma/gemma2
 
 Gemma 3/Gemma 3n
 
-1B/4B/6B/8B/12B/27B
+270M/1B/4B/6B/8B/12B/27B
 
 gemma3/gemma3n
 
@@ -382,6 +386,12 @@ InternVL 2.5-3
 1B/2B/8B/14B/38B/78B
 
 intern\_vl
+
+InternLM/Intern-S1-mini
+
+8B
+
+intern\_s1
 
 Kimi-VL
 
@@ -620,7 +630,15 @@ LoRA
 
 QLoRA
 
+OFT
+
+QOFT
+
 Pre-Training
+
+✅
+
+✅
 
 ✅
 
@@ -640,7 +658,15 @@ Supervised Fine-Tuning
 
 ✅
 
+✅
+
+✅
+
 Reward Modeling
+
+✅
+
+✅
 
 ✅
 
@@ -660,7 +686,15 @@ PPO Training
 
 ✅
 
+✅
+
+✅
+
 DPO Training
+
+✅
+
+✅
 
 ✅
 
@@ -680,6 +714,10 @@ KTO Training
 
 ✅
 
+✅
+
+✅
+
 ORPO Training
 
 ✅
@@ -690,7 +728,15 @@ ORPO Training
 
 ✅
 
+✅
+
+✅
+
 SimPO Training
+
+✅
+
+✅
 
 ✅
 
@@ -937,7 +983,7 @@ Full (`pure_bf16`)
 
 `8x`GB
 
-Freeze/LoRA/GaLore/APOLLO/BAdam
+Freeze/LoRA/GaLore/APOLLO/BAdam/OFT
 
 16
 
@@ -951,7 +997,7 @@ Freeze/LoRA/GaLore/APOLLO/BAdam
 
 `2x`GB
 
-QLoRA
+QLoRA / QOFT
 
 8
 
@@ -965,7 +1011,7 @@ QLoRA
 
 `x`GB
 
-QLoRA
+QLoRA / QOFT
 
 4
 
@@ -979,7 +1025,7 @@ QLoRA
 
 `x/2`GB
 
-QLoRA
+QLoRA / QOFT
 
 2
 

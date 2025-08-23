@@ -1,6 +1,6 @@
 ---
 project: elecV2P
-stars: 1370
+stars: 1372
 description: 一款基于 NodeJS，可通过 JS 修改网络请求，以及定时运行脚本或 SHELL 指令的网络工具。
 url: https://github.com/elecV2/elecV2P
 ---

@@ -1,6 +1,6 @@
 ---
 project: vue-template-promise
-stars: 374
+stars: 375
 description: Template as Promise in Vue
 url: https://github.com/antfu/vue-template-promise
 ---

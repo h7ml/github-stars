@@ -1,6 +1,6 @@
 ---
 project: hub-mirror-action
-stars: 673
+stars: 672
 description: 一个Github Action，用于在Github, Gitee, GitLab和GitCode之间同步代码。Action for mirroring repos between Hubs (like Github, Gitee, GitLab and GitCode).
 url: https://github.com/Yikun/hub-mirror-action
 ---

@@ -1,6 +1,6 @@
 ---
 project: Front-End-Tech-Glossary
-stars: 111
+stars: 112
 description: 🧩收集常用前端术语的中英翻译和技术英语常用表达
 url: https://github.com/eliaszon/Front-End-Tech-Glossary
 ---

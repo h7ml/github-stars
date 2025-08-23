@@ -1,6 +1,6 @@
 ---
 project: vue-antd-admin
-stars: 418
+stars: 419
 description: vue-antd-admin基于vue-cli4+vuex+ant-design-vue开发的后台管理系统，包括权限管理，布局方式，国际化，动态路由和后台管理系统常用的table表和表单等功能，包含echarts图的各种展示，第一版已完成，有兴趣可以了解下。
 url: https://github.com/biubiubiu01/vue-antd-admin
 ---

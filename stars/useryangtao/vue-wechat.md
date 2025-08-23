@@ -1,6 +1,6 @@
 ---
 project: vue-wechat
-stars: 1678
+stars: 1677
 description: 用Vue.js开发微信app
 url: https://github.com/useryangtao/vue-wechat
 ---

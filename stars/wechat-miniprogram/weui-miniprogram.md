@@ -1,6 +1,6 @@
 ---
 project: weui-miniprogram
-stars: 2343
+stars: 2344
 description: 小程序WeUI组件库
 url: https://github.com/wechat-miniprogram/weui-miniprogram
 ---

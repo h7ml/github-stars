@@ -1,6 +1,6 @@
 ---
 project: standard
-stars: 38
+stars: 39
 description: Vue 前端开发项目规范
 url: https://github.com/CyberFei/standard
 ---

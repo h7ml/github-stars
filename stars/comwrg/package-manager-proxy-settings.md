@@ -1,6 +1,6 @@
 ---
 project: package-manager-proxy-settings
-stars: 992
+stars: 1010
 description: 记录各个包管理器代理设置坑点。
 url: https://github.com/comwrg/package-manager-proxy-settings
 ---

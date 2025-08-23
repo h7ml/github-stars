@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-windicss
-stars: 853
+stars: 854
 description: 🍃 Windi CSS for Vite ⚡️
 url: https://github.com/windicss/vite-plugin-windicss
 ---

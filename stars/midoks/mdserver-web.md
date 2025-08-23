@@ -1,6 +1,6 @@
 ---
 project: mdserver-web
-stars: 4370
+stars: 4379
 description: Simple Linux Panel
 url: https://github.com/midoks/mdserver-web
 ---
@@ -31,7 +31,7 @@ Talk is cheap, show me the code.  -- linus
 ```
 
 -   兼容性测试报告
--   常用命令说明 \[ mw default \] \[ mw update\_dev \]
+-   常用命令说明 \[ mw default \] \[ mw dev \]
 
 ### 特别赞助
 
@@ -114,23 +114,22 @@ Docker
 docker run -itd --name mw-server --privileged=true -p 7200:7200 -p 80:80 -p 443:443 -p 888:888 ddsderek/mw-server:latest
 ```
 
-### 版本更新 0.18.2
+### 版本更新 0.18.4
 
--   备份目录功能支持排除目录。
--   其他细节优化。
+-   国内安装优化。
 
 ### JSDelivr安装地址
 
 -   初始安装
 
 ```
-curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/install.sh | bash
+bash <(curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/install.sh)
 ```
 
 -   直接更新
 
 ```
-curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/update.sh | bash
+bash <(curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/update.sh)
 ```
 
 -   卸载脚本
@@ -144,14 +143,15 @@ wget --no-check-certificate -O uninstall.sh https://cdn.jsdelivr.net/gh/midoks/m
 -   初始安装
 
 ```
-curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/master/scripts/install.sh | bash
-curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/master/scripts/install.sh | bash
+
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/install.sh)
+bash <(curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/master/scripts/install.sh)
 ```
 
 -   直接更新
 
 ```
-curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/master/scripts/update.sh | bash
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/master/scripts/update.sh)
 ```
 
 -   卸载脚本
@@ -165,23 +165,29 @@ wget --no-check-certificate -O uninstall.sh https://raw.githubusercontent.com/mi
 -   需已经安装mdserver-web
 
 ```
-curl --insecure -fsSL  https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/quick/app.sh | bash
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/quick/app.sh)
 ```
 
 ### DEV使用
 
 ```
-curl --insecure -fsSL  https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/install_dev.sh | bash
-curl --insecure -fsSL  https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/update_dev.sh | bash
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/install.sh)
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/update.sh)
+
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/install_dev.sh)
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/update_dev.sh)
 
 wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/install.sh && bash install.sh
 
 wget --no-check-certificate -O uninstall.sh https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/uninstall.sh && bash uninstall.sh
 
-curl --insecure -fsSL  https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/quick/debug.sh | bash
+bash <(curl --insecure -fsSL https://raw.githubusercontent.com/midoks/mdserver-web/dev/scripts/quick/debug.sh)
 
-curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/dev/scripts/install_dev.sh | bash
-curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/dev/scripts/update_dev.sh | bash
+bash <(curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/dev/scripts/install.sh)
+bash <(curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/dev/scripts/update.sh)
+
+bash <(curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/dev/scripts/install_dev.sh)
+bash <(curl --insecure -fsSL https://code.midoks.icu/midoks/mdserver-web/raw/branch/dev/scripts/update_dev.sh)
 ```
 
 ### 旧版安装/更新
@@ -201,7 +207,7 @@ cd /www/server/mdserver-web && rm -rf lib64
 cd /www/server/mdserver-web && rm -rf bin
 cd /www/server/mdserver-web && rm -rf include
 
-mw update/mw update_dev
+mw update/mw update_dev/mw dev
 ```
 
 ### 捐赠地址 USDT（TRC20）

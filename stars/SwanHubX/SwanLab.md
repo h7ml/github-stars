@@ -1,6 +1,6 @@
 ---
 project: SwanLab
-stars: 2448
+stars: 2486
 description: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / LLaMA Factory / veRL/ Swift / Ultralytics / MMEngine / Keras etc.
 url: https://github.com/SwanHubX/SwanLab
 ---
@@ -39,6 +39,8 @@ url: https://github.com/SwanHubX/SwanLab
 🌟 最近更新
 -------
 
+-   2025.08.19：🤔更强大的图表渲染性能与低侵入式加载动画，让研究者更聚焦于实验分析本身；集成优秀的MLX-LM、SpecForge框架，提供更多场景的训练体验；
+    
 -   2025.08.06：👥**训练轻协作**上线，支持邀请项目协作者，分享项目链接与二维码；工作区支持列表视图，支持显示项目Tags；
     
 -   2025.07.29：🚀侧边栏支持**实验筛选、排序**；📊表格视图上线**列控制面板**，能够方便地实现列的隐藏与显示；🔐**多API Key**管理上线，让你的数据更安全；swanlab sync提高了对日志文件完整性的兼容，适配训练崩溃等场景；新图表-PR曲线、ROC曲线、混淆矩阵上线，文档；
@@ -55,11 +57,11 @@ url: https://github.com/SwanHubX/SwanLab
     
 -   2025.06.18：🐜集成AREAL框架，感谢@xichengpro，PR，文档；🖱支持鼠标Hover到侧边栏实验时，高亮相应曲线；支持跨组对比折线图；支持设置实验名裁剪规则；
     
--   2025.06.11：📊支持 **swanlab.echarts.table** 数据类型，支持纯文本图表展示；支持对分组进行**拉伸交互**，以增大同时显示的图表数量；表格视图增加 **指标最大/最小值** 选项；
-    
 
 完整更新日志
 
+-   2025.06.11：📊支持 **swanlab.echarts.table** 数据类型，支持纯文本图表展示；支持对分组进行**拉伸交互**，以增大同时显示的图表数量；表格视图增加 **指标最大/最小值** 选项；
+    
 -   2025.06.08：♻️支持在本地存储完整的实验日志文件，通过 **swanlab sync** 上传本地日志文件到云端/私有化部署端；硬件监控支持**海光DCU**；
     
 -   2025.06.01：🏸支持**图表自由拖拽**；支持**ECharts自定义图表**，增加包括柱状图、饼状图、直方图在内的20+图表类型；硬件监控支持**沐曦GPU**；集成 **PaddleNLP** 框架；

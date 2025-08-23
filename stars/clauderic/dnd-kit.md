@@ -1,6 +1,6 @@
 ---
 project: dnd-kit
-stars: 15488
+stars: 15540
 description: The modern, lightweight, performant, accessible and extensible drag & drop toolkit for React.
 url: https://github.com/clauderic/dnd-kit
 ---

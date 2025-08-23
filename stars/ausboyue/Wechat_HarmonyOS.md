@@ -1,6 +1,6 @@
 ---
 project: Wechat_HarmonyOS
-stars: 458
+stars: 459
 description: A highly imitated WeChat app developed based on HarmonyOS NEXT |  基于鸿蒙OS NEXT开发的高仿微信APP
 url: https://github.com/ausboyue/Wechat_HarmonyOS
 ---

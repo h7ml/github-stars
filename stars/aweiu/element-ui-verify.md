@@ -1,6 +1,6 @@
 ---
 project: element-ui-verify
-stars: 477
+stars: 476
 description: 如果你受够了饿了么ElementUI原生的校验方式，那就来试试它吧！一款更懂你的校验插件
 url: https://github.com/aweiu/element-ui-verify
 ---

@@ -1,8 +1,8 @@
 ---
-project: www.youngjuning.cn
+project: blog.zisheng.pro
 stars: 14
 description: 紫升的博客
-url: https://github.com/youngjuning/www.youngjuning.cn
+url: https://github.com/youngjuning/blog.zisheng.pro
 ---
 
 俊宁的博客

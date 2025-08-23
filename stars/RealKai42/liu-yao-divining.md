@@ -1,6 +1,6 @@
 ---
 project: liu-yao-divining
-stars: 321
+stars: 322
 description: 六爻游戏 + GPT 解读 / liu yao divining +  interpreted by GPT
 url: https://github.com/RealKai42/liu-yao-divining
 ---

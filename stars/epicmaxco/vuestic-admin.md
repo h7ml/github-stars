@@ -1,6 +1,6 @@
 ---
 project: vuestic-admin
-stars: 10852
+stars: 10856
 description: Vuestic Admin is an open-source, ready-to-use admin template suite designed for rapid development, easy maintenance, and high accessibility. Built on Vuestic UI, Vue 3, Vite, Pinia, and Tailwind CSS. Maintained by Epicmax (@epicmaxco).
 url: https://github.com/epicmaxco/vuestic-admin
 ---

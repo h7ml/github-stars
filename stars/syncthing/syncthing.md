@@ -1,6 +1,6 @@
 ---
 project: syncthing
-stars: 74997
+stars: 75485
 description: Open Source Continuous File Synchronization
 url: https://github.com/syncthing/syncthing
 ---

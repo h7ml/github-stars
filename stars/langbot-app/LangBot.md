@@ -1,6 +1,6 @@
 ---
 project: LangBot
-stars: 13016
+stars: 13114
 description: 🤩 Easy-to-use global IM bot platform designed for the LLM era / 简单易用的大模型即时通信机器人开发平台 ⚡️ Bots for QQ / QQ频道 / Discord / WeChat（微信）/ Telegram / 飞书 / 钉钉 / Slack 🧩 Integrated with ChatGPT（GPT)、DeepSeek、Dify、n8n、Claude、Google Gemini、xAI、PPIO、Ollama、阿里云百炼、SiliconFlow、Qwen、Moonshot(Kimi K2)、SillyTraven、MCP、WeClone etc. LLM & Agent & RAG
 url: https://github.com/langbot-app/LangBot
 ---
@@ -46,7 +46,7 @@ docker compose up -d
 ✨ 特性
 ----
 
--   💬 大模型对话、Agent：支持多种大模型，适配群聊和私聊；具有多轮对话、工具调用、多模态能力，自带 RAG（知识库）实现，并深度适配 Dify。
+-   💬 大模型对话、Agent：支持多种大模型，适配群聊和私聊；具有多轮对话、工具调用、多模态、流式输出能力，自带 RAG（知识库）实现，并深度适配 Dify。
 -   🤖 多平台支持：目前支持 QQ、QQ频道、企业微信、个人微信、飞书、Discord、Telegram 等平台。
 -   🛠️ 高稳定性、功能完备：原生支持访问控制、限速、敏感词过滤等机制；配置简单，支持多种部署方式。支持多流水线配置，不同机器人用于不同应用场景。
 -   🧩 插件扩展、活跃社区：支持事件驱动、组件扩展等插件机制；适配 Anthropic MCP 协议；目前已有数百个插件。
@@ -156,6 +156,12 @@ xAI
 大模型和 GPU 资源平台
 
 PPIO
+
+✅
+
+大模型和 GPU 资源平台
+
+胜算云
 
 ✅
 

@@ -1,6 +1,6 @@
 ---
 project: taro-msparis
-stars: 1348
+stars: 1351
 description: 🌱用 React 编写的基于Taro + Dva构建的适配不同端（微信/百度/支付宝小程序、H5、React-Native 等）的时装衣橱
 url: https://github.com/EasyTuan/taro-msparis
 ---

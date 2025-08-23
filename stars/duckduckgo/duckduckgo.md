@@ -1,6 +1,6 @@
 ---
 project: duckduckgo
-stars: 1804
+stars: 1808
 description: DuckDuckGo Instant Answer Infrastructure
 url: https://github.com/duckduckgo/duckduckgo
 ---

@@ -1,6 +1,6 @@
 ---
 project: react-color
-stars: 12207
+stars: 12210
 description: :art: Color Pickers from Sketch, Photoshop, Chrome, Github, Twitter & more
 url: https://github.com/casesandberg/react-color
 ---

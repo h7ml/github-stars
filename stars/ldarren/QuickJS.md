@@ -1,6 +1,6 @@
 ---
 project: QuickJS
-stars: 589
+stars: 581
 description: QuickJS is a small and embeddable Javascript engine. QuickJS sources are copyright Fabrice Bellard and Charlie Gordon.
 url: https://github.com/ldarren/QuickJS
 ---

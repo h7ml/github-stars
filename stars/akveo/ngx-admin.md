@@ -1,6 +1,6 @@
 ---
 project: ngx-admin
-stars: 25647
+stars: 25665
 description: Customizable admin dashboard template based on Angular 10+
 url: https://github.com/akveo/ngx-admin
 ---

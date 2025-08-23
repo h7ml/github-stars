@@ -1,6 +1,6 @@
 ---
 project: cow-Low-code
-stars: 79
+stars: 80
 description: 牛搭-移动端低代码平台、可视化拖放编辑、页面生成工具。通过 JSON 配置就能直接生成移动端UI界面，极大减少开发成本。
 url: https://github.com/Cow-Coder/cow-Low-code
 ---

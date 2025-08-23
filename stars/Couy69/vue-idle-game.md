@@ -1,6 +1,6 @@
 ---
 project: vue-idle-game
-stars: 1304
+stars: 1305
 description: 一个全随机的刷装备小游戏
 url: https://github.com/Couy69/vue-idle-game
 ---

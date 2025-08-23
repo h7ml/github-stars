@@ -1,6 +1,6 @@
 ---
 project: TheBigPromptLibrary
-stars: 3571
+stars: 3612
 description: A collection of prompts, system prompts and LLM instructions
 url: https://github.com/0xeb/TheBigPromptLibrary
 ---

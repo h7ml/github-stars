@@ -1,6 +1,6 @@
 ---
 project: pose-monitor
-stars: 2605
+stars: 2604
 description: “让爷康康”是一款手机 AI 应用程序，可以监测不良坐姿并进行语音提示
 url: https://github.com/linyiLYi/pose-monitor
 ---

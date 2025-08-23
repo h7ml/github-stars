@@ -1,6 +1,6 @@
 ---
 project: react-pivottable
-stars: 1042
+stars: 1043
 description: React-based drag'n'drop pivot table with Plotly.js charts
 url: https://github.com/plotly/react-pivottable
 ---

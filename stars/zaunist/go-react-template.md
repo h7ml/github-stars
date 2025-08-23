@@ -1,6 +1,6 @@
 ---
 project: go-react-template
-stars: 16
+stars: 17
 description: null
 url: https://github.com/zaunist/go-react-template
 ---

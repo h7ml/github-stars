@@ -1,6 +1,6 @@
 ---
 project: this-is-the-China-website
-stars: 156
+stars: 157
 description: 将国际网站伪装成中国网站.
 url: https://github.com/userElaina/this-is-the-China-website
 ---

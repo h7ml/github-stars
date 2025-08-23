@@ -1,6 +1,6 @@
 ---
 project: openapi-typescript-code-generator
-stars: 205
+stars: 206
 description: TypeScript code generator via OpenAPI scheme.
 url: https://github.com/Himenon/openapi-typescript-code-generator
 ---

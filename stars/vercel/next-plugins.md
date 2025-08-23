@@ -1,6 +1,6 @@
 ---
 project: next-plugins
-stars: 2672
+stars: 2673
 description: Official Next.js plugins
 url: https://github.com/vercel/next-plugins
 ---

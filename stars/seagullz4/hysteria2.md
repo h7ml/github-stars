@@ -1,6 +1,6 @@
 ---
 project: hysteria2
-stars: 1279
+stars: 1287
 description: hysteria2一键安装精简版/hy2一键安装/hysteria2 install/نصب با یک کلیک hysteria2
 url: https://github.com/seagullz4/hysteria2
 ---

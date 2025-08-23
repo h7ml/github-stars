@@ -1,6 +1,6 @@
 ---
 project: use-resize-observer
-stars: 673
+stars: 674
 description:  A React hook that allows you to use a ResizeObserver to measure an element's size.
 url: https://github.com/ZeeCoder/use-resize-observer
 ---

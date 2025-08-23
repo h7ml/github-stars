@@ -1,138 +1,172 @@
 ---
 project: Fanqie-novel-Downloader
-stars: 287
+stars: 304
 description: null
 url: https://github.com/POf-L/Fanqie-novel-Downloader
 ---
 
-Tomato Novel Downloader
-=======================
+🍅 Tomato Novel Downloader
+==========================
 
-基于 https://github.com/Dlmily/Tomato-Novel-Downloader-Lite 的番茄小说下载器，支持GUI界面和命令行使用。
+现代化 · 高颜值 · 即开即用的番茄小说下载器
 
-🚀 主要修复内容
----------
+功能亮点 · 快速开始 · 命令行用法 · 配置与令牌 · 打包与发布 · 常见问题
 
-### 1\. API处理逻辑修复
+* * *
 
--   修复了 `enhanced_downloader.py` 中 `down_text` 方法的API处理bug
--   修复了 `tomato_novel_api.py` 中的API调用逻辑
--   按照参考代码正确实现了所有API类型（fanqie\_sdk, fqweb, qyuing, lsjk）的处理
+⭐ 星标趋势
+------
 
-### 2\. 线程安全改进
+* * *
 
--   添加了全局线程锁 `print_lock` 确保日志输出的线程安全
--   所有print语句都使用线程安全的方式输出
+✨ 功能亮点
+------
 
-### 3\. 错误处理优化
+-   图形界面与命令行双形态：新手友好、进阶高效
+-   极速搜索与书籍信息展示，整本/按范围下载
+-   支持 TXT / EPUB 导出，封面与元数据自动处理（含 HEIC）
+-   多线程下载、失败自动重试、请求限速，稳定可靠
+-   自动检查更新（GitHub Releases），一键下载并重启生效
 
--   改善了API切换逻辑
--   添加了完整的异常处理机制
--   支持程序中断时的状态保存
+> 参考并增强自 Dlmily/Tomato-Novel-Downloader-Lite，修复多个 API 逻辑并重构模块化架构。
 
-### 4\. 功能增强
+* * *
 
--   保持了原有的GUI进度回调功能
--   添加了完整的命令行交互界面
--   支持章节范围选择下载
--   改进了EPUB格式的封面处理
-
-📁 文件结构
+🧭 目录结构
 -------
 
--   `enhanced_downloader.py` - 增强型下载器，支持GUI回调
--   `tomato_novel_api.py` - API调用模块，包含完整的下载功能
--   `gui.py` - 图形用户界面
--   `updater.py` - 自动更新模块
--   `version.py` - 版本信息
+-   gui.py — 图形界面入口（Tkinter）
+-   enhanced\_downloader.py — 增强下载器（交互式 CLI）
+-   tomato\_novel\_api.py — API/命令行工具（search/novel\_info 等）
+-   config.py — 全局配置（并发、重试、限速、导出等）
+-   updater.py — 自动更新模块（GitHub Releases）
+-   requirements.txt — 依赖清单
 
-🛠️ 使用方法
---------
+* * *
 
-### 命令行使用
+🚀 快速开始
+-------
 
-# 直接运行增强下载器
-python enhanced\_downloader.py
+环境要求：Python 3.10+（Windows/macOS/Linux）。GUI 需 Tkinter（Linux 需要安装 tk）。
 
-# 测试API功能
-python tomato\_novel\_api.py test
+python -m venv .venv
+# Windows
+.\\.venv\\Scripts\\activate
+# macOS/Linux
+source .venv/bin/activate
 
-# 使用API模块
-python tomato\_novel\_api.py search "小说名"
-python tomato\_novel\_api.py novel\_info "书籍ID"
+pip install -r requirements.txt
 
-### GUI使用
+-   启动 GUI：
 
 python gui.py
 
-🔧 主要改进
--------
+-   启动交互式 CLI（增强下载器）：
 
-1.  **修复了关键bug**：
-    
-    -   qyuing API的内容获取逻辑
-    -   lsjk API的响应处理
-    -   批量下载的数据处理
-2.  **线程安全**：
-    
-    -   所有日志输出都使用线程锁保护
-    -   避免了多线程环境下的输出混乱
-3.  **错误处理**：
-    
-    -   更完善的异常捕获和处理
-    -   程序中断时的状态保存
-    -   API失败时的自动切换
-4.  **用户体验**：
-    
-    -   完整的命令行交互界面
-    -   实时进度显示
-    -   支持章节范围选择
+python enhanced\_downloader.py
 
-📋 依赖要求
--------
+* * *
 
-```
-requests
-bs4
-fake_useragent
-tqdm
-ebooklib
-PIL
-urllib3
-```
+⌨️ 命令行用法
+--------
 
-🎯 测试
------
+tomato\_novel\_api.py 支持：
 
-运行测试命令验证修复效果：
+# 搜索
+python tomato\_novel\_api.py search "盗墓"
 
-python tomato\_novel\_api.py test
+# 获取书籍信息
+python tomato\_novel\_api.py novel\_info 7143038691944959011
 
-📝 更新日志
--------
+# 其它命令
+python tomato\_novel\_api.py              # 打印帮助
+# 支持: search | novel\_info | book\_details | catalog | chapter\_content | download\_full
 
--   修复了API处理逻辑的关键bug
--   添加了线程安全机制
--   改善了错误处理和用户体验
--   保持了原有GUI功能的完整性
+* * *
 
-🔄 自动更新与发布
+⚙️ 配置与令牌
+--------
+
+-   配置集中在 config.py，可调整并发数、重试、超时、限速、默认导出格式等
+-   部分数据源需要验证令牌。GUI 首次会弹窗引导；也可使用环境变量：
+
+# Windows PowerShell
+$env:TOMATO\_VERIFICATION\_TOKEN = "你的令牌"
+# macOS/Linux
+export TOMATO\_VERIFICATION\_TOKEN="你的令牌"
+
+* * *
+
+📦 导出与文件
+--------
+
+-   支持 txt 与 epub 导出（见 config.py 的 OUTPUT\_CONFIG）
+-   支持 HEIC 封面（依赖 pillow-heif）
+
+* * *
+
+🏗️ 打包与发布
+---------
+
+本地打包（PyInstaller）：
+
+pip install pyinstaller
+python build\_app.py
+
+CI/CD（GitHub Actions）：
+
+-   推送形如 v\* 的标签触发构建并上传产物
+-   版本信息位于 version.py（**version**、**github\_repo**）
+
+* * *
+
+* * *
+
+🧭 Roadmap
 ----------
 
--   在 `version.py` 中维护当前版本号 `__version__`，并将 `__github_repo__` 设置为你的仓库（格式 `owner/repo`）。
--   应用启动时会自动（可在设置中关闭）检查 GitHub Releases 的最新版本；也可在设置页点击“检查更新”。
--   下载完成后将自动安装并重启。
+-   增加批量任务队列与计划任务
+-   增强搜索源与可插拔源管理
+-   导出模板（含封面样式/章节样式预设）
+-   内置更新频道选择（稳定/测试）
+-   更丰富的日志与诊断页面
 
-### GitHub Actions 自动发布
+* * *
 
-本仓库提供工作流 `.github/workflows/release.yml`：
+🤝 贡献
+-----
 
--   推送形如 `v*` 的标签时，自动构建 Windows 可执行文件并上传到该 Release。
--   也可在 Actions 页面手动触发工作流并指定 `tag`。
+欢迎 PR / Issue：
 
-推荐流程：
+-   修复 bug、补充文档与截图、改进交互
+-   新增数据源、导出格式、性能优化
 
-1.  修改 `version.py` 的 `__version__` 为新版本，例如 `1.2.3`；
-2.  提交并打标签：`git tag v1.2.3 && git push origin v1.2.3`；
-3.  等待 Actions 构建并把 `TomatoNovelDownloader_v1.2.3_windows_x64.exe` 上传到 Release；
-4.  客户端会检测到新版本并提示更新。
+流程建议：
+
+1.  Fork 仓库并新建分支
+2.  本地验证（GUI 与 CLI 至少一种）
+3.  提交 PR，说明变更点与验证方式
+
+* * *
+
+📣 支持与反馈
+--------
+
+-   提交 Issue：描述问题场景、日志、复现步骤
+-   功能建议：说明使用场景与期望交互
+
+如果你觉得项目好用，欢迎点亮 Star ✨
+
+🧰 常见问题
+-------
+
+-   Linux 缺少 Tkinter：`sudo apt-get install -y python3-tk tk-dev`
+-   fake-useragent 在部分网络环境可能失败：可临时固定 UA 或稍后重试
+-   请求失败较多：适当提高超时与限速（config.py: REQUEST\_TIMEOUT、REQUEST\_RATE\_LIMIT）
+
+* * *
+
+📜 许可与声明
+--------
+
+本项目仅用于技术学习与交流，请遵守当地法律法规与网站使用条款，勿用于任何商业或非法用途。

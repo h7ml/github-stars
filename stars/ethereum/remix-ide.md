@@ -1,6 +1,6 @@
 ---
 project: remix-ide
-stars: 2318
+stars: 2322
 description: Documentation for Remix IDE
 url: https://github.com/ethereum/remix-ide
 ---
@@ -42,42 +42,13 @@ The built-in plugins in Remix IDE are built on top of **Remix libraries**, which
 Setup the Documentation Locally
 -------------------------------
 
-Steps to build this project are as follows:
+To run this documentation locally, clone this repository by running the command below:
 
-First, you need to set up a Python virtual environment. This is a self-contained environment where you can install Python packages without interfering with your system's Python installation. Here's how you can create and activate a Python virtual environment:
+git clone https://github.com/ethereum/remix-ide
 
-# Create a virtual environment
-# By placing in \`.vscode\` these will be git ignored, and not committed
-python3 -m venv .vscode/venv
+In your cloned directory, `cd` into the `docs` folder and run the command below:
 
-# Activate the virtual environment
-# On Windows:
-.vscode\\venv\\Scripts\\activate
-
-# On Unix or MacOS:
-source venv/bin/activate
-
-Once the virtual environment is activated, you can install the necessary Python packages:
-
-pip3 install sphinx sphinx\_rtd\_theme
-pip3 install myst-parser
-
-Then, you can clone the repository and build the project:
-
-git clone https://github.com/ethereum/remix-ide.git
-cd remix-ide/docs/ # into /docs subfolder
-make html
-
-Go to `docs/_build/html` and start a Python HTTP server to serve the HTML files:
-
-cd \_build/html
-python3 -m http.server
-
-View by visiting `http://localhost:8000` in your web browser.
-
-When you're done, you can deactivate the virtual environment:
-
-deactivate
+make run
 
 Contributing
 ------------

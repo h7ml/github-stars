@@ -1,6 +1,6 @@
 ---
 project: react-use
-stars: 61
+stars: 63
 description: ⚛️ React Use: A new programming paradigm to reshape React development.
 url: https://github.com/sheinsight/react-use
 ---

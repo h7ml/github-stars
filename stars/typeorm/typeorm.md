@@ -1,6 +1,6 @@
 ---
 project: typeorm
-stars: 35664
+stars: 35700
 description: ORM for TypeScript and JavaScript. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.
 url: https://github.com/typeorm/typeorm
 ---

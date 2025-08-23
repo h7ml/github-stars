@@ -1,6 +1,6 @@
 ---
 project: AppLint
-stars: 64
+stars: 65
 description: 淘宝前端工程最佳实践检查方案
 url: https://github.com/apptools-lab/AppLint
 ---

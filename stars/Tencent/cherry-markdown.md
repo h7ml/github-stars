@@ -1,6 +1,6 @@
 ---
 project: cherry-markdown
-stars: 4320
+stars: 4328
 description: ✨ A Markdown Editor
 url: https://github.com/Tencent/cherry-markdown
 ---
@@ -17,31 +17,32 @@ Cherry Markdown Writer is a Javascript Markdown editor. It has the advantages su
 
 ### Document
 
--   初识cherry markdown 编辑器
+-   Getting Started with Cherry Markdown Editor
 -   hello world
--   配置图片&文件上传接口
--   调整工具栏
--   自定义语法
--   配置项全解
--   配置主题
--   扩展代码块语法
--   事件&回调
+-   Configuring Image & File Upload Interfaces
+-   Adjusting the Toolbar
+-   Custom Syntax
+-   Comprehensive Configuration Options
+-   Configuring Themes
+-   Extending Code Block Syntax
+-   Events & Callbacks
 -   API
 
 ### Demos
 
--   full model
--   basic
--   mobile
--   multiple instances
--   editor without toolbar
--   pure preview
+-   Full Model
+-   Basic
+-   Mobile
+-   Multiple Instances
+-   Editor Without Toolbar
+-   Pure Preview
 -   XSS（Not allowed by default）
--   img wysiwyg
--   table wysiwyg
--   headers with auto num
--   流式输入模式（AI chart场景）
--   VIM 编辑模式
+-   IMG WYSIWYG
+-   Table WYSIWYG
+-   Headers with Auto Num
+-   Stream Input Mode (AI chart scenario)
+-   VIM Editing Mode
+-   Utilize Your Own Mermaid.js
 
 * * *
 

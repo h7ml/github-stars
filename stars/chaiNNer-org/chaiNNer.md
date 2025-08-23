@@ -1,6 +1,6 @@
 ---
 project: chaiNNer
-stars: 5252
+stars: 5265
 description: A node-based image processing GUI aimed at making chaining image processing tasks easy and customizable. Born as an AI upscaling application, chaiNNer has grown into an extremely flexible and powerful programmatic image processing application.
 url: https://github.com/chaiNNer-org/chaiNNer
 ---

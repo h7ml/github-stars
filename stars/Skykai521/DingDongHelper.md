@@ -1,6 +1,6 @@
 ---
 project: DingDongHelper
-stars: 1105
+stars: 1104
 description: 叮咚买菜抢菜插件
 url: https://github.com/Skykai521/DingDongHelper
 ---

@@ -1,6 +1,6 @@
 ---
 project: iot-master
-stars: 792
+stars: 793
 description: 物联大师是开源免费的物联网平台，集成了标准Modbus和主流PLC等多种协议，支持数据采集、公式计算、定时控制、自动控制、异常报警、流量监控、Web组态、远程调试等功能，适用于大部分物联网和工业互联网应用场景。
 url: https://github.com/god-jason/iot-master
 ---

@@ -1,6 +1,6 @@
 ---
 project: PandoraNext-TokensTool
-stars: 1255
+stars: 1256
 description: 【更方便更安全的管理PandoraNext】通过手机端和电脑端使小白能快速部署属于自己的免费Open API中转站。tokensTool支持通过PandoraNext管理刷新所有token，支持分享，支持share_token，pool_token一键自定义放入oneapi。tokensTool全面支持PandoraNext部署方法且支持热部署，自定义后缀，登录黑名单IP和登录日志，保护隐私安全，已打包好docker镜像，且有详细部署和使用文档，小白也能免费部署，一键启动！
 url: https://github.com/Yanyutin753/PandoraNext-TokensTool
 ---

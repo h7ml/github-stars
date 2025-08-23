@@ -1,6 +1,6 @@
 ---
 project: react-amis-admin
-stars: 173
+stars: 174
 description: 一个开箱可用的Amis + React 低代码开发环境
 url: https://github.com/iceqing/react-amis-admin
 ---

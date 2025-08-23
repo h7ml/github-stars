@@ -1,6 +1,6 @@
 ---
 project: NanUI
-stars: 3779
+stars: 3780
 description: NanUI is an open source .NET project for developers who want to create Windows desktop applications with HTML, CSS and JavaScript.
 url: https://github.com/XuanchenLin/NanUI
 ---

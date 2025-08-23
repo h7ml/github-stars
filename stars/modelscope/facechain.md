@@ -1,6 +1,6 @@
 ---
 project: facechain
-stars: 9477
+stars: 9480
 description: FaceChain is a deep-learning toolchain for generating your Digital-Twin.
 url: https://github.com/modelscope/facechain
 ---

@@ -1,6 +1,6 @@
 ---
 project: HumanSystemOptimization
-stars: 19930
+stars: 19989
 description: 健康学习到150岁 - 人体系统调优不完全指南
 url: https://github.com/zijie0/HumanSystemOptimization
 ---

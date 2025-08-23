@@ -1,6 +1,6 @@
 ---
 project: backstage
-stars: 31145
+stars: 31187
 description: Backstage is an open framework for building developer portals
 url: https://github.com/backstage/backstage
 ---

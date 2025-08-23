@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-monkey
-stars: 1706
+stars: 1712
 description: A vite plugin server and build your.user.js for userscript engine like Tampermonkey, Violentmonkey, Greasemonkey, ScriptCat
 url: https://github.com/lisonge/vite-plugin-monkey
 ---
@@ -150,6 +150,28 @@ export interface MonkeyOption {
    \* }
    \*/
   clientAlias?: string;
+
+  /\*\*
+   \* handle CSS imports as style nodes(\[HTMLStyleElement\](https://developer.mozilla.org/docs/Web/API/HTMLStyleElement))
+   \*
+   \* If you use \[Shadow DOM\](https://developer.mozilla.org/docs/Web/API/Web\_components/Using\_shadow\_DOM) (style isolation) to place your interface application, this is very useful.
+   \*
+   \* Support \`.css?style\`, \`.less?style\`, \`.sass?style\`, \`.scss?style\`, \`.styl?style\`, \`.stylus?style\`, \`.pcss?style\`, \`.postcss?style\` and \`.sss?style\` imports
+   \*
+   \* add \`/// <reference types="vite-plugin-monkey/style" />\` to vite-env.d.ts for type hint
+   \*
+   \* @example
+   \* import style1 from './style1.css?style':
+   \* import style2 from 'normalize.css?style';
+   \* const container = document.createElement('div').attachShadow({ mode: 'open' });
+   \* container.append(style1, style2); // with hmr when change style1.css
+   \* const style3 = style1.cloneNode(); // it will still have hmr
+   \*
+   \* @default
+   \* true
+   \*/
+  styleImport?: boolean;
+
   server?: {
     /\*\*
      \* auto open install url in default browser when userscript comment change
@@ -298,33 +320,21 @@ export interface MonkeyOption {
 
     /\*\*
      \* @default
-     \* const defaultFc = () => {
-     \*   return (e: string) => {
-     \*     if (typeof GM\_addStyle == 'function') {
-     \*       GM\_addStyle(e);
-     \*       return;
-     \*     }
-     \*     const o = document.createElement('style');
-     \*     o.textContent = e;
-     \*     document.head.append(o);
-     \*   };
+     \* const importCss = (css: string): void => {
+     \*   if (typeof GM\_addStyle === 'function') {
+     \*     GM\_addStyle(css);
+     \*   } else {
+     \*     document.head.appendChild(document.createElement('style')).append(css)
+     \*   }
      \* };
      \* @example
-     \* const defaultFc1 = () => {
-     \*   return (e: string) => {
-     \*     const o = document.createElement('style');
-     \*     o.textContent = e;
-     \*     document.head.append(o);
-     \*   };
-     \* };
-     \* const defaultFc2 = (css:string)=>{
-     \*   const t = JSON.stringify(css)
-     \*   return \`(e=>{const o=document.createElement("style");o.textContent=e,document.head.append(o)})(${t})\`
-     \* }
+     \* // example1
+     \* importCss.toString()
+     \*
+     \* // example2
+     \* \`(a)=>GM\_addStyle(a)\`
      \*/
-    cssSideEffects?: (
-      css: string,
-    ) \=> Thenable<string | ((css: string) \=> void)\>;
+    cssSideEffects?: string | ((css: string) \=> void);
   };
 }
 
@@ -352,8 +362,6 @@ there is the following cdn to use, full detail see cdn.ts
 
 -   jsdelivr
 -   unpkg
--   bytecdntp
--   baomitu
 -   cdnjs
 -   zhimg
 -   npmmirror

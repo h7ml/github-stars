@@ -1,6 +1,6 @@
 ---
 project: code-interview
-stars: 225
+stars: 226
 description: 前端面试小册，包含Vue面试题，React面试题，JS面试题，HTTP面试题，工程化面试题，CSS面试题，算法面试题，大厂面试题，高频面试题
 url: https://github.com/linwu-hi/code-interview
 ---

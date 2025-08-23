@@ -1,6 +1,6 @@
 ---
 project: simpleui
-stars: 3701
+stars: 3703
 description: A modern theme based on vue+element-ui for django admin.一款基于vue+element-ui的django admin现代化主题。全球20000+网站都在使用！喜欢可以点个star✨
 url: https://github.com/newpanjing/simpleui
 ---

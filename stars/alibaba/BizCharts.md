@@ -1,6 +1,6 @@
 ---
 project: BizCharts
-stars: 6195
+stars: 6194
 description: Powerful data visualization library based on G2 and React.
 url: https://github.com/alibaba/BizCharts
 ---

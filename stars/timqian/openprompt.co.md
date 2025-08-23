@@ -1,6 +1,6 @@
 ---
 project: openprompt.co
-stars: 1208
+stars: 1206
 description: Create. Use. Share. ChatGPT prompts
 url: https://github.com/timqian/openprompt.co
 ---

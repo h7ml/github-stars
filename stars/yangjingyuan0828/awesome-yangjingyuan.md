@@ -1,7 +1,7 @@
 ---
 project: awesome-yangjingyuan
-stars: 353
-description: 杨景媛（武汉大学）事件前因后果记录。A curated collection of remarkable stories, images, and insights documenting Yang Jingyuan.
+stars: 362
+description: 杨景媛（武汉大学）事件前因后果记录。最近更新：杨景媛论文下载突破30万次。
 url: https://github.com/yangjingyuan0828/awesome-yangjingyuan
 ---
 
@@ -36,6 +36,8 @@ A curated collection of remarkable stories, images, and insights documenting Yan
 ----
 
 2023.07.11 - 武汉大学图书馆监控
+
+2023.07.12 & 2023.10.09 - 杨景媛伙同刘迪密谋构陷录音
 
 2023.10.11 - 武汉大学官网关于性骚扰的情况说明    快照
 
@@ -83,6 +85,8 @@ A curated collection of remarkable stories, images, and insights documenting Yan
 2025.08.07 武大学者杨景媛论文知网下载量破20万，雄踞第一，俯视全榜，天下敬服
 
 2025.08.08 🕘9点，228051次
+
+2025.08.22 🕛12点，突破30万次，达到300342
 
 相关仓库
 ----
@@ -271,6 +275,26 @@ N/A
 
 五探武大杨某媛硕士论文，101-87=13，从模型的基本设定和实证策略出发，真心希望这是最后一探，武大图书馆诬告事件
 
+2025.08.07
+
+水论文的程序猿
+
+六探武大杨某媛，网友爆出惊天文件，企图修改已上架在知网的硕士论文，武大图书馆污蔑事件
+
+2025.08.16
+
+水论文的程序猿
+
+七探武大杨某媛，其硕士论文一定没问题，错的是我，是无知的网友们，对论文错误进行了错误的分析和解读，武大图书馆污蔑事件
+
+### 数据分析
+
+#### 2025.07.20 - 2025.08.19 杨景媛国际热度力压成都世界运动会，武汉大学完胜清华大学
+
+### Steam
+
+杨景媛 on Steam
+
 相关高校
 ----
 
@@ -404,8 +428,8 @@ N/A
 
 相关信息
 
-人员信息
-----
+相关人员联系方式
+--------
 
 ### 杨景媛
 
@@ -447,3 +471,10 @@ N/A
 ### 杨培云
 
 -   执业公示
+    
+-   杨培云 - 联系方式
+    
+
+### 武汉大学辅导员：刘迪
+
+-   刘迪 - 联系方式

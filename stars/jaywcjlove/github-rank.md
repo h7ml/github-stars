@@ -1,6 +1,6 @@
 ---
 project: github-rank
-stars: 2235
+stars: 2238
 description: 🕷️Github China/Global User Ranking, Global Warehouse Star Ranking (Github Action is automatically updated daily).
 url: https://github.com/jaywcjlove/github-rank
 ---
@@ -28,11 +28,11 @@ Released on `npm` from `April 20, 2019,` the version number is defined by `year`
 
 Warning
 
-Due to the large number of projects, the free quota is insufficient, resulting in some charges. We have now adjusted it to run every 3 days to save costs.
+Due to the large number of projects, the free quota is insufficient, resulting in some charges. We have now adjusted it to run every `7` days to save costs.
 
 Now it can be updated automatically every day, using GitHub Actions Workflows to trigger the GitHub workflow every day at 00:00 (8:00 am Beijing time) through the timer, automatically crawl the data, submit the generated web page to the gh-pages branch, and Automatically publish npm version, really fragrant! !
 
-Update date: 2025-08-16 00:48:57
+Update date: 2025-08-22 00:52:10
 
 Plug-in Usage
 -------------

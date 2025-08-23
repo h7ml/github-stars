@@ -1,6 +1,6 @@
 ---
 project: nestjs-mysql-api
-stars: 903
+stars: 904
 description: NestJs CRUD for RESTful API使用nestjs+mysql+typeorm+jwt+swagger企业项目中的RBAC权限管理、实现单地方登录。
 url: https://github.com/kuangshp/nestjs-mysql-api
 ---

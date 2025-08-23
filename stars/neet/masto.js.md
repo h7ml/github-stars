@@ -1,6 +1,6 @@
 ---
 project: masto.js
-stars: 763
+stars: 765
 description: 🐘 Universal Mastodon API client for JavaScript
 url: https://github.com/neet/masto.js
 ---

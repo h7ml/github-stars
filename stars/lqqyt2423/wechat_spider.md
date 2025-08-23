@@ -1,6 +1,6 @@
 ---
 project: wechat_spider
-stars: 1478
+stars: 1479
 description: 微信爬虫，获取文章内容、阅读量、点赞量、评论等，获取公众号所有历史文章链接。
 url: https://github.com/lqqyt2423/wechat_spider
 ---

@@ -1,6 +1,6 @@
 ---
 project: tampermonkey
-stars: 4912
+stars: 4925
 description: Tampermonkey is the most popular userscript manager, with over 10 million users. It's available for Chrome, Microsoft Edge, Safari, Opera Next, and Firefox. 
 url: https://github.com/Tampermonkey/tampermonkey
 ---

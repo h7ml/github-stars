@@ -1,6 +1,6 @@
 ---
 project: node-odbc
-stars: 154
+stars: 156
 description: ODBC bindings for node
 url: https://github.com/IBM/node-odbc
 ---
@@ -636,7 +636,7 @@ Closes an open connection. Any transactions on the connection that have not been
 
 #### Parameters:
 
--   **callback?**: The function called when `.close` has finished clsoing the connection. If no callback function is given, `.close` will return a native JavaScript `Promise`. Callback signature is:
+-   **callback?**: The function called when `.close` has finished closing the connection. If no callback function is given, `.close` will return a native JavaScript `Promise`. Callback signature is:
     -   error: The error that occured in execution, or `null` if no error
 
 #### Examples:

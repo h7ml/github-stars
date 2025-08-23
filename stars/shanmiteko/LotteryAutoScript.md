@@ -1,6 +1,6 @@
 ---
 project: LotteryAutoScript
-stars: 970
+stars: 973
 description: Bili动态抽奖助手
 url: https://github.com/shanmiteko/LotteryAutoScript
 ---
@@ -33,7 +33,7 @@ Github仓库链接
 -   监控用户转发
 -   监控话题页面
 -   监控专栏合集
--   自动点赞、评论、乱序转发、@好友、带话题、可选随机动态
+-   自动点赞、AI评论、乱序转发、@好友、带话题、可选随机动态
 -   直播预约抽奖
 -   检测是否中奖
     -   已读@

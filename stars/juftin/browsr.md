@@ -1,6 +1,6 @@
 ---
 project: browsr
-stars: 354
+stars: 353
 description: 🗂️ a pleasant file explorer in your terminal supporting all filesystems
 url: https://github.com/juftin/browsr
 ---

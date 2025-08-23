@@ -1,6 +1,6 @@
 ---
 project: markwhen
-stars: 4650
+stars: 4656
 description: Make a cascading timeline from markdown-like text. Supports simple American/European date styles, ISO8601, images, links, locations, and more.
 url: https://github.com/mark-when/markwhen
 ---

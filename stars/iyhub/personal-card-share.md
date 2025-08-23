@@ -1,6 +1,6 @@
 ---
 project: personal-card-share
-stars: 116
+stars: 115
 description: 一个基于ZhipuAI的文本到社交卡片(简历卡片)的生成工具.
 url: https://github.com/iyhub/personal-card-share
 ---

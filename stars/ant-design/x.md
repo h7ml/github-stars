@@ -1,6 +1,6 @@
 ---
 project: x
-stars: 3625
+stars: 3645
 description: Craft AI-driven interface effortlessly🤖
 url: https://github.com/ant-design/x
 ---

@@ -1,6 +1,6 @@
 ---
 project: Awesome-ChatGPT-prompts-ZH_CN
-stars: 3091
+stars: 3093
 description: 如何将ChatGPT调教成一只猫娘
 url: https://github.com/L1Xu4n/Awesome-ChatGPT-prompts-ZH_CN
 ---

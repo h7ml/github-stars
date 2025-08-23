@@ -1,6 +1,6 @@
 ---
 project: awesome-cybersecurity-blueteam-cn
-stars: 898
+stars: 900
 description: 网络安全 · 攻防对抗 · 蓝队清单，中文版
 url: https://github.com/satan1a/awesome-cybersecurity-blueteam-cn
 ---

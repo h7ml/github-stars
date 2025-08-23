@@ -1,6 +1,6 @@
 ---
 project: chatlog
-stars: 7772
+stars: 7885
 description: chat log tool, easily use your own chat data. 聊天记录工具，轻松使用自己的聊天数据
 url: https://github.com/sjzar/chatlog
 ---

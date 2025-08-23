@@ -1,6 +1,6 @@
 ---
 project: caj2pdf-actions
-stars: 82
+stars: 80
 description: CAJ云转换，基于Github Actions
 url: https://github.com/qinlili23333/caj2pdf-actions
 ---

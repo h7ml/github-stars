@@ -1,6 +1,6 @@
 ---
 project: apifox
-stars: 519
+stars: 520
 description: Apifox = Postman + Swagger + Mock + JMeter。Apifox 官网：https://www.apifox.cn/
 url: https://github.com/apifox/apifox
 ---

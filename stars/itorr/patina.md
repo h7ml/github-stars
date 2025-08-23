@@ -1,6 +1,6 @@
 ---
 project: patina
-stars: 846
+stars: 847
 description: 🤢「电子包浆」 图片做旧工具，赛博包浆虚拟器
 url: https://github.com/itorr/patina
 ---

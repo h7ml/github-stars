@@ -1,6 +1,6 @@
 ---
 project: ollama
-stars: 150327
+stars: 150782
 description: Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 url: https://github.com/ollama/ollama
 ---
@@ -575,6 +575,8 @@ Community Integrations
 -   ollama launcher (A launcher for Ollama, aiming to provide users with convenient functions such as ollama server launching, management, or configuration.)
 -   ai-hub (AI Hub supports multiple models via API keys and Chat support via Ollama API.)
 -   Mayan EDMS (Open source document management system to organize, tag, search, and automate your files with powerful Ollama driven workflows.)
+-   Serene Pub (Beginner friendly, open source AI Roleplaying App for Windows, Mac OS and Linux. Search, download and use models with Ollama all inside the app.)
+-   Andes (A Visual Studio Code extension that provides a local UI interface for Ollama models)
 
 ### Cloud
 
@@ -701,6 +703,8 @@ Community Integrations
 -   Nichey is a Python package for generating custom wikis for your research topic
 -   Ollama for D
 -   OllamaPlusPlus (Very simple C++ library for Ollama)
+-   any-llm (A single interface to use different llm providers by mozilla.ai)
+-   any-agent (A single interface to use and evaluate different agent frameworks by mozilla.ai)
 
 ### Mobile
 

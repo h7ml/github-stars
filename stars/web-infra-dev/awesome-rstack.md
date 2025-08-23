@@ -1,19 +1,19 @@
 ---
-project: awesome-rspack
-stars: 349
+project: awesome-rstack
+stars: 351
 description: A curated list of awesome things related to Rstack.
-url: https://github.com/web-infra-dev/awesome-rspack
+url: https://github.com/web-infra-dev/awesome-rstack
 ---
 
   
-A curated list of awesome things related to Rspack and its ecology
+A curated list of awesome things related to the Rstack toolchain
 
-Awesome Rspack
+Awesome Rstack
 ==============
 
 -   Resources
-    -   Official Resources
     -   Rstack
+    -   Official Resources
     -   Ecosystem
 -   Starter
     -   Rspack Starter
@@ -33,23 +33,48 @@ Awesome Rspack
 Resources
 ---------
 
-### Official Resources
-
--   Rspack Doc
--   Rspack GitHub Repo
--   Rspack Release Notes
--   Rspack Examples: Examples for Rspack, Rsbuild, Rspress and Rsdoctor.
--   Rsfamily Design Resources: Design resources for Rspack, Rsbuild, Rspress and Rsdoctor.
-
 ### Rstack
 
 Rstack is a unified JavaScript toolchain built around Rspack, with high performance and consistent architecture.
 
--   Rsbuild: The Rspack-based build tool.
--   Rspress: A fast Rsbuild-based static site generator.
--   Rsdoctor: A one-stop build analyzer for Rspack.
--   Rslib: The library build tool powered by Rsbuild.
--   Rstest: The testing framework powered by Rspack.
+Name
+
+Description
+
+Version
+
+Rspack
+
+Bundler
+
+Rsbuild
+
+Build tool
+
+Rslib
+
+Library development tool
+
+Rspress
+
+Static site generator
+
+Rsdoctor
+
+Build analyzer
+
+Rstest
+
+Testing framework
+
+Rslint
+
+Linter
+
+### Official Resources
+
+-   rstack-examples: Examples for Rstack.
+-   rstack-design-resources: Design resources for Rstack.
 
 ### Ecosystem
 
@@ -109,7 +134,7 @@ Starter
 
 -   ts-lib-starter: A hassle-free TS library template, powered by Rslib.
 -   rslib-npm-template: A starter template for developing React components with Rslib, featuring automated versioning and publishing using semantic-release.
--   web-component-starter: A starter for developint Web components with Rslib, featuring using stencil and useful both in React and Vue.
+-   web-component-starter: A starter for developing Web components with Rslib, featuring using stencil and useful both in React and Vue.
 
 Plugins
 -------
@@ -351,6 +376,10 @@ Blogs from the Rspack team:
 
 English blogs:
 
+-   \[2025-08\] Rspack Introduces Rslint, a TypeScript-First Linter Written in Go
+-   \[2025-08\] Question-based web performance analysis using rsdoctor/mcp-server
+-   \[2025-08\] Rust Tools That Made Our Dev Team Productive Again
+-   \[2025-07\] Webpack to Rspack: A Deep Dive Into Our Build Time Breakthrough
 -   \[2025-04\] My journey from Webpack to Vite and finally Rsbuild
 -   \[2025-04\] An Introduction to JavaScript Bundler Rspack
 -   \[2025-04\] Scaffolding New Apps With Angular Rspack:
@@ -358,6 +387,7 @@ English blogs:
 -   \[2025-02\] Rspack: An Engineer’s Approach to Build System Innovation
 -   \[2025-01\] State of Rspack in Angular
 -   \[2025-01\] Nx and Angular with Rspack and Module Federation
+-   \[2024-12\] Rspack with Module federation V2 is the future
 -   \[2024-09\] A bundler story: migrating from Webpack to Rspack
 -   \[2024-09\] Custom chunk optimization, how code splitting works in Rspack/Webpack
 -   \[2024-08\] Lessons learned switching to Rspack
@@ -388,6 +418,7 @@ Chinese blogs (中文):
 
 Japanese blogs (日本語):
 
+-   \[2025-08\] Rails アプリケーションのフロントエンドを webpack から Rspack に移行しました
 -   \[2025-04\] Rspack に移行したらフロントエンドのビルドがめっちゃ速くなりました
 
 French blogs (Français):

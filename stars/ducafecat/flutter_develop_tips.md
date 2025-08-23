@@ -1,6 +1,6 @@
 ---
 project: flutter_develop_tips
-stars: 112
+stars: 115
 description: flutter技巧 https://ducafecat.com/blog
 url: https://github.com/ducafecat/flutter_develop_tips
 ---

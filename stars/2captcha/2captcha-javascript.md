@@ -1,6 +1,6 @@
 ---
 project: 2captcha-javascript
-stars: 67
+stars: 66
 description: JavaScript library for easy integration with the API of 2captcha captcha solving service to bypass reCAPTCHA, funcaptcha, geetest and solve any other captchas.
 url: https://github.com/2captcha/2captcha-javascript
 ---

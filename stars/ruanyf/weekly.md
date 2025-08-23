@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 73822
+stars: 74228
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---
@@ -36,6 +36,7 @@ $ grep -nri css docs | cat --number
 
 **八月**
 
+-   第 362 期：GitHub 工程师谈系统设计
 -   第 361 期：暗网 Tor 安全吗
 -   第 360 期：Dan Wang 的新书
 -   第 359 期：Palantir 值得关注

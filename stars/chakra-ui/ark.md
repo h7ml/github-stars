@@ -1,7 +1,7 @@
 ---
 project: ark
-stars: 4536
-description: Build high-quality, accessible design systems design system. Works in React, Svelte, Vue, and Solid
+stars: 4561
+description: Build high-quality, accessible design systems. Works in React, Svelte, Vue, and Solid
 url: https://github.com/chakra-ui/ark
 ---
 

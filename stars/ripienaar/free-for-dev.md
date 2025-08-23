@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 110128
+stars: 110715
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -351,7 +351,6 @@ APIs, Data, and ML
 -   Simplescraper — Trigger your webhook after each operation. The free plan includes 100 cloud scrape credits.
 -   Select Star - is an intelligent data discovery platform that automatically analyzes and documents your data. Free light tier with 2 Data Source, up to 1,000 Tables and 25 Users.
 -   Sheetson - Instantly turn any Google Sheets into a RESTful API. Free plan available, including 1,000 free rows per sheet.
--   Shipyard — Low-code data orchestration platform for the cloud. Build with a mix of low-code templates and your code (Python, Node.js, Bash, SQL). Our free developer plan offers 10 hours of runtime every month for one user - more than enough to automate multiple workflows.
 -   Siterelic - Siterelic API lets you take screenshots, audit websites, TLS scan, DNS lookup, test TTFB, and more. The free plan offers 100 API requests per month.
 -   SerpApi - Real-time search engine scraping API. Returns structured JSON results for Google, YouTube, Bing, Baidu, Walmart, and many other machines. The free plan includes 100 successful API calls per month.
 -   SmartParse - SmartParse is a data migration and CSV to API platform that offers time- and cost-saving developer tools. The Free tier includes 300 Processing Units per month, Browser uploads, Data quarantining, Circuit breakers, and Job Alerts.
@@ -530,7 +529,6 @@ Code Generation
 -   Appinvento — AppInvento is a free No code app builder. In the automatically generated backend code, users have complete access to the source code and unlimited APIs and routes, allowing for extensive integration. The free plan includes three projects, five tables, and a Google add-on.
 -   Cody AI - Cody is a coding AI assistant that uses AI and a deep understanding of your codebase to help you write and understand code faster. Cody gives developers a choice of LLMs (including local inference), has support for various IDEs, supports all popular programming languages, and has a free plan. The free plan gives developers 20 chat messages (using Claude 3 Sonnet as the LLM) and 500 autocompletions (using the Starcoder 16b) each month.
 -   DhiWise — Seamlessly turn Figma designs into dynamic Flutter & React applications with DhiWise's innovative code generation technology, optimizing your workflow and helping you craft exceptional mobile and web experiences faster than ever before.
--   Fern - Write API definitions and use them to generate SDKs/client libraries in popular languages such as TypeScript, Python, Java, Go, and more. OpenAPI fully supported. Free tier generates code for up to a max of 20 endpoints.
 -   Metalama - Only for C#. Metalama generates the boilerplate of the code on the fly during compilation so that your source code remains clean. It is free for open-source projects, and its commercial-friendly free tier includes three aspects.
 -   Supermaven — Supermaven is a fast AI code completion plugin for VSCode, JetBrains, and Neovim. Free tier provides unlimited inline completions.
 -   tabnine.com — Tabnine helps developers create better software faster by providing insights learned from all the code in the world. Plugin available.
@@ -1290,7 +1288,6 @@ Web Hosting
 -   DigitalOcean - Build and deploy three static sites for free on the App Platform Starter tier.
 -   Drive To Web — Host directly to the web from Google Drive & OneDrive. Static sites only. Free forever. One site per Google/Microsoft account.
 -   Fenix Web Server - A developer desktop app for hosting sites locally and sharing them publically (in real-time). Work however you like, using its beautiful user interface, API, and/or CLI.
--   Fern - Build and host a Markdown-based documentation site on Fern's free plan. You can even auto-generate an API reference for your site from API definition files. The site is hosted at _yoursite_.docs.buildwithfern.com.
 -   Free Hosting — Free Hosting With PHP 5, Perl, CGI, MySQL, FTP, File Manager, POP E-Mail, free sub-domains, free domain hosting, DNS Zone Editor, Web Site Statistics, FREE Online Support and many more features not offered by other free hosts.
 -   Freehostia — FreeHostia offers free hosting services incl. an industry-best Control Panel & a 1-click installation of 50+ free apps. Instant setup. No forced ads.
 -   HelioHost — Non-profit free web hosting with Plesk control panel, PHP, Node.js, Python, Django, Flask, .NET, Perl, CGI, MySQL, PostgreSQL, SQLite, IMAP/POP3/SMTP email, unlimited bandwidth, free subdomains, 1000 MB storage for free with the option to upgrade.
@@ -1602,6 +1599,7 @@ Design and UI
 -   Mindmup.com — Unlimited mind maps for free and store them in the cloud. Your mind maps are available everywhere, instantly, from any device.
 -   Mockplus iDoc - Mockplus iDoc is a powerful design collaboration & handoff tool. Free Plan includes three users and five projects with all features available.
 -   mockupmark.com — Create realistic t-shirt and clothing mockups for social media and E-commerce, 40 free mockups.
+-   Modeldraw.com — Complete diagramming platform with UML, system architecture, flowcharts, mind maps, and Agile workflows. Real-time collaboration with unlimited team members, no credit card required.
 -   Mossaik - Free SVG image generator with different tools like waves, blogs and patterns.
 -   movingpencils.com — Fast, browser-based vector editor. Completely free.
 -   Octopus.do — Visual sitemap builder. Build your website structure in real time and rapidly share it to collaborate with your team or clients.
@@ -1997,7 +1995,6 @@ Miscellaneous
 -   FOSSA - Scalable, end-to-end management for third-party code, license compliance and vulnerabilities.
 -   Hook Relay - Add webhook support to your app without the hassles: done-for-you queueing, retries with backoff, and logging. The free plan has 100 deliveries per day, 14-day retention, and 3 hook endpoints.
 -   Hosting Checker - Check hosting information such as ASN, ISP, location and more for any domain, website or IP address. Also includes multiple hosting and DNS-related tools.
--   http2.pro — HTTP/2 protocol readiness test and client HTTP/2 support detection API.
 -   kandi — Jumpstart Application Development: build custom functions, and use cases, and complete applications faster through code snippets and open-source library reuse.
 -   Base64 decoder/encoder — Online free tool for decoding & encoding data.
 -   newreleases.io - Receive notifications on email, Slack, Telegram, Discord, and custom webhooks for new releases from GitHub, GitLab, Bitbucket, Python PyPI, Java Maven, Node.js NPM, Node.js Yarn, Ruby Gems, PHP Packagist, .NET NuGet, Rust Cargo and Docker Hub.

@@ -1,6 +1,6 @@
 ---
 project: Stapxs-QQ-Lite
-stars: 161
+stars: 162
 description: 一个兼容 oicq-http 的非官方网页版 QQ 客户端
 url: https://github.com/Stapxs/Stapxs-QQ-Lite
 ---

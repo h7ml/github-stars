@@ -1,6 +1,6 @@
 ---
 project: Copilot-LMAPI
-stars: 11
+stars: 12
 description: VSCode官方LMAPI转标准API
 url: https://github.com/BlueSkyXN/Copilot-LMAPI
 ---

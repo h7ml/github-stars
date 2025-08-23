@@ -1,6 +1,6 @@
 ---
 project: BlueTeamTools
-stars: 1595
+stars: 1605
 description: 蓝队分析研判工具箱，功能包括内存马反编译分析、各种代码格式化、网空资产测绘功能、溯源辅助、解密冰蝎流量、解密哥斯拉流量、解密Shiro/CAS/Log4j2的攻击payload、IP/端口连接分析、各种编码/解码功能、蓝队分析常用网址、java反序列化数据包分析、Java类名搜索、Fofa搜索、Hunter搜索等。
 url: https://github.com/abc123info/BlueTeamTools
 ---
@@ -8,7 +8,7 @@ url: https://github.com/abc123info/BlueTeamTools
 BlueTeamTools
 =============
 
-蓝队分析工具箱by:ABC\_123 "蓝队分析研判工具箱"就是把我平时写的蓝队小工具集合起来形成的，重点解决蓝队分析工作中的一些痛点问题。
+蓝队分析工具箱by:ABC\_123 "蓝队分析研判工具箱"就是把我平时写的蓝队小工具集合起来形成的，重点解决蓝队分析工作中的一些痛点问题。感谢Jiyu Tian在技术研发过程中给予的支持。
 
 **ABC\_123也录制了13节关于蓝队分析研判工具箱的系列使用教程，欢迎关注我的B站号（希水涵一讲堂）：**
 

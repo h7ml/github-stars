@@ -1,6 +1,6 @@
 ---
 project: AutoGPT
-stars: 177833
+stars: 178016
 description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 url: https://github.com/Significant-Gravitas/AutoGPT
 ---
@@ -9,6 +9,8 @@ AutoGPT: Build, Deploy, and Run AI Agents
 =========================================
 
    
+
+Deutsch | Español | français | 日本語 | 한국어 | Português | Русский | 中文
 
 **AutoGPT** is a powerful platform that allows you to create, deploy, and manage continuous AI agents that automate complex workflows.
 

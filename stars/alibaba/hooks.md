@@ -1,6 +1,6 @@
 ---
 project: hooks
-stars: 14609
+stars: 14618
 description: A high-quality & reliable React Hooks library.   https://alibaba.github.io/hooks/
 url: https://github.com/alibaba/hooks
 ---

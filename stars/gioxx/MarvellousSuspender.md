@@ -1,6 +1,6 @@
 ---
 project: MarvellousSuspender
-stars: 1198
+stars: 1211
 description: A chrome extension for suspending all tabs to free up memory, based on the original TGS 7.1.6, without tracking. Find more information about that on https://gioxx.org/tms
 url: https://github.com/gioxx/MarvellousSuspender
 ---

@@ -1,6 +1,6 @@
 ---
 project: chathub
-stars: 10383
+stars: 10389
 description: All-in-one chatbot client
 url: https://github.com/chathub-dev/chathub
 ---

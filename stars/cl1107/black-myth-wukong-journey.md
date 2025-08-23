@@ -35,27 +35,19 @@ url: https://github.com/cl1107/black-myth-wukong-journey
 
 ### 安装依赖
 
-```
 pnpm install
-```
 
 ### 本地开发
 
-```
 pnpm run dev
-```
 
 ### 构建
 
-```
 pnpm run build
-```
 
 ### 预览构建结果
 
-```
 pnpm run preview
-```
 
 参考致谢
 ----

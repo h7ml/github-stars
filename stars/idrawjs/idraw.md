@@ -1,6 +1,6 @@
 ---
 project: idraw
-stars: 1049
+stars: 1051
 description: A simple JavaScript framework for Drawing on the web.(一个面向Web绘图的JavaScript框架)
 url: https://github.com/idrawjs/idraw
 ---

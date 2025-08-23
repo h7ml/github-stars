@@ -1,6 +1,6 @@
 ---
 project: areweloongyet
-stars: 229
+stars: 230
 description: 咱龙了吗？在这里一站式了解 LoongArch 的上游生态建设。 Are we Loong yet? Follow LoongArch upstream work right here right away.
 url: https://github.com/loongson-community/areweloongyet
 ---

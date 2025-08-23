@@ -1,6 +1,6 @@
 ---
 project: next-self-host
-stars: 1420
+stars: 1431
 description: An example deploying Next / Postgres / Nginx to a Ubuntu Linux server.
 url: https://github.com/leerob/next-self-host
 ---

@@ -1,6 +1,6 @@
 ---
 project: claude-relay-service
-stars: 2065
+stars: 2355
 description: 自建Claude-code镜像服务，同时支持Gemini-cli、Codex-cli中转，支持多账户切换、自定义API密钥、Claude API、OPENAI兼容格式、能有效规避封号，OAuth集成可快捷添加账号池。
 url: https://github.com/Wei-Shaw/claude-relay-service
 ---
@@ -30,17 +30,6 @@ English • 中文文档 • 📸 界面预览 • 📢 公告频道
 🚨 **服务条款风险**: 使用本项目可能违反Anthropic的服务条款。请在使用前仔细阅读Anthropic的用户协议，使用本项目的一切风险由用户自行承担。
 
 📖 **免责声明**: 本项目仅供技术学习和研究使用，作者不对因使用本项目导致的账户封禁、服务中断或其他损失承担任何责任。
-
-* * *
-
-> 💡 **感谢 @vista8 的推荐！**
-> 
-> 如果你对Vibe coding感兴趣，推荐关注：
-> 
-> -   🐦 **X**: @vista8 - 分享前沿技术动态
-> -   📱 **公众号**: 向阳乔木推荐看
-
-* * *
 
 🤔 这个项目适合你吗？
 ------------
@@ -306,20 +295,7 @@ npm run service:status
 # 拉取镜像（支持 amd64 和 arm64）
 docker pull weishaw/claude-relay-service:latest
 
-# 使用 docker run 运行（注意设置必需的环境变量）
-docker run -d \\
-  --name claude-relay \\
-  -p 3000:3000 \\
-  -v $(pwd)/data:/app/data \\
-  -v $(pwd)/logs:/app/logs \\
-  -e JWT\_SECRET=your-random-secret-key-at-least-32-chars \\
-  -e ENCRYPTION\_KEY=your-32-character-encryption-key \\
-  -e REDIS\_HOST=redis \\
-  -e ADMIN\_USERNAME=my\_admin \\
-  -e ADMIN\_PASSWORD=my\_secure\_password \\
-  weishaw/claude-relay-service:latest
-
-# 或使用 docker-compose
+# 使用 docker-compose
 # 创建 .env 文件用于 docker-compose 的环境变量：
 cat \> .env << 'EOF'
 \# 必填：安全密钥（请修改为随机值）

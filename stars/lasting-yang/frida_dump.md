@@ -1,6 +1,6 @@
 ---
 project: frida_dump
-stars: 1708
+stars: 1715
 description: frida dump dex, frida dump so
 url: https://github.com/lasting-yang/frida_dump
 ---
@@ -78,6 +78,44 @@ Spawned `packagename`. Resuming main thread!
 _ZN3art11ClassLinker11DefineClassEPNS_6ThreadEPKcmNS_6HandleINS_6mirror11ClassLoaderEEERKNS_7DexFileERKNS9_8ClassDefE 0x7ac6dc4f74
 [DefineClass:] 0x7ac6dc4f74
 [dump dex]: /data/data/packagename/files/7aab800000_8341c4.dex
+```
+
+3\. \[Recommended\] Use dexCache to dump Android DEX files
+----------------------------------------------------------
+
+```
+frida -UF -l dexCache_dump.js
+     ____
+    / _  |   Frida 16.7.19 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Android Emulator 5554 (id=emulator-5554)
+dalvik.system.DelegateLastClassLoader[DexPathList[[zip file "/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk"],nativeLibraryDirectories=[/system/lib64, /system_ext/lib64]]] /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk 0x77d228a2f02c 0x24a3c 
+                0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F  0123456789ABCDEF
+77d228a2f02c  64 65 78 0a 30 33 35 00 41 1f 99 26 52 fb 1a ab  dex.035.A..&R...
+77d228a2f03c  b4 8a 64 29 d6 ae cb 20 58 99 82 f4 47 bf dc 64  ..d)... X...G..d
+77d228a2f04c  3c 4a 02 00 70 00 00 00 78 56 34 12 00 00 00 00  <J..p...xV4.....
+77d228a2f05c  00 00 00 00 6c 49 02 00 60 05 00 00 70 00 00 00  ....lI..`...p...
+77d228a2f06c  c1 01 00 00 f0 15 00 00 ad 01 00 00 f4 1c 00 00  ................
+77d228a2f07c  79 01 00 00 10 31 00 00 b0 05 00 00 d8 3c 00 00  y....1.......<..
+77d228a2f08c  ea 00 00 00 58 6a 00 00 a4 c2 01 00 98 87 00 00  ....Xj..........
+77d228a2f09c  f8 a8 01 00 fa a8 01 00 fd a8 01 00 07 a9 01 00  ................
+77d228a2f0ac  0f a9 01 00 31 a9 01 00 39 a9 01 00 3d a9 01 00  ....1...9...=...
+77d228a2f0bc  4f a9 01 00 53 a9 01 00 59 a9 01 00 6b a9 01 00  O...S...Y...k...
+77d228a2f0cc  7a a9 01 00 7e a9 01 00 85 a9 01 00 95 a9 01 00  z...~...........
+77d228a2f0dc  a0 a9 01 00 aa a9 01 00 c7 a9 01 00 ce a9 01 00  ................
+77d228a2f0ec  d9 a9 01 00 e0 a9 01 00 f4 a9 01 00 07 aa 01 00  ................
+77d228a2f0fc  24 aa 01 00 2a aa 01 00 58 aa 01 00 5f aa 01 00  $...*...X..._...
+77d228a2f10c  67 aa 01 00 6e aa 01 00 75 aa 01 00 7f aa 01 00  g...n...u.......
+77d228a2f11c  94 aa 01 00 9c aa 01 00 a6 aa 01 00 af aa 01 00  ................
+[find dex]: /data/data/com.android.chrome/files/dump_dex_com.android.chrome/class.dex
+[dump dex]: /data/data/com.android.chrome/files/dump_dex_com.android.chrome/class.dex
 ```
 
 ### Thanks

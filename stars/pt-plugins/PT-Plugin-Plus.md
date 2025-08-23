@@ -1,6 +1,6 @@
 ---
 project: PT-Plugin-Plus
-stars: 7902
+stars: 7903
 description: PT 助手 Plus，为 Microsoft Edge、Google Chrome、Firefox 浏览器插件（Web Extensions），主要用于辅助下载 PT 站的种子。
 url: https://github.com/pt-plugins/PT-Plugin-Plus
 ---

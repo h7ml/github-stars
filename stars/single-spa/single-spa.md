@@ -1,6 +1,6 @@
 ---
 project: single-spa
-stars: 13711
+stars: 13715
 description: The router for easy microfrontends
 url: https://github.com/single-spa/single-spa
 ---

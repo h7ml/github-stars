@@ -1,6 +1,6 @@
 ---
 project: homebrew-install
-stars: 513
+stars: 514
 description: 通过镜像快速安装homebrew
 url: https://github.com/ineo6/homebrew-install
 ---

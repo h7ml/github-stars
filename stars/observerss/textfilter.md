@@ -1,6 +1,6 @@
 ---
 project: textfilter
-stars: 2093
+stars: 2096
 description: 敏感词过滤的几种实现+某1w词敏感词库
 url: https://github.com/observerss/textfilter
 ---

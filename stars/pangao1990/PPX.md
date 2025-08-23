@@ -1,6 +1,6 @@
 ---
 project: PPX
-stars: 291
+stars: 292
 description: 基于Python和JavaScript，一键生成macOS、Windows和Linux平台客户端应用程序
 url: https://github.com/pangao1990/PPX
 ---

@@ -1,6 +1,6 @@
 ---
 project: linux-command
-stars: 34000
+stars: 34041
 description: Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux
 url: https://github.com/jaywcjlove/linux-command
 ---
@@ -46,7 +46,7 @@ Github Web | Gitee Web | Githack | Statically
 
 **推荐使用的镜像 web 版本**
 
-**`wu114.cn`** **`waadri.top`** **`zanglikun.com`** **`alapi.cn`** **`fasfuah.icu`** **`cnxiaobai.com`** **`sicangge.com`** **`largeinfo.cc`** **`srebro.cn`** **`getaifun.com`** **`devonline.net`** **`man.zch.ooo`** **`mmoke.com`** **`bqrdh.com`** **`zyimm.com`** **`vovuo.com`** **`shinote.net`** `liguiying.cn` `renye.net` `diqi.org` `alistnas.top` `nenufm.com` `jiangyang.online` `xiyung.cn`
+**`wu114.cn`** **`waadri.top`** **`zanglikun.com`** **`alapi.cn`** **`fasfuah.icu`** **`cnxiaobai.com`** **`sicangge.com`** **`largeinfo.cc`** **`srebro.cn`** **`getaifun.com`** **`devonline.net`** **`man.zch.ooo`** **`mmoke.com`** **`bqrdh.com`** **`zyimm.com`** **`vovuo.com`** **`shinote.net`** `liguiying.cn` `renye.net` `diqi.org` `alistnas.top` `nenufm.com` `jiangyang.online` `xiyung.cn` `78888889.xyz`
 
 **其它 web 版本**
 
@@ -88,6 +88,15 @@ Vercel
 部署结果
 
 通过 Vercel 分配的域名访问，或者自行在设置中绑定域名。
+
+Netlify
+-------
+
+可以点击下面按钮一键部署至 Netlify:
+
+部署结果
+
+通过 Netlify 分配的域名访问，或者自行在设置中绑定域名。
 
 宝塔面板
 ----

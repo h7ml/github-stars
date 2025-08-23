@@ -1,6 +1,6 @@
 ---
 project: resolvers
-stars: 2068
+stars: 2076
 description: 📋 Validation resolvers: Yup, Zod, Superstruct, Joi, Vest, Class Validator, io-ts, Nope, computed-types, typanion, Ajv, TypeBox, ArkType, Valibot, effect-ts, VineJS and Standard Schema
 url: https://github.com/react-hook-form/resolvers
 ---

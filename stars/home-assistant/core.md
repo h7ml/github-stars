@@ -1,6 +1,6 @@
 ---
 project: core
-stars: 80766
+stars: 80879
 description: :house_with_garden: Open source home automation that puts local control and privacy first.
 url: https://github.com/home-assistant/core
 ---

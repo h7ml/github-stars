@@ -1,6 +1,6 @@
 ---
 project: pydoll
-stars: 5075
+stars: 5148
 description: Pydoll is a library for automating chromium-based browsers without a WebDriver, offering realistic interactions. 
 url: https://github.com/autoscrape-labs/pydoll
 ---
@@ -35,6 +35,36 @@ No stars, no bugs fixed. Just kidding (maybe)
 
 What's New
 ----------
+
+### WebElement: state waiting and new public APIs
+
+-   New `wait_until(...)` on `WebElement` to await element states with minimal code:
+
+\# Wait until it becomes visible OR the timeout expires
+await element.wait\_until(is\_visible\=True, timeout\=5)
+
+\# Wait until it becomes interactable (visible, on top, receiving pointer events)
+await element.wait\_until(is\_interactable\=True, timeout\=10)
+
+-   Methods now public on `WebElement`:
+    -   `is_visible()`
+        -   Checks that the element has a visible area (> 0), isn’t hidden by CSS and is in the viewport (after `scroll_into_view()` when needed). Useful pre-check before interactions.
+    -   `is_interactable()`
+        -   “Click-ready” state: combines visibility, enabledness and pointer-event hit testing. Ideal for robust flows that avoid lost clicks.
+    -   `is_on_top()`
+        -   Verifies the element is the top hit-test target at the intended click point, avoiding overlays.
+    -   `execute_script(script: str, return_by_value: bool = False)`
+        -   Executes JavaScript in the element’s own context (where `this` is the element). Great for fine-tuning and quick inspections.
+
+\# Visually outline the element via JS
+await element.execute\_script("this.style.outline='2px solid #22d3ee'")
+
+\# Confirm states
+visible \= await element.is\_visible()
+interactable \= await element.is\_interactable()
+on\_top \= await element.is\_on\_top()
+
+These additions simplify waiting and state validation before clicking/typing, reducing flakiness and making automations more predictable.
 
 ### Browser-context HTTP requests - game changer for hybrid automation!
 

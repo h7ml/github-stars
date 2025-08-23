@@ -1,6 +1,6 @@
 ---
 project: smart-admin
-stars: 3467
+stars: 3479
 description: SmartAdmin国内首个以「高质量代码」为核心，「简洁、高效、安全」快速开发平台；基于SpringBoot2/3 + Sa-Token + Mybatis-Plus 和 Vue3 + Vite5 + Ant Design Vue 4.x (同时支持JavaScript和TypeScript双版本)；满足国家三级等保要求、支持登录限制、接口数据国产加解密、高防SQL注入等一系列安全体系。
 url: https://github.com/1024-lab/smart-admin
 ---
@@ -11,9 +11,9 @@ url: https://github.com/1024-lab/smart-admin
 
 **国内首个满足《网络安全-三级等保》、《数据安全》** 功能要求，支持登录限制、接口国产加解密、数据脱敏等一系列安全要求。
 
-**支持国产数据库：达梦、金仓、南大通用、OceanBase、GaussDB 高斯、阿里PolarDB、GoldenDB。**
+**支持国产数据库：【达梦、金仓、南大通用、OceanBase、GaussDB 高斯、阿里PolarDB、GoldenDB】等，主流数据库：【Mysql, PostgreSQL】等**
 
-前端提供 **JavaScript和TypeScript双版本**，后端提供 **Java8+SpringBoot2.X和Java17+SpringBoot3.X 双版本**。
+**前端提供JavaScript和TypeScript双版本，后端提供Java8+SpringBoot2.X和Java17+SpringBoot3.X 双版本**。
 
 同时 **重磅开源** 开源六年来 **千余家企业验证过且正在使用** 的代码规范: **《高质量代码思想》、《Vue3规范》、《Java规范》** ，让大家在这浮躁的世界里感受到一股把代码写好的清流！同时又能节省大量时间，减少加班，快乐工作，保持谦逊，保持学习，**热爱代码，更热爱生活** ！
 

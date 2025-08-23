@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-wasm
-stars: 369
+stars: 372
 description: Add WebAssembly ESM integration (aka. Webpack's `asyncWebAssembly`) to Vite and support `wasm-pack` generated modules.
 url: https://github.com/Menci/vite-plugin-wasm
 ---

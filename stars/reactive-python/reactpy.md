@@ -1,6 +1,6 @@
 ---
 project: reactpy
-stars: 8121
+stars: 8127
 description: It's React, but in Python
 url: https://github.com/reactive-python/reactpy
 ---

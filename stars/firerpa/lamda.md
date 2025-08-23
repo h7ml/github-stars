@@ -1,6 +1,6 @@
 ---
 project: lamda
-stars: 7208
+stars: 7231
 description:  The most powerful Android RPA agent framework, next generation of mobile automation robots.
 url: https://github.com/firerpa/lamda
 ---

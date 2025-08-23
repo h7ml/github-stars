@@ -1,6 +1,6 @@
 ---
 project: wasm-feature-detect
-stars: 608
+stars: 610
 description: A small library to detect which features of WebAssembly are supported.
 url: https://github.com/GoogleChromeLabs/wasm-feature-detect
 ---

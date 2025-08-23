@@ -1,6 +1,6 @@
 ---
 project: deta
-stars: 179
+stars: 178
 description: For doers & dreamers
 url: https://github.com/deta/deta
 ---

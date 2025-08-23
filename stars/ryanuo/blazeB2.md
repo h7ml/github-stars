@@ -1,6 +1,6 @@
 ---
 project: blazeB2
-stars: 177
+stars: 176
 description: 📷An image bed tool with CDN acceleration function developed based on backBlazeb2 API & ⚡ cloudflare
 url: https://github.com/ryanuo/blazeB2
 ---

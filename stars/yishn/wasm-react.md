@@ -1,6 +1,6 @@
 ---
 project: wasm-react
-stars: 93
+stars: 94
 description: WASM bindings for React.
 url: https://github.com/yishn/wasm-react
 ---

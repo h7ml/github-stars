@@ -1,6 +1,6 @@
 ---
 project: WELearnHelper
-stars: 743
+stars: 744
 description: 显示WE Learn随行课堂题目答案；支持班级测试；自动答题；刷时长；基于生成式AI(ChatGPT)的答案生成
 url: https://github.com/SSmJaE/WELearnHelper
 ---

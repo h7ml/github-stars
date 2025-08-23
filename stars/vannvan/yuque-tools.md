@@ -1,6 +1,6 @@
 ---
 project: yuque-tools
-stars: 512
+stars: 513
 description: 🧰 玩转语雀-朴实无华的语雀工具集合，语雀知识库+团队资源批量导出/备份工具(无需Token)｜浏览器插件助手
 url: https://github.com/vannvan/yuque-tools
 ---

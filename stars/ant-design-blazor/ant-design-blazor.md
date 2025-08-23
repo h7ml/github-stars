@@ -1,6 +1,6 @@
 ---
 project: ant-design-blazor
-stars: 6082
+stars: 6091
 description: 🌈A rich set of enterprise-class UI components based on Ant Design and Blazor.
 url: https://github.com/ant-design-blazor/ant-design-blazor
 ---

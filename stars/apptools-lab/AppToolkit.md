@@ -1,6 +1,6 @@
 ---
 project: AppToolkit
-stars: 587
+stars: 589
 description: 🐘 The Front-end Env Toolkit（前端环境管理工具）
 url: https://github.com/apptools-lab/AppToolkit
 ---

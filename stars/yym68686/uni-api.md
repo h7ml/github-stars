@@ -1,6 +1,6 @@
 ---
 project: uni-api
-stars: 1052
+stars: 1059
 description: This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified API interface, convert them to the OpenAI format uniformly, and support load balancing. Currently supported backend services include: OpenAI, Anthropic, DeepBricks, OpenRouter, Gemini, Vertex, etc.
 url: https://github.com/yym68686/uni-api
 ---
@@ -100,6 +100,8 @@ providers:
       - gemini-2.5-pro: gemini-2.5-pro-search # To enable search for a model, rename it with the -search suffix and set custom request body parameters for this model in \`post\_body\_parameter\_overrides\`.
       - gemini-2.5-flash: gemini-2.5-flash-think-24576-search # To enable search for a model, rename it with the -search suffix and set custom request body parameters for this model in post\_body\_parameter\_overrides. Additionally, you can customize the inference budget using -think-number. These options can be used together or separately.
       - gemini-2.5-flash: gemini-2.5-flash-think-0 # Support to rename models with -think-number suffix to enable search, if the number is 0, it means to close the reasoning.
+      - gemini-embedding-001
+      - text-embedding-004
     tools: true
     preferences:
       api\_key\_rate\_limit: 15/min # Each API Key can request up to 15 times per minute, optional. The default is 999999/min. Supports multiple frequency constraints: 15/min,10/day
@@ -137,6 +139,8 @@ providers:
       - claude-3-opus@20240229: claude-3-opus
       - claude-3-sonnet@20240229: claude-3-sonnet
       - claude-3-haiku@20240307: claude-3-haiku
+      - gemini-embedding-001
+      - text-embedding-004
     tools: true
     notes: https://xxxxx.com/ # You can put the provider's website, notes, official documentation, optional
     preferences:
@@ -398,7 +402,7 @@ docker buildx build --platform linux/amd64,linux/arm64 -t yym68686/uni-api:lates
 docker pull yym68686/uni-api:latest
 
 # test image
-docker buildx build --platform linux/amd64,linux/arm64 -t yym68686/uni-api:test -f Dockerfile-test --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t yym68686/uni-api:test -f Dockerfile.debug --push .
 docker pull yym68686/uni-api:test
 
 One-Click Restart Docker Image

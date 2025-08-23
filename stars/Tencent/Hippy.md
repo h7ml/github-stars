@@ -1,6 +1,6 @@
 ---
 project: Hippy
-stars: 8388
+stars: 8397
 description: Hippy is designed to easily build cross-platform dynamic apps. 👏
 url: https://github.com/Tencent/Hippy
 ---
@@ -138,7 +138,7 @@ Before build the android app, please make sure the SDK and NDK is installed, And
 📁 Documentation
 ----------------
 
-To check out hippy examples and visit openhippy.com.
+To check out hippy examples and visit framework.tds.qq.com.
 
 📅 Changelog
 ------------

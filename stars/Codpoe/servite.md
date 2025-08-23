@@ -1,6 +1,6 @@
 ---
 project: servite
-stars: 41
+stars: 42
 description: A full stack React framework powered by vinxi.
 url: https://github.com/Codpoe/servite
 ---

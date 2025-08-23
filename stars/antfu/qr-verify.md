@@ -1,6 +1,6 @@
 ---
 project: qr-verify
-stars: 115
+stars: 116
 description: A CLI to verify scannable QR Code in batch
 url: https://github.com/antfu/qr-verify
 ---

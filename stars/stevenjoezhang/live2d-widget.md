@@ -1,6 +1,6 @@
 ---
 project: live2d-widget
-stars: 9933
+stars: 9960
 description: 把萌萌哒的看板娘抱回家 (ノ≧∇≦)ノ | Live2D widget for web platform
 url: https://github.com/stevenjoezhang/live2d-widget
 ---

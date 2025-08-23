@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6275
+stars: 6306
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -80,6 +80,7 @@ Getting Started
 -   tauri-vue-template - Vue template with TypeScript, Vite + HMR, Vitest, Tailwind CSS, ESLint, and GitHub Actions.
 -   tauri-vue-template-2 - Another vue template with Javascript, Vite, Pinia, Vue Router and Github Actions.
 -   tauri-yew-example - Simple stopwatch with Yew using commands and Tauri events.
+-   taurics - Tauri V2 template with C# Backend!.
 -   tauronic - Tauri template for hybrid Apps using Ionic components in React flavour.
 
 Development
@@ -420,6 +421,7 @@ Applications
 -   AgeTimer - Desktop utility that counts your age in real-time.
 -   Auto Wallpaper - Automatically generates 4K wallpapers based on user's location, weather, and time of day or any custom prompts.
 -   bewCloud Desktop Sync - Desktop sync app for bewCloud, a simpler alternative to Nextcloud and ownCloud.
+-   Basset \- All-in-one offline media toolkit: cut, convert, compress, and remove instruments from audio, video, and images.
 -   TypeView - KeyStroke Visualizer - Visualizes keys pressed on the screen and simulates the sound of mechanical keyboard.
 -   Browsernaut - Browser picker for macOS.
 -   Clipboard Record - Record Clipboard Content.

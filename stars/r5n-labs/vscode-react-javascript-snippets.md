@@ -1,6 +1,6 @@
 ---
 project: vscode-react-javascript-snippets
-stars: 1810
+stars: 1811
 description: Extension for React/Javascript snippets with search supporting ES7+ and babel features
 url: https://github.com/r5n-labs/vscode-react-javascript-snippets
 ---

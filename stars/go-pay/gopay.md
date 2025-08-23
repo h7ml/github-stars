@@ -1,6 +1,6 @@
 ---
 project: gopay
-stars: 5190
+stars: 5202
 description: 微信、支付宝、通联支付、拉卡拉、PayPal、Apple 的Go版本SDK。【极简、易用的聚合支付SDK】
 url: https://github.com/go-pay/gopay
 ---

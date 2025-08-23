@@ -1,6 +1,6 @@
 ---
 project: simple-markdown
-stars: 521
+stars: 522
 description: JavaScript markdown parsing, made simple
 url: https://github.com/ariabuckles/simple-markdown
 ---

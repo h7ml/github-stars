@@ -1,6 +1,6 @@
 ---
 project: github-analyzer
-stars: 433
+stars: 432
 description: 锐评一下你都在 GitHub 写了什么
 url: https://github.com/BingyanStudio/github-analyzer
 ---

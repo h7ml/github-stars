@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 39849
+stars: 41098
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -36,6 +36,68 @@ url: https://github.com/1c7/chinese-independent-developer
 
 3\. 项目列表
 --------
+
+### 2025 年 8 月 23 号添加
+
+#### 辣条（北京）
+
+-   ✅ picture to drawing ：免费/无需注册的图片转手绘风格网站
+
+#### SUOWU(杭州)
+
+-   ✅ morse code translator：摩斯码翻译器，用来将英文或者日语转为摩斯码，有可视化功能
+
+### 2025 年 8 月 22 号添加
+
+#### monsoonw(杭州)
+
+-   ✅ Free Qwen Image Edit AI：在线 Qwen Image Edit 网站。高级 AI 图像编辑与完美文本渲染，完美支持中英文文本渲染。
+
+### 2025 年 8 月 21 号添加
+
+#### kajian(广州)
+
+-   ✅ codebox-有趣的二维码平台：超萌的免费二维码生成器，每一个二维码都有故事
+
+#### 林悦己(杭州)
+
+-   ✅ Chat Recap AI：揭示你對話中隱藏的模式、情緒與紅旗，讓你真正理解你的關係
+
+#### BOS1980
+
+-   ✅ Soulmate Sketch｜AI 灵魂伴侣素描（占星画像生成）：用 AI + 占星，为你生成专属的黑白手绘风格“灵魂伴侣画像”；10–20 秒极速呈现，多语言网站，移动端友好
+
+#### nogeek (杭州)
+
+-   ✅ 初创公司到初创公司：免费的发布站 & 目录站
+
+#### Lingglee - Github
+
+-   ✅ Avif2Png：Avif 转 PNG 工具站
+
+#### Honwhy Wang - Github
+
+-   ✅ 公众号阅读增强器：让微信公众号阅读体验更舒适，自动生成文章目录，优化图片查看，让阅读长文不再迷失，提升浏览体验 - 更多介绍
+
+### 2025 年 8 月 19 号添加
+
+#### Panda (深圳)
+
+-   ✅ 薪资跳动：记录工作和摸鱼的微信小程序，可以实时显示当天收入和进度，可以记录和统计摸鱼多少分钟赚了多少钱，还有各种维度的数据统计和可视化。
+
+#### tanchaowen84（深圳） - Github
+
+-   ✅ Voice Clone - AI 驱动的语音克隆平台：用户只需录制或上传一段音频，系统便能在几秒内生成一个属于用户自己的声音模型。支持任意文本的语音生成，听起来自然流畅，几乎接近真人语音。整个流程无需复杂设备，也不需要技术背景，真正实现“用几句话训练出自己的声音” - GitHub 仓库
+
+### 2025 年 8 月 17 号添加
+
+#### xibobo(上海) - Github
+
+-   ✅ CelebShout：AI 生成明星语音为你街头吆喝带货
+
+#### ftp2010字(北京) - Github
+
+-   ✅ mypassrecovery：如果您的 word、pdf、rar 等文档的密码忘记了，这个网站可以帮你找回
 
 ### 2025 年 8 月 15 号添加
 
@@ -1685,11 +1747,6 @@ url: https://github.com/1c7/chinese-independent-developer
 #### Leo - Github
 
 -   ✅ TalkingAvatar：一键生成 AI 数字人视频的平台，支持多语言对话、表情动作定制，可快速创建个性化数字分身用于营销、教育等场景
-
-#### Leo - Github
-
--   ✅ AI 塔罗耳语：基于 AI 的在线塔罗占卜平台，提供多位 AI 塔罗师风格、智能牌阵推荐、每日运势和神谕卡祝福功能
--   ✅ AI 雷诺曼占卜：专业 AI 雷诺曼牌在线占卜平台，支持经典大十字牌阵、九宫格及多种主题牌阵，为用户提供精准的事业感情指引
 
 ### 2024 年 11 月 5 号添加
 
@@ -4157,16 +4214,21 @@ url: https://github.com/1c7/chinese-independent-developer
 
 * * *
 
-#### 自力hzlzh（深圳） - Github, Twitter
+#### 自力6XStudio（深圳） - Github, Twitter
 
 -   ✅ 锁屏启动 (iOS)：丰富小组件、灵动岛网速/天气/步数等
 -   ✅ MenubarX (macOS)：强大的 Mac 菜单栏浏览器，把网页添加到菜单栏上，像原生 App 一样即开即用
 -   ✅ DockX (macOS)：在程序坞显示任意状态，如：网速、CPU、时钟等
+-   ✅ 钢琴小组件 (iOS)：无需启动，随时弹奏
 -   ✅ 桌面计算器 (iOS)：超强的桌面计算器，无需打开App，随时随地计算
+-   ✅ StickerX (iOS)：AI 一键抠图，表情包创作工具
+-   ✅ eyeye (iOS)：运用 AR 眼球追踪技术帮助你轻松锻炼视力
+-   ✅ 鸭梨海拔 (iOS)：精美海拔计，旅行海拔打卡必备
 -   ✅ 念念不忘 (iOS)：简单粗暴的 iOS 提醒小组件
 -   ✅ 红点杀手 (微信小游戏)：创意弹幕躲避游戏
 -   ✅ 有幻觉 (微信小游戏)：创意视觉错觉游戏
 -   ✅ WordleX (微信小程序)：Wordle 游戏的练习工具
+-   ✅ App Store 全部作品
 
 ### 2022年6月5号添加
 

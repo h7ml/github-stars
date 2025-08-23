@@ -1,6 +1,6 @@
 ---
 project: awesome-nodejs
-stars: 1287
+stars: 1286
 description: Node.js 资源大全中文版。An awesome Node.js packages and resources
 url: https://github.com/huaize2020/awesome-nodejs
 ---

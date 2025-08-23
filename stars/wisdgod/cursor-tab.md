@@ -1,6 +1,6 @@
 ---
 project: cursor-tab
-stars: 70
+stars: 72
 description: Protocol Buffers definitions for Cursor Tab
 url: https://github.com/wisdgod/cursor-tab
 ---

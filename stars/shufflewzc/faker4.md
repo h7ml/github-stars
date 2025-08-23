@@ -1,6 +1,6 @@
 ---
 project: faker4
-stars: 129
+stars: 132
 description: null
 url: https://github.com/shufflewzc/faker4
 ---

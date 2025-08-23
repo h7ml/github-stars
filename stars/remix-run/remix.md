@@ -1,6 +1,6 @@
 ---
 project: remix
-stars: 31515
+stars: 31539
 description: Build Better Websites. Create modern, resilient user experiences with web fundamentals.
 url: https://github.com/remix-run/remix
 ---

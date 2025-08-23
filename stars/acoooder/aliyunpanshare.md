@@ -1,6 +1,6 @@
 ---
 project: aliyunpanshare
-stars: 985
+stars: 989
 description: 阿里云盘、夸克网盘影视资源分享，每日发布最新电视剧、综艺、电影资源。
 url: https://github.com/acoooder/aliyunpanshare
 ---
@@ -15,11 +15,17 @@ url: https://github.com/acoooder/aliyunpanshare
 
 比如相声、动漫、视频教程等，也包括几万部各类小说，且仍在不断补充完善中。
 
+**QQ频道**
+
+因QQ群太多，近期已开通QQ频道，频道内随时发布每天新增的资源，习惯使用QQ的朋友可以加入：
+
+点击链接加入腾讯频道【第二人生】：https://pd.qq.com/s/66ov7ennz?b=9
+
 **QQ交流群**
 
-为方便大家交流，新建QQ1群（已满），请加QQ2群。
+为方便大家交流，新建QQ1群（已满），请加QQ7群。
 
-QQ1群：855688618，QQ2群：595560157，QQ3群：857902308
+QQ1群：855688618，QQ2群：595560157，QQ3群：857902308，QQ7群：724256824
 
 如遇群满注意看群介绍里的新群号。
 

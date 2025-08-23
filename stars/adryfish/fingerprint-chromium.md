@@ -1,6 +1,6 @@
 ---
 project: fingerprint-chromium
-stars: 1094
+stars: 1151
 description: An open source fingerprint browser based on Ungoogled Chromium. 指纹浏览器 隐私浏览器
 url: https://github.com/adryfish/fingerprint-chromium
 ---
@@ -110,18 +110,18 @@ This approach helps prevent unauthorized repackaging and profiteering from our w
 
 Once the source code is released, you can build by referring to the `ungoogled-chromium` documentation. Simply replace the `ungoogled-chromium` submodule URL with the `fingerprint-browser` repository URL.
 
-📢 Advertisement for Chinese Users
-----------------------------------
+📢 Author's Other Projects
+--------------------------
 
-**🌟 EasyChat - Claude Mirror Site**
+**🌟 EasyChat - Claude Official Site Mirror**
 
-Access Claude's AI services seamlessly:
+🔥 **EasyChat** is a Claude official site mirror that requires no registration or login, providing free China direct access experience with 1:1 restoration of official features for efficient AI assistant services!
 
--   🆓 **Free to Use**: No registration required, one click to use
--   🌐 **Direct Access**: Optimized for stable China access
--   👥 **Shared Membership**: Use Claude Team features without account ban risks
+-   🚀 **No Registration Required**: Ready to use out of the box, complete restoration of official features, click to start using.
+-   🌐 **China Access**: Direct connection to Claude official services without VPN.
+-   🤝 **Shared Membership**: Support for using Claude member accounts without account ban risks.
 
-🔗 **Visit now**: https://easychat.top
+🔗 **Visit**: https://easychat.top
 
 **🛠️ Flapcode**
 
@@ -134,7 +134,7 @@ A one-stop solution designed for users who need Claude Code but prefer not to se
 -   💰 **Simple & Transparent Billing**: Same pricing as official API, daily usage updates
 -   🔒 **Safe & Reliable**: Professional ops team ensures service stability, letting you focus on development
 
-🔗 **Visit now**: https://flapcode.com
+🔗 **Visit**: https://flapcode.com
 
 Features
 --------
@@ -309,9 +309,9 @@ Status
 User Communication
 ------------------
 
-Scan the QR code to join the QQ group to communicate with other users.
+Scan the QR code to join QQ groups to communicate with other users
 
-If you need Chrome customization development services or are looking for custom development opportunities, the group owner can help connect you with relevant resources:
+If you need Chrome customization development services or are looking for custom development opportunities, please join the development customization group (QQ group 1055930761)
 
 Credits
 -------

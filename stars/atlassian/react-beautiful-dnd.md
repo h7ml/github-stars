@@ -1,23 +1,18 @@
 ---
 project: react-beautiful-dnd
-stars: 34027
+stars: 34031
 description: Beautiful and accessible drag and drop for lists with React
 url: https://github.com/atlassian/react-beautiful-dnd
 ---
 
-⚠️ Deprecated
--------------
+🔒 Archived
+-----------
 
-Hey all,
+This project is now archived and is deprecated on `npm`. If you are still using `react-beautiful-dnd`, we have put together some resources to help you move forward. To see our ongoing work in the drag and drop problem space, head to Pragmatic drag and drop.
 
-We are taking the next step in saying thank you and goodbye to our friend `react-beautiful-dnd`.
+We are so grateful to everybody who contributed in big and small ways to this project.
 
--   🔔 We will be soon deprecating `react-beautiful-dnd` on npm. When we do you will start to get console warnings in your build tools.
--   🔒 On Apr 30, 2025 (six months from posting) we will archiving the `react-beautiful-dnd` Github repository (it will become read only).
-
-Thank you everybody for your support of this project.
-
-More information
+Cheers
 
   
 
@@ -167,7 +162,7 @@ Creator ✍️
 
 Alex Reardon @alexandereardon
 
-> Alex is no longer personally maintaning this project. The other wonderful maintainers are carrying this project forward.
+> Alex is no longer personally maintaining this project. The other wonderful maintainers are carrying this project forward.
 
 Maintainers
 -----------

@@ -1,6 +1,6 @@
 ---
 project: VChart
-stars: 1633
+stars: 1639
 description: VChart, more than just a cross-platform charting library, but also an expressive data storyteller.
 url: https://github.com/VisActor/VChart
 ---

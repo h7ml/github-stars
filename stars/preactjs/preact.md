@@ -1,6 +1,6 @@
 ---
 project: preact
-stars: 37870
+stars: 37898
 description: ⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.
 url: https://github.com/preactjs/preact
 ---

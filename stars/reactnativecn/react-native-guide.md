@@ -1,6 +1,6 @@
 ---
 project: react-native-guide
-stars: 17808
+stars: 17811
 description: React Native指南汇集了各类react-native学习资源、开源App和组件
 url: https://github.com/reactnativecn/react-native-guide
 ---

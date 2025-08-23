@@ -1,6 +1,6 @@
 ---
 project: new-api
-stars: 9752
+stars: 9980
 description: AI模型接口管理与分发系统，支持将多种大模型转为统一格式调用，支持OpenAI、Claude等格式，可供个人或者企业内部管理与分发渠道使用，本项目基于One API二次开发。🍥 The next-generation LLM gateway and AI asset management system supports multiple languages.
 url: https://github.com/QuantumNous/new-api
 ---
@@ -24,6 +24,11 @@ Important
 -   本项目仅供个人学习使用，不保证稳定性，且不提供任何技术支持。
 -   使用者必须在遵循 OpenAI 的使用条款以及**法律法规**的情况下使用，不得用于非法用途。
 -   根据《生成式人工智能服务管理暂行办法》的要求，请勿对中国地区公众提供一切未经备案的生成式人工智能服务。
+
+🤝 我们信任的合作伙伴
+------------
+
+**排名不分先后**
 
 📚 文档
 -----
@@ -88,7 +93,7 @@ New API提供了丰富的功能，详细特性请参考特性说明：
 详细配置说明请参考安装指南-环境变量配置：
 
 -   `GENERATE_DEFAULT_TOKEN`：是否为新注册用户生成初始令牌，默认为 `false`
--   `STREAMING_TIMEOUT`：流式回复超时时间，默认120秒
+-   `STREAMING_TIMEOUT`：流式回复超时时间，默认300秒
 -   `DIFY_DEBUG`：Dify渠道是否输出工作流和节点信息，默认 `true`
 -   `FORCE_STREAM_OPTION`：是否覆盖客户端stream\_options参数，默认 `true`
 -   `GET_MEDIA_TOKEN`：是否统计图片token，默认 `true`

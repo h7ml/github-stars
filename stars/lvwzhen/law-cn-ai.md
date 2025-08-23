@@ -1,6 +1,6 @@
 ---
 project: law-cn-ai
-stars: 4908
+stars: 4906
 description: ⚖️ AI 法律助手
 url: https://github.com/lvwzhen/law-cn-ai
 ---

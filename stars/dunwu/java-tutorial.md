@@ -1,6 +1,6 @@
 ---
 project: java-tutorial
-stars: 1923
+stars: 1924
 description: :coffee: 老司机在 Java 技术领域的十年积累。
 url: https://github.com/dunwu/java-tutorial
 ---

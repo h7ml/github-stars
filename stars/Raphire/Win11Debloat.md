@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 24973
+stars: 25326
 description: A simple, easy to use PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---
@@ -140,6 +140,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 
 -   Disable Xbox game/screen recording, this also stops gaming overlay popups.
 -   Disable Fast Start-up to ensure a full shutdown.
+-   Disable network connectivity during Modern Standby to reduce battery drain. (W11 only)
 -   Option to apply changes to a different user, instead of the currently logged in user.
 -   Sysprep mode to apply changes to the Windows Default user profile. Afterwards, all new users will have the changes automatically applied to them.
 
@@ -158,6 +159,7 @@ Win11Debloat offers a default mode that allows you to quickly and easily apply t
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
 -   Disable & remove Microsoft Copilot. (W11 only)
 -   Disable Fast Start-up to ensure a full shutdown.
+-   Disable network connectivity during Modern Standby to reduce battery drain. (W11 only)
 -   Show file extensions for known file types.
 -   Hide the 3D objects folder under 'This pc' from File Explorer. (W10 only)
 -   Disable the widget service & hide the icon from the taskbar.

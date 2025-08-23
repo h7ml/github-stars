@@ -1,6 +1,6 @@
 ---
 project: puppeteer-extra
-stars: 6995
+stars: 7000
 description: 💯  Teach puppeteer new tricks through plugins.
 url: https://github.com/berstend/puppeteer-extra
 ---

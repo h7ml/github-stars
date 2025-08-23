@@ -1,6 +1,6 @@
 ---
 project: varlet
-stars: 5225
+stars: 5230
 description: A Vue3 component library based on Material Design 2 and 3, supporting mobile and desktop.
 url: https://github.com/varletjs/varlet
 ---
