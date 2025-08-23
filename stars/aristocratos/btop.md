@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 26356
+stars: 26497
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -297,11 +297,11 @@ Installation
     # only use "sudo" when installing to a NON user owned directory
     sudo make install
     
-3.  **(Optional/Required for Intel GPU) Set extended capabilities or suid bit to btop**
+3.  **(Optional/Required for Intel GPU and CPU wattage) Set extended capabilities or suid bit to btop**
     
     Enables signal sending to any process without starting with `sudo` and can prevent /proc read permissions problems on some systems.
     
-    Is required for Intel GPU support.
+    Is required for Intel GPU support and CPU wattage monitoring.
     
     -   **Run:**
     
@@ -464,11 +464,11 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
     
     Notice! Only use "sudo" when installing to a NON user owned directory.
     
-5.  **(Optional/Required for Intel GPU support) Set extended capabilities or suid bit to btop**
+5.  **(Optional/Required for Intel GPU support and CPU wattage) Set extended capabilities or suid bit to btop**
     
     No need for `sudo` to enable signal sending to any process and to prevent /proc read permissions problems on some systems.
     
-    Also required for Intel GPU monitoring.
+    Also required for Intel GPU monitoring and CPU wattage monitoring.
     
     Run after make install and use same PREFIX if any was used at install.
     
@@ -1336,6 +1336,9 @@ cpu\_bottom = False
 
 #\* Shows the system uptime in the CPU box.
 show\_uptime = True
+
+#\* Shows the CPU package current power consumption in watts. Requires running \`make setcap\` or \`make setuid\` or running with sudo.
+show\_cpu\_watts = True
 
 #\* Show cpu temperature.
 check\_temp = True

@@ -1,6 +1,6 @@
 ---
 project: cesium
-stars: 14144
+stars: 14176
 description: An open-source JavaScript library for world-class 3D globes and maps :earth_americas:
 url: https://github.com/CesiumGS/cesium
 ---

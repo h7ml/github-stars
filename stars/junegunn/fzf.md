@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 72913
+stars: 73130
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -923,7 +923,3 @@ Sponsors ❤️
 I would like to thank all the sponsors of this project who make it possible for me to continue to improve fzf.
 
 If you'd like to sponsor this project, please visit https://github.com/sponsors/junegunn.
-
-* * *
-
-JetBrains supports this project with an Open Source Development License.

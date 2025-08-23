@@ -1,6 +1,6 @@
 ---
 project: sweep
-stars: 7583
+stars: 7584
 description: Sweep: AI coding assistant for JetBrains
 url: https://github.com/sweepai/sweep
 ---

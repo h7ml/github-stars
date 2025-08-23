@@ -1,6 +1,6 @@
 ---
 project: posthog
-stars: 28418
+stars: 28566
 description: 🦔 PostHog provides open-source web & product analytics, session recording, feature flagging and A/B testing that you can self-host. Get started - free.
 url: https://github.com/PostHog/posthog
 ---
@@ -21,7 +21,7 @@ PostHog provides every tool you need to build a successful product including:
 -   Surveys: Ask anything with our collection of no-code survey templates, or build custom surveys with our survey builder.
 -   Data warehouse: Sync data from external tools like Stripe, Hubspot, your data warehouse, and more. Query it alongside your product data.
 -   Data pipelines: Run custom filters and transformations on your incoming data. Send it to 25+ tools or any webhook in real time or batch export large amounts to your warehouse.
--   LLM observability: Capture traces, generations, latency, and cost for your LLM-powered app.
+-   LLM analytics: Capture traces, generations, latency, and cost for your LLM-powered app.
 
 Best of all, all of this is free to use with a generous monthly free tier for each product. Get started by signing up for PostHog Cloud US or PostHog Cloud EU.
 

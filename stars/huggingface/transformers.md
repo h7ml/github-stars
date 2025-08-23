@@ -1,6 +1,6 @@
 ---
 project: transformers
-stars: 148413
+stars: 148718
 description: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. 
 url: https://github.com/huggingface/transformers
 ---
@@ -90,7 +90,7 @@ chat \= \[
     {"role": "user", "content": "Hey, can you tell me any fun things to do in New York?"}
 \]
 
-pipeline \= pipeline(task\="text-generation", model\="meta-llama/Meta-Llama-3-8B-Instruct", torch\_dtype\=torch.bfloat16, device\_map\="auto")
+pipeline \= pipeline(task\="text-generation", model\="meta-llama/Meta-Llama-3-8B-Instruct", dtype\=torch.bfloat16, device\_map\="auto")
 response \= pipeline(chat, max\_new\_tokens\=512)
 print(response\[0\]\["generated\_text"\]\[\-1\]\["content"\])
 

@@ -1,6 +1,6 @@
 ---
 project: paperless-ngx
-stars: 30584
+stars: 30827
 description: A community-supported supercharged document management system: scan, index and archive all your documents
 url: https://github.com/paperless-ngx/paperless-ngx
 ---

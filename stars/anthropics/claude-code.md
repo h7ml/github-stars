@@ -1,6 +1,6 @@
 ---
 project: claude-code
-stars: 30102
+stars: 31088
 description: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
 url: https://github.com/anthropics/claude-code
 ---
@@ -25,6 +25,11 @@ Reporting Bugs
 --------------
 
 We welcome your feedback. Use the `/bug` command to report issues directly within Claude Code, or file a GitHub issue.
+
+Connect on Discord
+------------------
+
+Join the Claude Developers Discord to connect with other developers using Claude Code. Get help, share feedback, and discuss your projects with the community.
 
 Data collection, usage, and retention
 -------------------------------------

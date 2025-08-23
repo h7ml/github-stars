@@ -1,12 +1,12 @@
 ---
 project: OpenCut
-stars: 30579
+stars: 31165
 description: The open-source CapCut alternative
 url: https://github.com/OpenCut-app/OpenCut
 ---
 
-OpenCut (prev AppCut)
-=====================
+OpenCut
+=======
 
 ### A free, open-source video editor for web, desktop, and mobile.
 

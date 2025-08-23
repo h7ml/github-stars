@@ -1,6 +1,6 @@
 ---
 project: flameshot
-stars: 27537
+stars: 27607
 description: Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:
 url: https://github.com/flameshot-org/flameshot
 ---
@@ -239,6 +239,10 @@ Upload the selection to Imgur
 Spacebar
 
 Toggle visibility of sidebar with options of the selected tool, color picker for the drawing color and history menu
+
+G
+
+Starts the color picker
 
 Right Click
 

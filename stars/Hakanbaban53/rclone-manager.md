@@ -1,6 +1,6 @@
 ---
 project: rclone-manager
-stars: 320
+stars: 337
 description: Rclone Manager is a cross-platform GUI application designed to help users manage Rclone remotes efficiently.
 url: https://github.com/Hakanbaban53/rclone-manager
 ---
@@ -47,6 +47,7 @@ _Both light and dark modes are shown with a diagonal split for visual comparison
 -   🎨 **User-Friendly Theme** – Enjoy a clean, intuitive interface designed for ease of use, making remote management accessible for everyone.
 -   🛠 **Remote Management** – Add, edit, and delete remotes easily.
 -   🔐 **OAuth Support** – Authenticate with popular providers effortlessly.
+-   🔑 **Encrypted Configuration File Support** – Keep your Remotes safe with optional encryption.
 -   ☁️ **Supported Remotes** – Nearly all Rclone remotes are supported, including:
     -   Google Drive
     -   Dropbox

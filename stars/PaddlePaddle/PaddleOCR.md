@@ -1,6 +1,6 @@
 ---
 project: PaddleOCR
-stars: 52689
+stars: 52939
 description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
@@ -34,10 +34,58 @@ The PaddleOCR 3.0 Technical Report is now available. See details at: PaddleOCR 3
 
 In addition to providing an outstanding model library, PaddleOCR 3.0 also offers user-friendly tools covering model training, inference, and service deployment, so developers can rapidly bring AI applications to production.
 
+**Special Note**: PaddleOCR 3.x introduces several significant interface changes. **Old code written based on PaddleOCR 2.x is likely incompatible with PaddleOCR 3.x**. Please ensure that the documentation you are reading matches the version of PaddleOCR you are using. This document explains the reasons for the upgrade and the major changes from PaddleOCR 2.x to 3.x.
+
 📣 Recent updates
 -----------------
 
-#### **2025.06.29: Release of PaddleOCR 3.1.0**, includes:
+### 🔥🔥2025.08.21: Release of PaddleOCR 3.2.0, includes:
+
+-   **Significant Model Additions:**
+    
+    -   Introduced training, inference, and deployment for PP-OCRv5 recognition models in English, Thai, and Greek. **The PP-OCRv5 English model delivers an 11% improvement in English scenarios compared to the main PP-OCRv5 model, with the Thai and Greek recognition models achieving accuracies of 82.68% and 89.28%, respectively.**
+-   **Deployment Capability Upgrades:**
+    
+    -   **Full support for PaddlePaddle framework versions 3.1.0 and 3.1.1.**
+    -   **Comprehensive upgrade of the PP-OCRv5 C++ local deployment solution, now supporting both Linux and Windows, with feature parity and identical accuracy to the Python implementation.**
+    -   **High-performance inference now supports CUDA 12, and inference can be performed using either the Paddle Inference or ONNX Runtime backends.**
+    -   **The high-stability service-oriented deployment solution is now fully open-sourced, allowing users to customize Docker images and SDKs as required.**
+    -   The high-stability service-oriented deployment solution also supports invocation via manually constructed HTTP requests, enabling client-side code development in any programming language.
+-   **Benchmark Support:**
+    
+    -   **All production lines now support fine-grained benchmarking, enabling measurement of end-to-end inference time as well as per-layer and per-module latency data to assist with performance analysis.**
+    -   **Documentation has been updated to include key metrics for commonly used configurations on mainstream hardware, such as inference latency and memory usage, providing deployment references for users.**
+-   **Bug Fixes:**
+    
+    -   Resolved the issue of failed log saving during model training.
+    -   Upgraded the data augmentation component for formula models for compatibility with newer versions of the albumentations dependency, and fixed deadlock warnings when using the tokenizers package in multi-process scenarios.
+    -   Fixed inconsistencies in switch behaviors (e.g., `use_chart_parsing`) in the PP-StructureV3 configuration files compared to other pipelines.
+-   **Other Enhancements:**
+    
+    -   **Separated core and optional dependencies. Only minimal core dependencies are required for basic text recognition; additional dependencies for document parsing and information extraction can be installed as needed.**
+    -   **Enabled support for NVIDIA RTX 50 series graphics cards on Windows; users can refer to the installation guide for the corresponding PaddlePaddle framework versions.**
+    -   **PP-OCR series models now support returning single-character coordinates.**
+    -   Added AIStudio, ModelScope, and other model download sources, allowing users to specify the source for model downloads.
+    -   Added support for chart-to-table conversion via the PP-Chart2Table module.
+    -   Optimized documentation descriptions to improve usability.
+
+**2025.08.15: PaddleOCR 3.1.1 Released**
+
+-   **Bug Fixes:**
+    
+    -   Added the missing methods `save_vector`, `save_visual_info_list`, `load_vector`, and `load_visual_info_list` in the `PP-ChatOCRv4` class.
+    -   Added the missing parameters `glossary` and `llm_request_interval` to the `translate` method in the `PPDocTranslation` class.
+-   **Documentation Improvements:**
+    
+    -   Added a demo to the MCP documentation.
+    -   Added information about the PaddlePaddle and PaddleOCR version used for performance metrics testing in the documentation.
+    -   Fixed errors and omissions in the production line document translation.
+-   **Others:**
+    
+    -   Changed the MCP server dependency to use the pure Python library `puremagic` instead of `python-magic` to reduce installation issues.
+    -   Retested PP-OCRv5 performance metrics with PaddleOCR version 3.1.0 and updated the documentation.
+
+**2025.06.29: PaddleOCR 3.1.0 Released**
 
 -   **Key Models and Pipelines:**
     
@@ -259,6 +307,14 @@ print(chat\_result)
 
 -   Huawei Ascend
 -   KUNLUNXIN
+
+More Features
+-------------
+
+-   Convert models to ONNX format: Obtaining ONNX Models.
+-   Accelerate inference using engines like OpenVINO, ONNX Runtime, TensorRT, or perform inference using ONNX format models: High-Performance Inference.
+-   Accelerate inference using multi-GPU and multi-process: Parallel Inference for Pipelines.
+-   Integrate PaddleOCR into applications written in C++, C#, Java, etc.: Serving.
 
 ⛰️ Advanced Tutorials
 ---------------------

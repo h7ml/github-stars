@@ -1,6 +1,6 @@
 ---
 project: LunaTV
-stars: 1726
+stars: 3375
 description: null
 url: https://github.com/MoonTechLab/LunaTV
 ---
@@ -27,7 +27,7 @@ MoonTV
 
 点击查看项目截图
 
-### 请不要在 B站、小红书、微信公众号、抖音、今日头条或其他中国大陆社交平台发布视频或文章宣传本项目。耻辱榜
+### 请不要在 B站、小红书、微信公众号、抖音、今日头条或其他中国大陆社交平台发布视频或文章宣传本项目，不授权任何“科技周刊/月刊”类项目或站点收录本项目。
 
 本项目为空项目，请勿 fork，喜欢可点 star
 
@@ -79,6 +79,8 @@ Docker
 部署
 --
 
+本项目为防盗卖触发商业行为造成合规风险，采用一机一码的形式，授权码需要在 自助授权机器人 处申请，授权码和 tg 号绑定
+
 本项目**仅支持 Docker 或其他基于 Docker 的平台** 部署。
 
 ### Kvrocks 存储（推荐）
@@ -87,7 +89,7 @@ services:
   moontv-core:
     image: ghcr.io/moontechlab/lunatv:latest
     container\_name: moontv-core
-    restart: unless-stopped
+    restart: on-failure
     ports:
       - '3000:3000'
     environment:
@@ -95,6 +97,7 @@ services:
       - PASSWORD=admin\_password
       - NEXT\_PUBLIC\_STORAGE\_TYPE=kvrocks
       - KVROCKS\_URL=redis://moontv-kvrocks:6666
+      - AUTH\_TOKEN=授权码
     networks:
       - moontv-network
     depends\_on:
@@ -113,13 +116,13 @@ networks:
 volumes:
   kvrocks-data:
 
-### Redis 存储
+### Redis 存储（有一定的丢数据风险）
 
 services:
   moontv-core:
     image: ghcr.io/moontechlab/lunatv:latest
     container\_name: moontv-core
-    restart: unless-stopped
+    restart: on-failure
     ports:
       - '3000:3000'
     environment:
@@ -127,6 +130,7 @@ services:
       - PASSWORD=admin\_password
       - NEXT\_PUBLIC\_STORAGE\_TYPE=redis
       - REDIS\_URL=redis://moontv-redis:6379
+      - AUTH\_TOKEN=授权码
     networks:
       - moontv-network
     depends\_on:
@@ -154,15 +158,16 @@ services:
   moontv-core:
     image: ghcr.io/moontechlab/lunatv:latest
     container\_name: moontv-core
-    restart: unless-stopped
+    restart: on-failure
     ports:
       - '3000:3000'
     environment:
       - USERNAME=admin
       - PASSWORD=admin\_password
       - NEXT\_PUBLIC\_STORAGE\_TYPE=upstash
-      - UPSTASH\_URL={上面 https 开头的 HTTPS ENDPOINT}
-      - UPSTASH\_TOKEN={上面的 TOKEN}
+      - UPSTASH\_URL=上面 https 开头的 HTTPS ENDPOINT
+      - UPSTASH\_TOKEN=上面的 TOKEN
+      - AUTH\_TOKEN=授权码
 
 配置文件
 ----
@@ -230,7 +235,7 @@ dockge/komodo 等 docker compose UI 也有自动更新功能
 
 USERNAME
 
-非 localstorage 部署时的管理员账号
+站长账号
 
 任意字符串
 
@@ -238,9 +243,17 @@ USERNAME
 
 PASSWORD
 
-非 localstorage 部署时为管理员密码
+站长密码
 
 任意字符串
+
+无默认，必填字段
+
+AUTH\_TOKEN
+
+授权码
+
+请从 自助授权机器人 处申请
 
 无默认，必填字段
 
@@ -300,14 +313,6 @@ upstash redis 连接 token
 
 空
 
-NEXT\_PUBLIC\_ENABLE\_REGISTER
-
-是否开放注册，仅在非 localstorage 部署时生效
-
-true / false
-
-false
-
 NEXT\_PUBLIC\_SEARCH\_MAX\_PAGE
 
 搜索接口可拉取的最大页数
@@ -322,7 +327,7 @@ NEXT\_PUBLIC\_DOUBAN\_PROXY\_TYPE
 
 见下方
 
-direct
+melody-cdn-sharon
 
 NEXT\_PUBLIC\_DOUBAN\_PROXY
 
@@ -338,7 +343,7 @@ NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY\_TYPE
 
 见下方
 
-direct
+melody-cdn-sharon
 
 NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY
 
@@ -356,13 +361,21 @@ true/false
 
 false
 
+NEXT\_PUBLIC\_FLUID\_SEARCH
+
+是否开启搜索接口流式输出
+
+true/ false
+
+true
+
 NEXT\_PUBLIC\_DOUBAN\_PROXY\_TYPE 选项解释：
 
 -   direct: 由服务器直接请求豆瓣源站
+-   melody-cdn-sharon: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 旋律 搭建，并由 Sharon cdn 提供加速
 -   cors-proxy-zwei: 浏览器向 cors proxy 请求豆瓣数据，该 cors proxy 由 Zwei 搭建
 -   cmliussss-cdn-tencent: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 CMLiussss 搭建，并由腾讯云 cdn 提供加速
 -   cmliussss-cdn-ali: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 CMLiussss 搭建，并由阿里云 cdn 提供加速
--   cors-anywhere: 浏览器向 cors proxy 请求豆瓣数据，该 cors proxy 为公共服务 cors-anywhere，限制每分钟 20 次请求
 -   custom: 用户自定义 proxy，由 NEXT\_PUBLIC\_DOUBAN\_PROXY 定义
 
 NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY\_TYPE 选项解释：
@@ -370,6 +383,7 @@ NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY\_TYPE 选项解释：
 -   direct：由浏览器直接请求豆瓣分配的默认图片域名
 -   server：由服务器代理请求豆瓣分配的默认图片域名
 -   img3：由浏览器请求豆瓣官方的精品 cdn（阿里云）
+-   melody-cdn-sharon: 由浏览器请求豆瓣 CDN，该 CDN 由 旋律 搭建，并由 Sharon cdn 提供加速
 -   cmliussss-cdn-tencent：由浏览器请求豆瓣 CDN，该 CDN 由 CMLiussss 搭建，并由腾讯云 cdn 提供加速
 -   cmliussss-cdn-ali：由浏览器请求豆瓣 CDN，该 CDN 由 CMLiussss 搭建，并由阿里云 cdn 提供加速
 -   custom: 用户自定义 proxy，由 NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY 定义
@@ -417,3 +431,6 @@ MIT © 2025 MoonTV & Contributors
 -   Zwei — 提供获取豆瓣数据的 cors proxy
 -   CMLiussss — 提供豆瓣 CDN 服务
 -   感谢所有提供免费影视接口的站点。
+
+Star History
+------------

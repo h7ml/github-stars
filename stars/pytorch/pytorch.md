@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 92430
+stars: 92624
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -220,7 +220,6 @@ git submodule update --init --recursive
 
 **Common**
 
-conda install cmake ninja
 # Run this command from the PyTorch directory after cloning the source code using the “Get the PyTorch Source“ section above
 pip install -r requirements.txt
 

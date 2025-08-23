@@ -1,6 +1,6 @@
 ---
 project: horde
-stars: 1386
+stars: 1388
 description: Horde is a distributed Supervisor and Registry backed by DeltaCrdt
 url: https://github.com/derekkraan/horde
 ---

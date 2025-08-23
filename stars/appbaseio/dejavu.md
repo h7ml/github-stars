@@ -1,6 +1,6 @@
 ---
 project: dejavu
-stars: 8429
+stars: 8433
 description: A Web UI for Elasticsearch and OpenSearch: Import, browse and edit data with rich filters and query views, create reference search UIs.
 url: https://github.com/appbaseio/dejavu
 ---

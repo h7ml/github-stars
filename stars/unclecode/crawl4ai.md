@@ -1,6 +1,6 @@
 ---
 project: crawl4ai
-stars: 51021
+stars: 51453
 description: 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
 url: https://github.com/unclecode/crawl4ai
 ---
@@ -10,9 +10,11 @@ url: https://github.com/unclecode/crawl4ai
 
 Crawl4AI turns the web into clean, LLM ready Markdown for RAG, agents, and data pipelines. Fast, controllable, battle tested by a 50k+ star community.
 
-✨ Check out latest update v0.7.0
+✨ Check out latest update v0.7.4
 
-✨ New in v0.7.0, Adaptive Crawling, Virtual Scroll, Link Preview scoring, Async URL Seeder, big performance gains. Release notes →
+✨ New in v0.7.4: Revolutionary LLM Table Extraction with intelligent chunking, enhanced concurrency fixes, memory management refactor, and critical stability improvements. Release notes →
+
+✨ Recent v0.7.3: Undetected Browser Support, Multi-URL Configurations, Memory Monitoring, Enhanced Table Extraction, GitHub Sponsors. Release notes →
 
 🤓 **My Personal Story**
 
@@ -458,7 +460,118 @@ async def test\_news\_crawl():
 ✨ Recent Updates
 ----------------
 
-### Version 0.7.0 Release Highlights - The Adaptive Intelligence Update
+**Version 0.7.4 Release Highlights - The Intelligent Table Extraction & Performance Update**
+
+-   **🚀 LLMTableExtraction**: Revolutionary table extraction with intelligent chunking for massive tables:
+    
+    from crawl4ai import LLMTableExtraction, LLMConfig
+    
+    \# Configure intelligent table extraction
+    table\_strategy \= LLMTableExtraction(
+        llm\_config\=LLMConfig(provider\="openai/gpt-4.1-mini"),
+        enable\_chunking\=True,           \# Handle massive tables
+        chunk\_token\_threshold\=5000,     \# Smart chunking threshold
+        overlap\_threshold\=100,          \# Maintain context between chunks
+        extraction\_type\="structured"    \# Get structured data output
+    )
+    
+    config \= CrawlerRunConfig(table\_extraction\_strategy\=table\_strategy)
+    result \= await crawler.arun("https://complex-tables-site.com", config\=config)
+    
+    \# Tables are automatically chunked, processed, and merged
+    for table in result.tables:
+        print(f"Extracted table: {len(table\['data'\])} rows")
+    
+-   **⚡ Dispatcher Bug Fix**: Fixed sequential processing bottleneck in arun\_many for fast-completing tasks
+    
+-   **🧹 Memory Management Refactor**: Consolidated memory utilities into main utils module for cleaner architecture
+    
+-   **🔧 Browser Manager Fixes**: Resolved race conditions in concurrent page creation with thread-safe locking
+    
+-   **🔗 Advanced URL Processing**: Better handling of raw:// URLs and base tag link resolution
+    
+-   **🛡️ Enhanced Proxy Support**: Flexible proxy configuration supporting both dict and string formats
+    
+
+Full v0.7.4 Release Notes →
+
+**Version 0.7.3 Release Highlights - The Multi-Config Intelligence Update**
+
+-   **🕵️ Undetected Browser Support**: Bypass sophisticated bot detection systems:
+    
+    from crawl4ai import AsyncWebCrawler, BrowserConfig
+    
+    browser\_config \= BrowserConfig(
+        browser\_type\="undetected",  \# Use undetected Chrome
+        headless\=True,              \# Can run headless with stealth
+        extra\_args\=\[
+            "--disable-blink-features=AutomationControlled",
+            "--disable-web-security"
+        \]
+    )
+    
+    async with AsyncWebCrawler(config\=browser\_config) as crawler:
+        result \= await crawler.arun("https://protected-site.com")
+    \# Successfully bypass Cloudflare, Akamai, and custom bot detection
+    
+-   **🎨 Multi-URL Configuration**: Different strategies for different URL patterns in one batch:
+    
+    from crawl4ai import CrawlerRunConfig, MatchMode
+    
+    configs \= \[
+        \# Documentation sites - aggressive caching
+        CrawlerRunConfig(
+            url\_matcher\=\["\*docs\*", "\*documentation\*"\],
+            cache\_mode\="write",
+            markdown\_generator\_options\={"include\_links": True}
+        ),
+        
+        \# News/blog sites - fresh content
+        CrawlerRunConfig(
+            url\_matcher\=lambda url: 'blog' in url or 'news' in url,
+            cache\_mode\="bypass"
+        ),
+        
+        \# Fallback for everything else
+        CrawlerRunConfig()
+    \]
+    
+    results \= await crawler.arun\_many(urls, config\=configs)
+    \# Each URL gets the perfect configuration automatically
+    
+-   **🧠 Memory Monitoring**: Track and optimize memory usage during crawling:
+    
+    from crawl4ai.memory\_utils import MemoryMonitor
+    
+    monitor \= MemoryMonitor()
+    monitor.start\_monitoring()
+    
+    results \= await crawler.arun\_many(large\_url\_list)
+    
+    report \= monitor.get\_report()
+    print(f"Peak memory: {report\['peak\_mb'\]:.1f} MB")
+    print(f"Efficiency: {report\['efficiency'\]:.1f}%")
+    \# Get optimization recommendations
+    
+-   **📊 Enhanced Table Extraction**: Direct DataFrame conversion from web tables:
+    
+    result \= await crawler.arun("https://site-with-tables.com")
+    
+    \# New way - direct table access
+    if result.tables:
+        import pandas as pd
+        for table in result.tables:
+            df \= pd.DataFrame(table\['data'\])
+            print(f"Table: {df.shape\[0\]} rows × {df.shape\[1\]} columns")
+    
+-   **💰 GitHub Sponsors**: 4-tier sponsorship system for project sustainability
+    
+-   **🐳 Docker LLM Flexibility**: Configure providers via environment variables
+    
+
+Full v0.7.3 Release Notes →
+
+**Version 0.7.0 Release Highlights - The Adaptive Intelligence Update**
 
 -   **🧠 Adaptive Crawling**: Your crawler now learns and adapts to website patterns automatically:
     

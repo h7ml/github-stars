@@ -1,6 +1,6 @@
 ---
 project: mind-elixir-core
-stars: 2727
+stars: 2731
 description: ⚗ Mind Elixir is a JavaScript, framework-agnostic mind map core.
 url: https://github.com/SSShooter/mind-elixir-core
 ---
@@ -126,7 +126,6 @@ let options \= {
   el: '#map', // or HTMLDivElement
   direction: MindElixir.LEFT,
   draggable: true, // default true
-  contextMenu: true, // default true
   toolBar: true, // default true
   nodeMenu: true, // default true
   keypress: true, // default true
@@ -134,7 +133,7 @@ let options \= {
   overflowHidden: false, // default false
   mainLinkStyle: 2, // \[1,2\] default 1
   mouseSelectionButton: 0, // 0 for left button, 2 for right button, default 0
-  contextMenuOption: {
+  contextMenu: {
     focus: true,
     link: true,
     extend: \[
@@ -145,7 +144,7 @@ let options \= {
         },
       },
     \],
-  },
+  }, // default true
   before: {
     insertSibling(type, obj) {
       return true
@@ -222,7 +221,6 @@ mind.bus.addListener('expandNode', node \=> {
 // data export
 const data \= mind.getData() // javascript object, see src/example.js
 mind.getDataString() // stringify object
-mind.getDataMd() // markdown
 
 // data import
 // initiate

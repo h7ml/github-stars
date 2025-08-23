@@ -1,6 +1,6 @@
 ---
 project: python-fire
-stars: 27826
+stars: 27843
 description: Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
 url: https://github.com/google/python-fire
 ---

@@ -1,6 +1,6 @@
 ---
 project: http-prompt
-stars: 9054
+stars: 9056
 description: An interactive command-line HTTP and API testing client built on top of HTTPie featuring autocomplete, syntax highlighting, and more. https://twitter.com/httpie
 url: https://github.com/httpie/http-prompt
 ---

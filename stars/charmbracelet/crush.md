@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 9777
+stars: 10536
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
