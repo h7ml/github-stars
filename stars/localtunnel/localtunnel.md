@@ -1,6 +1,6 @@
 ---
 project: localtunnel
-stars: 21178
+stars: 21205
 description: expose yourself
 url: https://github.com/localtunnel/localtunnel
 ---
@@ -33,6 +33,10 @@ npm install -g localtunnel
 ```
 yarn add localtunnel
 ```
+
+### Homebrew
+
+brew install localtunnel
 
 CLI usage
 ---------
@@ -69,7 +73,7 @@ The localtunnel client is also usable through an API (for test integration, auto
 
 Creates a new localtunnel to the specified local `port`. Will return a Promise that resolves once you have been assigned a public localtunnel url. `options` can be used to request a specific `subdomain`. A `callback` function can be passed, in which case it won't return a Promise. This exists for backwards compatibility with the old Node-style callback API. You may also pass a single options object with `port` as a property.
 
-const localtunnel \= require('localtunnel');
+const localtunnel \= require("localtunnel");
 
 (async () \=> {
   const tunnel \= await localtunnel({ port: 3000 });
@@ -78,7 +82,7 @@ const localtunnel \= require('localtunnel');
   // i.e. https://abcdefgjhij.localtunnel.me
   tunnel.url;
 
-  tunnel.on('close', () \=> {
+  tunnel.on("close", () \=> {
     // tunnels are closed
   });
 })();

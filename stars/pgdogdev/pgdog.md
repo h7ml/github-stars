@@ -1,6 +1,6 @@
 ---
 project: pgdog
-stars: 2580
+stars: 2600
 description: Horizontal scaling for PostgreSQL with automatic sharding.
 url: https://github.com/pgdogdev/pgdog
 ---
@@ -53,13 +53,13 @@ Features
 
 ### Load balancer
 
-PgDog is an application layer (OSI Level 7) load balancer for PostgreSQL. It can proxy multiple replicas (and primary) and distribute transactions evenly between databases. It supports multiple strategies, including round robin, random, least active connections, etc. PgDog can also inspect queries and send `SELECT` queries to replicas, and all others to the primary. This allows to proxy all databases behind a single PgDog deployment.
+PgDog is an application layer (OSI Level 7) load balancer for PostgreSQL. It understands the Postgres protocol, can proxy multiple replicas (and primary) and distributes transactions evenly between databases. It supports multiple strategies, like round robin, random and least active connections. PgDog can also inspect queries and send `SELECT` queries to replicas, and all others to the primary. This allows to proxy all databases behind a single PgDog deployment.
 
 📘 **Load balancer**
 
 #### Healthchecks and failover
 
-PgDog maintains a real-time list of healthy hosts. When a host fails a healthcheck, it's removed from active rotation and queries are rerouted to other databases. This is similar to HTTP load balancing, except it's at the database layer.
+PgDog maintains a real-time list of healthy hosts. When a database fails a healthcheck, it's removed from the active rotation and queries are re-routed to other replicas. This works like an HTTP load balancer, except it's for your database.
 
 Failover maximizes database availability and protects against bad network connections, temporary hardware failures or misconfiguration.
 
@@ -73,21 +73,25 @@ Like PgBouncer, PgDog supports transaction (and session) pooling, allowing 100,0
 
 ### Sharding
 
-PgDog is able to handle databases with multiple shards by routing queries automatically to one or more shards. Using the native PostgreSQL parser, PgDog understands queries, extracts sharding keys and determines the best routing strategy. For cross-shard queries, PgDog assembles results in memory and sends them all to the client transparently.
-
-#### Using `COPY`
-
-PgDog comes with a CSV parser and can split COPY commands between all shards automatically. This allows clients to ingest data into sharded PostgreSQL without preprocessing.
-
-#### Logical replication
-
-PgDog understands the PostgreSQL logical replication protocol and can split data between databases in the background and without downtime. This allows to shard existing databases and add more shards to existing clusters in production, without impacting database operations.
+PgDog is able to handle databases with multiple shards by routing queries automatically to one or more shards. Using the native PostgreSQL parser, PgDog understands queries, extracts sharding keys and determines the best routing strategy. For cross-shard queries, PgDog assembles and transforms results in memory, sending them all to the client as if they are coming from a single database.
 
 📘 **Sharding**
 
+#### Using `COPY`
+
+PgDog ships with a text/CSV parser and can split `COPY` commands between all shards automatically. This allows clients to ingest data into sharded PostgreSQL without preprocessing.
+
+📘 **Copy**
+
+#### Re-sharding
+
+PgDog understands the PostgreSQL logical replication protocol and can split data between databases in the background and without downtime. This allows to shard existing databases and add more shards to existing clusters in production, without impacting database operations.
+
+📘 **Re-sharding**
+
 ### Configuration
 
-PgDog is highly configurable and many aspects of its operation can be tweaked at runtime, without having to restart the process and break PostgreSQL connections. If you've used PgBouncer (or PgCat) before, the options will be familiar. If not, they are documented with examples.
+PgDog is highly configurable and most aspects of its operation can be tweaked at runtime, without having to restart the process or break connections. If you've used PgBouncer (or PgCat) before, the options will be familiar. If not, they are documented with examples.
 
 📘 **Configuration**
 
@@ -111,10 +115,6 @@ Most options have reasonable defaults, so a basic configuration for a single use
 
 **`pgdog.toml`**
 
-\[general\]
-host = "0.0.0.0"
-port = 6432
-
 \[\[databases\]\]
 name = "pgdog"
 host = "127.0.0.1"
@@ -135,7 +135,32 @@ CREATE USER pgdog PASSWORD 'pgdog' LOGIN;
 
 #### Try sharding
 
-The configuration files for a sharded database are provided in the repository. To make it work locally, create the required databases:
+Sharded database clusters are set in the config. For example, to set up a 2 shard cluster, you can:
+
+**`pgdog.toml`**
+
+\[\[databases\]\]
+name = "pgdog\_sharded"
+host = "127.0.0.1"
+database\_name = "shard\_0"
+shard = 0
+
+\[\[databases\]\]
+name = "pgdog\_sharded"
+host = "127.0.0.1"
+database\_name = "shard\_1"
+shard = 1
+
+Don't forget to specify a user:
+
+**`users.toml`**
+
+\[\[users\]\]
+database = "pgdog\_sharded"
+name = "pgdog"
+password = "pgdog"
+
+And finally, to make it work locally, create the required databases:
 
 ```
 CREATE DATABASE shard_0;
@@ -155,15 +180,15 @@ cargo run --release
 
 PgDog supports several command-line options:
 
--   `-c, --config <CONFIG>`: Path to the configuration file (default: "pgdog.toml")
--   `-u, --users <USERS>`: Path to the users.toml file (default: "users.toml")
+-   `-c, --config <CONFIG>`: Path to the configuration file (default: `"pgdog.toml"`)
+-   `-u, --users <USERS>`: Path to the users.toml file (default: `"users.toml"`)
 -   `-d, --database_url <DATABASE_URL>`: Connection URL(s). Can be specified multiple times to add multiple database connections. When provided, these URLs override database configurations from the config file.
 
 Example using database URLs directly:
 
 cargo run --release -- -d postgres://user:pass@localhost:5432/db1 -d postgres://user:pass@localhost:5433/db2
 
-You can connect to PgDog with psql or any other PostgreSQL client:
+You can connect to PgDog with `psql` or any other PostgreSQL client:
 
 psql "postgres://pgdog:pgdog@127.0.0.1:6432/pgdog?gssencmode=disable"
 

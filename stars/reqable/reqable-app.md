@@ -1,6 +1,6 @@
 ---
 project: reqable-app
-stars: 5173
+stars: 5192
 description: Reqable issue track repo
 url: https://github.com/reqable/reqable-app
 ---

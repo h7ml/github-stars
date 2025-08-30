@@ -1,6 +1,6 @@
 ---
 project: jsPDF
-stars: 30502
+stars: 30516
 description: Client-side JavaScript PDF generation for everyone.
 url: https://github.com/parallax/jsPDF
 ---
@@ -25,7 +25,7 @@ yarn add jspdf
 
 Alternatively, load it from a CDN:
 
-<script src\="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js"\></script\>
+<script src\="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.2/jspdf.umd.min.js"\></script\>
 
 Or always get latest version via unpkg
 
@@ -132,7 +132,7 @@ import "jspdf/dist/polyfills.es.js";
 
 Alternatively, you can load the prebundled polyfill file. This is not recommended, since you might end up loading polyfills multiple times. Might still be nifty for small applications or quick POCs.
 
-<script src\="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/polyfills.umd.js"\></script\>
+<script src\="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.2/polyfills.umd.js"\></script\>
 
 Use of Unicode Characters / UTF-8:
 ----------------------------------
@@ -202,7 +202,7 @@ Credits
 License (MIT)
 -------------
 
-Copyright (c) 2010-2021 James Hall, https://github.com/MrRio/jsPDF (c) 2015-2021 yWorks GmbH, https://www.yworks.com/
+Copyright (c) 2010-2025 James Hall, https://github.com/MrRio/jsPDF (c) 2015-2025 yWorks GmbH, https://www.yworks.com/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

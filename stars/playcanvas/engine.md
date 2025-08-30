@@ -1,6 +1,6 @@
 ---
 project: engine
-stars: 10776
+stars: 10792
 description: Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF
 url: https://github.com/playcanvas/engine
 ---

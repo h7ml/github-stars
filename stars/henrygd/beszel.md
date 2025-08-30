@@ -1,6 +1,6 @@
 ---
 project: beszel
-stars: 13919
+stars: 14187
 description: Lightweight server monitoring hub with historical data, docker stats, and alerts.
 url: https://github.com/henrygd/beszel
 ---
@@ -50,6 +50,7 @@ Supported metrics
 -   **Load average** - Host system.
 -   **Temperature** - Host system sensors.
 -   **GPU usage / temperature / power draw** - Nvidia and AMD only. Must use binary agent.
+-   **Battery** - Host system battery charge.
 
 Help and discussion
 -------------------

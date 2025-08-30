@@ -1,6 +1,6 @@
 ---
 project: simple-icons
-stars: 23310
+stars: 23347
 description: SVG icons for popular brands
 url: https://github.com/simple-icons/simple-icons
 ---
@@ -175,6 +175,10 @@ Stream Deck icon pack
 
 @mackenly
 
+Typst package
+
+@cscnk52
+
 Webflow app
 
 @diegoliv
@@ -248,7 +252,7 @@ Ruby gem
 
 Rust crate
 
-@carloskiki
+@cscnk52
 
 Svelte package
 

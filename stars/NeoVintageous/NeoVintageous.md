@@ -1,6 +1,6 @@
 ---
 project: NeoVintageous
-stars: 718
+stars: 719
 description: Vim for Sublime Text.
 url: https://github.com/NeoVintageous/NeoVintageous
 ---

@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 14236
+stars: 14288
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -69,7 +69,7 @@ name = "string\_sum"
 crate-type = \["cdylib"\]
 
 \[dependencies\]
-pyo3 = { version = "0.25.1", features = \["extension-module"\] }
+pyo3 = { version = "0.26.0", features = \["extension-module"\] }
 
 **`src/lib.rs`**
 
@@ -127,7 +127,7 @@ To install the Python shared library on RPM based distributions (e.g. Fedora, Re
 Start a new project with `cargo new` and add `pyo3` to the `Cargo.toml` like this:
 
 \[dependencies.pyo3\]
-version = "0.25.1"
+version = "0.26.0"
 features = \["auto-initialize"\]
 
 Example program displaying the value of `sys.version` and the current user name:

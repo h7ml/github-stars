@@ -1,6 +1,6 @@
 ---
 project: build-your-own-x
-stars: 413380
+stars: 415373
 description: Master programming by recreating your favorite technologies from scratch.
 url: https://github.com/codecrafters-io/build-your-own-x
 ---
@@ -391,7 +391,6 @@ Tutorials
 #### Build your own `Voxel Engine`
 
 -   **C++**: _Let's Make a Voxel Engine_
--   **Java**: _Java Voxel Engine Tutorial_ \[video\]
 
 #### Build your own `Web Browser`
 

@@ -1,6 +1,6 @@
 ---
 project: langextract
-stars: 13032
+stars: 13969
 description: A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
 url: https://github.com/google/langextract
 ---
@@ -23,6 +23,7 @@ Table of Contents
     -   _Romeo and Juliet_ Full Text Extraction
     -   Medication Extraction
     -   Radiology Report Structuring: RadExtract
+-   Community Providers
 -   Contributing
 -   Testing
 -   Disclaimer
@@ -232,6 +233,22 @@ result \= lx.extract(
     api\_key\="your-api-key-here"  \# Only use this for testing/development
 )
 
+**Option 4: Vertex AI (Service Accounts)**
+
+Use Vertex AI for authentication with service accounts:
+
+result \= lx.extract(
+    text\_or\_documents\=input\_text,
+    prompt\_description\="Extract information...",
+    examples\=\[...\],
+    model\_id\="gemini-2.5-flash",
+    language\_model\_params\={
+        "vertexai": True,
+        "project": "your-project-id",
+        "location": "global"  \# or regional endpoint
+    }
+)
+
 Adding Custom Model Providers
 -----------------------------
 
@@ -313,6 +330,13 @@ LangExtract excels at extracting structured medical information from clinical te
 Explore RadExtract, a live interactive demo on HuggingFace Spaces that shows how LangExtract can automatically structure radiology reports. Try it directly in your browser with no setup required.
 
 **View RadExtract Demo →**
+
+Community Providers
+-------------------
+
+Extend LangExtract with custom model providers! Check out our Community Provider Plugins registry to discover providers created by the community or add your own.
+
+For detailed instructions on creating a provider plugin, see the Custom Provider Plugin Example.
 
 Contributing
 ------------

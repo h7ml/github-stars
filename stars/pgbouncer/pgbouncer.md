@@ -1,6 +1,6 @@
 ---
 project: pgbouncer
-stars: 3445
+stars: 3455
 description: lightweight connection pooler for PostgreSQL
 url: https://github.com/pgbouncer/pgbouncer
 ---
@@ -165,6 +165,8 @@ If cross-compiling from Unix:
 ```
 $ ./configure --host=i586-mingw32msvc
 ```
+
+The LDAP build option is currently not supported on Windows.
 
 Running on Windows
 ------------------

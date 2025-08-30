@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 13945
+stars: 14154
 description: Identity-Aware Tunneled Reverse Proxy Server with Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
@@ -80,7 +80,7 @@ Easy to use with simple pay as you go pricing. Check it out here.
 
 -   Everything you get with self hosted Pangolin, but fully managed for you.
 
-### Hybrid & High Availability
+### Managed & High Availability
 
 Managed control plane, your infrastructure
 
@@ -89,7 +89,7 @@ Managed control plane, your infrastructure
 -   Traffic flows through your infra.
 -   We coordinate failover between your nodes or to Cloud when things go bad.
 
-If interested, contact us.
+Try it out using Pangolin Cloud
 
 ### Full Enterprise On-Premises
 
@@ -108,7 +108,7 @@ Pangolin is dual licensed under the AGPL-3 and the Fossorial Commercial license.
 Contributions
 -------------
 
-Looking for something to contribute? Take a look at issues marked with help wanted.
+Looking for something to contribute? Take a look at issues marked with help wanted. Also take a look through the freature requests in Discussions - any are available and some are marked as a good first issue.
 
 Please see CONTRIBUTING in the repository for guidelines and best practices.
 

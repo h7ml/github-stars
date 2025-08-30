@@ -1,6 +1,6 @@
 ---
 project: monaco-editor
-stars: 43701
+stars: 43774
 description: A browser based code editor
 url: https://github.com/microsoft/monaco-editor
 ---
@@ -27,12 +27,9 @@ Installing
 You will get:
 
 -   inside `/esm`: ESM version of the editor (compatible with e.g. webpack)
--   inside `/dev`: AMD bundled, not minified
--   inside `/min`: AMD bundled, and minified
--   inside `/min-maps`: source maps for `min`
 -   `monaco.d.ts`: this specifies the API of the editor (this is what is actually versioned, everything else is considered private and might break with any release).
 
-It is recommended to develop against the `dev` version, and in production to use the `min` version.
+The monaco editor also ships an `AMD` build for backwards-compatibility reasons, but the `AMD` support is deprecated and will be removed in future versions.
 
 Concepts
 --------
@@ -65,7 +62,6 @@ Documentation
 -------------
 
 -   Learn how to integrate the editor with these complete samples.
-    -   Integrate the AMD version.
     -   Integrate the ESM version
 -   Learn how to use the editor API and try out your own customizations in the playground.
 -   Explore the API docs or read them straight from `monaco.d.ts`.
@@ -98,10 +94,6 @@ No.
 ❓ **Why all these web workers and why should I care?**
 
 Language services create web workers to compute heavy stuff outside of the UI thread. They cost hardly anything in terms of resource overhead and you shouldn't worry too much about them, as long as you get them to work (see above the cross-domain case).
-
-❓ **What is this `loader.js`? Can I use `require.js`?**
-
-It is an AMD loader that we use in VS Code. Yes.
 
 ❓ **I see the warning "Could not create web worker". What should I do?**
 

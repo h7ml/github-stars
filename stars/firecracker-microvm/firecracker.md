@@ -1,6 +1,6 @@
 ---
 project: firecracker
-stars: 29136
+stars: 29936
 description: Secure and fast microVMs for serverless computing.
 url: https://github.com/firecracker-microvm/firecracker
 ---
@@ -100,7 +100,7 @@ Guest Rootfs
 
 Guest Kernel
 
-c5n.metal
+m5n.metal (Intel Cascade Lake)
 
 al2 linux\_5.10
 
@@ -108,29 +108,27 @@ ubuntu 24.04
 
 linux\_5.10
 
-m5n.metal
+m6i.metal (Intel Ice Lake)
 
 al2023 linux\_6.1
 
 linux\_6.1
 
-m6i.metal
+m7i.metal-24xl (Intel Sapphire Rapids)
 
-m7i.metal-24xl
+m7i.metal-48xl (Intel Sapphire Rapids)
 
-m7i.metal-48xl
+m6a.metal (AMD Milan)
 
-m6a.metal
+m7a.metal-48xl (AMD Genoa)
 
-m7a.metal-48xl
+m6g.metal (Graviton 2)
 
-m6g.metal
+m7g.metal (Graviton 3)
 
-m7g.metal
+m8g.metal-24xl (Graviton 4)
 
-m8g.metal-24xl
-
-m8g.metal-48xl
+m8g.metal-48xl (Graviton 4)
 
 Known issues and Limitations
 ----------------------------

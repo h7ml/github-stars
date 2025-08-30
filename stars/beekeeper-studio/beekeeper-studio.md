@@ -1,6 +1,6 @@
 ---
 project: beekeeper-studio
-stars: 20316
+stars: 20362
 description: Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more. Linux, MacOS, and Windows.
 url: https://github.com/beekeeper-studio/beekeeper-studio
 ---
@@ -197,11 +197,11 @@ Snowflake
 
 Trino / Presto
 
-⏳ Coming Soon
+⭐ Full Support
 
 ✅
 
-\--
+Docs
 
 Redis
 

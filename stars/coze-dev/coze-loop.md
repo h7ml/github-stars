@@ -1,6 +1,6 @@
 ---
 project: coze-loop
-stars: 4751
+stars: 4804
 description: Next-generation AI Agent Optimization Platform: Cozeloop addresses challenges in AI agent development by providing full-lifecycle management capabilities from development, debugging, and evaluation to monitoring.  
 url: https://github.com/coze-dev/coze-loop
 ---
@@ -99,7 +99,7 @@ Procedure:
     helm pull oci://docker.io/cozedev/coze-loop --version 1.0.0-helm
     tar -zxvf coze-loop-1.0.0-helm.tgz && cd coze-loop && rm -f ../coze-loop-1.0.0-helm.tgz
     
-2.  Configure a model. Go to the `coze-loop` directory and edit the `release/deployment/docker-compose/conf/model_config.yaml` file. Configure the following fields, using Volcengine Ark as an example:
+2.  Configure a model. Go to the `coze-loop` directory and edit the `release/deployment/helm-chart/umbrella/conf/model_config.yaml` file. Configure the following fields, using Volcengine Ark as an example:
     
     -   api\_key: Volcengine Ark API Key. Users in mainland China can refer to the Volcengine Ark documentation, while users outside mainland China can refer to the BytePlus ModelArk documentation.
     -   model: The Endpoint ID of the Volcengine Ark model access point. Users in China can refer to the Volcengine Ark documentation, while users outside China can refer to the BytePlus ModelArk documentation.

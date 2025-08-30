@@ -1,6 +1,6 @@
 ---
 project: ToolJet
-stars: 36365
+stars: 36377
 description: Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀
 url: https://github.com/ToolJet/ToolJet
 ---
@@ -12,11 +12,11 @@ ToolJet is an **open-source low-code framework** to build and deploy internal to
 All features
 ------------
 
--   **Visual App Builder:** 45+ built-in responsive components, including Tables, Charts, Lists, Forms, and Progress Bars.
+-   **Visual App Builder:** 60+ built-in responsive components, including Tables, Charts, Lists, Forms, and Progress Bars.
 -   **ToolJet Database:** Built-in no-code database.
 -   **Multi-Page:** Build an application with multiple pages.
 -   **Multiplayer editing:** Allows simultaneous app building by multiple developers.
--   **50+ data sources:** Integrate with external databases, cloud storage, and APIs.
+-   **75+ data sources:** Integrate with external databases, cloud storage, and APIs.
 -   **Desktop & mobile:** Customize layout widths to fit various screen sizes.
 -   **Self-host:** Supports Docker, Kubernetes, AWS EC2, Google Cloud Run, and more.
 -   **Collaborate:** Add comments anywhere on the canvas and tag your team members.

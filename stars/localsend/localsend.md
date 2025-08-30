@@ -1,6 +1,6 @@
 ---
 project: localsend
-stars: 66389
+stars: 66762
 description: An open-source cross-platform alternative to AirDrop
 url: https://github.com/localsend/localsend
 ---
@@ -133,7 +133,7 @@ Linux
 
 N.A.
 
-\-
+Deps: Gnome: `xdg-desktop-portal` and `xdg-desktop-portal-gtk`, KDE: `xdg-desktop-portal` and `xdg-desktop-portal-kde`
 
 Setup
 -----

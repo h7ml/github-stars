@@ -1,6 +1,6 @@
 ---
 project: Data-Science-For-Beginners
-stars: 30419
+stars: 30588
 description: 10 Weeks, 20 Lessons, Data Science for All!
 url: https://github.com/microsoft/Data-Science-For-Beginners
 ---
@@ -16,20 +16,15 @@ Azure Cloud Advocates at Microsoft are pleased to offer a 10-week, 20-lesson cur
 
 Data Science For Beginners - _Sketchnote by @nitya_
 
-Announcement - New Curriculum on Generative AI was just released!
------------------------------------------------------------------
+### 🌐 Multi-Language Support
 
-We just released a 12 lesson curriculum on generative AI. Come learn things like:
+#### Supported via GitHub Action (Automated & Always Up-to-Date)
 
--   prompting and prompt engineering
--   text and image app generation
--   search apps
+French | Spanish | German | Russian | Arabic | Persian (Farsi) | Urdu | Chinese (Simplified) | Chinese (Traditional, Macau) | Chinese (Traditional, Hong Kong) | Chinese (Traditional, Taiwan) | Japanese | Korean | Hindi | Bengali | Marathi | Nepali | Punjabi (Gurmukhi) | Portuguese (Portugal) | Portuguese (Brazil) | Italian | Polish | Turkish | Greek | Thai | Swedish | Danish | Norwegian | Finnish | Dutch | Hebrew | Vietnamese | Indonesian | Malay | Tagalog (Filipino) | Swahili | Hungarian | Czech | Slovak | Romanian | Bulgarian | Serbian (Cyrillic) | Croatian | Slovenian | Ukrainian | Burmese (Myanmar)
 
-As usual, there's a lesson, assignments to complete, knowledge checks and challenges.
+**If you wish to have additional translations languages supported are listed here**
 
-Check it out:
-
-> https://aka.ms/genai-beginners
+#### Join Our Community
 
 Are you a student?
 ==================
@@ -366,11 +361,6 @@ Offline access
 You can run this documentation offline by using Docsify. Fork this repo, install Docsify on your local machine, then in the root folder of this repo, type `docsify serve`. The website will be served on port 3000 on your localhost: `localhost:3000`.
 
 > Note, notebooks will not be rendered via Docsify, so when you need to run a notebook, do that separately in VS Code running a Python kernel.
-
-Help Wanted!
-------------
-
-If you would like to translate all or part of the curriculum, please follow our Translations guide.
 
 Other Curricula
 ---------------

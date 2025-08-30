@@ -1,6 +1,6 @@
 ---
 project: tinyauth
-stars: 5054
+stars: 5222
 description: The simplest way to protect your apps with a login screen.
 url: https://github.com/steveiliop56/tinyauth
 ---

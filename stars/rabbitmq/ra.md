@@ -1,6 +1,6 @@
 ---
 project: ra
-stars: 892
+stars: 893
 description: A Multi-Raft implementation for Erlang and Elixir that strives to be efficient and make it easier to use multiple Raft clusters in a single system.
 url: https://github.com/rabbitmq/ra
 ---

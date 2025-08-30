@@ -1,6 +1,6 @@
 ---
 project: mise
-stars: 18505
+stars: 18661
 description: dev tools, env vars, task runner
 url: https://github.com/jdx/mise
 ---
@@ -36,7 +36,7 @@ See Getting started for more options.
 
 $ curl https://mise.run | sh
 $ ~/.local/bin/mise --version
-2025.8.20 macos-arm64 (a1b2d3e 2025-08-22)
+2025.8.21 macos-arm64 (a1b2d3e 2025-08-27)
 
 Hook mise into your shell (pick the right one for your shell):
 

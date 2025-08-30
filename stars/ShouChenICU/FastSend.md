@@ -1,6 +1,6 @@
 ---
 project: FastSend
-stars: 1059
+stars: 1084
 description: FastSend 是一个基于 WebRTC 技术的点对点文件传输工具，支持快速的目录同步和文件传输。通过浏览器即可实现安全、高效的文件共享。
 url: https://github.com/ShouChenICU/FastSend
 ---
@@ -68,6 +68,16 @@ FastSend 不建议直接以 HTTPS 形式进行生产环境部署，而应当位�
 🐳 Docker 和 Docker Compose
 --------------------------
 
+### 使用 Docker Hub 发行版
+
+docker run -d --name fastsend -p 3000:3000 shouchenicu/fastsend:0.6.0
+
+Caution
+
+`shouchenicu/fastsend` 是此项目在 Docker Hub 上的 **唯一** 官方镜像！
+
+当前已发现 12 个第三方镜像，其中5个1的下载使用量高于官方镜像。请注意甄别，风险自负！
+
 ### Docker 构建
 
 docker build -t fastsend .
@@ -113,3 +123,8 @@ docker-compose up -d
 如果这个项目对你有帮助，欢迎给一个 star 支持一下！
 
 * * *
+
+Footnotes
+---------
+
+1.  比如 `niliaerith/fastsend` ↩

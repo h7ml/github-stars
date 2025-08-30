@@ -1,6 +1,6 @@
 ---
 project: duf
-stars: 13626
+stars: 13632
 description: Disk Usage/Free Utility - a better 'df' alternative
 url: https://github.com/muesli/duf
 ---
@@ -27,10 +27,12 @@ Installation
 #### Linux
 
 -   Arch Linux: `pacman -S duf`
--   Ubuntu 22.04 / Debian unstable: `apt install duf`
+-   Ubuntu (22.04 and later) / Debian (12 and later): `apt install duf`
+-   Fedora Linux: `dnf install duf`
 -   Nix: `nix-env -iA nixpkgs.duf`
 -   Void Linux: `xbps-install -S duf`
 -   Gentoo Linux: `emerge sys-fs/duf`
+-   Solus: `eopkg it duf`
 -   Packages in Alpine, Debian & RPM formats
 
 #### BSD
@@ -58,7 +60,7 @@ Installation
 
 ### From source
 
-Make sure you have a working Go environment (Go 1.17 or higher is required). See the install instructions.
+Make sure you have a working Go environment (Go 1.23 or higher is required). See the install instructions.
 
 Compiling duf is easy, simply run:
 

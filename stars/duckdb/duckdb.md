@@ -1,6 +1,6 @@
 ---
 project: duckdb
-stars: 32246
+stars: 32415
 description: DuckDB is an analytical in-process SQL database management system
 url: https://github.com/duckdb/duckdb
 ---

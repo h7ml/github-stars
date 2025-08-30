@@ -1,6 +1,6 @@
 ---
 project: caddy-docker-proxy
-stars: 3808
+stars: 3822
 description: Caddy as a reverse proxy for Docker
 url: https://github.com/lucaslorentz/caddy-docker-proxy
 ---
@@ -70,7 +70,8 @@ services:
     image: lucaslorentz/caddy-docker-proxy:ci-alpine
     ports:
       - 80:80
-      - 443:443
+      - 443:443/tcp
+      - 443:443/udp
     environment:
       - CADDY\_INGRESS\_NETWORKS=caddy
     networks:

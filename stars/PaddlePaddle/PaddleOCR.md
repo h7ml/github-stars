@@ -1,6 +1,6 @@
 ---
 project: PaddleOCR
-stars: 52939
+stars: 53186
 description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
@@ -53,7 +53,7 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
     -   The high-stability service-oriented deployment solution also supports invocation via manually constructed HTTP requests, enabling client-side code development in any programming language.
 -   **Benchmark Support:**
     
-    -   **All production lines now support fine-grained benchmarking, enabling measurement of end-to-end inference time as well as per-layer and per-module latency data to assist with performance analysis.**
+    -   **All production lines now support fine-grained benchmarking, enabling measurement of end-to-end inference time as well as per-layer and per-module latency data to assist with performance analysis. Here's how to set up and use the benchmark feature.**
     -   **Documentation has been updated to include key metrics for commonly used configurations on mainstream hardware, such as inference latency and memory usage, providing deployment references for users.**
 -   **Bug Fixes:**
     
@@ -177,8 +177,32 @@ History Log
 
 Install PaddlePaddle refer to Installation Guide, after then, install the PaddleOCR toolkit.
 
-# Install paddleocr
-pip install paddleocr
+# If you only want to use the basic text recognition feature (returns text position coordinates and content), including the PP-OCR series
+python -m pip install paddleocr
+# If you want to use all features such as document parsing, document understanding, document translation, key information extraction, etc.
+# python -m pip install "paddleocr\[all\]"
+
+Starting from version 3.2.0, in addition to the `all` dependency group demonstrated above, PaddleOCR also supports installing partial optional features by specifying other dependency groups. All dependency groups provided by PaddleOCR are as follows:
+
+Dependency Group Name
+
+Corresponding Functionality
+
+`doc-parser`
+
+Document parsing: can be used to extract layout elements such as tables, formulas, stamps, images, etc. from documents; includes models like PP-StructureV3
+
+`ie`
+
+Information extraction: can be used to extract key information from documents, such as names, dates, addresses, amounts, etc.; includes models like PP-ChatOCRv4
+
+`trans`
+
+Document translation: can be used to translate documents from one language to another; includes models like PP-DocTranslation
+
+`all`
+
+Complete functionality
 
 ### 3\. Run inference by CLI
 

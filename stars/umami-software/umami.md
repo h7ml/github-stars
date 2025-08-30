@@ -1,6 +1,6 @@
 ---
 project: umami
-stars: 30338
+stars: 30475
 description: Umami is a modern, privacy-focused alternative to Google Analytics.
 url: https://github.com/umami-software/umami
 ---
@@ -31,7 +31,7 @@ A detailed getting started guide can be found at umami.is/docs.
 
 git clone https://github.com/umami-software/umami.git
 cd umami
-npm install
+pnpm install
 
 ### Configure Umami
 
@@ -46,13 +46,13 @@ mysql://username:mypassword@localhost:3306/mydb
 
 ### Build the Application
 
-npm run build
+pnpm run build
 
 _The build step will create tables in your database if you are installing for the first time. It will also create a login user with username **admin** and password **umami**._
 
 ### Start the Application
 
-npm run start
+pnpm run start
 
 _By default, this will launch the application on `http://localhost:3000`. You will need to either proxy requests from your web server or change the port to serve the application directly._
 
@@ -81,8 +81,8 @@ docker pull docker.umami.is/umami-software/umami:mysql-latest
 To get the latest features, simply do a pull, install any new dependencies, and rebuild:
 
 git pull
-npm install
-npm run build
+pnpm install
+pnpm run build
 
 To update the Docker image, simply pull the new images and rebuild:
 

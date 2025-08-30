@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 10536
+stars: 11304
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
@@ -161,7 +161,7 @@ Azure OpenAI models
 
 Is there a provider you’d like to see in Crush? Is there an existing model that needs an update?
 
-Crush’s default model listing is managed in Catwalk, an community-supported, open source repository of Crush-compatible models, and you’re welcome to contribute.
+Crush’s default model listing is managed in Catwalk, a community-supported, open source repository of Crush-compatible models, and you’re welcome to contribute.
 
 Configuration
 -------------

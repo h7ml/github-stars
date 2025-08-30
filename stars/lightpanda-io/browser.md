@@ -1,6 +1,6 @@
 ---
 project: browser
-stars: 9568
+stars: 9613
 description: Lightpanda: the headless browser designed for AI and automation
 url: https://github.com/lightpanda-io/browser
 ---
@@ -51,9 +51,9 @@ The Lightpanda browser is compatible to run on windows inside WSL. Follow the Li
 
 **Install from Docker**
 
-Lightpanda provides official Docker images for both Linux amd64 and arm64 architectures. The following command fetches the Docker image and starts a new container exposing Lightpanda's CDP server on port `9222`. The `--privileged` option is required because the browser requires `io_uring` syscalls which are blocked by default by Docker.
+Lightpanda provides official Docker images for both Linux amd64 and arm64 architectures. The following command fetches the Docker image and starts a new container exposing Lightpanda's CDP server on port `9222`.
 
-docker run -d --name lightpanda -p 9222:9222 --privileged lightpanda/browser:nightly
+docker run -d --name lightpanda -p 9222:9222 lightpanda/browser:nightly
 
 ### Dump a URL
 
@@ -138,7 +138,7 @@ Build from sources
 
 ### Prerequisites
 
-Lightpanda is written with Zig `0.14.1`. You have to install it with the right version in order to build the project.
+Lightpanda is written with Zig `0.15.1`. You have to install it with the right version in order to build the project.
 
 Lightpanda also depends on zig-js-runtime (with v8), Netsurf libs and Mimalloc.
 

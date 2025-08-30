@@ -1,6 +1,6 @@
 ---
 project: Xray-core
-stars: 30793
+stars: 30943
 description: Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.
 url: https://github.com/XTLS/Xray-core
 ---
@@ -18,8 +18,10 @@ Donation & NFTs
 ### Collect a Project X NFT to support the development of Project X!
 
 -   **ETH/USDT/USDC: `0xDc3Fe44F0f25D13CACb1C4896CD0D321df3146Ee`**
+-   **Project X NFT: https://opensea.io/item/ethereum/0x5ee362866001613093361eb8569d59c4141b76d1/1**
+-   **VLESS NFT: https://opensea.io/collection/vless**
 -   **REALITY NFT: https://opensea.io/item/ethereum/0x5ee362866001613093361eb8569d59c4141b76d1/2**
--   **Related links: https://opensea.io/collection/xtls, Announcement of NFTs by Project X, XHTTP: Beyond REALITY**
+-   **Related links: VLESS Post-Quantum Encryption, XHTTP: Beyond REALITY, Announcement of NFTs by Project X**
 
 License
 -------

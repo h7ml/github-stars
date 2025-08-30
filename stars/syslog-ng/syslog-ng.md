@@ -1,6 +1,6 @@
 ---
 project: syslog-ng
-stars: 2258
+stars: 2259
 description: syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL.
 url: https://github.com/syslog-ng/syslog-ng
 ---
@@ -212,8 +212,7 @@ x86-64
     
     wget -qO - https://ose-repo.syslog-ng.com/apt/syslog-ng-ose-pub.asc | sudo apt-key add -
     
-2.  Add the repository containing the latest build of syslog-ng to your APT sources.  
-    For example if you are running Ubuntu 24.04, you would use `ubuntu-noble`, see chart above:
+2.  Add the repository containing the latest build of syslog-ng to your APT sources. For example if you are running Ubuntu 24.04, you would use `ubuntu-noble`, see chart above:
     
     echo "deb https://ose-repo.syslog-ng.com/apt/ stable ubuntu-noble" | sudo tee -a /etc/apt/sources.list.d/syslog-ng-ose.list
     
@@ -263,7 +262,16 @@ Binaries for other platforms are listed on the official third party page.
 Installation from Docker image
 ------------------------------
 
-Binaries are also available as a Docker image. To find out more, check out the blog post, Your central log server in Docker.
+Binaries are also available as a Docker image. You can get:
+
+-   the latest official release with
+    
+    `docker pull balabit/syslog-ng:latest`
+    
+-   the latest developer nigthly build with
+    
+    `docker pull balabit/syslog-ng:nightly`
+    
 
 Documentation
 -------------
