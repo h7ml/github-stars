@@ -1,6 +1,6 @@
 ---
 project: Good-MITM
-stars: 843
+stars: 844
 description: Rule-based MITM engine. Rewriting, redirecting and rejecting on HTTP(S) requests and responses, supports JavaScript rule.
 url: https://github.com/zu1k/Good-MITM
 ---

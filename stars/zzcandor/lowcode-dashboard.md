@@ -1,6 +1,6 @@
 ---
 project: lowcode-dashboard
-stars: 174
+stars: 172
 description: 低代码 可视化 拖拽大屏
 url: https://github.com/zzcandor/lowcode-dashboard
 ---

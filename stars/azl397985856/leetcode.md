@@ -1,6 +1,6 @@
 ---
 project: leetcode
-stars: 55577
+stars: 55589
 description: LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)
 url: https://github.com/azl397985856/leetcode
 ---

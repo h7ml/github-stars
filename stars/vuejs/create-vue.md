@@ -1,6 +1,6 @@
 ---
 project: create-vue
-stars: 4170
+stars: 4177
 description: 🛠️ The recommended way to start a Vite-powered Vue project
 url: https://github.com/vuejs/create-vue
 ---

@@ -1,6 +1,6 @@
 ---
 project: JX
-stars: 1153
+stars: 1152
 description: JX(Javascript eXtension tools) 是腾讯AlloyTeam推出的模块化、非侵入式Web前端框架，适合构建和组织工业级大规模、高效率的 Web App
 url: https://github.com/AlloyTeam/JX
 ---

@@ -1,6 +1,6 @@
 ---
 project: ant-design-web3
-stars: 1059
+stars: 1063
 description: 🥳 Efficient react components for building dapps easier | Connect crypto wallets and more Web3 UI components | Web3 icons | Supports Ethereum, Solana, Bitcoin, TON, Sui, TRON and others.
 url: https://github.com/ant-design/ant-design-web3
 ---

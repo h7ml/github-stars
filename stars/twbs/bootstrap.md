@@ -1,6 +1,6 @@
 ---
 project: bootstrap
-stars: 172895
+stars: 173272
 description: The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 url: https://github.com/twbs/bootstrap
 ---
@@ -10,7 +10,7 @@ url: https://github.com/twbs/bootstrap
 Sleek, intuitive, and powerful front-end framework for faster and easier web development.  
 **Explore Bootstrap docs »**  
   
-Report bug · Request feature · Themes · Blog
+Report bug · Request feature · Blog
 
 Bootstrap 5
 -----------
@@ -39,10 +39,10 @@ Several quick start options are available:
 
 -   Download the latest release
 -   Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
--   Install with npm: `npm install bootstrap@v5.3.7`
--   Install with yarn: `yarn add bootstrap@v5.3.7`
--   Install with Bun: `bun add bootstrap@v5.3.7`
--   Install with Composer: `composer require twbs/bootstrap:5.3.7`
+-   Install with npm: `npm install bootstrap@v5.3.8`
+-   Install with yarn: `yarn add bootstrap@v5.3.8`
+-   Install with Bun: `bun add bootstrap@v5.3.8`
+-   Install with Composer: `composer require twbs/bootstrap:5.3.8`
 -   Install with NuGet: CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
 
 Read the Getting started page for information on the framework contents, templates, examples, and more.

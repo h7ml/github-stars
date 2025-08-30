@@ -1,6 +1,6 @@
 ---
 project: ai-sdk-preview-python-streaming
-stars: 241
+stars: 246
 description: null
 url: https://github.com/vercel-labs/ai-sdk-preview-python-streaming
 ---

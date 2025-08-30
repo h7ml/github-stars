@@ -1,6 +1,6 @@
 ---
 project: vite-design
-stars: 322
+stars: 321
 description: 下一代构建工具 vite 文档翻译 源码解析
 url: https://github.com/zhangyuang/vite-design
 ---

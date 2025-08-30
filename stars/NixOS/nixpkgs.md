@@ -1,6 +1,6 @@
 ---
 project: nixpkgs
-stars: 21581
+stars: 21651
 description: Nix Packages collection & NixOS
 url: https://github.com/NixOS/nixpkgs
 ---
@@ -19,7 +19,6 @@ Community
 
 -   Discourse Forum
 -   Matrix Chat
--   NixOS Weekly
 -   Official wiki
 -   Community-maintained list of ways to get in touch (Discord, Telegram, IRC, etc.)
 

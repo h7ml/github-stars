@@ -1,6 +1,6 @@
 ---
 project: rome
-stars: 2911
+stars: 2913
 description: :calendar: Customizable date (and time) picker. Opt-in UI, no jQuery!
 url: https://github.com/bevacqua/rome
 ---

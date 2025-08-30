@@ -1,6 +1,6 @@
 ---
 project: ballcat
-stars: 1665
+stars: 1666
 description: 😸一个快速开发脚手架，快速搭建企业级后台管理系统，并提供多种便捷starter进行功能扩展。主要功能包括前后台用户分离，菜单权限，数据权限，定时任务，访问日志，操作日志，异常日志，统一异常处理，XSS过滤，SQL防注入，国际化 等多种功能
 url: https://github.com/ballcat-projects/ballcat
 ---

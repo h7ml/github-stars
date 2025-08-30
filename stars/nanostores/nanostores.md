@@ -1,6 +1,6 @@
 ---
 project: nanostores
-stars: 6476
+stars: 6504
 description: A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores
 url: https://github.com/nanostores/nanostores
 ---

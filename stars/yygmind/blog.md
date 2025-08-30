@@ -1,6 +1,6 @@
 ---
 project: blog
-stars: 10624
+stars: 10622
 description: 我是木易杨，公众号「高级前端进阶」作者，跟着我每周重点攻克一个前端面试重难点。接下来让我带你走进高级前端的世界，在进阶的路上，共勉！
 url: https://github.com/yygmind/blog
 ---

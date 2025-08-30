@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 41098
+stars: 41955
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -37,11 +37,68 @@ url: https://github.com/1c7/chinese-independent-developer
 3\. 项目列表
 --------
 
+### 2025 年 8 月 29 号添加
+
+#### 疯狂的小波(武汉)
+
+-   ✅ Nano Banana AI 图像编辑器：基于最先进的 AI 图像编辑模型 Nano Banana 开发的图片编辑器，用嘴改图、保持角色一致性、控制细节、图片融合
+
+### 2025 年 8 月 28 号添加
+
+#### david\_bai(武汉) - Github, 博客
+
+-   ✅ PrivyDrop：开源简单易用的 P2P 文本文件传输工具网页，支持传输任意大小的文件 - 更多介绍
+
+#### iam-tin - Github
+
+-   ✅ Flower Drawing 花卉绘画：专注于花卉绘画的网站，有不同的花的种类可以选择，只要你用语言描述出样子，你可以画任何的花卉。
+-   ✅ Fish Drawing 鱼类绘画：专注于画各种鱼的网站，你可以随心所欲画出任何你想画的鱼的图片。
+
+### 2025 年 8 月 27 号添加
+
+#### flingyp(上海) - Github
+
+-   ✅ 简链：打造个性化简历，赢得理想工作
+
+#### 小灰雀(北京)
+
+-   ✅ EzWebp：视频转动图（WebP/GIF）在线工具，本地执行，数据安全。
+
+#### Nico(长沙) - Github
+
+-   ✅ TimeGuessr：给你一张图片，让你猜测图片发生的时间和地点。我们把 Timeguessr 的玩法原封不动地搬了过来，只是把图库换成了另一批“假照片”——全部由 AI 生成的过去 50 年里可能发生的瞬间
+
+### 2025 年 8 月 26 号添加
+
+#### Lizer(重庆) - Github
+
+-   ✅ 数字生命管：抖音热搜时间轴， 一小时自动抓取一次，通过工作流全网搜关于这个事件的时间线，然后 AI 梳理，AI 配图
+
+### 2025 年 8 月 25 号添加
+
+#### 北纬27度
+
+-   ✅ ARR (Annual Recurring Revenue) （年度经常性收入）排行榜：爬取了全网公开的 ARR 营收数据做的 founder ARR 榜单，会定期更新，感兴趣的朋友可以看看，说不定你也在这份榜单上面
+
+#### YILS-LIN - Github
+
+-   ✅ AI Short Video Factory - 短视频工厂：一键生成产品营销与泛内容短视频，AI批量自动剪辑，高颜值跨平台桌面端工具
+
+#### AskTao - Github
+
+-   ✅ Image Splitter：图集拆分工具。帮助`游戏开发者`或`UI设计师`快速、方便地从一张雪碧图 (`Sprite Sheet`) 中，提取出所有独立的精灵icon资源，或按网格分割图片得到其切片。平台支持：mac/win/linux/web
+
+### 2025 年 8 月 24 号添加
+
+#### hackun666 - Github
+
+-   ✅ AI 软著生成器：AI 快速生成软件著作权（软著）申请所需的文档材料
+
 ### 2025 年 8 月 23 号添加
 
 #### 辣条（北京）
 
--   ✅ picture to drawing ：免费/无需注册的图片转手绘风格网站
+-   ✅ picture to drawing ：图片转手绘风格网站（免费/无需注册）
 
 #### SUOWU(杭州)
 
@@ -51,7 +108,7 @@ url: https://github.com/1c7/chinese-independent-developer
 
 #### monsoonw(杭州)
 
--   ✅ Free Qwen Image Edit AI：在线 Qwen Image Edit 网站。高级 AI 图像编辑与完美文本渲染，完美支持中英文文本渲染。
+-   ✅ Free Qwen Image Edit AI：Qwen Image Edit 网站。高级 AI 图像编辑与完美文本渲染，完美支持中英文文本渲染。
 
 ### 2025 年 8 月 21 号添加
 
@@ -1569,10 +1626,6 @@ url: https://github.com/1c7/chinese-independent-developer
 
 -   ✅ Gemini Coder：AI 应用代码生成器，基于提示词一键生成网站应用
 -   ✅ DeepSeek v3：DeepSeek v3 是一个拥有 671B 参数规模、突破性的大规模语言模型，这是介绍它的网站
-
-#### david\_bai - 推特
-
--   ✅ SecureShare：数据在本地,隐私优先,速度超快的 P2P 文件传输工具 (无需注册、打开即用；可以分享文本、图片、文件、文件夹）
 
 ### 2024 年 12 月 26 号添加
 

@@ -1,6 +1,6 @@
 ---
 project: uni-app
-stars: 41060
+stars: 41075
 description: A cross-platform framework using Vue.js
 url: https://github.com/dcloudio/uni-app
 ---
@@ -12,7 +12,7 @@ uni-app
 
 `uni-app` 是一个使用 `Vue.js` 开发小程序、 Web、App的统一前端框架。官网地址：https://uniapp.dcloud.io
 
-开发者使用 `Vue` 语法编写代码，`uni-app` 框架将其编译到 小程序（微信/支付宝/百度/字节跳动/QQ/快手/钉钉/小红书）、App（iOS/Android/HarmonyOS）、Web等多个平台，保证其正确运行并达到优秀体验。
+开发者使用 `Vue` 语法编写代码，`uni-app` 框架将其编译到 小程序（微信/支付宝/百度/字节跳动/QQ/快手/钉钉/小红书/京东/鸿蒙元服务）、App（iOS/Android/HarmonyOS）、Web等多个平台，保证其正确运行并达到优秀体验。
 
 uni-app的特点
 ==========

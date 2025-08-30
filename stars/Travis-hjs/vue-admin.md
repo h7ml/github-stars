@@ -1,6 +1,6 @@
 ---
 project: vue-admin
-stars: 243
+stars: 244
 description: 无 UI 框架依赖（默认 vue 3.x 版本）
 url: https://github.com/Travis-hjs/vue-admin
 ---

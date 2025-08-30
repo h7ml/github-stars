@@ -1,6 +1,6 @@
 ---
 project: reader
-stars: 9143
+stars: 9163
 description: Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/
 url: https://github.com/jina-ai/reader
 ---

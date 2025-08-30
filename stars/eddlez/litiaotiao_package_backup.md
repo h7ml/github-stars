@@ -1,6 +1,6 @@
 ---
 project: litiaotiao_package_backup
-stars: 2401
+stars: 2405
 description: 李跳跳APK包备份
 url: https://github.com/eddlez/litiaotiao_package_backup
 ---

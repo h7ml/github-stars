@@ -1,6 +1,6 @@
 ---
 project: prompt-manager
-stars: 229
+stars: 231
 description: 一个简洁、美观、实用的提示词管理网站。
 url: https://github.com/liujuntao123/prompt-manager
 ---

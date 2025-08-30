@@ -1,6 +1,6 @@
 ---
 project: hajimi-king
-stars: 753
+stars: 812
 description: 人人都是哈基米大王
 url: https://github.com/GakkiNoOne/hajimi-king
 ---

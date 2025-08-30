@@ -1,7 +1,7 @@
 ---
 project: LunaTV
-stars: 3375
-description: null
+stars: 4345
+description: 本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源
 url: https://github.com/MoonTechLab/LunaTV
 ---
 
@@ -23,13 +23,11 @@ MoonTV
 -   🌗 **响应式布局**：桌面侧边栏 + 移动底部导航，自适应各种屏幕尺寸。
 -   👿 **智能去广告**：自动跳过视频中的切片广告（实验性）。
 
-### 注意：本项目为闭源项目，本仓库仅用于分发 docker 镜像和收集 issue，介意请绕道
+### 注意：部署后项目为空壳项目，无内置播放源和直播源，需要自行收集
 
 点击查看项目截图
 
 ### 请不要在 B站、小红书、微信公众号、抖音、今日头条或其他中国大陆社交平台发布视频或文章宣传本项目，不授权任何“科技周刊/月刊”类项目或站点收录本项目。
-
-本项目为空项目，请勿 fork，喜欢可点 star
 
 🗺 目录
 -----
@@ -79,8 +77,6 @@ Docker
 部署
 --
 
-本项目为防盗卖触发商业行为造成合规风险，采用一机一码的形式，授权码需要在 自助授权机器人 处申请，授权码和 tg 号绑定
-
 本项目**仅支持 Docker 或其他基于 Docker 的平台** 部署。
 
 ### Kvrocks 存储（推荐）
@@ -97,7 +93,6 @@ services:
       - PASSWORD=admin\_password
       - NEXT\_PUBLIC\_STORAGE\_TYPE=kvrocks
       - KVROCKS\_URL=redis://moontv-kvrocks:6666
-      - AUTH\_TOKEN=授权码
     networks:
       - moontv-network
     depends\_on:
@@ -130,7 +125,6 @@ services:
       - PASSWORD=admin\_password
       - NEXT\_PUBLIC\_STORAGE\_TYPE=redis
       - REDIS\_URL=redis://moontv-redis:6379
-      - AUTH\_TOKEN=授权码
     networks:
       - moontv-network
     depends\_on:
@@ -167,7 +161,6 @@ services:
       - NEXT\_PUBLIC\_STORAGE\_TYPE=upstash
       - UPSTASH\_URL=上面 https 开头的 HTTPS ENDPOINT
       - UPSTASH\_TOKEN=上面的 TOKEN
-      - AUTH\_TOKEN=授权码
 
 配置文件
 ----
@@ -249,13 +242,13 @@ PASSWORD
 
 无默认，必填字段
 
-AUTH\_TOKEN
+SITE\_BASE
 
-授权码
+站点 url
 
-请从 自助授权机器人 处申请
+形如 https://example.com
 
-无默认，必填字段
+空
 
 NEXT\_PUBLIC\_SITE\_NAME
 
@@ -327,7 +320,7 @@ NEXT\_PUBLIC\_DOUBAN\_PROXY\_TYPE
 
 见下方
 
-melody-cdn-sharon
+direct
 
 NEXT\_PUBLIC\_DOUBAN\_PROXY
 
@@ -343,7 +336,7 @@ NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY\_TYPE
 
 见下方
 
-melody-cdn-sharon
+direct
 
 NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY
 
@@ -372,7 +365,6 @@ true
 NEXT\_PUBLIC\_DOUBAN\_PROXY\_TYPE 选项解释：
 
 -   direct: 由服务器直接请求豆瓣源站
--   melody-cdn-sharon: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 旋律 搭建，并由 Sharon cdn 提供加速
 -   cors-proxy-zwei: 浏览器向 cors proxy 请求豆瓣数据，该 cors proxy 由 Zwei 搭建
 -   cmliussss-cdn-tencent: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 CMLiussss 搭建，并由腾讯云 cdn 提供加速
 -   cmliussss-cdn-ali: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 CMLiussss 搭建，并由阿里云 cdn 提供加速
@@ -383,7 +375,6 @@ NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY\_TYPE 选项解释：
 -   direct：由浏览器直接请求豆瓣分配的默认图片域名
 -   server：由服务器代理请求豆瓣分配的默认图片域名
 -   img3：由浏览器请求豆瓣官方的精品 cdn（阿里云）
--   melody-cdn-sharon: 由浏览器请求豆瓣 CDN，该 CDN 由 旋律 搭建，并由 Sharon cdn 提供加速
 -   cmliussss-cdn-tencent：由浏览器请求豆瓣 CDN，该 CDN 由 CMLiussss 搭建，并由腾讯云 cdn 提供加速
 -   cmliussss-cdn-ali：由浏览器请求豆瓣 CDN，该 CDN 由 CMLiussss 搭建，并由阿里云 cdn 提供加速
 -   custom: 用户自定义 proxy，由 NEXT\_PUBLIC\_DOUBAN\_IMAGE\_PROXY 定义

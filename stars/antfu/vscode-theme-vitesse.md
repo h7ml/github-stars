@@ -1,6 +1,6 @@
 ---
 project: vscode-theme-vitesse
-stars: 632
+stars: 633
 description: 🏕 Vitesse theme for VS Code
 url: https://github.com/antfu/vscode-theme-vitesse
 ---

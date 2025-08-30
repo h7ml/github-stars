@@ -1,6 +1,6 @@
 ---
 project: agents.md
-stars: 3134
+stars: 4395
 description: AGENTS.md — a simple, open format for guiding coding agents
 url: https://github.com/openai/agents.md
 ---

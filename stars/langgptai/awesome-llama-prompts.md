@@ -1,6 +1,6 @@
 ---
 project: awesome-llama-prompts
-stars: 257
+stars: 256
 description: LLM prompts, llama3 prompts, llama2 prompts
 url: https://github.com/langgptai/awesome-llama-prompts
 ---

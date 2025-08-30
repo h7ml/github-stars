@@ -1,6 +1,6 @@
 ---
 project: cursor-auto-free
-stars: 9491
+stars: 9499
 description: auto sign cursor
 url: https://github.com/chengazhen/cursor-auto-free
 ---

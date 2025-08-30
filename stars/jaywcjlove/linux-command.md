@@ -1,6 +1,6 @@
 ---
 project: linux-command
-stars: 34041
+stars: 34070
 description: Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux
 url: https://github.com/jaywcjlove/linux-command
 ---

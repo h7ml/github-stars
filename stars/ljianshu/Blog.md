@@ -1,6 +1,6 @@
 ---
 project: Blog
-stars: 7949
+stars: 7948
 description: 关注基础知识，打造优质前端博客，公众号[前端工匠]的作者
 url: https://github.com/ljianshu/Blog
 ---

@@ -1,6 +1,6 @@
 ---
 project: uni-api
-stars: 1059
+stars: 1064
 description: This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified API interface, convert them to the OpenAI format uniformly, and support load balancing. Currently supported backend services include: OpenAI, Anthropic, DeepBricks, OpenRouter, Gemini, Vertex, etc.
 url: https://github.com/yym68686/uni-api
 ---
@@ -107,7 +107,7 @@ providers:
       api\_key\_rate\_limit: 15/min # Each API Key can request up to 15 times per minute, optional. The default is 999999/min. Supports multiple frequency constraints: 15/min,10/day
       # api\_key\_rate\_limit: # You can set different frequency limits for each model
       #   gemini-2.5-flash: 10/min,500/day
-      #   gemini-2.5-pro: 5/min,25/day
+      #   gemini-2.5-pro: 5/min,25/day,1048576/tpr # 1048576/tpr means the token limit per request is 1,048,576 tokens.
       #   default: 4/min # If the model does not set the frequency limit, use the frequency limit of default
       api\_key\_cooldown\_period: 60 # Each API Key will be cooled down for 60 seconds after encountering a 429 error. Optional, the default is 0 seconds. When set to 0, the cooling mechanism is not enabled. When there are multiple API keys, the cooling mechanism will take effect.
       api\_key\_schedule\_algorithm: round\_robin # Set the request order of multiple API Keys, optional. The default is round\_robin, and the optional values are: round\_robin, random, fixed\_priority. It will take effect when there are multiple API keys. round\_robin is polling load balancing, and random is random load balancing. fixed\_priority is fixed priority scheduling, always use the first available API key.

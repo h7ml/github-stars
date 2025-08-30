@@ -1,6 +1,6 @@
 ---
 project: nuxt
-stars: 58007
+stars: 58052
 description: The Intuitive Vue Framework.
 url: https://github.com/nuxt/nuxt
 ---

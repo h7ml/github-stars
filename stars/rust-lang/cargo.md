@@ -1,6 +1,6 @@
 ---
 project: cargo
-stars: 13922
+stars: 13948
 description: The Rust package manager
 url: https://github.com/rust-lang/cargo
 ---

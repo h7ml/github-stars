@@ -1,6 +1,6 @@
 ---
 project: WeRoBot
-stars: 4663
+stars: 4661
 description: WeRoBot 是一个微信公众号开发框架
 url: https://github.com/offu/WeRoBot
 ---

@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 110715
+stars: 111116
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -1167,6 +1167,7 @@ Generative AI
 -   Othor AI - An AI-native fast, simple, and secure alternative to popular business intelligence solutions like Tableau, Power BI, and Looker. Othor utilizes large language models (LLMs) to deliver custom business intelligence solutions in minutes. The Free Forever plan provides one workspace with five datasource connections for one user, with no limits on analytics. #opensource
 -   OpenRouter - Provides various free AI models including DeepSeek R1, V3, Llama, and Moonshot AI. These models excel in natural language processing and are suitable for diverse development needs. Note that while these models are free to use, they are subject to rate limits. Additionally, OpenRouter offers paid models for more advanced requirements, for instance Claude, OpenAI, Grok, Gemini, and Nova.
 -   Mediaworkbench.ai - MediaWorkbench.ai offers 100,000 free words for Azure OpenAI, DeepSeek, and Google Gemini models, enabling users to access powerful tools for code generation, deep research, and image creation.
+-   Audio Enhancer — AI-powered audio enhancer SaaS that removes noise and echo while preserving natural vocal clarity. totally Free: unlimited one-click enhancements, no login required, supports MP3/WAV/FLAC
 
 **⬆️ Back to Top**
 

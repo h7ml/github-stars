@@ -1,6 +1,6 @@
 ---
 project: rust-course
-stars: 28472
+stars: 28514
 description: “连续八年成为全世界最受喜爱的语言，无 GC 也无需手动内存管理、极高的性能和安全性、过程/OO/函数式编程、优秀的包管理、JS 未来基石" — 工作之余的第二语言来试试 Rust 吧。本书拥有全面且深入的讲解、生动贴切的示例、德芙般丝滑的内容，这可能是目前最用心的 Rust 中文学习教程 / Book 
 url: https://github.com/sunface/rust-course
 ---

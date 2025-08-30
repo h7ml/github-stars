@@ -1,6 +1,6 @@
 ---
 project: LangBot
-stars: 13114
+stars: 13304
 description: 🤩 Easy-to-use global IM bot platform designed for the LLM era / 简单易用的大模型即时通信机器人开发平台 ⚡️ Bots for QQ / QQ频道 / Discord / WeChat（微信）/ Telegram / 飞书 / 钉钉 / Slack 🧩 Integrated with ChatGPT（GPT)、DeepSeek、Dify、n8n、Claude、Google Gemini、xAI、PPIO、Ollama、阿里云百炼、SiliconFlow、Qwen、Moonshot(Kimi K2)、SillyTraven、MCP、WeClone etc. LLM & Agent & RAG
 url: https://github.com/langbot-app/LangBot
 ---
@@ -149,6 +149,12 @@ xAI
 
 ✅
 
+胜算云
+
+✅
+
+全球大模型都可调用（友情推荐）
+
 优云智算
 
 ✅
@@ -156,12 +162,6 @@ xAI
 大模型和 GPU 资源平台
 
 PPIO
-
-✅
-
-大模型和 GPU 资源平台
-
-胜算云
 
 ✅
 

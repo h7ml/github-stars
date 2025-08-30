@@ -1,6 +1,6 @@
 ---
 project: formulajs
-stars: 710
+stars: 711
 description: JavaScript implementation of most Microsoft Excel formula functions
 url: https://github.com/formulajs/formulajs
 ---

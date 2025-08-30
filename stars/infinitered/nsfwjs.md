@@ -1,6 +1,6 @@
 ---
 project: nsfwjs
-stars: 8609
+stars: 8616
 description: NSFW detection on the client-side via TensorFlow.js
 url: https://github.com/infinitered/nsfwjs
 ---

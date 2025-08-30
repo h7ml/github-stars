@@ -1,6 +1,6 @@
 ---
 project: electron-app
-stars: 688
+stars: 696
 description: 💅 An Electron app boilerplate with React 19, TypeScript 5, Tailwind 4, shadcn/ui, Electron Vite, Biome, GitHub Action releases and more.
 url: https://github.com/daltonmenezes/electron-app
 ---
@@ -65,6 +65,10 @@ For security reasons, **pnpm** has the onlyBuiltDependenciesFile property where 
 
 Distribution
 ============
+
+Note
+
+this section refers to local distribution, to release your app from GitHub Actions, see Releasing section.
 
 ### For all platforms
 

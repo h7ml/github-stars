@@ -1,6 +1,6 @@
 ---
 project: zan-proxy
-stars: 1833
+stars: 1834
 description: An extensible proxy for PC/Mobile/APP developer
 url: https://github.com/youzan/zan-proxy
 ---

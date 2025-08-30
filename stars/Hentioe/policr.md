@@ -1,6 +1,6 @@
 ---
 project: policr
-stars: 299
+stars: 300
 description: 已弃用，请转向 Policr Mini
 url: https://github.com/Hentioe/policr
 ---

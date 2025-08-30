@@ -1,6 +1,6 @@
 ---
 project: ofetch
-stars: 4779
+stars: 4793
 description: 😱 A better fetch API. Works on node, browser and workers.
 url: https://github.com/unjs/ofetch
 ---
@@ -45,7 +45,7 @@ const { users } \= await ofetch("/api/users");
 
 For binary content types, `ofetch` will instead return a `Blob` object.
 
-You can optionally provide a different parser than `destr`, or specify `blob`, `arrayBuffer`, or `text` to force parsing the body with the respective `FetchResponse` method.
+You can optionally provide a different parser than `destr`, or specify `blob`, `arrayBuffer`, `text` or `stream` to force parsing the body with the respective `FetchResponse` method.
 
 // Use JSON.parse
 await ofetch("/movie?lang=en", { parseResponse: JSON.parse });
@@ -56,6 +56,9 @@ await ofetch("/movie?lang=en", { parseResponse: (txt) \=> txt });
 // Get the blob version of the response
 await ofetch("/api/generate-image", { responseType: "blob" });
 
+// Get the stream version of the response
+await ofetch("/api/generate-image", { responseType: "stream" });
+
 ✔️ JSON Body
 ------------
 
@@ -63,7 +66,7 @@ If an object or a class with a `.toJSON()` method is passed to the `body` option
 
 `ofetch` utilizes `JSON.stringify()` to convert the passed object. Classes without a `.toJSON()` method have to be converted into a string value in advance before being passed to the `body` option.
 
-For `PUT`, `PATCH`, and `POST` request methods, when a string or object body is set, `ofetch` adds the default `content-type: "application/json"` and `accept: "application/json"` headers (which you can always override).
+For `PUT`, `PATCH`, and `POST` request methods, when a string or object body is set, `ofetch` adds the default `"content-type": "application/json"` and `accept: "application/json"` headers (which you can always override).
 
 Additionally, `ofetch` supports binary responses with `Buffer`, `ReadableStream`, `Stream`, and compatible body types. `ofetch` will automatically set the `duplex: "half"` option for streaming support!
 
@@ -268,6 +271,21 @@ As a shortcut, you can use `ofetch.native` that provides native `fetch` API
 
 const json \= await ofetch.native("/sushi").then((r) \=> r.json());
 
+📡 SSE
+------
+
+**Example:** Handle SSE response:
+
+const stream \= await ofetch("/sse")
+const reader \= stream.getReader();
+const decoder \= new TextDecoder()
+while (true) {
+  const { done, value } \= await reader.read();
+  if (done) break;
+  // Here is the chunked text of the SSE response.
+  const text \= decoder.decode(value)
+}
+
 🕵️ Adding HTTP(S) Agent
 ------------------------
 
@@ -331,6 +349,32 @@ await ofetch("/api", {
 By setting the `FETCH_KEEP_ALIVE` environment variable to `true`, an HTTP/HTTPS agent will be registered that keeps sockets around even when there are no outstanding requests, so they can be used for future requests without having to re-establish a TCP connection.
 
 **Note:** This option can potentially introduce memory leaks. Please check node-fetch/node-fetch#1325.
+
+### 💪 Augment `FetchOptions` interface
+
+You can augment the `FetchOptions` interface to add custom properties.
+
+// Place this in any \`.ts\` or \`.d.ts\` file.
+// Ensure it's included in the project's tsconfig.json "files".
+declare module "ofetch" {
+  interface FetchOptions {
+    // Custom properties 
+    requiresAuth?: boolean;
+  }
+}
+
+export {}
+
+This lets you pass and use those properties with full type safety throughout `ofetch` calls.
+
+const myFetch \= ofetch.create({
+  onRequest(context) {
+    //      ^? { ..., options: {..., requiresAuth?: boolean }}
+    console.log(context.options.requiresAuth);
+  },
+});
+
+myFetch("/foo", { requiresAuth: true })
 
 📦 Bundler Notes
 ----------------

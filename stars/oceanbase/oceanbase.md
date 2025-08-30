@@ -1,6 +1,6 @@
 ---
 project: oceanbase
-stars: 9418
+stars: 9437
 description: The Fastest Distributed Database for Transactional, Analytical, and  AI Workloads. Welcome to our community: https://discord.gg/74cF8vbNEs
 url: https://github.com/oceanbase/oceanbase
 ---
@@ -106,8 +106,7 @@ Community
 
 Join the OceanBase community via:
 
--   Discord
--   Ask on Stack Overflow
--   Chinese User Forum
--   DingTalk Group: 33254054
--   WeChat Group (Add the assistant with WeChat ID: OBCE666)
+-   Discord: Best for: asking questions, sharing feedback, getting the latest news, and connecting with other OceanBase users.
+-   GitHub Issues: Best for: addressing bugs encountered while using OceanBase, as well as submitting feature proposals.
+-   Chinese User Forum: Only for Chinese users, best for: asking questions, sharing feedback, getting the latest news, and connecting with other OceanBase users.
+-   WeChat Group (Add the assistant with WeChat ID: OBCE666): Only for Chinese users, best for: getting the latest news and connecting with other OceanBase users.

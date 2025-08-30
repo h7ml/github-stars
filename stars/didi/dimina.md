@@ -1,7 +1,7 @@
 ---
 project: dimina
-stars: 653
-description: 星河小程序 - 滴滴开源小程序 / Dimina MiniProgram - DiDi's Open-Source MiniProgram Framework
+stars: 656
+description: 星河小程序 - 滴滴开源小程序 / Dimina MiniProgram - DiDi's Open-Source MiniProgram
 url: https://github.com/didi/dimina
 ---
 

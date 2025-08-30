@@ -1,6 +1,6 @@
 ---
 project: tsx
-stars: 11277
+stars: 11306
 description: ⚡️ TypeScript Execute | The easiest way to run TypeScript in Node.js
 url: https://github.com/privatenumber/tsx
 ---

@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-wechat-bot
-stars: 4729
+stars: 4728
 description: ChatGPT for wechat https://github.com/AutumnWhj/ChatGPT-wechat-bot
 url: https://github.com/AutumnWhj/ChatGPT-wechat-bot
 ---

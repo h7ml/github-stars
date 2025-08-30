@@ -1,6 +1,6 @@
 ---
 project: jd_tb_auto
-stars: 1416
+stars: 1415
 description: 基于AutoJsx编写的618||双十一||淘宝||京东||幻想岛总动员||赚喵币||赚汪汪币||炸年兽任务自动完成脚本
 url: https://github.com/czj2369/jd_tb_auto
 ---

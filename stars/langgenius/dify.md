@@ -1,6 +1,6 @@
 ---
 project: dify
-stars: 111827
+stars: 112578
 description: Production-ready platform for agentic workflow development.
 url: https://github.com/langgenius/dify
 ---
@@ -52,99 +52,6 @@ Key features
 **6\. LLMOps**: Monitor and analyze application logs and performance over time. You could continuously improve prompts, datasets, and models based on production data and annotations.
 
 **7\. Backend-as-a-Service**: All of Dify's offerings come with corresponding APIs, so you could effortlessly integrate Dify into your own business logic.
-
-Feature Comparison
-------------------
-
-Feature
-
-Dify.AI
-
-LangChain
-
-Flowise
-
-OpenAI Assistants API
-
-Programming Approach
-
-API + App-oriented
-
-Python Code
-
-App-oriented
-
-API-oriented
-
-Supported LLMs
-
-Rich Variety
-
-Rich Variety
-
-Rich Variety
-
-OpenAI-only
-
-RAG Engine
-
-✅
-
-✅
-
-✅
-
-✅
-
-Agent
-
-✅
-
-✅
-
-❌
-
-✅
-
-Workflow
-
-✅
-
-❌
-
-✅
-
-❌
-
-Observability
-
-✅
-
-✅
-
-❌
-
-❌
-
-Enterprise Feature (SSO/Access control)
-
-✅
-
-❌
-
-❌
-
-❌
-
-Local Deployment
-
-✅
-
-✅
-
-✅
-
-❌
 
 Using Dify
 ----------

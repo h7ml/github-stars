@@ -1,6 +1,6 @@
 ---
 project: stable-diffusion-mobileui
-stars: 516
+stars: 515
 description: 基于一键包搭建的stable-diffusion，推出适配移动端的界面UI，可以生成H5和微信小程序。
 url: https://github.com/yuanyuekeji/stable-diffusion-mobileui
 ---

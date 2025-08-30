@@ -1,6 +1,6 @@
 ---
 project: auto-service
-stars: 181
+stars: 182
 description: 【+v:skipper_yqj】点个 Star，手有余香, Swagger or YAPI to TypeScript services and models
 url: https://github.com/gogoyqj/auto-service
 ---

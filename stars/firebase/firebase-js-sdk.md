@@ -1,6 +1,6 @@
 ---
 project: firebase-js-sdk
-stars: 5006
+stars: 5013
 description: Firebase Javascript SDK
 url: https://github.com/firebase/firebase-js-sdk
 ---

@@ -1,6 +1,6 @@
 ---
 project: Source-Han-TrueType
-stars: 1042
+stars: 1043
 description: TrueType version of Source Han Sans, Source Han Serif and Source Han Mono
 url: https://github.com/Pal3love/Source-Han-TrueType
 ---

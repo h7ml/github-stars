@@ -1,13 +1,13 @@
 ---
 project: hertzbeat
-stars: 6536
-description: Real-time monitoring system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
+stars: 6550
+description: Real-time observability system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
 url: https://github.com/apache/hertzbeat
 ---
 
 **Readme**: **English** | 中文 | 日本語
 
-> A real-time monitoring system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
+> A real-time observability system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
 
 **Home: hertzbeat.apache.org**  
 **Email: Mail to `dev-subscribe@hertzbeat.apache.org` to subscribe mailing lists**
@@ -15,7 +15,7 @@ url: https://github.com/apache/hertzbeat
 🎡 Introduction
 ---------------
 
-Apache HertzBeat is an easy-to-use, open source, real-time monitoring system with agentless, high performance cluster, prometheus-compatible, offers powerful custom monitoring and status page building capabilities.
+Apache HertzBeat™ is an easy-to-use, open source, real-time observability system with agentless, high performance cluster, prometheus-compatible, offers powerful custom monitoring and status page building capabilities.
 
 ### Features
 

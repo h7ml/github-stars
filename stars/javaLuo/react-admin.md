@@ -1,6 +1,6 @@
 ---
 project: react-admin
-stars: 553
+stars: 554
 description: 动态菜单配置、权限精确到按钮、通用模块；标准后台管理系统解决方案
 url: https://github.com/javaLuo/react-admin
 ---

@@ -754,7 +754,7 @@ odbc.pool(\`${process.env.CONNECTION\_STRING}\`, (error1, pool) \=> {
 
 ### `.query(sql, parameters?, callback?)`
 
-Utility function to execute a query on any open connection in the pool. Will get a connection, fire of the query, return the results, and return the connection the the pool.
+Utility function to execute a query on any open connection in the pool. Will get a connection, fire off the query, return the results, and return the connection the the pool.
 
 #### Parameters:
 

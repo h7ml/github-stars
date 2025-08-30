@@ -1,6 +1,6 @@
 ---
 project: blur-admin
-stars: 11344
+stars: 11343
 description: AngularJS Bootstrap Admin Panel Framework
 url: https://github.com/akveo/blur-admin
 ---

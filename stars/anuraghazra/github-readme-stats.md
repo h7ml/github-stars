@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 75246
+stars: 75620
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
@@ -14,10 +14,6 @@ Get dynamically generated GitHub stats on your READMEs!
   
 
 View Demo · Report Bug · Request Feature · FAQ · Ask Question
-
-Français · 简体中文 · Español · Deutsch · 日本語 · Português Brasileiro · Italiano · 한국어 · Nederlands · नेपाली · Türkçe
-
-Please note that documentation translations may be outdated; try to use English documentation if possible.
 
 Love the project? Please consider donating to help it improve!
 
@@ -273,7 +269,7 @@ number
 
 Warning
 
-We use caching to decrease the load on our servers (see #1471 (comment)). Our cards have a default cache of 6 hours (21600 seconds). Also, note that the cache is clamped to a minimum of 6 hours and a maximum of 24 hours. If you want the data on your statistics card to be updated more often you can deploy your own instance and set environment variable `CACHE_SECONDS` to a value of your choosing.
+We use caching to decrease the load on our servers (see #1471 (comment)). Our cards have the following default cache hours: stats card - 24 hours, top languages card - 144 hours (6 days), pin card - 240 hours (10 days), gist card - 48 hours (2 days). If you want the data on your statistics card to be updated more often you can deploy your own instance and set environment variable `CACHE_SECONDS` to a value of your choosing.
 
 ##### Gradient in bg\_color
 

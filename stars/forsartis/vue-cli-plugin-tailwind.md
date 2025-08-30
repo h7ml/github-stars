@@ -1,6 +1,6 @@
 ---
 project: vue-cli-plugin-tailwind
-stars: 209
+stars: 208
 description: vue-cli plugin for Tailwind CSS
 url: https://github.com/forsartis/vue-cli-plugin-tailwind
 ---

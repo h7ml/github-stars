@@ -1,6 +1,6 @@
 ---
 project: Github-Ranking
-stars: 8824
+stars: 8863
 description: :star:Github Ranking:star: Github stars and forks ranking list. Github Top100 stars list of different languages. Automatically update daily. | Github仓库排名，每日自动更新
 url: https://github.com/EvanLi/Github-Ranking
 ---

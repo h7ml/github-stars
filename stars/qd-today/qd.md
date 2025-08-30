@@ -1,6 +1,6 @@
 ---
 project: qd
-stars: 5087
+stars: 5102
 description: QD [v20240210] —— HTTP请求定时任务自动执行框架 base on HAR Editor and Tornado Server
 url: https://github.com/qd-today/qd
 ---

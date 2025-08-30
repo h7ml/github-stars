@@ -1,6 +1,6 @@
 ---
 project: mpflutter
-stars: 2098
+stars: 2101
 description: MPFlutter 是一个跨平台 Flutter 开发框架，可用于微信小程序以及 Web 应用开发。
 url: https://github.com/mpflutter/mpflutter
 ---

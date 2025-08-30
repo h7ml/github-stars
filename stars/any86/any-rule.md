@@ -1,6 +1,6 @@
 ---
 project: any-rule
-stars: 8651
+stars: 8654
 description: 🦕  常用正则大全, 支持web / vscode / idea / Alfred Workflow多平台
 url: https://github.com/any86/any-rule
 ---

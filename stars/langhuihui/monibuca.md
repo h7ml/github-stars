@@ -1,6 +1,6 @@
 ---
 project: monibuca
-stars: 2140
+stars: 2142
 description: 🧩 Monibuca is a Modularized, Extensible framework for building Streaming Server
 url: https://github.com/langhuihui/monibuca
 ---
@@ -54,7 +54,7 @@ Monibuca is a powerful streaming server framework written entirely in Go. It's d
     
 -   🔐 **Security** - Provides encrypted transmission and stream authentication
     
--   📊 **Performance Monitoring** - Supports stress testing and performance metrics collection
+-   📊 **Performance Monitoring** - Supports stress testing and performance metrics collection (integrated in test plugin)
     
 -   📝 **Log Management** - Log rotation, auto cleanup, custom extensions
     

@@ -1,6 +1,6 @@
 ---
 project: swagger-ui
-stars: 28066
+stars: 28092
 description: Swagger UI is a collection of HTML, JavaScript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.
 url: https://github.com/swagger-api/swagger-ui
 ---

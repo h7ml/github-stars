@@ -1,6 +1,6 @@
 ---
 project: Fanqie-novel-Downloader
-stars: 304
+stars: 317
 description: null
 url: https://github.com/POf-L/Fanqie-novel-Downloader
 ---

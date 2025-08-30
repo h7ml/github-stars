@@ -1,6 +1,6 @@
 ---
 project: code-review-practices
-stars: 54
+stars: 55
 description: Code Review Practices 
 url: https://github.com/DTStack/code-review-practices
 ---

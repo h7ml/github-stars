@@ -1,6 +1,6 @@
 ---
 project: umi
-stars: 15848
+stars: 15853
 description: A framework in react community ✨
 url: https://github.com/umijs/umi
 ---

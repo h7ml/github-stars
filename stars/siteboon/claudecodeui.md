@@ -1,6 +1,6 @@
 ---
 project: claudecodeui
-stars: 3276
+stars: 3604
 description: Use Claude Code or Cursor CLI on mobile and web with Claude Code UI. Claude Code UI free open source webui/GUI that helps you manage your Claude Code session and projects remotely
 url: https://github.com/siteboon/claudecodeui
 ---
@@ -37,6 +37,7 @@ Features
 -   **File Explorer** - Interactive file tree with syntax highlighting and live editing
 -   **Git Explorer** - View, stage and commit your changes. You can also switch branches
 -   **Session Management** - Resume conversations, manage multiple sessions, and track history
+-   **TaskMaster AI Integration** _(Optional)_ - Advanced project management with AI-powered task planning, PRD parsing, and workflow automation
 -   **Model Compatibility** - Works with Claude Sonnet 4, Opus 4.1, and GPT-5
 
 Quick Start
@@ -91,6 +92,19 @@ _Tools Settings interface - enable only what you need_
 
 **Recommended approach**: Start with basic tools enabled and add more as needed. You can always adjust these settings later.
 
+TaskMaster AI Integration _(Optional)_
+--------------------------------------
+
+Claude Code UI supports **TaskMaster AI** (aka claude-task-master) integration for advanced project management and AI-powered task planning.
+
+It provides
+
+-   AI-powered task generation from PRDs (Product Requirements Documents)
+-   Smart task breakdown and dependency management
+-   Visual task boards and progress tracking
+
+**Setup & Documentation**: Visit the TaskMaster AI GitHub repository for installation instructions, configuration guides, and usage examples. After installing it you should be able to enable it from the Settings
+
 Usage Guide
 -----------
 
@@ -121,6 +135,12 @@ The UI automatically discovers Claude Code projects from `~/.claude/projects/` a
 -   **File Operations** - Create, rename, delete files and directories
 
 #### Git Explorer
+
+#### TaskMaster AI Integration _(Optional)_
+
+-   **Visual Task Board** - Kanban-style interface for managing development tasks
+-   **PRD Parser** - Create Product Requirements Documents and parse them into structured tasks
+-   **Progress Tracking** - Real-time status updates and completion tracking
 
 #### Session Management
 
@@ -232,6 +252,7 @@ Acknowledgments
 -   **Vite** - Fast build tool and dev server
 -   **Tailwind CSS** - Utility-first CSS framework
 -   **CodeMirror** - Advanced code editor
+-   **TaskMaster AI** _(Optional)_ - AI-powered project management and task planning
 
 Support & Community
 -------------------

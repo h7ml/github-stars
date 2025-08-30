@@ -1,6 +1,6 @@
 ---
 project: yao-amis-admin
-stars: 81
+stars: 82
 description: 使用amis-yao创建的管理后台应用
 url: https://github.com/wwsheng009/yao-amis-admin
 ---

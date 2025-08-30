@@ -1,6 +1,6 @@
 ---
 project: zfile
-stars: 10358
+stars: 10367
 description: 在线云盘、网盘、OneDrive、云存储、私有云、对象存储、h5ai、上传、下载
 url: https://github.com/zfile-dev/zfile
 ---

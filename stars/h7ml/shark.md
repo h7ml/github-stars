@@ -1,6 +1,6 @@
 ---
 project: shark
-stars: 13
+stars: 14
 description: shark is a web application designed to help users manage and visualize shark data. The project is built using the React framework for the frontend interface, utilizing the component library provided by Ant Design to create a user-friendly interface, and managing state using Zustand.
 url: https://github.com/h7ml/shark
 ---

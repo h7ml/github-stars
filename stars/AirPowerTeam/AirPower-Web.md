@@ -1,6 +1,6 @@
 ---
 project: AirPower-Web
-stars: 302
+stars: 303
 description: 🔥🔥🔥AirPower-Web 是一个基于 Vue3 TypeScript Element Plus Vite 的开发基础库，使用面向对象、装饰器、Hooks等开发模式，内置了数据模型转换、表格表单装饰器配置、加解密和编码解码、网络请求、权限管理等常见后台功能以及页面组件，助力后台类系统的前端开发效率，同时保障了优雅的代码质量。
 url: https://github.com/AirPowerTeam/AirPower-Web
 ---

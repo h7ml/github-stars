@@ -1,6 +1,6 @@
 ---
 project: gitmoji-commit-workflow
-stars: 240
+stars: 242
 description: 😉 Gitmoji Commit Workflow
 url: https://github.com/arvinxx/gitmoji-commit-workflow
 ---

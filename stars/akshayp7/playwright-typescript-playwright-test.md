@@ -1,6 +1,6 @@
 ---
 project: playwright-typescript-playwright-test
-stars: 561
+stars: 567
 description:  This is a boilerplate/template for a Playwright-Typescript framework for web UI, API, mobile emulation, DB, and visual testing. Docker image, SonarQube, Lighthouse, GitHub Actions setup with Slack notifications are also implemented.
 url: https://github.com/akshayp7/playwright-typescript-playwright-test
 ---

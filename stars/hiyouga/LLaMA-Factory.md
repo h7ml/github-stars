@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 56631
+stars: 56971
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -381,9 +381,9 @@ InternLM 2-3
 
 intern2
 
-InternVL 2.5-3
+InternVL 2.5-3.5
 
-1B/2B/8B/14B/38B/78B
+1B/2B/4B/8B/14B/30B/38B/78B/241B
 
 intern\_vl
 

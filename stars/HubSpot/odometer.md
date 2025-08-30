@@ -1,6 +1,6 @@
 ---
 project: odometer
-stars: 7316
+stars: 7317
 description: Smoothly transitions numbers with ease. #hubspot-open-source
 url: https://github.com/HubSpot/odometer
 ---

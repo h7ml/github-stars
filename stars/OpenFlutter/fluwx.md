@@ -1,6 +1,6 @@
 ---
 project: fluwx
-stars: 3243
+stars: 3246
 description: Flutter版微信SDK.WeChat SDK for flutter.
 url: https://github.com/OpenFlutter/fluwx
 ---
@@ -44,22 +44,23 @@ Migrate to V4 now
 Install
 -------
 
-Add the following dependencies in your `pubspec.yaml` file:
+Add the `fluwx` package (with payment feature by default) in your `pubspec.yaml` file:
 
-`Fluwx` with pay:
+`fluwx` with pay:
 
 dependencies:
   fluwx: ^${latestVersion}
 
+Warning
+
+Never forget to replace ^${latestVersion} with an actual version!  
+(See the above version, or go to versions on pub.dev)
+
 Note
 
 `fluwx` without pay:  
-Developers who need to exclude payment for iOS can set `no_pay: true` in pubspec.yaml.  
+Developers who need to exclude payment for iOS can set `no_pay: true` in the `fluwx` section of `pubspec.yaml`.  
 See the example: example/pubspec.yaml  
-
-Warning
-
-Never forget to replace ^${latestVersion} with an actual version!
 
 Configurations
 --------------

@@ -1,6 +1,6 @@
 ---
 project: mqtt
-stars: 378
+stars: 380
 description: 🕹 MQTT Protocol Analysis and Coroutine Client for PHP. Support for 3.1, 3.1.1 and 5.0 versions of the MQTT protocol.
 url: https://github.com/simps/mqtt
 ---

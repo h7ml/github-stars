@@ -1,6 +1,6 @@
 ---
 project: chat-simplifier
-stars: 518
+stars: 517
 description: Simplify your chat content in seconds (by OpenAI)
 url: https://github.com/zhengbangbo/chat-simplifier
 ---

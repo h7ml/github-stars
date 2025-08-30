@@ -1,6 +1,6 @@
 ---
 project: gochat
-stars: 2878
+stars: 2879
 description: goim server write by golang !🚀
 url: https://github.com/LockGit/gochat
 ---

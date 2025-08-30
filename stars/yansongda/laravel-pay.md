@@ -1,6 +1,6 @@
 ---
 project: laravel-pay
-stars: 1110
+stars: 1111
 description: 可能是我用过的最优雅的 Alipay/WeChat/Unipay 的 laravel 支付扩展包了
 url: https://github.com/yansongda/laravel-pay
 ---

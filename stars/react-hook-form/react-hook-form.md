@@ -1,6 +1,6 @@
 ---
 project: react-hook-form
-stars: 43721
+stars: 43752
 description: 📋 React Hooks for form state management and validation (Web + React Native)
 url: https://github.com/react-hook-form/react-hook-form
 ---

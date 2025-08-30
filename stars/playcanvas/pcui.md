@@ -1,14 +1,14 @@
 ---
 project: pcui
-stars: 717
+stars: 719
 description: UI component library for web-based tools
 url: https://github.com/playcanvas/pcui
 ---
 
-PCUI - User Interface Component Library for the Web
-===================================================
+PlayCanvas UI (PCUI) - User Interface Component Library for the Web
+===================================================================
 
-| User Guide | API Reference | ESM Examples | React Examples | Blog | Forum | Discord |
+User Guide | API Reference | ESM Examples | React Examples | Blog | Forum | Discord
 
 This library enables the creation of reliable and visually pleasing user interfaces by providing fully styled components that you can use directly on your site. The components are useful in a wide range of use cases, from creating simple forms to building graphical user interfaces for complex web tools.
 

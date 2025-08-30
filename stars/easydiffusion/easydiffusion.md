@@ -1,6 +1,6 @@
 ---
 project: easydiffusion
-stars: 10056
+stars: 10064
 description: An easy 1-click way to create beautiful artwork on your PC using AI, with no tech knowledge. Provides a browser UI for generating images from text prompts and images. Just enter your text prompt, and see the generated image.
 url: https://github.com/easydiffusion/easydiffusion
 ---

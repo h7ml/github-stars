@@ -1,6 +1,6 @@
 ---
 project: watchvuln
-stars: 1651
+stars: 1662
 description: 一个高价值漏洞采集与推送服务 | Collect valueable vulnerabilities and push them to various services
 url: https://github.com/zema1/watchvuln
 ---

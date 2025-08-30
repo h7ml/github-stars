@@ -1,33 +1,24 @@
 ---
 project: chatlog
-stars: 7885
+stars: 8003
 description: chat log tool, easily use your own chat data. 聊天记录工具，轻松使用自己的聊天数据
 url: https://github.com/sjzar/chatlog
 ---
-
-Chatlog
-=======
 
 _聊天记录工具，帮助大家轻松使用自己的聊天数据_
 
 Feature
 -------
 
--   从本地数据库文件获取聊天数据
--   支持 Windows / macOS 系统
--   支持微信 3.x / 4.0 版本
--   提供 Terminal UI 界面 & 命令行工具
--   提供 HTTP API 服务，支持查询聊天记录、联系人、群聊、最近会话等信息
--   支持 MCP SSE 协议，可与支持 MCP 的 AI 助手无缝集成
--   支持多媒体消息，支持解密图片、语音
--   支持自动解密数据，简化使用流程
+-   从本地数据库文件中获取聊天数据
+-   支持 Windows / macOS 系统，兼容微信 3.x / 4.x 版本
+-   支持获取数据与图片密钥 (Windows < 4.0.3.36 / macOS < 4.0.3.80)
+-   支持图片、语音等多媒体数据解密，支持 wxgf 格式解析
+-   支持自动解密数据库，并提供新消息 Webhook 回调
+-   提供 Terminal UI 界面，同时支持命令行工具和 Docker 镜像部署
+-   提供 HTTP API 服务，可轻松查询聊天记录、联系人、群聊、最近会话等信息
+-   支持 MCP Streamable HTTP 协议，可与 AI 助手无缝集成
 -   支持多账号管理，可在不同账号间切换
-
-TODO
-----
-
--   聊天数据全文索引
--   聊天数据统计 & Dashboard
 
 Quick Start
 -----------
@@ -40,13 +31,14 @@ Quick Start
 4.  **开启 HTTP 服务**：选择 `开启 HTTP 服务` 菜单项
 5.  **访问数据**：通过 HTTP API 或 MCP 集成 访问聊天记录
 
-> 💡 **提示**：如果电脑端微信聊天记录不全，可以从手机端迁移数据
+> 💡 **提示**: 如果电脑端微信聊天记录不全，可以从手机端迁移数据
 
 ### 常见问题快速解决
 
 -   **macOS 用户**：获取密钥前需临时关闭 SIP
 -   **Windows 用户**：遇到界面显示问题请使用 Windows Terminal
 -   **集成 AI 助手**：查看 MCP 集成指南
+-   **无法获取密钥**：查看 FAQ
 
 安装指南
 ----
@@ -54,6 +46,8 @@ Quick Start
 ### 从源码安装
 
 go install github.com/sjzar/chatlog@latest
+
+> 💡 **提示**: 部分功能有 cgo 依赖，编译前需确认本地有 C 编译环境。
 
 ### 下载预编译版本
 
@@ -87,6 +81,44 @@ chatlog decrypt
 
 # 启动 HTTP 服务
 chatlog server
+
+### Docker 部署
+
+由于 Docker 部署时，程序运行环境与宿主机隔离，所以不支持获取密钥等操作，需要提前获取密钥数据。
+
+一般用于 NAS 等设备部署，详细指南可参考 Docker 部署指南
+
+**0\. 获取密钥信息**
+
+# 从本机运行 chatlog 获取密钥信息
+$ chatlog key
+Data Key: \[c0163e\*\*\*ac3dc6\]
+Image Key: \[38636\*\*\*653361\]
+
+**1\. 拉取镜像**
+
+chatlog 提供了两个镜像源：
+
+**Docker Hub**:
+
+docker pull sjzar/chatlog:latest
+
+**GitHub Container Registry (ghcr)**:
+
+docker pull ghcr.io/sjzar/chatlog:latest
+
+> 💡 **镜像地址**:
+> 
+> -   Docker Hub: https://hub.docker.com/r/sjzar/chatlog
+> -   GitHub Container Registry: https://ghcr.io/sjzar/chatlog
+
+**2\. 运行容器**
+
+$ docker run -d \\
+  --name chatlog \\
+  -p 5030:5030 \\
+  -v /path/to/your/wechat/data:/app/data \\
+  sjzar/chatlog:latest
 
 ### 从手机迁移聊天记录
 
@@ -169,24 +201,99 @@ GET /api/v1/chatlog?time=2023-01-01&talker=wxid_xxx
 当请求语音内容时，将直接返回语音内容，并对原始 SILK 语音做了实时转码 MP3 处理。  
 多媒体内容 URL 地址为基于`数据目录`的相对地址，请求多媒体内容将直接返回对应文件，并针对加密图片做了实时解密处理。
 
+Webhook
+-------
+
+需开启自动解密功能，当收到特定新消息时，可以通过 HTTP POST 请求将消息推送到指定的 URL。
+
+> 延迟测试: 本地服务消息回调延迟约 13 秒; 远程同步消息回调延迟约 45 秒。
+
+#### 0\. 回调配置
+
+使用 TUI 模式的话，在 `$HOME/.chatlog/chatlog.json` 配置文件中，新增 `webhook` 配置。  
+（Windows 用户的配置文件在 `%USERPROFILE%/.chatlog/chatlog.json`)
+
+{
+  "history": \[\],
+  "last\_account": "wxuser\_x",
+  "webhook": {
+    "host": "localhost:5030",                   \# 消息中的图片、文件等 URL host
+    "items": \[
+      {
+        "url": "http://localhost:8080/webhook", \# 必填，webhook 请求的URL，可配置为 n8n 等 webhook 入口 
+        "talker": "wxid\_123",                   \# 必填，需要监控的私聊、群聊名称
+        "sender": "",                           \# 选填，消息发送者
+        "keyword": ""                           \# 选填，关键词
+      }
+    \]
+  }
+}
+
+使用 server 模式的话，可以通过 `CHATLOG_WEBHOOK` 环境变量进行设置。
+
+# 方案 1
+CHATLOG\_WEBHOOK='{"host":"localhost:5030","items":\[{"url":"http://localhost:8080/proxy","talker":"wxid\_123","sender":"","keyword":""}\]}'
+
+# 方案 2（任选一种）
+CHATLOG\_WEBHOOK\_HOST="localhost:5030"
+CHATLOG\_WEBHOOK\_ITEMS='\[{"url":"http://localhost:8080/proxy","talker":"wxid\_123","sender":"","keyword":""}\]'
+
+#### 1\. 测试效果
+
+启动 chatlog 并开启自动解密功能，测试回调效果
+
+POST /webhook HTTP/1.1
+Host: localhost:8080
+Accept-Encoding: gzip
+Content-Length: 386
+Content-Type: application/json
+User-Agent: Go-http-client/1.1
+
+Body:
+{
+  "keyword": "",
+  "lastTime": "2025-08-27 00:00:00",
+  "length": 1,
+  "messages": \[
+    {
+      "seq": 1756225000000,
+      "time": "2025-08-27T00:00:00+08:00",
+      "talker": "wxid\_123",
+      "talkerName": "",
+      "isChatRoom": false,
+      "sender": "wxid\_123",
+      "senderName": "Name",
+      "isSelf": false,
+      "type": 1,
+      "subType": 0,
+      "content": "测试消息",
+      "contents": {
+        "host": "localhost:5030"
+      }
+    }
+  \],
+  "sender": "",
+  "talker": "wxid\_123"
+}
+
 MCP 集成
 ------
 
-Chatlog 支持 MCP (Model Context Protocol) SSE 协议，可与支持 MCP 的 AI 助手无缝集成。  
-启动 HTTP 服务后，通过 SSE Endpoint 访问服务：
+Chatlog 支持 MCP (Model Context Protocol) 协议，可与支持 MCP 的 AI 助手无缝集成。  
+启动 HTTP 服务后，通过 Streamable HTTP Endpoint 访问服务：
 
 ```
-GET /sse
+GET /mcp
 ```
 
 ### 快速集成
 
 Chatlog 可以与多种支持 MCP 的 AI 助手集成，包括：
 
--   **ChatWise**: 直接支持 SSE，在工具设置中添加 `http://127.0.0.1:5030/sse`
--   **Cherry Studio**: 直接支持 SSE，在 MCP 服务器设置中添加 `http://127.0.0.1:5030/sse`
+-   **ChatWise**: 直接支持 Streamable HTTP，在工具设置中添加 `http://127.0.0.1:5030/mcp`
+-   **Cherry Studio**: 直接支持 Streamable HTTP，在 MCP 服务器设置中添加 `http://127.0.0.1:5030/mcp`
 
-对于不直接支持 SSE 的客户端，可以使用 mcp-proxy 工具转发请求：
+对于不直接支持 Streamable HTTP 的客户端，可以使用 mcp-proxy 工具转发请求：
 
 -   **Claude Desktop**: 通过 mcp-proxy 支持，需要配置 `claude_desktop_config.json`
 -   **Monica Code**: 通过 mcp-proxy 支持，需要配置 VSCode 插件设置

@@ -1,6 +1,6 @@
 ---
 project: vue-dropzone
-stars: 2019
+stars: 2018
 description: A Vue.js component for Dropzone.js - a drag’n’drop file uploads utility with image previews
 url: https://github.com/rowanwins/vue-dropzone
 ---

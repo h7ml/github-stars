@@ -1,6 +1,6 @@
 ---
 project: tiny-player
-stars: 230
+stars: 229
 description: 🎬 Tiny Player 是一个轻量、可扩展的视频播放器，支持常见格式与 m3u8 等流式播放。
 url: https://github.com/wangrongding/tiny-player
 ---

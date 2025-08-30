@@ -1,6 +1,6 @@
 ---
 project: FFmpeg.wasm
-stars: 66
+stars: 65
 description: A fork of ffmpeg.wasm. Powered by WebAssembly
 url: https://github.com/FFmpeg-wasm/FFmpeg.wasm
 ---

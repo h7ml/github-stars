@@ -1,6 +1,6 @@
 ---
 project: unbuild
-stars: 2665
+stars: 2668
 description: 📦 A unified JavaScript build system
 url: https://github.com/unjs/unbuild
 ---

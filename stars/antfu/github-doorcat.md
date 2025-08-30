@@ -1,6 +1,6 @@
 ---
 project: github-doorcat
-stars: 211
+stars: 212
 description: 😼 Supercharges GitHub navbar for fast navigation [WIP]
 url: https://github.com/antfu/github-doorcat
 ---

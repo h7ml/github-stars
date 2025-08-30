@@ -1,6 +1,6 @@
 ---
 project: open_neteasy_cloud
-stars: 326
+stars: 329
 description: 鸿蒙ArkTS仿网易云
 url: https://github.com/linwu-hi/open_neteasy_cloud
 ---

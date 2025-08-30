@@ -1,6 +1,6 @@
 ---
 project: recharts
-stars: 25803
+stars: 25839
 description: Redefined chart library built with React and D3
 url: https://github.com/recharts/recharts
 ---

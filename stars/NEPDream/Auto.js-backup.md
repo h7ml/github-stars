@@ -1,6 +1,6 @@
 ---
 project: Auto.js-backup
-stars: 116
+stars: 117
 description: A UiAutomator on android, does not need root access
 url: https://github.com/NEPDream/Auto.js-backup
 ---

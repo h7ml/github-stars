@@ -1,6 +1,6 @@
 ---
 project: web-infra
-stars: 127
+stars: 128
 description: 前端工程化系列
 url: https://github.com/KieSun/web-infra
 ---

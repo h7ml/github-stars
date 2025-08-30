@@ -1,6 +1,6 @@
 ---
 project: web3-awesome
-stars: 1190
+stars: 1197
 description: web3百科全书👏🏻 打造 web3 全球第一中文资源
 url: https://github.com/fltenwall/web3-awesome
 ---

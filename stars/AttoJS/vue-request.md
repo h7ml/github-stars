@@ -1,6 +1,6 @@
 ---
 project: vue-request
-stars: 1386
+stars: 1389
 description: ⚡️ This is a library that can easily help you manage request states, supporting common features such as SWR, polling, error retry, caching, and pagination, etc. ⚡️ 这是一个能够轻松帮助你管理请求状态的库，支持 SWR、轮询、错误重试、缓存、分页等常用功能。
 url: https://github.com/AttoJS/vue-request
 ---

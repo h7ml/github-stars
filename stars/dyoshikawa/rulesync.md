@@ -1,6 +1,6 @@
 ---
 project: rulesync
-stars: 271
+stars: 281
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---

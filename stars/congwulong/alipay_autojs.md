@@ -1,6 +1,6 @@
 ---
 project: alipay_autojs
-stars: 198
+stars: 197
 description: 最最最简单的蚂蚁森林自动收能量脚本
 url: https://github.com/congwulong/alipay_autojs
 ---

@@ -1,6 +1,6 @@
 ---
 project: fastify-swagger
-stars: 1016
+stars: 1021
 description: Swagger documentation generator for Fastify
 url: https://github.com/fastify/fastify-swagger
 ---
@@ -143,6 +143,8 @@ fastify.put('/some-route/:id', {
 
 await fastify.ready()
 fastify.swagger()
+
+> ℹ️ Note: `@fastify/swagger` must be registered before any routes to ensure proper route discovery. Routes registered before this plugin will not appear in the generated documentation.
 
 ### With `@fastify/autoload`
 

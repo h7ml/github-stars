@@ -1,28 +1,20 @@
 ---
 project: ark
-stars: 4561
-description: Build high-quality, accessible design systems. Works in React, Svelte, Vue, and Solid
+stars: 4580
+description: Build scalable design systems with React, Vue, Solid, and Svelte.
 url: https://github.com/chakra-ui/ark
 ---
 
   
+
+Ark UI is a headless component library to build scalable Design Systems for React, Solid, Svelte and Vue.
+
   
-
-Build scalable design systems with React, Vue, Solid, and Svelte
-
-Installation
-------------
-
-pnpm add @ark-ui/{react,vue,solid,svelte}
-
-npm install @ark-ui/{react,vue,solid,svelte}
-
-yarn add @ark-ui/{react,vue,solid,svelte}
 
 Documentation
 -------------
 
-For more detailed documentation and examples, please visit the official documentation.
+Check out the official docs for full guides, detailed API reference, and plenty of examples to get you started.
 
 Roadmap
 -------

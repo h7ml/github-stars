@@ -1,6 +1,6 @@
 ---
 project: awesome-indie
-stars: 10442
+stars: 10458
 description: Resources for independent developers to make money
 url: https://github.com/mezod/awesome-indie
 ---

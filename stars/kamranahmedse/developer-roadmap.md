@@ -1,6 +1,6 @@
 ---
 project: developer-roadmap
-stars: 334398
+stars: 335016
 description: Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 url: https://github.com/kamranahmedse/developer-roadmap
 ---
@@ -50,6 +50,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 -   TypeScript Roadmap
 -   C++ Roadmap
 -   React Roadmap
+-   Next.js Roadmap
 -   React Native Roadmap
 -   Vue Roadmap
 -   Angular Roadmap

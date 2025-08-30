@@ -1,6 +1,6 @@
 ---
 project: ValGod
-stars: 39
+stars: 38
 description: 一个基于vite+vue3程序员翻译命名神器
 url: https://github.com/qiuquanwu/ValGod
 ---

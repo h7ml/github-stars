@@ -1,6 +1,6 @@
 ---
 project: heroku-node-proxy
-stars: 36
+stars: 35
 description: 一键在Heroku上部署node-unblocker Web代理，简单易用且免费（去轮轮链接版）
 url: https://github.com/lony2003/heroku-node-proxy
 ---

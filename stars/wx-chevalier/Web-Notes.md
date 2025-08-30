@@ -1,6 +1,6 @@
 ---
 project: Web-Notes
-stars: 853
+stars: 854
 description: :books: 现代 Web 开发语法基础与工程实践，涵盖 Web 开发基础、前端工程化、应用架构、性能与体验优化、混合开发、React 实践、Vue 实践、WebAssembly 等多方面。
 url: https://github.com/wx-chevalier/Web-Notes
 ---

@@ -1,6 +1,6 @@
 ---
 project: autoplan
-stars: 695
+stars: 694
 description: 这是一个自动化的托管系统，目前支持bilibili，米游社原神星铁等签到
 url: https://github.com/wyt1215819315/autoplan
 ---

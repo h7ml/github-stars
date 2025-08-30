@@ -1,6 +1,6 @@
 ---
 project: newcar
-stars: 708
+stars: 710
 description: 🖌️ [WIP] Modern JavaScript Canvas Library
 url: https://github.com/dromara/newcar
 ---

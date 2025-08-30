@@ -1,6 +1,6 @@
 ---
 project: blogs
-stars: 3130
+stars: 3134
 description: :book: 全网 100w+ 阅读量的进阶前端技术博客仓库，Vue 源码解析，React 深度实践，TypeScript 进阶艺术，工程化，性能优化实践……
 url: https://github.com/sl1673495/blogs
 ---

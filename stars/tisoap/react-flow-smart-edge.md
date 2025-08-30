@@ -1,6 +1,6 @@
 ---
 project: react-flow-smart-edge
-stars: 312
+stars: 315
 description: Custom Edge for React Flow that never intersects with other nodes
 url: https://github.com/tisoap/react-flow-smart-edge
 ---

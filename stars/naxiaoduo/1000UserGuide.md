@@ -1,6 +1,6 @@
 ---
 project: 1000UserGuide
-stars: 2436
+stars: 2444
 description: 1000UserGuide：对独立开发者和创业者来说，找到前1000个早期用户太关键了。这里精心整理了300多个国内外渠道，适合独立开发者和创业者推广产品的渠道。
 url: https://github.com/naxiaoduo/1000UserGuide
 ---

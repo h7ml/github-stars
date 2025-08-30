@@ -1,6 +1,6 @@
 ---
 project: readme-typing-svg
-stars: 7458
+stars: 7506
 description: ⚡ Dynamically generated, customizable SVG that gives the appearance of typing and deleting text for use on your profile page, repositories, or website.
 url: https://github.com/DenverCoder1/readme-typing-svg
 ---

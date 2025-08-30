@@ -1,6 +1,6 @@
 ---
 project: qq-music-api
-stars: 902
+stars: 904
 description: QQ 音乐API koa2实现
 url: https://github.com/Rain120/qq-music-api
 ---

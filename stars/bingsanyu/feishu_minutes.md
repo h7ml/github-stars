@@ -1,6 +1,6 @@
 ---
 project: feishu_minutes
-stars: 120
+stars: 122
 description: 多线程上传/下载飞书妙记视频&SRT字幕 语音转文字 飞书爬虫
 url: https://github.com/bingsanyu/feishu_minutes
 ---

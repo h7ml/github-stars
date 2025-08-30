@@ -1,6 +1,6 @@
 ---
 project: ni
-stars: 7136
+stars: 7201
 description: 💡 Use the right package manager
 url: https://github.com/antfu-collective/ni
 ---

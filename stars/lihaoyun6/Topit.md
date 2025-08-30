@@ -1,6 +1,6 @@
 ---
 project: Topit
-stars: 1050
+stars: 1071
 description: Pin any window to the top of your screen / 在Mac上将你的任何窗口强制置顶
 url: https://github.com/lihaoyun6/Topit
 ---

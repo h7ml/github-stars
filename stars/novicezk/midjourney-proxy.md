@@ -1,6 +1,6 @@
 ---
 project: midjourney-proxy
-stars: 5131
+stars: 5134
 description: 代理 MidJourney 的discord频道，实现api形式调用AI绘图
 url: https://github.com/novicezk/midjourney-proxy
 ---

@@ -1,6 +1,6 @@
 ---
 project: lodash-utils
-stars: 460
+stars: 461
 description: 基于 evil.js 优化，引入之后, 可以当作 lodash 使用，然后在特定条件下产生一些错误。
 url: https://github.com/wll8/lodash-utils
 ---

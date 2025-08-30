@@ -1,6 +1,6 @@
 ---
 project: chodocs
-stars: 432
+stars: 434
 description: 一站式前端内容网站，包括学习路线、知识体系。用专栏形式更新，原创不易，Give a ⭐️ if this project helped you!
 url: https://github.com/chodocs/chodocs
 ---

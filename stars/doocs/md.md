@@ -1,6 +1,6 @@
 ---
 project: md
-stars: 10405
+stars: 10475
 description: ✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 语法、自定义主题样式、内容管理、多图床、AI 助手等特性
 url: https://github.com/doocs/md
 ---
@@ -36,6 +36,7 @@ https://md.doocs.org
 
 -   支持 Markdown 所有基础语法、数学公式
 -   提供对 Mermaid 图表的渲染和 GFM 警告块的支持
+-   提供 PlantUML 渲染支持
 -   丰富的代码块高亮主题，提升代码可读性
 -   允许自定义主题色和 CSS 样式，灵活定制展示效果
 -   提供多图上传功能，并可自定义配置图床

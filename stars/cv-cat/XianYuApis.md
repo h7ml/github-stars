@@ -1,6 +1,6 @@
 ---
 project: XianYuApis
-stars: 599
+stars: 620
 description: 闲鱼算法逆向，闲鱼全部api，sign参数解密，websockets自动回复（可结合AI知识库）
 url: https://github.com/cv-cat/XianYuApis
 ---

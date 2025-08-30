@@ -1,6 +1,6 @@
 ---
 project: AionUi
-stars: 1523
+stars: 1659
 description: Free, local, open-source GUI app for Gemini CLI — Enhance Chat Experience, Multi-tasking, Code Diff View, File & Project Management, and more | 🌟 Star if you like it!
 url: https://github.com/iOfficeAI/AionUi
 ---
@@ -15,6 +15,10 @@ url: https://github.com/iOfficeAI/AionUi
 
 🚀 **What Can AionUi Do?**
 --------------------------
+
+### 🎨 **AI Image Generation & Editing**
+
+_Intelligent image generation, editing, and recognition powered by Gemini 2.5 Flash Image Preview - the most advanced image model, with support for other leading AI image models_
 
 ### 📁 **Organizing Your Files**
 
@@ -50,6 +54,7 @@ Want to explore more features? Keep reading to discover what else AionUi can hel
     -   💬 Better Chat Experience
     -   🗂️ File Management Made Simple
     -   ⚡ Development Efficiency Boost
+    -   🎨 AI Image Generation & Editing
     -   🔧 Settings Are Simple
 -   🚀 Quick Start
     
@@ -116,6 +121,14 @@ AionUi provides a modern interface for users who need better workflow efficiency
 -   **Code Rendering** - Code blocks display more beautifully, format clearer
 -   **Tool Scheduling** - Automatically select most suitable tools, no manual selection needed
 
+### 🎨 **AI Image Generation & Editing**
+
+-   **Smart Image Generation** - Powered by Gemini 2.5 Flash Image Preview, the most advanced image model
+-   **Multi-Model Support** - Also supports other leading AI image models for diverse creative needs
+-   **Intelligent Editing** - AI-powered image editing and enhancement capabilities
+-   **Image Recognition** - Advanced image analysis and understanding
+-   **High-Quality Output** - Professional-grade image generation with detailed control
+
 ### 🔧 **Settings Are Simple**
 
 -   **Multi-Platform Support** - Support Gemini, OpenAI, ModelScope, OpenRouter, etc.
@@ -140,7 +153,7 @@ Ready to try AionUi? Download the latest version for your platform from our rele
 
 1.  **Clone the repository**
     
-    git clone https://github.com/office-sec/AionUi.git
+    git clone https://github.com/iOfficeAI/AionUi.git
     
 
 cd AionUi
@@ -218,8 +231,9 @@ AionUI/
 -   **Daily Office Work**: Email writing, meeting notes, work summaries
 -   **Learning & Growth**: Language learning, skill training, knowledge organization
 -   **Creative Work**: Copywriting, brainstorming, inspiration collection
+-   **AI Image Generation**: Create, edit, and enhance images with AI-powered tools
 -   **Multi-Model Collaboration**: Choose the most suitable AI model based on task characteristics
-    -   **Gemini**: Code generation, technical documentation
+    -   **Gemini**: Code generation, technical documentation, image generation & editing
     -   **OpenAI**: Creative writing, content creation
     -   **ModelScope**: Chinese understanding, localization tasks
     -   **OpenRouter**: Cost optimization, model comparison

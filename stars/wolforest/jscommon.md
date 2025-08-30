@@ -1,6 +1,6 @@
 ---
 project: jscommon
-stars: 15
+stars: 16
 description: The simple utils facade for javascript/typescript，the only utils you need for frontEnd application
 url: https://github.com/wolforest/jscommon
 ---

@@ -1,6 +1,6 @@
 ---
 project: awesome-serverless
-stars: 606
+stars: 607
 description: 🔥  腾讯云 云函数 SCF / Serverless 的 100 种玩法，签到，打卡，小程序，图床，刷金币等各种应用集合。
 url: https://github.com/tinafangkunding/awesome-serverless
 ---

@@ -1,6 +1,6 @@
 ---
 project: Veloera
-stars: 1067
+stars: 1099
 description: null
 url: https://github.com/Veloera/Veloera
 ---
@@ -90,7 +90,7 @@ docker-compose up -d
 感谢这些厂商对 Veloera 的支持:
 
   
-CDN acceleration and security protection for this project are sponsored by Tencent EdgeOne.  
+CDN acceleration and security protection for this project are sponsored by Tencent EdgeOne: EdgeOne offers a long-term free plan with unlimited traffic and requests, covering Mainland China nodes, with no overage charges. Interested friends can click the link below to claim it: https://edgeone.ai/?from=github  
 
 成为赞助者:  
 

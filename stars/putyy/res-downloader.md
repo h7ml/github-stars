@@ -1,6 +1,6 @@
 ---
 project: res-downloader
-stars: 9810
+stars: 9898
 description: 视频号、小程序、抖音、快手、小红书、直播流、m3u8、酷狗、QQ音乐等常见网络资源下载!
 url: https://github.com/putyy/res-downloader
 ---

@@ -1,6 +1,6 @@
 ---
 project: super-frontend
-stars: 93
+stars: 94
 description: 【AI赋能前端研发从 0 ～ 1】一本从头开始分享如何将AI融入前端研发工作流的电子书
 url: https://github.com/IamLiuLv/super-frontend
 ---

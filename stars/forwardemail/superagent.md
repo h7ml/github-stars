@@ -1,6 +1,6 @@
 ---
 project: superagent
-stars: 16635
+stars: 16632
 description: Ajax for Node.js and browsers (JS HTTP client). Maintained for @forwardemail, @ladjs, @spamscanner, @breejs, @cabinjs, and @lassjs.
 url: https://github.com/forwardemail/superagent
 ---

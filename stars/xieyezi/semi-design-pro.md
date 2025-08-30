@@ -1,6 +1,6 @@
 ---
 project: semi-design-pro
-stars: 100
+stars: 101
 description: 基于semi-design构建的admin管理系统
 url: https://github.com/xieyezi/semi-design-pro
 ---

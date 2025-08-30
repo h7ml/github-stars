@@ -1,7 +1,7 @@
 ---
 project: nx
-stars: 26743
-description: An AI-first build platform that connects everything from your editor to CI. Helping you deliver fast, without breaking things.
+stars: 26850
+description: Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.
 url: https://github.com/nrwl/nx
 ---
 

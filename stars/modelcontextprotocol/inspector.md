@@ -1,6 +1,6 @@
 ---
 project: inspector
-stars: 5890
+stars: 6035
 description: Visual testing tool for MCP servers
 url: https://github.com/modelcontextprotocol/inspector
 ---
@@ -34,6 +34,12 @@ To get up and running right away with the UI, just execute the following:
 npx @modelcontextprotocol/inspector
 
 The server will start up and the UI will be accessible at `http://localhost:6274`.
+
+### Docker Container
+
+You can also start it in a Docker container with the following command:
+
+docker run --rm --network host -p 6274:6274 -p 6277:6277 ghcr.io/modelcontextprotocol/inspector:latest
 
 ### From an MCP server repository
 
@@ -376,6 +382,9 @@ npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/lis
 # Call a specific tool
 npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/call --tool-name mytool --tool-arg key=value --tool-arg another=value2
 
+# Call a tool with JSON arguments
+npx @modelcontextprotocol/inspector --cli node build/index.js --method tools/call --tool-name mytool --tool-arg 'options={"format": "json", "max\_tokens": 100}'
+
 # List available resources
 npx @modelcontextprotocol/inspector --cli node build/index.js --method resources/list
 
@@ -387,6 +396,9 @@ npx @modelcontextprotocol/inspector --cli https://my-mcp-server.example.com
 
 # Connect to a remote MCP server (with Streamable HTTP transport)
 npx @modelcontextprotocol/inspector --cli https://my-mcp-server.example.com --transport http --method tools/list
+
+# Connect to a remote MCP server (with custom headers)
+npx @modelcontextprotocol/inspector --cli https://my-mcp-server.example.com --transport http --method tools/list --header "X-API-Key: your-api-key"
 
 # Call a tool on a remote server
 npx @modelcontextprotocol/inspector --cli https://my-mcp-server.example.com --method tools/call --tool-name remotetool --tool-arg param=value

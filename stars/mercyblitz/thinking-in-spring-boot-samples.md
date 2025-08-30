@@ -1,6 +1,6 @@
 ---
 project: thinking-in-spring-boot-samples
-stars: 1915
+stars: 1917
 description: 小马哥书籍《Spring Boot 编程思想》示例工程
 url: https://github.com/mercyblitz/thinking-in-spring-boot-samples
 ---

@@ -1,6 +1,6 @@
 ---
 project: Le-AI
-stars: 161
+stars: 162
 description: Le-AI, Your open-source AI Assistant Hub, helping you boost efficiency UP~
 url: https://github.com/LTopx/Le-AI
 ---

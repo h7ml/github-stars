@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-pwa
-stars: 3725
+stars: 3737
 description: Zero-config PWA for Vite
 url: https://github.com/vite-pwa/vite-plugin-pwa
 ---

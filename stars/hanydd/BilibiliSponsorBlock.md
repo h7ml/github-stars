@@ -1,6 +1,6 @@
 ---
 project: BilibiliSponsorBlock
-stars: 3862
+stars: 3929
 description: 一款跳过小电视视频中恰饭片段的浏览器插件，移植自 SponsorBlock。A browser extension to skip sponsored segments in videos, ported from the SponsorBlock
 url: https://github.com/hanydd/BilibiliSponsorBlock
 ---

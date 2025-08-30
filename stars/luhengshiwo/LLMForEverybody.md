@@ -1,6 +1,6 @@
 ---
 project: LLMForEverybody
-stars: 4055
+stars: 4131
 description: 每个人都能看懂的大模型知识分享，LLMs春/秋招大模型面试前必看，让你和面试官侃侃而谈
 url: https://github.com/luhengshiwo/LLMForEverybody
 ---

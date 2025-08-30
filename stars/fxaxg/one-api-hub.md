@@ -1,6 +1,6 @@
 ---
 project: one-api-hub
-stars: 132
+stars: 158
 description: One API Hub - 中转站管理器，一个开源的浏览器插件，聚合管理AI中转站账号的余额、模型和密钥，告别繁琐登录。
 url: https://github.com/fxaxg/one-api-hub
 ---

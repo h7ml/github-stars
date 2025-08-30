@@ -1,6 +1,6 @@
 ---
 project: self-driving-car
-stars: 727
+stars: 728
 description: null
 url: https://github.com/gniziemazity/self-driving-car
 ---

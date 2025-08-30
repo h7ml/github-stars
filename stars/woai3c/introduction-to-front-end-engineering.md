@@ -1,6 +1,6 @@
 ---
 project: introduction-to-front-end-engineering
-stars: 1968
+stars: 1969
 description: 一本小书《带你入门前端工程》
 url: https://github.com/woai3c/introduction-to-front-end-engineering
 ---

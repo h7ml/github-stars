@@ -1,6 +1,6 @@
 ---
 project: awesome-LLMs-In-China
-stars: 6244
+stars: 6254
 description: 中国大模型
 url: https://github.com/wgwang/awesome-LLMs-In-China
 ---

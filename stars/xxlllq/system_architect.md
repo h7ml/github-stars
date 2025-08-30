@@ -1,6 +1,6 @@
 ---
 project: system_architect
-stars: 7928
+stars: 7939
 description: :100: 2025年系统架构设计师（软考高级）备考资料。
 url: https://github.com/xxlllq/system_architect
 ---

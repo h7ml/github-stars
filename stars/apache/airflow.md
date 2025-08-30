@@ -1,6 +1,6 @@
 ---
 project: airflow
-stars: 41697
+stars: 41796
 description: Apache Airflow - A platform to programmatically author, schedule, and monitor workflows
 url: https://github.com/apache/airflow
 ---
@@ -82,7 +82,7 @@ Apache Airflow is tested with:
 
 Main version (dev)
 
-Stable version (3.0.5)
+Stable version (3.0.6)
 
 Python
 
@@ -156,13 +156,13 @@ There are known issues with `bazel` that might lead to circular dependencies whe
 
 If you wish to install Airflow using those tools, you should use the constraint files and convert them to the appropriate format and workflow that your tool requires.
 
-pip install 'apache-airflow==3.0.5' \\
- --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.5/constraints-3.10.txt"
+pip install 'apache-airflow==3.0.6' \\
+ --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.6/constraints-3.10.txt"
 
 1.  Installing with extras (i.e., postgres, google)
 
-pip install 'apache-airflow\[postgres,google\]==3.0.5' \\
- --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.5/constraints-3.10.txt"
+pip install 'apache-airflow\[postgres,google\]==3.0.6' \\
+ --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.0.6/constraints-3.10.txt"
 
 For information on installing provider distributions, check providers.
 
@@ -222,7 +222,7 @@ As of Airflow 2.0.0, we support a strict SemVer approach for all packages releas
 There are few specific rules that we agreed to that define details of versioning of the different packages:
 
 -   **Airflow**: SemVer rules apply to core airflow only (excludes any changes to providers). Changing limits for versions of Airflow dependencies is not a breaking change on its own.
--   **Airflow Providers**: SemVer rules apply to changes in the particular provider's code only. SemVer MAJOR and MINOR versions for the packages are independent of the Airflow version. For example, `google 4.1.0` and `amazon 3.0.5` providers can happily be installed with `Airflow 2.1.2`. If there are limits of cross-dependencies between providers and Airflow packages, they are present in providers as `install_requires` limitations. We aim to keep backwards compatibility of providers with all previously released Airflow 2 versions but there will sometimes be breaking changes that might make some, or all providers, have minimum Airflow version specified.
+-   **Airflow Providers**: SemVer rules apply to changes in the particular provider's code only. SemVer MAJOR and MINOR versions for the packages are independent of the Airflow version. For example, `google 4.1.0` and `amazon 3.0.6` providers can happily be installed with `Airflow 2.1.2`. If there are limits of cross-dependencies between providers and Airflow packages, they are present in providers as `install_requires` limitations. We aim to keep backwards compatibility of providers with all previously released Airflow 2 versions but there will sometimes be breaking changes that might make some, or all providers, have minimum Airflow version specified.
 -   **Airflow Helm Chart**: SemVer rules apply to changes in the chart only. SemVer MAJOR and MINOR versions for the chart are independent of the Airflow version. We aim to keep backwards compatibility of the Helm Chart with all released Airflow 2 versions, but some new features might only work starting from specific Airflow releases. We might however limit the Helm Chart to depend on minimal Airflow version.
 -   **Airflow API clients**: Their versioning is independent from Airflow versions. They follow their own SemVer rules for breaking changes and new features - which for example allows to change the way we generate the clients.
 
@@ -245,7 +245,7 @@ EOL/Terminated
 
 3
 
-3.0.5
+3.0.6
 
 Supported
 

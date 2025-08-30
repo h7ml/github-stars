@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-monkey
-stars: 1712
+stars: 1718
 description: A vite plugin server and build your.user.js for userscript engine like Tampermonkey, Violentmonkey, Greasemonkey, ScriptCat
 url: https://github.com/lisonge/vite-plugin-monkey
 ---
@@ -165,7 +165,7 @@ export interface MonkeyOption {
    \* import style2 from 'normalize.css?style';
    \* const container = document.createElement('div').attachShadow({ mode: 'open' });
    \* container.append(style1, style2); // with hmr when change style1.css
-   \* const style3 = style1.cloneNode(); // it will still have hmr
+   \* const style3 = style1.cloneNode(true); // it will still have hmr
    \*
    \* @default
    \* true

@@ -1,6 +1,6 @@
 ---
 project: winmerge
-stars: 7827
+stars: 7862
 description: WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.
 url: https://github.com/WinMerge/winmerge
 ---
@@ -40,22 +40,6 @@ To contribute code, fork the main WinMerge repository and create a branch on tha
 Format your code using Eric Allman indentation.
 
 When your code is ready for review/merge, create a Pull Request, explaining the changes made.
-
-* * *
-
-Themes
-------
-
-WinMerge allows you to choose from several pre-made themes and create your own.
-
-### Quick theming instructions
-
-1.  open `Options` and navigate to the `Colors` section
-2.  adjust colors to your liking in each subsection
-3.  the `Export...` option will give you an `ini` file with all settings
-4.  copy `[your install folder]\WinMerge\ColorSchemes\Twilight.ini` to `YourNewTheme.ini`
-5.  copy the corresponding color settings from the exported `ini` file to `YourNewTheme.ini`
-6.  you can then place your theme file in to the `ColorSchemes` folder and select it in `Options`
 
 * * *
 

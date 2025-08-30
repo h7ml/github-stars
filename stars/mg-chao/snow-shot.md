@@ -1,6 +1,6 @@
 ---
 project: snow-shot
-stars: 883
+stars: 1048
 description: 简单优雅的工具软件
 url: https://github.com/mg-chao/snow-shot
 ---
@@ -15,6 +15,18 @@ Snow Shot
 Snow Shot 是一款功能完备，纯粹社区驱动的工具软件
 
 _注意：软件正在快速迭代中，Bug 和使用问题难以避免。且因为尚处测试阶段，非本地功能（如翻译和 AI 对话）的 API 服务可能日后不会兼容旧的客户端，如果你试图寻求一个稳定的工具软件，目前请谨慎选择当前软件。_
+
+### 安装
+
+在 Github Releases 选择适合当前操作系统的版本下载，下载完成后安装即可。
+
+Windows 用户可以在 Snow Shot 官网 加速下载。
+
+##### 社区链接
+
+以下下载链接和安装方案由社区提供，但并不保证版本未经修改。
+
+-   Scoop Bucket: https://github.com/jinzhongjia/scoop-bucket
 
 ### 功能展示
 

@@ -1,6 +1,6 @@
 ---
 project: qbin
-stars: 535
+stars: 536
 description: QBin: 轻量高效的在线编辑与分享平台 | Monaco+Cherry Markdown专业编辑器 | Deno KV+DrizzleORM+EdgeCache多级缓存 | PWA离线访问+IndexedDB存储 | 自定义短链+密码+有效期 | 支持文本/代码/图片/视频 | OAuth2登录 | 明暗主题 | 实时保存 | Docker/Deno一键部署 | PasteBin替代方案
 url: https://github.com/Quick-Bin/qbin
 ---

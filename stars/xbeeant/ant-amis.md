@@ -1,6 +1,6 @@
 ---
 project: ant-amis
-stars: 2
+stars: 3
 description: Amis自定义Ant Design组件库
 url: https://github.com/xbeeant/ant-amis
 ---

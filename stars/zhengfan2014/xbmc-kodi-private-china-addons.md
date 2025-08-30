@@ -1,6 +1,6 @@
 ---
 project: xbmc-kodi-private-china-addons
-stars: 484
+stars: 485
 description: 个人开发的xbmc/kodi 插件 欢迎各位大神提意见。
 url: https://github.com/zhengfan2014/xbmc-kodi-private-china-addons
 ---

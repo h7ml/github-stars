@@ -1,6 +1,6 @@
 ---
 project: ThorUI-uniapp
-stars: 2745
+stars: 2746
 description: ThorUI组件库，轻量、简洁的移动端组件库。组件文档地址：https://thorui.cn/doc  
 url: https://github.com/dingyong0214/ThorUI-uniapp
 ---

@@ -2,7 +2,7 @@
 project: Bing-Chat
 stars: 71
 description: Bing Chat服务端,通过WebSocket/WebAPI实现通讯.
-url: https://github.com/Ykaiqx/Bing-Chat
+url: https://github.com/ykaiqx/Bing-Chat
 ---
 
 此仓库不再维护,请前往Chat-API.

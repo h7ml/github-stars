@@ -1,6 +1,6 @@
 ---
 project: corepack
-stars: 3151
+stars: 3168
 description: Zero-runtime-dependency package acting as bridge between Node projects and their package managers
 url: https://github.com/nodejs/corepack
 ---

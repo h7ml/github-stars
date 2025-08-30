@@ -1,6 +1,6 @@
 ---
 project: ovine
-stars: 756
+stars: 757
 description: ovine由于存在设计缺陷不再更新。 新版会在 ovine-next 重写。  https://github.com/ovineio/ovine-next
 url: https://github.com/ovineio/ovine
 ---

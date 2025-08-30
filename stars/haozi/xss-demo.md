@@ -1,6 +1,6 @@
 ---
 project: xss-demo
-stars: 308
+stars: 309
 description: 👮🏻‍♂️ XSS attack playground,there are answers in issues. XSS 攻防靶场，issues 有答案 
 url: https://github.com/haozi/xss-demo
 ---

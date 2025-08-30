@@ -1,6 +1,6 @@
 ---
 project: CloudBase-AI-ToolKit
-stars: 688
+stars: 710
 description: 🪐 Instantly generate, deploy, and host your full-stack Web apps, mini-programs, databases, and backend services with AI IDE, launch your ideas at lightning speed 💫
 url: https://github.com/TencentCloudBase/CloudBase-AI-ToolKit
 ---
@@ -22,11 +22,13 @@ When coding in **Cursor/VSCode GitHub Copilot/WinSurf/CodeBuddy/Augment Code/Cla
 
 🤖 **AI-Powered Development**: AI auto-generates code and architecture  
 ☁️ **Cloud Integration**: One-click access to database, cloud functions, static hosting  
-⚡ **Rapid Deployment**: Full-stack apps online in minutes
+⚡ **Rapid Deployment**: Full-stack apps online in minutes  
+🤖 **AI Agent Development**: Create and deploy personalized AI applications
 
 **Web Apps**: Modern frontend + static hosting  
 **WeChat Mini-Programs**: Cloud-native mini-program solutions  
-**Backend Services**: Cloud database + serverless functions + cloud hosting
+**Backend Services**: Cloud database + serverless functions + cloud hosting  
+**AI Agents**: Function-based cloud hosting for AI applications
 
 📚 Quick Start | 🛠️ IDE Setup | 🎨 Project Templates | 📖 Development Guide | 🎮 Use Cases | 🎓 Tutorials | 🔌 Plugin System | 🔧 MCP Tools | ❓ FAQ
 
@@ -38,6 +40,8 @@ When coding in **Cursor/VSCode GitHub Copilot/WinSurf/CodeBuddy/Augment Code/Cla
 -   **🚀 One-Click Deploy** - MCP automated deployment to Tencent CloudBase platform, Serverless architecture without server management
     
 -   **📱 Full-Stack Apps** - Web + Mini-programs + Database + Backend integration, supports multiple app types and backend hosting
+    
+-   **🤖 AI Agent Development** - Create personalized AI applications based on function-based cloud hosting, supports SSE streaming responses
     
 -   **🔧 Smart Debugging** - AI automatically reviews logs and fixes issues, reducing operational costs
     

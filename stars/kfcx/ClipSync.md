@@ -1,6 +1,6 @@
 ---
 project: ClipSync
-stars: 130
+stars: 131
 description: ClipSync是一个全平台剪贴板同步服务，可以很好做到多设备连接并且同步剪贴板内容。该服务主打无感同步，不需要用户手动操作，操作配置界面在Web端进行。
 url: https://github.com/kfcx/ClipSync
 ---

@@ -1,6 +1,6 @@
 ---
 project: ws-string
-stars: 28
+stars: 26
 description: null
 url: https://github.com/bluelovers/ws-string
 ---

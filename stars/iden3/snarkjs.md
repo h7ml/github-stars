@@ -1,6 +1,6 @@
 ---
 project: snarkjs
-stars: 1928
+stars: 1932
 description: zkSNARK implementation in JavaScript & WASM
 url: https://github.com/iden3/snarkjs
 ---

@@ -1,6 +1,6 @@
 ---
 project: gemini-balance
-stars: 4665
+stars: 4787
 description: Gemini polling proxy service （gemini轮询代理服务）
 url: https://github.com/snailyp/gemini-balance
 ---
@@ -119,6 +119,8 @@ app/
 
 ### Gemini API Format (`/gemini/v1beta`)
 
+This endpoint is directly forwarded to official Gemini API format endpoint, without advanced features.
+
 -   `GET /models`: List available Gemini models.
 -   `POST /models/{model_name}:generateContent`: Generate content.
 -   `POST /models/{model_name}:streamGenerateContent`: Stream content generation.
@@ -127,12 +129,16 @@ app/
 
 #### Hugging Face (HF) Compatible
 
+If you want to use advanced features, like fake streaming, please use this endpoint.
+
 -   `GET /hf/v1/models`: List models.
 -   `POST /hf/v1/chat/completions`: Chat completion.
 -   `POST /hf/v1/embeddings`: Create text embeddings.
 -   `POST /hf/v1/images/generations`: Generate images.
 
 #### Standard OpenAI
+
+This endpoint is directly forwarded to official OpenAI Compatible API format endpoint, without advanced features.
 
 -   `GET /openai/v1/models`: List models.
 -   `POST /openai/v1/chat/completions`: Chat completion (Recommended).

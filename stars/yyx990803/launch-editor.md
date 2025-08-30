@@ -1,6 +1,6 @@
 ---
 project: launch-editor
-stars: 660
+stars: 661
 description: Open file in editor from Node.js.
 url: https://github.com/yyx990803/launch-editor
 ---

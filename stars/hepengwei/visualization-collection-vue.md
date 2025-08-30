@@ -1,6 +1,6 @@
 ---
 project: visualization-collection-vue
-stars: 880
+stars: 885
 description: 🌈 一个专注于前端视觉效果的集合应用，包含CSS动效、Canvas动画、Three.js3D、人工智能应用等上百个案例（Vue版本）
 url: https://github.com/hepengwei/visualization-collection-vue
 ---

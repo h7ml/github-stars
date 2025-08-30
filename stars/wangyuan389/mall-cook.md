@@ -1,6 +1,6 @@
 ---
 project: mall-cook
-stars: 5517
+stars: 5520
 description: 商城低代码平台，可视化搭建H5、小程序多端商城
 url: https://github.com/wangyuan389/mall-cook
 ---

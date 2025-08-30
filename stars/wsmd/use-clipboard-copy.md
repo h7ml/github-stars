@@ -1,6 +1,6 @@
 ---
 project: use-clipboard-copy
-stars: 388
+stars: 387
 description: 📋 Lightweight copy to clipboard hook for React
 url: https://github.com/wsmd/use-clipboard-copy
 ---

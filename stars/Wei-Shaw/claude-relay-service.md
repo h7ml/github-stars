@@ -1,6 +1,6 @@
 ---
 project: claude-relay-service
-stars: 2355
+stars: 2625
 description: 自建Claude-code镜像服务，同时支持Gemini-cli、Codex-cli中转，支持多账户切换、自定义API密钥、Claude API、OPENAI兼容格式、能有效规避封号，OAuth集成可快捷添加账号池。
 url: https://github.com/Wei-Shaw/claude-relay-service
 ---

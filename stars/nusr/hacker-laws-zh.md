@@ -1,6 +1,6 @@
 ---
 project: hacker-laws-zh
-stars: 12542
+stars: 12543
 description: 💻📖对开发人员有用的定律、理论、原则和模式。(Laws, Theories, Principles and Patterns that developers will find useful.)
 url: https://github.com/nusr/hacker-laws-zh
 ---

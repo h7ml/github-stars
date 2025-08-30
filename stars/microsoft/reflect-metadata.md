@@ -1,6 +1,6 @@
 ---
 project: reflect-metadata
-stars: 3313
+stars: 3317
 description: Prototype for a Metadata Reflection API for ECMAScript
 url: https://github.com/microsoft/reflect-metadata
 ---

@@ -1,6 +1,6 @@
 ---
 project: cursor-auto-register
-stars: 834
+stars: 836
 description: cursor-auto-register
 url: https://github.com/ddCat-main/cursor-auto-register
 ---

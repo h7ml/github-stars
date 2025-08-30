@@ -1,6 +1,6 @@
 ---
 project: Sanyue-ImgHub
-stars: 141
+stars: 143
 description: https://github.com/MarSeventh/CloudFlare-ImgBed 项目的前端仓库。
 url: https://github.com/MarSeventh/Sanyue-ImgHub
 ---

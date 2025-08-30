@@ -1,6 +1,6 @@
 ---
 project: commerce
-stars: 13383
+stars: 13404
 description: Next.js Commerce
 url: https://github.com/vercel/commerce
 ---

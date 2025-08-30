@@ -1,6 +1,6 @@
 ---
 project: SBCVE
-stars: 120
+stars: 119
 description: 不定期记录一下浪费了时间去关注过的垃圾CVE漏洞。
 url: https://github.com/TheKingOfDuck/SBCVE
 ---

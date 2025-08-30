@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 2671
+stars: 2720
 description: 保存玄离199每周科技补全中提到的各种软件和项目
 url: https://github.com/xuanli199/weekly
 ---

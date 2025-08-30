@@ -1,6 +1,6 @@
 ---
 project: nodemcu-firmware
-stars: 7816
+stars: 7822
 description: Lua based interactive firmware for ESP8266, ESP8285 and ESP32
 url: https://github.com/nodemcu/nodemcu-firmware
 ---
@@ -13,6 +13,8 @@ NodeMCU 3.0.0
 NodeMCU is an open source Lua based firmware for the ESP8266 WiFi SOC from Espressif and uses an on-module flash-based SPIFFS file system. NodeMCU is implemented in C and is layered on the Espressif NON-OS SDK.
 
 The firmware was initially developed as is a companion project to the popular ESP8266-based NodeMCU development modules, but the project is now community-supported, and the firmware can now be run on _any_ ESP module.
+
+**The NodeMCU `release` and `dev` branches target the ESP8266. The `dev-esp32` branch targets the ESP32.**
 
 Summary
 -------

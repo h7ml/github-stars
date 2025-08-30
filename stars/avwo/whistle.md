@@ -1,6 +1,6 @@
 ---
 project: whistle
-stars: 15066
+stars: 15080
 description: HTTP, HTTP2, HTTPS, Websocket debugging proxy
 url: https://github.com/avwo/whistle
 ---

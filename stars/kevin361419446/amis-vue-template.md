@@ -1,6 +1,6 @@
 ---
 project: amis-vue-template
-stars: 12
+stars: 13
 description: Use vue-admin-template as the base and integrate Baidu's low code tool amis
 url: https://github.com/kevin361419446/amis-vue-template
 ---

@@ -1,6 +1,6 @@
 ---
 project: storage
-stars: 564
+stars: 565
 description: Vercel Postgres, KV, Blob, and Edge Config 
 url: https://github.com/vercel/storage
 ---

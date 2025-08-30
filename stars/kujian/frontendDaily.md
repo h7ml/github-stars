@@ -1,6 +1,6 @@
 ---
 project: frontendDaily
-stars: 2375
+stars: 2377
 description: 前端开发博客，分享互联网最精彩的前端技术，欢迎关注我微信公众号：前端开发博客，回复 1024，领取前端进阶资料包，回复 加群，与大神一起交流学习。
 url: https://github.com/kujian/frontendDaily
 ---

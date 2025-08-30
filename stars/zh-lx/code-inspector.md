@@ -1,6 +1,6 @@
 ---
 project: code-inspector
-stars: 2490
+stars: 2509
 description: 🚀 Click the dom to open your IDE and position the cursor at dom's source code location! 点击页面 dom 来打开 IDE 并将光标自动定位到源代码位置!
 url: https://github.com/zh-lx/code-inspector
 ---

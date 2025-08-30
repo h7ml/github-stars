@@ -1,6 +1,6 @@
 ---
 project: ai-file-translator
-stars: 26
+stars: 27
 description: CLI tool to translate Markdown files using OpenAI's language models while preserving the original formatting. || CLI 工具使用 OpenAI 的语言模型翻译文件，同时保留原始格式。
 url: https://github.com/h7ml/ai-file-translator
 ---

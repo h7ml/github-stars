@@ -1,6 +1,6 @@
 ---
 project: mtab
-stars: 618
+stars: 623
 description: Mtab书签导航程序 - 免费无广告的浏览器书签助手，多端同步、美观易用的在 线导航和书签工具，自主研发免费使用，帮助您高效管理 网页和应用，提升在线体验。
 url: https://github.com/tsxcw/mtab
 ---

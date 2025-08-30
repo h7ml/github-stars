@@ -1,6 +1,6 @@
 ---
 project: nest-admin
-stars: 848
+stars: 855
 description: nest全栈快速开发平台
 url: https://github.com/taozhi1010/nest-admin
 ---

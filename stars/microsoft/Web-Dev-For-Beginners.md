@@ -1,18 +1,36 @@
 ---
 project: Web-Dev-For-Beginners
-stars: 91535
+stars: 91659
 description: 24 Lessons, 12 Weeks, Get Started as a Web Developer
 url: https://github.com/microsoft/Web-Dev-For-Beginners
 ---
+
+Follow these steps to get started using these resources:
+
+1.  **Fork the Repository**: Click
+2.  **Clone the Repository**: `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+3.  **Join The Azure AI Foundry Discord and meet experts and fellow developers**
 
 Web Development for Beginners - A Curriculum
 ============================================
 
 Learn the fundamentals of web development with our 12-week comprehensive course by Microsoft Cloud Advocates. Each of the 24 lessons dives into JavaScript, CSS, and HTML through hands-on projects like terrariums, browser extensions, and space games. Engage with quizzes, discussions, and practical assignments. Enhance your skills and optimize your knowledge retention with our effective project-based pedagogy. Start your coding journey today!
 
+### 🌐 Multi-Language Support
+
+#### Supported via GitHub Action (Automated & Always Up-to-Date)
+
+French | Spanish | German | Russian | Arabic | Persian (Farsi) | Urdu | Chinese (Simplified) | Chinese (Traditional, Macau) | Chinese (Traditional, Hong Kong) | Chinese (Traditional, Taiwan) | Japanese | Korean | Hindi | Bengali | Marathi | Nepali | Punjabi (Gurmukhi) | Portuguese (Portugal) | Portuguese (Brazil) | Italian | Polish | Turkish | Greek | Thai | Swedish | Danish | Norwegian | Finnish | Dutch | Hebrew | Vietnamese | Indonesian | Malay | Tagalog (Filipino) | Swahili | Hungarian | Czech | Slovak | Romanian | Bulgarian | Serbian (Cyrillic) | Croatian | Slovenian | Ukrainian | Burmese (Myanmar)
+
+**If you wish to have additional translations languages supported are listed here**
+
 #### 🧑‍🎓 _Are you a student?_
 
 Visit **Student Hub page** where you will find beginner resources, Student packs and even ways to get a free certificate voucher. This is the page you want to bookmark and check from time to time as we switch out content monthly.
+
+### 📣 Announcement - _New Project to build using Generative AI_
+
+New AI Assistant project just added, check it out project
 
 ### 📣 Announcement - _New Curriculum_ on Generative AI for JavaScript was just released
 
@@ -60,6 +78,8 @@ Follow these steps:
 
 In your copy of this repository that you created, click the **Code** button and select **Open with Codespaces**. This will create a new Codespace for you to work in.
 
+!Codespace./images/createcodespace.png)
+
 #### Running the curriculum locally on your computer
 
 To run this curriculum locally on your computer, you will need a text editor, a browser and a command line tool. Our first lesson, Introduction to Programming Languages and Tools of the Trade, will walk you through various options for each of these tools for you to select what works best for you.
@@ -67,6 +87,8 @@ To run this curriculum locally on your computer, you will need a text editor, a 
 Our recommendation is to use Visual Studio Code as your editor, which also has a built-in Terminal. You can download Visual Studio Code here.
 
 1.  Clone your repository to your computer. You can do this by clicking the **Code** button and copying the URL:
+    
+    !CodeSpace
     
     Then, open Terminal within Visual Studio Code and run the following command, replacing `<your-repository-url>` with the URL you just copied:
     
@@ -94,7 +116,7 @@ Our recommendation is to use Visual Studio Code as your editor, which also has a
 -   assignment
 -   post-lesson quiz
 
-> **A note about quizzes**: All quizzes are contained in the Quiz-app folder, 48 total quizzes of three questions each. They are linked from within the lessons the quiz app can be run locally or deployed to Azure; follow the instruction in the `quiz-app` folder. They are gradually being localized.
+> **A note about quizzes**: All quizzes are contained in the Quiz-app folder, 48 total quizzes of three questions each. They are available here the quiz app can be run locally or deployed to Azure; follow the instruction in the `quiz-app` folder.
 
 🗃️ Lessons
 -----------
@@ -396,6 +418,30 @@ Learn how your app retains state and how to manage it programmatically
 State Management
 
 Yohan
+
+25
+
+Browser/VScode Code
+
+Working with VScode
+
+Learn how to Using a code editor
+
+Use VScode Code Editor
+
+Chris
+
+26
+
+AI Assistants
+
+Working with AI
+
+Learn how to build your own AI assistant
+
+AI Assistant project
+
+Chris
 
 🏫 Pedagogy
 -----------

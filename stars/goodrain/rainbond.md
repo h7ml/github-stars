@@ -1,6 +1,6 @@
 ---
 project: rainbond
-stars: 5752
+stars: 5785
 description: A container platform that needs no Kubernetes learning, Build, deploy, assemble, and manage apps on Kubernetes, no K8s expertise needed, all in a graphical platform.
 url: https://github.com/goodrain/rainbond
 ---

@@ -1,6 +1,6 @@
 ---
 project: MKFramework
-stars: 247
+stars: 249
 description: CocosCreator 3.x 游戏开发框架
 url: https://github.com/1226085293/MKFramework
 ---

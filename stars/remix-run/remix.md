@@ -1,44 +1,71 @@
 ---
 project: remix
-stars: 31539
+stars: 31581
 description: Build Better Websites. Create modern, resilient user experiences with web fundamentals.
 url: https://github.com/remix-run/remix
 ---
 
-Welcome to Remix!
-=================
+Welcome to Remix 3!
+===================
 
-Important
+This branch (`v3`) is the source for Remix 3. It is under active development.
 
-With the release of React Router v7 we are sun-setting continued development/maintenance on Remix v2. If you have not already upgraded to React Router v7, we recommend you do so. We've tried to make the upgrade process as smooth as possible with our Future Flags.
+We published a blog post earlier this year with some of our thoughts around Remix 3. It explains our philosophy for web development and why we think the time is right for something new. In particular, we follow these principles:
 
-We plan to continue to address bugs that pose security concerns or prevent upgrading to React Router v7. If you have a bug in one of those categories, please open an issue in this repository and prefix the title with `(v2):`.
+1.  **Model-First Development**. AI fundamentally shifts the human-computer interaction model for both user experience and developer workflows. Optimize the source code, documentation, tooling, and abstractions for LLMs. Additionally, develop abstractions for applications to use models in the product itself, not just as a tool to develop it.
+2.  **Build on Web APIs**. Sharing abstractions across the stack greatly reduces the amount of context switching, both for humans and machines. Build on the foundation of Web APIs and JavaScript because it is the only full stack ecosystem.
+3.  **Religiously Runtime**. Designing for bundlers/compilers/typegen (and any pre-runtime static analysis) leads to poor API design that eventually pollutes the entire system. All packages must be designed with no expectation of static analysis and all tests must run without bundling. Because browsers are involved, `--import` loaders for simple transformations like TypeScript and JSX are permissible.
+4.  **Avoid Dependencies**. Dependencies lock you into somebody else's roadmap. Choose them wisely, wrap them completely, and expect to replace most of them with our own package eventually. The goal is zero.
+5.  **Demand Composition**. Abstractions should be single-purpose and replaceable. A composable abstraction is easy to add and remove from an existing program. Every package must be useful and documented independent of any other context. New features should first be attempted as a new package. If impossible, attempt to break up the existing package to make it more composable. However, tightly coupled modules that almost always change together in both directions should be moved to the same package.
+6.  **Distribute Cohesively**. Extremely composable ecosystems are difficult to learn and use. Therefore the packages will be wrapped up into a single package as dependencies and re-exported as a single toolbox (remix) for both distribution and documentation.
 
-For all other issues, ongoing maintenance will be happening in React Router v7, so please open issues (bugs) and/or discussions (feature requests) in that repo.
+Goals
+-----
 
-We are happy you're here!
+The goal is to develop all packages independently, and then stitch them together into the `remix` package for ease of use. However, all packages that make up Remix should be usable standalone as well. This forces us to consider package boundaries and helps us keep public interfaces portable and interopable.
 
-Remix is a full-stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience that deploys to any Node.js server and even non-Node.js environments at the edge like Cloudflare Workers.
+Each package in Remix:
 
-Want to know more? Read the Technical Explanation of Remix.
+-   Has a single responsibility
+-   Prioritizes web standards to ensure maximum interoperability and portability across JavaScript runtimes
+-   Augments standards unobtrusively where they are missing or incomplete, minimizing incompatibility risks
 
-This repository contains the Remix source code. This repo is a work in progress, so we appreciate your patience as we figure things out.
+This approach means the Remix code you write is **portable by default**. These packages work seamlessly across Node.js, Bun, Deno, Cloudflare Workers, and other environments.
 
-Documentation
--------------
+We leverage server-side web APIs like:
 
-For documentation about Remix, please visit our website.
+-   The Web Streams API instead of Node.js streams
+-   `Uint8Array` instead of Node.js `Buffer`s
+-   The Web Crypto API instead of the Node.js crypto library
+-   `Blob` and `File` instead of some bespoke runtime-specific API
 
-Also, please join our community on Discord.
+The benefit is code that's not just reusable, but **future-proof**.
 
-The documentation is automatically generated on each release from the files in the `docs` directory.
+These packages should be useful for anyone who is building for the web. If you're using Remix, we've designed it from the start to work with web standards. If you're using some other framework, you should easily be able to integrate these tools into your workflow as well without going full-blown Remix. If you're building your own framework, we hope you'll be able to build on this foundation as well.
+
+Packages
+--------
+
+We currently publish the following packages:
+
+-   fetch-proxy: Seamlessly construct HTTP proxies with the familiar `fetch()` API – ideal for API gateways or abstracting microservices.
+-   file-storage: Robust key/value storage tailored for JavaScript `File` objects, simplifying file management.
+-   form-data-parser: An enhanced `request.formData()` wrapper enabling efficient, streaming file uploads.
+-   headers: A comprehensive toolkit for effortlessly managing HTTP headers in your JavaScript applications.
+-   lazy-file: Optimize performance with lazy-loaded, streaming `Blob`s and `File`s for JavaScript.
+-   multipart-parser: High-performance, streaming parser for multipart messages, perfect for handling complex form data.
+-   node-fetch-server: Build Node.js HTTP servers using the web-standard `fetch()` API, promoting code consistency.
+-   route-pattern: A powerful and flexible URL pattern matching library for modern JavaScript applications.
+-   tar-parser: A fast, streaming parser for tar archives, designed for efficient data extraction.
+
+All packages are published in both modern ESM and legacy CJS formats for maximum compatibility with both existing and new projects.
 
 Contributing
 ------------
 
-If you're interested in contributing code and/or documentation, please see our guide to contributing.
+We welcome contributions! If you'd like to contribute, please feel free to open an issue or submit a pull request. See CONTRIBUTING for more information.
 
-Code of Conduct
----------------
+License
+-------
 
-Please see our code of conduct for any questions about the kind of community we are trying to build here and what to do if you need help with someone not acting professionally.
+See LICENSE

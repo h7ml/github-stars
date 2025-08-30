@@ -1,6 +1,6 @@
 ---
 project: LeetcodeTop
-stars: 19457
+stars: 19465
 description: 汇总各大互联网公司容易考察的高频leetcode题🔥
 url: https://github.com/afatcoder/LeetcodeTop
 ---

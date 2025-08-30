@@ -1,6 +1,6 @@
 ---
 project: Deep-Live-Cam
-stars: 72674
+stars: 72823
 description: real time face swap and one-click video deepfake with only a single image
 url: https://github.com/hacksider/Deep-Live-Cam
 ---
@@ -152,6 +152,11 @@ source venv/bin/activate
 
 # install the dependencies again
 pip install -r requirements.txt
+
+# gfpgan and basicsrs issue fix
+pip install git+https://github.com/xinntao/BasicSR.git@master
+pip uninstall gfpgan -y
+pip install git+https://github.com/TencentARC/GFPGAN.git@master
 
 **Run:** If you don't have a GPU, you can run Deep-Live-Cam using `python run.py`. Note that initial execution will download models (~300MB).
 

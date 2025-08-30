@@ -1,6 +1,6 @@
 ---
 project: SSV2RayTrojanSSRClash
-stars: 2430
+stars: 2437
 description: 科学上网，ss, ssr, v2ray, trojan, clash, clashr，翻墙机场推荐
 url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 ---
@@ -77,6 +77,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：香港，澳门，台湾，日本，新加坡，美国，韩国等。
 -   **流媒体解锁**：支持全节点流媒体（包括 ChatGPT、Netflix、Disney+/Dazn、动画疯、Abema、DMM 等），呈现影院级超清观影体验.
 -   **超值套餐**：流量包套餐低至每月 6.66 元，性价比超高！同时赠送硬盘服 Emby，配合国内直连线路和 0.01 倍率专属节点，4K 影片秒开。
+-   **超值活动**：2025七夕节优惠活动
+    -   全场8折优惠优惠码：`qixi`
+    -   有效期：即日起—2025年09月14日
 -   👉 官网地址
 
 ### 7）M78星云

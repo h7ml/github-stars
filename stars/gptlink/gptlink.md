@@ -1,6 +1,6 @@
 ---
 project: gptlink
-stars: 2656
+stars: 2654
 description: 10分钟搭建可免费商用的AI对话环境，搭建简单，包含用户，订单，任务，付费等功能
 url: https://github.com/gptlink/gptlink
 ---

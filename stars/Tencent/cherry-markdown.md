@@ -1,6 +1,6 @@
 ---
 project: cherry-markdown
-stars: 4328
+stars: 4340
 description: ✨ A Markdown Editor
 url: https://github.com/Tencent/cherry-markdown
 ---
@@ -8,7 +8,7 @@ url: https://github.com/Tencent/cherry-markdown
 Cherry Markdown Writer
 ======================
 
-English | 简体中文 | 日本語
+English | 简体中文
 
 Introduction
 ------------
@@ -21,8 +21,8 @@ Cherry Markdown Writer is a Javascript Markdown editor. It has the advantages su
 -   hello world
 -   Configuring Image & File Upload Interfaces
 -   Adjusting the Toolbar
--   Custom Syntax
 -   Comprehensive Configuration Options
+-   Custom Syntax
 -   Configuring Themes
 -   Extending Code Block Syntax
 -   Events & Callbacks
@@ -36,11 +36,11 @@ Cherry Markdown Writer is a Javascript Markdown editor. It has the advantages su
 -   Multiple Instances
 -   Editor Without Toolbar
 -   Pure Preview
--   XSS（Not allowed by default）
+-   XSS (Disabled by default; requires configuration to enable XSS)
 -   IMG WYSIWYG
 -   Table WYSIWYG
 -   Headers with Auto Num
--   Stream Input Mode (AI chart scenario)
+-   Stream Input Mode (AI chat scenario)
 -   VIM Editing Mode
 -   Utilize Your Own Mermaid.js
 
@@ -60,28 +60,30 @@ Feature
 ### Syntax Feature
 
 1.  Image zoom, alignment and reference
-2.  Generate a chart based on the content of the table
+2.  Generate a chart based on table content
 3.  Adjust font color and size
 4.  Font background color, superscript and subscript
 5.  Insert checklist
-6.  Insert audio or video
-
-### Multiple modes
-
-1.  Live preview with Scroll Sync
-2.  Preview-only mode
-3.  No toolbar mode (minimalist editing mode)
-4.  Mobile preview mode
+6.  Insert audio and video
+7.  Mermaid diagrams and math formulas
+8.  Info panels
 
 ### Functional Feature
 
-1.  Copy from rich text and paste as markdown text
-2.  Classic line feed & regular line feed
+1.  Paste from rich text as markdown
+2.  Classic & regular line break modes
 3.  Multi-cursor editing
 4.  Image size editing
-5.  Export as image or pdf
-6.  Float toolbar: appears at the beginning of a new line
-7.  Bubble toolbar: appears when text is selected
+5.  Table editing
+6.  Table -> Chart (generate chart from table content)
+7.  Export as image or PDF
+8.  Floating toolbar: appears at the beginning of a new line
+9.  Bubble toolbar: appears when text is selected
+10.  Set shortcut keys
+11.  Floating table of contents
+12.  Theme switching
+13.  Input suggestion (autocomplete)
+14.  AI Chat scenario: stream-mode output supported
 
 ### Performance Feature
 
@@ -98,7 +100,7 @@ Cherry Markdown has a variety of style themes to choose from.
 
 ### Features Showcase
 
-Click to view feature demonstration here
+Click to view the features demonstration Features demo
 
 Install
 -------
@@ -113,12 +115,7 @@ npm install cherry-markdown --save
 
 If you need to enable the functions of `mermaid` drawing and table-to-chart, you need to add `mermaid` and `echarts` packages at the same time.
 
-Currently, the plug-in version **Cherry** recommend is `echarts@4.6.0` `mermaid@9.4.3`.
-
-# Install mermaid, enable mermaid and drawing function
-yarn add mermaid@9.4.3
-# Install echarts, turn on the table-to-chart function
-yarn add echarts@4.6.0
+Cherry Markdown has built-in mermaid, if you want to use a specified version of mermaid, you can refer to wiki
 
 Quick start
 -----------
@@ -199,6 +196,29 @@ const cherryInstance \= new Cherry({
   value: '# welcome to cherry editor!',
 });
 
+From mermaid v10.0.0, the rendering logic changed from synchronous to asynchronous. After `afterChange` or `afterInit` events, mermaid code blocks are rendered as placeholders first, then rendered asynchronously and replaced.
+
+If you need to get the content after asynchronous rendering is finished, you can use the following example:
+
+const cherryInstance \= new Cherry({
+  id: 'markdown-container',
+  // Use a template string to include the mermaid code block directly
+  value: \`
+    \`\`\`mermaid
+    graph LR
+        A\[Company\] \--\>| Off work | B(Market)
+        B \--\> C{See<br\>melon seller}
+        C \--\>|Yes| D\[Buy a bun\]
+        C \--\>|No| E\[Buy one pound of buns\]
+    \`\`\`
+  \`,
+  callback: {
+    afterAsyncRender: (md, html) \=> {
+      // md is the markdown source, html is the rendered result
+    }
+  }
+});
+
 ### Dynamic import
 
 **recommend** Using Dynamic import, the following is an example of webpack Dynamic import.
@@ -236,48 +256,23 @@ Click here for more examples.
 
 ### Client
 
-Under development, please stay tuned or see `/client/`
+Under development, please stay tuned or see `/packages/client/`
 
 Extension
 ---------
 
 ### Customize Syntax
 
-click here
+See the custom syntax documentation: Custom syntax docs
 
 ### Customize Toolbar
 
-click here
+Cherry supports five toolbar positions, each position can be extended with custom toolbar buttons. See the toolbar configuration documentation for details: Customize toolbar buttons.
 
 Unit Test
 ---------
 
-Jest is selected as a unit testing tool for its assertion, asynchronous support and snapshot. Unit test includes CommonMark test and snapshot test.
-
-### CommonMark Test
-
-Call `yarn run test:commonmark` to test the official CommonMark suites. This command runs fast.
-
-Suites are located in `test/suites/commonmark.spec.json`, for example:
-
-{
-  "markdown": " \\tfoo\\tbaz\\t\\tbim\\n",
-  "html": "<pre><code>foo\\tbaz\\t\\tbim\\n</code></pre>\\n",
-  "example": 2,
-  "start\_line": 363,
-  "end\_line": 368,
-  "section": "Tabs"
-},
-
-In this case, Jest will compare the html generated by `Cherry.makeHtml(" \tfoo\tbaz\t\tbim\n")` with the expected result `"<pre><code>foo\tbaz\t \tbim\n</code></pre>\n"`. Cherry Markdown's matcher has ignored private attributes like `data-line`.
-
-CommonMark specifications and suites are from: commonmark.org.
-
-### Snapshot Test
-
-Call `yarn run test:snapshot` to run snapshot test. You can write snapshot suite like `test/core/hooks/List.spec.ts`. At the first time, a snapshot will be automatically generated. After that, Jest can compare the snapshot with the generated HTML. If you need to regenerate a snapshot, delete the old snapshot under `test/core/hooks/__snapshots__` and run this command again.
-
-Snapshot test runs slower. It should only be used to test Hooks that are error-prone and contain Cherry Markdown special syntax.
+`Vitest` has been added as a basic configuration, but the related test cases have not been fully tested. Welcome to submit rich test cases.
 
 Contribution Guidelines
 -----------------------

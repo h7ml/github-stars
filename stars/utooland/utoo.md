@@ -1,8 +1,8 @@
 ---
-project: mako
-stars: 2182
-description: An extremely fast, production-grade web bundler based on Rust.
-url: https://github.com/umijs/mako
+project: utoo
+stars: 2184
+description: An unified toolchain for web development.
+url: https://github.com/utooland/utoo
 ---
 
 > ⚠️ Notice: we are working on making a better bundler on top of Turbopack, see #1872.
@@ -15,7 +15,6 @@ url: https://github.com/umijs/mako
 
 Utoo is a modern frontend toolchain that provides a unified command-line interface for frontend development. It comes with built-in package management capabilities and can be extended with additional tools like the bundler.
 
--   `ut`: The core toolchain entry point, providing command mounting and configuration management
 -   `utoo`: Built-in package manager for dependency resolution and installation
 -   `@utoo/pack`: High-performance bundler (requires separate installation)
 

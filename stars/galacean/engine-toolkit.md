@@ -1,6 +1,6 @@
 ---
 project: engine-toolkit
-stars: 95
+stars: 96
 description: Some out-of-the-box utility features based on the Galacean engine.
 url: https://github.com/galacean/engine-toolkit
 ---

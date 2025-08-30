@@ -1,6 +1,6 @@
 ---
 project: linen.dev
-stars: 2777
+stars: 2778
 description: Lightweight Google-searchable Slack alternative for Communities
 url: https://github.com/Linen-dev/linen.dev
 ---

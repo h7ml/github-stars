@@ -1,6 +1,6 @@
 ---
 project: vue-puzzle-vcode
-stars: 462
+stars: 463
 description: vue 拼图人机验证 右滑拼图验证
 url: https://github.com/javaLuo/vue-puzzle-vcode
 ---

@@ -1,6 +1,6 @@
 ---
 project: drcom-generic
-stars: 1159
+stars: 1163
 description: Dr.COM/DrCOM 现已覆盖 d p x三版。
 url: https://github.com/drcoms/drcom-generic
 ---

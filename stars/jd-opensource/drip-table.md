@@ -1,6 +1,6 @@
 ---
 project: drip-table
-stars: 1654
+stars: 1656
 description: A tiny and powerful enterprise-class solution for building lowcode tables. 轻量、强大的企业级表格可视化搭建解决方案。
 url: https://github.com/jd-opensource/drip-table
 ---
