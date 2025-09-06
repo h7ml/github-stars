@@ -103,6 +103,3 @@ License
 -------
 
 MIT
-
-Sponsor
--------

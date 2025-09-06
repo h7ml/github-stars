@@ -1,6 +1,6 @@
 ---
 project: hertzbeat
-stars: 6550
+stars: 6586
 description: Real-time observability system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
 url: https://github.com/apache/hertzbeat
 ---
@@ -1215,7 +1215,7 @@ Landscape
 
     
   
-HertzBeat has been included in the CNCF Observability And Analysis - Monitoring Landscape.
+HertzBeat has been included in the CNCF Observability And Analysis - Observability Landscape.
 
 🛡️ License
 -----------

@@ -1,6 +1,6 @@
 ---
 project: gitmoji
-stars: 71
+stars: 70
 description: git 提交信息的 emoji 指南。 😜 
 url: https://github.com/Jeff-Tian/gitmoji
 ---

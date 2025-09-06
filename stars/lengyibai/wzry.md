@@ -1,6 +1,6 @@
 ---
 project: wzry
-stars: 810
+stars: 807
 description: 🌈基于 Vue3+TS的王者荣耀图鉴🚀
 url: https://github.com/lengyibai/wzry
 ---

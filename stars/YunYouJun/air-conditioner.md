@@ -1,6 +1,6 @@
 ---
 project: air-conditioner
-stars: 3474
+stars: 3473
 description: ❄️ Yun Portable Air Conditoner. 云空调，便携小空调，为你的夏日带去清凉！
 url: https://github.com/YunYouJun/air-conditioner
 ---

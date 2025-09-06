@@ -1,6 +1,6 @@
 ---
 project: primjs
-stars: 992
+stars: 996
 description: JavaScript Engine Optimized for Lynx
 url: https://github.com/lynx-family/primjs
 ---

@@ -1,6 +1,6 @@
 ---
 project: ark
-stars: 4580
+stars: 4598
 description: Build scalable design systems with React, Vue, Solid, and Svelte.
 url: https://github.com/chakra-ui/ark
 ---

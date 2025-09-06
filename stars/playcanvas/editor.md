@@ -1,6 +1,6 @@
 ---
 project: editor
-stars: 721
+stars: 726
 description: Browser-based visual editor for building WebGL, WebGPU, WebXR apps
 url: https://github.com/playcanvas/editor
 ---
@@ -8,7 +8,7 @@ url: https://github.com/playcanvas/editor
 PlayCanvas Editor
 =================
 
-User Manual | Forum
+| User Manual | API Reference | Blog | Forum |
 
 The PlayCanvas Editor is a visual editing environment for building WebGL/WebGPU/WebXR apps. It can be accessed at https://playcanvas.com.
 
@@ -77,9 +77,9 @@ To test the integration of these libraries use npm link. Follow these steps:
 1.  Create a global link from source
     
     cd <library\>
-    npm run link
+    npm link
     
 2.  Create a link to the global link
     
     cd editor
-    npm run link <library\>
+    npm link <library\>

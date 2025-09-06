@@ -1,6 +1,6 @@
 ---
 project: daily-featured
-stars: 577
+stars: 575
 description: 不仅仅是冷冰冰的链接（Not just link）
 url: https://github.com/azl397985856/daily-featured
 ---

@@ -1,6 +1,6 @@
 ---
 project: wflow
-stars: 518
+stars: 519
 description: workflow 工作流设计器，企业OA流程设计。表单流程设计界面操作超级简单！！普通用户也能分分钟上手，不需要专业知识。本设计器支持可视化拖拽表单组件，动态任意层级结构审批节点，支持复杂流程条件设置
 url: https://github.com/willianfu/wflow
 ---

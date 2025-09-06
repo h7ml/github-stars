@@ -1,6 +1,6 @@
 ---
 project: vitepress-plugin-sandpack
-stars: 54
+stars: 55
 description: Use sandpack-vue3 in vitepress as directive.
 url: https://github.com/jerrywu001/vitepress-plugin-sandpack
 ---

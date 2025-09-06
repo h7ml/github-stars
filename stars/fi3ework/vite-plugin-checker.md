@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-checker
-stars: 1161
+stars: 1162
 description: 💬 Vite plugin that provide checks of TypeScript, ESLint, vue-tsc, Stylelint and more.
 url: https://github.com/fi3ework/vite-plugin-checker
 ---

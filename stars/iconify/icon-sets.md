@@ -1,6 +1,6 @@
 ---
 project: icon-sets
-stars: 831
+stars: 837
 description: 150+ open source icon sets. Icons are validated, cleaned up, optimised, ready to render as SVG. Updated automatically 3 times a week.
 url: https://github.com/iconify/icon-sets
 ---

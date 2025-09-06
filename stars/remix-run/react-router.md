@@ -1,6 +1,6 @@
 ---
 project: react-router
-stars: 55425
+stars: 55454
 description: Declarative routing for React
 url: https://github.com/remix-run/react-router
 ---

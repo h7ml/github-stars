@@ -1,6 +1,6 @@
 ---
 project: openai-node
-stars: 10044
+stars: 10070
 description: Official JavaScript / TypeScript library for the OpenAI API
 url: https://github.com/openai/openai-node
 ---
@@ -275,14 +275,14 @@ const { data: stream, request\_id } \= await openai.chat.completions
   })
   .withResponse();
 
-Realtime API Beta
------------------
+Realtime API
+------------
 
 The Realtime API enables you to build low-latency, multi-modal conversational experiences. It currently supports text and audio as both input and output, as well as function calling through a `WebSocket` connection.
 
-import { OpenAIRealtimeWebSocket } from 'openai/beta/realtime/websocket';
+import { OpenAIRealtimeWebSocket } from 'openai/realtime/websocket';
 
-const rt \= new OpenAIRealtimeWebSocket({ model: 'gpt-4o-realtime-preview-2024-12-17' });
+const rt \= new OpenAIRealtimeWebSocket({ model: 'gpt-realtime' });
 
 rt.on('response.text.delta', (event) \=> process.stdout.write(event.delta));
 
@@ -394,14 +394,14 @@ while (page.hasNextPage()) {
   // ...
 }
 
-Realtime API Beta
------------------
+Realtime API
+------------
 
 The Realtime API enables you to build low-latency, multi-modal conversational experiences. It currently supports text and audio as both input and output, as well as function calling through a `WebSocket` connection.
 
-import { OpenAIRealtimeWebSocket } from 'openai/beta/realtime/websocket';
+import { OpenAIRealtimeWebSocket } from 'openai/realtime/websocket';
 
-const rt \= new OpenAIRealtimeWebSocket({ model: 'gpt-4o-realtime-preview-2024-12-17' });
+const rt \= new OpenAIRealtimeWebSocket({ model: 'gpt-realtime' });
 
 rt.on('response.text.delta', (event) \=> process.stdout.write(event.delta));
 

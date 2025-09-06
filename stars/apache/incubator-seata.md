@@ -1,6 +1,6 @@
 ---
 project: incubator-seata
-stars: 25775
+stars: 25789
 description: :fire: Seata is an easy-to-use, high-performance, open source distributed transaction solution.
 url: https://github.com/apache/incubator-seata
 ---
@@ -72,7 +72,7 @@ Maven dependency
 Depending on the scenario, choose one of the two dependencies: `org.apache.seata:seata-all` or `org.apache.seata:seata-spring-boot-starter`.
 
 <properties\>
-  <seata.version>2.4.0</seata.version>
+  <seata.version>2.5.0</seata.version>
 </properties\>
 
 <dependencies\>

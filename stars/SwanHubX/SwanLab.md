@@ -1,6 +1,6 @@
 ---
 project: SwanLab
-stars: 2520
+stars: 2556
 description: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / LLaMA Factory / veRL/ Swift / Ultralytics / MMEngine / Keras etc.
 url: https://github.com/SwanHubX/SwanLab
 ---
@@ -342,6 +342,7 @@ swanlab login --host http://localhost:8000
 -   Qwen3-SmVL-0.6B多模态模型训练
 -   LeRobot 具身智能入门
 -   GLM-4.5-Air-LoRA 及 SwanLab 可视化记录
+-   RAG怎么做？SwanLab文档助手方案开源了
 
 🌟如果你有想收录的教程，欢迎提交PR！
 
@@ -488,6 +489,7 @@ network.py
 -   FastAI
 -   LightGBM
 -   XGBoost
+-   MLX-LM
 
 **评估框架**
 

@@ -1,6 +1,6 @@
 ---
 project: zef
-stars: 116
+stars: 117
 description: Toolkit for graph-relational data across space and time
 url: https://github.com/zefhub/zef
 ---

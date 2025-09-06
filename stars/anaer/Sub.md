@@ -1,6 +1,6 @@
 ---
 project: Sub
-stars: 3440
+stars: 3445
 description: 自用clash订阅链接
 url: https://github.com/anaer/Sub
 ---

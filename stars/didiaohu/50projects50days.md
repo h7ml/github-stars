@@ -1,6 +1,6 @@
 ---
 project: 50projects50days
-stars: 184
+stars: 185
 description: 50个项目50天
 url: https://github.com/didiaohu/50projects50days
 ---

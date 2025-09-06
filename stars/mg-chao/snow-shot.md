@@ -1,6 +1,6 @@
 ---
 project: snow-shot
-stars: 1048
+stars: 1103
 description: 简单优雅的工具软件
 url: https://github.com/mg-chao/snow-shot
 ---

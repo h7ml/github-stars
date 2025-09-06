@@ -1,7 +1,7 @@
 ---
 project: claude-relay-service
-stars: 2625
-description: 自建Claude-code镜像服务，同时支持Gemini-cli、Codex-cli中转，支持多账户切换、自定义API密钥、Claude API、OPENAI兼容格式、能有效规避封号，OAuth集成可快捷添加账号池。
+stars: 2877
+description: 自建Claude Code镜像，支持Claude Code、Gemini CLI、Codex CLI，支持Claude Console接入。集成OAuth认   证、多账号池切换、自定义API密钥、OpenAI兼容格式、代理支持和智能防封机制。
 url: https://github.com/Wei-Shaw/claude-relay-service
 ---
 
@@ -241,12 +241,6 @@ REDIS\_HOST=localhost
 REDIS\_PORT=6379
 REDIS\_PASSWORD=
 
-# Webhook通知配置（可选）
-WEBHOOK\_ENABLED=true
-WEBHOOK\_URLS=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your-key
-WEBHOOK\_TIMEOUT=10000
-WEBHOOK\_RETRIES=3
-
 **编辑 `config/config.js` 文件：**
 
 module.exports \= {
@@ -448,100 +442,101 @@ claude
 
 gemini  # 或其他 Gemini CLI 命令
 
-**Codex 设置环境变量：**
+**Codex 配置：**
 
-export OPENAI\_BASE\_URL="http://127.0.0.1:3000/openai" # 根据实际填写你服务器的ip地址或者域名
-export OPENAI\_API\_KEY="后台创建的API密钥"  # 使用后台创建的API密钥
+在 `~/.codex/config.toml` 文件中添加以下配置：
+
+model\_provider = "crs"
+model = "gpt-5"
+model\_reasoning\_effort = "high"
+disable\_response\_storage = true
+preferred\_auth\_method = "apikey"
+
+\[model\_providers.crs\]
+name = "crs"
+base\_url = "http://127.0.0.1:3000/openai"  # 根据实际填写你服务器的ip地址或者域名
+wire\_api = "responses"
+
+在 `~/.codex/auth.json` 文件中配置API密钥：
+
+{
+    "OPENAI\_API\_KEY": "你的后台创建的API密钥"
+}
 
 ### 5\. 第三方工具API接入
 
-本服务支持多种API端点格式，方便接入不同的第三方工具（如Cherry Studio等）：
+本服务支持多种API端点格式，方便接入不同的第三方工具（如Cherry Studio等）。
 
-**Claude标准格式：**
+#### Cherry Studio 接入示例
+
+Cherry Studio支持多种AI服务的接入，下面是不同账号类型的详细配置：
+
+**1\. Claude账号接入：**
 
 ```
-# 如果工具支持Claude标准格式，请使用该接口
+# API地址
 http://你的服务器:3000/claude/
+
+# 模型ID示例
+claude-sonnet-4-20250514  # Claude Sonnet 4
+claude-opus-4-20250514     # Claude Opus 4
 ```
 
-**OpenAI兼容格式：**
+配置步骤：
+
+-   供应商类型选择"Anthropic"
+-   API地址填入：`http://你的服务器:3000/claude/`
+-   API Key填入：后台创建的API密钥（cr\_开头）
+
+**2\. Gemini账号接入：**
 
 ```
-# 适用于需要OpenAI格式的第三方工具
-http://你的服务器:3000/openai/claude/v1/
+# API地址
+http://你的服务器:3000/gemini/
+
+# 模型ID示例
+gemini-2.5-pro             # Gemini 2.5 Pro
 ```
 
-**接入示例：**
+配置步骤：
 
--   **Cherry Studio**: 使用OpenAI格式 `http://你的服务器:3000/openai/claude/v1/` 使用Codex cli API `http://你的服务器:3000/openai/responses`
--   **其他支持自定义API的工具**: 根据工具要求选择合适的格式
+-   供应商类型选择"Gemini"
+-   API地址填入：`http://你的服务器:3000/gemini/`
+-   API Key填入：后台创建的API密钥（cr\_开头）
+
+**3\. Codex接入：**
+
+```
+# API地址
+http://你的服务器:3000/openai/
+
+# 模型ID（固定）
+gpt-5                      # Codex使用固定模型ID
+```
+
+配置步骤：
+
+-   供应商类型选择"Openai-Response"
+-   API地址填入：`http://你的服务器:3000/openai/`
+-   API Key填入：后台创建的API密钥（cr\_开头）
+-   **重要**：Codex只支持Openai-Response标准
+
+#### 其他第三方工具接入
+
+**接入要点：**
+
+-   所有账号类型都使用相同的API密钥（在后台统一创建）
+-   根据不同的路由前缀自动识别账号类型
+-   `/claude/` - 使用Claude账号池
+-   `/gemini/` - 使用Gemini账号池
+-   `/openai/` - 使用Codex账号（只支持Openai-Response格式）
+-   支持所有标准API端点（messages、models等）
 
 **重要说明：**
 
--   所有格式都支持相同的功能，仅是路径不同
--   `/api/v1/messages` = `/claude/v1/messages` = `/openai/claude/v1/messages`
--   选择适合你使用工具的格式即可
--   支持所有Claude API端点（messages、models等）
-
-* * *
-
-📢 Webhook 通知功能
----------------
-
-### 功能说明
-
-当系统检测到账号异常时，会自动发送 webhook 通知，支持企业微信、钉钉、Slack 等平台。
-
-### 通知触发场景
-
--   **Claude OAuth 账户**: token 过期或未授权时
--   **Claude Console 账户**: 系统检测到账户被封锁时
--   **Gemini 账户**: token 刷新失败时
--   **手动禁用账户**: 管理员手动禁用账户时
-
-### 配置方法
-
-**1\. 环境变量配置**
-
-# 启用 webhook 通知
-WEBHOOK\_ENABLED=true
-
-# 企业微信 webhook 地址（替换为你的实际地址）
-WEBHOOK\_URLS=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your-key
-
-# 多个地址用逗号分隔
-WEBHOOK\_URLS=https://webhook1.com,https://webhook2.com
-
-# 请求超时时间（毫秒，默认10秒）
-WEBHOOK\_TIMEOUT=10000
-
-# 重试次数（默认3次）
-WEBHOOK\_RETRIES=3
-
-**2\. 企业微信设置**
-
-1.  在企业微信群中添加「群机器人」
-2.  获取 webhook 地址：`https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx`
-3.  将地址配置到 `WEBHOOK_URLS` 环境变量
-
-### 通知内容格式
-
-系统会发送结构化的通知消息：
-
-```
-账户名称 账号异常，异常代码 ERROR_CODE
-平台：claude-oauth
-时间：2025-08-14 17:30:00
-原因：Token expired
-```
-
-### 测试 Webhook
-
-可以通过管理后台测试 webhook 连通性：
-
-1.  登录管理后台：`http://你的服务器:3000/web`
-2.  访问：`/admin/webhook/test`
-3.  发送测试通知确认配置正确
+-   确保在后台已添加对应类型的账号（Claude/Gemini/Codex）
+-   API密钥可以通用，系统会根据路由自动选择账号类型
+-   建议为不同用户创建不同的API密钥便于使用统计
 
 * * *
 

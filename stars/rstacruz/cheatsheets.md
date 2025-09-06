@@ -1,6 +1,6 @@
 ---
 project: cheatsheets
-stars: 14214
+stars: 14231
 description: Cheatsheets for web development - devhints.io
 url: https://github.com/rstacruz/cheatsheets
 ---

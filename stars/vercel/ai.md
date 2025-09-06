@@ -1,6 +1,6 @@
 ---
 project: ai
-stars: 17231
+stars: 17473
 description: The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents 
 url: https://github.com/vercel/ai
 ---
@@ -55,11 +55,17 @@ npm install @ai-sdk/react
 
 'use client';
 
+import { useState } from 'react';
 import { useChat } from '@ai-sdk/react';
 
 export default function Page() {
-  const { messages, input, handleSubmit, handleInputChange, status } \=
-    useChat();
+  const { messages, status, sendMessage } \= useChat();
+  const \[input, setInput\] \= useState('');
+  const handleSubmit \= e \=> {
+    e.preventDefault();
+    sendMessage({ text: input });
+    setInput('');
+  };
 
   return (
     <div\>
@@ -81,7 +87,7 @@ export default function Page() {
         <input
           value\={input}
           placeholder\="Send a message..."
-          onChange\={handleInputChange}
+          onChange\={e \=> setInput(e.target.value)}
           disabled\={status !== 'ready'}
         />
       </form\>

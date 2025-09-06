@@ -1,6 +1,6 @@
 ---
 project: JD_tencent_scf
-stars: 57
+stars: 58
 description: 京东薅羊毛脚本, 主要用于刷京豆
 url: https://github.com/18226598153/JD_tencent_scf
 ---

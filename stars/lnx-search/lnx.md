@@ -1,6 +1,6 @@
 ---
 project: lnx
-stars: 1364
+stars: 1366
 description: An insanely fast search engine for scaling to the stars 🌠
 url: https://github.com/lnx-search/lnx
 ---

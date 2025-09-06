@@ -1,6 +1,6 @@
 ---
 project: theme-ui
-stars: 5362
+stars: 5365
 description: Build consistent, themeable React apps based on constraint-based design principles
 url: https://github.com/system-ui/theme-ui
 ---

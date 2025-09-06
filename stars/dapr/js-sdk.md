@@ -1,6 +1,6 @@
 ---
 project: js-sdk
-stars: 209
+stars: 210
 description: Dapr SDK for Javascript
 url: https://github.com/dapr/js-sdk
 ---

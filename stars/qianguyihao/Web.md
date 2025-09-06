@@ -1,6 +1,6 @@
 ---
 project: Web
-stars: 27864
+stars: 27891
 description: 千古前端图文教程，超详细的前端入门到进阶知识库。从零开始学前端，做一名精致优雅的前端工程师。
 url: https://github.com/qianguyihao/Web
 ---

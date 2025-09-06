@@ -1,6 +1,6 @@
 ---
 project: MOSS
-stars: 12062
+stars: 12060
 description: An open-source tool-augmented conversational language model from Fudan University
 url: https://github.com/OpenMOSS/MOSS
 ---

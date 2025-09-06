@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 41955
+stars: 42936
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -36,6 +36,89 @@ url: https://github.com/1c7/chinese-independent-developer
 
 3\. 项目列表
 --------
+
+### 2025 年 9 月 6 号添加
+
+#### ljxyaly(深圳) - Github
+
+-   ✅ PDF编辑器 pdf-editor：简易的 PDF 编辑器
+-   ✅ GIF助手 gif-helper：GIF 合并与分解
+
+#### Jazz Jay
+
+-   ✅ AI ASMR视频生成器：AI ASMR视频生成器（采用先进 Veo3 技术）
+
+#### Jammy(上海) - Github
+
+-   ✅ AI Miniatur：一键制作微缩模型的 AI 图片网站，用户不需要操心提示词，通过预制的提示词模板能快速制作微缩模型图片。
+
+#### tianqi - Github
+
+-   ✅ Imagable AI：人工智能 图片编辑和生成工具，用户可以不需要设计的技术即可通过提示词一键生成和编辑照片或图片。
+
+### 2025 年 9 月 5 号添加
+
+#### Jazz Jay
+
+-   ✅ Runway Aleph：人工智能 视频编辑平台，用简单的文本提示转换视频内容。用户可以在几分钟内添加/删除对象，生成新的相机角度，应用风格转移，并修改具有专业质量结果的照明
+
+#### Galen Dai - Github
+
+-   ✅ Copy My Text：将你的 Markdown 文本秒变海报或短链，安全、优雅地分享。
+
+#### leftshine(成都) - Github, gitee
+
+-   ✅ APKExport：APK 导出工具，可以非常方便的导出和分享 apk 文件 - 更多介绍
+
+### 2025 年 9 月 4 号添加
+
+#### AprDeci - Github
+
+-   ✅ OnePractice：在线英语四六级真题网站
+
+#### Ethan Sunray
+
+-   ✅ Brave Pink Hero Green：用粉色和绿色双色调照片滤镜美化照片。处理快速、私密，并且完全在您的浏览器中完成。
+
+### 2025 年 9 月 3 号添加
+
+#### wbshm(泉州)
+
+-   ✅ 三角形简易计算器：输入任意三个参数（边长、角度）既可以绘制出对应的三角形，并计算出其他的参数。欢迎体验和吐槽
+
+### 2025 年 9 月 2 号添加
+
+#### Jay6343 - Github
+
+-   ✅ nanobanana.co：Nanobanana.co 是革命性的人工智能图像编辑平台，通过智能文本驱动编辑改变创意工作流程。无论您是数字艺术家，内容创作者还是营销专业人士，每次都可以零学习曲线和完美结果体验 AI 图像编辑的未来。
+
+### 2025 年 9 月 1 号添加
+
+#### JR(深圳)
+
+-   ✅ 对话翻译器：将你的耳机变成实时翻译器，支持双语实时语音自动翻译、AI对话问答你的翻译记录
+
+#### Carol(广州) - Github
+
+-   ✅ Nano Banana AI：基于市面上最强的 AI 图像编辑模型 Nano Banana 开发的图片编辑器，用嘴改图、保持角色一致性、控制细节、图片融合
+
+#### yiquan00 - yiquan00
+
+-   ✅ LaunchitX：新产品(创意)启动平台，适合新产品宣发
+
+#### noGeek（北京）
+
+-   ✅ DR checker ：免费/域名等级 Domain rating 检测工具
+
+### 2025 年 8 月 31 号添加
+
+#### FlickerMi - Github
+
+-   ✅ Nano Banana：Nano Banana 使用谷歌最新AI技术，提供角色一致性保持、自然语言编辑、多图融合等强大功能。无论是人物换装、场景变换还是精准局部编辑，都能保持原有特征，让您的创意无限可能。
+
+#### laine001（杭州） - Github
+
+-   ✅ 信息系统项目管理师重点总结itpm：信息系统项目管理师高项的知识总结与记录网站，持续更新，软考的部分朋友可用
 
 ### 2025 年 8 月 29 号添加
 

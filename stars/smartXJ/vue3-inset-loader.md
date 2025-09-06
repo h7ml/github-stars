@@ -1,6 +1,6 @@
 ---
 project: vue3-inset-loader
-stars: 20
+stars: 21
 description:  编译阶段在sfc模板指定位置插入自定义内容
 url: https://github.com/smartXJ/vue3-inset-loader
 ---

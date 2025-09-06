@@ -1,6 +1,6 @@
 ---
 project: swarmkit
-stars: 3513
+stars: 3518
 description: A toolkit for orchestrating distributed systems at any scale. It includes primitives for node discovery, raft-based consensus, task scheduling and more.
 url: https://github.com/moby/swarmkit
 ---

@@ -1,6 +1,6 @@
 ---
 project: Fanqie-novel-Downloader
-stars: 317
+stars: 332
 description: null
 url: https://github.com/POf-L/Fanqie-novel-Downloader
 ---
@@ -16,6 +16,19 @@ url: https://github.com/POf-L/Fanqie-novel-Downloader
 
 ⭐ 星标趋势
 ------
+
+* * *
+
+⚠️ 下载功能状态
+---------
+
+**重要通知：章节下载功能当前已被禁用**
+
+要重新启用下载功能，请：
+
+1.  打开 `config.py` 文件
+2.  将 `"download_enabled": False` 改为 `"download_enabled": True`
+3.  保存文件并重启程序
 
 * * *
 

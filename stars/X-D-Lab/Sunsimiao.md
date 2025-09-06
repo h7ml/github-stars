@@ -1,6 +1,6 @@
 ---
 project: Sunsimiao
-stars: 460
+stars: 458
 description: 🌿孙思邈中文医疗大模型(Sunsimiao)：提供安全、可靠、普惠的中文医疗大模型
 url: https://github.com/X-D-Lab/Sunsimiao
 ---

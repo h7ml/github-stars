@@ -1,6 +1,6 @@
 ---
 project: webchat
-stars: 2033
+stars: 2034
 description: :speaker: Websocket project based on vue（基于vue2.0的实时聊天项目）
 url: https://github.com/hua1995116/webchat
 ---

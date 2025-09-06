@@ -1,6 +1,6 @@
 ---
 project: Recorder
-stars: 5404
+stars: 5409
 description: html5 js 录音 mp3 wav ogg webm amr g711a g711u 格式，支持pc和Android、iOS部分浏览器、Hybrid App（提供Android iOS App源码）、微信，提供ASR语音识别转文字 H5版语音通话聊天示例 DTMF编码解码
 url: https://github.com/xiangyuecn/Recorder
 ---

@@ -1,6 +1,6 @@
 ---
 project: umi-plugin-keep-alive
-stars: 298
+stars: 297
 description: <KeepAlive> for umijs base on react-activation
 url: https://github.com/alitajs/umi-plugin-keep-alive
 ---

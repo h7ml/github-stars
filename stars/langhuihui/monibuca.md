@@ -1,6 +1,6 @@
 ---
 project: monibuca
-stars: 2142
+stars: 2149
 description: 🧩 Monibuca is a Modularized, Extensible framework for building Streaming Server
 url: https://github.com/langhuihui/monibuca
 ---

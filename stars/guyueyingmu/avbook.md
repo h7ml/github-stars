@@ -1,6 +1,6 @@
 ---
 project: avbook
-stars: 9802
+stars: 9805
 description: AV 电影管理系统， avmoo , javbus , javlibrary 爬虫，线上 AV 影片图书馆，AV 磁力链接数据库，Japanese Adult Video Library,Adult Video Magnet Links - Japanese Adult Video Database
 url: https://github.com/guyueyingmu/avbook
 ---

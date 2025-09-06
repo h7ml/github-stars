@@ -1,6 +1,6 @@
 ---
 project: Twitter-Block-Porn
-stars: 1986
+stars: 1985
 description: 共享黑名单, 一键拉黑所有黄推诈骗犯. Block scammers who sending fake porn comments, and help you improve your experience using Twitter.
 url: https://github.com/daymade/Twitter-Block-Porn
 ---

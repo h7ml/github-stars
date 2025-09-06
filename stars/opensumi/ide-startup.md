@@ -1,6 +1,6 @@
 ---
 project: ide-startup
-stars: 224
+stars: 225
 description: Quick starter for OpenSumi Web
 url: https://github.com/opensumi/ide-startup
 ---

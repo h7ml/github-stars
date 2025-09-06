@@ -1,6 +1,6 @@
 ---
 project: casdoor
-stars: 12151
+stars: 12190
 description: An open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, RADIUS, Google Workspace, Active Directory and Kerberos
 url: https://github.com/casdoor/casdoor
 ---

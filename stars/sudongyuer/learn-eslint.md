@@ -1,6 +1,6 @@
 ---
 project: learn-eslint
-stars: 346
+stars: 345
 description: 🦥 从0到1全面掌握ESLint
 url: https://github.com/sudongyuer/learn-eslint
 ---

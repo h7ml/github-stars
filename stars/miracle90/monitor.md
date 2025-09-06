@@ -1,6 +1,6 @@
 ---
 project: monitor
-stars: 852
+stars: 851
 description: 前端监控体系搭建（错误、异常、白屏、性能监控、卡顿、pv等，接入日志、告警系统）
 url: https://github.com/miracle90/monitor
 ---

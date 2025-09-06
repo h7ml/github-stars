@@ -1,6 +1,6 @@
 ---
 project: awesome-prometheus-alerts
-stars: 7426
+stars: 7436
 description: 🚨 Collection of Prometheus alerting rules
 url: https://github.com/samber/awesome-prometheus-alerts
 ---
@@ -57,6 +57,7 @@ Better Stack lets you centralize, search, and visualize your logs.
 -   Meilisearch
 -   Cassandra
 -   Clickhouse
+-   CouchDB
 -   Zookeeper
 -   Kafka
 -   Pulsar

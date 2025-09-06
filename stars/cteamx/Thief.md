@@ -1,6 +1,6 @@
 ---
 project: Thief
-stars: 5918
+stars: 5924
 description: 一款创新跨平台摸鱼神器，支持小说、股票、网页、视频、直播、PDF、游戏等摸鱼模式，为上班族打造的上班必备神器，使用此软件可以让上班倍感轻松，远离 ICU。
 url: https://github.com/cteamx/Thief
 ---

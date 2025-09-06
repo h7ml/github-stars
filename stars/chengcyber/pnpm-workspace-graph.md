@@ -1,6 +1,6 @@
 ---
 project: pnpm-workspace-graph
-stars: 56
+stars: 57
 description: A visualizer let you display pnpm workspace graph
 url: https://github.com/chengcyber/pnpm-workspace-graph
 ---

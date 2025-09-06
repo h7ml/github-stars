@@ -1,6 +1,6 @@
 ---
 project: react-babylonjs
-stars: 870
+stars: 871
 description: React for Babylon 3D engine
 url: https://github.com/brianzinn/react-babylonjs
 ---
@@ -13,6 +13,13 @@ react-babylonjs
 `react-babylonjs` lets you build your scene and components using a familiar declarative syntax with the benefits of reusable components and hooks. The Babylon.js API is mostly covered declaratively thanks to code generation and even custom props allow you to declaratively add shadows, physics, 3D models, attach 2D/3D UI to meshes, etc.
 
 **NOTE:** for the time being React 19 works with newest and @latest versions. For older React versions, you will need to use 3.2.2 (ie: `yarn add react-babylonjs@3.2.2`). Hope next version will support both. I tried to stay away from a major bump due to the ephemeral nature of this change. Thanks for your patience.
+
+install
+-------
+
+npm i react-babylonjs
+
+yarn add react-babylonjs
 
 Fully supports hooks. Full support for TypeScript with auto-completion on elements and compile time checks. Context API and hooks provide easy access to Scene/Engine/Canvas.
 

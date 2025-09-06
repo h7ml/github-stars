@@ -1,6 +1,6 @@
 ---
 project: vue-devui
-stars: 1149
+stars: 1151
 description: UI components based on Vue3 and DevUI Design
 url: https://github.com/DevCloudFE/vue-devui
 ---

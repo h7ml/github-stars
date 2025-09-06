@@ -1,6 +1,6 @@
 ---
 project: mfish-nocode-view
-stars: 159
+stars: 162
 description: 摸鱼低代码前端采用 Vue3.x、Vite5.x、 Ant-Design-Vue4.x、TypeScript 等新技术方案，结合后端使用
 url: https://github.com/mfish-qf/mfish-nocode-view
 ---
@@ -8,7 +8,7 @@ url: https://github.com/mfish-qf/mfish-nocode-view
 摸鱼低代码开发平台（前端）
 =============
 
-当前最新版本： V2.1.0
+当前最新版本： V2.1.1
 
 🐟项目介绍
 ------

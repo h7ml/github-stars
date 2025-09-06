@@ -1,6 +1,6 @@
 ---
 project: speedscope
-stars: 6178
+stars: 6199
 description: 🔬 A fast, interactive web-based viewer for performance profiles.
 url: https://github.com/jlfwong/speedscope
 ---

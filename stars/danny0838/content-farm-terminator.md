@@ -1,6 +1,6 @@
 ---
 project: content-farm-terminator
-stars: 1377
+stars: 1375
 description: Content Farm Terminator browser extension/「終結內容農場」瀏覽器套件
 url: https://github.com/danny0838/content-farm-terminator
 ---

@@ -1,6 +1,6 @@
 ---
 project: Daily-Interview-Question
-stars: 27518
+stars: 27517
 description: 我是依扬（木易杨），公众号「高级前端进阶」作者，每天搞定一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。
 url: https://github.com/Advanced-Frontend/Daily-Interview-Question
 ---

@@ -1,6 +1,6 @@
 ---
 project: funds
-stars: 2326
+stars: 2329
 description: 自选基金助手是一款Chrome扩展，用来快速获取关注基金的实时数据，查看自选基金的实时估值情况
 url: https://github.com/x2rr/funds
 ---

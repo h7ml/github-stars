@@ -1,6 +1,6 @@
 ---
 project: OSSA
-stars: 386
+stars: 385
 description: Taro官方推荐的企业级多端 UI 库。目前已支持React语法。
 url: https://github.com/NeteaseYanxuan/OSSA
 ---

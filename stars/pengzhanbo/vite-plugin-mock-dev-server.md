@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-mock-dev-server
-stars: 227
+stars: 228
 description: 🚀mock-dev-server is injected into the vite development environment to simulate requests and data responses.在vite 开发环境中注入 mock-dev-server, 模拟请求和数据响应
 url: https://github.com/pengzhanbo/vite-plugin-mock-dev-server
 ---
@@ -29,7 +29,7 @@ Features
 
 -   ⚡️ Lightweight, Flexible, Fast.
 -   🧲 Not injection-based, non-intrusive to client code.
--   💡 ESModule/commonjs.
+-   💡 Pure ESModule.
 -   🦾 Typescript.
 -   🔥 HMR
 -   🏷 Support `.[cm]?js` / `.ts` / `.json` / `.json5`.
@@ -51,6 +51,16 @@ Documentation
 -------------
 
 See the documentation for more details.
+
+Important
+
+The plugin no longer supports `CommonJS` imports. Please use `ESModule` to import the plugin.
+
+* * *
+
+Important
+
+The current document is for the `v2` version of the plugin. If you are using the `v1` version, please refer to the Migration Guide.
 
 Install
 -------
@@ -98,7 +108,7 @@ By default, write mock data in the `mock` directory of your project's root direc
 import { defineMock } from 'vite-plugin-mock-dev-server'
 
 export default defineMock({
-  url: '/api/test',
+  url: '/api/user/:id',
   body: { a: 1, b: 2 }
 })
 
@@ -204,11 +214,22 @@ Plugin Options
     Configure the matching context for `include` and `exclude`.
     
 
+### dir
+
+-   **Type:** `string`
+    
+-   **Default:** `'mock'`
+    
+-   **Details:**
+    
+    Configure the directory to read mock files.
+    
+
 ### include
 
 -   **Type:** `string | string[]`
     
--   **Default：** `['mock/**/*.mock.{js,ts,cjs,mjs,json,json5}']` (Relative to the root directory)
+-   **Default：** `['**/*.mock.{js,ts,cjs,mjs,json,json5}']`
     
 -   **Details:**
     
@@ -219,7 +240,7 @@ Plugin Options
 
 -   **Type:** `string | string[]`
     
--   **Default：** `['**/node_modules/**','**/.vscode/**','**/.git/**']`
+-   **Default：** `['**/node_modules/**']`
     
 -   **Details:**
     

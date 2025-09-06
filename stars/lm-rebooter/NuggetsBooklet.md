@@ -1,6 +1,6 @@
 ---
 project: NuggetsBooklet
-stars: 766
+stars: 772
 description: 掘金小册
 url: https://github.com/lm-rebooter/NuggetsBooklet
 ---

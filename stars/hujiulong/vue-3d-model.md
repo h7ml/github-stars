@@ -1,6 +1,6 @@
 ---
 project: vue-3d-model
-stars: 2496
+stars: 2497
 description: 📷 vue.js 3D model viewer component
 url: https://github.com/hujiulong/vue-3d-model
 ---

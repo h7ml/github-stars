@@ -1,6 +1,6 @@
 ---
 project: builder
-stars: 8359
+stars: 8373
 description: Visual Development for React, Vue, Svelte, Qwik, and more
 url: https://github.com/BuilderIO/builder
 ---

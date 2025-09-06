@@ -22,6 +22,7 @@ godbasin.github.io
 
 ### 最新
 
+> 《前端基础补齐--有关 JavaScript 单线程》  
 > 《前端基础补齐--有关 JavaScript 代码执行》  
 > 《前端基础补齐--有关 JavaScript 继承》  
 > 《复杂渲染引擎架构与设计--10.降级渲染》  

@@ -1,6 +1,6 @@
 ---
 project: vitesse
-stars: 9284
+stars: 9294
 description: 🏕 Opinionated Vite + Vue Starter Template
 url: https://github.com/antfu-collective/vitesse
 ---
@@ -13,7 +13,7 @@ Live Demo
 
   
 
-> **Note**: This template is created during the early transition of Vue 3 and Vite. At this moment, if you are seeking for better Vue developer experience and more consistent maintenance, we recommend using Nuxt 3 instead (it also works perfectly with SPA or SSG as needed). This template still serves as a reference, but expect slower updates.
+> **Note**: This template is created during the early transition of Vue 3 and Vite. At this moment, if you are seeking for better Vue developer experience and more consistent maintenance, we recommend using Nuxt instead (it also works perfectly with SPA or SSG as needed). This template still serves as a reference, but expect slower updates.
 
   
 

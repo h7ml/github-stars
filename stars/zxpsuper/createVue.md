@@ -1,6 +1,6 @@
 ---
 project: createVue
-stars: 121
+stars: 120
 description: webpack5 搭建 vue3 应用
 url: https://github.com/zxpsuper/createVue
 ---

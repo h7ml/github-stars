@@ -1,6 +1,6 @@
 ---
 project: cloud-document-converter
-stars: 633
+stars: 643
 description: Convert Lark Doc to Markdown
 url: https://github.com/whale4113/cloud-document-converter
 ---
@@ -41,67 +41,67 @@ Block
 
 Divider
 
-✔️
+✅
 
 Thematic Break
 
 Headings (Level 1 to level 6)
 
-✔️
+✅
 
 ATX Headings (Level 1 to level 6)
 
 Headings (Level 7 to level 9)
 
-✔️
+✅
 
 Paragraph
 
 Code Block
 
-✔️
+✅
 
 Code Block
 
 Quote
 
-✔️
+✅
 
 Blockquote
 
 Bullet list
 
-✔️
+✅
 
 Bullet list
 
 Ordered list
 
-✔️
+✅
 
 Ordered list
 
 Task list
 
-✔️
+✅
 
 Task list
 
 Table
 
-✔️
+✅
 
 Table
 
 Image
 
-✔️
+✅
 
 Image
 
 Inline Math
 
-✔️
+✅
 
 Math Block
 
@@ -139,13 +139,15 @@ Link (Download only)
 
 Iframe
 
-✔️
+✅
 
 HTML
 
 ISV
 
 To be determined
+
+Text drawing -> Code Block ✅
 
 Mind Note
 
@@ -166,31 +168,31 @@ Inline
 
 Bold
 
-✔️
+✅
 
 Bold
 
 Delete
 
-✔️
+✅
 
 Delete
 
 Italic
 
-✔️
+✅
 
 Italic
 
 Inline code
 
-✔️
+✅
 
 Inline code
 
 Link
 
-✔️
+✅
 
 Link
 

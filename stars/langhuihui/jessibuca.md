@@ -1,6 +1,6 @@
 ---
 project: jessibuca
-stars: 2592
+stars: 2598
 description: Jessibuca是一款开源的纯H5直播流播放器
 url: https://github.com/langhuihui/jessibuca
 ---
@@ -237,6 +237,7 @@ PRO 扩展模块
 
 -   Mp4 录制（MPEG-4）(支持音视频) 链接
 -   直播流、回放(录像)流下载（录制）器 链接
+-   VR 全景播放器(支持直播流、点播文件) 链接
 
 LiveVideoStack 分享
 -----------------

@@ -1,6 +1,6 @@
 ---
 project: onepoint
-stars: 314
+stars: 315
 description: An AI assistant tool that integrates coding, writing, and reading functions. For better alternatives see https://monica.im/desktop
 url: https://github.com/onepointAI/onepoint
 ---

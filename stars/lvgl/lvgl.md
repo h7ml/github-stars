@@ -1,6 +1,6 @@
 ---
 project: lvgl
-stars: 21223
+stars: 21295
 description: Embedded graphics library to create beautiful UIs for any MCU, MPU and display type. 
 url: https://github.com/lvgl/lvgl
 ---

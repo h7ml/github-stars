@@ -1,6 +1,6 @@
 ---
 project: awesome-tailwindcss
-stars: 14447
+stars: 14490
 description: 😎 Awesome things related to Tailwind CSS
 url: https://github.com/aniftyco/awesome-tailwindcss
 ---

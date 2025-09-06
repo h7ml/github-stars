@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 11935
+stars: 12140
 description: Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
 ---
@@ -12,7 +12,6 @@ Readest
 
 Readest is an open-source ebook reader designed for immersive and deep reading experiences. Built as a modern rewrite of Foliate, it leverages Next.js 15 and Tauri v2 to deliver a smooth, cross-platform experience across macOS, Windows, Linux, Android, iOS, and the Web.
 
-  
   
 
 Features • Planned Features • Screenshots • Downloads • Getting Started • Troubleshooting • Support • License
@@ -195,9 +194,9 @@ Downloads
 
 ### Platform-Specific Downloads
 
--   macOS / iOS / iPadOS : Search for "Readest" on the App Store, also available on TestFlight for beta test (send your Apple ID to readestapp@gmail.com to request access).
--   Windows / Linux / Android: Visit https://readest.com or the Releases on GitHub.
--   Web: Visit https://web.readest.com.
+-   macOS / iOS / iPadOS : Search and install **Readest** on the App Store, _also_ available on TestFlight for beta test (send your Apple ID to readestapp@gmail.com to request access).
+-   Windows / Linux / Android: Visit and download **Readest** at https://readest.com or the Releases on GitHub.
+-   Web: Visit and use **Readest for Web** at https://web.readest.com.
 
 Requirements
 ------------

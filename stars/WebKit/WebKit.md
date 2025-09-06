@@ -1,6 +1,6 @@
 ---
 project: WebKit
-stars: 8945
+stars: 8975
 description: Home of the WebKit project, the browser engine used by Safari, Mail, App Store and many other applications on macOS, iOS and Linux.
 url: https://github.com/WebKit/WebKit
 ---

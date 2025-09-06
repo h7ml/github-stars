@@ -1,6 +1,6 @@
 ---
 project: ast-hook-for-js-RE
-stars: 1828
+stars: 1831
 description: 浏览器内存漫游解决方案（探索中...）
 url: https://github.com/JSREI/ast-hook-for-js-RE
 ---

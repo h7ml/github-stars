@@ -1,6 +1,6 @@
 ---
 project: jQuery-with-XSS
-stars: 112
+stars: 114
 description: jQuery with XSS, Testing and Secure Version
 url: https://github.com/mahp/jQuery-with-XSS
 ---

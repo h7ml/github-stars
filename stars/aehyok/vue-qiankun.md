@@ -1,6 +1,6 @@
 ---
 project: vue-qiankun
-stars: 370
+stars: 371
 description: vite-vue3 qiankun 前端微服务框架
 url: https://github.com/aehyok/vue-qiankun
 ---

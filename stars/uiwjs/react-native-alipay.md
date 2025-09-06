@@ -1,6 +1,6 @@
 ---
 project: react-native-alipay
-stars: 231
+stars: 232
 description: 基于 React Native 的宝支付包，已更新到最新的支付宝 SDK 版本，支持Android/iOS。
 url: https://github.com/uiwjs/react-native-alipay
 ---

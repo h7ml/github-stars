@@ -1,6 +1,6 @@
 ---
 project: api-typings
-stars: 23
+stars: 24
 description: 支付宝小程序的 TypeScript 类型定义文件
 url: https://github.com/ant-mini-program/api-typings
 ---

@@ -1,6 +1,6 @@
 ---
 project: chinese-char-dict
-stars: 18
+stars: 21
 description: 基于1988出版的《现代汉语常用字表》，制作的常用汉字表（2500 + 1000）及 基本汉子表（7000）。
 url: https://github.com/quanh/chinese-char-dict
 ---

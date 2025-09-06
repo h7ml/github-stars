@@ -1,6 +1,6 @@
 ---
 project: sub-web-modify
-stars: 2578
+stars: 2583
 description: Subconverter订阅转换前端增强版，增加近百条远程配置及更多自定义功能！
 url: https://github.com/youshandefeiyang/sub-web-modify
 ---

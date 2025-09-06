@@ -1,6 +1,6 @@
 ---
 project: awesome-interview
-stars: 2378
+stars: 2376
 description: 剑指前端 Offer
 url: https://github.com/HZFE/awesome-interview
 ---

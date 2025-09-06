@@ -1,6 +1,6 @@
 ---
 project: unplugin-dts
-stars: 1473
+stars: 1474
 description: An unplugin for generating declaration (dts) files.
 url: https://github.com/qmhc/unplugin-dts
 ---

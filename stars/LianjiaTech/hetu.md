@@ -1,6 +1,6 @@
 ---
 project: hetu
-stars: 809
+stars: 807
 description: 低代码平台, 可视化编辑器，单手打代码，解放你的双手
 url: https://github.com/LianjiaTech/hetu
 ---

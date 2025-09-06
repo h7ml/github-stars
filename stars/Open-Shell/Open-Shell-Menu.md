@@ -1,6 +1,6 @@
 ---
 project: Open-Shell-Menu
-stars: 8042
+stars: 8055
 description: Classic Shell Reborn.
 url: https://github.com/Open-Shell/Open-Shell-Menu
 ---

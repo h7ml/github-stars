@@ -1,6 +1,6 @@
 ---
 project: CookieCloud
-stars: 2517
+stars: 2534
 description: CookieCloud是一个和自架服务器同步浏览器Cookie和LocalStorage的小工具，支持端对端加密，可设定同步时间间隔。本仓库包含了插件和服务器端源码。CookieCloud is a small tool for synchronizing browser cookies and LocalStorage with a self-hosted server. It supports end-to-end encryption and allows for setting the synchronization interval. This repository contains both the plugin and the server-side source code
 url: https://github.com/easychen/CookieCloud
 ---
@@ -11,6 +11,8 @@ CookieCloud
 中文 | English
 
 CookieCloud is a small tool for syncing cookies with your self-hosted server, allowing you to synchronize browser cookies and local storage to your phone and cloud. It features built-in end-to-end encryption and allows you to set a synchronization interval.
+
+> Since version 0.3.0, the project has been rewritten using **wxt**. It now supports encryption algorithms with a fixed IV and supports more standard libraries for decryption. See the **wxt** branch for details.
 
 > The latest version now supports synchronization of local storage under the same domain name.
 

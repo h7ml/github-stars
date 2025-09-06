@@ -1,6 +1,6 @@
 ---
 project: kodu2api
-stars: 38
+stars: 40
 description: null
 url: https://github.com/oDaiSuno/kodu2api
 ---

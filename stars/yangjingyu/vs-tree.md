@@ -1,6 +1,6 @@
 ---
 project: vs-tree
-stars: 300
+stars: 301
 description: 移动端PC端通用树组件，适用于企业组织通讯录，百万数据支持
 url: https://github.com/yangjingyu/vs-tree
 ---

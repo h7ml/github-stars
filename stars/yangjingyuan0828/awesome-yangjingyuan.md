@@ -1,7 +1,7 @@
 ---
 project: awesome-yangjingyuan
-stars: 377
-description: 杨景媛（武汉大学）事件前因后果记录。最近更新：杨景媛论文下载突破30万次。
+stars: 382
+description: 杨景媛（武汉大学）事件记录。更新：杨景媛论文下载突破31万次。
 url: https://github.com/yangjingyuan0828/awesome-yangjingyuan
 ---
 
@@ -87,6 +87,8 @@ A curated collection of remarkable stories, images, and insights documenting Yan
 2025.08.08 🕘9点，228051次
 
 2025.08.22 🕛12点，突破30万次，达到300342
+
+2025.09.05 🕛12点，达到313192次 详情
 
 相关仓库
 ----
@@ -287,6 +289,12 @@ N/A
 
 七探武大杨某媛，其硕士论文一定没问题，错的是我，是无知的网友们，对论文错误进行了错误的分析和解读，武大图书馆污蔑事件
 
+2025.09.04
+
+水论文的程序猿
+
+八探武大杨某论文：武汉大学开学了，部分视频被退回锁定
+
 ### 数据分析
 
 #### 2025.07.20 - 2025.08.19 杨景媛国际热度力压成都世界运动会，武汉大学完胜清华大学
@@ -445,7 +453,7 @@ N/A
     
 -   疑似杨景媛出入境记录
     
--   补充邮箱：jingyuan0828@163.com（ 来源：https://zhuanlan.zhihu.com/p/1936550576902104409 ）
+-   补充邮箱：jingyuan0828@163.com（ 来源：https://zhuanlan.zhihu.com/p/1936550576902104409 ） yangjingyuan@whu.edu.cn
     
 -   疑似其 Github：https://github.com/jingyuan0828
     

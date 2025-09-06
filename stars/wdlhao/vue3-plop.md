@@ -1,6 +1,6 @@
 ---
 project: vue3-plop
-stars: 6
+stars: 5
 description: plopJS,plop
 url: https://github.com/wdlhao/vue3-plop
 ---

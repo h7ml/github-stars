@@ -1,6 +1,6 @@
 ---
 project: naive-ui
-stars: 17627
+stars: 17657
 description: A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.
 url: https://github.com/tusen-ai/naive-ui
 ---

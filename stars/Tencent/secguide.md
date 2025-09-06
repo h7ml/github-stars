@@ -1,6 +1,6 @@
 ---
 project: secguide
-stars: 13502
+stars: 13501
 description: 面向开发人员梳理的代码安全指南
 url: https://github.com/Tencent/secguide
 ---

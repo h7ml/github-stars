@@ -1,6 +1,6 @@
 ---
 project: claude-setup
-stars: 238
+stars: 246
 description: null
 url: https://github.com/AizenvoltPrime/claude-setup
 ---

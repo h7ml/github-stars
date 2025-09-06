@@ -1,6 +1,6 @@
 ---
 project: colleges.chat
-stars: 203
+stars: 204
 description: Source code of https://colleges.chat
 url: https://github.com/CollegesChat/colleges.chat
 ---

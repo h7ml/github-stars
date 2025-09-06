@@ -1,6 +1,6 @@
 ---
 project: QuestionWechatApp
-stars: 1464
+stars: 1468
 description: 答题小程序，刷题小程序，微信小程序，考试小程序。毕业设计小程序，有前后端完整源码和数据库，易于二次开发。还可用于考试活动，企业内部考核，内部培训等职业考试刷题。
 url: https://github.com/kesixin/QuestionWechatApp
 ---

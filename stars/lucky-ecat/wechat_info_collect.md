@@ -1,6 +1,6 @@
 ---
 project: wechat_info_collect
-stars: 674
+stars: 675
 description: 调查取证 | 针对微信客户端的信息收集工具, 自动化提取本地PC所有的微信信息, 包括微信号, 手机号等  
 url: https://github.com/lucky-ecat/wechat_info_collect
 ---

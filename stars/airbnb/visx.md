@@ -1,6 +1,6 @@
 ---
 project: visx
-stars: 20222
+stars: 20238
 description: 🐯 visx | visualization components
 url: https://github.com/airbnb/visx
 ---

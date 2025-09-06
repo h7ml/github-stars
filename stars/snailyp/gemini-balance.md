@@ -1,6 +1,6 @@
 ---
 project: gemini-balance
-stars: 4787
+stars: 4920
 description: Gemini polling proxy service （gemini轮询代理服务）
 url: https://github.com/snailyp/gemini-balance
 ---
@@ -434,6 +434,12 @@ SM.MS API Token
 PicoGo API Key
 
 `your-picogo-apikey`
+
+`PICGO_API_URL`
+
+PicoGo API Server URL
+
+`https://www.picgo.net/api/1/upload`
 
 `CLOUDFLARE_IMGBED_URL`
 

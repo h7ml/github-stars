@@ -1,6 +1,6 @@
 ---
 project: crawler
-stars: 1270
+stars: 1273
 description: K 哥爬虫代码分享，JS 逆向，爬虫进阶。关注公众号：K哥爬虫
 url: https://github.com/kgspider/crawler
 ---

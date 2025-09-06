@@ -1,6 +1,6 @@
 ---
 project: IceCubesApp
-stars: 6499
+stars: 6510
 description: A SwiftUI Mastodon client
 url: https://github.com/Dimillian/IceCubesApp
 ---

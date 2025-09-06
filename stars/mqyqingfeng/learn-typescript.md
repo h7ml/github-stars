@@ -1,6 +1,6 @@
 ---
 project: learn-typescript
-stars: 529
+stars: 532
 description: 可能是中国最好的 TypeScript 从入门到进阶系统教程
 url: https://github.com/mqyqingfeng/learn-typescript
 ---

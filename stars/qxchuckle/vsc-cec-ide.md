@@ -1,6 +1,6 @@
 ---
 project: vsc-cec-ide
-stars: 784
+stars: 783
 description: 一个没什么用的VSC插件
 url: https://github.com/qxchuckle/vsc-cec-ide
 ---

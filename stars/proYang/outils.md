@@ -1,6 +1,6 @@
 ---
 project: outils
-stars: 2623
+stars: 2622
 description: :rocket: 前端业务代码工具库
 url: https://github.com/proYang/outils
 ---

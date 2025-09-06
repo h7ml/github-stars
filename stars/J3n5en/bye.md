@@ -1,6 +1,6 @@
 ---
 project: bye
-stars: 1154
+stars: 1151
 description: null
 url: https://github.com/J3n5en/bye
 ---

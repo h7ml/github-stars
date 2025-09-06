@@ -1,6 +1,6 @@
 ---
 project: awesome-rstack
-stars: 352
+stars: 354
 description: A curated list of awesome things related to Rstack.
 url: https://github.com/web-infra-dev/awesome-rstack
 ---
@@ -114,6 +114,7 @@ Starter
 -   ng-rspack: Angular + Rspack + Nx + Module Federation 2.0.
 -   r2h: A blazing-fast SSR starter powered by React 19, Rspack, and Hono.
 -   vue-admin-better: A Vue 3 admin based on Rspack.
+-   electron-react-rspack-boilerplate: A modern, unopinionated, pure boilerplate for developing electron app with Rspack, React, TypeScript.
 
 ### Rsbuild Starter
 
@@ -345,6 +346,10 @@ Rspack and Rsbuild support most of the unplugin, such as:
 -   unplugin-inject-preload: Inject `<link rel="preload">` to your index.html based on your build assets. Need to be used with HTMLWebpackPlugin or HTMLRspackPlugin.
 -   @intlify/unplugin-vue-i18n: unplugin for Vue I18n.
 -   unplugin-build-meta: Import build metadata into your JavaScript/TypeScript projects.
+-   unplugin-dts: An unplugin that generates declaration files (\*.d.ts).
+-   unplugin-icons: Access thousands of icons as components on-demand universally.
+-   unplugin-favicons: Generate favicons for your project with caching for blazing fast rebuilds.
+-   unplugin-macros: Macros plugin for bundlers.
 
 Deployment
 ----------

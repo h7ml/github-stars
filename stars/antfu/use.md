@@ -1,6 +1,6 @@
 ---
 project: use
-stars: 1091
+stars: 1092
 description: Things I am using
 url: https://github.com/antfu/use
 ---

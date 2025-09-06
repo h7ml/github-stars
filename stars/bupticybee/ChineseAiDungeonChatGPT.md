@@ -1,6 +1,6 @@
 ---
 project: ChineseAiDungeonChatGPT
-stars: 1396
+stars: 1400
 description: 中文版的ai地牢，直接使用的openai的ChatGPT api作为讲故事的模型。
 url: https://github.com/bupticybee/ChineseAiDungeonChatGPT
 ---

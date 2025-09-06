@@ -1,6 +1,6 @@
 ---
 project: veact
-stars: 208
+stars: 209
 description: Mutable state enhancer library for React based on @vue/reactivity
 url: https://github.com/veactjs/veact
 ---

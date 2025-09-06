@@ -1,6 +1,6 @@
 ---
 project: node
-stars: 113009
+stars: 113118
 description: Node.js JavaScript runtime ✨🐢🚀✨
 url: https://github.com/nodejs/node
 ---
@@ -426,6 +426,7 @@ Collaborators follow the Collaborator Guide in maintaining the Node.js project.
 -   KevinEady - **Kevin Eady** <kevin.c.eady@gmail.com\> (he/him)
 -   marsonya - **Akhil Marsonya** <akhil.marsonya27@gmail.com\> (he/him)
 -   meixg - **Xuguang Mei** <meixuguang@gmail.com\> (he/him)
+-   milesguicent - **Miles Guicent** <guicent@pm.me\> (he/him)
 -   preveen-stack - **Preveen Padmanabhan** <wide4head@gmail.com\> (he/him)
 -   RaisinTen - **Darshan Sen** <raisinten@gmail.com\> (he/him)
 -   VoltrexKeyva - **Mohammed Keyvanzadeh** <mohammadkeyvanzade94@gmail.com\> (he/him)

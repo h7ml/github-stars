@@ -33,3 +33,6 @@ console.log(info)
 
 API 文档
 ------
+
+Star History
+------------

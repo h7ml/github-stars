@@ -1,6 +1,6 @@
 ---
 project: phy
-stars: 638
+stars: 640
 description: Physics for three. Game engine 
 url: https://github.com/lo-th/phy
 ---

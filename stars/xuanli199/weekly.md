@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 2720
+stars: 2752
 description: 保存玄离199每周科技补全中提到的各种软件和项目
 url: https://github.com/xuanli199/weekly
 ---
@@ -12,6 +12,10 @@ url: https://github.com/xuanli199/weekly
 
 ### 2025年8月
 
+-   第65期：2025年8月23日-2025年8月30日
+    
+-   第64期：2025年8月16日-2025年8月23日
+    
 -   第63期：2025年8月9日-2025年8月16日
     
 -   第62期：2025年8月2日-2025年8月9日

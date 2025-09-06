@@ -1,6 +1,6 @@
 ---
 project: typescript-eslint
-stars: 15905
+stars: 15923
 description: :sparkles: Monorepo for all the tooling which enables ESLint to support TypeScript
 url: https://github.com/typescript-eslint/typescript-eslint
 ---

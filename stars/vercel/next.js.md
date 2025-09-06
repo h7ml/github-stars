@@ -1,6 +1,6 @@
 ---
 project: next.js
-stars: 134102
+stars: 134232
 description: The React Framework
 url: https://github.com/vercel/next.js
 ---

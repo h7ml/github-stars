@@ -1,6 +1,6 @@
 ---
 project: tauri-egui
-stars: 375
+stars: 376
 description: null
 url: https://github.com/tauri-apps/tauri-egui
 ---

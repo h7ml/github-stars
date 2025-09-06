@@ -1,6 +1,6 @@
 ---
 project: Everright-formEditor
-stars: 494
+stars: 496
 description: :guide_dog: Powerful lowcode|vue form editor,generator,designer,builder library. It provides an easy way to create custom forms. The project is extensible, easy to use and configure, and provides many commonly used form components and functions(vue可视化低代码表单设计器、表单编辑器、element-plus vant表单设计)
 url: https://github.com/Liberty-liu/Everright-formEditor
 ---

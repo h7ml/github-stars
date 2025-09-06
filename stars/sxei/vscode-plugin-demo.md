@@ -1,6 +1,6 @@
 ---
 project: vscode-plugin-demo
-stars: 1142
+stars: 1146
 description: VSCode插件开发全攻略配套demo
 url: https://github.com/sxei/vscode-plugin-demo
 ---

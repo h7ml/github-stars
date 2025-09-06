@@ -1,6 +1,6 @@
 ---
 project: mirai
-stars: 14824
+stars: 14829
 description: 高效率 QQ 机器人支持库
 url: https://github.com/mamoe/mirai
 ---

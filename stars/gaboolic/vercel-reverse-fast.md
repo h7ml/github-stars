@@ -1,6 +1,6 @@
 ---
 project: vercel-reverse-fast
-stars: 1200
+stars: 1199
 description: vercel加速OpenAI/ChatGPT
 url: https://github.com/gaboolic/vercel-reverse-fast
 ---

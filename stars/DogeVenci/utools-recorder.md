@@ -1,6 +1,6 @@
 ---
 project: utools-recorder
-stars: 24
+stars: 25
 description: null
 url: https://github.com/DogeVenci/utools-recorder
 ---

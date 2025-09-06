@@ -1,6 +1,6 @@
 ---
 project: ollama
-stars: 151254
+stars: 151772
 description: Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 url: https://github.com/ollama/ollama
 ---
@@ -766,6 +766,7 @@ Community Integrations
 -   UnityCodeLama (Unity Edtior tool to analyze scripts via Ollama)
 -   NativeMind (Private, on-device AI Assistant, no cloud dependencies)
 -   GMAI - Gradle Managed AI (Gradle plugin for automated Ollama lifecycle management during build phases)
+-   NOMYO Router (A transparent Ollama proxy with model deployment aware routing which auto-manages multiple Ollama instances in a given network)
 
 ### Supported backends
 

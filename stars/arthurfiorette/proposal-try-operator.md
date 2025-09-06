@@ -1,6 +1,6 @@
 ---
 project: proposal-try-operator
-stars: 1888
+stars: 1889
 description: A proposal to bring ergonomic, inline error handling to JavaScript through a new try operator that always returns a Result.
 url: https://github.com/arthurfiorette/proposal-try-operator
 ---

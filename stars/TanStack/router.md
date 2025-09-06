@@ -1,6 +1,6 @@
 ---
 project: router
-stars: 10951
+stars: 11014
 description: 🤖 Fully typesafe Router for React (and friends) w/ built-in caching, 1st class search-param APIs, client-side cache integration and isomorphic rendering.
 url: https://github.com/TanStack/router
 ---
@@ -14,6 +14,8 @@ Visit tanstack.com/router for docs, guides, API and more!
 
 Partners
 --------
+
+  
 
   
 

@@ -1,11 +1,17 @@
 ---
 project: dotenv
-stars: 19990
+stars: 20000
 description: Loads environment variables from .env for nodejs projects.
 url: https://github.com/motdotla/dotenv
 ---
 
 🎉 announcing dotenvx. _run anywhere, multi-environment, encrypted envs_.
+
+**Special thanks to our sponsors**
+
+**Tuple, the premier screen sharing app for developers on macOS and Windows.**
+
+* * *
 
 dotenv
 ======

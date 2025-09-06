@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 74572
+stars: 74963
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---
@@ -33,6 +33,10 @@ $ grep -nri css docs | cat --number
 
 2025
 ----
+
+**九月**
+
+-   第 364 期：最难还原的魔方
 
 **八月**
 

@@ -1,6 +1,6 @@
 ---
 project: esm.sh
-stars: 3694
+stars: 3708
 description: A nobuild content delivery network(CDN) for modern web development.
 url: https://github.com/esm-dev/esm.sh
 ---
@@ -126,6 +126,14 @@ Or you can override the bundling strategy by adding the `esm.sh` field to your `
 You can also add the `?standalone` flag to bundle the module along with all its external dependencies (excluding those in `peerDependencies`) into a single JavaScript file.
 
 import { Button } from "https://esm.sh/antd?standalone";
+
+You can disable the default transforming/bundling behavior by adding `?raw` query to the import URL.
+
+import { render } from "https://esm.sh/preact?raw";
+
+Tip
+
+The `?raw` query is useful when you want to import the raw JavaScript source code of a package, as-is, without transformation into ES modules.
 
 ### Tree Shaking
 
@@ -286,7 +294,9 @@ By default, esm.sh transforms your JSX syntax with `jsxImportSource` set to `rea
 Escape Hatch: Raw Source Files
 ------------------------------
 
-In rare cases, you may want to request JS source files from packages, as-is, without transformation into ES modules. To do so, you need to add a `?raw` query to the request URL.
+By default, esm.sh transforms (and bundles if necessary) the JavaScript source code. However, in rare cases, you may want to request JS source files from packages, as-is, without transformation into ES modules. To do so, you need to add a `?raw` query to the request URL.
+
+The `raw` mode works just like other CDN services, unpkg.com(https://unpkg.com/), jsdelivr.net(https://www.jsdelivr.net/), etc.
 
 <script src\="https://esm.sh/p5/lib/p5.min.js?raw"\></script\>
 

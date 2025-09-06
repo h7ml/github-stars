@@ -1,6 +1,6 @@
 ---
 project: Kode
-stars: 1898
+stars: 2203
 description: Like Claude Code, but Koding with DeepSeek V3.1, Kimi2, GLM4.5, Qwen Coder etc.（welcome to use Kode to summit PR)
 url: https://github.com/shareAI-lab/Kode
 ---
@@ -102,18 +102,6 @@ Our state-of-the-art completion system provides unparalleled coding assistance:
 
 Installation
 ------------
-
-### Recommended: Using Bun (Fastest)
-
-First install Bun if you haven't already:
-
-curl -fsSL https://bun.sh/install | bash
-
-Then install Kode:
-
-bun add -g @shareai-lab/kode
-
-### Alternative: Using npm
 
 npm install -g @shareai-lab/kode
 

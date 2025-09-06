@@ -1,6 +1,6 @@
 ---
 project: social-bot
-stars: 28
+stars: 29
 description: 社工库 Telegram 社工库机器人
 url: https://github.com/eric-gitta-moore/social-bot
 ---

@@ -1,6 +1,6 @@
 ---
 project: bruno
-stars: 3419
+stars: 3424
 description: An enterprise-class package of Flutter components for mobile applications. ( Bruno 是基于一整套设计体系的 Flutter 组件库。)
 url: https://github.com/LianjiaTech/bruno
 ---

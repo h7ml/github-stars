@@ -1,6 +1,6 @@
 ---
 project: leafer-ui
-stars: 3238
+stars: 3246
 description: 好用的 Canvas 引擎。Easy-to-Use Canvas Engine. 
 url: https://github.com/leaferjs/leafer-ui
 ---

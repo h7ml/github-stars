@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6339
+stars: 6369
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -134,6 +134,7 @@ Development
 -   axios-tauri-adapter - `axios` adapter for the `@tauri-apps/api/http` module.
 -   axios-tauri-api-adapter - Makes it easy to use Axios in Tauri, `axios` adapter for the `@tauri-apps/api/http` module.
 -   Deno in Tauri - Run JS/TS code with Deno Core Engine, in Tauri apps.
+-   faynosync-update-server - Self-hosted Dynamic Update Server with statistics, supporting Tauri and other platforms. Flexible features for seamless app updates and insights.
 -   kkrpc - Seamless RPC communication between a Tauri app and node/deno/bun processes, just like Electron.
 -   ngx-tauri - Small lib to wrap around functions from tauri modules, to integrate easier with Angular.
 -   svelte-tauri-filedrop - File drop handling component for Svelte.
@@ -378,6 +379,7 @@ Applications
 -   mynd - Quick and very simple todo-list management app for developers that live mostly in the terminal.
 -   Obliqoro - Oblique Strategies meets Pomodoro.
 -   PasteBar - Limitless, Free Clipboard Manager for Mac and Windows. Effortless management of everything you copy and paste.
+-   PicSharp \- With powerful and richly configured compression functions, it helps you easily optimize images, providing outstanding performance and a convenient operation experience.
 -   Pomodoro - Time management tool based on Pomodoro technique.
 -   Qopy - The fixed Clipboard Manager for Windows and Mac.
 -   Remind Me Again - Toggleable reminders app for Mac, Linux and Windows.

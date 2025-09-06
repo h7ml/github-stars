@@ -1,6 +1,6 @@
 ---
 project: engine
-stars: 10792
+stars: 10817
 description: Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF
 url: https://github.com/playcanvas/engine
 ---
@@ -8,7 +8,7 @@ url: https://github.com/playcanvas/engine
 PlayCanvas WebGL Game Engine
 ============================
 
-API Reference | User Manual | Examples | Forum | Blog
+| User Manual | API Reference | Examples | Blog | Forum |
 
 PlayCanvas is an open-source game engine. It uses HTML5 and WebGL to run games and other interactive 3D content in any mobile or desktop browser.
 

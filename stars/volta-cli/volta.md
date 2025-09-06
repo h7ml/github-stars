@@ -1,6 +1,6 @@
 ---
 project: volta
-stars: 12345
+stars: 12376
 description: Volta: JS Toolchains as Code. ⚡
 url: https://github.com/volta-cli/volta
 ---

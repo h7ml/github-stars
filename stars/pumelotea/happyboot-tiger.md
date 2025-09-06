@@ -1,6 +1,6 @@
 ---
 project: happyboot-tiger
-stars: 487
+stars: 486
 description: 一个基于Vite+Vue3+NaiveUI中后台框架
 url: https://github.com/pumelotea/happyboot-tiger
 ---

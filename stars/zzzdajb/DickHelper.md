@@ -1,6 +1,6 @@
 ---
 project: DickHelper
-stars: 645
+stars: 649
 description: A simple and easy-to-use masturbation management tool
 url: https://github.com/zzzdajb/DickHelper
 ---

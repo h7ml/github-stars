@@ -1,6 +1,6 @@
 ---
 project: china-operator-ip
-stars: 3179
+stars: 3189
 description: 中国运营商IPv4/IPv6地址库-每日更新
 url: https://github.com/gaoyifan/china-operator-ip
 ---

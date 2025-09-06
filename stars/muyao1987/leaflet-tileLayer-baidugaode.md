@@ -1,6 +1,6 @@
 ---
 project: leaflet-tileLayer-baidugaode
-stars: 320
+stars: 322
 description: leaflet 加载百度瓦片地图图层 以及高德 、天地图等国内常用地图
 url: https://github.com/muyao1987/leaflet-tileLayer-baidugaode
 ---

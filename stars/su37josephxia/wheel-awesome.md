@@ -1,6 +1,6 @@
 ---
 project: wheel-awesome
-stars: 1496
+stars: 1495
 description: 天天造轮子，手写面试常见源码。
 url: https://github.com/su37josephxia/wheel-awesome
 ---

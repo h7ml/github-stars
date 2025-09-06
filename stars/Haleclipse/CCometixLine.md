@@ -1,6 +1,6 @@
 ---
 project: CCometixLine
-stars: 430
+stars: 488
 description: Claude Code statusline tool written in Rust
 url: https://github.com/Haleclipse/CCometixLine
 ---
@@ -288,6 +288,11 @@ Contributing
 ------------
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
+
+Related Projects
+----------------
+
+-   tweakcc - Command-line tool to customize your Claude Code themes, thinking verbs, and more.
 
 License
 -------

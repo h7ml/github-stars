@@ -1,6 +1,6 @@
 ---
 project: lsp
-stars: 27
+stars: 28
 description: 《老色批》 "学习新思想，争做新色批"、"我每天都要看妞，没有别的想法，只是为了我的心情愉悦~"、"晚睡晚起不锻炼，多与异性交朋友"
 url: https://github.com/SatinWukerORIG/lsp
 ---

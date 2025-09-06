@@ -1,6 +1,6 @@
 ---
 project: Dream
-stars: 1611
+stars: 1610
 description: 我是 yck，✍️ 这里是写博客以及记录学习的地方
 url: https://github.com/KieSun/Dream
 ---

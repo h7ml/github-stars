@@ -1,6 +1,6 @@
 ---
 project: bilibili-live-notification
-stars: 38
+stars: 39
 description: B 站直播事件 webhook 和开播邮件提醒
 url: https://github.com/NateScarlet/bilibili-live-notification
 ---
@@ -80,8 +80,8 @@ B 站直播提醒
 从命令行运行
 ------
 
-python3.8 -m pip install -r requirements.txt
-python3.8 -m bilibili\_live\_notification
+python3.12 -m pip install -r requirements.txt
+python3.12 -m bilibili\_live\_notification
 
 Docker 部署
 ---------

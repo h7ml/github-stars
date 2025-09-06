@@ -1,6 +1,6 @@
 ---
 project: vue-danmaku
-stars: 679
+stars: 680
 description: 基于 Vue 的弹幕交互组件  | A danmaku component for Vue
 url: https://github.com/hellodigua/vue-danmaku
 ---

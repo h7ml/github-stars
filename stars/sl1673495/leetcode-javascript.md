@@ -1,6 +1,6 @@
 ---
 project: leetcode-javascript
-stars: 2117
+stars: 2119
 description: :beers: 喝杯小酒，一起做题。前端攻城狮从零入门算法的宝藏题库，根据知名算法老师的经验总结了 100+ 道 LeetCode 力扣的经典题型 JavaScript 题解和思路。已按题目类型分 label，一起加油。
 url: https://github.com/sl1673495/leetcode-javascript
 ---

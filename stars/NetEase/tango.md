@@ -1,6 +1,6 @@
 ---
 project: tango
-stars: 2375
+stars: 2380
 description: A code driven low-code builder, develop low-code app on your codebase.
 url: https://github.com/NetEase/tango
 ---

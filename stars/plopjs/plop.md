@@ -1,6 +1,6 @@
 ---
 project: plop
-stars: 7466
+stars: 7473
 description: Consistency Made Simple
 url: https://github.com/plopjs/plop
 ---
@@ -166,14 +166,14 @@ Finally, use `NODE_OPTIONS` to activate the tsx loader. Now Plop can import your
 
 // package.json
 "scripts": {
-  "cross-env NODE\_OPTIONS='--import tsx' plop --plopfile=plopfile.ts"
+  "plop" : "cross-env NODE\_OPTIONS='--import tsx' plop --plopfile=plopfile.ts"
 }
 
 **Node.js v20.5.1 and below**
 
 // package.json
 "scripts": {
-  "cross-env NODE\_OPTIONS='--loader tsx' plop --plopfile=plopfile.ts"
+  "plop": "cross-env NODE\_OPTIONS='--loader tsx' plop --plopfile=plopfile.ts"
 }
 
 Why Generators?

@@ -1,6 +1,6 @@
 ---
 project: TypeScript
-stars: 7258
+stars: 7260
 description: TypeScript 使用手册（中文版）翻译。http://www.typescriptlang.org
 url: https://github.com/zhongsp/TypeScript
 ---

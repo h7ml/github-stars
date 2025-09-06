@@ -1,6 +1,6 @@
 ---
 project: nixpkgs
-stars: 21651
+stars: 21698
 description: Nix Packages collection & NixOS
 url: https://github.com/NixOS/nixpkgs
 ---
@@ -33,7 +33,7 @@ The sources of all official Nix-related projects are in the NixOS organization o
 -   Nix RFCs - the formal process for making substantial changes to the community
 -   NixOS homepage - the NixOS.org website
 -   hydra - our continuous integration system
--   NixOS Artwork - NixOS artwork
+-   NixOS Branding - NixOS branding
 
 Continuous Integration and Distribution
 =======================================

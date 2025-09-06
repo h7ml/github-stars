@@ -1,6 +1,6 @@
 ---
 project: my_blog
-stars: 1268
+stars: 1267
 description: 神三元的博客，一起构建完整知识体系
 url: https://github.com/sanyuan0704/my_blog
 ---

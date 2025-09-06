@@ -1,6 +1,6 @@
 ---
 project: ios-webkit-debug-proxy
-stars: 6087
+stars: 6093
 description: A DevTools proxy (Chrome Remote Debugging Protocol) for iOS devices (Safari Remote Web Inspector).
 url: https://github.com/google/ios-webkit-debug-proxy
 ---

@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 111116
+stars: 111477
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -430,6 +430,7 @@ Tools for Teams and Collaboration
 -   Keybase — Keybase is a FOSS alternative to Slack; it keeps everyone's chats and files safe, from families to communities to companies.
 -   Google Meet — Use Google Meet for your business's online video meeting needs. Meet provides secure, easy-to-join online meetings.
 -   /meet for Slack - Start Google Meetings directly from Slack by using /meet in any channel, group, or DM. Free without any limitations.
+-   Linkinize — Bookmark manager for teams with tagging, multi-workspaces, and collaboration. Free plan includes 4 workspaces and 10 team members.
 -   Livecycle — Livecycle is an inclusive collaboration platform that makes workflows frictionless for cross-functional product teams and open-source projects.
 -   Lockitbot — Reserve and lock shared resources within Slack like Rooms, Dev environments , servers etc. Free for upto 2 resources
 -   MarkUp — MarkUp lets you collect feedback directly on top of your websites, PDFs and images.
@@ -1191,6 +1192,7 @@ CDN and Protection
 -   Namecheap Supersonic — Free DDoS protection
 -   Gcore Global content delivery network, 1 TB and 1 million requests per month free and free DNS hosting
 -   CacheFly - Up to 5 TB per month of Free CDN traffic, 19 Core PoPs , 1 Domain and Universal SSL.
+-   PromoProxy - Free cloud Secure Web Gateway. Free plan includes up to 5 users and 1 GB per day.
 
 **⬆️ Back to Top**
 

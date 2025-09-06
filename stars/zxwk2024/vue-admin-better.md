@@ -1,6 +1,6 @@
 ---
 project: vue-admin-better
-stars: 44
+stars: 45
 description: 全网首个基于vue3.0的admin后台项目
 url: https://github.com/zxwk2024/vue-admin-better
 ---

@@ -1,23 +1,31 @@
 ---
 project: Xget
-stars: 2821
-description: 超高性能、安全的一站式开源资源获取加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等 | Ultra-high performance, secure, all-in-one open-source resource acceleration engine. Significantly outperforms traditional accelerators, providing unified and efficient acceleration across multiple platforms
+stars: 4394
+description: 超高性能、安全的一站式开源资源访问加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等 | Ultra-high performance, secure, all-in-one open-source resource acceleration engine. Significantly outperforms traditional accelerators, providing unified and efficient acceleration across multiple platforms
 url: https://github.com/xixu-me/Xget
 ---
 
 Xget
 ====
 
-**English**
+超高性能、安全的一站式开源资源访问加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等。
 
-超高性能、安全的一站式开源资源获取加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等。
+💡 存储库初衷
+--------
+
+本存储库的初衷是为了加速在中国大陆境内访问不违反相关法律法规的平台上的开源资源，从而为广大开发者提供一个稳定、合法的加速体验。我们致力于：
+
+-   **🌍 消除地理限制**：帮助中国大陆开发者快速访问海外开源资源
+-   **⚖️ 合规合法**：严格遵守相关法律法规，仅加速合法的公开资源
+-   **🚀 提升效率**：显著提高开发者的工作效率和开发体验
+-   **🆓 普惠开源**：为开源社区贡献力量，促进技术交流与发展
 
 🎯 快速使用
 -------
 
-**公共实例：`xget.xi-xu.me`** - 开箱即用，无需部署！
+**预部署实例（不保证可靠性）：`xget.xi-xu.me`** - 开箱即用，无需部署！
 
-**URL 转换器：****`xuc.xi-xu.me`** - 一键转换任意支持平台的 URL 为 Xget 加速格式！
+**URL 转换器：****`xuc.xi-xu.me`** - 一键转换任意支持平台的 URL 为 Xget 的加速格式！
 
 > **⚡ 立即体验极速下载**：无需注册，无需配置，直接使用即可感受飞一般的下载速度！
 
@@ -37,7 +45,7 @@ Xget
 
 -   **一站式多平台支持**：统一支持代码存储库、包管理器、AI 推理提供商、容器注册表、模型与数据集托管平台
 -   **智能识别与转换**：自动识别平台前缀并转换为目标平台的正确 URL 结构
--   **一致的加速体验**：无论文件类型或来源，均可享受统一且稳定的极速下载服务
+-   **一致的加速体验**：无论文件类型或来源，均可享受统一且稳定的极速下载体验
 
 ### 🔒 企业级安全保障
 
@@ -97,7 +105,7 @@ Xget
 📖 URL 转换规则
 -----------
 
-使用公共实例 **`xget.xi-xu.me`** 或你自己部署的实例，只需简单替换域名并添加平台前缀：
+使用预部署实例 **`xget.xi-xu.me`** 或你自己部署的实例，只需简单替换域名并添加平台前缀：
 
 ### 转换格式
 
@@ -356,6 +364,14 @@ F-Droid
 `https://f-droid.org/...`
 
 `https://xget.xi-xu.me/fdroid/...`
+
+Jenkins 插件
+
+`jenkins`
+
+`https://updates.jenkins.io/...`
+
+`https://xget.xi-xu.me/jenkins/...`
 
 AI 推理提供商
 
@@ -756,6 +772,20 @@ https://f-droid.org/api/v1/packages/org.fdroid.fdroid
 
 # 转换后（添加 fdroid 前缀）
 https://xget.xi-xu.me/fdroid/api/v1/packages/org.fdroid.fdroid
+
+#### Jenkins 插件
+
+# Jenkins 更新中心原始 URL
+https://updates.jenkins.io/update-center.json
+
+# 转换后（添加 jenkins 前缀）
+https://xget.xi-xu.me/jenkins/update-center.json
+
+# Jenkins 插件下载原始 URL
+https://updates.jenkins.io/download/plugins/maven-plugin/3.27/maven-plugin.hpi
+
+# 转换后（添加 jenkins 前缀）
+https://xget.xi-xu.me/jenkins/download/plugins/maven-plugin/3.27/maven-plugin.hpi
 
 #### AI 推理提供商
 
@@ -1170,8 +1200,6 @@ https://xget.xi-xu.me/cr/gcr/v2/distroless/base/manifests/latest
 
 ### Git 操作与配置
 
-Xget 完全兼容 Git 协议，支持所有标准 Git 操作，并提供全局加速配置：
-
 #### Git 操作
 
 # 克隆存储库
@@ -1220,7 +1248,7 @@ git config --global url."https://xget.xi-xu.me/aosp/".insteadOf "https://android
 # 验证配置
 git config --global --get-regexp url
 
-# 现在所有相关平台的 git clone 都会自动使用 Xget 加速
+# 现在所有相关平台的 git clone 都会自动使用 Xget
 git clone https://github.com/microsoft/vscode.git  # 自动转换为 Xget URL
 git clone https://gitlab.com/gitlab-org/gitlab.git  # 自动转换为 Xget URL
 git clone https://codeberg.org/forgejo/forgejo.git  # 自动转换为 Xget URL
@@ -1291,7 +1319,7 @@ print("模型和分词器加载成功！")
 
 import requests
 
-\# 设置 API 基础 URL 使用 Xget 加速
+\# 设置 API 基础 URL 使用 Xget
 base\_url \= "https://xget.xi-xu.me/civitai"
 
 \# 获取模型信息
@@ -1856,7 +1884,7 @@ serde = "1.0"
 tokio = "1.0"
 reqwest = "0.11"
 
-# 构建项目时会自动使用 Xget 加速
+# 构建项目时会自动使用 Xget
 cargo build
 
 # 更新依赖
@@ -1992,8 +2020,6 @@ download\_arxiv\_paper("2301.07041", "attention\_is\_all\_you\_need.pdf")
 
 ### F-Droid 存储库镜像
 
-F-Droid 是 Android 平台上最大的开源应用商店，Xget 为 F-Droid 存储库提供高速镜像服务，显著提升应用下载和更新速度。
-
 #### 配置 F-Droid 客户端使用 Xget 镜像
 
 1.  在 F-Droid 应用中进入**设置** → **存储库**
@@ -2071,18 +2097,193 @@ task checkFDroidAvailability {
     }
 }
 
-### AI 推理 API 加速
+### Jenkins 插件下载
 
-Xget 为众多 AI 推理 API 提供加速服务，通过智能路由优化，显著提升 API 响应速度和可靠性。
+#### 使用 Xget 加速 Jenkins 插件下载和更新
+
+支持 Jenkins 更新中心和插件下载，兼容清华镜像等国内镜像源的配置方式。
+
+#### Jenkins 更新中心配置
+
+##### 方法一：在 Jenkins Web 界面配置
+
+1.  登录 Jenkins 管理界面
+    
+2.  进入 **Manage Jenkins** → **Plugins** → **Advanced**
+    
+3.  在 **Update Site** 部分，将 URL 更改为：
+    
+    ```
+    https://xget.xi-xu.me/jenkins/update-center.json
+    ```
+    
+4.  点击 **Submit** 保存配置
+    
+
+##### 方法二：修改配置文件
+
+# 在 Jenkins 服务器上修改更新中心配置文件
+# 默认位置：$JENKINS\_HOME/hudson.model.UpdateCenter.xml
+sudo nano /var/lib/jenkins/hudson.model.UpdateCenter.xml
+
+# 将 URL 改为：
+# <url>https://xget.xi-xu.me/jenkins/update-center.json</url>
+
+# 重启 Jenkins 服务
+sudo systemctl restart jenkins
+
+#### 支持的 Jenkins 服务
+
+# Jenkins 更新中心 JSON
+https://xget.xi-xu.me/jenkins/update-center.json
+
+# Jenkins 更新中心（实际 JSON 格式）
+https://xget.xi-xu.me/jenkins/update-center.actual.json
+
+# Jenkins 插件下载
+https://xget.xi-xu.me/jenkins/download/plugins/\[插件名\]/\[版本\]/\[插件名\].hpi
+
+# 实验性插件更新中心
+https://xget.xi-xu.me/jenkins/experimental/update-center.json
+
+#### 使用示例
+
+# 下载 Maven 插件
+wget https://xget.xi-xu.me/jenkins/download/plugins/maven-plugin/3.27/maven-plugin.hpi
+
+# 下载 Git 插件
+curl -L -O https://xget.xi-xu.me/jenkins/download/plugins/git/5.2.1/git.hpi
+
+# 获取更新中心信息
+curl https://xget.xi-xu.me/jenkins/update-center.json
+
+# 批量下载常用插件
+cat \> download\_jenkins\_plugins.sh << 'EOF'
+#!/bin/bash
+\# 定义要下载的插件列表
+plugins=(
+    "git:5.2.1"
+    "maven-plugin:3.27"
+    "workflow-aggregator:596.v8c21c963d92d"
+    "blueocean:1.27.8"
+    "docker-workflow:563.vd5d2e5c4007f"
+)
+\# 创建插件下载目录
+mkdir -p jenkins\_plugins
+\# 批量下载插件
+for plugin in "${plugins\[@\]}"; do
+    name=$(echo $plugin | cut -d: -f1)
+    version=$(echo $plugin | cut -d: -f2)
+    echo "正在下载插件: $name v$version"
+    wget -P jenkins\_plugins "https://xget.xi-xu.me/jenkins/download/plugins/$name/$version/$name.hpi"
+done
+echo "所有插件下载完成！"
+EOF
+
+chmod +x download\_jenkins\_plugins.sh
+./download\_jenkins\_plugins.sh
+
+#### 离线 Jenkins 部署
+
+对于无网络环境的 Jenkins 部署：
+
+# 1. 下载 Jenkins 核心文件
+wget https://xget.xi-xu.me/jenkins/war/jenkins.war
+
+# 2. 创建插件打包脚本
+cat \> prepare\_jenkins\_offline.sh << 'EOF'
+#!/bin/bash
+\# 创建离线部署目录结构
+mkdir -p jenkins\_offline/{plugins,update\_center}
+\# 下载更新中心配置
+curl -o jenkins\_offline/update\_center/update-center.json \\
+    https://xget.xi-xu.me/jenkins/update-center.json
+\# 必备插件列表
+essential\_plugins=(
+    "ant:475.vf34069fef73c"
+    "build-timeout:1.31"
+    "credentials:1319.v7eb\_51b\_3a\_c97b\_"
+    "git:5.2.1"
+    "github:1.38.0"
+    "gradle:2.8.2"
+    "ldap:682.v7b\_544c9d1512"
+    "mailer:463.vedf8358e006b\_"
+    "matrix-auth:3.2.2"
+    "maven-plugin:3.27"
+    "pam-auth:1.10"
+    "pipeline-stage-view:2.34"
+    "ssh-slaves:2.973.v0fa\_8c0dea\_f9f"
+    "timestamper:1.26"
+    "workflow-aggregator:596.v8c21c963d92d"
+    "ws-cleanup:0.45"
+)
+\# 下载所有必备插件
+for plugin in "${essential\_plugins\[@\]}"; do
+    name=$(echo $plugin | cut -d: -f1)
+    version=$(echo $plugin | cut -d: -f2)
+    echo "下载 $name:$version"
+    wget -P jenkins\_offline/plugins \\
+        "https://xget.xi-xu.me/jenkins/download/plugins/$name/$version/$name.hpi"
+done
+\# 创建部署说明
+cat > jenkins\_offline/deploy\_instructions.md << 'DEPLOY'
+\# Jenkins 离线部署说明
+1\. 将 jenkins.war 复制到目标服务器
+2\. 启动 Jenkins：java -jar jenkins.war
+3\. 将 plugins/ 目录中的 .hpi 文件复制到 $JENKINS\_HOME/plugins/
+4\. 重启 Jenkins
+DEPLOY
+echo "离线部署包准备完成！"
+EOF
+
+chmod +x prepare\_jenkins\_offline.sh
+./prepare\_jenkins\_offline.sh
+
+#### 在项目中使用
+
+##### Jenkinsfile 中的插件检查
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Check Plugin Availability') {
+            steps {
+                script {
+                    // 检查 Maven 插件可用性
+                    def pluginUrl \= "https://xget.xi-xu.me/jenkins/download/plugins/maven-plugin/3.27/maven-plugin.hpi"
+
+                    try {
+                        def response \= httpRequest url: pluginUrl, httpMode: 'HEAD'
+                        if (response.status \== 200) {
+                            echo "Maven 插件可用: ${pluginUrl}"
+                        }
+                    } catch (Exception e) {
+                        error "Maven 插件不可用: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // 你的构建步骤
+                echo "使用加速后的插件进行构建..."
+            }
+        }
+    }
+}
+
+### AI 推理 API 加速
 
 #### OpenAI API
 
 import openai
 
-\# 使用 Xget 加速的 OpenAI API
+\# 使用 Xget 的 OpenAI API
 client \= openai.OpenAI(
     api\_key\="your-api-key",
-    base\_url\="https://xget.xi-xu.me/ip/openai/v1"  \# 使用 Xget 加速
+    base\_url\="https://xget.xi-xu.me/ip/openai/v1"  \# 使用 Xget
 )
 
 \# 聊天完成
@@ -2099,10 +2300,10 @@ print(response.choices\[0\].message.content)
 
 import anthropic
 
-\# 使用 Xget 加速的 Anthropic API
+\# 使用 Xget 的 Anthropic API
 client \= anthropic.Anthropic(
     api\_key\="your-api-key",
-    base\_url\="https://xget.xi-xu.me/ip/anthropic"  \# 使用 Xget 加速
+    base\_url\="https://xget.xi-xu.me/ip/anthropic"  \# 使用 Xget
 )
 
 \# 创建消息
@@ -2123,7 +2324,7 @@ import google.generativeai as genai
 \# 配置 API 密钥
 genai.configure(api\_key\="your-api-key")
 
-\# 使用自定义传输配置 Xget 加速
+\# 使用自定义传输配置 Xget
 import requests
 
 class XgetTransport:
@@ -2131,7 +2332,7 @@ class XgetTransport:
         self.base\_url \= base\_url
 
     def request(self, method, url, \*\*kwargs):
-        \# 将请求转发到 Xget 加速服务
+        \# 将请求转发到 Xget
         accelerated\_url \= url.replace("https://generativelanguage.googleapis.com",
                                     "https://xget.xi-xu.me/ip/gemini")
         return requests.request(method, accelerated\_url, \*\*kwargs)
@@ -2157,7 +2358,7 @@ def call\_ai\_api(provider, endpoint, data, api\_key):
         "Content-Type": "application/json"
     }
 
-    \# 使用 Xget 加速 URL
+    \# 使用 Xget 的加速 URL
     url \= f"https://xget.xi-xu.me/ip/{provider}/{endpoint}"
 
     response \= requests.post(url, headers\=headers, json\=data)
@@ -2210,7 +2411,7 @@ import OpenAI from 'openai';
 
 const openai \= new OpenAI({
   apiKey: 'your-api-key',
-  baseURL: 'https://xget.xi-xu.me/ip/openai',  // 使用 Xget 加速
+  baseURL: 'https://xget.xi-xu.me/ip/openai',  // 使用 Xget
 });
 
 async function chatWithGPT() {
@@ -2227,7 +2428,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 const anthropic \= new Anthropic({
   apiKey: 'your-api-key',
-  baseURL: 'https://xget.xi-xu.me/ip/anthropic',  // 使用 Xget 加速
+  baseURL: 'https://xget.xi-xu.me/ip/anthropic',  // 使用 Xget
 });
 
 async function chatWithClaude() {
@@ -2258,12 +2459,10 @@ from openai import OpenAI
 \# 从环境变量读取配置
 client \= OpenAI(
     api\_key\=os.getenv("OPENAI\_API\_KEY"),
-    base\_url\=os.getenv("OPENAI\_BASE\_URL")  \# 自动使用 Xget 加速
+    base\_url\=os.getenv("OPENAI\_BASE\_URL")  \# 自动使用 Xget
 )
 
 ### 容器镜像加速
-
-Xget 为容器镜像拉取提供全面的加速支持，兼容 Docker、Podman、containerd 等容器运行时。
 
 #### Docker 配置
 
@@ -2295,7 +2494,7 @@ docker pull xget.xi-xu.me/cr/mcr/dotnet/runtime:8.0
 
 #### Kubernetes 部署配置
 
-# deployment.yaml - 使用 Xget 加速的镜像
+# deployment.yaml - 使用 Xget 的镜像
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -2384,7 +2583,7 @@ jobs:
 
       - name: Build with accelerated base images
         run: |
-          # 构建时使用 Xget 加速的基础镜像
+          # 构建时使用 Xget 的基础镜像
           docker build -t myapp:latest \\
             --build-arg BASE\_IMAGE=xget.xi-xu.me/cr/ghcr/nodejs/node:18-alpine .
       - name: Test with accelerated images
@@ -2408,7 +2607,7 @@ podman pull xget.xi-xu.me/cr/ghcr/nginxinc/nginx-unprivileged:latest
 
 #### containerd 配置
 
-# 配置 containerd 使用 Xget 加速
+# 配置 containerd 使用 Xget
 # 编辑 /etc/containerd/config.toml
 \[plugins."io.containerd.grpc.v1.cri".registry.mirrors\]
   \[plugins."io.containerd.grpc.v1.cri".registry.mirrors."ghcr.io"\]
@@ -2419,95 +2618,26 @@ podman pull xget.xi-xu.me/cr/ghcr/nginxinc/nginx-unprivileged:latest
 # 重启 containerd
 sudo systemctl restart containerd
 
-### CI/CD 环境集成
-
-#### GitHub Actions
-
-name: Download Dependencies
-on: \[push\]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Download model files
-        run: |
-          # 使用 Xget 加速下载大型模型文件
-          wget https://xget.xi-xu.me/hf/microsoft/DialoGPT-medium/resolve/main/pytorch\_model.bin
-      - name: Clone dependency repo
-        run: |
-          # 使用 Xget 加速 Git 克隆
-          git clone https://xget.xi-xu.me/gh/\[所有者\]/\[存储库\].git
-      - name: Download release assets
-        run: |
-          # 批量下载发布文件
-          curl -L -O https://xget.xi-xu.me/gh/\[所有者\]/\[存储库\]/releases/download/v1.0.0/\[文件名\].tar.gz
-          curl -L -O https://xget.xi-xu.me/gh/\[所有者\]/\[存储库\]/releases/download/v1.0.0/\[文件名\].zip
-
-#### GitLab CI
-
-stages:
-  - download
-  - build
-
-download\_dependencies:
-  stage: download
-  script:
-    # 使用 Xget 加速下载
-    - wget https://xget.xi-xu.me/gl/gitlab-org/gitlab-runner/-/archive/main/gitlab-runner-main.zip
-    - git clone https://xget.xi-xu.me/gh/\[所有者\]/\[依赖存储库\].git
-    # 下载 Hugging Face 数据集
-    - curl -L -O https://xget.xi-xu.me/hf/datasets/wikitext/resolve/main/wikitext-103-v1/wiki.train.tokens
-  artifacts:
-    paths:
-      - "\*.zip"
-      - "\*.json"
-      - dependency/
-
-#### Docker 构建优化
-
-FROM ubuntu:22.04
-
-# 在 Docker 构建中使用 Xget 加速下载
-RUN apt-get update && apt-get install -y wget curl git
-
-# 下载大型文件
-RUN wget https://xget.xi-xu.me/gh/microsoft/vscode/archive/refs/heads/main.zip
-
-# 克隆源码
-RUN git clone https://xget.xi-xu.me/gh/\[所有者\]/\[源码存储库\].git /app
-
-# 下载模型文件
-RUN curl -L -O /models/model.bin https://xget.xi-xu.me/hf/microsoft/DialoGPT-medium/resolve/main/pytorch\_model.bin
-
-# 配置并安装 conda 包
-RUN echo "default\_channels:" > ~/.condarc && \\
-    echo "  - https://xget.xi-xu.me/conda/pkgs/main" >> ~/.condarc && \\
-    echo "  - https://xget.xi-xu.me/conda/pkgs/r" >> ~/.condarc && \\
-    echo "  - https://xget.xi-xu.me/conda/pkgs/msys2" >> ~/.condarc && \\
-    echo "channel\_alias: https://xget.xi-xu.me/conda/community" >> ~/.condarc && \\
-    echo "channel\_priority: strict" >> ~/.condarc && \\
-    conda install -y numpy pandas matplotlib
-
-WORKDIR /app
-
 🚀 部署选择
 -------
 
-### Cloudflare Workers
+### Cloudflare Workers（强烈推荐）
+
+**强烈建议使用 Cloudflare Workers 的方式进行部署**，这种方式具有以下优势：
+
+-   **💰 成本优势**：除了注册域名的费用外，在大多数情况下是免费的
+-   **🚀 性能最高**：全球边缘节点，响应速度最快
+-   **🔧 维护简单**：无需服务器管理，自动扩展和更新
 
 部署后，你的 Xget 服务将在 `your-worker-name.your-subdomain.workers.dev` 上可用。
 
-### Vercel
+### 其他部署方式
 
-部署后，你的 Xget 服务将在 `your-project-name.vercel.app` 上可用。
+提供的其他部署方式主要是为了满足部分用户的多样化需求：
 
-### Docker
+#### Docker
 
-#### 使用预构建镜像（推荐）
+##### 使用预构建镜像
 
 # 拉取最新镜像
 docker pull ghcr.io/xixu-me/xget:latest
@@ -2519,7 +2649,7 @@ docker run -d \\
   --restart unless-stopped \\
   ghcr.io/xixu-me/xget:latest
 
-#### 本地构建镜像
+##### 本地构建镜像
 
 # 克隆存储库
 git clone https://github.com/xixu-me/Xget.git
@@ -2535,7 +2665,7 @@ docker run -d \\
   --restart unless-stopped \\
   xget
 
-#### Docker Compose
+##### Docker Compose
 
 创建 `docker-compose.yml` 文件：
 
@@ -2562,7 +2692,7 @@ services:
 
 docker-compose up -d
 
-#### Kubernetes 部署
+##### Kubernetes 部署
 
 创建 `k8s-deployment.yaml`：
 
@@ -2731,7 +2861,7 @@ npm run test:watch
 
 ### 性能监控
 
-服务会在响应头中返回性能指标：
+在响应头中返回性能指标：
 
 -   `X-Performance-Metrics`: 包含请求各阶段的耗时统计
 -   `X-Cache-Status`: 显示缓存命中状态
@@ -2745,12 +2875,11 @@ npx wrangler dev --log-level debug
 ⚠️ 免责声明
 -------
 
--   **合法合规使用**：本存储库仅供加速合法的公开资源访问，包括但不限于文件下载、Git 操作、AI 推理 API 调用、容器镜像拉取、包管理器访问等。用户必须严格遵守所有相关平台的服务条款、使用协议以及所在地区的法律法规。禁止用于任何违法、侵权或恶意目的
--   **服务可用性声明**：公共实例 `xget.xi-xu.me` 作为免费开源服务提供，不提供服务等级协议（SLA）保证。我们尽力维护服务稳定，但不承诺 100% 可用性。生产环境或关键业务建议部署专属实例
+-   **合法合规使用**：本存储库仅供加速合法的公开资源访问，包括但不限于文件下载、Git 操作、AI 推理 API 调用、容器镜像拉取、包管理器访问等。用户必须严格遵守所有相关平台的服务条款、使用协议以及所在地区的法律法规。禁止用于任何违法、侵权或恶意目的。任何超出合法公开资源范围的使用行为，均由用户自行承担相应的法律责任
 -   **数据隐私保护**：Xget 采用无日志架构，不存储、记录或分析用户请求数据。但用户仍需谨慎处理敏感信息，避免通过公共网络传输机密内容
--   **责任范围限制**：使用本服务可能产生的任何直接损失、间接损失、数据丢失、业务中断或其他后果，存储库维护者和贡献者均不承担任何法律责任
--   **第三方平台尊重**：请严格遵守 GitHub、GitLab、Gitea、Codeberg、SourceForge、Hugging Face、Docker Hub、各大包管理平台等的服务条款、API 使用限制和速率控制。避免对源平台造成过度负载
--   **知识产权保护**：用户应确保下载的内容不侵犯任何第三方的知识产权。对于通过本服务获取的受版权保护的内容，请遵守相应的许可协议和使用条款
+-   **责任范围限制**：使用本存储库可能产生的任何直接损失、间接损失、数据丢失、业务中断或其他后果，存储库维护者和贡献者均不承担任何法律责任
+-   **第三方平台尊重**：请严格遵守 GitHub、GitLab、Gitea、Codeberg、SourceForge、Hugging Face、各大包管理平台和容器注册表等的服务条款、API 使用限制和速率控制。避免对源平台造成过度负载
+-   **知识产权保护**：用户应确保下载的内容不侵犯任何第三方的知识产权。对于通过本存储库获取的受版权保护的内容，请遵守相应的许可协议和使用条款
 -   **安全风险提醒**：虽然 Xget 实施了多项安全措施，但互联网传输存在固有风险。建议用户对下载的文件进行安全扫描，特别是可执行文件和脚本
 
 🤝 贡献

@@ -1,6 +1,6 @@
 ---
 project: collectSub
-stars: 94
+stars: 96
 description: null
 url: https://github.com/gooooooooooooogle/collectSub
 ---

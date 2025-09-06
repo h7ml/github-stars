@@ -1,6 +1,6 @@
 ---
 project: oaifree-tools
-stars: 178
+stars: 180
 description: 一站式打通 Oaifree、Pandora 和 Fuclaude 的后台管理项目，具备登录系统、用户管理、Token管理、号池管理、共享服务、Linux.do认证 等多功能集成项目，助力各位更快捷的管理 LINUX DO 相关服务！
 url: https://github.com/chenyme/oaifree-tools
 ---

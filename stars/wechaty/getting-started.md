@@ -1,6 +1,6 @@
 ---
 project: getting-started
-stars: 838
+stars: 840
 description: A Starter Project Template for Wechaty works out-of-the-box
 url: https://github.com/wechaty/getting-started
 ---

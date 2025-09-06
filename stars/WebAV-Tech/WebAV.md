@@ -1,6 +1,6 @@
 ---
 project: WebAV
-stars: 1781
+stars: 1787
 description: A web-based Video Editing SDK built on WebCodecs. 基于 WebCodecs 构建的网页视频编辑 SDK。
 url: https://github.com/WebAV-Tech/WebAV
 ---

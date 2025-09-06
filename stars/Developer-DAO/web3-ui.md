@@ -1,6 +1,6 @@
 ---
 project: web3-ui
-stars: 784
+stars: 782
 description: A React UI library for Web3
 url: https://github.com/Developer-DAO/web3-ui
 ---

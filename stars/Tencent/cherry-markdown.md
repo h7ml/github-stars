@@ -1,6 +1,6 @@
 ---
 project: cherry-markdown
-stars: 4340
+stars: 4349
 description: ✨ A Markdown Editor
 url: https://github.com/Tencent/cherry-markdown
 ---

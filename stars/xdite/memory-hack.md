@@ -1,6 +1,6 @@
 ---
 project: memory-hack
-stars: 480
+stars: 479
 description: 打造超人大脑
 url: https://github.com/xdite/memory-hack
 ---

@@ -1,6 +1,6 @@
 ---
 project: keystone
-stars: 9674
+stars: 9676
 description: The superpowered headless CMS for Node.js — built with GraphQL and React
 url: https://github.com/keystonejs/keystone
 ---

@@ -1,6 +1,6 @@
 ---
 project: vue3-roadmap
-stars: 112
+stars: 111
 description: 呕心沥血，精心整理的 Vue2 & 3 学习路线图，成为高级前端工程师的必经之路！
 url: https://github.com/sl1673495/vue3-roadmap
 ---

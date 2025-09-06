@@ -1,6 +1,6 @@
 ---
 project: nx
-stars: 26850
+stars: 26924
 description: Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.
 url: https://github.com/nrwl/nx
 ---
@@ -10,7 +10,7 @@ url: https://github.com/nrwl/nx
 Smart Repos · Fast Builds
 =========================
 
-An AI-first build platform that connects everything from your editor to CI. Helping you deliver fast, without breaking things.
+Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.
 
 Create a new Nx workspace with
 

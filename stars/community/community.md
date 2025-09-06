@@ -1,6 +1,6 @@
 ---
 project: community
-stars: 7501
+stars: 7518
 description: Public feedback discussions for: GitHub Mobile, GitHub Discussions, GitHub Codespaces, GitHub Sponsors, GitHub Issues and more!
 url: https://github.com/community/community
 ---

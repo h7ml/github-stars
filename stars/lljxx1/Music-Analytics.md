@@ -1,6 +1,6 @@
 ---
 project: Music-Analytics
-stars: 57
+stars: 56
 description: 多个平台的歌单进行备份、分析，推荐感兴趣的专辑
 url: https://github.com/lljxx1/Music-Analytics
 ---

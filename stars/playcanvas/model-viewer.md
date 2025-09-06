@@ -1,12 +1,14 @@
 ---
 project: model-viewer
-stars: 541
+stars: 544
 description: 3D Model Viewer supporting glTF and 3D Gaussian Splats
 url: https://github.com/playcanvas/model-viewer
 ---
 
-PlayCanvas glTF Viewer
-======================
+PlayCanvas Model Viewer
+=======================
+
+| User Manual | API Reference | Blog | Forum |
 
 The PlayCanvas glTF scene viewer is blazingly fast and 100% compliant with the glTF 2.0 spec.
 
@@ -134,15 +136,6 @@ This will invoke Rollup and output the built viewer to the `dist` folder. To inv
 npm run watch
 ```
 
-How to build with local PlayCanvas engine
------------------------------------------
-
-You can set the npm build scripts to use local versions of the PlayCanvas engine & PlayCanvas extras builds by setting the following environment variables when launching the npm build scripts:
-
-```
-ENGINE_PATH=./path/to/engine npm run build
-```
-
 How to run
 ----------
 
@@ -166,3 +159,36 @@ npm run develop
 Open a browser and navigate to http://localhost:3000.
 
 N.B. To load local models run `npx server --cors` in the directory containing the model (disables CORS).
+
+Library integration testing
+---------------------------
+
+The Model Viewer is built on the following open source libraries:
+
+Library
+
+Details
+
+PlayCanvas Engine
+
+Powers the Editor's 3D View and Launch Page
+
+Observer
+
+Data binding and history
+
+PCUI
+
+Front-end component library
+
+To test the integration of these libraries use npm link. Follow these steps:
+
+1.  Create a global link from source
+    
+    cd <library\>
+    npm link
+    
+2.  Create a link to the global link
+    
+    cd model-viewer
+    npm link <library\>

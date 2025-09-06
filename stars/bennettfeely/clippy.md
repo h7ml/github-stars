@@ -1,6 +1,6 @@
 ---
 project: clippy
-stars: 934
+stars: 935
 description: Shape up your website with CSS clip-paths
 url: https://github.com/bennettfeely/clippy
 ---

@@ -1,6 +1,6 @@
 ---
 project: orly
-stars: 813
+stars: 814
 description: :football: Generate your own O'RLY animal book cover to troll your colleagues | 生成你自己的O'RLY动物书封面，让你的同事惊掉下巴
 url: https://github.com/nanmu42/orly
 ---

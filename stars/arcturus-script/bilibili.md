@@ -1,6 +1,6 @@
 ---
 project: bilibili
-stars: 214
+stars: 213
 description: 云函数实现 BiliBili 每日观看视频、自动投币、分享、漫画签到、直播签到
 url: https://github.com/arcturus-script/bilibili
 ---

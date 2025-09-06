@@ -1,6 +1,6 @@
 ---
 project: openapi2typescript
-stars: 403
+stars: 405
 description: 一个被大范围使用的小工具
 url: https://github.com/chenshuai2144/openapi2typescript
 ---
@@ -220,6 +220,16 @@ Interface declaration type
 type/interface
 
 type
+
+splitDeclare
+
+No
+
+Generate a separate .d.ts file for each tag group.
+
+boolean
+
+\-
 
 ### Custom Hooks
 
@@ -475,6 +485,16 @@ interface 声明类型
 type/interface
 
 type
+
+splitDeclare
+
+否
+
+每个tag组一个独立的.d.ts.
+
+boolean
+
+\-
 
 ### 自定义钩子
 
