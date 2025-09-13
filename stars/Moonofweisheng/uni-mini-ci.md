@@ -1,6 +1,6 @@
 ---
 project: uni-mini-ci
-stars: 58
+stars: 59
 description: null
 url: https://github.com/Moonofweisheng/uni-mini-ci
 ---

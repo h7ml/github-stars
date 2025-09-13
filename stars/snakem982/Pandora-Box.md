@@ -1,6 +1,6 @@
 ---
 project: Pandora-Box
-stars: 670
+stars: 676
 description: A Simple Mihomo GUI. 一个简易的 Mihomo 桌面客户端
 url: https://github.com/snakem982/Pandora-Box
 ---
@@ -83,7 +83,6 @@ npm run start
 
 -   ✅ Project Issues
 -   📄 License (GPL-3.0)
--   ❤️ Powered by ZMTO
 
 * * *
 

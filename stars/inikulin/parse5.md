@@ -1,6 +1,6 @@
 ---
 project: parse5
-stars: 3815
+stars: 3819
 description: HTML parsing/serialization toolset for Node.js. WHATWG HTML Living Standard (aka HTML5)-compliant.
 url: https://github.com/inikulin/parse5
 ---

@@ -1,6 +1,6 @@
 ---
 project: MeteorMail
-stars: 56
+stars: 57
 description: MeteorMail - 一款基于Node.js的自托管临时邮箱服务，提供即时创建、即用即走的临时邮箱，保护隐私，避免垃圾邮件，支持验证码接收。Self-hosted temporary email service based on Node.js for privacy protection.
 url: https://github.com/lbjlaq/MeteorMail
 ---

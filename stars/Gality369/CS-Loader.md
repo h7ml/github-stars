@@ -1,6 +1,6 @@
 ---
 project: CS-Loader
-stars: 838
+stars: 839
 description: CSLoader is a general purpose obfuscation and anti-virus tool based on a reimplementation of the llvm project obfuscator(https://github.com/obfuscator-llvm/obfuscator).
 url: https://github.com/Gality369/CS-Loader
 ---

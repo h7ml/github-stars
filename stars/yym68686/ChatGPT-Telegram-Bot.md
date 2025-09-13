@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-Telegram-Bot
-stars: 1119
+stars: 1123
 description: TeleChat: 🤖️ an AI chat Telegram bot can Web Search Powered by GPT-5, DALL·E , Groq, Gemini 2.5 Pro/Flash and the official Claude4.1 API using Python on Zeabur, fly.io and Replit.
 url: https://github.com/yym68686/ChatGPT-Telegram-Bot
 ---
@@ -323,7 +323,7 @@ Follow the prompts to deploy. A secondary domain name will be provided in the of
 Set environment variables
 
 flyctl secrets set BOT\_TOKEN=bottoken
-flyctl secrets set API=
+flyctl secrets set API\_KEY=
 # optional
 flyctl secrets set WEB\_HOOK=https://flyio-app-name.fly.dev/
 flyctl secrets set NICK=javis
@@ -353,7 +353,7 @@ Start the container
 
 docker run -p 80:8080 --name chatbot -dit \\
     -e BOT\_TOKEN=your\_telegram\_bot\_token \\
-    -e API= \\
+    -e API\_KEY= \\
     -e BASE\_URL= \\
     -v ./user\_configs:/home/user\_configs \\
     yym68686/chatgpt:latest
@@ -367,7 +367,7 @@ services:
     image: yym68686/chatgpt:latest
     environment:
       - BOT\_TOKEN=
-      - API=
+      - API\_KEY=
       - BASE\_URL=
       - CUSTOM\_MODELS=-all;GPT:gpt-5,gpt-3.5-turbo;Claude:claude-3-opus,claude-3-sonnet
     volumes:
@@ -396,7 +396,7 @@ docker pull yym68686/chatgpt:latest
 docker rm -f chatbot
 docker run -p 8080:8080 -dit --name chatbot \\
 -e BOT\_TOKEN= \\
--e API= \\
+-e API\_KEY= \\
 -e BASE\_URL= \\
 -e GOOGLE\_API\_KEY= \\
 -e GOOGLE\_CSE\_ID= \\
@@ -608,6 +608,14 @@ Koyeb's free service can be a bit unstable, so deployment failures are pretty co
 If you deployed using `docker-compose.yml`, do not add quotes around the value of `CUSTOM_MODELS`. Incorrect usage: `CUSTOM_MODELS="gpt-5,-gpt-3.5"`, otherwise it will cause environment variable parsing errors, resulting in the default model name reappearing. The incorrect way will be parsed as deleting the `gpt-3.5"` model, which will cause the default model name `gpt-3.5` not to be deleted. The correct way to write it is: `CUSTOM_MODELS=gpt-5,-gpt-3.5`.
 
 The same applies to model groups. Incorrect: `CUSTOM_MODELS="GPT:gpt-5;Claude:claude-3-opus"`. Correct: `CUSTOM_MODELS=GPT:gpt-5;Claude:claude-3-opus`. If your group names or model names contain special characters, be careful with escaping.
+
+-   How can I use multiple API providers at the same time, for example, using both Gemini and OpenAI?
+
+This project can only be configured with one API provider at a time. For example, if the `BASE_URL` is set to Gemini's API endpoint, you cannot use OpenAI's API simultaneously. To use multiple providers at the same time, you must use the `uni-api` project. `uni-api` can convert various API formats from different providers into the standard OpenAI format. Since this project exclusively supports the OpenAI API format, using `uni-api` allows you to use models from dozens of different providers simultaneously. It is important to note that "OpenAI format" does not mean you can only use OpenAI's models; many other providers (like Gemini, Groq, Cloudflare, etc.) also support being called via an OpenAI-compatible API format.
+
+-   Why did you change the whole foundation of the api key, now i cant have grok and gemini without changing the api?
+
+The developer deleted APIs other than the OpenAI format. Currently, if you want to use other formats of APIs, you must convert them to the OpenAI format through the developer's other project, uni-api. You can configure dozens of different providers to use in the tg bot at the same time through uni-api. The purpose of this is to reduce maintenance costs, as the developer only needs to maintain uni-api to adapt to all the latest features. Of course, gemini officially supports OpenAI format endpoints, for example: `https://generativelanguage.googleapis.com/v1/chat/completions`.
 
 References
 ----------

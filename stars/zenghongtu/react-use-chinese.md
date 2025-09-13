@@ -1,6 +1,6 @@
 ---
 project: react-use-chinese
-stars: 1044
+stars: 1042
 description: 中文文档@react-use
 url: https://github.com/zenghongtu/react-use-chinese
 ---

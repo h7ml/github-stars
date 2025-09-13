@@ -1,6 +1,6 @@
 ---
 project: smart-admin
-stars: 3506
+stars: 3511
 description: SmartAdmin国内首个以「高质量代码」为核心，「简洁、高效、安全」快速开发平台；基于SpringBoot2/3 + Sa-Token + Mybatis-Plus 和 Vue3 + Vite5 + Ant Design Vue 4.x (同时支持JavaScript和TypeScript双版本)；满足国家三级等保要求、支持登录限制、接口数据国产加解密、高防SQL注入等一系列安全体系。
 url: https://github.com/1024-lab/smart-admin
 ---

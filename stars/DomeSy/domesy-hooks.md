@@ -1,6 +1,6 @@
 ---
 project: domesy-hooks
-stars: 35
+stars: 34
 description: 掘金小册：玩转 React Hooks，项目代码示例
 url: https://github.com/DomeSy/domesy-hooks
 ---

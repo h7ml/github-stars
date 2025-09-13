@@ -1,6 +1,6 @@
 ---
 project: webpack-retry-chunk-load-plugin
-stars: 248
+stars: 249
 description: A webpack plugin to retry loading of chunks that failed to load
 url: https://github.com/mattlewis92/webpack-retry-chunk-load-plugin
 ---

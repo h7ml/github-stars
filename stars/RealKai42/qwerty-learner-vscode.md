@@ -1,6 +1,6 @@
 ---
 project: qwerty-learner-vscode
-stars: 837
+stars: 838
 description: 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件 VSCode 摸🐟版 / Words learning and English muscle memory training software designed for keyboard workers for VSCode
 url: https://github.com/RealKai42/qwerty-learner-vscode
 ---

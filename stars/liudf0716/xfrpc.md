@@ -1,6 +1,6 @@
 ---
 project: xfrpc
-stars: 776
+stars: 778
 description: xfrpc 是一个轻量级的 FRP 客户端，完美兼容 frps，采用 C 语言实现，专为 OpenWRT 和物联网等资源受限系统优化设计。它针对 ROM 和 RAM 空间有限的设备，提供高效的内网穿透解决方案。xfrpc 集成了xDPI（深度包检测）功能，增强了安全性，有效防止内网穿透中因恶意嗅探导致的安全威胁，确保数据传输和网络访问的可靠保护。技术交流QQ群 331230369
 url: https://github.com/liudf0716/xfrpc
 ---

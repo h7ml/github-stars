@@ -1,6 +1,6 @@
 ---
 project: note-gen
-stars: 9083
+stars: 9294
 description: A cross-platform Markdown AI note-taking software.
 url: https://github.com/codexu/note-gen
 ---
@@ -22,11 +22,11 @@ Why Choose NoteGen?
 
 -   Lightweight: Installation package is **only 20MB**, free with no ads or bundled software.
 -   Cross-platform capabilities of `Tauri2`, it supports Windows, MacOS, Linux, iOS, and Android, and it supports free multi-device data synchronization.
+-   AI-enhanced: Free AI features powered by SiliconFlow, with support for custom third-party models including ChatGPT, Gemini, Ollama, LM Studio, Grok, and more.
+-   RAG: Your notes are your knowledge base. Support embedding models and reranking models.
 -   Supports multiple recording methods including `screenshots`, `text`, `illustrations`, `files`, `links`, etc., meeting fragmented recording needs across various scenarios.
 -   Native `Markdown(.md)` as storage format, no modifications, easy to migrate.
--   Native offline usage, supporting real-time synchronization to `GitHub, Gitee private repositories` with history rollback, and WebDAV synchronization.
--   AI-enhanced: Configurable with ChatGPT, Gemini, Ollama, LM Studio, Grok, and other models, with support for custom third-party model configuration.
--   RAG: Your notes are your knowledge base. Support embedding models and reranking models.
+-   Offline, supporting real-time synchronization to `Github、Gitee、Gitlab private repositories` with history rollback, and WebDAV synchronization.
 
 How to Use?
 -----------
@@ -132,8 +132,18 @@ Contribute
 Contributors
 ------------
 
-Sponsors
---------
+Thanks
+------
+
+Special thanks to our technology partners who make NoteGen better:
+
+**SiliconFlow** - Providing free AI model services, powering NoteGen's intelligent features with high-quality AI capabilities.
+
+**UpgradeLink** - Providing reliable installation and upgrade services, ensuring seamless software updates for users.
+
+* * *
+
+We also thank other partners for their service support
 
 Star History
 ------------

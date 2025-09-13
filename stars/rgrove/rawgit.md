@@ -1,6 +1,6 @@
 ---
 project: rawgit
-stars: 2394
+stars: 2395
 description: Served files from raw.githubusercontent.com, but with the correct content types. No longer actively developed.
 url: https://github.com/rgrove/rawgit
 ---

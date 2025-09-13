@@ -1,6 +1,6 @@
 ---
 project: chinese-programmer-wrong-pronunciation
-stars: 22805
+stars: 22813
 description: 中国程序员容易发音错误的单词
 url: https://github.com/shimohq/chinese-programmer-wrong-pronunciation
 ---

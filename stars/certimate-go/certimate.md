@@ -1,6 +1,6 @@
 ---
 project: certimate
-stars: 7358
+stars: 7385
 description: 开源的 SSL 证书管理工具，可以帮助你自动申请、部署 SSL 证书，并在证书即将过期时自动续期。An open-source SSL certificate management tool that helps you automatically apply for and deploy SSL certificates, as well as automatically renew them when they are about to expire.
 url: https://github.com/certimate-go/certimate
 ---
@@ -9,12 +9,6 @@ url: https://github.com/certimate-go/certimate
 ============
 
 中文 ｜ English
-
-Warning
-
-当前分支为 `next`，是 v0.4.x 的开发分支，目前还没有稳定，请勿在生产环境中使用。
-
-如需访问之前的版本，或提交 PR，请切换至 `main` 分支。
 
 * * *
 
@@ -39,11 +33,12 @@ Certimate 旨在为用户提供一个安全、简便的 SSL 证书管理解决�
 
 -   灵活的工作流编排方式，证书从申请到部署完全自动化；
 -   支持单域名、多域名、泛域名证书，可选 RSA、ECC 签名算法；
+-   支持 DNS-01（即基于域名解析验证）、HTTP-01（即基于文件验证）两种质询方式；
 -   支持 PEM、PFX、JKS 等多种格式输出证书；
--   支持 30+ 域名托管商（如阿里云、腾讯云、Cloudflare 等，点此查看完整清单）；
+-   支持 40+ 域名托管商（如阿里云、腾讯云、Cloudflare 等，点此查看完整清单）；
 -   支持 100+ 部署目标（如 Kubernetes、CDN、WAF、负载均衡等，点此查看完整清单）；
 -   支持邮件、钉钉、飞书、企业微信、Webhook 等多种通知渠道；
--   支持 Let's Encrypt、Buypass、Google Trust Services、SSL.com、ZeroSSL 等多种 ACME 证书颁发机构；
+-   支持 Let's Encrypt、Actalis、Google Trust Services、SSL.com、ZeroSSL 等多种 ACME 证书颁发机构；
 -   更多特性等待探索。
 
 ⏱️ 快速启动
@@ -73,9 +68,8 @@ Certimate 旨在为用户提供一个安全、简便的 SSL 证书管理解决�
 
 相关文章：
 
+-   《升级指南：迁移到 v0.4》
 -   《使用 CNAME 完成 ACME DNS-01 质询》
--   《v0.3.0：第二个不向后兼容的大版本》
--   《v0.2.0：第一个不向后兼容的大版本》
 -   《Why Certimate?》
 
 ⭐ 运行界面

@@ -1,6 +1,6 @@
 ---
 project: juejin-helper
-stars: 23
+stars: 24
 description: 针对掘金网页版开发的浏览器插件，支持小册下载
 url: https://github.com/findmio/juejin-helper
 ---

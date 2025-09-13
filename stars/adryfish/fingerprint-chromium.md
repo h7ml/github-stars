@@ -1,6 +1,6 @@
 ---
 project: fingerprint-chromium
-stars: 1244
+stars: 1281
 description: An open source fingerprint browser based on Ungoogled Chromium. 指纹浏览器 隐私浏览器
 url: https://github.com/adryfish/fingerprint-chromium
 ---

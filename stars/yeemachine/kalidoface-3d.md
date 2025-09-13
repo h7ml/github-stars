@@ -1,6 +1,6 @@
 ---
 project: kalidoface-3d
-stars: 483
+stars: 485
 description: Face and Body Tracking for VRM 3D models on the web.
 url: https://github.com/yeemachine/kalidoface-3d
 ---

@@ -1,6 +1,6 @@
 ---
 project: npkill
-stars: 8821
+stars: 8830
 description: List any node_modules 📦 dir in your system and how heavy they are. You can then select which ones you want to erase to free up space 🧹
 url: https://github.com/voidcosmos/npkill
 ---

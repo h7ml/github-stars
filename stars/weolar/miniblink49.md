@@ -1,6 +1,6 @@
 ---
 project: miniblink49
-stars: 7616
+stars: 7621
 description: a lighter, faster browser kernel of blink to integrate HTML UI in your app. 一个小巧、轻量的浏览器内核，用来取代wke和libcef
 url: https://github.com/weolar/miniblink49
 ---

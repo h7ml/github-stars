@@ -1,6 +1,6 @@
 ---
 project: vulfocus
-stars: 3368
+stars: 3375
 description: 🚀Vulfocus 是一个漏洞集成平台，将漏洞环境 docker 镜像，放入即可使用，开箱即用。
 url: https://github.com/fofapro/vulfocus
 ---
@@ -14,11 +14,7 @@ Vulfocus 官网：https://fofapro.github.io/vulfocus/
 
 在线 Vulfocus：
 
-http://vulfocus.cn/
-
-http://vulfocus.io/
-
-http://vulfocus.club/
+https://vulfocus.cn/
 
 背景
 --
@@ -159,14 +155,14 @@ python3 manage.py migrate --fake
 
 -   自定义安装
 
-修改项目目录下的vulfocus-api/dockerapi/views.py文件，修改get\_timing\_imgs函数，将vulfocus.fofa.so替换成vulfocus.io
+修改项目目录下的vulfocus-api/dockerapi/views.py文件，修改get\_timing\_imgs函数，将vulfocus.fofa.so替换成vulfocus.cn
 
 -   docker镜像启动
     
     1.将容器内部的/vulfocus-api/dockerapi/views.py文件拷贝至主机当前目录
     
 
-修改当前目录下拷贝出来的views.py文件，修改get\_timing\_imgs函数，将vulfocus.fofa.so替换成vulfocus.io
+修改当前目录下拷贝出来的views.py文件，修改get\_timing\_imgs函数，将vulfocus.fofa.so替换成vulfocus.cn
 
 将修改好的views文件重新copy至容器内部
 

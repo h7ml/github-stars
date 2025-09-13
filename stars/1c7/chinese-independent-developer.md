@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 42936
+stars: 43404
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -37,12 +37,93 @@ url: https://github.com/1c7/chinese-independent-developer
 3\. 项目列表
 --------
 
+### 2025 年 9 月 14 号添加
+
+#### 饭特稀
+
+-   ✅ 去掉图片里的文字
+
+### 2025 年 9 月 12 号添加
+
+#### OD-Ice(深圳) - Github
+
+-   ✅ Verbord：录音笔记 iOS 应用(纯净、私密），帮你轻松记录生活点滴和创作灵感
+
+#### licon(深圳) - Github
+
+-   ✅ EZQuiz：AI 智能实时测验，让你快速创建、分享并与观众通过实时互动测验进行互动
+-   ✅ EZ-translate：AI 浏览器翻译插件(免费)，支持页面内翻译，截图翻译，自动检测语言 - 开源仓库
+
+#### 饭特稀 - Github
+
+-   ✅ SiteData：网站流量与 AdSense 反查工具(免费)，无需登录即可使用 - Chrome 浏览器插件
+
+#### Ryan - Github
+
+-   ✅ AI Song：AI 生成歌曲、歌词的音乐网站
+
+### 2025 年 9 月 11 号添加
+
+#### ai77 - 网站
+
+-   ✅ AI 赛事通：全球 AI 竞赛聚合平台，收录涵盖数据算法竞赛、AI 大模型竞赛、AI Agent 挑战赛、工程开发竞赛等多个领域，让你不会错过任何一场 AI 赛事，提升技能，赢取奖金
+
+#### Carys - Github
+
+-   ✅ AIToolsss：AI 工具导航，收录全球 AI 产品与应用
+
+### 2025 年 9 月 10 号添加
+
+#### yvonuk - 推特
+
+-   ✅ Proxied Web from URL：代理服务器，完全免费，把任何网址放在 https://web.818233.xyz/ 后面，这个新的网址就可以作为代理服务器获取原网站的内容，目前只支持内容获取，不支持网站交互操作。
+
+#### George(北京)
+
+-   ✅ AI miniatur：将照片转换为 AI 手办模型
+
+#### godow(杭州) - Github,
+
+-   ✅ 1desk：您的私人订制在线桌面：可添加多个页面空间，每个页面空间可添加并自定义卡片位置与尺寸，添加多种卡片如笔记本、Rss、书签、自定义搜索引擎等 - 更多介绍
+
+#### Susu(南京) - Github
+
+-   ✅ Backlink Manager：专注于外链提交管理、SEO 问题检测及权重提升
+
+### 2025 年 9 月 8 号添加
+
+#### asui(泉州市) - Github
+
+-   ✅ 潦草头像馆：随机生成多种搞怪风格头像的微信小程序，让你的头像不再 “撞衫” - 更多介绍
+
+#### 景彬(武汉) - Github
+
+-   ✅ 所思笔记：日有所思夜有所梦，记录白天的所思和晚上的梦。
+
+#### xbaicai0 - Github
+
+-   ✅ Discordtags：使用高级标签查找 Discord 服务器，浏览游戏、学习小组、创意社区。通过智能标签发现符合您兴趣的服务器。
+
+#### wangbing-coder - Github
+
+-   ✅ AI 驱动的智能图片描述生成器：提交任意图片，生成对这张图片的详细描述文字
+
+#### leah626888 - Github
+
+-   ✅ Pixel Art Generator：像素画生成器，将任意图片一键转换为复古风格的像素艺术，支持 JPG、PNG、WebP、GIF、BMP、TIFF 等多种格式，你可以自定义像素尺寸、颜色数量、调色板风格（如 Pico-8、Game Boy、NES 等），还可实时预览转换效果，轻松下载高质量像素画，适合用于社交媒体、游戏、周边设计等场景。
+
+### 2025 年 9 月 7 号添加
+
+#### Prompt2Tool - Github
+
+-   ✅ AI 驱动的免费在线工具平台：提供 300+ 实用工具，无需注册即可使用
+
 ### 2025 年 9 月 6 号添加
 
 #### ljxyaly(深圳) - Github
 
--   ✅ PDF编辑器 pdf-editor：简易的 PDF 编辑器
--   ✅ GIF助手 gif-helper：GIF 合并与分解
+-   ✅ PDF 编辑器：简易的 PDF 编辑器
+-   ✅ GIF 助手：GIF 合并与分解
 
 #### Jazz Jay
 

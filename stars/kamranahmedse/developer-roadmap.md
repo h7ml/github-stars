@@ -1,6 +1,6 @@
 ---
 project: developer-roadmap
-stars: 335456
+stars: 336293
 description: Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 url: https://github.com/kamranahmedse/developer-roadmap
 ---
@@ -63,6 +63,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 -   Go Roadmap
 -   Rust Roadmap
 -   Java Roadmap
+-   Kotlin Roadmap
 -   Spring Boot Roadmap
 -   Design System Roadmap
 -   PostgreSQL Roadmap

@@ -1,7 +1,7 @@
 ---
 project: lnx
-stars: 1366
-description: An insanely fast search engine for scaling to the stars 🌠
+stars: 1367
+description: A flexible, performant and reliable search database without the AI bullshit.
 url: https://github.com/lnx-search/lnx
 ---
 

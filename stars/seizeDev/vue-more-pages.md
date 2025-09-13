@@ -1,6 +1,6 @@
 ---
 project: vue-more-pages
-stars: 154
+stars: 153
 description: 多页面vue项目，打包后每个页面也单独文件夹
 url: https://github.com/seizeDev/vue-more-pages
 ---

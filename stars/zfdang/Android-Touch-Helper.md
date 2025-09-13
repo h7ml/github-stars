@@ -1,6 +1,6 @@
 ---
 project: Android-Touch-Helper
-stars: 5240
+stars: 5245
 description: 开屏跳过-安卓系统的开屏广告自动跳过助手
 url: https://github.com/zfdang/Android-Touch-Helper
 ---
@@ -12,14 +12,6 @@ Android-Touch-Helper
 ======================
 
 自动跳过软件的实现，一般都是基于安卓的Accessibility“无障碍服务”实现。开启了无障碍服务的软件，可以获取屏幕上的任何内容，从而可以检测广告，帮助用户自动跳过。因此，使用广告跳过程序，最大的风险是个人信息被泄露！
-
-```
-推荐另外一款开源软件： 
-https://github.com/gkd-kit/gkd
-
-有不少预制好的规则可以用：
-https://github.com/topics/gkd-subscription
-```
 
 **本程序是开源程序，不需要网络权限，不需要存储权限，不会收集或者上传任何信息！绝无隐私问题！**
 
@@ -36,6 +28,9 @@ https://github.com/topics/gkd-subscription
 
 http://TouchHelper.zfdang.com
 
+Star History
+------------
+
 一点说明
 ====
 
@@ -43,10 +38,13 @@ http://TouchHelper.zfdang.com
 
 如果有人愿意提交PR, 我会尽量Review之后Merge的
 
-赞助声明
-====
+```
+推荐另外一款开源软件： 
+https://github.com/gkd-kit/gkd
 
-本项目由 ZMTO 的「开源项目免费 VPS计划」提供算力支持。 感谢 ZMTO 对开源社区的支持！
+有不少预制好的规则可以用：
+https://github.com/topics/gkd-subscription
+```
 
 感谢
 ==
@@ -54,3 +52,10 @@ http://TouchHelper.zfdang.com
 项目借鉴了不少AccessibilityTool的代码，在此表示感谢！
 
 https://github.com/LGH1996/AccessibilityTool
+
+赞助声明
+====
+
+NodeSupport赞助了本项目
+
+本项目由 ZMTO 的「开源项目免费 VPS计划」提供算力支持。 感谢 ZMTO 对开源社区的支持！

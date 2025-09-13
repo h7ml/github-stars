@@ -1,6 +1,6 @@
 ---
 project: openapi-ts-request
-stars: 420
+stars: 427
 description: Swagger2/OpenAPI3/Apifox to TS/JS, request client, mock service, enum, react-query, type field label, JSON Schemas;  根据 Swagger2/OpenAPI3/Apifox 生成 TypeScript/JavaScript, 客户端请求函数(支持任意客户端), 模拟请求响应服务, 枚举和枚举翻译, react-query, 类型的字段翻译, JSON Schemas定义, 欢迎提功能请求
 url: https://github.com/openapi-ui/openapi-ts-request
 ---
@@ -178,6 +178,7 @@ $ openapi --help
     -f, --full <boolean>                full replacement (default: true)
     --enableLogging <boolean>           open the log (default: false)
     --priorityRule <string>             priority rule, include/exclude/both (default: "include")
+    --filterCaseInsensitive <boolean>   whether to perform a case-insensitive match with includeTags, includePaths, excludeTags, excludePaths filters
     --includeTags <(string|RegExp)[]>   generate code from include tags
     --includePaths <(string|RegExp)[]>  generate code from include paths
     --excludeTags <(string|RegExp)[]>   generate code from exclude tags
@@ -276,6 +277,16 @@ string
 'include'
 
 模式规则，可选include/exclude/both
+
+filterCaseInsensitive
+
+否
+
+boolean
+
+false
+
+执行 includeTags、includePaths、excludeTags、excludePaths 过滤时是否忽略大小写
 
 includeTags
 
@@ -594,7 +605,7 @@ string
 
 false
 
-includeTags
+selectedTags
 
 \* 或 string\[\]
 
@@ -602,7 +613,7 @@ includeTags
 
 false
 
-excludeTags
+excludedByTags
 
 string\[\]
 

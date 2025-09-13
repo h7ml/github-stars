@@ -1,6 +1,6 @@
 ---
 project: ChatGPTScan-SAST
-stars: 183
+stars: 182
 description: 一个基于 ChatGPT 的开源代码审计平台。
 url: https://github.com/YulinSec/ChatGPTScan-SAST
 ---

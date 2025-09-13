@@ -1,6 +1,6 @@
 ---
 project: yicode
-stars: 309
+stars: 308
 description: 前端之虎陈随易，耗时4年，潜心打造接口框架、VUE脚手架、后台管理模板、函数库等，为你节约时间，提高效率，早点回家，吃口热饭！
 url: https://github.com/chenbimo/yicode
 ---

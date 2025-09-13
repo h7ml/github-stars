@@ -1,6 +1,6 @@
 ---
 project: console-importer
-stars: 921
+stars: 922
 description: Easily import JS and CSS resources from Chrome console.
 url: https://github.com/pd4d10/console-importer
 ---

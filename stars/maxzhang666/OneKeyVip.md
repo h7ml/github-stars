@@ -1,6 +1,6 @@
 ---
 project: OneKeyVip
-stars: 933
+stars: 935
 description: 一键Vip解析工具箱,功能介绍：1、一站式音乐搜索解决方案；2、bilibili视频封面获取；3、bilibili视频下载；4、商品历史价格展示(一次性告别虚假降价)；5、优惠券查询；6、CSDN界面清理(复制解锁)
 url: https://github.com/maxzhang666/OneKeyVip
 ---

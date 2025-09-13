@@ -1,6 +1,6 @@
 ---
 project: certd
-stars: 3614
+stars: 3643
 description: 开源SSL证书管理工具；全自动证书申请、更新、续期；通配符证书，泛域名证书申请；证书自动化部署到阿里云、腾讯云、主机、群晖、宝塔；https证书，pfx证书，der证书，TLS证书，nginx证书自动续签自动部署
 url: https://github.com/certd/certd
 ---
@@ -178,8 +178,7 @@ QQ群
 
 * * *
 
-支持开源，为爱发电，我已入驻爱发电  
-https://afdian.com/a/greper
+支持开源，为爱发电，我已入驻爱发电 https://afdian.com/a/greper
 
 发电权益：
 
@@ -230,6 +229,8 @@ https://afdian.com/a/greper
 邮件通知、自定义webhook
 
 邮件免配置、企微、钉钉、飞书、anpush、server酱等
+
+* * *
 
 * * *
 

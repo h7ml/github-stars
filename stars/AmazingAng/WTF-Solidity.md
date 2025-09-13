@@ -1,6 +1,6 @@
 ---
 project: WTF-Solidity
-stars: 13153
+stars: 13186
 description: WTF Solidity 极简入门教程，供小白们使用。Now supports English! 官网: https://wtf.academy
 url: https://github.com/AmazingAng/WTF-Solidity
 ---

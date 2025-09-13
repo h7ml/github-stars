@@ -1,6 +1,6 @@
 ---
 project: Operit
-stars: 1575
+stars: 1615
 description: An android AI agent can automatically operate your mobile phone
 url: https://github.com/AAswordman/Operit
 ---

@@ -1,6 +1,6 @@
 ---
 project: d2l-zh
-stars: 72122
+stars: 72311
 description: 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。
 url: https://github.com/d2l-ai/d2l-zh
 ---

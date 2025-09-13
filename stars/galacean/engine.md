@@ -1,6 +1,6 @@
 ---
 project: engine
-stars: 5214
+stars: 5239
 description: A typescript interactive engine, support 2D, 3D, animation, physics, built on WebGL and glTF.
 url: https://github.com/galacean/engine
 ---

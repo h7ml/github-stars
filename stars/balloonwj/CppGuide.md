@@ -1,6 +1,6 @@
 ---
 project: CppGuide
-stars: 5761
+stars: 5770
 description: C/C++学习，后端开发进阶指南。
 url: https://github.com/balloonwj/CppGuide
 ---

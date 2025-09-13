@@ -1,6 +1,6 @@
 ---
 project: Paolujichang
-stars: 3823
+stars: 3856
 description: 科学上网🕸️之跑路机场名单收集（2020-2025），欢迎投稿。Ad🔗🈲🙅❌
 url: https://github.com/limbopro/Paolujichang
 ---

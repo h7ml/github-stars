@@ -1,6 +1,6 @@
 ---
 project: rest.js
-stars: 626
+stars: 627
 description: GitHub REST API client for JavaScript
 url: https://github.com/octokit/rest.js
 ---

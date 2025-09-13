@@ -1,6 +1,6 @@
 ---
 project: projectoa
-stars: 155
+stars: 156
 description: 华理网院本科毕业设计 - 企业OA后台管理系统 基于springboot amazeui等 开发于2018年，仅为学习使用。
 url: https://github.com/zzzmhcn/projectoa
 ---

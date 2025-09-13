@@ -1,6 +1,6 @@
 ---
 project: SwanLab
-stars: 2556
+stars: 2596
 description: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / LLaMA Factory / veRL/ Swift / Ultralytics / MMEngine / Keras etc.
 url: https://github.com/SwanHubX/SwanLab
 ---
@@ -39,6 +39,8 @@ url: https://github.com/SwanHubX/SwanLab
 🌟 最近更新
 -------
 
+-   2025.09.12：🔢支持创建**标量图**，灵活显示实验指标的统计值；组织管理页面大升级，提供更强大的权限控制与项目管理能力；
+    
 -   2025.08.19：🤔更强大的图表渲染性能与低侵入式加载动画，让研究者更聚焦于实验分析本身；集成优秀的MLX-LM、SpecForge框架，提供更多场景的训练体验；
     
 -   2025.08.06：👥**训练轻协作**上线，支持邀请项目协作者，分享项目链接与二维码；工作区支持列表视图，支持显示项目Tags；
@@ -55,11 +57,11 @@ url: https://github.com/SwanHubX/SwanLab
     
 -   2025.06.20：🤗集成accelerate框架，PR，文档，增强分布式训练中的实验记录体验；
     
--   2025.06.18：🐜集成AREAL框架，感谢@xichengpro，PR，文档；🖱支持鼠标Hover到侧边栏实验时，高亮相应曲线；支持跨组对比折线图；支持设置实验名裁剪规则；
-    
 
 完整更新日志
 
+-   2025.06.18：🐜集成AREAL框架，感谢@xichengpro，PR，文档；🖱支持鼠标Hover到侧边栏实验时，高亮相应曲线；支持跨组对比折线图；支持设置实验名裁剪规则；
+    
 -   2025.06.11：📊支持 **swanlab.echarts.table** 数据类型，支持纯文本图表展示；支持对分组进行**拉伸交互**，以增大同时显示的图表数量；表格视图增加 **指标最大/最小值** 选项；
     
 -   2025.06.08：♻️支持在本地存储完整的实验日志文件，通过 **swanlab sync** 上传本地日志文件到云端/私有化部署端；硬件监控支持**海光DCU**；
@@ -311,6 +313,7 @@ swanlab login --host http://localhost:8000
 -   self-llm：《开源大模型食用指南》针对中国宝宝量身打造的基于Linux环境快速微调（全参数/Lora）、部署国内外开源大模型（LLM）/多模态大模型（MLLM）教程
 -   unlock-deepseek：DeepSeek 系列工作解读、扩展和复现
 -   Qwen3-SmVL: 将SmolVLM2的视觉头与Qwen3-0.6B模型进行了拼接微调
+-   OPPO/Agent\_Foundation\_Models: 通过多Agent蒸馏和Agent RL的端到端Agent基础模型。
 
 **使用SwanLab的优秀论文：**
 
@@ -578,9 +581,9 @@ network.py
 
 ### 周边仓库
 
+-   self-hosted：私有化部署脚本仓库
 -   SwanLab-Docs：官方文档仓库
 -   SwanLab-Dashboard：离线看板仓库，存放了由`swanlab watch`打开的轻量离线看板的web代码
--   self-hosted：私有化部署脚本仓库
 
 ### 社区与支持
 

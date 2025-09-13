@@ -1,6 +1,6 @@
 ---
 project: mitosis
-stars: 13347
+stars: 13356
 description: Write components once, run everywhere. Compiles to React, Vue, Qwik, Solid, Angular, Svelte, and more. 
 url: https://github.com/BuilderIO/mitosis
 ---

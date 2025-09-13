@@ -1,6 +1,6 @@
 ---
 project: nestjs-fastify
-stars: 43
+stars: 42
 description: 基于nestjs + fastify + typeorm + swagger + winston 开发的一套基础项目框架。适合初学者学习，以及用来搭建项目基础架构。
 url: https://github.com/JeniTurtle/nestjs-fastify
 ---

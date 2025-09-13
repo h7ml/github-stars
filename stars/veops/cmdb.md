@@ -1,6 +1,6 @@
 ---
 project: cmdb
-stars: 1997
+stars: 2004
 description: CMDB: configuration and management of IT resources
 url: https://github.com/veops/cmdb
 ---

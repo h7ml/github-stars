@@ -1,6 +1,6 @@
 ---
 project: koa-router
-stars: 4837
+stars: 4836
 description: Router middleware for koa.
 url: https://github.com/ZijianHe/koa-router
 ---

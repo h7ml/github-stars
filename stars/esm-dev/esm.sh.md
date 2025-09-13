@@ -1,6 +1,6 @@
 ---
 project: esm.sh
-stars: 3708
+stars: 3725
 description: A nobuild content delivery network(CDN) for modern web development.
 url: https://github.com/esm-dev/esm.sh
 ---

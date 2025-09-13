@@ -1,6 +1,6 @@
 ---
 project: stf
-stars: 13666
+stars: 13672
 description: Control and manage Android devices from your browser.
 url: https://github.com/openstf/stf
 ---

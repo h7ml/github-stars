@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 75751
+stars: 75874
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
@@ -17,14 +17,7 @@ View Demo · Report Bug · Request Feature · FAQ · Ask Question
 
 Love the project? Please consider donating to help it improve!
 
-Are you considering supporting the project by donating to me? Please DO NOT!!!
-
-India has recently suffered one of the most devastating train accidents, and your help will be immensely valuable for the people who were affected by this tragedy.
-
-Please visit this link and make a small donation to help the people in need. A small donation goes a long way. ❤️
-
-Features
-========
+Table of contents (Click to show)
 
 -   GitHub Stats Card
     -   Hiding individual stats
@@ -34,12 +27,15 @@ Features
     -   Customization
 -   GitHub Extra Pins
     -   Usage
+    -   Options
     -   Demo
 -   GitHub Gist Pins
     -   Usage
+    -   Options
     -   Demo
 -   Top Languages Card
     -   Usage
+    -   Options
     -   Language stats algorithm
     -   Exclude individual repositories
     -   Hide individual languages
@@ -51,9 +47,12 @@ Features
     -   Hide Progress Bars
     -   Demo
 -   WakaTime Stats Card
+    -   Options
     -   Demo
 -   All Demos
     -   Quick Tip (Align The Cards)
+        -   Stats and top languages cards
+        -   Pinning repositories
 -   Deploy on your own
     -   On Vercel
         -   📽️ Check Out Step By Step Video Tutorial By @codeSTACKr
@@ -411,6 +410,10 @@ Vietnamese
 
 Swedish
 
+`az`
+
+Azerbaijani
+
 If we don't support your language, please consider contributing! You can find more information about how to do it in our contributing guidelines.
 
 #### Stats Card Exclusive Options
@@ -547,7 +550,26 @@ Note
 
 When hide\_rank=`true`, the minimum card width is 270 px + the title length and padding.
 
-#### Repo Card Exclusive Options
+* * *
+
+GitHub Extra Pins
+=================
+
+GitHub extra pins allow you to pin more than 6 repositories in your profile using a GitHub readme profile.
+
+Yay! You are no longer limited to 6 pinned repositories.
+
+### Usage
+
+Copy-paste this code into your readme and change the links.
+
+Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
+
+\[!\[Readme Card\](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)\](https://github.com/anuraghazra/github-readme-stats)
+
+### Options
+
+You can customize the appearance and behavior of the pinned repository card using the common options and exclusive options listed in the table below.
 
 Name
 
@@ -573,7 +595,26 @@ number
 
 `null`
 
-#### Gist Card Exclusive Options
+### Demo
+
+Use `show_owner` query option to include the repo's owner username
+
+GitHub Gist Pins
+================
+
+GitHub gist pins allow you to pin gists in your GitHub profile using a GitHub readme profile.
+
+### Usage
+
+Copy-paste this code into your readme and change the links.
+
+Endpoint: `api/gist?id=bbfce31e0217a3689c8d961a356cb10d`
+
+\[!\[Gist Card\](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)\](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
+
+### Options
+
+You can customize the appearance and behavior of the gist card using the common options and exclusive options listed in the table below.
 
 Name
 
@@ -591,7 +632,42 @@ boolean
 
 `false`
 
-#### Language Card Exclusive Options
+### Demo
+
+Use `show_owner` query option to include the gist's owner username
+
+Top Languages Card
+==================
+
+The top languages card shows a GitHub user's most frequently used languages.
+
+Warning
+
+By default, the language card shows language results only from public repositories. To include languages used in private repositories, you should deploy your own instance using your own GitHub API token.
+
+Note
+
+Top Languages does not indicate the user's skill level or anything like that; it's a GitHub metric to determine which languages have the most code on GitHub. It is a new feature of github-readme-stats.
+
+Warning
+
+This card shows language usage only inside your own non-forked repositories, not depending on who the author of the commits is. It does not include your contributions into another users/organizations repositories. Currently there are no way to get this data from GitHub API. If you want this behavior to be improved you can support this feature request created by @rickstaa inside GitHub Community.
+
+Warning
+
+Currently this card shows data only about first 100 repositories. This is because GitHub API limitations which cause downtimes of public instances (see #1471). In future this behavior will be improved by releasing GitHub action or providing environment variables for user's own instances.
+
+### Usage
+
+Copy-paste this code into your readme and change the links.
+
+Endpoint: `api/top-langs?username=anuraghazra`
+
+\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)\](https://github.com/anuraghazra/github-readme-stats)
+
+### Options
+
+You can customize the appearance and behavior of the top languages card using the common options and exclusive options listed in the table below.
 
 Name
 
@@ -693,7 +769,94 @@ Warning
 
 Language names should be URI-escaped, as specified in Percent Encoding (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use urlencoder.org to help you do this automatically.
 
-#### WakaTime Card Exclusive Options
+### Language stats algorithm
+
+We use the following algorithm to calculate the languages percentages on the language card:
+
+ranking\_index \= (byte\_count ^ size\_weight) \* (repo\_count ^ count\_weight)
+
+By default, only the byte count is used for determining the languages percentages shown on the language card (i.e. `size_weight=1` and `count_weight=0`). You can, however, use the `&size_weight=` and `&count_weight=` options to weight the language usage calculation. The values must be positive real numbers. More details about the algorithm can be found here.
+
+-   `&size_weight=1&count_weight=0` - _(default)_ Orders by byte count.
+-   `&size_weight=0.5&count_weight=0.5` - _(recommended)_ Uses both byte and repo count for ranking
+-   `&size_weight=0&count_weight=1` - Orders by repo count
+
+!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&size\_weight=0.5&count\_weight=0.5)
+
+### Exclude individual repositories
+
+You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
+
+!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&exclude\_repo=github-readme-stats,anuraghazra.github.io)
+
+### Hide individual languages
+
+You can use `&hide=language1,language2` parameter to hide individual languages.
+
+!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)
+
+### Show more languages
+
+You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 20 (inclusive). By default it was set to `5` for `normal` & `donut` and `6` for other layouts.
+
+!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs\_count=8)
+
+### Compact Language Card Layout
+
+You can use the `&layout=compact` option to change the card design.
+
+!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
+
+### Donut Chart Language Card Layout
+
+You can use the `&layout=donut` option to change the card design.
+
+\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut)\](https://github.com/anuraghazra/github-readme-stats)
+
+### Donut Vertical Chart Language Card Layout
+
+You can use the `&layout=donut-vertical` option to change the card design.
+
+\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut-vertical)\](https://github.com/anuraghazra/github-readme-stats)
+
+### Pie Chart Language Card Layout
+
+You can use the `&layout=pie` option to change the card design.
+
+\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=pie)\](https://github.com/anuraghazra/github-readme-stats)
+
+### Hide Progress Bars
+
+You can use the `&hide_progress=true` option to hide the percentages and the progress bars (layout will be automatically set to `compact`).
+
+!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide\_progress=true)
+
+### Demo
+
+-   Compact layout
+
+-   Donut Chart layout
+
+-   Donut Vertical Chart layout
+
+-   Pie Chart layout
+
+-   Hidden progress bars
+
+WakaTime Stats Card
+===================
+
+Warning
+
+Please be aware that we currently only show data from WakaTime profiles that are public. You therefore have to make sure that **BOTH** `Display code time publicly` and `Display languages, editors, os, categories publicly` are enabled.
+
+Change the `?username=` value to your WakaTime username.
+
+\[!\[Harlok's WakaTime stats\](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)\](https://github.com/anuraghazra/github-readme-stats)
+
+### Options
+
+You can customize the appearance and behavior of the WakaTime stats card using the common options and exclusive options listed in the table below.
 
 Name
 
@@ -783,158 +946,6 @@ boolean
 
 `false`
 
-* * *
-
-GitHub Extra Pins
-=================
-
-GitHub extra pins allow you to pin more than 6 repositories in your profile using a GitHub readme profile.
-
-Yay! You are no longer limited to 6 pinned repositories.
-
-### Usage
-
-Copy-paste this code into your readme and change the links.
-
-Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
-
-\[!\[Readme Card\](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)\](https://github.com/anuraghazra/github-readme-stats)
-
-### Demo
-
-Use show\_owner query option to include the repo's owner username
-
-GitHub Gist Pins
-================
-
-GitHub gist pins allow you to pin gists in your GitHub profile using a GitHub readme profile.
-
-### Usage
-
-Copy-paste this code into your readme and change the links.
-
-Endpoint: `api/gist?id=bbfce31e0217a3689c8d961a356cb10d`
-
-\[!\[Gist Card\](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)\](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
-
-### Demo
-
-Use show\_owner query option to include the gist's owner username
-
-Top Languages Card
-==================
-
-The top languages card shows a GitHub user's most frequently used languages.
-
-Warning
-
-By default, the language card shows language results only from public repositories. To include languages used in private repositories, you should deploy your own instance using your own GitHub API token.
-
-Note
-
-Top Languages does not indicate the user's skill level or anything like that; it's a GitHub metric to determine which languages have the most code on GitHub. It is a new feature of github-readme-stats.
-
-Warning
-
-This card shows language usage only inside your own non-forked repositories, not depending on who the author of the commits is. It does not include your contributions into another users/organizations repositories. Currently there are no way to get this data from GitHub API. If you want this behavior to be improved you can support this feature request created by @rickstaa inside GitHub Community.
-
-Warning
-
-Currently this card shows data only about first 100 repositories. This is because GitHub API limitations which cause downtimes of public instances (see #1471). In future this behavior will be improved by releasing GitHub action or providing environment variables for user's own instances.
-
-### Usage
-
-Copy-paste this code into your readme and change the links.
-
-Endpoint: `api/top-langs?username=anuraghazra`
-
-\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)\](https://github.com/anuraghazra/github-readme-stats)
-
-### Language stats algorithm
-
-We use the following algorithm to calculate the languages percentages on the language card:
-
-ranking\_index \= (byte\_count ^ size\_weight) \* (repo\_count ^ count\_weight)
-
-By default, only the byte count is used for determining the languages percentages shown on the language card (i.e. `size_weight=1` and `count_weight=0`). You can, however, use the `&size_weight=` and `&count_weight=` options to weight the language usage calculation. The values must be positive real numbers. More details about the algorithm can be found here.
-
--   `&size_weight=1&count_weight=0` - _(default)_ Orders by byte count.
--   `&size_weight=0.5&count_weight=0.5` - _(recommended)_ Uses both byte and repo count for ranking
--   `&size_weight=0&count_weight=1` - Orders by repo count
-
-!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&size\_weight=0.5&count\_weight=0.5)
-
-### Exclude individual repositories
-
-You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
-
-!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&exclude\_repo=github-readme-stats,anuraghazra.github.io)
-
-### Hide individual languages
-
-You can use `&hide=language1,language2` parameter to hide individual languages.
-
-!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)
-
-### Show more languages
-
-You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 20 (inclusive). By default it was set to `5` for `normal` & `donut` and `6` for other layouts.
-
-!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs\_count=8)
-
-### Compact Language Card Layout
-
-You can use the `&layout=compact` option to change the card design.
-
-!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
-
-### Donut Chart Language Card Layout
-
-You can use the `&layout=donut` option to change the card design.
-
-\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut)\](https://github.com/anuraghazra/github-readme-stats)
-
-### Donut Vertical Chart Language Card Layout
-
-You can use the `&layout=donut-vertical` option to change the card design.
-
-\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut-vertical)\](https://github.com/anuraghazra/github-readme-stats)
-
-### Pie Chart Language Card Layout
-
-You can use the `&layout=pie` option to change the card design.
-
-\[!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=pie)\](https://github.com/anuraghazra/github-readme-stats)
-
-### Hide Progress Bars
-
-You can use the `&hide_progress=true` option to hide the percentages and the progress bars (layout will be automatically set to `compact`).
-
-!\[Top Langs\](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide\_progress=true)
-
-### Demo
-
--   Compact layout
-
--   Donut Chart layout
-
--   Donut Vertical Chart layout
-
--   Pie Chart layout
-
--   Hidden progress bars
-
-WakaTime Stats Card
-===================
-
-Warning
-
-Please be aware that we currently only show data from WakaTime profiles that are public. You therefore have to make sure that **BOTH** `Display code time publicly` and `Display languages, editors, os, categories publicly` are enabled.
-
-Change the `?username=` value to your WakaTime username.
-
-\[!\[Harlok's WakaTime stats\](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)\](https://github.com/anuraghazra/github-readme-stats)
-
 ### Demo
 
 -   Compact layout
@@ -952,7 +963,7 @@ All Demos
 
 -   Showing icons
 
--   Shows Github logo instead rank level
+-   Shows GitHub logo instead rank level
 
 -   Shows user rank percentile instead of rank level
 
@@ -985,7 +996,9 @@ Choose from any of the default themes
 Quick Tip (Align The Cards)
 ---------------------------
 
-By default, GitHub does not lay out the cards side by side. To do that, you can use this approach:
+By default, GitHub does not lay out the cards side by side. To do that, you can use such approaches:
+
+### Stats and top languages cards
 
 <a href\="https://github.com/anuraghazra/github-readme-stats"\>
   <img height\=200 align\="center" src\="https://github-readme-stats.vercel.app/api?username=anuraghazra" />
@@ -993,6 +1006,10 @@ By default, GitHub does not lay out the cards side by side. To do that, you can 
 <a href\="https://github.com/anuraghazra/convoychat"\>
   <img height\=200 align\="center" src\="https://github-readme-stats.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs\_count=8&card\_width=320" />
 </a\>
+
+👀 Show example
+
+### Pinning repositories
 
 <a href\="https://github.com/anuraghazra/github-readme-stats"\>
   <img align\="center" src\="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
@@ -1002,8 +1019,6 @@ By default, GitHub does not lay out the cards side by side. To do that, you can 
 </a\>
 
 👀 Show example
-
-* * *
 
 Deploy on your own
 ==================
@@ -1083,7 +1098,7 @@ This way of using GRS is not officially supported and was added to cater to some
 Disable rate limit protections
 ------------------------------
 
-Github Readme Stats contains several Vercel environment variables that can be used to remove the rate limit protections:
+GitHub Readme Stats contains several Vercel environment variables that can be used to remove the rate limit protections:
 
 -   `CACHE_SECONDS`: This environment variable takes precedence over our cache minimum and maximum values and can circumvent these values for self-hosted Vercel instances.
 
@@ -1103,7 +1118,7 @@ However, if you are using this project and are happy with it or just want to enc
 
 -   Giving proper credit when you use github-readme-stats on your readme, linking back to it. :D
 -   Starring and sharing the project. 🚀
--   \- You can make a one-time donations via PayPal. I'll probably buy a coffee tea. 🍵
+-   \- You can make a one-time donation via PayPal. I'll probably buy a coffee tea. 🍵
 
 Thanks! ❤️
 

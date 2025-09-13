@@ -1,6 +1,6 @@
 ---
 project: gpt-3
-stars: 15780
+stars: 15779
 description: GPT-3: Language Models are Few-Shot Learners
 url: https://github.com/openai/gpt-3
 ---

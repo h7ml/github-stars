@@ -1,6 +1,6 @@
 ---
 project: serializr
-stars: 776
+stars: 777
 description: Serialize and deserialize complex object graphs to and from JSON and Javascript classes
 url: https://github.com/mobxjs/serializr
 ---

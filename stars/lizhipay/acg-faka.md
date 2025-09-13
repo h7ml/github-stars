@@ -1,6 +1,6 @@
 ---
 project: acg-faka
-stars: 4054
+stars: 4075
 description: 个人发卡源码，发卡系统，二次元发卡系统，二次元发卡源码，发卡程序，动漫发卡，PHP发卡源码，异次元发卡
 url: https://github.com/lizhipay/acg-faka
 ---

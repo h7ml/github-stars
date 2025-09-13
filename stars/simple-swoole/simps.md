@@ -1,6 +1,6 @@
 ---
 project: simps
-stars: 478
+stars: 477
 description: 🚀 A simple, lightweight and high-performance PHP coroutine framework.
 url: https://github.com/simple-swoole/simps
 ---

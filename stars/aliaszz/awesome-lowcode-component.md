@@ -1,6 +1,6 @@
 ---
 project: awesome-lowcode-component
-stars: 435
+stars: 434
 description: 精选低代码 (LowCode) 资源列表
 url: https://github.com/aliaszz/awesome-lowcode-component
 ---

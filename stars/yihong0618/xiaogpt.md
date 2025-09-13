@@ -1,6 +1,6 @@
 ---
 project: xiaogpt
-stars: 6634
+stars: 6641
 description: Play ChatGPT and other LLM with Xiaomi AI Speaker
 url: https://github.com/yihong0618/xiaogpt
 ---

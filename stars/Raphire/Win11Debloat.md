@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 26039
+stars: 26430
 description: A simple, easy to use PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---
@@ -97,7 +97,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 #### Bing Web Search, Copilot & AI Features
 
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
--   Disable & remove Microsoft Copilot. (W11 only)
+-   Disable & remove Microsoft Copilot.
 -   Disable Windows Recall snapshots. (W11 only)
 -   Disable AI Features in Edge (W11 only)
 -   Disable AI Features in Paint (W11 only)
@@ -126,7 +126,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 -   Align taskbar icons to the left. (W11 only)
 -   Hide or change the search icon/box on the taskbar. (W11 only)
 -   Hide the taskview button from the taskbar. (W11 only)
--   Disable the widgets service & hide icon from the taskbar.
+-   Disable widgets on the taskbar & lockscreen.
 -   Hide the chat (meet now) icon from the taskbar.
 -   Enable the 'End Task' option in the taskbar right click menu. (W11 only)
 -   Enable the 'Last Active Click' behavior in the taskbar app area. This allows you to repeatedly click on an application's icon in the taskbar to switch focus between the open windows of that application.
@@ -146,26 +146,33 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 
 ### Default Settings
 
-Win11Debloat offers a default mode that allows you to quickly and easily apply the changes that are recommended for most people. This includes uninstalling apps that most would consider bloatware, removing many annoying distractions and disabling telemetry and tracking. To apply the default settings, launch the script as you normally would and select option `1` in the script menu. Alternatively, you can launch the script with the `-RunDefaults` parameter. Example:
+Win11Debloat's default mode allows you to quickly and easily apply the changes that are recommended for most people. This includes removing many annoying distractions, disabling telemetry and tracking and optionally uninstalling the default or your custom selection of apps. To apply the default settings, launch the script as you normally would and select option `1` in the script menu.
+
+Alternatively, you can launch the script with the `-RunDefaults` or `-RunDefaultsLite` parameters to immediately run the defaults without going through the menu or the app removal options. Using the `-RunDefaults` parameter will run the script in default mode and remove the default selection of apps. While using the `-RunDefaultsLite` parameter will run the script in default mode without removing any apps.
+
+Example:
 
 & (\[scriptblock\]::Create((irm "https://debloat.raphi.re/"))) \-RunDefaults
 
 #### Changes included in the default mode
 
--   Remove the default selection of bloatware apps. (See below for full list)
+-   Remove the default or your custom selection of apps. (See below for the default selection of apps)
 -   Disable telemetry, diagnostic data, activity history, app-launch tracking & targeted ads.
 -   Disable tips, tricks, suggestions and ads in start, settings, notifications, File Explorer, and on the lockscreen.
--   Disable ads and the MSN news feed in Microsoft Edge.
+-   Disable ads, suggestions and the MSN news feed in Microsoft Edge.
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
--   Disable & remove Microsoft Copilot. (W11 only)
+-   Disable & remove Microsoft Copilot.
+-   Disable Windows Recall snapshots. (W11 only)
 -   Disable Fast Start-up to ensure a full shutdown.
 -   Disable network connectivity during Modern Standby to reduce battery drain. (W11 only)
 -   Show file extensions for known file types.
 -   Hide the 3D objects folder under 'This pc' from File Explorer. (W10 only)
--   Disable the widget service & hide the icon from the taskbar.
+-   Disable widgets on the taskbar & lockscreen.
 -   Hide the Chat (meet now) icon from the taskbar.
 
-#### Apps that ARE removed as part of the default mode
+#### Apps that ARE removed by default
+
+These apps are uninstalled when you opt to remove the default selection of apps.
 
 Click to expand
 
@@ -199,6 +206,7 @@ Click to expand
 > - Microsoft.Office.Sway  
 > - Microsoft.OneConnect  
 > - Microsoft.Print3D  
+> - Microsoft.StartExperiencesApp** (Widgets app)
 > - Microsoft.SkypeApp  
 > - Microsoft.Todos  
 > - Microsoft.WindowsAlarms  
@@ -208,6 +216,7 @@ Click to expand
 > - Microsoft.XboxApp (Old Xbox Console Companion App, no longer supported)
 > - Microsoft.ZuneVideo  
 > - MicrosoftCorporationII.MicrosoftFamily (Microsoft Family Safety)
+> - MicrosoftCorporationII.QuickAssist (Remote assistance tool)
 > - MicrosoftTeams (Old personal version of MS Teams from the MS Store)
 > - MSTeams (New MS Teams app)
 > 
@@ -224,7 +233,6 @@ Click to expand
 > - CyberLinkMediaSuiteEssentials  
 > - DisneyMagicKingdoms  
 > - Disney 
-> - Dolby  
 > - DrawboardPDF  
 > - Duolingo-LearnLanguagesforFree  
 > - EclipseManager  
@@ -253,7 +261,6 @@ Click to expand
 > - Shazam  
 > - Sidia.LiveWallpaper  
 > - SlingTV  
-> - Speed Test  
 > - Spotify  
 > - TikTok
 > - TuneInRadio  
@@ -263,10 +270,13 @@ Click to expand
 > - Wunderlist  
 > - XING
 > 
-> * App is removed when disabling Bing in Windows search.
+> * Removed when disabling Bing web search, Bing AI and Cortana from Windows search
+> ** Removed when disabling widgets on the taskbar & lockscreen
 > ```
 
-#### Apps that are NOT removed as part of the default mode
+#### Apps that are NOT removed by default
+
+These apps will not be removed by Win11Debloat unless explicitly selected by the user.
 
 Click to expand
 

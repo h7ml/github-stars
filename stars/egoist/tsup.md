@@ -1,6 +1,6 @@
 ---
 project: tsup
-stars: 10749
+stars: 10759
 description: The simplest and fastest way to bundle your TypeScript libraries.
 url: https://github.com/egoist/tsup
 ---

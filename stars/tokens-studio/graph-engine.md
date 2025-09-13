@@ -1,6 +1,6 @@
 ---
 project: graph-engine
-stars: 62
+stars: 63
 description: Graph engine for resolvers and generators
 url: https://github.com/tokens-studio/graph-engine
 ---

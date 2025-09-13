@@ -1,6 +1,6 @@
 ---
 project: cursor-rules
-stars: 940
+stars: 965
 description: 整理和收集来自不同项目的Cursor规则文件，提供多种编程语言和框架的规则支持。
 url: https://github.com/flyeric0212/cursor-rules
 ---

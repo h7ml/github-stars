@@ -1,6 +1,6 @@
 ---
 project: thc-hydra
-stars: 10802
+stars: 10842
 description: hydra
 url: https://github.com/vanhauser-thc/thc-hydra
 ---

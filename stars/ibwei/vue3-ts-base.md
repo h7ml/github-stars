@@ -1,6 +1,6 @@
 ---
 project: vue3-ts-base
-stars: 450
+stars: 449
 description: 一个基于vue3+typescript+ant-design-vue 搭建的基础代码库,有完善的类型系统，帮助快速搭建 vue3 的基础代码架构。
 url: https://github.com/ibwei/vue3-ts-base
 ---

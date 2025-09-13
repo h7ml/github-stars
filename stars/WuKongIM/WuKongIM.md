@@ -1,6 +1,6 @@
 ---
 project: WuKongIM
-stars: 4299
+stars: 4311
 description: More than just IM 不只是即时通讯( IM )
 url: https://github.com/WuKongIM/WuKongIM
 ---

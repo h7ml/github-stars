@@ -1,6 +1,6 @@
 ---
 project: fingerprintjs
-stars: 25406
+stars: 25441
 description: The most advanced browser fingerprinting library.
 url: https://github.com/fingerprintjs/fingerprintjs
 ---

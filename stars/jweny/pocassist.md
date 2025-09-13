@@ -1,6 +1,6 @@
 ---
 project: pocassist
-stars: 1450
+stars: 1449
 description: 傻瓜式漏洞PoC测试框架
 url: https://github.com/jweny/pocassist
 ---

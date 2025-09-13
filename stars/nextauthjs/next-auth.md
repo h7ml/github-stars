@@ -1,6 +1,6 @@
 ---
 project: next-auth
-stars: 27423
+stars: 27462
 description: Authentication for the Web.
 url: https://github.com/nextauthjs/next-auth
 ---

@@ -1,6 +1,6 @@
 ---
 project: AutoMate
-stars: 292
+stars: 291
 description: Swift framework containing a set of helpful XCTest extensions for writing UI automation tests
 url: https://github.com/PGSSoft/AutoMate
 ---

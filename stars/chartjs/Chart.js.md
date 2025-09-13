@@ -1,6 +1,6 @@
 ---
 project: Chart.js
-stars: 66486
+stars: 66519
 description: Simple HTML5 Charts using the <canvas> tag
 url: https://github.com/chartjs/Chart.js
 ---

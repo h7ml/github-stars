@@ -1,6 +1,6 @@
 ---
 project: kkndme_tianya
-stars: 19227
+stars: 19228
 description: 天涯 kkndme 神贴聊房价
 url: https://github.com/shengcaishizhan/kkndme_tianya
 ---

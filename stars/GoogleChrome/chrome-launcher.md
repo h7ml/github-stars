@@ -1,6 +1,6 @@
 ---
 project: chrome-launcher
-stars: 1326
+stars: 1328
 description: Launch Google Chrome with ease from node.
 url: https://github.com/GoogleChrome/chrome-launcher
 ---

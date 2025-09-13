@@ -1,6 +1,6 @@
 ---
 project: CharlesLicense
-stars: 95
+stars: 94
 description: Charles抓包软件的激活码生成，你懂的！
 url: https://github.com/malaohu/CharlesLicense
 ---

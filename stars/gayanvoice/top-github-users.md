@@ -1,6 +1,6 @@
 ---
 project: top-github-users
-stars: 4381
+stars: 4385
 description: Check your ranking in GitHub! Don't forget to star ⭐ this repository.
 url: https://github.com/gayanvoice/top-github-users
 ---
@@ -8,7 +8,7 @@ url: https://github.com/gayanvoice/top-github-users
 Top GitHub Users By Country
 ===========================
 
-List of most active GitHub users based on `public contributions` `private contributions` and `number of followers` by country or state. The list updated `2025/9/6 1:10 AM UTC`.
+List of most active GitHub users based on `public contributions` `private contributions` and `number of followers` by country or state. The list updated `2025/9/13 1:42 AM UTC`.
 
 This repository contains users `138 countries` and `674 cities`. To get into the list you need to have minimum number of followers that varies in each country. The list can be found in config.json.
 

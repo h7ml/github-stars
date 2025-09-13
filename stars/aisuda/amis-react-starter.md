@@ -1,6 +1,6 @@
 ---
 project: amis-react-starter
-stars: 146
+stars: 147
 description: amis react 初始项目示例
 url: https://github.com/aisuda/amis-react-starter
 ---

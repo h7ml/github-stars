@@ -1,6 +1,6 @@
 ---
 project: claude-code-templates
-stars: 5482
+stars: 6007
 description: CLI tool for configuring and monitoring Claude Code
 url: https://github.com/davila7/claude-code-templates
 ---

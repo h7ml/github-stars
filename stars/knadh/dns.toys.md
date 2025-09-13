@@ -1,6 +1,6 @@
 ---
 project: dns.toys
-stars: 2703
+stars: 2705
 description: A DNS server that offers useful utilities and services over the DNS protocol. Weather, world time, unit conversion etc.
 url: https://github.com/knadh/dns.toys
 ---

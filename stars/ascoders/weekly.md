@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 30427
+stars: 30448
 description: 前端精读周刊。帮你理解最前沿、实用的技术。
 url: https://github.com/ascoders/weekly
 ---

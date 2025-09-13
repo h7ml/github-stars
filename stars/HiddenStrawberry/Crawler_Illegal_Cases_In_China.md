@@ -1,6 +1,6 @@
 ---
 project: Crawler_Illegal_Cases_In_China
-stars: 4317
+stars: 4322
 description: Collection of China illegal cases about web crawler 本项目用来整理所有中国大陆爬虫开发者涉诉与违规相关的新闻、资料与法律法规。致力于帮助在中国大陆工作的爬虫行业从业者了解我国相关法律，避免触碰数据合规红线。 [AD]企业租显卡算力部署AI请选Novagrid
 url: https://github.com/HiddenStrawberry/Crawler_Illegal_Cases_In_China
 ---

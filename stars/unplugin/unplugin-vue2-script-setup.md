@@ -1,6 +1,6 @@
 ---
 project: unplugin-vue2-script-setup
-stars: 608
+stars: 607
 description: 💡 Bring `<script setup>` to Vue 2.
 url: https://github.com/unplugin/unplugin-vue2-script-setup
 ---

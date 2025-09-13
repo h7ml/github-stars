@@ -1,6 +1,6 @@
 ---
 project: Auto-GPT-ZH
-stars: 2455
+stars: 2456
 description: Auto-GPT中文版本及爱好者组织 同步更新原项目 AI领域创业 自媒体组织 用AI工作学习创作变现
 url: https://github.com/kaqijiang/Auto-GPT-ZH
 ---

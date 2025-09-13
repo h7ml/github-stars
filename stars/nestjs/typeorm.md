@@ -1,6 +1,6 @@
 ---
 project: typeorm
-stars: 2064
+stars: 2067
 description: TypeORM module for Nest framework (node.js)  🍇
 url: https://github.com/nestjs/typeorm
 ---

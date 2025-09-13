@@ -1,6 +1,6 @@
 ---
 project: awesome-fenix
-stars: 9230
+stars: 9237
 description: 讨论如何构建一套可靠的大型分布式系统
 url: https://github.com/fenixsoft/awesome-fenix
 ---

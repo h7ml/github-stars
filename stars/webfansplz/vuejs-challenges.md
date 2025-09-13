@@ -1,6 +1,6 @@
 ---
 project: vuejs-challenges
-stars: 2819
+stars: 2821
 description: Collection of Vue.js challenges
 url: https://github.com/webfansplz/vuejs-challenges
 ---

@@ -1,6 +1,6 @@
 ---
 project: nypm
-stars: 608
+stars: 611
 description: 🌈 Unified Package Manager for Node.js (npm, pnpm, yarn), Bun and Deno
 url: https://github.com/unjs/nypm
 ---

@@ -1,6 +1,6 @@
 ---
 project: ktransformers
-stars: 14983
+stars: 15040
 description: A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations
 url: https://github.com/kvcache-ai/ktransformers
 ---
@@ -21,7 +21,8 @@ Our vision for KTransformers is to serve as a flexible platform for experimentin
 🔥 Updates
 ----------
 
--   **July 11, 2025**: Support Kimi-K2-0905. (Tutorial)
+-   **Sept 11, 2025**: Support Qwen3-Next. (Tutorial)
+-   **Sept 05, 2025**: Support Kimi-K2-0905. (Tutorial)
 -   **July 26, 2025**: Support SmallThinker and GLM4-MoE. (Tutorial)
 -   **July 11, 2025**: Support Kimi-K2. (Tutorial)
 -   **June 30, 2025**: Support 3-layer (GPU-CPU-Disk) prefix cache reuse.

@@ -1,6 +1,6 @@
 ---
 project: tango-boot
-stars: 14
+stars: 15
 description: A frontend framework for netease tango low-code app
 url: https://github.com/NetEase/tango-boot
 ---

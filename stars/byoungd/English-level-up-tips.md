@@ -1,6 +1,6 @@
 ---
 project: English-level-up-tips
-stars: 39275
+stars: 39306
 description: An advanced guide to learn English which might benefit you a lot 🎉 .  离谱的英语学习指南/英语学习教程。
 url: https://github.com/byoungd/English-level-up-tips
 ---

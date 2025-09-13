@@ -1,6 +1,6 @@
 ---
 project: StepNumberChangeSNC
-stars: 213
+stars: 214
 description: 通过代码修改小米运动app步数，然后同步到微信、支付宝的运动，再使用腾讯云的定时器，最终实现全自动每日随机修改步数（20000-29999步）
 url: https://github.com/EEEugene/StepNumberChangeSNC
 ---

@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 1788
+stars: 1787
 description: 《阿里云前端技术周刊》
 url: https://github.com/aliyunfe/weekly
 ---

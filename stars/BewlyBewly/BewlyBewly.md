@@ -1,6 +1,6 @@
 ---
 project: BewlyBewly
-stars: 8168
+stars: 8177
 description: Just make a few small changes to your Bilibili homepage. (English | 简体中文 | 正體中文 | 廣東話)
 url: https://github.com/BewlyBewly/BewlyBewly
 ---

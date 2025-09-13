@@ -1,6 +1,6 @@
 ---
 project: TencentCloud-Order
-stars: 168
+stars: 167
 description: 腾讯云产品-自定义参数购买一键单页，免额外抓包，直接输入参数提交自动跳转对应订单页面
 url: https://github.com/BlueSkyXN/TencentCloud-Order
 ---

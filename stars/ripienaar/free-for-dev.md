@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 111477
+stars: 111940
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -225,6 +225,7 @@ APIs, Data, and ML
 
 -   JSONGrid - Free tool to Visualize, Edit, Filter complex JSON data into beautiful tabular Grid. Save and Share JSON data over link link.
 -   Zerosheets - Turn your Google Sheets spreadsheets into powerful API\`s to rapidly develop prototypes, websites, apps and more. 500 requests per month available for free.
+-   JSON to Table - Convert JSON into an interactive table for quick viewing, editing, and sharing online.
 -   IP.City — 100 Free IP geolocation requests per day
 -   Abstract API — API suite for various use cases, including IP geolocation, gender detection, or email validation.
 -   Apify — Web scraping and automation platform to create an API for any website and extract data. Ready-made scrapers, integrated proxies, and custom solutions. Free plan with $5 platform credits included every month.
@@ -368,7 +369,6 @@ APIs, Data, and ML
 -   UniRateAPI – Real-time exchange rates for 590+ currencies and crypto. Unlimited API calls on the free plan, perfect for developers and finance apps.
 -   vatcheckapi.com - Simple and free VAT number validation API. 150 free validations per month.
 -   WeatherXu — Global weather data including current conditions, hourly and daily forecasts, and weather alerts via our API. Integrating AI models and ML systems to analyze and combine multiple weather models to deliver improved forecast accuracy. Free tier includes 10,000 API calls/month.
--   Webhook Store - Tool for storing third-party webhooks and debug them on localhost (ngrok style). Open source and self-hostable. Free personal domain _username_.github.webhook.store, free public domains _anything_.webhook.store.
 -   WebScraping.AI - Simple Web Scraping API with built-in parsing, Chrome rendering, and proxies. Two thousand free API calls per month.
 -   Weights & Biases — The developer-first MLOps platform. Build better models faster with experiment tracking, dataset versioning, and model management. Free tier for personal projects only, with 100 GB of storage included.
 -   What The Diff - AI-powered code review assistant. The free plan has a limit of 25,000 monthly tokens (~10 PRs).
@@ -379,6 +379,7 @@ APIs, Data, and ML
 -   Zipcodestack - Free Zip Code API and Postal Code Validation. Ten thousand free requests/month.
 -   Zuplo - Free API Management platform to design, build, and deploy APIs to the Edge. Add API Key authentication, rate limiting, developer documentation and Monetization to any API in minutes. OpenAPI-native and fully-programmable with web standard apis & Typescript. The free plan offers up to 10 projects, unlimited production edge environments, 1M monthly requests, and 10GB egress.
 -   DiffJSON - An online tool for comparing differences between two JSON data structures, helping you quickly locate the differences in JSON data.
+-   FreeIPAPI - Free, Fast and Reliable IP Geolocation API for commercial and non-commercial users available in JSON
 
 **⬆️ Back to Top**
 
@@ -544,7 +545,6 @@ Code Quality
 -   browserling.com — Live interactive cross-browser testing, free only 3 minutes sessions with MS IE 9 under Vista at 1024 x 768 resolution
 -   codacy.com — Automated code reviews for PHP, Python, Ruby, Java, JavaScript, Scala, CSS, and CoffeeScript, free for unlimited public and private repositories
 -   Codeac.io - Automated Infrastructure as Code review tool for DevOps integrates with GitHub, Bitbucket, and GitLab (even self-hosted). In addition to standard languages, it also analyzes Ansible, Terraform, CloudFormation, Kubernetes, and more. (open-source free)
--   CodeBeat — Automated Code Review Platform available for many languages. Free forever for public repositories with Slack and e-mail integration.
 -   codeclimate.com — Automated code review, free for Open Source and unlimited organisation-owned private repos (up to 4 collaborators). Also free for students and institutions.
 -   codecov.io — Code coverage tool (SaaS), free for Open Source and one free private repo
 -   CodeFactor — Automated Code Review for Git. The free version includes unlimited users, public repositories, and one private repo.
@@ -2017,6 +2017,7 @@ Miscellaneous
 -   superfeedr.com — Real-time PubSubHubbub compliant feeds, export, analytics. Free with less customization
 -   SurveyMonkey.com — Create online surveys. Analyze the results online. The free plan allows only 10 questions and 100 responses per survey.
 -   Tiledesk - Create chatbots and conversational apps. Bring them omnichannel: from your website (live chat widget) to WhatsApp. Free plan with unlimited chatbots.
+-   UUID Generator - Generate UUID v1, UUID v4, UUID v7, GUID, Nil UUIDs, CUID v1/v2, NanoID, and ULID instantly with enterprise-grade performance and security
 -   Versionfeeds — Custom RSS feeds for releases of your favorite software. Have the latest versions of your programming languages, libraries, or loved tools in one feed. (The first 3 feeds are free)
 -   videoinu — Create and edit screen recordings and other videos online.
 -   Webacus — Access a wide range of free developer tools for encoding, decoding, and data manipulation.

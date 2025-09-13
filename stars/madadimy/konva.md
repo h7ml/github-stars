@@ -1,6 +1,6 @@
 ---
 project: konva
-stars: 142
+stars: 144
 description: Konvajs 中文文档 Konva是一个基于 Canvas 开发的 2d JavaScript框架库, 它可以轻松的实现桌面应用和移动应用中的图形交互交互效果
 url: https://github.com/madadimy/konva
 ---

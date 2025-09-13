@@ -1,6 +1,6 @@
 ---
 project: fake-cursor
-stars: 350
+stars: 351
 description: 一个用于重新生成 Cursor 设备 ID 和设置 Access Token 的 Cursor 扩展
 url: https://github.com/Angels-Ray/fake-cursor
 ---

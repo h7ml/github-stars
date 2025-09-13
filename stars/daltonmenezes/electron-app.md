@@ -1,6 +1,6 @@
 ---
 project: electron-app
-stars: 700
+stars: 702
 description: 💅 An Electron app boilerplate with React 19, TypeScript 5, Tailwind 4, shadcn/ui, Electron Vite, Biome, GitHub Action releases and more.
 url: https://github.com/daltonmenezes/electron-app
 ---

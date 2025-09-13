@@ -1,6 +1,6 @@
 ---
 project: ai-notes
-stars: 6035
+stars: 6048
 description: notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references under the /Resources folder.
 url: https://github.com/swyxio/ai-notes
 ---
@@ -203,10 +203,12 @@ The more advanced GPT3 reads have been split out to https://github.com/sw-yx/ai-
     -   **What is ChatGPT doing … and why does it work?**: Computer scientist and entrepreneur Stephen Wolfram gives a long but highly readable explanation, from first principles, of how modern AI models work. He follows the timeline from early neural nets to today’s LLMs and ChatGPT.
     -   **Transformers, explained**: This post by Dale Markowitz is a shorter, more direct answer to the question “what is an LLM, and how does it work?” This is a great way to ease into the topic and develop intuition for the technology. It was written about GPT-3 but still applies to newer models.
     -   **How Stable Diffusion works**: This is the computer vision analogue to the last post. Chris McCormick gives a layperson’s explanation of how Stable Diffusion works and develops intuition around text-to-image models generally. For an even _gentler_ introduction, check out this comic from r/StableDiffusion.
+        -   (2025) 3blue1brown on how diffusion works
     -   Explainers
         -   **Deep learning in a nutshell: core concepts**: This four-part series from Nvidia walks through the basics of deep learning as practiced in 2015, and is a good resource for anyone just learning about AI.
         -   **Practical deep learning for coders**: Comprehensive, free course on the fundamentals of AI, explained through practical examples and code.
         -   **Word2vec explained**: Easy introduction to embeddings and tokens, which are building blocks of LLMs (and all language models).
+            -   https://news.ycombinator.com/item?id=44708028
         -   **Yes you should understand backprop**: More in-depth post on back-propagation if you want to understand the details. If you want even more, try the Stanford CS231n lecture (course here) on Youtube.
     -   Courses
         -   **Stanford CS229**: Introduction to Machine Learning with Andrew Ng, covering the fundamentals of machine learning.
@@ -276,6 +278,7 @@ The more advanced GPT3 reads have been split out to https://github.com/sw-yx/ai-
     -   language models can follow both flipped labels and semantically-unrelated labels (https://arxiv.org/abs/2303.03846)
 -   LLM Paper Notes - notes from the Latent Space paper club by Eugene Yan
 -   CMU LLM syllabus
+-   explaining batching in inference relevant to DeepSeek R1
 -   Transformers from scratch https://e2eml.school/transformers.html
     -   transformers vs LSTM https://medium.com/analytics-vidhya/why-are-lstms-struggling-to-matchup-with-transformers-a1cc5b2557e3
     -   transformer code walkthru https://twitter.com/mark\_riedl/status/1555188022534176768

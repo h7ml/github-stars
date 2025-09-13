@@ -1,6 +1,6 @@
 ---
 project: hexo-theme-Fomalhaut
-stars: 968
+stars: 970
 description: 🥝的网站源码
 url: https://github.com/fomalhaut1998/hexo-theme-Fomalhaut
 ---

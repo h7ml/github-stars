@@ -1,6 +1,6 @@
 ---
 project: elegance-ui
-stars: 75
+stars: 74
 description: elegance-ui是一套基于Vue2.0的UI框架模板体系，用于为项目快速流程搭建。（vue3不推荐使用Class API， 现已经在开发Vue3版本。），Gihub Page上服务可能受DNS原因，第一次加载缓存非常缓慢。请您细心等待，建议您使用：Gitee网络环境使用: http://wangfanghua.gitee.io/elegance-ui/
 url: https://github.com/wangly19/elegance-ui
 ---

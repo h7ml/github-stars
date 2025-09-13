@@ -1,6 +1,6 @@
 ---
 project: awesome-yangjingyuan
-stars: 382
+stars: 388
 description: 杨景媛（武汉大学）事件记录。更新：杨景媛论文下载突破31万次。
 url: https://github.com/yangjingyuan0828/awesome-yangjingyuan
 ---

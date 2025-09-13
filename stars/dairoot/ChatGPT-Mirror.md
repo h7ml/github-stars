@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-Mirror
-stars: 1226
+stars: 1230
 description: 🚀 一键部署个人的 ChatGPT 镜像站
 url: https://github.com/dairoot/ChatGPT-Mirror
 ---

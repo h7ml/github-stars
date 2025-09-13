@@ -1,6 +1,6 @@
 ---
 project: ItChat-UOS
-stars: 758
+stars: 757
 description: 复活Itchat,你只需要 pip install itchat-uos
 url: https://github.com/why2lyj/ItChat-UOS
 ---

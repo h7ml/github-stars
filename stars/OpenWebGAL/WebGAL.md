@@ -1,6 +1,6 @@
 ---
 project: WebGAL
-stars: 3318
+stars: 3325
 description: A brand new web Visual Novel engine | 全新的网页端视觉小说引擎
 url: https://github.com/OpenWebGAL/WebGAL
 ---

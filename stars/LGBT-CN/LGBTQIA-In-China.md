@@ -1,6 +1,6 @@
 ---
 project: LGBTQIA-In-China
-stars: 784
+stars: 785
 description: 🏳️‍🌈 中国的性少数群体一直渴望着自由平等
 url: https://github.com/LGBT-CN/LGBTQIA-In-China
 ---

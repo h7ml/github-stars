@@ -1,6 +1,6 @@
 ---
 project: wechat-format
-stars: 4423
+stars: 4424
 description: 微信公众号排版编辑器，转换 Markdown 到微信特制的 HTML
 url: https://github.com/lyricat/wechat-format
 ---
@@ -8,9 +8,9 @@ url: https://github.com/lyricat/wechat-format
 微信公众号排版编辑器
 ==========
 
-> This project is discontinued. Please use Quail Markdown Tools for better user experience.
+> This project is discontinued. Please use Quaily Markdown Tools for better user experience.
 > 
-> 这个项目已经停止维护。建议使用Quail 提供的在线转换工具以获得更好的用户体验。
+> 这个项目已经停止维护。建议使用 Quaily 提供的在线转换工具以获得更好的用户体验。
 
 简介
 --

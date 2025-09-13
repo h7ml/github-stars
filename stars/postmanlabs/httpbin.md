@@ -1,6 +1,6 @@
 ---
 project: httpbin
-stars: 13274
+stars: 13283
 description: HTTP Request & Response Service, written in Python + Flask.
 url: https://github.com/postmanlabs/httpbin
 ---

@@ -1,12 +1,12 @@
 ---
 project: table
-stars: 1346
+stars: 1347
 description: React Table
 url: https://github.com/react-component/table
 ---
 
-rc-table
-========
+@rc-component/table
+===================
 
 React table component with useful functions.
 
@@ -29,7 +29,7 @@ https://table-react-component.vercel.app/
 Usage
 -----
 
-import Table from 'rc-table';
+import Table from '@rc-component/table';
 
 const columns \= \[
   {
@@ -90,7 +90,7 @@ prefixCls
 
 String
 
-rc-table
+`rc-table`
 
 className
 
@@ -489,4 +489,4 @@ The `onClick` attribute in `Table.Summary.Row` component can be used to set a cl
 License
 -------
 
-rc-table is released under the MIT license.
+@rc-component/table is released under the MIT license.

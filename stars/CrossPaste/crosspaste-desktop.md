@@ -1,6 +1,6 @@
 ---
 project: crosspaste-desktop
-stars: 1073
+stars: 1083
 description: Universal Pasteboard Across Devices
 url: https://github.com/CrossPaste/crosspaste-desktop
 ---

@@ -1,6 +1,6 @@
 ---
 project: lean-side-bussiness
-stars: 9759
+stars: 9893
 description: 精益副业：程序员如何优雅地做副业
 url: https://github.com/easychen/lean-side-bussiness
 ---

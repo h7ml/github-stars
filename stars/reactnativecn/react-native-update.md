@@ -1,6 +1,6 @@
 ---
 project: react-native-update
-stars: 1845
+stars: 1848
 description: 🚀 Blazing Fast Hot Updates for React Native
 url: https://github.com/reactnativecn/react-native-update
 ---

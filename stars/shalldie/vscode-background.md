@@ -1,6 +1,6 @@
 ---
 project: vscode-background
-stars: 1591
+stars: 1595
 description: Bring background images to your vscode. vscode background 背景扩展插件。
 url: https://github.com/shalldie/vscode-background
 ---

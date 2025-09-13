@@ -1,6 +1,6 @@
 ---
 project: veaury
-stars: 1578
+stars: 1581
 description: Use React in Vue3 and Vue3 in React, And as perfect as possible!
 url: https://github.com/gloriasoft/veaury
 ---

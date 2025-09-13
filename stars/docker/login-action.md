@@ -1,6 +1,6 @@
 ---
 project: login-action
-stars: 1262
+stars: 1269
 description: GitHub Action to login against a Docker registry
 url: https://github.com/docker/login-action
 ---
@@ -24,6 +24,7 @@ GitHub Action to login against a Docker registry.
     -   OCI Oracle Cloud Infrastructure Registry (OCIR)
     -   Quay.io
     -   DigitalOcean
+    -   Authenticate to multiple registries
 -   Customizing
     -   inputs
 -   Contributing
@@ -419,6 +420,61 @@ jobs:
           username: ${{ vars.DIGITALOCEAN\_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN\_ACCESS\_TOKEN }}
 
+### Authenticate to multiple registries
+
+To authenticate against multiple registries, you can specify the login-action step multiple times in your workflow:
+
+name: ci
+
+on:
+  push:
+    branches: main
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB\_USERNAME }}
+          password: ${{ secrets.DOCKERHUB\_TOKEN }}
+      -
+        name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB\_TOKEN }}
+
+You can also use the `registry-auth` input for raw authentication to registries, defined as YAML objects. Each object can contain `registry`, `username`, `password` and `ecr` keys similar to current inputs:
+
+Warning
+
+We don't recommend using this method, it's better to use the action multiple times as shown above.
+
+name: ci
+
+on:
+  push:
+    branches: main
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Login to registries
+        uses: docker/login-action@v3
+        with:
+          registry-auth: |
+            - username: ${{ vars.DOCKERHUB\_USERNAME }}
+              password: ${{ secrets.DOCKERHUB\_TOKEN }}
+            - registry: ghcr.io
+              username: ${{ github.actor }}
+              password: ${{ secrets.GITHUB\_TOKEN }}
+
 Customizing
 -----------
 
@@ -437,6 +493,8 @@ Description
 `registry`
 
 String
+
+`docker.io`
 
 Server address of Docker registry. If not set then will default to Docker Hub
 
@@ -467,6 +525,16 @@ Bool
 `true`
 
 Log out from the Docker registry at the end of a job
+
+`registry-auth`
+
+YAML
+
+Raw authentication to registries, defined as YAML objects
+
+Note
+
+The `registry-auth` input is mutually exclusive with `registry`, `username`, `password` and `ecr` inputs.
 
 Contributing
 ------------

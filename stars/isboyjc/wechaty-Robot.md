@@ -1,6 +1,6 @@
 ---
 project: wechaty-Robot
-stars: 93
+stars: 92
 description: 基于wechaty-puppet-padplus的微信机器人助手
 url: https://github.com/isboyjc/wechaty-Robot
 ---

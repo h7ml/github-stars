@@ -1,6 +1,6 @@
 ---
 project: vue
-stars: 712
+stars: 711
 description: Vue implementation of Geist
 url: https://github.com/geist-org/vue
 ---

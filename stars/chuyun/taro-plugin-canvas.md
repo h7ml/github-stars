@@ -1,6 +1,6 @@
 ---
 project: taro-plugin-canvas
-stars: 517
+stars: 518
 description: 基于 Taro 框架的微信小程序 canvas 绘图组件，封装了常用的操作，通过配置的方式生成分享图片
 url: https://github.com/chuyun/taro-plugin-canvas
 ---

@@ -1,6 +1,6 @@
 ---
 project: realworld
-stars: 2350
+stars: 2351
 description: SvelteKit implementation of the RealWorld app
 url: https://github.com/sveltejs/realworld
 ---

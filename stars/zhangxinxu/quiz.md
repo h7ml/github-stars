@@ -1,6 +1,6 @@
 ---
 project: quiz
-stars: 534
+stars: 535
 description: 小测答题收集区
 url: https://github.com/zhangxinxu/quiz
 ---

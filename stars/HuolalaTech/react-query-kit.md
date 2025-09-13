@@ -1,6 +1,6 @@
 ---
 project: react-query-kit
-stars: 461
+stars: 462
 description: 🕊️ A toolkit for ReactQuery that make ReactQuery hooks reusable and typesafe
 url: https://github.com/HuolalaTech/react-query-kit
 ---

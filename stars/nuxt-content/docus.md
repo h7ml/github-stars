@@ -1,8 +1,8 @@
 ---
 project: docus
-stars: 1875
+stars: 1893
 description: Write beautiful documentations with Nuxt and Markdown.
-url: https://github.com/nuxtlabs/docus
+url: https://github.com/nuxt-content/docus
 ---
 
 > Create beautiful docs with Markdown & Vue components
@@ -127,7 +127,7 @@ This repository contains the CLI tool source code.
 To contribute to the CLI tool:
 
 # Clone this repository
-git clone https://github.com/nuxtlabs/docus
+git clone https://github.com/nuxt-content/docus
 
 # Install dependencies
 pnpm install

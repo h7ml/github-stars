@@ -1,6 +1,6 @@
 ---
 project: build-your-ai-coding-assistant
-stars: 695
+stars: 697
 description: 《AI 研发提效：构建 AI 辅助编码助手》 —— 介绍如何 DIY 一个端到端（从 IDE  插件、模型选型、数据集构建到模型微调）的 AI 辅助编程工具，类似于 GitHub Copilot、JetBrains AI Assistant、AutoDev 等。
 url: https://github.com/unit-mesh/build-your-ai-coding-assistant
 ---

@@ -1,6 +1,6 @@
 ---
 project: awesome-pretrained-chinese-nlp-models
-stars: 5386
+stars: 5393
 description: Awesome Pretrained Chinese NLP Models，高质量中文预训练模型&大模型&多模态模型&大语言模型集合
 url: https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models
 ---

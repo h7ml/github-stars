@@ -1,6 +1,6 @@
 ---
 project: changelogen
-stars: 1100
+stars: 1124
 description: 💅 Beautiful Changelogs using Conventional Commits
 url: https://github.com/unjs/changelogen
 ---

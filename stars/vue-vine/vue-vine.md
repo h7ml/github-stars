@@ -1,6 +1,6 @@
 ---
 project: vue-vine
-stars: 1403
+stars: 1404
 description: Another style of writing Vue components.
 url: https://github.com/vue-vine/vue-vine
 ---

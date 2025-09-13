@@ -2,7 +2,7 @@
 project: remix
 stars: 1179
 description: This has been moved to https://github.com/ethereum/remix-project
-url: https://github.com/ethereum/remix
+url: https://github.com/remix-project-org/remix
 ---
 
 **The project has been moved to https://github.com/ethereum/remix-project**

@@ -1,6 +1,6 @@
 ---
 project: turn.js
-stars: 7399
+stars: 7402
 description: The page flip effect for HTML5
 url: https://github.com/blasten/turn.js
 ---

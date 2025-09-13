@@ -1,6 +1,6 @@
 ---
 project: claude-setup
-stars: 246
+stars: 250
 description: null
 url: https://github.com/AizenvoltPrime/claude-setup
 ---
@@ -29,7 +29,7 @@ Overview
 
 This project provides a pre-configured environment for Claude Code with enhanced capabilities through:
 
--   **MCP Servers**: Context7, Puppeteer, Sequential Thinking, DeepWiki
+-   **MCP Servers**: Context7, Sequential Thinking
 -   **Custom Commands**: Intelligent workflows for commits, tasks, and problem-solving
 -   **Hook System**: Automated directory management and workflow triggers
 -   **Structured Workflows**: Organized task management with reporting and planning
@@ -110,9 +110,7 @@ Features
 ### 🔌 MCP Servers
 
 -   **Context7**: Library documentation and code context
--   **Puppeteer**: Browser automation and web scraping
 -   **Sequential Thinking**: Advanced reasoning and problem-solving
--   **DeepWiki**: Repository documentation fetching
 
 ### ⚡ Hook System
 
@@ -298,7 +296,7 @@ The `.claude/settings.json` file contains:
       }
     \]
   },
-  "enabledMcpjsonServers": \["context7", "puppeteer", "sequential-thinking", ...\]
+  "enabledMcpjsonServers": \["context7", "sequential-thinking"\]
 }
 
 ### MCP Configuration
@@ -309,11 +307,14 @@ The `.mcp.json` file defines server configurations:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": \["@context7/claude-dev", "\--minTokens", "1000"\]
+      "args": \["\-y", "@upstash/context7-mcp"\],
+      "env": {
+        "DEFAULT\_MINIMUM\_TOKENS": "6000"
+      }
     },
-    "puppeteer": {
+    "sequential-thinking": {
       "command": "npx",
-      "args": \["@puppeteer/claude-dev"\]
+      "args": \["\-y", "@modelcontextprotocol/server-sequential-thinking"\]
     }
   }
 }

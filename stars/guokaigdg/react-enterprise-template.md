@@ -1,6 +1,6 @@
 ---
 project: react-enterprise-template
-stars: 532
+stars: 531
 description: 🚀 react模板 react项目模板 React19 + webpack5 + TypeScript5 + mobx6 + react-router7 react 模板 基于react企业级模板 项目模板 简单模板 快速模板 
 url: https://github.com/guokaigdg/react-enterprise-template
 ---

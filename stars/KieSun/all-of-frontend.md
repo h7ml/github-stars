@@ -1,6 +1,6 @@
 ---
 project: all-of-frontend
-stars: 5287
+stars: 5285
 description: 你想知道的前端内容都在这
 url: https://github.com/KieSun/all-of-frontend
 ---

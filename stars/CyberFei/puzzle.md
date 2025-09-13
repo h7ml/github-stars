@@ -1,6 +1,6 @@
 ---
 project: puzzle
-stars: 236
+stars: 235
 description: A pluggable micro-frontend structure based on Vue and Webpack5. 基于 Vue 和 Webpack5 的可热插拔式微前端架构
 url: https://github.com/CyberFei/puzzle
 ---

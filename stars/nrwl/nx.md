@@ -1,6 +1,6 @@
 ---
 project: nx
-stars: 26924
+stars: 26984
 description: Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.
 url: https://github.com/nrwl/nx
 ---
@@ -74,7 +74,7 @@ James Henry
 
 Jon Cammisuli
 
-Isaac Mann
+Max Kless
 
 Juri Strumpflohner
 
@@ -82,7 +82,7 @@ JamesHenry
 
 cammisuli
 
-isaacplmann
+MaxKless
 
 juristr
 
@@ -92,7 +92,7 @@ Caleb Ukle
 
 Colum Ferry
 
-Emily Xiong
+Steven Nance
 
 philipjfulcher
 
@@ -100,7 +100,7 @@ barbados-clemens
 
 Coly010
 
-xiongemi
+llwt
 
 Miroslav Jonaš
 
@@ -120,12 +120,28 @@ AgentEnder
 
 Chau Tran
 
-Nicholas Cunningham
+Nicole Oliver
 
-Max Kless
+Rares Matei
+
+Altan Stalker
 
 nartc
 
-ndcunningham
+nixallover
 
-MaxKless
+rarmatei
+
+StalkAltan
+
+Josh VanAllen
+
+Austin Fahsl
+
+Louie Weng
+
+joshvanallen
+
+fahslaj
+
+lourw

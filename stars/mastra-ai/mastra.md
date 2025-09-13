@@ -1,6 +1,6 @@
 ---
 project: mastra
-stars: 16343
+stars: 16537
 description: The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.
 url: https://github.com/mastra-ai/mastra
 ---
@@ -140,6 +140,12 @@ Create or update ~/.codeium/windsurf/mcp\_config.json:
 ```
 
 For more installation options visit https://www.npmjs.com/package/@mastra/mcp-docs-server
+
+### In Claude Code
+
+After installing Claude Code run:
+
+claude mcp add mastra-docs -- npx -y @mastra/mcp-docs-server
 
 Contributing
 ------------

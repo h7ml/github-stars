@@ -1,6 +1,6 @@
 ---
 project: feaplat
-stars: 124
+stars: 125
 description: 爬虫管理系统，支持集群，弹性伸缩。支持运行feapder、scrapy、selenium、playwright等各种框架及脚本
 url: https://github.com/Boris-code/feaplat
 ---

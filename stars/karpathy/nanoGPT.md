@@ -1,6 +1,6 @@
 ---
 project: nanoGPT
-stars: 44090
+stars: 44319
 description: The simplest, fastest repository for training/finetuning medium-sized GPTs.
 url: https://github.com/karpathy/nanoGPT
 ---

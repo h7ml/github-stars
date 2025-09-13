@@ -1,18 +1,18 @@
 ---
 project: rulesync
-stars: 289
+stars: 300
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---
 
-rulesync
+Rulesync
 ========
 
-Important
+A Node.js CLI tool that automatically generates configuration files for various AI development tools from unified AI rule files. Features selective generation, comprehensive import/export capabilities, and supports major AI development tools with rules, commands, MCP, ignore files, and subagents. Uses the recommended `.rulesync/rules/*.md` structure, with full backward compatibility for legacy `.rulesync/*.md` layouts.
 
-Starting from v0.68.0, we have implemented a major refactoring by the maintainers. If the behavior is unstable, please specify and run v0.67.0. Additionally, as a result, we have deprecated some features, support, and backward compatibility. If you wish to see any of these features restored, please create an Issue. As background, this tool has been built using Vibe Coding up until now, but the codebase had become extremely complex, making future extensions difficult, so we had to discard the existing codebase. We plan to continue active development going forward. Thank you for your continued support of rulesync.
+Note
 
-A Node.js CLI tool that automatically generates configuration files for various AI development tools from unified AI rule files. Features selective generation, comprehensive import/export capabilities, and supports 19+ AI development tools with rules, commands, MCP, ignore files, and subagents. Uses the recommended `.rulesync/rules/*.md` structure, with full backward compatibility for legacy `.rulesync/*.md` layouts.
+If you are interested in Rulesync latest news, please follow the maintainer's X(Twitter) account: @dyoshikawa1993
 
 Installation
 ------------
@@ -53,7 +53,7 @@ npx rulesync generate --targets "\*" --features "\*"
 Supported Tools and Features
 ----------------------------
 
-rulesync supports both **generation** and **import** for All of the major AI coding tools:
+Rulesync supports both **generation** and **import** for All of the major AI coding tools:
 
 Tool
 
@@ -87,6 +87,10 @@ Codex CLI
 
 ✅
 
+🎮
+
+🎮
+
 Gemini CLI
 
 ✅
@@ -95,11 +99,17 @@ Gemini CLI
 
 ✅
 
+🎮
+
 GitHub Copilot
 
 ✅
 
 ✅
+
+🎮
+
+🎮
 
 Cursor
 
@@ -108,6 +118,10 @@ Cursor
 ✅
 
 ✅
+
+🎮
+
+🎮
 
 OpenCode
 
@@ -130,6 +144,8 @@ Roo Code
 ✅
 
 ✅
+
+🎮
 
 Qwen Code
 
@@ -167,7 +183,13 @@ Windsurf
 
 ✅
 
-Why rulesync?
+Warp
+
+✅
+
+🎮: Simulated Commands/Subagents (Experimental Feature)
+
+Why Rulesync?
 -------------
 
 ### 🔧 **Tool Flexibility**
@@ -176,7 +198,7 @@ Team members can freely choose their preferred AI coding tools. Whether it's Git
 
 ### 📈 **Future-Proof Development**
 
-AI development tools evolve rapidly with new tools emerging frequently. With rulesync, switching between tools doesn't require redefining your rules from scratch.
+AI development tools evolve rapidly with new tools emerging frequently. With Rulesync, switching between tools doesn't require redefining your rules from scratch.
 
 ### 🎯 **Multi-Tool Workflow**
 
@@ -184,11 +206,15 @@ Enable hybrid development workflows combining multiple AI tools.
 
 ### 🔓 **No Lock-in**
 
-Avoid lock-in completely. If you decide to stop using rulesync, you can continue using the generated rule files as-is.
+Avoid lock-in completely. If you decide to stop using Rulesync, you can continue using the generated rule files as-is.
 
 ### 🎯 **Consistency Across Tools**
 
 Apply consistent rules across all AI tools, improving code quality and development experience for the entire team.
+
+### 🎮 **Simulated Commands and Subagents**
+
+Simulated commands and subagents are experimental features that allow you to generate simulated commands and subagents for copilot, cursor and codexcli. This is useful for shortening your prompts.
 
 Quick Commands
 --------------
@@ -209,13 +235,16 @@ npx rulesync generate --targets claudecode --features rules,subagents
 # Generate only rules (no MCP, ignore files, commands, or subagents)
 npx rulesync generate --targets "\*" --features rules
 
+# Generate simulated commands and subagents with experimental features
+npx rulesync generate --targets copilot,cursor,codexcli --features commands,subagents --experimental-simulate-commands --experimental-simulate-subagents
+
 # Add generated files to .gitignore
 npx rulesync gitignore
 
 Configuration
 -------------
 
-You can configure rulesync by creating a `rulesync.jsonc` file in the root of your project.
+You can configure Rulesync by creating a `rulesync.jsonc` file in the root of your project.
 
 Example:
 
@@ -234,7 +263,11 @@ Example:
   "delete": true,
 
   // Verbose output
-  "verbose": false
+  "verbose": false,
+
+  // Experimental features
+  "experimentalSimulateCommands": false,
+  "experimentalSimulateSubagents": false
 }
 
 Each File Format
@@ -245,19 +278,25 @@ Each File Format
 Example:
 
 \---
-root: true # true that is less than or equal to one file for overview such as AGENTS.md, false for details such as .agents/memories/\*.md
+root: true # true that is less than or equal to one file for overview such as \`AGENTS.md\`, false for details such as \`.agents/memories/\*.md\`
 targets: \["\*"\] # \* = all, or specific tools
-description: "rulesync project overview and development guidelines for unified AI rules management CLI tool"
+description: "Rulesync project overview and development guidelines for unified AI rules management CLI tool"
 globs: \["\*\*/\*"\] # file patterns to match (e.g., \["\*.md", "\*.txt"\])
-cursor: # for cursor-specific rules
+agentsmd: # agentsmd and codexcli specific rules
+  # Support for using nested AGENTS.md files for subprojects in a large monorepo.
+  # This option is available only if root is false.
+  # If subprojectPath is provided, the file is located in \`${subprojectPath}/AGENTS.md\`.
+  # If subprojectPath is not provided and root is false, the file is located in \`.agents/memories/\*.md\`.
+  subprojectPath: "path/to/subproject"
+cursor: # cursor specific rules
   alwaysApply: true
-  description: "rulesync project overview and development guidelines for unified AI rules management CLI tool"
+  description: "Rulesync project overview and development guidelines for unified AI rules management CLI tool"
   globs: \["\*"\]
 \---
 
-\# rulesync Project Overview
+\# Rulesync Project Overview
 
-This is rulesync, a Node.js CLI tool that automatically generates configuration files for various AI development tools from unified AI rule files. The project enables teams to maintain consistent AI coding assistant rules across multiple tools.
+This is Rulesync, a Node.js CLI tool that automatically generates configuration files for various AI development tools from unified AI rule files. The project enables teams to maintain consistent AI coding assistant rules across multiple tools.
 
 ...
 
@@ -340,6 +379,30 @@ Example:
 
 tmp/
 credentials/
+
+Simulate Commands and Subagents
+-------------------------------
+
+Simulated commands and subagents are experimental features that allow you to generate simulated commands and subagents for copilot, cursor, codexcli and etc. This is useful for shortening your prompts.
+
+1.  Prepare `.rulesync/commands/*.md` and `.rulesync/subagents/*.md` for your purposes.
+2.  Generate simulated commands and subagents for specific tools that are included in copilot, cursor, codexcli and etc.
+    
+    npx rulesync generate \\
+      --targets copilot,cursor,codexcli \\
+      --features commands,subagents \\
+      --experimental-simulate-commands \\
+      --experimental-simulate-subagents
+    
+3.  Use simulated commands and subagents in your prompts.
+    -   Prompt examples:
+        
+        \# Execute simulated commands. By the way, \`s/\` stands for \`simulate/\`.
+        s/your-command
+        
+        \# Execute simulated subagents
+        Call your-subagent to achieve something.
+        
 
 License
 -------

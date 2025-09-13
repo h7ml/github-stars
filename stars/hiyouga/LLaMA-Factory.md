@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 57592
+stars: 58114
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -336,7 +336,7 @@ GLM-4.1V
 
 glm4v
 
-GLM-4.5/GLM-4.5V\*
+GLM-4.5/GLM-4.5V
 
 106B/355B
 
@@ -456,7 +456,7 @@ MiMo
 
 mimo
 
-MiniCPM
+MiniCPM 1-4.1
 
 0.5B/1B/2B/4B/8B
 
@@ -534,9 +534,9 @@ Qwen (1-2.5) (Code/Math/MoE/QwQ)
 
 qwen
 
-Qwen3 (MoE/Instruct/Thinking)
+Qwen3 (MoE/Instruct/Thinking/Next)
 
-0.6B/1.7B/4B/8B/14B/32B/235B
+0.6B/1.7B/4B/8B/14B/32B/80B/235B
 
 qwen3/qwen3\_nothink
 
@@ -558,11 +558,11 @@ Qwen2-VL/Qwen2.5-VL/QVQ
 
 qwen2\_vl
 
-Seed Coder
+Seed (OSS/Coder)
 
-8B
+8B/36B
 
-seed\_coder
+seed\_oss/seed\_coder
 
 Skywork o1
 

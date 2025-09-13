@@ -1,6 +1,6 @@
 ---
 project: vscode-gitlens
-stars: 9501
+stars: 9509
 description: Supercharge Git inside VS Code and unlock untapped knowledge within each repository — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
 url: https://github.com/gitkraken/vscode-gitlens
 ---
@@ -73,7 +73,7 @@ GitLens leverages AI to simplify tedious tasks like writing commit messages, cra
 
 **Community Features**: Community users can generate commit messages for free if they are using GitHub Copilot or have a free GitKraken account with an API key connected to other providers like OpenAI, Anthropic, DeepSeek, Gemini, etc.
 
-**Pro Features**: Subscribe to GitLens Pro to access all AI features with GitKraken AI (Preview)—no manual key management required.
+**Pro Features**: Subscribe to GitLens Pro to access all AI features with GitKraken AI—no manual key management required.
 
 Interactive Code History
 ========================

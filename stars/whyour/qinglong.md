@@ -1,6 +1,6 @@
 ---
 project: qinglong
-stars: 18328
+stars: 18372
 description: 支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台（Timed task management platform supporting Python3, JavaScript, Shell, Typescript）
 url: https://github.com/whyour/qinglong
 ---

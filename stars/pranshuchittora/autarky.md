@@ -1,6 +1,6 @@
 ---
 project: autarky
-stars: 365
+stars: 366
 description: Liberating disk space from 📁 node_modules | Built with React
 url: https://github.com/pranshuchittora/autarky
 ---

@@ -1,6 +1,6 @@
 ---
 project: ai-code-reviewer
-stars: 9
+stars: 10
 description: 一个用于GitLab/GitHub或通用代码托管平台的自动化代码审查工具，旨在提升代码质量，提供智能反馈，并通过灵活配置实现高效的审查流程。
 url: https://github.com/h7ml/ai-code-reviewer
 ---

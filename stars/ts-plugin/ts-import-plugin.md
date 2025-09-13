@@ -1,6 +1,6 @@
 ---
 project: ts-import-plugin
-stars: 609
+stars: 610
 description: babel-import-plugin TypeScript Implement
 url: https://github.com/ts-plugin/ts-import-plugin
 ---

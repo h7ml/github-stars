@@ -1,6 +1,6 @@
 ---
 project: chinese-poetry-and-prose
-stars: 129
+stars: 130
 description: 84万篇古诗文数据，带译文、赏析、热度等信息，3万名作者数据，还有写了个本地化查询古诗词的软件。
 url: https://github.com/VMIJUNV/chinese-poetry-and-prose
 ---

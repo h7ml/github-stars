@@ -1,6 +1,6 @@
 ---
 project: ollama
-stars: 151772
+stars: 152241
 description: Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 url: https://github.com/ollama/ollama
 ---
@@ -577,6 +577,8 @@ Community Integrations
 -   Mayan EDMS (Open source document management system to organize, tag, search, and automate your files with powerful Ollama driven workflows.)
 -   Serene Pub (Beginner friendly, open source AI Roleplaying App for Windows, Mac OS and Linux. Search, download and use models with Ollama all inside the app.)
 -   Andes (A Visual Studio Code extension that provides a local UI interface for Ollama models)
+-   Clueless (Open Source & Local Cluely: A desktop application LLM assistant to help you talk to anything on your screen using locally served Ollama models. Also undetectable to screenshare)
+-   ollama-co2 (FastAPI web interface for monitoring and managing local and remote Ollama servers with real-time model monitoring and concurrent downloads)
 
 ### Cloud
 

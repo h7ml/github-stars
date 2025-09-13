@@ -1,6 +1,6 @@
 ---
 project: auto_xuexiqiangguo
-stars: 2563
+stars: 2561
 description: 学习强国 每日拿满61分！免root 四人赛双人对战秒答 自动化脚本
 url: https://github.com/dundunnp/auto_xuexiqiangguo
 ---

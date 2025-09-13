@@ -97,4 +97,4 @@ Sponsors
 License
 -------
 
-MIT License © 2024-PRESENT 三咲智子
+MIT License © 2024-PRESENT Kevin Deng

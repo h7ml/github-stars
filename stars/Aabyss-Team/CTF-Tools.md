@@ -1,6 +1,6 @@
 ---
 project: CTF-Tools
-stars: 346
+stars: 347
 description: 渊龙Sec安全团队CTF&AWD工具箱
 url: https://github.com/Aabyss-Team/CTF-Tools
 ---

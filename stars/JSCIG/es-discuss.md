@@ -1,6 +1,6 @@
 ---
 project: es-discuss
-stars: 555
+stars: 554
 description: JavaScript语言标准（ECMAScript）中文讨论
 url: https://github.com/JSCIG/es-discuss
 ---

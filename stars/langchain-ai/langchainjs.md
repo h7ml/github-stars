@@ -1,6 +1,6 @@
 ---
 project: langchainjs
-stars: 15602
+stars: 15650
 description: 🦜🔗 Build context-aware reasoning applications 🦜🔗
 url: https://github.com/langchain-ai/langchainjs
 ---
@@ -49,7 +49,7 @@ This framework consists of several parts.
 
 The LangChain libraries themselves are made up of several different packages.
 
--   **`@langchain/core`**: Base abstractions and LangChain Expression Language.
+-   **`@langchain/core`**: Base abstractions.
 -   **`@langchain/community`**: Third party integrations.
 -   **`langchain`**: Chains, agents, and retrieval strategies that make up an application's cognitive architecture.
 -   **LangGraph.js**: LangGraph powers production-grade agents, trusted by Linkedin, Uber, Klarna, GitLab, and many more. Build robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph. Integrates smoothly with LangChain, but can be used without it.

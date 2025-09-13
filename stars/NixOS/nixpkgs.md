@@ -1,6 +1,6 @@
 ---
 project: nixpkgs
-stars: 21698
+stars: 21764
 description: Nix Packages collection & NixOS
 url: https://github.com/NixOS/nixpkgs
 ---

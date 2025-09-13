@@ -1,6 +1,6 @@
 ---
 project: vue-docs-zh-cn
-stars: 1322
+stars: 1320
 description: 该项目已不再维护，有劳通过 Vue 官网查阅最新的文档
 url: https://github.com/vuejs/vue-docs-zh-cn
 ---

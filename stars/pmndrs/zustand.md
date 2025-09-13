@@ -1,6 +1,6 @@
 ---
 project: zustand
-stars: 54513
+stars: 54630
 description: 🐻 Bear necessities for state management in React
 url: https://github.com/pmndrs/zustand
 ---

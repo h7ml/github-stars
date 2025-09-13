@@ -1,6 +1,6 @@
 ---
 project: cz-message-helper
-stars: 3
+stars: 2
 description: A commit message helper for commitizen
 url: https://github.com/linpengteng/cz-message-helper
 ---

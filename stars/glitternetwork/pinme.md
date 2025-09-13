@@ -1,6 +1,6 @@
 ---
 project: pinme
-stars: 493
+stars: 579
 description: Deploy Your Frontend in a Single Command
 url: https://github.com/glitternetwork/pinme
 ---

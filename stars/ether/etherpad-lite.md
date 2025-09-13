@@ -1,6 +1,6 @@
 ---
 project: etherpad-lite
-stars: 17707
+stars: 17723
 description: Etherpad: A modern really-real-time collaborative document editor.
 url: https://github.com/ether/etherpad-lite
 ---

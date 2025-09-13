@@ -1,6 +1,6 @@
 ---
 project: luxirty-search
-stars: 1642
+stars: 1643
 description: 一个搜索引擎，基于 Google，屏蔽内容农场，无广告，无跟踪，干净，简洁，快。
 url: https://github.com/KoriIku/luxirty-search
 ---

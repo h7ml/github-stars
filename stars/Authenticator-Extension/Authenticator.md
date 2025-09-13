@@ -1,6 +1,6 @@
 ---
 project: Authenticator
-stars: 4079
+stars: 4087
 description: Authenticator generates 2-Step Verification codes in your browser.
 url: https://github.com/Authenticator-Extension/Authenticator
 ---

@@ -1,6 +1,6 @@
 ---
 project: reflection
-stars: 283
+stars: 282
 description: Lightweight (3K) ES Module implementation of reflect-metadata
 url: https://github.com/abraham/reflection
 ---

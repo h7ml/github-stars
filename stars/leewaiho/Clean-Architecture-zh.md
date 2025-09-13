@@ -1,6 +1,6 @@
 ---
 project: Clean-Architecture-zh
-stars: 804
+stars: 803
 description: 《架构整洁之道》中文翻译
 url: https://github.com/leewaiho/Clean-Architecture-zh
 ---

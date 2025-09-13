@@ -1,6 +1,6 @@
 ---
 project: KLineChart
-stars: 3092
+stars: 3103
 description: 📈Lightweight k-line chart that can be highly customized. Zero dependencies. Support mobile.（可高度自定义的轻量级k线图，无第三方依赖，支持移动端）
 url: https://github.com/klinecharts/KLineChart
 ---

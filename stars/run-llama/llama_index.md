@@ -1,6 +1,6 @@
 ---
 project: llama_index
-stars: 44094
+stars: 44228
 description: LlamaIndex is the leading framework for building LLM-powered agents over your data.
 url: https://github.com/run-llama/llama_index
 ---
@@ -165,6 +165,24 @@ We use poetry as the package manager for all Python packages. As a result, the d
 cd <desired-package-folder\>
 pip install poetry
 poetry install --with dev
+
+A note on Verification of Build Assets
+--------------------------------------
+
+By default, `llama-index-core` includes a `_static` folder that contains the nltk and tiktoken cache that is included with the package installation. This ensures that you can easily run `llama-index` in environments with restrictive disk access permissions at runtime.
+
+To verify that these files are safe and valid, we use the github `attest-build-provenance` action. This action will verify that the files in the `_static` folder are the same as the files in the `llama-index-core/llama_index/core/_static` folder.
+
+To verify this, you can run the following script (pointing to your installed package):
+
+#!/bin/bash
+STATIC\_DIR="venv/lib/python3.13/site-packages/llama\_index/core/\_static"
+REPO="run-llama/llama\_index"
+
+find "$STATIC\_DIR" -type f | while read -r file; do
+    echo "Verifying: $file"
+    gh attestation verify "$file" -R "$REPO" || echo "Failed to verify: $file"
+done
 
 📖 Citation
 -----------

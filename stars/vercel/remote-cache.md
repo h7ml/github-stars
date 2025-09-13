@@ -1,6 +1,6 @@
 ---
 project: remote-cache
-stars: 185
+stars: 186
 description: The Vercel Remote Cache SDK
 url: https://github.com/vercel/remote-cache
 ---

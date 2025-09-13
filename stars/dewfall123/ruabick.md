@@ -1,6 +1,6 @@
 ---
 project: ruabick
-stars: 155
+stars: 154
 description: Dumi like tool based on vitepress.
 url: https://github.com/dewfall123/ruabick
 ---

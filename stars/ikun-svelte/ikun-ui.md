@@ -1,6 +1,6 @@
 ---
 project: ikun-ui
-stars: 1457
+stars: 1460
 description: 🐔A Svelte.js based UnoCSS UI library that allows you to make  websites
 url: https://github.com/ikun-svelte/ikun-ui
 ---

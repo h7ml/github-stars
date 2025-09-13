@@ -1,6 +1,6 @@
 ---
 project: editor
-stars: 726
+stars: 734
 description: Browser-based visual editor for building WebGL, WebGPU, WebXR apps
 url: https://github.com/playcanvas/editor
 ---

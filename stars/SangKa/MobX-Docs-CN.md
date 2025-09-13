@@ -1,6 +1,6 @@
 ---
 project: MobX-Docs-CN
-stars: 1080
+stars: 1081
 description: MobX 中文文档
 url: https://github.com/SangKa/MobX-Docs-CN
 ---

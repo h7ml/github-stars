@@ -1,6 +1,6 @@
 ---
 project: FrontendWingman
-stars: 672
+stars: 671
 description:  Frontend Wingman, Learn frontend faster!
 url: https://github.com/dendoink/FrontendWingman
 ---

@@ -1,6 +1,6 @@
 ---
 project: Taobao
-stars: 146
+stars: 145
 description: 2020天猫淘宝双11自动领喵币吸猫脚本（过无障碍防检测）无后门无推广原生Auto.js纯净版
 url: https://github.com/roceys/Taobao
 ---

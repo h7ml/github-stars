@@ -1,6 +1,6 @@
 ---
 project: WTF-Ethers
-stars: 3413
+stars: 3415
 description: 我最近在重新学ethers.js，巩固一下细节，也写一个“WTF Ethers.js极简入门”，供小白们使用，每周更新1-3讲。Now supports English! 官网: https://wtf.academy
 url: https://github.com/WTFAcademy/WTF-Ethers
 ---

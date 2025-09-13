@@ -1,6 +1,6 @@
 ---
 project: jira-cli
-stars: 4646
+stars: 4664
 description: 🔥 Feature-rich interactive Jira command line.
 url: https://github.com/ankitpokhrel/jira-cli
 ---

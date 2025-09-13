@@ -1,6 +1,6 @@
 ---
 project: Font-Awesome
-stars: 75625
+stars: 75661
 description: The iconic SVG, font, and CSS toolkit
 url: https://github.com/FortAwesome/Font-Awesome
 ---

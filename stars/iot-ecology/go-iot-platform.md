@@ -1,6 +1,6 @@
 ---
 project: go-iot-platform
-stars: 52
+stars: 54
 description: Go IoT Platform, a high-efficiency and scalable Internet of Things solution developed with the Go language. This platform focuses on providing stable and reliable MQTT client management, as well as comprehensive processing and analysis of MQTT reported data.
 url: https://github.com/iot-ecology/go-iot-platform
 ---

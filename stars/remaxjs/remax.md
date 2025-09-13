@@ -1,6 +1,6 @@
 ---
 project: remax
-stars: 4583
+stars: 4581
 description: 使用真正的 React 构建跨平台小程序
 url: https://github.com/remaxjs/remax
 ---

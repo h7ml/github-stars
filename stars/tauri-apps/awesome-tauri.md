@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6369
+stars: 6405
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -174,6 +174,7 @@ Applications
 -   mediarepo - Tag-based media management application.
 -   Mr Tagger - Music file tagging app.
 -   Musicat - Sleek desktop music player and tagger for offline music.
+-   PunyTunes \- Control StreamMagic music streamers from the system tray.
 -   screenpipe - Build AI apps based on all your screens & mics context.
 -   ToneTempo \- Workout and run with AutoMixed music and an AI fitness coach.
 -   Watson.ai - Easily record and extract the most important information from your meetings.

@@ -1,6 +1,6 @@
 ---
 project: uni-api-status
-stars: 18
+stars: 19
 description: 一个用于查询和可视化展示 UniAPI 使用统计数据的 Web 应用程序。
 url: https://github.com/melosbot/uni-api-status
 ---

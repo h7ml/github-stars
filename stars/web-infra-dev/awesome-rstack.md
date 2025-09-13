@@ -1,6 +1,6 @@
 ---
 project: awesome-rstack
-stars: 354
+stars: 357
 description: A curated list of awesome things related to Rstack.
 url: https://github.com/web-infra-dev/awesome-rstack
 ---
@@ -129,6 +129,10 @@ Starter
 -   rsbuild-react-chakra-starter: initialize react app with rsbuild, Chakra UI and TypeScript setup. Configured with awesome toolings: Biome, Husky + Lint-Staged, Commitlint, and Turbo.
 -   template-rsbuild-react-ts-tailwind: Rsbuild starter template with React + Typescript + TailwindCSS + Biome.
 -   rsbuild-turborepo-react-module-federation: Rsbuild + Turborepo + Biome + Zustand + React for module federation.
+-   @trapar-waves/react-tailwind: A modern UI development template integrating React and Tailwind CSS, with Rsbuild, TypeScript, ESLint.
+-   @trapar-waves/react-antd-pro: A React-based project leveraging Ant Design Pro, TanStack tools, and Rsbuild.
+-   @trapar-waves/react-tanstack: A React template leveraging TanStack tools, with TypeScript, Tailwind CSS, and Rsbuild integration.
+-   @trapar-waves/react-mantine-tailwind: A React template integrating Mantine UI and Tailwind CSS for modern web development.
 -   @trapar-waves/vue-tailwind: A Vue 3 project with Tailwind CSS, Rsbuild and modern development tools.
 
 ### Rslib Starter
@@ -136,6 +140,7 @@ Starter
 -   ts-lib-starter: A hassle-free TS library template, powered by Rslib.
 -   rslib-npm-template: A starter template for developing React components with Rslib, featuring automated versioning and publishing using semantic-release.
 -   web-component-starter: A starter for developing Web components with Rslib, featuring using stencil and useful both in React and Vue.
+-   @trapar-waves/llm-template: A template for LLM development integrating AI tools, TypeScript, Zod, and Rslib.
 
 Plugins
 -------
@@ -162,6 +167,7 @@ Plugins
 -   rspack-deno-plugin: Make Rspack run correctly in the deno environment.
 -   rspack-circular-dependency-plugin: Detect circular dependencies in modules compiled with Rspack.
 -   @nx/module-federation: Includes several Rspack plugins for Nx and Module Federation.
+-   zephyr-rspack-plugin: An Rspack plugin for deploying applications with Zephyr Cloud.
 
 Rspack and Rsbuild support most of the webpack plugins, such as:
 
@@ -297,6 +303,8 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 -   rsbuild-plugin-rempa: A Rsbuild plugin designed to collect pages and generate a Multi-Page Application (MPA).
 -   rsbuild-plugin-iconify: A Rsbuild plugin that automatically generates optimized CSS with embedded SVG icons from Iconify.
 -   rsbuild-plugin-arethetypeswrong: Checking TypeScript type definitions with `arethetypeswrong`.
+-   zephyr-rsbuild-plugin: An Rsbuild plugin for deploying applications with Zephyr Cloud.
+-   rsbuild-plugin-protobufjs: An Rsbuild plugin that integrates `protobufjs`.
 
 ### Rspress Plugins
 
@@ -330,6 +338,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 -   rspress-plugin-changelog: Generates changelog pages, fetching release information from GitHub and GitLab repositories.
 -   rspress-plugin-annotation-words: An Rspress plugin to support annotation words.
 -   rspress-plugin-font-figtree: Use Figtree as the default font in your Rspress website.
+-   zephyr-rspress-plugin: An Rspress plugin for deploying applications with Zephyr Cloud.
 
 ### Unplugin
 

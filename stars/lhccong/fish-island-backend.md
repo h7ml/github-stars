@@ -1,6 +1,6 @@
 ---
 project: fish-island-backend
-stars: 627
+stars: 630
 description: 摸鱼岛🎣后端 基于爬虫 ➕ Netty ➕ SpringBoot ➕Redis➕ MySQL 开源🌟一站式摸鱼网
 url: https://github.com/lhccong/fish-island-backend
 ---

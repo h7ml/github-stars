@@ -1,6 +1,6 @@
 ---
 project: hangzhou-house-guide
-stars: 975
+stars: 974
 description: 杭州购房指南，根据个人购房经历，总结而成的一篇买房攻略，涉及新房摇号和二手房选购，包含大量杭州城市规划资料。
 url: https://github.com/zkqiang/hangzhou-house-guide
 ---

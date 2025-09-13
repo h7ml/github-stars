@@ -1,6 +1,6 @@
 ---
 project: page-assist
-stars: 7080
+stars: 7100
 description: Use your locally running AI models to assist you in your web browsing
 url: https://github.com/n4ze3m/page-assist
 ---
@@ -139,6 +139,12 @@ Focus Textarea
 `Shift+Esc`
 
 Focuses the message input field
+
+Toggle Chat Mode
+
+`Ctrl+E`
+
+Toggles between normal chat and chat with current page
 
 Development
 -----------

@@ -1,11 +1,13 @@
 ---
 project: HumanSystemOptimization
-stars: 20072
+stars: 20469
 description: 健康学习到150岁 - 人体系统调优不完全指南
 url: https://github.com/zijie0/HumanSystemOptimization
 ---
 
 UPDATES:
+
+再补充一篇更新：养生博主的 24 年总结。
 
 补充一篇 24 年初的文章，分享最近一年的一些个人实践：养生博主的 23 年总结。
 

@@ -1,6 +1,6 @@
 ---
 project: databasir
-stars: 769
+stars: 768
 description: 数据库文档管理中心
 url: https://github.com/vran-dev/databasir
 ---

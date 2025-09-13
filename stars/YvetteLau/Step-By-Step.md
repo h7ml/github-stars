@@ -1,6 +1,6 @@
 ---
 project: Step-By-Step
-stars: 705
+stars: 704
 description: 不积跬步,无以至千里；
 url: https://github.com/YvetteLau/Step-By-Step
 ---

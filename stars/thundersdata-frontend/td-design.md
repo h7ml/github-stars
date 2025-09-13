@@ -1,6 +1,6 @@
 ---
 project: td-design
-stars: 213
+stars: 212
 description: 雷数科技前端部门组件库/工具库
 url: https://github.com/thundersdata-frontend/td-design
 ---

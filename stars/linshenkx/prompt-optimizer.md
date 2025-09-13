@@ -1,6 +1,6 @@
 ---
 project: prompt-optimizer
-stars: 14337
+stars: 14758
 description: 一款提示词优化器，助力于编写高质量的提示词
 url: https://github.com/linshenkx/prompt-optimizer
 ---
@@ -10,7 +10,7 @@ Prompt Optimizer (提示词优化器) 🚀
 
 English | 中文
 
-在线体验 | 快速开始 | 常见问题 | Chrome插件
+在线体验 | 快速开始 | 常见问题 | Chrome插件 | 💖赞助支持
 
 开发文档 | Vercel部署指南 | MCP部署使用说明 | DeepWiki文档 | ZRead文档
 
@@ -48,6 +48,17 @@ Prompt Optimizer是一个强大的AI提示词优化工具，帮助你编写更�
 -   📱 **多端支持**：同时提供Web应用、桌面应用、Chrome插件和Docker部署四种使用方式
 -   🔐 **访问控制**：支持密码保护功能，保障部署安全
 -   🧩 **MCP协议支持**：支持Model Context Protocol (MCP) 协议，可与Claude Desktop等MCP兼容应用集成
+
+🚀 高级功能预览 (Beta)
+----------------
+
+> **预览环境**：https://prompt-dev.always200.com | 欢迎体验新功能并反馈
+
+-   📊 **上下文变量管理**：自定义变量、多轮会话测试、变量替换预览
+-   🛠️ **工具调用支持**：Function Calling集成，支持OpenAI和Gemini工具调用
+-   🎯 **高级测试模式**：更灵活的提示词测试和调试能力
+
+_注：高级功能正在开发完善中，未来版本将正式集成到主版本_
 
 快速开始
 ----
@@ -286,7 +297,11 @@ pnpm dev:fresh        # 完整重置并重新启动开发环境
 -   国际化支持
 -   支持系统提示词优化和用户提示词优化
 -   桌面应用发布
--   mcp服务发布
+-   MCP服务发布
+-   高级模式：变量管理、上下文测试、工具调用
+-   支持图片输入和多模态处理
+-   支持工作区/项目管理
+-   支持提示词收藏和模板管理
 
 详细的项目状态可查看 项目状态文档
 

@@ -1,6 +1,6 @@
 ---
 project: nodejs-toolbox-catalog
-stars: 261
+stars: 263
 description: Catalog of categories and libraries for Node.js Toolbox
 url: https://github.com/Maximization/nodejs-toolbox-catalog
 ---

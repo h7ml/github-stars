@@ -1,6 +1,6 @@
 ---
 project: dokku
-stars: 31114
+stars: 31160
 description: A docker-powered PaaS that helps you build and manage the lifecycle of applications
 url: https://github.com/dokku/dokku
 ---
@@ -35,8 +35,8 @@ Installation
 
 To install the latest stable release, run the following commands as a user who has access to `sudo`:
 
-wget -NP . https://dokku.com/install/v0.36.4/bootstrap.sh
-sudo DOKKU\_TAG=v0.36.4 bash bootstrap.sh
+wget -NP . https://dokku.com/install/v0.36.6/bootstrap.sh
+sudo DOKKU\_TAG=v0.36.6 bash bootstrap.sh
 
 You can then proceed to configure your server domain (via `dokku domains:set-global`) and user access (via `dokku ssh-keys:add`) to complete the installation.
 

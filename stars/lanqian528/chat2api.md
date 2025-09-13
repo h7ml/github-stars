@@ -1,6 +1,6 @@
 ---
 project: chat2api
-stars: 3176
+stars: 3183
 description: A service that can convert ChatGPT on the web to OpenAI API format.
 url: https://github.com/lanqian528/chat2api
 ---

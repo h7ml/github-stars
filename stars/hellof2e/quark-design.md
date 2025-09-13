@@ -1,6 +1,6 @@
 ---
 project: quark-design
-stars: 1940
+stars: 1935
 description: Browser-native component library, framework-agnostic, base on web components.(企业级 H5 UI 组件库，无框架，即插即用。)
 url: https://github.com/hellof2e/quark-design
 ---

@@ -1,6 +1,6 @@
 ---
 project: BWmelonApi
-stars: 61
+stars: 62
 description: 一个基于Express框架的api接口，包括短网址生成、短网址还原、二维码生成、二维码识别解析、网站标题获取、ICP备案查询、网易云音乐解析、QQ信息获取、一言、必应每日一图。
 url: https://github.com/BWmelon/BWmelonApi
 ---
