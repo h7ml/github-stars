@@ -1,6 +1,6 @@
 ---
 project: Postman-cn
-stars: 5561
+stars: 5563
 description: Postman汉化中文版
 url: https://github.com/hlmd/Postman-cn
 ---

@@ -1,6 +1,6 @@
 ---
 project: my-fingerprint
-stars: 652
+stars: 658
 description: 保护你的浏览器指纹 | Protect Your Browser Fingerprints | Chrome, Edge, Firefox | 扩展 / Extension
 url: https://github.com/omegaee/my-fingerprint
 ---

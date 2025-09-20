@@ -1,6 +1,6 @@
 ---
 project: Onekey_Caddy_PHP7_Sqlite3
-stars: 506
+stars: 505
 description: 小内存 VPS 一键搭建 Caddy+PHP7+Sqlite3 环境 （支持VPS最小内存64M），一键翻墙 caddy+web(php+sqlite3)+v2ray+bbr。
 url: https://github.com/dylanbai8/Onekey_Caddy_PHP7_Sqlite3
 ---

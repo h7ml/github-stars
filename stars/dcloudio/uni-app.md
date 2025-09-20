@@ -1,6 +1,6 @@
 ---
 project: uni-app
-stars: 41098
+stars: 41112
 description: A cross-platform framework using Vue.js
 url: https://github.com/dcloudio/uni-app
 ---

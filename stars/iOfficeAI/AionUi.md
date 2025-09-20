@@ -1,6 +1,6 @@
 ---
 project: AionUi
-stars: 1980
+stars: 2082
 description: Free, local, open-source GUI app for Gemini CLI — Better Chat UI, File Management, AI image editing, multi-agent support, multi-LLMs & apikey polling, code diff view & more | 🌟 Star if you like it!
 url: https://github.com/iOfficeAI/AionUi
 ---

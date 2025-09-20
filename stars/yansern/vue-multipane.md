@@ -2,7 +2,7 @@
 project: vue-multipane
 stars: 603
 description: Resizable split panes for Vue.js.
-url: https://github.com/yoshimo2o/vue-multipane
+url: https://github.com/yansern/vue-multipane
 ---
 
 vue-multipane

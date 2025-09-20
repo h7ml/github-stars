@@ -1,6 +1,6 @@
 ---
 project: javascript
-stars: 147398
+stars: 147420
 description: JavaScript Style Guide
 url: https://github.com/airbnb/javascript
 ---

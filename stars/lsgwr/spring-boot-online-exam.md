@@ -1,6 +1,6 @@
 ---
 project: spring-boot-online-exam
-stars: 1633
+stars: 1637
 description: 基于Spring Boot的在线考试系统(预览地址 http://129.211.88.191 ，账户分别是admin、teacher、student，密码是admin123)，也有Python实现
 url: https://github.com/lsgwr/spring-boot-online-exam
 ---

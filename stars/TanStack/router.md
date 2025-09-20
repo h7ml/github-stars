@@ -1,68 +1,66 @@
 ---
 project: router
-stars: 11067
+stars: 11115
 description: 🤖 Fully typesafe Router for React (and friends) w/ built-in caching, 1st class search-param APIs, client-side cache integration and isomorphic rendering.
 url: https://github.com/TanStack/router
 ---
 
-🤖 Type-safe router w/ built-in caching & URL state management for React!
+TanStack Router
+---------------
 
-Enjoy this library? Try the entire TanStack! TanStack Query, TanStack Table, TanStack Form, TanStack Virtual, TanStack Pacer, TanStack Store, TanStack Ranger, TanStack DB, TanStack Config
+A modern router designed for type safety, data‑driven navigation, and seamless developer experience.
 
-Visit tanstack.com/router for docs, guides, API and more!
----------------------------------------------------------
+-   End‑to‑end type safety (routes, params, loaders)
+-   Schema‑driven search params with validation
+-   Built‑in caching, prefetching & invalidation
+-   Nested layouts, transitions & error boundaries
+
+### Read the Router Docs →
+
+TanStack Start
+--------------
+
+A full‑stack framework built on Router, designed for server rendering, streaming, and production‑ready deployments.
+
+-   Full‑document SSR & streaming
+-   Server functions & end‑to‑end type safety
+-   Deployment‑ready bundling & builds
+-   All the power of TanStack Router, plus full‑stack features
+
+### Read the Start Docs →
+
+  
+
+### Become a Sponsor!
+
+Get Involved
+------------
+
+-   We welcome issues and pull requests!
+-   Participate in GitHub discussions
+-   Chat with the community on Discord
+-   See CONTRIBUTING.md for setup instructions
 
 Partners
 --------
 
-  
+We're looking for TanStack Router & Start Partners to join our mission! Partner with us to push the boundaries of TanStack Router & Start and build amazing things together.
 
-  
+**LET'S CHAT**
 
-  
+Explore the TanStack Ecosystem
+------------------------------
 
-  
+-   **TanStack Config** – Tooling for JS/TS packages
+-   **TanStack DB** – Reactive sync client store
+-   **TanStack DevTools** – Unified devtools panel
+-   **TanStack Form** – Type‑safe form state
+-   **TanStack Pacer** – Debouncing, throttling, batching  
+    
+-   **TanStack Query** – Async state & caching
+-   **TanStack Ranger** – Range & slider primitives
+-   **TanStack Store** – Reactive data store
+-   **TanStack Table** – Headless datagrids
+-   **TanStack Virtual** – Virtualized rendering
 
-  
-
-  
-
-  
-
-  
-
-  
-
-Quick Features
---------------
-
--   100% TypeSafe
-    -   Route Defs
-    -   Navigation
-    -   Relative Navigation
-    -   Search Params
-    -   Path Params
-    -   Loaders
--   1st Class Search Params
-    -   Schemas + Validation
-    -   Parsing + Serialization
-    -   Immutable
-    -   Structural Sharing
-    -   Pre/Post Processing
--   Built-in Caching
-    -   Stale-While-Revalidate
-    -   Max-Age
-    -   Auto Garbage Collection
-    -   Invalidation
--   Prefetching
--   Automatic Prefetching
--   Transitions
--   Error Boundaries
--   Code Splitting
--   Layout Routes
--   Easy Integration w/ external caches and storage (eg. React Query, Apollo, SWR, RTKQuery)
-
-Example Usage
--------------
-
-To run example React projects with Tanstack Router, see CONTRIBUTING.md
+… and more at **TanStack.com »**

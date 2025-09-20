@@ -1,6 +1,6 @@
 ---
 project: tauri-tutorial
-stars: 646
+stars: 647
 description: 📚 Tauri Tutorial (系列教程 - 打造属于自己的跨端应用)
 url: https://github.com/lencx/tauri-tutorial
 ---

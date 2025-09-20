@@ -1,6 +1,6 @@
 ---
 project: gemini-balance
-stars: 5017
+stars: 5087
 description: Gemini polling proxy service （gemini轮询代理服务）
 url: https://github.com/snailyp/gemini-balance
 ---
@@ -235,19 +235,19 @@ Admin session expiration time in seconds (5 minutes to 24 hours)
 
 Model for testing key validity
 
-`gemini-1.5-flash`
+`gemini-2.5-flash-lite`
 
 `IMAGE_MODELS`
 
 Models supporting image generation
 
-`["gemini-2.0-flash-exp"]`
+`["gemini-2.0-flash-exp", "gemini-2.5-flash-image-preview"]`
 
 `SEARCH_MODELS`
 
 Models supporting web search
 
-`["gemini-2.0-flash-exp"]`
+`["gemini-2.5-flash","gemini-2.5-pro"]`
 
 `FILTERED_MODELS`
 
@@ -353,6 +353,12 @@ Log level: `DEBUG`, `INFO`, `WARNING`, `ERROR`
 
 `INFO`
 
+`ERROR_LOG_RECORD_REQUEST_BODY`
+
+Record request body in error logs (may contain sensitive information)
+
+`false`
+
 `AUTO_DELETE_ERROR_LOGS_ENABLED`
 
 Auto-delete error logs
@@ -419,9 +425,45 @@ Image generation model
 
 `UPLOAD_PROVIDER`
 
-Image upload provider: `smms`, `picgo`, `cloudflare_imgbed`
+Image upload provider: `smms`, `picgo`, `cloudflare_imgbed`, `aliyun_oss`
 
 `smms`
+
+`OSS_ENDPOINT`
+
+Aliyun OSS public endpoint
+
+`oss-cn-shanghai.aliyuncs.com`
+
+`OSS_ENDPOINT_INNER`
+
+Aliyun OSS internal endpoint (intra-VPC)
+
+`oss-cn-shanghai-internal.aliyuncs.com`
+
+`OSS_ACCESS_KEY`
+
+Aliyun AccessKey ID
+
+`LTAI5txxxxxxxxxxxxxxxx`
+
+`OSS_ACCESS_KEY_SECRET`
+
+Aliyun AccessKey Secret
+
+`yXxxxxxxxxxxxxxxxxxxxxx`
+
+`OSS_BUCKET_NAME`
+
+Aliyun OSS bucket name
+
+`your-bucket-name`
+
+`OSS_REGION`
+
+Aliyun OSS region
+
+`cn-shanghai`
 
 `SMMS_SECRET_TOKEN`
 

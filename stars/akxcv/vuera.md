@@ -1,6 +1,6 @@
 ---
 project: vuera
-stars: 4311
+stars: 4310
 description: :eyes: Vue in React, React in Vue. Seamless integration of the two. :dancers:
 url: https://github.com/akxcv/vuera
 ---

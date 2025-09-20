@@ -1,6 +1,6 @@
 ---
 project: node-reptile
-stars: 10
+stars: 9
 description: nodejs 将掘金 html 转化成 markdown
 url: https://github.com/CrazyMrYan/node-reptile
 ---

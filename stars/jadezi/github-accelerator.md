@@ -1,6 +1,6 @@
 ---
 project: github-accelerator
-stars: 83
+stars: 84
 description: 油猴插件---github访问加速
 url: https://github.com/jadezi/github-accelerator
 ---

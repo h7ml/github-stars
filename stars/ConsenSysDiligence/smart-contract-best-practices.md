@@ -1,6 +1,6 @@
 ---
 project: smart-contract-best-practices
-stars: 7576
+stars: 7579
 description: A guide to smart contract security best practices
 url: https://github.com/ConsenSysDiligence/smart-contract-best-practices
 ---

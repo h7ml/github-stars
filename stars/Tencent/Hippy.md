@@ -1,6 +1,6 @@
 ---
 project: Hippy
-stars: 8422
+stars: 8430
 description: Hippy is designed to easily build cross-platform dynamic apps. 👏
 url: https://github.com/Tencent/Hippy
 ---

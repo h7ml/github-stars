@@ -1,6 +1,6 @@
 ---
 project: WooyunDrops
-stars: 620
+stars: 615
 description: Wooyun知识库，乌云知识库，https://wooyun.kieran.top
 url: https://github.com/SuperKieran/WooyunDrops
 ---

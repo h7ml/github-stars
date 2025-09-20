@@ -1,6 +1,6 @@
 ---
 project: vite-vue-bpmn-process
-stars: 564
+stars: 568
 description: null
 url: https://github.com/moon-studio/vite-vue-bpmn-process
 ---

@@ -1,6 +1,6 @@
 ---
 project: poems-db
-stars: 376
+stars: 381
 description: 比较全的中华古诗古词古文库，包括21万首古诗词，以及注释、赏析等信息，包含10000多名诗人以及诗人的介绍、生平等，同时包含，1600多个词牌介绍，中国70多个朝代解析，和古诗文的近200个分类标签
 url: https://github.com/yxcs/poems-db
 ---

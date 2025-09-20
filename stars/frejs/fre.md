@@ -12,7 +12,7 @@ Fre
 
 -   **Concurrent Mode** — This is an amazing idea, which implements the coroutine scheduler in JavaScript, it also called **Time slicing**.
     
--   **Keyed reconcilation algorithm** — Fre has a minimal diff algorithm, It supported keyed, pre-process, offscreen rendering and hydrate.
+-   **Keyed reconcilation algorithm** — Fre has a minimal diff algorithm, It supported keyed, pre-process, offscreen rendering and SSR hydration.
     
 -   **Do more with less** — Fre get the tiny size, but it has most features, virtual DOM, hooks API, Suspense, Fragments, Fre.memo and so on.
     
@@ -40,6 +40,8 @@ render(<App/>, document.body)
 -   Suspense
     
 -   memo
+    
+-   ErrorBoundary
     
 
 ### Hooks API
@@ -222,6 +224,22 @@ export function App() {
   )
 }
 
+### ErrorBoundary
+
+function A(){
+  throw new Error('render error test')
+}
+
+export function App() {
+  return (
+    <div\>
+      <ErrorBoundary fallback\={<div\>occur an error</div\>}\>
+        <A />
+      </ErrorBoundary\>
+    </div\>
+  )
+}
+
 ### Fragments
 
 // fragment
@@ -233,17 +251,19 @@ function App() {
   return \[a, b, c\]
 }
 
-### jsx2
+### jsx
 
-plugins: \[
-  \[
-    '@babel/plugin-transform-react-jsx',
-    {
-      runtime: 'automatic',
-      importSource: 'fre',
-    },
-  \],
-\]
+For vite example
+
+export default {
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment',
+    jsxInject: \`import { h, Fragment } from 'fre'\`,
+    target: 'es2020',
+    format: 'esm'
+  }
+}
 
 #### License
 

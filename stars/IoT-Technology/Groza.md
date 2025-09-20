@@ -1,6 +1,6 @@
 ---
 project: Groza
-stars: 588
+stars: 589
 description: 开源物联网平台 - 物联网解决方案的设备管理，数据收集，处理
 url: https://github.com/IoT-Technology/Groza
 ---

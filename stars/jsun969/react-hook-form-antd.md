@@ -1,6 +1,6 @@
 ---
 project: react-hook-form-antd
-stars: 75
+stars: 76
 description: 📋🐜 Master your Ant Design form with React Hook Form! 用 React Hook Form 拿捏你的 Ant Design 表单！
 url: https://github.com/jsun969/react-hook-form-antd
 ---
@@ -150,5 +150,9 @@ Thanks goes to these wonderful people (emoji key):
   
 **Andrey**  
 🐛
+
+  
+**ray-overjet**  
+🚇
 
 This project follows the all-contributors specification. Contributions of any kind welcome!

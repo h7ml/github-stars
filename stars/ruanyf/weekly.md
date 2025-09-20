@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 75300
+stars: 75621
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---
@@ -10,32 +10,23 @@ url: https://github.com/ruanyf/weekly
 
 记录每周值得分享的科技内容，周五发布。
 
-欢迎投稿，推荐或自荐文章/软件/资源，请提交 issue 。
+欢迎投稿文章/软件/资源，请提交 issue 。
 
-> P.S. 讨论区的《谁在招人》，是一个免费的程序员招聘帖，提供大量就业信息，欢迎访问或发布工作/实习岗位。
+> P.S. 讨论区的《谁在招人》，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
 
-如何搜索
-----
+赞助商
+---
 
-周刊已经沉淀了大量内容，可以使用下面的几种方法进行搜索。
-
-1、使用 GitHub 自带的网页搜索。
-
-2、使用 Sourcegraph.com 进行搜索。
-
-3、将这个仓库克隆到本地，然后在仓库目录使用下面的命令。
-
-$ grep -nri \[搜索词\] docs | cat --number
-
-比如，搜索 CSS 相关内容。
-
-$ grep -nri css docs | cat --number
+  
+Warp 专为 AI 代理编码而构建  
+支持 macOS, Linux 和 Windows
 
 2025
 ----
 
 **九月**
 
+-   第 366 期：旧金山疯狂的 AI 广告
 -   第 365 期：流量变现正在崩塌
 -   第 364 期：最难还原的魔方
 

@@ -1,6 +1,6 @@
 ---
 project: rulesync
-stars: 300
+stars: 309
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---
@@ -81,6 +81,8 @@ Claude Code
 
 ✅
 
+✅
+
 Codex CLI
 
 ✅
@@ -119,7 +121,7 @@ Cursor
 
 ✅
 
-🎮
+✅
 
 🎮
 
@@ -256,8 +258,10 @@ Example:
   // Features to generate. You can specify "\*" to generate all features.
   "features": \["rules", "ignore", "mcp", "commands", "subagents"\],
   
-  // Base directory or directories for generation
-  "baseDir": ".",
+  // Base directories for generation.
+  // Basically, you can specify a \`\["."\]\` only.
+  // However, for example, if your project is a monorepo and you have to launch the AI agent at each package directory, you can specify multiple base directories.
+  "baseDirs": \["."\],
   
   // Delete existing files before generating
   "delete": true,

@@ -1,6 +1,6 @@
 ---
 project: got
-stars: 14733
+stars: 14734
 description: 🌐 Human-friendly and powerful HTTP request library for Node.js
 url: https://github.com/sindresorhus/got
 ---

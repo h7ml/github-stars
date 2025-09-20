@@ -1,6 +1,6 @@
 ---
 project: component-party.dev
-stars: 3092
+stars: 3117
 description: 🎉 Web component JS frameworks overview by their syntax and features
 url: https://github.com/matschik/component-party.dev
 ---

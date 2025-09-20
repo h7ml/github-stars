@@ -1,6 +1,6 @@
 ---
 project: PrivacySentry
-stars: 2211
+stars: 2212
 description: Android隐私合规整改检测工具，注解+Asm修改字节码的检测方案
 url: https://github.com/allenymt/PrivacySentry
 ---

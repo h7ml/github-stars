@@ -1,6 +1,6 @@
 ---
 project: formik
-stars: 34308
+stars: 34309
 description: Build forms in React, without the tears 😭 
 url: https://github.com/jaredpalmer/formik
 ---

@@ -1,6 +1,6 @@
 ---
 project: twelvet-ui
-stars: 32
+stars: 31
 description: 基于React Antd 的twelvet微服务脚手架前端。🔝 🔝 记得上边点个star 关注更新。 微服务交流群见底部群链接。
 url: https://github.com/twelvet-s/twelvet-ui
 ---

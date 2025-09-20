@@ -1,6 +1,6 @@
 ---
 project: island.js
-stars: 478
+stars: 479
 description: 📝 Vite & MDX powered static site generator. Base on islands architecture
 url: https://github.com/sanyuan0704/island.js
 ---

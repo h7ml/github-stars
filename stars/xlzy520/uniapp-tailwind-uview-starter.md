@@ -1,6 +1,6 @@
 ---
 project: uniapp-tailwind-uview-starter
-stars: 109
+stars: 110
 description: 利用uniapp+tailwindcss 3.x+uview 1.x+vue-cli搭建的一套基础模板，可以使用Webstorm或者vscode开发。集成miniprogram-ci自动部署
 url: https://github.com/xlzy520/uniapp-tailwind-uview-starter
 ---

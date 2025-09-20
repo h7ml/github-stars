@@ -1,6 +1,6 @@
 ---
 project: community
-stars: 7534
+stars: 7547
 description: Public feedback discussions for: GitHub Mobile, GitHub Discussions, GitHub Codespaces, GitHub Sponsors, GitHub Issues and more!
 url: https://github.com/community/community
 ---
@@ -27,7 +27,7 @@ GitHub Actions
 
 🔁 API and Webhooks
 
-GitHub API and GitHub Webhooks
+GitHub REST API, GitHub GraphQL API, and GitHub Webhooks
 
 🔎 Code Search & Navigation
 

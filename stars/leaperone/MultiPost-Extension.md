@@ -1,6 +1,6 @@
 ---
 project: MultiPost-Extension
-stars: 1872
+stars: 1881
 description: A browser extension that helps users publish content to multiple social media platforms with one click.
 url: https://github.com/leaperone/MultiPost-Extension
 ---

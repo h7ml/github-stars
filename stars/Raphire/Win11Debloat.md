@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 26430
+stars: 26687
 description: A simple, easy to use PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---
@@ -99,9 +99,10 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
 -   Disable & remove Microsoft Copilot.
 -   Disable Windows Recall snapshots. (W11 only)
--   Disable AI Features in Edge (W11 only)
--   Disable AI Features in Paint (W11 only)
--   Disable AI Features in Notepad (W11 only)
+-   Disable Click to Do AI text & image analysis. (W11 only)
+-   Disable AI Features in Edge. (W11 only)
+-   Disable AI Features in Paint. (W11 only)
+-   Disable AI Features in Notepad. (W11 only)
 
 #### Personalisation
 
@@ -148,9 +149,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 
 Win11Debloat's default mode allows you to quickly and easily apply the changes that are recommended for most people. This includes removing many annoying distractions, disabling telemetry and tracking and optionally uninstalling the default or your custom selection of apps. To apply the default settings, launch the script as you normally would and select option `1` in the script menu.
 
-Alternatively, you can launch the script with the `-RunDefaults` or `-RunDefaultsLite` parameters to immediately run the defaults without going through the menu or the app removal options. Using the `-RunDefaults` parameter will run the script in default mode and remove the default selection of apps. While using the `-RunDefaultsLite` parameter will run the script in default mode without removing any apps.
-
-Example:
+Alternatively, you can launch the script with the `-RunDefaults` or `-RunDefaultsLite` parameters to immediately run the defaults without going through the menu or the app removal options. Using the `-RunDefaults` parameter will run the script in default mode and remove the default selection of apps. While using the `-RunDefaultsLite` parameter will run the script in default mode without removing any apps. Example:
 
 & (\[scriptblock\]::Create((irm "https://debloat.raphi.re/"))) \-RunDefaults
 

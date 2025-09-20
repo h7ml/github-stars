@@ -1,6 +1,6 @@
 ---
 project: awesome-rstack
-stars: 357
+stars: 361
 description: A curated list of awesome things related to Rstack.
 url: https://github.com/web-infra-dev/awesome-rstack
 ---

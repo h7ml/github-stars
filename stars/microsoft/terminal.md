@@ -1,6 +1,6 @@
 ---
 project: terminal
-stars: 100242
+stars: 100319
 description: The new Windows Terminal and the original Windows console host, all in the same place!
 url: https://github.com/microsoft/terminal
 ---

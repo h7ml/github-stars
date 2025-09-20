@@ -1,6 +1,6 @@
 ---
 project: mirror-clone
-stars: 50
+stars: 51
 description: All-in-one mirror utility for SJTUG mirror
 url: https://github.com/sjtug/mirror-clone
 ---

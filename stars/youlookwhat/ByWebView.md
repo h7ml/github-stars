@@ -1,6 +1,6 @@
 ---
 project: ByWebView
-stars: 1562
+stars: 1563
 description: 🌏  WebView 全方面使用，JS交互、进度条、上传图片、错误页面、视频全屏播放、唤起原生App、获取网页源代码、被作为第三方浏览器打开、DeepLink、[腾讯x5使用示例]
 url: https://github.com/youlookwhat/ByWebView
 ---

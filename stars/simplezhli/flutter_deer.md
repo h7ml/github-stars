@@ -1,6 +1,6 @@
 ---
 project: flutter_deer
-stars: 8370
+stars: 8378
 description: 🦌 Flutter 练习项目(包括集成测试、可访问性测试)。内含完整UI设计图，更贴近真实项目的练习。Flutter practice project (including integration testing and accessibility testing). Contains complete UI design drawings for a more realistic practice project.
 url: https://github.com/simplezhli/flutter_deer
 ---

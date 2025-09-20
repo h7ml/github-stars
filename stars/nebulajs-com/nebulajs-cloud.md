@@ -1,6 +1,6 @@
 ---
 project: nebulajs-cloud
-stars: 69
+stars: 71
 description: 🚀 基于Nodejs + 百度Amis的分布式低代码平台，支持代码生成、工作流、可视化页面设计等功能。简单易用，可大幅度提高应用开发效率。/ lowcode fullstack platform
 url: https://github.com/nebulajs-com/nebulajs-cloud
 ---

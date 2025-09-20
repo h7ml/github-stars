@@ -1,6 +1,6 @@
 ---
 project: juejin-api
-stars: 55
+stars: 56
 description: 掘金网站web端API收集
 url: https://github.com/chenzijia12300/juejin-api
 ---

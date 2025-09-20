@@ -1,6 +1,6 @@
 ---
 project: just-laws
-stars: 686
+stars: 688
 description: 一个简洁、便捷的中国法律文库 | A Simple and Convenient Laws Library of China.
 url: https://github.com/ImCa0/just-laws
 ---

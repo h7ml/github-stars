@@ -1,6 +1,6 @@
 ---
 project: ColossalAI
-stars: 41150
+stars: 41164
 description: Making large AI models cheaper, faster and more accessible
 url: https://github.com/hpcaitech/ColossalAI
 ---

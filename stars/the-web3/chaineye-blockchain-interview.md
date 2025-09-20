@@ -1,6 +1,6 @@
 ---
 project: chaineye-blockchain-interview
-stars: 522
+stars: 533
 description: 区块链华语面试宝典，web3、区块链、web3开发、区块链开发、web3开发学习、区块链开发学习、面试、入门指南、最佳实践、教程 钱包开发、各个链的钱包(btc/eth/sol/xrp)、钱包面试 智能合约、智能合约开发、智能合约学习、智能合约面试 公链开发、公链开发学习、公链面试
 url: https://github.com/the-web3/chaineye-blockchain-interview
 ---

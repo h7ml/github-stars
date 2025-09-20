@@ -1,6 +1,6 @@
 ---
 project: vscode-rainbow-fart
-stars: 4951
+stars: 4950
 description: 一个在你编程时疯狂称赞你的 VSCode 扩展插件 | An VSCode extension that keeps giving you compliment while you are coding, it will checks the keywords of code to play suitable sounds.
 url: https://github.com/SaekiRaku/vscode-rainbow-fart
 ---

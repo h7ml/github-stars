@@ -1,6 +1,6 @@
 ---
 project: linux-command
-stars: 34370
+stars: 34429
 description: Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux
 url: https://github.com/jaywcjlove/linux-command
 ---
@@ -46,11 +46,11 @@ Github Web | Gitee Web | Githack | Statically
 
 **推荐使用的镜像 web 版本**
 
-**`qqcl.com`** **`wu114.cn`** **`waadri.top`** **`zanglikun.com`** **`alapi.cn`** **`fasfuah.icu`** **`cnxiaobai.com`** **`sicangge.com`** **`largeinfo.cc`** **`srebro.cn`** **`getaifun.com`** **`devonline.net`** **`man.zch.ooo`** **`mmoke.com`** **`bqrdh.com`** **`zyimm.com`** **`vovuo.com`** **`shinote.net`** `liguiying.cn` `renye.net` `diqi.org` `alistnas.top` `nenufm.com` `jiangyang.online` `xiyung.cn` `78888889.xyz`
+**`qqcl.com`** **`huiyex.top`** **`wu114.cn`** **`waadri.top`** **`zanglikun.com`** **`alapi.cn`** **`fasfuah.icu`** **`cnxiaobai.com`** **`sicangge.com`** **`largeinfo.cc`** **`srebro.cn`** **`getaifun.com`** **`devonline.net`** **`man.zch.ooo`** **`mmoke.com`** **`bqrdh.com`** **`zyimm.com`** **`vovuo.com`** **`shinote.net`** `vekicc.com` `liguiying.cn` `renye.net` `diqi.org` `alistnas.top` `nenufm.com` `jiangyang.online` `xiyung.cn` `78888889.xyz`
 
 **其它 web 版本**
 
-`briline.net` `pkslow.com` `ifdev.cn` `witnect.top` `lylme.com` `ftqq.com` `gaomeluo.com` `atoolbox.net` `xiaoshanseo.com` `262235.xyz` `cmsblogs.cn` `loquy.cn` `buyao.vip` `hezhiqiang.gitbook.io` `utils.fun` `51tools.info`
+`briline.net` `pkslow.com` `ifdev.cn` `witnect.top` `lylme.com` `ftqq.com` `gaomeluo.com` `atoolbox.net` `xiaoshanseo.com` `262235.xyz` `cmsblogs.cn` `loquy.cn` `buyao.vip` `hezhiqiang.gitbook.io` `utils.fun` `51tools.info` `ddosi.org`
 
 其它版本
 ----
@@ -132,6 +132,46 @@ Netlify
 
 -   如果您填写域名，请在浏览器输入您的域名访问，如`http://demo.linux-command`，即可访问 `linux-command` 页面。
 -   如您选择`IP+端口访问`请在浏览器地址栏中输入域名访问 `http://<宝塔面板IP>:6806`，即可访问 `linux-command` 页面。
+
+1Panel面板
+--------
+
+可通过1Panel面板应用商店快速部署 linux-command
+
+部署步骤
+
+### 前提
+
+-   仅适用于1Panel面板v1.10.32-lts及以上版本
+    
+-   安装1Panel面板，前往1Panel官网，选择正式版安装脚本下载安装
+    
+
+### 部署
+
+1.  登录1Panel面板，在左侧菜单栏中点击 `应用商店`
+2.  在 `应用商店-开发工具` 中找到 `linux-command`，点击`安装`，也可以在搜索框直接搜索
+3.  点击 `确定`
+
+-   说明：
+    
+    -   名称：应用名称，默认 `linux-command`
+    -   版本：默认最新发行版
+    -   端口：默认`40255`
+    -   端口外部访问：如你需通过 `IP+Port` 直接访问，请勾选，同时会开放服务器防火墙端口
+    -   CPU限制：默认为0，不限制，可根据实际需要设置
+    -   内存限制：默认为0，不限制，可根据实际需要设置
+
+1.  提交后面板会自动进行应用安装启动，应用状态会变为`安装中`，大概需要`1-3`分钟，耐心等待安装完成
+2.  当应用状态变为`已启动`后，点击左侧的网站，首次使用需要安装`OpenResty`，点击`安装`
+3.  安装完成后，点击`网站`菜单栏左上角`创建`，在弹出的页面中选择`反向代理`
+4.  在`主域名`填入你的域名，网站代号会自动生成，代理选择`http`，代理地址填写`127.0.0.1:40255`，点击`确定`
+5.  (可选) 配置你创建的网站，可根据需要配置`https`访问增强访问安全性
+
+### 访问 linux-command
+
+-   如果你通过`OpenResty`反向代理反代了网站，并且填写了域名，请在浏览器输入`域名`访问
+-   如你选择了 `端口外部访问`，请在浏览器地输入 `http://<1Panel面板IP>:40255` 访问
 
 Linux命令分类
 ---------

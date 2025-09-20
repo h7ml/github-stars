@@ -1,6 +1,6 @@
 ---
 project: SSV2RayTrojanSSRClash
-stars: 2450
+stars: 2457
 description: 科学上网，ss, ssr, v2ray, trojan, clash, clashr，翻墙机场推荐
 url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 ---

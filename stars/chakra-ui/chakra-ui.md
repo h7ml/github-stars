@@ -1,6 +1,6 @@
 ---
 project: chakra-ui
-stars: 39683
+stars: 39706
 description: Chakra UI is a component system for building SaaS products with speed ⚡️
 url: https://github.com/chakra-ui/chakra-ui
 ---

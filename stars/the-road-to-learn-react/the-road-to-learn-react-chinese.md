@@ -1,6 +1,6 @@
 ---
 project: the-road-to-learn-react-chinese
-stars: 1857
+stars: 1858
 description: 《React 学习之道》The Road to learn React (简体中文版) | 最简单，且最实用的 React 实战教程。
 url: https://github.com/the-road-to-learn-react/the-road-to-learn-react-chinese
 ---

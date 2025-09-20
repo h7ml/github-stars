@@ -1,6 +1,6 @@
 ---
 project: chatgpt-adapter
-stars: 1051
+stars: 1054
 description: 集成了openai-api、coze、deepseek、cursor、windsurf、qodo、blackbox、you、grok、bing  绘画 多款AI的聊天逆向接口适配到 OpenAI API 标准接口服务端。
 url: https://github.com/bincooo/chatgpt-adapter
 ---

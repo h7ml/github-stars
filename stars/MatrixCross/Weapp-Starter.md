@@ -1,6 +1,6 @@
 ---
 project: Weapp-Starter
-stars: 28
+stars: 29
 description: 一个规范化的微信小程序开发模板，提供保姆级的项目配置和使用方法。
 url: https://github.com/MatrixCross/Weapp-Starter
 ---

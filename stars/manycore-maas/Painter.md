@@ -1,8 +1,8 @@
 ---
 project: Painter
-stars: 4436
+stars: 4437
 description: 小程序生成图片库，轻松通过 json 方式绘制一张可以发到朋友圈的图片
-url: https://github.com/Kujiale-Mobile/Painter
+url: https://github.com/manycore-maas/Painter
 ---
 
 Painter 2.0

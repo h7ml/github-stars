@@ -1,6 +1,6 @@
 ---
 project: LSPosed
-stars: 21531
+stars: 21597
 description: LSPosed Framework
 url: https://github.com/LSPosed/LSPosed
 ---

@@ -198,18 +198,18 @@ load\_module modules/ngx\_http\_js\_module.so;
 events {}
 
 http {
-  \# Set the path to our njs JavaScript files
+  # Set the path to our njs JavaScript files
   js\_path "/etc/nginx/njs/";
 
-  \# Import our JavaScript file into the variable "main"
+  # Import our JavaScript file into the variable "main"
   js\_import main from http/hello.js;
 
   server {
     listen 80;
 
     location / {
-      \# Execute the "hello" function defined in our JavaScript file on all HTTP requests
-      \# and respond with the contents of our function.
+      # Execute the "hello" function defined in our JavaScript file on all HTTP requests
+      # and respond with the contents of our function.
       js\_content main.hello;
     }
   }

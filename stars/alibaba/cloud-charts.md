@@ -1,6 +1,6 @@
 ---
 project: cloud-charts
-stars: 499
+stars: 498
 description: 开箱即用的前端图表库，简单配置就能拥有漂亮的可视化图表
 url: https://github.com/alibaba/cloud-charts
 ---

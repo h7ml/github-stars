@@ -1,6 +1,6 @@
 ---
 project: react-three-fiber
-stars: 29504
+stars: 29533
 description: 🇨🇭 A React renderer for Three.js
 url: https://github.com/pmndrs/react-three-fiber
 ---

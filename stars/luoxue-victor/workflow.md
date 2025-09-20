@@ -1,6 +1,6 @@
 ---
 project: workflow
-stars: 1967
+stars: 1966
 description: 一个工作流平台
 url: https://github.com/luoxue-victor/workflow
 ---

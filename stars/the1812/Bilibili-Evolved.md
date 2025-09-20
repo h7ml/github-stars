@@ -1,6 +1,6 @@
 ---
 project: Bilibili-Evolved
-stars: 26944
+stars: 27015
 description: 强大的哔哩哔哩增强脚本
 url: https://github.com/the1812/Bilibili-Evolved
 ---

@@ -1,6 +1,6 @@
 ---
 project: awesome-wechat-weapp
-stars: 49022
+stars: 49106
 description: 微信小程序开发资源汇总 :100:
 url: https://github.com/justjavac/awesome-wechat-weapp
 ---

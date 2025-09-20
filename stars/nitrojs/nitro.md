@@ -1,6 +1,6 @@
 ---
 project: nitro
-stars: 7693
+stars: 7721
 description: Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer.
 url: https://github.com/nitrojs/nitro
 ---

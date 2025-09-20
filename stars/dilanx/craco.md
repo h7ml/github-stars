@@ -1,6 +1,6 @@
 ---
 project: craco
-stars: 7454
+stars: 7451
 description: Create React App Configuration Override, an easy and comprehensible configuration layer for Create React App.
 url: https://github.com/dilanx/craco
 ---

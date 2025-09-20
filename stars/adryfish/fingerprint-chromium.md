@@ -1,6 +1,6 @@
 ---
 project: fingerprint-chromium
-stars: 1281
+stars: 1323
 description: An open source fingerprint browser based on Ungoogled Chromium. 指纹浏览器 隐私浏览器
 url: https://github.com/adryfish/fingerprint-chromium
 ---
@@ -29,9 +29,21 @@ Please download the version suitable for your system from the links below. Each 
 
 **MacOS**
 
+**Chrome 139**
+
+Released with Chrome 140
+
+Installer  
+ZIP
+
+AppImage  
+TAR.XZ
+
+139.0.7258.154-1.1\_macos.dmg
+
 **Chrome 138**
 
-Released with Chrome 139
+138.0.7204.183
 
 Installer  
 ZIP
@@ -222,6 +234,18 @@ Specifies the number of CPU cores
 
 Integer value (randomly generated from fingerprint seed if not provided)
 
+**`--fingerprint-gpu-vendor`**
+
+Optional: Customize GPU vendor for WebGL fingerprinting (Chrome 139+)
+
+Vendor string (e.g., `Intel Inc.`, `NVIDIA Corporation`). If not specified, uses fingerprint seed
+
+**`--fingerprint-gpu-renderer`**
+
+Optional: Customize GPU renderer/model for WebGL fingerprinting (Chrome 139+)
+
+Renderer string (e.g., `Intel Iris OpenGL Engine`, `NVIDIA GeForce GTX 1060`). If not specified, uses fingerprint seed
+
 **`--disable-non-proxied-udp`**
 
 Specifies WebRTC policy, by default non-proxied UDP connections are disabled
@@ -252,9 +276,26 @@ proxy server
 
 `http`, `socks` proxy (password authentication not supported)
 
-### **New User-Agent Customization Command Line Arguments**
+### **New Command Line Arguments in Chrome 139**
 
-Chrome 131 introduces two new command line arguments for advanced customization of `User-Agent` and `User-Agent Data`:
+**GPU Fingerprinting Parameters**
+
+Starting from Chrome 139, GPU fingerprinting is automatically enabled when using the `--fingerprint` parameter. The following optional parameters allow for custom GPU configuration:
+
+-   **`--fingerprint-gpu-vendor`** (Optional)
+    
+    -   Customize the GPU vendor string for WebGL fingerprinting.
+    -   Examples: `Intel Inc.`, `NVIDIA Corporation`, `AMD`, `Apple`
+    -   If not specified, GPU vendor will be automatically generated based on the fingerprint seed.
+-   **`--fingerprint-gpu-renderer`** (Optional)
+    
+    -   Customize the GPU renderer/model string for WebGL fingerprinting.
+    -   Examples: `Intel Iris OpenGL Engine`, `NVIDIA GeForce GTX 1060`, `AMD Radeon RX 580`
+    -   If not specified, GPU renderer will be automatically generated based on the fingerprint seed.
+
+### **User-Agent Customization Command Line Arguments (Chrome 131)**
+
+Chrome 131 introduced two command line arguments for advanced customization of `User-Agent` and `User-Agent Data`:
 
 -   **`--fingerprint-brand`**
     

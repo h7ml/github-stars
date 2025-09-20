@@ -1,6 +1,6 @@
 ---
 project: learn-regex
-stars: 46075
+stars: 46082
 description: Learn regex the easy way
 url: https://github.com/ziishaned/learn-regex
 ---

@@ -1,6 +1,6 @@
 ---
 project: semantic-release
-stars: 22534
+stars: 22571
 description: :package::rocket: Fully automated version management and package publishing
 url: https://github.com/semantic-release/semantic-release
 ---

@@ -1,7 +1,7 @@
 ---
 project: PowerToys
-stars: 123533
-description: Windows system utilities to maximize productivity
+stars: 123761
+description: Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks
 url: https://github.com/microsoft/PowerToys
 ---
 

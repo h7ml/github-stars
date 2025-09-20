@@ -1,6 +1,6 @@
 ---
 project: modular
-stars: 24810
+stars: 24846
 description: The Modular Platform (includes MAX & Mojo)
 url: https://github.com/modular/modular
 ---
@@ -25,7 +25,7 @@ If we trim the ceremonial steps, you can start a local LLM endpoint with just tw
 
 pip install modular
 
-max serve --model-path=modularai/Llama-3.1-8B-Instruct-GGUF
+max serve --model modularai/Llama-3.1-8B-Instruct-GGUF
 
 Then start sending the Llama 3 model inference requests using our OpenAI-compatible REST API.
 
@@ -44,7 +44,7 @@ docker run --gpus=1 \\
     -v ~/.cache/huggingface:/root/.cache/huggingface \\
     -p 8000:8000 \\
     docker.modular.com/modular/max-nvidia-full:latest \\
-    --model-path modularai/Llama-3.1-8B-Instruct-GGUF
+    --model modularai/Llama-3.1-8B-Instruct-GGUF
 
 For more information, see our MAX container docs or the Modular Docker Hub repository.
 

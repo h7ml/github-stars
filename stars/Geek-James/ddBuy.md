@@ -1,6 +1,6 @@
 ---
 project: ddBuy
-stars: 2438
+stars: 2439
 description: 🎉Vue全家桶+Vant 搭建大型单页面电商项目.http://ddbuy.7-orange.cn
 url: https://github.com/Geek-James/ddBuy
 ---

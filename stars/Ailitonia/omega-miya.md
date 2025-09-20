@@ -1,6 +1,6 @@
 ---
 project: omega-miya
-stars: 277
+stars: 278
 description: 基于 nonebot2 的多平台机器人
 url: https://github.com/Ailitonia/omega-miya
 ---

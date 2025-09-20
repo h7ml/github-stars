@@ -1,6 +1,6 @@
 ---
 project: moonbit-docs
-stars: 1864
+stars: 1876
 description: The docs of MoonBit programming language
 url: https://github.com/moonbitlang/moonbit-docs
 ---

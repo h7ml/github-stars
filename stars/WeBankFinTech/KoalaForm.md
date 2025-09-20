@@ -1,6 +1,6 @@
 ---
 project: KoalaForm
-stars: 150
+stars: 149
 description: 中后台前端低代码表单
 url: https://github.com/WeBankFinTech/KoalaForm
 ---

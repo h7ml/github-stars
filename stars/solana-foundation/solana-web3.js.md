@@ -1,6 +1,6 @@
 ---
 project: solana-web3.js
-stars: 2603
+stars: 2610
 description: Solana JavaScript SDK
 url: https://github.com/solana-foundation/solana-web3.js
 ---

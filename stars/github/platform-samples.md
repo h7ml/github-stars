@@ -1,6 +1,6 @@
 ---
 project: platform-samples
-stars: 2047
+stars: 2050
 description: A public place for all platform sample projects.
 url: https://github.com/github/platform-samples
 ---

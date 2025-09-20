@@ -1,6 +1,6 @@
 ---
 project: miniprogram-demo
-stars: 7008
+stars: 7016
 description: 微信小程序组件 / API / 云开发示例
 url: https://github.com/wechat-miniprogram/miniprogram-demo
 ---

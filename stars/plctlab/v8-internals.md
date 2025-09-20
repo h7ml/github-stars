@@ -1,6 +1,6 @@
 ---
 project: v8-internals
-stars: 1508
+stars: 1507
 description: 面向编译器开发人员的V8内部实现文档
 url: https://github.com/plctlab/v8-internals
 ---

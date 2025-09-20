@@ -1,6 +1,6 @@
 ---
 project: vue3-sfc-loader
-stars: 1304
+stars: 1306
 description: Single File Component loader for Vue2 and Vue3. Load .vue files directly from your HTML. No node.js environment, no build step.
 url: https://github.com/FranckFreiburger/vue3-sfc-loader
 ---

@@ -1,6 +1,6 @@
 ---
 project: LiteLoaderQQNT
-stars: 6902
+stars: 6913
 description: QQNT 插件加载器：LiteLoaderQQNT —— 轻量 · 简洁 · 开源 · 福瑞
 url: https://github.com/LiteLoaderQQNT/LiteLoaderQQNT
 ---

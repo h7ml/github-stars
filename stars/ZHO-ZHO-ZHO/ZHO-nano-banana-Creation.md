@@ -1,6 +1,6 @@
 ---
 project: ZHO-nano-banana-Creation
-stars: 2141
+stars: 2395
 description: 我的 nano-banana 创意玩法大合集！  持续更新中！
 url: https://github.com/ZHO-ZHO-ZHO/ZHO-nano-banana-Creation
 ---
@@ -8,12 +8,12 @@ url: https://github.com/ZHO-ZHO-ZHO/ZHO-nano-banana-Creation
 Nano-Banana Creation ZHO
 ========================
 
-我的 Nano-Banana 创意玩法大合集 | 完整帖 | My Nano-Banana Creation collection
+我的 Nano-Banana 原创玩法大合集 | 完整帖 | My Nano-Banana Creation collection
 
 ！！！注意标明出处哦！！！
 
-目录（46项）
-=======
+（1）目录（46项）
+==========
 
 -   1️⃣ 出圈/火的用法：图片变手办/手办视频
 -   2️⃣ 名人/指定人物（上传图片）超写实照片级生成
@@ -62,15 +62,39 @@ Nano-Banana Creation ZHO
 -   4️⃣5️⃣ 绝美卡片设计
 -   4️⃣6️⃣ 多人物插画集
 
-在线体验（开源）：Nano Bananary｜香蕉超市
-===========================
+（2）在线体验/本地部署（开源）：🍌 三件套
+=======================
 
-所有玩法已陆续上线我自己的开源 APP：Nano Bananary｜香蕉超市，无需提示词，丝滑衔接
+-   窗口式：1️⃣ Nano Bananary｜香蕉超市
+    
+-   白板/画布式：2️⃣ BananaPod｜香蕉铺子
+    
+-   节点/工作流式：3️⃣ BananaFlow｜香蕉工厂
+    
+
+1️⃣ Nano Bananary｜香蕉超市
+----------------------
+
+所有玩法已陆续上线我自己的开源 APP：Nano Bananary｜香蕉超市，无需提示词，丝滑衔接，已上线 视频生成 功能
 
 一键直达：Nano Bananary｜香蕉超市
 
-玩法 + 提示词
-========
+2️⃣ BananaPod｜香蕉铺子
+------------------
+
+各种玩法已内置，支持手绘生图，支持多图框选，轻松构建创意画板
+
+一键直达：BananaPod｜香蕉铺子
+
+3️⃣ BananaFlow｜香蕉工厂
+-------------------
+
+NanoBanana + Veo 的开源工作流创意平台，工作流 + 窗口 双模式纵享丝滑，各种玩法已内置，轻松构建创意工作流
+
+一键直达：BananaFlow｜香蕉工厂
+
+（3）原创玩法 + 提示词
+=============
 
 1️⃣ 出圈/火的用法：图片变手办/手办视频
 ----------------------
@@ -663,6 +687,10 @@ Prompt：
 更新日志
 ----
 
+-   20250919
+    
+    新增在线体验/本地部署（开源）：🍌 三件套
+    
 -   20250906
     
     新增 自己的 在线体验（开源）：Nano Bananary｜香蕉超市

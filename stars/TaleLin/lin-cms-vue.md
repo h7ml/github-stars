@@ -1,6 +1,6 @@
 ---
 project: lin-cms-vue
-stars: 2840
+stars: 2841
 description:  🔆 Vue+ElementPlus构建的CMS开发框架
 url: https://github.com/TaleLin/lin-cms-vue
 ---

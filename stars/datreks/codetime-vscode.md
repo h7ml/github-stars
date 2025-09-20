@@ -1,6 +1,6 @@
 ---
 project: codetime-vscode
-stars: 93
+stars: 94
 description: The Codetime extension for Visual Studio Code.
 url: https://github.com/datreks/codetime-vscode
 ---

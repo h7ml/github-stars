@@ -1,6 +1,6 @@
 ---
 project: jsonuri
-stars: 161
+stars: 160
 description: 🌳 阿里剑鱼、iceluna、vanex 数据操作底层库，使用O(n) 复杂度回溯祖先节点
 url: https://github.com/aligay/jsonuri
 ---

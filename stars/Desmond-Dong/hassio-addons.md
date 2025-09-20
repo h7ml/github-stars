@@ -1,6 +1,6 @@
 ---
 project: hassio-addons
-stars: 26
+stars: 27
 description: This repo is intended for use only in mainland China. If you are outside the mainland, please use the links from the original authors below.
 url: https://github.com/Desmond-Dong/hassio-addons
 ---
@@ -38,7 +38,7 @@ English | 中文
 
 ghcr.io
 
-ghcr.nju.edu.cn
+ghcr.mirrors.cqupt.edu.cn
 
 docker.io
 

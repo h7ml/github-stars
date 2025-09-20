@@ -1,6 +1,6 @@
 ---
 project: awesome-nodejs-cn
-stars: 451
+stars: 452
 description: Node.js 资源大全中文版，内容包括：命令行工具、日志、调试、HTTP、构建工具、文件系统、模板、Web 框架、流程控制、文本、图片和数据校验等。由「开源前哨」和「前端大全」微信公号团队维护更新。
 url: https://github.com/jobbole/awesome-nodejs-cn
 ---

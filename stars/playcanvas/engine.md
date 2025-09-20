@@ -1,12 +1,12 @@
 ---
 project: engine
-stars: 10837
+stars: 10853
 description: Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF
 url: https://github.com/playcanvas/engine
 ---
 
-PlayCanvas WebGL Game Engine
-============================
+PlayCanvas Engine
+=================
 
 | User Manual | API Reference | Examples | Blog | Forum |
 
@@ -35,7 +35,7 @@ Features
 
 PlayCanvas is a fully-featured game engine.
 
--   🧊 **Graphics** - Advanced 2D + 3D graphics engine built on WebGL2 & WebGPU.
+-   🧊 **Graphics** - Advanced 2D + 3D graphics engine built on WebGL2 & WebGPU
 -   🏃 **Animation** - Powerful state-based animations for characters and arbitrary scene properties
 -   ⚛️ **Physics** - Full integration with 3D rigid-body physics engine ammo.js
 -   🎮 **Input** - Mouse, keyboard, touch, gamepad and VR controller APIs

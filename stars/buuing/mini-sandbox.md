@@ -1,6 +1,6 @@
 ---
 project: mini-sandbox
-stars: 250
+stars: 251
 description: 一个前端【代码 / 组件】的可视化方案，融合了【在线编辑 & 实时预览】等特点；可以在任意 js 环境下，包括【docsify / vuepress】文档类项目中使用；支持 Vue SFC / React SFC 单文件组件
 url: https://github.com/buuing/mini-sandbox
 ---

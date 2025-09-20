@@ -1,6 +1,6 @@
 ---
 project: fedbook
-stars: 366
+stars: 365
 description: WENYUAN 的学习小册，记录学习的知识体系
 url: https://github.com/wenyuan/fedbook
 ---

@@ -1,6 +1,6 @@
 ---
 project: vue3-go-crud-project
-stars: 70
+stars: 71
 description: Vue3.2 + Vite + Element-Plus + Go + Gin + GORM + MySql 的增删改查项目
 url: https://github.com/yanmiao99/vue3-go-crud-project
 ---

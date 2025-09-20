@@ -1,6 +1,6 @@
 ---
 project: MultiStreamsMixer
-stars: 454
+stars: 453
 description: MultiStreamsMixer is a JavaScript library that allows you pass multiple streams (e.g. screen+camera or multiple-cameras) and get single stream.
 url: https://github.com/muaz-khan/MultiStreamsMixer
 ---

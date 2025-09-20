@@ -1,6 +1,6 @@
 ---
 project: page-spy-web
-stars: 5411
+stars: 5416
 description: A remote debugging platform you can definitely use.
 url: https://github.com/HuolalaTech/page-spy-web
 ---

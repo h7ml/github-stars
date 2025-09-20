@@ -1,6 +1,6 @@
 ---
 project: swagger-typescript-api
-stars: 3893
+stars: 3905
 description: Generate the API Client for Fetch or Axios from an OpenAPI Specification
 url: https://github.com/acacode/swagger-typescript-api
 ---
@@ -11,12 +11,12 @@ Swagger TypeScript API
 -   Support for OpenAPI 3.0, 2.0, JSON and YAML
 -   Generate the API Client for Fetch or Axios from an OpenAPI Specification
 
-Any questions you can ask **here**
+Any questions you can ask here: https://github.com/acacode/swagger-typescript-api/discussions
 
 Examples
 --------
 
-All examples you can find **here**
+All examples you can find here: https://github.com/acacode/swagger-typescript-api/tree/main/tests
 
 Usage
 -----

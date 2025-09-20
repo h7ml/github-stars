@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 111940
+stars: 112371
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -295,7 +295,7 @@ APIs, Data, and ML
 -   IP Geolocation API — IP Geolocation API from Abstract - Allows 1,000 free requests.
 -   IPLocate — IP Geolocation API, free up to 1,000 requests/day. Includes proxy/VPN/hosting detection, ASN data, IP to Company, and more. IPLocate also offers free downloadable IP to Country and IP to ASN databases in CSV or GeoIP-compatible MMDB formats.
 -   IP2Location — Freemium IP geolocation service. LITE database is available for free download. Import the database in the server and perform a local query to determine the city, coordinates, and ISP information.
--   IP2Location.io — Freemium, fast, and reliable IP geolocation API. Get data like city, coordinates, ISP, and more. The free plan includes 50k credits per month. IP2Location.io also offers 500 free WHOIS and hosted domain lookups per month. See domain registration details and find domains hosted on a specific IP. Upgrade to a paid plan for more features.
+-   IP2Location.io — Freemium, fast, and reliable IP geolocation API. Get data like city, coordinates, ISP, ASN, AS data and more. The free plan includes 50k credits per month. IP2Location.io also offers 500 free WHOIS and hosted domain lookups per month. See domain registration details and find domains hosted on a specific IP. Upgrade to a paid plan for more features.
 -   ipapi - IP Address Location API by Kloudend, Inc - A reliable geolocation API built on AWS, trusted by Fortune 500. The free tier offers 30k lookups/month (1k/day) without signup.
 -   ipapi.is - A reliable IP Address API from Developers for Developers with the best Hosting Detection capabilities that exist. The free plan offers 1000 lookups without signup.
 -   IPinfo — Fast, accurate, and free (up to 50k/month) IP address data API. Offers APIs with details on geolocation, companies, carriers, IP ranges, domains, abuse contacts, and more. All paid APIs can be trialed for free.
@@ -403,101 +403,199 @@ Tools for Teams and Collaboration
 ---------------------------------
 
 -   3Cols - A free cloud-based code snippet manager for personal and collaborative code.
+    
 -   Bitwarden — The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.
+    
 -   Braid — Chat app designed for teams. Free for public access group, unlimited users, history, and integrations. also, it provides a self-hostable open-source version.
+    
 -   cally.com — Find the perfect time and date for a meeting. Simple to use, works great for small and large groups.
+    
 -   Calendly — Calendly is the tool for connecting and scheduling meetings. The free plan provides 1 Calendar connection per user and Unlimited sessions. Desktop and Mobile apps are also offered.
+    
 -   Discord — Chat with public/private rooms. Markdown text, voice, video, and screen sharing capabilities. Free for unlimited users.
+    
 -   Fibo - A free online realtime scrum poker tool for agile teams that lets unlimited members estimate story points for faster planning.
+    
 -   Telegram — Telegram is for everyone who wants fast, reliable messaging and calls. Business users and small teams may like the large groups, usernames, desktop apps, and powerful file-sharing options.
+    
 -   DevToolLab — Online developer tools offering free access to all basic tools, with the ability to auto save one entry per tool, standard processing speed, and community support.
+    
 -   Dubble — Free Step-by-Step Guide creator. Take screenshots, document processes and colloborate with your team. Also supports async screen recording.
+    
 -   Duckly — Talk and collaborate in real time with your team. Pair programming with IDE, terminal sharing, voice, video, and screen sharing. Free for small teams.
+    
 -   Dyte - The most developer-friendly live video & audio SDK, featuring collaborative plugins to enhance productivity and engagement. The free tier includes monthly 10,000 minutes of live video/audio usage.
+    
 -   evernote.com — Tool for organizing information. Share your notes and work together with others
+    
 -   Fibery — Connected workspace platform. Free for single users, up to 2 GB disk space.
+    
 -   flock.com — A faster way for your team to communicate. Free Unlimited Messages, Channels, Users, Apps & Integrations
+    
 -   Gather - A better way to meet online. Centered around fully customizable spaces, Gather makes spending time with your communities just as easy as real life. Free for up to 10 concurrent users.
+    
 -   gokanban.io - Syntax-based, no registration Kanban Board for fast use. Free with no limitations.
+    
 -   flat.social - Interactive customizable spaces for team meetings & happy hours socials. Unlimited meetings, free up to 8 concurrent users.
+    
 -   GitDailies - Daily reports of your team's Commit and Pull Request activity on GitHub. Includes Push visualizer, peer recognition system, and custom alert builder. The free tier has unlimited users, three repos, and 3 alert configs.
+    
 -   gitter.im — Chat, for GitHub. Unlimited public and private rooms, free for teams of up to 25
+    
 -   Hackmd.io - Real time collaboration & writing tool for markdown format docs/files. Like Google Docs but for markdown files. Free unlimited number of "notes", but the number of collaborators (invitee) for private notes & template will be limited.
+    
 -   hangouts.google.com — One place for all your conversations, for free, need a Google account
+    
 -   HeySpace - Task management tool with chat, calendar, timeline and video calls. Free for up to 5 users.
+    
 -   helplightning.com — Help over video with augmented reality. Free without analytics, encryption, support
+    
 -   ideascale.com — Allow clients to submit ideas and vote, free for 25 members in 1 community
+    
 -   Igloo — Internal portal for sharing documents, blogs, calendars, etc. Free for up to 10 users.
+    
 -   Keybase — Keybase is a FOSS alternative to Slack; it keeps everyone's chats and files safe, from families to communities to companies.
+    
 -   Google Meet — Use Google Meet for your business's online video meeting needs. Meet provides secure, easy-to-join online meetings.
+    
 -   /meet for Slack - Start Google Meetings directly from Slack by using /meet in any channel, group, or DM. Free without any limitations.
+    
 -   Linkinize — Bookmark manager for teams with tagging, multi-workspaces, and collaboration. Free plan includes 4 workspaces and 10 team members.
+    
 -   Livecycle — Livecycle is an inclusive collaboration platform that makes workflows frictionless for cross-functional product teams and open-source projects.
+    
 -   Lockitbot — Reserve and lock shared resources within Slack like Rooms, Dev environments , servers etc. Free for upto 2 resources
+    
 -   MarkUp — MarkUp lets you collect feedback directly on top of your websites, PDFs and images.
+    
 -   Proton Pass — Password manager with built-in email aliases, 2FA authenticator, sharing and passkeys. Available on web, browser extension, and mobile app and desktop.
+    
 -   Visual Debug - A Visual feedback tool for better client-dev communication
+    
 -   meet.jit.si — One-click video conversations, and screen sharing, for free
+    
 -   Microsoft Teams — Microsoft Teams is a chat-based digital hub that brings conversations, content, and apps together in one place all from a single experience. Free for up to 500k users.
+    
 -   Miro - Scalable, secure, cross-device, and enterprise-ready collaboration whiteboard for distributed teams. With a freemium plan.
+    
 -   nootiz - The go-to tool for gathering and managing visual feedback on any website
+    
 -   Notion - Notion is a note-taking and collaboration application with markdown support that integrates tasks, wikis, and databases. The company describes the app as an all-in-one workspace for note-taking, project management and task management. In addition to cross-platform apps, it can be accessed via most web browsers.
+    
 -   Nuclino - A lightweight and collaborative wiki for all your team's knowledge, docs, and notes. Free plan with all essential features, up to 50 items, and 5GB storage.
+    
 -   OnlineInterview.io - Free code interview platform with embedded video chat, drawing board, and online code editor where you can compile and run your code on the browser. You can create a remote interview room with just one click.
+    
 -   Quidlo Timesheets - A simple timesheet and time tracking app for teams. The free plan has time tracking and generating reports features for up to 10 users.
+    
 -   PageShare.dev - Adds visual review capabilities into GitHub Pull Requests with no need to deploy websites. Free for up to 10 pages each month and 100MB of storage in total.
+    
 -   Pendulums - Pendulums is a free time tracking tool that helps you manage your time in a better manner with an easy-to-use interface and valuable statistics.
+    
 -   Pumble - Free team chat app. Unlimited users and message history, free forever.
+    
 -   Raindrop.io - Private and secure bookmarking app for macOS, Windows, Android, iOS, and Web. Free Unlimited Bookmarks and Collaboration.
+    
 -   element.io — A decentralized and open-source communication tool built on Matrix. Group chats, direct messaging, encrypted file transfers, voice and video chats, and easy integration with other services.
+    
 -   Rocket.Chat - Open-source communication platform with Omnichannel features, Matrix Federation, Bridge with others apps, Unlimited messaging, and Full messaging history.
+    
 -   seafile.com — Private or cloud storage, file sharing, sync, discussions. The cloud version has just 1 GB
+    
 -   Sema - Free developer portfolio tool able to consolidate and snapshot contributions across multiple repositories into a single report.
+    
 -   Screen Sharing via Browser - Free screen sharing tool, share your screen with collabrators right from your browser, no download or registration needed. For free.
+    
 -   Slab — A modern knowledge management service for teams. Free for up to 10 users.
+    
 -   slack.com — Free for unlimited users with some feature limitations
+    
 -   Spectrum - Create public or private communities for free.
+    
 -   StatusPile - A status page of status pages. Could you track the status pages of your upstream providers?
+    
 -   Stickies - Visual collaboration app used for brainstorming, content curation, and notes. Free for up to 3 Walls, unlimited users, and 1 GB storage.
+    
 -   Stacks - Content workspace with integrated notes, links, and file storage to navigate information overload. Forever free personal plan.
+    
 -   talky.io — Free group video chat. Anonymous. Peer‑to‑peer. No plugins, signup, or payment required
+    
 -   Teamhood - Free Project, Task, and Issue-tracking software. Supports Kanban with Swimlanes and full Scrum implementation. Has integrated time tracking. Free for five users and three project portfolios.
+    
 -   Teamplify - improve team development processes with Team Analytics and Smart Daily Standup. Includes full-featured Time Off management for remote-first teams. Free for small groups of up to 5 users.
+    
 -   Tefter - Bookmarking app with a powerful Slack integration. Free for open-source teams.
+    
 -   TeleType — share terminals, voice, code, whiteboard, and more. no sign-in is required for end-to-end encrypted collaboration for developers.
+    
 -   TimeCamp - Free time tracking software for unlimited users. Easily integrates with PM tools like Jira, Trello, Asana, etc.
+    
 -   Huly - All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion) - unlimited users, 10GB storage per workspace, 10GB video(audio) traffic.
+    
 -   Teamcamp - All-in-one project management application for software development companies.
+    
 -   twist.com — An asynchronous-friendly team communication app where conversations stay organized and on-topic. Free and Unlimited plans are available. Discounts are provided for eligible teams.
+    
 -   tldraw.com — Free open-source white-boarding and diagramming tool with intelligent arrows, snapping, sticky notes, and SVG export features. Multiplayer mode for collaborative editing. Free official VS Code extension available as well.
+    
 -   BookmarkOS.com - Free all-on-one bookmark manager, tab manager, and task manager in a customizable online desktop with folder collaboration.
+    
 -   typetalk.com — Share and discuss ideas with your team through instant messaging on the web or your mobile
+    
 -   Tugboat - Preview every pull request, automated and on-demand. Free for all, complimentary Nano tier for non-profits.
+    
 -   whereby.com — One-click video conversations, for free (formerly known as appear.in)
+    
 -   windmill.dev - Windmill is an open-source developer platform to quickly build production-grade multi-step automation and internal apps from minimal Python and Typescript scripts. As a free user, you can create and be a member of at most three non-premium workspaces.
+    
 -   vadoo.tv — Video hosting and marketing made simple. Upload videos with a single click. Record, manage, share & more. The free tier provides up to 10 videos, 1 GB of storage, and 10 GB of bandwidth/per month
+    
 -   userforge.com - Interconnected online personas, user stories and context mapping. Helps keep design and dev in sync free for up to 3 personas and two collaborators.
+    
 -   wistia.com — Video hosting with viewer analytics, HD video delivery, and marketing tools to help understand your visitors, 25 videos, and Wistia branded player
+    
 -   wormhol.org — Straightforward file sharing service. Share unlimited files up to 5GB with as many peers as you want.
+    
 -   Wormhole - Share files up to 5GB with end-to-end encryption for up to 24hours. For files larger than 5 GB, it uses peer-to-peer transfer to send your files directly.
+    
 -   zoom.us — Secure Video and Web conferencing add-ons available. The free plan is limited to 40 minutes.
+    
 -   Zulip — Real-time chat with a unique email-like threading model. The free plan includes 10,000 messages of search history and File storage up to 5 GB. also, it provides a self-hostable open-source version.
+    
 -   robocorp.com - Open-source stack for powering Automation Ops. Try out Cloud features and implement simple automation for free. Robot work 240 min/month, 10 Assistant runs, Storage of 100 MB.
+    
 -   Fleep.io — Fleep an alternative to Slack. It has a free plan for small teams with full message history, unlimited 1:1 conversations, 1 group conversation, and 1 GB file storage.
+    
 -   Chanty.com — Chanty is another alternative to Slack. It has a free forever plan for small teams (up to 10) with unlimited public and private conversations, searchable history, unlimited 1:1 audio calls, unlimited voice messages, ten integrations, and 20 GB storage per team.
+    
 -   ruttl.com — The best all-in-one feedback tool to collect digital feedback and review websites, PDFs, and images.
+    
 -   Mattermost — Secure collaboration for technical teams. Free plan with unlimited channels, playbooks, boards, users, 10GB storage, and more.
+    
 -   Webvizio — Website feedback tool, website review software, and bug reporting tool for streamlining web development collaboration on tasks directly on live websites and web apps, images, PDFs, and design files.
+    
 -   Pullflow — Pullflow offers an AI-enhanced platform for code review collaboration across GitHub, Slack, and VS Code.
+    
 -   Webex — Video meetings with a free plan offering 40 minutes per meeting with 100 attendees.
+    
 -   RingCentral — Video meetings with a free plan offering 50 minutes per meeting with 100 participants.
+    
 -   GitBook — Platform for capturing and documenting technical knowledge — from product docs to internal knowledge bases and APIs. Free plan for individual developers.
+    
 -   transfernow — simplest, fastest and safest interface to transfer and share files. Send photos, videos and other large files without a manditory subscription.
+    
 -   paste.sh — This is a JavaScript and the Crypto based simple paste site.
+    
 -   Revolt.chat — An OpenSource alternative forDiscord, that respects your privacy. It also have most proprietary features from discord for free. Revolt is a all in one application that is secure and fast, while being 100% free. every features are free. They also have (official & unofficial) plugins support unlike most main-stream chatting applications.
+    
 -   Tencent RTC — Tencent Real-Time Communication (TRTC) offers solutions for group audio/video calls.10,000 free minutes/month for the first year.
+    
 -   Pastefy - Beautiful and simple Pastebin with optional Client-Encryption, Multitab-Pastes, an API, a highlighted Editor and more.
+    
 -   SiteDots - Share feedback for website projects directly on your website, no emulation, canvas or workarounds. Completely functional free tier.
+    
+-   Cushion - Async-friendly alternative to Slack. built for small, distributed teams who are productive. Free tier with 30 posts, 5 members and unlimited guests.
+    
 
 **⬆️ Back to Top**
 
@@ -522,6 +620,7 @@ CMS
 -   InstaWP - Launch a WordPress site in a few seconds. A free tier with 5 Active Sites, 500 MB Space, 48 hrs Site Expiry.
 -   Storyblok - A Headless CMS for developers and marketers that works with all modern frameworks. The Community (free) tier offers Management API, Visual Editor, ten sources, Custom Field Types, Internationalization (unlimited languages/locales), Asset Manager (up to 2500 assets), Image Optimizing Service, Search Query, Webhook + 250GB Traffic/month included.
 -   WPJack - Set up WordPress on any cloud in less than 5 minutes! The free tier includes 1 server, 2 sites, free SSL certificates, and unlimited cron jobs. No time limits or expirations—your website, your way.
+-   Solo - Free AI website creator from Mozilla, create a beautiful website for your business from a few simple inputs. Free custom domain, no credit card needed.
 
 **⬆️ Back to Top**
 
@@ -1940,6 +2039,7 @@ Screenshot APIs
 -   ApiFlash — A screenshot API based on Aws Lambda and Chrome. Handles full page, captures timing, and viewport dimensions.
 -   microlink.io – It turns any website into data such as metatags normalization, beauty link previews, scraping capabilities, or screenshots as a service. 250 requests/day every day free.
 -   ScreenshotAPI.net - Screenshot API uses a straightforward API call to generate screenshots of any website. Built to scale and hosted on Google Cloud. Offers 100 free screenshots per month.
+-   screenshotbase.com - 300 free screenshots / month. Take screenshots from any url. Fast, free & scalable.
 -   screenshotlayer.com — Capture highly customizable snapshots of any website. Free 100 snapshots/month
 -   screenshotmachine.com — Capture 100 snapshots/month, png, gif and jpg, including full-length captures, not only home page
 -   PhantomJsCloud — Browser automation and page rendering. Free Tier offers up to 500 pages/day. Free Tier since 2017.
@@ -2010,6 +2110,7 @@ Miscellaneous
 -   readme.com — Beautiful documentation made easy, free for Open Source.
 -   redirection.io — SaaS tool for managing HTTP redirections for businesses, marketing and SEO.
 -   redirect.pizza - Easily manage redirects with HTTPS support. The free plan includes 10 sources and 100,000 hits per month.
+-   Renamer.ai — AI-powered file renaming tool with OCR, metadata extraction, and automation for 20+ languages. Free tier: 15 files/month, including desktop app, batch rename, auto-rename, and normal support.
 -   ReqBin — Post HTTP Requests Online. Popular Request Methods include GET, POST, PUT, DELETE, and HEAD. Supports Headers and Token Authentication. Includes a basic login system for saving your requests.
 -   Smartcar API - An API for cars to locate, get fuel tank, battery levels, odometer, unlock/lock doors, etc.
 -   snappify - Enables developers to create stunning visuals. From beautiful code snippets to fully fletched technical presentations. The free plan includes up to 3 snaps at once with unlimited downloads and 5 AI-powered code explanations per month.

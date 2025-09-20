@@ -1,6 +1,6 @@
 ---
 project: book-cn
-stars: 944
+stars: 947
 description: Rust  程序设计语言 中文版——Chinese translation of The Rust Programming Language (Book)
 url: https://github.com/rust-lang-cn/book-cn
 ---

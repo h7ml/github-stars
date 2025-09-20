@@ -179,19 +179,18 @@ Star History
     					try\_files $uri $uri/ /index.html;
         }
     
-    
        location /fish/ {
              proxy\_pass http://fish:8123/;    
         }
     
     \# WebSocket代理配置，处理 wss:// 请求
         location /ws/ {
-            proxy\_pass http://fish:8090/;  \# 后端 WebSocket 服务地址
-            proxy\_http\_version 1.1;  \# 使用 HTTP/1.1 协议，WebSocket 需要这个版本
-            proxy\_set\_header Upgrade $http\_upgrade;  \# 必须设置这些头来支持 WebSocket 协议的升级
-            proxy\_set\_header Connection 'upgrade';  \# 维持 WebSocket 连接
-            proxy\_set\_header Host $host;  \# 确保 Host 头部传递正确
-            proxy\_cache\_bypass $http\_upgrade;  \# 禁用缓存
+            proxy\_pass http://fish:8090/;  # 后端 WebSocket 服务地址
+            proxy\_http\_version 1.1;  # 使用 HTTP/1.1 协议，WebSocket 需要这个版本
+            proxy\_set\_header Upgrade $http\_upgrade;  # 必须设置这些头来支持 WebSocket 协议的升级
+            proxy\_set\_header Connection 'upgrade';  # 维持 WebSocket 连接
+            proxy\_set\_header Host $host;  # 确保 Host 头部传递正确
+            proxy\_cache\_bypass $http\_upgrade;  # 禁用缓存
         }
     
     location /sogou-api/ {
@@ -201,13 +200,13 @@ Star History
             proxy\_set\_header X-Forwarded-For $proxy\_add\_x\_forwarded\_for;
             proxy\_ssl\_server\_name on;
     
-            \# 解决 CORS 问题
+            # 解决 CORS 问题
             add\_header Access-Control-Allow-Origin \*;
             add\_header Access-Control-Allow-Methods "GET, POST, OPTIONS";
             add\_header Access-Control-Allow-Headers "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range";
             add\_header Access-Control-Expose-Headers "Content-Length,Content-Range";
     
-            \# 处理 OPTIONS 预检请求
+            # 处理 OPTIONS 预检请求
             if ($request\_method = OPTIONS) {
                 return 204;
             }
@@ -216,22 +215,22 @@ Star History
     location /holiday/ {
         proxy\_pass https://date.appworlds.cn/;
         
-        \# 保持目标 API 的 Host，避免返回默认网页
+        # 保持目标 API 的 Host，避免返回默认网页
         proxy\_set\_header Host date.appworlds.cn;
     
-        \# 伪装成浏览器，防止服务器根据 User-Agent 返回 HTML
+        # 伪装成浏览器，防止服务器根据 User-Agent 返回 HTML
         proxy\_set\_header User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
     
-        \# 强制服务器返回 JSON，而不是 HTML
+        # 强制服务器返回 JSON，而不是 HTML
         proxy\_set\_header Accept "application/json";
     
-        \# CORS 允许跨域
+        # CORS 允许跨域
         add\_header Access-Control-Allow-Origin \*;
         add\_header Access-Control-Allow-Methods "GET, POST, OPTIONS";
         add\_header Access-Control-Allow-Headers "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range";
         add\_header Access-Control-Expose-Headers "Content-Length,Content-Range";
     
-        \# 处理 OPTIONS 预检请求
+        # 处理 OPTIONS 预检请求
         if ($request\_method = OPTIONS) {
             return 204;
         }
@@ -244,20 +243,20 @@ Star History
             proxy\_set\_header X-Forwarded-For $proxy\_add\_x\_forwarded\_for;
             proxy\_ssl\_server\_name on;
     
-            \# 解决 CORS 问题
+            # 解决 CORS 问题
             add\_header Access-Control-Allow-Origin \*;
             add\_header Access-Control-Allow-Methods "GET, POST, OPTIONS";
             add\_header Access-Control-Allow-Headers "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range";
             add\_header Access-Control-Expose-Headers "Content-Length,Content-Range";
     
-            \# 处理 OPTIONS 预检请求
+            # 处理 OPTIONS 预检请求
             if ($request\_method = OPTIONS) {
                 return 204;
             }
         }
     
         error\_page   500 502 503 504  /50x.html;
-        location \= /50x.html {
+        location = /50x.html {
             root   /usr/share/nginx/html;
         }
     }

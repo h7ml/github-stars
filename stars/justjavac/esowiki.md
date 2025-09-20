@@ -1,6 +1,6 @@
 ---
 project: esowiki
-stars: 44
+stars: 43
 description: 上古卷轴OL（Elder Scrolls Online）游戏攻略，包括职业、装备、技能、副本、任务、地图、资料片等内容
 url: https://github.com/justjavac/esowiki
 ---

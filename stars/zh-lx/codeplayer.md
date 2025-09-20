@@ -1,6 +1,6 @@
 ---
 project: codeplayer
-stars: 250
+stars: 251
 description: WebIDE based on importmap. Support react/vue/html/ts/js/css/less/scss and so on.
 url: https://github.com/zh-lx/codeplayer
 ---

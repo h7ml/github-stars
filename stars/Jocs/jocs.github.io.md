@@ -1,6 +1,6 @@
 ---
 project: jocs.github.io
-stars: 962
+stars: 961
 description: 💯 This is my blog, I will update the latest articles and resumes on it, and feel free to contact me
 url: https://github.com/Jocs/jocs.github.io
 ---

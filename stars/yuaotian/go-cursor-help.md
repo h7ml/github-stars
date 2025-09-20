@@ -1,6 +1,6 @@
 ---
 project: go-cursor-help
-stars: 24532
+stars: 24592
 description: 解决Cursor在免费订阅期间出现以下提示的问题:  Your request has been blocked as our system has detected suspicious activity / You've reached your trial request limit.  /  Too many free trial accounts used on this machine.
 url: https://github.com/yuaotian/go-cursor-help
 ---

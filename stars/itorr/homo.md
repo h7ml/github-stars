@@ -1,6 +1,6 @@
 ---
 project: homo
-stars: 1247
+stars: 1248
 description: 💩「恶臭数字论证器」数字恶臭化工具
 url: https://github.com/itorr/homo
 ---

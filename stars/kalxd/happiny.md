@@ -1,6 +1,6 @@
 ---
 project: happiny
-stars: 19
+stars: 20
 description: 中国传统颜色拾取器
 url: https://github.com/kalxd/happiny
 ---

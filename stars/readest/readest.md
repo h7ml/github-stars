@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 12412
+stars: 12643
 description: Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
 ---
@@ -87,15 +87,15 @@ Synchronize book files, reading progress, notes, and bookmarks across all suppor
 
 ✅
 
-**Translate with DeepL**
+**Accessibility**
 
-From a single sentence to the entire book—translate instantly with DeepL.
+Provides full keyboard navigation and supports for screen readers such as VoiceOver, TalkBack, NVDA, and Orca.
 
 ✅
 
-**Translate with Yandex**
+**Translate with DeepL and Yandex**
 
-Instantly translate text or books using Yandex Translate.
+From a single sentence to the entire book—translate instantly.
 
 ✅
 
@@ -141,12 +141,6 @@ Synchronize reading progress, notes, and bookmarks with Koreader devices.
 Generate summaries of books or chapters using AI for quick insights.
 
 🛠
-
-**Keyboard Navigation**
-
-Implement vimium-style keybindings for book navigation.
-
-🔄
 
 **Support OPDS/Calibre**
 

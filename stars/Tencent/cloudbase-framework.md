@@ -1,6 +1,6 @@
 ---
 project: cloudbase-framework
-stars: 1980
+stars: 1984
 description:  腾讯云开发云原生一体化部署工具 🚀  CloudBase Framework：一键部署，不限框架语言，云端一体化开发，基于Serverless 架构
 url: https://github.com/Tencent/cloudbase-framework
 ---

@@ -1,6 +1,6 @@
 ---
 project: docs-zh-cn
-stars: 1288
+stars: 1292
 description: Vue 文档官方中文翻译 ｜ Official Chinese translation for Vue docs
 url: https://github.com/vuejs-translations/docs-zh-cn
 ---

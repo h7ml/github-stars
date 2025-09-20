@@ -1,6 +1,6 @@
 ---
 project: Windows-EoP
-stars: 128
+stars: 127
 description: Windows EoP Bugs
 url: https://github.com/guhe120/Windows-EoP
 ---

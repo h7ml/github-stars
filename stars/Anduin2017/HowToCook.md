@@ -1,6 +1,6 @@
 ---
 project: HowToCook
-stars: 93211
+stars: 93650
 description: 程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).
 url: https://github.com/Anduin2017/HowToCook
 ---
@@ -54,7 +54,6 @@ docker run -d -p 5000:80 ghcr.io/anduin2017/how-to-cook:latest
 
 ### 按难度索引
 
--   0 星难度
 -   1 星难度
 -   2 星难度
 -   3 星难度
@@ -122,7 +121,7 @@ docker run -d -p 5000:80 ghcr.io/anduin2017/how-to-cook:latest
 
 -   巴基斯坦牛肉咖喱
 -   白菜猪肉炖粉条
--   豉汁蒸白鱔食谱
+-   豉汁蒸白鱔
 -   带把肘子
 -   冬瓜酿肉
 -   豆豉鲮鱼油麦菜

@@ -1,6 +1,6 @@
 ---
 project: plop
-stars: 7488
+stars: 7513
 description: Consistency Made Simple
 url: https://github.com/plopjs/plop
 ---
@@ -44,13 +44,13 @@ $ npm install -g plop
 ### 3\. Create a plopfile.js at the root of your project
 
 export default function (plop) {
-	// create your generators here
-	plop.setGenerator('basics', {
-		description: 'this is a skeleton plopfile',
-		prompts: \[\], // array of inquirer prompts
-		actions: \[\]  // array of actions
-	});
-};
+  // create your generators here
+  plop.setGenerator("basics", {
+    description: "this is a skeleton plopfile",
+    prompts: \[\], // array of inquirer prompts
+    actions: \[\], // array of actions
+  });
+}
 
 > `export default` is only allowed in NodeJS inside "ESM" supported files. To use this syntax, your `plopfile` must be either:
 > 
@@ -67,28 +67,32 @@ Your First Plopfile
 
 A plopfile starts its life as a node module that exports a function which accepts the `plop` object as its first parameter.
 
-export default function (plop) {};
+export default function (plop) {}
 
 The `plop` object exposes the plop API object which contains the `setGenerator(name, config)` function. This is the function that you use to (wait for it) create a generator for this plopfile. When `plop` is run from the terminal in this directory (or any sub-directory), a list of these generators will be displayed.
 
 Let's try setting up a basic generator to see how that looks.
 
 export default function (plop) {
-	// controller generator
-	plop.setGenerator('controller', {
-		description: 'application controller logic',
-		prompts: \[{
-			type: 'input',
-			name: 'name',
-			message: 'controller name please'
-		}\],
-		actions: \[{
-			type: 'add',
-			path: 'src/{{name}}.js',
-			templateFile: 'plop-templates/controller.hbs'
-		}\]
-	});
-};
+  // controller generator
+  plop.setGenerator("controller", {
+    description: "application controller logic",
+    prompts: \[
+      {
+        type: "input",
+        name: "name",
+        message: "controller name please",
+      },
+    \],
+    actions: \[
+      {
+        type: "add",
+        path: "src/{{name}}.js",
+        templateFile: "plop-templates/controller.hbs",
+      },
+    \],
+  });
+}
 
 The _controller_ generator we created above will ask us 1 question, and create 1 file. This can be expanded to ask as many questions as needed, and create as many files as needed. There are also additional actions that can be used to alter our codebase in different ways.
 
@@ -150,11 +154,11 @@ Plop bundles TypeScript declarations and supports TypeScript plopfiles via tsx l
 First, make a TypesScript plopfile using `plop --init-ts` or by hand:
 
 // plopfile.ts
-import {NodePlopAPI} from 'plop';
+import { NodePlopAPI } from "plop";
 
 export default function (plop: NodePlopAPI) {
   // plop generator code
-};
+}
 
 Next, install tsx and optionally cross-env:
 
@@ -202,11 +206,11 @@ Whether or not you write your plopfile in TypeScript, many editors will offer co
 
 // plopfile.js
 export default function (
-	/\*\* @type {import('plop').NodePlopAPI} \*/
-	plop
+  /\*\* @type {import('plop').NodePlopAPI} \*/
+  plop,
 ) {
-	// plop generator code
-};
+  // plop generator code
+}
 
 Main Methods
 ------------
@@ -265,13 +269,13 @@ setHelper
 `setHelper` directly corresponds to the handlebars method `registerHelper`. So if you are familiar with handlebars helpers, then you already know how this works.
 
 export default function (plop) {
-	plop.setHelper('upperCase', function (text) {
-		return text.toUpperCase();
-	});
+  plop.setHelper("upperCase", function (text) {
+    return text.toUpperCase();
+  });
 
-	// or in es6/es2015
-	plop.setHelper('upperCase', (txt) \=> txt.toUpperCase());
-};
+  // or in es6/es2015
+  plop.setHelper("upperCase", (txt) \=> txt.toUpperCase());
+}
 
 setPartial
 ----------
@@ -279,9 +283,9 @@ setPartial
 `setPartial` directly corresponds to the handlebars method `registerPartial`. So if you are familiar with handlebars partials, then you already know how this works.
 
 export default function (plop) {
-	plop.setPartial('myTitlePartial', '<h1>{{titleCase name}}</h1>');
-	// used in template as {{> myTitlePartial }}
-};
+  plop.setPartial("myTitlePartial", "<h1>{{titleCase name}}</h1>");
+  // used in template as {{> myTitlePartial }}
+}
 
 setActionType
 -------------
@@ -315,39 +319,42 @@ _PlopfileApi_
 The plop api for the plopfile where this action is being run
 
 export default function (plop) {
-	plop.setActionType('doTheThing', function (answers, config, plop) {
-		// do something
-		doSomething(config.configProp);
-		// if something went wrong
-		throw 'error message';
-		// otherwise
-		return 'success status message';
-	});
+  plop.setActionType("doTheThing", function (answers, config, plop) {
+    // do something
+    doSomething(config.configProp);
+    // if something went wrong
+    throw "error message";
+    // otherwise
+    return "success status message";
+  });
 
-	// or do async things inside of an action
-	plop.setActionType('doTheAsyncThing', function (answers, config, plop) {
-		// do something
-		return new Promise((resolve, reject) \=> {
-			if (success) {
-				resolve('success status message');
-			} else {
-				reject('error message');
-			}
-		});
-	});
+  // or do async things inside of an action
+  plop.setActionType("doTheAsyncThing", function (answers, config, plop) {
+    // do something
+    return new Promise((resolve, reject) \=> {
+      if (success) {
+        resolve("success status message");
+      } else {
+        reject("error message");
+      }
+    });
+  });
 
-	// use the custom action
-	plop.setGenerator('test', {
-		prompts: \[\],
-		actions: \[{
-			type: 'doTheThing',
-			configProp: 'available from the config param'
-		}, {
-			type: 'doTheAsyncThing',
-			speed: 'slow'
-		}\]
-	});
-};
+  // use the custom action
+  plop.setGenerator("test", {
+    prompts: \[\],
+    actions: \[
+      {
+        type: "doTheThing",
+        configProp: "available from the config param",
+      },
+      {
+        type: "doTheAsyncThing",
+        speed: "slow",
+      },
+    \],
+  });
+}
 
 setPrompt
 ---------
@@ -962,33 +969,35 @@ Alternatively, the `actions` property of the GeneratorConfig can itself be a fun
 This allows you to adapt the actions array based on provided answers:
 
 export default function (plop) {
-	plop.setGenerator('test', {
-		prompts: \[{
-			type: 'confirm',
-			name: 'wantTacos',
-			message: 'Do you want tacos?'
-		}\],
-		actions: function(data) {
-			var actions \= \[\];
+  plop.setGenerator("test", {
+    prompts: \[
+      {
+        type: "confirm",
+        name: "wantTacos",
+        message: "Do you want tacos?",
+      },
+    \],
+    actions: function (data) {
+      var actions \= \[\];
 
-			if(data.wantTacos) {
-				actions.push({
-					type: 'add',
-					path: 'folder/{{dashCase name}}.txt',
-					templateFile: 'templates/tacos.txt'
-				});
-			} else {
-				actions.push({
-					type: 'add',
-					path: 'folder/{{dashCase name}}.txt',
-					templateFile: 'templates/burritos.txt'
-				});
-			}
+      if (data.wantTacos) {
+        actions.push({
+          type: "add",
+          path: "folder/{{dashCase name}}.txt",
+          templateFile: "templates/tacos.txt",
+        });
+      } else {
+        actions.push({
+          type: "add",
+          path: "folder/{{dashCase name}}.txt",
+          templateFile: "templates/burritos.txt",
+        });
+      }
 
-			return actions;
-		}
-	});
-};
+      return actions;
+    },
+  });
+}
 
 3rd Party Prompt Bypass
 -----------------------
@@ -998,16 +1007,16 @@ If you have written an inquirer prompt plugin and want to support plop's bypass 
 // My confirmation inquirer plugin
 export default MyConfirmPluginConstructor;
 function MyConfirmPluginConstructor() {
-	// ...your main plugin code
-	this.bypass \= (rawValue, promptConfig) \=> {
-		const lowerVal \= rawValue.toString().toLowerCase();
-		const trueValues \= \['t', 'true', 'y', 'yes'\];
-		const falseValues \= \['f', 'false', 'n', 'no'\];
-		if (trueValues.includes(lowerVal)) return true;
-		if (falseValues.includes(lowerVal)) return false;
-		throw Error(\`"${rawValue}" is not a valid ${promptConfig.type} value\`);
-	};
-	return this;
+  // ...your main plugin code
+  this.bypass \= (rawValue, promptConfig) \=> {
+    const lowerVal \= rawValue.toString().toLowerCase();
+    const trueValues \= \["t", "true", "y", "yes"\];
+    const falseValues \= \["f", "false", "n", "no"\];
+    if (trueValues.includes(lowerVal)) return true;
+    if (falseValues.includes(lowerVal)) return false;
+    throw Error(\`"${rawValue}" is not a valid ${promptConfig.type} value\`);
+  };
+  return this;
 }
 
 > For the above example, the bypass function takes the user's text input and turns it into a `Boolean` value that will be used as the prompt answer data.
@@ -1036,12 +1045,15 @@ import { fileURLToPath } from "node:url";
 
 const \_\_dirname \= dirname(fileURLToPath(import.meta.url));
 
-Plop.prepare({
-  cwd: argv.cwd,
-  configPath: path.join(\_\_dirname, 'plopfile.js'),
-  preload: argv.preload || \[\],
-  completion: argv.completion
-}, env \=> Plop.execute(env, run));
+Plop.prepare(
+  {
+    cwd: argv.cwd,
+    configPath: path.join(\_\_dirname, "plopfile.js"),
+    preload: argv.preload || \[\],
+    completion: argv.completion,
+  },
+  (env) \=> Plop.execute(env, run),
+);
 
 And your `package.json` should look like the following:
 
@@ -1050,7 +1062,7 @@ And your `package.json` should look like the following:
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "plop",
+    "start": "plop"
   },
   "bin": {
     "create-your-name-app": "./index.js"
@@ -1065,17 +1077,19 @@ And your `package.json` should look like the following:
 
 When wrapping plop, you might want to have the destination path to be based on the cwd when running the wrapper. You can configure the `dest` base path like this:
 
-Plop.prepare({
-	// config like above
-}, env \=> 
+Plop.prepare(
+  {
+    // config like above
+  },
+  (env) \=>
     Plop.execute(env, (env) \=> {
-        const options \= {
-            ...env,
-            dest: process.cwd() // this will make the destination path to be based on the cwd when calling the wrapper
-        }
-        return run(options, undefined, true)
-    })
-)
+      const options \= {
+        ...env,
+        dest: process.cwd(), // this will make the destination path to be based on the cwd when calling the wrapper
+      };
+      return run(options, undefined, true);
+    }),
+);
 
 ### Adding General CLI Actions
 

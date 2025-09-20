@@ -1,6 +1,6 @@
 ---
 project: teek-design-vue3
-stars: 123
+stars: 133
 description: Teek 是一个基于 Vue3、TypeScript、Vite、ElementPlus 构建的颜值强大、功能丰富、开箱即用的中后台管理系统解决方案。
 url: https://github.com/Kele-Bingtang/teek-design-vue3
 ---

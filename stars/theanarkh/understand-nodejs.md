@@ -1,6 +1,6 @@
 ---
 project: understand-nodejs
-stars: 2365
+stars: 2369
 description: 通过源码分析nodejs原理
 url: https://github.com/theanarkh/understand-nodejs
 ---

@@ -1,6 +1,6 @@
 ---
 project: typescript-tutorial
-stars: 2670
+stars: 2672
 description: TypeScript 教程
 url: https://github.com/wangdoc/typescript-tutorial
 ---

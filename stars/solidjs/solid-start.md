@@ -1,6 +1,6 @@
 ---
 project: solid-start
-stars: 5635
+stars: 5642
 description: SolidStart, the Solid app framework
 url: https://github.com/solidjs/solid-start
 ---

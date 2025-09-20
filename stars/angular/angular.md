@@ -1,6 +1,6 @@
 ---
 project: angular
-stars: 98772
+stars: 98836
 description: Deliver web apps with confidence 🚀
 url: https://github.com/angular/angular
 ---

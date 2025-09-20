@@ -1,6 +1,6 @@
 ---
 project: mindoc
-stars: 7707
+stars: 7712
 description: Golang实现的基于beego框架的接口在线文档管理系统
 url: https://github.com/mindoc-org/mindoc
 ---

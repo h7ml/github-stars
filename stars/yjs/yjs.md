@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 20065
+stars: 20116
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -1199,6 +1199,10 @@ Especially when working on structured content (e.g. shared editing on ProseMirro
 ### State Vector
 
 Yjs has the ability to exchange only the differences when syncing two clients. We use lamport timestamps to identify structs and to track in which order a client created them. Each struct has an `struct.id = { client: number, clock: number}` that uniquely identifies a struct. We define the next expected `clock` by each client as the _state vector_. This data structure is similar to the version vectors data structure. But we use state vectors only to describe the state of the local document, so we can compute the missing struct of the remote client. We do not use it to track causality.
+
+### Formal Proof
+
+lean-yjs provides a formal verification of the YATA CRDT algorithm that Yjs implements, using the Lean theorem prover to mathematically prove correctness properties. While the CRDT algorithm itself is correct (currently proven for preservation and commutativity), the project reveals that the pseudocode in the original YATA paper contains errors.
 
 License and Author
 ------------------

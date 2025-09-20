@@ -1,6 +1,6 @@
 ---
 project: wechat-robot-ipad
-stars: 118
+stars: 119
 description: iPad协议的微信机器人
 url: https://github.com/isnl/wechat-robot-ipad
 ---

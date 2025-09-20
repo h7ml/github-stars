@@ -1,6 +1,6 @@
 ---
 project: mars3d
-stars: 1011
+stars: 1013
 description: 【Mars3D平台 】主仓库，包含所有开源仓库清单导航
 url: https://github.com/marsgis/mars3d
 ---

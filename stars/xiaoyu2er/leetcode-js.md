@@ -1,6 +1,6 @@
 ---
 project: leetcode-js
-stars: 185
+stars: 184
 description: 用 JS 刷 LeetCode
 url: https://github.com/xiaoyu2er/leetcode-js
 ---

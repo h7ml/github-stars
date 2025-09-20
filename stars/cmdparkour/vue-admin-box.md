@@ -1,6 +1,6 @@
 ---
 project: vue-admin-box
-stars: 1829
+stars: 1830
 description: vue3,vite,element-plus中后台管理系统，集成四套基础模板，大量可利用组件，模板页面
 url: https://github.com/cmdparkour/vue-admin-box
 ---

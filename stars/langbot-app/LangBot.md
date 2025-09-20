@@ -1,7 +1,7 @@
 ---
 project: LangBot
-stars: 13453
-description: 🤩 Easy-to-use global IM bot platform designed for LLM era / 简单易用的大模型即时通信机器人开发平台 ⚡️ Bots for QQ / QQ频道 / Discord / WeChat（微信）/ Telegram / 飞书 / 钉钉 / Slack 🧩 Integrated with ChatGPT（GPT), DeepSeek, Dify, n8n, Langflow, Claude, Google Gemini, xAI, PPIO, Ollama, 阿里云百炼, SiliconFlow, Qwen, Moonshot, SillyTraven, MCP, WeClone etc. LLM & Agent & RAG
+stars: 13530
+description: 🤩 Easy-to-use global IM bot platform designed for LLM era / 简单易用的大模型即时通信机器人开发平台 ⚡️ Bots for QQ / QQ频道 / Discord / LINE / WeChat(微信, 企业微信)/ Telegram / 飞书 / 钉钉 / Slack 🧩 Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Claude, Google Gemini, xAI, PPIO, Ollama, 阿里云百炼, SiliconFlow, Qwen, Moonshot, SillyTraven, MCP etc. LLM & Agent & RAG
 url: https://github.com/langbot-app/LangBot
 ---
 
@@ -17,7 +17,7 @@ LangBot 是一个开源的大语言模型原生即时通信机器人开发平台
 #### Docker Compose 部署
 
 git clone https://github.com/langbot-app/LangBot
-cd LangBot
+cd LangBot/docker
 docker compose up -d
 
 访问 http://localhost:5300 即可开始使用。
@@ -87,6 +87,10 @@ QQ 官方机器人，支持频道、私聊、群聊
 
 ✅
 
+企微智能机器人
+
+✅
+
 个人微信
 
 ✅
@@ -112,6 +116,10 @@ Telegram
 ✅
 
 Slack
+
+✅
+
+LINE
 
 ✅
 

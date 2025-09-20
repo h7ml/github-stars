@@ -1,6 +1,6 @@
 ---
 project: papanasi
-stars: 600
+stars: 601
 description: 🥯Papanasi is the Frontend UI library to use cross Frameworks. A set of components to use in Angular, Preact, Qwik, React, Solid, Svelte, Vue and Web Components
 url: https://github.com/CKGrafico/papanasi
 ---

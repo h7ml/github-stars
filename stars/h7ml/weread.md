@@ -1,6 +1,6 @@
 ---
 project: weread
-stars: 9
+stars: 10
 description: 基于 Fresh (Deno) 构建的现代化微信读书 Web 阅读应用，具有高级 TTS 功能和优雅的阅读界面。
 url: https://github.com/h7ml/weread
 ---

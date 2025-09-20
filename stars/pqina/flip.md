@@ -1,6 +1,6 @@
 ---
 project: flip
-stars: 977
+stars: 979
 description: ⏳ The online version of the classic flip clock
 url: https://github.com/pqina/flip
 ---

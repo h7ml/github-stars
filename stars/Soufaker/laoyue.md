@@ -1,6 +1,6 @@
 ---
 project: laoyue
-stars: 557
+stars: 558
 description: 自动化监控赏金项目-定期收集资产,漏洞进行推送(现在可以稳定收菜,有问题issues我)-关注-夜安团队SEC-加我微信进群可下载最新自动化版本,git目前不会更新了,群里目前版本1.3.1,项目优化了非常多,功能也加入了非常多,建议进群(没收费项目放心白嫖)
 url: https://github.com/Soufaker/laoyue
 ---

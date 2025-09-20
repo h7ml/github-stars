@@ -1,6 +1,6 @@
 ---
 project: ScholAI
-stars: 216
+stars: 215
 description: null
 url: https://github.com/oDaiSuno/ScholAI
 ---

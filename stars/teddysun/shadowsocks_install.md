@@ -1,6 +1,6 @@
 ---
 project: shadowsocks_install
-stars: 8187
+stars: 8191
 description: Auto Install Shadowsocks Server for CentOS/Debian/Ubuntu
 url: https://github.com/teddysun/shadowsocks_install
 ---

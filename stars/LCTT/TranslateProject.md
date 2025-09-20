@@ -1,6 +1,6 @@
 ---
 project: TranslateProject
-stars: 2314
+stars: 2316
 description: Linux中国翻译项目
 url: https://github.com/LCTT/TranslateProject
 ---

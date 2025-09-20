@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6405
+stars: 6445
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -167,6 +167,7 @@ Applications
 -   Curses - Speech-to-Text and Text-to-Speech captions for OBS, VRChat, Twitch chat and more.
 -   Douyin Downloader - Cross-platform douyin video downloader.
 -   Feiyu Player - Cross-platform online video player where beauty meets functionality.
+-   Hopp \- Open source remote pair programming app.
 -   Hypetrigger \- Detect highlight clips in video with FFMPEG + Tensorflow on the GPU.
 -   Hyprnote - AI notepad for meetings. Local-first and extensible.
 -   Jellyfin Vue - GUI client for a Jellyfin server based on Vue.js and Tauri.
@@ -297,6 +298,7 @@ Applications
 -   Resolute - User-friendly, cross-platform mod manager for the game Resonite.
 -   Retrom - Private cloud game library distribution server + frontend/launcher.
 -   Samira - Steam achievement manager for Linux.
+-   SJMC Launcher \- Launcher for `Minecraft` with instance management and multi-account support.
 -   Steam Art Manager - Tool for customizing the art of your Steam games.
 -   Tauri Chess - Implementation of Chess, logic in Rust and visualization in React.
 -   Teyvat Guide - Game Tool for Genshin Impact player.

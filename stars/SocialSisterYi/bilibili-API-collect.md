@@ -1,6 +1,6 @@
 ---
 project: bilibili-API-collect
-stars: 18844
+stars: 18898
 description: 哔哩哔哩-API收集整理【不断更新中....】
 url: https://github.com/SocialSisterYi/bilibili-API-collect
 ---
@@ -255,6 +255,8 @@ B站 API 采用 C/S 结构，大多数接口为 REST API 和 gRPC，少部分接
     -   礼物相关
     -   大航海/粉丝团
     -   直播回放
+    -   直播数据
+    -   直播投票
 -   活动
     -   活动列表
     -   活动主题信息

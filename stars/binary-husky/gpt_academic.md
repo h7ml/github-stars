@@ -1,20 +1,15 @@
 ---
 project: gpt_academic
-stars: 69215
+stars: 69232
 description: 为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。
 url: https://github.com/binary-husky/gpt_academic
 ---
 
 Important
 
-`master主分支`最新动态(2025.8.23): Dockerfile构建效率大幅优化  
-`master主分支`最新动态(2025.7.31): 新GUI前端，Coming Soon
+`master主分支`最新动态(2025.8.23): Dockerfile构建效率大幅优化 `master主分支`最新动态(2025.7.31): 新GUI前端，Coming Soon
 
-2025.2.2: 三分钟快速接入最强qwen2.5-max视频  
-2025.2.1: 支持自定义字体  
-2024.10.10: 突发停电，紧急恢复了提供whl包的文件服务器  
-2024.5.1: 加入Doc2x翻译PDF论文的功能，查看详情  
-2024.3.11: 全力支持Qwen、GLM、DeepseekCoder等中文大语言模型！ SoVits语音克隆模块，查看详情 2024.1.17: 安装依赖时，请选择`requirements.txt`中**指定的版本**。 安装命令：`pip install -r requirements.txt`。
+2025.2.2: 三分钟快速接入最强qwen2.5-max视频 2025.2.1: 支持自定义字体 2024.10.10: 突发停电，紧急恢复了提供whl包的文件服务器 2024.5.1: 加入Doc2x翻译PDF论文的功能，查看详情 2024.3.11: 全力支持Qwen、GLM、DeepseekCoder等中文大语言模型！ SoVits语音克隆模块，查看详情 2024.1.17: 安装依赖时，请选择`requirements.txt`中**指定的版本**。 安装命令：`pip install -r requirements.txt`。
 
   
 
@@ -196,6 +191,11 @@ Loading
     conda create -n gptac\_venv python=3.11    # 创建anaconda环境
     conda activate gptac\_venv                 # 激活anaconda环境
     python -m pip install -r requirements.txt # 这个步骤和pip安装一样的步骤
+    
+    # （选择III: 使用uv）：
+    uv venv --python=3.11   # 创建虚拟环境
+    source ./.venv/bin/activate # 激活虚拟环境
+    uv pip install --verbose -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ # 安装依赖
     
 
 如果需要支持清华ChatGLM系列/复旦MOSS/RWKV作为后端，请点击展开此处

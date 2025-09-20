@@ -1,6 +1,6 @@
 ---
 project: quasar
-stars: 26861
+stars: 26871
 description: Quasar Framework - Build high-performance VueJS user interfaces in record time
 url: https://github.com/quasarframework/quasar
 ---

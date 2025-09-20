@@ -1,6 +1,6 @@
 ---
 project: MallChatWeb
-stars: 1198
+stars: 1200
 description: mallchat的前端项目，是一个既能购物又能聊天的电商系统。以互联网企业级开发规范的要求来实现它，电商该有的购物车，订单，支付，推荐，搜索，拉新，促活，推送，物流，客服，它都必须有。持续更新ing
 url: https://github.com/Evansy/MallChatWeb
 ---

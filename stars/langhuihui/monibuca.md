@@ -1,6 +1,6 @@
 ---
 project: monibuca
-stars: 2159
+stars: 2165
 description: 🧩 Monibuca is a Modularized, Extensible framework for building Streaming Server
 url: https://github.com/langhuihui/monibuca
 ---
@@ -146,6 +146,10 @@ fasthttp
 
 Enables the fasthttp server instead of net/http
 
+enable\_buddy
+
+Enables the buddy memory pre-allocation
+
 (back to top)
 
 Monitoring
@@ -198,7 +202,7 @@ Contributions are what make the open source community such an amazing place to l
 License
 -------
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the AGPL License. See `LICENSE` for more information.
 
 (back to top)
 

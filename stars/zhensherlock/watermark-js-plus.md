@@ -1,6 +1,6 @@
 ---
 project: watermark-js-plus
-stars: 491
+stars: 493
 description: watermark for the browser
 url: https://github.com/zhensherlock/watermark-js-plus
 ---

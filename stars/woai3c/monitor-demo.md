@@ -1,6 +1,6 @@
 ---
 project: monitor-demo
-stars: 207
+stars: 208
 description: 一个前端监控 SDK 教学项目
 url: https://github.com/woai3c/monitor-demo
 ---

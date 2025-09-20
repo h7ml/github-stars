@@ -1,6 +1,6 @@
 ---
 project: easy-mqtt
-stars: 60
+stars: 61
 description: 一款简单、实用、高性能的MQTT服务器
 url: https://github.com/EasyProgramming/easy-mqtt
 ---

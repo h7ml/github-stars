@@ -1,6 +1,6 @@
 ---
 project: vite-ts-lib-starter
-stars: 16
+stars: 17
 description: A simple library template starter for Vite with TypeScript, Prettier, Vitest, Bun, Renovate and np.
 url: https://github.com/matronator/vite-ts-lib-starter
 ---

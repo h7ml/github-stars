@@ -1,6 +1,6 @@
 ---
 project: swagger
-stars: 1807
+stars: 1811
 description: OpenAPI (Swagger) module for Nest framework (node.js) :earth_americas:
 url: https://github.com/nestjs/swagger
 ---

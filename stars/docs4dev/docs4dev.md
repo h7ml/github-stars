@@ -1,6 +1,6 @@
 ---
 project: docs4dev
-stars: 1303
+stars: 1302
 description: 后端开发常用框架文档及中文翻译，包含 Spring 系列文档（Spring, Spring Boot, Spring Cloud, Spring Security, Spring Session），大数据（Apache Hive, HBase, Apache Flume），日志（Log4j2, Logback），Http Server（NGINX，Apache），Python，数据库（OpenTSDB，MySQL，PostgreSQL）等最新官方文档以及对应的中文翻译。
 url: https://github.com/docs4dev/docs4dev
 ---

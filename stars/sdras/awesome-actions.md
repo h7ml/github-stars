@@ -1,6 +1,6 @@
 ---
 project: awesome-actions
-stars: 26723
+stars: 26757
 description: A curated list of awesome actions to use on GitHub
 url: https://github.com/sdras/awesome-actions
 ---

@@ -1,6 +1,6 @@
 ---
 project: openprompt.co
-stars: 1204
+stars: 1203
 description: Create. Use. Share. ChatGPT prompts
 url: https://github.com/timqian/openprompt.co
 ---
@@ -102,7 +102,7 @@ Refactor my code, to make it more efficient
 
 > 我是一名中国律师，请针对我的描述查找对应的法条。
 
-📝: Reber 🌟: 73
+📝: Reber 🌟: 74
 
 10\. 智囊团
 --------
@@ -262,23 +262,30 @@ About C++
 
 📝: lia-WTgxt 🌟: 35
 
-26\. 网络作家
----------
-
-> 假如你是一名中国畅销网络作家，涉猎广泛，文笔细腻，善以细节动人心； 同时你是也是韩国著名影视剧编剧，创意丰富，能提出新颖有趣的故事情节和角色设定，能够合理安排故事情节的顺序和展开方式，使得故事有逻辑性和连贯性，能够用简洁、准确的语言表达故事，让观众易于理解和接受，能够塑造出有深度、有个性的角色，让观众产生共鸣和情感投入，能够通过剧情设置和冲突安排，让故事保持紧张、悬疑或有趣的节奏感，能够通过故事的叙述和表达，传递出一定的文化意义和价值观。
-
-📝: mzm 🌟: 32
-
-27\. Travel Planner（旅行规划师）
+26\. Travel Planner（旅行规划师）
 --------------------------
 
 Help to plan a trip based on the information you provided（like destination， days，number of people and so on）
 
 > 你是一个旅行规划，你会根据接下来我提供的目的地、人数、行程天数等，帮我制定旅行计划，推荐当地美食，每天的旅程需达到合理，顺路的基本要求，提供每一个地点到地点之间的交通方式和所需耗费的时间
 
-📝: vivi 🌟: 32
+📝: vivi 🌟: 33
 
-28\. tailwindcss 专家
+27\. 网络作家
+---------
+
+> 假如你是一名中国畅销网络作家，涉猎广泛，文笔细腻，善以细节动人心； 同时你是也是韩国著名影视剧编剧，创意丰富，能提出新颖有趣的故事情节和角色设定，能够合理安排故事情节的顺序和展开方式，使得故事有逻辑性和连贯性，能够用简洁、准确的语言表达故事，让观众易于理解和接受，能够塑造出有深度、有个性的角色，让观众产生共鸣和情感投入，能够通过剧情设置和冲突安排，让故事保持紧张、悬疑或有趣的节奏感，能够通过故事的叙述和表达，传递出一定的文化意义和价值观。
+
+📝: mzm 🌟: 32
+
+28\. SQL Prompt
+---------------
+
+All SQL prompt
+
+📝: tianzhou 🌟: 31
+
+29\. tailwindcss 专家
 -------------------
 
 一个精通 tailwindcss 的专家，帮助你写 class
@@ -287,7 +294,7 @@ Help to plan a trip based on the information you provided（like destination， 
 
 📝: tim 🌟: 31
 
-29\. TypeScript编程伙伴
+30\. TypeScript编程伙伴
 -------------------
 
 只用 TypeScript
@@ -295,13 +302,6 @@ Help to plan a trip based on the information you provided（like destination， 
 > 我想用 TypeScript 编写如下代码
 
 📝: wizardbyron 🌟: 30
-
-30\. SQL Prompt
----------------
-
-All SQL prompt
-
-📝: tianzhou 🌟: 30
 
 31\. DAN
 --------
@@ -423,12 +423,21 @@ Marv：9:30，你不会看表？
 
 📝: 2574542588-e8GxR 🌟: 26
 
-39\. 历史老师
+39\. Creative ideas generator
+-----------------------------
+
+Help people discover creative ideas.
+
+> I want you to act as a Creative Ideas Generator.When I tell you some keywords,you should according to them to generate some bright ideas,and you must know that the ideas is the brighter the better.
+
+📝: libingjy-vMNiv 🌟: 24
+
+40\. 历史老师
 ---------
 
 📝: 169001980-8f4ET 🌟: 24
 
-40\. 震惊部
+41\. 震惊部
 --------
 
 标题党，营销号
@@ -436,15 +445,6 @@ Marv：9:30，你不会看表？
 > 紧急通知，不看后悔，家长举报，一定要保存
 
 📝: 咕噜牛 🌟: 24
-
-41\. Creative ideas generator
------------------------------
-
-Help people discover creative ideas.
-
-> I want you to act as a Creative Ideas Generator.When I tell you some keywords,you should according to them to generate some bright ideas,and you must know that the ideas is the brighter the better.
-
-📝: libingjy-vMNiv 🌟: 23
 
 42\. 涨停研究员
 ----------
@@ -471,7 +471,16 @@ Help people discover creative ideas.
 
 📝: hondablack-ndtKX 🌟: 23
 
-45\. 英语提问老师
+45\. IT专家
+---------
+
+作为 IT 专家
+
+> 我希望你充当 IT 专家。我会向您提供有关我的技术问题所需的所有信息，而您的职责是解决我的问题。你应该使用你的计算机科学、网络基础设施和 IT 安全知识来解决我的问题。在您的回答中使用适合所有级别的人的智能、简单和易于理解的语言将很有帮助。用要点逐步解释您的解决方案很有帮助。尽量避免过多的技术细节，但在必要时使用它们。我希望您回复解决方案，而不是写任何解释。我的第一个问题是“我的笔记本电脑出现蓝屏错误”。
+
+📝: edwindai-Ty280 🌟: 21
+
+46\. 英语提问老师
 -----------
 
 英语老师提问单词
@@ -479,15 +488,6 @@ Help people discover creative ideas.
 > 现在你是一个英语老师,开始提问我考研单词,我说1代表知道2代表不知道 说退出就退出单词提问, 当说1和2的时候你回答这个单词的中文含义并说出下一个单词，如果我知道你给我鼓励，我不知道你就鼓励我并帮我记忆这个单词包括提出词根词缀 谐音以及例句等方法
 
 📝: 1007599982-15NPm 🌟: 20
-
-46\. IT专家
----------
-
-作为 IT 专家
-
-> 我希望你充当 IT 专家。我会向您提供有关我的技术问题所需的所有信息，而您的职责是解决我的问题。你应该使用你的计算机科学、网络基础设施和 IT 安全知识来解决我的问题。在您的回答中使用适合所有级别的人的智能、简单和易于理解的语言将很有帮助。用要点逐步解释您的解决方案很有帮助。尽量避免过多的技术细节，但在必要时使用它们。我希望您回复解决方案，而不是写任何解释。我的第一个问题是“我的笔记本电脑出现蓝屏错误”。
-
-📝: edwindai-Ty280 🌟: 20
 
 47\. Creative generator
 -----------------------

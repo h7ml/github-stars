@@ -1,6 +1,6 @@
 ---
 project: snow-shot
-stars: 1147
+stars: 1193
 description: 简单优雅的工具软件
 url: https://github.com/mg-chao/snow-shot
 ---
@@ -46,7 +46,7 @@ Windows 用户可以在 Snow Shot 官网 加速下载。
 
 ### 特别鸣谢
 
-果核剥壳 - 互联网的净土 玄夜の资源小站 资源汇社区 FreeDw资源库
+果核剥壳 - 互联网的净土 玄夜の资源小站 资源汇社区 FreeDw资源库 大象老师资源库
 
 真的非常感谢，为项目带来了大量关注~
 

@@ -1,6 +1,6 @@
 ---
 project: node-telegram-bot-api
-stars: 8987
+stars: 8995
 description: Telegram Bot API for NodeJS
 url: https://github.com/yagop/node-telegram-bot-api
 ---

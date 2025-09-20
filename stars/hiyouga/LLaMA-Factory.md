@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 58114
+stars: 59005
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -33,7 +33,7 @@ Choose your path:
 -   **Local machine**: Please refer to usage
 -   **PAI-DSW (free trial)**: https://gallery.pai-ml.com/#/preview/deepLearning/nlp/llama\_factory
 -   **Alaya NeW (cloud GPU deal)**: https://docs.alayanew.com/docs/documents/useGuide/LLaMAFactory/mutiple/?utm\_source=LLaMA-Factory
--   **Official Course**: https://www.lab4ai.cn/course/detail?id=7c13e60f6137474eb40f6fd3983c0f46?utm\_source=LLaMA-Factory
+-   **Official Course**: https://www.lab4ai.cn/course/detail?id=7c13e60f6137474eb40f6fd3983c0f46&utm\_source=LLaMA-Factory
 -   **LLaMA Factory Online**: https://www.llamafactory.com.cn/?utm\_source=LLaMA-Factory
 
 Note
@@ -96,10 +96,11 @@ Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 Blogs
 -----
 
+-   💡 Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
+-   Fine-tune a mental health LLM using LLaMA-Factory (Chinese)
 -   Fine-tune GPT-OSS for Role-Playing using LLaMA-Factory (Chinese)
 -   A One-Stop Code-Free Model Reinforcement Learning and Deployment Platform based on LLaMA-Factory and EasyR1 (Chinese)
 -   How Apoidea Group enhances visual information extraction from banking documents with multimodal models using LLaMA-Factory on Amazon SageMaker HyperPod (English)
--   Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
 
 All Blogs
 
@@ -767,6 +768,11 @@ Pre-training datasets
 -   SkyPile (zh)
 -   FineWeb (en)
 -   FineWeb-Edu (en)
+-   CCI3-HQ (zh)
+-   CCI3-Data (zh)
+-   CCI4.0-M2-Base-v1 (en&zh)
+-   CCI4.0-M2-CoT-v1 (en&zh)
+-   CCI4.0-M2-Extra-v1 (en&zh)
 -   The Stack (en)
 -   StarCoder (en)
 
@@ -802,6 +808,7 @@ Supervised fine-tuning datasets
 -   ShareGPT Hyperfiltered (en)
 -   ShareGPT4 (en&zh)
 -   UltraChat 200k (en)
+-   Infinity Instruct (zh)
 -   AgentInstruct (en)
 -   LMSYS Chat 1M (en)
 -   Evol Instruct V2 (en)

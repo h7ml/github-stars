@@ -1,6 +1,6 @@
 ---
 project: CookieCloud
-stars: 2546
+stars: 2563
 description: CookieCloud是一个和自架服务器同步浏览器Cookie和LocalStorage的小工具，支持端对端加密，可设定同步时间间隔。本仓库包含了插件和服务器端源码。CookieCloud is a small tool for synchronizing browser cookies and LocalStorage with a self-hosted server. It supports end-to-end encryption and allows for setting the synchronization interval. This repository contains both the plugin and the server-side source code
 url: https://github.com/easychen/CookieCloud
 ---
@@ -59,7 +59,7 @@ Server Side
 -   http://nastool.cn:8088 provided by nastools
 -   https://cookies.xm.mk provided by Xm798
 -   https://cookie.xy213.cn provided by xuyan0213
--   https://cookie-cloud.vantis-space.com provided by vantis
+-   https://cookie-cloud.vantiszh.com provided by vantis
 -   https://cookiecloud.25wz.cn provided by wuquejs
 -   https://cookiecloud.zhensnow.uk provided by YeTianXingShi
 -   https://cookiecloud.ddsrem.com provided by DDSRem

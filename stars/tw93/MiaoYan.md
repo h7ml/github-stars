@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 6485
+stars: 6501
 description: ⛷ Lightweight Markdown app to help you write great sentences. ⛷ 轻灵的 Markdown 笔记本伴你写出妙言
 url: https://github.com/tw93/MiaoYan
 ---
@@ -82,11 +82,17 @@ url: https://github.com/tw93/MiaoYan
 --
 
 -   glushchenko/fsnotes：项目初始化代码参考于此，非常感谢作者
+    
 -   stackotter/swift-cmark-gfm：快速高效的 Swift Markdown 解析器
+    
 -   raspu/Highlightr：语法高亮能力
+    
 -   仓耳字库：一款漂亮的开源中文字体仓耳今楷，妙言将其作为默认字体
+    
 -   hakimel/reveal.js：妙言 PPT 底层渲染依赖此框架
--   感谢 Vercel 给妙言 官网 提供静态渲染能力
+    
+-   本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助
+    
 
 > **📦 依赖管理**：项目使用 Swift Package Manager 管理依赖，详细信息请查看 `DEPENDENCIES.md`
 

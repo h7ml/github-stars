@@ -1,6 +1,6 @@
 ---
 project: ni
-stars: 7246
+stars: 7260
 description: 💡 Use the right package manager
 url: https://github.com/antfu-collective/ni
 ---
@@ -95,6 +95,12 @@ nr dev --port=3000
 nr
 
 # interactively select the script to run
+# supports https://www.npmjs.com/package/npm-scripts-info convention
+
+nr -p
+nr -p dev
+
+# interactively select the package and script to run
 # supports https://www.npmjs.com/package/npm-scripts-info convention
 
 nr -

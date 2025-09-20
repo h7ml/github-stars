@@ -1,7 +1,7 @@
 ---
 project: claude-relay-service
-stars: 3084
-description: 自建Claude Code镜像，支持Claude Code、Gemini CLI、Codex CLI，支持Claude Console接入。集成OAuth认   证、多账号池切换、自定义API密钥、OpenAI兼容格式、代理支持和智能防封机制。
+stars: 3246
+description: 自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。
 url: https://github.com/Wei-Shaw/claude-relay-service
 ---
 
@@ -10,7 +10,7 @@ Claude Relay Service
 
 **🔐 自行搭建Claude API中转服务，支持多账户管理**
 
-English • 中文文档 • 📸 界面预览 • 📢 公告频道
+English • 快速开始 • 演示站点 • 公告频道
 
 * * *
 
@@ -41,26 +41,18 @@ English • 中文文档 • 📸 界面预览 • 📢 公告频道
 
 如果有以上困惑，那这个项目可能适合你。
 
-> 💡 **热心网友福利**  
-> 热心网友正在用本项目，正在拼车官方Claude Code Max 20X 200刀版本，是现在最稳定的方案。  
-> 有需要自取: https://ctok.ai/
+> 💡 **Claude Code 拼车服务** 目前有两个稳定的 Claude Code Max 20X 200刀 拼车渠道：
+> 
+> 1.  **PinCC** - 项目官方运营的拼车服务：https://pincc.ai/
+> 2.  **CToK** - 社区认可的合作伙伴服务：https://ctok.ai/
 
 ### 适合的场景
 
-✅ **找朋友拼车**: 三五好友一起分摊Claude Code Max订阅，Opus爽用  
+✅ **找朋友拼车**: 三五好友一起分摊Claude Code Max订阅  
 ✅ **隐私敏感**: 不想让第三方镜像看到你的对话内容  
 ✅ **技术折腾**: 有基本的技术基础，愿意自己搭建和维护  
 ✅ **稳定需求**: 需要长期稳定的Claude访问，不想受制于镜像站  
 ✅ **地区受限**: 无法直接访问Claude官方服务
-
-### 不适合的场景
-
-❌ **纯小白**: 完全不懂技术，连服务器都不会买  
-❌ **偶尔使用**: 一个月用不了几次，没必要折腾  
-❌ **注册问题**: 无法自行注册Claude账号  
-❌ **支付问题**: 没有支付渠道订阅Claude Code
-
-**如果你只是普通用户，对隐私要求不高，随便玩玩、想快速体验 Claude，那选个你熟知的镜像站会更合适。**
 
 * * *
 
@@ -85,7 +77,7 @@ English • 中文文档 • 📸 界面预览 • 📢 公告频道
 🚀 核心功能
 -------
 
-> 📸 **点击查看界面预览** - 查看Web管理界面的详细截图
+> 📸 **查看演示站点**
 
 ### 基础功能
 
@@ -136,13 +128,7 @@ English • 中文文档 • 📸 界面预览 • 📢 公告频道
 
 ### 快速安装
 
-# 下载并运行管理脚本
-curl -fsSL https://raw.githubusercontent.com/Wei-Shaw/claude-relay-service/main/scripts/manage.sh -o manage.sh
-chmod +x manage.sh
-./manage.sh install
-
-# 安装后可以使用 crs 命令管理服务
-crs  # 显示交互式菜单
+curl -fsSL https://pincc.ai/manage.sh -o manage.sh && chmod +x manage.sh && ./manage.sh install
 
 ### 脚本功能
 
@@ -282,56 +268,14 @@ npm run service:status
 🐳 Docker 部署
 ------------
 
-### 使用 Docker Hub 镜像（最简单）
+### Docker compose
 
-> 🚀 使用官方镜像，自动构建，始终保持最新版本
+#### 第一步：下载构建docker-compose.yml文件的脚本并执行
 
-# 拉取镜像（支持 amd64 和 arm64）
-docker pull weishaw/claude-relay-service:latest
+curl -fsSL https://pincc.ai/crs-compose.sh -o crs-compose.sh && chmod +x crs-compose.sh && ./crs-compose.sh
 
-# 使用 docker-compose
-# 创建 .env 文件用于 docker-compose 的环境变量：
-cat \> .env << 'EOF'
-\# 必填：安全密钥（请修改为随机值）
-JWT\_SECRET=your-random-secret-key-at-least-32-chars
-ENCRYPTION\_KEY=your-32-character-encryption-key
-\# 可选：管理员凭据
-ADMIN\_USERNAME=cr\_admin
-ADMIN\_PASSWORD=your-secure-password
-EOF
+#### 第二步：启动
 
-# 创建 docker-compose.yml 文件：
-cat \> docker-compose.yml << 'EOF'
-version: '3.8'
-services:
-  claude-relay:
-    image: weishaw/claude-relay-service:latest
-    container\_name: claude-relay-service
-    restart: unless-stopped
-    ports:
-      - "3000:3000"
-    environment:
-      - JWT\_SECRET=${JWT\_SECRET}
-      - ENCRYPTION\_KEY=${ENCRYPTION\_KEY}
-      - REDIS\_HOST=redis
-      - ADMIN\_USERNAME=${ADMIN\_USERNAME:-}
-      - ADMIN\_PASSWORD=${ADMIN\_PASSWORD:-}
-    volumes:
-      - ./logs:/app/logs
-      - ./data:/app/data
-    depends\_on:
-      - redis
-  redis:
-    image: redis:7-alpine
-    container\_name: claude-relay-redis
-    restart: unless-stopped
-    volumes:
-      - redis\_data:/data
-volumes:
-  redis\_data:
-EOF
-
-# 启动服务
 docker-compose up -d
 
 ### Docker Compose 配置
@@ -343,7 +287,6 @@ docker-compose.yml 已包含：
 -   ✅ Redis数据库
 -   ✅ 健康检查
 -   ✅ 自动重启
--   ✅ 所有配置通过环境变量管理
 
 ### 环境变量说明
 
@@ -447,7 +390,7 @@ gemini  # 或其他 Gemini CLI 命令
 在 `~/.codex/config.toml` 文件中添加以下配置：
 
 model\_provider = "crs"
-model = "gpt-5"
+model = "gpt-5-codex"
 model\_reasoning\_effort = "high"
 disable\_response\_storage = true
 preferred\_auth\_method = "apikey"
@@ -456,12 +399,18 @@ preferred\_auth\_method = "apikey"
 name = "crs"
 base\_url = "http://127.0.0.1:3000/openai"  # 根据实际填写你服务器的ip地址或者域名
 wire\_api = "responses"
+requires\_openai\_auth = true
+env\_key = "CRS\_OAI\_KEY"
 
-在 `~/.codex/auth.json` 文件中配置API密钥：
+在 `~/.codex/auth.json` 文件中配置API密钥为 null：
 
 {
-    "OPENAI\_API\_KEY": "你的后台创建的API密钥"
+    "OPENAI\_API\_KEY": null  
 }
+
+环境变量设置：
+
+export CRS\_OAI\_KEY="后台创建的API密钥"
 
 ### 5\. 第三方工具API接入
 

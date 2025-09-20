@@ -1,6 +1,6 @@
 ---
 project: essay
-stars: 948
+stars: 947
 description: personalise blog system
 url: https://github.com/essay-org/essay
 ---

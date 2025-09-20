@@ -1,6 +1,6 @@
 ---
 project: Android-Touch-Helper
-stars: 5245
+stars: 5263
 description: 开屏跳过-安卓系统的开屏广告自动跳过助手
 url: https://github.com/zfdang/Android-Touch-Helper
 ---

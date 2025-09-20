@@ -1,6 +1,6 @@
 ---
 project: intro.js
-stars: 23421
+stars: 23455
 description: Lightweight, user-friendly onboarding tour library
 url: https://github.com/usablica/intro.js
 ---

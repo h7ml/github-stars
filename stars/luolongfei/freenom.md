@@ -1,6 +1,6 @@
 ---
 project: freenom
-stars: 3335
+stars: 3336
 description: Freenom 域名自动续期。Freenom domain name renews automatically.
 url: https://github.com/luolongfei/freenom
 ---

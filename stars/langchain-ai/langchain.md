@@ -1,7 +1,7 @@
 ---
 project: langchain
-stars: 115367
-description: 🦜🔗 Build context-aware reasoning applications 🦜🔗
+stars: 115848
+description: 🦜🔗 Build context-aware reasoning applications
 url: https://github.com/langchain-ai/langchain
 ---
 

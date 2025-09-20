@@ -1,6 +1,6 @@
 ---
 project: yuque-chrome-extension
-stars: 533
+stars: 535
 description: 🚀🚀🚀 语雀浏览器插件
 url: https://github.com/yuque/yuque-chrome-extension
 ---

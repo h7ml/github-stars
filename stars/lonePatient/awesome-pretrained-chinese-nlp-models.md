@@ -1,6 +1,6 @@
 ---
 project: awesome-pretrained-chinese-nlp-models
-stars: 5393
+stars: 5398
 description: Awesome Pretrained Chinese NLP Models，高质量中文预训练模型&大模型&多模态模型&大语言模型集合
 url: https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models
 ---
@@ -2187,6 +2187,26 @@ ChatLLM
 架构
 
 文献
+
+**Qwen3-Next**
+
+A3/80B
+
+2025-09
+
+中英
+
+通用
+
+**🤗 Huggingface**
+
+Qwen3
+
+QwenLM
+
+MoE
+
+Qwen3-Next
 
 Kimi-k2
 
@@ -7270,6 +7290,94 @@ MultiModal-ChatLLM
 
 文献
 
+VoxCPM
+
+0.5B
+
+2025-09
+
+MiniCPM-4
+
+/
+
+中英
+
+文音
+
+🤗 HF
+
+VoxCPM
+
+OpenBMB
+
+/
+
+VibeVoice
+
+1.5B
+
+2025-09
+
+Qwen2.5-1.5B
+
+/
+
+中英
+
+文音
+
+🤗 HF
+
+VibeVoice
+
+microsoft
+
+VibeVoice Technical Report
+
+HunyuanImage
+
+17B
+
+2025-09
+
+/
+
+/
+
+中英
+
+文图
+
+🤗 HF
+
+HunyuanImage-2.1
+
+Tencent-Hunyuan
+
+/
+
+PromptEnhancerV2
+
+32B
+
+2025-09
+
+/
+
+/
+
+中英
+
+文图
+
+🤗 HF
+
+PromptEnhancer
+
+Hunyuan-PromptEnhancer
+
+report paper
+
 **Qwen-Image**
 
 20B
@@ -8850,6 +8958,66 @@ ReasoningLLM
 结构
 
 文
+
+**Tongyi DeepResearch**
+
+A3/30B
+
+2025-09
+
+中英
+
+通用
+
+🤗HF
+
+DeepResearch
+
+Alibaba-NLP  
+
+MoE
+
+Tech Blog
+
+**Qwen3-Next**
+
+A3/80B
+
+2025-09
+
+中英
+
+通用
+
+🤗HF
+
+Qwen3
+
+QwenLM
+
+MoE
+
+Qwen3-Next
+
+Magistral Small 1.2
+
+24B
+
+2025-09
+
+多语
+
+通用
+
+**Hugging Face**
+
+/
+
+mistralai
+
+CD
+
+blog post
 
 gpt-oss-20B
 
@@ -14910,6 +15078,7 @@ github
 更新
 --
 
+-   2025.09.20 增加\[Tongyi DeepResearch,Qwen3-Next,Magistral Small,VoxCPM,VibeVoice,HunyuanImage\]
 -   2025.08.19 增加\[gpt-oss-20B,gpt-oss-120B,Baichuan-M2,Ovis2.5,GLM-4.5V\]
 -   2025.08.05 增加\[GLM-4.5,Hunyuan,Qwen3-Thinking-2507,Step3,Kimi-k2,Qwen3-Coder\]
 -   2025.07.07 增加\[Kimi-VL-Thinking,GLM-4.1V-Thinking,Dhanishtha-2.0,ERNIE-4.5\]

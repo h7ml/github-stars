@@ -1,6 +1,6 @@
 ---
 project: typedoc
-stars: 8198
+stars: 8206
 description: Documentation generator for TypeScript projects.
 url: https://github.com/TypeStrong/typedoc
 ---

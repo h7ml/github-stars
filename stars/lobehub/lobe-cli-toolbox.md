@@ -1,6 +1,6 @@
 ---
 project: lobe-cli-toolbox
-stars: 362
+stars: 363
 description:  🪀 Lobe CLI Toolbox - AI CLI Toolbox, enhancing git commit and i18n workflow efficiency
 url: https://github.com/lobehub/lobe-cli-toolbox
 ---

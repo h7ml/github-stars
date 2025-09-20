@@ -1,6 +1,6 @@
 ---
 project: packycode-cost
-stars: 44
+stars: 52
 description: null
 url: https://github.com/94mashiro/packycode-cost
 ---
