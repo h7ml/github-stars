@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69660
+stars: 69784
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -542,7 +542,7 @@ Courses
     -   6.S191: Introduction to Deep Learning - MIT
     -   Intro to Deep Learning and Generative Models Course - Prof Sebastian Raschka
     -   Deep Learning CMU
-    -   CS231n Deep Learning for Computer Vision - Winter 2016 Andrej Karpathy - Stanford University
+    -   CS231n Deep Learning for Computer Vision - Stanford University (Spring 2025) (Winter 2016 Andrej Karpathy)
     -   Deep Learning: CS 182 Spring 2021
     -   10-414/714: Deep Learning Systems - CMU (Youtube)
     -   11-785: Introduction to Deep Learning - CMU (Lectures - YouTube-2024, Recitations - YouTube-2024)

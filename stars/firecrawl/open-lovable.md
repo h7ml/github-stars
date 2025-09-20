@@ -1,6 +1,6 @@
 ---
 project: open-lovable
-stars: 17018
+stars: 19899
 description: 🔥 Clone and recreate any website as a modern React app in seconds
 url: https://github.com/firecrawl/open-lovable
 ---
@@ -15,25 +15,48 @@ Setup
 
 1.  **Clone & Install**
 
-git clone https://github.com/mendableai/open-lovable.git
+git clone https://github.com/firecrawl/open-lovable.git
 cd open-lovable
-npm install
+pnpm install  # or npm install / yarn install
 
 1.  **Add `.env.local`**
 
-# Required
-E2B\_API\_KEY\=your\_e2b\_api\_key  # Get from https://e2b.dev (Sandboxes)
-FIRECRAWL\_API\_KEY\=your\_firecrawl\_api\_key  # Get from https://firecrawl.dev (Web scraping)
+# =================================================================
+# REQUIRED
+# =================================================================
+FIRECRAWL\_API\_KEY\=your\_firecrawl\_api\_key    # https://firecrawl.dev
 
-# Optional (need at least one AI provider)
-ANTHROPIC\_API\_KEY\=your\_anthropic\_api\_key  # Get from https://console.anthropic.com
-OPENAI\_API\_KEY\=your\_openai\_api\_key  # Get from https://platform.openai.com (GPT-5)
-GEMINI\_API\_KEY\=your\_gemini\_api\_key  # Get from https://aistudio.google.com/app/apikey
-GROQ\_API\_KEY\=your\_groq\_api\_key  # Get from https://console.groq.com (Fast inference - Kimi K2 recommended)
+# =================================================================
+# AI PROVIDER - Choose your LLM
+# =================================================================
+ANTHROPIC\_API\_KEY\=your\_anthropic\_api\_key  # https://console.anthropic.com
+OPENAI\_API\_KEY\=your\_openai\_api\_key        # https://platform.openai.com
+GEMINI\_API\_KEY\=your\_gemini\_api\_key        # https://aistudio.google.com/app/apikey
+GROQ\_API\_KEY\=your\_groq\_api\_key            # https://console.groq.com
+
+# =================================================================
+# SANDBOX PROVIDER - Choose ONE: Vercel (default) or E2B
+# =================================================================
+SANDBOX\_PROVIDER\=vercel  # or 'e2b'
+
+# Option 1: Vercel Sandbox (default)
+# Choose one authentication method:
+
+# Method A: OIDC Token (recommended for development)
+# Run \`vercel link\` then \`vercel env pull\` to get VERCEL\_OIDC\_TOKEN automatically
+VERCEL\_OIDC\_TOKEN\=auto\_generated\_by\_vercel\_env\_pull
+
+# Method B: Personal Access Token (for production or when OIDC unavailable)
+# VERCEL\_TEAM\_ID=team\_xxxxxxxxx      # Your Vercel team ID 
+# VERCEL\_PROJECT\_ID=prj\_xxxxxxxxx    # Your Vercel project ID
+# VERCEL\_TOKEN=vercel\_xxxxxxxxxxxx   # Personal access token from Vercel dashboard
+
+# Option 2: E2B Sandbox
+# E2B\_API\_KEY=your\_e2b\_api\_key      # https://e2b.dev
 
 1.  **Run**
 
-npm run dev
+pnpm dev  # or npm run dev / yarn dev
 
 Open http://localhost:3000
 

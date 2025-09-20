@@ -1,6 +1,6 @@
 ---
 project: BillionMail
-stars: 9567
+stars: 11024
 description: BillionMail gives you open-source MailServer, NewsLetter,  Email Marketing — fully self-hosted, dev-friendly, and free from monthly fees. Join the discord: https://discord.gg/asfXzBUhZr
 url: https://github.com/aaPanel/BillionMail
 ---
@@ -11,7 +11,7 @@ BillionMail 📧
 An Open-Source MailServer, NewsLetter, Email Marketing Solution for Smarter Campaigns
 -------------------------------------------------------------------------------------
 
-English | 简体中文 | 日本語
+English | 简体中文 | 日本語 | Türkçe
 
   
 

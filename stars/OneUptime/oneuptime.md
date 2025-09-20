@@ -1,6 +1,6 @@
 ---
 project: oneuptime
-stars: 5952
+stars: 5992
 description: Complete open-source monitoring and observability platform.
 url: https://github.com/OneUptime/oneuptime
 ---
@@ -61,6 +61,7 @@ Installation
 -   Install on Kubernetes with Helm (recommended for production)
 -   Install with Docker Compose (single-node install, not recommended for production)
 -   Install for Local Development
+-   Upgrade OneUptime
 
 Philosophy
 ----------

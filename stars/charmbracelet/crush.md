@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 11304
+stars: 12943
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
@@ -12,6 +12,9 @@ Crush
 
 Your new coding bestie, now available in your favourite terminal.  
 Your tools, your code, and your workflows, wired into your LLM of choice.
+
+你的新编程伙伴，现在就在你最爱的终端中。  
+你的工具、代码和工作流，都与您选择的 LLM 模型紧密相连。
 
 Features
 --------
@@ -61,6 +64,58 @@ nix-channel --update
 
 # Get Crush in a Nix shell.
 nix-shell -p '(import <nur> { pkgs = import <nixpkgs> {}; }).repos.charmbracelet.crush'
+
+### NixOS & Home Manager Module Usage via NUR
+
+Crush provides NixOS and Home Manager modules via NUR. You can use these modules directly in your flake by importing them from NUR. Since it auto detects whether its a home manager or nixos context you can use the import the exact same way :)
+
+{
+  inputs \= {
+    nixpkgs.url \= "github:NixOS/nixpkgs/nixos-unstable";
+    nur.url \= "github:nix-community/NUR";
+  };
+
+  outputs \= { self, nixpkgs, nur, ... }: {
+    nixosConfigurations.your-hostname \= nixpkgs.lib.nixosSystem {
+      system \= "x86\_64-linux";
+      modules \= \[
+        nur.modules.nixos.default
+        nur.repos.charmbracelet.modules.crush
+        {
+          programs.crush \= {
+            enable \= true;
+            settings \= {
+              providers \= {
+                openai \= {
+                  id \= "openai";
+                  name \= "OpenAI";
+                  base\_url \= "https://api.openai.com/v1";
+                  type \= "openai";
+                  api\_key \= "sk-fake123456789abcdef...";
+                  models \= \[
+                    {
+                      id \= "gpt-4";
+                      name \= "GPT-4";
+                    }
+                  \];
+                };
+              };
+              lsp \= {
+                go \= { command \= "gopls"; enabled \= true; };
+                nix \= { command \= "nil"; enabled \= true; };
+              };
+              options \= {
+                context\_paths \= \[ "/etc/nixos/configuration.nix" \];
+                tui \= { compact\_mode \= true; };
+                debug \= false;
+              };
+            };
+          };
+        }
+      \];
+    };
+  };
+}
 
 **Debian/Ubuntu**
 
@@ -117,6 +172,10 @@ OpenAI
 
 OpenRouter
 
+`CEREBRAS_API_KEY`
+
+Cerebras
+
 `GEMINI_API_KEY`
 
 Google Gemini
@@ -145,7 +204,7 @@ AWS Bedrock (Claude)
 
 AWS Bedrock (Claude)
 
-`AZURE_OPENAI_ENDPOINT`
+`AZURE_OPENAI_API_ENDPOINT`
 
 Azure OpenAI models
 
@@ -175,8 +234,8 @@ Crush runs great with no configuration. That said, if you do need or want to cus
 Configuration itself is stored as a JSON object:
 
 {
-   "this-setting": {"this": "that"},
-   "that-setting": \["ceci", "cela"\]
+  "this-setting": { "this": "that" },
+  "that-setting": \["ceci", "cela"\]
 }
 
 As an additional note, Crush also stores ephemeral data, such as application state, in one additional location:
@@ -266,6 +325,23 @@ By default, Crush will ask you for permission before running tool calls. If you'
 }
 
 You can also skip all permission prompts entirely by running Crush with the `--yolo` flag. Be very, very careful with this feature.
+
+### Attribution Settings
+
+By default, Crush adds attribution information to Git commits and pull requests it creates. You can customize this behavior with the `attribution` option:
+
+{
+  "$schema": "https://charm.land/crush.json",
+  "options": {
+    "attribution": {
+      "co\_authored\_by": true,
+      "generated\_with": true
+    }
+  }
+}
+
+-   `co_authored_by`: When true (default), adds `Co-Authored-By: Crush <crush@charm.land>` to commit messages
+-   `generated_with`: When true (default), adds `💘 Generated with Crush` line to commit messages and PR descriptions
 
 ### Local Models
 
@@ -412,13 +488,6 @@ To add specific models to the configuration, configure as such:
   }
 }
 
-A Note on Claude Max and GitHub Copilot
----------------------------------------
-
-Crush only supports model providers through official, compliant APIs. We do not support or endorse any methods that rely on personal Claude Max and GitHub Copilot accounts or OAuth workarounds, which may violate Anthropic and Microsoft’s Terms of Service.
-
-We’re committed to building sustainable, trusted integrations with model providers. If you’re a provider interested in working with us, reach out.
-
 Logging
 -------
 
@@ -445,6 +514,57 @@ Want more logging? Run `crush` with the `--debug` flag, or enable it in the conf
   }
 }
 
+Disabling Provider Auto-Updates
+-------------------------------
+
+By default, Crush automatically checks for the latest and greatest list of providers and models from Catwalk, the open source Crush provider database. This means that when new providers and models are available, or when model metadata changes, Crush automatically updates your local configuration.
+
+For those with restricted internet access, or those who prefer to work in air-gapped environments, this might not be want you want, and this feature can be disabled.
+
+To disable automatic provider updates, set `disable_provider_auto_update` into your `crush.json` config:
+
+{
+  "$schema": "https://charm.land/crush.json",
+  "options": {
+    "disable\_provider\_auto\_update": true
+  }
+}
+
+Or set the `CRUSH_DISABLE_PROVIDER_AUTO_UPDATE` environment variable:
+
+export CRUSH\_DISABLE\_PROVIDER\_AUTO\_UPDATE=1
+
+### Manually updating providers
+
+Manually updating providers is possible with the `crush update-providers` command:
+
+# Update providers remotely from Catwalk.
+crush update-providers
+
+# Update providers from a custom Catwalk base URL.
+crush update-providers https://example.com/
+
+# Update providers from a local file.
+crush update-providers /path/to/local-providers.json
+
+# Reset providers to the embedded version, embedded at crush at build time.
+crush update-providers embedded
+
+# For more info:
+crush update-providers --help
+
+A Note on Claude Max and GitHub Copilot
+---------------------------------------
+
+Crush only supports model providers through official, compliant APIs. We do not support or endorse any methods that rely on personal Claude Max and GitHub Copilot accounts or OAuth workarounds, which violate Anthropic and Microsoft’s Terms of Service.
+
+We’re committed to building sustainable, trusted integrations with model providers. If you’re a provider interested in working with us, reach out.
+
+Contributing
+------------
+
+See the contributing guide.
+
 Whatcha think?
 --------------
 
@@ -454,6 +574,7 @@ We’d love to hear your thoughts on this project. Need help? We gotchu. You can
 -   Discord
 -   Slack
 -   The Fediverse
+-   Bluesky
 
 License
 -------

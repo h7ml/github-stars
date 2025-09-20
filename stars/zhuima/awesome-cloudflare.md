@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 11833
+stars: 11922
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -667,6 +667,14 @@ cf-vps-monitor
 https://vps-monitor.abo-vendor289.workers.dev/
 
 维护中
+
+deploy-mcp
+
+为AI助手提供的通用部署跟踪器，支持实时状态徽章和部署监控，包括对 Cloudflare Pages 的支持。
+
+https://deploy-mcp.io
+
+有效中
 
 文章
 ==

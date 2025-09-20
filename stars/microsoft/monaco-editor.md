@@ -1,6 +1,6 @@
 ---
 project: monaco-editor
-stars: 43774
+stars: 44046
 description: A browser based code editor
 url: https://github.com/microsoft/monaco-editor
 ---
@@ -29,7 +29,7 @@ You will get:
 -   inside `/esm`: ESM version of the editor (compatible with e.g. webpack)
 -   `monaco.d.ts`: this specifies the API of the editor (this is what is actually versioned, everything else is considered private and might break with any release).
 
-The monaco editor also ships an `AMD` build for backwards-compatibility reasons, but the `AMD` support is deprecated and will be removed in future versions.
+⚠️ The monaco editor also ships an `AMD` build for backwards-compatibility reasons, but the `AMD` support is deprecated and will be removed in future versions.
 
 Concepts
 --------

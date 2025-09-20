@@ -1,6 +1,6 @@
 ---
 project: docker-android
-stars: 12723
+stars: 12878
 description: Android in docker solution with noVNC supported and video recording
 url: https://github.com/budtmo/docker-android
 ---
@@ -190,7 +190,7 @@ Microsoft - Advanced settings configuration in WSL
     sudo usermod -a -G kvm ${USER}
     ```
     
-2.  Add necessary flags to `/etc/wsl2.conf` to their respective sections.
+2.  Add necessary flags to `/etc/wsl.conf` to their respective sections.
     
     ```
     [boot]

@@ -1,6 +1,6 @@
 ---
 project: just
-stars: 27410
+stars: 27740
 description: 🤖 Just a command runner
 url: https://github.com/casey/just
 ---
@@ -574,7 +574,9 @@ Features
 
 ### The Default Recipe
 
-When `just` is invoked without a recipe, it runs the first recipe in the `justfile`. This recipe might be the most frequently run command in the project, like running the tests:
+When `just` is invoked without a recipe, it runs the recipe with the `[default]` attribute, or the first recipe in the `justfile` if no recipe has the `[default]` attribute.
+
+This recipe might be the most frequently run command in the project, like running the tests:
 
 test:
   cargo test
@@ -1830,6 +1832,12 @@ Require confirmation prior to executing recipe.
 recipe
 
 Require confirmation prior to executing recipe with a custom prompt.
+
+`[default]`master
+
+recipe
+
+Use recipe as module's default recipe.
 
 `[doc(DOC)]`1.27.0
 

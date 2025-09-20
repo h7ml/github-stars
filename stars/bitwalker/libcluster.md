@@ -1,6 +1,6 @@
 ---
 project: libcluster
-stars: 2084
+stars: 2093
 description: Automatic cluster formation/healing for Elixir applications
 url: https://github.com/bitwalker/libcluster
 ---

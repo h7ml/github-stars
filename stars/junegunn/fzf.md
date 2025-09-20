@@ -1,12 +1,19 @@
 ---
 project: fzf
-stars: 73351
+stars: 73869
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
 
 Special thanks to:  
-  
+
+### Tuple, the premier screen sharing app for developers
+
+Available for MacOS & Windows  
+
+* * *
+
+Special thanks to:  
 
 ### Warp, the intelligent terminal for developers
 
@@ -23,10 +30,10 @@ It's an interactive filter program for any kind of list; files, command history,
 Highlights
 ----------
 
--   📦 **Portable** — Distributed as a single binary for easy installation
--   ⚡ **Blazingly fast** — Highly optimized code instantly processes millions of items
--   🛠️ **Extremely versatile** — Fully customizable via an event-action binding mechanism
--   🔋 **Batteries included** — Includes integration with bash, zsh, fish, Vim, and Neovim
+-   **Portable** — Distributed as a single binary for easy installation
+-   **Fast** — Optimized to process millions of items instantly
+-   **Versatile** — Fully customizable through an event-action binding mechanism
+-   **All-inclusive** — Comes with integrations for Bash, Zsh, Fish, Vim, and Neovim
 
 Table of Contents
 -----------------

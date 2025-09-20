@@ -1,6 +1,6 @@
 ---
 project: lazydocker
-stars: 45857
+stars: 46273
 description: The lazier way to manage everything docker
 url: https://github.com/jesseduffield/lazydocker
 ---
@@ -8,7 +8,8 @@ url: https://github.com/jesseduffield/lazydocker
 Special thanks to:  
   
 
-**Warp is a modern, Rust-based terminal with AI built in so you and your team can build great software, faster.**
+**Warp, the intelligent terminal**  
+**Available for MacOS and Linux**  
 
 Visit warp.dev to learn more.
 
@@ -16,7 +17,13 @@ Visit warp.dev to learn more.
 
 * * *
 
-**I (Jesse) co-founded Subble to save your company time and money by helping you manage its software subscriptions. Check it out!**  
+**Tuple, the premier screen sharing app for developers on macOS and Windows.**  
+
+* * *
+
+  
+
+**I (Jesse) co-founded Subble to save your company time and money by finding unused and over-provisioned SaaS licences. Check it out!**  
 
 * * *
 

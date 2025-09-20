@@ -1,6 +1,6 @@
 ---
 project: chatterbox
-stars: 10473
+stars: 13148
 description: SoTA open-source TTS
 url: https://github.com/resemble-ai/chatterbox
 ---
@@ -10,16 +10,17 @@ Chatterbox TTS
 
 \_Made with ♥️ by
 
-We're excited to introduce Chatterbox, Resemble AI's first production-grade open source TTS model. Licensed under MIT, Chatterbox has been benchmarked against leading closed-source systems like ElevenLabs, and is consistently preferred in side-by-side evaluations.
+We're excited to introduce **Chatterbox Multilingual**, Resemble AI's first production-grade open source TTS model supporting **23 languages** out of the box. Licensed under MIT, Chatterbox has been benchmarked against leading closed-source systems like ElevenLabs, and is consistently preferred in side-by-side evaluations.
 
-Whether you're working on memes, videos, games, or AI agents, Chatterbox brings your content to life. It's also the first open source TTS model to support **emotion exaggeration control**, a powerful feature that makes your voices stand out. Try it now on our Hugging Face Gradio app.
+Whether you're working on memes, videos, games, or AI agents, Chatterbox brings your content to life across languages. It's also the first open source TTS model to support **emotion exaggeration control** with robust **multilingual zero-shot voice cloning**. Try the english only version now on our English Hugging Face Gradio app.. Or try the multilingual version on our Multilingual Hugging Face Gradio app..
 
 If you like the model but need to scale or tune it for higher accuracy, check out our competitively priced TTS service (link). It delivers reliable performance with ultra-low latency of sub 200ms—ideal for production use in agents, applications, or interactive media.
 
 Key Details
 ===========
 
--   SoTA zeroshot TTS
+-   Multilingual, zero-shot TTS supporting 23 languages
+-   SoTA zeroshot English TTS
 -   0.5B Llama backbone
 -   Unique exaggeration/intensity control
 -   Ultra-stable with alignment-informed inference
@@ -28,12 +29,18 @@ Key Details
 -   Easy voice conversion script
 -   Outperforms ElevenLabs
 
+Supported Languages
+===================
+
+Arabic (ar) • Danish (da) • German (de) • Greek (el) • English (en) • Spanish (es) • Finnish (fi) • French (fr) • Hebrew (he) • Hindi (hi) • Italian (it) • Japanese (ja) • Korean (ko) • Malay (ms) • Dutch (nl) • Norwegian (no) • Polish (pl) • Portuguese (pt) • Russian (ru) • Swedish (sv) • Swahili (sw) • Turkish (tr) • Chinese (zh)
+
 Tips
 ====
 
 -   **General Use (TTS and Voice Agents):**
     
-    -   The default settings (`exaggeration=0.5`, `cfg_weight=0.5`) work well for most prompts.
+    -   Ensure that the reference clip matches the specified language tag. Otherwise, language transfer outputs may inherit the accent of the reference clip’s language. To mitigate this, set `cfg_weight` to `0`.
+    -   The default settings (`exaggeration=0.5`, `cfg_weight=0.5`) work well for most prompts across all languages.
     -   If the reference speaker has a fast speaking style, lowering `cfg_weight` to around `0.3` can improve pacing.
 -   **Expressive or Dramatic Speech:**
     
@@ -54,19 +61,32 @@ git clone https://github.com/resemble-ai/chatterbox.git
 cd chatterbox
 pip install -e .
 
-We developed and tested Chatterbox on Python 3.11 on Debain 11 OS; the versions of the dependencies are pinned in `pyproject.toml` to ensure consistency. You can modify the code or dependencies in this installation mode.
+We developed and tested Chatterbox on Python 3.11 on Debian 11 OS; the versions of the dependencies are pinned in `pyproject.toml` to ensure consistency. You can modify the code or dependencies in this installation mode.
 
 Usage
 =====
 
 import torchaudio as ta
 from chatterbox.tts import ChatterboxTTS
+from chatterbox.mtl\_tts import ChatterboxMultilingualTTS
 
+\# English example
 model \= ChatterboxTTS.from\_pretrained(device\="cuda")
 
 text \= "Ezreal and Jinx teamed up with Ahri, Yasuo, and Teemo to take down the enemy's Nexus in an epic late-game pentakill."
 wav \= model.generate(text)
-ta.save("test-1.wav", wav, model.sr)
+ta.save("test-english.wav", wav, model.sr)
+
+\# Multilingual examples
+multilingual\_model \= ChatterboxMultilingualTTS.from\_pretrained(device\=device)
+
+french\_text \= "Bonjour, comment ça va? Ceci est le modèle de synthèse vocale multilingue Chatterbox, il prend en charge 23 langues."
+wav\_french \= multilingual\_model.generate(spanish\_text, language\_id\="fr")
+ta.save("test-french.wav", wav\_french, model.sr)
+
+chinese\_text \= "你好，今天天气真不错，希望你有一个愉快的周末。"
+wav\_chinese \= multilingual\_model.generate(chinese\_text, language\_id\="zh")
+ta.save("test-chinese.wav", wav\_chinese, model.sr)
 
 \# If you want to synthesize with a different voice, specify the audio prompt
 AUDIO\_PROMPT\_PATH \= "YOUR\_FILE.wav"
@@ -74,11 +94,6 @@ wav \= model.generate(text, audio\_prompt\_path\=AUDIO\_PROMPT\_PATH)
 ta.save("test-2.wav", wav, model.sr)
 
 See `example_tts.py` and `example_vc.py` for more examples.
-
-Supported Lanugage
-==================
-
-Currenlty only English.
 
 Acknowledgements
 ================

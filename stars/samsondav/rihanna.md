@@ -1,6 +1,6 @@
 ---
 project: rihanna
-stars: 450
+stars: 451
 description: Rihanna is a high performance postgres-backed job queue for Elixir
 url: https://github.com/samsondav/rihanna
 ---

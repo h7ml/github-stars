@@ -1,6 +1,6 @@
 ---
 project: quiver
-stars: 3309
+stars: 3321
 description: A modern commutative diagram editor for the web.
 url: https://github.com/varkor/quiver
 ---
@@ -10,9 +10,11 @@ quiver: a modern commutative diagram editor
 
 **quiver** is a modern, graphical editor for commutative and pasting diagrams, capable of rendering high-quality diagrams for screen viewing, and exporting to LaTeX via tikz-cd.
 
-Creating and modifying diagrams with **quiver** is orders of magnitude faster than writing the equivalent LaTeX by hand and, with a little experience, competes with pen-and-paper.
+Creating and modifying diagrams with **quiver** is orders of magnitude faster than writing the equivalent LaTeX by hand and, with a little experience, competes with pen-and-paper. To learn how to use **quiver** efficiently, see the tutorial.
 
 Try **quiver** out: q.uiver.app
+
+For tips on using **quiver** (including how to create and modify diagrams entirely using the keyboard), see the **quiver** tutorial.
 
 Features & screenshots
 ----------------------
@@ -44,20 +46,6 @@ When you export diagrams to LaTeX, **quiver** will embed a link to the diagram, 
 -   Panning and zooming, for large diagrams.
 -   Smart label alignment and edge offset.
 
-Importing macros and colours
-----------------------------
-
-To use custom macros and colours in **quiver**, create a file containing the definitions, like the following.
-
-\\newcommand{\\cat}{\\mathscr}
-\\newcommand{\\psh}{\\widehat}
-\\newcommand{\\smcat}{\\mathbb}
-\\newcommand{\\yo}{よ}
-
-Upload the file to a publicly accessible URL (for instance, gist.github.com), and paste the URL for the raw text into the "Macros" input at the bottom of **quiver**.
-
-Currently, macros may be defined using `\newcommand`, `\newcommand*`, `\renewcommand`, `\renewcommand*`, `\DeclareMathOperator`, and `\DeclareMathOperator*`; and colours may be defined using `\definecolor` (using the colour modes: `rgb`, `RGB`, `HTML`, `gray`).
-
 Editor integration
 ------------------
 
@@ -85,6 +73,7 @@ Thanks to
 
 -   S. C. Steenkamp, for helpful discussions regarding the aesthetic rendering of arrows.
 -   AndréC, for the custom TikZ style for curves of a fixed height.
+-   Andrew Stacey, for the custom TikZ style for shortened curves.
 -   Nathan Corbyn, for adding the ability to export embeddable diagrams to HTML.
 -   Paolo Brasolin, for adding offline support.
 -   Carl Davidson, for discussing and prototyping loop rendering.

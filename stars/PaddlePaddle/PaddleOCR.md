@@ -1,7 +1,7 @@
 ---
 project: PaddleOCR
-stars: 53186
-description: Awesome multilingual OCR and Document Parsing toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)
+stars: 55160
+description: Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 80+ languages.
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
 
@@ -332,8 +332,8 @@ print(chat\_result)
 -   Huawei Ascend
 -   KUNLUNXIN
 
-More Features
--------------
+🧩 More Features
+----------------
 
 -   Convert models to ONNX format: Obtaining ONNX Models.
 -   Accelerate inference using engines like OpenVINO, ONNX Runtime, TensorRT, or perform inference using ONNX format models: High-Performance Inference.
@@ -349,6 +349,11 @@ More Features
 
 🔄 Quick Overview of Execution Results
 --------------------------------------
+
+✨ Stay Tuned
+------------
+
+⭐ **Star this repository to keep up with exciting updates and new releases, including powerful OCR and document parsing capabilities!** ⭐
 
 👩‍👩‍👧‍👦 Community
 ---------------------

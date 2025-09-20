@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 14288
+stars: 14425
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -73,21 +73,18 @@ pyo3 = { version = "0.26.0", features = \["extension-module"\] }
 
 **`src/lib.rs`**
 
-use pyo3::prelude::\*;
-
-/// Formats the sum of two numbers as string.
-#\[pyfunction\]
-fn sum\_as\_string(a: usize, b: usize) -> PyResult<String\> {
-    Ok((a + b).to\_string())
-}
-
-/// A Python module implemented in Rust. The name of this function must match
+/// A Python module implemented in Rust. The name of this module must match
 /// the \`lib.name\` setting in the \`Cargo.toml\`, else Python will not be able to
 /// import the module.
-#\[pymodule\]
-fn string\_sum(m: &Bound<'\_, PyModule\>) -> PyResult<()\> {
-    m.add\_function(wrap\_pyfunction!(sum\_as\_string, m)?)?;
-    Ok(())
+#\[pyo3::pymodule\]
+mod string\_sum {
+  use pyo3::prelude::\*;
+
+  /// Formats the sum of two numbers as string.
+  #\[pyfunction\]
+  fn sum\_as\_string(a: usize, b: usize) -> PyResult<String\> {
+    Ok((a + b).to\_string())
+  }
 }
 
 Finally, run `maturin develop`. This will build the package and install it into the Python virtualenv previously created and activated. The package is then ready to be used from `python`:

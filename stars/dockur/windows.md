@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 38104
+stars: 45861
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -104,7 +104,7 @@ Windows 11 LTSC
 
 Windows 11 Enterprise
 
-4.0 GB
+5.3 GB
 
 `10`
 
@@ -158,13 +158,13 @@ Windows 2000 Professional
 
 Windows Server 2025
 
-5.6 GB
+6.7 GB
 
 `2022`
 
 Windows Server 2022
 
-4.7 GB
+6.0 GB
 
 `2019`
 
@@ -218,7 +218,7 @@ environment:
 
 Tip
 
-This can also be used to resize the existing disk to a larger capacity without any data loss.
+This can also be used to resize the existing disk to a larger capacity without any data loss. However you will need to manually extend the disk partition since the added disk space will appear as unallocated.
 
 ### How do I share files with the host?
 
@@ -483,9 +483,6 @@ You can use qemus/qemu in that case.
 ### Is this project legal?
 
 Yes, this project contains only open-source code and does not distribute any copyrighted material. Any product keys found in the code are just generic placeholders provided by Microsoft for trial purposes. So under all applicable laws, this project will be considered legal.
-
-Stars 🌟
---------
 
 Disclaimer ⚖️
 -------------

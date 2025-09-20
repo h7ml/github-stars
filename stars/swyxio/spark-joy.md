@@ -1,6 +1,6 @@
 ---
 project: spark-joy
-stars: 9635
+stars: 9638
 description: ✨😂 2000+ ways to add design flair, user delight, and whimsy to your product.
 url: https://github.com/swyxio/spark-joy
 ---
@@ -2109,6 +2109,7 @@ Pure CSS Tricks
     
 -   frosted glass sticky header https://www.joshwcomeau.com/css/backdrop-filter/
     
+    -   note that apple has a private css property: `-apple-visual-effect: -apple-system-glass-material`
 -   glassy glassmorphism codepen, in context
     
     .blur-and-rotate {

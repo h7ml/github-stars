@@ -1,11 +1,11 @@
 ---
 project: git.limo
-stars: 503
+stars: 504
 description: A Git source code management tool powered by Elixir with easy installation & high extensibility.
 url: https://github.com/redrabbit/git.limo
 ---
 
-Git.limo
+git.limo
 ========
 
 A Git source code management tool written in Elixir.
@@ -19,14 +19,12 @@ A Git source code management tool written in Elixir.
 -   Code reviews.
 -   Continuous integration.
 
-See the Getting Started guide and the online documentation.
-
 Install dependencies
 --------------------
 
 First, ensure you have libgit2 installed on your system:
 
-#### OSX
+#### Mac OS
 
 brew install libgit2
 
@@ -75,5 +73,3 @@ Run server
 Finally, start both HTTP (port 4000) and SSH (port 8989) endpoints:
 
 mix phx.server
-
-* * *

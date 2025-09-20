@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 56971
+stars: 59005
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -17,7 +17,7 @@ Available for MacOS, Linux, & Windows
 
 ### Easily fine-tune 100+ large language models with zero-code CLI and Web UI
 
-👋 Join our WeChat group, NPU user group or Alaya NeW user group.
+👋 Join our WeChat, NPU, Lab4AI, LLaMA Factory Online user group.
 
 \[ English | 中文 \]
 
@@ -33,6 +33,8 @@ Choose your path:
 -   **Local machine**: Please refer to usage
 -   **PAI-DSW (free trial)**: https://gallery.pai-ml.com/#/preview/deepLearning/nlp/llama\_factory
 -   **Alaya NeW (cloud GPU deal)**: https://docs.alayanew.com/docs/documents/useGuide/LLaMAFactory/mutiple/?utm\_source=LLaMA-Factory
+-   **Official Course**: https://www.lab4ai.cn/course/detail?id=7c13e60f6137474eb40f6fd3983c0f46&utm\_source=LLaMA-Factory
+-   **LLaMA Factory Online**: https://www.llamafactory.com.cn/?utm\_source=LLaMA-Factory
 
 Note
 
@@ -53,6 +55,7 @@ Table of Contents
     -   Data Preparation
     -   Quickstart
     -   Fine-Tuning with LLaMA Board GUI
+    -   LLaMA Factory Online
     -   Build Docker
     -   Deploy with OpenAI-style API and vLLM
     -   Download from ModelScope Hub
@@ -93,14 +96,15 @@ Llama 3 / GLM-4 / Mistral Small / PaliGemma2 / Llama 4
 Blogs
 -----
 
+-   💡 Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
+-   Fine-tune a mental health LLM using LLaMA-Factory (Chinese)
 -   Fine-tune GPT-OSS for Role-Playing using LLaMA-Factory (Chinese)
--   Fine-tune Llama3.1-70B for Medical Diagnosis using LLaMA-Factory (Chinese)
 -   A One-Stop Code-Free Model Reinforcement Learning and Deployment Platform based on LLaMA-Factory and EasyR1 (Chinese)
 -   How Apoidea Group enhances visual information extraction from banking documents with multimodal models using LLaMA-Factory on Amazon SageMaker HyperPod (English)
--   Easy Dataset × LLaMA Factory: Enabling LLMs to Efficiently Learn Domain Knowledge (English)
 
 All Blogs
 
+-   Fine-tune Llama3.1-70B for Medical Diagnosis using LLaMA-Factory (Chinese)
 -   Fine-tune Qwen2.5-VL for Autonomous Driving using LLaMA-Factory (Chinese)
 -   LLaMA Factory: Fine-tuning the DeepSeek-R1-Distill-Qwen-7B Model for News Classifier (Chinese)
 -   A One-Stop Code-Free Model Fine-Tuning & Deployment Platform based on SageMaker and LLaMA-Factory (Chinese)
@@ -333,7 +337,7 @@ GLM-4.1V
 
 glm4v
 
-GLM-4.5/GLM-4.5V\*
+GLM-4.5/GLM-4.5V
 
 106B/355B
 
@@ -453,7 +457,7 @@ MiMo
 
 mimo
 
-MiniCPM
+MiniCPM 1-4.1
 
 0.5B/1B/2B/4B/8B
 
@@ -531,9 +535,9 @@ Qwen (1-2.5) (Code/Math/MoE/QwQ)
 
 qwen
 
-Qwen3 (MoE/Instruct/Thinking)
+Qwen3 (MoE/Instruct/Thinking/Next)
 
-0.6B/1.7B/4B/8B/14B/32B/235B
+0.6B/1.7B/4B/8B/14B/32B/80B/235B
 
 qwen3/qwen3\_nothink
 
@@ -555,11 +559,11 @@ Qwen2-VL/Qwen2.5-VL/QVQ
 
 qwen2\_vl
 
-Seed Coder
+Seed (OSS/Coder)
 
-8B
+8B/36B
 
-seed\_coder
+seed\_oss/seed\_coder
 
 Skywork o1
 
@@ -764,6 +768,11 @@ Pre-training datasets
 -   SkyPile (zh)
 -   FineWeb (en)
 -   FineWeb-Edu (en)
+-   CCI3-HQ (zh)
+-   CCI3-Data (zh)
+-   CCI4.0-M2-Base-v1 (en&zh)
+-   CCI4.0-M2-CoT-v1 (en&zh)
+-   CCI4.0-M2-Extra-v1 (en&zh)
 -   The Stack (en)
 -   StarCoder (en)
 
@@ -799,6 +808,7 @@ Supervised fine-tuning datasets
 -   ShareGPT Hyperfiltered (en)
 -   ShareGPT4 (en&zh)
 -   UltraChat 200k (en)
+-   Infinity Instruct (zh)
 -   AgentInstruct (en)
 -   LMSYS Chat 1M (en)
 -   Evol Instruct V2 (en)
@@ -1217,6 +1227,10 @@ Read FAQs first if you encounter any problems.
 ### Fine-Tuning with LLaMA Board GUI (powered by Gradio)
 
 llamafactory-cli webui
+
+### LLaMA Factory Online
+
+Read our documentation.
 
 ### Build Docker
 

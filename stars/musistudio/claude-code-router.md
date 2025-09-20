@@ -1,16 +1,13 @@
 ---
 project: claude-code-router
-stars: 15977
+stars: 18097
 description: Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 url: https://github.com/musistudio/claude-code-router
 ---
 
-Claude Code Router
-==================
+* * *
 
 I am seeking funding support for this project to better sustain its development. If you have any ideas, feel free to reach out to me: m@musiiot.top
-
-中文版
 
 > A powerful tool to route Claude Code requests to different models and customize any request.
 
@@ -317,6 +314,7 @@ Transformers allow you to modify the request and response payloads to ensure com
 -   `enhancetool`: Adds a layer of error tolerance to the tool call parameters returned by the LLM (this will cause the tool call information to no longer be streamed).
 -   `cleancache`: Clears the `cache_control` field from requests.
 -   `vertex-gemini`: Handles the Gemini API using Vertex authentication.
+-   `chutes-glm` Unofficial support for GLM 4.5 model via Chutes chutes-glm-transformer.js.
 -   `qwen-cli` (experimental): Unofficial support for qwen3-coder-plus model via Qwen CLI qwen-cli.js.
 -   `rovo-cli` (experimental): Unofficial support for gpt-5 via Atlassian Rovo Dev CLI rovo-cli.js.
 
@@ -340,13 +338,21 @@ You can also create your own transformers and load them via the `transformers` f
 The `Router` object defines which model to use for different scenarios:
 
 -   `default`: The default model for general tasks.
+    
 -   `background`: A model for background tasks. This can be a smaller, local model to save costs.
+    
 -   `think`: A model for reasoning-heavy tasks, like Plan Mode.
+    
 -   `longContext`: A model for handling long contexts (e.g., > 60K tokens).
+    
 -   `longContextThreshold` (optional): The token count threshold for triggering the long context model. Defaults to 60000 if not specified.
+    
 -   `webSearch`: Used for handling web search tasks and this requires the model itself to support the feature. If you're using openrouter, you need to add the `:online` suffix after the model name.
-
-You can also switch models dynamically in Claude Code with the `/model` command: `/model provider_name,model_name` Example: `/model openrouter,anthropic/claude-3.5-sonnet`
+    
+-   `image` (beta): Used for handling image-related tasks (supported by CCR’s built-in agent). If the model does not support tool calling, you need to set the `config.forceUseImageAgent` property to `true`.
+    
+-   You can also switch models dynamically in Claude Code with the `/model` command: `/model provider_name,model_name` Example: `/model openrouter,anthropic/claude-3.5-sonnet`
+    
 
 #### Custom Router
 
@@ -543,5 +549,16 @@ A huge thank you to all our sponsors for their generous support!
 -   @qierkang
 -   @\*军
 -   @snrise-z
+-   @\*王
+-   @greatheart1000
+-   @\*王
+-   @zcutlip
+-   @Peng-YM
+-   @\*更
+-   @\*.
+-   @F\*t
+-   @\*政
+-   @\*铭
+-   @\*叶
 
 (If your name is masked, please contact me via my homepage email to update it with your GitHub username.)

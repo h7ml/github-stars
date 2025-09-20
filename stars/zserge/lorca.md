@@ -1,6 +1,6 @@
 ---
 project: lorca
-stars: 8171
+stars: 8170
 description: Build cross-platform modern desktop apps in Go + HTML5
 url: https://github.com/zserge/lorca
 ---

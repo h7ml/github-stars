@@ -1,6 +1,6 @@
 ---
 project: prettymaps
-stars: 11812
+stars: 11832
 description: Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely
 url: https://github.com/marceloprates/prettymaps
 ---
@@ -81,7 +81,7 @@ import prettymaps
 plot \= prettymaps.plot('Stad van de Zon, Heerhugowaard, Netherlands')
 
 ```
-Fetching geodataframes took 13.14 seconds
+Fetching geodataframes took 14.43 seconds
 ```
 
 You can also choose from different "presets" (parameter combinations saved in JSON files)
@@ -96,7 +96,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 4.78 seconds
+Fetching geodataframes took 5.48 seconds
 ```
 
 Run
@@ -194,7 +194,7 @@ import prettymaps
 prettymaps.preset('default')
 
 ```
-Preset(params={'layers': {'perimeter': {}, 'streets': {'width': {'motorway': 5, 'trunk': 5, 'primary': 4.5, 'secondary': 4, 'tertiary': 3.5, 'cycleway': 3.5, 'residential': 3, 'service': 2, 'unclassified': 2, 'pedestrian': 2, 'footway': 1}}, 'waterway': {'tags': {'waterway': ['river', 'stream']}, 'width': {'river': 20, 'stream': 10}}, 'building': {'tags': {'building': True, 'landuse': 'construction'}}, 'water': {'tags': {'natural': ['water', 'bay']}}, 'sea': {}, 'forest': {'tags': {'landuse': 'forest'}}, 'green': {'tags': {'landuse': ['grass', 'orchard'], 'natural': ['island', 'wood', 'wetland'], 'leisure': 'park'}}, 'rock': {'tags': {'natural': 'bare_rock'}}, 'beach': {'tags': {'natural': 'beach'}}, 'parking': {'tags': {'amenity': 'parking', 'highway': 'pedestrian', 'man_made': 'pier'}}}, 'style': {'perimeter': {'fill': False, 'lw': 0, 'zorder': 0}, 'background': {'fc': '#F2F4CB', 'zorder': -1}, 'green': {'fc': '#8BB174', 'ec': '#2F3737', 'hatch_c': '#A7C497', 'hatch': 'ooo...', 'lw': 1, 'zorder': 1}, 'forest': {'fc': '#64B96A', 'ec': '#2F3737', 'lw': 1, 'zorder': 2}, 'water': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 99}, 'sea': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 99}, 'waterway': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 200}, 'beach': {'fc': '#FCE19C', 'ec': '#2F3737', 'hatch_c': '#d4d196', 'hatch': 'ooo...', 'lw': 1, 'zorder': 3}, 'parking': {'fc': '#F2F4CB', 'ec': '#2F3737', 'lw': 1, 'zorder': 3}, 'streets': {'fc': '#2F3737', 'ec': '#475657', 'alpha': 1, 'lw': 0, 'zorder': 4}, 'building': {'palette': ['#433633', '#FF5E5B'], 'ec': '#2F3737', 'lw': 0.5, 'zorder': 5}, 'rock': {'fc': '#BDC0BA', 'ec': '#2F3737', 'lw': 1, 'zorder': 6}}, 'circle': None, 'radius': 500})
+Preset(params={'layers': {'perimeter': {}, 'streets': {'width': {'motorway': 5, 'trunk': 5, 'primary': 4.5, 'secondary': 4, 'tertiary': 3.5, 'cycleway': 3.5, 'residential': 3, 'service': 2, 'unclassified': 2, 'pedestrian': 2, 'footway': 1}}, 'waterway': {'tags': {'waterway': ['river', 'stream']}, 'width': {'river': 20, 'stream': 10}}, 'building': {'tags': {'building': True, 'landuse': 'construction'}}, 'water': {'tags': {'natural': ['water', 'bay']}}, 'sea': {}, 'forest': {'tags': {'landuse': 'forest'}}, 'green': {'tags': {'landuse': ['grass', 'orchard'], 'natural': ['island', 'wood', 'wetland'], 'leisure': ['dog_park', 'disc_golf_course', 'garden', 'golf_course', 'park', 'pitch', 'sports_centre', 'track']}}, 'rock': {'tags': {'natural': 'bare_rock'}}, 'beach': {'tags': {'natural': 'beach'}}, 'parking': {'tags': {'amenity': 'parking', 'highway': 'pedestrian', 'man_made': 'pier'}}}, 'style': {'perimeter': {'fill': False, 'lw': 0, 'zorder': 0}, 'background': {'fc': '#F2F4CB', 'zorder': -1}, 'green': {'fc': '#8BB174', 'ec': '#2F3737', 'hatch_c': '#A7C497', 'hatch': 'ooo...', 'lw': 1, 'zorder': 1}, 'forest': {'fc': '#64B96A', 'ec': '#2F3737', 'lw': 1, 'zorder': 2}, 'water': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 99}, 'sea': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 99}, 'waterway': {'fc': '#a8e1e6', 'ec': '#2F3737', 'hatch_c': '#9bc3d4', 'hatch': 'ooo...', 'lw': 1, 'zorder': 200}, 'beach': {'fc': '#FCE19C', 'ec': '#2F3737', 'hatch_c': '#d4d196', 'hatch': 'ooo...', 'lw': 1, 'zorder': 3}, 'parking': {'fc': '#F2F4CB', 'ec': '#2F3737', 'lw': 1, 'zorder': 3}, 'streets': {'fc': '#2F3737', 'ec': '#475657', 'alpha': 1, 'lw': 0, 'zorder': 4}, 'building': {'palette': ['#433633', '#FF5E5B'], 'ec': '#2F3737', 'lw': 0.5, 'zorder': 5}, 'rock': {'fc': '#BDC0BA', 'ec': '#2F3737', 'lw': 1, 'zorder': 6}}, 'circle': None, 'radius': 500})
 ```
 
 Insted of using the default configuration you can customize several parameters. The most important are:
@@ -343,7 +343,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 27.07 seconds
+Fetching geodataframes took 20.74 seconds
 ```
 
 In order to plot an entire region and not just a rectangular or circular area, set
@@ -357,7 +357,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 11.25 seconds
+Fetching geodataframes took 14.80 seconds
 ```
 
 You can access layers's GeoDataFrames directly like this:
@@ -369,7 +369,7 @@ plot \= prettymaps.plot('Centro Histórico, Porto Alegre', show \= False)
 plot.geodataframes\['building'\]
 
 ```
-Fetching geodataframes took 12.99 seconds
+Fetching geodataframes took 14.56 seconds
 ```
 
 <style scoped> .dataframe tbody tr th:only-of-type { vertical-align: middle; }
@@ -404,11 +404,13 @@ operator
 
 website
 
-historic
+check\_date
 
 ...
 
-contact:website
+payment:lightning\_contactless
+
+payment:onchain
 
 bus
 
@@ -416,13 +418,11 @@ smoothness
 
 inscription
 
-ways
+type
 
 boat
 
 name:fr
-
-type
 
 building:part
 
@@ -430,7 +430,7 @@ architect
 
 (node, 2407915698)
 
-POINT (-51.23212 -30.03670)
+POINT (-51.23212 -30.0367)
 
 NaN
 
@@ -472,9 +472,29 @@ NaN
 
 NaN
 
-(way, 126665330)
+(relation, 2798271)
 
-POLYGON ((-51.23518 -30.03275, -51.23512 -30.0...
+POLYGON ((-51.23097 -30.03377, -51.2309 -30.03...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+Praça Marechal Deodoro
+
+NaN
+
+NaN
+
+https://www.estado.rs.gov.br/
+
+NaN
+
+...
 
 NaN
 
@@ -482,11 +502,211 @@ NaN
 
 NaN
 
-387
+NaN
+
+NaN
+
+multipolygon
+
+NaN
+
+Palais Piratini
+
+NaN
+
+NaN
+
+(relation, 2895718)
+
+POLYGON ((-51.23445 -30.03076, -51.23441 -30.0...
+
+NaN
+
+NaN
+
+NaN
+
+736
 
 Rua dos Andradas
 
-place\_of\_worship
+arts\_centre
+
+NaN
+
+https://www.ccmq.com.br/
+
+NaN
+
+...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+multipolygon
+
+NaN
+
+NaN
+
+no
+
+NaN
+
+(relation, 3532262)
+
+POLYGON ((-51.22935 -30.03693, -51.22923 -30.0...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+multipolygon
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+(relation, 3532263)
+
+POLYGON ((-51.22916 -30.037, -51.22903 -30.036...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+parking
+
+NaN
+
+NaN
+
+NaN
+
+...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+multipolygon
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+(way, 1082776706)
+
+POLYGON ((-51.22975 -30.02912, -51.22974 -30.0...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
 
 NaN
 
@@ -516,9 +736,13 @@ NaN
 
 NaN
 
-(way, 126665331)
+(way, 1082776707)
 
-POLYGON ((-51.23167 -30.03066, -51.23160 -30.0...
+POLYGON ((-51.22992 -30.02954, -51.22987 -30.0...
+
+NaN
+
+NaN
 
 NaN
 
@@ -526,7 +750,135 @@ NaN
 
 NaN
 
-1001
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+(way, 1082787655)
+
+POLYGON ((-51.22601 -30.03038, -51.22602 -30.0...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+(way, 1354523569)
+
+POLYGON ((-51.23248 -30.03341, -51.23244 -30.0...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+pharmacy
+
+NaN
+
+NaN
+
+NaN
+
+...
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+NaN
+
+(way, 1423336172)
+
+POLYGON ((-51.23399 -30.03092, -51.23389 -30.0...
+
+NaN
+
+NaN
+
+NaN
+
+788
 
 Rua dos Andradas
 
@@ -534,182 +886,6 @@ NaN
 
 NaN
 
-https://www.ruadapraiashopping.com.br/
-
-NaN
-
-...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-(way, 129176990)
-
-POLYGON ((-51.23117 -30.02891, -51.23120 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-1020
-
-Rua 7 de Setembro
-
-NaN
-
-NaN
-
-http://www.memorial.rs.gov.br
-
-NaN
-
-...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-(way, 129176991)
-
-POLYGON ((-51.23153 -30.02914, -51.23156 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-Praça da Alfândega
-
-NaN
-
-NaN
-
-https://www.margs.rs.gov.br/
-
-NaN
-
-...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-...
-
-(relation, 6760281)
-
-POLYGON ((-51.23238 -30.03337, -51.23223 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
 NaN
 
 NaN
@@ -724,195 +900,19 @@ NaN
 
 NaN
 
-\[457506887, 457506886\]
-
-NaN
-
-NaN
-
-multipolygon
-
-NaN
-
-NaN
-
-(relation, 6760282)
-
-POLYGON ((-51.23203 -30.03340, -51.23203 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-\[457506875, 457506889, 457506888\]
-
-NaN
-
-NaN
-
-multipolygon
-
-NaN
-
-NaN
-
-(relation, 6760283)
-
-POLYGON ((-51.23284 -30.03367, -51.23288 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-\[457506897, 457506896\]
-
-NaN
-
-NaN
-
-multipolygon
-
-NaN
-
-Theodor Wiederspahn
-
-(relation, 6760284)
-
-POLYGON ((-51.23499 -30.03412, -51.23498 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-NaN
-
-...
-
-NaN
-
-NaN
-
 NaN
 
 NaN
 
-\[457506910, 457506913\]
-
-NaN
-
-NaN
-
-multipolygon
-
-NaN
-
-NaN
-
-(relation, 14393526)
-
-POLYGON ((-51.23125 -30.02813, -51.23128 -30.0...
-
-NaN
-
-NaN
-
-NaN
-
-1044
-
-Rua Siqueira Campos
-
-NaN
-
-NaN
-
-https://www.sefaz.rs.gov.br
-
-NaN
-
-...
-
 NaN
 
 NaN
-
-NaN
-
-NaN
-
-\[236213286, 1081974882\]
-
-NaN
-
-NaN
-
-multipolygon
 
 NaN
 
 NaN
 
-2420 rows × 167 columns
+2415 rows × 137 columns
 
 Search a building by name and display it:
 
@@ -921,7 +921,7 @@ plot.geodataframes\['building'\]\[
 \].geometry\[0\]
 
 ```
-/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/geopandas/geoseries.py:648: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+/opt/hostedtoolcache/Python/3.12.11/x64/lib/python3.12/site-packages/geopandas/geoseries.py:772: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   val = getattr(super(), mtd)(*args, **kwargs)
 ```
 
@@ -937,7 +937,7 @@ plot \= prettymaps.plot('Porto Alegre', show \= False)
 \# Get list of buildings from plot's geodataframes dict
 buildings \= plot.geodataframes\['building'\]
 \# Project from lat / long
-buildings \= ox.project\_gdf(buildings)
+buildings \= ox.projection.project\_gdf(buildings)
 buildings \= \[b for b in buildings.geometry if b.area \> 0\]
 
 \# Draw Matplotlib mosaic of n x n building footprints
@@ -957,7 +957,7 @@ for ax,building in zip(np.concatenate(axes),buildings):
     ax.autoscale(); ax.axis('off'); ax.axis('equal')
 
 ```
-Fetching geodataframes took 12.91 seconds
+Fetching geodataframes took 16.54 seconds
 ```
 
 Access plot.ax or plot.fig to add new elements to the matplotlib plot:
@@ -980,7 +980,7 @@ plot.fig.patch.set\_facecolor('#F2F4CB')
 )
 
 ```
-Fetching geodataframes took 12.92 seconds
+Fetching geodataframes took 12.52 seconds
 ```
 
 Use **plotter** mode to export a pen plotter-compatible SVG (thanks to abey79's amazing vsketch library)
@@ -997,7 +997,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 3.91 seconds
+Fetching geodataframes took 4.82 seconds
 ```
 
 Some other examples
@@ -1013,7 +1013,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 27.11 seconds
+Fetching geodataframes took 23.53 seconds
 ```
 
 Use prettymaps.create\_preset() to create a preset:
@@ -1100,13 +1100,13 @@ plot \= prettymaps.multiplot(
 )
 
 ```
-Fetching geodataframes took 8.20 seconds
+Fetching geodataframes took 8.95 seconds
 
 
-Fetching geodataframes took 6.59 seconds
+Fetching geodataframes took 7.03 seconds
 
 
-Fetching geodataframes took 8.09 seconds
+Fetching geodataframes took 8.45 seconds
 ```
 
 Add hillshade
@@ -1127,7 +1127,7 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 47.61 seconds
+Fetching geodataframes took 37.53 seconds
 
 
 make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
@@ -1144,11 +1144,11 @@ make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM
 gdalbuildvrt -q -overwrite SRTM1.vrt cache/N21/N21W158.tif
 make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
-cp SRTM1.vrt SRTM1.65e8f0bb4b43451a865dc35dca4158a5.vrt
+cp SRTM1.vrt SRTM1.3faa36cc8cab4dfda9edabe3b5a4ddc1.vrt
 make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 make: Entering directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
-gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.65e8f0bb4b43451a865dc35dca4158a5.vrt /home/runner/work/prettymaps/prettymaps/notebooks/elevation.tif
-rm -f SRTM1.65e8f0bb4b43451a865dc35dca4158a5.vrt
+gdal_translate -q -co TILED=YES -co COMPRESS=DEFLATE -co ZLEVEL=9 -co PREDICTOR=2 -projwin -157.90125854957773 21.364471426268267 -157.81006761682832 21.244615177105388 SRTM1.3faa36cc8cab4dfda9edabe3b5a4ddc1.vrt /home/runner/work/prettymaps/prettymaps/notebooks/elevation.tif
+rm -f SRTM1.3faa36cc8cab4dfda9edabe3b5a4ddc1.vrt
 make: Leaving directory '/home/runner/work/prettymaps/prettymaps/notebooks/SRTM1'
 
 
@@ -1175,5 +1175,5 @@ plot \= prettymaps.plot(
 )
 
 ```
-Fetching geodataframes took 17.57 seconds
+Fetching geodataframes took 17.09 seconds
 ```

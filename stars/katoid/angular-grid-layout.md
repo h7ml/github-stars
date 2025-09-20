@@ -1,6 +1,6 @@
 ---
 project: angular-grid-layout
-stars: 494
+stars: 505
 description: Responsive grid with draggable and resizable items for Angular applications.
 url: https://github.com/katoid/angular-grid-layout
 ---
@@ -19,12 +19,13 @@ Features
 -   Draggable items
 -   Resizable items
 -   REDUX friendly (akita, ngrx, ngxs...)
--   Customizable Drag & Resize handles.
+-   Customizable Drag & Resize handles. Custom Handles Example
 -   3 modes of grid compaction: vertical, horizontal and free (exact same algorithm as React-Grid-Layout)
 -   Add/Remove items
 -   High performance
 -   Supports touch devices
--   Auto-scrolling while dragging
+-   Auto-scrolling while dragging. Scroll Example
+-   Multi Item mode, drag and resize more than 1 item at a time. Multi Item Drag & Resize Example
 
 Compatibility
 -------------
@@ -54,9 +55,15 @@ Demos
 
 Playground - Stackblitz
 
-Custom handles
+Custom Handles
 
-Real life example
+Real Life Example
+
+Scroll Test
+
+Row Height Fit
+
+Multi Item Drag & Resize
 
 Installation
 ------------
@@ -140,6 +147,14 @@ Here is listed the basic API of both KtdGridComponent and KtdGridItemComponent. 
  \* Defaults to null.
  \* \*/
 @Input() height: number | null \= null;
+
+/\*\*
+ \* Multiple items drag/resize
+ \* A list of selected items to move (drag or resize) together as a group.
+ \* The multi-selection of items is managed externally. By default, the library manages a single item, but if a set of item IDs is provided, the specified group will be handled as a unit."
+ \*/
+@Input()
+selectedItemsIds(): string\[\] | null;
 
 /\*\*
  \* Parent element that contains the scroll. If an string is provided it would search that element by id on the dom.

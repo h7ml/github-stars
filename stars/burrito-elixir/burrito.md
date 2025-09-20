@@ -1,6 +1,6 @@
 ---
 project: burrito
-stars: 1174
+stars: 1204
 description: Wrap your application in a BEAM Burrito!
 url: https://github.com/burrito-elixir/burrito
 ---
@@ -175,7 +175,7 @@ We support _targeting_ Windows (x86\_64) from MacOS and Linux, we _do not_ offic
 
 You must have the following installed and in your PATH:
 
--   Zig (0.14.0) -- `zig`
+-   Zig (0.15.1) -- `zig`
 -   XZ -- `xz`
 -   7z -- `7z` (For Windows Targets)
 

@@ -1,6 +1,6 @@
 ---
 project: ngx-markdown
-stars: 1147
+stars: 1149
 description: Angular markdown component/directive/pipe/service to parse static, dynamic or remote content to HTML with syntax highlight and more...
 url: https://github.com/jfcere/ngx-markdown
 ---
@@ -42,7 +42,7 @@ Installation
 
 To add ngx-markdown along with the required marked library to your `package.json` use the following commands.
 
-npm install ngx-markdown marked@^15.0.0 --save
+npm install ngx-markdown marked@^16.0.0 --save
 
 ### Syntax highlight
 
@@ -527,30 +527,76 @@ imports: \[
 
 #### Sanitization
 
-As of ngx-markdown v9.0.0 **sanitization is enabled by default** and uses Angular `DomSanitizer` with `SecurityContext.HTML` to avoid XSS vulnerabilities. The `SecurityContext` level can be changed using the `sanitize` property when configuring `MarkdownModule`.
+**Sanitization is enabled by default** and uses Angular’s `DomSanitizer` with `SecurityContext.HTML` to prevent XSS vulnerabilities. It can be disabled by changing the `SecurityContext` level using the `sanitize` property when configuring the `MarkdownModule`.
 
 ##### Using the `provideMarkdown` function
 
 import { SecurityContext } from '@angular/core';
+import { SANITIZE } from 'ngx-markdown';
 
 // enable default sanitization
 provideMarkdown()
 
-// turn off sanitization
+// disable sanitization
 provideMarkdown({
-  sanitize: SecurityContext.NONE
+  sanitize: {
+    provide: SANITIZE,
+    useValue: SecurityContext.NONE
+  },
 })
 
 ##### Using the `MarkdownModule` import
 
 import { SecurityContext } from '@angular/core';
+import { SANITIZE } from 'ngx-markdown';
 
 // enable default sanitization
 MarkdownModule.forRoot()
 
-// turn off sanitization
+// disable sanitization
 MarkdownModule.forRoot({
-  sanitize: SecurityContext.NONE
+  sanitize: {
+    provide: SANITIZE,
+    useValue: SecurityContext.NONE
+  },
+})
+
+Because Angular's sanitizer offers limited flexibility, you can use any external library for sanitization such as DOMPurify by providing a custom sanitizer function using the `SANITIZE` provider token.
+
+import DOMPurify from 'dompurify';
+import { SANITIZE } from 'ngx-markdown';
+
+// sanitize function using an external library
+function sanitizeHtml(html: string): string {
+  DOMPurify.setConfig({ ... });
+  return DOMPurify.sanitize(html);
+}
+
+// provide a sanitize function
+provideMarkdown({
+  sanitize: {
+    provide: SANITIZE,
+    useValue: sanitizeHtml,
+  },
+})
+
+##### Using the `MarkdownModule` import
+
+import DOMPurify from 'dompurify';
+import { SANITIZE } from 'ngx-markdown';
+
+// sanitize function using an external library
+function sanitizeHtml(html: string): string {
+  DOMPurify.setConfig({ ... });
+  return DOMPurify.sanitize(html);
+}
+
+// provide a sanitize function
+MarkdownModule.forRoot({
+  sanitize: {
+    provide: SANITIZE,
+    useValue: sanitizeHtml,
+  },
 })
 
 > 📘 Follow Angular DomSanitizer documentation for more information on sanitization and security contexts.

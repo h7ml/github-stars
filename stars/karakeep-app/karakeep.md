@@ -1,6 +1,6 @@
 ---
 project: karakeep
-stars: 19459
+stars: 19814
 description: A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search
 url: https://github.com/karakeep-app/karakeep
 ---
@@ -20,15 +20,18 @@ Features
 -   🔖 Chrome plugin and Firefox addon for quick bookmarking.
 -   📱 An iOS app, and an Android app.
 -   📰 Auto hoarding from RSS feeds.
--   🔌 REST API.
+-   🔌 REST API and multiple clients.
 -   🌐 Multi-language support.
 -   🖍️ Mark and store highlights from your hoarded content.
--   🗄️ Full page archival (using monolith) to protect against link rot. Auto video archiving using youtube-dl.
+-   🗄️ Full page archival (using monolith) to protect against link rot.
+-   ▶️ Auto video archiving using yt-dlp.
 -   ☑️ Bulk actions support.
 -   🔐 SSO support.
 -   🌙 Dark mode support.
 -   💾 Self-hosting first.
--   \[Planned\] Downloading the content for offline reading in the mobile app.
+-   ⬇️ Bookmark importers from Chrome, Pocket, Linkwarden, Omnivore, Tab Session Manager.
+-   🔄 Automatic sync with browser bookmarks via floccus.
+-   \[Planned\] Offline reading on mobile, semantic search across bookmarks, ...
 
 **⚠️ This app is under heavy development.**
 

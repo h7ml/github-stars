@@ -1,6 +1,6 @@
 ---
 project: map-print
-stars: 95
+stars: 96
 description: Print a map on a mug
 url: https://github.com/anvaka/map-print
 ---

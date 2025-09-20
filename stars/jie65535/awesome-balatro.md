@@ -1,6 +1,6 @@
 ---
 project: awesome-balatro
-stars: 1026
+stars: 1045
 description: A list of Balatro Mods and Tools
 url: https://github.com/jie65535/awesome-balatro
 ---
@@ -318,6 +318,7 @@ Mods (Require **Steamodded**)
 -   RNG Butter - A mod that tilts RNG somewhat in player's favour. by `@Kusoro`
 -   Ro-Balatro | discord - A fusion between Balatro and Roblox. by @AlexZGreat
 -   ror2funnyitems - Adds the funny items from Risk of Rain 2. by @aou
+-   Sculio - A vanilla-esque mod that aims to add new and faithful content to Balatro (Currently contains 45+ Jokers). by @crmykybord
 -   Seven Sins - A pack of Jokers based on the Seven Deadly Sins including 3 new challenges. by @AlexDavies8
 -   Snoresville's Turbulent Jokers - 15 Jokers (6 Common, 5 Uncommon, 3 Rare, 1 Legendary) and 7 Decks that revolve around some of the Jokers. by @Snoreville
 -   Snow's Mods - This is a Theme(s) mod that adds mult varying things to the game, There is currently (1 Theme). by @RattlingSnow353

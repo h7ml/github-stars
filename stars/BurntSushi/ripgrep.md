@@ -1,6 +1,6 @@
 ---
 project: ripgrep
-stars: 54944
+stars: 55496
 description: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 url: https://github.com/BurntSushi/ripgrep
 ---
@@ -397,12 +397,14 @@ If you're an **openSUSE** user, ripgrep is included in **openSUSE Tumbleweed** a
 $ sudo zypper install ripgrep
 ```
 
-If you're a **RHEL/CentOS 7/8** user, you can install ripgrep from copr:
+If you're a **RHEL/CentOS/Rocky Linux 9** user, you can install ripgrep from the EPEL repository:
 
 ```
-$ sudo yum install -y yum-utils
-$ sudo yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
-$ sudo yum install ripgrep
+$ sudo dnf config-manager --set-enabled crb
+$ sudo dnf install -y \
+    https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm \
+    https://dl.fedoraproject.org/pub/epel/epel-next-release-latest-9.noarch.rpm
+$ sudo dnf install -y ripgrep
 ```
 
 If you're a **Nix** user, you can install ripgrep from nixpkgs:
@@ -426,7 +428,7 @@ $ guix install ripgrep
 If you're a **Debian** user (or a user of a Debian derivative like **Ubuntu**), then ripgrep can be installed using a binary `.deb` file provided in each ripgrep release.
 
 ```
-$ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.1-1_amd64.deb
+$ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep_14.1.1-1_amd64.deb
 $ sudo dpkg -i ripgrep_14.1.1-1_amd64.deb
 ```
 

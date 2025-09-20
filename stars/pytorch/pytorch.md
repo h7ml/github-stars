@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 92794
+stars: 93297
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -221,7 +221,7 @@ git submodule update --init --recursive
 **Common**
 
 # Run this command from the PyTorch directory after cloning the source code using the “Get the PyTorch Source“ section above
-pip install -r requirements.txt
+pip install --group dev
 
 **On Linux**
 
@@ -345,7 +345,7 @@ ccmake build  # or cmake-gui build
 On macOS
 
 export CMAKE\_PREFIX\_PATH="${CONDA\_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE\_PREFIX\_PATH}"
-MACOSX\_DEPLOYMENT\_TARGET=10.9 CC=clang CXX=clang++ CMAKE\_ONLY=1 python setup.py build
+MACOSX\_DEPLOYMENT\_TARGET=11.0 CMAKE\_ONLY=1 python setup.py build
 ccmake build  # or cmake-gui build
 
 ### Docker Image

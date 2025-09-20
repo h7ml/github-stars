@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 12687
+stars: 12761
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -443,7 +443,7 @@ Qwen Team 2024
 
 Qwen3
 
-0.6B, 1.7B, 4B, 8B, 14B, 32B
+0.6B, 1.7B, 4B{Hybrid, Thinking-2507, Instruct-2507}, 8B, 14B, 32B
 
 Alibaba Group
 
@@ -451,7 +451,7 @@ Qwen Team 2025
 
 Qwen3 MoE
 
-30B, 235B
+30B{Hybrid, Thinking-2507, Instruct-2507}, 235B{Hybrid, Thinking-2507, Instruct-2507}
 
 Alibaba Group
 

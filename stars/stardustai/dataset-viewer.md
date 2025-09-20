@@ -1,7 +1,7 @@
 ---
 project: dataset-viewer
-stars: 254
-description: A sleek dataset viewer built entirely by AI Agent. Supports streaming large files from WebDAV, S3, Local or Hugging Face.
+stars: 517
+description: A sleek dataset viewer built entirely by AI Agent. Supports streaming large files from WebDAV, S3, SSH, Local or Hugging Face.
 url: https://github.com/stardustai/dataset-viewer
 ---
 
@@ -17,26 +17,21 @@ A modern, high-performance dataset viewer built with Tauri, React, and TypeScrip
 🚀 Key Features
 ---------------
 
--   ⚡ **Instant Large File Opening**: Handle 100GB+ files with virtualized rendering, no waiting time
--   🔍 **Millisecond Search**: Real-time search with highlighting, fast positioning in large files
--   📦 **Direct Archive Preview**: Browse ZIP/TAR files without extraction, streaming file browser
--   🗂️ **Native Multi-Format Support**: Optimized rendering for Parquet, Excel, CSV with syntax highlighting for JSON/YAML
--   🌐 **Multi-Source Data Access**: WebDAV servers, local files, cloud storage (OSS), HuggingFace datasets
+-   ⚡ **Instant Large File Opening**: Handle 100GB+ files with virtualized rendering
+-   🔍 **Real-time Search**: Millisecond search with highlighting across massive files
+-   📦 **Direct Archive Preview**: Browse ZIP/TAR files without extraction
+-   🌐 **Multi-Protocol Support**: WebDAV, SSH/SFTP, SMB/CIFS, S3, Local Files, HuggingFace Hub
+-   🗂️ **Multi-Format Support**: Parquet, Excel, CSV, JSON, code files with syntax highlighting
 -   🎨 **Modern Interface**: Dark/light themes, responsive design, multi-language support
 
 📚 Supported File Types
 -----------------------
 
--   **📄 Text & Code**: Plain text, JSON, YAML, XML, JavaScript, Python, Java, C/C++, Rust, Go, PHP, and more
-    
--   **📝 Documents**: **Markdown** (rendered preview), **Word Documents** (.docx/.rtf, text extraction), **PowerPoint** (.pptx, slide preview), **PDF** (viewer with text search)
-    
+-   **📄 Text & Code**: JSON, YAML, XML, JavaScript, Python, Java, C/C++, Rust, Go, PHP, etc.
+-   **📝 Documents**: Markdown (preview), Word (.docx/.rtf), PowerPoint (.pptx), PDF (searchable)
+-   **📊 Data Files**: Parquet (optimized), Excel, CSV, ODS with virtual scrolling
 -   **📦 Archives**: ZIP, TAR (streaming preview without extraction)
-    
--   **📊 Data Files**: **Parquet** (optimized), Excel, CSV, ODS with virtual scrolling for millions of rows
-    
--   **📱 Media**: Images, Videos, Audio (preview support)
-    
+-   **📱 Media**: Images, Videos, Audio files
 
 📸 Screenshots
 --------------
@@ -69,37 +64,34 @@ _Browse ZIP/TAR archives without extraction_
 ----------------------
 
 -   🤖 **100% AI-Generated**: Entire codebase created through AI assistance
--   🚀 **Native Performance**: Tauri (Rust) backend + React frontend, cross-platform support
--   🧠 **Smart Memory Management**: Chunked loading, virtual scrolling, handles millions of rows effortlessly
--   📊 **Streaming Processing**: Large file chunked transmission, compressed files without full extraction
+-   🚀 **Native Performance**: Tauri (Rust) + React, cross-platform desktop app
+-   🧠 **Smart Memory**: Chunked loading, virtual scrolling for millions of rows
+-   📊 **Streaming Architecture**: Large file chunked transmission, no full extraction needed
 
 🎯 Perfect For
 --------------
 
--   **📊 Data Scientists**: Quickly explore large datasets, Parquet files, and CSV data
--   **🔍 Log Analysis**: Search through massive log files without loading everything into memory
--   **📦 Archive Management**: Browse ZIP/TAR contents without extraction
--   **☁️ Remote Data**: Access files from WebDAV servers, cloud storage, and HuggingFace
--   **🚀 Performance Critical**: When you need instant file access and lightning-fast search
+-   **Data Scientists**: Explore large datasets, Parquet files, and CSV data
+-   **Log Analysis**: Search massive log files without memory constraints
+-   **Archive Management**: Browse compressed files without extraction
+-   **Remote Access**: Connect to WebDAV, SSH/SFTP, SMB, cloud storage, HuggingFace
+-   **Performance-Critical**: Instant file access and lightning-fast search
 
 🤝 Contributing
 ---------------
 
-We welcome contributions! Here's how you can help:
+We welcome contributions! You can help by:
 
--   🐛 **Bug Reports**: Open an issue with clear description and steps to reproduce
--   💡 **Feature Requests**: Suggest new features and explain why they would be useful
--   🔧 **Code Contributions**: Fork → Create feature branch → Make changes → Submit PR
--   📖 **Documentation**: Help improve our docs and examples
--   ⭐ **Star the project**: Show your support by starring the repository
+-   🐛 Reporting bugs with clear reproduction steps
+-   💡 Suggesting features and explaining their usefulness
+-   🔧 Submitting code: Fork → Branch → Changes → PR
+-   📖 Improving documentation and examples
+-   ⭐ Starring the repository to show support
 
 🙏 Acknowledgments
 ------------------
 
--   **🤖 AI Development**: This project showcases the power of AI-assisted development
--   **🛠 Tauri Team**: For creating an amazing framework
--   **⚛️ React Community**: For the excellent ecosystem
--   **🦀 Rust Community**: For the robust language and tools
+Thanks to the **Tauri**, **React**, and **Rust** communities for their excellent tools and frameworks. This project showcases the power of AI-assisted development.
 
 📄 License
 ----------

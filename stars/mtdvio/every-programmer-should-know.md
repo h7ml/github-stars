@@ -1,11 +1,16 @@
 ---
 project: every-programmer-should-know
-stars: 88047
+stars: 88273
 description: A collection of (mostly) technical things every software developer should know about
 url: https://github.com/mtdvio/every-programmer-should-know
 ---
 
-> _Join our community_ for professional Software Developers and get more control over your life and career!
+Special thanks to:  
+  
+
+### Tuple, the premier screen sharing app for developers
+
+Available for MacOS & Windows  
 
 * * *
 

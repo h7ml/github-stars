@@ -1,6 +1,6 @@
 ---
 project: carbon
-stars: 1281
+stars: 1522
 description: The open-source manufacturing ERP/MES/QMS. Perfect for complex assembly, HMLV, and configure to order manufacturing.
 url: https://github.com/crbnos/carbon
 ---
@@ -41,6 +41,7 @@ Features:
 -   Accounting
 -   Capacity Planning
 -   Simulation
+-   Full Roadmap
 
 Technical highlights:
 

@@ -1,6 +1,6 @@
 ---
 project: ctop
-stars: 16812
+stars: 16875
 description: Top-like interface for container metrics
 url: https://github.com/bcicen/ctop
 ---

@@ -1,6 +1,6 @@
 ---
 project: nimble_parsec
-stars: 854
+stars: 855
 description: A simple and fast library for text-based parser combinators
 url: https://github.com/dashbitco/nimble_parsec
 ---
@@ -132,6 +132,7 @@ All nimble libraries by Dashbit:
 
 -   NimbleCSV - simple and fast CSV parsing
 -   NimbleOptions - tiny library for validating and documenting high-level options
+-   NimbleOwnership - resource ownership tracking
 -   NimbleParsec - simple and fast parser combinators
 -   NimblePool - tiny resource-pool implementation
 -   NimblePublisher - a minimal filesystem-based publishing engine with Markdown support and code highlighting

@@ -1,6 +1,6 @@
 ---
 project: higgs-audio
-stars: 7077
+stars: 7318
 description: Text-audio foundation model from Boson AI
 url: https://github.com/boson-ai/higgs-audio
 ---
@@ -403,6 +403,11 @@ Higgs Audio v2 (base)
 
 55.28
 
+Contribution and Support
+------------------------
+
+For contribution and support guidelines, please see the support guidelines at SUPPORT\_GUIDELINES.md.
+
 Citation
 --------
 
@@ -422,3 +427,8 @@ Third-Party Licenses
 --------------------
 
 The `boson_multimodal/audio_processing/` directory contains code derived from third-party repositories, primarily from xcodec. Please see the `LICENSE` in that directory for complete attribution and licensing information.
+
+We Are Hiring!
+--------------
+
+If you are passionate about multimodal AI, speech/audio models, or large-scale systems, check out our open positions at Boson AI Careers.

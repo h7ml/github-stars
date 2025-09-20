@@ -1,6 +1,6 @@
 ---
 project: chisel
-stars: 14969
+stars: 15071
 description: A fast TCP/UDP tunnel over HTTP
 url: https://github.com/jpillora/chisel
 ---
@@ -403,6 +403,7 @@ Changelog
 -   `1.8` - Move to a `scratch`Docker image
 -   `1.9` - Bump to Go 1.21. Switch from `--key` seed to P256 key strings with `--key{gen,file}` (by @cmenginnz)
 -   `1.10` - Bump to Go 1.22. Add `.rpm` `.deb` and `.akp` to releases. Fix bad version comparison.
+-   `1.11` - Bump to Go 1.25.1. Update all dependencies.
 
 License
 -------

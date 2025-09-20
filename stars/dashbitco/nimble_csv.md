@@ -57,6 +57,7 @@ All nimble libraries by Dashbit:
 
 -   NimbleCSV - simple and fast CSV parsing
 -   NimbleOptions - tiny library for validating and documenting high-level options
+-   NimbleOwnership - resource ownership tracking
 -   NimbleParsec - simple and fast parser combinators
 -   NimblePool - tiny resource-pool implementation
 -   NimblePublisher - a minimal filesystem-based publishing engine with Markdown support and code highlighting

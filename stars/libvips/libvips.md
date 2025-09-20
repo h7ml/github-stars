@@ -1,6 +1,6 @@
 ---
 project: libvips
-stars: 10609
+stars: 10669
 description: A fast image processing library with low memory needs.
 url: https://github.com/libvips/libvips
 ---
@@ -135,6 +135,10 @@ If suitable versions are found, libvips will add support for the following libra
 
 Anything that is compatible with the IJG JPEG library. Use `mozjpeg` if you can. Another option is `libjpeg-turbo`.
 
+### libultrahdr (libuhdr)
+
+If present, libvips will load UltraHDR images with Google's libultrahdr library. The `pkg-config` name is libuhdr.
+
 ### libexif
 
 If available, libvips adds support for EXIF metadata in JPEG files.
@@ -151,9 +155,7 @@ The usual camera RAW loader. If this is not present, vips will try to load raw c
 
 If present, libvips will attempt to load PDFs with PDFium. Download the prebuilt pdfium binary from:
 
-```
-https://github.com/bblanchon/pdfium-binaries
-```
+https://github.com/bblanchon/pdfium-binaries/releases/latest
 
 Untar to the libvips install prefix, for example:
 
@@ -165,18 +167,19 @@ tar xf ~/pdfium-linux.tgz
 Create a `pdfium.pc` like this (update the version number):
 
 ```
-VIPSHOME=/home/john/vips
+VIPSHOME=$HOME/vips
+mkdir -p $VIPSHOME/lib/pkgconfig
 cat > $VIPSHOME/lib/pkgconfig/pdfium.pc << EOF
-     prefix=$VIPSHOME
-     exec_prefix=\${prefix}
-     libdir=\${exec_prefix}/lib
-     includedir=\${prefix}/include
-     Name: pdfium
-     Description: pdfium
-     Version: 4290
-     Requires:
-     Libs: -L\${libdir} -lpdfium
-     Cflags: -I\${includedir}
+prefix=$VIPSHOME
+exec_prefix=\${prefix}
+libdir=\${exec_prefix}/lib
+includedir=\${prefix}/include
+
+Name: pdfium
+Description: PDFium
+Version: 4290
+Libs: -L\${libdir} -lpdfium
+Cflags: -I\${includedir}
 EOF
 ```
 

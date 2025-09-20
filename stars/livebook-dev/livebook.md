@@ -1,6 +1,6 @@
 ---
 project: livebook
-stars: 5482
+stars: 5511
 description: Automate code & data workflows with interactive Elixir notebooks
 url: https://github.com/livebook-dev/livebook
 ---
@@ -186,6 +186,8 @@ The following environment variables can be used to configure Livebook on boot:
 -   `LIVEBOOK_IFRAME_PORT` - sets the port that Livebook serves iframes at. This is relevant only when running Livebook without TLS. Defaults to 8081.
     
 -   `LIVEBOOK_IFRAME_URL` - sets the URL that Livebook loads iframes from. By default iframes are loaded from local `LIVEBOOK_IFRAME_PORT` when accessing Livebook over http:// and from https://livebookusercontent.com when accessing over https://.
+    
+-   `LIVEBOOK_IMAGE_REGISTRY_URL` - sets the container image registry used to fetch livebook images from. By default uses `ghcr.io/livebook-dev/livebook`.
     
 -   `LIVEBOOK_IP` - sets the ip address to start the web application on. Must be a valid IPv4 or IPv6 address.
     

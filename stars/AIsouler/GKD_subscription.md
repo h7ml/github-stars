@@ -1,6 +1,6 @@
 ---
 project: GKD_subscription
-stars: 7487
+stars: 7740
 description: GKD 第三方订阅规则
 url: https://github.com/AIsouler/GKD_subscription
 ---
@@ -46,9 +46,9 @@ https://registry.npmmirror.com/@aisouler/gkd\_subscription/latest/files/dist/AIs
 
 https://raw.githubusercontent.com/AIsouler/GKD\_subscription/main/dist/AIsouler\_gkd.json5
 
--   当前版本: v293
+-   当前版本: v301
     
--   当前订阅文件已适配 814 个应用，共有 1880 应用规则组，3 全局规则组
+-   当前订阅文件已适配 818 个应用，共有 1886 应用规则组，3 全局规则组
     
 -   查看 适配 APP 列表
     

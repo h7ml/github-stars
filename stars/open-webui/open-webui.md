@@ -1,6 +1,6 @@
 ---
 project: open-webui
-stars: 108402
+stars: 110457
 description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
 url: https://github.com/open-webui/open-webui
 ---
@@ -202,7 +202,7 @@ Discover upcoming features on our roadmap in the Open WebUI Documentation.
 License 📜
 ----------
 
-This project is licensed under the Open WebUI License, a revised BSD-3-Clause license. You receive all the same rights as the classic BSD-3 license: you can use, modify, and distribute the software, including in proprietary and commercial products, with minimal restrictions. The only additional requirement is to preserve the "Open WebUI" branding, as detailed in the LICENSE file. For full terms, see the LICENSE document. 📄
+This project contains code under multiple licenses. The current codebase includes components licensed under the Open WebUI License with an additional requirement to preserve the "Open WebUI" branding, as well as prior contributions under their respective original licenses. For a detailed record of license changes and the applicable terms for each section of the code, please refer to LICENSE\_HISTORY. For complete and updated licensing details, please see the LICENSE and LICENSE\_HISTORY files.
 
 Support 💬
 ----------

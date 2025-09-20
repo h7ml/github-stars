@@ -1,12 +1,14 @@
 ---
 project: pluely
-stars: 475
+stars: 762
 description: The Open Source Alternative to Cluely - A lightning-fast, privacy-first AI assistant that works seamlessly during meetings, interviews, and conversations without anyone knowing. Built with Tauri for native performance, just 10MB. Completely undetectable in video calls, screen shares, and recordings.
 url: https://github.com/iamsrikanthnani/pluely
 ---
 
 Pluely 🚀
 =========
+
+* * *
 
 ### 💝 **Support the Project & Connect**
 
@@ -27,7 +29,7 @@ This is the **open source version** of the $15M company Cluely 🎯. Experience 
 
  
 
-**Available formats:** `.dmg` (macOS) • `.msi` (Windows) • `.deb` (Linux)
+**Available formats:** `.dmg` (macOS) • `.msi` (Windows) • `.exe` (Windows) • `.deb` (Linux) • `.rpm` (Linux) • `.AppImage` (Linux)
 
 * * *
 
@@ -61,8 +63,6 @@ Overlaps seamlessly with your workflow
 Perfect transparency level
 
 Ready when you need it most
-
-**🚀 Experience AI assistance that's lighter than a single photo, always visible, and instantly accessible without disrupting your workflow.**
 
 #### 📊 **Pluely vs Original Cluely**
 
@@ -110,253 +110,351 @@ Data sent to servers
 
 * * *
 
-🚀 Future Developments
+Features
+========
+
+**Keyboard Shortcuts**
 ----------------------
 
-Continuously working to enhance Pluely with these highly requested features:
+Pluely comes with powerful global keyboard shortcuts that work from anywhere on your system:
 
-### 🎯 **Top Priority Features**
+**Shortcut**
 
--   **🎧 System Audio Capture** - Capture and transcribe audio from your computer applications, meetings, and system sounds
--   **⚡ Global Shortcuts** - Customizable keyboard shortcuts (Ctrl/Cmd + /) for quick show/hide functionality
+**macOS**
 
-* * *
+**Windows/Linux**
 
-🎥 **Live Demos**
------------------
+**Function**
 
-### 💬 **Input Methods Demo**
+**Toggle Window**
 
-Experience multiple input methods including text entry, and image pasting:
+`Cmd + \`
 
-Input Example 1
+`Ctrl + \`
 
-Input Example 2
+Show/Hide the main window + app icon (based on settings)
 
-_Clean, intuitive text interface with markdown support for seamless conversation_
+**Voice Input**
 
-_Image pasting functionality that automatically adds files to attachments for AI analysis_
+`Cmd + Shift + A`
 
-* * *
+`Ctrl + Shift + A`
 
-### 📸 **Screenshot Demo**
+Start voice recording
 
-Capture and analyze screenshots with automatic or manual modes for different use cases:
+**Screenshot**
+
+`Cmd + Shift + S`
+
+`Ctrl + Shift + S`
+
+Capture screenshot
+
+**System Audio**
+
+`Cmd + Shift + M`
+
+`Ctrl + Shift + M`
+
+Toggle system audio capture
+
+**System Audio Capture**
+------------------------
+
+_Note: Pluely system audio capture is actively in development and improving._
+
+**Everything Your Computer Plays: Transform any audio on your system into an intelligent AI assistant with real-time transcription and contextual help:**
+
+-   **Real-Time AI Assistant:** 8 specialized modes for meetings, interviews, presentations, learning, and more
+-   **Background Processing:** Captures system audio continuously with smart context detection
+-   **Quick Actions & Smart Conversation Helpers:** Add, delete, or customize your own quick actions and smart conversation helpers like "What should I say?", "Follow-up questions", "Recap", or create your own as needed
+-   **Multi-Scenario Support:** Meeting insights, interview help, translation, presentation coaching, and learning assistance
+-   **Cross-Platform:** Works on macOS, Windows, and Linux with platform-specific audio routing
+-   **Settings Control:** Toggle system audio capture in Settings → Audio section
+-   **AI Integration:** Seamlessly connects transcription & completion to AI models for instant responses
+
+**Microphone Audio Capture**
+----------------------------
+
+**Voice Input: Transform your speech into an intelligent AI assistant with real-time transcription and contextual help:**
+
+-   **Voice Activity Detection:** Uses advanced VAD technology for automatic speech detection
+-   **Real-Time Processing:** Instant speech-to-text conversion with immediate AI responses
+-   **Keyboard Shortcuts:** Quick voice input with `Cmd+Shift+A` (macOS) or `Ctrl+Shift+A` (Windows/Linux)
+-   **No Setup Required:** Works immediately on any platform without additional configuration
+-   **Multi-STT Provider Support:** Choose from OpenAI Whisper, Groq, ElevenLabs, Google, Deepgram, and more
+-   **AI Integration:** Seamlessly connects transcription to AI models for instant contextual responses
+
+**Interactive Input**
+---------------------
+
+**Smooth, instant input that appears first for quick AI help - paste any images directly:**
+
+Experience the seamless input flow that prioritizes speed and simplicity:
+
+Input 1
+
+Paste image 2
+
+_Ultra-smooth text input that appears instantly for immediate AI assistance_
+
+_Paste any images directly for instant AI analysis and contextual help_
+
+-   **Instant Focus:** Input automatically appears first whenever you show the window
+-   **Smooth Experience:** Ultra-responsive text input without any lag or delays
+-   **Image Pasting:** Paste any images directly from clipboard for instant AI analysis
+-   **Quick Access:** Always ready for immediate help with seamless hide/show transitions
+-   **Simple Interface:** Clean, distraction-free input that prioritizes speed
+-   **Smart Positioning:** Input field stays focused for continuous conversation flow
+
+**Screenshot Capture**
+----------------------
+
+**Capture and analyze screenshots with intelligent auto/manual modes for instant AI assistance:**
+
+Experience two powerful screenshot modes that adapt to your workflow:
 
 Manual Mode Screenshot
 
-_Screenshots are captured and automatically added to your attached files for manual submission with your own prompt_
+_Perfect for coding challenges - capture LeetCode problems and get step-by-step solutions with your custom prompts_
 
 Auto Mode Screenshot
 
-_Screenshots are automatically submitted to AI using your custom prompt for instant analysis_
+_Ideal for single image - automatically analyze image content with your predefined AI prompt for instant insights_
 
-* * *
+-   **Manual Mode:** Capture multiple screenshots submit to AI analysis, with a prompt
+-   **Auto Mode:** Screenshots automatically submit to AI using your saved custom prompt with instant analysis
+-   **Shortcuts:** Capture screenshots with `Cmd+Shift+S` (macOS) or `Ctrl+Shift+S` (Windows/Linux)
+-   **Smart Configuration:** Toggle between modes in Settings → Screenshot Configuration
+-   **Custom Prompts:** Define your auto-analysis prompt for consistent, personalized AI responses
+-   **Seamless Integration:** Screenshots work with all AI providers (OpenAI, Gemini, Claude, Grok, includes with your custom providers)
+-   **Privacy First:** Screenshots are processed locally and only sent to your chosen AI provider
 
-### 🎤 **Voice Input Demo**
+**Always on Top**
+-----------------
 
-Speak naturally and get instant AI responses with advanced voice activity detection:
+**Control whether the Pluely window stays above all other applications for instant access:**
 
-_Real-time speech-to-text using OpenAI Whisper with automatic voice detection - just speak and get AI responses_
+**Watch how the Pluely window stays perfectly visible above all other applications**
 
-* * *
+-   **Enabled:** Window always appears on top of other applications
+-   **Disabled:** Window behaves like normal applications
+-   **Settings Control:** Toggle in Settings → Always On Top Mode
+-   **Independent Control:** Works separately from stealth features
+-   **Perfect for:** Quick access during meetings, presentations, or when you need instant AI assistance |
+
+**App Icon Stealth Mode**
+-------------------------
+
+**Complete stealth mode control integrated with main toggle:**
+
+**See how the toggle the app icon from your dock/taskbar while staying fully functional**
+
+-   **Show Mode** (Default): App icon remains visible in dock/taskbar when window is hidden
+-   **Hide Mode:** App icon completely disappears from dock/taskbar when window is hidden (app keeps running in background)
+-   **Settings Control:** Configure dock/taskbar icon visibility in Settings → App Icon Visibility
+-   **Auto-Integration:** Works automatically with main toggle shortcut (`Cmd+\` / `Ctrl+\`) based on your settings
+-   **Cross-Platform:** Works seamlessly on macOS (ActivationPolicy::Accessory), Windows (skip\_taskbar), and Linux (skip\_taskbar) |
+
+**Element Titles Management**
+-----------------------------
+
+**Complete control over title tooltips across the entire application:**
+
+**See how to toggle all element title tooltips on/off globally with instant effect**
+
+-   **Show Mode** (Default): All button and interactive element tooltips are visible on hover
+-   **Hide Mode:** All title tooltips are completely hidden while elements remain fully functional
+-   **Settings Control:** Toggle in Settings → Element Titles to enable/disable globally
+-   **Instant Effect:** Changes apply immediately across all 50+ interactive elements
+-   **Accessibility Aware:** Perfect for users who prefer clean interfaces without tooltip clutter
+-   **Preserves Functionality:** Elements remain clickable and accessible, only tooltips are controlled |
 
 ### 📚 **Conversation History**
 
-Keep track of all your AI interactions with persistent conversation history:
+**Complete conversation management stored locally on your device:**
 
-_Browse through previous conversations, search chat history, and continue where you left off_
+_Browse, reuse, download, and delete your AI conversations with complete local storage_
+
+-   **Local Storage** - All conversations saved to your device with zero data transmission
+-   **Instant Access** - History loads immediately with real-time updates
+-   **Message History** - See complete message threads with user/AI distinction
+-   **Reuse Chats** - Continue any conversation from where you left off with one click
+-   **Download Markdown** - Export conversations as formatted markdown files with timestamps
+-   **Delete Chats** - Remove individual conversations or delete all from Settings
+-   **Quick Navigation** - Browse all your conversations with auto-generated titles
 
 * * *
 
-🔧 **Setup**
-------------
+**Setup**
+---------
 
-### 🔧 **AI Provider Setup**
+### **Activate Pluely License**
 
-Get started with your preferred AI provider in seconds. Pluely supports all major LLM providers with dynamic model fetching, custom providers, and seamless integration:
+_Join thousands of professionals powering their workflows with Pluely_
 
-Custom Provider Setup
+**Join us in unlocking premium features, faster responses, advanced speech to text, and priority support with Pluely License:**
+
+_Pluely License activation unlocks faster AI responses, premium features, and dedicated support - we're using it daily and it transforms our workflow!_
+
+#### **What You Get with Pluely License:**
+
+-   **80+ premium AI models with instant access**
+-   **Zero-latency AI generation**
+-   **One-click model switching**
+-   **Zero maintenance and setup**
+-   **Advanced speech-to-text with highest accuracy**
+-   **Zero-latency speech-to-text processing**
+-   **Zero data storage or collection (100% privacy)**
+-   **Unlimited API usage with no rate limits**
+-   **Priority feature requests and premium support**
+
+#### **How to Get Started:**
+
+1.  **Purchase License**: Click "Get License Key" to visit our secure checkout page
+2.  **Receive Key**: After payment, you'll receive your license key via email
+3.  **Activate**: Paste your license key in Settings → Pluely Access section
+4.  **Enjoy**: Start experiencing faster responses and premium features immediately
+
+Switch between Pluely API and your custom providers anytime in Settings → Pluely Access. Whether you want the convenience of our optimized service or prefer to maintain your own AI provider setup, Pluely gives you complete flexibility.
+
+### **AI Provider Integration**
+
+**Pluely now supports curl requests when adding custom providers, giving you ultimate flexibility to integrate any AI provider. This means you can connect to any LLM service using simple curl commands, opening up endless possibilities for your AI providers.**
+
+### **Custom AI Provider Setup**
+
+**Unlock Any LLM Provider** - Pluely supports **any LLM provider** with full streaming and non-streaming capabilities. Configure custom endpoints, authentication, and response parsing for complete flexibility.
+
+_See how easy it is to configure any AI provider with Pluely's custom provider setup_
+
+#### **🔧 Dynamic Variables Support**
+
+Pluely supports these **dynamic variables** that are automatically replaced:
+
+Variable
+
+Purpose
+
+`{{TEXT}}`
+
+User's text input
+
+`{{IMAGE}}`
+
+Base64 image data
+
+`{{SYSTEM_PROMPT}}`
+
+System instructions
+
+`{{MODEL}}`
+
+AI model name
+
+`{{API_KEY}}`
+
+API authentication key
+
+#### **Streaming & Response Configuration**
+
+-   **Streaming Support**: Toggle streaming on/off for real-time responses
+-   **Response Path**: Configure where to extract content from API responses (e.g., `choices[0].message.content`)
+-   **Authentication**: Support for Bearer tokens, API keys, and custom headers
+-   **Any Endpoint**: Works with any REST API that accepts JSON requests
+
+#### **Custom Variable Creation**
+
+Add your own variables using the `{{VARIABLE_NAME}}` format directly in your curl command. They'll appear as configurable fields when you select the provider.
+
+* * *
+
+### **AI Providers Setup**
+
+Get started with your preferred AI provider in seconds. Pluely supports all major LLM providers, custom providers, and seamless integration:
 
 OpenAI Setup
 
-_Add your custom provider and select the provider from AI providers in the AI Providers section, then enter your API key and AI model_
+Grok setup
 
-_Add your OpenAI API key and select from dynamically fetched models including GPT-4, GPT-4 Turbo, and more_
+_Add your OpenAI API key and enter model name_
+
+_Add your xAI Grok API key and enter your model_
 
 Google Gemini Setup
 
-xAI Grok Setup
-
-_Connect to Google Gemini with your API key and choose from available models like Gemini Pro_
-
-_Integrate with xAI Grok - dynamically fetches available models for seamless AI assistance_
-
 Anthropic Claude Setup
 
-Additional AI Providers
+_Add your Google Gemini API key and enter your model_
 
-**🔸 Mistral AI**  
-**🔸 Groq**  
-**🔸 Cohere**  
-**🔸 Perplexity AI**
+_Add your Anthropic Claude API key and enter your model_
 
-_Enter your Claude API key and model name manually for powerful AI conversations_
+**Additional Providers:**
 
-_These providers are also available in the AI Providers settings for more options_
-
-#### ⚙️ **Provider Configuration**
-
-Each provider comes pre-configured with optimal settings:
-
--   **🔄 Dynamic Model Fetching**: Automatically fetch latest models from OpenAI, xAI, Gemini, Mistral, and Groq
--   **🎯 Manual Model Selection**: For Claude and Cohere, enter your preferred model name
--   **🔐 Secure Authentication**: API keys stored locally in browser storage
--   **📡 Streaming Support**: Real-time responses for all providers
--   **🖼️ Multi-Modal**: Image analysis support where available
--   **⚡ Fast Integration**: One-click setup for instant AI assistance
-
-#### 🚀 **Quick Setup Guide**
-
-1.  **Choose Your Provider**: Select from the comprehensive list in Settings
-2.  **Enter API Key**: Add your provider's API key securely
-3.  **Select Model**: Choose from dynamically fetched models or enter manually
-4.  **Start Chatting**: Begin your AI-powered conversations immediately
-
-#### 🔧 **Custom Provider Support**
-
-For providers not in our list, use the custom provider option:
-
--   Add any OpenAI-compatible API endpoint
--   Configure custom authentication methods
--   Set up your own response parsing
--   Full flexibility for any LLM service
+-   **Mistral AI**: Add your Mistral API key and select from available models
+-   **Cohere**: Add your Cohere API key and enter your model name
+-   **Perplexity**: Add your Perplexity API key and select from available models
+-   **Groq**: Add your Groq API key and select from available models
+-   **Ollama**: Configure your local Ollama instance and select models
 
 * * *
 
-### 🎤 **Speech-to-Text Provider Setup**
+### **Speech-to-Text Integration**
 
-Pluely supports advanced voice input with multiple speech-to-text providers for accurate, real-time transcription. Choose from industry-leading STT services or add your own custom provider:
+**Pluely now supports advanced curl-based integration for speech-to-text providers, giving you ultimate flexibility to integrate any STT service. This means you can connect to any speech API using simple curl commands, opening up endless possibilities for your voice workflows.**
 
-**Provider**
+### **Speech-to-Text Provider Setup**
 
-**Auth Type**
+Get started with your preferred speech-to-text provider in seconds. Pluely supports all major STT providers, custom providers, and seamless voice integration:
 
-**Features**
+OpenAI Whisper Setup
 
-**Model**
+ElevenLabs STT Setup
 
-**🎤 OpenAI Whisper**
+_Add your OpenAI API key and select Whisper model_
 
-Bearer Token
+_Add your ElevenLabs API key and select model_
 
-High accuracy, fast processing
+**Additional STT Providers:**
 
-whisper-1
+-   **Groq Whisper**: Add your Groq API key and select Whisper model
+-   **Google Speech-to-Text**: Add your Google API key for speech recognition
+-   **Deepgram STT**: Add your Deepgram API key and select model
+-   **Azure Speech-to-Text**: Add your Azure subscription key and configure region
+-   **Speechmatics**: Add your Speechmatics API key for transcription
+-   **Rev.ai STT**: Add your Rev.ai API key for speech-to-text
+-   **IBM Watson STT**: Add your IBM Watson API key and configure service
 
-**⚡ Groq Whisper**
+#### 🎙️ **STT Provider Configuration**
 
-Bearer Token
-
-Ultra-fast transcription
-
-whisper-large-v3
-
-**🔊 ElevenLabs STT**
-
-xi-api-key
-
-Natural language processing
-
-scribe\_v1
-
-**🔍 Google Speech-to-Text**
-
-Bearer Token
-
-Advanced language detection
-
-N/A
-
-**🎯 Deepgram STT**
-
-Bearer Token
-
-Real-time processing
-
-nova-2
-
-**🧠 IBM Watson STT**
-
-Basic API Key
-
-Enterprise-grade accuracy
-
-en-US\_BroadbandModel
-
-**☁️ Azure Speech-to-Text**
-
-Subscription Key
-
-Cloud-native processing
-
-N/A
-
-**🎵 Speechmatics**
-
-Bearer Token
-
-High accuracy for various languages
-
-N/A
-
-**🤖 Zhipu GLM-ASR**
-
-Bearer Token
-
-Chinese language specialist
-
-glm-asr
-
-**🚀 Doubao STT**
-
-Bearer Token
-
-Fast Chinese transcription
-
-whisper-1
-
-#### 🎙️ **STT Provider Features**
+Each STT provider comes pre-configured with optimal settings:
 
 -   **🎯 Real-time Processing**: Instant speech recognition with voice activity detection
 -   **🌍 Multi-Language Support**: Choose providers optimized for specific languages
 -   **⚡ Fast & Accurate**: Industry-leading transcription accuracy and speed
 -   **🔒 Secure Authentication**: API keys stored locally and securely
 -   **🎨 Seamless Integration**: Works with Pluely's voice input features
+-   **🔧 Custom Variables**: Support for dynamic variables in custom STT providers
+-   **🌐 Any STT Provider**: Full compatibility with any speech recognition API endpoint
 
 #### 🛠️ **Custom STT Provider Setup**
 
-Can't find your preferred speech-to-text provider? Add custom STT providers with full configuration control:
+For STT providers not in our list, use the custom STT provider option with full control:
 
--   **🔧 Flexible API Integration**: Support for any REST API endpoint
--   **🔐 Custom Authentication**: Bearer tokens, API keys, or custom headers
--   **📝 Request Customization**: Configure audio formats, parameters, and headers
--   **🎯 Response Parsing**: Define custom response paths for transcription text
--   **⚙️ Advanced Configuration**: Set up audio formats, sample rates, and more
-
-#### 🚀 **Voice Input Quick Start**
-
-1.  **Select Provider**: Choose from the comprehensive STT provider list
-2.  **Configure API**: Enter your provider's API credentials securely
-3.  **Test Connection**: Verify your setup with a quick voice test
-4.  **Start Speaking**: Use voice input seamlessly in your conversations
+-   **🌐 Any Speech Recognition API**: Add any STT provider with REST API support
+-   **🔐 Flexible Authentication**: Bearer tokens, API keys, custom headers, or direct key embedding
+-   **📡 Response Path Mapping**: Configure where to extract transcription text from any API response structure
+-   **🔧 Dynamic Variables**: Create custom variables using `{{VARIABLE_NAME}}` format in curl commands
+-   **📝 Request Customization**: Full control over headers, body structure, and parameters
+-   **⚙️ Audio Format Support**: Support for various audio formats and sample rates
+-   **🔄 Real-Time Testing**: Test your custom STT provider setup instantly
 
 * * *
 
-🌟 Why Pluely?
---------------
+Why Pluely?
+-----------
 
-### 👻 **Completely Undetectable & Stealth**
+### **Completely Undetectable & Stealth**
 
 > **🎯 The Ultimate Stealth AI Assistant - Invisible to Everyone**
 
@@ -371,7 +469,7 @@ Pluely is engineered to be **completely invisible** during your most sensitive m
 
 **Perfect for confidential scenarios where discretion is absolutely critical.**
 
-### 🔥 **Blazingly Fast with Tauri**
+### **Blazingly Fast with Tauri**
 
 Built with **Tauri**, Pluely delivers native desktop performance with minimal resource usage:
 
@@ -381,7 +479,7 @@ Built with **Tauri**, Pluely delivers native desktop performance with minimal re
 -   **Memory efficient** - uses 50% less RAM than web-based alternatives
 -   **Cross-platform** - runs natively on macOS, Windows, and Linux
 
-### 🛡️ **Privacy-First Architecture**
+### **Privacy-First Architecture**
 
 Unlike cloud-based solutions, Pluely keeps everything local:
 
@@ -390,12 +488,12 @@ Unlike cloud-based solutions, Pluely keeps everything local:
 -   **No telemetry or tracking** - your conversations stay private, not stored anywhere
 -   **Offline-first design** - works without internet (except for AI API calls)
 
-🖥️ **Always-On, One Click Away**
----------------------------------
+**Always-On, One Click Away**
+-----------------------------
 
 Pluely sits quietly on your desktop, ready to assist instantly with zero setup time:
 
-### 🎯 **Perfect for Sensitive Scenarios**
+### **Perfect for Sensitive Scenarios**
 
 **Completely undetectable in all these critical situations:**
 
@@ -414,48 +512,19 @@ Pluely sits quietly on your desktop, ready to assist instantly with zero setup t
 
 * * *
 
-🚀 Features
------------
+📋 Prerequisites & Dependencies
+-------------------------------
 
-### 🤖 **Multi-LLM Support**
+**Important**: Before installing the app, ensure all required system dependencies are installed for your platform:
 
-Connect to any AI provider with built-in support for:
+👉 **Tauri Prerequisites & Dependencies**
 
--   **OpenAI** - Dynamically fetches models directly from OpenAI, select your own
--   **Anthropic Claude** - Enter your model name manually
--   **xAI Grok** - Dynamically fetches models directly from xAI, select your own
--   **Google Gemini** - Dynamically fetches models directly from Gemini, select your own
--   **Custom providers** - Coming soon
-
-### 🎤 **Advanced Speech-to-Text**
-
--   **Voice Activity Detection (VAD)** using `@ricky0123/vad-react`
--   **OpenAI Whisper integration** for accurate transcription
--   **Real-time audio processing** with automatic speech detection
--   **Seamless voice input** - just speak and get AI responses
-
-### 📎 **Multi-Modal Input**
-
--   **Text input** with markdown support
--   **Image attachments** - analyze images, screenshots
-
-### 🎨 **Beautiful, Invisible UI**
-
--   **Translucent window** that overlays any application
--   **Always on top** but never in the way
--   **Minimal design** - focus on content, not interface
--   **Dark/light theme** support
-
-### ⚡ **Real-Time Streaming**
-
--   **Chunked streaming** - see responses as they're generated
--   **Cancellable requests** - stop generation anytime
--   **Error handling** with retry mechanisms
+This includes essential packages like WebKitGTK (Linux), system libraries, and other dependencies required for Tauri applications to run properly on your operating system.
 
 * * *
 
-🛠️ Installation & Setup
-------------------------
+Installation & Setup
+--------------------
 
 ### Prerequisites
 
@@ -482,14 +551,14 @@ npm run tauri build
 
 This creates platform-specific installers in `src-tauri/target/release/bundle/`:
 
--   **macOS**: `.dmg` file
--   **Windows**: `.msi` installer
--   **Linux**: `.deb` file
+-   **macOS**: `.dmg`
+-   **Windows**: `.msi`, `.exe`
+-   **Linux**: `.deb`, `.rpm`, `.AppImage`
 
 * * *
 
-🔐 Security & Privacy
----------------------
+Security & Privacy
+------------------
 
 ### **Local API Key Storage**
 
@@ -523,8 +592,8 @@ Pluely makes API calls directly from your frontend because:
 
 * * *
 
-🚀 Performance Optimizations
-----------------------------
+Performance Optimizations
+-------------------------
 
 ### **Tauri Advantages**
 
@@ -542,10 +611,10 @@ Pluely makes API calls directly from your frontend because:
 -   **Tree shaking** - only bundle used code
 -   **Lazy loading** - components load on demand
 
-🧪 Development
---------------
+Development
+-----------
 
-### 🏗️ Architecture Overview
+### Architecture Overview
 
 #### Frontend (React + TypeScript + Tauri)
 
@@ -670,10 +739,24 @@ npm run lint
 
 * * *
 
-🤝 Contributing
----------------
+Contributing
+------------
 
 We welcome contributions! Here's how to get started:
+
+### **Contribution Guidelines**
+
+**🚀 Only fixes and feature PRs are welcome.**
+
+**❌ Please do NOT submit pull requests that:**
+
+-   Adding new AI providers
+-   Adding new speech-to-text providers
+
+**✅ What we DO welcome:**
+
+-   Bug fixes and performance improvements
+-   Feature improvements to existing functionality
 
 > 💡 **Like this project?** Consider buying me a coffee ☕ or hiring me for your next project!
 
@@ -730,6 +813,7 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 🔗 Links
 --------
 
+-   **Website**: pluely.com (Pluely website)
 -   **Website**: cluely.com (Original Cluely)
 -   **Documentation**: GitHub Wiki
 -   **Issues**: GitHub Issues

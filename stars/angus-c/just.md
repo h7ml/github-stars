@@ -1,6 +1,6 @@
 ---
 project: just
-stars: 6191
+stars: 6199
 description: A library of dependency-free JavaScript utilities that do just one thing.
 url: https://github.com/angus-c/just
 ---

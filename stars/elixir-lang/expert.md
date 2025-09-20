@@ -1,6 +1,6 @@
 ---
 project: expert
-stars: 1071
+stars: 1504
 description: Official Elixir Language Server Protocol implementation
 url: https://github.com/elixir-lang/expert
 ---
@@ -44,7 +44,7 @@ Thank you to our corporate sponsors! If you'd like to start sponsoring the proje
 
 ### Corporate
 
-For companies wanting to directly sponsor full time work on Expert, please reach out to Dan Janowski: EEF Chair of Sponsorship WG at danj@erlef.org.
+For companies wanting to directly sponsor full time work on Expert, please reach out to Dan Janowski: EEF Chair of Sponsorship WG at sponsor+expert (at) erlef (dot) org.
 
 ### Individual
 

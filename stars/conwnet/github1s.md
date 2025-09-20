@@ -1,6 +1,6 @@
 ---
 project: github1s
-stars: 23167
+stars: 23181
 description: One second to read GitHub code with VS Code.
 url: https://github.com/conwnet/github1s
 ---

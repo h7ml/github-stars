@@ -1,6 +1,6 @@
 ---
 project: OpenCut
-stars: 31427
+stars: 31999
 description: The open-source CapCut alternative
 url: https://github.com/OpenCut-app/OpenCut
 ---
@@ -161,7 +161,9 @@ See our Contributing Guide for detailed setup instructions, development guidelin
 Sponsors
 --------
 
-Thanks to Vercel for their support of open-source software.
+Thanks to Vercel and fal.ai for their support of open-source software.
+
+* * *
 
 License
 -------

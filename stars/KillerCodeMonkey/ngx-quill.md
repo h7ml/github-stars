@@ -1,6 +1,6 @@
 ---
 project: ngx-quill
-stars: 1828
+stars: 1835
 description: Angular (>=2) components for the Quill Rich Text Editor
 url: https://github.com/KillerCodeMonkey/ngx-quill
 ---

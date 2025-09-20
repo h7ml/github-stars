@@ -1,6 +1,6 @@
 ---
 project: srs
-stars: 27604
+stars: 27716
 description: SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181.
 url: https://github.com/ossrs/srs
 ---
@@ -8,7 +8,7 @@ url: https://github.com/ossrs/srs
 SRS(Simple Realtime Server)
 ===========================
 
-SRS/7.0 (Kai) is a simple, high-efficiency, and real-time video server, supporting RTMP/WebRTC/HLS/HTTP-FLV/SRT/MPEG-DASH/GB28181, Linux/Windows/macOS, X86\_64/ARMv7/AARCH64/M1/RISCV/LOONGARCH/MIPS, and essential features.
+SRS/7.0 (Kai) is a simple, high-efficiency, and real-time video server, supporting RTMP/WebRTC/HLS/HTTP-FLV/SRT/MPEG-DASH/GB28181, Linux/macOS, X86\_64/ARMv7/AARCH64/M1/RISCV/LOONGARCH/MIPS, and essential features.
 
 > Note: For more details on the single-node architecture for SRS, please visit the following link.
 
@@ -20,9 +20,9 @@ Usage
 Please check the Getting Started guide in English or Chinese. We highly recommend using SRS with docker:
 
 docker run --rm -it -p 1935:1935 -p 1985:1985 -p 8080:8080 \\
-    -p 8000:8000/udp -p 10080:10080/udp ossrs/srs:5
+    -p 8000:8000/udp -p 10080:10080/udp ossrs/srs:6
 
-> Tips: If you're in China, use this image `registry.cn-hangzhou.aliyuncs.com/ossrs/srs:5` for faster speed.
+> Tips: If you're in China, use this image `registry.cn-hangzhou.aliyuncs.com/ossrs/srs:6` for faster speed.
 
 Open http://localhost:8080/ to verify, and then stream using the following FFmpeg command:
 
@@ -44,7 +44,7 @@ If you'd like to use WebRTC, convert RTMP to WebRTC, or convert WebRTC to RTMP, 
 
 To learn more about RTMP, HLS, HTTP-FLV, SRT, MPEG-DASH, WebRTC protocols, clustering, HTTP API, DVR, and transcoding, please check the documents in English or Chinese.
 
-If you want to use an IDE, VSCode is recommanded. VSCode supports macOS, Linux, and Windows platforms. The settings are ready. All you need to do is open the folder with VSCode and enjoy the efficiency brought by the IDE. See VSCode README for details.
+If you want to use an IDE, VSCode is recommanded. VSCode supports macOS, and Linux platforms. The settings are ready. All you need to do is open the folder with VSCode and enjoy the efficiency brought by the IDE. See VSCode README for details.
 
 Sponsor
 -------
@@ -72,7 +72,7 @@ The maintainers, and contributors are listed here. The maintainers who made sign
 -   ShiWei: Specializes in SRT and H.265, maintaining SRT and FLV patches for FFmpeg. An expert in codecs and FFmpeg.
 -   ChenGuanghua: Focused on WebRTC/QoS and introduced the Asan toolchain to SRS.
 -   LiPeng: Concentrates on WebRTC and contributes to memory management and smart pointers.
--   ZhaoWenjie: One of the earliest contributors, focusing on HDS and Windows. Has expertise in client technology.
+-   ZhaoWenjie: One of the earliest contributors, focusing on HDS. Has expertise in client technology.
 -   WuPengqiang: Focused on H.265, initially contributed to the FFmpeg module in SRS for transcoding AAC with OPUS for WebRTC.
 
 A huge `THANK YOU` goes out to:
@@ -91,6 +91,7 @@ SRS is licenced under MIT, and some third-party libraries are distributed under 
 Releases
 --------
 
+-   2025-09-15, Release v6.0-b1, v6.0-b1, 6.0 beta1, v6.0.177, 170611 lines.
 -   2025-08-12, Release v6.0-b0, v6.0-b0, 6.0 beta0, v6.0.172, 170417 lines.
 -   2025-05-03, Release v6.0-a2, v6.0-a2, 6.0 alpha2, v6.0.165, 169712 lines.
 -   2024-09-01, Release v6.0-a1, v6.0-a1, 6.0 alpha1, v6.0.155, 169636 lines.

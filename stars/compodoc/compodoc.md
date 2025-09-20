@@ -1,6 +1,6 @@
 ---
 project: compodoc
-stars: 4075
+stars: 4079
 description: :notebook_with_decorative_cover: The missing documentation tool for your Angular, Nest & Stencil application
 url: https://github.com/compodoc/compodoc
 ---
@@ -80,6 +80,8 @@ vogloblinsky
 
 manekinekko
 
+tcorral
+
 mattlewis92
 
 JonasMH
@@ -112,4 +114,4 @@ License
 
 Everything in this repository is licensed under the MIT License unless otherwise specified.
 
-Copyright (c) 2016 – 2019 Vincent Ogloblinsky
+Copyright (c) 2016 – 2025 Vincent Ogloblinsky

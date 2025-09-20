@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 14154
+stars: 14632
 description: Identity-Aware Tunneled Reverse Proxy Server with Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
@@ -9,7 +9,7 @@ url: https://github.com/fosrl/pangolin
 
 _Pangolin tunnels your services to the internet so you can access anything from anywhere._
 
-##### Website | Install Guide | Contact Us
+##### Website | Quick Install Guide | Contact Us | Slack | Discord
 
 **Start testing Pangolin at pangolin.fossorial.io**
 

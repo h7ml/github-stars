@@ -1,6 +1,6 @@
 ---
 project: gitea
-stars: 50396
+stars: 50775
 description: Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD
 url: https://github.com/go-gitea/gitea
 ---
@@ -50,7 +50,7 @@ TAGS="bindata sqlite sqlite_unlock_notify" make build
 The `build` target is split into two sub-targets:
 
 -   `make backend` which requires Go Stable, the required version is defined in go.mod.
--   `make frontend` which requires Node.js LTS or greater.
+-   `make frontend` which requires Node.js LTS or greater and pnpm.
 
 Internet connectivity is required to download the go and npm modules. When building from the official source tarballs which include pre-built frontend files, the `frontend` target will not be triggered, making it possible to build without Node.js.
 

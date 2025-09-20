@@ -1,6 +1,6 @@
 ---
 project: build-your-own-x
-stars: 415373
+stars: 420907
 description: Master programming by recreating your favorite technologies from scratch.
 url: https://github.com/codecrafters-io/build-your-own-x
 ---
@@ -414,6 +414,7 @@ Tutorials
 #### Uncategorized
 
 -   **(any)**: _From NAND to Tetris: Building a Modern Computer From First Principles_
+-   **(any)**: build-your-own-x-vibe-coding: BYOX-style tutorials adapted for vibe coding
 -   **Alloy**: _The Same-Origin Policy_
 -   **C**: _How to Write a Video Player in Less Than 1000 Lines_
 -   **C**: _Learn how to write a hash table in C_

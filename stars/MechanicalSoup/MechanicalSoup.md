@@ -1,6 +1,6 @@
 ---
 project: MechanicalSoup
-stars: 4787
+stars: 4792
 description: A Python library for automating interaction with websites.
 url: https://github.com/MechanicalSoup/MechanicalSoup
 ---
@@ -32,7 +32,7 @@ pip install git+https://github.com/MechanicalSoup/MechanicalSoup
 
 Installing from source (installs the version in the current working directory):
 
-python setup.py install
+pip install .
 
 (In all cases, add `--user` to the `install` command to install in the current user's home directory.)
 

@@ -1,6 +1,6 @@
 ---
 project: flexsearch
-stars: 13247
+stars: 13335
 description: Next-generation full-text search library for Browser and Node.js
 url: https://github.com/nextapps-de/flexsearch
 ---
@@ -1576,6 +1576,8 @@ Context Search
 --------------
 
 The basic idea of this concept is to limit relevance by its context instead of calculating relevance through the whole distance of its corresponding document. The context acts like a bidirectional moving window of 2 pointers (terms) which can initially have a maximum distance of the value passed via option setting `depth` and dynamically growth on search when the query did not match any results.
+
+  
 
 ### Enable Context-Search
 
