@@ -1,6 +1,6 @@
 ---
 project: vue3-dnd
-stars: 704
+stars: 706
 description: React Dnd implementation in Vue Composition-api.
 url: https://github.com/hcg1023/vue3-dnd
 ---

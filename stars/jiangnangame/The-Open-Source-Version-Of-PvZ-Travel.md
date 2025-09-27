@@ -1,6 +1,6 @@
 ---
 project: The-Open-Source-Version-Of-PvZ-Travel
-stars: 23
+stars: 24
 description: This is the open source version of the fan-made game Plants vs Zombies Travel.
 url: https://github.com/jiangnangame/The-Open-Source-Version-Of-PvZ-Travel
 ---

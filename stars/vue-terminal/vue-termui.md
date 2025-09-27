@@ -1,6 +1,6 @@
 ---
 project: vue-termui
-stars: 880
+stars: 882
 description: The Modern Terminal UI Framework
 url: https://github.com/vue-terminal/vue-termui
 ---

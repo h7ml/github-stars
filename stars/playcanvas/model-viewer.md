@@ -1,6 +1,6 @@
 ---
 project: model-viewer
-stars: 550
+stars: 553
 description: 3D Model Viewer supporting glTF and 3D Gaussian Splats
 url: https://github.com/playcanvas/model-viewer
 ---

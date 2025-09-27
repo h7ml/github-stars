@@ -1,6 +1,6 @@
 ---
 project: FFCreator
-stars: 3082
+stars: 3085
 description: A fast video processing library based on node.js (一个基于node.js的高速视频制作库)
 url: https://github.com/tnfe/FFCreator
 ---

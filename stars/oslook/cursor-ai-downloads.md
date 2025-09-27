@@ -1,6 +1,6 @@
 ---
 project: cursor-ai-downloads
-stars: 2977
+stars: 2985
 description: All Cursor AI's official download links for both the latest and older versions, making it easy for you to update, downgrade, and choose any version. 🚀
 url: https://github.com/oslook/cursor-ai-downloads
 ---
@@ -78,10 +78,10 @@ All Version Download Links
 
 ### Latest Version
 
-🚀 Cursor 1.6.35
+🚀 Cursor 1.7.11
 ================
 
-Release Date: 2025-09-19
+Release Date: 2025-09-26
 
 Windows
 
@@ -100,6 +100,42 @@ Windows Installer
 Mac Installer
 
 Linux Installer
+
+1.7.11
+
+2025-09-26
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.6.45
+
+2025-09-25
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
 
 1.6.35
 
@@ -1729,38 +1765,30 @@ darwin-arm64
 linux-x64  
 linux-arm64
 
-0.46.2
-
-2025-02-23
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.1
-
-2025-02-23
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
 * * *
 
 Detailed Version Card View
 --------------------------
+
+**Version 1.7.11** (2025-09-26)
+
+### Cursor 1.7.11 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.6.45** (2025-09-25)
+
+### Cursor 1.6.45 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
 
 **Version 1.6.35** (2025-09-19)
 
@@ -2735,26 +2763,6 @@ Detailed Version Card View
 **Version 0.46.3** (2025-02-25)
 
 ### Cursor 0.46.3 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.2** (2025-02-23)
-
-### Cursor 0.46.2 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.1** (2025-02-23)
-
-### Cursor 0.46.1 Download Links
 
 #### Windows
 

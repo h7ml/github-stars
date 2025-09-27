@@ -1,6 +1,6 @@
 ---
 project: PowerToys
-stars: 123761
+stars: 123940
 description: Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks
 url: https://github.com/microsoft/PowerToys
 ---
@@ -8,20 +8,18 @@ url: https://github.com/microsoft/PowerToys
 Microsoft PowerToys
 ===================
 
-How to use PowerToys | Downloads & Release notes | Contributing to PowerToys | What's Happening | Roadmap
+### Installation · Documentation · Blog · Release notes
 
-About
------
-
-Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. For more info on PowerToys overviews and how to use the utilities, or any other tools and resources for Windows development environments, head over to learn.microsoft.com!
-
-Current utilities:
+  
+  
+Microsoft PowerToys is a collection of utilities that help you customize Windows and streamline everyday tasks.  
+  
 
 Advanced Paste
 
 Always on Top
 
-PowerToys Awake
+Awake
 
 Color Picker
 
@@ -51,8 +49,6 @@ Mouse Without Borders
 
 New+
 
-Paste as Plain Text
-
 Peek
 
 PowerRename
@@ -73,19 +69,24 @@ Workspaces
 
 ZoomIt
 
-Installing and running Microsoft PowerToys
-------------------------------------------
+📋 Installation
+---------------
 
-### Requirements
+For detailed installation instructions, visit the installation docs.
 
--   Windows 11 or Windows 10 version 2004 (code name 20H1 / build number 19041) or newer.
--   x64 or ARM64 processor
--   Our installer will install the following items:
-    -   Microsoft Edge WebView2 Runtime bootstrapper. This will install the latest version.
+Before you begin, make sure your device meets the system requirements:
 
-### Via GitHub with EXE \[Recommended\]
+Note
 
-Go to the Microsoft PowerToys GitHub releases page and click on `Assets` at the bottom to show the files available in the release. Please use the appropriate PowerToys installer that matches your machine's architecture and install scope. For most, it is `x64` and per-user.
+-   Windows 11 or Windows 10 version 2004 (20H1 / build 19041) or newer
+-   64-bit processor: x64 or ARM64
+-   Latest stable version of Microsoft Edge WebView2 Runtime is installed via the bootstrapper during setup
+
+Choose one of the installation methods below:
+
+Download .exe from GitHub
+
+Go to the PowerToys GitHub releases, click Assets to reveal the downloads, and choose the installer that matches your architecture and install scope. For most devices, that's the x64 per-user installer.
 
 Description
 
@@ -107,58 +108,32 @@ Machine wide - ARM64
 
 PowerToysSetup-0.94.0-arm64.exe
 
-This is our preferred method.
+Microsoft Store You can easily install PowerToys from the Microsoft Store:
 
-### Via Microsoft Store
-
-Install from the Microsoft Store's PowerToys page. You must be using the new Microsoft Store, which is available for both Windows 11 and Windows 10.
-
-### Via WinGet
+WinGet
 
 Download PowerToys from WinGet. Updating PowerToys via winget will respect the current PowerToys installation scope. To install PowerToys, run the following command from the command line / PowerShell:
 
-#### User scope installer \[default\]
+_User scope installer \[default\]_
 
 winget install Microsoft.PowerToys \-s winget
 
-#### Machine-wide scope installer
+_Machine-wide scope installer_
 
 winget install \--scope machine Microsoft.PowerToys \-s winget
 
-### Other install methods
+Other methods
 
 There are community driven install methods such as Chocolatey and Scoop. If these are your preferred install solutions, you can find the install instructions there.
 
-Third-Party Run Plugins
------------------------
-
-There is a collection of third-party plugins created by the community that aren't distributed with PowerToys.
-
-Contributing
+✨ What's new
 ------------
 
-This project welcomes contributions of all types. Besides coding features / bug fixes, other ways to assist include spec writing, design, documentation, and finding bugs. We are excited to work with the power user community to build a set of tools for helping you get the most out of Windows.
+**Version 0.94 (September 2025)**
 
-We ask that **before you start work on a feature that you would like to contribute**, please read our Contributor's Guide. We would be happy to work with you to figure out the best approach, provide guidance and mentorship throughout feature development, and help avoid any wasted or duplicate effort.
+For an in-depth look at the latest changes, visit the Windows Command Line blog.
 
-Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you grant us the rights to use your contribution and that you have permission to do so.
-
-For guidance on developing for PowerToys, please read the developer docs for a detailed breakdown. This includes how to setup your computer to compile.
-
-What's Happening
-----------------
-
-### PowerToys Roadmap
-
-Our prioritized roadmap of features and utilities that the core team is focusing on.
-
-### 0.94 - Sep 2025 Update
-
-In this release, we focused on new features, stability, optimization improvements, and automation.
-
-For an in-depth look at the latest changes, visit the release blog.
-
-**✨Highlights**
+**✨ Highlights**
 
 -   PowerToys Settings added a Settings search with fuzzy matching, suggestions, a results page, and UX polish to make finding options faster.
 -   A comprehensive hotkey conflict detection system was introduced in Settings to surface and help resolve conflicting shortcuts. Note that the default hotkey settings (Win+Ctrl+Shift+T, Win+Ctrl+V, Win+Ctrl+T, Win+Shift+T) may overlap with existing Windows system shortcuts. This is expected. You can resolve the conflict by assigning different hotkeys.
@@ -197,13 +172,13 @@ For an in-depth look at the latest changes, visit the release blog.
 -   Allowed providers to override Dispose with a virtual method.
 -   Fixed memory leaks by cleaning up removed or cancelled list items.
 -   Sorted DateTime extension results by relevance for better usability.
--   Reduced search text “jiggling” by avoiding redundant change notifications.
+-   Reduced search text "jiggling" by avoiding redundant change notifications.
 -   Centralized automation notifications in a UIHelper for better accessibility. Thanks @chatasweetie!
 -   Preserved Adaptive Card action types during trimming via DynamicDependency.
 -   Added an acrylic backdrop and refined styling to the context menu. Thanks @jiripolasek!
 -   Prevented disposed pages and Settings windows from handling stale messages. Thanks @jiripolasek!
 -   Made the extension API easier to evolve without breaking clients.
--   Added “evil” sample pages to help reproduce tricky bugs.
+-   Added "evil" sample pages to help reproduce tricky bugs.
 -   Fixed WinGet trim-safety issues by replacing LINQ with manual iteration.
 -   Cancelled stale list fetches to avoid older results overwriting newer ones in CmdPal.
 
@@ -279,10 +254,11 @@ For an in-depth look at the latest changes, visit the release blog.
 -   Rewrote system command tests with a new test base and cleaner patterns.
 -   Added unit tests for WebSearch and Shell extensions with mockable settings.
 -   Added unit tests and abstractions for Apps and Bookmarks extensions.
--   Cleans up AI‑generated tests; adds meaningful query tests across extensions.
+-   Cleans up AI-generated tests; adds meaningful query tests across extensions.
 -   Removed the obsolete debug dialog from Settings for a smoother developer loop.
 
-### What is being planned over the next few releases
+🛣️ Roadmap
+-----------
 
 For v0.95, we'll work on the items below:
 
@@ -294,10 +270,21 @@ For v0.95, we'll work on the items below:
 -   New UI automation tests
 -   Stability, bug fixes
 
-PowerToys Community
--------------------
+❤️ PowerToys Community
+----------------------
 
-The PowerToys team is extremely grateful to have the support of an amazing active community. The work you do is incredibly important. PowerToys wouldn’t be nearly what it is today without your help filing bugs, updating documentation, guiding the design, or writing features. We want to say thank you and take time to recognize your work. Month by month, you directly help make PowerToys a better piece of software.
+The PowerToys team is extremely grateful to have the support of an amazing active community. The work you do is incredibly important. PowerToys wouldn't be nearly what it is today without your help filing bugs, updating documentation, guiding the design, or writing features. We want to say thank you and take time to recognize your work. Your contributions and feedback improve PowerToys month after month!
+
+Contributing
+------------
+
+This project welcomes contributions of all types. Besides coding features / bug fixes, other ways to assist include spec writing, design, documentation, and finding bugs. We are excited to work with the power user community to build a set of tools for helping you get the most out of Windows.
+
+We ask that **before you start work on a feature that you would like to contribute**, please read our Contributor's Guide. We would be happy to work with you to figure out the best approach, provide guidance and mentorship throughout feature development, and help avoid any wasted or duplicate effort.
+
+Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you grant us the rights to use your contribution and that you have permission to do so.
+
+For guidance on developing for PowerToys, please read the developer docs for a detailed breakdown. This includes how to setup your computer to compile.
 
 Code of Conduct
 ---------------

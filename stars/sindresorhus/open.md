@@ -1,6 +1,6 @@
 ---
 project: open
-stars: 3339
+stars: 3342
 description: Open stuff like URLs, files, executables. Cross-platform.
 url: https://github.com/sindresorhus/open
 ---

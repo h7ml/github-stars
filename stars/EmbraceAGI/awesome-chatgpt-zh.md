@@ -1,6 +1,6 @@
 ---
 project: awesome-chatgpt-zh
-stars: 11319
+stars: 11328
 description: ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀
 url: https://github.com/EmbraceAGI/awesome-chatgpt-zh
 ---

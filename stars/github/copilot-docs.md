@@ -1,6 +1,6 @@
 ---
 project: copilot-docs
-stars: 23276
+stars: 23278
 description: Documentation for GitHub Copilot
 url: https://github.com/github/copilot-docs
 ---

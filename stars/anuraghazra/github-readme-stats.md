@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 76045
+stars: 76192
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
@@ -401,13 +401,13 @@ Polish
 
 Portuguese (Brazil)
 
-Code
-
-Locale
-
 `pt-pt`
 
 Portuguese (Portugal)
+
+Code
+
+Locale
 
 `ro`
 
@@ -419,7 +419,11 @@ Russian
 
 `sr`
 
-Serbian
+Serbian (Cyrillic)
+
+`sr-latn`
+
+Serbian (Latin)
 
 `sk`
 

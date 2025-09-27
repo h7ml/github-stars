@@ -1,6 +1,6 @@
 ---
 project: epage
-stars: 489
+stars: 490
 description: 一款基于schema的低代码可视化页面配置工具
 url: https://github.com/didi/epage
 ---

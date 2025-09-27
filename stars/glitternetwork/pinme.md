@@ -1,6 +1,6 @@
 ---
 project: pinme
-stars: 606
+stars: 618
 description: Deploy Your Frontend in a Single Command
 url: https://github.com/glitternetwork/pinme
 ---
@@ -8,18 +8,9 @@ url: https://github.com/glitternetwork/pinme
 PinMe
 =====
 
-PinMe is a simple and easy-to-use command-line tool for uploading files and directories to the IPFS network.
+PinMe is a one-command deploy tool that turns static sites into permanent, verifiable frontends by pinning to IPFS, writing contenthash to ENS subnames, and serving through gateways like eth.limo—no DNS, no servers.
 
 Website：https://pinme.eth.limo/
-
-Features
---------
-
--   🚀 Quickly upload files and directories to IPFS
--   📂 Support for various file types and sizes
--   📊 View and manage upload history
--   🔗 Automatically generate accessible IPFS links
--   🌐 Preview uploaded content
 
 Installation
 ------------

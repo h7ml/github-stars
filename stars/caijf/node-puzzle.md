@@ -1,6 +1,6 @@
 ---
 project: node-puzzle
-stars: 10
+stars: 11
 description: Node.js 生成滑块验证码的拼图和背景图。
 url: https://github.com/caijf/node-puzzle
 ---

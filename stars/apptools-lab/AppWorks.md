@@ -1,6 +1,6 @@
 ---
 project: AppWorks
-stars: 1008
+stars: 1009
 description: 🐻  基于 VS Code 插件的前端研发工具集，站点国内镜像：https://apptools.gitee.io
 url: https://github.com/apptools-lab/AppWorks
 ---

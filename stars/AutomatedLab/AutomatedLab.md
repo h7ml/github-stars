@@ -1,6 +1,6 @@
 ---
 project: AutomatedLab
-stars: 2129
+stars: 2130
 description: AutomatedLab is a provisioning solution and framework that lets you deploy complex labs on HyperV and Azure with simple PowerShell scripts. It supports all Windows operating systems from 2008 R2 to 2022, some Linux distributions and various products like AD, Exchange, PKI, IIS, etc.
 url: https://github.com/AutomatedLab/AutomatedLab
 ---

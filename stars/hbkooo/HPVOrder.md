@@ -1,6 +1,6 @@
 ---
 project: HPVOrder
-stars: 69
+stars: 68
 description: 约苗公众号HPV疫苗可预约查询
 url: https://github.com/hbkooo/HPVOrder
 ---

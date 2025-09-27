@@ -1,6 +1,6 @@
 ---
 project: nuxt
-stars: 58205
+stars: 58285
 description: The Intuitive Vue Framework.
 url: https://github.com/nuxt/nuxt
 ---
@@ -58,7 +58,7 @@ Example of an `app.vue`:
 <script setup lang="ts">
 useSeoMeta({
   title: 'Meet Nuxt',
-  description: 'The Intuitive Vue Framework.'
+  description: 'The Intuitive Vue Framework.',
 })
 </script\>
 

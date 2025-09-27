@@ -1,6 +1,6 @@
 ---
 project: awesome-cursorrules
-stars: 33986
+stars: 34202
 description: 📄  Configuration files that enhance Cursor AI editor experience with custom rules and behaviors
 url: https://github.com/PatrickJS/awesome-cursorrules
 ---
@@ -14,6 +14,8 @@ Cursor AI is an AI-powered code editor. `.cursorrules` files define custom rules
 
 Sponsorships
 ------------
+
+### Warp - Built for coding with multiple AI agents
 
 ### coderabbit.ai - Cut Code Review Time & Bugs in Half. Instantly.
 
@@ -233,6 +235,7 @@ Rules
 -   Python Developer - Cursor rules for Python development with developer integration.
 -   Python Projects Guide - Cursor rules for Python development with projects guide integration.
 -   PyTorch (scikit-learn) - Cursor rules for PyTorch development with scikit-learn integration.
+-   R Best Practices - Cursor rules for R development with best practices integration.
 -   Solidity (Foundry) - Cursor rules for Solidity development with Foundry integration.
 -   Solidity (Hardhat) - Cursor rules for Solidity development with Hardhat integration.
 -   Solidity (React Blockchain Apps) - Cursor rules for Solidity development with React Blockchain apps integration.
@@ -319,6 +322,8 @@ Please ensure your contribution is original or properly credited if based on exi
 
 Sponsorships
 ------------
+
+### Warp - Built for coding with multiple AI agents
 
 ### coderabbit.ai - Cut Code Review Time & Bugs in Half. Instantly.
 

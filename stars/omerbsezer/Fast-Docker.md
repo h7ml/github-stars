@@ -1,6 +1,6 @@
 ---
 project: Fast-Docker
-stars: 643
+stars: 645
 description: This repo covers containerization and Docker Environment: Docker File, Image, Container, Commands, Volumes, Networks, Swarm, Stack, Service, possible scenarios.
 url: https://github.com/omerbsezer/Fast-Docker
 ---

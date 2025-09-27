@@ -1,6 +1,6 @@
 ---
 project: wechaty-bot
-stars: 7
+stars: 8
 description: 公众号小助手
 url: https://github.com/sl1673495/wechaty-bot
 ---

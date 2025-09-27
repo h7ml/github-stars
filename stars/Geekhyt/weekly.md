@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 1510
+stars: 1509
 description: 童欧巴的技术周刊，每周发布。🌰
 url: https://github.com/Geekhyt/weekly
 ---

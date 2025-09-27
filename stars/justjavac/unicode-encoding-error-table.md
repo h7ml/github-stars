@@ -1,6 +1,6 @@
 ---
 project: unicode-encoding-error-table
-stars: 215
+stars: 216
 description: Unicode 中文乱码速查表
 url: https://github.com/justjavac/unicode-encoding-error-table
 ---

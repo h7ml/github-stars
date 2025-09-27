@@ -1,6 +1,6 @@
 ---
 project: MiniGPT-4
-stars: 25743
+stars: 25746
 description: Open-sourced codes for MiniGPT-4 and MiniGPT-v2 (https://minigpt-4.github.io, https://minigpt-v2.github.io/)
 url: https://github.com/Vision-CAIR/MiniGPT-4
 ---

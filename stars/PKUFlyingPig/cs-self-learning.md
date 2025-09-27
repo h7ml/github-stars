@@ -1,6 +1,6 @@
 ---
 project: cs-self-learning
-stars: 67418
+stars: 67628
 description: 计算机自学指南
 url: https://github.com/PKUFlyingPig/cs-self-learning
 ---

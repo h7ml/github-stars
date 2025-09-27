@@ -1,6 +1,6 @@
 ---
 project: 17wanxiaoCheckin
-stars: 398
+stars: 397
 description: 完美校园健康打卡，校内打卡，理论上支持所有学校（大概...）
 url: https://github.com/ReaJason/17wanxiaoCheckin
 ---

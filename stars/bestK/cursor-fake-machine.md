@@ -1,6 +1,6 @@
 ---
 project: cursor-fake-machine
-stars: 2723
+stars: 2722
 description: null
 url: https://github.com/bestK/cursor-fake-machine
 ---

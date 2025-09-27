@@ -1,6 +1,6 @@
 ---
 project: LangBot
-stars: 13530
+stars: 13611
 description: 🤩 Easy-to-use global IM bot platform designed for LLM era / 简单易用的大模型即时通信机器人开发平台 ⚡️ Bots for QQ / QQ频道 / Discord / LINE / WeChat(微信, 企业微信)/ Telegram / 飞书 / 钉钉 / Slack 🧩 Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Claude, Google Gemini, xAI, PPIO, Ollama, 阿里云百炼, SiliconFlow, Qwen, Moonshot, SillyTraven, MCP etc. LLM & Agent & RAG
 url: https://github.com/langbot-app/LangBot
 ---
@@ -210,6 +210,12 @@ GiteeAI
 大模型接口聚合平台
 
 SiliconFlow
+
+✅
+
+大模型聚合平台
+
+小马算力
 
 ✅
 

@@ -1,6 +1,6 @@
 ---
 project: IofTV-Screen
-stars: 584
+stars: 585
 description: 🔥大屏，物联网大屏，一个基于 vue、datav、Echart 框架的大数据可视化（大屏展示）模板
 url: https://github.com/daidaibg/IofTV-Screen
 ---

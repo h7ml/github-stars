@@ -1,7 +1,7 @@
 ---
 project: aurora
 stars: 376
-description: An awesome blog theme, perfect for ACG lovers.
+description: An awesome blog theme for ACG fans.
 url: https://github.com/chanshiyucx/aurora
 ---
 

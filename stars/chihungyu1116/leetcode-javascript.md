@@ -1,6 +1,6 @@
 ---
 project: leetcode-javascript
-stars: 847
+stars: 846
 description: Leetcode Solution using Javascript
 url: https://github.com/chihungyu1116/leetcode-javascript
 ---

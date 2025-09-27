@@ -1,6 +1,6 @@
 ---
 project: lynx
-stars: 13134
+stars: 13187
 description: Empower the Web community and invite more to build across platforms.
 url: https://github.com/lynx-family/lynx
 ---
@@ -82,8 +82,11 @@ Lynx incorporates the following third-party libraries, which have significantly 
 -   aes
 -   benchmark
 -   binding
--   checkstyle
+-   boringssl
+-   boringssl\_gen
 -   buildroot
+-   checkstyle
+-   cpp-httplib
 -   double-conversion
 -   googletest
 -   jsoncpp

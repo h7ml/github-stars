@@ -1,6 +1,6 @@
 ---
 project: paicoding
-stars: 2766
+stars: 2779
 description: ⭐️一款好用又强大的开源社区，基于 Spring Boot、MyBatis-Plus、MySQL、Redis、ElasticSearch、MongoDB、Docker、RabbitMQ 等主流技术栈，附详细教程，包括Java、Spring、MySQL、Redis、微服务&分布式、消息队列等核心知识点。学编程，就上技术派😁。
 url: https://github.com/itwanger/paicoding
 ---

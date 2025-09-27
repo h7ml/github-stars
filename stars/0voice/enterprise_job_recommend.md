@@ -1,6 +1,6 @@
 ---
 project: enterprise_job_recommend
-stars: 609
+stars: 610
 description: 2023年 最新整理暑假实习（含Java，前端，测试，c++，嵌入式，算法岗），base（北京，上海，广州，深圳，杭州，西安，成都，南京），每周定时更新
 url: https://github.com/0voice/enterprise_job_recommend
 ---

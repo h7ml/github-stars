@@ -1,6 +1,6 @@
 ---
 project: payload-dumper-go
-stars: 2949
+stars: 2957
 description: an android OTA payload dumper written in Go
 url: https://github.com/ssut/payload-dumper-go
 ---

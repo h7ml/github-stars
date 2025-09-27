@@ -1,6 +1,6 @@
 ---
 project: plop
-stars: 7513
+stars: 7522
 description: Consistency Made Simple
 url: https://github.com/plopjs/plop
 ---
@@ -148,6 +148,28 @@ $ plop component -- --type react
 By default Plop actions keep your files safe by failing when things look fishy. The most obvious example of this is not allowing an `add` action to overwrite a file that already exists. Plop actions individually support the `force` property but you can also use the `--force` flag when running Plop from the terminal. Using the `--force` flag will tell every action to run forcefully. With great power...🕷
 
 ### Using TypeScript plopfiles
+
+#### Node.js v22.18+\*\*
+
+Modern Node.js supports TypeScript files out-of-the-box. No extra setup or CLI flags are required to use a TypeScript plopfile.
+
+First, make a TypesScript plopfile using `plop --init-ts` or by hand:
+
+// plopfile.ts
+import { NodePlopAPI } from "plop";
+
+export default function (plop: NodePlopAPI) {
+  // plop generator code
+}
+
+Second, add `plop` to `scripts` in `package.json`:
+
+// package.json
+"scripts": {
+  "plop" : "plop"
+}
+
+#### Older Node.js Versions\*\*
 
 Plop bundles TypeScript declarations and supports TypeScript plopfiles via tsx loaders, a feature of NodeJS command line imports.
 

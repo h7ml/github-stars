@@ -1,6 +1,6 @@
 ---
 project: vitess
-stars: 20137
+stars: 20216
 description: Vitess is a database clustering system for horizontal scaling of MySQL.
 url: https://github.com/vitessio/vitess
 ---

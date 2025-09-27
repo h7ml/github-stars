@@ -1,6 +1,6 @@
 ---
 project: vue3-tree-org
-stars: 166
+stars: 168
 description: 基于vue3.x + typeScript 实现的组织架构图
 url: https://github.com/sangtian152/vue3-tree-org
 ---

@@ -1,6 +1,6 @@
 ---
 project: nsfw-filter
-stars: 1746
+stars: 1752
 description: A free, open source, and privacy-focused browser extension to block “not safe for work” content built using TypeScript and TensorFlow.js.
 url: https://github.com/nsfw-filter/nsfw-filter
 ---

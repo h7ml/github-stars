@@ -1,6 +1,6 @@
 ---
 project: flowbite
-stars: 8829
+stars: 8850
 description: Open-source UI component library and front-end development framework based on Tailwind CSS
 url: https://github.com/themesberg/flowbite
 ---

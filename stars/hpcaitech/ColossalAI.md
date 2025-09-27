@@ -1,6 +1,6 @@
 ---
 project: ColossalAI
-stars: 41164
+stars: 41181
 description: Making large AI models cheaper, faster and more accessible
 url: https://github.com/hpcaitech/ColossalAI
 ---
@@ -14,17 +14,113 @@ Colossal-AI: Making large AI models cheaper, faster, and more accessible
 
 | English | 中文 |
 
-Get Started with Colossal-AI Without Setup
-------------------------------------------
+Instantly Run Colossal-AI on Enterprise-Grade GPUs
+--------------------------------------------------
 
-Access high-end, on-demand compute for your research instantly—no setup needed.
+Skip the setup. Access a powerful, pre-configured Colossal-AI environment on **HPC-AI Cloud**.
 
-Sign up now and get $10 in credits!
+Train your models and scale your AI workload in one click!
 
-Limited Academic Bonuses:
+-   **NVIDIA Blackwell B200s**: Experience the next generation of AI performance (See Benchmarks). Now available on cloud from **$2.47/hr**.
+-   **Cost-Effective H200 Cluster**: Get premier performance with on-demand rental from just **$1.99/hr**.
 
--   Top up $1,000 and receive 300 credits
--   Top up $500 and receive 100 credits
+**Get Started Now & Claim Your Free Credits →**
+
+### Colossal-AI Benchmark
+
+To see how these performance gains translate to real-world applications, we conducted a large language model training benchmark using Colossal-AI on Llama-like models. The tests were run on both 8-card and 16-card configurations for 7B and 70B models, respectively.
+
+GPU
+
+GPUs
+
+Model Size
+
+Parallelism
+
+Batch Size per DP
+
+Seqlen
+
+Throughput
+
+TFLOPS/GPU
+
+Peak Mem(MiB)
+
+H200
+
+8
+
+7B
+
+zero2(dp8)
+
+36
+
+4096
+
+17.13 samp/s
+
+534.18
+
+119040.02
+
+H200
+
+16
+
+70B
+
+zero2
+
+48
+
+4096
+
+3.27 samp/s
+
+469.1
+
+150032.23
+
+B200
+
+8
+
+7B
+
+zero1(dp2)+tp2+pp4
+
+128
+
+4096
+
+25.83 samp/s
+
+805.69
+
+100119.77
+
+H200
+
+16
+
+70B
+
+zero1(dp2)+tp2+pp4
+
+128
+
+4096
+
+5.66 samp/s
+
+811.79
+
+100072.02
+
+The results from the Colossal-AI benchmark provide the most practical insight. For the 7B model on 8 cards, the **B200 achieved a 50% higher throughput** and a significant increase in TFLOPS per GPU. For the 70B model on 16 cards, the B200 again demonstrated a clear advantage, with **over 70% higher throughput and TFLOPS per GPU**. These numbers show that the B200's performance gains translate directly to faster training times for large-scale models.
 
 Latest News
 -----------

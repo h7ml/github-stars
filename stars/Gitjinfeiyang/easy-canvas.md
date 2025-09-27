@@ -1,6 +1,6 @@
 ---
 project: easy-canvas
-stars: 682
+stars: 683
 description: 使用render函数在canvas中创建文档流布局，小程序海报图、小程序朋友圈分享图。easy-canvas is a powerful tool helps us easy to layout with canvas. 
 url: https://github.com/Gitjinfeiyang/easy-canvas
 ---

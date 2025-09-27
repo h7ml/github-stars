@@ -1,6 +1,6 @@
 ---
 project: p-limit
-stars: 2539
+stars: 2545
 description: Run multiple promise-returning & async functions with limited concurrency
 url: https://github.com/sindresorhus/p-limit
 ---

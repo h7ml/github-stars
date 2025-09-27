@@ -1,6 +1,6 @@
 ---
 project: Ali_Auction
-stars: 2
+stars: 3
 description: Crawl data from https://sf.taobao.com/ and clean data
 url: https://github.com/YyyyyyiZ/Ali_Auction
 ---

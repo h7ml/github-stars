@@ -1,6 +1,6 @@
 ---
 project: Quicker
-stars: 579
+stars: 580
 description: Quicker软件反馈repo
 url: https://github.com/cuiliang/Quicker
 ---

@@ -1,6 +1,6 @@
 ---
 project: vitesse
-stars: 9303
+stars: 9313
 description: 🏕 Opinionated Vite + Vue Starter Template
 url: https://github.com/antfu-collective/vitesse
 ---
@@ -137,7 +137,7 @@ As this template is strongly opinionated, the following provides a curated list 
 -   vitecamp by @nekobc1998923 - Like Vitesse but without SSG/SSR/File based routing, includes Element Plus
 -   vitesse-h5 by @YunYouJun - Vitesse for Mobile
 -   bat by @olgam4 - Vitesse for SolidJS
--   vitesse-solid by @xbmlz - Vitesse for SolidJS, build with `SolidStart`, includes UnoCSS and HopeUI.
+-   vitesse-solid by @xbmlz - Vitesse for SolidJS, build with `SolidStart`, includes UnoCSS.
 -   vue3-vant-mobile by CharleeWa - Like Vitesse but without SSG/SSR, includes Vant
 
 Try it now!

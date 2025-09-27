@@ -1,6 +1,6 @@
 ---
 project: open-docs
-stars: 56
+stars: 57
 description: 用以托管 opendocs.alipay.com 文档
 url: https://github.com/AlipayDocs/open-docs
 ---

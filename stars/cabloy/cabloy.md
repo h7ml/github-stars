@@ -1,6 +1,6 @@
 ---
 project: cabloy
-stars: 963
+stars: 964
 description: 🚀 A Node.js full-stack framework with workflow engine.
 url: https://github.com/cabloy/cabloy
 ---

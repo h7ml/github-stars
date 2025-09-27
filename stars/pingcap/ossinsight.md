@@ -1,6 +1,6 @@
 ---
 project: ossinsight
-stars: 2147
+stars: 2151
 description: Analysis, Comparison, Trends, Rankings of Open Source Software, you can also get insight from more than 7 billion with natural language (powered by OpenAI). Follow us on Twitter: https://twitter.com/ossinsight
 url: https://github.com/pingcap/ossinsight
 ---

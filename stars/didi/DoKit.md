@@ -1,6 +1,6 @@
 ---
 project: DoKit
-stars: 20387
+stars: 20391
 description: 一款面向泛前端产品研发全生命周期的效率平台。
 url: https://github.com/didi/DoKit
 ---

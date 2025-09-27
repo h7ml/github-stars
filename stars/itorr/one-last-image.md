@@ -1,6 +1,6 @@
 ---
 project: one-last-image
-stars: 829
+stars: 838
 description: 🧸「One Last Image」卢浮宫生成器 One Last Kiss 封面风格生成
 url: https://github.com/itorr/one-last-image
 ---

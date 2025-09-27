@@ -1,6 +1,6 @@
 ---
 project: nodebox-runtime
-stars: 825
+stars: 827
 description: Nodebox is a runtime for executing Node.js modules in the browser.
 url: https://github.com/Sandpack/nodebox-runtime
 ---

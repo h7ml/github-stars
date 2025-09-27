@@ -1,6 +1,6 @@
 ---
 project: long_stable_diffusion
-stars: 692
+stars: 691
 description: Long-form text-to-images generation, using a pipeline of deep generative models (GPT-3 and Stable Diffusion)
 url: https://github.com/sharonzhou/long_stable_diffusion
 ---

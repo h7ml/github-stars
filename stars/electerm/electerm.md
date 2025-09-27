@@ -1,6 +1,6 @@
 ---
 project: electerm
-stars: 13026
+stars: 13056
 description: 📻Terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC client(linux, mac, win)
 url: https://github.com/electerm/electerm
 ---

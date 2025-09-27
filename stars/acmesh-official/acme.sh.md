@@ -1,6 +1,6 @@
 ---
 project: acme.sh
-stars: 43999
+stars: 44086
 description: A pure Unix shell script implementing ACME client protocol
 url: https://github.com/acmesh-official/acme.sh
 ---
@@ -168,9 +168,9 @@ Supported CA
 
 -   ZeroSSL.com CA(default)
 -   Letsencrypt.org CA
--   BuyPass.com CA
 -   SSL.com CA
 -   Google.com Public CA
+-   Actalis.com CA
 -   Pebble strict Mode
 -   Any other RFC8555\-compliant CA
 

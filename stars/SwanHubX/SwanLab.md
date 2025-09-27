@@ -1,6 +1,6 @@
 ---
 project: SwanLab
-stars: 2618
+stars: 2659
 description: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / LLaMA Factory / veRL/ Swift / Ultralytics / MMEngine / Keras etc.
 url: https://github.com/SwanHubX/SwanLab
 ---
@@ -39,6 +39,8 @@ url: https://github.com/SwanHubX/SwanLab
 🌟 最近更新
 -------
 
+-   2025.09.22：📊全新UI上线；表格视图支持全局排序和筛选；数据层面统一表格视图与图表视图；
+    
 -   2025.09.12：🔢支持创建**标量图**，灵活显示实验指标的统计值；组织管理页面大升级，提供更强大的权限控制与项目管理能力；
     
 -   2025.08.19：🤔更强大的图表渲染性能与低侵入式加载动画，让研究者更聚焦于实验分析本身；集成优秀的MLX-LM、SpecForge框架，提供更多场景的训练体验；
@@ -55,11 +57,11 @@ url: https://github.com/SwanHubX/SwanLab
     
 -   2025.06.27：📊支持**小折线图局部放大**；支持配置**单个折线图平滑**；大幅改进了图像图表放大后的交互效果；
     
--   2025.06.20：🤗集成accelerate框架，PR，文档，增强分布式训练中的实验记录体验；
-    
 
 完整更新日志
 
+-   2025.06.20：🤗集成accelerate框架，PR，文档，增强分布式训练中的实验记录体验；
+    
 -   2025.06.18：🐜集成AREAL框架，感谢@xichengpro，PR，文档；🖱支持鼠标Hover到侧边栏实验时，高亮相应曲线；支持跨组对比折线图；支持设置实验名裁剪规则；
     
 -   2025.06.11：📊支持 **swanlab.echarts.table** 数据类型，支持纯文本图表展示；支持对分组进行**拉伸交互**，以增大同时显示的图表数量；表格视图增加 **指标最大/最小值** 选项；

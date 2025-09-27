@@ -1,6 +1,6 @@
 ---
 project: eslint-plugin-jest
-stars: 1162
+stars: 1163
 description: ESLint plugin for Jest 
 url: https://github.com/jest-community/eslint-plugin-jest
 ---

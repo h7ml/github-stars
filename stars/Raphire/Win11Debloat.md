@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 26687
+stars: 26946
 description: A simple, easy to use PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---
@@ -98,8 +98,8 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
 -   Disable & remove Microsoft Copilot.
--   Disable Windows Recall snapshots. (W11 only)
--   Disable Click to Do AI text & image analysis. (W11 only)
+-   Disable Windows Recall. (W11 only)
+-   Disable Click to Do, AI text & image analysis tool. (W11 only)
 -   Disable AI Features in Edge. (W11 only)
 -   Disable AI Features in Paint. (W11 only)
 -   Disable AI Features in Notepad. (W11 only)
@@ -125,10 +125,11 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 #### Taskbar
 
 -   Align taskbar icons to the left. (W11 only)
+-   Choose combine mode for taskbar buttons and labels. (W11 only)
 -   Hide or change the search icon/box on the taskbar. (W11 only)
 -   Hide the taskview button from the taskbar. (W11 only)
 -   Disable widgets on the taskbar & lockscreen.
--   Hide the chat (meet now) icon from the taskbar.
+-   Hide the chat (meet now) icon from the taskbar. (W10 only)
 -   Enable the 'End Task' option in the taskbar right click menu. (W11 only)
 -   Enable the 'Last Active Click' behavior in the taskbar app area. This allows you to repeatedly click on an application's icon in the taskbar to switch focus between the open windows of that application.
 
@@ -161,13 +162,14 @@ Alternatively, you can launch the script with the `-RunDefaults` or `-RunDefault
 -   Disable ads, suggestions and the MSN news feed in Microsoft Edge.
 -   Disable & remove Bing web search, Bing AI and Cortana from Windows search.
 -   Disable & remove Microsoft Copilot.
--   Disable Windows Recall snapshots. (W11 only)
+-   Disable Windows Recall. (W11 only)
+-   Disable Click to Do, AI text & image analysis tool. (W11 only)
 -   Disable Fast Start-up to ensure a full shutdown.
 -   Disable network connectivity during Modern Standby to reduce battery drain. (W11 only)
 -   Show file extensions for known file types.
 -   Hide the 3D objects folder under 'This pc' from File Explorer. (W10 only)
 -   Disable widgets on the taskbar & lockscreen.
--   Hide the Chat (meet now) icon from the taskbar.
+-   Hide the Chat (meet now) icon from the taskbar. (W10 only)
 
 #### Apps that ARE removed by default
 

@@ -1,6 +1,6 @@
 ---
 project: 30-seconds-for-everyday
-stars: 331
+stars: 332
 description: 聚焦前端 | 夯实基础 | 趣味教程 | 轻松进阶 
 url: https://github.com/zhangxiangliang/30-seconds-for-everyday
 ---

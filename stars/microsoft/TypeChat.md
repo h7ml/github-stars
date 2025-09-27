@@ -1,6 +1,6 @@
 ---
 project: TypeChat
-stars: 8563
+stars: 8566
 description: TypeChat is a library that makes it easy to build natural language interfaces using types.
 url: https://github.com/microsoft/TypeChat
 ---

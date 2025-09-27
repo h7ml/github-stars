@@ -1,6 +1,6 @@
 ---
 project: core
-stars: 807
+stars: 808
 description: React and HTML framework for Unity UI & UIToolkit
 url: https://github.com/ReactUnity/core
 ---

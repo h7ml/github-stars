@@ -1,6 +1,6 @@
 ---
 project: rainbowkit
-stars: 2665
+stars: 2679
 description: The best way to connect a wallet 🌈 🧰
 url: https://github.com/rainbow-me/rainbowkit
 ---

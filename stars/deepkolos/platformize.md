@@ -1,6 +1,6 @@
 ---
 project: platformize
-stars: 326
+stars: 327
 description: 一个支持把 js 库中浏览器 api 改用定制 polyfill 的构建插件, 并提供定制适配, 比如threejs/oasis/playcanvas/pixi/galacean
 url: https://github.com/deepkolos/platformize
 ---

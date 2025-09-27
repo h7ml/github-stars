@@ -1,6 +1,6 @@
 ---
 project: KuiklyUI
-stars: 2472
+stars: 2531
 description: Provide a high-performance, full-platform development framework with unified codebase, ultimate ease of use, and dynamic flexibility.
 url: https://github.com/Tencent-TDS/KuiklyUI
 ---

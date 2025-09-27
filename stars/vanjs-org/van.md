@@ -1,6 +1,6 @@
 ---
 project: van
-stars: 4190
+stars: 4199
 description: 🍦 VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour.
 url: https://github.com/vanjs-org/van
 ---
@@ -256,7 +256,7 @@ Server-side rendering for **VanJS** with file-based routing and client-side hydr
 
 Zakaria Elalaoui
 
-Contributors (67)
+Contributors (68)
 -----------------
 
 _If I miss anyone's contribution here, apologies for my oversight 🙏, please comment on #87 to let me know._
@@ -445,7 +445,7 @@ Emoji key
 
   
 **Vlad Sirenko**  
-💡 💻 🐛
+💡 💻 🐛 🤔
 
   
 **董凯**  
@@ -529,4 +529,8 @@ Emoji key
 
   
 **Torbjorn Tyridal**  
+🤔
+
+  
+**cubxx**  
 🤔

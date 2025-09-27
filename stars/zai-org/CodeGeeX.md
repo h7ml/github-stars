@@ -1,6 +1,6 @@
 ---
 project: CodeGeeX
-stars: 8639
+stars: 8648
 description: CodeGeeX: An Open Multilingual Code Generation Model (KDD 2023)
 url: https://github.com/zai-org/CodeGeeX
 ---

@@ -1,6 +1,6 @@
 ---
 project: mcp-cn
-stars: 49
+stars: 50
 description: MCP Hub 中国是一个专注于 Model Context Protocol (MCP) 生态的开源平台。它致力于汇聚全球优质的 MCP 服务,提供一站式的解决方案,包括服务发现、接入指南和使用示例,并建立完善的中文生态,欢迎开发者参与贡献和完善平台功能。
 url: https://github.com/mengjian-github/mcp-cn
 ---

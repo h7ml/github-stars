@@ -1,6 +1,6 @@
 ---
 project: OpenTGX
-stars: 645
+stars: 647
 description: A game development solution using typescript, can make 2d&3d games for all platforms easily. Based on Cocos Creator( support WebGL|WebGPU|Metal|Vulkan|OpenGLES ), can work with all server side solutions(such as Go, NodeJS, Java, C#, etc).
 url: https://github.com/qilinshuyuan/OpenTGX
 ---

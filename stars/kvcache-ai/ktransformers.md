@@ -1,6 +1,6 @@
 ---
 project: ktransformers
-stars: 15078
+stars: 15109
 description: A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations
 url: https://github.com/kvcache-ai/ktransformers
 ---

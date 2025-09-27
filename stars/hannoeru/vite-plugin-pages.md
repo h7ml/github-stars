@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-pages
-stars: 2039
+stars: 2040
 description: File system based route generator for ⚡️Vite
 url: https://github.com/hannoeru/vite-plugin-pages
 ---

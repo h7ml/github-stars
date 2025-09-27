@@ -1,6 +1,6 @@
 ---
 project: juice
-stars: 89
+stars: 90
 description: Like Mybatis but for golang.
 url: https://github.com/go-juicedev/juice
 ---

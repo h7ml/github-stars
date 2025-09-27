@@ -1,6 +1,6 @@
 ---
 project: vscode-goto-alias
-stars: 267
+stars: 269
 description: Go to Definition following alias redirections.
 url: https://github.com/antfu/vscode-goto-alias
 ---

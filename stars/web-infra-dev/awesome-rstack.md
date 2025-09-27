@@ -1,6 +1,6 @@
 ---
 project: awesome-rstack
-stars: 361
+stars: 365
 description: A curated list of awesome things related to Rstack.
 url: https://github.com/web-infra-dev/awesome-rstack
 ---
@@ -305,6 +305,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 -   rsbuild-plugin-arethetypeswrong: Checking TypeScript type definitions with `arethetypeswrong`.
 -   zephyr-rsbuild-plugin: An Rsbuild plugin for deploying applications with Zephyr Cloud.
 -   rsbuild-plugin-protobufjs: An Rsbuild plugin that integrates `protobufjs`.
+-   rsbuild-plugin-cdn-import: Import modules from CDN with Rsbuild plugin.
 
 ### Rspress Plugins
 

@@ -1,6 +1,6 @@
 ---
 project: TechFlow
-stars: 95
+stars: 96
 description: 拖拽的方式使用 AI
 url: https://github.com/tech-flow-org/TechFlow
 ---

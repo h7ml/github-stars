@@ -1,6 +1,6 @@
 ---
 project: tarojs-plugin-ssr
-stars: 232
+stars: 233
 description: 让 Taro H5 支持 Pre-rendering、SSR 和 ISR，极致的首屏速度🚀，利于 SEO🔍
 url: https://github.com/NervJS/tarojs-plugin-ssr
 ---

@@ -1,6 +1,6 @@
 ---
 project: unvcode
-stars: 1372
+stars: 1371
 description: 【幼女Code】反和谐超级武器！
 url: https://github.com/RimoChan/unvcode
 ---

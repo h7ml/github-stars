@@ -1,6 +1,6 @@
 ---
 project: ni
-stars: 7260
+stars: 7301
 description: 💡 Use the right package manager
 url: https://github.com/antfu-collective/ni
 ---
@@ -16,6 +16,12 @@ _`npm i` in a yarn project, again? F\*\*k!_
 
 ```
 npm i -g @antfu/ni
+```
+
+### Homebrew (macOS)
+
+```
+brew install ni
 ```
 
 npm · yarn · pnpm · bun · deno

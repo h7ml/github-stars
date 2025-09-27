@@ -1,6 +1,6 @@
 ---
 project: openai-python
-stars: 28726
+stars: 28784
 description: The official Python library for the OpenAI API
 url: https://github.com/openai/openai-python
 ---

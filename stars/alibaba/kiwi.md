@@ -1,6 +1,6 @@
 ---
 project: kiwi
-stars: 2593
+stars: 2594
 description: 🐤 Kiwi-国际化翻译全流程解决方案
 url: https://github.com/alibaba/kiwi
 ---

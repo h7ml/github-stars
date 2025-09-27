@@ -1,6 +1,6 @@
 ---
 project: stack-roadmap
-stars: 4034
+stars: 4053
 description: 方糖全栈路线图2023，为「从螺丝钉到一人企业」补全技能栈
 url: https://github.com/easychen/stack-roadmap
 ---

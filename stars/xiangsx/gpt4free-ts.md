@@ -1,6 +1,6 @@
 ---
 project: gpt4free-ts
-stars: 7779
+stars: 7782
 description: Providing a free OpenAI GPT-4 API !   This is a replication project for the typescript version of xtekky/gpt4free
 url: https://github.com/xiangsx/gpt4free-ts
 ---

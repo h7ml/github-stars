@@ -1,6 +1,6 @@
 ---
 project: zod-to-ts
-stars: 387
+stars: 388
 description: generate TypeScript types from your Zod schema
 url: https://github.com/sachinraja/zod-to-ts
 ---

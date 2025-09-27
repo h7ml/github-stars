@@ -1,6 +1,6 @@
 ---
 project: learn-rust-for-fe
-stars: 1752
+stars: 1753
 description: Rust是未来前端基础设施
 url: https://github.com/i5ting/learn-rust-for-fe
 ---

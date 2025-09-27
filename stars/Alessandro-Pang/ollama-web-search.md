@@ -1,6 +1,6 @@
 ---
 project: ollama-web-search
-stars: 26
+stars: 27
 description: LLM + SearXNG 搜索，实现 AI 联网回答, 支持多 LLM 接口
 url: https://github.com/Alessandro-Pang/ollama-web-search
 ---

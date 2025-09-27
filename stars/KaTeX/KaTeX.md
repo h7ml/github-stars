@@ -1,6 +1,6 @@
 ---
 project: KaTeX
-stars: 19387
+stars: 19399
 description: Fast math typesetting for the web.
 url: https://github.com/KaTeX/KaTeX
 ---

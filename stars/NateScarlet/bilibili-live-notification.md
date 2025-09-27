@@ -1,6 +1,6 @@
 ---
 project: bilibili-live-notification
-stars: 40
+stars: 39
 description: B 站直播事件 webhook 和开播邮件提醒
 url: https://github.com/NateScarlet/bilibili-live-notification
 ---

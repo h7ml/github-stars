@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 75621
+stars: 76043
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---
@@ -26,6 +26,7 @@ Warp 专为 AI 代理编码而构建
 
 **九月**
 
+-   第 367 期：Nano Banana 的几个妙用
 -   第 366 期：旧金山疯狂的 AI 广告
 -   第 365 期：流量变现正在崩塌
 -   第 364 期：最难还原的魔方

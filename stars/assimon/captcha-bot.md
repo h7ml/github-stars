@@ -1,6 +1,6 @@
 ---
 project: captcha-bot
-stars: 224
+stars: 225
 description: 用于Telegram 加群验证机器人
 url: https://github.com/assimon/captcha-bot
 ---

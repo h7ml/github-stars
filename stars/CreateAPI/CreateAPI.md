@@ -1,6 +1,6 @@
 ---
 project: CreateAPI
-stars: 439
+stars: 440
 description: Delightful code generator for OpenAPI specs
 url: https://github.com/CreateAPI/CreateAPI
 ---

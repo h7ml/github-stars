@@ -1,6 +1,6 @@
 ---
 project: swagger-codegen
-stars: 17575
+stars: 17588
 description: swagger-codegen contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.
 url: https://github.com/swagger-api/swagger-codegen
 ---

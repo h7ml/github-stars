@@ -1,6 +1,6 @@
 ---
 project: stock-api
-stars: 961
+stars: 966
 description: 股票接口 | 韭菜小猪 | A股 | 美股 | 港股 | 股票 | 基金 | JavaScript
 url: https://github.com/zhangxiangliang/stock-api
 ---

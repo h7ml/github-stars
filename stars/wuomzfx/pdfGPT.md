@@ -1,6 +1,6 @@
 ---
 project: pdfGPT
-stars: 266
+stars: 265
 description: 基于 openai api 的超长 PDF 解析服务
 url: https://github.com/wuomzfx/pdfGPT
 ---

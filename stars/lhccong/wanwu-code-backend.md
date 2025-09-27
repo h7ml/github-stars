@@ -1,6 +1,6 @@
 ---
 project: wanwu-code-backend
-stars: 48
+stars: 47
 description: 一个融合万物代码的小网站🌌-拥有鱼皮自主项目API开放平台、BI智能分析平台、博客系统、伙伴匹配功能、聚合搜索功能（融合了CSDN、以及博客园的内容）
 url: https://github.com/lhccong/wanwu-code-backend
 ---

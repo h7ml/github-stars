@@ -1,6 +1,6 @@
 ---
 project: find-job
-stars: 301
+stars: 303
 description: 自动投简历助手，一键运行，完全免费
 url: https://github.com/noBaldAaa/find-job
 ---

@@ -1,6 +1,6 @@
 ---
 project: lite-xl
-stars: 5680
+stars: 5700
 description: A lightweight text editor written in Lua
 url: https://github.com/lite-xl/lite-xl
 ---

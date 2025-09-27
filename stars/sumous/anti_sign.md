@@ -1,6 +1,6 @@
 ---
 project: anti_sign
-stars: 151
+stars: 152
 description:  反各种签名算法
 url: https://github.com/sumous/anti_sign
 ---

@@ -1,6 +1,6 @@
 ---
 project: FE
-stars: 2088
+stars: 2090
 description: 前端 100 天，帮助 10W 人入门并进阶前端。
 url: https://github.com/lefex/FE
 ---

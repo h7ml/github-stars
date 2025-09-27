@@ -1,6 +1,6 @@
 ---
 project: shuimo-ui
-stars: 370
+stars: 371
 description: 一款水墨风UI
 url: https://github.com/shuimo-design/shuimo-ui
 ---

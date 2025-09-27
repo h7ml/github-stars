@@ -1,6 +1,6 @@
 ---
 project: sql-generator
-stars: 3462
+stars: 3461
 description: 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
 url: https://github.com/liyupi/sql-generator
 ---

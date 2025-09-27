@@ -1,6 +1,6 @@
 ---
 project: tools
-stars: 23582
+stars: 23581
 description: Unified developer tools for JavaScript, TypeScript, and the web
 url: https://github.com/rome/tools
 ---

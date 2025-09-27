@@ -1,6 +1,6 @@
 ---
 project: wl-mfe
-stars: 534
+stars: 533
 description: 基于vue3+koa2+qiankun2的微前端后台管理系统项目实战
 url: https://github.com/wl-ui/wl-mfe
 ---

@@ -1,6 +1,6 @@
 ---
 project: china-region
-stars: 77
+stars: 76
 description: 根据国家标准《中华人民共和国行政区划代码》即 GB2260 标准制定，用以查看各个省地县的行政区划代码，并支持多级联动查询
 url: https://github.com/shfshanyue/china-region
 ---

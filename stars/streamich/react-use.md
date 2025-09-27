@@ -1,6 +1,6 @@
 ---
 project: react-use
-stars: 43558
+stars: 43584
 description: React Hooks — 👍
 url: https://github.com/streamich/react-use
 ---

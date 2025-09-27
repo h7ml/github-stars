@@ -1,6 +1,6 @@
 ---
 project: eaio
-stars: 1030
+stars: 1029
 description: 一个通过将磁盘上所有 Electron 应用中相同文件硬链接到统一位置来减少磁盘占用的解决方案，就像 pnpm 一样。
 url: https://github.com/WankkoRee/eaio
 ---

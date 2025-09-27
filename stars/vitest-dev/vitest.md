@@ -1,6 +1,6 @@
 ---
 project: vitest
-stars: 14985
+stars: 15013
 description: Next generation testing framework powered by Vite.
 url: https://github.com/vitest-dev/vitest
 ---
@@ -42,7 +42,7 @@ Features
 -   Reporting Uncaught Errors
 -   Run your tests in the browser natively (experimental)
 
-> Vitest requires Vite >=v5.0.0 and Node >=v18.0.0
+> Vitest requires Vite >=v6.0.0 and Node >=v20.0.0
 
 import { assert, describe, expect, it } from 'vitest'
 

@@ -1,6 +1,6 @@
 ---
 project: athena
-stars: 7
+stars: 8
 description: 基于 Fresh 2.0 + TypeScript + TailwindCSS 构建的企业级 Web 应用模板
 url: https://github.com/dext7r/athena
 ---

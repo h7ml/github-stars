@@ -1,6 +1,6 @@
 ---
 project: rpc
-stars: 134
+stars: 135
 description: Go 微服务框架，Router 基于 Gin 和 gRPC Gateway，同时支持 gRPC 和 HTTP，封装各种常用组件，开箱即用，专注业务。
 url: https://github.com/air-go/rpc
 ---

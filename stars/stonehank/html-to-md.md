@@ -1,6 +1,6 @@
 ---
 project: html-to-md
-stars: 150
+stars: 151
 description: A JS library for convert HTML<String> to markdown<String>, gzip 10kb
 url: https://github.com/stonehank/html-to-md
 ---

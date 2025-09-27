@@ -1,6 +1,6 @@
 ---
 project: SwitchyOmega-Whitelist
-stars: 1125
+stars: 1130
 description: 中国大陆域名, SwitchyOmega 白名单规则, 自动更新
 url: https://github.com/entr0pia/SwitchyOmega-Whitelist
 ---

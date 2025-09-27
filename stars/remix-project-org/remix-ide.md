@@ -1,6 +1,6 @@
 ---
 project: remix-ide
-stars: 2327
+stars: 2331
 description: Documentation for Remix IDE
 url: https://github.com/remix-project-org/remix-ide
 ---
@@ -15,17 +15,17 @@ Remix Project Codebases
 
 Remix Docs (this repo)
 
--   GitHub repo: https://github.com/ethereum/remix-ide/
+-   GitHub repo: https://github.com/remix-project-org/remix-ide/
 -   Website URL: https://remix-ide.readthedocs.io/en/latest/
 
 Remix IDE
 
--   GitHub repo: https://github.com/ethereum/remix-project
+-   GitHub repo: https://github.com/remix-project-org/remix-project
 -   Website URL: https://remix.ethereum.org
 
 Remix About page
 
--   GitHub repo: https://github.com/ethereum/remix-website/
+-   GitHub repo: https://github.com/remix-project-org/remix-website/
 -   Website URL: https://remix-project.org
 
 About Remix Project
@@ -44,7 +44,7 @@ Setup the Documentation Locally
 
 To run this documentation locally, clone this repository by running the command below:
 
-git clone https://github.com/ethereum/remix-ide
+git clone https://github.com/remix-project-org/remix-ide
 
 In your cloned directory, `cd` into the `docs` folder and run the command below:
 

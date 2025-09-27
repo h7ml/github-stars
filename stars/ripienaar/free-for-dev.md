@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 112371
+stars: 112731
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -750,6 +750,7 @@ Testing
 -   loadmill.com - Automatically create API and load tests by analyzing network traffic. Simulate up to 50 concurrent users for up to 60 minutes for free monthly.
 -   lost-pixel.com - holistic visual regression testing for your Storybook, Ladle, Histoire stories and Web Apps. Unlimited team members, totally free for open-source, 7,000 snapshots/month.
 -   octomind.dev - Auto-generated, run and maintained Playwright UI tests with AI-assisted test case generation
+-   pagegym.com - Load behvariour and page speed analysis and optimization tool. The free plan provides 10 tests per day, 5 experiments per week, and 15 GB of maximum ingested data per month.
 -   percy.io - Add visual testing to any web app, static site, style guide, or component library. Unlimited team members, Demo app, and unlimited projects, 5,000 snapshots/month.
 -   qase.io - Test management system for Dev and QA teams. Manage test cases, compose test runs, perform tests, track defects, and measure impact. The free tier includes all core features, with 500MB available for attachments and up to 3 users.
 -   Repeato No-code mobile app test automation tool built on top of computer vision and AI. Works for native apps, flutter, react-native, web, ionic, and many more app frameworks. The free plan is limited to 10 tests for iOS and 10 for Android, but includes most of the features of the paid plans, including unlimited test runs.

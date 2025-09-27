@@ -1,6 +1,6 @@
 ---
 project: tree-lodash
-stars: 145
+stars: 146
 description: 轻量的“树操作”函数库  (Lightweight "tree operations" library)
 url: https://github.com/zhangshichun/tree-lodash
 ---

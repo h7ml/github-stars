@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-importer
-stars: 56
+stars: 57
 description: Integration for babel-plugin-import
 url: https://github.com/ajuner/vite-plugin-importer
 ---

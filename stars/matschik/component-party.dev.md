@@ -1,6 +1,6 @@
 ---
 project: component-party.dev
-stars: 3117
+stars: 3119
 description: 🎉 Web component JS frameworks overview by their syntax and features
 url: https://github.com/matschik/component-party.dev
 ---
@@ -358,7 +358,7 @@ Many JS developers don't have a good overview of every existing JS framework wit
     -   Render app
     -   Fetch data
 
-**Ember Polaris (preview)**
+**Ember Polaris**
 
 -   Reactivity
     -   Declare state
@@ -544,6 +544,37 @@ Many JS developers don't have a good overview of every existing JS framework wit
     -   Render app
     -   Fetch data
 
+**Ripple**
+
+-   Reactivity
+    -   Declare state
+    -   Update state
+    -   Computed state
+-   Templating
+    -   Minimal template
+    -   Styling
+    -   Loop
+    -   Event click
+    -   Dom ref
+    -   Conditional
+-   Lifecycle
+    -   On mount
+    -   On unmount
+-   Component composition
+    -   Props
+    -   Emit to parent
+    -   Slot
+    -   Slot fallback
+    -   Context
+-   Form input
+    -   Input text
+    -   Checkbox
+    -   Radio
+    -   Select
+-   Webapp features
+    -   Render app
+    -   Fetch data
+
 🤝 Contributing
 ---------------
 
@@ -554,7 +585,7 @@ For local development, pnpm is preferred as package manager:
 pnpm i
 pnpm run dev
 
-This project requires Node.js to be `v20` or higher.
+This project requires Node.js to be `v22.18.0` or higher.
 
 ### Principle when add/edit a framework snippet
 
@@ -566,17 +597,14 @@ In Component Party, we prioritize clarity over optimization as our core educatio
 
 1.  Fork the project and create a new branch
 2.  Add the new framework SVG logo in `public/framework`
-3.  Install the ESLint plugin associated to the framework
-4.  In `frameworks.mjs`, add a new entry with SVG link and ESLint configuration
-5.  If the framework needs a language syntax highlight, add it to the call to `getHighlighter`’s `langs` argument in `build/lib/generateContent.js`
-6.  To make a playground link:
-    1.  In file `build/lib/playgroundUrlByFramework.js`, add your framework id.
-    2.  The method accepts an object of filepath keys and file content values, then returns a playground URL to the framework’s online REPL with those files loaded.
+3.  In `frameworks.ts`, add a new entry with SVG link
+4.  If the framework needs a language syntax highlight, add it to the call to `getHighlighter`’s `langs` argument in `build/lib/generateContent.ts`
+5.  To make a playground link in `build/lib/playgroundUrlByFramework.ts`.
 
 🧑‍💻 Contributors
 ------------------
 
-This project exists thanks to all the people who contribute. \[Contribute\].
+This project exists thanks to all the people who contribute. Contribute
 
 ⚖️ License
 ----------

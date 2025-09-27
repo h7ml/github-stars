@@ -1,6 +1,6 @@
 ---
 project: db0
-stars: 274
+stars: 277
 description: 📚  Lightweight SQL Connector
 url: https://github.com/unjs/db0
 ---

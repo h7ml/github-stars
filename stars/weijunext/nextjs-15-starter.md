@@ -1,6 +1,6 @@
 ---
 project: nextjs-15-starter
-stars: 537
+stars: 553
 description: Lite version of the Nexty.dev SaaS Boilerplate based on Next.js. A multilingual Next.js 15 starter with built-in i18n support.
 url: https://github.com/weijunext/nextjs-15-starter
 ---

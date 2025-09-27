@@ -1,6 +1,6 @@
 ---
 project: owl-admin
-stars: 583
+stars: 584
 description: 🎈 Owl Admin : 基于 laravel 和 amis 开发的后台框架, 友好的组件使用体验, 可轻松实现复杂页面, 内置代码生成器, 让开发者快速搭建后台管理系统
 url: https://github.com/slowlyo/owl-admin
 ---

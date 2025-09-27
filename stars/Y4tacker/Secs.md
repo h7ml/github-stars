@@ -1,6 +1,6 @@
 ---
 project: Secs
-stars: 7
+stars: 8
 description: null
 url: https://github.com/Y4tacker/Secs
 ---

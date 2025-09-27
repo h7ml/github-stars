@@ -1,6 +1,6 @@
 ---
 project: go-cursor-help
-stars: 24592
+stars: 24655
 description: 解决Cursor在免费订阅期间出现以下提示的问题:  Your request has been blocked as our system has detected suspicious activity / You've reached your trial request limit.  /  Too many free trial accounts used on this machine.
 url: https://github.com/yuaotian/go-cursor-help
 ---
@@ -458,7 +458,7 @@ _1 Latiao = 1 AI thought cycle_
 
 **WeChat**  
   
-_二维码7天内(8月28日前前)有效，过期请加微信_
+_二维码7天内(9月29日前前)有效，过期请加微信或者公众号\`煎饼果子卷AI\`_
 
 * * *
 

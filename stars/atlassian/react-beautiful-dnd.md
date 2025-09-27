@@ -1,6 +1,6 @@
 ---
 project: react-beautiful-dnd
-stars: 34038
+stars: 34045
 description: Beautiful and accessible drag and drop for lists with React
 url: https://github.com/atlassian/react-beautiful-dnd
 ---

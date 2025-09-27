@@ -1,6 +1,6 @@
 ---
 project: MiaoYan
-stars: 6501
+stars: 6589
 description: ⛷ Lightweight Markdown app to help you write great sentences. ⛷ 轻灵的 Markdown 笔记本伴你写出妙言
 url: https://github.com/tw93/MiaoYan
 ---
@@ -15,9 +15,9 @@ url: https://github.com/tw93/MiaoYan
 特点
 --
 
--   🏂 **妙**：纯本地使用、安全、语法高亮、黑暗模式、源文件保存、国际化、演示模式、PPT 模式、单独编辑模式、文档自动排版、文档导出、内部跳转、图床、LaTeX、Mermaid、PlantUML、Markmap 脑图
+-   🏂 **妙**：纯本地使用、语法高亮、PPT 演示、LaTeX、Mermaid 等
 -   🎊 **美**：极简的设计风格，文件夹 + 文件列表 + 编辑器方式 3 列模式
--   🚄 **快**：使用 Swift5 原生开发，相比 Web 套壳方式性能体验好
+-   🚄 **快**：使用 Swift6 原生开发，相比 Web 套壳方式性能体验好
 -   🥛 **简**：很轻巧，纯编辑器输入体验，众多快捷键助你快人一步
 
 首次使用
@@ -54,15 +54,11 @@ url: https://github.com/tw93/MiaoYan
 
 🏂 此外还有很多快捷键 👆🏻 👇🏻 👈🏻 👉🏻 等着爱折腾的你去寻找~
 
-妙言 PPT
-------
+使用指南
+----
 
-点击查看 PPT 模式效果演示
-
-1.  新朋友默认初始化会生成模版，如果是老朋友需升级到 1.0，可以 Copy 此文件 到妙言玩一玩。
-2.  执行 `command + option + p` 可以启动妙言 PPT 预览，也可以选中文档点击右键，选择 `妙言 PPT` 打开。
-3.  只有在有 `---` 分隔符标志的文档中，才可启用 PPT 模式，演示过程中你可以 `回车键` 预览演讲大纲，`ESC` 键可退出 PPT 模式。
-4.  你可以使用 HTML 来自定义效果，更多复杂的用法可以参考 Reveal 文档。
+-   **Markdown 语法指南**：完整语法演示，包含数学公式、Mermaid 图表、PlantUML、Markmap 脑图等高级功能
+-   **PPT 演示模式**：支持用 `---` 分隔幻灯片，`command + option + p` 启动演示，可自定义主题背景
 
 为什么要做妙言
 -------
@@ -82,19 +78,12 @@ url: https://github.com/tw93/MiaoYan
 --
 
 -   glushchenko/fsnotes：项目初始化代码参考于此，非常感谢作者
-    
 -   stackotter/swift-cmark-gfm：快速高效的 Swift Markdown 解析器
-    
+-   simonbs/Prettier：Swift Markdown 格式化工具，让妙言排版更加优雅
 -   raspu/Highlightr：语法高亮能力
-    
--   仓耳字库：一款漂亮的开源中文字体仓耳今楷，妙言将其作为默认字体
-    
+-   仓耳字库：一款漂亮的中文字体仓耳今楷，妙言将其作为默认字体
 -   hakimel/reveal.js：妙言 PPT 底层渲染依赖此框架
-    
--   本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助
-    
-
-> **📦 依赖管理**：项目使用 Swift Package Manager 管理依赖，详细信息请查看 `DEPENDENCIES.md`
+-   感谢 Vercel 给妙言 官网 提供静态渲染能力
 
 协议
 ==

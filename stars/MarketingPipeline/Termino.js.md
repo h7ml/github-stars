@@ -1,6 +1,6 @@
 ---
 project: Termino.js
-stars: 627
+stars: 629
 description: Create a web based terminal on any website - great for games, animations and real world apps!
 url: https://github.com/MarketingPipeline/Termino.js
 ---

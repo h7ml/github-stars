@@ -1,6 +1,6 @@
 ---
 project: HaE
-stars: 3801
+stars: 3823
 description: HaE - Highlighter and Extractor, Empower ethical hacker for efficient operations.
 url: https://github.com/gh0stkey/HaE
 ---

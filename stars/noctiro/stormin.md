@@ -1,6 +1,6 @@
 ---
 project: stormin
-stars: 49
+stars: 51
 description: 通用盗号网站注册轰炸机 适用于针对QQ、Steam等平台的各类盗号网站
 url: https://github.com/noctiro/stormin
 ---

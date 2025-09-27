@@ -1,6 +1,6 @@
 ---
 project: developer-roadmap
-stars: 336881
+stars: 337782
 description: Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 url: https://github.com/kamranahmedse/developer-roadmap
 ---
@@ -24,6 +24,10 @@ Here is the list of available roadmaps with more being actively worked upon.
 -   Backend Roadmap / Backend Beginner Roadmap
 -   DevOps Roadmap / DevOps Beginner Roadmap
 -   Full Stack Roadmap
+-   HTML Roadmap
+-   CSS Roadmap
+-   JavaScript Roadmap
+-   TypeScript Roadmap
 -   Git and GitHub / Git and GitHub Beginner
 -   API Design Roadmap
 -   Computer Science Roadmap
@@ -46,8 +50,6 @@ Here is the list of available roadmaps with more being actively worked upon.
 -   Software Architect Roadmap
 -   Game Developer Roadmap / Server Side Game Developer
 -   Software Design and Architecture Roadmap
--   JavaScript Roadmap
--   TypeScript Roadmap
 -   C++ Roadmap
 -   React Roadmap
 -   Next.js Roadmap

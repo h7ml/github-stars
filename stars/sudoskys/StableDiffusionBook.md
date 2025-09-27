@@ -1,6 +1,6 @@
 ---
 project: StableDiffusionBook
-stars: 1955
+stars: 1959
 description: How do we integrate AI generation tools into actual work? | 关于 Ai 绘画的Wiki | Wiki about Ai painting | Prompts Engineering| 指南 Guide | Seeking Maintainer&Translator🙌
 url: https://github.com/sudoskys/StableDiffusionBook
 ---

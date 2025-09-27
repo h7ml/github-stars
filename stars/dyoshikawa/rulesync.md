@@ -1,6 +1,6 @@
 ---
 project: rulesync
-stars: 309
+stars: 318
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---
@@ -20,10 +20,12 @@ Installation
 npm install -g rulesync
 # or
 pnpm add -g rulesync
-# or  
+# or
 yarn global add rulesync
 # or
 bun add -g rulesync
+# or
+brew install rulesync
 
 # And then
 rulesync --version

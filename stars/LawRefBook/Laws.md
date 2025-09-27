@@ -1,6 +1,6 @@
 ---
 project: Laws
-stars: 1673
+stars: 1677
 description: null
 url: https://github.com/LawRefBook/Laws
 ---

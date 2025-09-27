@@ -1,6 +1,6 @@
 ---
 project: proxypool
-stars: 1303
+stars: 1312
 description: Free Proxies，Free Nodes，免费节点，白嫖节点，免费vpn，免费v2ray，免费订阅，免费clash，Free VPN，Free v2ray，Free Sub，Free Clash
 url: https://github.com/snakem982/proxypool
 ---

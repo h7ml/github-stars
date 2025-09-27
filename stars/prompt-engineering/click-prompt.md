@@ -1,6 +1,6 @@
 ---
 project: click-prompt
-stars: 2369
+stars: 2370
 description: ClickPrompt - Streamline your prompt design, with ClickPrompt, you can easily view, share, and run these prompts with just one click.  ClickPrompt 用于一键轻松查看、分享和执行您的 Prompt。
 url: https://github.com/prompt-engineering/click-prompt
 ---

@@ -1,6 +1,6 @@
 ---
 project: strapi
-stars: 69626
+stars: 69719
 description: 🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first.
 url: https://github.com/strapi/strapi
 ---

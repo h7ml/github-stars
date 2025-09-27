@@ -1,6 +1,6 @@
 ---
 project: time-tracker-4-browser
-stars: 542
+stars: 545
 description: Time Tracker for Browser/网费很贵
 url: https://github.com/sheepzh/time-tracker-4-browser
 ---

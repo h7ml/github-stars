@@ -1,6 +1,6 @@
 ---
 project: gin-api
-stars: 325
+stars: 324
 description: Go 微服务框架，Router 基于 Gin，同时支持 gRPC 和 HTTP，封装各种常用组件，开箱即用，专注业务。
 url: https://github.com/why444216978/gin-api
 ---

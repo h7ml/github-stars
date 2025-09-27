@@ -1,6 +1,6 @@
 ---
 project: Kode
-stars: 2632
+stars: 2776
 description: Like Claude Code, but Koding with DeepSeek V3.1, Kimi2, GLM4.5, Qwen Coder etc.（welcome to use Kode to summit PR)
 url: https://github.com/shareAI-lab/Kode
 ---

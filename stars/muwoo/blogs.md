@@ -1,6 +1,6 @@
 ---
 project: blogs
-stars: 2327
+stars: 2326
 description: 📚一个前端的博客。
 url: https://github.com/muwoo/blogs
 ---

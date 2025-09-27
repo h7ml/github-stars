@@ -1,13 +1,9 @@
 ---
 project: next-auth
-stars: 27506
+stars: 27558
 description: Authentication for the Web.
 url: https://github.com/nextauthjs/next-auth
 ---
-
-Note
-
-The Auth.js/NextAuth.js project is not provided by, nor otherwise affiliated with Vercel Inc. or its subsidiaries. Any contributions to this project by individuals affiliated with Vercel are made in their personal capacity.
 
   
 
@@ -19,9 +15,7 @@ Open Source. Full Stack. Own Your Data.
 
 Auth.js is a set of open-source packages that are built on standard Web APIs for authentication in modern applications with any framework on any platform in any JS runtime.
 
-Need help? See authjs.dev for the documentation, or join our community on Discord  .
-
-Sponsored Looking for a hosted alternative? Use Clerk →
+> Auth js is now part of Better Auth. We recommend new projects to start with Better Auth unless there are some very specific feature gaps (most notably stateless session management without a database).
 
 Features
 --------
@@ -69,131 +63,10 @@ Acknowledgments
 
 Auth.js is made possible thanks to all of its contributors.
 
-### Sponsors
-
-We have an OpenCollective for companies and individuals looking to contribute financially to the project!
-
-  
-
-Clerk
-
-💵
-
-  
-
-Auth0
-
-💵
-
-  
-
-FusionAuth
-
-💵
-
-  
-
-Stytch
-
-💵
-
-  
-
-Prisma
-
-💵
-
-  
-
-Neon
-
-💵
-
-  
-
-Beyond Identity
-
-💵
-
-  
-
-Lowdefy
-
-💵
-
-  
-
-Descope
-
-💵
-
-  
-
-Badass Courses
-
-💵
-
-  
-
-Encore
-
-💵
-
-  
-
-Sent.dm
-
-💵
-
-  
-
-Arcjet
-
-💵
-
-  
-
-Route4Me
-
-💵
-
-  
-
-Netlight
-
-☁️
-
-  
-
-Checkly
-
-☁️
-
-  
-
-superblog
-
-☁️
-
-  
-
-Vercel
-
-☁️
-
--   💵 Financial Sponsor
--   ☁️ Infrastructure Support
-
-  
-
 Contributing
 ------------
 
 We're open to all community contributions! If you'd like to contribute in any way, please first read our Contributing Guide.
-
-Note
-
-The Auth.js/NextAuth.js project is not provided by, nor otherwise affiliated with Vercel Inc. or its subsidiaries. Any contributions to this project by individuals affiliated with Vercel are made in their personal capacity.
 
 License
 -------

@@ -1,6 +1,6 @@
 ---
 project: mcp-server-chart
-stars: 2813
+stars: 2871
 description: 🤖 A visualization mcp contains 25+ visual charts using @antvis. Using for chart generation and data analysis.
 url: https://github.com/antvis/mcp-server-chart
 ---
@@ -280,6 +280,14 @@ npm run build
 Start the MCP server:
 
 npm run start
+
+Start the MCP server with SSE transport:
+
+node build/index.js -t sse
+
+Start the MCP server with Streamable transport:
+
+node build/index.js -t streamable
 
 📄 License
 ----------

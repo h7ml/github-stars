@@ -1,6 +1,6 @@
 ---
 project: vue2
-stars: 448
+stars: 447
 description: 【🔥Vue.js资讯📚】目前web前端开发非常火爆的框架；定时更新，欢迎 Star 一下。
 url: https://github.com/bluezhan/vue2
 ---

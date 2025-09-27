@@ -1,6 +1,6 @@
 ---
 project: awesome-deno-cn
-stars: 478
+stars: 479
 description: 🦖 长期维护！中文圈下与 Deno 相关的 Awesome 资源全图谱
 url: https://github.com/hylerrix/awesome-deno-cn
 ---

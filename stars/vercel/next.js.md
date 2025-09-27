@@ -1,6 +1,6 @@
 ---
 project: next.js
-stars: 134574
+stars: 134731
 description: The React Framework
 url: https://github.com/vercel/next.js
 ---
@@ -44,6 +44,6 @@ We have a list of **good first issues** that contain bugs that have a relatively
 Security
 --------
 
-If you believe you have found a security vulnerability in Next.js, we encourage you to **_responsibly disclose this and NOT open a public issue_**. We will investigate all legitimate reports.
+If you believe you have found a security vulnerability in Next.js, we encourage you to **_responsibly disclose this and NOT open a public issue_**.
 
-Our preference is that you make use of GitHub's private vulnerability reporting feature to disclose potential security vulnerabilities in our Open Source Software. To do this, please visit https://github.com/vercel/next.js/security and click the "Report a vulnerability" button.
+To participate in our Open Source Software Bug Bounty program, please email responsible.disclosure@vercel.com. We will add you to the program and provide further instructions for submitting your report.

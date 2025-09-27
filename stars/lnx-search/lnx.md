@@ -1,6 +1,6 @@
 ---
 project: lnx
-stars: 1368
+stars: 1369
 description: A flexible, performant and reliable search database without the AI bullshit.
 url: https://github.com/lnx-search/lnx
 ---

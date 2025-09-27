@@ -1,6 +1,6 @@
 ---
 project: docus
-stars: 1897
+stars: 1927
 description: Write beautiful documentations with Nuxt and Markdown.
 url: https://github.com/nuxt-content/docus
 ---
@@ -106,7 +106,7 @@ Your project comes pre-configured with the best of the Nuxt ecosystem:
 
 -   Nuxt 4 - The web framework
 -   Nuxt Content - File-based CMS
--   Nuxt UI Pro - Premium UI components
+-   Nuxt UI - UI components
 -   Nuxt Image - Optimized images
 -   Tailwind CSS 4 - Utility-first CSS
 -   Docus Layer - Documentation theme

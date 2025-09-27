@@ -1,12 +1,15 @@
 ---
 project: Veloera
-stars: 1245
+stars: 1283
 description: null
 url: https://github.com/Veloera/Veloera
 ---
 
 Veloera
 =======
+
+> 我正在为该项目寻求资金支持，以更好地维持其发展。如果您有任何想法，请随时与我联系：isneuroplexus\[at\]outlook.com  
+> 我正在为该项目寻求贡献者，如果您有意加入 Veloera 团队，请联系：isneuroplexus\[at\]outlook.com
 
 优秀的 AI API 网关系统
 

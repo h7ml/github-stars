@@ -1,12 +1,9 @@
 ---
 project: codex
-stars: 43158
+stars: 44838
 description: Lightweight coding agent that runs in your terminal
 url: https://github.com/openai/codex
 ---
-
-OpenAI Codex CLI
-================
 
 `npm i -g @openai/codex`  
 or `brew install codex`

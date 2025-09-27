@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-ProBot
-stars: 385
+stars: 384
 description: 🤖️ A ChatGPT based GitHub robot. dialogue/CR/etc..
 url: https://github.com/oceanlvr/ChatGPT-ProBot
 ---

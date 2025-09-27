@@ -1,6 +1,6 @@
 ---
 project: FrontEndGitHub
-stars: 6411
+stars: 6424
 description: :octocat:GitHub最全的前端资源汇总仓库（包括前端学习、开发资源、数据结构与算法、开发工具、求职面试等）
 url: https://github.com/FrontEndGitHub/FrontEndGitHub
 ---

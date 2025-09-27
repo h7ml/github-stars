@@ -77,7 +77,7 @@ git submodule add -b master https://github.com/Ice-Hazymoon/hugo-theme-luna them
 cd themes/hugo-theme-luna
 npm install --production
 
-There is a `config.yaml` file in the `exampleSite` directory, copy the file to your site directory and modify the contents.
+There is a `hugo.yaml` file in the `exampleSite` directory, copy the file to your site directory and modify the contents.
 
 ### \- 🔄 Update theme
 
@@ -105,8 +105,8 @@ Refer to vercel.json
 Environment variables
 
 ```
-HUGO_VERSION: 0.146.0
-NODE_VERSION: 17.3.0
+HUGO_VERSION: 0.150.0
+NODE_VERSION: 22.19.0
 ```
 
 Build command
@@ -121,7 +121,7 @@ Build output directory
 
 ### \- ⚙️ Configuration
 
-See `config.yaml` file to configure your site
+See `hugo.yaml` file to configure your site
 
 If you prefer to use toml, you can convert it here
 

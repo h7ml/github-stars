@@ -1,6 +1,6 @@
 ---
 project: code-push-server
-stars: 1870
+stars: 1871
 description: CodePush service is hot update services which adapter react-native-code-push and cordova-plugin-code-push - 热更新
 url: https://github.com/lisong/code-push-server
 ---

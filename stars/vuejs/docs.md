@@ -1,6 +1,6 @@
 ---
 project: docs
-stars: 3118
+stars: 3122
 description: 📄 Documentation for Vue 3
 url: https://github.com/vuejs/docs
 ---

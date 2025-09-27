@@ -38,7 +38,7 @@ English | 中文
 
 ghcr.io
 
-ghcr.mirrors.cqupt.edu.cn
+ghcr.nju.edu.cn
 
 docker.io
 

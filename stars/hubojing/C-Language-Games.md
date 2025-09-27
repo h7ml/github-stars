@@ -1,6 +1,6 @@
 ---
 project: C-Language-Games
-stars: 642
+stars: 645
 description: C语言经典小游戏。
 url: https://github.com/hubojing/C-Language-Games
 ---
