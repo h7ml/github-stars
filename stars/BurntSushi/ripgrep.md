@@ -1,6 +1,6 @@
 ---
 project: ripgrep
-stars: 55496
+stars: 55663
 description: ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 url: https://github.com/BurntSushi/ripgrep
 ---
@@ -397,14 +397,27 @@ If you're an **openSUSE** user, ripgrep is included in **openSUSE Tumbleweed** a
 $ sudo zypper install ripgrep
 ```
 
-If you're a **RHEL/CentOS/Rocky Linux 9** user, you can install ripgrep from the EPEL repository:
+If you're a **CentOS Stream 10** user, you can install ripgrep from the EPEL repository:
 
 ```
 $ sudo dnf config-manager --set-enabled crb
-$ sudo dnf install -y \
-    https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm \
-    https://dl.fedoraproject.org/pub/epel/epel-next-release-latest-9.noarch.rpm
-$ sudo dnf install -y ripgrep
+$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+$ sudo dnf install ripgrep
+```
+
+If you're a **Red Hat 10** user, you can install ripgrep from the EPEL repository:
+
+```
+$ sudo subscription-manager repos --enable codeready-builder-for-rhel-10-$(arch)-rpms
+$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+$ sudo dnf install ripgrep
+```
+
+If you're a **Rocky Linux 10** user, you can install ripgrep from the EPEL repository:
+
+```
+$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+$ sudo dnf install ripgrep
 ```
 
 If you're a **Nix** user, you can install ripgrep from nixpkgs:
@@ -490,7 +503,7 @@ $ sudo xbps-install -Syv ripgrep
 
 If you're a **Rust programmer**, ripgrep can be installed with `cargo`.
 
--   Note that the minimum supported version of Rust for ripgrep is **1.88.0**, although ripgrep may work with older versions.
+-   Note that the minimum supported version of Rust for ripgrep is **1.85.0**, although ripgrep may work with older versions.
 -   Note that the binary may be bigger than expected because it contains debug symbols. This is intentional. To remove debug symbols and therefore reduce the file size, run `strip` on the binary.
 
 ```
@@ -505,7 +518,7 @@ $ cargo binstall ripgrep
 
 ### Building
 
-ripgrep is written in Rust, so you'll need to grab a Rust installation in order to compile it. ripgrep compiles with Rust 1.88.0 (stable) or newer. In general, ripgrep tracks the latest stable release of the Rust compiler.
+ripgrep is written in Rust, so you'll need to grab a Rust installation in order to compile it. ripgrep compiles with Rust 1.85.0 (stable) or newer. In general, ripgrep tracks the latest stable release of the Rust compiler.
 
 To build ripgrep:
 

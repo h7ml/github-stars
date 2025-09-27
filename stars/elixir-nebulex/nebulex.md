@@ -27,7 +27,11 @@ This README refers to the main branch of Nebulex, not the latest released versio
 📖 Usage
 --------
 
-To use Nebulex, add both `:nebulex` and your chosen cache adapter as dependencies in your `mix.exs` file. For example, to use the Generational Local Cache (`Nebulex.Adapters.Local` adapter), add the following to your `mix.exs`:
+To use Nebulex, add both `:nebulex` and your chosen cache adapter as dependencies in your `mix.exs` file.
+
+> _**For more information about available adapters, check out the Nebulex adapters guide.**_
+
+For example, to use the Generational Local Cache (`Nebulex.Adapters.Local` adapter), add the following to your `mix.exs`:
 
 def deps do
   \[
@@ -37,8 +41,6 @@ def deps do
     {:telemetry, "~> 1.2"}             \# Required for telemetry events
   \]
 end
-
-> For more information about available adapters, check out the Nebulex adapters guide.
 
 To provide more flexibility and load only the needed dependencies, Nebulex makes all dependencies optional, including the adapters. For example:
 
@@ -168,10 +170,11 @@ end
 🔗 Important Links
 ------------------
 
--   Getting Started - Learn how to set up and use Nebulex
--   Documentation - Complete API reference
--   Examples - Example applications
--   Upgrading to v3.0 - Migration guide for v3.0
+-   Getting Started - Learn how to set up and use Nebulex.
+-   Documentation - Complete API reference.
+-   Examples - Example applications.
+-   Upgrading to v3.0 - Migration guide for v3.0.
+-   Nebulex Streams - Real-time event streaming for Nebulex caches via `Phoenix.PubSub`.
 
 * * *
 

@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 26991
+stars: 27133
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -233,22 +233,23 @@ GPU monitoring also requires a btop binary built with GPU support (`GPU_SUPPORT=
 See GPU compatibility section for more about compiling with GPU support.
 
 -   **NVIDIA**
-
-If you have an NVIDIA GPU you must use an official NVIDIA driver, both the closed-source and open-source ones have been verified to work.
-
-In addition to that you must also have the nvidia-ml dynamic library installed, which should be included with the driver package of your distribution.
-
+    
+    If you have an NVIDIA GPU you must use an official NVIDIA driver, both the closed-source and open-source ones have been verified to work.
+    
+    In addition to that you must also have the nvidia-ml dynamic library installed, which should be included with the driver package of your distribution.
+    
 -   **AMD**
-
-If you have an AMD GPU `rocm_smi_lib` is required, which may or may not be packaged for your distribution.
-
+    
+    If you have an AMD GPU `rocm_smi_lib` is required, which may or may not be packaged for your distribution.
+    
 -   **INTEL**
-
-Requires a working C compiler if compiling from source - tested with GCC12 and Clang16.
-
-Also requires the user to have permission to read from SYSFS.
-
-Can be set with `make setcap` (preferred) or `make setuid` or by running btop with `sudo` or equivalent.
+    
+    Requires a working C compiler if compiling from source - tested with GCC12 and Clang16.
+    
+    Also requires the user to have permission to read from SYSFS.
+    
+    Can be set with `make setcap` (preferred) or `make setuid` or by running btop with `sudo` or equivalent.
+    
 
 ### **Notice (Text rendering issues)**
 

@@ -1,6 +1,6 @@
 ---
 project: srs
-stars: 27716
+stars: 27750
 description: SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181.
 url: https://github.com/ossrs/srs
 ---

@@ -1,6 +1,6 @@
 ---
 project: pytorch
-stars: 93297
+stars: 93537
 description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
 url: https://github.com/pytorch/pytorch
 ---
@@ -151,7 +151,7 @@ They require JetPack 4.2 and above, and @dusty-nv and @ptrblck are maintaining t
 
 If you are installing from source, you will need:
 
--   Python 3.9 or later
+-   Python 3.10 or later
 -   A compiler that fully supports C++17, such as clang or gcc (gcc 9.4.0 or newer is required, on Linux)
 -   Visual Studio or Visual Studio Build Tool (Windows only)
 
@@ -247,7 +247,7 @@ conda install pkg-config libuv
 pip install mkl-static mkl-include
 # Add these packages if torch.distributed is needed.
 # Distributed package support on Windows is a prototype feature and is subject to changes.
-conda install -c conda-forge libuv
+conda install -c conda-forge libuv=1.51
 
 #### Install PyTorch
 

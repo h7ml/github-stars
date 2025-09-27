@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 12943
+stars: 13231
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
@@ -172,13 +172,17 @@ OpenAI
 
 OpenRouter
 
+`GEMINI_API_KEY`
+
+Google Gemini
+
 `CEREBRAS_API_KEY`
 
 Cerebras
 
-`GEMINI_API_KEY`
+`HF_TOKEN`
 
-Google Gemini
+Huggingface Inference
 
 `VERTEXAI_PROJECT`
 
@@ -203,6 +207,14 @@ AWS Bedrock (Claude)
 `AWS_REGION`
 
 AWS Bedrock (Claude)
+
+`AWS_PROFILE`
+
+Custom AWS Profile
+
+`AWS_REGION`
+
+AWS Region
 
 `AZURE_OPENAI_API_ENDPOINT`
 
@@ -280,6 +292,8 @@ Crush also supports Model Context Protocol (MCP) servers through three transport
       "type": "stdio",
       "command": "node",
       "args": \["/path/to/mcp-server.js"\],
+      "timeout": 120,
+      "disabled": false,
       "env": {
         "NODE\_ENV": "production"
       }
@@ -287,6 +301,8 @@ Crush also supports Model Context Protocol (MCP) servers through three transport
     "github": {
       "type": "http",
       "url": "https://example.com/mcp/",
+      "timeout": 120,
+      "disabled": false,
       "headers": {
         "Authorization": "$(echo Bearer $EXAMPLE\_MCP\_TOKEN)"
       }
@@ -294,6 +310,8 @@ Crush also supports Model Context Protocol (MCP) servers through three transport
     "streaming-service": {
       "type": "sse",
       "url": "https://example.com/mcp/sse",
+      "timeout": 120,
+      "disabled": false,
       "headers": {
         "API-Key": "$(echo $API\_KEY)"
       }
@@ -514,10 +532,12 @@ Want more logging? Run `crush` with the `--debug` flag, or enable it in the conf
   }
 }
 
-Disabling Provider Auto-Updates
--------------------------------
+Provider Auto-Updates
+---------------------
 
 By default, Crush automatically checks for the latest and greatest list of providers and models from Catwalk, the open source Crush provider database. This means that when new providers and models are available, or when model metadata changes, Crush automatically updates your local configuration.
+
+### Disabling automatic provider updates
 
 For those with restricted internet access, or those who prefer to work in air-gapped environments, this might not be want you want, and this feature can be disabled.
 
@@ -552,6 +572,27 @@ crush update-providers embedded
 
 # For more info:
 crush update-providers --help
+
+Metrics
+-------
+
+Crush records pseudonymous usage metrics (tied to a device-specific hash), which maintainers rely on to inform development and support priorities. The metrics include solely usage metadata; prompts and responses are NEVER collected.
+
+Details on exactly what’s collected are in the source code (here and here).
+
+You can opt out of metrics collection at any time by setting the environment variable by setting the following in your environment:
+
+export CRUSH\_DISABLE\_METRICS=1
+
+Or by setting the following in your config:
+
+{
+  "options": {
+    "disable\_metrics": true
+  }
+}
+
+Crush also respects the `DO_NOT_TRACK` convention which can be enabled via `export DO_NOT_TRACK=1`.
 
 A Note on Claude Max and GitHub Copilot
 ---------------------------------------

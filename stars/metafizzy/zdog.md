@@ -1,6 +1,6 @@
 ---
 project: zdog
-stars: 10540
+stars: 10546
 description: Flat, round, designer-friendly pseudo-3D engine for canvas & SVG
 url: https://github.com/metafizzy/zdog
 ---

@@ -1,6 +1,6 @@
 ---
 project: snapdom
-stars: 6111
+stars: 6194
 description: snapDOM captures HTML elements to images with exceptional speed and accuracy.
 url: https://github.com/zumerlab/snapdom
 ---
@@ -715,7 +715,7 @@ Contributors
 Sponsors
 --------
 
-Special thanks to @megaphonecolin for supporting this project!
+Special thanks to @megaphonecolin and @sdraper69 for supporting this project!
 
 If you'd like to support this project too, you can become a sponsor.
 

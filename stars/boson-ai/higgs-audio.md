@@ -1,6 +1,6 @@
 ---
 project: higgs-audio
-stars: 7318
+stars: 7368
 description: Text-audio foundation model from Boson AI
 url: https://github.com/boson-ai/higgs-audio
 ---

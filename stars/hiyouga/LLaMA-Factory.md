@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 59005
+stars: 59423
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -301,6 +301,12 @@ DeepSeek R1 (Distill)
 
 deepseekr1
 
+ERNIE-4.5
+
+0.3B/21B/300B
+
+ernie/ernie\_nothink
+
 Falcon
 
 7B/11B/40B/180B
@@ -402,6 +408,12 @@ Kimi-VL
 16B
 
 kimi\_vl
+
+Ling 2.0 (mini/flash)
+
+16B/100B
+
+bailing\_v2
 
 Llama
 
@@ -553,11 +565,23 @@ Qwen2.5-Omni
 
 qwen2\_omni
 
+Qwen3-Omni\*
+
+30B
+
+qwen3\_omni
+
 Qwen2-VL/Qwen2.5-VL/QVQ
 
 2B/3B/7B/32B/72B
 
 qwen2\_vl
+
+Qwen3-VL\*
+
+235B
+
+qwen3\_vl
 
 Seed (OSS/Coder)
 

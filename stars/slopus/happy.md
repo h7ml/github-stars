@@ -1,7 +1,7 @@
 ---
 project: happy
-stars: 1878
-description: Mobile and Web client for Claude Code, with realtime voice, encryption and fully featured
+stars: 2134
+description: Mobile and Web client for Codex and Claude Code, with realtime voice, encryption and fully featured
 url: https://github.com/slopus/happy
 ---
 
@@ -10,7 +10,7 @@ Mobile and Web Client for Claude Code & Codex
 
 #### Use Claude Code or Codex from anywhere with end-to-end encryption.
 
-📱 **iOS App** • 🤖 **Android App** • 🌐 **Web App** • 🎥 **See a Demo** • ⭐ **Star on GitHub**
+📱 **iOS App** • 🤖 **Android App** • 🌐 **Web App** • 🎥 **See a Demo** • ⭐ **Star on GitHub** • 📚 **Documentation**
 
 ### Step 1: Download App
 
@@ -57,6 +57,12 @@ On your computer, run `happy` instead of `claude` or `happy codex` instead of `c
 -------------
 
 We're engineers scattered across Bay Area coffee shops and hacker houses, constantly checking how our AI coding agents are progressing on our pet projects during lunch breaks. Happy Coder was born from the frustration of not being able to peek at our AI coding tools building our side hustles while we're away from our keyboards. We believe the best tools come from scratching your own itch and sharing with the community.
+
+📚 Documentation & Contributing
+-------------------------------
+
+-   **Documentation Website** - Learn how to use Happy Coder effectively
+-   **Edit docs at github.com/slopus/slopus.github.io** - Help improve our documentation and guides
 
 License
 -------

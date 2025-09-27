@@ -1,6 +1,6 @@
 ---
 project: dockerc
-stars: 4807
+stars: 4809
 description: container image to single executable compiler
 url: https://github.com/NilsIrl/dockerc
 ---

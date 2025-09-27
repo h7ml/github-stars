@@ -1,6 +1,6 @@
 ---
 project: Eel
-stars: 6738
+stars: 6742
 description: A little Python library for making simple Electron-like HTML/JS GUI apps
 url: https://github.com/python-eel/Eel
 ---

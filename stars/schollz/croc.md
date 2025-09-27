@@ -1,13 +1,13 @@
 ---
 project: croc
-stars: 31095
+stars: 31134
 description: Easily and securely send things from one computer to another :crocodile: :package:
 url: https://github.com/schollz/croc
 ---
 
   
 
-This project is supported by GitHub sponsors.
+**This project’s future depends on community support. Become a sponsor today.**
 
 About
 -----
@@ -113,6 +113,14 @@ pixi global install croc
 Or install into a particular environment with `conda`:
 
 conda install --channel conda-forge croc
+
+### On Linux, macOS via Docker
+
+Add the following one-liner function to your ~/.profile (works with any POSIX-compliant shell):
+
+croc() { \[ $# \-eq 0 \] && set -- ""; docker run --rm -it --user "$(id -u):$(id -g)" -v "$(pwd):/c" -v "$HOME/.config/croc:/.config/croc" -w /c -e CROC\_SECRET schollz/croc "$@"; }
+
+You can also just paste it in the terminal for current session. On first run Docker will pull the image. `croc` via Docker will only work within the current directory and its subdirectories.
 
 ### Build from Source
 

@@ -1,6 +1,6 @@
 ---
 project: spec-kit
-stars: 23318
+stars: 27856
 description: 💫 Toolkit to help you get started with Spec-Driven Development
 url: https://github.com/github/spec-kit
 ---
@@ -20,6 +20,7 @@ Table of Contents
 -   🤔 What is Spec-Driven Development?
 -   ⚡ Get started
 -   📽️ Video Overview
+-   🤖 Supported AI Agents
 -   🔧 Specify CLI Reference
 -   📚 Core philosophy
 -   🌟 Development phases
@@ -43,9 +44,31 @@ Spec-Driven Development **flips the script** on traditional software development
 
 ### 1\. Install Specify
 
-Initialize your project depending on the coding agent you're using:
+Choose your preferred installation method:
+
+#### Option 1: Persistent Installation (Recommended)
+
+Install once and use everywhere:
+
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
+Then use the tool directly:
+
+specify init <PROJECT\_NAME\>
+specify check
+
+#### Option 2: One-time Usage
+
+Run directly without installing:
 
 uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT\_NAME\>
+
+**Benefits of persistent installation:**
+
+-   Tool stays installed and available in PATH
+-   No need to create shell aliases
+-   Better tool management with `uv tool list`, `uv tool upgrade`, `uv tool uninstall`
+-   Cleaner shell configuration
 
 ### 2\. Establish project principles
 
@@ -84,6 +107,61 @@ For detailed step-by-step instructions, see our comprehensive guide.
 
 Want to see Spec Kit in action? Watch our video overview!
 
+🤖 Supported AI Agents
+----------------------
+
+Agent
+
+Support
+
+Notes
+
+Claude Code
+
+✅
+
+GitHub Copilot
+
+✅
+
+Gemini CLI
+
+✅
+
+Cursor
+
+✅
+
+Qwen Code
+
+✅
+
+opencode
+
+✅
+
+Windsurf
+
+✅
+
+Kilo Code
+
+✅
+
+Auggie CLI
+
+✅
+
+Roo Code
+
+✅
+
+Codex CLI
+
+⚠️
+
+Codex does not support custom arguments for slash commands.
+
 🔧 Specify CLI Reference
 ------------------------
 
@@ -101,7 +179,7 @@ Initialize a new Specify project from the latest template
 
 `check`
 
-Check for installed tools (`git`, `claude`, `gemini`, `code`/`code-insiders`, `cursor-agent`, `windsurf`, `qwen`, `opencode`)
+Check for installed tools (`git`, `claude`, `gemini`, `code`/`code-insiders`, `cursor-agent`, `windsurf`, `qwen`, `opencode`, `codex`)
 
 ### `specify init` Arguments & Options
 
@@ -115,13 +193,13 @@ Description
 
 Argument
 
-Name for your new project directory (optional if using `--here`)
+Name for your new project directory (optional if using `--here`, or use `.` for current directory)
 
 `--ai`
 
 Option
 
-AI assistant to use: `claude`, `gemini`, `copilot`, `cursor`, `qwen`, `opencode`, or `windsurf`
+AI assistant to use: `claude`, `gemini`, `copilot`, `cursor`, `qwen`, `opencode`, `codex`, `windsurf`, `kilocode`, `auggie`, or `roo`
 
 `--script`
 
@@ -146,6 +224,12 @@ Skip git repository initialization
 Flag
 
 Initialize project in the current directory instead of creating a new one
+
+`--force`
+
+Flag
+
+Force merge/overwrite when initializing in current directory (skip confirmation)
 
 `--skip-tls`
 
@@ -183,7 +267,14 @@ specify init my-project --ai windsurf
 specify init my-project --ai copilot --script ps
 
 # Initialize in current directory
+specify init . --ai copilot
+# or use the --here flag
 specify init --here --ai copilot
+
+# Force merge into current (non-empty) directory without confirmation
+specify init . --force --ai copilot
+# or 
+specify init --here --force --ai copilot
 
 # Skip git initialization
 specify init my-project --ai gemini --no-git
@@ -213,6 +304,10 @@ Create or update project governing principles and development guidelines
 
 Define what you want to build (requirements and user stories)
 
+`/clarify`
+
+Clarify underspecified areas (must be run before `/plan` unless explicitly skipped; formerly `/quizme`)
+
 `/plan`
 
 Create technical implementation plans with your chosen tech stack
@@ -221,9 +316,24 @@ Create technical implementation plans with your chosen tech stack
 
 Generate actionable task lists for implementation
 
+`/analyze`
+
+Cross-artifact consistency & coverage analysis (run after /tasks, before /implement)
+
 `/implement`
 
 Execute all tasks to build the feature according to the plan
+
+### Environment Variables
+
+Variable
+
+Description
+
+`SPECIFY_FEATURE`
+
+Override feature detection for non-Git repositories. Set to the feature directory name (e.g., `001-photo-albums`) to work on a specific feature when not using Git branches.  
+\*\*Must be set in the context of the agent you're working with prior to using `/plan` or follow-up commands.
 
 📚 Core philosophy
 ------------------
@@ -305,6 +415,8 @@ Our research and experimentation focus on:
 -   Python 3.11+
 -   Git
 
+If you encounter issues with an agent, please open an issue so we can refine the integration.
+
 📖 Learn more
 -------------
 
@@ -324,7 +436,13 @@ specify init <project\_name\>
 
 Or initialize in the current directory:
 
+specify init .
+# or use the --here flag
 specify init --here
+# Skip confirmation when the directory already has files
+specify init . --force
+# or
+specify init --here --force
 
 You will be prompted to select the AI agent you are using. You can also proactively specify it directly in the terminal:
 
@@ -337,8 +455,15 @@ specify init <project\_name\> --ai opencode
 specify init <project\_name\> --ai codex
 specify init <project\_name\> --ai windsurf
 # Or in current directory:
+specify init . --ai claude
+specify init . --ai codex
+# or use --here flag
 specify init --here --ai claude
 specify init --here --ai codex
+# Force merge into a non-empty current directory
+specify init . --force --ai claude
+# or
+specify init --here --force --ai claude
 
 The CLI will check if you have Claude Code, Gemini CLI, Cursor CLI, Qwen CLI, opencode, or Codex CLI installed. If you do not, or you prefer to get the templates without checking for the right tools, use `--ignore-agent-tools` with your command:
 
@@ -356,7 +481,7 @@ The first step should be establishing your project's governing principles using 
 /constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements. Include governance for how these principles should guide technical decisions and implementation choices.
 ```
 
-This step creates or updates the `/memory/constitution.md` file with your project's foundational guidelines that the AI agent will reference during specification, planning, and implementation phases.
+This step creates or updates the `.specify/memory/constitution.md` file with your project's foundational guidelines that the AI agent will reference during specification, planning, and implementation phases.
 
 ### **STEP 2:** Create project specifications
 
@@ -394,28 +519,38 @@ The produced specification should contain a set of user stories and functional r
 At this stage, your project folder contents should resemble the following:
 
 ```
-├── memory
-│	 ├── constitution.md
-│	 └── constitution_update_checklist.md
-├── scripts
-│	 ├── check-task-prerequisites.sh
-│	 ├── common.sh
-│	 ├── create-new-feature.sh
-│	 ├── get-feature-paths.sh
-│	 ├── setup-plan.sh
-│	 └── update-claude-md.sh
-├── specs
-│	 └── 001-create-taskify
-│	     └── spec.md
-└── templates
-    ├── plan-template.md
-    ├── spec-template.md
-    └── tasks-template.md
+└── .specify
+    ├── memory
+    │	 └── constitution.md
+    ├── scripts
+    │	 ├── check-prerequisites.sh
+    │	 ├── common.sh
+    │	 ├── create-new-feature.sh
+    │	 ├── setup-plan.sh
+    │	 └── update-claude-md.sh
+    ├── specs
+    │	 └── 001-create-taskify
+    │	     └── spec.md
+    └── templates
+        ├── plan-template.md
+        ├── spec-template.md
+        └── tasks-template.md
 ```
 
-### **STEP 3:** Functional specification clarification
+### **STEP 3:** Functional specification clarification (required before planning)
 
-With the baseline specification created, you can go ahead and clarify any of the requirements that were not captured properly within the first shot attempt. For example, you could use a prompt like this within the same Claude Code session:
+With the baseline specification created, you can go ahead and clarify any of the requirements that were not captured properly within the first shot attempt.
+
+You should run the structured clarification workflow **before** creating a technical plan to reduce rework downstream.
+
+Preferred order:
+
+1.  Use `/clarify` (structured) – sequential, coverage-based questioning that records answers in a Clarifications section.
+2.  Optionally follow up with ad-hoc free-form refinement if something still feels vague.
+
+If you intentionally want to skip clarification (e.g., spike or exploratory prototype), explicitly state that so the agent doesn't block on missing clarifications.
+
+Example free-form refinement prompt (after `/clarify` if still needed):
 
 ```
 For each sample project or project that you create there should be a variable number of tasks between 5 and 15
@@ -447,13 +582,11 @@ The output of this step will include a number of implementation detail documents
 .
 ├── CLAUDE.md
 ├── memory
-│	 ├── constitution.md
-│	 └── constitution_update_checklist.md
+│	 └── constitution.md
 ├── scripts
-│	 ├── check-task-prerequisites.sh
+│	 ├── check-prerequisites.sh
 │	 ├── common.sh
 │	 ├── create-new-feature.sh
-│	 ├── get-feature-paths.sh
 │	 ├── setup-plan.sh
 │	 └── update-claude-md.sh
 ├── specs

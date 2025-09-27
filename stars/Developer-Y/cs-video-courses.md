@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69784
+stars: 69910
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -189,6 +189,10 @@ Courses
 -   LINFO 2266 Advanced Algorithms for Optimization 2021, by Pierre Schaus - UCLouvain
 -   MIT 6.5210 / 6.854 / 18.415 Advanced Algorithms Fall 2013, 2020, 2021, 2022, by David Karger (Spring 2016, by Ankur Moitra)
 -   CMU 10 801 Advanced Optimization and Randomized Algorithms spring 2014, by Suvrit Sra and Alex Smola
+-   Purdue CS 381 Fundamental Algorithms, by Kent Quanrud (Spring 2022)
+-   Purdue CS 390 ATA Fundamental Algorithms Advanced, by Kent Quanrud (Spring 2025)
+-   Purdue CS 580 Graduate Algorithms, by Kent Quanrud (Spring 2023) (Spring 2024)
+-   Purdue CS 588 Randomized Algorithms, by Kent Quanrud (Fall 2022) (Spring 2024)
 -   UC Santa Cruz CSE 101 Intro to Data Structures and Algorithms fall 2022, by Seshadhri Comandur (Fall 2020)
 -   UC Santa Cruz CSE 201 Analysis of Algorithms winter 2022, by Seshadhri Comandur
 -   UC Santa Cruz CSE 202 Combinatorial Algorithms spring 2021, by Seshadhri Comandur

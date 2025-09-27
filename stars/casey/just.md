@@ -1,6 +1,6 @@
 ---
 project: just
-stars: 27740
+stars: 27856
 description: 🤖 Just a command runner
 url: https://github.com/casey/just
 ---
@@ -1833,7 +1833,7 @@ recipe
 
 Require confirmation prior to executing recipe with a custom prompt.
 
-`[default]`master
+`[default]`1.43.0
 
 recipe
 

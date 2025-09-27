@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 65712
+stars: 65939
 description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -262,7 +262,7 @@ Recent Submits
 Description
 
 PortfolioMeta  
-By **portfoliometa** on **2025-07-21**
+By **portfoliometa** on **2025-09-27**
 
 Analyze stocks and get comprehensive real-time investment data and analytics.  
 `stock`
@@ -625,4 +625,4 @@ Every bit counts and your one-time donation sparkles in our galaxy of support! Y
 #### 📝 License
 
 Copyright © 2025 LobeHub.  
-This project is Apache 2.0 licensed.
+This project is LobeHub Community License licensed.

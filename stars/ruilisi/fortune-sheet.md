@@ -1,6 +1,6 @@
 ---
 project: fortune-sheet
-stars: 3379
+stars: 3387
 description: A drop-in javascript spreadsheet library that provides rich features like Excel and Google Sheets
 url: https://github.com/ruilisi/fortune-sheet
 ---

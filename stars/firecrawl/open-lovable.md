@@ -1,6 +1,6 @@
 ---
 project: open-lovable
-stars: 19899
+stars: 20281
 description: 🔥 Clone and recreate any website as a modern React app in seconds
 url: https://github.com/firecrawl/open-lovable
 ---
@@ -33,6 +33,11 @@ ANTHROPIC\_API\_KEY\=your\_anthropic\_api\_key  # https://console.anthropic.com
 OPENAI\_API\_KEY\=your\_openai\_api\_key        # https://platform.openai.com
 GEMINI\_API\_KEY\=your\_gemini\_api\_key        # https://aistudio.google.com/app/apikey
 GROQ\_API\_KEY\=your\_groq\_api\_key            # https://console.groq.com
+
+# =================================================================
+# FAST APPLY (Optional - for faster edits)
+# =================================================================
+MORPH\_API\_KEY\=your\_morphllm\_api\_key    # https://morphllm.com/dashboard
 
 # =================================================================
 # SANDBOX PROVIDER - Choose ONE: Vercel (default) or E2B

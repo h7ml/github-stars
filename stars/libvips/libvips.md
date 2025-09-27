@@ -1,6 +1,6 @@
 ---
 project: libvips
-stars: 10669
+stars: 10692
 description: A fast image processing library with low memory needs.
 url: https://github.com/libvips/libvips
 ---
@@ -15,7 +15,7 @@ libvips is a demand-driven, horizontally threaded image processing library. Comp
 
 It has around 300 operations covering arithmetic, histograms, convolution, morphological operations, frequency filtering, colour, resampling, statistics and others. It supports a large range of numeric types, from 8-bit int to 128-bit complex. Images can have any number of bands. It supports a good range of image formats, including JPEG, JPEG 2000, JPEG XL, TIFF, PNG, WebP, HEIC, AVIF, FITS, Matlab, OpenEXR, PDF, SVG, HDR, PPM / PGM / PFM, CSV, GIF, Analyze, NIfTI, DeepZoom, and OpenSlide. It can also load images via ImageMagick or GraphicsMagick, letting it work with formats like DICOM.
 
-It comes with bindings for C, C++, and the command-line. Full bindings are available for :
+It comes with bindings for C, C++, and the command-line. Full bindings are available for:
 
 Language
 
@@ -39,7 +39,7 @@ NetVips
 
 Go
 
-govips, vips-gen
+vips-gen
 
 Lua
 
@@ -53,29 +53,31 @@ Elixir
 
 vix
 
-JVM
+Java
 
 vips-ffm
 
+Nim
+
+libvips-nim
+
 libvips is used as an image processing engine by:
 
-sharp (on node.js)
+Mastodon
+
+sharp (on Node.js)
 
 imgproxy
 
-bimg
+wsrv.nl
 
-sharp for Go
+bimg
 
 Ruby on Rails
 
 CarrierWave
 
-mediawiki
-
-PhotoFlow
-
-JVips
+MediaWiki
 
 and others. The official libvips GUI is nip2, a strange combination of a spreadsheet and a photo editor.
 

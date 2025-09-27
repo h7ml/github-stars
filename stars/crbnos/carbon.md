@@ -1,11 +1,11 @@
 ---
 project: carbon
-stars: 1522
-description: The open-source manufacturing ERP/MES/QMS. Perfect for complex assembly, HMLV, and configure to order manufacturing.
+stars: 1538
+description: Carbon is a modern ERP/MES/QMS. Perfect for complex assembly, job shops, and configure to order manufacturing.
 url: https://github.com/crbnos/carbon
 ---
 
-The open-source operating system for manufacturing  
+The operating system for manufacturing  
   
 Discord · Website · Issues
 
@@ -18,7 +18,7 @@ We built Carbon after years of building end-to-end manufacturing systems with of
 -   Vendor lock-in bordered on extortion
 -   There is no "perfect ERP" because each company is unique
 
-We built Carbon to solve these problems ☝️.
+We built Carbon to solve these problems ☝️
 
 Architecture
 ------------
@@ -174,7 +174,7 @@ Development
 
 ### Setup
 
-1.  Clone the repo into a public GitHub repository (or fork https://github.com/crbnos/carbon/fork). If you plan to distribute the code, keep the source code public to comply with AGPLv3. To clone in a private repository, acquire a commercial license
+1.  Clone the repo into a GitHub repository (or fork https://github.com/crbnos/carbon/fork). If you plan to use the code in production, acquire a commercial license to comply with the BSL license.
     
     git clone https://github.com/crbnos/carbon.git
     

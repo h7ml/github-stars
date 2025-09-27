@@ -1,6 +1,6 @@
 ---
 project: Data-Science-For-Beginners
-stars: 30886
+stars: 30957
 description: 10 Weeks, 20 Lessons, Data Science for All!
 url: https://github.com/microsoft/Data-Science-For-Beginners
 ---
@@ -26,7 +26,7 @@ French | Spanish | German | Russian | Arabic | Persian (Farsi) | Urdu | Chinese 
 
 #### Join Our Community
 
-We have a Discord learn with AI series ongoing, learn more and join us at Learn with AI Series from 18 - 25 September, 2025. You will get tips and tricks of using GitHub Copilot for Data Science.
+We have a Discord learn with AI series ongoing, learn more and join us at Learn with AI Series from 18 - 30 September, 2025. You will get tips and tricks of using GitHub Copilot for Data Science.
 
 Are you a student?
 ==================

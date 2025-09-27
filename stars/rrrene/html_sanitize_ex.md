@@ -1,6 +1,6 @@
 ---
 project: html_sanitize_ex
-stars: 283
+stars: 284
 description: HTML sanitizer for Elixir
 url: https://github.com/rrrene/html_sanitize_ex
 ---

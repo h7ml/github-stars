@@ -1,6 +1,6 @@
 ---
 project: superfile
-stars: 15177
+stars: 15252
 description: Pretty fancy and modern terminal file manager
 url: https://github.com/yorukot/superfile
 ---
@@ -36,6 +36,7 @@ Content
 -   Troubleshooting
 -   Thanks
     -   Support
+    -   Core maintainer
     -   Contributors
     -   Star History
 
@@ -44,7 +45,7 @@ Installation
 
 ### MacOS and Linux
 
-bash -c "$(curl -sLo- https://superfile.netlify.app/install.sh)"
+bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 
 If you want to inspect the script, see : install.sh
 
@@ -52,7 +53,7 @@ If you want to inspect the script, see : install.sh
 
 #### Powershell
 
-powershell \-ExecutionPolicy Bypass \-Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.netlify.app/install.ps1'))"
+powershell \-ExecutionPolicy Bypass \-Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.dev/install.ps1'))"
 
 If you want to inspect the script, see : install.ps1
 
@@ -174,7 +175,7 @@ If you don't rember, just try removing both.
 
 To uninstall superfile on Windows, use this powershell script.
 
-powershell \-ExecutionPolicy Bypass \-Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.netlify.app/uninstall.ps1'))"
+powershell \-ExecutionPolicy Bypass \-Command "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://superfile.dev/uninstall.ps1'))"
 
 Contributing
 ------------
@@ -190,6 +191,13 @@ Thanks
 
 -   a Star on my GitHub repository would be nice 🌟
 -   You can buy a coffee for me 💖
+
+### Core maintainer
+
+> We welcome anyone who wants to become a core maintainer. Feel free to reach out!
+
+-   **@yorukot** - Original author and maintainer
+-   **@lazysegtree** - Core maintainer
 
 ### Contributors
 
