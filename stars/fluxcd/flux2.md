@@ -1,6 +1,6 @@
 ---
 project: flux2
-stars: 7436
+stars: 7463
 description: Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
 url: https://github.com/fluxcd/flux2
 ---
@@ -39,12 +39,14 @@ You can use the toolkit to extend Flux, or to build your own systems for continu
 
 ### Components
 
--   Source Controller
+-   Source Controllers
     -   GitRepository CRD
     -   OCIRepository CRD
     -   HelmRepository CRD
     -   HelmChart CRD
     -   Bucket CRD
+    -   ExternalArtifact CRD
+    -   ArtifactGenerator CRD
 -   Kustomize Controller
     -   Kustomization CRD
 -   Helm Controller

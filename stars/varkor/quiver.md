@@ -1,6 +1,6 @@
 ---
 project: quiver
-stars: 3327
+stars: 3345
 description: A modern commutative diagram editor for the web.
 url: https://github.com/varkor/quiver
 ---
@@ -8,9 +8,9 @@ url: https://github.com/varkor/quiver
 quiver: a modern commutative diagram editor
 ===========================================
 
-**quiver** is a modern, graphical editor for commutative and pasting diagrams, capable of rendering high-quality diagrams for screen viewing, and exporting to LaTeX via tikz-cd.
+**quiver** is a modern, graphical editor for commutative and pasting diagrams, capable of rendering high-quality diagrams for screen viewing, and exporting to LaTeX via tikz-cd or Typst via fletcher.
 
-Creating and modifying diagrams with **quiver** is orders of magnitude faster than writing the equivalent LaTeX by hand and, with a little experience, competes with pen-and-paper. To learn how to use **quiver** efficiently, see the tutorial.
+Creating and modifying diagrams with **quiver** is orders of magnitude faster than writing the equivalent LaTeX or Typst by hand and, with a little experience, competes with pen-and-paper. To learn how to use **quiver** efficiently, see the tutorial.
 
 Try **quiver** out: q.uiver.app
 
@@ -31,11 +31,11 @@ There is a wide range of composable arrow styles.
 
 And full use of colour for labels and arrows.
 
-**quiver** is intended to look good for screenshots, as well as to export LaTeX that looks as close as possible to the original diagram.
+**quiver** is intended to look good for screenshots, as well as to export LaTeX and Typst that looks as close as possible to the original diagram.
 
 Diagrams may be created and modified using either the mouse, by clicking and dragging, or using the keyboard, with a complete set of keyboard shortcuts for performing any action.
 
-When you export diagrams to LaTeX, **quiver** will embed a link to the diagram, which will allow you to return to it later if you decide it needs to be modified, or to share it with others.
+When you export diagrams to LaTeX or Typst, **quiver** will embed a link to the diagram, which will allow you to return to it later if you decide it needs to be modified, or to share it with others.
 
 ### Other features
 
@@ -74,7 +74,8 @@ Thanks to
 -   S. C. Steenkamp, for helpful discussions regarding the aesthetic rendering of arrows.
 -   AndréC, for the custom TikZ style for curves of a fixed height.
 -   Andrew Stacey, for the custom TikZ style for shortened curves.
+-   Théophile Cailliau, for implementing Typst support.
 -   Nathan Corbyn, for adding the ability to export embeddable diagrams to HTML.
 -   Paolo Brasolin, for adding offline support.
 -   Carl Davidson, for discussing and prototyping loop rendering.
--   Everyone who has improved **quiver** by reporting issues or suggesting improvements.
+-   Everyone who has improved **quiver** by submitting pull requests, reporting issues or suggesting improvements.

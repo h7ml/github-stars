@@ -1,6 +1,6 @@
 ---
 project: duplicati
-stars: 13188
+stars: 13206
 description: Store securely encrypted backups in the cloud!
 url: https://github.com/duplicati/duplicati
 ---
@@ -38,7 +38,7 @@ Features
 ========
 
 -   Duplicati uses AES-256 encryption (or GNU Privacy Guard) to secure all data before uploading.
--   Initial full backup followed by smaller, incremental updates to save bandwidth and storage.
+-   Only initial backup is with full contents, all additional backups are differential to save bandwidth and storage
 -   Built-in scheduler ensures backups stay up-to-date automatically.
 -   An integrated updater notifies you of new releases.
 -   Encrypted backups can be transferred to destinations like FTP, WebDAV, SSH (SFTP), Amazon S3, and more.

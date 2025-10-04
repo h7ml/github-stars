@@ -1,6 +1,6 @@
 ---
 project: dataset-viewer
-stars: 531
+stars: 540
 description: A sleek dataset viewer built entirely by AI Agent. Supports streaming large files from WebDAV, S3, SSH, Local or Hugging Face.
 url: https://github.com/stardustai/dataset-viewer
 ---
@@ -77,6 +77,22 @@ _Browse ZIP/TAR archives without extraction_
 -   **Remote Access**: Connect to WebDAV, SSH/SFTP, SMB, cloud storage, HuggingFace
 -   **Performance-Critical**: Instant file access and lightning-fast search
 
+🔌 Plugin Development
+---------------------
+
+Extend Dataset Viewer's capabilities by creating custom plugins! Our plugin system allows you to add support for new file formats and viewers.
+
+-   📖 **Plugin Development Guide (Wiki)** - Complete guide to building plugins
+-   📦 **@dataset-viewer/sdk** - Official SDK for plugin development
+-   🎨 **Example Plugins** - CAD Viewer, Sketch Viewer, and more
+
+Get started with our SDK and create plugins for:
+
+-   Custom file format viewers
+-   Data converters and analyzers
+-   Integration with external tools
+-   Enhanced visualization components
+
 🤝 Contributing
 ---------------
 
@@ -85,6 +101,7 @@ We welcome contributions! You can help by:
 -   🐛 Reporting bugs with clear reproduction steps
 -   💡 Suggesting features and explaining their usefulness
 -   🔧 Submitting code: Fork → Branch → Changes → PR
+-   🔌 Creating plugins to extend functionality
 -   📖 Improving documentation and examples
 -   ⭐ Starring the repository to show support
 

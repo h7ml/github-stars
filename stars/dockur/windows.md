@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 46287
+stars: 46572
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -92,7 +92,7 @@ Select from the values below:
 
 Windows 11 Pro
 
-5.4 GB
+7.2 GB
 
 `11l`
 
@@ -104,7 +104,7 @@ Windows 11 LTSC
 
 Windows 11 Enterprise
 
-5.3 GB
+6.6 GB
 
 `10`
 
@@ -222,18 +222,14 @@ This can also be used to resize the existing disk to a larger capacity without a
 
 ### How do I share files with the host?
 
-Open 'File Explorer' and click on the 'Network' section, you will see a computer called `host.lan`.
+After installation there will be a folder called `Shared` on your desktop, which can be used to exchange files with the host machine.
 
-Double-click it and it will show a folder called `Data`, which can be bound to any folder on your host via the compose file:
+To select a folder on the host for this purpose, include the following bind mount in your compose file:
 
 volumes:
-  -  ./example:/data
+  -  ./example:/shared
 
-The example folder `./example` will be available as `\\host.lan\Data`.
-
-Tip
-
-You can map this path to a drive letter in Windows, for easier access.
+Replace the example path `./example` with your desired shared folder, which then will become visible as `Shared`.
 
 ### How do I change the amount of CPU or RAM?
 

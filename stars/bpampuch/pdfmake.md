@@ -1,6 +1,6 @@
 ---
 project: pdfmake
-stars: 12108
+stars: 12110
 description: Client/server side PDF printing in pure JavaScript
 url: https://github.com/bpampuch/pdfmake
 ---

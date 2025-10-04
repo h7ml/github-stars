@@ -1,6 +1,6 @@
 ---
 project: sharedrop
-stars: 10671
+stars: 10667
 description: Easy P2P file transfer powered by WebRTC - inspired by Apple AirDrop
 url: https://github.com/ShareDropio/sharedrop
 ---

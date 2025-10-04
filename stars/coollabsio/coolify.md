@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 45488
+stars: 45914
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -88,7 +88,7 @@ Big Sponsors
 -   QuantCDN - Enterprise-grade content delivery network
 -   PFGLabs - Build Real Projects with Golang
 -   JobsCollider - 30,000+ remote jobs for developers
--   Juxtdigital - Digital transformation and web solutions
+-   Juxtdigital - Digital PR & AI Authority Building Agency
 -   Cloudify.ro - Cloud hosting solutions
 -   CodeRabbit - Cut Code Review Time & Bugs in Half
 -   American Cloud - US-based cloud infrastructure services

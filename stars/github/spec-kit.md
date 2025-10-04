@@ -1,6 +1,6 @@
 ---
 project: spec-kit
-stars: 27856
+stars: 31065
 description: 💫 Toolkit to help you get started with Spec-Driven Development
 url: https://github.com/github/spec-kit
 ---
@@ -156,6 +156,12 @@ Roo Code
 
 ✅
 
+Amazon Q Developer CLI
+
+⚠️
+
+Amazon Q Developer CLI does not support custom arguments for slash commands.
+
 Codex CLI
 
 ⚠️
@@ -199,7 +205,7 @@ Name for your new project directory (optional if using `--here`, or use `.` for 
 
 Option
 
-AI assistant to use: `claude`, `gemini`, `copilot`, `cursor`, `qwen`, `opencode`, `codex`, `windsurf`, `kilocode`, `auggie`, or `roo`
+AI assistant to use: `claude`, `gemini`, `copilot`, `cursor`, `qwen`, `opencode`, `codex`, `windsurf`, `kilocode`, `auggie`, `roo`, or `q`
 
 `--script`
 
@@ -410,7 +416,7 @@ Our research and experimentation focus on:
 ----------------
 
 -   **Linux/macOS** (or WSL2 on Windows)
--   AI coding agent: Claude Code, GitHub Copilot, Gemini CLI, Cursor, Qwen CLI, opencode, Codex CLI, or Windsurf
+-   AI coding agent: Claude Code, GitHub Copilot, Gemini CLI, Cursor, Qwen CLI, opencode, Codex CLI, Windsurf, or Amazon Q Developer CLI
 -   uv for package management
 -   Python 3.11+
 -   Git
@@ -454,6 +460,7 @@ specify init <project\_name\> --ai qwen
 specify init <project\_name\> --ai opencode
 specify init <project\_name\> --ai codex
 specify init <project\_name\> --ai windsurf
+specify init <project\_name\> --ai q
 # Or in current directory:
 specify init . --ai claude
 specify init . --ai codex
@@ -465,7 +472,7 @@ specify init . --force --ai claude
 # or
 specify init --here --force --ai claude
 
-The CLI will check if you have Claude Code, Gemini CLI, Cursor CLI, Qwen CLI, opencode, or Codex CLI installed. If you do not, or you prefer to get the templates without checking for the right tools, use `--ignore-agent-tools` with your command:
+The CLI will check if you have Claude Code, Gemini CLI, Cursor CLI, Qwen CLI, opencode, Codex CLI, or Amazon Q Developer CLI installed. If you do not, or you prefer to get the templates without checking for the right tools, use `--ignore-agent-tools` with your command:
 
 specify init <project\_name\> --ai claude --ignore-agent-tools
 

@@ -1,6 +1,6 @@
 ---
 project: ququ
-stars: 661
+stars: 973
 description: 开源免费的 Wispr Flow 替代方案 | 集成FunASR本地模型和可配置大语言模型的下一代中文桌面语音工作流
 url: https://github.com/yan5xu/ququ
 ---
@@ -272,6 +272,25 @@ uv
     3.  提交您的更改 (`git commit -m 'feat: Add some amazing feature'`)
     4.  将您的分支推送到远程 (`git push origin feature/your-amazing-feature`)
     5.  创建一个 Pull Request
+
+💬 交流与社区 (Communication & Community)
+------------------------------------
+
+「蛐蛐」是一个由社区驱动的开源项目，我们相信开放的交流能激发最好的创意。你的每一个想法、每一次反馈都对项目至关重要。
+
+我们诚挚地邀请你加入官方微信交流群，在这里你可以：
+
+-   🚀 **获取一手资讯**：第一时间了解项目更新、新功能预告和开发路线图。
+-   💬 **直接与开发者对话**：遇到安装难题？有绝妙的功能点子？在群里可以直接 @ 作者和核心贡献者。
+-   💡 **分享与学习**：交流你的 AI 指令 (Prompt) 和自动化工作流，看看别人是怎么把「蛐蛐」玩出花的。
+-   🤝 **参与项目共建**：从一个想法的提出，到一次代码的提交 (Pull Request)，社区是你最好的起点。
+
+微信扫码，加入官方交流群
+
+  
+_QuQu Official WeChat Group_
+
+如果二维码过期或无法加入，请在 Issues 中提一个 Issue 提醒我们，谢谢！
 
 🙏 致谢
 -----

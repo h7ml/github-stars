@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 49477
+stars: 49661
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -47,77 +47,45 @@ Cool features of AnythingLLM
 **Large Language Models (LLMs):**
 
 -   Any open-source llama.cpp compatible model
-    
 -   OpenAI
-    
 -   OpenAI (Generic)
-    
 -   Azure OpenAI
-    
 -   AWS Bedrock
-    
 -   Anthropic
-    
 -   NVIDIA NIM (chat models)
-    
 -   Google Gemini Pro
-    
 -   Hugging Face (chat models)
-    
 -   Ollama (chat models)
-    
 -   LM Studio (all models)
-    
 -   LocalAI (all models)
-    
 -   Together AI (chat models)
-    
 -   Fireworks AI (chat models)
-    
 -   Perplexity (chat models)
-    
 -   OpenRouter (chat models)
-    
 -   DeepSeek (chat models)
-    
 -   Mistral
-    
 -   Groq
-    
 -   Cohere
-    
 -   KoboldCPP
-    
 -   LiteLLM
-    
 -   Text Generation Web UI
-    
 -   Apipie
-    
 -   xAI
-    
 -   Novita AI (chat models)
-    
 -   PPIO
-    
 -   Moonshot AI
-    
--   CometAPI (chat models) **Embedder models:**
-    
+-   Microsoft Foundry Local
+-   CometAPI (chat models)
+
+**Embedder models:**
+
 -   AnythingLLM Native Embedder (default)
-    
 -   OpenAI
-    
 -   Azure OpenAI
-    
 -   LocalAI (all)
-    
 -   Ollama (all)
-    
 -   LM Studio (all)
-    
 -   Cohere
-    
 
 **Audio Transcription models:**
 

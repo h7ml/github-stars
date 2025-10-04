@@ -1,6 +1,6 @@
 ---
 project: mjml_eex
-stars: 106
+stars: 107
 description: Create emails that WOW your customers using MJML and EEx
 url: https://github.com/akoutmos/mjml_eex
 ---

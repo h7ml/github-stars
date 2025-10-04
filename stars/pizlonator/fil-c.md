@@ -1,18 +1,18 @@
 ---
 project: fil-c
-stars: 1388
+stars: 1416
 description: Fil-C: completely compatible memory safety for C and C++
 url: https://github.com/pizlonator/fil-c
 ---
 
-Fil-C 0.670
+Fil-C 0.671
 ===========
 
 Fil-C is a fanatically compatible memory-safe implementation of C and C++. Lots of software compiles and runs with Fil-C with zero or minimal changes. All memory safety errors are caught as Fil-C panics. Fil-C achieves this using a combination of concurrent garbage collection and invisible capabilities (each pointer in memory has a corresponding capability, not visible to the C address space). Every fundamental C operation (as seen in LLVM IR) is checked against the capability. Fil-C has no `unsafe` escape hatch of any kind.
 
 Fil-C is special because:
 
--   Fil-C really achieves full safety with no escape hatches. There is no `unsafe` keyword in Fil-C that could be used to turn off protections. It's not even possible to link to unsafe code.
+-   Fil-C achieves full safety with no escape hatches. There is no `unsafe` keyword in Fil-C that could be used to turn off protections. It's not even possible to link to unsafe code.
     
 -   Fil-C's capability-based approach achieves a similar level of safety to hardware capabilities like CHERI, except that it runs on stock hardware (X86\_64, currently).
     
@@ -47,15 +47,24 @@ If you downloaded Fil-C binaries, run:
 If you downloaded Fil-C source, run:
 
 ```
-./build_all.sh
+./build_all_fast.sh
 ```
 
 Then you'll be able to use Fil-C from within this directory.
 
+The binary distribution of Fil-C comes with musl as the libc. Using `./build_all_fast.sh` in the source distribution also builds Fil-C using musl. If you are using source, then you can also:
+
+-   `./build_all_fast_glibc.sh` - builds a similar setup but with glibc 2.40 as the libc.
+    
+-   `./build_all.sh` - full musl-based build (also builds lots of software that was ported to Fil-C).
+    
+-   `./build_all_glibc.sh` - full glibc-based build (builds even more software that was ported to Fil-C).
+    
+
 Things That Work
 ----------------
 
-Lots of software packages work in Fil-C with zero or minimal changes, including big ones like openssl, CPython, SQLite, and many others.
+Lots of software packages work in Fil-C with zero or minimal changes, including big ones like openssl, CPython, SQLite, and many others. Fil-C is powerful enough to support a fully memory safe Linux userland.
 
 Fil-C has full support for C and C++ plus almost all of the extensions that clang 20 supports. Fil-C has excellent support for atomics and SIMD intrinsics, for example.
 
@@ -83,18 +92,7 @@ Fil-C comes with a reasonably complete POSIX libc and even supports tricky featu
 Learn More
 ----------
 
-You can learn more about Fil-C by reading these docs:
-
--   The Fil-C manifesto.
-    
--   Releases (Linux/X86\_64 binaries).
-    
--   Fil-C capabilities by example.
-    
--   Garbage-In, Memory Safety Out Semantics.
-    
--   Explanation of Disassembly of a Simple Fil-C Program.
-    
+You can learn more about Fil-C by visiting the website.
 
 You can also e-mail me: pizlo@mac.com
 

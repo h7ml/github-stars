@@ -1,6 +1,6 @@
 ---
 project: ultralytics
-stars: 46515
+stars: 46880
 description: Ultralytics YOLO 🚀
 url: https://github.com/ultralytics/ultralytics
 ---
@@ -221,7 +221,7 @@ YOLO11n-seg
 
 2.9
 
-10.4
+9.7
 
 YOLO11s-seg
 
@@ -237,7 +237,7 @@ YOLO11s-seg
 
 10.1
 
-35.5
+33.0
 
 YOLO11m-seg
 
@@ -253,7 +253,7 @@ YOLO11m-seg
 
 22.4
 
-123.3
+113.2
 
 YOLO11l-seg
 
@@ -269,7 +269,7 @@ YOLO11l-seg
 
 27.6
 
-142.2
+132.2
 
 YOLO11x-seg
 
@@ -285,7 +285,7 @@ YOLO11x-seg
 
 62.1
 
-319.0
+296.4
 
 -   **mAPval** values are for single-model single-scale on the COCO val2017 dataset. See YOLO Performance Metrics for details.  
     Reproduce with `yolo val segment data=coco.yaml device=0`
@@ -333,7 +333,7 @@ YOLO11n-cls
 
 1.1 ± 0.0
 
-1.6
+2.8
 
 0.5
 
@@ -349,7 +349,7 @@ YOLO11s-cls
 
 1.3 ± 0.0
 
-5.5
+6.7
 
 1.6
 
@@ -365,9 +365,9 @@ YOLO11m-cls
 
 2.0 ± 0.0
 
-10.4
+11.6
 
-5.0
+4.9
 
 YOLO11l-cls
 
@@ -381,7 +381,7 @@ YOLO11l-cls
 
 2.8 ± 0.0
 
-12.9
+14.1
 
 6.2
 
@@ -397,9 +397,9 @@ YOLO11x-cls
 
 3.8 ± 0.0
 
-28.4
+29.6
 
-13.7
+13.6
 
 -   **acc** values represent model accuracy on the ImageNet dataset validation set.  
     Reproduce with `yolo val classify data=path/to/ImageNet device=0`
@@ -449,7 +449,7 @@ YOLO11n-pose
 
 2.9
 
-7.6
+7.4
 
 YOLO11s-pose
 
@@ -465,7 +465,7 @@ YOLO11s-pose
 
 9.9
 
-23.2
+23.1
 
 YOLO11m-pose
 
@@ -481,7 +481,7 @@ YOLO11m-pose
 
 20.9
 
-71.7
+71.4
 
 YOLO11l-pose
 
@@ -495,9 +495,9 @@ YOLO11l-pose
 
 6.4 ± 0.1
 
-26.2
+26.1
 
-90.7
+90.3
 
 YOLO11x-pose
 
@@ -513,7 +513,7 @@ YOLO11x-pose
 
 58.8
 
-203.3
+202.8
 
 -   **mAPval** values are for single-model single-scale on the COCO Keypoints val2017 dataset. See YOLO Performance Metrics for details.  
     Reproduce with `yolo val pose data=coco-pose.yaml device=0`
@@ -558,7 +558,7 @@ YOLO11n-obb
 
 2.7
 
-17.2
+16.8
 
 YOLO11s-obb
 
@@ -572,7 +572,7 @@ YOLO11s-obb
 
 9.7
 
-57.5
+57.1
 
 YOLO11m-obb
 
@@ -586,7 +586,7 @@ YOLO11m-obb
 
 20.9
 
-183.5
+182.8
 
 YOLO11l-obb
 
@@ -598,9 +598,9 @@ YOLO11l-obb
 
 13.5 ± 0.6
 
-26.2
+26.1
 
-232.0
+231.2
 
 YOLO11x-obb
 
@@ -614,7 +614,7 @@ YOLO11x-obb
 
 58.8
 
-520.2
+519.1
 
 -   **mAPtest** values are for single-model multiscale performance on the DOTAv1 test set.  
     Reproduce by `yolo val obb data=DOTAv1.yaml device=0 split=test` and submit merged results to the DOTA evaluation server.

@@ -1,6 +1,6 @@
 ---
 project: shaka-player
-stars: 7729
+stars: 7738
 description: JavaScript player library / DASH & HLS client / MSE-EME player
 url: https://github.com/shaka-project/shaka-player
 ---
@@ -868,7 +868,7 @@ Shaka Player supports:
 -   HLS interstitials
 -   DASH Media Presentation Insertion (MPD alternate)
 -   Custom Interstitials
--   Basic support of VAST and VMAP without IMA (playback without tracking)
+-   Basic support of VAST and VMAP without IMA
 
 Content Steering support
 ------------------------

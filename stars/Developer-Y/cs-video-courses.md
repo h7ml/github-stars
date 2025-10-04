@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 69910
+stars: 69953
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -222,7 +222,7 @@ Courses
     
     -   ECS 150 - Operating Systems and Systems Programming - Fall 2020 - Joël Porquet-Lupine - UC Davis
     -   CS124 Operating Systems - California Institute of Technology, Fall 2018 - Youtube
-    -   CS 162 Operating Systems and Systems Programming, Spring 2015 - University of California, Berkeley
+    -   CS 162 Operating Systems and Systems Programming, Spring 2015 - University of California, Berkeley (Fall 2020 - YouTube)
     -   CS 4414 - Operating Systems, University of Virginia (rust-class)
     -   CS 4414 Operating Systems, Fall 2018 - University of Virginia
     -   CSE 421/521 - Introduction to Operating Systems, SUNY University at Buffalo, NY - Spring 2016 (Lectures - YouTube) (Recitations 2016) (Assignment walkthroughs)

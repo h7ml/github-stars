@@ -1,6 +1,6 @@
 ---
 project: build-push-action
-stars: 4947
+stars: 4955
 description: GitHub Action to build and push Docker images with Buildx
 url: https://github.com/docker/build-push-action
 ---
@@ -103,7 +103,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       -
         name: Login to Docker Hub
         uses: docker/login-action@v3

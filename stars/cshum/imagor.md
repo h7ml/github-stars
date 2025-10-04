@@ -1,6 +1,6 @@
 ---
 project: imagor
-stars: 3776
+stars: 3783
 description: Fast, secure image processing server and Go library, using libvips
 url: https://github.com/cshum/imagor
 ---
@@ -480,6 +480,38 @@ Prepending `/params` to the existing endpoint returns the endpoint attributes in
 
 curl 'http://localhost:8000/params/g5bMqZvxaQK65qFPaP1qlJOTuLM=/fit-in/500x400/0x20/filters:fill(white)/raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png'
 
+### POST Upload Endpoint
+
+imagor supports POST uploads for direct image processing and transformation.
+
+Upload functionality is an **opt-in feature** designed for **internal use** where imagor serves as a backend service in trusted environments with proper access controls, not for public-facing endpoints. When enabled, it requires both flags to be explicitly set:
+
+-   **Unsafe mode** (`IMAGOR_UNSAFE=1`) - disables URL signature verification
+-   **Upload Loader** (`UPLOAD_LOADER_ENABLE=1`) - enables POST upload functionality
+
+Usage:
+
+docker run -p 8000:8000 shumc/imagor -imagor-unsafe -upload-loader-enable
+
+IMAGOR\_UNSAFE\=1
+UPLOAD\_LOADER\_ENABLE\=1
+
+Upload an image using POST request to any imagor endpoint. The URL path defines the image operations to apply:
+
+# Upload and resize to 300x200
+curl -X POST -F "image=@photo.jpg" http://localhost:8000/unsafe/300x200/
+
+# Upload with filters applied
+curl -X POST -F "image=@photo.jpg" \\
+  http://localhost:8000/unsafe/fit-in/400x300/filters:quality(80):format(webp)/
+
+When upload is enabled, visiting processing paths in a browser shows a built-in upload form:
+
+-   `http://localhost:8000/unsafe/200x200/` - Upload form with 200x200 resize
+-   `http://localhost:8000/unsafe/filters:blur(5)/` - Upload form with blur filter
+
+The upload form includes debug information showing how imagor parses the URL parameters, useful for testing and development.
+
 ### Community
 
 The imagor ecosystem includes several community-contributed projects that extend and integrate with imagor:
@@ -620,6 +652,15 @@ Usage of imagor:
         HTTP Loader rejects connections to link local network IP addresses. This options takes a comma separated list of networks in CIDR notation e.g ::1/128,127.0.0.0/8.
   -http-loader-disable
         Disable HTTP Loader
+
+  -upload-loader-enable
+        Enable Upload Loader for POST uploads
+  -upload-loader-max-allowed-size int
+        Upload Loader maximum allowed size in bytes for uploaded images (default 33554432)
+  -upload-loader-accept string
+        Upload Loader accepted Content-Type for uploads (default "image/*")
+  -upload-loader-form-field-name string
+        Upload Loader form field name for multipart uploads (default "image")
 
   -file-safe-chars string
         File safe characters to be excluded from image key escape. Set -- for no-op

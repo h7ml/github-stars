@@ -1,6 +1,6 @@
 ---
 project: FreeCAD
-stars: 26364
+stars: 26455
 description: Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.
 url: https://github.com/FreeCAD/FreeCAD
 ---

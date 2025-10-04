@@ -1,6 +1,6 @@
 ---
 project: scikit-learn
-stars: 63476
+stars: 63555
 description: scikit-learn: machine learning in Python
 url: https://github.com/scikit-learn/scikit-learn
 ---

@@ -1,6 +1,6 @@
 ---
 project: Data-Science-For-Beginners
-stars: 30957
+stars: 31013
 description: 10 Weeks, 20 Lessons, Data Science for All!
 url: https://github.com/microsoft/Data-Science-For-Beginners
 ---
@@ -39,9 +39,31 @@ Get started with the following resources:
 Getting Started
 ===============
 
-> **Teachers**: we have included some suggestions on how to use this curriculum. We'd love your feedback in our discussion forum!
+📚 Documentation
+----------------
 
-> **Students**: to use this curriculum on your own, fork the entire repo and complete the exercises on your own, starting with a pre-lecture quiz. Then read the lecture and complete the rest of the activities. Try to create the projects by comprehending the lessons rather than copying the solution code; however, that code is available in the /solutions folders in each project-oriented lesson. Another idea would be to form a study group with friends and go through the content together. For further study, we recommend Microsoft Learn.
+-   **Installation Guide** - Step-by-step setup instructions for beginners
+-   **Usage Guide** - Examples and common workflows
+-   **Troubleshooting** - Solutions to common issues
+-   **Contributing Guide** - How to contribute to this project
+-   **For Teachers** - Teaching guidance and classroom resources
+
+👨‍🎓 For Students
+------------------
+
+> **Complete Beginners**: New to data science? Start with our beginner-friendly examples! These simple, well-commented examples will help you understand the basics before diving into the full curriculum. **Students**: to use this curriculum on your own, fork the entire repo and complete the exercises on your own, starting with a pre-lecture quiz. Then read the lecture and complete the rest of the activities. Try to create the projects by comprehending the lessons rather than copying the solution code; however, that code is available in the /solutions folders in each project-oriented lesson. Another idea would be to form a study group with friends and go through the content together. For further study, we recommend Microsoft Learn.
+
+**Quick Start:**
+
+1.  Check the Installation Guide to set up your environment
+2.  Review the Usage Guide to learn how to work with the curriculum
+3.  Start with Lesson 1 and work through sequentially
+4.  Join our Discord community for support
+
+👩‍🏫 For Teachers
+------------------
+
+> **Teachers**: we have included some suggestions on how to use this curriculum. We'd love your feedback in our discussion forum!
 
 Meet the Team
 -------------
@@ -74,6 +96,21 @@ Each lesson includes:
 -   Post-lesson quiz
 
 > **A note about quizzes**: All quizzes are contained in the Quiz-App folder, for 40 total quizzes of three questions each. They are linked from within the lessons, but the quiz app can be run locally or deployed to Azure; follow the instruction in the `quiz-app` folder. They are gradually being localized.
+
+🎓 Beginner-Friendly Examples
+-----------------------------
+
+**New to Data Science?** We've created a special examples directory with simple, well-commented code to help you get started:
+
+-   🌟 **Hello World** - Your first data science program
+-   📂 **Loading Data** - Learn to read and explore datasets
+-   📊 **Simple Analysis** - Calculate statistics and find patterns
+-   📈 **Basic Visualization** - Create charts and graphs
+-   🔬 **Real-World Project** - Complete workflow from start to finish
+
+Each example includes detailed comments explaining every step, making it perfect for absolute beginners!
+
+👉 **Start with the examples** 👈
 
 Lessons
 -------
@@ -369,6 +406,8 @@ Other Curricula
 
 Our team produces other curricula! Check out:
 
+-   Edge AI for Beginners
+-   AI Agents for Beginners
 -   Generative AI for Beginners
 -   Generative AI for Beginners .NET
 -   Generative AI with JavaScript
@@ -386,3 +425,12 @@ Our team produces other curricula! Check out:
 -   XR Development for Beginners
 -   Mastering GitHub Copilot for C#/.NET Developers
 -   Choose Your Own Copilot Adventure
+
+Getting Help
+------------
+
+**Encountering issues?** Check our Troubleshooting Guide for solutions to common problems.
+
+If you get stuck or have any questions about building AI apps, join:
+
+If you have product feedback or errors while building visit:

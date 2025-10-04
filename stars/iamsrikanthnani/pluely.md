@@ -1,6 +1,6 @@
 ---
 project: pluely
-stars: 845
+stars: 885
 description: The Open Source Alternative to Cluely - A lightning-fast, privacy-first AI assistant that works seamlessly during meetings, interviews, and conversations without anyone knowing. Built with Tauri for native performance, just 10MB. Completely undetectable in video calls, screen shares, and recordings.
 url: https://github.com/iamsrikanthnani/pluely
 ---
@@ -792,7 +792,7 @@ npm run tauri dev
 📄 License
 ----------
 
-This project is licensed under the **MIT License** - see the LICENSE file for details.
+This project is licensed under the **GNU General Public License v3.0** - see the LICENSE file for details.
 
 * * *
 

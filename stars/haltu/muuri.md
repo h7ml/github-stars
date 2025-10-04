@@ -1,6 +1,6 @@
 ---
 project: muuri
-stars: 10908
+stars: 10907
 description: Infinite responsive, sortable, filterable and draggable layouts
 url: https://github.com/haltu/muuri
 ---
