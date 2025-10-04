@@ -1,6 +1,6 @@
 ---
 project: playwright-github-action
-stars: 353
+stars: 354
 description: Run Playwright tests on GitHub Actions
 url: https://github.com/microsoft/playwright-github-action
 ---

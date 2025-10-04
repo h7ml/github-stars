@@ -1,6 +1,6 @@
 ---
 project: async-validator
-stars: 9065
+stars: 9066
 description: validate form asynchronous
 url: https://github.com/yiminghe/async-validator
 ---

@@ -1,6 +1,6 @@
 ---
 project: StreamSaver.js
-stars: 4263
+stars: 4267
 description: StreamSaver writes stream to the filesystem directly asynchronous
 url: https://github.com/jimmywarting/StreamSaver.js
 ---

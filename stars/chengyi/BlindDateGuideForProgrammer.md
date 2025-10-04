@@ -1,6 +1,6 @@
 ---
 project: BlindDateGuideForProgrammer
-stars: 317
+stars: 316
 description: 程序员相亲指南
 url: https://github.com/chengyi/BlindDateGuideForProgrammer
 ---

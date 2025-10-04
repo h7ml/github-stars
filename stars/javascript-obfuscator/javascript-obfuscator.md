@@ -1,6 +1,6 @@
 ---
 project: javascript-obfuscator
-stars: 15324
+stars: 15330
 description: A powerful obfuscator for JavaScript and Node.js
 url: https://github.com/javascript-obfuscator/javascript-obfuscator
 ---

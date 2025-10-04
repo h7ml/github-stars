@@ -1,6 +1,6 @@
 ---
 project: type-challenges
-stars: 46564
+stars: 46615
 description: Collection of TypeScript type challenges with online judge
 url: https://github.com/type-challenges/type-challenges
 ---

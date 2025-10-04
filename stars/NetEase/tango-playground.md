@@ -1,6 +1,6 @@
 ---
 project: tango-playground
-stars: 7
+stars: 8
 description: A playground app of tango low-code builder
 url: https://github.com/NetEase/tango-playground
 ---

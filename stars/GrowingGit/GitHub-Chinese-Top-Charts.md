@@ -1,6 +1,6 @@
 ---
 project: GitHub-Chinese-Top-Charts
-stars: 102627
+stars: 102836
 description: :cn: GitHub中文排行榜，各语言分设「软件 | 资料」榜单，精准定位中文好项目。各取所需，高效学习。
 url: https://github.com/GrowingGit/GitHub-Chinese-Top-Charts
 ---

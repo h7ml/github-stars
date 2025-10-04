@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 112731
+stars: 113341
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -238,6 +238,7 @@ APIs, Data, and ML
 -   BigDataCloud - Provides fast, accurate, and free (Unlimited or up to 10K-50K/month) APIs for modern web like IP Geolocation, Reverse Geocoding, Networking Insights, Email and Phone Validation, Client Info and more.
 -   Browse AI — Extracting and monitoring data on the web. 1k credits per month for free, equals 1k concurrent requests.
 -   BrowserCat - Headless browser API for automation, scraping, AI agent web access, image/pdf generation, and more. Free plan with 1k requests per month.
+-   CarAPI.dev — Comprehensive automotive data API with VIN decoding, stolen vehicle checks, vehicle valuation, inspection data, and more. Free tier includes 100 requests/month across all 9 endpoints.
 -   Calendarific - Enterprise-grade Public holiday API service for over 200 countries. The free plan includes 500 calls per month.
 -   Canopy - GraphQL API for Amazon.com product, search, and category data. The free plan includes 100 calls per month.
 -   Clarifai — Image API for custom face recognition and detection. Able to train AI models. The free plan has 1,000 calls per month.
@@ -340,6 +341,7 @@ APIs, Data, and ML
 -   PrefectCloud — A complete platform for dataflow automation. Free plan includes 5 deployed workflows and 500 minutes of serverless compute credits per month.
 -   Preset Cloud - A hosted Apache Superset service. Forever free for teams of up to 5 users, featuring unlimited dashboards and charts, a no-code chart builder, and a collaborative SQL editor.
 -   PromptLoop - PromptLoop delivers 10X easier AI web scraping with near-zero adoption time, 85%+ time saved on existing workflows, and operates 4X faster than manual research without compromise and includes a REST API endpoint for all research tasks. The first 1,000 credits are free each month.
+-   ProxySentry - IP API that detects residential proxies and VPNs. ProxySentry.io offers a free tier with 10k requests per month on rapidapi.com.
 -   Public-Apis Github Repo — A list of free public APIs.
 -   Rapidapi - World’s Largest API Hub Millions of developers find and connect to thousands of APIs, API Development using fun challenges (with solutions!) and interactive examples.
 -   Rendi - FFmpeg API - A REST API for FFmpeg, run FFmpeg online without handling the infrastructure. Free tier with monthly processing quota and 4 vCPUs available.
@@ -806,6 +808,7 @@ Security and PKI
 -   report-uri.io — CSP and HPKP violation reporting
 -   seclookup.com - Seclookup APIs can enrich domain threat indicators in SIEM, provide comprehensive information on domain names, and improve threat detection & response. Get 50K lookups free here.
 -   snyk.io — Can find and fix known security vulnerabilities in your open-source dependencies. Unlimited tests and remediation for open-source projects. Limited to 200 tests/month for your private projects.
+-   Socket — Free supply chain security for individual developers, small teams, and open source projects. Includes a free app and firewall CLI tool to protect your code from vulnerable and malicious dependencies. Detects 70+ indicators of supply chain risk.
 -   ssllabs.com — Intense analysis of the configuration of any SSL web server
 -   SOOS - Free, unlimited SCA scans for open-source projects. Detect and fix security threats before release. Protect your projects with a simple and effective solution.
 -   StackHawk Automate application scanning throughout your pipeline to find and fix security bugs before they hit production. Unlimited scans and environments for a single app.
@@ -1634,7 +1637,6 @@ Storage and Media Processing
 -   imgen - Free unlimited social cover image generation API, no watermark
 -   imgix - Image Caching, management and CDN. Free plan includes 1000 origin images, infinite transformations and 100 GB bandwidth
 -   kraken.io — Image optimization for website performance as a service, free plan up to 1 MB file size
--   kvstore.io — Key-value storage service. The free tier allows 100 keys, 1KB/key, 100 calls/hour
 -   npoint.io — JSON store with collaborative schema editing
 -   nitropack.io - Accelerate your site's speed on autopilot with complete front-end optimization (caching, images and code optimization, CDN). Free for up to 5,000 pageviews/month
 -   otixo.com — Encrypt, share, copy, and move all your cloud storage files from one place. The basic plan provides unlimited file transfer with 250 MB max. file size and allows five encrypted files
@@ -2123,6 +2125,7 @@ Miscellaneous
 -   Versionfeeds — Custom RSS feeds for releases of your favorite software. Have the latest versions of your programming languages, libraries, or loved tools in one feed. (The first 3 feeds are free)
 -   videoinu — Create and edit screen recordings and other videos online.
 -   Webacus — Access a wide range of free developer tools for encoding, decoding, and data manipulation.
+-   Volume Shader BM — Free browser-based GPU benchmark (WebGL). Helps developers test and compare shader performance reproducibly across browsers and devices.
 
 **⬆️ Back to Top**
 

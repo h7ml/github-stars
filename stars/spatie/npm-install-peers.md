@@ -1,6 +1,6 @@
 ---
 project: npm-install-peers
-stars: 195
+stars: 196
 description: CLI command to install npm peerDependencies
 url: https://github.com/spatie/npm-install-peers
 ---

@@ -1,6 +1,6 @@
 ---
 project: start-web-framework
-stars: 75
+stars: 76
 description: 传统框架迁移方案，常见Web框架部署案例
 url: https://github.com/devsapp/start-web-framework
 ---

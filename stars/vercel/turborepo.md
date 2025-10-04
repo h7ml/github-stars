@@ -1,6 +1,6 @@
 ---
 project: turborepo
-stars: 28752
+stars: 28781
 description: Build system optimized for JavaScript and TypeScript, written in Rust
 url: https://github.com/vercel/turborepo
 ---

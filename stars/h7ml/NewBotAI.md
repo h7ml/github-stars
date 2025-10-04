@@ -1,6 +1,6 @@
 ---
 project: NewBotAI
-stars: 15
+stars: 14
 description: NewBotAI 自动注册与签到脚本帮助用户在 NewBotAI 平台上完成账号批量注册、签到任务和账户管理，让您轻松享受免费试用988种 AI 模型的福利。详情查看NewBotAI官网
 url: https://github.com/h7ml/NewBotAI
 ---

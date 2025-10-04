@@ -1,6 +1,6 @@
 ---
 project: llm-api-for-next-chat
-stars: 7
+stars: 6
 description: 逆向工程整合多家語言模型並搭配NextChat的Web聊天介面，支援多種不同的聊天機器人模型部分，如ChatGPT、 Llama、DeepSeek等 💬
 url: https://github.com/MayGrass/llm-api-for-next-chat
 ---

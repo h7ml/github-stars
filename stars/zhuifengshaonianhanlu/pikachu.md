@@ -1,6 +1,6 @@
 ---
 project: pikachu
-stars: 4110
+stars: 4123
 description: 一个好玩的Web安全-漏洞测试平台
 url: https://github.com/zhuifengshaonianhanlu/pikachu
 ---

@@ -1,6 +1,6 @@
 ---
 project: github-markdown-css
-stars: 8593
+stars: 8599
 description: The minimal amount of CSS to replicate the GitHub Markdown style
 url: https://github.com/sindresorhus/github-markdown-css
 ---

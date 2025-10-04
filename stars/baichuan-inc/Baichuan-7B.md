@@ -1,6 +1,6 @@
 ---
 project: Baichuan-7B
-stars: 5686
+stars: 5683
 description: A large-scale 7B pretraining language model developed by BaiChuan-Inc.
 url: https://github.com/baichuan-inc/Baichuan-7B
 ---

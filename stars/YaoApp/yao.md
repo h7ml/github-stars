@@ -1,6 +1,6 @@
 ---
 project: yao
-stars: 7415
+stars: 7421
 description: ✨ Yao is an all-in-one application engine that enables developers to create web apps, REST APIs, business applications, and more, with AI as a development partner.
 url: https://github.com/YaoApp/yao
 ---

@@ -1,6 +1,6 @@
 ---
 project: icon-workshop
-stars: 2249
+stars: 2251
 description: 图标工场 - 移动应用图标生成工具，一键生成所有尺寸的应用图标和启动图
 url: https://github.com/zhanghuanchong/icon-workshop
 ---

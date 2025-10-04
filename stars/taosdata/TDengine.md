@@ -1,6 +1,6 @@
 ---
 project: TDengine
-stars: 24356
+stars: 24364
 description: High-performance, scalable time-series database designed for Industrial IoT (IIoT) scenarios
 url: https://github.com/taosdata/TDengine
 ---

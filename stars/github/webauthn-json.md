@@ -1,6 +1,6 @@
 ---
 project: webauthn-json
-stars: 788
+stars: 790
 description: 🔏 A small WebAuthn API wrapper that translates to/from pure JSON using base64url.
 url: https://github.com/github/webauthn-json
 ---

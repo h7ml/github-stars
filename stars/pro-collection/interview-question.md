@@ -1,6 +1,6 @@
 ---
 project: interview-question
-stars: 999
+stars: 1006
 description: 目标：收集全网经典面试问题
 url: https://github.com/pro-collection/interview-question
 ---

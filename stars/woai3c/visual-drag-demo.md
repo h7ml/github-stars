@@ -1,6 +1,6 @@
 ---
 project: visual-drag-demo
-stars: 5531
+stars: 5533
 description: 一个低代码（可视化拖拽）教学项目
 url: https://github.com/woai3c/visual-drag-demo
 ---

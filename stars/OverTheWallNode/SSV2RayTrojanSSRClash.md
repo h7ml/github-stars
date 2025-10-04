@@ -1,6 +1,6 @@
 ---
 project: SSV2RayTrojanSSRClash
-stars: 2462
+stars: 2465
 description: 科学上网，ss, ssr, v2ray, trojan, clash, clashr，翻墙机场推荐
 url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 ---
@@ -27,6 +27,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **流媒体解锁**：支持 Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN、动画疯、Crunchyroll、Abema、DMM等主流流媒体，让你畅享海量高清视频。
 -   **超值套餐**：提供年付"纯流量"套餐，适合轻度人群。
 -   **特色抽奖**：提供"流量抽奖活动"搏一搏，单车变摩托，幸运大抽卡活动，10GB流量最高可抽200GB流量，无本万利，无限续杯。
+-   **超值活动**：国庆特惠：
+    -   9折优惠码：（优惠码：`Discount`）。
+    -   时间：2025-10-01 00:00:00 ~ 2025-10-10 00:00:00
 -   👉 官网地址
 
 ### 2）FatcatCloud
@@ -35,6 +38,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：香港，日本，韩国，台湾，新加坡，泰国，马来西亚，菲律宾，越南，印度尼西亚，德国，英国，法国，土耳其，巴西，阿根廷等。
 -   **流媒体解锁**：支持 Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN、动画疯等主流流媒体。
 -   **超值套餐**：节点全部1倍率。支持ChatGPT、Claude等AI tools
+-   **超值活动**：国庆特惠：
+    -   8折优惠码：（优惠码：`fat80`）。
+    -   活动周期：即日起至2025年10月20号23点59分
 -   👉 官网地址
 
 ### 3）MESL
@@ -44,6 +50,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **流媒体全解锁**：支持 Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN、动画疯、Crunchyroll、Abema、DMM等主流流媒体，让你畅享海量高清视频。，满足高端用户严苛需求。
 -   **独有特色**：独家保障新疆地区，支持 Windows/Mac/iOS/Android/路由器，多设备同时使用.
 -   **专属福利**：注册即享 **3 天免费体验**（“白嫖”福利）。
+-   **超值活动**：国庆特惠：
+    -   全场85折优惠码：（优惠码：`15%OFF`）。
+    -   活动时间：即日起至2025/10/08 23:59
 -   👉 官网地址
 
 ### 4）FastLink
@@ -53,10 +62,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **流媒体解锁**：支持 Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN、动画疯、Crunchyroll等主流流媒体。
 -   **超值套餐**：提供0.1倍率节点，使用10G流量套餐只计费1G，适合重度人群。
 -   **新用户福利**：注册即享 **3 天免费体验**（优惠码：`599_f3cz8bzm`），感受极速上网的震撼体验！
--   **超值活动**：暑期优惠码活动信息
-    -   全场8折优惠优惠码：`summer08`
-    -   有效期：即日起—2025年8月31号
-    -   目前商店里年付直接8折优惠了，加上8折优惠码，即可享受折上折6.4折的优惠。
+-   **超值活动**：国庆特惠：
+    -   全场8折优惠码：（优惠码：`fastlink80`）。
+    -   商店里的年付已经有8折优惠，配合本次国庆优惠码后，最低可至64折
 -   👉 官网地址
 
 ### 5）SpeedCat
@@ -65,10 +73,10 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：香港，台湾，日本，新加坡，美国，英国，马来西亚，阿根廷，土耳其等。
 -   **流媒体全解锁**：解锁Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN、动画疯、Crunchyroll、Abema、DMM等主流流媒体。
 -   **新用户福利**：注册即享 **3 天免费体验**（优惠码：`free`）。
--   **超值活动**：暑期优惠码活动信息
-    -   全场8折优惠优惠码：`sum80`
-    -   有效期：即日起—2025年8月31号
-    -   目前商店里年付直接8折优惠了，加上8折优惠码，即可享受折上折6.4折的优惠。
+-   **超值活动**：国庆特惠：
+    -   全场8折优惠码：（优惠码：`sc80`）。
+    -   商店里的年付已经有8折优惠，配合本次国庆优惠码后，最低可至64折
+    -   活动截止日期到2025年10月31号23点59分
 -   👉 官网地址
 
 ### 6）NiceDuck
@@ -77,9 +85,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：香港，澳门，台湾，日本，新加坡，美国，韩国等。
 -   **流媒体解锁**：支持全节点流媒体（包括 ChatGPT、Netflix、Disney+/Dazn、动画疯、Abema、DMM 等），呈现影院级超清观影体验.
 -   **超值套餐**：流量包套餐低至每月 6.66 元，性价比超高！同时赠送硬盘服 Emby，配合国内直连线路和 0.01 倍率专属节点，4K 影片秒开。
--   **超值活动**：2025七夕节优惠活动
-    -   全场8折优惠优惠码：`qixi`
-    -   有效期：即日起—2025年09月14日
+-   **超值活动**：周年庆,国庆特惠：
+    -   全场7折优惠码：（优惠码：`niceduck777`）。
+    -   有效期：2025年10月01日至2025年10月31日
 -   👉 官网地址
 
 ### 7）M78星云
@@ -89,11 +97,11 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **流媒体解锁**：解锁Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime等主流流媒体。包括ChatGPT，让全球资源触手可及！
 -   **超值赠送**：购买 3 个月以上套餐赠送 Netflix、Disney+ 独立车位；同时提供不限时纯流量包，月费低至 8 元以下；赠送 Emby 服务（含成人版），海量 4K 高清电影、电视剧、热门综艺实时更新.
 -   **新用户福利**：新用户享 7.8 折（优惠码：`m78-22off`，永久有效）。
--   **超值活动**：两周年庆典优惠码信息
-    -   季付85折优惠码：`season85`
-    -   半年付82折优惠码：`halfyear82`
-    -   年付8折优惠码：`year80`
-    -   有效期：即日起—2025/09/07
+-   **超值活动**：周年庆,国庆特惠：
+    -   季付85折优惠码：（优惠码：`season85`）。
+    -   半年付82折优惠码: （优惠码：`halfyear82`）。
+    -   年付8折优惠码: （优惠码：`year80`）。
+    -   有效期：即日起—2025/10/07
 -   👉 官网地址
 
 * * *
@@ -118,6 +126,11 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：香港，台湾，日本，新加坡，美国，英国，瑞士，越南，意大利，韩国，西班牙，印度，德国，马来西亚，巴西，加拿大，俄罗斯，乌克兰，泰国，土耳其等。
 -   **流媒体解锁**：解锁Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN等主流流媒体。 解锁 ChatGPT。
 -   **超值套餐**：提供 **不限时纯流量一次性套餐**，随用随付，经济实惠！
+-   **超值活动**：国庆特惠：
+    -   月付 / 季付 套餐八折：（优惠码：`TSmeow9`）。
+    -   月付 / 季付 套餐六折 50份（优惠码：`TSmeow6`）。
+    -   一次性套餐 1010 GB 限购8天
+    -   有效期：即日起至10月8日
 -   👉 官网地址
 
 ### 3）随心飞
@@ -155,6 +168,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：包括香港，台湾，日本，新加坡，美国，马来西亚，俄罗斯，英国，西班牙，土耳其等。
 -   **流媒体解锁**：解锁Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime、DAZN等主流流媒体。 解锁 ChatGPT。
 -   **无限流量**：提供 **不限时“纯流量”套餐**，无月付、季付或年付限制，用多少算多少，月费低至 7.8 元，让你尽享无限畅游.
+-   **优惠活动**：
+    -   月付 / 半年付 / 年付套餐 10%（优惠码：`guoqing@90`）。
+    -   活动时间：即日起 - 2025.10.7 23:59
 -   👉 官网地址
 
 ### 7）饭饭云
@@ -174,6 +190,9 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **节点地区**：支持香港，台湾，美国，日本，新加坡，印度尼西亚，越南，菲律宾，韩国，泰国，印度，巴西，德国，英国，土耳其，法国，阿根廷，尼日利亚，澳大利亚等，让你的上网体验更加丰富多彩。
 -   **流媒体解锁**：解锁Netflix、Disney+、Hulu、HBO、Max、Paramount、AmazonPrime等主流流媒体。
 -   **超值套餐**：年付套餐最低仅 15.6 元/月，让高品质网络服务唾手可得！
+-   **超值活动**：国庆&中秋特惠：
+    -   8折优惠：（优惠码：`251001`）。
+    -   全场 结束时间 2025/10/7 23:59
 -   👉 官网地址
 
 ### 9）魔戒

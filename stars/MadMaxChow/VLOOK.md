@@ -1,6 +1,6 @@
 ---
 project: VLOOK
-stars: 2207
+stars: 2210
 description: VLOOK™ 是优雅好用的 Typora/Markdown 主题包和增强插件。  VLOOK™ is an elegant and practical THEME PACKAGE × ENHANCEMENT PLUGIN for Typora/Markdown.
 url: https://github.com/MadMaxChow/VLOOK
 ---
@@ -41,7 +41,7 @@ VLOOK™ 属于开源软件（遵从 **MIT 许可证**）。
 
 > **感谢打赏支持 VLOOK™ 的客官（部分名单）**
 > 
-> **Peter**、**绿邃清幽**、**李导996**、**fanky**、**＊丽**、**杨琛**、**＊哦**、**＊豫**、**l＊a**、**＊o**、K＊y、行川、＊药、＊山、＊魂、＊士、＊狗、＊R、＊Z、＊川、l＊n、＊朽、＊杰、A＊C、W＊l、＊山、J＊o、韩宗辉、＊星、一叶知秋、d＊、＊军、＊鹏、＊无、H＊t、＊二、＊宇、＊辉、＊秋、＊笑、＊心、整＊9、＊国、＊哥、乌拉、＊龙、远方眼前、＊应、＊销、E＊y、…
+> **Peter**、**绿邃清幽**、**李导996**、**fanky**、**＊丽**、**杨琛**、**＊哦**、**＊豫**、**l＊a**、**＊o**、K＊y、行川、＊药、＊山、＊魂、＊士、＊狗、＊R、＊Z、＊川、l＊n、＊朽、＊杰、A＊C、W＊l、＊山、J＊o、韩宗辉、＊星、一叶知秋、d＊、＊军、＊鹏、＊无、H＊t、＊二、＊宇、＊辉、＊秋、＊笑、＊心、整＊9、＊国、＊哥、乌拉、＊龙、远方眼前、＊雩、＊应、＊销、E＊y、…
 
 **你的咖啡，能让 VLOOK™ 保持活力 ☕️**
 
@@ -83,10 +83,10 @@ keeps VLOOK™ running ☕️**
 
 * * *
 
-快速参考手册
-======
+使用攻略
+====
 
-有关 VLOOK™ 特性的详细介绍、样例及使用说明详见《VLOOK™ 快速参考手册》：
+有关 VLOOK™ 特性的详细介绍、样例及使用说明详见《VLOOK™ 使用攻略》：
 
 • **基础** • 点击这里开始（备用链接）
 
@@ -163,7 +163,7 @@ keeps VLOOK™ running ☕️**
 
 \[ **docs** \]
 
-VLOOK™ 快速参考手册、官网及在线服务相关文件
+VLOOK™ 使用攻略、示例等内容
 
 \[ **released** \]
 

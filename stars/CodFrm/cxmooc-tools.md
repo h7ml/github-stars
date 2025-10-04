@@ -1,6 +1,6 @@
 ---
 project: cxmooc-tools
-stars: 2543
+stars: 2547
 description: 一个 超星(学习通)/智慧树(知到)/中国大学mooc 学习工具,火狐,谷歌,油猴支持.全自动任务,视频倍速秒过,作业考试题库,验证码自动打码(੧ᐛ੭挂科模式,启动)
 url: https://github.com/CodFrm/cxmooc-tools
 ---

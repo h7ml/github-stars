@@ -1,6 +1,6 @@
 ---
 project: callPhoneBoom
-stars: 903
+stars: 905
 description: 最新可用！！！夺命百连呼、电话轰炸、电话攻击(电话轰炸、可代替短信轰炸)、留言攻击工具
 url: https://github.com/olyble/callPhoneBoom
 ---

@@ -1,6 +1,6 @@
 ---
 project: rfcs
-stars: 6277
+stars: 6283
 description: RFCs for changes to Rust
 url: https://github.com/rust-lang/rfcs
 ---
@@ -81,7 +81,7 @@ In short, to get a major feature added to Rust, one must first get the RFC merge
 -   Each pull request will be labeled with the most relevant sub-team, which will lead to its being triaged by that team in a future meeting and assigned to a member of the subteam.
 -   Build consensus and integrate feedback. RFCs that have broad support are much more likely to make progress than those that don't receive any comments. Feel free to reach out to the RFC assignee in particular to get help identifying stakeholders and obstacles.
 -   The sub-team will discuss the RFC pull request, as much as possible in the comment thread of the pull request itself. Offline discussion will be summarized on the pull request comment thread.
--   RFCs rarely go through this process unchanged, especially as alternatives and drawbacks are shown. You can make edits, big and small, to the RFC to clarify or change the design, but make changes as new commits to the pull request, and leave a comment on the pull request explaining your changes. Specifically, do not squash or rebase commits after they are visible on the pull request.
+-   RFCs rarely go through this process unchanged, especially as alternatives and drawbacks are shown. You can make edits, big and small, to the RFC to clarify or change the design, but make changes as new commits to the pull request, and leave a comment on the pull request explaining your changes. **Specifically, do not squash or rebase commits after they are visible on the pull request.**
 -   At some point, a member of the subteam will propose a "motion for final comment period" (FCP), along with a _disposition_ for the RFC (merge, close, or postpone).
     -   This step is taken when enough of the tradeoffs have been discussed that the subteam is in a position to make a decision. That does not require consensus amongst all participants in the RFC thread (which is usually impossible). However, the argument supporting the disposition on the RFC needs to have already been clearly articulated, and there should not be a strong consensus _against_ that position outside of the subteam. Subteam members use their best judgment in taking this step, and the FCP itself ensures there is ample time and notification for stakeholders to push back if it is made prematurely.
     -   For RFCs with lengthy discussion, the motion to FCP is usually preceded by a _summary comment_ trying to lay out the current state of the discussion and major tradeoffs/points of disagreement.

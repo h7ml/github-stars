@@ -1,6 +1,6 @@
 ---
 project: Post-Summary-AI
-stars: 44
+stars: 45
 description: 一个较通用的，生成网站内文章摘要，并推荐相关文章的AI
 url: https://github.com/qxchuckle/Post-Summary-AI
 ---

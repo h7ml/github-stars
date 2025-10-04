@@ -1,6 +1,6 @@
 ---
 project: cli
-stars: 76
+stars: 77
 description: All Spellcraft CLI tools.
 url: https://github.com/SpellcraftAI/cli
 ---

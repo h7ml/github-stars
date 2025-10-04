@@ -1,6 +1,6 @@
 ---
 project: windicss
-stars: 6542
+stars: 6537
 description: Next generation utility-first CSS framework.
 url: https://github.com/windicss/windicss
 ---

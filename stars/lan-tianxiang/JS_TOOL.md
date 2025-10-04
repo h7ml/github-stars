@@ -1,6 +1,6 @@
 ---
 project: JS_TOOL
-stars: 1424
+stars: 1423
 description: Node网页开发工具
 url: https://github.com/lan-tianxiang/JS_TOOL
 ---

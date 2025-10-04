@@ -1,6 +1,6 @@
 ---
 project: Level-Hashing
-stars: 205
+stars: 204
 description: Write-Optimized and High-Performance Hashing Index Scheme for Persistent Memory (OSDI 2018, TOS 2019)
 url: https://github.com/Pfzuo/Level-Hashing
 ---

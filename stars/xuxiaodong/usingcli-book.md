@@ -1,6 +1,6 @@
 ---
 project: usingcli-book
-stars: 1451
+stars: 1449
 description: 像黑客一样使用命令行
 url: https://github.com/xuxiaodong/usingcli-book
 ---

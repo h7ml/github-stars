@@ -1,6 +1,6 @@
 ---
 project: vue-smooth-dnd
-stars: 1817
+stars: 1819
 description: Vue wrapper components for smooth-dnd
 url: https://github.com/kutlugsahin/vue-smooth-dnd
 ---

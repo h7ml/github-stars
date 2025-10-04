@@ -1,6 +1,6 @@
 ---
 project: WeiboSuperSpider
-stars: 1667
+stars: 1668
 description: 微博爬虫及配套工具箱，微博用户、话题、评论采集一网打尽。图片下载、情感分析，地理位置、关系网络、spammer 机器人识别等功能应有尽有。Docs：https://buyixiao.github.io/blog/weibo-super-spider.html 配套可视化网站：https://buyixiao.github.io/blog/one-stop-weibo-visualization.html
 url: https://github.com/Python3Spiders/WeiboSuperSpider
 ---

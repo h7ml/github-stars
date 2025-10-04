@@ -1,76 +1,120 @@
 ---
 project: solid-start
-stars: 5653
+stars: 5661
 description: SolidStart, the Solid app framework
 url: https://github.com/solidjs/solid-start
 ---
 
-**SolidStart** brings fine-grained reactivity fullstack with full flexibility. Built with features like unified rendering and isomorphic code execution, SolidStart enables you to create highly performant and scalable web applications.
+-   For contributing to codebase, check CONTRIBUTING.md
+-   For creating a new template, please head on to solidjs/templates
+-   For instructions on building with SolidStart, check the package README.md and our official docs
 
-Explore the official documentation for detailed guides and examples.
-
-Core Features
+Prerequisites
 -------------
 
--   **All Rendering Modes**:
-    -   Server-Side Rendering _(SSR)_ with sync, async, and stream modes
-    -   Client-Side Rendering _(CSR)_
-    -   Static Site Generation _(SSG)_ with route pre-rendering
--   **TypeScript**: Full integration for robust, type-safe development
--   **File-Based Routing**: Intuitive routing based on your project’s file structure
--   **API Routes**: Dedicated server-side endpoints for seamless API development
--   **Streaming**: Efficient data rendering for faster page loads
--   **Build Optimizations**: Code splitting, tree shaking, and dead code elimination
--   **Deployment Adapters**: Easily deploy to platforms like Vercel, Netlify, Cloudflare, and more
+-   **Node.js**: Use the version specified in `.nvmrc`, to manage multiple versions across your system, we recommend a version manager such as fnm, or another of your preference.
+-   **pnpm**: Install globally via `npm install -g pnpm`. Or let **Corepack** handle it in the setup step below.
+-   **Git**: Ensure Git is installed for cloning and managing the repository
 
-Getting Started
----------------
+Monorepo Structure
+------------------
 
-### Installation
+SolidStart is a pnpm-based monorepo with nested workspaces. Key directories include
 
-Create a SolidStart template project with your preferred package manager
+-   **`packages/start`**: The core `@solidjs/start` package.
+-   **`apps/landing-page`**: The official landing page.
+-   **`apps/tests`**: Unit and end-to-end (E2E) tests using Vitest and Cypress.
+-   **`apps/fixtures`**: Fixture projects for testing.
 
-# using npm
-npm create solid@latest -- -s
+Use pnpm filters (e.g. `pnpm --filter @solidjs/start ...`) to target specific packages.
 
-# using pnpm
-pnpm create solid@latest -s
+Local Setup
+-----------
 
-# using bun
-bun create solid@latest --s
+1.  Clone the repository
+    
+    git clone https://github.com/solidjs/solid-start.git
+    cd solid-start
+    
+2.  Enable the correct pnpm version specified in package.json
+    
+    corepack enable
+    
+3.  Install dependencies
+    
+    pnpm dedupe
+    
+    (`pnpm dedupe` will install dependencies _and_ clean the lockfile from duplicates, useful to preventing conflicts).
+    
+4.  Build all packages and the landing page
+    
+    pnpm run build:all
+    
 
-### Project Structure
+If you encounter issues (e.g. missing `node_modules`), clean the workspace
 
--   `public/`: Static assets like icons, images, and fonts
--   `src/`: Core application (aliased to `~/`)
-    -   `routes/`: File-based routing for pages and APIs
-    -   `app.tsx`: Root component of your application
-    -   `entry-client.tsx`: Handles client-side hydration
-    -   `entry-server.tsx`: Manages server-side request handling
--   **Configuration Files**: `app.config.ts`, `package.json`, and more
+pnpm run clean:all
 
-Learn more about routing
+Then reinstall dependencies and rebuild.
 
-Adapters
---------
+Running Tests
+-------------
 
-Configure adapters in `app.config.ts` to deploy to platforms like Vercel, Netlify, Cloudflare, and others
+End-to-end tests are located in `apps/tests` projects. For manual testing and development there's the `apps/fixtures` apps, and finally, integration and unit tests live inside their respective packages.
 
-import { defineConfig } from "@solidjs/start/config";
+1.  Install the Cypress binary (required only once)
+    
+    pnpm --filter tests exec cypress install
+    
+2.  For unit tests that check build artifacts, build the test app first
+    
+    pnpm --filter tests run build
+    
+3.  Run unit tests
+    
+    pnpm --filter tests run unit
+    
+    -   CI mode (run once): `pnpm --filter tests run unit:ci`
+    -   UI mode: `pnpm --filter tests run unit:ui`
+4.  Run E2E tests
+    
+    pnpm --filter tests run tests:run
+    
+    -   Interactive mode: `pnpm --filter tests run tests:open`
+    -   With dev server: `pnpm --filter tests run tests`
+5.  Clean test artifacts
+    
+    pnpm run clean:test
+    
 
-export default defineConfig({
-  ssr: true, // false for client-side rendering only
-  server: { preset: "vercel" }
-});
+Development
+-----------
 
-Presets also include runtimes like Node.js, Bun or Deno. For example, a preset like `node-server` enables hosting on your server.  
-Learn more about `defineConfig`
+1.  Make your changes in the relevant package (e.g. `packages/start`)
+    
+2.  Rebuild affected packages
+    
+    pnpm run packages:build
+    
+    For a full rebuild: `pnpm run build:all`
+    
+3.  Test your changes
+    
+    -   For fixtures, pick the name of the fixture and run the `dev` with workspace filtering.
+        
+        pnpm --filter fixture-basic dev
+        
+    -   For the landing page (from the root directory)
+        
+        pnpm run lp:dev
+        
+4.  Clean builds if needed
+    
+    pnpm run packages:clean # Cleans packages' node\_modules and dist folders
+    pnpm run lp:clean # Cleans the landing page
+    pnpm run clean:root # Cleans root-level caches
+    
 
-Building
---------
+* * *
 
-Generate production-ready bundles
-
-npm run build # or pnpm build or bun build
-
-After the build completes, you’ll be guided through deployment for your specific preset.
+If you have read all the way here, you're already a champ! 🏆 Thank you.

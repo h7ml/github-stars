@@ -1,6 +1,6 @@
 ---
 project: learning-weekly
-stars: 565
+stars: 567
 description: 📝 周刊内容以运维技术和Go语言周边为主，辅以GitHub上优秀项目或他人优秀经验。欢迎star点赞收藏👆🌟
 url: https://github.com/eryajf/learning-weekly
 ---

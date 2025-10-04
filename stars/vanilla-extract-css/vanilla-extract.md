@@ -1,6 +1,6 @@
 ---
 project: vanilla-extract
-stars: 10154
+stars: 10162
 description: Zero-runtime Stylesheets-in-TypeScript
 url: https://github.com/vanilla-extract-css/vanilla-extract
 ---

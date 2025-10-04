@@ -8,7 +8,7 @@ url: https://github.com/gayanvoice/top-github-users
 Top GitHub Users By Country
 ===========================
 
-List of most active GitHub users based on `public contributions` `private contributions` and `number of followers` by country or state. The list updated `2025/9/27 1:09 AM UTC`.
+List of most active GitHub users based on `public contributions` `private contributions` and `number of followers` by country or state. The list updated `2025/10/4 1:43 AM UTC`.
 
 This repository contains users `138 countries` and `674 cities`. To get into the list you need to have minimum number of followers that varies in each country. The list can be found in config.json.
 

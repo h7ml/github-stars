@@ -1,6 +1,6 @@
 ---
 project: taro-hooks
-stars: 450
+stars: 451
 description: Hooks Library for Taro
 url: https://github.com/innocces/taro-hooks
 ---

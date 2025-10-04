@@ -1,6 +1,6 @@
 ---
 project: RollToolsApi
-stars: 3441
+stars: 3440
 description: 一个提供开发中常用数据的一个稳定聚合Api接口源，运行于独立服务器，免费，且长期维护，会持续添加新的接口！【只fork不star是很没品的】
 url: https://github.com/MZCretin/RollToolsApi
 ---

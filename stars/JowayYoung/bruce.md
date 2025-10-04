@@ -1,6 +1,6 @@
 ---
 project: bruce
-stars: 70
+stars: 69
 description: 🔥 Bruce FEES 一套多功能前端工程化多包管理实践方案 📦
 url: https://github.com/JowayYoung/bruce
 ---

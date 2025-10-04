@@ -1,6 +1,6 @@
 ---
 project: emp
-stars: 2372
+stars: 2371
 description: EMP Micro FE Base on Rspack & module federation
 url: https://github.com/empjs/emp
 ---

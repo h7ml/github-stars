@@ -1,14 +1,16 @@
 ---
 project: Xget
-stars: 5275
-description: 超高性能、安全的一站式开发者资源访问加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等 | Ultra-high-performance, secure, all-in-one acceleration engine for developer resource access. Its performance far exceeds that of traditional accelerators, providing you with a unified and efficient acceleration experience across multiple platforms
+stars: 5362
+description: 超高性能、安全的一站式开发者资源加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等 | Ultra-high-performance, secure acceleration engine for developer resources. It far outperforms traditional accelerators and delivers a unified high-speed experience
 url: https://github.com/xixu-me/Xget
 ---
 
 Xget
 ====
 
-超高性能、安全的一站式开发者资源访问加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等。
+_**English**_
+
+超高性能、安全的一站式开发者资源加速引擎。其性能远超传统加速器，为您提供跨多个平台的统一高效的加速体验，涵盖代码储存库、包管理、AI 推理 API、容器镜像、模型及数据集等。
 
 💡 存储库初衷
 --------

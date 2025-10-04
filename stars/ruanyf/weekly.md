@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 76043
+stars: 76372
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---

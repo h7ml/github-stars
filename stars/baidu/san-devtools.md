@@ -1,6 +1,6 @@
 ---
 project: san-devtools
-stars: 82
+stars: 83
 description: Browser developer tools extension for debugging San.
 url: https://github.com/baidu/san-devtools
 ---

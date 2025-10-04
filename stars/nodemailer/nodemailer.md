@@ -1,6 +1,6 @@
 ---
 project: nodemailer
-stars: 17256
+stars: 17264
 description: ✉️ Send e-mails with Node.JS – easy as cake!
 url: https://github.com/nodemailer/nodemailer
 ---

@@ -1,6 +1,6 @@
 ---
 project: qwerty-learner
-stars: 20423
+stars: 20456
 description: 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件 / Words learning and English muscle memory training software designed for keyboard workers
 url: https://github.com/RealKai42/qwerty-learner
 ---

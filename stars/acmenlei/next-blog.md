@@ -1,6 +1,6 @@
 ---
 project: next-blog
-stars: 449
+stars: 450
 description: A blog system based on nextjs.
 url: https://github.com/acmenlei/next-blog
 ---

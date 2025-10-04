@@ -1,6 +1,6 @@
 ---
 project: FuckSpider
-stars: 35
+stars: 34
 description: 反爬虫策略讲解与代码示例
 url: https://github.com/cpython666/FuckSpider
 ---

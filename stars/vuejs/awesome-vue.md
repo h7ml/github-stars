@@ -1,6 +1,6 @@
 ---
 project: awesome-vue
-stars: 73282
+stars: 73288
 description: 🎉 A curated list of awesome things related to Vue.js
 url: https://github.com/vuejs/awesome-vue
 ---
@@ -1683,6 +1683,7 @@ _Integrate with services or other frameworks_
 
 -   Storybook - The UI Development Environment. works with v3.2+ later.
 -   Font Awesome Finder - Chrome extension to search, preview and choose Font Awesome icons and copy the selected icon HTML code & Unicode to clipboard.
+-   Roundtable - Zero-configuration MCP server that unifies multiple AI assistants (Claude Code, Cursor, GPT-4, etc.) into a single development workflow for Vue.js projects.
 -   Bit - Manage and reuse `vue` components between projects. Easily isolate and share components from any project without changing its source code, organize curated collections and install in different projects.
 -   Vue Mess Detector - A static code analysis tool for 👉 detecting code smells and best practice violations in Vue.js and Nuxt.js projects
 -   Vue Log Arsenal - Lightweight Vue 3 plugin providing logging directives for easier debugging

@@ -1,6 +1,6 @@
 ---
 project: blog
-stars: 1378
+stars: 1377
 description: 📚 专注Web与算法
 url: https://github.com/dongyuanxin/blog
 ---

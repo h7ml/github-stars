@@ -1,6 +1,6 @@
 ---
 project: WeReadScan
-stars: 974
+stars: 975
 description: 扫描“微信读书”已购图书并下载本地PDF的爬虫
 url: https://github.com/Algebra-FUN/WeReadScan
 ---

@@ -1,6 +1,6 @@
 ---
 project: node
-stars: 113465
+stars: 113560
 description: Node.js JavaScript runtime ✨🐢🚀✨
 url: https://github.com/nodejs/node
 ---
@@ -125,7 +125,6 @@ For information about the governance of the Node.js project, see GOVERNANCE.md.
 -   legendecas - **Chengzhong Wu** <legendecas@gmail.com\> (he/him)
 -   marco-ippolito - **Marco Ippolito** <marcoippolito54@gmail.com\> (he/him)
 -   mcollina - **Matteo Collina** <matteo.collina@gmail.com\> (he/him)
--   mhdawson - **Michael Dawson** <midawson@redhat.com\> (he/him)
 -   panva - **Filip Skokan** <panva.ip@gmail.com\> (he/him)
 -   RafaelGSS - **Rafael Gonzaga** <rafael.nunu@hotmail.com\> (he/him)
 -   RaisinTen - **Darshan Sen** <raisinten@gmail.com\> (he/him)
@@ -164,6 +163,7 @@ TSC emeriti members
 -   indutny - **Fedor Indutny** <fedor@indutny.com\>
 -   isaacs - **Isaac Z. Schlueter** <i@izs.me\>
 -   joshgav - **Josh Gavant** <josh.gavant@outlook.com\>
+-   mhdawson - **Michael Dawson** <midawson@redhat.com\> (he/him)
 -   mmarchini - **Mary Marchini** <oss@mmarchini.me\> (she/her)
 -   mscdex - **Brian White** <mscdex@mscdex.net\>
 -   MylesBorins - **Myles Borins** <myles.borins@gmail.com\> (he/him)

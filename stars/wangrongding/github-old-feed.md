@@ -1,6 +1,6 @@
 ---
 project: github-old-feed
-stars: 696
+stars: 695
 description: Replace the shit💩 new feed with the old one.
 url: https://github.com/wangrongding/github-old-feed
 ---

@@ -1,6 +1,6 @@
 ---
 project: random-useragent
-stars: 258
+stars: 259
 description: Get a random user agent (with an optional filter to select from a specific set of user agents).
 url: https://github.com/skratchdot/random-useragent
 ---

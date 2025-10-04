@@ -1,6 +1,6 @@
 ---
 project: rustlings
-stars: 60086
+stars: 60156
 description: :crab: Small exercises to get you used to reading and writing Rust code!
 url: https://github.com/rust-lang/rustlings
 ---

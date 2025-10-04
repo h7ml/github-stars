@@ -1,6 +1,6 @@
 ---
 project: oceanbase
-stars: 9574
+stars: 9581
 description: The Fastest Distributed Database for Transactional, Analytical, and  AI Workloads. Welcome to our community: https://discord.gg/74cF8vbNEs
 url: https://github.com/oceanbase/oceanbase
 ---

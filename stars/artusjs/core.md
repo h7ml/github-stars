@@ -1,6 +1,6 @@
 ---
 project: core
-stars: 214
+stars: 215
 description: Core package of Artus
 url: https://github.com/artusjs/core
 ---

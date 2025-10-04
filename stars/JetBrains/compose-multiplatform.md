@@ -1,6 +1,6 @@
 ---
 project: compose-multiplatform
-stars: 18246
+stars: 18272
 description: Compose Multiplatform, a modern UI framework for Kotlin that makes building performant and beautiful user interfaces easy and enjoyable.
 url: https://github.com/JetBrains/compose-multiplatform
 ---
@@ -12,7 +12,7 @@ You can choose the platforms across which to share your UI code using Compose Mu
 -   iOS
 -   Android
 -   Desktop (Windows, MacOS, and Linux)
--   Web (Alpha)
+-   Web (Beta)
 
 For example, you can share UIs between iOS and Android or Windows and MacOS.
 
@@ -44,7 +44,7 @@ It has desktop extensions for menus, keyboard shortcuts, window manipulation, an
 Web
 ---
 
-> Web support is in Alpha. It may change incompatibly and require manual migration in the future. We would appreciate your feedback on it in the public Slack channel #compose-web. If you face any issues, please report them on YouTrack.
+> Web support is in Beta, making it a great time to give it a try. Check out our blog post to learn more about the progress made to reach this milestone. We would appreciate your feedback on it in the public Slack channel #compose-web. If you face any issues, please report them on YouTrack.
 
 You can experiment with sharing your mobile or desktop UIs with the web. Compose Multiplatform for web is based on Kotlin/Wasm, the newest target for Kotlin Multiplatform projects. It allows Kotlin developers to run their code in the browser with all the benefits that WebAssembly has to offer, such as good and predictable performance for your applications.
 

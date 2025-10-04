@@ -1,6 +1,6 @@
 ---
 project: continew-admin
-stars: 1644
+stars: 1656
 description: 🔥Almost最佳后端规范🔥页面现代美观，且专注设计与代码细节的高质量多租户中后台管理系统框架。开箱即用，持续迭代优化，持续提供舒适的开发体验。当前采用技术栈：Spring Boot3（Java17）、Vue3 & Arco Design、TS、Vite5 、Sa-Token、MyBatis Plus、Redisson、FastExcel、CosId、JetCache、JustAuth、Crane4j、Spring Doc、Hutool 等。 AI 编程纪元，从 ContiNew & AI 开始优雅编码，让 AI 也“吃点好的”。
 url: https://github.com/continew-org/continew-admin
 ---
@@ -87,7 +87,7 @@ Tip
 
 @Tag(name = "部门管理 API")
 @RestController
-@CrudRequestMapping(value = "/system/dept", api = {Api.TREE, Api.GET, Api.CREATE, Api.UPDATE, Api.DELETE, Api.EXPORT, Api.DICT\_TREE})
+@CrudRequestMapping(value = "/system/dept", api = {Api.TREE, Api.GET, Api.CREATE, Api.UPDATE, Api.DELETE, Api.EXPORT, Api.TREE\_DICT})
 public class DeptController extends BaseController<DeptService, DeptResp, DeptDetailResp, DeptQuery, DeptReq\> {}
 
 **5.代码生成器：** 同步提供了代码生成器，配套前后端代码生成模板。数据表设计完成后，简单配置即可生成前后端 80% 的代码，包括 CRUD API、权限控制、参数校验、接口文档等内容。若业务不复杂，甚至能覆盖 95% 的代码量。
@@ -200,7 +200,7 @@ Vite
 
 ContiNew Starter
 
-2.13.4
+2.14.0
 
 ContiNew Starter 包含了一系列经过企业实践优化的依赖包（如 MyBatis-Plus、SaToken），可轻松集成到应用中，为开发人员减少手动引入依赖及配置的麻烦，为 Spring Boot Web 项目的灵活快速构建提供支持。
 

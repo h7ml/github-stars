@@ -1,6 +1,6 @@
 ---
 project: pkg-size.dev
-stars: 864
+stars: 863
 description: 📦🔍 Find the true size of an npm package
 url: https://github.com/privatenumber/pkg-size.dev
 ---

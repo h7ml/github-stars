@@ -1,6 +1,6 @@
 ---
 project: iotjs
-stars: 2613
+stars: 2614
 description: Platform for Internet of Things with JavaScript http://www.iotjs.net 
 url: https://github.com/jerryscript-project/iotjs
 ---

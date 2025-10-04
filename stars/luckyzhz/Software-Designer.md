@@ -1,6 +1,6 @@
 ---
 project: Software-Designer
-stars: 1845
+stars: 1847
 description: 软考中级教程-软件设计师
 url: https://github.com/luckyzhz/Software-Designer
 ---

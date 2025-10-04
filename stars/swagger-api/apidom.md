@@ -1,6 +1,6 @@
 ---
 project: apidom
-stars: 88
+stars: 87
 description: Semantic parser for API specifications
 url: https://github.com/swagger-api/apidom
 ---

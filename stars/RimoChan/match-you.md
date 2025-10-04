@@ -1,6 +1,6 @@
 ---
 project: match-you
-stars: 1756
+stars: 1758
 description: 【您配吗】配你吗
 url: https://github.com/RimoChan/match-you
 ---

@@ -25,6 +25,7 @@ Official Anti-Captcha.com npm module
 -   Geetest v4
 -   Image to coordinates
 -   Amazon WAF
+-   Altcha
 
 Official anti-captcha.com npm package for solving images with text, Recaptcha v2/v3 Enterprise/non-Enterpise, Funcaptcha, GeeTest, HCaptcha.
 
@@ -416,6 +417,25 @@ const token \= await ac.solveAmazonWidgetProxyOn('http://DOMAIN.COM',
 );
 
 For more details visit Anti-Captcha Amazon WAF documentation.
+
+* * *
+
+### Altcha captcha without proxy:
+
+const token \= await ac.solveAltchaProxyless('http://DOMAIN.COM', '/some/challenge/url');
+
+* * *
+
+Solve Altcha captcha with proxy:
+
+const token \= await ac.solveAltchaProxyOn('http://DOMAIN.COM',
+    '/some/challenge/url',
+    null,
+    'http', //http, socks4, socks5
+    'PROXY\_IP',
+    'PROXY\_PORT',
+    'PROXY\_LOGIN',
+    'PROXY\_PASSWORD');
 
 * * *
 

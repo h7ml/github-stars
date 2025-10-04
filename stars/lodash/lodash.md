@@ -1,6 +1,6 @@
 ---
 project: lodash
-stars: 61140
+stars: 61205
 description: A modern JavaScript utility library delivering modularity, performance, & extras.
 url: https://github.com/lodash/lodash
 ---

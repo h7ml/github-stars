@@ -1,6 +1,6 @@
 ---
 project: developer-roadmap
-stars: 337782
+stars: 339522
 description: Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 url: https://github.com/kamranahmedse/developer-roadmap
 ---

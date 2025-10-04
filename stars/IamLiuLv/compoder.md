@@ -1,6 +1,6 @@
 ---
 project: compoder
-stars: 197
+stars: 198
 description: Compoder is an open-source AI-powered component code generation engine that integrates modern frontend tech stacks with various AI model capabilities. You can customize Compoder to create AI-powered component code generators based on specific technology stacks and specific scenarios.
 url: https://github.com/IamLiuLv/compoder
 ---

@@ -1,6 +1,6 @@
 ---
 project: GLM-130B
-stars: 7686
+stars: 7679
 description: GLM-130B: An Open Bilingual Pre-Trained Model (ICLR 2023)
 url: https://github.com/zai-org/GLM-130B
 ---

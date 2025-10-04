@@ -1,6 +1,6 @@
 ---
 project: code-push
-stars: 5
+stars: 6
 description: null
 url: https://github.com/xtransferorg/code-push
 ---

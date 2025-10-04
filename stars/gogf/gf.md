@@ -1,6 +1,6 @@
 ---
 project: gf
-stars: 12766
+stars: 12777
 description: A powerful framework for faster, easier, and more efficient project development.
 url: https://github.com/gogf/gf
 ---

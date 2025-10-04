@@ -1,6 +1,6 @@
 ---
 project: ofetch
-stars: 4845
+stars: 4876
 description: 😱 A better fetch API. Works on node, browser and workers.
 url: https://github.com/unjs/ofetch
 ---

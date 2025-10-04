@@ -1,6 +1,6 @@
 ---
 project: lib-flexible
-stars: 12557
+stars: 12553
 description: 可伸缩布局方案
 url: https://github.com/amfe/lib-flexible
 ---

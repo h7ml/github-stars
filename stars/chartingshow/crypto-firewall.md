@@ -1,6 +1,6 @@
 ---
 project: crypto-firewall
-stars: 20
+stars: 19
 description: 🎁 Securing your crypto journey, one block at a time.
 url: https://github.com/chartingshow/crypto-firewall
 ---

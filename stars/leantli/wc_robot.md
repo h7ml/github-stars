@@ -1,6 +1,6 @@
 ---
 project: wc_robot
-stars: 48
+stars: 49
 description: 一个功能简洁，使用简易的微信机器人，支持每日定时发送消息，每日定时发送天气预报，重要的日子提醒(类似倒数日)，支持自动回复"天气/空气质量"；可选功能：配置 alapi toekn 后支持自动回复"情话/鸡汤/名言"，配置 api_key 后支持 GPT 聊天
 url: https://github.com/leantli/wc_robot
 ---

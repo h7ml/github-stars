@@ -1,6 +1,6 @@
 ---
 project: engblogs
-stars: 166
+stars: 165
 description: learn from your favorite tech companies
 url: https://github.com/ishan0102/engblogs
 ---

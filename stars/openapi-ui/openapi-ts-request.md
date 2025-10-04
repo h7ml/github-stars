@@ -562,6 +562,14 @@ customTemplates
 
 自定义模板，详情请看源码
 
+customRenderTemplateData
+
+{  
+\[TypescriptFileType\]?: (list: any\[\], context: {fileName: string, params: Record<string, unknown>}) => any\[\]  
+}
+
+自定义文件生成时的 list 参数处理，支持对不同文件类型进行精细化控制
+
 Apifox-Config
 -------------
 

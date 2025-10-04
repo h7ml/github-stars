@@ -1,6 +1,6 @@
 ---
 project: prism
-stars: 12791
+stars: 12796
 description: Lightweight, robust, elegant syntax highlighting.
 url: https://github.com/PrismJS/prism
 ---

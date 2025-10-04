@@ -1,6 +1,6 @@
 ---
 project: node-chatgpt-api
-stars: 4205
+stars: 4202
 description: A client implementation for ChatGPT and Bing AI. Available as a Node.js module, REST API server, and CLI app.
 url: https://github.com/waylaidwanderer/node-chatgpt-api
 ---

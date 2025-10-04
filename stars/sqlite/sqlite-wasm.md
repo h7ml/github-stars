@@ -1,6 +1,6 @@
 ---
 project: sqlite-wasm
-stars: 867
+stars: 871
 description: SQLite Wasm conveniently wrapped as an ES Module.
 url: https://github.com/sqlite/sqlite-wasm
 ---

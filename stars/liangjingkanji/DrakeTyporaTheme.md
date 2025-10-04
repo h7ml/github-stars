@@ -1,6 +1,6 @@
 ---
 project: DrakeTyporaTheme
-stars: 3294
+stars: 3304
 description: 十二种主题风格 - Material Google JetBrains Vue Juejin Purple Ayu Dark
 url: https://github.com/liangjingkanji/DrakeTyporaTheme
 ---

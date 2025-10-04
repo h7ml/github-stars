@@ -1,6 +1,6 @@
 ---
 project: people_relation_extract
-stars: 326
+stars: 327
 description: 结合BERT+GRU+ATT模型，对自己收集的人物关系数据进行模型训练，用于人物关系抽取。
 url: https://github.com/percent4/people_relation_extract
 ---

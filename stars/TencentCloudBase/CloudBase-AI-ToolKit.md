@@ -1,6 +1,6 @@
 ---
 project: CloudBase-AI-ToolKit
-stars: 787
+stars: 799
 description: 🪐 Instantly generate, deploy, and host your full-stack Web apps, mini-programs, databases, and backend services with AI IDE, launch your ideas at lightning speed 💫
 url: https://github.com/TencentCloudBase/CloudBase-AI-ToolKit
 ---

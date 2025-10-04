@@ -1,6 +1,6 @@
 ---
 project: gm_pda_scanner
-stars: 59
+stars: 60
 description: 手持设备 PDA 扫描头 SDK
 url: https://github.com/gmfe/gm_pda_scanner
 ---

@@ -1,6 +1,6 @@
 ---
 project: aliyunpanshare
-stars: 1039
+stars: 1050
 description: 阿里云盘、夸克网盘影视资源分享，每日发布最新电视剧、综艺、电影资源。
 url: https://github.com/acoooder/aliyunpanshare
 ---

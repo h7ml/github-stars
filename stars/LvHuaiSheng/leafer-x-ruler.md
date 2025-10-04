@@ -1,6 +1,6 @@
 ---
 project: leafer-x-ruler
-stars: 27
+stars: 28
 description: leafer-ui的标尺线插件
 url: https://github.com/LvHuaiSheng/leafer-x-ruler
 ---

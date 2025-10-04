@@ -1,20 +1,22 @@
 ---
 project: Web-Dev-For-Beginners
-stars: 92076
+stars: 92169
 description: 24 Lessons, 12 Weeks, Get Started as a Web Developer
 url: https://github.com/microsoft/Web-Dev-For-Beginners
 ---
+
+Web Development for Beginners - A Curriculum
+============================================
+
+Learn the fundamentals of web development with our 12-week comprehensive course by Microsoft Cloud Advocates. Each of the 24 lessons dives into JavaScript, CSS, and HTML through hands-on projects like terrariums, browser extensions, and space games. Engage with quizzes, discussions, and practical assignments. Enhance your skills and optimize your knowledge retention with our effective project-based pedagogy. Start your coding journey today!
+
+Join the Azure AI Foundry Discord Community
 
 Follow these steps to get started using these resources:
 
 1.  **Fork the Repository**: Click
 2.  **Clone the Repository**: `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
 3.  **Join The Azure AI Foundry Discord and meet experts and fellow developers**
-
-Web Development for Beginners - A Curriculum
-============================================
-
-Learn the fundamentals of web development with our 12-week comprehensive course by Microsoft Cloud Advocates. Each of the 24 lessons dives into JavaScript, CSS, and HTML through hands-on projects like terrariums, browser extensions, and space games. Engage with quizzes, discussions, and practical assignments. Enhance your skills and optimize your knowledge retention with our effective project-based pedagogy. Start your coding journey today!
 
 ### 🌐 Multi-Language Support
 
@@ -78,8 +80,6 @@ Follow these steps:
 
 In your copy of this repository that you created, click the **Code** button and select **Open with Codespaces**. This will create a new Codespace for you to work in.
 
-!Codespace./images/createcodespace.png)
-
 #### Running the curriculum locally on your computer
 
 To run this curriculum locally on your computer, you will need a text editor, a browser and a command line tool. Our first lesson, Introduction to Programming Languages and Tools of the Trade, will walk you through various options for each of these tools for you to select what works best for you.
@@ -88,7 +88,7 @@ Our recommendation is to use Visual Studio Code as your editor, which also has a
 
 1.  Clone your repository to your computer. You can do this by clicking the **Code** button and copying the URL:
     
-    !CodeSpace
+    CodeSpace
     
     Then, open Terminal within Visual Studio Code and run the following command, replacing `<your-repository-url>` with the URL you just copied:
     
@@ -478,7 +478,9 @@ A PDF of all of the lessons can be found here.
 
 Our team produces other courses! Check out:
 
--   Generative AI for Beginners
+-   MCP for Beginners
+-   Edge AI for Beginners
+-   AI Agents for Beginners
 -   Generative AI for Beginners .NET
 -   Generative AI with JavaScript
 -   Generative AI with Java
@@ -492,6 +494,13 @@ Our team produces other courses! Check out:
 -   Mastering GitHub Copilot for Agentic use
 -   Mastering GitHub Copilot for C#/.NET Developers
 -   Choose Your Own Copilot Adventure
+
+Getting Help
+------------
+
+If you get stuck or have any questions about building AI apps, join:
+
+If you have product feedback or errors while building visit:
 
 License
 -------

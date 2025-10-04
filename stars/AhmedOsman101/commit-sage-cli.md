@@ -1,6 +1,6 @@
 ---
 project: commit-sage-cli
-stars: 15
+stars: 16
 description: Generates Conventional Commit messages with AI. Supports OpenAI, Ollama, and Gemini.
 url: https://github.com/AhmedOsman101/commit-sage-cli
 ---

@@ -1,6 +1,6 @@
 ---
 project: taze
-stars: 3694
+stars: 3707
 description: 🥦 A modern cli tool that keeps your deps fresh
 url: https://github.com/antfu-collective/taze
 ---

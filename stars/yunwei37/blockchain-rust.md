@@ -1,6 +1,6 @@
 ---
 project: blockchain-rust
-stars: 164
+stars: 165
 description: blockchain_go in rust: A simplified blockchain implementation in rust for leaning / 用 rust 从零开始构建区块链(Bitcoin)
 url: https://github.com/yunwei37/blockchain-rust
 ---

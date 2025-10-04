@@ -1,6 +1,6 @@
 ---
 project: ZhiHuiShu-Assistant
-stars: 237
+stars: 238
 description: 智慧树网课辅助脚本✨
 url: https://github.com/wangzexi/ZhiHuiShu-Assistant
 ---

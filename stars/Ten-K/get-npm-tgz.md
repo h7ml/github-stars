@@ -1,6 +1,6 @@
 ---
 project: get-npm-tgz
-stars: 16
+stars: 15
 description: npm离线包批量下载工具
 url: https://github.com/Ten-K/get-npm-tgz
 ---

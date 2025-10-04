@@ -1,6 +1,6 @@
 ---
 project: js_reverse
-stars: 1081
+stars: 1086
 description: 主要用来收集/学习爬虫相关技术如：js逆向、app逆向、抓包、验证码、加密技术、自动化技术、机器学习。
 url: https://github.com/luzhisheng/js_reverse
 ---

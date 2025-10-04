@@ -1,6 +1,6 @@
 ---
 project: es-drager
-stars: 431
+stars: 432
 description: A draggable, resizable, rotatable component based on vue3
 url: https://github.com/vangleer/es-drager
 ---

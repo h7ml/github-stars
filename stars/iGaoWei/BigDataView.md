@@ -1,6 +1,6 @@
 ---
 project: BigDataView
-stars: 4494
+stars: 4502
 description: 100+套大数据可视化炫酷大屏Html5模板；包含行业：社区、物业、政务、交通、金融银行等，全网最新、最多，最全、最酷、最炫大数据可视化模板。陆续更新中
 url: https://github.com/iGaoWei/BigDataView
 ---

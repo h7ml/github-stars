@@ -1,6 +1,6 @@
 ---
 project: xy-ui
-stars: 1211
+stars: 1212
 description: 🎨面向未来的原生 web components UI组件库
 url: https://github.com/XboxYan/xy-ui
 ---

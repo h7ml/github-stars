@@ -1,6 +1,6 @@
 ---
 project: Home-Network-Note
-stars: 1199
+stars: 1198
 description: 🚧 持续更新 🚧 记录搭建兼顾学习娱乐的家用网络环境的过程，折腾过的一些软硬件小经验。
 url: https://github.com/soulteary/Home-Network-Note
 ---

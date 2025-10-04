@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-Telegram-Bot
-stars: 1135
+stars: 1138
 description: TeleChat: 🤖️ an AI chat Telegram bot can Web Search Powered by GPT-5, DALL·E , Groq, Gemini 2.5 Pro/Flash and the official Claude4.1 API using Python on Zeabur, fly.io and Replit.
 url: https://github.com/yym68686/ChatGPT-Telegram-Bot
 ---

@@ -1,6 +1,6 @@
 ---
 project: claude-relay-service
-stars: 3422
+stars: 3814
 description: 自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。
 url: https://github.com/Wei-Shaw/claude-relay-service
 ---
@@ -14,12 +14,14 @@ English • 快速开始 • 演示站点 • 公告频道
 
 * * *
 
-💎 Claude 拼车 - Claude Code 合租服务推荐
----------------------------------
+💎 Claude/Codex 拼车服务推荐
+----------------------
 
 平台
 
 类型
+
+服务
 
 介绍
 
@@ -27,14 +29,19 @@ English • 快速开始 • 演示站点 • 公告频道
 
 🏆 **官方运营**
 
-项目官方直营的Claude拼车服务  
-提供200刀 Claude Code Max 套餐共享服务
+✅ Claude Code  
+✅ Codex CLI
+
+项目直营，提供稳定的 Claude Code / Codex CLI 拼车服务
 
 **ctok.ai**
 
 🤝 合作伙伴
 
-社区认可的Claude拼车服务
+✅ Claude Code  
+✅ Codex CLI
+
+社区认证，提供 Claude Code / Codex CLI 拼车
 
 * * *
 
@@ -380,6 +387,16 @@ docker-compose.yml 已包含：
 export ANTHROPIC\_BASE\_URL="http://127.0.0.1:3000/api/" # 根据实际填写你服务器的ip地址或者域名
 export ANTHROPIC\_AUTH\_TOKEN="后台创建的API密钥"
 
+**VSCode Claude 插件配置：**
+
+如果使用 VSCode 的 Claude 插件，需要在 `~/.claude/config.json` 文件中配置：
+
+{
+    "primaryApiKey": "crs"
+}
+
+如果该文件不存在，请手动创建。Windows 用户路径为 `C:\Users\你的用户名\.claude\config.json`。
+
 **Gemini CLI 设置环境变量：**
 
 export CODE\_ASSIST\_ENDPOINT="http://127.0.0.1:3000/gemini" # 根据实际填写你服务器的ip地址或者域名
@@ -396,7 +413,7 @@ gemini  # 或其他 Gemini CLI 命令
 
 **Codex 配置：**
 
-在 `~/.codex/config.toml` 文件中添加以下配置：
+在 `~/.codex/config.toml` 文件**开头**添加以下配置：
 
 model\_provider = "crs"
 model = "gpt-5-codex"

@@ -1,6 +1,6 @@
 ---
 project: framework
-stars: 10524
+stars: 10521
 description: Old repo of Nuxt 3 framework, now on nuxt/nuxt
 url: https://github.com/nuxt/framework
 ---

@@ -1,6 +1,6 @@
 ---
 project: autoform
-stars: 3402
+stars: 3406
 description: 🌟 Automatically render forms for your existing data schema
 url: https://github.com/vantezzen/autoform
 ---

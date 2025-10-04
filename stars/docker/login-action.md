@@ -1,6 +1,6 @@
 ---
 project: login-action
-stars: 1276
+stars: 1278
 description: GitHub Action to login against a Docker registry
 url: https://github.com/docker/login-action
 ---

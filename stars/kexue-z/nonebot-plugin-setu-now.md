@@ -1,6 +1,6 @@
 ---
 project: nonebot-plugin-setu-now
-stars: 157
+stars: 156
 description: 不可以涩涩
 url: https://github.com/kexue-z/nonebot-plugin-setu-now
 ---

@@ -1,6 +1,6 @@
 ---
 project: 1Panel
-stars: 31456
+stars: 31531
 description: 🔥 1Panel provides an intuitive web interface and MCP Server to manage websites, files, containers, databases, and LLMs on a Linux server.
 url: https://github.com/1Panel-dev/1Panel
 ---

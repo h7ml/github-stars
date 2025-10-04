@@ -1,6 +1,6 @@
 ---
 project: html-to-markdown-cli
-stars: 105
+stars: 108
 description: Command line tool that converts HTML to markdown.
 url: https://github.com/jaywcjlove/html-to-markdown-cli
 ---

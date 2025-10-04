@@ -1,6 +1,6 @@
 ---
 project: an-codeAI
-stars: 721
+stars: 722
 description: AI generate code
 url: https://github.com/sparrow-js/an-codeAI
 ---

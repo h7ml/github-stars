@@ -1,6 +1,6 @@
 ---
 project: formkit
-stars: 4567
+stars: 4568
 description: Vue Forms ⚡️ Supercharged
 url: https://github.com/formkit/formkit
 ---

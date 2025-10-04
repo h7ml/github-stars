@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 44086
+stars: 44238
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -36,6 +36,76 @@ url: https://github.com/1c7/chinese-independent-developer
 
 3\. 项目列表
 --------
+
+### 2025 年 10 月 4 号添加
+
+#### pillow(重庆)
+
+-   ✅ Teleprompter：在线提词器，适用于视频创作者、演讲者和教育工作者
+
+#### 詹姆斯 周
+
+-   ✅ sora2ai.ai：最新的 AI 视频生成模型。创建具有同步音频、对话和效果的逼真且物理准确的视频。
+
+#### fanison(北京)
+
+-   ✅ NanoImg：基于 Nano Banana 的 AI 图像引擎，带来简单高效的图片编辑体验。上传图片，输入需求，即刻生成你想要的视觉效果。
+
+### 2025 年 10 月 2 号添加
+
+#### SUNJL（长春）：
+
+-   ✅ AI Lyrics Generator：AI 歌词生成 & 改进
+
+#### Margox(北京) - Github
+
+-   ✅ 萌宠计划（iOS）：清新易用的宠物陪伴管家，包含宠物档案、图文日记、消费记账等功能
+
+### 2025 年 10 月 1 号添加
+
+#### Yuzu-Peel(北京) - Github
+
+-   ✅ Beardstyle AI：虚拟试戴胡子
+
+### 2025 年 9 月 29 号添加
+
+#### pandaupup(广州) - Github
+
+-   ✅ 实用小工具：时间格式转换和计算器：支持时分秒格式和小数表示法双向转换、分钟/秒/天不同单位相互转换、考勤打卡时间四舍五入，工资计算等
+
+#### LongZi(深圳)
+
+-   ⏳ 跟我学太极-陈式：微信小程序，图文+视频呈现八法五步、八段锦、陈式太极拳等内容，旨在推广太极拳文化
+
+#### 0x4c48 - Github
+
+-   ✅ PMoS：神经网络模型可视化定义平台 - 更多介绍
+
+#### zxcHolmes
+
+-   ✅ Git Stars：发掘最热门，Stars 数最多的 GitHub 开源项目仓库
+
+#### anywhereto(beijing) - Github
+
+-   ✅ scream ai：把你的自拍照转化为电影感十足的千禧年（Y2K）恐怖风照片
+
+#### pandaupup - Github
+
+-   ✅ 在线 GPU 性能测试网站 - 毒蘑菇显卡测试：在浏览器里运行3D体积着色器测试GPU渲染能力。实时显示压测性能数据：包括实时的帧率（FPS）、帧时间（Frame Time）和显卡型号。可多渠道分享测试结果，用户点击可使用相同参数进行渲染测试。
+
+### 2025 年 9 月 28 号添加
+
+#### anywhereto(beijing) - Github
+
+-   ✅ banana nana ai：AI 图片工具, AI 换脸，AI 清除背景， AI y2k 风格人像
+
+#### elng12(柳州) - Github
+
+-   ✅ Image to Pixel Art：图像到像素艺术转换器 – 通过即时预览和调色板控件将 PNG 或 JPG 图像转换为像素艺术，并进行图像到像素的转换帮我生成跟图像那样的
+
+#### ljxyaly(深圳) - Github
+
+-   ✅ PDFLance：PDF 工具集，全部在浏览器里本地运行。你的文件不会被上传到其他地方。免费合并，拆分，编辑，转换 PDF，我们重视您的隐私
 
 ### 2025 年 9 月 27 号添加
 

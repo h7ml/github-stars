@@ -1,6 +1,6 @@
 ---
 project: How-To-Ask-Questions-The-Smart-Way
-stars: 33570
+stars: 33600
 description: 本文原文由知名 Hacker Eric S. Raymond 所撰寫，教你如何正確的提出技術問題並獲得你滿意的答案。
 url: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way
 ---

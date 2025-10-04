@@ -1,6 +1,6 @@
 ---
 project: eros
-stars: 2002
+stars: 2001
 description: 📱 一套 Vue 代码，两端原生应用 ，或许可以叫我 weex-native。
 url: https://github.com/bmfe/eros
 ---

@@ -1,6 +1,6 @@
 ---
 project: SSPanel-UIM
-stars: 9925
+stars: 9931
 description: Multi-purpose proxy service management system
 url: https://github.com/Anankke/SSPanel-UIM
 ---

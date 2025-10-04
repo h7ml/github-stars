@@ -1,21 +1,25 @@
 ---
 project: langchain
-stars: 116319
+stars: 116631
 description: 🦜🔗 Build context-aware reasoning applications
 url: https://github.com/langchain-ai/langchain
 ---
 
-  
-
-Note
-
-Looking for the JS/TS library? Check out LangChain.js.
+The platform for reliable agents.
 
 LangChain is a framework for building LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.
 
 pip install -U langchain
 
-To learn more about LangChain, check out the docs. If you’re looking for more advanced customization or agent orchestration, check out LangGraph, our framework for building controllable agent workflows.
+* * *
+
+**Documentation**: To learn more about LangChain, check out the docs.
+
+If you're looking for more advanced customization or agent orchestration, check out LangGraph, our framework for building controllable agent workflows.
+
+Note
+
+Looking for the JS/TS library? Check out LangChain.js.
 
 Why use LangChain?
 ------------------
@@ -41,9 +45,8 @@ To improve your LLM application development, pair LangChain with:
 Additional resources
 --------------------
 
--   Tutorials: Simple walkthroughs with guided examples on getting started with LangChain.
--   How-to Guides: Quick, actionable code snippets for topics such as tool calling, RAG use cases, and more.
 -   Conceptual Guides: Explanations of key concepts behind the LangChain framework.
--   LangChain Forum: Connect with the community and share all of your technical questions, ideas, and feedback.
+-   Tutorials: Simple walkthroughs with guided examples on getting started with LangChain.
 -   API Reference: Detailed reference on navigating base packages and integrations for LangChain.
+-   LangChain Forum: Connect with the community and share all of your technical questions, ideas, and feedback.
 -   Chat LangChain: Ask questions & chat with our documentation.

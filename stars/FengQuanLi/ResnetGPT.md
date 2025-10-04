@@ -1,6 +1,6 @@
 ---
 project: ResnetGPT
-stars: 2927
+stars: 2931
 description: 用Resnet101+GPT搭建一个玩王者荣耀的AI
 url: https://github.com/FengQuanLi/ResnetGPT
 ---

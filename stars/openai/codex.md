@@ -1,6 +1,6 @@
 ---
 project: codex
-stars: 44838
+stars: 45923
 description: Lightweight coding agent that runs in your terminal
 url: https://github.com/openai/codex
 ---
@@ -73,8 +73,11 @@ Codex CLI supports a rich set of configuration options, with preferences stored 
 -   **Authentication**
     -   Auth methods
     -   Login on a "Headless" machine
+-   **Automating Codex**
+    -   GitHub Action
+    -   TypeScript SDK
+    -   Non-interactive mode (`codex exec`)
 -   **Advanced**
-    -   Non-interactive / CI mode
     -   Tracing / verbose logging
     -   Model Context Protocol (MCP)
 -   **Zero data retention (ZDR)**

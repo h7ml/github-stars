@@ -1,6 +1,6 @@
 ---
 project: utils
-stars: 131
+stars: 130
 description: vscode lodash
 url: https://github.com/vscode-use/utils
 ---

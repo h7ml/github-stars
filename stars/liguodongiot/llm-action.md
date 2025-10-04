@@ -1,6 +1,6 @@
 ---
 project: llm-action
-stars: 21052
+stars: 21137
 description: 本项目旨在分享大模型相关技术原理以及实战经验（大模型工程化、大模型应用落地）
 url: https://github.com/liguodongiot/llm-action
 ---

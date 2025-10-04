@@ -1,6 +1,6 @@
 ---
 project: trigger.dev
-stars: 12491
+stars: 12533
 description: Trigger.dev – build and deploy fully‑managed AI agents and workflows
 url: https://github.com/triggerdotdev/trigger.dev
 ---

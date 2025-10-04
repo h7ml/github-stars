@@ -1,6 +1,6 @@
 ---
 project: LINUX-DO
-stars: 364
+stars: 363
 description: 一个简单的L站的移动端
 url: https://github.com/R-lz/LINUX-DO
 ---

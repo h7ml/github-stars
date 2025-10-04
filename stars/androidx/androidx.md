@@ -1,6 +1,6 @@
 ---
 project: androidx
-stars: 5747
+stars: 5749
 description: Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP.
 url: https://github.com/androidx/androidx
 ---

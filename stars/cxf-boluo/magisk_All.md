@@ -1,6 +1,6 @@
 ---
 project: magisk_All
-stars: 579
+stars: 577
 description: magisk 一键集成环境，再也不用每次刷完机繁琐的配置环境了！
 url: https://github.com/cxf-boluo/magisk_All
 ---

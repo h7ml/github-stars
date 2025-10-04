@@ -1,14 +1,14 @@
 ---
 project: pydoll
-stars: 5316
+stars: 5560
 description: Pydoll is a library for automating chromium-based browsers without a WebDriver, offering realistic interactions. 
 url: https://github.com/autoscrape-labs/pydoll
 ---
 
   
 
-Pydoll: Automate the Web, Naturally
-===================================
+Pydoll: scraping, the easier way
+================================
 
 📖 Documentation • 🚀 Getting Started • ⚡ Advanced Features • 🤝 Contributing • 💖 Support My Work
 
@@ -32,74 +32,6 @@ No stars, no bugs fixed. Just kidding (maybe)
 -   **Asynchronous Performance**: For high-speed automation and multiple simultaneous tasks
 -   **Humanized Interactions**: Mimic real user behavior
 -   **Simplicity**: With Pydoll, you install and you're ready to automate.
-
-What's New
-----------
-
-### Remote connections via WebSocket — control any Chrome from anywhere!
-
-You asked for it, we delivered. You can now connect to an already running browser remotely via its WebSocket address and use the full Pydoll API immediately.
-
-from pydoll.browser.chromium import Chrome
-
-chrome \= Chrome()
-tab \= await chrome.connect('ws://YOUR\_HOST:9222/devtools/browser/XXXX')
-
-\# Full power unlocked: navigation, element automation, requests, events…
-await tab.go\_to('https://example.com')
-title \= await tab.execute\_script('return document.title')
-print(title)
-
-This makes it effortless to run Pydoll against remote/CI browsers, containers, or shared debugging targets — no local launch required. Just point to the WS endpoint and automate.
-
-### Navigate the DOM like a pro: get\_children\_elements() and get\_siblings\_elements()
-
-Two delightful helpers to traverse complex layouts with intention:
-
-\# Grab direct children of a container
-container \= await tab.find(id\='cards')
-cards \= await container.get\_children\_elements(max\_depth\=1)
-
-\# Want to go deeper? This will return children of children (and so on)
-elements \= await container.get\_children\_elements(max\_depth\=2) 
-
-\# Walk horizontal lists without re-querying the DOM
-active \= await tab.find(class\_name\='item-active')
-siblings \= await active.get\_siblings\_elements()
-
-print(len(cards), len(siblings))
-
-Use them to cut boilerplate, express intent, and keep your scraping/automation logic clean and readable — especially in dynamic grids, lists and menus.
-
-### WebElement: state waiting and new public APIs
-
--   New `wait_until(...)` on `WebElement` to await element states with minimal code:
-
-\# Wait until it becomes visible OR the timeout expires
-await element.wait\_until(is\_visible\=True, timeout\=5)
-
-\# Wait until it becomes interactable (visible, on top, receiving pointer events)
-await element.wait\_until(is\_interactable\=True, timeout\=10)
-
--   Methods now public on `WebElement`:
-    -   `is_visible()`
-        -   Checks that the element has a visible area (> 0), isn’t hidden by CSS and is in the viewport (after `scroll_into_view()` when needed). Useful pre-check before interactions.
-    -   `is_interactable()`
-        -   “Click-ready” state: combines visibility, enabledness and pointer-event hit testing. Ideal for robust flows that avoid lost clicks.
-    -   `is_on_top()`
-        -   Verifies the element is the top hit-test target at the intended click point, avoiding overlays.
-    -   `execute_script(script: str, return_by_value: bool = False)`
-        -   Executes JavaScript in the element’s own context (where `this` is the element). Great for fine-tuning and quick inspections.
-
-\# Visually outline the element via JS
-await element.execute\_script("this.style.outline='2px solid #22d3ee'")
-
-\# Confirm states
-visible \= await element.is\_visible()
-interactable \= await element.is\_interactable()
-on\_top \= await element.is\_on\_top()
-
-These additions simplify waiting and state validation before clicking/typing, reducing flakiness and making automations more predictable.
 
 📦 Installation
 ---------------

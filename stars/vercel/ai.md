@@ -1,6 +1,6 @@
 ---
 project: ai
-stars: 18052
+stars: 18184
 description: The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents 
 url: https://github.com/vercel/ai
 ---
@@ -8,58 +8,151 @@ url: https://github.com/vercel/ai
 AI SDK
 ======
 
-The AI SDK is a TypeScript toolkit designed to help you build AI-powered applications using popular frameworks like Next.js, React, Svelte, Vue and runtimes like Node.js.
+The AI SDK is a TypeScript toolkit designed to help you build AI-powered applications and agents using popular frameworks like Next.js, React, Svelte, Vue and runtimes like Node.js.
 
 To learn more about how to use the AI SDK, check out our API Reference and Documentation.
 
 Installation
 ------------
 
-You will need Node.js 18+ and pnpm installed on your local development machine.
+You will need Node.js 18+ and npm (or another package manager) installed on your local development machine.
 
 npm install ai
+
+Unified Provider Architecture
+-----------------------------
+
+The AI SDK provides a unified API to interact with model providers like OpenAI, Anthropic, Google, and more.
+
+npm install @ai-sdk/openai @ai-sdk/anthropic @ai-sdk/google
+
+Alternatively you can use the Vercel AI Gateway.
 
 Usage
 -----
 
-### AI SDK Core
-
-The AI SDK Core module provides a unified API to interact with model providers like OpenAI, Anthropic, Google, and more.
-
-You will then install the model provider of your choice.
-
-npm install @ai-sdk/openai
-
-###### @/index.ts (Node.js Runtime)
+### Generating Text
 
 import { generateText } from 'ai';
-import { openai } from '@ai-sdk/openai'; // Ensure OPENAI\_API\_KEY environment variable is set
 
 const { text } \= await generateText({
-  model: openai('gpt-4o'),
-  system: 'You are a friendly assistant!',
-  prompt: 'Why is the sky blue?',
+  model: 'openai/gpt-5', // use Vercel AI Gateway
+  prompt: 'What is an agent?',
 });
 
-console.log(text);
+import { generateText } from 'ai';
+import { openai } from '@ai-sdk/openai';
 
-### AI SDK UI
+const { text } \= await generateText({
+  model: openai('gpt-5'), // use OpenAI Responses API
+  prompt: 'What is an agent?',
+});
+
+### Generating Structured Data
+
+import { generateObject } from 'ai';
+import { z } from 'zod';
+
+const { object } \= await generateObject({
+  model: 'openai/gpt-4.1',
+  schema: z.object({
+    recipe: z.object({
+      name: z.string(),
+      ingredients: z.array(z.object({ name: z.string(), amount: z.string() })),
+      steps: z.array(z.string()),
+    }),
+  }),
+  prompt: 'Generate a lasagna recipe.',
+});
+
+### Agents
+
+import { Agent } from 'ai';
+
+const sandboxAgent \= new Agent({
+  model: 'openai/gpt-5-codex',
+  system: 'You are an agent with access to a shell environment.',
+  tools: {
+    local\_shell: openai.tools.localShell({
+      execute: async ({ action }) \=> {
+        const \[cmd, ...args\] \= action.command;
+        const sandbox \= await getSandbox(); // Vercel Sandbox
+        const command \= await sandbox.runCommand({ cmd, args });
+        return { output: await command.stdout() };
+      },
+    }),
+  },
+});
+
+### UI Integration
 
 The AI SDK UI module provides a set of hooks that help you build chatbots and generative user interfaces. These hooks are framework agnostic, so they can be used in Next.js, React, Svelte, and Vue.
 
-You need to install the package for your framework:
+You need to install the package for your framework, e.g.:
 
 npm install @ai-sdk/react
 
-###### @/app/page.tsx (Next.js App Router)
+#### Agent @/agent/image-generation-agent.ts
+
+import { openai } from '@ai-sdk/openai';
+import { Agent, InferAgentUIMessage } from 'ai';
+
+export const imageGenerationAgent \= new Agent({
+  model: openai('gpt-5'),
+  tools: {
+    image\_generation: openai.tools.imageGeneration({
+      partialImages: 3,
+    }),
+  },
+});
+
+export type ImageGenerationAgentMessage \= InferAgentUIMessage<
+  typeof imageGenerationAgent
+\>;
+
+#### Route (Next.js App Router) @/app/api/chat/route.ts
+
+import { imageGenerationAgent } from '@/agent/image-generation-agent';
+import { validateUIMessages } from 'ai';
+
+export async function POST(req: Request) {
+  const { messages } \= await req.json();
+
+  return imageGenerationAgent.respond({
+    messages: await validateUIMessages({ messages }),
+  });
+}
+
+#### UI Component for Tool @/component/image-generation-view.tsx
+
+import { openai } from '@ai-sdk/openai';
+import { UIToolInvocation } from 'ai';
+
+export default function ImageGenerationView({
+  invocation,
+}: {
+  invocation: UIToolInvocation<ReturnType<typeof openai.tools.imageGeneration\>\>;
+}) {
+  switch (invocation.state) {
+    case 'input-available':
+      return <div\>Generating image...</div\>;
+    case 'output-available':
+      return <img src\={\`data:image/png;base64,${invocation.output.result}\`} />;
+  }
+}
+
+#### Page @/app/page.tsx
 
 'use client';
 
-import { useState } from 'react';
+import { ImageGenerationAgentMessage } from '@/agent/image-generation-agent';
+import ImageGenerationView from '@/component/image-generation-view';
 import { useChat } from '@ai-sdk/react';
 
 export default function Page() {
-  const { messages, status, sendMessage } \= useChat();
+  const { messages, status, sendMessage } \=
+    useChat<ImageGenerationAgentMessage\>();
+
   const \[input, setInput\] \= useState('');
   const handleSubmit \= e \=> {
     e.preventDefault();
@@ -75,9 +168,9 @@ export default function Page() {
           {message.parts.map((part, index) \=> {
             switch (part.type) {
               case 'text':
-                return <span key\={index}\>{part.text}</span\>;
-
-              // other cases can handle images, tool calls, etc
+                return <div key\={index}\>{part.text}</div\>;
+              case 'tool-image\_generation':
+                return <ImageGenerationView key\={index} invocation\={part} />;
             }
           })}
         </div\>
@@ -86,30 +179,12 @@ export default function Page() {
       <form onSubmit\={handleSubmit}\>
         <input
           value\={input}
-          placeholder\="Send a message..."
           onChange\={e \=> setInput(e.target.value)}
           disabled\={status !== 'ready'}
         />
       </form\>
     </div\>
   );
-}
-
-###### @/app/api/chat/route.ts (Next.js App Router)
-
-import { streamText } from 'ai';
-import { openai } from '@ai-sdk/openai';
-
-export async function POST(req: Request) {
-  const { messages } \= await req.json();
-
-  const result \= streamText({
-    model: openai('gpt-4o'),
-    system: 'You are a helpful assistant.',
-    messages,
-  });
-
-  return result.toUIMessageStreamResponse();
 }
 
 Templates

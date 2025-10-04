@@ -1,6 +1,6 @@
 ---
 project: HomebrewCN
-stars: 155
+stars: 156
 description: Homebrew 国内安装脚本
 url: https://github.com/cunkai/HomebrewCN
 ---

@@ -1,6 +1,6 @@
 ---
 project: BaiduSpider
-stars: 1116
+stars: 1115
 description: BaiduSpider，一个爬取百度搜索结果的爬虫，目前支持百度网页搜索，百度图片搜索，百度知道搜索，百度视频搜索，百度资讯搜索，百度文库搜索，百度经验搜索和百度百科搜索。
 url: https://github.com/BaiduSpider/BaiduSpider
 ---

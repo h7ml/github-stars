@@ -1,6 +1,6 @@
 ---
 project: crawlee
-stars: 19575
+stars: 19687
 description: Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Puppeteer, Playwright, Cheerio, JSDOM, and raw HTTP. Both headful and headless mode. With proxy rotation.
 url: https://github.com/apify/crawlee
 ---
@@ -17,7 +17,7 @@ Crawlee is available as the `crawlee` NPM package.
 
 > 👉 **View full documentation, guides and examples on the Crawlee project website** 👈
 
-> Crawlee for Python is open for early adopters. 🐍 👉 Checkout the source code 👈.
+> Do you prefer 🐍 Python instead of JavaScript? 👉 Checkout Crawlee for Python 👈.
 
 Installation
 ------------

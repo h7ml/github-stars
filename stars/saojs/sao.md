@@ -1,6 +1,6 @@
 ---
 project: sao
-stars: 1051
+stars: 1047
 description: ⚔ Futuristic scaffolding tool
 url: https://github.com/saojs/sao
 ---

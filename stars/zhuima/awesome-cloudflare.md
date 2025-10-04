@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 11952
+stars: 11980
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -542,6 +542,14 @@ Page-api-forwarder
 AI-worker
 
 通过Cloudflare免费、私有化访问和管理Gemini~摆脱地域限制无烦恼，完全由自己掌控。
+
+维护中
+
+gemini-balance-do
+
+基于 Cloudflare Worker 和 Durable Objects 实现的 Gemini API 中转（多key负载均衡），稳定美国 IP 访问 Gemini
+
+https://github.com/zaunist/gemini-balance-do
 
 维护中
 

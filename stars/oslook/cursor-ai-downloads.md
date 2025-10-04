@@ -1,6 +1,6 @@
 ---
 project: cursor-ai-downloads
-stars: 2985
+stars: 2994
 description: All Cursor AI's official download links for both the latest and older versions, making it easy for you to update, downgrade, and choose any version. 🚀
 url: https://github.com/oslook/cursor-ai-downloads
 ---
@@ -78,10 +78,10 @@ All Version Download Links
 
 ### Latest Version
 
-🚀 Cursor 1.7.11
+🚀 Cursor 1.7.33
 ================
 
-Release Date: 2025-09-26
+Release Date: 2025-10-03
 
 Windows
 
@@ -100,6 +100,150 @@ Windows Installer
 Mac Installer
 
 Linux Installer
+
+1.7.33
+
+2025-10-03
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.28
+
+2025-10-01
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.25
+
+2025-09-30
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.23
+
+2025-09-30
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.22
+
+2025-09-29
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.17
+
+2025-09-29
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.16
+
+2025-09-29
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
+
+1.7.12
+
+2025-09-28
+
+win32-x64-system  
+win32-arm64-system  
+win32-x64-user  
+win32-arm64-user  
+win32-x64  
+win32-arm64
+
+darwin-universal  
+darwin-x64  
+darwin-arm64
+
+linux-x64  
+linux-arm64
 
 1.7.11
 
@@ -1653,122 +1797,90 @@ darwin-arm64
 linux-x64  
 linux-arm64
 
-0.46.10
-
-2025-03-06
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.9
-
-2025-03-05
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.8
-
-2025-03-01
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.7
-
-2025-02-27
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.6
-
-2025-02-26
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.5
-
-2025-02-26
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.4
-
-2025-02-25
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
-0.46.3
-
-2025-02-25
-
-win32-x64  
-win32-arm64
-
-darwin-universal  
-darwin-x64  
-darwin-arm64
-
-linux-x64  
-linux-arm64
-
 * * *
 
 Detailed Version Card View
 --------------------------
+
+**Version 1.7.33** (2025-10-03)
+
+### Cursor 1.7.33 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.28** (2025-10-01)
+
+### Cursor 1.7.28 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.25** (2025-09-30)
+
+### Cursor 1.7.25 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.23** (2025-09-30)
+
+### Cursor 1.7.23 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.22** (2025-09-29)
+
+### Cursor 1.7.22 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.17** (2025-09-29)
+
+### Cursor 1.7.17 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.16** (2025-09-29)
+
+### Cursor 1.7.16 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
+
+**Version 1.7.12** (2025-09-28)
+
+### Cursor 1.7.12 Download Links
+
+#### Windows
+
+#### macOS
+
+#### Linux
 
 **Version 1.7.11** (2025-09-26)
 
@@ -2683,86 +2795,6 @@ Detailed Version Card View
 **Version 0.46.11** (2025-03-07)
 
 ### Cursor 0.46.11 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.10** (2025-03-06)
-
-### Cursor 0.46.10 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.9** (2025-03-05)
-
-### Cursor 0.46.9 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.8** (2025-03-01)
-
-### Cursor 0.46.8 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.7** (2025-02-27)
-
-### Cursor 0.46.7 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.6** (2025-02-26)
-
-### Cursor 0.46.6 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.5** (2025-02-26)
-
-### Cursor 0.46.5 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.4** (2025-02-25)
-
-### Cursor 0.46.4 Download Links
-
-#### Windows
-
-#### macOS
-
-#### Linux
-
-**Version 0.46.3** (2025-02-25)
-
-### Cursor 0.46.3 Download Links
 
 #### Windows
 

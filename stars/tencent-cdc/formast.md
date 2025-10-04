@@ -1,6 +1,6 @@
 ---
 project: formast
-stars: 117
+stars: 116
 description: 复杂业务场景下的企业级动态表单框架
 url: https://github.com/tencent-cdc/formast
 ---

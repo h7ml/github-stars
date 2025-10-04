@@ -1,6 +1,6 @@
 ---
 project: ByteMate
-stars: 36
+stars: 35
 description: null
 url: https://github.com/bestyize/ByteMate
 ---

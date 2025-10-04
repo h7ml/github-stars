@@ -1,6 +1,6 @@
 ---
 project: Operit
-stars: 1667
+stars: 1752
 description: The most powerful AI agent and AI chat software on Android
 url: https://github.com/AAswordman/Operit
 ---

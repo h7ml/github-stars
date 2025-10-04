@@ -1,6 +1,6 @@
 ---
 project: noslate
-stars: 348
+stars: 349
 description: 💫  Noslate is an elegant, modern and fully customizable serverless runtime.
 url: https://github.com/noslate-project/noslate
 ---

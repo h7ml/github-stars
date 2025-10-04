@@ -1,6 +1,6 @@
 ---
 project: chinese_sentiment
-stars: 1031
+stars: 1033
 description: 中文情感分析，CNN，BI-LSTM，文本分类
 url: https://github.com/linguishi/chinese_sentiment
 ---

@@ -8,7 +8,7 @@ url: https://github.com/mfish-qf/mfish-nocode-view
 摸鱼低代码开发平台（前端）
 =============
 
-当前最新版本： V2.1.1
+当前最新版本： V2.2.0
 
 🐟项目介绍
 ------

@@ -1,6 +1,6 @@
 ---
 project: jd_yun
-stars: 649
+stars: 647
 description: JD-----云函数&青龙
 url: https://github.com/lukesyy/jd_yun
 ---

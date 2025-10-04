@@ -1,6 +1,6 @@
 ---
 project: proposal-change-array-by-copy
-stars: 507
+stars: 506
 description: Provides additional methods on Array.prototype and TypedArray.prototype to enable changes on the array by returning a new copy of it with the change.
 url: https://github.com/tc39/proposal-change-array-by-copy
 ---

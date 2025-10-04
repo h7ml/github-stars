@@ -1,6 +1,6 @@
 ---
 project: mantine
-stars: 29729
+stars: 29790
 description: A fully featured React components library
 url: https://github.com/mantinedev/mantine
 ---

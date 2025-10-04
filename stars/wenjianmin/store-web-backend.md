@@ -1,6 +1,6 @@
 ---
 project: store-web-backend
-stars: 79
+stars: 78
 description: 数字门店系统后端项目
 url: https://github.com/wenjianmin/store-web-backend
 ---

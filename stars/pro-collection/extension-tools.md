@@ -1,6 +1,6 @@
 ---
 project: extension-tools
-stars: 7
+stars: 6
 description: 自研 - 浏览器扩展程序工具
 url: https://github.com/pro-collection/extension-tools
 ---

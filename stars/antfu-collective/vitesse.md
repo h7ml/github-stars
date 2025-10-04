@@ -1,6 +1,6 @@
 ---
 project: vitesse
-stars: 9313
+stars: 9317
 description: 🏕 Opinionated Vite + Vue Starter Template
 url: https://github.com/antfu-collective/vitesse
 ---

@@ -1,6 +1,6 @@
 ---
 project: SkyDailyTask
-stars: 46
+stars: 45
 description: Sky光遇每日任务攻略自动更新，自动推送邮箱，再也不怕崽崽不会做每日任务啦啦啦！！！【利用爬虫实现】
 url: https://github.com/WhaleFell/SkyDailyTask
 ---

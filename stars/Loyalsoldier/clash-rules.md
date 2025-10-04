@@ -1,6 +1,6 @@
 ---
 project: clash-rules
-stars: 22552
+stars: 22603
 description: 🦄️ 🎃 👻 Clash Premium 规则集(RULE-SET)，兼容 ClashX Pro、Clash for Windows 等基于 Clash Premium 内核的客户端。
 url: https://github.com/Loyalsoldier/clash-rules
 ---

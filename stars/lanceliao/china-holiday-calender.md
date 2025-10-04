@@ -1,6 +1,6 @@
 ---
 project: china-holiday-calender
-stars: 6194
+stars: 6202
 description: 2023-2025中国节假日、调休、补班日历，ICS格式，可供IPhone、Google Calendar、Outlook等客户端订阅，包含节假日API
 url: https://github.com/lanceliao/china-holiday-calender
 ---

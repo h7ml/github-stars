@@ -1,6 +1,6 @@
 ---
 project: cat-catch
-stars: 15804
+stars: 15886
 description: 猫抓 浏览器资源嗅探扩展 / cat-catch Browser Resource Sniffing Extension
 url: https://github.com/xifangczy/cat-catch
 ---

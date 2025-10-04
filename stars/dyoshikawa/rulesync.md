@@ -1,6 +1,6 @@
 ---
 project: rulesync
-stars: 318
+stars: 332
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---
@@ -34,10 +34,8 @@ rulesync --help
 Getting Started
 ---------------
 
-# Create necessary directories and sample rule files
+# Create necessary directories, sample rule files, and configuration file
 npx rulesync init
-# Create a new configuration file
-npx rulesync config --init
 
 On the other hand, if you already have AI tool configurations:
 
@@ -75,33 +73,31 @@ AGENTS.md
 
 Claude Code
 
-✅
+✅ 🌏
 
 ✅
 
 ✅
 
-✅
+✅ 🌏
 
 ✅
 
 Codex CLI
 
-✅
+✅ 🌏
 
-✅
-
-🎮
+🌏
 
 🎮
 
 Gemini CLI
 
-✅
+✅ 🌏
 
 ✅
 
-✅
+✅ 🌏
 
 🎮
 
@@ -123,7 +119,7 @@ Cursor
 
 ✅
 
-✅
+✅ 🌏
 
 🎮
 
@@ -191,7 +187,9 @@ Warp
 
 ✅
 
-🎮: Simulated Commands/Subagents (Experimental Feature)
+-   ✅: Supports project mode
+-   🌏: Supports global mode (Experimental)
+-   🎮: Supports simulated commands/subagents (Project mode only, experimental)
 
 Why Rulesync?
 -------------
@@ -215,6 +213,10 @@ Avoid lock-in completely. If you decide to stop using Rulesync, you can continue
 ### 🎯 **Consistency Across Tools**
 
 Apply consistent rules across all AI tools, improving code quality and development experience for the entire team.
+
+### 🌏 **Global Mode**
+
+You can use global mode via Rulesync by enabling `--experimental-global` option.
 
 ### 🎮 **Simulated Commands and Subagents**
 
@@ -272,6 +274,7 @@ Example:
   "verbose": false,
 
   // Experimental features
+  "experimentalGlobal": false,
   "experimentalSimulateCommands": false,
   "experimentalSimulateSubagents": false
 }
@@ -335,7 +338,7 @@ description: \>- # subagent description
   suggest a specification, implement a new feature, refactor the codebase, or
   fix a bug. This agent can be called by the user explicitly only.
 claudecode: # for claudecode-specific rules
-  model: opus # opus, sonnet, haiku or inherit
+  model: inherit # opus, sonnet, haiku or inherit
 \---
 
 You are the planner for any tasks.
@@ -386,8 +389,52 @@ Example:
 tmp/
 credentials/
 
-Simulate Commands and Subagents
--------------------------------
+Global Mode(Experimental Feature)
+---------------------------------
+
+You can use global mode via Rulesync by enabling `--experimental-global` option. It can also be called as user scope mode.
+
+Currently, supports rules and commands generation for Claude Code. Import for global files is supported for rules and commands.
+
+1.  Create an any name directory. For example, if you prefer `~/.aiglobal`, run the following command.
+    
+    mkdir -p ~/.aiglobal
+    
+2.  Initialize files for global files in the directory.
+    
+    cd ~/.aiglobal
+    npx rulesync init
+    
+3.  Edit `~/.aiglobal/rulesync.jsonc` to enable global mode.
+    
+    {
+      "experimentalGlobal": true
+    }
+    
+4.  Edit `~/.aiglobal/.rulesync/rules/overview.md` to your preferences.
+    
+    \---
+    root: true
+    \---
+    \# The Project Overview
+    ...
+    
+5.  Generate rules for global settings.
+    
+    # Run in the \`~/.aiglobal\` directory
+    npx rulesync generate
+    
+
+Warning
+
+Currently, when in the directory enabled global mode:
+
+-   `rulesync.jsonc` only supports `global`, `features`, `delete` and `verbose`. `Features` can be set `"rules"` and `"commands"`. Other parameters are ignored.
+-   `rules/*.md` only supports single file has `root: true`, and frontmatter parameters without `root` are ignored.
+-   Only Claude Code is supported for global mode commands.
+
+Simulate Commands and Subagents(Experimental Feature)
+-----------------------------------------------------
 
 Simulated commands and subagents are experimental features that allow you to generate simulated commands and subagents for copilot, cursor, codexcli and etc. This is useful for shortening your prompts.
 

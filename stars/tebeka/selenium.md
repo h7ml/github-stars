@@ -1,6 +1,6 @@
 ---
 project: selenium
-stars: 2626
+stars: 2631
 description: Selenium/Webdriver client for Go
 url: https://github.com/tebeka/selenium
 ---

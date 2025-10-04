@@ -1,6 +1,6 @@
 ---
 project: amis-playground
-stars: 15
+stars: 16
 description: An online playground for Amis. Sit: https://amis-playground.pages.dev/
 url: https://github.com/ovineio/amis-playground
 ---

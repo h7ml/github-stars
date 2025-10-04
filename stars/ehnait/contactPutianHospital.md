@@ -1,6 +1,6 @@
 ---
 project: contactPutianHospital
-stars: 556
+stars: 560
 description: 电话攻击，电话炸弹，电话轰炸(可代替短信轰炸) 联系莆田医院，专门炸坏蛋，BOOM💥
 url: https://github.com/ehnait/contactPutianHospital
 ---

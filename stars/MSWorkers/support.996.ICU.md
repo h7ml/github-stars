@@ -1,6 +1,6 @@
 ---
 project: support.996.ICU
-stars: 10077
+stars: 10076
 description: Microsoft and GitHub Workers Support 996.ICU
 url: https://github.com/MSWorkers/support.996.ICU
 ---

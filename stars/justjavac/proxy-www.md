@@ -1,6 +1,6 @@
 ---
 project: proxy-www
-stars: 879
+stars: 877
 description: 学会 Proxy 就可以为所欲为吗？对，学会 Proxy 就可以为所欲为！
 url: https://github.com/justjavac/proxy-www
 ---

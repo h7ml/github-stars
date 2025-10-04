@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6468
+stars: 6502
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -58,6 +58,7 @@ Getting Started
 ### Templates
 
 -   angular-tauri - Angular with Typescript, SASS, and Hot Reload.
+-   create-tauri-react - Well-architected template for Vite, React, and Tailwind CSS.
 -   nuxtor - Nuxt 3 + Tauri 2 + UnoCSS, a starter template for building desktop apps.
 -   rust-full-stack-with-authentication-template - Yew, Tailwind CSS, Tauri, Axum, Sqlx - Starter template for full stack applications with built-in authentication.
 -   tauri-angular-template - Angular template

@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 76192
+stars: 76320
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
@@ -68,6 +68,10 @@ Table of contents (Click to show)
 
 Important Notices
 =================
+
+Important
+
+Please note that we are NOT participating in Hacktoberfest this year. Unfortunately, the only person with sufficient access rights to remove the repository label is currently unreachable, so we are notifying you here. As a small team, we cannot handle the increased volume of PRs and issues that the event brings. We appreciate your understanding.
 
 Important
 
@@ -309,9 +313,17 @@ Azerbaijani
 
 Bengali
 
+`bg`
+
+Bulgarian
+
 `my`
 
 Burmese
+
+`ca`
+
+Catalan
 
 `cn`
 
@@ -333,6 +345,10 @@ Dutch
 
 English
 
+`fil`
+
+Filipino
+
 `fi`
 
 Finnish
@@ -352,6 +368,10 @@ Greek
 Code
 
 Locale
+
+`he`
+
+Hebrew
 
 `hi`
 
@@ -405,17 +425,21 @@ Portuguese (Brazil)
 
 Portuguese (Portugal)
 
-Code
-
-Locale
-
 `ro`
 
 Romanian
 
+Code
+
+Locale
+
 `ru`
 
 Russian
+
+`sa`
+
+Sanskrit
 
 `sr`
 
@@ -433,9 +457,17 @@ Slovak
 
 Spanish
 
+`sw`
+
+Swahili
+
 `se`
 
 Swedish
+
+`ta`
+
+Tamil
 
 `th`
 
@@ -448,6 +480,10 @@ Turkish
 `uk-ua`
 
 Ukrainian
+
+`ur`
+
+Urdu
 
 `uz`
 
@@ -591,11 +627,11 @@ string (comma-separated values)
 
 `commits_year`
 
-Filters and counts only commits made in the specified year
+Filters and counts only commits made in the specified year.
 
 integer _(YYYY)_
 
-`<current year> (one year to date)`.
+`<current year> (one year to date)`
 
 Note
 
@@ -917,6 +953,10 @@ Warning
 
 Please be aware that we currently only show data from WakaTime profiles that are public. You therefore have to make sure that **BOTH** `Display code time publicly` and `Display languages, editors, os, categories publicly` are enabled.
 
+Warning
+
+In case you just created a new WakaTime account, then it might take up to 24 hours until your stats will become visible on the WakaTime stats card.
+
 Change the `?username=` value to your WakaTime username.
 
 \[!\[Harlok's WakaTime stats\](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)\](https://github.com/anuraghazra/github-readme-stats)
@@ -1093,11 +1133,11 @@ Deploy on your own
 First step: get your Personal Access Token (PAT)
 ------------------------------------------------
 
-Selecting the right scopes for your token is important in case you want to display private contributions on your stats card.
+For deploying your own instance of GitHub Readme Stats, you will need to create a GitHub Personal Access Token (PAT). Below are the steps to create one and the scopes you need to select for both classic and fine-grained tokens.
+
+Selecting the right scopes for your token is important in case you want to display private contributions on your cards.
 
 ### Classic token
-
-Steps:
 
 -   Go to Account -> Settings -> Developer Settings -> Personal access tokens -> Tokens (classic).
 -   Click on `Generate new token -> Generate new token (classic)`.
@@ -1111,8 +1151,6 @@ Steps:
 Warning
 
 This limits the number of issues to the number of issues on your repositories only and only takes public commits into account.
-
-Steps:
 
 -   Go to Account -> Settings -> Developer Settings -> Personal access tokens -> Fine-grained tokens.
 -   Click on `Generate new token -> Generate new token`.
@@ -1165,7 +1203,7 @@ This way of using GRS is not officially supported and was added to cater to some
 **🛠️ Step-by-step guide for deploying on other platforms**
 
 1.  Fork or clone this repo as per your needs
-2.  Add `express` to the dependencies section of `package.json`
+2.  Move `express` from the devDependencies to the dependencies section of `package.json`
     
     github-readme-stats/package.json
     

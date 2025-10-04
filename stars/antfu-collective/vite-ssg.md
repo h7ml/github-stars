@@ -1,6 +1,6 @@
 ---
 project: vite-ssg
-stars: 1490
+stars: 1495
 description: Static site generation for Vue 3 on Vite
 url: https://github.com/antfu-collective/vite-ssg
 ---

@@ -1,6 +1,6 @@
 ---
 project: blog
-stars: 1624
+stars: 1623
 description: 在这里写一些工作中遇到的前端，后端以及运维的问题
 url: https://github.com/shfshanyue/blog
 ---

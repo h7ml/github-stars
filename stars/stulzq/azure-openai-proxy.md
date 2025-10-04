@@ -1,6 +1,6 @@
 ---
 project: azure-openai-proxy
-stars: 1352
+stars: 1351
 description: Azure OpenAI Service Proxy. Convert OpenAI official API request to Azure OpenAI API request. Support GPT-4,Embeddings,Langchain. Adapter from OpenAI to Azure OpenAI.
 url: https://github.com/stulzq/azure-openai-proxy
 ---

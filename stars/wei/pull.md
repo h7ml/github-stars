@@ -1,6 +1,6 @@
 ---
 project: pull
-stars: 6807
+stars: 6812
 description: 🤖 Keep your forks up-to-date via automated PRs
 url: https://github.com/wei/pull
 ---

@@ -1,6 +1,6 @@
 ---
 project: wechat-windows-versions
-stars: 2544
+stars: 2552
 description: 保存微信历史版本
 url: https://github.com/tom-snow/wechat-windows-versions
 ---

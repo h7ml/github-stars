@@ -1,9 +1,18 @@
 ---
 project: react-spring
-stars: 28905
+stars: 28915
 description: ✌️ A spring physics based React animation library
 url: https://github.com/pmndrs/react-spring
 ---
+
+Special thanks to:
+------------------
+
+Warp is built for coding with multiple AI agents
+
+* * *
+
+  
 
   
 

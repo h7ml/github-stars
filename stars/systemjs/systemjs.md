@@ -1,6 +1,6 @@
 ---
 project: systemjs
-stars: 13080
+stars: 13083
 description: Dynamic ES module loader
 url: https://github.com/systemjs/systemjs
 ---

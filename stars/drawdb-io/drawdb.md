@@ -1,6 +1,6 @@
 ---
 project: drawdb
-stars: 32919
+stars: 32981
 description: Free, simple, and intuitive online database diagram editor and SQL generator.
 url: https://github.com/drawdb-io/drawdb
 ---
@@ -43,4 +43,4 @@ npm run build
 docker build -t drawdb .
 docker run -p 3000:80 drawdb
 
-If you wish to work with sharing, set up server and environment variables according to `.env.sample`. This is not required unless you want to share files.
+If you want to enable sharing, set up the server and environment variables according to `.env.sample`. This is optional unless you need to share files..
