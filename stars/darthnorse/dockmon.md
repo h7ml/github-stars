@@ -1,6 +1,6 @@
 ---
 project: dockmon
-stars: 85
+stars: 113
 description: DockMon - Modern Docker container monitoring with auto-restart and alerts
 url: https://github.com/darthnorse/dockmon
 ---
@@ -14,10 +14,11 @@ Key Features
 ------------
 
 -   **Multi-Host Monitoring** - Monitor containers across unlimited Docker hosts (local and remote)
+-   **Real-Time Statistics** - Live CPU, memory, network, and disk I/O metrics for hosts and containers
 -   **Real-Time Container Logs** - View logs from multiple containers simultaneously with live updates
 -   **Event Viewer** - Comprehensive audit trail with filtering, search, and real-time updates
 -   **Intelligent Auto-Restart** - Per-container auto-restart with configurable retry logic
--   **Advanced Alerting** - Discord, Slack, Telegram, Pushover with customizable templates
+-   **Advanced Alerting** - Discord, Slack, Telegram, Pushover, Gotify, SMTP with customizable templates
 -   **Real-Time Dashboard** - Drag-and-drop customizable widgets with WebSocket updates
 -   **Secure by Design** - Session-based auth, rate limiting, mTLS for remote hosts
 -   **Mobile-Friendly** - Responsive design that works seamlessly on all devices
@@ -50,7 +51,7 @@ Use Cases
 ### Small Business
 
 -   Centralized monitoring across multiple servers
--   Multi-channel alerting (Discord, Slack, Telegram)
+-   Multi-channel alerting (Discord, Slack, Telegram, Pushover, Gotify, SMTP)
 -   Schedule maintenance windows with blackout periods
 -   Audit trail of all container operations
 
@@ -83,9 +84,17 @@ Roadmap
 -   Drag-and-drop dashboard
 -   Auto-restart with retry logic
 
-### Planned (v1.1+)
+### Completed (v1.1)
 
--   Performance metrics dashboard (CPU, memory, network graphs)
+-   Real-time performance metrics (CPU, memory, network, disk I/O)
+-   Host-level and container-level statistics
+-   TLS/mTLS support for secure remote Docker connections
+-   Optimized streaming architecture with Go backend
+
+### Planned (v1.5+)
+
+-   Performance metrics dashboard with historical graphs
+-   Container auto-update feature with version tracking
 -   Configuration export/import
 -   Automatic Proxmox LXC installation script
 

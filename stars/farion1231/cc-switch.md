@@ -1,6 +1,6 @@
 ---
 project: cc-switch
-stars: 1415
+stars: 1788
 description: 一个用于管理和切换 Claude Code 和 Codex 不同供应商配置的桌面应用
 url: https://github.com/farion1231/cc-switch
 ---

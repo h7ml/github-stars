@@ -1,6 +1,6 @@
 ---
 project: windows
-stars: 46572
+stars: 46840
 description: Windows inside a Docker container.
 url: https://github.com/dockur/windows
 ---
@@ -56,6 +56,8 @@ docker run -it --rm --name windows -p 8006:8006 --device=/dev/kvm --device=/dev/
 kubectl apply -f https://raw.githubusercontent.com/dockur/windows/refs/heads/master/kubernetes.yml
 
 ##### Via Github Codespaces:
+
+##### Via a graphical installer:
 
 FAQ 💬
 ------

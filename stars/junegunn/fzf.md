@@ -1,6 +1,6 @@
 ---
 project: fzf
-stars: 74162
+stars: 74313
 description: :cherry_blossom: A command-line fuzzy finder
 url: https://github.com/junegunn/fzf
 ---
@@ -255,11 +255,11 @@ Note
 
 Tip
 
-You can disable CTRL-T or ALT-C binding by setting `FZF_CTRL_T_COMMAND` or `FZF_ALT_C_COMMAND` to an empty string when sourcing the script. For example, to disable ALT-C binding:
+You can disable CTRL-T, CTRL-R, or ALT-C bindings by setting the corresponding `*_COMMAND` variable to an empty string when sourcing the script. For example, to disable CTRL-R and ALT-C:
 
--   bash: `FZF_ALT_C_COMMAND= eval "$(fzf --bash)"`
--   zsh: `FZF_ALT_C_COMMAND= source <(fzf --zsh)`
--   fish: `fzf --fish | FZF_ALT_C_COMMAND= source`
+-   bash: `FZF_CTRL_R_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"`
+-   zsh: `FZF_CTRL_R_COMMAND= FZF_ALT_C_COMMAND= source <(fzf --zsh)`
+-   fish: `fzf --fish | FZF_CTRL_R_COMMAND= FZF_ALT_C_COMMAND= source`
 
 Setting the variables after sourcing the script will have no effect.
 
@@ -551,6 +551,7 @@ By setting up shell integration, you can use the following key bindings in bash,
     -   Can be disabled by setting `FZF_CTRL_T_COMMAND` to an empty string when sourcing the script
 -   `CTRL-R` - Paste the selected command from history onto the command-line
     -   If you want to see the commands in chronological order, press `CTRL-R` again which toggles sorting by relevance
+    -   Press `ALT-R` to toggle "raw" mode where you can see the surrounding items of a match. In this mode, you can press `CTRL-N` and `CTRL-P` to move between the matching items only.
     -   Press `CTRL-/` or `ALT-/` to toggle line wrapping
     -   Set `FZF_CTRL_R_OPTS` to pass additional options to fzf
         
@@ -560,6 +561,8 @@ By setting up shell integration, you can use the following key bindings in bash,
           --color header:italic
           --header 'Press CTRL-Y to copy command into clipboard'"
         
+    -   Can be disabled by setting `FZF_CTRL_R_COMMAND` to an empty string when sourcing the script
+    -   Custom override via a non-empty `FZF_CTRL_R_COMMAND` is not yet supported and will emit a warning
 -   `ALT-C` - cd into the selected directory
     -   The list is generated using `--walker dir,follow,hidden` option
     -   Set `FZF_ALT_C_COMMAND` to override the default command

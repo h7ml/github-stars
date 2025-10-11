@@ -1,6 +1,6 @@
 ---
 project: TradingAgents
-stars: 21887
+stars: 22481
 description: TradingAgents: Multi-Agents LLM Financial Trading Framework
 url: https://github.com/TauricResearch/TradingAgents
 ---
@@ -70,13 +70,17 @@ pip install -r requirements.txt
 
 ### Required APIs
 
-You will also need the FinnHub API for financial data. All of our code is implemented with the free tier.
-
-export FINNHUB\_API\_KEY=$YOUR\_FINNHUB\_API\_KEY
-
-You will need the OpenAI API for all the agents.
+You will need the OpenAI API for all the agents, and Alpha Vantage API for fundamental and news data (default configuration).
 
 export OPENAI\_API\_KEY=$YOUR\_OPENAI\_API\_KEY
+export ALPHA\_VANTAGE\_API\_KEY=$YOUR\_ALPHA\_VANTAGE\_API\_KEY
+
+Alternatively, you can create a `.env` file in the project root with your API keys (see `.env.example` for reference):
+
+cp .env.example .env
+# Edit .env with your actual API keys
+
+**Note:** We are happy to partner with Alpha Vantage to provide robust API support for TradingAgents. You can get a free AlphaVantage API here, TradingAgents-sourced requests also have increased rate limits to 60 requests per minute with no daily limits. Typically the quota is sufficient for performing complex tasks with TradingAgents thanks to Alpha Vantage’s open-source support program. If you prefer to use OpenAI for these data sources instead, you can modify the data vendor settings in `tradingagents/default_config.py`.
 
 ### CLI Usage
 
@@ -118,7 +122,14 @@ config \= DEFAULT\_CONFIG.copy()
 config\["deep\_think\_llm"\] \= "gpt-4.1-nano"  \# Use a different model
 config\["quick\_think\_llm"\] \= "gpt-4.1-nano"  \# Use a different model
 config\["max\_debate\_rounds"\] \= 1  \# Increase debate rounds
-config\["online\_tools"\] \= True \# Use online tools or cached data
+
+\# Configure data vendors (default uses yfinance and Alpha Vantage)
+config\["data\_vendors"\] \= {
+    "core\_stock\_apis": "yfinance",           \# Options: yfinance, alpha\_vantage, local
+    "technical\_indicators": "yfinance",      \# Options: yfinance, alpha\_vantage, local
+    "fundamental\_data": "alpha\_vantage",     \# Options: openai, alpha\_vantage, local
+    "news\_data": "alpha\_vantage",            \# Options: openai, alpha\_vantage, google, local
+}
 
 \# Initialize with custom config
 ta \= TradingAgentsGraph(debug\=True, config\=config)
@@ -127,7 +138,7 @@ ta \= TradingAgentsGraph(debug\=True, config\=config)
 \_, decision \= ta.propagate("NVDA", "2024-05-10")
 print(decision)
 
-> For `online_tools`, we recommend enabling them for experimentation, as they provide access to real-time data. The agents' offline tools rely on cached data from our **Tauric TradingDB**, a curated dataset we use for backtesting. We're currently in the process of refining this dataset, and we plan to release it soon alongside our upcoming projects. Stay tuned!
+> The default configuration uses yfinance for stock price and technical data, and Alpha Vantage for fundamental and news data. For production use or if you encounter rate limits, consider upgrading to Alpha Vantage Premium for more stable and reliable data access. For offline experimentation, there's a local data vendor option that uses our **Tauric TradingDB**, a curated dataset for backtesting, though this is still in development. We're currently refining this dataset and plan to release it soon alongside our upcoming projects. Stay tuned!
 
 You can view the full list of configurations in `tradingagents/default_config.py`.
 

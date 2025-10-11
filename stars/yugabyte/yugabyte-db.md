@@ -1,6 +1,6 @@
 ---
 project: yugabyte-db
-stars: 9809
+stars: 9824
 description: YugabyteDB - the cloud native distributed SQL database for mission-critical applications.
 url: https://github.com/yugabyte/yugabyte-db
 ---
@@ -100,6 +100,43 @@ Refer to roadmap tracker for the list of all items in the current roadmap.
 Recently released features
 ==========================
 
+v2025.1 (Stable) - July, 2025
+-----------------------------
+
+**v2025.1** is the current stable release. Stable releases undergo rigorous testing for a longer period of time and are ready for production use. For the full list of features and improvements in this release, see Release notes - v2025.1. Here are some of the prominent features.
+
+### PostgreSQL 15 compatible YugabyteDB clusters
+
+This is the first stable release featuring a PostgreSQL fork rebase from version 11.2 to 15.0, enabling you to leverage the many key capabilities introduced in PostgreSQL between the two versions. This upgrade brings YSQL API support for numerous features, including stored generated columns, foreign keys on partitioned tables, and non-distinct NULLs in unique indexes. It also introduces query execution optimizations like incremental sort and memoization, along with various observability and security enhancements.
+
+We're also pleased to announce that YugabyteDB 2025.1.0.0 supports in-place online upgrades and downgrade—even with the PostgreSQL fork rebased to 15.0.
+
+**Note** that the source cluster must be running version 2024.2.3.0 or later to upgrade to version 2025.1.0.
+
+### HNSW indexing support for pgvector
+
+Brings AI-native capability by enabling efficient similarity search in vector workloads. Enhanced vector search capabilities via Hierarchical Navigable Small World (HNSW) indexing provide faster and more efficient high-dimensional vector lookups.
+
+### Automatic transactional xCluster DDL replication
+
+YugabyteDB now supports seamless replication of YSQL DDL changes across xCluster setups, eliminating the need to manually apply DDLs on both source and target clusters.
+
+### Parallel queries: Enabling PG parallelism for colocated tables
+
+Improves query performance for colocated tables by allowing PostgreSQL to leverage multiple CPUs, leading to faster query execution times.
+
+### Optimization of INSERT ON CONFLICT batching
+
+Queries using the `INSERT ... ON CONFLICT` clause are optimized for efficient execution, with automatic batching applied when multiple statements are executed to improve performance.
+
+### Cost-Based Optimizer (CBO)
+
+The CBO leverages YugabyteDB's distributed storage architecture and advanced query execution optimizations, including query pushdowns, LSM indexes, and batched nested loop joins, to deliver PostgreSQL-like performance.
+
+### Bitmap scan support
+
+Combine multiple indexes for more efficient scans.
+
 v2.25 (Preview) - Jan, 2025
 ---------------------------
 
@@ -116,27 +153,6 @@ This feature significantly simplifies tuning poorly performing SQL queries by al
 ### Active session history
 
 In addition, the Active Session History, which provides real-time and historical views of system activity, is now enabled by default.
-
-v2024.2 (Stable) - Dec, 2024
-----------------------------
-
-**v2024.2** is the current stable release. Stable releases undergo rigorous testing for a longer period of time and are ready for production use. For the full list of features and improvements in this release, see Release notes - v2024.2. Here are some of the prominent features.
-
-#### Yugabyte Kubernetes Operator
-
-The Yugabyte Kubernetes Operator is a powerful tool designed to automate deploying, scaling, and managing YugabyteDB clusters in Kubernetes environments. It streamlines database operations, reducing manual effort for developers and operators. For more information, refer to the YugabyteDB Kubernetes Operator GitHub project.
-
-#### Active session history
-
-Get real-time and historical views of system activity by sampling session activity in the database. Use this feature to analyze and troubleshoot performance issues.
-
-#### pg\_partman extension
-
-Use the pg\_partman extension to create and manage both time- and serial-based (aka range-based) table partition sets. pg\_partman is often used in combination with pg\_cron for data lifecycle management, and specifically for managing data aging, retention, and expiration.
-
-#### Colocated tables with tablespaces
-
-Starting this release, you can create colocated tables with tablespaces. With this enhancement, you can now take advantage of colocated tables for geo-distributed use cases, eliminating the need for trade-offs between distributing data across specific regions.
 
 Architecture
 ============

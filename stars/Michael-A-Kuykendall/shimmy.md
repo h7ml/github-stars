@@ -1,6 +1,6 @@
 ---
 project: shimmy
-stars: 2739
+stars: 2975
 description: ⚡ Python-free Rust inference server — OpenAI-API compatible. GGUF + SafeTensors, hot model swap, auto-discovery, single binary. FREE now, FREE forever.
 url: https://github.com/Michael-A-Kuykendall/shimmy
 ---
@@ -120,6 +120,27 @@ print(resp.choices\[0\].message.content)
 -   **Auto-detects LoRA adapters** for specialized models
 -   **Just works** - no config files, no setup wizards
 
+🧠 Advanced MOE (Mixture of Experts) Support
+--------------------------------------------
+
+**Run 70B+ models on consumer hardware** with intelligent CPU/GPU hybrid processing:
+
+-   **🔄 CPU MOE Offloading**: Automatically distribute model layers across CPU and GPU
+-   **🧮 Intelligent Layer Placement**: Optimizes which layers run where for maximum performance
+-   **💾 Memory Efficiency**: Fit larger models in limited VRAM by using system RAM strategically
+-   **⚡ Hybrid Acceleration**: Get GPU speed where it matters most, CPU reliability everywhere else
+-   **🎛️ Configurable**: `--cpu-moe` and `--n-cpu-moe` flags for fine control
+
+# Enable MOE CPU offloading during installation
+cargo install shimmy --features moe
+
+# Run with MOE hybrid processing
+shimmy serve --cpu-moe --n-cpu-moe 8
+
+# Automatically balances: GPU layers (fast) + CPU layers (memory-efficient)
+
+**Perfect for**: Large models (70B+), limited VRAM systems, cost-effective inference
+
 🎯 Perfect for Local Development
 --------------------------------
 
@@ -138,15 +159,19 @@ Quick Start (30 seconds)
 # RECOMMENDED: Use pre-built binary (no build dependencies required)
 curl -L https://github.com/Michael-A-Kuykendall/shimmy/releases/latest/download/shimmy.exe -o shimmy.exe
 
-# OR: Install from source (requires LLVM/Clang)
+# OR: Install from source with MOE support
 # First install build dependencies:
 winget install LLVM.LLVM
-# Then install shimmy:
-cargo install shimmy --features huggingface
+# Then install shimmy with MOE:
+cargo install shimmy --features moe
+
+# For CUDA + MOE hybrid processing:
+cargo install shimmy --features llama-cuda,moe
 
 > **⚠️ Windows Notes**:
 > 
 > -   **Pre-built binary recommended** to avoid build dependency issues
+> -   **MSVC compatibility**: Uses `shimmy-llama-cpp-2` packages for better Windows support
 > -   If Windows Defender flags the binary, add an exclusion or use `cargo install`
 > -   For `cargo install`: Install LLVM first to resolve `libclang.dll` errors
 
@@ -173,6 +198,12 @@ NVIDIA GPUs
 
 `cargo install shimmy --features llama-cuda`
 
+**CUDA + MOE**
+
+NVIDIA GPUs + CPU
+
+`cargo install shimmy --features llama-cuda,moe`
+
 **Vulkan**
 
 Cross-platform GPUs
@@ -191,11 +222,17 @@ Apple Silicon
 
 `cargo install shimmy --features mlx`
 
-**All GPUs**
+**MOE Hybrid**
+
+Any GPU + CPU
+
+`cargo install shimmy --features moe`
+
+**All Features**
 
 Everything
 
-`cargo install shimmy --features gpu`
+`cargo install shimmy --features gpu,moe`
 
 #### **🔍 Check GPU Support**
 
@@ -237,10 +274,12 @@ Point your AI tools to the displayed port — VSCode Copilot, Cursor, Continue.d
 
 ### Package Managers
 
--   **Rust**: `cargo install shimmy`
+-   **Rust**: `cargo install shimmy --features moe` _(recommended)_
+-   **Rust (basic)**: `cargo install shimmy`
 -   **VS Code**: Shimmy Extension
--   **npm**: `npm install -g shimmy-js` _(coming soon)_
--   **Python**: `pip install shimmy` _(coming soon)_
+-   **Windows MSVC**: Uses `shimmy-llama-cpp-2` packages for better compatibility
+-   **npm**: `npm install -g shimmy-js` _(planned)_
+-   **Python**: `pip install shimmy` _(planned)_
 
 ### Direct Downloads
 
@@ -261,6 +300,7 @@ cargo install shimmy
 
 -   Intel and Apple Silicon Macs
 -   Metal GPU acceleration (automatic)
+-   MLX native acceleration for Apple Silicon
 -   Xcode 17+ compatibility
 -   All LoRA adapter features
 
@@ -280,7 +320,7 @@ Integration Examples
 {
   "models": \[{
     "title": "Local Shimmy",
-    "provider": "openai", 
+    "provider": "openai",
     "model": "your-model-name",
     "apiBase": "http://localhost:11435/v1"
   }\]
@@ -314,10 +354,12 @@ API Reference
 
 shimmy serve                    # Start server (auto port allocation)
 shimmy serve --bind 127.0.0.1:8080  # Manual port binding
-shimmy list                     # Show available models  
+shimmy serve --cpu-moe --n-cpu-moe 8  # Enable MOE CPU offloading
+shimmy list                     # Show available models (LLM-filtered)
 shimmy discover                 # Refresh model discovery
 shimmy generate --name X --prompt "Hi"  # Test generation
 shimmy probe model-name         # Verify model loads
+shimmy gpu-info                 # Show GPU backend status
 
 Technical Architecture
 ----------------------
@@ -330,11 +372,15 @@ Technical Architecture
 
 ### 🚀 Advanced Features
 
--   **Smart Model Preloading**: Background loading with usage tracking for instant model switching
--   **Response Caching**: LRU + TTL cache delivering 20-40% performance gains on repeat queries
--   **Integration Templates**: One-command deployment for Docker, Kubernetes, Railway, Fly.io, FastAPI, Express
--   **Request Routing**: Multi-instance support with health checking and load balancing
--   **Advanced Observability**: Real-time metrics with self-optimization and Prometheus integration
+-   **🧠 MOE CPU Offloading**: Hybrid GPU/CPU processing for large models (70B+)
+-   **🎯 Smart Model Filtering**: Automatically excludes non-LLM models (Stable Diffusion, Whisper, CLIP)
+-   **🛡️ 6-Gate Release Validation**: Constitutional quality limits ensure reliability
+-   **⚡ Smart Model Preloading**: Background loading with usage tracking for instant model switching
+-   **💾 Response Caching**: LRU + TTL cache delivering 20-40% performance gains on repeat queries
+-   **🚀 Integration Templates**: One-command deployment for Docker, Kubernetes, Railway, Fly.io, FastAPI, Express
+-   **🔄 Request Routing**: Multi-instance support with health checking and load balancing
+-   **📊 Advanced Observability**: Real-time metrics with self-optimization and Prometheus integration
+-   **🔗 RustChain Integration**: Universal workflow transpilation with LLM-powered orchestration
 
 Community & Support
 -------------------
@@ -348,10 +394,7 @@ Community & Support
 
 ### 🚀 Momentum Snapshot
 
-📦 **Sub-5MB single binary** (142x smaller than Ollama)  
-🌟 **stars and climbing fast**  
-⏱ **<1s startup**  
-🦀 **100% Rust, no Python**
+📦 **Sub-5MB single binary** (142x smaller than Ollama) 🌟 **stars and climbing fast** ⏱ **<1s startup** 🦀 **100% Rust, no Python**
 
 ### 📰 As Featured On
 
@@ -400,7 +443,7 @@ llama.cpp
 
 100MB
 
-None
+Via llama-server
 
 Quality & Reliability
 ---------------------
@@ -427,6 +470,4 @@ MIT License - forever and always.
 
 * * *
 
-**Forever maintainer**: Michael A. Kuykendall  
-**Promise**: This will never become a paid product  
-**Mission**: Making local AI development frictionless
+**Forever maintainer**: Michael A. Kuykendall **Promise**: This will never become a paid product **Mission**: Making local AI development frictionless

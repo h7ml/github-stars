@@ -1,6 +1,6 @@
 ---
 project: syslog-ng
-stars: 2271
+stars: 2279
 description: syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL.
 url: https://github.com/syslog-ng/syslog-ng
 ---
@@ -150,11 +150,19 @@ sources.list component name
 
 Arch
 
+stable
+
+nightly
+
 Ubuntu 25.04
 
 ubuntu-plucky
 
 x86-64
+
+stable
+
+nightly
 
 Ubuntu 25.04
 
@@ -162,11 +170,19 @@ ubuntu-plucky-arm64
 
 arm64
 
+stable
+
+nightly
+
 Ubuntu 24.04
 
 ubuntu-noble
 
 x86-64
+
+stable
+
+nightly
 
 Ubuntu 24.04
 
@@ -174,11 +190,19 @@ ubuntu-noble-arm64
 
 arm64
 
+stable
+
+nightly
+
 Ubuntu 22.04
 
 ubuntu-jammy
 
 x86-64
+
+stable
+
+nightly
 
 Debian 13
 
@@ -186,11 +210,19 @@ debian-trixie
 
 x86-64
 
+stable
+
+nightly
+
 Debian 13
 
 debian-trixie-arm64
 
 arm64
+
+stable
+
+nightly
 
 Debian 12
 
@@ -198,11 +230,19 @@ debian-bookworm
 
 x86-64
 
+stable
+
+nightly
+
 Debian 12
 
 debian-bookworm-arm64
 
 arm64
+
+stable
+
+nightly
 
 Debian 11
 
@@ -210,17 +250,29 @@ debian-bullseye
 
 x86-64
 
+stable
+
+nightly
+
 Debian Unstable
 
 debian-sid
 
 x86-64
 
+stable
+
+nightly
+
 Debian Testing
 
 debian-testing
 
 x86-64
+
+stable
+
+nightly
 
 #### Adding the APT repository
 
@@ -279,11 +331,19 @@ sources.list component name
 
 Arch
 
+stable
+
+nightly
+
 RHEL 8
 
 rhel8
 
 x86-64
+
+stable
+
+nightly
 
 RHEL 8
 
@@ -291,11 +351,19 @@ rhel8-arm64
 
 arm64
 
+stable
+
+nightly
+
 RHEL 9
 
 rhel9
 
 x86-64
+
+stable
+
+nightly
 
 RHEL 9
 
@@ -303,17 +371,29 @@ rhel9-arm64
 
 arm64
 
+stable
+
+nightly
+
 RHEL 10
 
 rhel10
 
 x86-64
 
+stable
+
+nightly
+
 RHEL 10
 
 rhel10-arm64
 
 arm64
+
+stable
+
+nightly
 
 #### Adding the DNF repository
 

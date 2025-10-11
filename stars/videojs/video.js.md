@@ -1,6 +1,6 @@
 ---
 project: video.js
-stars: 39138
+stars: 39154
 description: Video.js - open source HTML5 video player
 url: https://github.com/videojs/video.js
 ---
@@ -28,6 +28,7 @@ Table of Contents
 -   Contributing
 -   Code of Conduct
 -   License
+-   Sponsorship
 
 Quick Start
 -----------
@@ -99,9 +100,9 @@ If you're ready to dive in, the Getting Started page and documentation are the b
 Contributing
 ------------
 
-Video.js is a free and open source library, and we appreciate any help you're willing to give - whether it's fixing bugs, improving documentation, or suggesting new features. Check out the contributing guide for more!
+Video.js is a free and open source library, and we appreciate any help you're willing to give - whether it's fixing bugs, improving documentation, or suggesting new features. Check out the contributing guide for more! Contributions and project decisions are overseen by the Video.js Technical Steering Committee (TSC).
 
-_Video.js uses BrowserStack for compatibility testing._
+By submitting a pull request, you agree that your contribution is provided under the Apache 2.0 License and may be included in future releases. No contributor license agreement (CLA) has ever been required for contributions to Video.js. See the Developer's Certificate of Origin 1.1 .
 
 Code of Conduct
 ---------------
@@ -111,6 +112,19 @@ Please note that this project is released with a Contributor Code of Conduct. By
 License
 -------
 
-Video.js is licensed under the Apache License, Version 2.0.
+Video.js is licensed under the Apache License, Version 2.0. "Video.js" is a registered trademark of Brightcove, Inc.
 
-Video.js is a registered trademark of Brightcove, Inc.
+Sponsorship
+-----------
+
+Project development is sponsored by the role of Corporate Shepherd, held by various companies throughout the project history:
+
+-   2010-2012: Zencoder Inc.
+-   2013-2025: Brightcove Inc.
+-   2025-present: Mux Inc.
+
+Video.js uses BrowserStack for compatibility testing.
+
+The free CDN-hosted copy of the libray is sponsored by Fastly.
+
+Website hosting is sponsored by Netlify

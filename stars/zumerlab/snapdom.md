@@ -1,6 +1,6 @@
 ---
 project: snapdom
-stars: 6254
+stars: 6341
 description: snapDOM captures HTML elements to images with exceptional speed and accuracy.
 url: https://github.com/zumerlab/snapdom
 ---
@@ -18,11 +18,13 @@ It captures any HTML element as a scalable SVG image, preserving styles, fonts, 
 -   ⚡ Ultra fast, no dependencies
 -   📦 100% based on standard Web APIs
 -   Support same-origin `ìframe`
+-   Support CSS counter() and CSS counters()
+-   Support `...` line-clamp
 
 Demo
 ----
 
-https://zumerlab.github.io/snapdom/
+https://snapdom.dev
 
 Table of Contents
 -----------------
@@ -48,8 +50,10 @@ Table of Contents
         -   iconFonts
         -   excludeFonts
     -   Filtering nodes: `exclude` vs `filter`
-    -   preCache() – Optional helper
+    -   straighten
+    -   noShadows
     -   Cache control
+-   preCache
 -   Limitations
 -   ⚡ Performance Benchmarks (Chromium)
     -   Simple elements
@@ -130,7 +134,8 @@ Returns an object with reusable export methods:
 {
   url: string;
   toRaw(): string;
-  toImg(): Promise<HTMLImageElement\>;
+  toImg(): Promise<HTMLImageElement\>; // deprecated 
+  toSvg(): Promise<HTMLImageElement\>;
   toCanvas(): Promise<HTMLCanvasElement\>;
   toBlob(options?): Promise<Blob\>;
   toPng(options?): Promise<HTMLImageElement\>;
@@ -147,7 +152,11 @@ Description
 
 `snapdom.toImg(el, options?)`
 
-Returns an `HTMLImageElement`
+Returns an SVG `HTMLImageElement` (deprecated)
+
+`snapdom.toSvg(el, options?)`
+
+Returns an SVG `HTMLImageElement`
 
 `snapdom.toCanvas(el, options?)`
 
@@ -226,7 +235,7 @@ object
 
 `{}`
 
-Exclude font families/domains/subsets during embedding
+Exclude families/domains/subsets during embedding
 
 `scale`
 
@@ -302,11 +311,11 @@ CSS selectors to exclude
 
 `excludeMode`
 
-string
+`"hide"`|`"remove"`
 
-'hide'
+`"hide"`
 
-Controls how `exclude` works with nodes
+How `exclude` is applied
 
 `filter`
 
@@ -318,11 +327,11 @@ Custom predicate `(el) => boolean`
 
 `filterMode`
 
-string
+`"hide"`|`"remove"`
 
-'hide'
+`"hide"`
 
-Controls how `filter` works with nodes
+How `filter` is applied
 
 `cache`
 
@@ -330,7 +339,7 @@ string
 
 `"soft"`
 
-Control internal caches: `disabled`, `soft`, `auto`, `full`
+`disabled` | `soft` | `auto` | `full`
 
 `placeholders`
 
@@ -338,7 +347,7 @@ boolean
 
 `true`
 
-Show placeholders for images and cross-origin iframes
+Show placeholders for images/CORS iframes
 
 `fallbackURL`
 
@@ -346,25 +355,41 @@ string | function
 
 \-
 
-Fallback image when an `<img>` fails. If a function is provided, it receives `{ width?, height?, src?, element }` and must return a URL (string or Promise). Useful for placeholder services (e.g. `https://placehold.co/{width}x{height}`)
+Fallback image for `<img>` load failure
+
+`straighten`
+
+boolean
+
+`false`
+
+Straightens the root: removes `translate/rotate` but preserves `scale/skew`, producing a flat, reusable capture
+
+`noShadows`
+
+boolean
+
+`false`
+
+Do not expand the root’s bounding box for shadows/blur/outline, and strip those visual effects from the cloned root
 
 ### Fallback image on `<img>` load failure
 
 Provide a default image for failed `<img>` loads. You can pass a fixed URL or a callback that receives measured dimensions and returns a URL (handy to generate dynamic placeholders).
 
 // 1) Fixed URL fallback
-await snapdom.toImg(element, {
+await snapdom.toSvg(element, {
   fallbackURL: '/images/fallback.png'
 });
 
 // 2) Dynamic placeholder via callback
-await snapdom.toImg(element, {
+await snapdom.toSvg(element, {
   fallbackURL: ({ width: 300, height: 150 }) \=>
     \`https://placehold.co/${width}x${height}\`
 });
 
 // 3) With proxy (if your fallback host has no CORS)
-await snapdom.toImg(element, {
+await snapdom.toSvg(element, {
   fallbackURL: ({ width \= 300, height \= 150 }) \=>
     \`https://dummyimage.com/${width}x${height}/cccccc/666.png&text=img\`,
   useProxy: 'https://proxy.corsfix.com/?'
@@ -435,7 +460,7 @@ _Notes_
 -   `excludeFonts` only applies to **non-icon** fonts. Icon fonts are always embedded.
 -   Matching is case-insensitive for `families`. Hosts are matched by substring against the resolved URL.
 
-### Filtering nodes: `exclude` vs `filter`
+#### Filtering nodes: `exclude` vs `filter`
 
 -   `exclude`: remove by **selector**.
 -   `excludeMode`: `hide` applies `visibility:hidden` CSS rule on excluded nodes and the layout remains as the original. `remove` do not clone excluded nodes at all.
@@ -463,20 +488,28 @@ await snapdom.toPng(el, {
   exclude: \['.cookie-banner', '.tooltip', '\[data-test="debug"\]'\]
 });
 
-### `preCache()` – Optional helper
+### Straighten
 
-Preloads external resources to avoid first-capture stalls (helpful for big/complex trees).
+When capturing rotated or translated elements, you may want to **straighten** the root so the snapshot can be reused in another layout without inheriting those transforms.
 
-import { preCache } from '@zumer/snapdom';
+-   **`straighten: true`**  
+    Straightens the cloned root: **removes `translate` and `rotate`** but **keeps `scale/skew`** to preserve proportions.  
+    The output is **flat, upright, and ready** to embed elsewhere.
 
-await preCache({
-  root: document.body,
-  embedFonts: true,
-  localFonts: \[{ family: 'Inter', src: '/fonts/Inter.woff2', weight: 400 }\],
-  useProxy: 'https://proxy.corsfix.com/?'
-});
+### noShadows
 
-### Cache control
+-   **`noShadows: true`**  
+    Prevents expanding the bounding box for shadows, blur, or outline on the root, and also strips `box-shadow`, `text-shadow`, `filter: blur()/drop-shadow()`, and `outline` from the cloned root.
+
+> 💡 **Tip:** Using both (`straighten` + `noShadows`) produces a strict, minimal bounding box with no visual bleed.
+
+**Example**
+
+// Straighten and remove shadow bleed
+await snapdom.toSvg(el, { straighten: true, noShadows: true });
+
+Cache control
+-------------
 
 SnapDOM maintains internal caches for images, backgrounds, resources, styles, and fonts. You can control how they are cleared between captures using the `cache` option:
 
@@ -510,6 +543,20 @@ await snapdom.toPng(el, { cache: 'full' });
 
 // Force a full cleanup on every capture
 await snapdom.toPng(el, { cache: 'disabled' });
+
+`preCache()` – Optional helper
+------------------------------
+
+Preloads external resources to avoid first-capture stalls (helpful for big/complex trees).
+
+import { preCache } from '@zumer/snapdom';
+
+await preCache({
+  root: document.body,
+  embedFonts: true,
+  localFonts: \[{ family: 'Inter', src: '/fonts/Inter.woff2', weight: 400 }\],
+  useProxy: 'https://proxy.corsfix.com/?'
+});
 
 Limitations
 -----------
@@ -715,7 +762,7 @@ Contributors
 Sponsors
 --------
 
-Special thanks to @megaphonecolin and @sdraper69 for supporting this project!
+Special thanks to @megaphonecolin, @sdraper69, @reynaldichernando and @gamma-app, for supporting this project!
 
 If you'd like to support this project too, you can become a sponsor.
 

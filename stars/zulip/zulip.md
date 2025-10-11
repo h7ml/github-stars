@@ -1,6 +1,6 @@
 ---
 project: zulip
-stars: 23534
+stars: 23603
 description: Zulip server and web application. Open-source team chat that helps teams stay productive and focused.
 url: https://github.com/zulip/zulip
 ---
@@ -17,7 +17,7 @@ Come find us on the development community chat!
 Getting started
 ---------------
 
--   **Contributing code**. Check out our guide for new contributors to get started. We have invested in making Zulip’s code highly readable, thoughtfully tested, and easy to modify. Beyond that, we have written an extraordinary 150K words of documentation for Zulip contributors.
+-   **Contributing code**. Check out our guide for new contributors to get started. We have invested in making Zulip’s code highly readable, thoughtfully tested, and easy to modify. Beyond that, we have written an extraordinary 185K words of documentation for Zulip contributors.
     
 -   **Contributing non-code**. Report an issue, translate Zulip into your language, or give us feedback. We'd love to hear from you, whether you've been using Zulip for years, or are just trying it out for the first time.
     

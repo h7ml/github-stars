@@ -1,6 +1,6 @@
 ---
 project: pgbackweb
-stars: 2084
+stars: 2144
 description: 🐘 Effortless PostgreSQL backups with a user-friendly web interface! 🌐💾
 url: https://github.com/eduardolat/pgbackweb
 ---
@@ -9,6 +9,14 @@ PG Back Web
 ===========
 
 🐘 Effortless PostgreSQL backups with a user-friendly web interface! 🌐💾
+
+Note
+
+**We're growing! New name, bigger future**
+
+PG Back Web is becoming **UFO Backup**! The new name reflects a future where the project expands beyond PostgreSQL, making powerful backups simple and accessible for everyone
+
+Curious about the roadmap or want to shape the project's future? Join the community to discuss ideas and influence decisions, everyone's input is welcome!
 
 Why PG Back Web?
 ----------------
@@ -49,15 +57,15 @@ services:
     volumes:
       - ./backups:/backups # If you only use S3 destinations, you don't need this volume
     environment:
+      # Optional environment variables are ignored, see the configuration section below for more details
       PBW\_ENCRYPTION\_KEY: "my\_secret\_key" # Change this to a strong key
       PBW\_POSTGRES\_CONN\_STRING: "postgresql://postgres:password@postgres:5432/pgbackweb?sslmode=disable"
-      TZ: "America/Guatemala" # Set your timezone, optional
     depends\_on:
       postgres:
         condition: service\_healthy
 
   postgres:
-    image: postgres:17
+    image: postgres:18
     environment:
       POSTGRES\_USER: postgres
       POSTGRES\_DB: pgbackweb
@@ -79,15 +87,17 @@ Configuration
 
 You only need to configure the following environment variables:
 
--   `PBW_ENCRYPTION_KEY`: Your encryption key. Generate a strong one and store it in a safe place, as PG Back Web uses it to encrypt sensitive data.
+-   `PBW_ENCRYPTION_KEY`: Your encryption key. Generate a strong random one and store it in a safe place, as PG Back Web uses it to encrypt sensitive data.
     
 -   `PBW_POSTGRES_CONN_STRING`: The connection string for the PostgreSQL database that will store PG Back Web data.
     
--   `PBW_LISTEN_HOST`: Host for the server to listen on, default 0.0.0.0 (optional)
+-   `PBW_LISTEN_HOST`: Optional. Host for the server to listen on, default 0.0.0.0
     
--   `PBW_LISTEN_PORT`: Port for the server to listen on, default 8085 (optional)
+-   `PBW_LISTEN_PORT`: Optional. Port for the server to listen on, default 8085
     
--   `TZ`: Your timezone (optional). Default is `UTC`. This impacts logging, backup filenames and default timezone in the web interface.
+-   `PBW_PATH_PREFIX`: Optional. Path prefix for the application URL. Use this when you want to serve the application under a subpath (e.g., `/pgbackweb`). Must start with `/` and not end with `/`. Default is empty.
+    
+-   `TZ`: Optional. Your timezone. Default is `UTC`. This impacts logging, backup filenames and default timezone in the web interface.
     
 
 Screenshot

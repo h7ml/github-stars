@@ -1,6 +1,6 @@
 ---
 project: mise
-stars: 19722
+stars: 20357
 description: dev tools, env vars, task runner
 url: https://github.com/jdx/mise
 ---
@@ -40,7 +40,7 @@ See Getting started for more options.
 
 $ curl https://mise.run | sh
 $ ~/.local/bin/mise --version
-2025.10.2 macos-arm64 (a1b2d3e 2025-10-03)
+2025.10.7 macos-arm64 (a1b2d3e 2025-10-10)
 
 Hook mise into your shell (pick the right one for your shell):
 
@@ -136,6 +136,17 @@ Full Documentation
 ------------------
 
 See mise.jdx.dev
+
+GitHub Issues & Discussions
+---------------------------
+
+Due to the volume of issue submissions mise received, using GitHub Issues became unsustainable for the project. Instead, mise uses GitHub Discussions which provide a more community-centric platform for communication and require less management on the part of the maintainers.
+
+Please note the following discussion categories, which match how issues are often used:
+
+-   Announcements
+-   Ideas: for feature requests, etc.
+-   Troubleshooting & Bug Reports
 
 Special Thanks
 --------------

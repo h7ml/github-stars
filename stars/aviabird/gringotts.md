@@ -1,6 +1,6 @@
 ---
 project: gringotts
-stars: 494
+stars: 495
 description: A complete payment library for Elixir and Phoenix Framework
 url: https://github.com/aviabird/gringotts
 ---

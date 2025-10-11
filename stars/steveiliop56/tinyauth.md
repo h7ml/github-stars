@@ -1,6 +1,6 @@
 ---
 project: tinyauth
-stars: 5566
+stars: 5631
 description: The simplest way to protect your apps with a login screen.
 url: https://github.com/steveiliop56/tinyauth
 ---
@@ -8,11 +8,11 @@ url: https://github.com/steveiliop56/tinyauth
 Tinyauth
 ========
 
-The easiest way to secure your apps with a login screen.
+The simplest way to protect your apps with a login screen.
 
   
 
-Tinyauth is a simple authentication middleware that adds a simple login screen or OAuth with Google, Github and any provider to all of your docker apps. It supports all the popular proxies like Traefik, Nginx and Caddy.
+Tinyauth is a simple authentication middleware that adds a simple login screen or OAuth with Google, Github or any other provider to all of your apps. It supports all the popular proxies like Traefik, Nginx and Caddy.
 
 Warning
 
@@ -58,7 +58,7 @@ Sponsors
 
 A big thank you to the following people for providing me with more coffee:
 
-              
+                  
 
 Acknowledgements
 ----------------

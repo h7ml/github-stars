@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 15104
+stars: 15263
 description: Identity-Aware Tunneled Reverse Proxy Server with Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---

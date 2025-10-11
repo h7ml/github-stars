@@ -1,6 +1,6 @@
 ---
 project: filepond
-stars: 16112
+stars: 16124
 description: 🌊 A flexible and fun JavaScript file upload library
 url: https://github.com/pqina/filepond
 ---
@@ -9,9 +9,11 @@ A JavaScript library that can upload anything you throw at it, optimizes images 
 
 FilePond adapters are available for **React**, **Vue**, **Angular**, **Svelte**, and **jQuery**
 
+Documentation • Discord • Examples
+
 * * *
 
-Buy me a Coffee / Use FilePond with Pintura / Dev updates on Twitter
+Buy me a Coffee • Use FilePond with Pintura • Dev updates
 
 * * *
 

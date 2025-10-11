@@ -1,6 +1,6 @@
 ---
 project: litgpt
-stars: 12814
+stars: 12829
 description: 20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.
 url: https://github.com/Lightning-AI/litgpt
 ---
@@ -18,8 +18,20 @@ url: https://github.com/Lightning-AI/litgpt
 
 Quick start • Models • Finetune • Deploy • All workflows • Features • Recipes (YAML) • Lightning AI • Tutorials
 
-Use, finetune, pretrain, and deploy LLMs Lightning fast ⚡⚡
-==========================================================
+Looking for GPUs?
+=================
+
+Over 340,000 developers use Lightning Cloud - purpose-built for PyTorch and PyTorch Lightning.
+
+-   GPUs from $0.19.
+-   Clusters: frontier-grade training/inference clusters.
+-   AI Studio (vibe train): workspaces where AI helps you debug, tune and vibe train.
+-   AI Studio (vibe deploy): workspaces where AI helps you optimize, and deploy models.
+-   Notebooks: Persistent GPU workspaces where AI helps you code and analyze.
+-   Inference: Deploy models as inference APIs.
+
+Finetune, pretrain, and inference LLMs Lightning fast ⚡⚡
+========================================================
 
 Every LLM is implemented from scratch with **no abstractions** and **full control**, making them blazing fast, minimal, and performant at enterprise scale.
 

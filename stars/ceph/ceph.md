@@ -1,6 +1,6 @@
 ---
 project: ceph
-stars: 15544
+stars: 15566
 description: Ceph is a distributed object, block, and file storage platform 
 url: https://github.com/ceph/ceph
 ---
