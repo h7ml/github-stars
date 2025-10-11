@@ -1,6 +1,6 @@
 ---
 project: WechatMomentScreenshot
-stars: 4250
+stars: 4259
 description: 朋友圈转发截图生成工具（⚠️Fork 不是收藏，请勿在贡献代码以外的情况下 Fork！）
 url: https://github.com/TransparentLC/WechatMomentScreenshot
 ---

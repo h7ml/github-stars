@@ -1,6 +1,6 @@
 ---
 project: query
-stars: 46862
+stars: 46937
 description: 🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query.
 url: https://github.com/TanStack/query
 ---

@@ -1,6 +1,6 @@
 ---
 project: docs-cn
-stars: 858
+stars: 860
 description: Chinese translation of vite.dev
 url: https://github.com/vitejs/docs-cn
 ---

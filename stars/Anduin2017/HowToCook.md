@@ -1,6 +1,6 @@
 ---
 project: HowToCook
-stars: 94518
+stars: 94754
 description: 程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).
 url: https://github.com/Anduin2017/HowToCook
 ---
@@ -82,6 +82,7 @@ docker run -d -p 5000:80 ghcr.io/anduin2017/how-to-cook:latest
 -   鸡蛋羹
 -   微波炉鸡蛋羹
 -   蒸箱鸡蛋羹
+-   鸡蛋花
 -   鸡蛋火腿炒黄瓜
 -   茄子炖土豆
 -   椒盐玉米

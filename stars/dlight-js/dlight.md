@@ -1,6 +1,6 @@
 ---
 project: dlight
-stars: 659
+stars: 660
 description: DX-first UI Rendering Library
 url: https://github.com/dlight-js/dlight
 ---

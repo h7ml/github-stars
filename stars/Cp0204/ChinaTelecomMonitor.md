@@ -1,6 +1,6 @@
 ---
 project: ChinaTelecomMonitor
-stars: 241
+stars: 244
 description: 中国电信 话费、通话、流量 套餐用量监控，支持青龙，支持 Docker 部署成 API 服务。
 url: https://github.com/Cp0204/ChinaTelecomMonitor
 ---

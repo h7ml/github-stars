@@ -1,25 +1,25 @@
 ---
 project: solid-start
-stars: 5661
+stars: 5672
 description: SolidStart, the Solid app framework
 url: https://github.com/solidjs/solid-start
 ---
 
+-   For building apps with SolidStart, check the package README and our official docs
 -   For contributing to codebase, check CONTRIBUTING.md
--   For creating a new template, please head on to solidjs/templates
--   For instructions on building with SolidStart, check the package README.md and our official docs
+-   For creating a new template, please head over to solidjs/templates
 
 Prerequisites
 -------------
 
--   **Node.js**: Use the version specified in `.nvmrc`, to manage multiple versions across your system, we recommend a version manager such as fnm, or another of your preference.
+-   **Node.js**: Use the version specified in `.nvmrc`. To manage multiple versions across your system, we recommend a version manager such as fnm, or another of your choice.
 -   **pnpm**: Install globally via `npm install -g pnpm`. Or let **Corepack** handle it in the setup step below.
--   **Git**: Ensure Git is installed for cloning and managing the repository
+-   **Git**: Ensure Git is installed for cloning and managing the repository.
 
 Monorepo Structure
 ------------------
 
-SolidStart is a pnpm-based monorepo with nested workspaces. Key directories include
+SolidStart is a pnpm-based monorepo with nested workspaces. Key directories include:
 
 -   **`packages/start`**: The core `@solidjs/start` package.
 -   **`apps/landing-page`**: The official landing page.
@@ -44,7 +44,7 @@ Local Setup
     
     pnpm dedupe
     
-    (`pnpm dedupe` will install dependencies _and_ clean the lockfile from duplicates, useful to preventing conflicts).
+    (`pnpm dedupe` will install dependencies _and_ clean the lockfile from duplicates, useful for preventing conflicts).
     
 4.  Build all packages and the landing page
     
@@ -60,7 +60,7 @@ Then reinstall dependencies and rebuild.
 Running Tests
 -------------
 
-End-to-end tests are located in `apps/tests` projects. For manual testing and development there's the `apps/fixtures` apps, and finally, integration and unit tests live inside their respective packages.
+End-to-end tests are located in `apps/tests` projects. For manual testing and development use the `apps/fixtures` apps, and finally, integration and unit tests live inside their respective packages.
 
 1.  Install the Cypress binary (required only once)
     

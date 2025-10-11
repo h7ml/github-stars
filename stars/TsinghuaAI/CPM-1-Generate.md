@@ -1,6 +1,6 @@
 ---
 project: CPM-1-Generate
-stars: 1584
+stars: 1583
 description: Chinese Pre-Trained Language Models (CPM-LM) Version-I
 url: https://github.com/TsinghuaAI/CPM-1-Generate
 ---

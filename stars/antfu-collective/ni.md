@@ -1,6 +1,6 @@
 ---
 project: ni
-stars: 7333
+stars: 7359
 description: 💡 Use the right package manager
 url: https://github.com/antfu-collective/ni
 ---
@@ -197,8 +197,6 @@ nci
 # bun install --frozen-lockfile
 # deno cache --reload
 
-if the corresponding node manager is not present, this command will install it globally along the way.
-
   
 
 ### `na` - agent alias
@@ -248,6 +246,9 @@ defaultAgent\=npm # default "prompt"
 ; for global installs
 globalAgent\=npm
 
+; prefix commands with sfw
+useSfw\=true
+
 # ~/.bashrc
 
 # custom configuration file path
@@ -256,6 +257,7 @@ export NI\_CONFIG\_FILE="$HOME/.config/ni/nirc"
 # environment variables have higher priority than config file if presented
 export NI\_DEFAULT\_AGENT="npm" # default "prompt"
 export NI\_GLOBAL\_AGENT="npm"
+export NI\_USE\_SFW="true"
 
 # for Windows
 
@@ -263,6 +265,10 @@ export NI\_GLOBAL\_AGENT="npm"
 $Env:NI\_CONFIG\_FILE \= 'C:\\to\\your\\config\\location'
 
   
+
+### Automatic installation
+
+Before executing any command (**ni**, **nr**, **nlx**, etc.), **ni** detects your active package manager. If the corresponding package manager (**npm**, **yarn**, **pnpm**, **bun**, or **deno**) is not installed, it will install it globally before running the command.
 
 ### Integrations
 

@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 113341
+stars: 113656
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -254,6 +254,7 @@ APIs, Data, and ML
 -   Crawlbase — Crawl and scrape websites without proxies, infrastructure, or browsers. We solve captchas for you and prevent you from being blocked. The first 1000 calls are free of charge.
 -   CurlHub — Proxy service for inspecting and debugging API calls. The free plan includes 10,000 requests per month.
 -   CurrencyScoop - Realtime currency data API for fintech apps. The free plan includes 5,000 calls per month.
+-   CustomJS - HTML to PDF or PDF to PNG/Text & PDF merging/extraction/merging APIs. Free tier has 600 calls a month.
 -   Cube - Cube helps data engineers and application developers access data from modern data stores, organize it into consistent definitions, and deliver it to every application. The fastest way to use Cube is with Cube Cloud, which has a free tier limited to 1,000 queries per day.
 -   Data Dead Drop - Simple, free file sharing. Data self-destroys after access. Upload and download data via the browser or your favorite command line client.
 -   Data Fetcher - Connect Airtable to any application or API with no code. Postman-like interface for running API requests in Airtable. Pre-built integrations with dozens of apps. The free plan includes 100 runs per month.
@@ -351,6 +352,7 @@ APIs, Data, and ML
 -   ROBOHASH - Web service to generate unique and cool images from any text.
 -   Scraper's Proxy — Simple HTTP proxy API for scraping. Scrape anonymously without having to worry about restrictions, blocks, or captchas. First 100 successful scrapes per month free including javascript rendering (more available if you contact support).
 -   ScrapingAnt — Headless Chrome scraping API and free checked proxies service. Javascript rendering, premium rotating proxies, CAPTCHAs avoiding. Free 10,000 API credits.
+-   ScrapX — Monitor for any visual or textual change in a target website and data extraction. Free plan allows upto 5 URLs a month.
 -   Simplescraper — Trigger your webhook after each operation. The free plan includes 100 cloud scrape credits.
 -   Select Star - is an intelligent data discovery platform that automatically analyzes and documents your data. Free light tier with 2 Data Source, up to 1,000 Tables and 25 Users.
 -   Sheetson - Instantly turn any Google Sheets into a RESTful API. Free plan available, including 1,000 free rows per sheet.
@@ -1325,6 +1327,7 @@ PaaS
 -   Zeabur - Deploy your services with one click. Free for three services, with US$ 5 free credits per month.
 -   mogenius - Easily build, deploy, and run services on Kubernetes. The free tier supports connecting a local Kubernetes with mogenius, enabling individual developers to create a production-like test environment on their machine.
 -   DeployApps - A serverless function provider offers 1 million function calls, 100GB of bandwidth, and 10 cron jobs per month for free, exclusively for non-commercial or academic use.
+-   Choreo - AI-native internal developer platform as a service. The free tier includes up to 5 components and $100 credits per month.
 
 **⬆️ Back to Top**
 

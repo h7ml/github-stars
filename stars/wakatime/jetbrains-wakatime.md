@@ -1,6 +1,6 @@
 ---
 project: jetbrains-wakatime
-stars: 1203
+stars: 1204
 description: IntelliJ IDEA, PyCharm, RubyMine, PhpStorm, AppCode, AndroidStudio, Goland, Rider, & WebStorm plugin for quantifying your coding.
 url: https://github.com/wakatime/jetbrains-wakatime
 ---

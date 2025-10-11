@@ -1,6 +1,6 @@
 ---
 project: svelte-virtual-list
-stars: 743
+stars: 745
 description: A virtual list component for Svelte apps
 url: https://github.com/sveltejs/svelte-virtual-list
 ---

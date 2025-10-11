@@ -1,6 +1,6 @@
 ---
 project: plop
-stars: 7530
+stars: 7535
 description: Consistency Made Simple
 url: https://github.com/plopjs/plop
 ---

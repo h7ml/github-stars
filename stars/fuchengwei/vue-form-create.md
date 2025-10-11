@@ -1,6 +1,6 @@
 ---
 project: vue-form-create
-stars: 365
+stars: 366
 description: 基于Vue3.0的表单设计器
 url: https://github.com/fuchengwei/vue-form-create
 ---

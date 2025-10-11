@@ -1,6 +1,6 @@
 ---
 project: tianji
-stars: 2783
+stars: 2789
 description: Tianji: Insight into everything, Website Analytics + Uptime Monitor + Server Status. not only another GA alternatives
 url: https://github.com/msgbyte/tianji
 ---

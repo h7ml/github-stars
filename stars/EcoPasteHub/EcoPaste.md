@@ -1,6 +1,6 @@
 ---
 project: EcoPaste
-stars: 6206
+stars: 6224
 description: 🎉跨平台的剪贴板管理工具 | Cross-platform clipboard management tool
 url: https://github.com/EcoPasteHub/EcoPaste
 ---

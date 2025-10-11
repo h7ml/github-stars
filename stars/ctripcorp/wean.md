@@ -1,6 +1,6 @@
 ---
 project: wean
-stars: 399
+stars: 398
 description: :four_leaf_clover: Super fast miniapp compiler.
 url: https://github.com/ctripcorp/wean
 ---

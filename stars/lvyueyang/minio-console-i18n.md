@@ -1,6 +1,6 @@
 ---
 project: minio-console-i18n
-stars: 46
+stars: 47
 description: MinIO 添加国际化脚本
 url: https://github.com/lvyueyang/minio-console-i18n
 ---

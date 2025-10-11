@@ -1,6 +1,6 @@
 ---
 project: WebFrameworkTools-5.5-enhance
-stars: 305
+stars: 306
 description: 本软件首先集成危害性较大框架和部分主流cms的rce(无需登录,或者登录绕过执行rce)和反序列化(利用链简单)。傻瓜式导入url即可实现批量getshell。批量自动化测试。例如:Thinkphp,Struts2,weblogic。出现的最新漏洞进行实时跟踪并且更新例如:log4jRCE,向日葵 禅道RCE 瑞友天翼应用虚拟化系统sql注入导致RCE大华智慧园区上传,金蝶云星空漏洞等等.    
 url: https://github.com/peiqiF4ck/WebFrameworkTools-5.5-enhance
 ---

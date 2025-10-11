@@ -1,6 +1,6 @@
 ---
 project: dnd
-stars: 3575
+stars: 3594
 description: 💅 Beautiful and accessible drag and drop for lists with React. ⭐️ Star to support our work!
 url: https://github.com/hello-pangea/dnd
 ---

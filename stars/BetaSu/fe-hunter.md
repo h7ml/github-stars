@@ -1,6 +1,6 @@
 ---
 project: fe-hunter
-stars: 1671
+stars: 1670
 description: 每天一道题，3个月后，你就是面试小能手，答题还能赚钱哦
 url: https://github.com/BetaSu/fe-hunter
 ---

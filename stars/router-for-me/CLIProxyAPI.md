@@ -1,7 +1,7 @@
 ---
 project: CLIProxyAPI
-stars: 512
-description: Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API
+stars: 795
+description: Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API
 url: https://github.com/router-for-me/CLIProxyAPI
 ---
 
@@ -16,7 +16,7 @@ It now also supports OpenAI Codex (GPT models) and Claude Code via OAuth.
 
 So you can use local or multi-account CLI access with OpenAI(include Responses)/Gemini/Claude-compatible clients and SDKs.
 
-The first Chinese provider has now been added: Qwen Code.
+Chinese providers have now been added: Qwen Code, iFlow.
 
 Features
 --------
@@ -25,19 +25,20 @@ Features
 -   OpenAI Codex support (GPT models) via OAuth login
 -   Claude Code support via OAuth login
 -   Qwen Code support via OAuth login
--   Gemini Web support via cookie-based login
+-   iFlow support via OAuth login
 -   Streaming and non-streaming responses
 -   Function calling/tools support
 -   Multimodal input support (text and images)
--   Multiple accounts with round-robin load balancing (Gemini, OpenAI, Claude and Qwen)
--   Simple CLI authentication flows (Gemini, OpenAI, Claude and Qwen)
+-   Multiple accounts with round-robin load balancing (Gemini, OpenAI, Claude, Qwen and iFlow)
+-   Simple CLI authentication flows (Gemini, OpenAI, Claude, Qwen and iFlow)
 -   Generative Language API Key support
 -   Gemini CLI multi-account load balancing
 -   Claude Code multi-account load balancing
 -   Qwen Code multi-account load balancing
+-   iFlow multi-account load balancing
 -   OpenAI Codex multi-account load balancing
 -   OpenAI-compatible upstream providers via config (e.g., OpenRouter)
--   Reusable Go SDK for embedding the proxy (see `docs/sdk-usage.md`, 中文: `docs/sdk-usage_CN.md`)
+-   Reusable Go SDK for embedding the proxy (see `docs/sdk-usage.md`)
 
 Installation
 ------------
@@ -49,6 +50,7 @@ Installation
 -   An OpenAI account for Codex/GPT access (optional)
 -   An Anthropic account for Claude Code access (optional)
 -   A Qwen Chat account for Qwen Code access (optional)
+-   An iFlow account for iFlow access (optional)
 
 ### Building from Source
 
@@ -68,6 +70,11 @@ Installation
     go build -o cli-proxy-api.exe ./cmd/server
     
 
+### Installation via Homebrew
+
+brew install cliproxyapi
+brew services start cliproxyapi
+
 Usage
 -----
 
@@ -85,7 +92,7 @@ Set `remote-management.disable-control-panel` to `true` if you prefer to host th
 
 ### Authentication
 
-You can authenticate for Gemini, OpenAI, and/or Claude. All can coexist in the same `auth-dir` and will be load balanced.
+You can authenticate for Gemini, OpenAI, Claude, Qwen, and/or iFlow. All can coexist in the same `auth-dir` and will be load balanced.
 
 -   Gemini (Google):
     
@@ -98,12 +105,6 @@ You can authenticate for Gemini, OpenAI, and/or Claude. All can coexist in the s
     The local OAuth callback uses port `8085`.
     
     Options: add `--no-browser` to print the login URL instead of opening a browser. The local OAuth callback uses port `8085`.
-    
--   Gemini Web (via Cookies): This method authenticates by simulating a browser, using cookies obtained from the Gemini website.
-    
-    ./cli-proxy-api --gemini-web-auth
-    
-    You will be prompted to enter your `__Secure-1PSID` and `__Secure-1PSIDTS` values. Please retrieve these cookies from your browser's developer tools.
     
 -   OpenAI (Codex/GPT via OAuth):
     
@@ -122,6 +123,12 @@ You can authenticate for Gemini, OpenAI, and/or Claude. All can coexist in the s
     ./cli-proxy-api --qwen-login
     
     Options: add `--no-browser` to print the login URL instead of opening a browser. Use the Qwen Chat's OAuth device flow.
+    
+-   iFlow (iFlow via OAuth):
+    
+    ./cli-proxy-api --iflow-login
+    
+    Options: add `--no-browser` to print the login URL instead of opening a browser. The local OAuth callback uses port `11451`.
     
 
 ### Starting the Server
@@ -161,7 +168,7 @@ Request body example:
 
 Notes:
 
--   Use a `gemini-*` model for Gemini (e.g., "gemini-2.5-pro"), a `gpt-*` model for OpenAI (e.g., "gpt-5"), a `claude-*` model for Claude (e.g., "claude-3-5-sonnet-20241022"), or a `qwen-*` model for Qwen (e.g., "qwen3-coder-plus"). The proxy will route to the correct provider automatically.
+-   Use a `gemini-*` model for Gemini (e.g., "gemini-2.5-pro"), a `gpt-*` model for OpenAI (e.g., "gpt-5"), a `claude-*` model for Claude (e.g., "claude-3-5-sonnet-20241022"), a `qwen-*` model for Qwen (e.g., "qwen3-coder-plus"), or an iFlow-supported model (e.g., "tstars2.0", "deepseek-v3.1", "kimi-k2", etc.). The proxy will route to the correct provider automatically.
 
 #### Claude Messages (SSE-compatible)
 
@@ -251,6 +258,8 @@ Supported Models
 -   gemini-2.5-pro
 -   gemini-2.5-flash
 -   gemini-2.5-flash-lite
+-   gemini-2.5-flash-image
+-   gemini-2.5-flash-image-preview
 -   gpt-5
 -   gpt-5-codex
 -   claude-opus-4-1-20250805
@@ -261,6 +270,17 @@ Supported Models
 -   claude-3-5-haiku-20241022
 -   qwen3-coder-plus
 -   qwen3-coder-flash
+-   qwen3-max
+-   qwen3-vl-plus
+-   deepseek-v3.2
+-   deepseek-v3.1
+-   deepseek-r1
+-   deepseek-v3
+-   kimi-k2
+-   glm-4.5
+-   glm-4.6
+-   tstars2.0
+-   And other iFlow-supported models
 -   Gemini models auto-switch to preview variants when needed
 
 Configuration
@@ -544,46 +564,6 @@ string
 
 The alias used in the API.
 
-`gemini-web`
-
-object
-
-{}
-
-Configuration specific to the Gemini Web client.
-
-`gemini-web.context`
-
-boolean
-
-true
-
-Enables conversation context reuse for continuous dialogue.
-
-`gemini-web.code-mode`
-
-boolean
-
-false
-
-Enables code mode for optimized responses in coding-related tasks.
-
-`gemini-web.max-chars-per-request`
-
-integer
-
-1,000,000
-
-The maximum number of characters to send to Gemini Web in a single request.
-
-`gemini-web.disable-continuation-hint`
-
-boolean
-
-false
-
-Disables the continuation hint for split prompts.
-
 ### Example Configuration File
 
 # Server port
@@ -606,6 +586,11 @@ remote-management:
 # Authentication directory (supports ~ for home directory). If you use Windows, please set the directory like this: \`C:/cli-proxy-api/\`
 auth-dir: "~/.cli-proxy-api"
 
+# API keys for authentication
+api-keys:
+  - "your-api-key-1"
+  - "your-api-key-2"
+
 # Enable debug logging
 debug: false
 
@@ -625,12 +610,6 @@ request-retry: 3
 quota-exceeded:
    switch-project: true # Whether to automatically switch to another project when a quota is exceeded
    switch-preview-model: true # Whether to automatically switch to a preview model when a quota is exceeded
-
-# Gemini Web client configuration
-gemini-web:
-  context: true # Enable conversation context reuse
-  code-mode: false # Enable code mode
-  max-chars-per-request: 1000000 # Max characters per request
 
 # API keys for official Generative Language API
 generative-language-api-key:
@@ -794,6 +773,13 @@ export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
 export ANTHROPIC\_MODEL=qwen3-coder-plus
 export ANTHROPIC\_SMALL\_FAST\_MODEL=qwen3-coder-flash
 
+Using iFlow models:
+
+export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
+export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+export ANTHROPIC\_MODEL=qwen3-max
+export ANTHROPIC\_SMALL\_FAST\_MODEL=qwen3-235b-a22b-instruct
+
 Codex with multiple account load balancing
 ------------------------------------------
 
@@ -823,10 +809,6 @@ Run the following command to login (Gemini OAuth on port 8085):
 
 docker run --rm -p 8085:8085 -v /path/to/your/config.yaml:/CLIProxyAPI/config.yaml -v /path/to/your/auth-dir:/root/.cli-proxy-api eceasy/cli-proxy-api:latest /CLIProxyAPI/CLIProxyAPI --login
 
-Run the following command to login (Gemini Web Cookies):
-
-docker run -it --rm -v /path/to/your/config.yaml:/CLIProxyAPI/config.yaml -v /path/to/your/auth-dir:/root/.cli-proxy-api eceasy/cli-proxy-api:latest /CLIProxyAPI/CLIProxyAPI --gemini-web-auth
-
 Run the following command to login (OpenAI OAuth on port 1455):
 
 docker run --rm -p 1455:1455 -v /path/to/your/config.yaml:/CLIProxyAPI/config.yaml -v /path/to/your/auth-dir:/root/.cli-proxy-api eceasy/cli-proxy-api:latest /CLIProxyAPI/CLIProxyAPI --codex-login
@@ -838,6 +820,10 @@ docker run -rm -p 54545:54545 -v /path/to/your/config.yaml:/CLIProxyAPI/config.y
 Run the following command to login (Qwen OAuth):
 
 docker run -it -rm -v /path/to/your/config.yaml:/CLIProxyAPI/config.yaml -v /path/to/your/auth-dir:/root/.cli-proxy-api eceasy/cli-proxy-api:latest /CLIProxyAPI/CLIProxyAPI --qwen-login
+
+Run the following command to login (iFlow OAuth on port 11451):
+
+docker run --rm -p 11451:11451 -v /path/to/your/config.yaml:/CLIProxyAPI/config.yaml -v /path/to/your/auth-dir:/root/.cli-proxy-api eceasy/cli-proxy-api:latest /CLIProxyAPI/CLIProxyAPI --iflow-login
 
 Run the following command to start the server:
 
@@ -883,10 +869,6 @@ Run with Docker Compose
     
     docker compose exec cli-proxy-api /CLIProxyAPI/CLIProxyAPI -no-browser --login
     
-    -   **Gemini Web**:
-    
-    docker compose exec cli-proxy-api /CLIProxyAPI/CLIProxyAPI --gemini-web-auth
-    
     -   **OpenAI (Codex)**:
     
     docker compose exec cli-proxy-api /CLIProxyAPI/CLIProxyAPI -no-browser --codex-login
@@ -898,6 +880,10 @@ Run with Docker Compose
     -   **Qwen**:
     
     docker compose exec cli-proxy-api /CLIProxyAPI/CLIProxyAPI -no-browser --qwen-login
+    
+    -   **iFlow**:
+    
+    docker compose exec cli-proxy-api /CLIProxyAPI/CLIProxyAPI -no-browser --iflow-login
     
 5.  To view the server logs:
     
@@ -932,6 +918,19 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3.  Commit your changes (`git commit -m 'Add some amazing feature'`)
 4.  Push to the branch (`git push origin feature/amazing-feature`)
 5.  Open a Pull Request
+
+Who is with us?
+---------------
+
+Those projects are based on CLIProxyAPI:
+
+### vibeproxy
+
+Native macOS menu bar app to use your Claude Code & ChatGPT subscriptions with AI coding tools - no API keys needed
+
+Note
+
+If you developed a project based on CLIProxyAPI, please open a PR to add it to this list.
 
 License
 -------

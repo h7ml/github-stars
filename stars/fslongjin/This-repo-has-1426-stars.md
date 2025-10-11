@@ -1,6 +1,6 @@
 ---
 project: This-repo-has-1426-stars
-stars: 1430
+stars: 1431
 description: 这个仓库有1426个star，不信你试试
 url: https://github.com/fslongjin/This-repo-has-1426-stars
 ---

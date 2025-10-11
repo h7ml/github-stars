@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 76372
+stars: 76841
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---
@@ -23,6 +23,10 @@ Warp 专为 AI 代理编码而构建
 
 2025
 ----
+
+**十月**
+
+-   第 368 期：不要这样管理软件团队
 
 **九月**
 

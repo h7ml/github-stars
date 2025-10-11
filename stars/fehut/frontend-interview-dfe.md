@@ -1,6 +1,6 @@
 ---
 project: frontend-interview-dfe
-stars: 241
+stars: 240
 description: front interview 前端 面试题: 持续更新中... 基础，进阶，react，vue，node，小程序，前端算法，安全，常考面试题， 如果能帮到你，就给个 star😊
 url: https://github.com/fehut/frontend-interview-dfe
 ---

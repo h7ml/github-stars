@@ -1,6 +1,6 @@
 ---
 project: qq-win-db-key
-stars: 841
+stars: 845
 description: 全平台 QQ 聊天数据库解密
 url: https://github.com/QQBackup/qq-win-db-key
 ---

@@ -1,6 +1,6 @@
 ---
 project: wechat_flutter
-stars: 2614
+stars: 2616
 description: wechat_flutter is Flutter version WeChat, an excellent Flutter instant messaging IM open source library!
 url: https://github.com/fluttercandies/wechat_flutter
 ---

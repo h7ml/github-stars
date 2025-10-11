@@ -1,6 +1,6 @@
 ---
 project: xhs-toolkit
-stars: 818
+stars: 832
 description: 📕 小红书创作者MCP工具包 - 支持与AI客户端集成的内容创作和发布工具
 url: https://github.com/aki66938/xhs-toolkit
 ---

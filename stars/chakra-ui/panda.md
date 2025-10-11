@@ -1,6 +1,6 @@
 ---
 project: panda
-stars: 5819
+stars: 5825
 description: 🐼 Universal, Type-Safe, CSS-in-JS Framework for Design Systems ⚡️
 url: https://github.com/chakra-ui/panda
 ---

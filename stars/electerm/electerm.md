@@ -1,6 +1,6 @@
 ---
 project: electerm
-stars: 13069
+stars: 13092
 description: 📻Terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC client(linux, mac, win)
 url: https://github.com/electerm/electerm
 ---
@@ -164,6 +164,7 @@ Test build
 # Build linux only with -l
 npm i
 npm run b
+npm run pb
 ./node\_modules/.bin/electron-builder --linux tar.gz
 # or replace tar.gz to rpm/deb/AppImage
 # check dist/ folder

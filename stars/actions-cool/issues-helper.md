@@ -1,6 +1,6 @@
 ---
 project: issues-helper
-stars: 394
+stars: 396
 description: 🤖 A GitHub Action easily helps you automatically manage issues. Welcome to try.
 url: https://github.com/actions-cool/issues-helper
 ---
@@ -54,8 +54,6 @@ formily
 jsx-next
 
 material-ui
-
-naive-ui
 
 nutui
 

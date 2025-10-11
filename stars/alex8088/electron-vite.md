@@ -1,6 +1,6 @@
 ---
 project: electron-vite
-stars: 4797
+stars: 4824
 description: Next generation Electron build tooling based on Vite 新一代 Electron 开发构建工具，支持源代码保护
 url: https://github.com/alex8088/electron-vite
 ---

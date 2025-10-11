@@ -1,6 +1,6 @@
 ---
 project: WTF-Ethers
-stars: 3432
+stars: 3448
 description: 我最近在重新学ethers.js，巩固一下细节，也写一个“WTF Ethers.js极简入门”，供小白们使用，每周更新1-3讲。Now supports English! 官网: https://wtf.academy
 url: https://github.com/WTFAcademy/WTF-Ethers
 ---
@@ -101,6 +101,8 @@ node 01\_HelloVitalik/HelloVitalik.js
 **第26讲：EIP712 签名脚本**：【Code】 【教程】
 
 **第27讲：检测合约创建1**：【Code】 【教程】
+
+**第28讲：检测合约创建2**：【Code】 【教程】
 
 工具
 --

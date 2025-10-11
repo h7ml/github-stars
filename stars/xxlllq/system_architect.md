@@ -1,6 +1,6 @@
 ---
 project: system_architect
-stars: 8013
+stars: 8022
 description: :100: 2025年系统架构设计师（软考高级）备考资料。
 url: https://github.com/xxlllq/system_architect
 ---
@@ -18,7 +18,7 @@ url: https://github.com/xxlllq/system_architect
 -   📔 **更新记录** **全部更新记录** >
     
 
-1.  -   **2025年09月02日**：
+1.  -   **2025年09月02日~2025年10月10日**：
     
     -   更新2025年11月备考视频。
     -   2025年11月软考报名已开始，各地区具体报名起止时间及报名入口可点击跳转查看。

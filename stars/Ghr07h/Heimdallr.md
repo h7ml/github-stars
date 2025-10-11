@@ -1,6 +1,6 @@
 ---
 project: Heimdallr
-stars: 1604
+stars: 1605
 description: 一款完全被动监听的谷歌插件，用于高危指纹识别、蜜罐特征告警和拦截、机器特征对抗
 url: https://github.com/Ghr07h/Heimdallr
 ---

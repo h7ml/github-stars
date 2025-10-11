@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6502
+stars: 6538
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -220,6 +220,7 @@ Applications
 -   DevBox \- Many useful tools for developers, like generators, viewers, converters, etc.
 -   DevClean - Clean up development environment with ease.
 -   DevTools-X - Collection of 30+ cross platform development utilities.
+-   Docker DB Manager \- Desktop app for managing Docker database containers with visual interface, data persistence, and one-click connection strings.
 -   Dropcode - Simple and lightweight code snippet manager.
 -   Echoo - Offline/Online utilities for developers on MacOS & Windows.
 -   GitButler - GitButler is a new Source Code Management system.
@@ -345,6 +346,7 @@ Applications
 -   Blank - Minimalistic, opinionated markdown editor made for writing.
 -   Blinko \- Self-hosted personal AI note tool prioritizing privacy.
 -   Ensō \- Write now, edit later. Ensō is a writing tool that helps you enter a state of flow.
+-   Fluster \- The one stop, free and open source note taking application for everything a modern academic or STEM professional needs.
 -   Handwriting keyboard - Handwriting keyboard for Linux X11 desktop environment.
 -   JournalV - Journaling app for your days and dreams.
 -   MarkFlowy - Modern markdown editor application with built-in ChatGPT extension.
@@ -368,7 +370,6 @@ Applications
 -   EcoPaste - Powerful open-source clipboard manager for macOS, Windows and Linux(x11) platforms.
 -   Fairies \- Powerful, general-purpose AI agent for MacOS, Windows, Mobile, and Web.
 -   Floweb \- Ultra-lightweight floating desktop pendant that transforms web pages into web applications, supporting features such as pinning and transparency, multi-account, auto-refresh.
--   Fluster \- The one stop, free and open source note taking application for everything a modern academic or STEM professional needs.
 -   GitBar - System tray app for GitHub reviews.
 -   Gitification - Menu bar app for managing Github notifications.
 -   Google Task Desktop Client - Google Task Desktop Client
@@ -391,6 +392,7 @@ Applications
 -   Takma - Kanban-style to-do app, fully offline with support for Markdown, labels, due dates, checklists and deep linking.
 -   Tencent Yuanbao \- Tencent Yuanbao is an AI application based on Tencent Hunyuan large model. It is an all-round assistant that can help you with writing, painting, copywriting, translation, programming, searching, reading and summarizing.
 -   TimeChunks \- Time tracking for freelancers without timers and HH:MM:SS inputs.
+-   Tranzit \- Cross-platform app to securely share files with nearby devices over your local network.
 -   WindowPet - Overlay app that lets you have adorable companions such as pets and anime characters on your screen.
 -   Zawee \- Experience the synergy of Kanban boards, note-taking, file sharing, and more, seamlessly integrated into one powerful application.
 -   Zenith \- Whether you're looking to organize tasks, collaborate on projects, or keep track of important dates, Zenith has got you covered.

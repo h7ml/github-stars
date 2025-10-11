@@ -1,6 +1,6 @@
 ---
 project: next-learn
-stars: 4541
+stars: 4549
 description: Learn Next.js Starter Code
 url: https://github.com/vercel/next-learn
 ---

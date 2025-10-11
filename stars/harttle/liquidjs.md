@@ -1,6 +1,6 @@
 ---
 project: liquidjs
-stars: 1698
+stars: 1705
 description: A simple, expressive, safe and Shopify compatible template engine in pure JavaScript.
 url: https://github.com/harttle/liquidjs
 ---

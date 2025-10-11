@@ -1,6 +1,6 @@
 ---
 project: AutoTaskScript
-stars: 792
+stars: 797
 description: 自动化任务脚本助手，支持青龙面板及 Docker 部署
 url: https://github.com/sudojia/AutoTaskScript
 ---

@@ -1,7 +1,7 @@
 ---
 project: new-api
-stars: 11016
-description: AI模型聚合管理分发系统，支持将多种大模型转为统一格式调用，支持OpenAI、Claude、Gemini等格式，可供个人或者企业内部管理与分发渠道使用。🍥 The next-generation LLM gateway and AI asset management system supports multiple languages.
+stars: 11221
+description: AI模型聚合管理中转分发系统，支持将多种大模型转为统一格式调用，支持OpenAI、Claude、Gemini等格式，可供个人或者企业内部管理与分发渠道使用。🍥 The next-generation LLM gateway and AI asset management system supports multiple languages.
 url: https://github.com/QuantumNous/new-api
 ---
 
@@ -54,22 +54,23 @@ New API提供了丰富的功能，详细特性请参考特性说明：
 10.  🤖 支持更多授权登陆方式（LinuxDO,Telegram、OIDC）
 11.  🔄 支持Rerank模型（Cohere和Jina），接口文档
 12.  ⚡ 支持OpenAI Realtime API（包括Azure渠道），接口文档
-13.  ⚡ 支持Claude Messages 格式，接口文档
-14.  支持使用路由/chat2link进入聊天界面
-15.  🧠 支持通过模型名称后缀设置 reasoning effort：
+13.  ⚡ 支持 **OpenAI Responses** 格式，接口文档
+14.  ⚡ 支持 **Claude Messages** 格式，接口文档
+15.  ⚡ 支持 **Google Gemini** 格式，接口文档
+16.  🧠 支持通过模型名称后缀设置 reasoning effort：
     1.  OpenAI o系列模型
         -   添加后缀 `-high` 设置为 high reasoning effort (例如: `o3-mini-high`)
         -   添加后缀 `-medium` 设置为 medium reasoning effort (例如: `o3-mini-medium`)
         -   添加后缀 `-low` 设置为 low reasoning effort (例如: `o3-mini-low`)
     2.  Claude 思考模型
         -   添加后缀 `-thinking` 启用思考模式 (例如: `claude-3-7-sonnet-20250219-thinking`)
-16.  🔄 思考转内容功能
-17.  🔄 针对用户的模型限流功能
-18.  🔄 请求格式转换功能，支持以下三种格式转换：
-    1.  OpenAI Chat Completions => Claude Messages
+17.  🔄 思考转内容功能
+18.  🔄 针对用户的模型限流功能
+19.  🔄 请求格式转换功能，支持以下三种格式转换：
+    1.  OpenAI Chat Completions => Claude Messages （OpenAI格式调用Claude模型）
     2.  Clade Messages => OpenAI Chat Completions (可用于Claude Code调用第三方模型)
-    3.  OpenAI Chat Completions => Gemini Chat
-19.  💰 缓存计费支持，开启后可以在缓存命中时按照设定的比例计费：
+    3.  OpenAI Chat Completions => Gemini Chat （OpenAI格式调用Gemini模型）
+20.  💰 缓存计费支持，开启后可以在缓存命中时按照设定的比例计费：
     1.  在 `系统设置-运营设置` 中设置 `提示缓存倍率` 选项
     2.  在渠道中设置 `提示缓存倍率`，范围 0-1，例如设置为 0.5 表示缓存命中时按照 50% 计费
     3.  支持的渠道：
@@ -169,7 +170,8 @@ docker run --name new-api -d --restart always -p 3000:3000 -e SQL\_DSN="root:123
 
 详细接口文档请参考接口文档：
 
--   聊天接口（Chat）
+-   聊天接口（Chat Completions）
+-   响应接口 （Responses）
 -   图像接口（Image）
 -   重排序接口（Rerank）
 -   实时对话接口（Realtime）

@@ -1,6 +1,6 @@
 ---
 project: fighting-design
-stars: 571
+stars: 572
 description: 🌈 Fighting Design 可在 vue3 应用程序中快速构建交互界面，看起来还不错。(🌈 Fighting design can quickly build interactive interfaces in vue3 applications, which looks good.)
 url: https://github.com/FightingDesign/fighting-design
 ---

@@ -1,6 +1,6 @@
 ---
 project: xyflow
-stars: 31802
+stars: 32575
 description: React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https://svelteflow.dev). Ready out-of-the-box and infinitely customizable.
 url: https://github.com/xyflow/xyflow
 ---

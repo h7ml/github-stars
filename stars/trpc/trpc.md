@@ -1,6 +1,6 @@
 ---
 project: trpc
-stars: 38583
+stars: 38627
 description: 🧙‍♀️  Move Fast and Break Nothing. End-to-end typesafe APIs made easy. 
 url: https://github.com/trpc/trpc
 ---
@@ -86,7 +86,7 @@ Nick Lucas
 > People who actively help out improving the codebase by making PRs and reviewing code
 
   
-Hubert Mathieu
+Matthieu Hocquart
 
 ### Special shout-outs
 

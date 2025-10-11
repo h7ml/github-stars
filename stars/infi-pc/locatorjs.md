@@ -1,6 +1,6 @@
 ---
 project: locatorjs
-stars: 1659
+stars: 1662
 description: null
 url: https://github.com/infi-pc/locatorjs
 ---

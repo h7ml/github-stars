@@ -1,6 +1,6 @@
 ---
 project: front-end-interview
-stars: 31
+stars: 30
 description: 最强前端面试资源
 url: https://github.com/supersea/front-end-interview
 ---

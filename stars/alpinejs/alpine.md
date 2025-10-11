@@ -1,6 +1,6 @@
 ---
 project: alpine
-stars: 30407
+stars: 30443
 description: A rugged, minimal framework for composing JavaScript behavior in your markup. 
 url: https://github.com/alpinejs/alpine
 ---

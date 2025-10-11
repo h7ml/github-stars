@@ -1,6 +1,6 @@
 ---
 project: flutter_slidable
-stars: 2829
+stars: 2828
 description: A Flutter implementation of slidable list item with directional slide actions.
 url: https://github.com/letsar/flutter_slidable
 ---

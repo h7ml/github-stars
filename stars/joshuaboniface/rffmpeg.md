@@ -1,6 +1,6 @@
 ---
 project: rffmpeg
-stars: 876
+stars: 881
 description: rffmpeg: remote SSH FFmpeg wrapper tool
 url: https://github.com/joshuaboniface/rffmpeg
 ---

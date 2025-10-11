@@ -1,6 +1,6 @@
 ---
 project: genal-chat
-stars: 1993
+stars: 1996
 description: 🚀阿童木聊天室 nestjs+vue全栈聊天室 前后端分离 typescript一把梭
 url: https://github.com/genalhuang/genal-chat
 ---

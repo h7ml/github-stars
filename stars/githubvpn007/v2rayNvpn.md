@@ -1,6 +1,6 @@
 ---
 project: v2rayNvpn
-stars: 5317
+stars: 5333
 description: 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/ssr/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子 、外网游戏、国外游戏、vpn、vpn推荐、每天更新、上外网、外网、V2rayN、Qv2ray、V2rayW、V2RayS、Mellow、V2rayX、V2rayU、ClashX、Kitsunebi、BifrostV、i2Ray 、Quantumult、Surge 4、winXray、Qv2ray、Kitsunebi、Trojan-Qt5、代理服务器、机场、马里奥、魔兽世界、poshMark、亚马逊、虾皮、煤炉、Mercari、外贸
 url: https://github.com/githubvpn007/v2rayNvpn
 ---
@@ -448,7 +448,7 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHU3ZjhlXHU1NmZkIENsb3VkRmxhcmVcdTgyODJcdTcwYjki
 -   **`出现访问不了的时候 请使用备用地址访问`**
 -   **`万一 万一 万一 如果备用地址也访问不了 回到这里！这里会及时更新地址`**
 
-**最近更新 2025年09月10日**  
+**最近更新 2025年10月11日**  
 **2024-09-20 8:00 通知 速鹰域名国内大面积被墙，需要翻墙才能访问(节点正常使用)，具体修复时间这里通知----- (已经恢复 2024-09-22 16：00)**
 
 推荐机场

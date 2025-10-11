@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 44238
+stars: 44408
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -36,6 +36,42 @@ url: https://github.com/1c7/chinese-independent-developer
 
 3\. 项目列表
 --------
+
+### 2025 年 10 月 10 号添加
+
+#### Leo(成都)
+
+-   ✅ Gemini Storybook Gallery：Gemini Storybook 汇总，分类，保留原生的交互式阅读体验
+
+#### Ethan Sunray
+
+-   ✅ TO MD：将 Word、PDF、表格、演示、网页、图片、音频、压缩包、代码、RSS 和网址转成结构化的 Markdown，秒级转换，无需注册，长期免费，注重隐私与安全。
+
+#### servanter(北京)
+
+-   ✅ 图片风格转换：🔥上传任意照片就能快速生成各种风格的卡通头像，轻松满足所有社交平台的头像需求
+
+### 2025 年 10 月 9 号添加
+
+#### 黑查理(长沙) - Github, 博客
+
+-   ✅ 软著宝：AI 生成全套软著材料（包括 8 张软件截图、详细图文文档鉴别材料、60 页原创源代码等）- 更多介绍
+
+### 2025 年 10 月 7 号添加
+
+#### Ryan
+
+-   ✅ 图像去模糊：用人工智能技术消除图像模糊，恢复清晰度和细节。即时提升照片清晰度，修复模糊照片，提高分辨率
+
+#### Jali - Github
+
+-   ✅ NanaVis：Nano Banana 驱动的 AI 图片编辑工具
+
+### 2025 年 10 月 5 号添加
+
+#### Leon(杭州)
+
+-   ✅ AI-NanoBanana：AI 图像工作室，让你轻松把创意变成高质量视觉作品
 
 ### 2025 年 10 月 4 号添加
 

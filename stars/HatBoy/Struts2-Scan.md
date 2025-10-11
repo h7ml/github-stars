@@ -1,6 +1,6 @@
 ---
 project: Struts2-Scan
-stars: 2205
+stars: 2204
 description: Struts2全漏洞扫描利用工具
 url: https://github.com/HatBoy/Struts2-Scan
 ---

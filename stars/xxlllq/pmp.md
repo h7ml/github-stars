@@ -1,6 +1,6 @@
 ---
 project: pmp
-stars: 220
+stars: 221
 description: :six:本人2019年06月份PMP备考资料，包含第六版教材、教学视频和练习真题。如资料链接失效，可通过Issues提问或者个人主页邮箱联系。视频资料持续更新中……
 url: https://github.com/xxlllq/pmp
 ---

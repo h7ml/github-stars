@@ -1,6 +1,6 @@
 ---
 project: nebulajs-cloud
-stars: 72
+stars: 74
 description: 🚀 基于Nodejs + 百度Amis的分布式低代码平台，支持代码生成、工作流、可视化页面设计等功能。简单易用，可大幅度提高应用开发效率。/ lowcode fullstack platform
 url: https://github.com/nebulajs-com/nebulajs-cloud
 ---
@@ -33,6 +33,16 @@ Nebulajs Cloud低代码开发平台
 Nebulajs Cloud是一个基于`Node.js`的低码云平台。它适用于多种不同类型企业的多样化场景企业应用开发、系统项目实施与数字化建设。
 
 Nebulajs Cloud应用是由`SAAS通用模块`和`业务模块`两种方式组合而成的。`SAAS通用模块`由云平台统一提供，无需代码生成。如：系统管理、流程管理等功能。 `业务模块`则是由用户设置模型属性后进行代码生成，用户可以对其进行灵活地`定制和开发`。
+
+#### 1.平台演示（请先`Star`本项目，然后使用`gitee`/`github`方式登录）
+
+-   地址：http://server.nebulajs.com:3000/
+-   说明：以前`Star`过的小伙伴，可以取消后重新`Star`，即可登录。
+
+#### 2.应用演示
+
+-   地址：http://server.nebulajs.com:15000/
+-   帐密：`admin` / `admin`
 
 二、平台功能
 ------

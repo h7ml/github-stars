@@ -1,6 +1,6 @@
 ---
 project: NeteaseCloudMusicApi
-stars: 30309
+stars: 30315
 description: 网易云音乐 Node.js API service
 url: https://github.com/Binaryify/NeteaseCloudMusicApi
 ---

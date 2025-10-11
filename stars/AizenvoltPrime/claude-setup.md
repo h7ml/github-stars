@@ -1,6 +1,6 @@
 ---
 project: claude-setup
-stars: 259
+stars: 260
 description: null
 url: https://github.com/AizenvoltPrime/claude-setup
 ---
@@ -78,6 +78,201 @@ cp .mcp.json /your/project/
 
 # Ensure hook permissions
 chmod +x .claude/hooks/task\_hard\_prep\_hook.py
+
+Modern CLI Tools Installation Guide
+-----------------------------------
+
+### Linux Installation Commands
+
+#### Ubuntu/Debian (Complete Single Command)
+
+**Prerequisites - Install Rust (for xsv and sd):**
+
+curl --proto '\=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+
+**Complete installation (core tools only):**
+
+sudo apt update && sudo apt install -y ripgrep bat fd-find && mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat && ln -sf /usr/bin/fdfind ~/.local/bin/fd && cargo install sd xsv
+
+**Complete installation (core + optional tools):**
+
+sudo apt update && sudo apt install -y ripgrep bat fd-find jq && mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat && ln -sf /usr/bin/fdfind ~/.local/bin/fd && cargo install sd xsv && sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq\_linux\_amd64 && sudo chmod +x /usr/local/bin/yq
+
+**What this does:**
+
+-   Updates package lists
+-   Installs `ripgrep`, `bat`, `fd-find`, `jq` from apt
+-   Creates `~/.local/bin` directory
+-   Symlinks `batcat` → `bat` and `fdfind` → `fd` (fixes naming conflicts)
+-   Installs `sd`, `xsv` via Cargo (Rust package manager)
+-   Downloads and installs `yq` binary
+
+#### Arch Linux (Simplest Single Command)
+
+sudo pacman -S ripgrep bat fd sd jq yq
+
+**Optional AUR tools:**
+
+yay -S xsv mdq
+
+#### Fedora/RHEL/CentOS
+
+sudo dnf install -y ripgrep bat fd-find jq && cargo install sd xsv && sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq\_linux\_amd64 && sudo chmod +x /usr/local/bin/yq
+
+#### Alpine Linux
+
+apk add ripgrep bat fd jq yq && cargo install sd xsv
+
+### Windows Installation Commands
+
+#### Using winget (Recommended)
+
+**Core tools - Required (single command):**
+
+winget install BurntSushi.ripgrep.MSVC && winget install sharkdp.bat && winget install sharkdp.fd && winget install chmln.sd && winget install BurntSushi.xsv.MSVC
+
+**Optional tools (for specialized operations):**
+
+winget install jqlang.jq && winget install MikeFarah.yq
+
+**Individual installations:**
+
+# Core tools (required)
+winget install BurntSushi.ripgrep.MSVC
+winget install sharkdp.bat
+winget install sharkdp.fd
+winget install chmln.sd
+winget install BurntSushi.xsv.MSVC
+
+# Optional tools
+winget install jqlang.jq
+winget install MikeFarah.yq
+
+#### Using Scoop
+
+scoop install ripgrep bat fd sd jq yq
+
+#### Using Chocolatey
+
+choco install ripgrep bat fd\-find sd jq yq
+
+### macOS Installation
+
+#### Using Homebrew
+
+brew install ripgrep bat fd sd jq yq xsv mdq
+
+### Tool Mappings Reference
+
+Legacy Tool
+
+Modern Replacement
+
+Package Name
+
+Enforcement
+
+`grep`
+
+`rg`
+
+ripgrep
+
+**Blocked**
+
+`cat`
+
+`bat`
+
+bat
+
+**Blocked**
+
+`find`
+
+`fd`
+
+fd / fd-find
+
+**Blocked**
+
+`awk/perl`
+
+`sd`
+
+sd
+
+**Blocked**
+
+`cut`
+
+`xsv`
+
+xsv (winget/cargo)
+
+**Blocked**
+
+JSON ops
+
+`jq`
+
+jq
+
+Suggested
+
+YAML ops
+
+`yq`
+
+yq
+
+Suggested
+
+Markdown
+
+`mdq`
+
+mdq (cargo)
+
+Suggested
+
+**Blocked**: Hook prevents execution and requires modern tool **Suggested**: Hook provides recommendation but allows execution
+
+### Verification Commands
+
+**Verify core tools (required):**
+
+rg --version
+bat --version
+fd --version
+sd --version
+xsv --version
+
+**Verify optional tools:**
+
+jq --version
+yq --version
+
+### Notes
+
+**Ubuntu/Debian Naming Conflicts:**
+
+-   `bat` is installed as `batcat` (conflict with `bacula-console-qt`)
+-   `fd` is installed as `fdfind` (conflict with `fdclone`)
+-   Symlinks in `~/.local/bin` resolve this issue
+
+**Cargo Requirement:**
+
+-   **Windows**: All core tools available via winget - no Cargo needed!
+-   **Linux**: Core tools `sd` and `xsv` require Rust's Cargo package manager
+-   Optional tool `mdq` requires Cargo on all platforms
+-   **Install Rust (Linux)**: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+
+**PATH Configuration:**
+
+-   Ensure `~/.local/bin` is in your PATH (usually automatic on modern Linux)
+-   Add to `~/.bashrc` or `~/.zshrc` if needed: `export PATH="$HOME/.local/bin:$PATH"`
 
 Features
 --------

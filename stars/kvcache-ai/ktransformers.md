@@ -1,13 +1,13 @@
 ---
 project: ktransformers
-stars: 15129
+stars: 15157
 description: A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations
 url: https://github.com/kvcache-ai/ktransformers
 ---
 
 ### A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations
 
-**🌟 Show Cases | 🚀 Quick Start | 📃 Tutorial | 💬 Discussion | 🙋 FAQ**
+**🌟 Show Cases | 🚀 Quick Start | 📃 Tutorial | 🔥 Citation | 💬 Discussion | 🙋 FAQ**
 
 🎉 Introduction
 ---------------
@@ -21,6 +21,7 @@ Our vision for KTransformers is to serve as a flexible platform for experimentin
 🔥 Updates
 ----------
 
+-   **Oct 10, 2025**: Integrating into SGLang. (Roadmap)
 -   **Sept 11, 2025**: Support Qwen3-Next. (Tutorial)
 -   **Sept 05, 2025**: Support Kimi-K2-0905. (Tutorial)
 -   **July 26, 2025**: Support SmallThinker and GLM4-MoE. (Tutorial)
@@ -135,6 +136,20 @@ Each rule in the YAML file has two parts: `match` and `replace`. The `match` par
 You can find example rule templates for optimizing DeepSeek-V2 and Qwen2-57B-A14, two SOTA MoE models, in the ktransformers/optimize/optimize\_rules directory. These templates are used to power the `local_chat.py` demo.
 
 If you are interested in our design principles and the implementation of the injection framework, please refer to the design document.
+
+🔥 Citation
+-----------
+
+If you use KTransformers for your research, please cite our paper:
+
+```
+@inproceedings{10.1145/3731569.3764843,
+title = {KTransformers: Unleashing the Full Potential of CPU/GPU Hybrid Inference for MoE Models},
+author = {Chen, Hongtao and Xie, Weiyu and Zhang, Boxin and Tang, Jingqi and Wang, Jiahao and Dong, Jianwei and Chen, Shaoyuan and Yuan, Ziwei and Lin, Chen and Qiu, Chengyu and Zhu, Yuening and Ou, Qingliang and Liao, Jiaqi and Chen, Xianglin and Ai, Zhiyuan and Wu, Yongwei and Zhang, Mingxing},
+booktitle = {Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles},
+year = {2025}
+}
+```
 
 Acknowledgment and Contributors
 -------------------------------

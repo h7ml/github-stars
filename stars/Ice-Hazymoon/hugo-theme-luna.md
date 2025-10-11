@@ -1,6 +1,6 @@
 ---
 project: hugo-theme-luna
-stars: 294
+stars: 295
 description: A simple, performance-first, SEO-friendly Hugo theme / 一个轻量，快速，SEO 友好的 Hugo 主题
 url: https://github.com/Ice-Hazymoon/hugo-theme-luna
 ---

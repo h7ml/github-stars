@@ -1,6 +1,6 @@
 ---
 project: nonebot-plugin-picstatus
-stars: 135
+stars: 136
 description: 运行状态图片版 for NoneBot2 / A NoneBot2 plugin generates a picture which shows the status of current device
 url: https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
 ---

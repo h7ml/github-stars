@@ -1,6 +1,6 @@
 ---
 project: react-amis-admin
-stars: 50
+stars: 51
 description: 🎉🎉🔥百度amis低代码引擎实现后台管理系统
 url: https://github.com/tcly861204/react-amis-admin
 ---

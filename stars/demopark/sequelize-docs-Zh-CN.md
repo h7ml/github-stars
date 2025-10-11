@@ -1,6 +1,6 @@
 ---
 project: sequelize-docs-Zh-CN
-stars: 2999
+stars: 3001
 description: Sequelize 文档的中文版本:  v7.0.0-alpha.18 | v6.32.0
 url: https://github.com/demopark/sequelize-docs-Zh-CN
 ---

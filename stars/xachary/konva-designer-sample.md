@@ -1,6 +1,6 @@
 ---
 project: konva-designer-sample
-stars: 187
+stars: 188
 description: A designer sample with konva.
 url: https://github.com/xachary/konva-designer-sample
 ---

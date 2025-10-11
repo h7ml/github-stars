@@ -1,6 +1,6 @@
 ---
 project: black-myth-wukong-journey
-stars: 17
+stars: 18
 description: 黑神话悟空游记
 url: https://github.com/cl1107/black-myth-wukong-journey
 ---

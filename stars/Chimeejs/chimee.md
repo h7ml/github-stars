@@ -1,6 +1,6 @@
 ---
 project: chimee
-stars: 2399
+stars: 2398
 description: a video player framework aims to bring wonderful experience on browser
 url: https://github.com/Chimeejs/chimee
 ---

@@ -1,6 +1,6 @@
 ---
 project: langchainjs
-stars: 15800
+stars: 15830
 description: 🦜🔗 Build context-aware reasoning applications 🦜🔗
 url: https://github.com/langchain-ai/langchainjs
 ---

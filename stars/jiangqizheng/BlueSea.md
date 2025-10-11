@@ -1,6 +1,6 @@
 ---
 project: BlueSea
-stars: 1192
+stars: 1193
 description: BlueSea，一个有趣的英语学习扩展，支持划词翻译、单词高亮、单词弹幕、记忆曲线复习、词频统计...
 url: https://github.com/jiangqizheng/BlueSea
 ---

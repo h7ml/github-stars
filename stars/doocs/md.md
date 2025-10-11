@@ -1,6 +1,6 @@
 ---
 project: md
-stars: 10710
+stars: 10759
 description: ✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 语法、自定义主题样式、内容管理、多图床、AI 助手等特性
 url: https://github.com/doocs/md
 ---
@@ -208,6 +208,10 @@ pnpm web firefox:zip # output zip file at in .output/md-{version}-firefox.zip
 
 # uTools 插件打包
 pnpm utools:package # output zip file at apps/utools/release/md-utools-v{version}.zip
+
+# cloudflare workers
+pnpm web wrangler:dev # cloudflare workers dev 模式
+pnpm web wrangler:deploy # cloudflare workers 部署命令
 
 🚀 快速搭建私有服务
 -----------

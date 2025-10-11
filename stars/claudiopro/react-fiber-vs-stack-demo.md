@@ -1,6 +1,6 @@
 ---
 project: react-fiber-vs-stack-demo
-stars: 152
+stars: 153
 description: ⚡️ React Fiber vs Stack Demo
 url: https://github.com/claudiopro/react-fiber-vs-stack-demo
 ---

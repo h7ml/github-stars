@@ -1,6 +1,6 @@
 ---
 project: react-colorful
-stars: 3423
+stars: 3428
 description: 🎨 A tiny (2,8 KB) color picker component for React and Preact apps
 url: https://github.com/omgovich/react-colorful
 ---

@@ -1,6 +1,6 @@
 ---
 project: react-syntax-plus
-stars: 9
+stars: 10
 description: react-syntax-plus 🚀🚀🚀
 url: https://github.com/mmdctjj/react-syntax-plus
 ---

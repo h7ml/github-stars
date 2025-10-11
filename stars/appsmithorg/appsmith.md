@@ -1,6 +1,6 @@
 ---
 project: appsmith
-stars: 38102
+stars: 38158
 description: Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.
 url: https://github.com/appsmithorg/appsmith
 ---

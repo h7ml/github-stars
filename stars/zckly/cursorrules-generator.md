@@ -1,6 +1,6 @@
 ---
 project: cursorrules-generator
-stars: 9
+stars: 10
 description: generates cursorrules for repos
 url: https://github.com/zckly/cursorrules-generator
 ---

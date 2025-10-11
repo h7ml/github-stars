@@ -1,6 +1,6 @@
 ---
 project: gitmoji
-stars: 16503
+stars: 16514
 description: An emoji guide for your commit messages. 😜 
 url: https://github.com/carloscuesta/gitmoji
 ---

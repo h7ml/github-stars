@@ -1,6 +1,6 @@
 ---
 project: mcp
-stars: 4511
+stars: 4577
 description: Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser
 url: https://github.com/BrowserMCP/mcp
 ---

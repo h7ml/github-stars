@@ -1,6 +1,6 @@
 ---
 project: unsatisfactory
-stars: 60
+stars: 61
 description: null
 url: https://github.com/danielesteban/unsatisfactory
 ---

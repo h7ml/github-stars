@@ -1,6 +1,6 @@
 ---
 project: autocomplete
-stars: 25032
+stars: 25044
 description: IDE-style autocomplete for your existing terminal & shell
 url: https://github.com/withfig/autocomplete
 ---

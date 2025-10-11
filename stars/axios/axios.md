@@ -1,15 +1,11 @@
 ---
 project: axios
-stars: 107831
+stars: 107905
 description: Promise based HTTP client for the browser and node.js
 url: https://github.com/axios/axios
 ---
 
 ### 🥇 Gold sponsors  
-
-\[1ページ目\] CookBook の記事 intra-mart Developer Portal
-
-**dev.intra-mart.jp**
 
 API-first authentication, authorization, and fraud prevention
 
@@ -43,9 +39,11 @@ Buy Instagram Likes
 
 **poprey.com**
 
-SS Market offers professional social media services that rapidly increase your YouTube subscriber co...
+A lightweight open-source API Development, Testing & Mocking platform
 
-**ssmarket.net**
+**requestly.com**
+
+💜 Become a sponsor
 
 💜 Become a sponsor
 
@@ -124,6 +122,16 @@ Features
 
 Browser Support
 ---------------
+
+Chrome
+
+Firefox
+
+Safari
+
+Opera
+
+Edge
 
 Latest ✔
 

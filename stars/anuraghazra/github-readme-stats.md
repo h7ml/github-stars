@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 76320
+stars: 76430
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
@@ -71,7 +71,7 @@ Important Notices
 
 Important
 
-Please note that we are NOT participating in Hacktoberfest this year. Unfortunately, the only person with sufficient access rights to remove the repository label is currently unreachable, so we are notifying you here. As a small team, we cannot handle the increased volume of PRs and issues that the event brings. We appreciate your understanding.
+Please note that we are NOT participating in Hacktoberfest this year. As a small team, we cannot handle the increased volume of PRs and issues that the event brings. We appreciate your understanding.
 
 Important
 
@@ -283,7 +283,7 @@ number
 
 Warning
 
-We use caching to decrease the load on our servers (see #1471 (comment)). Our cards have the following default cache hours: stats card - 24 hours, top languages card - 144 hours (6 days), pin card - 240 hours (10 days), gist card - 48 hours (2 days). If you want the data on your statistics card to be updated more often you can deploy your own instance and set environment variable `CACHE_SECONDS` to a value of your choosing.
+We use caching to decrease the load on our servers (see #1471 (comment)). Our cards have the following default cache hours: stats card - 24 hours, top languages card - 144 hours (6 days), pin card - 240 hours (10 days), gist card - 48 hours (2 days), and wakatime card - 24 hours. If you want the data on your cards to be updated more often you can deploy your own instance and set environment variable `CACHE_SECONDS` to a value of your choosing.
 
 ##### Gradient in bg\_color
 
@@ -633,6 +633,10 @@ integer _(YYYY)_
 
 `<current year> (one year to date)`
 
+Warning
+
+Custom title should be URI-escaped, as specified in Percent Encoding (i.e: `Anurag's GitHub Stats` should become `Anurag%27s%20GitHub%20Stats`). You can use urlencoder.org to help you do this automatically.
+
 Note
 
 When hide\_rank=`true`, the minimum card width is 270 px + the title length and padding.
@@ -862,7 +866,7 @@ enum
 
 Warning
 
-Language names should be URI-escaped, as specified in Percent Encoding (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use urlencoder.org to help you do this automatically.
+Language names and custom title should be URI-escaped, as specified in Percent Encoding (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, `Most Used Languages` should become `Most%20Used%20Languages`, etc.) You can use urlencoder.org to help you do this automatically.
 
 ### Language stats algorithm
 
@@ -989,6 +993,14 @@ boolean
 
 `false`
 
+`card_width`
+
+Sets the card's width manually.
+
+number
+
+`495`
+
 `line_height`
 
 Sets the line height between text.
@@ -1052,6 +1064,10 @@ Disables all animations in the card.
 boolean
 
 `false`
+
+Warning
+
+Custom title should be URI-escaped, as specified in Percent Encoding (i.e: `WakaTime Stats` should become `WakaTime%20Stats`). You can use urlencoder.org to help you do this automatically.
 
 ### Demo
 
@@ -1241,11 +1257,17 @@ Available environment variables
 
 GitHub Readme Stats provides several environment variables that can be used to customize the behavior of your self-hosted instance. These include:
 
--   `CACHE_SECONDS`: This takes precedence over our cache minimum and maximum values and can circumvent these values for self-hosted instances.
+-   `CACHE_SECONDS`: Sets the cache duration in seconds for the generated cards. This variable takes precedence over the default cache timings for the public instance. You can also set it to `0` to disable caching completely. If this variable is not set, the default cache duration is 24 hours (86,400 seconds).
 -   `WHITELIST`: A comma-separated list of GitHub usernames that are allowed to access your instance. If this variable is not set, all usernames are allowed.
 -   `GIST_WHITELIST`: A comma-separated list of GitHub gist IDs that are allowed to be accessed on your instance. If this variable is not set, all gist IDs are allowed.
+-   `EXCLUDE_REPO`: A comma-separated list of repositories that will be excluded from stats and top languages cards on your instance. This allows repository exclusion without exposing repository names in public URLs. This enhances privacy for self-hosted instances that include private repositories in stats cards.
+-   `FETCH_MULTI_PAGE_STARS`: When set to `true`, this enables fetching all starred repositories for accurate star counts, especially for users with more than 100 repositories. This may increase response times and API points usage, so it is disabled on the public instance.
 
 See the Vercel documentation on adding these environment variables to your Vercel instance.
+
+Warning
+
+Please remember to redeploy your instance after making any changes to the environment variables so that the updates take effect. The changes will not be applied to the previous deployments.
 
 Keep your fork up to date
 -------------------------

@@ -1,6 +1,6 @@
 ---
 project: vue-loading-overlay
-stars: 1264
+stars: 1265
 description: Vue.js component for full screen loading indicator :cyclone:
 url: https://github.com/ankurk91/vue-loading-overlay
 ---

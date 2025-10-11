@@ -1,6 +1,6 @@
 ---
 project: YJYpaper
-stars: 3731
+stars: 3729
 description: 一个用来记录武汉大学杨景媛论文问题的仓库
 url: https://github.com/zouzhekang/YJYpaper
 ---

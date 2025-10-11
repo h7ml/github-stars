@@ -1,6 +1,6 @@
 ---
 project: nodemailer
-stars: 17264
+stars: 17277
 description: ✉️ Send e-mails with Node.JS – easy as cake!
 url: https://github.com/nodemailer/nodemailer
 ---
@@ -49,27 +49,27 @@ It's either a firewall issue, or your SMTP server blocks authentication attempts
 -   Older Node versions do not fully support the certificate chain of the newest Let's Encrypt certificates. Either set tls.rejectUnauthorized to `false` to skip chain verification or upgrade your Node version
 
 let configOptions \= {
-    host: "smtp.example.com",
+    host: 'smtp.example.com',
     port: 587,
     tls: {
         rejectUnauthorized: true,
-        minVersion: "TLSv1.2"
+        minVersion: 'TLSv1.2'
     }
-}
+};
 
 #### I have issues with DNS / hosts file
 
 Node.js uses c-ares to resolve domain names, not the DNS library provided by the system, so if you have some custom DNS routing set up, it might be ignored. Nodemailer runs dns.resolve4() and dns.resolve6() to resolve hostname into an IP address. If both calls fail, then Nodemailer will fall back to dns.lookup(). If this does not work for you, you can hard code the IP address into the configuration like shown below. In that case, Nodemailer would not perform any DNS lookups.
 
 let configOptions \= {
-    host: "1.2.3.4",
+    host: '1.2.3.4',
     port: 465,
     secure: true,
     tls: {
         // must provide server name, otherwise TLS certificate check will fail
-        servername: "example.com"
+        servername: 'example.com'
     }
-}
+};
 
 #### I have an issue with TypeScript types
 

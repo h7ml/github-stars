@@ -1,6 +1,6 @@
 ---
 project: alita
-stars: 813
+stars: 814
 description: A React framework based on umi. 
 url: https://github.com/alitajs/alita
 ---

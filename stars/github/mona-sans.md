@@ -1,6 +1,6 @@
 ---
 project: mona-sans
-stars: 3881
+stars: 3884
 description: Mona Sans, a variable font from GitHub
 url: https://github.com/github/mona-sans
 ---

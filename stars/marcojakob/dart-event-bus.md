@@ -1,6 +1,6 @@
 ---
 project: dart-event-bus
-stars: 783
+stars: 784
 description: An Event Bus using Dart Streams for decoupling applications
 url: https://github.com/marcojakob/dart-event-bus
 ---

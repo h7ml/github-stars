@@ -1,6 +1,6 @@
 ---
 project: VirtualApp
-stars: 1330
+stars: 1334
 description: support  android 12 应用分身、模拟设备、模拟wifi、虚拟多开、钉钉打卡、企微打卡、插件开发、XP插件、模拟用户操作、java hook、c++ hook
 url: https://github.com/ServenScorpion/VirtualApp
 ---

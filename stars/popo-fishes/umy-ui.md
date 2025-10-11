@@ -1,6 +1,6 @@
 ---
 project: umy-ui
-stars: 1142
+stars: 1141
 description: A desktop component library based on Vue 2.0 prepared for developers
 url: https://github.com/popo-fishes/umy-ui
 ---

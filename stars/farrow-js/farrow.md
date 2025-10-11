@@ -1,6 +1,6 @@
 ---
 project: farrow
-stars: 766
+stars: 767
 description: A Type-Friendly Web Framework for Node.js
 url: https://github.com/farrow-js/farrow
 ---

@@ -1,6 +1,6 @@
 ---
 project: alibabacloud-alfa
-stars: 858
+stars: 859
 description: 阿里云微前端解决方案
 url: https://github.com/aliyun/alibabacloud-alfa
 ---

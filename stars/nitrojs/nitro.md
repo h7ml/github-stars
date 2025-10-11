@@ -1,6 +1,6 @@
 ---
 project: nitro
-stars: 7777
+stars: 7831
 description: Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever you prefer.
 url: https://github.com/nitrojs/nitro
 ---
@@ -8,25 +8,20 @@ url: https://github.com/nitrojs/nitro
 Nitro
 =====
 
-Create web servers that run anywhere! 📖 **documentation**
+Note
 
-Important
+You’re viewing the **v3 Alpha** branch. For the current stable release, see Nitro v2.
 
-You are on the **v3 beta branch**. Checkout the v2 branch for current stable.
+**Nitro** extends your Vite app with a **production-ready server**, designed to run **anywhere**. Add server routes, deploy across multiple platforms, and enjoy a **zero-config** experience.
 
-Check migration guide for migrating from Nitro v2 to Nitro v3.
+📘 **Docs (v3 Alpha):** https://v3.nitro.build
 
-Contribution
+Contributing
 ------------
 
-Please check Contribution guide.
+See Check out the Contribution Guide to get started.
 
 License
 -------
 
-Published under the MIT license. Made by @pi0 and community 💛  
-  
-
-* * *
-
-_🤖 auto updated with automd_
+Released under the MIT License.

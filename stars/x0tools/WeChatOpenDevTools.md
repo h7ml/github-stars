@@ -1,6 +1,6 @@
 ---
 project: WeChatOpenDevTools
-stars: 967
+stars: 975
 description: null
 url: https://github.com/x0tools/WeChatOpenDevTools
 ---

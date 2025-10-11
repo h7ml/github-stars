@@ -1,6 +1,6 @@
 ---
 project: lamda
-stars: 7289
+stars: 7303
 description:  The most powerful Android RPA agent framework, next generation of mobile automation robots.
 url: https://github.com/firerpa/lamda
 ---
@@ -21,9 +21,9 @@ As traditional web platforms decline and smart devices rise, automation and data
 
 ### 
 
-Reliable across Android 6.0 to 15, from emulators to cloud.
+Reliable across Android 6.0 to 16, from emulators to cloud.
 
-兼容 Android 6.0–15，适用于模拟器、真机与云平台。
+兼容 Android 6.0–16，适用于模拟器、真机与云平台。
 
 FIRERPA delivers commercial-grade automation capabilities across a wide range of Android versions and devices. It requires only root access, simplifies security analysis and testing, and is already widely used in scenarios such as digital forensics and compliance monitoring. FIRERPA 提供稳定且达到商用级的自动化能力，兼容众多 Android 系统与设备，仅需 Root 权限即可轻松完成安全分析与测试，广泛应用于数字取证与合规监测等场景。
 
@@ -58,8 +58,6 @@ Remote desktop and device control, made simple.
 远程桌面与设备控制，简单直观。
 
 FIRERPA comes with a clean, intuitive remote desktop interface, allowing users to monitor and control Android devices visually and interactively. Whether for testing, automation validation, or system diagnostics, it provides a powerful control layer with minimal setup. FIRERPA 内置简洁直观的远程桌面功能，帮助用户以可视化方式监控和操作 Android 设备。无论用于测试、任务验证还是系统诊断，都能提供高效、轻量的控制体验。
-
-Our project is not fully open source. Many industry tools also hide untraceable binaries in large codebases — a form of false advertising we reject. Due to the nature of this field, open-sourcing would raise defense costs and cause unnecessary trouble for both you and us. We choose to keep the tool free and accessible, focused on building the most effective solution. For security, we guarantee no malicious code, no backdoors, and no data collection. You’re free to reverse-engineer and verify its safety however you like. 我们的项目并未完全开源，您使用的很多业内工具其实也没有开源核心部分，他们在大量的代码内隐藏不可溯源的二进制文件，这显然是虚假宣传，我们不会这么向您宣传。我们这样做是由于行业的特殊性，开源意味着要投入更多的对抗成本，这显然会给您以及我们增加很多不必要的麻烦。我们会始终保持工具的免费及开放，我们只为打造最趁手的兵器。对于安全性，我们承诺没有任何恶意代码或后门植入，没有任何数据被收集上传，您可以以任意方式破解逆向分析其安全及隐私性。
 
 Check out real usage examples and developer guides in the documentation.
 

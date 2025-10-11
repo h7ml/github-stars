@@ -1,6 +1,6 @@
 ---
 project: istanbuljs
-stars: 1072
+stars: 1073
 description: monorepo containing the various nuts and bolts that facilitate istanbul.js test instrumentation
 url: https://github.com/istanbuljs/istanbuljs
 ---

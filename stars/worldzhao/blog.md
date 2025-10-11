@@ -1,6 +1,6 @@
 ---
 project: blog
-stars: 431
+stars: 430
 description: 个人博客，内容在 issue 里。
 url: https://github.com/worldzhao/blog
 ---

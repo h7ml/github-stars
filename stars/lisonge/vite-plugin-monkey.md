@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-monkey
-stars: 1768
+stars: 1775
 description: A vite plugin server and build your.user.js for userscript engine like Tampermonkey, Violentmonkey, Greasemonkey, ScriptCat
 url: https://github.com/lisonge/vite-plugin-monkey
 ---

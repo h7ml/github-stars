@@ -1,6 +1,6 @@
 ---
 project: memo
-stars: 22
+stars: 23
 description: 自用的软件及相关设置备忘录
 url: https://github.com/SekiBetu/memo
 ---

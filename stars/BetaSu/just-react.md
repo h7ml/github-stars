@@ -1,6 +1,6 @@
 ---
 project: just-react
-stars: 6373
+stars: 6374
 description: 「React技术揭秘」  一本自顶向下的React源码分析书
 url: https://github.com/BetaSu/just-react
 ---

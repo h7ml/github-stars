@@ -1,6 +1,6 @@
 ---
 project: player
-stars: 679
+stars: 680
 description: A React component for reading Kodemo documents.
 url: https://github.com/kodemoapp/player
 ---

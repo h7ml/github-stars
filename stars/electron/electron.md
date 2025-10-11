@@ -1,6 +1,6 @@
 ---
 project: electron
-stars: 118537
+stars: 118629
 description: :electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS
 url: https://github.com/electron/electron
 ---

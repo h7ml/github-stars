@@ -1,35 +1,41 @@
 ---
 project: nue
-stars: 8793
-description: Standards first web framework taking HTML, CSS, JS, and WASM to their peak
+stars: 8803
+description: Fastest way to build modern websites
 url: https://github.com/nuejs/nue
 ---
 
-Nue   
-======
+The UNIX of the Web
+===================
 
-Standards first web framework
------------------------------
+Web development became complicated. Hundreds of packages, 400MB of dependencies, hours of configuration before writing a single line of code. We forgot that it doesn't have to be this way.
 
-Nue is a web framework focused on web standards, currently in active development. Our goal is to expose the hidden complexity that's become a norm in modern web development. When a single button weighs more than an entire application, something is clearly broken.
+How web development should work
+-------------------------------
 
-Learn how Nue works →
+**Instant start** - Create `index.html` or `index.md` and you're running. No setup, no configuration, no waiting.
 
-A radically simpler stack
--------------------------
+**Single-page apps** - Write semantic HTML with dynamic expressions. Import business logic from pure JavaScript modules. Let your design system handle presentation.
 
-We are rebuilding the entire ecosystem from scratch:
+**Content sites** - Front pages, documentation, blogs, marketing pages. Write Nuemark content, add layout modules for structure, trust your design system for consistency.
 
-See our vision
+**Universal hot reload** - Content, CSS, layouts, data, components, server routes, configurations. Save and watch the browser update instantly.
 
-### Installation
+**Complete system** - Content sites, SPAs, server routes, backend models.
 
-Check out installation docs
+One tool, complete control. The UNIX philosophy applied to web development.
 
-### Contributing
+**Nue is the entire ecosystem in 1MB**
 
-Please see CONTRIBUTING.md
+Visit Nue website for comprehensive documentation.
 
-### Community
+Migration from React/Next.js
+----------------------------
 
-Please see GitHub discussions
+**Less scaffolding** - From 500MB+ of node\_modules to 1MB global install. From complex project setups to just `index.html` to get started.
+
+**Pure separation** - Business logic in JS modules. Structure in HTML. Design in CSS. No more mixed concerns in components.
+
+**Faster everything** - Builds in milliseconds. Hot reload across frontend and backend. Pages 10x smaller.
+
+See the migration guide for the complete story.

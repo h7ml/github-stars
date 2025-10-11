@@ -1,6 +1,6 @@
 ---
 project: virus_killers-for-Avast-FakeFolder
-stars: 5
+stars: 6
 description: 为文件夹蠕虫病毒和Avast假磁盘病毒提供的轻量级，安全快速的杀毒工具
 url: https://github.com/hyhcrh/virus_killers-for-Avast-FakeFolder
 ---

@@ -1,6 +1,6 @@
 ---
 project: bilibili-API-collect
-stars: 19040
+stars: 19159
 description: 哔哩哔哩-API收集整理【不断更新中....】
 url: https://github.com/SocialSisterYi/bilibili-API-collect
 ---

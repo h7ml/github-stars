@@ -1,6 +1,6 @@
 ---
 project: blueprintui
-stars: 323
+stars: 324
 description: :blue_book: Accelerate your development with flexible UI components and tools that work everywhere.
 url: https://github.com/blueprintui/blueprintui
 ---

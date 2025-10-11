@@ -1,6 +1,6 @@
 ---
 project: pnpm-patch-i
-stars: 286
+stars: 287
 description: A better and interactive pnpm patch
 url: https://github.com/antfu/pnpm-patch-i
 ---

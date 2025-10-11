@@ -1,6 +1,6 @@
 ---
 project: codex
-stars: 45923
+stars: 46997
 description: Lightweight coding agent that runs in your terminal
 url: https://github.com/openai/codex
 ---
@@ -53,7 +53,7 @@ You can also use Codex with an API key, but this requires additional setup. If y
 
 ### Model Context Protocol (MCP)
 
-Codex CLI supports MCP servers. Enable by adding an `mcp_servers` section to your `~/.codex/config.toml`.
+Codex can access MCP servers. To configure them, refer to the config docs.
 
 ### Configuration
 

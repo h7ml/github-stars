@@ -1,6 +1,6 @@
 ---
 project: airflow
-stars: 42661
+stars: 42754
 description: Apache Airflow - A platform to programmatically author, schedule, and monitor workflows
 url: https://github.com/apache/airflow
 ---

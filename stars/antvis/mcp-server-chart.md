@@ -1,6 +1,6 @@
 ---
 project: mcp-server-chart
-stars: 2916
+stars: 2960
 description: 🤖 A visualization mcp contains 25+ visual charts using @antvis. Using for chart generation and data analysis.
 url: https://github.com/antvis/mcp-server-chart
 ---
@@ -73,10 +73,7 @@ To use with `Desktop APP`, such as Claude, VSCode, Cline, Cherry Studio, Cursor,
   "mcpServers": {
     "mcp-server-chart": {
       "command": "npx",
-      "args": \[
-        "\-y",
-        "@antv/mcp-server-chart"
-      \]
+      "args": \["\-y", "@antv/mcp-server-chart"\]
     }
   }
 }
@@ -87,12 +84,7 @@ On Window system:
   "mcpServers": {
     "mcp-server-chart": {
       "command": "cmd",
-      "args": \[
-        "/c",
-        "npx",
-        "\-y",
-        "@antv/mcp-server-chart"
-      \]
+      "args": \["/c", "npx", "\-y", "@antv/mcp-server-chart"\]
     }
   }
 }
@@ -139,18 +131,19 @@ Then you can access the server at:
 🎮 CLI Options
 --------------
 
-You can also use the following CLI options when running the MCP server. Command options by run cli with `-h`.
+You can also use the following CLI options when running the MCP server. Command options by run cli with `-H`.
 
 ```
 MCP Server Chart CLI
 
 Options:
   --transport, -t  Specify the transport protocol: "stdio", "sse", or "streamable" (default: "stdio")
+  --host, -h       Specify the host for SSE or streamable transport (default: localhost)
   --port, -p       Specify the port for SSE or streamable transport (default: 1122)
   --endpoint, -e   Specify the endpoint for the transport:
                    - For SSE: default is "/sse"
                    - For streamable: default is "/mcp"
-  --help, -h       Show this help message
+  --help, -H       Show this help message
 ```
 
 ⚙️ Environment Variables
@@ -196,10 +189,7 @@ Comma-separated list of tool names to disable
   "mcpServers": {
     "mcp-server-chart": {
       "command": "npx",
-      "args": \[
-        "\-y",
-        "@antv/mcp-server-chart"
-      \],
+      "args": \["\-y", "@antv/mcp-server-chart"\],
       "env": {
         "VIS\_REQUEST\_SERVER": "<YOUR\_VIS\_REQUEST\_SERVER>"
       }
@@ -232,10 +222,7 @@ Next, you need to add the `SERVICE_ID` environment variable to the MCP server co
   "mcpServers": {
     "AntV Map": {
       "command": "npx",
-      "args": \[
-        "\-y",
-        "@antv/mcp-server-chart"
-      \],
+      "args": \["\-y", "@antv/mcp-server-chart"\],
       "env": {
         "SERVICE\_ID": "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
       }
@@ -253,10 +240,7 @@ You can disable specific chart generation tools using the `DISABLED_TOOLS` envir
   "mcpServers": {
     "mcp-server-chart": {
       "command": "npx",
-      "args": \[
-        "\-y",
-        "@antv/mcp-server-chart"
-      \],
+      "args": \["\-y", "@antv/mcp-server-chart"\],
       "env": {
         "DISABLED\_TOOLS": "generate\_fishbone\_diagram,generate\_mind\_map"
       }

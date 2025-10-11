@@ -1,6 +1,6 @@
 ---
 project: Scoop
-stars: 22943
+stars: 22974
 description: A command-line installer for Windows.
 url: https://github.com/ScoopInstaller/Scoop
 ---

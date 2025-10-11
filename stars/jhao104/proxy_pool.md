@@ -1,6 +1,6 @@
 ---
 project: proxy_pool
-stars: 22839
+stars: 22855
 description: Python ProxyPool for web spider
 url: https://github.com/jhao104/proxy_pool
 ---

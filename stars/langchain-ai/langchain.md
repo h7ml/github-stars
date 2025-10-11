@@ -1,6 +1,6 @@
 ---
 project: langchain
-stars: 116631
+stars: 117025
 description: 🦜🔗 Build context-aware reasoning applications
 url: https://github.com/langchain-ai/langchain
 ---
@@ -9,7 +9,7 @@ The platform for reliable agents.
 
 LangChain is a framework for building LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.
 
-pip install -U langchain
+pip install langchain
 
 * * *
 
@@ -45,8 +45,7 @@ To improve your LLM application development, pair LangChain with:
 Additional resources
 --------------------
 
--   Conceptual Guides: Explanations of key concepts behind the LangChain framework.
--   Tutorials: Simple walkthroughs with guided examples on getting started with LangChain.
+-   Learn: Use cases, conceptual overviews, and more.
 -   API Reference: Detailed reference on navigating base packages and integrations for LangChain.
 -   LangChain Forum: Connect with the community and share all of your technical questions, ideas, and feedback.
 -   Chat LangChain: Ask questions & chat with our documentation.

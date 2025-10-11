@@ -1,6 +1,6 @@
 ---
 project: vite-vs-next-turbo-hmr
-stars: 929
+stars: 930
 description: Benchmarking Vite vs. Next + turbopack HMR performance
 url: https://github.com/yyx990803/vite-vs-next-turbo-hmr
 ---

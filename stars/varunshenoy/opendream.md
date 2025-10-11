@@ -1,6 +1,6 @@
 ---
 project: opendream
-stars: 1672
+stars: 1673
 description: An extensible, easy-to-use, and portable diffusion web UI 👨‍🎨
 url: https://github.com/varunshenoy/opendream
 ---

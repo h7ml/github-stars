@@ -1,6 +1,6 @@
 ---
 project: amis-widget
-stars: 105
+stars: 106
 description: amis组件注册器（支持react、vue2.0、vue3.0和jQuery技术栈），主要用于注册amis渲染器、amis-editor插件。
 url: https://github.com/aisuda/amis-widget
 ---

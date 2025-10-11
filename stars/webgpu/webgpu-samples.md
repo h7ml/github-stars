@@ -1,6 +1,6 @@
 ---
 project: webgpu-samples
-stars: 2009
+stars: 2017
 description: WebGPU Samples
 url: https://github.com/webgpu/webgpu-samples
 ---

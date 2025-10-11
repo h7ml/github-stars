@@ -1,6 +1,6 @@
 ---
 project: yjs-demos
-stars: 901
+stars: 903
 description: A collection of demos for Yjs
 url: https://github.com/yjs/yjs-demos
 ---

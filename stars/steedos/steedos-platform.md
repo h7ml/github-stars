@@ -1,6 +1,6 @@
 ---
 project: steedos-platform
-stars: 1513
+stars: 1517
 description: Steedos is an open-source alternative to Salesforce Enterprise Low-Code Platform. 🤖 🎨 🚀 
 url: https://github.com/steedos/steedos-platform
 ---

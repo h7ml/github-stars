@@ -1,6 +1,6 @@
 ---
 project: playwright-vscode
-stars: 414
+stars: 417
 description: Playwright Test Visual Studio Code integration
 url: https://github.com/microsoft/playwright-vscode
 ---

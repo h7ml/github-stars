@@ -1,6 +1,6 @@
 ---
 project: kirara-ai
-stars: 16609
+stars: 16744
 description: 🤖 可 DIY 的 多模态 AI 聊天机器人 | 🚀 快速接入 微信、 QQ、Telegram、等聊天平台 | 🦈支持DeepSeek、Grok、Claude、Ollama、Gemini、OpenAI | 工作流系统、网页搜索、AI画图、人设调教、虚拟女仆、语音对话 | 
 url: https://github.com/lss233/kirara-ai
 ---

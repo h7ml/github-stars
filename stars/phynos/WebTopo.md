@@ -5,11 +5,15 @@ description: 基于VUE的web组态（组态，拓扑图，拓扑编辑器）
 url: https://github.com/phynos/WebTopo
 ---
 
+特别说明-2025-10-11
+---------------
+
+该项目已经不再维护，且项目开发时间较早，这么多年已经有了很多更优秀的类似项目，请自行搜索选择
+
 WEB组态
 -----
 
 基于vue+quasar的web组态，核心代码基于vue，quasar仅仅是为了方便构建  
-预览地址：http://42.192.126.212/WebTopo/dist/spa/  
 github预览地址：https://phynos.github.io/WebTopo/dist/spa
 
 更新日志

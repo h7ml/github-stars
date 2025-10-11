@@ -1,6 +1,6 @@
 ---
 project: CampusShame
-stars: 3371
+stars: 3373
 description: 互联网仍有记忆！那些曾经在校招过程中毁过口头offer、意向书、三方的公司！纵然人微言轻，也想尽绵薄之力！
 url: https://github.com/forthespada/CampusShame
 ---

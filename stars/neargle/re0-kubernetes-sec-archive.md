@@ -1,7 +1,7 @@
 ---
 project: re0-kubernetes-sec-archive
-stars: 3109
-description: :atom: [WIP] 整理过去的分享，从零开始的Kubernetes攻防 🧐
+stars: 3108
+description: :atom: [WIP] 整理过去我和K8s、容器、虚拟化相关的分享 🧐
 url: https://github.com/neargle/re0-kubernetes-sec-archive
 ---
 

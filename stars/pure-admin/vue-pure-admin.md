@@ -1,6 +1,6 @@
 ---
 project: vue-pure-admin
-stars: 18969
+stars: 19003
 description: 全面ESM+Vue3+Vite+Element-Plus+TypeScript编写的一款后台管理系统（兼容移动端）
 url: https://github.com/pure-admin/vue-pure-admin
 ---

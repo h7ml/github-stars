@@ -1,6 +1,6 @@
 ---
 project: lazy-js-utils
-stars: 77
+stars: 78
 description: 工具函数库 | Tool library
 url: https://github.com/Simon-He95/lazy-js-utils
 ---

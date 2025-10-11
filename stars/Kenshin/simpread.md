@@ -1,6 +1,6 @@
 ---
 project: simpread
-stars: 8490
+stars: 8494
 description: 简悦 ( SimpRead ) - 让你瞬间进入沉浸式阅读的扩展
 url: https://github.com/Kenshin/simpread
 ---

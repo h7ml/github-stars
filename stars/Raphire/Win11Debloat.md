@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 27115
+stars: 28019
 description: A simple, lightweight PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---
@@ -126,6 +126,7 @@ All of the changes made by Win11Debloat can easily be reverted and almost all of
 
 -   Align taskbar icons to the left. (W11 only)
 -   Choose combine mode for taskbar buttons and labels. (W11 only)
+-   Choose how app icons are shown on the taskbar when using multiple monitors. (W11 only)
 -   Hide or change the search icon/box on the taskbar. (W11 only)
 -   Hide the taskview button from the taskbar. (W11 only)
 -   Disable widgets on the taskbar & lockscreen.
@@ -205,9 +206,11 @@ Click to expand
 > - Microsoft.Office.OneNote (Digital note-taking app, Universal Windows Platform version)
 > - Microsoft.Office.Sway (Presentation and storytelling app)
 > - Microsoft.OneConnect (Mobile Operator management app, replaced by Mobile Plans)
+> - Microsoft.PowerAutomateDesktop (Desktop automation tool)
 > - Microsoft.Print3D (3D printing preparation software)
 > - Microsoft.SkypeApp (Skype communication app, Universal Windows Platform version)
 > - Microsoft.Todos (To-do list and task management app)
+> - Microsoft.Windows.DevHome (Developer dashboard and tool configuration utility, no longer supported)
 > - Microsoft.WindowsAlarms (Alarms & Clock app)
 > - Microsoft.WindowsFeedbackHub (App for providing feedback to Microsoft on Windows)
 > - Microsoft.WindowsMaps (Mapping and navigation app)
@@ -285,6 +288,7 @@ Click to expand
 > - Microsoft.OneDrive (OneDrive consumer)
 > - Microsoft.Paint (Classic Paint)
 > - Microsoft.People (Required for & included with Mail & Calendar)
+> - Microsoft.RemoteDesktop
 > - Microsoft.ScreenSketch (Snipping Tool)
 > - Microsoft.Whiteboard (Only preinstalled on devices with touchscreen and/or pen support)
 > - Microsoft.Windows.Photos
@@ -305,11 +309,6 @@ Click to expand
 > - Microsoft.XboxGamingOverlay (Game overlay, required for some games)
 > - Microsoft.XboxIdentityProvider (Xbox sign-in framework, required for some games)
 > - Microsoft.XboxSpeechToTextOverlay (Might be required for some games, NOTE: This app cannot be reinstalled!)
-> 
-> Developer related apps:
-> - Microsoft.PowerAutomateDesktop
-> - Microsoft.RemoteDesktop
-> - Windows.DevHome
 > 
 > HP apps:
 > - AD2F1837.HPAIExperienceCenter

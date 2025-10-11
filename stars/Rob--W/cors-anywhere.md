@@ -1,6 +1,6 @@
 ---
 project: cors-anywhere
-stars: 9257
+stars: 9266
 description: CORS Anywhere is a NodeJS reverse proxy which adds CORS headers to the proxied request.
 url: https://github.com/Rob--W/cors-anywhere
 ---

@@ -1,6 +1,6 @@
 ---
 project: FeHelper
-stars: 5442
+stars: 5454
 description: 😍FeHelper--Web前端助手（Awesome！Chrome & Firefox & MS-Edge Extension, All in one Toolbox!）
 url: https://github.com/zxlie/FeHelper
 ---

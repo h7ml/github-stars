@@ -1,6 +1,6 @@
 ---
 project: uptime-kuma
-stars: 75640
+stars: 75886
 description: A fancy self-hosted monitoring tool
 url: https://github.com/louislam/uptime-kuma
 ---
@@ -89,7 +89,7 @@ More useful PM2 Commands
 pm2 monit
 
 # If you want to add it to startup
-pm2 save && pm2 startup
+pm2 startup && pm2 save
 
 ### Advanced Installation
 

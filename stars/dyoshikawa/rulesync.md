@@ -1,6 +1,6 @@
 ---
 project: rulesync
-stars: 332
+stars: 342
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---
@@ -71,21 +71,27 @@ AGENTS.md
 
 ✅
 
+🎮
+
+🎮
+
 Claude Code
 
 ✅ 🌏
 
 ✅
 
-✅
+✅ 🌏
 
 ✅ 🌏
 
-✅
+✅ 🌏
 
 Codex CLI
 
 ✅ 🌏
+
+🌏
 
 🌏
 
@@ -425,7 +431,7 @@ Currently, supports rules and commands generation for Claude Code. Import for gl
     npx rulesync generate
     
 
-Warning
+Note
 
 Currently, when in the directory enabled global mode:
 
@@ -457,14 +463,23 @@ Simulated commands and subagents are experimental features that allow you to gen
         Call your-subagent to achieve something.
         
 
-License
--------
-
-MIT License
-
 Contributing
 ------------
 
 Issues and Pull Requests are welcome!
 
-For development setup and contribution guidelines, see CONTRIBUTING.md.
+For development setup:
+
+git clone https://github.com/dyoshikawa/rulesync # Should be your fork repository url actually
+cd rulesync
+pnpm i
+pnpm cicheck # Run code style check, type check, and tests
+
+# Manual test using current code
+pnpm dev generate -t claudecode -f "\*"
+pnpm dev import -t claudecode -f "\*"
+
+License
+-------
+
+MIT License

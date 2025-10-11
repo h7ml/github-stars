@@ -1,6 +1,6 @@
 ---
 project: hertzbeat
-stars: 6689
+stars: 6704
 description: Real-time observability system with agentless, performance cluster, prometheus-compatible, custom monitoring and status page building capabilities.
 url: https://github.com/apache/hertzbeat
 ---

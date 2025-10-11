@@ -1,6 +1,6 @@
 ---
 project: naive-ui
-stars: 17728
+stars: 17743
 description: A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.
 url: https://github.com/tusen-ai/naive-ui
 ---
@@ -64,7 +64,7 @@ What's more, you don't need to import any CSS to use the components.
 
 ### Fast
 
-I try to make it not rather slow. At least select, tree, transfer, table and cascader work with virtual list.
+I try to make it not rather slow. All data components works with virtual list by default.
 
 What's more, ..., no more. Just enjoy it.
 

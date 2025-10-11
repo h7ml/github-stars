@@ -1,6 +1,6 @@
 ---
 project: CoDeF
-stars: 4871
+stars: 4869
 description: [CVPR'24 Highlight] Official PyTorch implementation of CoDeF: Content Deformation Fields for Temporally Consistent Video Processing
 url: https://github.com/ant-research/CoDeF
 ---

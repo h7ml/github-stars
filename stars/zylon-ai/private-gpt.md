@@ -1,6 +1,6 @@
 ---
 project: private-gpt
-stars: 56606
+stars: 56630
 description: Interact with your documents using the power of GPT, 100% privately, no data leaks
 url: https://github.com/zylon-ai/private-gpt
 ---

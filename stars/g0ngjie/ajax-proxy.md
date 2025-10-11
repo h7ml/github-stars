@@ -1,6 +1,6 @@
 ---
 project: ajax-proxy
-stars: 109
+stars: 108
 description: :bulb: Browser extension for Chromium kernel. For modifying your Ajax responses
 url: https://github.com/g0ngjie/ajax-proxy
 ---

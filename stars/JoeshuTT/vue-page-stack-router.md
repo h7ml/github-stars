@@ -1,6 +1,6 @@
 ---
 project: vue-page-stack-router
-stars: 26
+stars: 27
 description: 一个 Vue.js 的页面栈路由管理器
 url: https://github.com/JoeshuTT/vue-page-stack-router
 ---

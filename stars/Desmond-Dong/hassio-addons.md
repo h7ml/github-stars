@@ -1,6 +1,6 @@
 ---
 project: hassio-addons
-stars: 27
+stars: 28
 description: This repo is intended for use only in mainland China. If you are outside the mainland, please use the links from the original authors below.
 url: https://github.com/Desmond-Dong/hassio-addons
 ---
@@ -107,6 +107,9 @@ https://ghfast.top
 -   🏠 **Hikvision Addons**: Hikvision 的加载项
 -   🛠️ **Ollama Addons**: Ollama 的加载项
 -   🏠 **iHost Open Source Addons**: iHost 开源项目的加载项
+-   🛠️ **Limych Addons**: Limych 的加载项
+-   🤖 **Motion AI Addons**: Motion AI 的加载项
+-   🛠️ **Dcmartin Addons**: Dcmartin 的加载项
 
 🌐 翻译技术说明
 ---------

@@ -1,6 +1,6 @@
 ---
 project: Fair
-stars: 2721
+stars: 2723
 description: A Flutter package used to update widget tree dynamically. Fair提供一整套Flutter动态化解决方案
 url: https://github.com/wuba/Fair
 ---

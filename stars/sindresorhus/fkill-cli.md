@@ -1,6 +1,6 @@
 ---
 project: fkill-cli
-stars: 6935
+stars: 6937
 description: Fabulously kill processes. Cross-platform.
 url: https://github.com/sindresorhus/fkill-cli
 ---

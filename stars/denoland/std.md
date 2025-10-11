@@ -1,6 +1,6 @@
 ---
 project: std
-stars: 3468
+stars: 3472
 description: The Deno Standard Library
 url: https://github.com/denoland/std
 ---

@@ -1,6 +1,6 @@
 ---
 project: modular
-stars: 24922
+stars: 24974
 description: The Modular Platform (includes MAX & Mojo)
 url: https://github.com/modular/modular
 ---

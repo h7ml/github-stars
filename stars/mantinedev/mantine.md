@@ -1,9 +1,16 @@
 ---
 project: mantine
-stars: 29790
+stars: 29835
 description: A fully featured React components library
 url: https://github.com/mantinedev/mantine
 ---
+
+Special thanks to:  
+  
+Warp, built for coding with multiple AI agents  
+Available for macOS, Linux and Windows
+
+  
 
 Mantine
 =======

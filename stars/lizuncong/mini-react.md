@@ -1,6 +1,6 @@
 ---
 project: mini-react
-stars: 639
+stars: 644
 description: 手写react、react-dom、react reconciler主流程源码，加深对react源码的理解。包括fiber，合成事件，hooks实现原理，dom diff，reconciliation，scheduler等
 url: https://github.com/lizuncong/mini-react
 ---

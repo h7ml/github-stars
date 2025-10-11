@@ -1,6 +1,6 @@
 ---
 project: nixpkgs
-stars: 21947
+stars: 22031
 description: Nix Packages collection & NixOS
 url: https://github.com/NixOS/nixpkgs
 ---
@@ -50,7 +50,7 @@ Artifacts successfully built with Hydra are published to cache at https://cache.
 Contributing
 ============
 
-Nixpkgs is among the most active projects on GitHub. While thousands of open issues and pull requests might seem a lot at first, it helps consider it in the context of the scope of the project. Nixpkgs describes how to build tens of thousands of pieces of software and implements a Linux distribution. The GitHub Insights page gives a sense of the project activity.
+Nixpkgs is among the most active projects on GitHub. While thousands of open issues and pull requests might seem like a lot at first, it helps to consider it in the context of the scope of the project. Nixpkgs describes how to build tens of thousands of pieces of software and implements a Linux distribution. The GitHub Insights page gives a sense of the project activity.
 
 Community contributions are always welcome through GitHub Issues and Pull Requests.
 

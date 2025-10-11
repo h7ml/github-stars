@@ -1,6 +1,6 @@
 ---
 project: SSV2RayTrojanSSRClash
-stars: 2465
+stars: 2468
 description: 科学上网，ss, ssr, v2ray, trojan, clash, clashr，翻墙机场推荐
 url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 ---
@@ -65,6 +65,7 @@ url: https://github.com/OverTheWallNode/SSV2RayTrojanSSRClash
 -   **超值活动**：国庆特惠：
     -   全场8折优惠码：（优惠码：`fastlink80`）。
     -   商店里的年付已经有8折优惠，配合本次国庆优惠码后，最低可至64折
+    -   活动截止日期：即日起至2025年10月20号23点59分
 -   👉 官网地址
 
 ### 5）SpeedCat

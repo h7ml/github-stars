@@ -1,6 +1,6 @@
 ---
 project: qd-templates
-stars: 636
+stars: 638
 description: 基于开源新版签到框架站发布的公共har模板库，整理自用 qiandao 框架可用的各种网站和App的 Har 模板，仅供学习参考。
 url: https://github.com/wjf0214/qd-templates
 ---
