@@ -1,6 +1,6 @@
 ---
 project: wechat_kit
-stars: 763
+stars: 764
 description: Flutter 版微信登录/分享/支付 SDK
 url: https://github.com/RxReader/wechat_kit
 ---

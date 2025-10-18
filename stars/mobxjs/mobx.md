@@ -1,6 +1,6 @@
 ---
 project: mobx
-stars: 28064
+stars: 28071
 description: Simple, scalable state management.
 url: https://github.com/mobxjs/mobx
 ---

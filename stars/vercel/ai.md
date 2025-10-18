@@ -1,6 +1,6 @@
 ---
 project: ai
-stars: 18387
+stars: 18587
 description: The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents 
 url: https://github.com/vercel/ai
 ---
@@ -67,9 +67,9 @@ const { object } \= await generateObject({
 
 ### Agents
 
-import { Agent } from 'ai';
+import { ToolLoopAgent } from 'ai';
 
-const sandboxAgent \= new Agent({
+const sandboxAgent \= new ToolLoopAgent({
   model: 'openai/gpt-5-codex',
   system: 'You are an agent with access to a shell environment.',
   tools: {
@@ -95,9 +95,9 @@ npm install @ai-sdk/react
 #### Agent @/agent/image-generation-agent.ts
 
 import { openai } from '@ai-sdk/openai';
-import { Agent, InferAgentUIMessage } from 'ai';
+import { ToolLoopAgent, InferAgentUIMessage } from 'ai';
 
-export const imageGenerationAgent \= new Agent({
+export const imageGenerationAgent \= new ToolLoopAgent({
   model: openai('gpt-5'),
   tools: {
     image\_generation: openai.tools.imageGeneration({
@@ -113,13 +113,14 @@ export type ImageGenerationAgentMessage \= InferAgentUIMessage<
 #### Route (Next.js App Router) @/app/api/chat/route.ts
 
 import { imageGenerationAgent } from '@/agent/image-generation-agent';
-import { validateUIMessages } from 'ai';
+import { createAgentUIStreamResponse } from 'ai';
 
 export async function POST(req: Request) {
   const { messages } \= await req.json();
 
-  return imageGenerationAgent.respond({
-    messages: await validateUIMessages({ messages }),
+  return createAgentUIStreamResponse({
+    agent: imageGenerationAgent,
+    messages,
   });
 }
 

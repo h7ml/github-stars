@@ -1,6 +1,6 @@
 ---
 project: FE-Interview-Questions
-stars: 2233
+stars: 2232
 description: 关注公众号「前端进阶之旅」，一起学习。前端面试常考问题整理，按模块知识点分类 Front-end-Developer-Questions by Modules and knowledge 
 url: https://github.com/poetries/FE-Interview-Questions
 ---

@@ -1,6 +1,6 @@
 ---
 project: redux-saga
-stars: 22509
+stars: 22511
 description: An alternative side effect model for Redux apps
 url: https://github.com/redux-saga/redux-saga
 ---

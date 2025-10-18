@@ -1,6 +1,6 @@
 ---
 project: tampermonkey-scripts
-stars: 199
+stars: 201
 description: 油猴插件库（记录茂茂开发的油猴插件）包含移除重定向、杀死水印、Civitai 小助手、GitHub 小助手、复制磁力链接、115 小助手、慕课网小助手等
 url: https://github.com/maomao1996/tampermonkey-scripts
 ---
@@ -75,7 +75,9 @@ GitHub
 
 115 网盘体验增强（还原顶部菜单栏链接任务入口、一键搜索、SHA1 快速查重/自动查重、删除空文件夹、列表显示文件 SHA1 信息）
 
-GreasyFork
+GreasyFork  
+GitHub  
+pages.dev
 
 慕课网小助手
 

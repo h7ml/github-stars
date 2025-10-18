@@ -1,6 +1,6 @@
 ---
 project: todomvc
-stars: 28849
+stars: 28853
 description: Helping you select a JavaScript framework - Todo apps for React.js, Angular, Vue and many more
 url: https://github.com/tastejs/todomvc
 ---

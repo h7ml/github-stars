@@ -1,6 +1,6 @@
 ---
 project: ofetch
-stars: 4894
+stars: 4908
 description: 😱 A better fetch API. Works on node, browser and workers.
 url: https://github.com/unjs/ofetch
 ---
@@ -327,12 +327,12 @@ const data \= await ofetch("https://icanhazip.com");
 
 **Example:** Allow self-signed certificates (USE AT YOUR OWN RISK!)
 
-import { ProxyAgent } from "undici";
+import { Agent } from "undici";
 import { ofetch } from "ofetch";
 
 // Note: This makes fetch unsecure against MITM attacks. USE AT YOUR OWN RISK!
-const unsecureProxyAgent \= new ProxyAgent({ requestTls: { rejectUnauthorized: false } });
-const unsecureFetch \= ofetch.create({ dispatcher: unsecureProxyAgent });
+const unsecureAgent \= new Agent({ connect: { rejectUnauthorized: false } });
+const unsecureFetch \= ofetch.create({ dispatcher: unsecureAgent });
 
 const data \= await unsecureFetch("https://www.squid-cache.org/");
 

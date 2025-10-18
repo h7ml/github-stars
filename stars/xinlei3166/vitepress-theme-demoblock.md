@@ -1,6 +1,6 @@
 ---
 project: vitepress-theme-demoblock
-stars: 228
+stars: 229
 description: 一个基于 Vitepress 的主题插件，它可以帮助你在编写文档的时候增加 Vue 示例。
 url: https://github.com/xinlei3166/vitepress-theme-demoblock
 ---

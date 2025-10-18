@@ -1,6 +1,6 @@
 ---
 project: gods-pen
-stars: 4473
+stars: 4474
 description: 基于vue的高扩展在线网页制作平台，可自定义组件，可添加脚本，可数据统计。A mobile page builder/editor, similar with amolink. 
 url: https://github.com/ymm-tech/gods-pen
 ---

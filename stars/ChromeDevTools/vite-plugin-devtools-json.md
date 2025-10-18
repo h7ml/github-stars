@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-devtools-json
-stars: 316
+stars: 322
 description: Vite plugin for generating `com.chrome.devtools.json` on the fly in the devserver.
 url: https://github.com/ChromeDevTools/vite-plugin-devtools-json
 ---

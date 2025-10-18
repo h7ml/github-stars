@@ -1,6 +1,6 @@
 ---
 project: aggregator
-stars: 5429
+stars: 5481
 description: One-stop Proxies Crawling and Aggregation Platform
 url: https://github.com/wzdnzd/aggregator
 ---

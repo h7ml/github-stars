@@ -1,6 +1,6 @@
 ---
 project: openapi-ts-request
-stars: 434
+stars: 438
 description: Swagger2/OpenAPI3/Apifox to TS/JS, request client, mock service, enum, react-query, type field label, JSON Schemas;  根据 Swagger2/OpenAPI3/Apifox 生成 TypeScript/JavaScript, 客户端请求函数(支持任意客户端), 模拟请求响应服务, 枚举和枚举翻译, react-query, 类型的字段翻译, JSON Schemas定义, 欢迎提功能请求
 url: https://github.com/openapi-ui/openapi-ts-request
 ---
@@ -53,8 +53,6 @@ pnpm i openapi-ts-request -D
 import type { GenerateServiceProps } from 'openapi-ts-request';
 
 export default {
-  // schemaPath: './openapi.json', // 本地openapi文件
-  // serversPath: './src/apis', // 接口存放路径
   schemaPath: 'http://petstore.swagger.io/v2/swagger.json',
 } as GenerateServiceProps;
 
@@ -178,7 +176,7 @@ $ openapi --help
     -f, --full <boolean>                full replacement (default: true)
     --enableLogging <boolean>           open the log (default: false)
     --priorityRule <string>             priority rule, include/exclude/both (default: "include")
-    --filterCaseInsensitive <boolean>   whether to perform a case-insensitive match with includeTags, includePaths, excludeTags, excludePaths filters
+    --filterCaseInsensitive <boolean>   whether to perform a case-insensitive match with includeTags, includePaths, excludeTags, excludePaths filters (default: false)
     --includeTags <(string|RegExp)[]>   generate code from include tags
     --includePaths <(string|RegExp)[]>  generate code from include paths
     --excludeTags <(string|RegExp)[]>   generate code from exclude tags
@@ -487,6 +485,16 @@ boolean
 false
 
 解析枚举描述生成枚举标签，格式参考：`系统用户角色:User(普通用户)=0,Agent(经纪人)=1,Admin(管理员)=2`
+
+binaryMediaTypes
+
+否
+
+string\[\]
+
+\-
+
+自定义二进制媒体类型列表，默认包含：\['application/octet-stream', 'application/pdf', 'image/_', 'video/_', 'audio/\*'\]
 
 hook
 

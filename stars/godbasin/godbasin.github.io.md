@@ -1,6 +1,6 @@
 ---
 project: godbasin.github.io
-stars: 2173
+stars: 2174
 description: 被删前端博客--喜欢请star
 url: https://github.com/godbasin/godbasin.github.io
 ---

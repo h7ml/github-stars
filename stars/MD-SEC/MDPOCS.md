@@ -1,6 +1,6 @@
 ---
 project: MDPOCS
-stars: 588
+stars: 590
 description: 猫蛋儿安全团队编写的poc能报就能打。企业微信、海康、Metabase、Openfire、泛微OA......
 url: https://github.com/MD-SEC/MDPOCS
 ---

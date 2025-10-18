@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 113656
+stars: 113859
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -1401,9 +1401,9 @@ Web Hosting
 -   Freehostia — FreeHostia offers free hosting services incl. an industry-best Control Panel & a 1-click installation of 50+ free apps. Instant setup. No forced ads.
 -   HelioHost — Non-profit free web hosting with Plesk control panel, PHP, Node.js, Python, Django, Flask, .NET, Perl, CGI, MySQL, PostgreSQL, SQLite, IMAP/POP3/SMTP email, unlimited bandwidth, free subdomains, 1000 MB storage for free with the option to upgrade.
 -   Kinsta Static Site Hosting — Deploy up to 100 static sites for free, custom domains with SSL, 100 GB monthly bandwidth, 260+ Cloudflare CDN locations.
--   Lecturify - Web hosting with SFPT access for file upload and download, php available.
+-   Lecturify - Web hosting with SFTP access for file upload and download, php available.
 -   Neocities — Static, 1 GB free storage with 200 GB Bandwidth.
--   Netlify — Builds, deploys and hosts static site/app free for 100 GB data and 100 GB/month bandwidth.
+-   Netlify — Builds, deploys and hosts static site/app free for 300 credits/month (equals 30 GB bandwidth).
 -   PandaStack — An eco-system for developers includes web hosting in different formats (static web hosting, container based web hosting, wordpress and so many other managed apps available in couple of clicks ). One free web hosting (static or containered) and one free database with 100GB Bandwidth and 300 Build mins/month.
 -   pantheon.io — Drupal and WordPress hosting, automated DevOps, and scalable infrastructure. Free for developers and agencies. No custom domain.
 -   readthedocs.org — Free documentation hosting with versioning, PDF generation, and more
@@ -1562,7 +1562,6 @@ Issue Tracking and Project Management
 -   GForge — Project Management and issue Tracking toolset for complex projects with self-premises and SaaS options. SaaS free plan offers the first five users free & free for Open Source Projects.
 -   gleek.io — Free description-to-diagrams tool for developers. Create informal UML class, object, or entity-relationship diagrams using your keyword.
 -   GraphQL Inspector - GraphQL Inspector outputs a list of changes between two GraphQL schemas. Every difference is precisely explained and marked as breaking, non-breaking, or dangerous.
--   huboard.com — Instant project management for your GitHub issues, free for Open Source
 -   Hygger — Project management platform. The free plan offers unlimited users, projects & boards with 100 MB of Storage.
 -   Instabug — A comprehensive bug reporting and in-app feedback SDK for mobile apps. Free plan up to 1 app and one member.
 -   WishKit — Collect in-app user feedback for your iOS/macOS app and prioritize features based on user votes. Free plan up to 1 app.
@@ -1980,7 +1979,6 @@ Payment and Billing Integration
 
 -   Qonversion - All-in-one cross-platform subscription management platform offering analytics, A/B testing, Apple Search Ads, remote configs, and growth tools for optimizing in-app purchases and monetization. Compatible with iOS, Android, React Native, Flutter, Unity, Cordova, Stripe, and web. Free up to $10k in monthly tracked revenue.
 -   ParityVend – Automatically adjust pricing based on visitor location to expand your business globally and reach new markets (purchasing power parity). The free plan includes 7,500 API requests/month.
--   Glassfy – In-app subscriptions infrastructure, real-time subscription events and out-of-the-box monetization tools on iOS, Android, Stripe and Paddle. Free up to $10k monthly revenue.
 -   Adapty.io – One-stop solution with open-source SDK for mobile in-app subscription integration to iOS, Android, React Native, Flutter, Unity, or web app. Free up to $10k monthly revenue.
 -   CoinMarketCap — Provides cryptocurrency market data including the latest crypto and fiat currency exchange rates. The free tier offers 10K call credits/month.
 -   CurrencyFreaks — Provides current and historical currency exchange rates. Free DEVELOPER plan available with 1000 requests/month.

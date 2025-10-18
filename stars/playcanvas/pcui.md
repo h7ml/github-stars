@@ -1,6 +1,6 @@
 ---
 project: pcui
-stars: 722
+stars: 723
 description: UI component library for web-based tools
 url: https://github.com/playcanvas/pcui
 ---

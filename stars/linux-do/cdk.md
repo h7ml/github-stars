@@ -1,6 +1,6 @@
 ---
 project: cdk
-stars: 588
+stars: 589
 description: LINUX DO CD key
 url: https://github.com/linux-do/cdk
 ---

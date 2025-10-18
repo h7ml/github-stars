@@ -1,6 +1,6 @@
 ---
 project: jessibuca
-stars: 2624
+stars: 2626
 description: Jessibuca是一款开源的纯H5直播流播放器
 url: https://github.com/langhuihui/jessibuca
 ---
@@ -109,6 +109,7 @@ PRO版本
 -   播放过程中超时，重新加载的时候，显示最后一帧画面
 -   pause() 到 play()的时候，显示暂停的时候的最后一帧画面
 -   支持分析视频流(flv,hls-ts,hls-mp4,TS,fmp4，裸流，webrtc)里面SEI数据，并提取出来，通过事件回调给业务层使用
+-   支持配置webrtc弱网络模式，提升弱网环境下的播放体验，优化播放卡顿，支持检测低fps情况触发重播逻辑，保证业务播放体验
 -   支持监听播放器是否在可视区域，获取焦点，失去焦点事件。
 -   支持播放异常暂停的时候显示错误提示信息
 -   支持播放异常暂停的时候显示play按钮
@@ -159,10 +160,10 @@ PRO版本
 -   支持mpeg4编码格式
 -   支持webcodecs硬解码(H264+H265)和MSE硬解码(H264+H265)
 -   支持HLS(H264+H265)软解码、硬解码
--   支持`m7s` webrtc(H264+H265(软解码、硬解码))，
--   支持`zlmediakit` webrtc(H264)
--   支持`srs` webrtc(H264)
--   支持`others` webrtc(H264)
+-   支持`m7s` webrtc(H264+H265(datachannel 软解码、硬解码))，
+-   支持`zlmediakit` webrtc(H264+H265)(H265需要浏览器底层支持)
+-   支持`srs` webrtc(H264+H265)(H265需要浏览器底层支持)
+-   支持`others` webrtc(H264+H265)(H265需要浏览器底层支持)
 -   支持加密流(国标SM4、XOR加密、m7s加密流)
 -   支持裸流(H264+H265)
 -   支持Fmp4格式(H264+H265)

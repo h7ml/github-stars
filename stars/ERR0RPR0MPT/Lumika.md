@@ -1,6 +1,6 @@
 ---
 project: Lumika
-stars: 58
+stars: 59
 description: 将任意文件/数据转换为视频形式的编解码转换工具, 提供 RESTful API 和 Web 前端页面
 url: https://github.com/ERR0RPR0MPT/Lumika
 ---

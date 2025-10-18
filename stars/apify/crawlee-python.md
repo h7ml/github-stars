@@ -1,6 +1,6 @@
 ---
 project: crawlee-python
-stars: 6829
+stars: 6934
 description: Crawlee—A web scraping and browser automation library for Python to build reliable crawlers. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with BeautifulSoup, Playwright, and raw HTTP. Both headful and headless mode. With proxy rotation.
 url: https://github.com/apify/crawlee-python
 ---

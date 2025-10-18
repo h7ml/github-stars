@@ -1,6 +1,6 @@
 ---
 project: lamda
-stars: 7303
+stars: 7321
 description:  The most powerful Android RPA agent framework, next generation of mobile automation robots.
 url: https://github.com/firerpa/lamda
 ---
@@ -17,7 +17,7 @@ Most powerful Android automation framework built for the mobile-first era.
 
 面向移动优先时代的强大 Android 自动化框架。
 
-As traditional web platforms decline and smart devices rise, automation and data technologies must quickly adapt to a mobile-first world. FIRERPA meets this demand by offering a modern solution for Android automation. It is lightweight, has no external dependencies, and runs on any version of Android. It features low-latency remote desktop and audio streaming (<80ms), over 160 programmable control interfaces, exceptional stability, distributed deployment support, and easy monitoring and management. 随着传统网页的式微与智能设备的崛起，自动化与数据技术迫切需要适应移动化转型。FIRERPA 顺应这一趋势，为 Android 自动化带来现代化解决方案。轻量，无任何外部依赖，可运行于任何版本的安卓系统。低延迟的远程桌面及远程音频传输（< 80ms）。160+ 编程控制接口，极致稳定，支持分布式部署，易监控管理。
+As traditional web platforms decline and smart devices rise, automation and data technologies must quickly adapt to a mobile-first world. FIRERPA meets this demand by offering a modern solution for Android automation. It is lightweight, fully on-device service with no external dependencies, and runs on any version of Android. It features low-latency remote desktop and audio streaming (<80ms), over 160 programmable control interfaces, exceptional stability, distributed deployment support, and easy monitoring and management. 随着传统网页的式微与智能设备的崛起，自动化与数据技术迫切需要适应移动化转型。FIRERPA 顺应这一趋势，为 Android 自动化带来现代化解决方案。轻量，纯设备端服务，无任何外部依赖，可运行于任何版本的安卓系统。低延迟的远程桌面及远程音频传输（< 80ms）。160+ 编程控制接口，极致稳定，支持分布式部署，易监控管理。
 
 ### 
 

@@ -1,6 +1,6 @@
 ---
 project: unstorage
-stars: 2378
+stars: 2393
 description:  💾 Unstorage provides an async Key-Value storage API with conventional features like multi driver mounting, watching and working with metadata, dozens of built-in drivers and a tiny core.
 url: https://github.com/unjs/unstorage
 ---

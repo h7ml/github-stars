@@ -1,6 +1,6 @@
 ---
 project: vue-macros
-stars: 1948
+stars: 1949
 description: Explore and extend more macros and syntax sugar to Vue.
 url: https://github.com/vue-macros/vue-macros
 ---

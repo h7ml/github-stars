@@ -1,6 +1,6 @@
 ---
 project: grpc
-stars: 43776
+stars: 43806
 description: C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
 url: https://github.com/grpc/grpc
 ---

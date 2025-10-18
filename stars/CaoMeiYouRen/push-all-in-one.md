@@ -1,6 +1,6 @@
 ---
 project: push-all-in-one
-stars: 174
+stars: 175
 description: Push All In One！支持 Server 酱(以及 Server 酱³)、自定义邮件、钉钉机器人、企业微信机器人、企业微信应用、飞书、pushplus、WxPusher、iGot 、Qmsg、息知、PushDeer、Discord、OneBot、Telegram、ntfy 等多种推送方式。
 url: https://github.com/CaoMeiYouRen/push-all-in-one
 ---

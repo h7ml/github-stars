@@ -1,6 +1,6 @@
 ---
 project: md
-stars: 10759
+stars: 10816
 description: ✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 语法、自定义主题样式、内容管理、多图床、AI 助手等特性
 url: https://github.com/doocs/md
 ---
@@ -187,14 +187,13 @@ pnpm i
 
 # 启动开发模式
 pnpm web dev
+# 访问 http://localhost:5173/md/
 
 # 部署在 /md 目录
 pnpm web build
-# 访问 http://127.0.0.1:9000/md
 
 # 部署在根目录
 pnpm web build:h5-netlify
-# 访问 http://127.0.0.1:9000/
 
 # Chrome 插件启动及调试
 pnpm web ext:dev
@@ -227,13 +226,13 @@ npm i -g @doocs/md-cli
 md-cli
 
 # 访问
-open http://127.0.0.1:8800/md/
+open http://127.0.0.1:8800
 
 # 启动并指定端口
 md-cli port=8899
 
 # 访问
-open http://127.0.0.1:8899/md/
+open http://127.0.0.1:8899
 
 md-cli 支持以下命令行参数：
 

@@ -1,6 +1,6 @@
 ---
 project: Vue-Layout
-stars: 3268
+stars: 3266
 description: 基于UI组件的Vue可视化布局工具
 url: https://github.com/jaweii/Vue-Layout
 ---

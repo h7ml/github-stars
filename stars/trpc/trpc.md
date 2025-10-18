@@ -1,6 +1,6 @@
 ---
 project: trpc
-stars: 38627
+stars: 38689
 description: 🧙‍♀️  Move Fast and Break Nothing. End-to-end typesafe APIs made easy. 
 url: https://github.com/trpc/trpc
 ---

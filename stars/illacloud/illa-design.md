@@ -1,6 +1,6 @@
 ---
 project: illa-design
-stars: 348
+stars: 349
 description: A fully responsive UI Library for React.
 url: https://github.com/illacloud/illa-design
 ---

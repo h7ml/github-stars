@@ -1,6 +1,6 @@
 ---
 project: fiddle
-stars: 7630
+stars: 7637
 description: :electron: 🚀 The easiest way to get started with Electron
 url: https://github.com/electron/fiddle
 ---

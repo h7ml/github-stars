@@ -1,6 +1,6 @@
 ---
 project: MNBVC
-stars: 3996
+stars: 3999
 description: MNBVC(Massive Never-ending BT Vast Chinese corpus)超大规模中文语料集。对标chatGPT训练的40T数据。MNBVC数据集不但包括主流文化，也包括各个小众文化甚至火星文的数据。MNBVC数据集包括新闻、作文、小说、书籍、杂志、论文、台词、帖子、wiki、古诗、歌词、商品介绍、笑话、糗事、聊天记录等一切形式的纯文本中文数据。
 url: https://github.com/esbatmop/MNBVC
 ---
@@ -19,7 +19,7 @@ MNBVC语料集 不但包括主流文化，也包括各个小众文化甚至火�
 
 ### 进度
 
-目前总数据量59703GB，目标是达到253T数据，目前进度23.5%。
+目前总数据量59762GB，目标是达到253T数据，目前进度23.6%。
 
 ### 数据说明
 

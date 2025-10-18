@@ -1,6 +1,6 @@
 ---
 project: Fido
-stars: 2659
+stars: 2674
 description: A PowerShell script to download Windows or UEFI Shell ISOs
 url: https://github.com/pbatard/Fido
 ---

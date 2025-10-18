@@ -1,6 +1,6 @@
 ---
 project: templates
-stars: 1614
+stars: 1626
 description: Templates for Cloudflare Workers
 url: https://github.com/cloudflare/templates
 ---
@@ -96,10 +96,10 @@ Template tests should be named `{template-name}.spec.ts` and placed in the `play
 import { test, expect } from "./fixtures";
 
 test.describe("My Template", () \=> {
-  test("should render correctly", async ({ page, templateUrl }) \=> {
-    await page.goto(templateUrl);
-    await expect(page.getByRole("heading", { name: "Welcome" })).toBeVisible();
-  });
+	test("should render correctly", async ({ page, templateUrl }) \=> {
+		await page.goto(templateUrl);
+		await expect(page.getByRole("heading", { name: "Welcome" })).toBeVisible();
+	});
 });
 
 The `templateUrl` fixture automatically provides the correct URL (local dev server or live deployment) based on the test mode.

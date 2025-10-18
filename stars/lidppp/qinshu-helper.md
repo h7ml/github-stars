@@ -1,6 +1,6 @@
 ---
 project: qinshu-helper
-stars: 28
+stars: 29
 description: 青书学堂助手
 url: https://github.com/lidppp/qinshu-helper
 ---

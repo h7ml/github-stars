@@ -1,6 +1,6 @@
 ---
 project: fre
-stars: 3747
+stars: 3749
 description: :ghost: Tiny Concurrent UI library with Fiber.
 url: https://github.com/frejs/fre
 ---

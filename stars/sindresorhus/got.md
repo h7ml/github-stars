@@ -1,6 +1,6 @@
 ---
 project: got
-stars: 14746
+stars: 14760
 description: 🌐 Human-friendly and powerful HTTP request library for Node.js
 url: https://github.com/sindresorhus/got
 ---
@@ -121,6 +121,7 @@ By default, Got will retry on failure. To disable this option, set `options.retr
 
 #### Integration
 
+-   Diagnostics Channel
 -   TypeScript support
 -   AWS
 -   Testing

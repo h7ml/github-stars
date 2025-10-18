@@ -1,6 +1,6 @@
 ---
 project: qq
-stars: 2843
+stars: 2845
 description: 8亿QQ绑定数据泄露查询源码，附送数据。不定期更新下载地址 关注越多送的越多
 url: https://github.com/qq8e/qq
 ---

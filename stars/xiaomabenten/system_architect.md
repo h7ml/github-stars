@@ -1,6 +1,6 @@
 ---
 project: system_architect
-stars: 3413
+stars: 3438
 description: 💯2025年 系统架构设计师（软考高级）备考资源库+配套免费刷题软件。
 url: https://github.com/xiaomabenten/system_architect
 ---

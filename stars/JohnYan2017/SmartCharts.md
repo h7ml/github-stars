@@ -1,6 +1,6 @@
 ---
 project: SmartCharts
-stars: 727
+stars: 728
 description: 🔥数据可视化,大屏, 支持Echarts,SQL,API,VUE,可用于Jupyter, 比pyecharts容易, 极低门槛,拿来即用,比拖拽方便,项目插件或独立平台皆可, 简单, 敏捷, 高效, 通用化, 高度可定制化,为你完全打通前后端, 图形数据联动, 筛选开发毫无压力, 数据缓存处理机制让报表快人一步
 url: https://github.com/JohnYan2017/SmartCharts
 ---

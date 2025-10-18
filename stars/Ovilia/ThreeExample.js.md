@@ -1,6 +1,6 @@
 ---
 project: ThreeExample.js
-stars: 1704
+stars: 1705
 description: 《Three.js 入门指南》书例代码
 url: https://github.com/Ovilia/ThreeExample.js
 ---

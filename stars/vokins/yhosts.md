@@ -1,6 +1,6 @@
 ---
 project: yhosts
-stars: 1645
+stars: 1646
 description: AD hosts爱好群，群号:201973909；无限期暂停更新。劝君更尽一杯酒，西出阳关无故人。莫愁前路无知己，天下谁人不识君。
 url: https://github.com/vokins/yhosts
 ---

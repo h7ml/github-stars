@@ -1,6 +1,6 @@
 ---
 project: Xget-Now
-stars: 292
+stars: 294
 description: Xget download acceleration extension for Chromium and Firefox, supports file download acceleration for GitHub, GitLab, npm, PyPI and many other platforms | 为 Chromium 和 Firefox 浏览器提供的 Xget 下载加速扩展，支持 GitHub、GitLab、npm、PyPI 等众多平台的文件下载加速
 url: https://github.com/xixu-me/Xget-Now
 ---

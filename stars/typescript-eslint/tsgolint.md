@@ -1,6 +1,6 @@
 ---
 project: tsgolint
-stars: 451
+stars: 454
 description: ✨ Experimental proof-of-concept typescript-go powered JS/TS linter written in Go
 url: https://github.com/typescript-eslint/tsgolint
 ---

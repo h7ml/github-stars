@@ -1,6 +1,6 @@
 ---
 project: kysely
-stars: 12795
+stars: 12834
 description: A type-safe TypeScript SQL query builder
 url: https://github.com/kysely-org/kysely
 ---

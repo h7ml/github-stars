@@ -1,6 +1,6 @@
 ---
 project: vue-fontawesome
-stars: 2404
+stars: 2403
 description: Font Awesome Vue component
 url: https://github.com/FortAwesome/vue-fontawesome
 ---

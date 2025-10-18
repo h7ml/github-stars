@@ -1,6 +1,6 @@
 ---
 project: puppeteer-api-zh_CN
-stars: 808
+stars: 809
 description: 📖 Puppeteer中文文档（官方指定的中文文档）
 url: https://github.com/zhaoqize/puppeteer-api-zh_CN
 ---

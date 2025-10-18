@@ -1,6 +1,6 @@
 ---
 project: airflow
-stars: 42754
+stars: 42844
 description: Apache Airflow - A platform to programmatically author, schedule, and monitor workflows
 url: https://github.com/apache/airflow
 ---
@@ -88,7 +88,7 @@ Python
 
 3.10, 3.11, 3.12, 3.13
 
-3.9, 3.10, 3.11, 3.12
+3.10, 3.11, 3.12, 3.13
 
 Platform
 

@@ -1,6 +1,6 @@
 ---
 project: HowToCook
-stars: 94754
+stars: 95189
 description: 程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).
 url: https://github.com/Anduin2017/HowToCook
 ---
@@ -431,3 +431,4 @@ docker run -d -p 5000:80 ghcr.io/anduin2017/how-to-cook:latest
 
 -   HowToCook-mcp 让 AI 助手变身私人大厨，为你的一日三餐出谋划策
 -   HowToCook-py-mcp 让 AI 助手变身私人大厨，为你的一日三餐出谋划策 (Python)
+-   whatToEat 今天吃什么？的决策工具，帮助你快速选择合适的菜谱。

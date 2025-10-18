@@ -1,6 +1,6 @@
 ---
 project: nx
-stars: 27208
+stars: 27266
 description: Get to green PRs in half the time. Nx optimizes your builds, scales your CI, and fixes failed PRs. Built for developers and AI agents.
 url: https://github.com/nrwl/nx
 ---

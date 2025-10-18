@@ -1,6 +1,6 @@
 ---
 project: Fanqie-novel-Downloader
-stars: 392
+stars: 402
 description: null
 url: https://github.com/POf-L/Fanqie-novel-Downloader
 ---
@@ -144,12 +144,21 @@ Tomato-Novel-Downloader/
 
 本项目使用稳定的API接口进行数据获取：
 
+### ⚠️ 重要提示
+
+**当前项目调用的是测试接口，仅供学习和测试使用。**
+
+-   测试接口可能存在不稳定性
+-   请勿用于生产环境或商业用途
+-   接口可能随时变更或停止服务
+
 ### API基础信息
 
 -   **基础URL**: `https://api-return.cflin.ddns-ip.net`
 -   **端点**: `/api/xiaoshuo/fanqie`
 -   **方法**: GET
 -   **格式**: JSON
+-   **状态**: 测试接口
 
 ### 核心功能
 
@@ -345,6 +354,15 @@ A: 新版本已修复章节列表解析问题，请确保使用最新代码。
 
 🔄 更新日志
 -------
+
+### v2.2.1 (2025-01-12)
+
+-   🐛 修复外部更新器闪退问题
+-   ✅ 增强错误处理和用户提示
+-   ✅ 更新失败时自动恢复旧版本
+-   ✅ 添加详细的错误日志记录
+-   ✅ 改进 Windows 平台更新体验
+-   📝 明确标注当前使用测试接口
 
 ### v2.2.0 (2025-01-23)
 

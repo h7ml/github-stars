@@ -1,6 +1,6 @@
 ---
 project: rust
-stars: 107073
+stars: 107265
 description: Empowering everyone to build reliable and efficient software.
 url: https://github.com/rust-lang/rust
 ---

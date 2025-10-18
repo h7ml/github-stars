@@ -1,6 +1,6 @@
 ---
 project: aws-sdk-js
-stars: 7630
+stars: 7633
 description: AWS SDK for JavaScript in the browser and Node.js (End-of-Life as of 09/08/2025). The AWS SDK for JavaScript v3 in the browser and Node.js is available here: https://github.com/aws/aws-sdk-js-v3
 url: https://github.com/aws/aws-sdk-js
 ---

@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 44408
+stars: 44664
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -37,6 +37,59 @@ url: https://github.com/1c7/chinese-independent-developer
 3\. 项目列表
 --------
 
+### 2025 年 10 月 18 号添加
+
+#### 饭特稀 - Github
+
+-   ✅ Sora Watermark Remover：Sora 视频去水印，5秒内完成，操作简单
+
+### 2025 年 10 月 17 号添加
+
+#### Damon986
+
+-   ✅ SongGet：多合1的音乐下载软件，可从 Amazon, YouTube, Apple, Spotify, SoundCloud, Line, Tidal, Deezer 等音乐流媒体平台下载高质量音乐，支持批量下载
+-   ✅ Moyea Downloader：多合1的视频下载软件，可从 Amazon Prime, YouTube, Apple TV+, Instagram, TikTok, Facebook, Twitter/X, Disney+, Netflix, Hulu 等视频流媒体平台下载点播视频与直播视频，支持批量下载
+
+#### samtts(杭州) - Github
+
+-   ✅ SAM TTS：微软 SAM 语音合成工具，重现经典 Windows XP 系统的标志性机器人语音，支持浏览器直接使用无需下载
+-   ✅ AI Hairstlye Changer：AI 发型虚拟试换工具，上传照片即可在线试戴 50+ 种发型和 30+ 种发色，帮助用户找到完美造型
+-   ✅ 顔文字屋：颜文字网站，提供丰富的表情符号分类（哭泣、开心、生气等），一键复制即可在聊天软件中使用
+
+#### indiehack(北京) - Github
+
+-   ✅ Image Inverter ： 图片颜色反转工具，可将黑色转为白色、创建照片负片效果,无需注册即可在浏览器中即时处理
+-   ✅ Circle Crop Image：圆形裁剪工具，可快速制作完美的圆形头像和社交媒体图片,支持透明背景导出
+-   ✅ Grayscale Image：图片灰度转换工具，可将彩色照片转为黑白灰度图像,适合制作复古效果和减小文件大小
+
+### 2025 年 10 月 16 号添加
+
+#### lanmo(武汉) - Github
+
+-   ✅ Veo 3.1 AI：使用 Veo3.1 创作电影级视频，配备 1080p 原生音频、首尾帧控制及免费试用额度
+
+### 2025 年 10 月 15 号添加
+
+#### oddboy(杭州) - Github, 博客
+
+-   ✅ Sora2 AI：体验 Sora 2 视频生成 – 创建 1080p 无水印视频，配备同步音频
+
+### 2025 年 10 月 14 号添加
+
+#### xiaobin(北京) - Github
+
+-   ✅ 灵象工具箱：AI 智能图像处理工具，视频抠图换背景、视频去水印、AI抠图、智能擦除、截图美化、OCR文字识别、在线拼图、视频智能镜头分割、图片压缩、图片格式转换，几乎所有功能都支持批量操作，不限制文件数量和大小（支持 win 和 mac 平台，所有处理都是本地模式保证用户隐私） - 更多介绍
+
+### 2025 年 10 月 12 号添加
+
+#### ShawnHacks(北京) - Github, 博客
+
+-   ✅ Bulk Resize Images Online：批量调整多张图片的大小。快速、安全，完全在浏览器中运行——无需上传 - 更多介绍
+
+#### sing1ee(上海) - Github
+
+-   ✅ Sora Video Downloader：从共享链接下载 Sora AI 生成的视频。获取原始提示和高质量视频文件
+
 ### 2025 年 10 月 10 号添加
 
 #### Leo(成都)
@@ -47,9 +100,9 @@ url: https://github.com/1c7/chinese-independent-developer
 
 -   ✅ TO MD：将 Word、PDF、表格、演示、网页、图片、音频、压缩包、代码、RSS 和网址转成结构化的 Markdown，秒级转换，无需注册，长期免费，注重隐私与安全。
 
-#### servanter(北京)
+#### Archer(北京)
 
--   ✅ 图片风格转换：🔥上传任意照片就能快速生成各种风格的卡通头像，轻松满足所有社交平台的头像需求
+-   ✅ AI照片渲染：🔥上传任意照片就能快速生成各种风格的头像，轻松满足所有社交平台的头像需求
 
 ### 2025 年 10 月 9 号添加
 

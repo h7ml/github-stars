@@ -1,6 +1,6 @@
 ---
 project: axios
-stars: 107905
+stars: 107951
 description: Promise based HTTP client for the browser and node.js
 url: https://github.com/axios/axios
 ---
@@ -110,15 +110,15 @@ Table of Contents
 Features
 --------
 
--   Make XMLHttpRequests from the browser
--   Make http requests from node.js
--   Supports the Promise API
--   Intercept request and response
--   Transform request and response data
--   Cancel requests
--   Automatic transforms for JSON data
--   🆕 Automatic data object serialization to `multipart/form-data` and `x-www-form-urlencoded` body encodings
--   Client side support for protecting against XSRF
+-   **Browser Requests:** Make XMLHttpRequests directly from the browser.
+-   **Node.js Requests:** Make http requests from Node.js environments.
+-   **Promise-based:** Fully supports the Promise API for easier asynchronous code.
+-   **Interceptors:** Intercept requests and responses to add custom logic or transform data.
+-   **Data Transformation:** Transform request and response data automatically.
+-   **Request Cancellation:** Cancel requests using built-in mechanisms.
+-   **Automatic JSON Handling:** Automatically serializes and parses JSON data.
+-   **Form Serialization:** 🆕 Automatically serializes data objects to `multipart/form-data` or `x-www-form-urlencoded` formats.
+-   **XSRF Protection:** Client-side support to protect against Cross-Site Request Forgery.
 
 Browser Support
 ---------------

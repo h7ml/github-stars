@@ -1,6 +1,6 @@
 ---
 project: eruda
-stars: 20253
+stars: 20278
 description: Console for mobile browsers
 url: https://github.com/liriliri/eruda
 ---

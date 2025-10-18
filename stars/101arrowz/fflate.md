@@ -1,6 +1,6 @@
 ---
 project: fflate
-stars: 2643
+stars: 2649
 description: High performance (de)compression in an 8kB package
 url: https://github.com/101arrowz/fflate
 ---

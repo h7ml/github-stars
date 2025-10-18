@@ -1,6 +1,6 @@
 ---
 project: vue3-cron
-stars: 48
+stars: 49
 description: Corn expression plugin based on vue3+elementplus（基于vue3+elementplus的corn表达式插件）
 url: https://github.com/sugdove/vue3-cron
 ---

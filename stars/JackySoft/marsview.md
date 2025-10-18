@@ -1,6 +1,6 @@
 ---
 project: marsview
-stars: 1611
+stars: 1612
 description: Marsview 是一款中后台方向的低代码可视化搭建平台，开发者可以在平台上创建项目、页面和组件，支持事件交互、接口调用、数据联动和逻辑编排等，开发者还可通过微服务快速集成到自己的业务系统中。   Marsview is a low code visualization platform for middle and backend direction, supporting event interaction, interface calling, data linkage, and logical orchestration.
 url: https://github.com/JackySoft/marsview
 ---
@@ -22,6 +22,8 @@ Marsview 是一款中后台方向的低代码可视化搭建平台，开发者�
 **体验地址：http://demo.marsview.com.cn/**
 
 **线上地址：https://www.marsview.com.cn/**
+
+\*\* AI 功能上线了 \*\*
 
 对比
 --
@@ -86,17 +88,17 @@ Marsview 是一款中后台方向的低代码可视化搭建平台，开发者�
 
 提供文档或视频
 
-数字大屏
-
-不支持
-
-即将上线数字大屏可视化
-
 工作流
 
 不支持
 
-未来上线工作流可视化
+上线工作流可视化
+
+AI
+
+不支持
+
+AI 创建项目 和 页面
 
 在线使用 🛸
 -------

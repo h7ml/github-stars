@@ -1,6 +1,6 @@
 ---
 project: pi
-stars: 1995
+stars: 1999
 description: 树莓派教程，树莓派防吃灰小分队，让树莓派不再吃灰~
 url: https://github.com/zhaoolee/pi
 ---
@@ -34,8 +34,10 @@ Github合集目录: https://github.com/zhaoolee/pi/tree/main/\_posts
 
 \---start---
 
-目录(2025年05月21日更新, 本仓库共管理37篇文章)
+目录(2025年10月17日更新, 本仓库共管理38篇文章)
 ------------------------------
+
+《树莓派不吃灰》034：使用qemu在树莓派运行x86镜像，以大模型二道贩子x86镜像new api为例
 
 《树莓派不吃灰》033：为ubuntu server 24.04添加xfce4轻量化桌面配合xrdp实现图形化控制
 

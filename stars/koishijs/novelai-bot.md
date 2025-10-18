@@ -1,6 +1,6 @@
 ---
 project: novelai-bot
-stars: 2535
+stars: 2532
 description: Generate images by NovelAI | 基于 NovelAI 的画图机器人
 url: https://github.com/koishijs/novelai-bot
 ---

@@ -1,6 +1,6 @@
 ---
 project: mxgraph
-stars: 6893
+stars: 6895
 description: mxGraph is a fully client side JavaScript diagramming library
 url: https://github.com/jgraph/mxgraph
 ---

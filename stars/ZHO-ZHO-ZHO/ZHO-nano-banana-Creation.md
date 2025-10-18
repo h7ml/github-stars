@@ -1,6 +1,6 @@
 ---
 project: ZHO-nano-banana-Creation
-stars: 2653
+stars: 2721
 description: 我的 nano-banana 创意玩法大合集！  持续更新中！
 url: https://github.com/ZHO-ZHO-ZHO/ZHO-nano-banana-Creation
 ---

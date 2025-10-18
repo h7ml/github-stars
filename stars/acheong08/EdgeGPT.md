@@ -1,6 +1,6 @@
 ---
 project: EdgeGPT
-stars: 7976
+stars: 7977
 description: Reverse engineered API of Microsoft's Bing Chat AI
 url: https://github.com/acheong08/EdgeGPT
 ---

@@ -1,6 +1,6 @@
 ---
 project: mastra
-stars: 17279
+stars: 17555
 description: The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.
 url: https://github.com/mastra-ai/mastra
 ---
@@ -8,144 +8,52 @@ url: https://github.com/mastra-ai/mastra
 Mastra
 ======
 
-Mastra is the Typescript framework for building AI agents and assistants. It’s used by some of the largest companies in the world to build internal AI automation tooling and customer-facing agents.
+From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.
 
-You can run Mastra on your local machine, bundle it into a Node.js server with Hono, or deploy to a serverless cloud.
+It includes everything you need to go from early prototypes to production-ready applications. Mastra integrates with frontend and backend frameworks like React, Next.js, and Node, or you can deploy it anywhere as a standalone server. It's the easiest way to build, tune, and scale reliable AI products.
 
-The main Mastra features are:
-
-Features
-
-Description
-
-LLM Models
-
-Mastra uses the Vercel AI SDK for model routing, providing a unified interface to interact with any LLM provider including OpenAI, Anthropic, and Google Gemini. You can choose the specific model and provider, and decide whether to stream the response.
-
-Agents
-
-Agents are systems where the language model chooses a sequence of actions. In Mastra, agents provide LLM models with tools, workflows, and synced data. Agents can call your own functions or APIs of third-party integrations and access knowledge bases you build.
-
-Tools
-
-Tools are typed functions that can be executed by agents or workflows, with built-in integration access and parameter validation. Each tool has a schema that defines its inputs, an executor function that implements its logic, and access to configured integrations.
-
-Workflows
-
-Workflows are durable graph-based state machines. They have loops, branching, wait for human input, embed other workflows, do error handling, retries, parsing and so on. They can be built in code or with a visual editor. Each step in a workflow has built-in OpenTelemetry tracing.
-
-RAG
-
-Retrieval-augmented generation (RAG) lets you construct a knowledge base for agents. RAG is an ETL pipeline with specific querying techniques, including chunking, embedding, and vector search.
-
-Integrations
-
-In Mastra, integrations are auto-generated, type-safe API clients for third-party services that can be used as tools for agents or steps in workflows.
-
-Evals
-
-Evals are automated tests that evaluate LLM outputs using model-graded, rule-based, and statistical methods. Each eval returns a normalized score between 0-1 that can be logged and compared. Evals can be customized with your own prompts and scoring functions.
-
-Quick Start
+Why Mastra?
 -----------
 
-### Prerequisites
+Purpose-built for TypeScript and designed around established AI patterns, Mastra gives you everything you need to build great AI applications out-of-the-box.
 
--   Node.js (v20.0+)
+Some highlights include:
 
-Get an LLM provider API key
----------------------------
+-   **Model routing** - Connect to 40+ providers through one standard interface. Use models from OpenAI, Anthropic, Gemini, and more.
+    
+-   **Agents** - Build autonomous agents that use LLMs and tools to solve open-ended tasks. Agents reason about goals, decide which tools to use, and iterate internally until the model emits a final answer or an optional stopping condition is met.
+    
+-   **Workflows** - When you need explicit control over execution, use Mastra's graph-based workflow engine to orchestrate complex multi-step processes. Mastra workflows use an intuitive syntax for control flow (`.then()`, `.branch()`, `.parallel()`).
+    
+-   **Human-in-the-loop** - Suspend an agent or workflow and await user input or approval before resuming. Mastra uses storage to remember execution state, so you can pause indefinitely and resume where you left off.
+    
+-   **Context management** - Give your agents the right context at the right time. Provide conversation history, retrieve data from your sources (APIs, databases, files), and add human-like working and semantic memory so your agents behave coherently.
+    
+-   **Integrations** - Bundle agents and workflows into existing React, Next.js, or Node.js apps, or ship them as standalone endpoints. When building UIs, integrate with agentic libraries like Vercel's AI SDK UI and CopilotKit to bring your AI assistant to life on the web.
+    
+-   **Production essentials** - Shipping reliable agents takes ongoing insight, evaluation, and iteration. With built-in evals and observability, Mastra gives you the tools to observe, measure, and refine continuously.
+    
 
-If you don't have an API key for an LLM provider, you can get one from the following services:
-
--   OpenAI
--   Anthropic
--   Google Gemini
--   Groq
--   Cerebras
-
-If you don't have an account with these providers, you can sign up and get an API key. Anthropic require a credit card to get an API key. Some OpenAI models and Gemini do not and have a generous free tier for its API.
-
-Create a new project
---------------------
-
-The easiest way to get started with Mastra is by using `create-mastra`. This CLI tool enables you to quickly start building a new Mastra application, with everything set up for you.
-
-npx create-mastra@latest
-
-### Run the script
-
-Finally, run `mastra dev` to open the Mastra playground.
-
-npm run dev
-
-If you're using Anthropic, set the `ANTHROPIC_API_KEY`. If you're using Gemini, set the `GOOGLE_GENERATIVE_AI_API_KEY`.
-
-MCP Server (@mastra/mcp-docs-server)
-====================================
-
-Use our MCP server @mastra/mcp-docs-server to teach your LLM how to use Mastra.
-
-This is a Model Context Protocol (MCP) server that provides AI assistants with direct access to Mastra.ai's complete knowledge base.
-
-In Cursor
----------
-
-Create or update .cursor/mcp.json in your project root:
-
-### MacOS/Linux
-
-```
-{
-  "mcpServers": {
-    "mastra": {
-      "command": "npx",
-      "args": ["-y", "@mastra/mcp-docs-server"]
-    }
-  }
-}
-```
-
-### Windows
-
-```
-{
-  "mcpServers": {
-    "mastra": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@mastra/mcp-docs-server"]
-    }
-  }
-}
-```
-
-This will make all Mastra documentation tools available in your Cursor workspace. Note that the MCP server wont be enabled by default. You'll need to go to Cursor settings -> MCP settings and click "enable" on the Mastra MCP server.
-
-In Windsurf
+Get started
 -----------
 
-Create or update ~/.codeium/windsurf/mcp\_config.json:
+The **recommended** way to get started with Mastra is by running the command below:
 
-### MacOS/Linux
+npm create mastra@latest
 
-```
-{
-  "mcpServers": {
-    "mastra": {
-      "command": "npx",
-      "args": ["-y", "@mastra/mcp-docs-server"]
-    }
-  }
-}
-```
+Follow the Installation guide for step-by-step setup with the CLI or a manual install.
 
-For more installation options visit https://www.npmjs.com/package/@mastra/mcp-docs-server
+If you're new to AI agents, check out our templates, course, and YouTube videos to start building with Mastra today.
 
-### In Claude Code
+Documentation
+-------------
 
-After installing Claude Code run:
+Visit our official documentation.
 
-claude mcp add mastra-docs -- npx -y @mastra/mcp-docs-server
+MCP Servers
+-----------
+
+Learn how to make your IDE a Mastra expert by following the `@mastra/mcp-docs-server` guide.
 
 Contributing
 ------------

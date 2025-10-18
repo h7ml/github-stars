@@ -1,6 +1,6 @@
 ---
 project: react-playground
-stars: 256
+stars: 257
 description: react在线代码编辑器，可实时运行react代码，支持动态引入自定义文件和第三方依赖包
 url: https://github.com/fewismuch/react-playground
 ---

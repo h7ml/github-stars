@@ -1,13 +1,13 @@
 ---
 project: HaE
-stars: 3835
+stars: 3841
 description: HaE - Highlighter and Extractor, Empower ethical hacker for efficient operations.
 url: https://github.com/gh0stkey/HaE
 ---
 
 #### Empower ethical hacker for efficient operations.
 
-##### First Author: EvilChen（Zhongfu Information Yuanheng Laboratory）  
+##### First Author: EvilChen  
 Second Author: 0chencc（Mystery Security Team）  
 Third Author: vaycore（Independent Security Researcher）
 

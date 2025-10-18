@@ -1,6 +1,6 @@
 ---
 project: cloud189-sdk
-stars: 21
+stars: 22
 description: 天翼云sdk
 url: https://github.com/wes-lin/cloud189-sdk
 ---

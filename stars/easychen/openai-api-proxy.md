@@ -1,6 +1,6 @@
 ---
 project: openai-api-proxy
-stars: 1625
+stars: 1627
 description: 一行Docker命令部署的 OpenAI/GPT API代理，支持SSE流式返回、腾讯云函数 。Simple proxy for OpenAi api via a one-line docker command
 url: https://github.com/easychen/openai-api-proxy
 ---

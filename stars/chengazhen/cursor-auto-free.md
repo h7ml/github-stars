@@ -1,6 +1,6 @@
 ---
 project: cursor-auto-free
-stars: 9555
+stars: 9585
 description: auto sign cursor
 url: https://github.com/chengazhen/cursor-auto-free
 ---
@@ -10,11 +10,6 @@ Cursor Pro 自动化工具使用说明
 
 English doc
 
-augmentcode无限重置仓库
------------------
-
-augmentcode
-
 在线文档
 ----
 
@@ -22,11 +17,6 @@ cursor-auto-free-doc.vercel.app
 
 公众号
 ---
-
-英文名字集
------
-
-https://github.com/toniprada/usa-names-dataset
 
 许可证声明
 -----
@@ -41,11 +31,6 @@ https://github.com/toniprada/usa-names-dataset
 
 -   本项目仅供学习交流使用，请勿用于商业用途。
 -   本项目不承担任何法律责任，使用本项目造成的任何后果，由使用者自行承担。
-
-感谢 linuxDo 这个开源社区(一个真正的技术社区)
-----------------------------
-
-https://linux.do/
 
 特别鸣谢
 ----

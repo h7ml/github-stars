@@ -1,6 +1,6 @@
 ---
 project: webpack-autoconf
-stars: 873
+stars: 874
 description: A tool to create frontend apps using webpack, Parcel or Snowpack
 url: https://github.com/jakoblind/webpack-autoconf
 ---

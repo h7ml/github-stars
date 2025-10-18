@@ -1,6 +1,6 @@
 ---
 project: clean-frontend
-stars: 834
+stars: 835
 description: Clean Frontend Architecture：整洁前端架构
 url: https://github.com/phodal/clean-frontend
 ---

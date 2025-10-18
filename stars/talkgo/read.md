@@ -1,6 +1,6 @@
 ---
 project: read
-stars: 6209
+stars: 6212
 description: Go 学习之路：Go 开发者博客、Go 微信公众号、Go 学习资料（文档、书籍、视频）
 url: https://github.com/talkgo/read
 ---

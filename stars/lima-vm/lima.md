@@ -1,6 +1,6 @@
 ---
 project: lima
-stars: 18169
+stars: 18200
 description: Linux virtual machines, with a focus on running containers
 url: https://github.com/lima-vm/lima
 ---
@@ -88,6 +88,6 @@ Lima follows the CNCF Code of Conduct.
 
 * * *
 
-**We are a Cloud Native Computing Foundation sandbox project.**
+**We are a Cloud Native Computing Foundation incubating project.**
 
 The Linux Foundation® (TLF) has registered trademarks and uses trademarks. For a list of TLF trademarks, see Trademark Usage.

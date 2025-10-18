@@ -1,6 +1,6 @@
 ---
 project: vue-naive-admin
-stars: 3836
+stars: 3843
 description: ⚡️基于 Vue3 + Vite + Pinia + Unocss + Naive UI 的轻量级后台管理模板。
 url: https://github.com/zclzone/vue-naive-admin
 ---

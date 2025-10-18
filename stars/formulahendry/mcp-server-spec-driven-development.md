@@ -1,6 +1,6 @@
 ---
 project: mcp-server-spec-driven-development
-stars: 351
+stars: 354
 description: Spec-Driven Development MCP Server, not just Vibe Coding
 url: https://github.com/formulahendry/mcp-server-spec-driven-development
 ---

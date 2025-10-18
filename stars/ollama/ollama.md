@@ -1,6 +1,6 @@
 ---
 project: ollama
-stars: 153908
+stars: 154326
 description: Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 url: https://github.com/ollama/ollama
 ---
@@ -708,6 +708,7 @@ Community Integrations
 -   any-llm (A single interface to use different llm providers by mozilla.ai)
 -   any-agent (A single interface to use and evaluate different agent frameworks by mozilla.ai)
 -   Neuro SAN (Data-driven multi-agent orchestration framework) with example
+-   achatbot-go a multimodal(text/audio/image) chatbot.
 
 ### Mobile
 

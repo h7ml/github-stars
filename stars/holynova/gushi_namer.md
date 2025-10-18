@@ -1,6 +1,6 @@
 ---
 project: gushi_namer
-stars: 2107
+stars: 2109
 description: 古诗文起名: 利用诗经 楚辞 唐诗 宋词等给小朋友起名字
 url: https://github.com/holynova/gushi_namer
 ---

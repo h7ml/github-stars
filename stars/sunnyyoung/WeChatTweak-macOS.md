@@ -1,6 +1,6 @@
 ---
 project: WeChatTweak-macOS
-stars: 12526
+stars: 12539
 description: A dynamic library tweak for WeChat macOS - 首款微信 macOS 客户端撤回拦截与多开 🔨
 url: https://github.com/sunnyyoung/WeChatTweak-macOS
 ---

@@ -1,6 +1,6 @@
 ---
 project: llcom
-stars: 1079
+stars: 1081
 description: 🛠功能强大的串口工具。支持Lua自动化处理、串口调试、WinUSB、串口曲线、TCP测试、MQTT测试、编码转换、乱码恢复等功能
 url: https://github.com/chenxuuu/llcom
 ---

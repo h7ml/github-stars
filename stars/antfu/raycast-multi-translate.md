@@ -1,6 +1,6 @@
 ---
 project: raycast-multi-translate
-stars: 480
+stars: 479
 description: A Raycast extension that translates text to multiple languages at once
 url: https://github.com/antfu/raycast-multi-translate
 ---

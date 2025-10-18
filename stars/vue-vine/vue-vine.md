@@ -1,6 +1,6 @@
 ---
 project: vue-vine
-stars: 1411
+stars: 1413
 description: Another style of writing Vue components.
 url: https://github.com/vue-vine/vue-vine
 ---
@@ -60,6 +60,14 @@ Language Service
 
 Vite Plugin
 
+@vue-vine/rspack-loader
+
+Rspack Loader (🧪Beta)
+
+@vue-vine/rsbuild-plugin
+
+Rsbuild Plugin (🧪Beta)
+
 @vue-vine/eslint-parser
 
 ESLint Parser
@@ -90,6 +98,8 @@ Install
 # If you didn't install \`@antfu/ni\` yet, I highly recommend you to install it.
 ni vue-vine
 
+### Vite plugin
+
 Use the plugin in `vite.config.ts`:
 
 import { VineVitePlugin } from 'vue-vine/vite'
@@ -101,7 +111,33 @@ export default defineConfig({
   \],
 })
 
-Then add macro's type definition in `tsconfig.json`:
+### Rsbuild plugin (Beta 🧪)
+
+Use the plugin in `rsbuild.config.ts`:
+
+import { defineConfig } from '@rsbuild/core'
+import { pluginVueVine } from 'vue-vine/rsbuild'
+
+export default defineConfig({
+  plugins: \[
+    pluginVueVine({
+      // Optional compiler options
+      // compilerOptions: { ... }
+    })
+  \],
+})
+
+The Rsbuild plugin provides a simpler, higher-level integration. It automatically:
+
+-   Configures the necessary loaders for `.vine.ts` files
+-   Sets up style processing rules
+-   Injects Vue runtime flags via DefinePlugin
+
+For advanced users who need fine-grained control over loader configuration, please refer to the Rspack loader documentation.
+
+### TypeScript Configuration
+
+Please add macro's type definition in `tsconfig.json`:
 
 {
   "compilerOptions": {

@@ -1,6 +1,6 @@
 ---
 project: tiktok-downloader-and-rehoster
-stars: 329
+stars: 330
 description: [ARCHIVED] Tik.fail was a simple website that let users download and archive TikTok videos and allow users to see deleted TikToks
 url: https://github.com/antiops/tiktok-downloader-and-rehoster
 ---

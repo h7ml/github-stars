@@ -1,6 +1,6 @@
 ---
 project: node-sdk
-stars: 199
+stars: 201
 description: larksuite open sdk for nodejs
 url: https://github.com/larksuite/node-sdk
 ---
@@ -678,10 +678,15 @@ server.listen(3000);
 
 #### Custom adapter
 
-If you want to adapt to services written by other libraries, you currently need to encapsulate the corresponding adapter yourself. Pass the received event data to the invoke method of the instantiated `eventDispatcher` for event processing:
+If you want to adapt to services written by other libraries, you currently need to encapsulate the corresponding adapter yourself. Pass the received event data and request headers to the invoke method of the instantiated `eventDispatcher` for event processing:
 
 const data \= server.getData();
-const result \= await dispatcher.invoke(data);
+const headers \= server.getHeaders();
+const assigned \= Object.assign(
+  Object.create({ headers }),
+  data,
+);
+const result \= await dispatcher.invoke(assigned);
 server.sendResult(result);
 
 #### Challenge check

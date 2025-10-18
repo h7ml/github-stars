@@ -1,6 +1,6 @@
 ---
 project: 0sec-search
-stars: 130
+stars: 131
 description: 新版零组资料文库离线漏洞名搜索，功能：更新 、查询 （不包含漏洞详情）
 url: https://github.com/moyuwa/0sec-search
 ---

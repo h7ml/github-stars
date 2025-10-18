@@ -1,6 +1,6 @@
 ---
 project: create-node-cli
-stars: 674
+stars: 675
 description: 📟 CLI to create new Node.js CLI applications in minutes not hours.
 url: https://github.com/ahmadawais/create-node-cli
 ---

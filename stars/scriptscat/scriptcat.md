@@ -1,6 +1,6 @@
 ---
 project: scriptcat
-stars: 3596
+stars: 3638
 description: ScriptCat, a browser extension that can execute userscript; 脚本猫，一个可以执行用户脚本的浏览器扩展
 url: https://github.com/scriptscat/scriptcat
 ---

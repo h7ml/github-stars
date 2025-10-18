@@ -1,6 +1,6 @@
 ---
 project: wechat_flutter
-stars: 2616
+stars: 2617
 description: wechat_flutter is Flutter version WeChat, an excellent Flutter instant messaging IM open source library!
 url: https://github.com/fluttercandies/wechat_flutter
 ---
@@ -20,6 +20,8 @@ List of problems and solutions
 本项目出配套课程啦，耗时6个月打造，flutter3最新版本，从0到1实现微信，包含im聊天单聊群聊功能：https://edu.csdn.net/course/detail/39189
 
 课程demo下载地址 https://wwpj.lanzouu.com/s/wechat-new-demo
+
+商务合作联系微信【q1666655】，帮面试、出技术方案、解决Apple Store上架4.3等问题.
 
 log
 ===

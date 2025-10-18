@@ -1,6 +1,6 @@
 ---
 project: node-odbc
-stars: 156
+stars: 157
 description: ODBC bindings for node
 url: https://github.com/IBM/node-odbc
 ---

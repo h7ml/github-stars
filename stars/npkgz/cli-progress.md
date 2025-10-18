@@ -1,6 +1,6 @@
 ---
 project: cli-progress
-stars: 1218
+stars: 1222
 description:  :hourglass: easy to use progress-bar for command-line/terminal applications
 url: https://github.com/npkgz/cli-progress
 ---

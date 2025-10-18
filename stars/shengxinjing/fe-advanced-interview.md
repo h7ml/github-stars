@@ -1,6 +1,6 @@
 ---
 project: fe-advanced-interview
-stars: 1401
+stars: 1402
 description: 前端进阶面试指南
 url: https://github.com/shengxinjing/fe-advanced-interview
 ---

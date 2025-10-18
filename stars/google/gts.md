@@ -1,6 +1,6 @@
 ---
 project: gts
-stars: 5213
+stars: 5214
 description: ☂️ TypeScript style guide, formatter, and linter.  
 url: https://github.com/google/gts
 ---

@@ -1,6 +1,6 @@
 ---
 project: emqx
-stars: 15331
+stars: 15361
 description: The most scalable and reliable MQTT broker for AI, IoT, IIoT and connected vehicles
 url: https://github.com/emqx/emqx
 ---

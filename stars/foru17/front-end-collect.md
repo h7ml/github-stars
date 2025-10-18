@@ -1,6 +1,6 @@
 ---
 project: front-end-collect
-stars: 5681
+stars: 5688
 description: 分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发者
 url: https://github.com/foru17/front-end-collect
 ---

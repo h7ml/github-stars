@@ -1,6 +1,6 @@
 ---
 project: PhishingBook
-stars: 1136
+stars: 1135
 description: 红蓝对抗：钓鱼演练资源汇总&备忘录
 url: https://github.com/tib36/PhishingBook
 ---

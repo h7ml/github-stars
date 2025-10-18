@@ -1,6 +1,6 @@
 ---
 project: hapjs
-stars: 202
+stars: 203
 description: 快应用标准框架实现，支持快应用的加载、运行、渲染，提供必要API的支持
 url: https://github.com/hapjs-platform/hapjs
 ---

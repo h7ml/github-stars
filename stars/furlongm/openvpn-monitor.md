@@ -1,6 +1,6 @@
 ---
 project: openvpn-monitor
-stars: 1034
+stars: 1035
 description: openvpn-monitor is a web based OpenVPN monitor, that shows current connection information, such as users, location and data transferred.
 url: https://github.com/furlongm/openvpn-monitor
 ---

@@ -1,6 +1,6 @@
 ---
 project: Math
-stars: 448
+stars: 449
 description: 📚 适合前端入门的高数课，临时域名 https://math.haozi.me 
 url: https://github.com/easy-math/Math
 ---

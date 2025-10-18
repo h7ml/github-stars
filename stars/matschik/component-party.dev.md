@@ -1,6 +1,6 @@
 ---
 project: component-party.dev
-stars: 3131
+stars: 3134
 description: 🎉 Web component JS frameworks overview by their syntax and features
 url: https://github.com/matschik/component-party.dev
 ---
@@ -234,6 +234,37 @@ Many JS developers don't have a good overview of every existing JS framework wit
     -   Render app
     -   Fetch data
 
+**Ember Polaris**
+
+-   Reactivity
+    -   Declare state
+    -   Update state
+    -   Computed state
+-   Templating
+    -   Minimal template
+    -   Styling
+    -   Loop
+    -   Event click
+    -   Dom ref
+    -   Conditional
+-   Lifecycle
+    -   On mount
+    -   On unmount
+-   Component composition
+    -   Props
+    -   Emit to parent
+    -   Slot
+    -   Slot fallback
+    -   Context
+-   Form input
+    -   Input text
+    -   Checkbox
+    -   Radio
+    -   Select
+-   Webapp features
+    -   Render app
+    -   Fetch data
+
 **Solid.js**
 
 -   Reactivity
@@ -328,37 +359,6 @@ Many JS developers don't have a good overview of every existing JS framework wit
     -   Fetch data
 
 **Alpine**
-
--   Reactivity
-    -   Declare state
-    -   Update state
-    -   Computed state
--   Templating
-    -   Minimal template
-    -   Styling
-    -   Loop
-    -   Event click
-    -   Dom ref
-    -   Conditional
--   Lifecycle
-    -   On mount
-    -   On unmount
--   Component composition
-    -   Props
-    -   Emit to parent
-    -   Slot
-    -   Slot fallback
-    -   Context
--   Form input
-    -   Input text
-    -   Checkbox
-    -   Radio
-    -   Select
--   Webapp features
-    -   Render app
-    -   Fetch data
-
-**Ember Polaris**
 
 -   Reactivity
     -   Declare state

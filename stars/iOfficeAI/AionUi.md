@@ -1,6 +1,6 @@
 ---
 project: AionUi
-stars: 2357
+stars: 2541
 description: Free, local, open-source GUI app for Gemini CLI — Better Chat UI, File Management, AI image editing, multi-agent support, multi-LLMs & apikey polling, code diff view & more | 🌟 Star if you like it!
 url: https://github.com/iOfficeAI/AionUi
 ---
@@ -18,7 +18,7 @@ url: https://github.com/iOfficeAI/AionUi
 
 ### 🤖 **Multi-Agent Mode**
 
-_Seamlessly integrate multiple terminal AI agents - Gemini CLI, Claude Code, Qwen Code and more_
+_Seamlessly integrate multiple terminal AI agents - Gemini CLI, Claude Code, Qwen Code, Codex and more_
 
 ### 🎨 **AI Image Generation & Editing**
 
@@ -100,11 +100,20 @@ AionUi provides a modern interface for users who need better workflow efficiency
 
 ### 🤖 **Multi-Agent Integration**
 
--   **Multi-Terminal Agent Support** - Seamlessly integrate with various terminal AI agents (Gemini CLI, Claude Code, Qwen Code, etc.)
+-   **Multi-Terminal Agent Support** - Seamlessly integrate with various terminal AI agents (Gemini CLI, Claude Code, Qwen Code, Codex, etc.)
 -   **Dynamic CLI Detection** - Automatic backend discovery and CLI path detection
 -   **Secure Authentication** - OAuth support and secure authentication flows
 -   **Real-time Monitoring** - Live connection status and backend health monitoring
 -   **Unified Interface** - All terminal AI agents accessible through the same chat interface
+
+### 🔌 **MCP Tool Management**
+
+-   **MCP Server Configuration** - Add, edit, and manage Model Context Protocol servers
+-   **Multiple Import Methods** - Import from JSON configuration or CLI with one-click setup
+-   **Tool Discovery** - Automatically discover and list available tools from MCP servers
+-   **Connection Testing** - Real-time testing of MCP server connections and health status
+-   **Multi-Agent Sync** - Synchronize MCP configurations across different AI agents
+-   **Tool Management** - Enable/disable tools, view parameters and tool descriptions
 
 ### 🔄 **Multi-API Key Rotation Service**
 
@@ -152,6 +161,7 @@ Ready to try AionUi? Download the latest version for your platform from our rele
 -   📖 Complete Installation Guide - Detailed steps from download to configuration
 -   ⚙️ LLM Configuration Guide - Multi-platform AI model configuration
 -   🤖 Multi-Agent Mode Setup - Integrate terminal AI agents
+-   🔌 MCP Tool Configuration - Model Context Protocol server setup
 -   🎨 Image Generation Configuration - AI image generation setup tutorial
 
 ### 🎯 Use Cases

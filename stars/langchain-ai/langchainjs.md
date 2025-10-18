@@ -1,6 +1,6 @@
 ---
 project: langchainjs
-stars: 15830
+stars: 16041
 description: 🦜🔗 Build context-aware reasoning applications 🦜🔗
 url: https://github.com/langchain-ai/langchainjs
 ---
@@ -17,16 +17,16 @@ To help you ship LangChain apps to production faster, check out LangSmith. LangS
 ⚡️ Quick Install
 ----------------
 
-You can use npm, yarn, or pnpm to install LangChain.js
+You can use npm, pnpm, or yarn to install LangChain.js
 
-`npm install -S langchain` or `yarn add langchain` or `pnpm add langchain`
+`npm install -S langchain` or `pnpm install langchain` or `yarn add langchain`
 
 🌐 Supported Environments
 -------------------------
 
 LangChain is written in TypeScript and can be used in:
 
--   Node.js (ESM and CommonJS) - 18.x, 19.x, 20.x, 22.x
+-   Node.js (ESM and CommonJS) - 20.x, 22.x, 24.x
 -   Cloudflare Workers
 -   Vercel / Next.js (Browser, Serverless and Edge functions)
 -   Supabase Edge Functions

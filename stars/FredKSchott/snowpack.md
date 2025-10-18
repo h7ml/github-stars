@@ -1,6 +1,6 @@
 ---
 project: snowpack
-stars: 19411
+stars: 19415
 description: ESM-powered frontend build tool. Instant, lightweight, unbundled development. ✌️
 url: https://github.com/FredKSchott/snowpack
 ---

@@ -2,7 +2,7 @@
 project: hassio-addons
 stars: 28
 description: This repo is intended for use only in mainland China. If you are outside the mainland, please use the links from the original authors below.
-url: https://github.com/Desmond-Dong/hassio-addons
+url: https://github.com/ha-china/hassio-addons
 ---
 
 English | 中文
@@ -110,6 +110,7 @@ https://ghfast.top
 -   🛠️ **Limych Addons**: Limych 的加载项
 -   🤖 **Motion AI Addons**: Motion AI 的加载项
 -   🛠️ **Dcmartin Addons**: Dcmartin 的加载项
+-   ⏳ **Time Machine Addons**: Home Assistant 快照/还原与备份自动化工具
 
 🌐 翻译技术说明
 ---------

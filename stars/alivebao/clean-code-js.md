@@ -1,6 +1,6 @@
 ---
 project: clean-code-js
-stars: 2100
+stars: 2099
 description: JavaScript风格指南
 url: https://github.com/alivebao/clean-code-js
 ---

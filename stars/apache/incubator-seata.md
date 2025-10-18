@@ -1,6 +1,6 @@
 ---
 project: incubator-seata
-stars: 25844
+stars: 25858
 description: :fire: Seata is an easy-to-use, high-performance, open source distributed transaction solution.
 url: https://github.com/apache/incubator-seata
 ---

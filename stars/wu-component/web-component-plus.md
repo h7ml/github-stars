@@ -1,6 +1,6 @@
 ---
 project: web-component-plus
-stars: 221
+stars: 220
 description: 采用WebComponent方式重写ElementUI, 仓库中包含核心包以及UI组件库,包括底层逻辑npm包以及UI实现
 url: https://github.com/wu-component/web-component-plus
 ---

@@ -1,6 +1,6 @@
 ---
 project: react-babylonjs
-stars: 872
+stars: 876
 description: React for Babylon 3D engine
 url: https://github.com/brianzinn/react-babylonjs
 ---

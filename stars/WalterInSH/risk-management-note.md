@@ -1,6 +1,6 @@
 ---
 project: risk-management-note
-stars: 2314
+stars: 2315
 description: 🧯风险控制笔记，适用于互联网企业
 url: https://github.com/WalterInSH/risk-management-note
 ---

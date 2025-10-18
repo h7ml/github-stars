@@ -1,6 +1,6 @@
 ---
 project: rulesync
-stars: 342
+stars: 381
 description: null
 url: https://github.com/dyoshikawa/rulesync
 ---
@@ -105,6 +105,8 @@ Gemini CLI
 
 ✅ 🌏
 
+✅ 🌏
+
 🎮
 
 GitHub Copilot
@@ -113,7 +115,7 @@ GitHub Copilot
 
 ✅
 
-🎮
+✅
 
 🎮
 

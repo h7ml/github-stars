@@ -1,6 +1,6 @@
 ---
 project: DrissionPage
-stars: 10472
+stars: 10485
 description: Python based web automation tool. Powerful and elegant.
 url: https://github.com/g1879/DrissionPage
 ---

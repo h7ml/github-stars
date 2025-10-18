@@ -1,6 +1,6 @@
 ---
 project: vben-admin-thin-next
-stars: 2087
+stars: 2086
 description: vue-vben-admin-2.0 mini template.vue3,vite,typescript
 url: https://github.com/vbenjs/vben-admin-thin-next
 ---

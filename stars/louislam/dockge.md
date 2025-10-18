@@ -1,6 +1,6 @@
 ---
 project: dockge
-stars: 19826
+stars: 19914
 description: A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager
 url: https://github.com/louislam/dockge
 ---

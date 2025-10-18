@@ -1,6 +1,6 @@
 ---
 project: ICG-WebGL
-stars: 845
+stars: 846
 description: 交互式计算机图形学——基于WebGL的自顶向下方法（第七版）的例子与练习题
 url: https://github.com/akira-cn/ICG-WebGL
 ---

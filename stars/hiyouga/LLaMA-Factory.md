@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 59992
+stars: 60391
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -373,7 +373,7 @@ Granite 4
 
 granite4
 
-Hunyuan
+Hunyuan (MT)
 
 7B
 

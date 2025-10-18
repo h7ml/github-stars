@@ -1,12 +1,12 @@
 ---
 project: github-readme-stats
-stars: 76430
+stars: 76537
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
 
 GitHub Readme Stats
--------------------
+===================
 
 Get dynamically generated GitHub stats on your READMEs!
 
@@ -616,6 +616,14 @@ Switches between two available formats for displaying the card values `short` (i
 enum
 
 `short`
+
+`number_precision`
+
+Enforce the number of digits after the decimal point for `short` number format. Must be an integer between 0 and 2. Will be ignored for `long` number format.
+
+integer (0, 1 or 2)
+
+`null`
 
 `show`
 

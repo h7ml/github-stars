@@ -1,6 +1,6 @@
 ---
 project: MasteringRAG
-stars: 566
+stars: 572
 description: 企业级RAG系统从入门到精通
 url: https://github.com/Steven-Luo/MasteringRAG
 ---

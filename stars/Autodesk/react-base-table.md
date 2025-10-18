@@ -1,6 +1,6 @@
 ---
 project: react-base-table
-stars: 1532
+stars: 1533
 description: A react table component to display large datasets with high performance and flexibility
 url: https://github.com/Autodesk/react-base-table
 ---

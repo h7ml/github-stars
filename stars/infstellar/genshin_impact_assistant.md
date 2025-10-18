@@ -1,6 +1,6 @@
 ---
 project: genshin_impact_assistant
-stars: 2811
+stars: 2813
 description: 原神小助手 Genshin Assistant (CN/EN) | 自动战斗,秘境,领日常,半自动委托
 url: https://github.com/infstellar/genshin_impact_assistant
 ---

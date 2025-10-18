@@ -1,6 +1,6 @@
 ---
 project: hutool
-stars: 30111
+stars: 30127
 description: 🍬A set of tools that keep Java sweet.
 url: https://github.com/chinabugotech/hutool
 ---
@@ -153,13 +153,13 @@ AI大模型封装实现
 <dependency\>
     <groupId\>cn.hutool</groupId\>
     <artifactId\>hutool-all</artifactId\>
-    <version\>5.8.40</version\>
+    <version\>5.8.41</version\>
 </dependency\>
 
 ### 🍐Gradle
 
 ```
-implementation 'cn.hutool:hutool-all:5.8.40'
+implementation 'cn.hutool:hutool-all:5.8.41'
 ```
 
 ### 📥下载jar

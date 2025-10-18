@@ -1,6 +1,6 @@
 ---
 project: recharts
-stars: 26039
+stars: 26074
 description: Redefined chart library built with React and D3
 url: https://github.com/recharts/recharts
 ---
@@ -19,7 +19,7 @@ The main purpose of this library is to help you to write charts in React applica
 2.  **Native** SVG support, lightweight with minimal dependencies.
 3.  **Declarative** components.
 
-Documentation at recharts.org and our storybook
+Documentation at recharts.github.io and our storybook
 
 Also see the wiki.
 

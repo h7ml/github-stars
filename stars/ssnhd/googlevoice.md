@@ -1,6 +1,6 @@
 ---
 project: googlevoice
-stars: 1953
+stars: 1957
 description: 注册 Google Voice 号码详细步骤
 url: https://github.com/ssnhd/googlevoice
 ---
@@ -62,7 +62,7 @@ Google Voice 中文注册、登录、转移和使用教程
 
 发短信
 
-免费（仅限美国、加拿大号码，不支持其他国家）
+免费发给美国/加拿大，其他国家不支持（不建议发，容易被封号）
 
 接电话
 
@@ -70,7 +70,7 @@ Google Voice 中文注册、登录、转移和使用教程
 
 打电话
 
-免费拨打美国、加拿大号码
+免费拨打美国/加拿大
 
 拨打其他国家资费：点击这里
 

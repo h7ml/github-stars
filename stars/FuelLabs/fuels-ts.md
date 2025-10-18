@@ -1,6 +1,6 @@
 ---
 project: fuels-ts
-stars: 43568
+stars: 43561
 description: Fuel Network Typescript SDK
 url: https://github.com/FuelLabs/fuels-ts
 ---

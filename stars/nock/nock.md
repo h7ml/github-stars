@@ -1,6 +1,6 @@
 ---
 project: nock
-stars: 13029
+stars: 13030
 description: HTTP server mocking and expectations library for Node.js
 url: https://github.com/nock/nock
 ---

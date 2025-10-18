@@ -1,6 +1,6 @@
 ---
 project: qwik
-stars: 21717
+stars: 21730
 description: Instant-loading web apps, without effort
 url: https://github.com/QwikDev/qwik
 ---

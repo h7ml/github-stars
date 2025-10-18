@@ -1,6 +1,6 @@
 ---
 project: tsrpc
-stars: 1869
+stars: 1871
 description: A TypeScript RPC framework, with runtime type checking and serialization, support both HTTP and WebSocket. It is very suitable for website / APP / games, and absolutely comfortable to full-stack TypeScript developers.
 url: https://github.com/k8w/tsrpc
 ---

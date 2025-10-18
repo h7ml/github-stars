@@ -1,6 +1,6 @@
 ---
 project: ni
-stars: 7359
+stars: 7379
 description: 💡 Use the right package manager
 url: https://github.com/antfu-collective/ni
 ---
@@ -150,10 +150,12 @@ nup
 
 nup -i
 
-# (not available for npm & bun & deno)
+# (not available for npm)
 # yarn upgrade-interactive (Yarn 1)
 # yarn up -i (Yarn Berry)
 # pnpm update -i
+# bun update -i
+# deno outdated -u -i
 
   
 

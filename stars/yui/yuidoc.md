@@ -1,6 +1,6 @@
 ---
 project: yuidoc
-stars: 889
+stars: 890
 description: YUI Javascript Documentation Tool
 url: https://github.com/yui/yuidoc
 ---

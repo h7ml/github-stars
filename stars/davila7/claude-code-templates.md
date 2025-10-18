@@ -1,6 +1,6 @@
 ---
 project: claude-code-templates
-stars: 7185
+stars: 8710
 description: CLI tool for configuring and monitoring Claude Code
 url: https://github.com/davila7/claude-code-templates
 ---
@@ -19,17 +19,17 @@ Browse & Install Components and Templates
 ---------------------
 
 # Install a complete development stack
-npx claude-code-templates@latest --agent frontend-developer --command generate-tests --mcp github-integration
+npx claude-code-templates@latest --agent development-team/frontend-developer --command testing/generate-tests --mcp development/github-integration
 
 # Browse and install interactively
 npx claude-code-templates@latest
 
 # Install specific components
-npx claude-code-templates@latest --agent security-auditor
-npx claude-code-templates@latest --command optimize-bundle
-npx claude-code-templates@latest --setting mcp-timeouts
-npx claude-code-templates@latest --hook pre-commit-validation
-npx claude-code-templates@latest --mcp postgresql-integration
+npx claude-code-templates@latest --agent business-marketing/security-auditor
+npx claude-code-templates@latest --command performance/optimize-bundle
+npx claude-code-templates@latest --setting performance/mcp-timeouts
+npx claude-code-templates@latest --hook git/pre-commit-validation
+npx claude-code-templates@latest --mcp database/postgresql-integration
 
 What You Get
 ------------
@@ -102,6 +102,12 @@ npx claude-code-templates@latest --chats --tunnel
 Comprehensive diagnostics to ensure your Claude Code installation is optimized.
 
 npx claude-code-templates@latest --health-check
+
+### 🔌 Plugin Dashboard
+
+View marketplaces, installed plugins, and manage permissions from a unified interface.
+
+npx claude-code-templates@latest --plugins
 
 📖 Documentation
 ----------------

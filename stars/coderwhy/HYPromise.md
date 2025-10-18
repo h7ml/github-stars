@@ -1,6 +1,6 @@
 ---
 project: HYPromise
-stars: 81
+stars: 82
 description: 实现一个完整的、符合Promises/A+规范的HYPromise
 url: https://github.com/coderwhy/HYPromise
 ---

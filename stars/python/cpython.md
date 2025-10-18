@@ -1,11 +1,11 @@
 ---
 project: cpython
-stars: 69300
+stars: 69404
 description: The Python programming language
 url: https://github.com/python/cpython
 ---
 
-This is Python version 3.15.0 alpha 0
+This is Python version 3.15.0 alpha 1
 =====================================
 
 Copyright © 2001 Python Software Foundation. All rights reserved.

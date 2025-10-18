@@ -1,6 +1,6 @@
 ---
 project: CleanMyWechat
-stars: 4989
+stars: 4994
 description: 自动删除 PC 端微信缓存数据，包括从所有聊天中自动下载的大量文件、视频、图片等数据内容，解放你的空间。
 url: https://github.com/blackboxo/CleanMyWechat
 ---

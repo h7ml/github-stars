@@ -1,6 +1,6 @@
 ---
 project: vibercoding
-stars: 68
+stars: 78
 description: vibercoding编码聚合文档
 url: https://github.com/zhongruan0522/vibercoding
 ---

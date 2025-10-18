@@ -1,6 +1,6 @@
 ---
 project: ai-notes
-stars: 6064
+stars: 6067
 description: notes for software engineers getting up to speed on new AI developments. Serves as datastore for https://latent.space writing, and product brainstorming, but has cleaned up canonical references under the /Resources folder.
 url: https://github.com/swyxio/ai-notes
 ---

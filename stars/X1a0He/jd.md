@@ -1,6 +1,6 @@
 ---
 project: jd
-stars: 198
+stars: 197
 description: 仅供学习使用
 url: https://github.com/X1a0He/jd
 ---

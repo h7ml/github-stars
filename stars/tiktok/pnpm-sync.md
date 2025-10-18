@@ -1,6 +1,6 @@
 ---
 project: pnpm-sync
-stars: 22
+stars: 23
 description: Automatically resync injected dependencies when using the PNPM package manager
 url: https://github.com/tiktok/pnpm-sync
 ---

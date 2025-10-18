@@ -1,6 +1,6 @@
 ---
 project: lvgl
-stars: 21600
+stars: 21691
 description: Embedded graphics library to create beautiful UIs for any MCU, MPU and display type. 
 url: https://github.com/lvgl/lvgl
 ---
@@ -14,87 +14,68 @@ url: https://github.com/lvgl/lvgl
 Light and Versatile Graphics Library
 ====================================
 
-   
+  
 
    
 
   
 
-Website | Docs | Forum | Demos | Services
+Website | LVGL Pro Editor | Docs | Forum | Demos | Services
+
+  
+
+### Table of Contents
+
+Overview  
+Features  
+Platform Support  
+LVGL Pro Editor  
+Commercial Services  
+Integrating LVGL  
+Examples  
+Contributing
 
   
 
 📒 Overview
 -----------
 
-**Mature and Well-known**  
-LVGL is the most popular free and open source embedded graphics library to create beautiful UIs for any MCU, MPU and display type. It's supported by industry leading vendors and projects like  Arm, STM32, NXP, Espressif, Nuvoton, Arduino, RT-Thread, Zephyr, NuttX, Adafruit and many more.
+**LVGL** is a free and open-source UI library that enables you to create graphical user interfaces for any MCUs and MPUs from any vendor on any platform.
 
-**Feature Rich**  
-It has all the features to create modern and beautiful GUIs: 30+ built-in widgets, a powerful style system, web inspired layout managers, and a typography system supporting many languages. To integrate LVGL into your platform, all you need is at least 32kB RAM and 128 kB Flash, a C compiler, a frame buffer, and at least an 1/10 screen sized buffer for rendering.
+**Requirements**: LVGL has no external dependencies, which makes it easy to compile for any modern target, from small MCUs to multi-core Linux-based MPUs with 3D support. For a simple UI, you need only ~100kB RAM, ~200–300kB flash, and a buffer size of 1/10 of the screen for rendering.
 
-**Services**  
-Our team is ready to help you with graphics design, UI implementation and consulting services. Contact us if you need some support during the development of your next GUI project.
+**To get started**, pick a ready-to-use VSCode, Eclipse, or any other project and try out LVGL on your PC. The LVGL UI code is fully platform-independent, so you can use the same UI code on embedded targets too.
 
-🚀 Features
+**LVGL Pro** is a complete toolkit to help you build, test, share, and ship UIs faster. It comes with an XML Editor where you can quickly create and test reusable components, export C code, or load the XMLs at runtime. Learn more here.
+
+💡 Features
 -----------
 
 **Free and Portable**
 
 -   A fully portable C (C++ compatible) library with no external dependencies.
--   Can be compiled to any MCU or MPU, with any (RT)OS.
--   Supports monochrome, ePaper, OLED or TFT displays, or even monitors. Displays
+-   Can be compiled for any MCU or MPU, with any (RT)OS. Make, CMake, and simple globbing are all supported.
+-   Supports monochrome, ePaper, OLED, or TFT displays, or even monitors. Displays
 -   Distributed under the MIT license, so you can easily use it in commercial projects too.
--   Needs only 32kB RAM and 128 kB Flash, a frame buffer, and at least an 1/10 screen sized buffer for rendering.
--   OS, External memory and GPU are supported but not required.
+-   Needs only 32kB RAM and 128kB Flash, a frame buffer, and at least a 1/10 screen-sized buffer for rendering.
+-   OS, external memory, and GPU are supported but not required.
 
-**Widgets, Styles, Layouts and more**
+**Widgets, Styles, Layouts, and More**
 
--   30+ built-in Widgets:  Button, Label, Slider, Chart, Keyboard, Meter, Arc, Table and many more.
--   Flexible Style system with  ~100 style properties to customize any part of the widgets in any state.
--   Flexbox and Grid\-like layouts engines to automatically size and position the widgets in a responsive way.
--   Texts are rendered with UTF-8 encoding supporting CJK, Thai, Hindi, Arabic, Persian writing systems.
--   Word wrapping, kerning, text scrolling, sub-pixel rendering, Pinyin-IME Chinese input, Emojis in texts.
--   Rendering engine supporting animations, anti-aliasing, opacity, smooth scrolling, shadows, image transformation, etc  
+-   30+ built-in Widgets: Button, Label, Slider, Chart, Keyboard, Meter, Arc, Table, and many more.
+-   Flexible Style system with ~100 style properties to customize any part of the widgets in any state.
+-   Flexbox and Grid\-like layout engines to automatically size and position the widgets responsively.
+-   Text is rendered with UTF-8 encoding, supporting CJK, Thai, Hindi, Arabic, and Persian writing systems.
+-   Data bindings to easily connect the UI with the application.
+-   Rendering engine supports animations, anti-aliasing, opacity, smooth scrolling, shadows, image transformation, etc.
+-   Powerful 3D rendering engine to show glTF models with OpenGL.
 -   Supports Mouse, Touchpad, Keypad, Keyboard, External buttons, Encoder Input devices.
 -   Multiple display support.
 
-**Binding and Build Support**
+📦️ Platform Support
+--------------------
 
--   MicroPython Binding exposes LVGL API
--   PikaScript Binding python on MCU lighter and easier.
--   No custom build system is used. You can build LVGL as you build the other files of your project.
--   Support for Make and CMake is included out of the box.
--   Develop on PC and use the same UI code on embedded hardware.
--   Convert the C UI code to HTML file with our Emscripten port.
-
-**Docs, Tools, and Services**
-
--   Detailed Documentation with 100+ simple examples
--   Services such as User interface design, Implementation and Consulting to make UI development simpler and faster.
-
-❤️ Sponsor
-----------
-
-If LVGL saved you a lot of time and money or you just had fun using it, consider Supporting its Development.
-
-**How do we spend the donations?**  
-Our goal is to provide financial compensation for people who do the most for LVGL. It means not only the maintainers but anyone who implements a great feature should get a payment from the accumulated money. We use the donations to cover our operational costs like servers and related services.
-
-**How to donate?**  
-We use GitHub Sponsors where you can easily send one time or recurring donations. You can also see all of our expenses in a transparent way.
-
-**How to get paid for your contribution?**  
-If someone implements or fixes an issue labeled as Sponsored he or she will get a payment for that work. We estimate the required time, complexity and importance of the issue and set a price accordingly. To jump in just comment on a Sponsored issue saying "Hi, I'd like to deal with it. This is how I'm planning to fix/implement it...". A work is considered ready when it's approved and merged by a maintainer. After that you can submit and expense at opencollective.com and you will receive the payment in a few days.
-
-**Organizations supporting LVGL**  
-
-**Individuals supporting LVGL**  
-
-📦 Packages
------------
-
-LVGL is available as:
+LVGL has no external dependencies, so it can be easily compiled for any devices and it's also available in many package managers and RTOSes:
 
 -   Arduino library
 -   PlatformIO package
@@ -106,311 +87,248 @@ LVGL is available as:
 -   CMSIS-Pack
 -   RIOT OS package
 
+🚀 LVGL Pro Editor
+------------------
+
+LVGL Pro is a complete toolkit to build, test, share, and ship embedded UIs efficiently.
+
+It consists of four tightly related tools:
+
+1.  **XML Editor**: The heart of LVGL Pro. A desktop app to build components and screens in XML, manage data bindings, translations, animations, tests, and more. Learn more about the XML Format and the Editor.
+2.  **Online Viewer**: Run the Editor in your browser, open GitHub projects, and share easily without setting up a developer environment. Visit https://viewer.lvgl.io.
+3.  **CLI Tool**: Generate C code and run tests in CI/CD. See the details here.
+4.  **Figma Plugin**: Sync and extract styles directly from Figma. See how it works here.
+
+Together, these tools let developers build UIs efficiently, test them reliably, and collaborate with team members and customers.
+
+Learn more at https://pro.lvgl.io
+
+🤝 Commercial Services
+----------------------
+
+LVGL LLC provides several types of commercial services to help you with UI development. With 15+ years of experience in the user interface and graphics industry, we can help bring your UI to the next level.
+
+-   **Graphics design**: Our in-house graphic designers are experts in creating beautiful modern designs that fit your product and the capabilities of your hardware.
+-   **UI implementation**: We can implement your UI based on the design you or we have created. You can be sure that we will make the most of your hardware and LVGL. If a feature or widget is missing from LVGL, don't worry, we will implement it for you.
+-   **Consulting and Support**: We also offer consulting to help you avoid costly and time-consuming mistakes during UI development.
+-   **Board certification**: For companies offering development boards or production-ready kits, we provide board certification to show how the board can run LVGL.
+
+Check out our Demos as references. For more information, take a look at the Services page.
+
+Contact us and tell us how we can help.
+
+🧑‍💻 Integrating LVGL
+----------------------
+
+Integrating LVGL is very simple. Just drop it into any project and compile it as you would compile other files. To configure LVGL, copy `lv_conf_template.h` as `lv_conf.h`, enable the first `#if 0`, and adjust the configs as needed. (The default config is usually fine.) If available, LVGL can also be used with Kconfig.
+
+Once in the project, you can initialize LVGL and create display and input devices as follows:
+
+#include "lvgl/lvgl.h" /\*Define LV\_LVGL\_H\_INCLUDE\_SIMPLE to include as "lvgl.h"\*/
+
+#define TFT\_HOR\_RES 320
+#define TFT\_VER\_RES 240
+
+static uint32\_t my\_tick\_cb(void)
+{
+    return my\_get\_millisec();
+}
+
+static void my\_flush\_cb(lv\_display\_t \* disp, const lv\_area\_t \* area, uint8\_t \* px\_map)
+{
+    /\*Write px\_map to the area->x1, area->x2, area->y1, area->y2 area of the
+     \*frame buffer or external display controller. \*/
+}
+
+static void my\_touch\_read\_cb(lv\_indev\_t \* indev, lv\_indev\_data\_t \* data)
+{
+   if(my\_touch\_is\_pressed()) {
+       data\->point.x \= touchpad\_x;
+       data\->point.y \= touchpad\_y;
+       data\->state \= LV\_INDEV\_STATE\_PRESSED;
+   } else {
+       data\->state \= LV\_INDEV\_STATE\_RELEASED;
+   }
+}
+
+void main(void)
+{
+    my\_hardware\_init();
+
+    /\*Initialize LVGL\*/
+    lv\_init();
+
+    /\*Set millisecond-based tick source for LVGL so that it can track time.\*/
+    lv\_tick\_set\_cb(my\_tick\_cb);
+
+    /\*Create a display where screens and widgets can be added\*/
+    lv\_display\_t \* display \= lv\_display\_create(TFT\_HOR\_RES, TFT\_VER\_RES);
+
+    /\*Add rendering buffers to the screen.
+     \*Here adding a smaller partial buffer assuming 16-bit (RGB565 color format)\*/
+    static uint8\_t buf\[TFT\_HOR\_RES \* TFT\_VER\_RES / 10 \* 2\]; /\* x2 because of 16-bit color depth \*/
+    lv\_display\_set\_buffers(display, buf, NULL, sizeof(buf), LV\_DISPLAY\_RENDER\_MODE\_PARTIAL);
+
+    /\*Add a callback that can flush the content from \`buf\` when it has been rendered\*/
+    lv\_display\_set\_flush\_cb(display, my\_flush\_cb);
+
+    /\*Create an input device for touch handling\*/
+    lv\_indev\_t \* indev \= lv\_indev\_create();
+    lv\_indev\_set\_type(indev, LV\_INDEV\_TYPE\_POINTER);
+    lv\_indev\_set\_read\_cb(indev, my\_touch\_read\_cb);
+
+    /\*The drivers are in place; now we can create the UI\*/
+    lv\_obj\_t \* label \= lv\_label\_create(lv\_screen\_active());
+    lv\_label\_set\_text(label, "Hello world");
+    lv\_obj\_center(label);
+
+    /\*Execute the LVGL-related tasks in a loop\*/
+    while(1) {
+        lv\_timer\_handler();
+        my\_sleep\_ms(5);         /\*Wait a little to let the system breathe\*/
+    }
+}
+
 🤖 Examples
 -----------
 
-See some examples of creating widgets, using layouts and applying styles. You will find C and MicroPython code, and links to try out or edit the examples in an online MicroPython editor.
+You can check out more than 100 examples at https://docs.lvgl.io/master/examples.html
 
-For more examples check out the Examples folder.
+The Online Viewer also contains tutorials to easily learn XML: https://viewer.lvgl.io/
 
-### Hello world label
-
-C code
-
-/\*Change the active screen's background color\*/
-lv\_obj\_set\_style\_bg\_color(lv\_screen\_active(), lv\_color\_hex(0x003a57), LV\_PART\_MAIN);
-
-/\*Create a white label, set its text and align it to the center\*/
-lv\_obj\_t \* label \= lv\_label\_create(lv\_screen\_active());
-lv\_label\_set\_text(label, "Hello world");
-lv\_obj\_set\_style\_text\_color(label, lv\_color\_hex(0xffffff), LV\_PART\_MAIN);
-lv\_obj\_align(label, LV\_ALIGN\_CENTER, 0, 0);
-
-MicroPython code | Online Simulator
-
-\# Change the active screen's background color
-scr \= lv.screen\_active()
-scr.set\_style\_bg\_color(lv.color\_hex(0x003a57), lv.PART.MAIN)
-
-\# Create a white label, set its text and align it to the center
-label \= lv.label(lv.screen\_active())
-label.set\_text("Hello world")
-label.set\_style\_text\_color(lv.color\_hex(0xffffff), lv.PART.MAIN)
-label.align(lv.ALIGN.CENTER, 0, 0)
-
-  
-
-### Button with Click Event
+### Hello World Button with an Event
 
 C code
 
-lv\_obj\_t \* button \= lv\_button\_create(lv\_screen\_active());                   /\*Add a button to the current screen\*/
-lv\_obj\_center(button);                                             /\*Set its position\*/
-lv\_obj\_set\_size(button, 100, 50);                                  /\*Set its size\*/
-lv\_obj\_add\_event\_cb(button, button\_event\_cb, LV\_EVENT\_CLICKED, NULL); /\*Assign a callback to the button\*/
-
-lv\_obj\_t \* label \= lv\_label\_create(button);                        /\*Add a label to the button\*/
-lv\_label\_set\_text(label, "Button");                             /\*Set the labels text\*/
-lv\_obj\_center(label);                                           /\*Align the label to the center\*/
-...
-
-void button\_event\_cb(lv\_event\_t \* e)
+static void button\_clicked\_cb(lv\_event\_t \* e)
 {
-  printf("Clicked\\n");
+  printf("Clicked\\n");
 }
 
-MicroPython code | Online Simulator
+\[...\]
 
-def button\_event\_cb(e):
-  print("Clicked")
+lv\_obj\_t \* button \= lv\_button\_create(lv\_screen\_active());
+lv\_obj\_center(button);
+lv\_obj\_add\_event\_cb(button, button\_clicked\_cb, LV\_EVENT\_CLICKED, NULL);
 
-\# Create a Button and a Label
-button \= lv.button(lv.screen\_active())
-button.center()
-button.set\_size(100, 50)
-button.add\_event\_cb(button\_event\_cb, lv.EVENT.CLICKED, None)
+lv\_obj\_t \* label \= lv\_label\_create(button);
+lv\_label\_set\_text(label, "Hello from LVGL!");
 
-label \= lv.label(button)
-label.set\_text("Button")
-label.center()
+In XML with LVGL Pro
 
-  
+<screen\>
+	<view\>
+		<lv\_button align\="center"\>
+			<event\_cb callback\="button\_clicked\_cb" />
+			<lv\_label text\="Hello from LVGL!" />
+		</lv\_button\>
+	</view\>
+</screen\>
 
-### Checkboxes with Layout
-
-C code
-
-lv\_obj\_set\_flex\_flow(lv\_screen\_active(), LV\_FLEX\_FLOW\_COLUMN);
-lv\_obj\_set\_flex\_align(lv\_screen\_active(), LV\_FLEX\_ALIGN\_CENTER, LV\_FLEX\_ALIGN\_START, LV\_FLEX\_ALIGN\_CENTER);
-
-lv\_obj\_t \* cb;
-cb \= lv\_checkbox\_create(lv\_screen\_active());
-lv\_checkbox\_set\_text(cb, "Apple");
-lv\_obj\_add\_event\_cb(cb, event\_handler, LV\_EVENT\_ALL, NULL);
-
-cb \= lv\_checkbox\_create(lv\_screen\_active());
-lv\_checkbox\_set\_text(cb, "Banana");
-lv\_obj\_add\_state(cb, LV\_STATE\_CHECKED);
-lv\_obj\_add\_event\_cb(cb, event\_handler, LV\_EVENT\_ALL, NULL);
-
-cb \= lv\_checkbox\_create(lv\_screen\_active());
-lv\_checkbox\_set\_text(cb, "Lemon");
-lv\_obj\_add\_state(cb, LV\_STATE\_DISABLED);
-lv\_obj\_add\_event\_cb(cb, event\_handler, LV\_EVENT\_ALL, NULL);
-
-cb \= lv\_checkbox\_create(lv\_screen\_active());
-lv\_obj\_add\_state(cb, LV\_STATE\_CHECKED);
-lv\_obj\_add\_state(cb, LV\_STATE\_DISABLED);
-lv\_checkbox\_set\_text(cb, "Melon\\nand a new line");
-lv\_obj\_add\_event\_cb(cb, event\_handler, LV\_EVENT\_ALL, NULL);
-
-MicroPython code | Online Simulator
-
-def event\_handler(e):
-    code \= e.get\_code()
-    obj \= e.get\_target\_obj()
-    if code \== lv.EVENT.VALUE\_CHANGED:
-        txt \= obj.get\_text()
-        if obj.get\_state() & lv.STATE.CHECKED:
-            state \= "Checked"
-        else:
-            state \= "Unchecked"
-        print(txt + ":" + state)
-
-lv.screen\_active().set\_flex\_flow(lv.FLEX\_FLOW.COLUMN)
-lv.screen\_active().set\_flex\_align(lv.FLEX\_ALIGN.CENTER, lv.FLEX\_ALIGN.START, lv.FLEX\_ALIGN.CENTER)
-
-cb \= lv.checkbox(lv.screen\_active())
-cb.set\_text("Apple")
-cb.add\_event\_cb(event\_handler, lv.EVENT.ALL, None)
-
-cb \= lv.checkbox(lv.screen\_active())
-cb.set\_text("Banana")
-cb.add\_state(lv.STATE.CHECKED)
-cb.add\_event\_cb(event\_handler, lv.EVENT.ALL, None)
-
-cb \= lv.checkbox(lv.screen\_active())
-cb.set\_text("Lemon")
-cb.add\_state(lv.STATE.DISABLED)
-cb.add\_event\_cb(event\_handler, lv.EVENT.ALL, None)
-
-cb \= lv.checkbox(lv.screen\_active())
-cb.add\_state(lv.STATE.CHECKED | lv.STATE.DISABLED)
-cb.set\_text("Melon")
-cb.add\_event\_cb(event\_handler, lv.EVENT.ALL, None)
-
-  
-
-### Styling a Slider
+### Styled Slider with Data-binding
 
 C code
+
+static void my\_observer\_cb(lv\_observer\_t \* observer, lv\_subject\_t \* subject)
+{
+	printf("Slider value: %d\\n", lv\_subject\_get\_int(subject));
+}
+
+\[...\]
+
+static lv\_subject\_t subject\_value;
+lv\_subject\_init\_int(&subject\_value, 35);
+lv\_subject\_add\_observer(&subject\_value, my\_observer\_cb, NULL);
+
+lv\_style\_t style\_base;
+lv\_style\_init(&style\_base);
+lv\_style\_set\_bg\_color(&style\_base, lv\_color\_hex(0xff8800));
+lv\_style\_set\_bg\_opa(&style\_base, 255);
+lv\_style\_set\_radius(&style\_base, 4);
 
 lv\_obj\_t \* slider \= lv\_slider\_create(lv\_screen\_active());
-lv\_slider\_set\_value(slider, 70, LV\_ANIM\_OFF);
-lv\_obj\_set\_size(slider, 300, 20);
 lv\_obj\_center(slider);
+lv\_obj\_set\_size(slider, lv\_pct(80), 16);
+lv\_obj\_add\_style(slider, &style\_base, LV\_PART\_INDICATOR);
+lv\_obj\_add\_style(slider, &style\_base, LV\_PART\_KNOB);
+lv\_obj\_add\_style(slider, &style\_base, 0);
+lv\_obj\_set\_style\_bg\_opa(slider, LV\_OPA\_50, 0);
+lv\_obj\_set\_style\_border\_width(slider, 3, LV\_PART\_KNOB);
+lv\_obj\_set\_style\_border\_color(slider, lv\_color\_hex3(0xfff), LV\_PART\_KNOB);
+lv\_slider\_bind\_value(slider, &subject\_value);
 
-/\*Add local styles to MAIN part (background rectangle)\*/
-lv\_obj\_set\_style\_bg\_color(slider, lv\_color\_hex(0x0F1215), LV\_PART\_MAIN);
-lv\_obj\_set\_style\_bg\_opa(slider, 255, LV\_PART\_MAIN);
-lv\_obj\_set\_style\_border\_color(slider, lv\_color\_hex(0x333943), LV\_PART\_MAIN);
-lv\_obj\_set\_style\_border\_width(slider, 5, LV\_PART\_MAIN);
-lv\_obj\_set\_style\_pad\_all(slider, 5, LV\_PART\_MAIN);
+lv\_obj\_t \* label \= lv\_label\_create(lv\_screen\_active());
+lv\_obj\_align(label, LV\_ALIGN\_CENTER, 0, \-30);
+lv\_label\_bind\_text(label, &subject\_value, "Temperature: %d °C");
 
-/\*Create a reusable style sheet for the INDICATOR part\*/
-static lv\_style\_t style\_indicator;
-lv\_style\_init(&style\_indicator);
-lv\_style\_set\_bg\_color(&style\_indicator, lv\_color\_hex(0x37B9F5));
-lv\_style\_set\_bg\_grad\_color(&style\_indicator, lv\_color\_hex(0x1464F0));
-lv\_style\_set\_bg\_grad\_dir(&style\_indicator, LV\_GRAD\_DIR\_HOR);
-lv\_style\_set\_shadow\_color(&style\_indicator, lv\_color\_hex(0x37B9F5));
-lv\_style\_set\_shadow\_width(&style\_indicator, 15);
-lv\_style\_set\_shadow\_spread(&style\_indicator, 5);
-4
-/\*Add the style sheet to the slider's INDICATOR part\*/
-lv\_obj\_add\_style(slider, &style\_indicator, LV\_PART\_INDICATOR);
+In XML with LVGL Pro
 
-/\*Add the same style to the KNOB part too and locally overwrite some properties\*/
-lv\_obj\_add\_style(slider, &style\_indicator, LV\_PART\_KNOB);
+<screen\>
+	<styles\>
+		<style name\="style\_base" bg\_opa\="100%" bg\_color\="0xff8800" radius\="4" />
+		<style name\="style\_border" border\_color\="0xfff" border\_width\="3" />
+	</styles\>
 
-lv\_obj\_set\_style\_outline\_color(slider, lv\_color\_hex(0x0096FF), LV\_PART\_KNOB);
-lv\_obj\_set\_style\_outline\_width(slider, 3, LV\_PART\_KNOB);
-lv\_obj\_set\_style\_outline\_pad(slider, \-5, LV\_PART\_KNOB);
-lv\_obj\_set\_style\_shadow\_spread(slider, 2, LV\_PART\_KNOB);
+	<view\>
+		<lv\_label bind\_text\="value" bind\_text-fmt\="Temperature: %d °C" align\="center" y\="\-30" />
+		<lv\_slider align\="center" bind\_value\="value" style\_bg\_opa\="30%"\>
+			<style name\="style\_base" />
+			<style name\="style\_base" selector\="knob" />
+			<style name\="style\_base" selector\="indicator" />
+			<style name\="style\_border" selector\="knob" />
+		</lv\_slider\>
+	</view\>
+</screen\>
 
-MicroPython code | Online Simulator
-
-\# Create a slider and add the style
-slider \= lv.slider(lv.screen\_active())
-slider.set\_value(70, lv.ANIM.OFF)
-slider.set\_size(300, 20)
-slider.center()
-
-\# Add local styles to MAIN part (background rectangle)
-slider.set\_style\_bg\_color(lv.color\_hex(0x0F1215), lv.PART.MAIN)
-slider.set\_style\_bg\_opa(255, lv.PART.MAIN)
-slider.set\_style\_border\_color(lv.color\_hex(0x333943), lv.PART.MAIN)
-slider.set\_style\_border\_width(5, lv.PART.MAIN)
-slider.set\_style\_pad\_all(5, lv.PART.MAIN)
-
-\# Create a reusable style sheet for the INDICATOR part
-style\_indicator \= lv.style\_t()
-style\_indicator.init()
-style\_indicator.set\_bg\_color(lv.color\_hex(0x37B9F5))
-style\_indicator.set\_bg\_grad\_color(lv.color\_hex(0x1464F0))
-style\_indicator.set\_bg\_grad\_dir(lv.GRAD\_DIR.HOR)
-style\_indicator.set\_shadow\_color(lv.color\_hex(0x37B9F5))
-style\_indicator.set\_shadow\_width(15)
-style\_indicator.set\_shadow\_spread(5)
-
-\# Add the style sheet to the slider's INDICATOR part
-slider.add\_style(style\_indicator, lv.PART.INDICATOR)
-slider.add\_style(style\_indicator, lv.PART.KNOB)
-
-\# Add the same style to the KNOB part too and locally overwrite some properties
-slider.set\_style\_outline\_color(lv.color\_hex(0x0096FF), lv.PART.KNOB)
-slider.set\_style\_outline\_width(3, lv.PART.KNOB)
-slider.set\_style\_outline\_pad(\-5, lv.PART.KNOB)
-slider.set\_style\_shadow\_spread(2, lv.PART.KNOB)
-
-  
-
-### English, Hebrew (mixed LTR-RTL) and Chinese texts
+### Checkboxes in a Layout
 
 C code
 
-lv\_obj\_t \* ltr\_label \= lv\_label\_create(lv\_screen\_active());
-lv\_label\_set\_text(ltr\_label, "In modern terminology, a microcontroller is similar to a system on a chip (SoC).");
-lv\_obj\_set\_style\_text\_font(ltr\_label, &lv\_font\_montserrat\_16, 0);
-lv\_obj\_set\_width(ltr\_label, 310);
-lv\_obj\_align(ltr\_label, LV\_ALIGN\_TOP\_LEFT, 5, 5);
+/\*Create a new screen and load it\*/
+lv\_obj\_t \* scr \= lv\_obj\_create(NULL);
+lv\_screen\_load(scr);
 
-lv\_obj\_t \* rtl\_label \= lv\_label\_create(lv\_screen\_active());
-lv\_label\_set\_text(rtl\_label,"מעבד, או בשמו המלא יחידת עיבוד מרכזית (באנגלית: CPU - Central Processing Unit).");
-lv\_obj\_set\_style\_base\_dir(rtl\_label, LV\_BASE\_DIR\_RTL, 0);
-lv\_obj\_set\_style\_text\_font(rtl\_label, &lv\_font\_dejavu\_16\_persian\_hebrew, 0);
-lv\_obj\_set\_width(rtl\_label, 310);
-lv\_obj\_align(rtl\_label, LV\_ALIGN\_LEFT\_MID, 5, 0);
+/\*Set a column layout\*/
+lv\_obj\_set\_flex\_flow(scr, LV\_FLEX\_FLOW\_COLUMN);
+lv\_obj\_set\_flex\_align(scr, LV\_FLEX\_ALIGN\_SPACE\_EVENLY, /\*Vertical alignment\*/
+  					   LV\_FLEX\_ALIGN\_START,	       /\*Horizontal alignment in the track\*/
+  					   LV\_FLEX\_ALIGN\_CENTER);      /\*Horizontal alignment of the track\*/
 
-lv\_obj\_t \* cz\_label \= lv\_label\_create(lv\_screen\_active());
-lv\_label\_set\_text(cz\_label,
-                  "嵌入式系统（Embedded System），\\n是一种嵌入机械或电气系统内部、具有专一功能和实时计算性能的计算机系统。");
-lv\_obj\_set\_style\_text\_font(cz\_label, &lv\_font\_source\_han\_sans\_sc\_16\_cjk, 0);
-lv\_obj\_set\_width(cz\_label, 310);
-lv\_obj\_align(cz\_label, LV\_ALIGN\_BOTTOM\_LEFT, 5, \-5);
+/\*Create 5 checkboxes\*/
+const char \* texts\[5\] \= {"Input 1", "Input 2", "Input 3", "Output 1", "Output 2"};
+for(int i \= 0; i < 5; i++) {
+  lv\_obj\_t \* cb \= lv\_checkbox\_create(scr);
+  lv\_checkbox\_set\_text(cb, texts\[i\]);
+}
 
-MicroPython code | Online Simulator
+/\*Change some states\*/
+lv\_obj\_add\_state(lv\_obj\_get\_child(scr, 1), LV\_STATE\_CHECKED);
+lv\_obj\_add\_state(lv\_obj\_get\_child(scr, 3), LV\_STATE\_DISABLED);
 
-ltr\_label \= lv.label(lv.screen\_active())
-ltr\_label.set\_text("In modern terminology, a microcontroller is similar to a system on a chip (SoC).")
-ltr\_label.set\_style\_text\_font(lv.font\_montserrat\_16, 0);
+In XML with LVGL Pro
 
-ltr\_label.set\_width(310)
-ltr\_label.align(lv.ALIGN.TOP\_LEFT, 5, 5)
-
-rtl\_label \= lv.label(lv.screen\_active())
-rtl\_label.set\_text("מעבד, או בשמו המלא יחידת עיבוד מרכזית (באנגלית: CPU - Central Processing Unit).")
-rtl\_label.set\_style\_base\_dir(lv.BASE\_DIR.RTL, 0)
-rtl\_label.set\_style\_text\_font(lv.font\_dejavu\_16\_persian\_hebrew, 0)
-rtl\_label.set\_width(310)
-rtl\_label.align(lv.ALIGN.LEFT\_MID, 5, 0)
-
-font\_hans\_sans\_16\_cjk \= lv.font\_load("S:../../assets/font/lv\_font\_source\_han\_sans\_sc\_16\_cjk.fnt")
-
-cz\_label \= lv.label(lv.screen\_active())
-cz\_label.set\_style\_text\_font(font\_hans\_sans\_16\_cjk, 0)
-cz\_label.set\_text("嵌入式系统（Embedded System），\\n是一种嵌入机械或电气系统内部、具有专一功能和实时计算性能的计算机系统。")
-cz\_label.set\_width(310)
-cz\_label.align(lv.ALIGN.BOTTOM\_LEFT, 5, \-5)
-
-▶️ Get started
---------------
-
-This list will guide you to get started with LVGL step-by-step.
-
-**Get Familiar with LVGL**
-
-1.  Check the Online demos to see LVGL in action (3 minutes).
-2.  Read the Introduction page of the documentation (5 minutes).
-3.  Get familiar with the basics on the Quick overview page (15 minutes).
-
-**Start to Use LVGL**
-
-1.  Set up a Simulator (10 minutes).
-2.  Try out some Examples.
-3.  Port LVGL to a board. See the Porting guide or check out the ready-to-use Projects.
-
-**Become a Pro**
-
-1.  Read the Main-Modules page to get a better understanding of the library (2-3 hours)
-2.  Check the documentation of the Widgets to see their features and usage
-
-**Get Help and Help Others**
-
-1.  If you have questions go to the Forum
-2.  Read the Contributing guide to see how you can help to improve LVGL (15 minutes)
-
-🤝 Services
------------
-
-LVGL LLC was established to provide a solid background for LVGL library and to offer several type of services to help you in UI development. With 15+ years of experience in the user interface and graphics industry we can help you the bring your UI to the next level.
-
--   **Graphics design** Our in-house graphics designers are experts in creating beautiful modern designs which fit to your product and the resources of your hardware.
--   **UI implementation** We can also implement your UI based on the design you or we have created. You can be sure that we will make the most out of your hardware and LVGL. If a feature or widget is missing from LVGL, don't worry, we will implement it for you.
--   **Consulting and Support** We can support you with consulting as well to avoid pricey and time consuming mistakes during the UI development.
--   **Board certification** For companies who are offering development boards, or production ready kits we do board certification which shows how board can run LVGL.
-
-Check out our Demos as reference. For more information take look at the Services page.
-
-Contact us and tell how we can help.
+<screen\>
+	<view
+		flex\_flow="column"
+		style\_flex\_main\_place="space\_evenly"
+		style\_flex\_cross\_place="start"
+		style\_flex\_track\_place="center"
+	>
+		<lv\_checkbox text\="Input 1"/>
+		<lv\_checkbox text\="Input 2"/>
+		<lv\_checkbox text\="Input 3" checked\="true"/>
+		<lv\_checkbox text\="Output 1"/>
+		<lv\_checkbox text\="Output 2" disabled\="true"/>
+   </view\>
+</screen\>
 
 🌟 Contributing
 ---------------
 
-LVGL is an open project and contribution is very welcome. There are many ways to contribute from simply speaking about your project, through writing examples, improving the documentation, fixing bugs or even hosting your own project under the LVGL organization.
+LVGL is an open project, and contributions are very welcome. There are many ways to contribute, from simply speaking about your project, writing examples, improving the documentation, fixing bugs, or even hosting your own project under the LVGL organization.
 
-For a detailed description of contribution opportunities visit the Contributing section of the documentation.
+For a detailed description of contribution opportunities, visit the Contributing section of the documentation.
 
-More than 300 people already left their fingerprint in LVGL. Be one them! See you here! 🙂
+More than 600 people have already left their fingerprint on LVGL. Be one of them! See you here! 🙂
 
-... and many other.
+... and many more.

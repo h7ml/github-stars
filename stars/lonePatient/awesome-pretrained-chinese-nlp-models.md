@@ -1,6 +1,6 @@
 ---
 project: awesome-pretrained-chinese-nlp-models
-stars: 5415
+stars: 5422
 description: Awesome Pretrained Chinese NLP Models，高质量中文预训练模型&大模型&多模态模型&大语言模型集合
 url: https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models
 ---
@@ -2187,6 +2187,44 @@ ChatLLM
 架构
 
 文献
+
+GLM-4.6
+
+A32/355B
+
+2025-10
+
+中英
+
+通用
+
+**Hugging Face**
+
+GLM-4.5
+
+zai-org
+
+MoE
+
+technical blog
+
+**Ling-1T**
+
+1T
+
+2025-10
+
+多语
+
+通用
+
+**🤗 Huggingface**
+
+/
+
+inclusionAI
+
+CD
 
 **Qwen3-Next**
 
@@ -5496,6 +5534,42 @@ Domain-ChatLLM
 架构
 
 文献
+
+**KAT-Dev-72B-Exp**
+
+72B
+
+2025-10
+
+多语
+
+软件工程
+
+**🤗 Huggingface**
+
+/
+
+Kwaipilot
+
+CD
+
+KwaiCoder-23B-A4B-v1
+
+A4/23B
+
+2025-10
+
+多语
+
+软件工程
+
+**🤗 Huggingface**
+
+/
+
+Kwaipilot
+
+CD
 
 Qwen3-Coder
 
@@ -15078,6 +15152,7 @@ github
 更新
 --
 
+-   2025.10.12 增加\[Ling-1T,KAT-Dev-72B-Exp, GLM-4.6 \]
 -   2025.09.20 增加\[Tongyi DeepResearch,Qwen3-Next,Magistral Small,VoxCPM,VibeVoice,HunyuanImage\]
 -   2025.08.19 增加\[gpt-oss-20B,gpt-oss-120B,Baichuan-M2,Ovis2.5,GLM-4.5V\]
 -   2025.08.05 增加\[GLM-4.5,Hunyuan,Qwen3-Thinking-2507,Step3,Kimi-k2,Qwen3-Coder\]

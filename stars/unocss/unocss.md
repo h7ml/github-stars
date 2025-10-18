@@ -1,6 +1,6 @@
 ---
 project: unocss
-stars: 18164
+stars: 18188
 description: The instant on-demand atomic CSS engine.
 url: https://github.com/unocss/unocss
 ---

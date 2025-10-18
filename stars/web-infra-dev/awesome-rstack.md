@@ -1,6 +1,6 @@
 ---
 project: awesome-rstack
-stars: 369
+stars: 370
 description: A curated list of awesome things related to Rstack.
 url: https://github.com/web-infra-dev/awesome-rstack
 ---
@@ -210,6 +210,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 -   react-compiler-webpack: The webpack / Rspack loader for React Compiler.
 -   worker-rspack-loader: An Rspack loader that registers a script as a Web Worker.
 -   rsbuild-plugin-markdown-loader: Importing and rendering Markdown files as React components or pure HTML.
+-   @vue-vine/rspack-loader: Rspack loader for Vue Vine.
 
 ### Rsbuild Plugins
 
@@ -233,6 +234,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 -   rsbuild-plugin-vue-legacy: Support for Vue versions below 2.7 by setting an alias for `vue`.
 -   rspack-plugin-svg: Rsbuild plugin to load SVG files as Vue components, using SVGO for optimization.
 -   @mutsuntsai/rsbuild-plugin-vue-ssg: Generate Vue SSG contents and inject those into HTML for Rsbuild.
+-   @vue-vine/rsbuild-plugin: Rsbuild plugin for Vue Vine.
 
 #### For Preact
 
@@ -251,6 +253,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 
 -   relog-rsbuild-plugin: Allows you to intercept `console.log()` calls from your LynxJS app running on a device or emulator and send them back to the Rsbuild dev server.
 -   ngrok-rsbuild-plugin: Expose your Rsbuild dev server over the internet via ngrok — built for use with the LynxJS app.
+-   lynxjs-app-config-plugin: Rsbuild plugin to inject application icons, permissions and minimal app config changes into Android / iOS project folders.
 
 #### Common
 
@@ -306,6 +309,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 -   zephyr-rsbuild-plugin: An Rsbuild plugin for deploying applications with Zephyr Cloud.
 -   rsbuild-plugin-protobufjs: An Rsbuild plugin that integrates `protobufjs`.
 -   rsbuild-plugin-cdn-import: Import modules from CDN with Rsbuild plugin.
+-   rsbuild-plugin-mcp: Rsbuild plugin that enables a MCP server for your Rsbuild app to provide information about your setup and modules graphs.
 
 ### Rspress Plugins
 

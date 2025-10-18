@@ -422,15 +422,30 @@ For more details visit Anti-Captcha Amazon WAF documentation.
 
 ### Altcha captcha without proxy:
 
+// with challenge URL:
 const token \= await ac.solveAltchaProxyless('http://DOMAIN.COM', '/some/challenge/url');
+
+// with challenge JSON retrieved from challengeurl:
+const token \= await ac.solveAltchaProxyless('http://DOMAIN.COM', '', '{"algorithm":"SHA-256","challenge":"2a40f7ba3393f9513011179de41c7221f14e563856de2f647233a00accf9c28b","salt":"08d7f273d79df143355b9e5n","signature":"1de2bbf282420aef6ca0a84c38c85e2b1e40023d28bef72278d735555a8f47fb"}');
 
 * * *
 
 Solve Altcha captcha with proxy:
 
+// with challenge URL:
 const token \= await ac.solveAltchaProxyOn('http://DOMAIN.COM',
     '/some/challenge/url',
     null,
+    'http', //http, socks4, socks5
+    'PROXY\_IP',
+    'PROXY\_PORT',
+    'PROXY\_LOGIN',
+    'PROXY\_PASSWORD');
+
+// with challenge JSON retrieved from challengeurl:
+const token \= await ac.solveAltchaProxyOn('http://DOMAIN.COM',
+    '',
+    '{"algorithm":"SHA-256","challenge":"2a40f7ba3393f9513011179de41c7221f14e563856de2f647233a00accf9c28b","salt":"08d7f273d79df143355b9e5n","signature":"1de2bbf282420aef6ca0a84c38c85e2b1e40023d28bef72278d735555a8f47fb"}',
     'http', //http, socks4, socks5
     'PROXY\_IP',
     'PROXY\_PORT',

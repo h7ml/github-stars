@@ -1,6 +1,6 @@
 ---
 project: puppet-wechat
-stars: 434
+stars: 435
 description: Wechaty Puppet Provider for WeChat
 url: https://github.com/wechaty/puppet-wechat
 ---

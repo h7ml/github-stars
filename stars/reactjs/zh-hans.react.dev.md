@@ -1,6 +1,6 @@
 ---
 project: zh-hans.react.dev
-stars: 967
+stars: 968
 description: React documentation website in Simplified Chinese
 url: https://github.com/reactjs/zh-hans.react.dev
 ---

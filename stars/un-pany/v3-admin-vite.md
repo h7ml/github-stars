@@ -1,6 +1,6 @@
 ---
 project: v3-admin-vite
-stars: 6579
+stars: 6603
 description: ☀️ A crafted Vue3 admin template | Vue Admin | Vue Template | Vue3 Admin | Vue3 Template | Vue 后台 | Vue 模板 | Vue3 后台 | Vue3 模板
 url: https://github.com/un-pany/v3-admin-vite
 ---

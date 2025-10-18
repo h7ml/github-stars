@@ -1,6 +1,6 @@
 ---
 project: CLIProxyAPI
-stars: 795
+stars: 981
 description: Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API
 url: https://github.com/router-for-me/CLIProxyAPI
 ---
@@ -89,6 +89,8 @@ A cross-platform desktop GUI client for CLIProxyAPI.
 A web-based management center for CLIProxyAPI.
 
 Set `remote-management.disable-control-panel` to `true` if you prefer to host the management UI elsewhere; the server will skip downloading `management.html` and `/management.html` will return 404.
+
+You can set the `MANAGEMENT_STATIC_PATH` environment variable to choose the directory where `management.html` is stored.
 
 ### Authentication
 
@@ -648,6 +650,169 @@ openai-compatibility:
       - name: "moonshotai/kimi-k2:free" # The actual model name.
         alias: "kimi-k2" # The alias used in the API.
 
+### Git-backed Configuration and Token Store
+
+The application can be configured to use a Git repository as a backend for storing both the `config.yaml` file and the authentication tokens from the `auth-dir`. This allows for centralized management and versioning of your configuration.
+
+To enable this feature, set the `GITSTORE_GIT_URL` environment variable to the URL of your Git repository.
+
+**Environment Variables**
+
+Variable
+
+Required
+
+Default
+
+Description
+
+`MANAGEMENT_PASSWORD`
+
+Yes
+
+The password for management webui.
+
+`GITSTORE_GIT_URL`
+
+Yes
+
+The HTTPS URL of the Git repository to use.
+
+`GITSTORE_LOCAL_PATH`
+
+No
+
+Current working directory
+
+The local path where the Git repository will be cloned. Inside Docker, this defaults to `/CLIProxyAPI`.
+
+`GITSTORE_GIT_USERNAME`
+
+No
+
+The username for Git authentication.
+
+`GITSTORE_GIT_TOKEN`
+
+No
+
+The personal access token (or password) for Git authentication.
+
+**How it Works**
+
+1.  **Cloning:** On startup, the application clones the remote Git repository to the `GITSTORE_LOCAL_PATH`.
+2.  **Configuration:** It then looks for a `config.yaml` inside a `config` directory within the cloned repository.
+3.  **Bootstrapping:** If `config/config.yaml` does not exist in the repository, the application will copy the local `config.example.yaml` to that location, commit, and push it to the remote repository as an initial configuration. You must have `config.example.yaml` available.
+4.  **Token Sync:** The `auth-dir` is also managed within this repository. Any changes to authentication tokens (e.g., through a new login) are automatically committed and pushed to the remote Git repository.
+
+### PostgreSQL-backed Configuration and Token Store
+
+You can also persist configuration and authentication data in PostgreSQL when running CLIProxyAPI in hosted environments that favor managed databases over local files.
+
+**Environment Variables**
+
+Variable
+
+Required
+
+Default
+
+Description
+
+`MANAGEMENT_PASSWORD`
+
+Yes
+
+Password for the management web UI (required when remote management is enabled).
+
+`PGSTORE_DSN`
+
+Yes
+
+PostgreSQL connection string (e.g. `postgresql://user:pass@host:5432/db`).
+
+`PGSTORE_SCHEMA`
+
+No
+
+public
+
+Schema where the tables will be created. Leave empty to use the default schema.
+
+`PGSTORE_LOCAL_PATH`
+
+No
+
+Current working directory
+
+Root directory for the local mirror; the server writes to `<value>/pgstore`. If unset and CWD is unavailable, `/tmp/pgstore` is used.
+
+**How it Works**
+
+1.  **Initialization:** On startup the server connects via `PGSTORE_DSN`, ensures the schema exists, and creates the `config_store` / `auth_store` tables when missing.
+2.  **Local Mirror:** A writable cache at `<PGSTORE_LOCAL_PATH or CWD>/pgstore` mirrors `config/config.yaml` and `auths/` so the rest of the application can reuse the existing file-based logic.
+3.  **Bootstrapping:** If no configuration row exists, `config.example.yaml` seeds the database using the fixed identifier `config`.
+4.  **Token Sync:** Changes flow both ways—file updates are written to PostgreSQL and database records are mirrored back to disk so watchers and management APIs continue to operate.
+
+### Object Storage-backed Configuration and Token Store
+
+An S3-compatible object storage service can host configuration and authentication records.
+
+**Environment Variables**
+
+Variable
+
+Required
+
+Default
+
+Description
+
+`MANAGEMENT_PASSWORD`
+
+Yes
+
+Password for the management web UI (required when remote management is enabled).
+
+`OBJECTSTORE_ENDPOINT`
+
+Yes
+
+Object storage endpoint. Include `http://` or `https://` to force the protocol (omitted scheme → HTTPS).
+
+`OBJECTSTORE_BUCKET`
+
+Yes
+
+Bucket that stores `config/config.yaml` and `auths/*.json`.
+
+`OBJECTSTORE_ACCESS_KEY`
+
+Yes
+
+Access key ID for the object storage account.
+
+`OBJECTSTORE_SECRET_KEY`
+
+Yes
+
+Secret key for the object storage account.
+
+`OBJECTSTORE_LOCAL_PATH`
+
+No
+
+Current working directory
+
+Root directory for the local mirror; the server writes to `<value>/objectstore`. If unset, defaults to current CWD.
+
+**How it Works**
+
+1.  **Startup:** The endpoint is parsed (respecting any scheme prefix), a MinIO-compatible client is created in path-style mode, and the bucket is created when missing.
+2.  **Local Mirror:** A writable cache at `<OBJECTSTORE_LOCAL_PATH or CWD>/objectstore` mirrors `config/config.yaml` and `auths/`.
+3.  **Bootstrapping:** When `config/config.yaml` is absent in the bucket, the server copies `config.example.yaml`, uploads it, and uses it as the initial configuration.
+4.  **Sync:** Changes to configuration or auth files are uploaded to the bucket, and remote updates are mirrored back to disk, keeping watchers and management APIs in sync.
+
 ### OpenAI Compatibility Providers
 
 Configure upstream OpenAI-compatible providers (e.g., OpenRouter) via `openai-compatibility`.
@@ -694,21 +859,6 @@ And you can always use Gemini CLI with `CODE_ASSIST_ENDPOINT` set to `http://127
 ### Authentication Directory
 
 The `auth-dir` parameter specifies where authentication tokens are stored. When you run the login command, the application will create JSON files in this directory containing the authentication tokens for your Google accounts. Multiple accounts can be used for load balancing.
-
-### Request Authentication Providers
-
-Configure inbound authentication through the `auth.providers` section. The built-in `config-api-key` provider works with inline keys:
-
-```
-auth:
-  providers:
-    - name: default
-      type: config-api-key
-      api-keys:
-        - your-api-key-1
-```
-
-Clients should send requests with an `Authorization: Bearer your-api-key-1` header (or `X-Goog-Api-Key`, `X-Api-Key`, or `?key=` as before). The legacy top-level `api-keys` array is still accepted and automatically synced to the default provider for backwards compatibility.
 
 ### Official Generative Language API
 
@@ -829,6 +979,18 @@ Run the following command to start the server:
 
 docker run --rm -p 8317:8317 -v /path/to/your/config.yaml:/CLIProxyAPI/config.yaml -v /path/to/your/auth-dir:/root/.cli-proxy-api eceasy/cli-proxy-api:latest
 
+Note
+
+To use the Git-backed configuration store with Docker, you can pass the `GITSTORE_*` environment variables using the `-e` flag. For example:
+
+docker run --rm -p 8317:8317 \\
+  -e GITSTORE\_GIT\_URL="https://github.com/your/config-repo.git" \\
+  -e GITSTORE\_GIT\_TOKEN="your\_personal\_access\_token" \\
+  -v /path/to/your/git-store:/CLIProxyAPI/remote \\
+  eceasy/cli-proxy-api:latest
+
+In this case, you may not need to mount `config.yaml` or `auth-dir` directly, as they will be managed by the Git store inside the container at the `GITSTORE_LOCAL_PATH` (which defaults to `/CLIProxyAPI` and we are setting it to `/CLIProxyAPI/remote` in this example).
+
 Run with Docker Compose
 -----------------------
 
@@ -842,6 +1004,27 @@ Run with Docker Compose
     cp config.example.yaml config.yaml
     
     _(Note for Windows users: You can use `copy config.example.yaml config.yaml` in CMD or PowerShell.)_
+    
+    To use the Git-backed configuration store, you can add the `GITSTORE_*` environment variables to your `docker-compose.yml` file under the `cli-proxy-api` service definition. For example:
+    
+    services:
+      cli-proxy-api:
+        image: eceasy/cli-proxy-api:latest
+        container\_name: cli-proxy-api
+        ports:
+          - "8317:8317"
+          - "8085:8085"
+          - "1455:1455"
+          - "54545:54545"
+          - "11451:11451"
+        environment:
+          - GITSTORE\_GIT\_URL=https://github.com/your/config-repo.git
+          - GITSTORE\_GIT\_TOKEN=your\_personal\_access\_token
+        volumes:
+          - ./git-store:/CLIProxyAPI/remote # GITSTORE\_LOCAL\_PATH
+        restart: unless-stopped
+    
+    When using the Git store, you may not need to mount `config.yaml` or `auth-dir` directly.
     
 3.  Start the service:
     

@@ -1,6 +1,6 @@
 ---
 project: note-gen
-stars: 9643
+stars: 9713
 description: A cross-platform Markdown AI note-taking software.
 url: https://github.com/codexu/note-gen
 ---
@@ -24,6 +24,7 @@ Features
 -   🌐 Cross-platform support.
 -   🆓 Free AI and sync solutions.
 -   📦 Out-of-the-box RAG support.
+-   🔌 MCP support for AI tool integration.
 -   ✍️ Quick note-taking for fragmented information.
 -   📝 Native Markdown storage format.
 

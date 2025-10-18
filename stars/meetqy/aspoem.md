@@ -1,6 +1,6 @@
 ---
 project: aspoem
-stars: 2814
+stars: 2818
 description: Learn Chinese Poetry With AsPoem.com
 url: https://github.com/meetqy/aspoem
 ---
@@ -79,6 +79,3 @@ Jonas
 ---
 
 遵守 GNU Affero General Public License（AGPL）3.0 版本的条款和条件。
-
-交流群
----

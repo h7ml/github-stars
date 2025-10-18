@@ -1,6 +1,6 @@
 ---
 project: table
-stars: 1352
+stars: 1354
 description: React Table
 url: https://github.com/react-component/table
 ---

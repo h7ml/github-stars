@@ -1,6 +1,6 @@
 ---
 project: fe-interview
-stars: 2858
+stars: 2859
 description: 宇宙最强的前端面试指南 (https://lucifer.ren/fe-interview)
 url: https://github.com/azl397985856/fe-interview
 ---

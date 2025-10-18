@@ -1,6 +1,6 @@
 ---
 project: p-map
-stars: 1453
+stars: 1454
 description: Map over promises concurrently
 url: https://github.com/sindresorhus/p-map
 ---

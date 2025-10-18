@@ -1,6 +1,6 @@
 ---
 project: v-satori
-stars: 38
+stars: 39
 description: Generate a satori-friendly VDOM from a Vue component
 url: https://github.com/wobsoriano/v-satori
 ---

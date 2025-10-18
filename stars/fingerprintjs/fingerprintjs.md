@@ -1,15 +1,13 @@
 ---
 project: fingerprintjs
-stars: 25616
-description: The most advanced browser fingerprinting library.
+stars: 25683
+description: The most advanced open-source browser fingerprinting library
 url: https://github.com/fingerprintjs/fingerprintjs
 ---
 
-FingerprintJS is a source-available, client-side, browser fingerprinting library that queries browser attributes and computes a hashed visitor identifier from them. Unlike cookies and local storage, a fingerprint stays the same in incognito/private mode and even when browser data is purged.
+FingerprintJS is an open-source, client-side, browser fingerprinting library that queries browser attributes and computes a hashed visitor identifier from them. Unlike cookies and local storage, a fingerprint stays the same in incognito/private mode and even when browser data is purged.
 
-FingerprintJS is available under a BSL license for non-production purposes.
-
-_FingerprintJS is different from Fingerprint Identification, our more detailed and accurate commercial product. See below for more information._
+FingerprintJS is available under the MIT license.
 
 Demo
 ----
@@ -53,7 +51,7 @@ Limitations
 
 ### Accuracy
 
-Since FingerprintJS processes and generates the fingerprints from within the browser itself, the accuracy is limited (40% - 60%). For example, when 2 different users send requests using identical (i.e. same version, same vendor, same platform), browsers, FingerprintJS will not be able to tell these two browsers apart, primarily because the attributes from these browsers will be identical.
+Since FingerprintJS processes and generates the fingerprints from within the browser itself, the accuracy is significatnly lower than in the commercial version
 
 ### Security
 

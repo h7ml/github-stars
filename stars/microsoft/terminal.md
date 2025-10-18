@@ -1,6 +1,6 @@
 ---
 project: terminal
-stars: 100482
+stars: 100533
 description: The new Windows Terminal and the original Windows console host, all in the same place!
 url: https://github.com/microsoft/terminal
 ---
@@ -150,25 +150,25 @@ App Installer
 
 x64, arm64, x86
 
-download
+Download
 
 Portable ZIP
 
 x64
 
-download
+Download
 
 Portable ZIP
 
 ARM64
 
-download
+Download
 
 Portable ZIP
 
 x86
 
-download
+Download
 
 _Learn more about the types of Windows Terminal distributions._
 

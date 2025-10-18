@@ -1,6 +1,6 @@
 ---
 project: swagger-axios-codegen
-stars: 312
+stars: 314
 description: swagger client to use axios and typescript
 url: https://github.com/Manweill/swagger-axios-codegen
 ---

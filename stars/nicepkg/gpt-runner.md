@@ -1,6 +1,6 @@
 ---
 project: gpt-runner
-stars: 370
+stars: 372
 description: Conversations with your files! Manage and run your AI presets!
 url: https://github.com/nicepkg/gpt-runner
 ---

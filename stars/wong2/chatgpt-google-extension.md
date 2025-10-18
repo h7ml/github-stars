@@ -1,6 +1,6 @@
 ---
 project: chatgpt-google-extension
-stars: 13181
+stars: 13180
 description: This project is deprecated. Check my new project ChatHub:
 url: https://github.com/wong2/chatgpt-google-extension
 ---

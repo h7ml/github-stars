@@ -1,6 +1,6 @@
 ---
 project: daruk
-stars: 927
+stars: 926
 description: a node.js web framework based on typescript
 url: https://github.com/darukjs/daruk
 ---

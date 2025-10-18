@@ -1,6 +1,6 @@
 ---
 project: act
-stars: 66262
+stars: 66397
 description: Run your GitHub Actions locally 🚀
 url: https://github.com/nektos/act
 ---

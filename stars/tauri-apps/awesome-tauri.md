@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6538
+stars: 6569
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---
@@ -190,6 +190,7 @@ Applications
 -   Jan \- Open source alternative to ChatGPT that runs 100% offline on your computer.
 -   Kaas - Cross-platform desktop LLM client for OpenAI ChatGPT, Anthropic Claude, Microsoft Azure and more, with a focus on privacy and security.
 -   Orion - Cross-platform app that lets you create multiple AI assistants with specific goals powered with ChatGPT.
+-   Oxide-Lab \- Local LLM chat application with privacy-focused AI inference using `candle` and Rust backend.
 -   QuickGPT - Lightweight AI assistant for Windows.
 -   Yack - Spotlight like app for interfacing with GPT APIs.
 
@@ -389,6 +390,7 @@ Applications
 -   Qopy - The fixed Clipboard Manager for Windows and Mac.
 -   Remind Me Again - Toggleable reminders app for Mac, Linux and Windows.
 -   Runtime \- AI taskmate for web & office tools.
+-   Shell360 \- Cross-platform open-source SSH and SFTP client with port forwarding and encrypted data storage, designed for developers and system administrators.
 -   Takma - Kanban-style to-do app, fully offline with support for Markdown, labels, due dates, checklists and deep linking.
 -   Tencent Yuanbao \- Tencent Yuanbao is an AI application based on Tencent Hunyuan large model. It is an all-round assistant that can help you with writing, painting, copywriting, translation, programming, searching, reading and summarizing.
 -   TimeChunks \- Time tracking for freelancers without timers and HH:MM:SS inputs.
@@ -433,6 +435,7 @@ Applications
 -   TypeView - KeyStroke Visualizer - Visualizes keys pressed on the screen and simulates the sound of mechanical keyboard.
 -   Browsernaut - Browser picker for macOS.
 -   Clipboard Record - Record Clipboard Content.
+-   CrabCamera - Professional desktop camera plugin for Tauri applications with WebRTC streaming and advanced hardware controls.
 -   Dwall - Change the Windows desktop and lock screen wallpapers according to the sun's azimuth and altitude angles, just like on macOS.
 -   Fancy Screen Recorder \- Record entire screen or a selected area, trim and save as a GIF or video.
 -   FanslySync - Sync your Fansly data with 3rd party applications, securely!
@@ -463,6 +466,7 @@ Applications
 -   RunMath - Keyboard-first calculator for Windows.
 -   SensiMouse - Easily change macOS system-wide mouse sensitivity and acceleration settings.
 -   SlimeVR Server - Server app for SlimeVR, facilitating full-body tracking in virtual reality.
+-   Sofast \- A cross-platform Raycast-like app.
 -   SoulFire - Advanced Minecraft Server-Stresser Tool. Launch bot attacks on your servers to measure performance.
 -   Stable Diffusion Buddy - Desktop UI companion for the self-hosted Mac version of Stable Diffusion.
 -   Stacks - Modern and capable clipboard manager for macOS. Seeking Linux and Windows contributions.
@@ -477,4 +481,3 @@ Applications
 -   Vibe - Transcribe audio or video in every language on every platform.
 -   Wallpaper changer - Simple wallpaper changer app.
 -   Zap \- macOS spotlight-like dock that makes navigating apps convenient.
--   Sofast \- A cross-platform Raycast-like app.

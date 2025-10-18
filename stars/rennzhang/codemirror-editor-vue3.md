@@ -1,6 +1,6 @@
 ---
 project: codemirror-editor-vue3
-stars: 240
+stars: 241
 description: CodeMirror component for Vue3
 url: https://github.com/rennzhang/codemirror-editor-vue3
 ---

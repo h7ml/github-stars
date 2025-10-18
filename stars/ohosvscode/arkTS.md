@@ -1,6 +1,6 @@
 ---
 project: arkTS
-stars: 620
+stars: 624
 description: VSCode鸿蒙ArkTS插件✨✍️支持各种补全/跳转⛺️支持codelinter检测代码错误🎵VSCode HarmonyOS ArkTS plugin for personal use ✨ ✍️supports source code navigation and completion ⛺️supports codelinter to detect errors
 url: https://github.com/ohosvscode/arkTS
 ---

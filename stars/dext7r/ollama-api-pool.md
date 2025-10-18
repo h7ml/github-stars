@@ -1,6 +1,6 @@
 ---
 project: ollama-api-pool
-stars: 7
+stars: 10
 description: 🚀 Intelligent Ollama API proxy pool based on Cloudflare Workers - 基于 Cloudflare Workers 的智能 Ollama API 代理池，支持多账号轮询、自动故障转移、负载均衡和统一鉴权
 url: https://github.com/dext7r/ollama-api-pool
 ---
@@ -25,6 +25,7 @@ English | 简体中文
 -   🔀 **OpenRouter** - 支持 OpenRouter API，访问多种 LLM 模型
 -   🔌 **统一接口** - 所有 Provider 使用相同的 OpenAI 兼容接口
 -   🎯 **智能路由** - 根据路径自动识别 Provider（如 `/openrouter/v1/chat/completions`）
+-   🎚️ **独立控制** v3.1.0 - 可单独启用/禁用每个 Provider，灵活配置服务范围
 
 ### 💡 核心功能
 
@@ -41,6 +42,17 @@ English | 简体中文
 -   📥 **批量导入** - 支持从 ollama.txt 文件导入账号
 -   🔍 **验证导入** - 逐行验证 API Key 有效性并自动分类
 -   🎛️ **管理后台** - Web 界面管理 API Keys 和客户端 Tokens
+
+### 👥 用户系统 v3.0.0
+
+-   📧 **邮箱注册** - 用户可通过邮箱自助注册账户，获取专属 API 访问凭证
+-   🔑 **双模式登录** - 支持验证码登录和密码登录两种方式
+-   ✉️ **邮件验证** - 集成 push-all-in-one 邮件服务，发送精美 HTML 验证码邮件
+-   🎯 **用户仪表盘** - 独立用户控制台，查看个人信息、API 密钥和使用统计
+-   📅 **每日签到** - 用户每日签到可自动延长 API 凭证有效期（+24 小时）
+-   📜 **签到历史** - 完整的签到记录查询，支持分页浏览
+-   🛡️ **Turnstile 验证** - 集成 Cloudflare Turnstile 人机验证，防止滥用
+-   👨‍💼 **用户管理** - 管理员可批量启用/禁用用户、延长凭证、重置密钥
 
 ### ⚡ 性能与存储
 
@@ -100,9 +112,34 @@ binding = "ACCOUNTS"
 id = "your-accounts-kv-id"  # 替换为实际 ID
 
 \[vars\]
+# 管理员配置
 ADMIN\_TOKEN = "your-secure-admin-token-here"  # 设置强密码
 
+# Provider 控制 (v3.1.0+)
+DISABLE\_OLLAMA = "false"         # 是否禁用 Ollama（默认启用）
+DISABLE\_OPENROUTER = "false"     # 是否禁用 OpenRouter（默认启用）
+
+# 用户系统配置 (v3.0.0+)
+AUTH\_SECRET = "your-jwt-secret-key-here"  # JWT 签名密钥，建议使用 32 位以上随机字符串
+ENABLE\_TURNSTILE = "true"  # 是否启用 Turnstile 人机验证
+TURNSTILE\_SITE\_KEY = "your-turnstile-site-key"  # Cloudflare Turnstile Site Key
+TURNSTILE\_SECRET\_KEY = "your-turnstile-secret-key"  # Cloudflare Turnstile Secret Key
+
+# 邮件服务配置 (v3.0.0+)
+EMAIL\_FORWARD\_URL = "your-push-all-in-one-url"  # push-all-in-one 邮件转发服务地址
+EMAIL\_HOST = "smtp.example.com"  # SMTP 服务器地址
+EMAIL\_PORT = "587"  # SMTP 端口
+EMAIL\_AUTH\_USER = "your-email@example.com"  # SMTP 用户名
+EMAIL\_AUTH\_PASS = "your-email-password"  # SMTP 密码
+EMAIL\_SECURE = "true"  # 是否使用 TLS
+
 > ⚠️ **重要**: `wrangler.toml` 包含敏感信息，已添加到 `.gitignore`，不会被提交到仓库
+> 
+> 📧 **邮件服务**: 推荐使用 push-all-in-one 作为邮件转发服务
+> 
+> 🛡️ **Turnstile**: 在 Cloudflare Dashboard 创建 Turnstile 站点获取密钥
+> 
+> 🎚️ **Provider 控制**: 详细说明请参考 PROVIDER\_TOGGLE.md
 
 ### 4\. 部署
 
@@ -415,6 +452,10 @@ id = "your-accounts-kv-id"
 # 管理后台密钥（必须修改）
 ADMIN\_TOKEN = "your-admin-secret-token"
 
+# Provider 控制 (v3.1.0+)
+DISABLE\_OLLAMA = "false"         # 是否禁用 Ollama（默认启用）
+DISABLE\_OPENROUTER = "false"     # 是否禁用 OpenRouter（默认启用）
+
 # 功能开关
 ENABLE\_ANALYTICS = "true"        # 启用统计分析
 ENABLE\_RATE\_LIMIT = "true"       # 启用 IP 速率限制
@@ -543,6 +584,8 @@ create table if not exists openrouter\_api\_keys (
 -----
 
 -   **配置指南** - 详细的环境变量配置说明
+-   **Provider 开关** - Ollama/OpenRouter 启用禁用指南 v3.1.0
+-   **API 参数说明** - 透传参数与防封禁机制 v3.1.0
 -   **优化措施** - KV 优化和性能调优
 -   **贡献指南** - 如何参与项目开发
 -   **API 文档** - 在线 API 文档

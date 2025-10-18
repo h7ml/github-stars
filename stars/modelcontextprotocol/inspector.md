@@ -1,6 +1,6 @@
 ---
 project: inspector
-stars: 6910
+stars: 7073
 description: Visual testing tool for MCP servers
 url: https://github.com/modelcontextprotocol/inspector
 ---
@@ -223,9 +223,9 @@ Default
 
 `MCP_SERVER_REQUEST_TIMEOUT`
 
-Timeout for requests to the MCP server (ms)
+Client-side timeout (ms) - Inspector will cancel the request if no response is received within this time. Note: servers may have their own timeouts
 
-10000
+300000
 
 `MCP_REQUEST_TIMEOUT_RESET_ON_PROGRESS`
 
@@ -250,6 +250,8 @@ Set this if you are running the MCP Inspector Proxy on a non-default address. Ex
 Enable automatic browser opening when inspector starts (works with authentication enabled). Only as environment var, not configurable in browser.
 
 true
+
+**Note on Timeouts:** The timeout settings above control when the Inspector (as an MCP client) will cancel requests. These are independent of any server-side timeouts. For example, if a server tool has a 10-minute timeout but the Inspector's timeout is set to 30 seconds, the Inspector will cancel the request after 30 seconds. Conversely, if the Inspector's timeout is 10 minutes but the server times out after 30 seconds, you'll receive the server's timeout error. For tools that require user interaction (like elicitation) or long-running operations, ensure the Inspector's timeout is set appropriately.
 
 These settings can be adjusted in real-time through the UI and will persist across sessions.
 
@@ -354,7 +356,7 @@ http://localhost:6274/?transport=stdio&serverCommand=npx&serverArgs=arg1%20arg2
 You can also set initial config settings via query params, for example:
 
 ```
-http://localhost:6274/?MCP_SERVER_REQUEST_TIMEOUT=10000&MCP_REQUEST_TIMEOUT_RESET_ON_PROGRESS=false&MCP_PROXY_FULL_ADDRESS=http://10.1.1.22:5577
+http://localhost:6274/?MCP_SERVER_REQUEST_TIMEOUT=60000&MCP_REQUEST_TIMEOUT_RESET_ON_PROGRESS=false&MCP_PROXY_FULL_ADDRESS=http://10.1.1.22:5577
 ```
 
 Note that if both the query param and the corresponding localStorage item are set, the query param will take precedence.

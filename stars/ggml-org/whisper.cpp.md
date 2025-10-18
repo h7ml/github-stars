@@ -1,6 +1,6 @@
 ---
 project: whisper.cpp
-stars: 43746
+stars: 43897
 description: Port of OpenAI's Whisper model in C/C++
 url: https://github.com/ggml-org/whisper.cpp
 ---
@@ -8,7 +8,7 @@ url: https://github.com/ggml-org/whisper.cpp
 whisper.cpp
 ===========
 
-Stable: v1.8.0 / Roadmap
+Stable: v1.8.1 / Roadmap
 
 High-performance inference of OpenAI's Whisper automatic speech recognition (ASR) model:
 

@@ -1,6 +1,6 @@
 ---
 project: sese-engine-ui
-stars: 279
+stars: 280
 description: 🔍 Sese engine ui. 色色搜索引擎 UI
 url: https://github.com/YunYouJun/sese-engine-ui
 ---

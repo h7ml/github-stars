@@ -1,6 +1,6 @@
 ---
 project: farm
-stars: 5490
+stars: 5492
 description: Extremely fast Vite-compatible web build tool written in Rust
 url: https://github.com/farm-fe/farm
 ---
