@@ -1,6 +1,6 @@
 ---
 project: ludwig
-stars: 11598
+stars: 11602
 description: Low-code framework for building custom LLMs, neural networks, and other AI models
 url: https://github.com/ludwig-ai/ludwig
 ---

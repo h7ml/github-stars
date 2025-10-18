@@ -1,6 +1,6 @@
 ---
 project: trzsz-ssh
-stars: 2266
+stars: 2271
 description: trzsz-ssh ( tssh ) is an ssh client designed as a drop-in replacement for the openssh client. It aims to provide complete compatibility with openssh, mirroring all its features, while also offering additional useful features. Such as login prompt, batch login, remember password, automated interaction, trzsz, zmodem(rz/sz), udp mode like mosh, etc.
 url: https://github.com/trzsz/trzsz-ssh
 ---
@@ -27,13 +27,13 @@ Pseudo TTY
 
 `-t` `-T` `RequestTTY`
 
-Network
-
-`-4` `-6` `AddressFamily`
-
 SSH Proxy
 
 `-J` `-W` `ProxyJump` `ProxyCommand`
+
+Network
+
+`-4` `-6` `AddressFamily` `ConnectTimeout`
 
 Multiplexing
 
@@ -198,7 +198,7 @@ Installation
     yay -Syu
     yay -S tssh
     
--   Install with Go ( Requires go 1.21 or later )
+-   Install with Go ( Requires go 1.25 or later )
     
     `go install github.com/trzsz/trzsz-ssh/cmd/tssh@latest`
     
@@ -206,7 +206,7 @@ Installation
     
     The binaries are usually located in ~/go/bin/ ( C:\\Users\\your\_name\\go\\bin\\ on Windows ).
     
--   Build from source ( Requires go 1.21 or later )
+-   Build from source ( Requires go 1.25 or later )
     
     `sudo make install`
     

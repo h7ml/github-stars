@@ -1,8 +1,8 @@
 ---
 project: Termix
-stars: 5266
+stars: 5549
 description: Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities.
-url: https://github.com/LukeGus/Termix
+url: https://github.com/Termix-SSH/Termix
 ---
 
 Repo Stats
@@ -78,7 +78,7 @@ volumes:
 Support
 =======
 
-If you need help with Termix, you can join the Discord server and visit the support channel. You can also open an issue or open a pull request on the GitHub repo.
+If you need help or want to request a feature with Termix, visit the Issues page, log in, and press `New Issue`. Please be as detailed as possible in your issue, preferably written in English. You can also join the Discord server and visit the support channel, however, response times may be longer.
 
 Show-off
 ========

@@ -1,6 +1,6 @@
 ---
 project: awesome-balatro
-stars: 1066
+stars: 1070
 description: A list of Balatro Mods and Tools
 url: https://github.com/jie65535/awesome-balatro
 ---
@@ -180,6 +180,7 @@ Mods (Require **Steamodded**)
 -   Randomizer Deck - The Randomizer Deck randomizes itself, jokers, vouchers, planets, costs etc. by @Hellyom
 -   Royal Deck - Adds 1 deck (Royal Deck): It contains only enhanced Aces, face cards, and 10s. by `@UnknownEternity`
 -   ScrapDeck - A deck where everything sells at **full price**! Might be overpowered but it's definitely fun! by `@Rose Happy`
+-   SmallWorldDeck - A deck that randomly bans 75% of all of all Jokers, Tarots, Planets, and Spectrals each run, forcing you to adapt and experiment with new builds. Starts you off with a Negative Showman. Inspired by the Small World ruleset for Balatro multiplayer. by @jacksoncmu
 -   Sylvie's Silliness - A few decks, jokers, etc. Have fun! by @NewtTheFish
     -   Lemon-Lime Deck - Start with a modified deck; -1 discard, -1 hand; The 2's in the deck have one of each (vanilla) seal.
     -   Sulfur Deck - Start with a Death card and Overstock; Jokers are appear less often (equal chance to Tarots and Planets)

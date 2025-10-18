@@ -1,11 +1,11 @@
 ---
 project: fil-c
-stars: 1439
+stars: 1531
 description: Fil-C: completely compatible memory safety for C and C++
 url: https://github.com/pizlonator/fil-c
 ---
 
-Fil-C 0.672
+Fil-C 0.673
 ===========
 
 Fil-C is a fanatically compatible memory-safe implementation of C and C++. Lots of software compiles and runs with Fil-C with zero or minimal changes. All memory safety errors are caught as Fil-C panics. Fil-C achieves this using a combination of concurrent garbage collection and invisible capabilities (each pointer in memory has a corresponding capability, not visible to the C address space). Every fundamental C operation (as seen in LLVM IR) is checked against the capability. Fil-C has no `unsafe` statement and only limited FFI to unsafe code.
@@ -24,9 +24,9 @@ Fil-C is special because:
 License
 -------
 
-The compiler (clang + LLVM) is covered by LLVM-LICENSE.txt. The runtime is covered by PAS-LICENSE.txt (see libpas/LICENSE.txt in the source distribution). The libc is covered by MUSL-LICENSE.txt (see projects/yolomusl/COPYRIGHT and projects/usermusl/COPYRIGHT in the source distribution). The libc++/libc++abi are covered by LLVM-LICENSE.txt.
+The compiler (clang + LLVM) is covered by LLVM-LICENSE.txt. The runtime is covered by PAS-LICENSE.txt (see libpas/LICENSE.txt in the source distribution). In the case of the classic musl-based Fil-C distribution, the musl libc is covered by MUSL-LICENSE.txt (see projects/yolomusl/COPYRIGHT and projects/usermusl/COPYRIGHT in the source distribution). In the case of the /opt/fil distribution, glibc is covered by glibc-LICENSE.txt, and all other included programs are covered by the respective -LICENSE.txt files. The C++ libraries (libc++/libc++abi) are covered by LLVM-LICENSE.txt.
 
-You can fetch the compiler, runtime, libc++/libc++abi, and libc (musl) source from https://github.com/pizlonator/fil-c. The source distribution also includes many programs that have been ported to Fil-C in the projects/ directory, and they have a variety of licenses.
+You can fetch the source for the compiler, runtime, libc++/libc++abi, libc (musl and glibc), and all included programs from https://github.com/pizlonator/fil-c. The source distribution also includes many additional programs that have been ported to Fil-C in the projects/ and pizlix/ directories, and they have a variety of licenses.
 
 Requirements
 ------------
@@ -44,6 +44,13 @@ If you downloaded Fil-C binaries, run:
 ./setup.sh
 ```
 
+This has a different effect depending on which binary distribution you selected:
+
+-   In case of the classic musl-based distribution (`filc-0.673-linux-x86_64.tar.xz`), this sets up Fil-C to run in the current directory.
+    
+-   In case of the /opt/fil glibc-based distribution (`optfil-0.673-linux-x86_64.tar.xz`), this sets up Fil-C in `/opt/fil`.
+    
+
 If you downloaded Fil-C source, run:
 
 ```
@@ -59,6 +66,10 @@ The binary distribution of Fil-C comes with musl as the libc. Using `./build_all
 -   `./build_all.sh` - full musl-based build (also builds lots of software that was ported to Fil-C).
     
 -   `./build_all_glibc.sh` - full glibc-based build (builds even more software that was ported to Fil-C).
+    
+-   `cd pizlix && sudo ./build.sh` - builds the Pizlix Linux distribution.
+    
+-   `cd optfil && sudo ./build.sh` - builds the `/opt/fil` distribution.
     
 
 Things That Work

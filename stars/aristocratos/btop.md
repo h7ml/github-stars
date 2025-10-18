@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 27360
+stars: 27477
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -1364,6 +1364,9 @@ base\_10\_sizes = False
 
 #\* Show CPU frequency.
 show\_cpu\_freq = True
+
+#\* How to calculate CPU frequency, available values: "first", "range", "lowest", "highest" and "average".
+freq\_mode = "first"
 
 #\* Draw a clock at top of screen, formatting according to strftime, empty string to disable.
 #\* Special formatting: /host = hostname | /user = username | /uptime = system uptime

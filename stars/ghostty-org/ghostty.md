@@ -1,6 +1,6 @@
 ---
 project: ghostty
-stars: 36827
+stars: 37153
 description: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 url: https://github.com/ghostty-org/ghostty
 ---
@@ -166,4 +166,4 @@ SENTRY_DSN=https://e914ee84fd895c4fe324afa3e53dac76@o4507352570920960.ingest.us.
 
 Warning
 
-The crash report can contain sensitive information. The report doesn't purposely contain sensitive information, but it does contain the full stack memory of each thread at the time of the crash. This information is used to rebuild the stack trace but can also contain sensitive data depending when the crash occurred.
+The crash report can contain sensitive information. The report doesn't purposely contain sensitive information, but it does contain the full stack memory of each thread at the time of the crash. This information is used to rebuild the stack trace but can also contain sensitive data depending on when the crash occurred.

@@ -1,7 +1,7 @@
 ---
 project: PaddleOCR
-stars: 56943
-description: Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 80+ languages.
+stars: 58402
+description: Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
 
@@ -18,10 +18,15 @@ PaddleOCR now provides an MCP server that supports integration with Agent applic
 
 The PaddleOCR 3.0 Technical Report is now available. See details at: PaddleOCR 3.0 Technical Report
 
+The PaddleOCR-VL Technical Report is now available. See details at PaddleOCR-VL Technical Report
+
 **PaddleOCR** converts documents and images into **structured, AI-friendly data** (like JSON and Markdown) with **industry-leading accuracy**—powering AI applications for everyone from indie developers and startups to large enterprises worldwide. With over **50,000 stars** and deep integration into leading projects like **MinerU, RAGFlow, and OmniParser**, PaddleOCR has become the **premier solution** for developers building intelligent document applications in the **AI era**.
 
 ### PaddleOCR 3.0 Core Features
 
+-   **PaddleOCR-VL - Multilingual Document Parsing via a 0.9B VLM**  
+    **The SOTA and resource-efficient model tailored for document parsing**, that supports 109 languages and excels in recognizing complex elements (e.g., text, tables, formulas, and charts), while maintaining minimal resource consumption.
+    
 -   **PP-OCRv5 — Universal Scene Text Recognition**  
     **Single model supports five text types** (Simplified Chinese, Traditional Chinese, English, Japanese, and Pinyin) with **13% accuracy improvement**. Solves multilingual mixed document recognition challenges.
     
@@ -39,7 +44,23 @@ In addition to providing an outstanding model library, PaddleOCR 3.0 also offers
 📣 Recent updates
 -----------------
 
-### 🔥🔥2025.08.21: Release of PaddleOCR 3.2.0, includes:
+### 🔥🔥 2025.10.16: PaddleOCR 3.3.0 released, includes:
+
+-   Released PaddleOCR-VL:
+    
+    -   **Model Introduction**:
+        
+        -   **PaddleOCR-VL** is a SOTA and resource-efficient model tailored for document parsing. Its core component is PaddleOCR-VL-0.9B, a compact yet powerful vision-language model (VLM) that integrates a NaViT-style dynamic resolution visual encoder with the ERNIE-4.5-0.3B language model to enable accurate element recognition. **This innovative model efficiently supports 109 languages and excels in recognizing complex elements (e.g., text, tables, formulas, and charts), while maintaining minimal resource consumption**. Through comprehensive evaluations on widely used public benchmarks and in-house benchmarks, PaddleOCR-VL achieves SOTA performance in both page-level document parsing and element-level recognition. It significantly outperforms existing solutions, exhibits strong competitiveness against top-tier VLMs, and delivers fast inference speeds. These strengths make it highly suitable for practical deployment in real-world scenarios. The model has been released on HuggingFace. Everyone is welcome to download and use it! More introduction infomation can be found in PaddleOCR-VL.
+    -   **Core Features**:
+        
+        -   **Compact yet Powerful VLM Architecture**: We present a novel vision-language model that is specifically designed for resource-efficient inference, achieving outstanding performance in element recognition. By integrating a NaViT-style dynamic high-resolution visual encoder with the lightweight ERNIE-4.5-0.3B language model, we significantly enhance the model’s recognition capabilities and decoding efficiency. This integration maintains high accuracy while reducing computational demands, making it well-suited for efficient and practical document processing applications.
+        -   **SOTA Performance on Document Parsing**: PaddleOCR-VL achieves state-of-the-art performance in both page-level document parsing and element-level recognition. It significantly outperforms existing pipeline-based solutions and exhibiting strong competitiveness against leading vision-language models (VLMs) in document parsing. Moreover, it excels in recognizing complex document elements, such as text, tables, formulas, and charts, making it suitable for a wide range of challenging content types, including handwritten text and historical documents. This makes it highly versatile and suitable for a wide range of document types and scenarios.
+        -   **Multilingual Support**: PaddleOCR-VL Supports 109 languages, covering major global languages, including but not limited to Chinese, English, Japanese, Latin, and Korean, as well as languages with different scripts and structures, such as Russian (Cyrillic script), Arabic, Hindi (Devanagari script), and Thai. This broad language coverage substantially enhances the applicability of our system to multilingual and globalized document processing scenarios.
+-   Released PP-OCRv5 Multilingual Recognition Model:
+    
+    -   Improved the accuracy and coverage of Latin script recognition; added support for Cyrillic, Arabic, Devanagari, Telugu, Tamil, and other language systems, covering recognition of 109 languages. The model has only 2M parameters, and the accuracy of some models has increased by over 40% compared to the previous generation.
+
+**2025.08.21: Release of PaddleOCR 3.2.0**
 
 -   **Significant Model Additions:**
     
@@ -215,6 +236,9 @@ paddleocr pp\_structurev3 -i https://paddle-model-ecology.bj.bcebos.com/paddlex/
 # Get the Qianfan API Key at first, and then run PP-ChatOCRv4 inference
 paddleocr pp\_chatocrv4\_doc -i https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo\_image/vehicle\_certificate-1.png -k 驾驶室准乘人数 --qianfan\_api\_key your\_api\_key --use\_doc\_orientation\_classify False --use\_doc\_unwarping False 
 
+# Run PaddleOCR-VL inference
+paddleocr doc\_parser -i https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo\_image/paddleocr\_vl\_demo.png
+
 # Get more information about "paddleocr ocr"
 paddleocr ocr --help
 
@@ -327,6 +351,17 @@ chat\_result \= pipeline.chat(
 )
 print(chat\_result)
 
+**4.4 PaddleOCR-VL Example**
+
+from paddleocr import PaddleOCRVL
+
+pipeline \= PaddleOCRVL()
+output \= pipeline.predict("https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo\_image/paddleocr\_vl\_demo.png")
+for res in output:
+    res.print()
+    res.save\_to\_json(save\_path\="output")
+    res.save\_to\_markdown(save\_path\="output")
+
 ### 5\. Chinese Heterogeneous AI Accelerators
 
 -   Huawei Ascend
@@ -346,6 +381,7 @@ print(chat\_result)
 -   PP-OCRv5 Tutorial
 -   PP-StructureV3 Tutorial
 -   PP-ChatOCRv4 Tutorial
+-   PaddleOCR-VL Tutorial
 
 🔄 Quick Overview of Execution Results
 --------------------------------------

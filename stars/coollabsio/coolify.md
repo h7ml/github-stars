@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 46204
+stars: 46431
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -65,40 +65,40 @@ Thank you so much!
 Big Sponsors
 ------------
 
--   CubePath - Dedicated Servers & Instant Deploy
--   GlueOps - DevOps automation and infrastructure management
+-   23M - Your experts for high-availability hosting solutions!
 -   Algora - Open source contribution platform
--   Ubicloud - Open source cloud infrastructure platform
--   LiquidWeb - Premium managed hosting solutions
--   Convex - Open-source reactive database for web app developers
--   Arcjet - Advanced web security and performance solutions
--   SaasyKit - Complete SaaS starter kit for developers
--   SupaGuide - Your comprehensive guide to Supabase
--   Logto - The better identity infrastructure for developers
--   Trieve - AI-powered search and analytics
--   Supadata AI - Scrape YouTube, web, and files. Get AI-ready, clean data
--   Darweb - Design. Develop. Deliver. Specialized in 3D CPQ Solutions
--   Hetzner - Server, cloud, hosting, and data center solutions
--   COMIT - New York Times award–winning contractor
--   Blacksmith - Infrastructure automation platform
--   WZ-IT - German agency for customised cloud solutions
--   BC Direct - Your trusted technology consulting partner
--   Tigris - Modern developer data platform
--   Hostinger - Web hosting and VPS solutions
--   QuantCDN - Enterprise-grade content delivery network
--   PFGLabs - Build Real Projects with Golang
--   JobsCollider - 30,000+ remote jobs for developers
--   Juxtdigital - Digital PR & AI Authority Building Agency
--   Cloudify.ro - Cloud hosting solutions
--   CodeRabbit - Cut Code Review Time & Bugs in Half
 -   American Cloud - US-based cloud infrastructure services
--   MassiveGrid - Enterprise cloud hosting solutions
--   Syntax.fm - Podcast for web developers
--   Tolgee - The open source localization platform
+-   Arcjet - Advanced web security and performance solutions
+-   BC Direct - Your trusted technology consulting partner
+-   Blacksmith - Infrastructure automation platform
+-   Brand.dev - API to personalize your product with logos, colors, and company info from any domain
+-   ByteBase - Database CI/CD and Security at Scale
+-   CodeRabbit - Cut Code Review Time & Bugs in Half
+-   COMIT - New York Times award–winning contractor
 -   CompAI - Open source compliance automation platform
+-   Convex - Open-source reactive database for web app developers
+-   CubePath - Dedicated Servers & Instant Deploy
+-   Darweb - Design. Develop. Deliver. Specialized in 3D CPQ Solutions
+-   Formbricks - The open source feedback platform
 -   GoldenVM - Premium virtual machine hosting solutions
 -   Gozunga - Seriously Simple Cloud Infrastructure
+-   Hetzner - Server, cloud, hosting, and data center solutions
+-   Hostinger - Web hosting and VPS solutions
+-   JobsCollider - 30,000+ remote jobs for developers
+-   Juxtdigital - Digital PR & AI Authority Building Agency
+-   LiquidWeb - Premium managed hosting solutions
+-   Logto - The better identity infrastructure for developers
 -   Macarne - Best IP Transit & Carrier Ethernet Solutions for Simplified Network Connectivity
+-   Mobb - Secure Your AI-Generated Code to Unlock Dev Productivity
+-   PFGLabs - Build Real Projects with Golang
+-   Ramnode - High Performance Cloud VPS Hosting
+-   SaasyKit - Complete SaaS starter kit for developers
+-   SupaGuide - Your comprehensive guide to Supabase
+-   Supadata AI - Scrape YouTube, web, and files. Get AI-ready, clean data
+-   Syntax.fm - Podcast for web developers
+-   Tigris - Modern developer data platform
+-   Tolgee - The open source localization platform
+-   Ubicloud - Open source cloud infrastructure platform
 
 Small Sponsors
 --------------

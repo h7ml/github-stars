@@ -1,6 +1,6 @@
 ---
 project: minio
-stars: 55667
+stars: 55819
 description: MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
 url: https://github.com/minio/minio
 ---
@@ -27,15 +27,28 @@ The AGPLv3 provides no obligation by any party to support, maintain, or warranty
 
 MinIO AIStor includes enterprise-grade support and licensing for workloads which require commercial or proprietary usage and production-level SLA/SLO-backed support. For more information, reach out for a quote.
 
-Legacy Releases
----------------
+Source-Only Distribution
+------------------------
 
-MinIO has no planned or scheduled releases for this repository. While a new release may be cut at any time, there is no timeline for when a subsequent release may occur. All existing releases remain accessible through Github or at https://dl.min.io/server/minio/release/ .
+**Important:** The MinIO community edition is now distributed as source code only. We will no longer provide pre-compiled binary releases for the community version.
 
-The following sections provide instructions for building against the `master` branch for deployments that require access to the latest changes:
+### Installing Latest MinIO Community Edition
 
--   Install from Source
--   Build Docker Image
+To use MinIO community edition, you have two options:
+
+1.  **Install from source** using `go install github.com/minio/minio@latest` (recommended)
+2.  **Build a Docker image** from the provided Dockerfile
+
+See the sections below for detailed instructions on each method.
+
+### Legacy Binary Releases
+
+Historical pre-compiled binary releases remain available for reference but are no longer maintained:
+
+-   GitHub Releases: https://github.com/minio/minio/releases
+-   Direct downloads: https://dl.min.io/server/minio/release/
+
+**These legacy binaries will not receive updates.** We strongly recommend using source builds for access to the latest features, bug fixes, and security updates.
 
 Install from Source
 -------------------

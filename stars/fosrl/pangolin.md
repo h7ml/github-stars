@@ -1,117 +1,76 @@
 ---
 project: pangolin
-stars: 15263
+stars: 15491
 description: Identity-Aware Tunneled Reverse Proxy Server with Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
 
-#### Secure gateway to your private networks
-
-_Pangolin tunnels your services to the internet so you can access anything from anywhere._
-
-##### Website | Quick Install Guide | Contact Us | Slack | Discord
+##### Website | Documentation | Contact Us
 
 **Start testing Pangolin at pangolin.fossorial.io**
 
-Pangolin is a self-hosted tunneled reverse proxy server with identity and access control, designed to securely expose private resources on distributed networks. Acting as a central hub, it connects isolated networks — even those behind restrictive firewalls — through encrypted tunnels, enabling easy access to remote services without opening ports.
+Pangolin is a self-hosted tunneled reverse proxy server with identity and context aware access control, designed to easily expose and protect applications running anywhere. Pangolin acts as a central hub and connects isolated networks — even those behind restrictive firewalls — through encrypted tunnels, enabling easy access to remote services without opening ports or requiring a VPN.
 
-Key Features
+Installation
 ------------
 
-### Reverse Proxy Through WireGuard Tunnel
-
--   Expose private resources on your network **without opening ports** (firewall punching).
--   Secure and easy to configure private connectivity via a custom **user space WireGuard client**, Newt.
--   Built-in support for any WireGuard client.
--   Automated **SSL certificates** (https) via LetsEncrypt.
--   Support for HTTP/HTTPS and **raw TCP/UDP services**.
--   Load balancing.
--   Extend functionality with existing Traefik plugins, such as CrowdSec and Geoblock.
-    -   **Automatically install and configure Crowdsec via Pangolin's installer script.**
--   Attach as many sites to the central server as you wish.
-
-### Identity & Access Management
-
--   Centralized authentication system using platform SSO. **Users will only have to manage one login.**
--   **Define access control rules for IPs, IP ranges, and URL paths per resource.**
--   TOTP with backup codes for two-factor authentication.
--   Create organizations, each with multiple sites, users, and roles.
--   **Role-based access control** to manage resource access permissions.
--   Additional authentication options include:
-    -   Email whitelisting with **one-time passcodes.**
-    -   **Temporary, self-destructing share links.**
-    -   Resource specific pin codes.
-    -   Resource specific passwords.
-    -   Passkeys
--   External identity provider (IdP) support with OAuth2/OIDC, such as Authentik, Keycloak, Okta, and others.
-    -   Auto-provision users and roles from your IdP.
-
-Use Cases
----------
-
-### Manage Access to Internal Apps
-
--   Grant users access to your apps from anywhere using just a web browser. No client software required.
-
-### Developers and DevOps
-
--   Expose and test internal tools and dashboards like **Grafana**. Bring localhost or private IPs online for easy access.
-
-### Secure API Gateway
-
--   One application load balancer across multiple clouds and on-premises.
-
-### IoT and Edge Devices
-
--   Easily expose **IoT devices**, **edge servers**, or **Raspberry Pi** to the internet for field equipment monitoring.
+Check out the quick install guide for how to install and set up Pangolin.
 
 Deployment Options
 ------------------
 
-### Fully Self Hosted
+Description
 
-Host the full application on your own server or on the cloud with a VPS. Take a look at the documentation to get started.
+**Self-Host: Community Edition**
 
-> Many of our users have had a great experience with RackNerd. Depending on promotions, you can get a **VPS with 1 vCPU, 1GB RAM, and ~20GB SSD for just around $12/year**. That's a great deal!
+Free, open source, and licensed under AGPL-3.
 
-### Pangolin Cloud
+**Self-Host: Enterprise Edition**
 
-Easy to use with simple pay as you go pricing. Check it out here.
+Licensed under Fossorial Commercial License. Free for personal and hobbyist use, and for businesses earning under $100K USD annually.
 
--   Everything you get with self hosted Pangolin, but fully managed for you.
+**Pangolin Cloud**
 
-### Managed & High Availability
+Fully managed service with instant setup and pay-as-you-go pricing — no infrastructure required. Or, self-host your own remote node and connect to our control plane.
 
-Managed control plane, your infrastructure
+Key Features
+------------
 
--   We manage database and control plane.
--   You self-host lightweight exit-node.
--   Traffic flows through your infra.
--   We coordinate failover between your nodes or to Cloud when things go bad.
+Pangolin packages everything you need for seamless application access and exposure into one cohesive platform.
 
-Try it out using Pangolin Cloud
+**Manage applications in one place**  
+  
+Pangolin provides a unified dashboard where you can monitor, configure, and secure all of your services regardless of where they are hosted.
 
-### Full Enterprise On-Premises
+**Reverse proxy across networks anywhere**  
+  
+Route traffic via tunnels to any private network. Pangolin works like a reverse proxy that spans multiple networks and handles routing, load balancing, health checking, and more to the right services on the other end.
 
-Contact us for a full distributed and enterprise deployments on your infrastructure controlled by your team.
+**Enforce identity and context aware rules**  
+  
+Protect your applications with identity and context aware rules such as SSO, OIDC, PIN, password, temporary share links, geolocation, IP, and more.
 
-Project Development / Roadmap
------------------------------
+**Quickly connect Pangolin sites**  
+  
+Pangolin's lightweight Newt client runs in userspace and can run anywhere. Use it as a site connector to route traffic to backends across all of your environments.
 
-We want to hear your feature requests! Add them to the discussion board.
+Get Started
+-----------
+
+### Check out the docs
+
+We encourage everyone to read the full documentation first, which is available at docs.pangolin.net. This README provides only a very brief subset of the docs to illustrate some basic ideas.
+
+### Sign up and try now
+
+For Pangolin's managed service, you will first need to create an account at pangolin.fossorial.io. We have a generous free tier to get started.
 
 Licensing
 ---------
 
-Pangolin is dual licensed under the AGPL-3 and the Fossorial Commercial license. For inquiries about commercial licensing, please contact us at numbat@fossorial.io.
+Pangolin is dual licensed under the AGPL-3 and the Fossorial Commercial License. For inquiries about commercial licensing, please contact us at contact@fossorial.io.
 
 Contributions
 -------------
 
-Looking for something to contribute? Take a look at issues marked with help wanted. Also take a look through the freature requests in Discussions - any are available and some are marked as a good first issue.
-
 Please see CONTRIBUTING in the repository for guidelines and best practices.
-
-Please post bug reports and other functional issues in the Issues section of the repository.
-
-If you are looking to help with translations, please contribute on Crowdin or open a PR with changes to the translations files found in `messages/`.

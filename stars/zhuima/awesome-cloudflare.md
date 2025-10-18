@@ -1,6 +1,6 @@
 ---
 project: awesome-cloudflare
-stars: 12009
+stars: 12040
 description: ⛅️ 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表。/ ⛅️ A curated list of Cloudflare tools, open source projects, guides, blogs and other resources.
 url: https://github.com/zhuima/awesome-cloudflare
 ---
@@ -985,6 +985,14 @@ Text2img-Cloudflare-Workers
 一个基于 Cloudflare AI & Workers 的在线文生图服务✨
 
 https://text2img.huarzone.com/
+
+有效中
+
+Edgebin
+
+类似与 httpbin 的 HTTP 测试服务
+
+https://edgebin.liujiacai.net
 
 有效中
 

@@ -1,6 +1,6 @@
 ---
 project: InvokeAI
-stars: 25978
+stars: 26004
 description: Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.
 url: https://github.com/invoke-ai/InvokeAI
 ---
@@ -8,35 +8,11 @@ url: https://github.com/invoke-ai/InvokeAI
 Invoke - Professional Creative AI Tools for Visual Media
 ========================================================
 
-#### To learn more about Invoke, or implement our Business solutions, visit invoke.com
-
 Invoke is a leading creative engine built to empower professionals and enthusiasts alike. Generate and create stunning visual media using the latest AI-driven technologies. Invoke offers an industry leading web-based UI, and serves as the foundation for multiple commercial products.
 
-Invoke is available in two editions:
-
-**Community Edition**
-
-**Professional Edition**
-
-**For users looking for a locally installed, self-hosted and self-managed service**
-
-**For users or teams looking for a cloud-hosted, fully managed service**
-
-\- Free to use under a commercially-friendly license
-
-\- Monthly subscription fee with three different plan levels
-
-\- Download and install on compatible hardware
-
-\- Offers additional benefits, including multi-user support, improved model training, and more
-
-\- Includes all core studio features: generate, refine, iterate on images, and build workflows
-
-\- Hosted in the cloud for easy, secure model access and scalability
-
-Quick Start -> Installation and Updates
-
-More Information -> www.invoke.com/pricing
+-   Free to use under a commercially-friendly license
+-   Download and install on compatible hardware
+-   Generate, refine, iterate on images, and build workflows
 
 Documentation
 =============
@@ -48,9 +24,7 @@ Installation and Updates - Documentation and Tutorials - Bug Reports - Contribut
 Installation
 ============
 
-To get started with Invoke, Download the Installer.
-
-For detailed step by step instructions, or for instructions on manual/docker installations, visit our documentation on Installation and Updates
+To get started with Invoke, Download the Launcher.
 
 Troubleshooting, FAQ and Support
 --------------------------------

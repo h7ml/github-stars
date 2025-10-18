@@ -1,6 +1,6 @@
 ---
 project: docker-pgautoupgrade
-stars: 983
+stars: 988
 description: A PostgreSQL Docker container that automatically upgrades your database
 url: https://github.com/pgautoupgrade/docker-pgautoupgrade
 ---
@@ -134,6 +134,29 @@ volumeMounts:
     name: YYY
 
 The value for `POSTGRES_PASSWORD` does not really matter, as it's never used in one-shot mode.
+
+Error message when mounting data to /var/lib/postgresql/data on Postgres v18+
+-----------------------------------------------------------------------------
+
+If you want to upgrade to Postgres v18+ and don't adjust your volume mounts, you can get an error message like:
+
+```
+docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/var/lib/docker/volumes/foo/_data" to rootfs at "/var/lib/postgresql/data": change mount propagation through procfd: open o_path procfd: open /var/lib/docker/overlay2/bd954e9c05618d52115b5345f7465cf17cc426560b0979d7f796ebfbf62ea950/merged/var/lib/postgresql/data: no such file or directory: unknown.
+```
+
+on Docker or
+
+```
+error mounting ".../db-pv" to rootfs at "/var/lib/postgresql/data": change mount propagation through procfd: open o_path procfd: open /run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io/postgresql/rootfs/var/lib/postgresql/data: no such file or directory
+```
+
+in Kubernetes.
+
+Then you have to adjust your volume mount from `/var/lib/postgresql/data` to `/var/lib/postgresql`. `pgautoupgrade` will look there for an old Postgres installation, and move the data into the new expected structure.
+
+Root cause is a change by the Docker team for Postgres that enforces a new data directory structure with Postgres v18+. Previously, your Postgres data and the corresponding `PGDATA` pointed to `/var/lib/postgresql/data`. With Postgres v18+, it is `/var/lib/postgresql/MAJOR/docker`. The Docker team also placed a symlink from `/var/lib/postgresql/data` to `/var/lib/postgresql` causing the error messages above.
+
+We discussed the behaviour and decided not to remove the symlink in our image in order to allow again mounting data to `/var/lib/postgresql/data`. The main reason is that `PGDATA` on Postgres v18+ points to the mentioned new path `/var/lib/postgresql/MAJOR/docker`. Means if you would upgrade to Postgres v18+ without any changes to `PGDATA`, you simply get an empty Postgres instance, instead of an upgraded one. But we also want to follow what the upstream Postgres image does; it should always be an option to ditch `pgautoupgrade` for the plain Postgres image.
 
 For Developers
 --------------

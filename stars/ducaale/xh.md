@@ -1,6 +1,6 @@
 ---
 project: xh
-stars: 7100
+stars: 7157
 description: Friendly and fast tool for sending HTTP requests
 url: https://github.com/ducaale/xh
 ---
@@ -139,9 +139,9 @@ Winget
 
 \*\* You will need to install the MMRL CLI
 
-\*\*\* The xh package is available in Edge and will be in v3.17+. It is built with native-tls only.
+\*\*\* Built with native-tls only.
 
-\*\*\*\* You will need to add the apt repository from https://apt.cli.rs/
+\*\*\*\* Available since Debian 13 and Ubuntu 25.04. Built with native-tls only.
 
 ### via pre-built binaries
 

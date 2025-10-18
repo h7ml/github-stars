@@ -1,6 +1,6 @@
 ---
 project: ecto_enum
-stars: 567
+stars: 568
 description: Ecto extension to support enums in models
 url: https://github.com/gjaldon/ecto_enum
 ---

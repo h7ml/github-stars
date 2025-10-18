@@ -1,6 +1,6 @@
 ---
 project: whs.js
-stars: 6246
+stars: 6248
 description: :rocket: 🌪 Super-fast 3D framework for Web Applications 🥇 & Games 🎮. Based on Three.js
 url: https://github.com/WhitestormJS/whs.js
 ---

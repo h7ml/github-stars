@@ -1,6 +1,6 @@
 ---
 project: localsend
-stars: 68669
+stars: 69055
 description: An open-source cross-platform alternative to AirDrop
 url: https://github.com/localsend/localsend
 ---
@@ -108,6 +108,10 @@ DEB
 AppImage
 
 Read more about distribution channels.
+
+Caution
+
+**Unofficial MSIX preview:** you can try builds from the latest commits at localsend.ob-buff.dev. Stability is not guaranteed and all custom code tweaks are listed on that site.
 
 **Compatibility**
 

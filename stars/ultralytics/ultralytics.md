@@ -1,6 +1,6 @@
 ---
 project: ultralytics
-stars: 47129
+stars: 47517
 description: Ultralytics YOLO 🚀
 url: https://github.com/ultralytics/ultralytics
 ---

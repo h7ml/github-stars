@@ -1,6 +1,6 @@
 ---
 project: crawl4ai
-stars: 54477
+stars: 54762
 description: 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
 url: https://github.com/unclecode/crawl4ai
 ---
@@ -815,6 +815,43 @@ We envision a future where AI is powered by real human knowledge, ensuring data 
 3.  **Ethical Data Marketplace**: A secure, fair platform for exchanging structured data.
 
 For more details, see our full mission statement.
+
+🌟 Current Sponsors
+-------------------
+
+### 🏢 Enterprise Sponsors & Partners
+
+Our enterprise sponsors and technology partners help scale Crawl4AI to power production-grade data pipelines.
+
+Company
+
+About
+
+Sponsorship Tier
+
+AI-powered Captcha solving service. Supports all major Captcha types, including reCAPTCHA, Cloudflare, and more
+
+🥈 Silver
+
+Helps engineers and buyers find, compare, and source electronic & industrial parts in seconds, with specs, pricing, lead times & alternatives.
+
+🥇 Gold
+
+KidoCode
+
+Kidocode is a hybrid technology and entrepreneurship school for kids aged 5–18, offering both online and on-campus education.
+
+🥇 Gold
+
+Singapore-based Aleph Null is Asia’s leading edtech hub, dedicated to student-centric, AI-driven education—empowering learners with the tools to thrive in a fast-changing world.
+
+🥇 Gold
+
+### 🧑‍🤝 Individual Sponsors
+
+A heartfelt thanks to our individual supporters! Every contribution helps us keep our opensource mission alive and thriving!
+
+> Want to join them? Sponsor Crawl4AI →
 
 Star History
 ------------

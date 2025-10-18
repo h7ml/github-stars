@@ -1,6 +1,6 @@
 ---
 project: spec-kit
-stars: 34325
+stars: 38533
 description: 💫 Toolkit to help you get started with Spec-Driven Development
 url: https://github.com/github/spec-kit
 ---
@@ -10,7 +10,7 @@ url: https://github.com/github/spec-kit
 
 ### _Build high-quality software faster._
 
-**An effort to allow organizations to focus on product scenarios rather than writing undifferentiated code with the help of Spec-Driven Development.**
+**An open source toolkit that allows you to focus on product scenarios and predictable outcomes instead of vibe coding every piece from scratch.**
 
 * * *
 
@@ -18,16 +18,16 @@ Table of Contents
 -----------------
 
 -   🤔 What is Spec-Driven Development?
--   ⚡ Get started
+-   ⚡ Get Started
 -   📽️ Video Overview
 -   🤖 Supported AI Agents
 -   🔧 Specify CLI Reference
--   📚 Core philosophy
--   🌟 Development phases
--   🎯 Experimental goals
+-   📚 Core Philosophy
+-   🌟 Development Phases
+-   🎯 Experimental Goals
 -   🔧 Prerequisites
--   📖 Learn more
--   📋 Detailed process
+-   📖 Learn More
+-   📋 Detailed Process
 -   🔍 Troubleshooting
 -   👥 Maintainers
 -   💬 Support
@@ -39,10 +39,10 @@ Table of Contents
 
 Spec-Driven Development **flips the script** on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the "real work" of coding began. Spec-Driven Development changes this: **specifications become executable**, directly generating working implementations rather than just guiding them.
 
-⚡ Get started
+⚡ Get Started
 -------------
 
-### 1\. Install Specify
+### 1\. Install Specify CLI
 
 Choose your preferred installation method:
 
@@ -75,6 +75,8 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT\_NAM
 -   Cleaner shell configuration
 
 ### 2\. Establish project principles
+
+Launch your AI assistant in the project directory. The `/speckit.*` commands are available in the assistant.
 
 Use the **`/speckit.constitution`** command to create your project's governing principles and development guidelines that will guide all subsequent development.
 
@@ -156,7 +158,7 @@ Auggie CLI
 
 ✅
 
-CodeBuddy
+CodeBuddy CLI
 
 ✅
 
@@ -363,7 +365,7 @@ Description
 Override feature detection for non-Git repositories. Set to the feature directory name (e.g., `001-photo-albums`) to work on a specific feature when not using Git branches.  
 \*\*Must be set in the context of the agent you're working with prior to using `/speckit.plan` or follow-up commands.
 
-📚 Core philosophy
+📚 Core Philosophy
 ------------------
 
 Spec-Driven Development is a structured process that emphasizes:
@@ -373,7 +375,7 @@ Spec-Driven Development is a structured process that emphasizes:
 -   **Multi-step refinement** rather than one-shot code generation from prompts
 -   **Heavy reliance** on advanced AI model capabilities for specification interpretation
 
-🌟 Development phases
+🌟 Development Phases
 ---------------------
 
 Phase
@@ -407,7 +409,7 @@ Brownfield modernization
 -   Modernize legacy systems
 -   Adapt processes
 
-🎯 Experimental goals
+🎯 Experimental Goals
 ---------------------
 
 Our research and experimentation focus on:
@@ -437,15 +439,15 @@ Our research and experimentation focus on:
 🔧 Prerequisites
 ----------------
 
--   **Linux/macOS** (or WSL2 on Windows)
--   AI coding agent: Claude Code, GitHub Copilot, Gemini CLI, Cursor, Qwen CLI, opencode, Codex CLI, Windsurf, or Amazon Q Developer CLI
+-   **Linux/macOS/Windows**
+-   Supported AI coding agent.
 -   uv for package management
 -   Python 3.11+
 -   Git
 
 If you encounter issues with an agent, please open an issue so we can refine the integration.
 
-📖 Learn more
+📖 Learn More
 -------------
 
 -   **Complete Spec-Driven Development Methodology** - Deep dive into the full process
@@ -453,7 +455,7 @@ If you encounter issues with an agent, please open an issue so we can refine the
 
 * * *
 
-📋 Detailed process
+📋 Detailed Process
 -------------------
 
 Click to expand the detailed step-by-step walkthrough
@@ -677,7 +679,26 @@ You can also ask Claude Code (if you have the GitHub CLI installed) to go ahead 
 
 > \[!NOTE\] Before you have the agent implement it, it's also worth prompting Claude Code to cross-check the details to see if there are any over-engineered pieces (remember - it can be over-eager). If over-engineered components or decisions exist, you can ask Claude Code to resolve them. Ensure that Claude Code follows the constitution as the foundational piece that it must adhere to when establishing the plan.
 
-### STEP 6: Implementation
+### **STEP 6:** Generate task breakdown with /speckit.tasks
+
+With the implementation plan validated, you can now break down the plan into specific, actionable tasks that can be executed in the correct order. Use the `/speckit.tasks` command to automatically generate a detailed task breakdown from your implementation plan:
+
+```
+/speckit.tasks
+```
+
+This step creates a `tasks.md` file in your feature specification directory that contains:
+
+-   **Task breakdown organized by user story** - Each user story becomes a separate implementation phase with its own set of tasks
+-   **Dependency management** - Tasks are ordered to respect dependencies between components (e.g., models before services, services before endpoints)
+-   **Parallel execution markers** - Tasks that can run in parallel are marked with `[P]` to optimize development workflow
+-   **File path specifications** - Each task includes the exact file paths where implementation should occur
+-   **Test-driven development structure** - If tests are requested, test tasks are included and ordered to be written before implementation
+-   **Checkpoint validation** - Each user story phase includes checkpoints to validate independent functionality
+
+The generated tasks.md provides a clear roadmap for the `/speckit.implement` command, ensuring systematic implementation that maintains code quality and allows for incremental delivery of user stories.
+
+### **STEP 7:** Implementation
 
 Once ready, use the `/speckit.implement` command to execute your implementation plan:
 

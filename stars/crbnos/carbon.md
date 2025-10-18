@@ -1,6 +1,6 @@
 ---
 project: carbon
-stars: 1557
+stars: 1572
 description: Carbon is a modern ERP/MES/QMS. Perfect for complex assembly, job shops, and configure to order manufacturing.
 url: https://github.com/crbnos/carbon
 ---
@@ -237,8 +237,8 @@ $ cp ./.env.example ./.env
 
 1.  Navigate to the project you created in https://cloud.trigger.dev/ and copy the following from the `Environments & API Keys` section:
 
--   `TRIGGER_PUBLIC_API_KEY=[Public 'dev' API Key, starting 'pk_dev*']`
--   `TRIGGER_API_KEY=[Server 'dev' API Key, starting 'tr_dev*']`
+-   `TRIGGER_SECRET_KEY=[Private 'dev' API Key, starting 'tr_dev_*']`
+-   `TRIGGER_API_URL="https://api.trigger.dev"`
 -   `TRIGGER_PROJECT_ID=[Public 'project' key, starting 'proj*]`
 
 1.  In Posthog go to https://\[region\].posthog.com/project/\[project-id\]/settings/project-details to find your Project ID and Project API key:
@@ -246,10 +246,10 @@ $ cp ./.env.example ./.env
 -   `POSTHOG_API_HOST=[https://[region].posthog.com]`
 -   `POSTHOG_PROJECT_PUBLIC_KEY=[Project API Key starting 'phc*']`
 
-1.  Add a `STRIPE_SECRET_KEY` from the Stripe admin interface, and then run `npm run -w @carbon/stripe register:stripe` to get a `STRIP_WEBHOOK_SECRET`
+1.  Add a `STRIPE_SECRET_KEY` from the Stripe admin interface, and then run `npm run -w @carbon/stripe register:stripe` to get a `STRIPE_WEBHOOK_SECRET`
 
 -   `STRIPE_SECRET_KEY="sk_test_*************"`
--   `STRIP_WEBHOOK_SECRET="whsec_************"`
+-   `STRIPE_WEBHOOK_SECRET="whsec_************"`
 
 1.  Signing in requires you to setup one of two methods:
     -   Email requires a Resend API key:

@@ -1,6 +1,6 @@
 ---
 project: pluely
-stars: 1004
+stars: 1052
 description: The Open Source Alternative to Cluely - A lightning-fast, privacy-first AI assistant that works seamlessly during meetings, interviews, and conversations without anyone knowing. Built with Tauri for native performance, just 10MB. Completely undetectable in video calls, screen shares, and recordings.
 url: https://github.com/iamsrikanthnani/pluely
 ---
@@ -12,7 +12,7 @@ Pluely 🚀
 
 ### 💝 **Support the Project & Connect**
 
- 
+   
 
 **Socials:**
 
@@ -216,6 +216,16 @@ _Note: Pluely system audio capture is actively in development and improving._
 -   **Multi-STT Provider Support:** Choose from OpenAI Whisper, Groq, ElevenLabs, Google, Deepgram, and more
 -   **AI Integration:** Seamlessly connects transcription to AI models for instant contextual responses
 
+**Audio Device Selection**
+--------------------------
+
+**Fine-tune your audio setup by selecting specific input and output devices.**
+
+-   **Microphone Selection:** Choose your preferred microphone for voice input, ensuring the best speech-to-text accuracy.
+-   **System Audio Source:** Select which output device to capture for system audio, perfect for multi-device setups.
+-   **Easy Configuration:** Manage your devices in Settings → Audio Devices.
+-   **Real-time Switching:** Changes are applied instantly without needing to restart the app.
+
 **Interactive Input**
 ---------------------
 
@@ -241,25 +251,26 @@ _Paste any images directly for instant AI analysis and contextual help_
 **Screenshot Capture**
 ----------------------
 
-**Capture and analyze screenshots with intelligent auto/manual modes for instant AI assistance:**
+**Capture and analyze your screen with three powerful modes for ultimate flexibility:**
 
-Experience two powerful screenshot modes that adapt to your workflow:
+Pluely offers advanced screen capturing that adapts to your workflow, whether you need to select a specific area, capture the full screen for manual analysis, or automate the entire process.
 
-Manual Mode Screenshot
+Selection Mode
 
-_Perfect for coding challenges - capture LeetCode problems and get step-by-step solutions with your custom prompts_
+_Perfect for coding challenges - select a specific problem and get step-by-step solutions with your custom prompts_
 
-Auto Mode Screenshot
+Auto Screenshot Mode
 
-_Ideal for single image - automatically analyze image content with your predefined AI prompt for instant insights_
+_Ideal for quick analysis - automatically capture the full screen and analyze it with your predefined AI prompt for instant insights_
 
--   **Manual Mode:** Capture multiple screenshots submit to AI analysis, with a prompt
--   **Auto Mode:** Screenshots automatically submit to AI using your saved custom prompt with instant analysis
+-   **Selection Mode:** Click and drag to capture any specific area of your screen. Perfect for focusing on exactly what you need. (Requires active license)
+-   **Manual Screenshot Mode:** Captures the entire screen and attaches it to your input, giving you full control to add more files or craft the perfect prompt before sending.
+-   **Auto Screenshot Mode:** Captures the entire screen and automatically sends it for analysis using your saved custom prompt for instant insights.
 -   **Shortcuts:** Capture screenshots with `Cmd+Shift+S` (macOS) or `Ctrl+Shift+S` (Windows/Linux)
--   **Smart Configuration:** Toggle between modes in Settings → Screenshot Configuration
--   **Custom Prompts:** Define your auto-analysis prompt for consistent, personalized AI responses
--   **Seamless Integration:** Screenshots work with all AI providers (OpenAI, Gemini, Claude, Grok, includes with your custom providers)
--   **Privacy First:** Screenshots are processed locally and only sent to your chosen AI provider
+-   **Smart Configuration:** Easily switch between Selection and Screenshot capture methods, and configure Auto/Manual processing in Settings → Screenshot Configuration.
+-   **Custom Prompts:** Define your auto-analysis prompt for consistent, personalized AI responses.
+-   **Seamless Integration:** Works with all AI providers (OpenAI, Gemini, Claude, Grok, and custom providers).
+-   **Privacy First:** Screenshots are processed locally and only sent to your chosen AI provider.
 
 **Always on Top**
 -----------------
@@ -300,6 +311,15 @@ _Ideal for single image - automatically analyze image content with your predefin
 -   **Instant Effect:** Changes apply immediately across all 50+ interactive elements
 -   **Accessibility Aware:** Perfect for users who prefer clean interfaces without tooltip clutter
 -   **Preserves Functionality:** Elements remain clickable and accessible, only tooltips are controlled |
+
+**Launch on Startup**
+---------------------
+
+**Automatically open Pluely when you log in to your computer.**
+
+-   **Enable/Disable:** Easily toggle autostart from Settings → App Startup.
+-   **Seamless Integration:** Pluely will start in the background, ready whenever you need it.
+-   **Always Ready:** Ensures your AI assistant is just a shortcut away from the moment you start working.
 
 ### 📚 **Conversation History**
 
@@ -353,6 +373,14 @@ _Browse, reuse, download, and delete your AI conversations with complete local s
 -   **Optimal Performance:** Balanced settings for accuracy and responsiveness
 -   **Settings Control:** Access advanced VAD settings in Settings → Voice Activity Detection
 
+### **Settings Quick Navigation**
+
+**Quickly jump to any section in the settings panel with a single click.**
+
+-   **Sticky Navigation:** A navigation bar with links to all settings sections.
+-   **Improved UX:** No more scrolling to find the setting you need.
+-   **Intuitive:** Simplifies configuration and makes managing Pluely even faster.
+
 * * *
 
 **Setup**
@@ -368,7 +396,7 @@ _Pluely License activation unlocks faster AI responses, premium features, and de
 
 #### **What You Get with Pluely License:**
 
--   **80+ premium AI models with instant access**
+-   **120+ premium AI models with instant access**
 -   **Zero-latency AI generation**
 -   **One-click model switching**
 -   **Zero maintenance and setup**
@@ -870,6 +898,7 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 
 -   **Cluely** - Inspiration for this open source alternative
 -   **Tauri** - Amazing desktop framework
+-   **tauri-nspanel** - macOS native panel integration for Tauri
 -   **shadcn/ui** - Beautiful UI components
 -   **@ricky0123/vad-react** - Voice Activity Detection
 -   **OpenAI** - GPT models and Whisper API

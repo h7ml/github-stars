@@ -1,6 +1,6 @@
 ---
 project: sage
-stars: 952
+stars: 953
 description: A dependency-free tool to run distributed transactions in Elixir, inspired by Sagas pattern.
 url: https://github.com/Nebo15/sage
 ---

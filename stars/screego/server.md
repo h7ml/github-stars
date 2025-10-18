@@ -1,6 +1,6 @@
 ---
 project: server
-stars: 9774
+stars: 9803
 description: screen sharing for developers https://screego.net/
 url: https://github.com/screego/server
 ---

@@ -1,6 +1,6 @@
 ---
 project: ecto_dbg
-stars: 165
+stars: 164
 description: A utility to format and output Ecto queries
 url: https://github.com/akoutmos/ecto_dbg
 ---
