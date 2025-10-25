@@ -1,6 +1,6 @@
 ---
 project: node
-stars: 113851
+stars: 113952
 description: Node.js JavaScript runtime ✨🐢🚀✨
 url: https://github.com/nodejs/node
 ---
@@ -204,7 +204,6 @@ TSC emeriti members
 -   edsadr - **Adrian Estrada** <edsadr@gmail.com\> (he/him)
 -   ErickWendel - **Erick Wendel** <erick.workspace@gmail.com\> (he/him)
 -   Ethan-Arrowood - **Ethan Arrowood** <ethan@arrowood.dev\> (he/him)
--   F3n67u - **Feng Yu** <F3n67u@outlook.com\> (he/him)
 -   fhinkel - **Franziska Hinkelmann** <franziska.hinkelmann@gmail.com\> (she/her)
 -   Flarna - **Gerhard Stöbich** <deb2001-github@yahoo.de\> (he/they)
 -   gabrielschulhof - **Gabriel Schulhof** <gabrielschulhof@gmail.com\>
@@ -306,6 +305,7 @@ Emeriti
 -   estliberitas - **Alexander Makarenko** <estliberitas@gmail.com\>
 -   eugeneo - **Eugene Ostroukhov** <eostroukhov@google.com\>
 -   evanlucas - **Evan Lucas** <evanlucas@me.com\> (he/him)
+-   F3n67u - **Feng Yu** <F3n67u@outlook.com\> (he/him)
 -   firedfox - **Daniel Wang** <wangyang0123@gmail.com\>
 -   Fishrock123 - **Jeremiah Senkpiel** <fishrock123@rocketmail.com\> (he/they)
 -   gdams - **George Adams** <gadams@microsoft.com\> (he/him)
@@ -418,7 +418,6 @@ Collaborators follow the Collaborator Guide in maintaining the Node.js project.
 -   bmuenzenmeyer - **Brian Muenzenmeyer** <brian.muenzenmeyer@gmail.com\> (he/him)
 -   CanadaHonk - **Oliver Medhurst** <honk@goose.icu\> (they/them)
 -   daeyeon - **Daeyeon Jeong** <daeyeon.dev@gmail.com\> (he/him)
--   F3n67u - **Feng Yu** <F3n67u@outlook.com\> (he/him)
 -   gireeshpunathil - **Gireesh Punathil** <gpunathi@in.ibm.com\> (he/him)
 -   gurgunday - **Gürgün Dayıoğlu** <hey@gurgun.day\>
 -   HBSPS - **Wiyeong Seo** <hbsps.dev@gmail.com\>

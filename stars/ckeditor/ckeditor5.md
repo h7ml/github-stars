@@ -1,6 +1,6 @@
 ---
 project: ckeditor5
-stars: 10280
+stars: 10291
 description: Powerful rich text editor framework with a modular architecture, modern integrations, and features like collaborative editing.
 url: https://github.com/ckeditor/ckeditor5
 ---

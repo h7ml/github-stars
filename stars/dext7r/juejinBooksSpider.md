@@ -1,6 +1,6 @@
 ---
 project: juejinBooksSpider
-stars: 6
+stars: 7
 description: 掘金小册爬虫
 url: https://github.com/dext7r/juejinBooksSpider
 ---

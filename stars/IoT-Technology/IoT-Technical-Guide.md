@@ -1,6 +1,6 @@
 ---
 project: IoT-Technical-Guide
-stars: 4419
+stars: 4427
 description: :honeybee: IoT Technical Guide --- 从零搭建高性能物联网平台及物联网解决方案和Thingsboard源码分析 :sparkles: :sparkles: :sparkles: (IoT Platform, SaaS, MQTT, CoAP, HTTP, Modbus, OPC, WebSocket, 物模型，Protobuf, PostgreSQL, MongoDB, Spring Security, OAuth2, RuleEngine, Kafka, Docker)
 url: https://github.com/IoT-Technology/IoT-Technical-Guide
 ---

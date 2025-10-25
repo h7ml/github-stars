@@ -1,6 +1,6 @@
 ---
 project: tauri-vue-template
-stars: 321
+stars: 326
 description: Tauri 2 + Vue  (TypeScript) template w/ Vitest, Tailwind, and full CI/CD configured
 url: https://github.com/Uninen/tauri-vue-template
 ---

@@ -1,6 +1,6 @@
 ---
 project: npkill
-stars: 8873
+stars: 8880
 description: List any node_modules 📦 dir in your system and how heavy they are. You can then select which ones you want to erase to free up space 🧹
 url: https://github.com/voidcosmos/npkill
 ---
@@ -113,9 +113,13 @@ ARGUMENT
 
 DESCRIPTION
 
-\-c, --bg-color
+\-p, --profiles
 
-Change row highlight color. _(Available: **blue**, cyan, magenta, white, red and yellow)_
+Allows you to select the profile (set of targets) to use. If no option is specified, the available ones will be listed.. _(**node** by default)_.
+
+\--config
+
+Path to a custom .npkillrc configuration file. By default, npkill looks for `~/.npkillrc`.
 
 \-d, --directory
 
@@ -193,10 +197,6 @@ npkill
 -   List directories named "dist" and show errors if any occur:
 
 npkill --target dist -e
-
--   Displays the magenta color cursor... because I like magenta!
-
-npkill --bg-color magenta
 
 -   List **vendor** directories in your _projects_ directory, sort by size, and show size in gb:
 

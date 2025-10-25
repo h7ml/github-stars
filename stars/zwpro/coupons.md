@@ -1,6 +1,6 @@
 ---
 project: coupons
-stars: 1977
+stars: 1978
 description: 美团饿了吗外卖红包外卖优惠券，先领红包再下单。外卖红包优惠券，cps分成，别人领红包下单，你拿佣金。
 url: https://github.com/zwpro/coupons
 ---

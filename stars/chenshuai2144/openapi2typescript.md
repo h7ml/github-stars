@@ -1,6 +1,6 @@
 ---
 project: openapi2typescript
-stars: 411
+stars: 414
 description: 一个被大范围使用的小工具
 url: https://github.com/chenshuai2144/openapi2typescript
 ---

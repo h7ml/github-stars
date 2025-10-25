@@ -1,6 +1,6 @@
 ---
 project: nue
-stars: 8825
+stars: 8830
 description: Fastest way to build modern websites
 url: https://github.com/nuejs/nue
 ---

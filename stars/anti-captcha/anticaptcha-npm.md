@@ -1,6 +1,6 @@
 ---
 project: anticaptcha-npm
-stars: 11
+stars: 12
 description: Anti-Captcha NPM library
 url: https://github.com/anti-captcha/anticaptcha-npm
 ---

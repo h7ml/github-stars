@@ -1,6 +1,6 @@
 ---
 project: cursor-vip
-stars: 4432
+stars: 4449
 description: cursor IDE enjoy VIP
 url: https://github.com/kingparks/cursor-vip
 ---

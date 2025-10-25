@@ -1,6 +1,6 @@
 ---
 project: CLIProxyAPI
-stars: 981
+stars: 1114
 description: Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API
 url: https://github.com/router-for-me/CLIProxyAPI
 ---
@@ -886,12 +886,17 @@ This feature only allows local access because there is currently no way to authe
 Claude Code with multiple account load balancing
 ------------------------------------------------
 
-Start CLI Proxy API server, and then set the `ANTHROPIC_BASE_URL`, `ANTHROPIC_AUTH_TOKEN`, `ANTHROPIC_MODEL`, `ANTHROPIC_SMALL_FAST_MODEL` environment variables.
+Start CLI Proxy API server, and then set the `ANTHROPIC_BASE_URL`, `ANTHROPIC_AUTH_TOKEN`, `ANTHROPIC_DEFAULT_OPUS_MODEL`, `ANTHROPIC_DEFAULT_SONNET_MODEL`, `ANTHROPIC_DEFAULT_HAIKU_MODEL` (or `ANTHROPIC_MODEL`, `ANTHROPIC_SMALL_FAST_MODEL` for version 1.x.x) environment variables.
 
 Using Gemini models:
 
 export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
 export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+# version 2.x.x
+export ANTHROPIC\_DEFAULT\_OPUS\_MODEL=gemini-2.5-pro
+export ANTHROPIC\_DEFAULT\_SONNET\_MODEL=gemini-2.5-flash
+export ANTHROPIC\_DEFAULT\_HAIKU\_MODEL=gemini-2.5-flash-lite
+# version 1.x.x
 export ANTHROPIC\_MODEL=gemini-2.5-pro
 export ANTHROPIC\_SMALL\_FAST\_MODEL=gemini-2.5-flash
 
@@ -899,6 +904,11 @@ Using OpenAI GPT 5 models:
 
 export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
 export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+# version 2.x.x
+export ANTHROPIC\_DEFAULT\_OPUS\_MODEL=gpt-5-high
+export ANTHROPIC\_DEFAULT\_SONNET\_MODEL=gpt-5-medium
+export ANTHROPIC\_DEFAULT\_HAIKU\_MODEL=gpt-5-minimal
+# version 1.x.x
 export ANTHROPIC\_MODEL=gpt-5
 export ANTHROPIC\_SMALL\_FAST\_MODEL=gpt-5-minimal
 
@@ -906,6 +916,11 @@ Using OpenAI GPT 5 Codex models:
 
 export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
 export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+# version 2.x.x
+export ANTHROPIC\_DEFAULT\_OPUS\_MODEL=gpt-5-codex-high
+export ANTHROPIC\_DEFAULT\_SONNET\_MODEL=gpt-5-codex-medium
+export ANTHROPIC\_DEFAULT\_HAIKU\_MODEL=gpt-5-codex-low
+# version 1.x.x
 export ANTHROPIC\_MODEL=gpt-5-codex
 export ANTHROPIC\_SMALL\_FAST\_MODEL=gpt-5-codex-low
 
@@ -913,6 +928,11 @@ Using Claude models:
 
 export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
 export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+# version 2.x.x
+export ANTHROPIC\_DEFAULT\_OPUS\_MODEL=claude-opus-4-1-20250805
+export ANTHROPIC\_DEFAULT\_SONNET\_MODEL=claude-sonnet-4-5-20250929
+export ANTHROPIC\_DEFAULT\_HAIKU\_MODEL=claude-3-5-haiku-20241022
+# version 1.x.x
 export ANTHROPIC\_MODEL=claude-sonnet-4-20250514
 export ANTHROPIC\_SMALL\_FAST\_MODEL=claude-3-5-haiku-20241022
 
@@ -920,6 +940,11 @@ Using Qwen models:
 
 export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
 export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+# version 2.x.x
+export ANTHROPIC\_DEFAULT\_OPUS\_MODEL=qwen3-coder-plus
+export ANTHROPIC\_DEFAULT\_SONNET\_MODEL=qwen3-coder-plus
+export ANTHROPIC\_DEFAULT\_HAIKU\_MODEL=qwen3-coder-flash
+# version 1.x.x
 export ANTHROPIC\_MODEL=qwen3-coder-plus
 export ANTHROPIC\_SMALL\_FAST\_MODEL=qwen3-coder-flash
 
@@ -927,6 +952,11 @@ Using iFlow models:
 
 export ANTHROPIC\_BASE\_URL=http://127.0.0.1:8317
 export ANTHROPIC\_AUTH\_TOKEN=sk-dummy
+# version 2.x.x
+export ANTHROPIC\_DEFAULT\_OPUS\_MODEL=qwen3-max
+export ANTHROPIC\_DEFAULT\_SONNET\_MODEL=qwen3-coder-plus
+export ANTHROPIC\_DEFAULT\_HAIKU\_MODEL=qwen3-235b-a22b-instruct
+# version 1.x.x
 export ANTHROPIC\_MODEL=qwen3-max
 export ANTHROPIC\_SMALL\_FAST\_MODEL=qwen3-235b-a22b-instruct
 
@@ -1110,6 +1140,10 @@ Those projects are based on CLIProxyAPI:
 ### vibeproxy
 
 Native macOS menu bar app to use your Claude Code & ChatGPT subscriptions with AI coding tools - no API keys needed
+
+### Subtitle Translator
+
+Browser-based tool to translate SRT subtitles using your Gemini subscription via CLIProxyAPI with automatic validation/error correction - no API keys needed
 
 Note
 

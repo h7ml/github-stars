@@ -1,6 +1,6 @@
 ---
 project: juejin-helper
-stars: 3
+stars: 4
 description: Git Actions 托管，稀土掘金助手，包含每日签到，沾喜气，免费抽奖，每日成长任务等
 url: https://github.com/Wiederhoeft/juejin-helper
 ---

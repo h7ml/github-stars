@@ -1,6 +1,6 @@
 ---
 project: excelize
-stars: 19778
+stars: 19813
 description: Go language library for reading and writing Microsoft Excel™ (XLAM / XLSM / XLSX / XLTM / XLTX) spreadsheets
 url: https://github.com/qax-os/excelize
 ---

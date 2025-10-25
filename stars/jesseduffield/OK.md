@@ -1,6 +1,6 @@
 ---
 project: OK
-stars: 589
+stars: 592
 description: Welcome to the future of programming languages: OK?
 url: https://github.com/jesseduffield/OK
 ---

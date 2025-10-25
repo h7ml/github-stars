@@ -1,6 +1,6 @@
 ---
 project: cherry-studio
-stars: 34361
+stars: 34636
 description: 🍒 Cherry Studio is a desktop client that supports for multiple LLM providers.
 url: https://github.com/CherryHQ/cherry-studio
 ---
@@ -131,6 +131,7 @@ We're actively working on the following features and improvements:
 -   iOS App (Phase 1)
 -   Multi-Window support
 -   Window Pinning functionality
+-   Intel AI PC (Core Ultra) Support
 
 1.  🔌 **Advanced Features**
 
@@ -306,3 +307,12 @@ We believe the Enterprise Edition will become your team's AI productivity engine
 
 ⭐️ Star History
 ===============
+
+📜 License
+==========
+
+The Cherry Studio Community Edition is governed by the standard GNU Affero General Public License v3.0 (AGPL-3.0), available at https://www.gnu.org/licenses/agpl-3.0.html.
+
+Use of the Cherry Studio Community Edition for commercial purposes is permitted, subject to full compliance with the terms and conditions of the AGPL-3.0 license.
+
+Should you require a commercial license that provides an exemption from the AGPL-3.0 requirements, please contact us at bd@cherry-ai.com.

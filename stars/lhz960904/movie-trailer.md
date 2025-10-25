@@ -1,6 +1,6 @@
 ---
 project: movie-trailer
-stars: 480
+stars: 481
 description: :popcorn:Vue3 + TypeScript开发的电影预告片webAPP，可以查看正在热映与即将上映的电影信息和短片
 url: https://github.com/lhz960904/movie-trailer
 ---

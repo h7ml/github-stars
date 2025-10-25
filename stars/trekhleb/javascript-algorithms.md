@@ -1,6 +1,6 @@
 ---
 project: javascript-algorithms
-stars: 193561
+stars: 193644
 description: 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings
 url: https://github.com/trekhleb/javascript-algorithms
 ---
@@ -23,8 +23,6 @@ This repository contains JavaScript based examples of many popular algorithms an
 Each algorithm and data structure has its own separate README with related explanations and links for further reading (including ones to YouTube videos).
 
 _Read this in other languages:_ _简体中文_, _繁體中文_, _한국어_, _日本語_, _Polski_, _Français_, _Español_, _Português_, _Русский_, _Türkçe_, _Italiano_, _Bahasa Indonesia_, _Українська_, _Arabic_, _Tiếng Việt_, _Deutsch_, _Uzbek_, _עברית_
-
-_☝ Note that this project is meant to be used for learning and researching purposes only, and it is **not** meant to be used for production._
 
 Data Structures
 ---------------

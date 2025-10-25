@@ -1,6 +1,6 @@
 ---
 project: dooringx
-stars: 2388
+stars: 2390
 description: 快速高效搭建可视化拖拽平台
 url: https://github.com/H5-Dooring/dooringx
 ---

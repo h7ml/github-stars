@@ -1,6 +1,6 @@
 ---
 project: awesome-eslint
-stars: 4657
+stars: 4662
 description: A list of awesome ESLint plugins, configs, etc.
 url: https://github.com/dustinspecker/awesome-eslint
 ---

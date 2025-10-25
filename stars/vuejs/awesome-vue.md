@@ -1,6 +1,6 @@
 ---
 project: awesome-vue
-stars: 73314
+stars: 73336
 description: 🎉 A curated list of awesome things related to Vue.js
 url: https://github.com/vuejs/awesome-vue
 ---
@@ -1539,6 +1539,7 @@ _Utilities not directly related to the UI_
 -   vue-macros - Explore and extend more macros and syntax sugar to Vue.
 -   unplugin-vue-components - 📲 On-demand components auto importing for Vue.
 -   unplugin-auto-import - Auto import Vue APIs on-demand for Vite, Webpack and Rollup.
+-   vue3-websocket - Validate incoming WebSocket data with Zod.
 
 #### Typescript
 

@@ -1,6 +1,6 @@
 ---
 project: snowplow
-stars: 6963
+stars: 6965
 description: The leader in Customer Data Infrastructure
 url: https://github.com/snowplow/snowplow
 ---

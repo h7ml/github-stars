@@ -1,6 +1,6 @@
 ---
 project: howto-make-more-money
-stars: 17972
+stars: 17982
 description: 程序员如何优雅的挣零花钱，2.0版，升级为小书了。Most of this not work outside China , so no English translate
 url: https://github.com/easychen/howto-make-more-money
 ---

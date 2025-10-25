@@ -1,6 +1,6 @@
 ---
 project: pwa-book
-stars: 189
+stars: 190
 description: 这是一本 PWA 相关的书籍
 url: https://github.com/lavas-project/pwa-book
 ---

@@ -1,6 +1,6 @@
 ---
 project: vue-formulate
-stars: 2249
+stars: 2247
 description: ⚡️ The easiest way to build forms with Vue.
 url: https://github.com/wearebraid/vue-formulate
 ---

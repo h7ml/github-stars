@@ -1,6 +1,6 @@
 ---
 project: uptime-kuma
-stars: 76110
+stars: 77189
 description: A fancy self-hosted monitoring tool
 url: https://github.com/louislam/uptime-kuma
 ---
@@ -37,9 +37,12 @@ It is a temporary live demo, all data will be deleted after 10 minutes. Sponsore
 🔧 How to Install
 -----------------
 
-### 🐳 Docker
+### 🐳 Docker Compose
 
-docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+mkdir uptime-kuma
+cd uptime-kuma
+curl -o compose.yaml https://raw.githubusercontent.com/louislam/uptime-kuma/master/compose.yaml
+docker compose up -d
 
 Uptime Kuma is now running on http://0.0.0.0:3001.
 
@@ -47,11 +50,17 @@ Warning
 
 File Systems like **NFS** (Network File System) are **NOT** supported. Please map to a local directory or volume.
 
+### 🐳 Docker Command
+
+docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2
+
+Uptime Kuma is now running on http://0.0.0.0:3001.
+
 Note
 
 If you want to limit exposure to localhost (without exposing port for other users or to use a reverse proxy), you can expose the port like this:
 
-docker run -d --restart=always -p 127.0.0.1:3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+docker run -d --restart=always -p 127.0.0.1:3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:2
 
 ### 💪🏻 Non-Docker
 
@@ -62,8 +71,7 @@ Requirements:
     -   ✅ Windows 10 (x64), Windows Server 2012 R2 (x64) or higher
     -   ❌ FreeBSD / OpenBSD / NetBSD
     -   ❌ Replit / Heroku
--   Node.js 18 / 20.4
--   npm 9
+-   Node.js >= 20.4
 -   Git
 -   pm2 - For running Uptime Kuma in the background
 

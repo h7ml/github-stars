@@ -1,6 +1,6 @@
 ---
 project: popup-translation
-stars: 147
+stars: 146
 description:  Recommended to use [openai-translator](https://github.com/openai-translator/openai-translator) A desktop popup translation tool.
 url: https://github.com/fzdwx/popup-translation
 ---

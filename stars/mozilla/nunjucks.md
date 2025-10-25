@@ -1,6 +1,6 @@
 ---
 project: nunjucks
-stars: 8798
+stars: 8807
 description: A powerful templating engine with inheritance, asynchronous control, and more (jinja2 inspired)
 url: https://github.com/mozilla/nunjucks
 ---

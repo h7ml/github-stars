@@ -1,6 +1,6 @@
 ---
 project: DefinitelyTyped
-stars: 50509
+stars: 50545
 description: The repository for high quality TypeScript type definitions.
 url: https://github.com/DefinitelyTyped/DefinitelyTyped
 ---

@@ -1,6 +1,6 @@
 ---
 project: VirtualApp
-stars: 1339
+stars: 1341
 description: support  android 12 应用分身、模拟设备、模拟wifi、虚拟多开、钉钉打卡、企微打卡、插件开发、XP插件、模拟用户操作、java hook、c++ hook
 url: https://github.com/ServenScorpion/VirtualApp
 ---
@@ -14,5 +14,7 @@ VirtualApp14
 Email : qixie0306@gmail.com  
 WeChat : serven\_scorpion  
 Telegram : https://t.me/serven\_scorpion  
+
+过韩国游戏盾： 奥丁、吸血鬼、星光、RF、尤弥尔、阿斯达、夜鸦、王权、渡鸦、权利 等（欢迎随时来探讨）
 
 请大家给我点一下右上角的 ☆ 加快 15 的浅浅适配，感谢

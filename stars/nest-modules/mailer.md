@@ -1,6 +1,6 @@
 ---
 project: mailer
-stars: 894
+stars: 895
 description: 📨 A mailer module for Nest framework (node.js)
 url: https://github.com/nest-modules/mailer
 ---

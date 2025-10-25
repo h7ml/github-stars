@@ -1,6 +1,6 @@
 ---
 project: vue-vine
-stars: 1413
+stars: 1416
 description: Another style of writing Vue components.
 url: https://github.com/vue-vine/vue-vine
 ---
@@ -17,6 +17,12 @@ Another style of writing Vue components.
 -   VSCode extension:  
 -   Open VSX extension:  
 -   Check more details in Vue Vine docs:  
+
+  
+
+**🎤 Come and join us on Discrod now !!**
+
+  
 
 **Why this ?**  
 

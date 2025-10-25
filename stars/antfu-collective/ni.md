@@ -1,6 +1,6 @@
 ---
 project: ni
-stars: 7379
+stars: 7440
 description: 💡 Use the right package manager
 url: https://github.com/antfu-collective/ni
 ---
@@ -201,6 +201,16 @@ nci
 
   
 
+### `nd` - dedupe dependencies
+
+nd
+
+# npm dedupe
+# yarn dedupe
+# pnpm dedupe
+
+  
+
 ### `na` - agent alias
 
 na
@@ -247,6 +257,9 @@ defaultAgent\=npm # default "prompt"
 
 ; for global installs
 globalAgent\=npm
+
+; use node --run instead of package manager run command (requires Node.js 22+)
+runAgent\=node
 
 ; prefix commands with sfw
 useSfw\=true

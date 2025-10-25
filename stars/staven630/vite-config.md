@@ -1,6 +1,6 @@
 ---
 project: vite-config
-stars: 51
+stars: 52
 description: Vite的常用配置vite.config.js
 url: https://github.com/staven630/vite-config
 ---

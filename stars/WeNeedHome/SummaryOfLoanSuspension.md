@@ -1,6 +1,6 @@
 ---
 project: SummaryOfLoanSuspension
-stars: 20623
+stars: 20619
 description: 全国各省市停贷通知汇总
 url: https://github.com/WeNeedHome/SummaryOfLoanSuspension
 ---

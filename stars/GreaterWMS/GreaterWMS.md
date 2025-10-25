@@ -1,6 +1,6 @@
 ---
 project: GreaterWMS
-stars: 4134
+stars: 4140
 description: This Inventory management system is the currently Ford Asia Pacific after-sales logistics warehousing supply chain process . After I leave Ford , I start this project . You can share your vacant warehouse space, use it for those in need, and generate income
 url: https://github.com/GreaterWMS/GreaterWMS
 ---

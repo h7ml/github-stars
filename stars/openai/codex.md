@@ -1,12 +1,12 @@
 ---
 project: codex
-stars: 48107
+stars: 48858
 description: Lightweight coding agent that runs in your terminal
 url: https://github.com/openai/codex
 ---
 
 `npm i -g @openai/codex`  
-or `brew install codex`
+or `brew install --cask codex`
 
 **Codex CLI** is a coding agent from OpenAI that runs locally on your computer.  
   
@@ -26,11 +26,13 @@ npm install -g @openai/codex
 
 Alternatively, if you use Homebrew:
 
-brew install codex
+brew install --cask codex
 
 Then simply run `codex` to get started:
 
 codex
+
+If you're running into upgrade issues with Homebrew, see the FAQ entry on brew upgrade codex.
 
 You can also go to the latest GitHub Release and download the appropriate binary for your platform.
 
@@ -67,6 +69,7 @@ Codex CLI supports a rich set of configuration options, with preferences stored 
     -   CLI usage
     -   Running with a prompt as input
     -   Example prompts
+    -   Custom prompts
     -   Memory with AGENTS.md
     -   Configuration
 -   **Sandbox & approvals**

@@ -1,6 +1,6 @@
 ---
 project: twelvet
-stars: 256
+stars: 257
 description: （Spring Boot 3. X Microservices framework）  基于Spring Boot 3.X 的 Spring Cloud Alibaba / Spring Cloud Tencent + React的微服务框架。🔝 🔝 点个starrred 关注更新。Chat GPT(RAG、TTS、STT、LLM) 
 url: https://github.com/twelvet-projects/twelvet
 ---

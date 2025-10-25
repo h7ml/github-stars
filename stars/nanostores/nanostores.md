@@ -1,6 +1,6 @@
 ---
 project: nanostores
-stars: 6680
+stars: 6723
 description: A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores
 url: https://github.com/nanostores/nanostores
 ---
@@ -10,7 +10,7 @@ Nano Stores
 
 A tiny state manager for **React**, **React Native**, **Preact**, **Vue**, **Svelte**, **Solid**, **Lit**, **Angular**, and vanilla JS. It uses **many atomic stores** and direct manipulation.
 
--   **Small.** Between 265 and 803 bytes (minified and brotlied). Zero dependencies. It uses Size Limit to control size.
+-   **Small.** Between 265 and 797 bytes (minified and brotlied). Zero dependencies. It uses Size Limit to control size.
 -   **Fast.** With small atomic and derived stores, you do not need to call the selector function for all components on every store change.
 -   **Tree Shakable.** A chunk contains only stores used by components in the chunk.
 -   Designed to move logic from components to stores.
@@ -94,6 +94,7 @@ Smart Stores
 
 -   Persistent store to save data to `localStorage` and synchronize changes between browser tabs.
 -   Router store to parse URL and implements SPA navigation.
+-   Media Query store sync value with media query.
 -   I18n library based on stores to make application translatable.
 -   Query store that helps you with smart remote data fetching.
 -   Logux Client: stores with WebSocket sync and CRDT conflict resolution.

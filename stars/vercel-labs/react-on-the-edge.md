@@ -1,6 +1,6 @@
 ---
 project: react-on-the-edge
-stars: 218
+stars: 217
 description: Server-rendered React using Vercel Edge Functions.
 url: https://github.com/vercel-labs/react-on-the-edge
 ---

@@ -1,6 +1,6 @@
 ---
 project: chatgpt-demo
-stars: 8032
+stars: 8034
 description: Minimal web UI for ChatGPT. 
 url: https://github.com/anse-app/chatgpt-demo
 ---

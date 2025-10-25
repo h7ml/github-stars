@@ -1,6 +1,6 @@
 ---
 project: vue-echarts
-stars: 1290
+stars: 1294
 description: vue、 echarts、iview 实现大数据可视化大屏模板 
 url: https://github.com/bym110/vue-echarts
 ---

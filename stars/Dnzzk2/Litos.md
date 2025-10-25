@@ -1,6 +1,6 @@
 ---
 project: Litos
-stars: 50
+stars: 52
 description: A Simple & Modern Blog Theme for Astro
 url: https://github.com/Dnzzk2/Litos
 ---

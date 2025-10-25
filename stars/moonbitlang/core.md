@@ -1,6 +1,6 @@
 ---
 project: core
-stars: 973
+stars: 979
 description: MoonBit's Core library
 url: https://github.com/moonbitlang/core
 ---

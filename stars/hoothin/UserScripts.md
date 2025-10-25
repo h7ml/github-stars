@@ -1,6 +1,6 @@
 ---
 project: UserScripts
-stars: 3847
+stars: 3859
 description: Greasemonkey scripts ( Pagetual / Picviewer CE+ / DownloadAllContent ) 油猴腳本集 ユーザースクリプト集
 url: https://github.com/hoothin/UserScripts
 ---

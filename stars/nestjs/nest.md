@@ -1,6 +1,6 @@
 ---
 project: nest
-stars: 73095
+stars: 73191
 description: A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀
 url: https://github.com/nestjs/nest
 ---

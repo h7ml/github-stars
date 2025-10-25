@@ -1,6 +1,6 @@
 ---
 project: wx-words-pk
-stars: 928
+stars: 930
 description: 微信小程序云开发 「 单词天天斗 」，单词对战游戏，支持好友对战、随机匹配、人机对战等，单词 毕业设计
 url: https://github.com/arleyGuoLei/wx-words-pk
 ---

@@ -1,6 +1,6 @@
 ---
 project: lamini
-stars: 2542
+stars: 2543
 description: The Official Python Client for Lamini's API
 url: https://github.com/lamini-ai/lamini
 ---

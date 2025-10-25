@@ -1,6 +1,6 @@
 ---
 project: bytebase
-stars: 13125
+stars: 13166
 description: World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
 url: https://github.com/bytebase/bytebase
 ---

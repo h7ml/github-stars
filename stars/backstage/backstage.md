@@ -1,9 +1,13 @@
 ---
 project: backstage
-stars: 31590
+stars: 31647
 description: Backstage is an open framework for building developer portals
 url: https://github.com/backstage/backstage
 ---
+
+Note
+
+🏖 From Monday October 27th through November 3rd, maintainers and Spotify employees will be on vacation due to Wellness Week. Expect the project to move a little slower than normal, and support to be limited. Normal service will resume after that! 🏝
 
 Backstage
 =========

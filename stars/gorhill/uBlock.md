@@ -1,6 +1,6 @@
 ---
 project: uBlock
-stars: 59179
+stars: 59308
 description: uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean.
 url: https://github.com/gorhill/uBlock
 ---

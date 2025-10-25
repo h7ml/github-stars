@@ -1,6 +1,6 @@
 ---
 project: note-gen
-stars: 9713
+stars: 9779
 description: A cross-platform Markdown AI note-taking software.
 url: https://github.com/codexu/note-gen
 ---
@@ -49,7 +49,7 @@ Download
 
 Download
 
-Self-compiled
+TestFlight
 
 > UpgradeLink offers application upgrade and download services
 
@@ -86,6 +86,3 @@ Special thanks to our technology partners who make NoteGen better:
 * * *
 
 We also thank other partners for their service support
-
-Star History
-------------

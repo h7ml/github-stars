@@ -1,6 +1,6 @@
 ---
 project: frontend-hard-mode-interview
-stars: 3480
+stars: 3481
 description: 《前端内参》，有关于JavaScript、编程范式、设计模式、软件开发的艺术等大前端范畴内的知识分享，旨在帮助前端工程师们夯实技术基础以通过一线互联网企业技术面试。
 url: https://github.com/coffe1891/frontend-hard-mode-interview
 ---

@@ -1,6 +1,6 @@
 ---
 project: westore
-stars: 4298
+stars: 4299
 description: 小程序MVVM分层架构
 url: https://github.com/Tencent/westore
 ---

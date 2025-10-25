@@ -1,6 +1,6 @@
 ---
 project: zrender
-stars: 6243
+stars: 6244
 description: A lightweight graphic library providing 2d draw for Apache ECharts
 url: https://github.com/ecomfe/zrender
 ---

@@ -1,6 +1,6 @@
 ---
 project: console-importer
-stars: 3
+stars: 4
 description: Import JavaScript and CSS resources from console, with one command.|一个强大的 Chrome 扩展，允许开发者通过简单的命令直接从浏览器控制台导入 JavaScript 和 CSS 库。作为原版 Console Importer 扩展的现代化替代品构建。
 url: https://github.com/h7ml/console-importer
 ---

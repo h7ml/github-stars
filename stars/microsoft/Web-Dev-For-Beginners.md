@@ -1,6 +1,6 @@
 ---
 project: Web-Dev-For-Beginners
-stars: 92345
+stars: 92465
 description: 24 Lessons, 12 Weeks, Get Started as a Web Developer
 url: https://github.com/microsoft/Web-Dev-For-Beginners
 ---
@@ -482,22 +482,19 @@ A PDF of all of the lessons can be found here.
 
 Our team produces other courses! Check out:
 
--   MCP for Beginners
--   Edge AI for Beginners
--   AI Agents for Beginners
--   Generative AI for Beginners .NET
--   Generative AI with JavaScript
--   Generative AI with Java
--   AI for Beginners
--   Data Science for Beginners
--   ML for Beginners
--   Cybersecurity for Beginners
--   Web Dev for Beginners
--   IoT for Beginners
--   XR Development for Beginners
--   Mastering GitHub Copilot for Agentic use
--   Mastering GitHub Copilot for C#/.NET Developers
--   Choose Your Own Copilot Adventure
+### Azure / Edge / MCP / Agents
+
+* * *
+
+### Generative AI Series
+
+* * *
+
+### Core Learning
+
+* * *
+
+### Copilot Series
 
 Getting Help
 ------------

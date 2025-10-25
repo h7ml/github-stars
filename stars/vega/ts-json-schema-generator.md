@@ -1,6 +1,6 @@
 ---
 project: ts-json-schema-generator
-stars: 1637
+stars: 1643
 description: Generate JSON schema from your Typescript sources
 url: https://github.com/vega/ts-json-schema-generator
 ---

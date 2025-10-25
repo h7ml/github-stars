@@ -1,6 +1,6 @@
 ---
 project: mirai-api-http
-stars: 1673
+stars: 1674
 description: Mirai HTTP API (console) plugin
 url: https://github.com/project-mirai/mirai-api-http
 ---

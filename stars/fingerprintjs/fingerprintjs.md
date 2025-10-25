@@ -1,6 +1,6 @@
 ---
 project: fingerprintjs
-stars: 25683
+stars: 25734
 description: The most advanced open-source browser fingerprinting library
 url: https://github.com/fingerprintjs/fingerprintjs
 ---
@@ -23,7 +23,7 @@ Getting Started
   // Initialize the agent at application startup.
   // If you're using an ad blocker or Brave/Firefox, this import will not work.
   // Please use the NPM package instead: https://t.ly/ORyXk
-  const fpPromise \= import('https://openfpcdn.io/fingerprintjs/v4')
+  const fpPromise \= import('https://openfpcdn.io/fingerprintjs/v5')
     .then(FingerprintJS \=> FingerprintJS.load())
 
   // Get the visitor identifier when you need it.
@@ -51,7 +51,7 @@ Limitations
 
 ### Accuracy
 
-Since FingerprintJS processes and generates the fingerprints from within the browser itself, the accuracy is significatnly lower than in the commercial version
+Since FingerprintJS processes and generates the fingerprints from within the browser itself, the accuracy is significantly lower than in the commercial version
 
 ### Security
 
@@ -80,7 +80,7 @@ Check out our comparison table for a detailed breakdown of the differences betwe
 
 ⏱️ How to upgrade from FingerprintJS to Fingerprint Identification in 30 seconds
 
-Migrating to v4
+Migrating to v5
 ---------------
 
 Migrating from
@@ -89,23 +89,17 @@ Migration Guide
 
 Documentation
 
+**v4**
+
+Migrating from v4 to v5
+
+v4 documentation
+
 **v3**
 
-Migrating from v3 to v4
+Migrating from v3 to v5
 
 v3 documentation
-
-**v2**
-
-Migrating from v2 to v4
-
-v2 documentation
-
-**v1**
-
-Migrating from v1 to v4
-
-v1 documentation
 
 Version policy
 --------------

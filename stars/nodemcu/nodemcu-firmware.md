@@ -1,6 +1,6 @@
 ---
 project: nodemcu-firmware
-stars: 7838
+stars: 7840
 description: Lua based interactive firmware for ESP8266, ESP8285 and ESP32
 url: https://github.com/nodemcu/nodemcu-firmware
 ---

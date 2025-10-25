@@ -1,6 +1,6 @@
 ---
 project: clash-party
-stars: 17174
+stars: 17402
 description: :electron: Another Mihomo GUI. 
 url: https://github.com/mihomo-party-org/clash-party
 ---

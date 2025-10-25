@@ -1,6 +1,6 @@
 ---
 project: awesome-tauri
-stars: 6569
+stars: 6596
 description: 🚀 Awesome Tauri Apps, Plugins and Resources
 url: https://github.com/tauri-apps/awesome-tauri
 ---

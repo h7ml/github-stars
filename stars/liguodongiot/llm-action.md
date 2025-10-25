@@ -1,6 +1,6 @@
 ---
 project: llm-action
-stars: 21387
+stars: 21492
 description: 本项目旨在分享大模型相关技术原理以及实战经验（大模型工程化、大模型应用落地）
 url: https://github.com/liguodongiot/llm-action
 ---
@@ -322,6 +322,8 @@ LLM推理
 -   SGLang
 -   LightLLM：纯python开发的大语言模型推理和服务框架
 -   MNN-LLM：基于MNN引擎开发的大型语言模型运行时解决方案
+-   一文搞懂大模型生成文本的解码策略
+-   LLM 确定性推理
 
 ### 模型推理服务
 
@@ -668,7 +670,6 @@ LLM生态相关技术
 -   一文详解模型权重存储新格式 Safetensors
 -   一文搞懂大模型文件存储格式新宠GGUF
 -   DeepGEMM 技术剖析
--   一文搞懂大模型生成文本的解码策略
 
 LLM性能分析
 -------

@@ -1,6 +1,6 @@
 ---
 project: meimei-nestjs-admin
-stars: 612
+stars: 613
 description: 🚀🚀 基于NestJs + TypeScript +Prisma + Redis + MySql + Vue3 + vite + Element-UI编写的一款前后端分离的权限管理系统。🚀内置角色系统、导入导出、数据权限、表单连续提交拦截、前端表格列自定义等...🚀
 url: https://github.com/87789771/meimei-nestjs-admin
 ---

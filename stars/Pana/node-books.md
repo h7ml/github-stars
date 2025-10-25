@@ -1,6 +1,6 @@
 ---
 project: node-books
-stars: 1559
+stars: 1561
 description: For those who love Node.js
 url: https://github.com/Pana/node-books
 ---

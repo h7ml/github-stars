@@ -1,6 +1,6 @@
 ---
 project: create-vite-app
-stars: 245
+stars: 246
 description: 🍰🍰 VIte-CLI resolve Vite create starter template  No need to configure vite scaffolding templates quickly build vite4.x development templates highly customized Vue3.x React 18 Vite5.x 
 url: https://github.com/ErKeLost/create-vite-app
 ---

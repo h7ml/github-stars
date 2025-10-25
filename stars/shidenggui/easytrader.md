@@ -1,6 +1,6 @@
 ---
 project: easytrader
-stars: 8908
+stars: 8930
 description: 提供同花顺客户端/miniqmt/雪球的股票量化交易，支持跟踪 joinquant /ricequant 模拟交易 和 实盘雪球组合
 url: https://github.com/shidenggui/easytrader
 ---

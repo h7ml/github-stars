@@ -1,6 +1,6 @@
 ---
 project: banana-ui
-stars: 106
+stars: 107
 description: 基于Web Components，跨框架可用的现代化组件库。https://banana-ui.com
 url: https://github.com/FriedRiceNoodles/banana-ui
 ---

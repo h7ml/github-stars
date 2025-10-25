@@ -1,6 +1,6 @@
 ---
 project: chat-generator
-stars: 23
+stars: 24
 description: 💬 聊天记录合集
 url: https://github.com/YunYouJun/chat-generator
 ---

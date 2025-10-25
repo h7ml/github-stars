@@ -1,9 +1,18 @@
 ---
 project: ntfy
-stars: 26809
+stars: 26974
 description: Send push notifications to your phone or desktop using PUT/POST
 url: https://github.com/binwiederhier/ntfy
 ---
+
+Special thanks to:  
+  
+
+### Warp, built for coding with multiple AI agents.
+
+Available for MacOS, Linux, & Windows  
+
+* * *
 
 ntfy.sh | Send push notifications to your phone or desktop via PUT/POST
 =======================================================================

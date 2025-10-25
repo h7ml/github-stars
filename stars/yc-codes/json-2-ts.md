@@ -1,6 +1,6 @@
 ---
 project: json-2-ts
-stars: 60
+stars: 61
 description: JSON to Typescript Interface Generator
 url: https://github.com/yc-codes/json-2-ts
 ---

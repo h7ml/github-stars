@@ -1,6 +1,6 @@
 ---
 project: anti-redirect
-stars: 504
+stars: 505
 description: :rocket:去除各搜索引擎/常用网站的重定向
 url: https://github.com/axetroy/anti-redirect
 ---

@@ -1,6 +1,6 @@
 ---
 project: LiveEventBus
-stars: 3972
+stars: 3973
 description: :mailbox_with_mail:EventBus for Android，消息总线，基于LiveData，具有生命周期感知能力，支持Sticky，支持AndroidX，支持跨进程，支持跨APP
 url: https://github.com/JeremyLiao/LiveEventBus
 ---

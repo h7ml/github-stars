@@ -1,6 +1,6 @@
 ---
 project: awesome-reverse
-stars: 1056
+stars: 1057
 description: awesome-逆向基础入门，包括JS、安卓APP/Native
 url: https://github.com/AlienwareHe/awesome-reverse
 ---

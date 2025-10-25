@@ -1,6 +1,6 @@
 ---
 project: yuque-crawl
-stars: 210
+stars: 209
 description: 语雀爬虫  可以保存整个语雀知识库为Markdown格式 (包含完整目录结构和索引)
 url: https://github.com/burpheart/yuque-crawl
 ---

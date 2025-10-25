@@ -1,6 +1,6 @@
 ---
 project: partytown
-stars: 13540
+stars: 13549
 description: Relocate resource intensive third-party scripts off of the main thread and into a web worker. 🎉
 url: https://github.com/QwikDev/partytown
 ---

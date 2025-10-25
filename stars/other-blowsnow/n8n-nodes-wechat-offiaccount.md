@@ -1,6 +1,6 @@
 ---
 project: n8n-nodes-wechat-offiaccount
-stars: 815
+stars: 825
 description: n8n 微信公众号
 url: https://github.com/other-blowsnow/n8n-nodes-wechat-offiaccount
 ---

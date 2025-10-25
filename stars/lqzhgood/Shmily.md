@@ -1,6 +1,6 @@
 ---
 project: Shmily
-stars: 1491
+stars: 1492
 description: 这是一个 ( QQ Wechat 短信 通话记录 照片 等) 记录导出归档的 大 项目.
 url: https://github.com/lqzhgood/Shmily
 ---

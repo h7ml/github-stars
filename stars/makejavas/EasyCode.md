@@ -1,6 +1,6 @@
 ---
 project: EasyCode
-stars: 1104
+stars: 1108
 description: 基于IntelliJ IDEA开发的代码生成插件，支持自定义任意模板（Java，html，js，xml）。只要是与数据库相关的代码都可以通过自定义模板来生成。支持数据库类型与java类型映射关系配置。支持同时生成生成多张表的代码。每张表有独立的配置信息。完全的个性化定义，规则由你设置。
 url: https://github.com/makejavas/EasyCode
 ---

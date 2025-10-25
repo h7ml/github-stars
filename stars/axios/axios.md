@@ -1,6 +1,6 @@
 ---
 project: axios
-stars: 107951
+stars: 108005
 description: Promise based HTTP client for the browser and node.js
 url: https://github.com/axios/axios
 ---
@@ -100,6 +100,7 @@ Table of Contents
     -   🔥 Custom fetch
         -   🔥 Using with Tauri
         -   🔥 Using with SvelteKit
+-   🔥 HTTP2
 -   Semver
 -   Promises
 -   TypeScript
@@ -1635,6 +1636,30 @@ export async function load({ fetch }) {
 
   return { post };
 }
+
+🔥 HTTP2
+--------
+
+In version `1.13.0`, experimental `HTTP2` support was added to the `http` adapter. The `httpVersion` option is now available to select the protocol version used. Additional native options for the internal `session.request()` call can be passed via the `http2Options` config. This config also includes the custom `sessionTimeout` parameter, which defaults to `1000ms`.
+
+const form \= new FormData();
+
+    form.append('foo', '123');
+
+    const {data, headers, status} \= await axios.post('https://httpbin.org/post', form, {
+      httpVersion: 2,
+      http2Options: {
+        // rejectUnauthorized: false,
+        // sessionTimeout: 1000
+      },
+      onUploadProgress(e) {
+        console.log('upload progress', e);
+      },
+      onDownloadProgress(e) {
+        console.log('download progress', e);
+      },
+      responseType: 'arraybuffer'
+    });
 
 Semver
 ------

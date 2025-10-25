@@ -1,6 +1,6 @@
 ---
 project: wasm3
-stars: 7721
+stars: 7729
 description: 🚀 A fast WebAssembly interpreter and the most universal WASM runtime
 url: https://github.com/wasm3/wasm3
 ---

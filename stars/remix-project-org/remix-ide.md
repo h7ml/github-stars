@@ -1,6 +1,6 @@
 ---
 project: remix-ide
-stars: 2332
+stars: 2334
 description: Documentation for Remix IDE
 url: https://github.com/remix-project-org/remix-ide
 ---

@@ -1,6 +1,6 @@
 ---
 project: trpc
-stars: 38689
+stars: 38756
 description: 🧙‍♀️  Move Fast and Break Nothing. End-to-end typesafe APIs made easy. 
 url: https://github.com/trpc/trpc
 ---
@@ -106,12 +106,6 @@ If you enjoy working with tRPC and want to support us, consider giving a token a
 ### 🥇 Gold Sponsors
 
   
-Retool
-
-  
-Mobb
-
-  
 Graphite
 
 ### 🥈 Silver Sponsors
@@ -131,9 +125,6 @@ CodeRabbit
 Dr. B
 
   
-JonLuca De Caro
-
-  
 Ryan Magoon
 
 ### 😻 Smaller Backers
@@ -145,13 +136,10 @@ Ahoy Labs
 Unkey
 
   
-Tom Ballinger
-
-  
 Proxidize
 
   
-rickk
+Tom Ballinger
 
   
 Liminity AB
@@ -169,31 +157,22 @@ Dmitry Maykov
 Chris Bradley
 
   
-Kalle
-
-  
-Jared Wyce
-
-  
 fanvue
 
   
-Ascent Factory
+Drew Powers
 
   
-Drew Powers
+BestKru
+
+  
+Kalle
 
   
 Drizzle Team
 
   
 Spencer McKenney
-
-  
-Leo Jace
-
-  
-Jonas Strassel
 
   
 Stefan Wallin
@@ -206,15 +185,6 @@ Andrei Karushev
 
   
 Venue Ink
-
-  
-Brian Curliss
-
-  
-BestKru
-
-  
-Mykhailo Marynenko
 
 All contributors ✨
 ------------------

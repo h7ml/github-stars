@@ -1,6 +1,6 @@
 ---
 project: tts-server-go
-stars: 407
+stars: 408
 description: 微软TTS服务转发，以便在阅读APP中通过网络导入方式收听微软TTS / Edge大声朗读
 url: https://github.com/jing332/tts-server-go
 ---

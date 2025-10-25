@@ -1,6 +1,6 @@
 ---
 project: p-limit
-stars: 2572
+stars: 2599
 description: Run multiple promise-returning & async functions with limited concurrency
 url: https://github.com/sindresorhus/p-limit
 ---
@@ -64,13 +64,13 @@ Any arguments to pass through to `fn`.
 
 Support for passing arguments on to the `fn` is provided in order to be able to avoid creating unnecessary closures. You probably don't need this optimization unless you're pushing a _lot_ of functions.
 
-### limit.map(array, mapperFunction)
+### limit.map(iterable, mapperFunction)
 
-Process an array of inputs with limited concurrency.
+Process an iterable of inputs with limited concurrency.
 
 The mapper function receives the item value and its index.
 
-Returns a promise equivalent to `Promise.all(array.map((item, index) => limit(mapperFunction, item, index)))`.
+Returns a promise equivalent to `Promise.all(Array.from(iterable, (item, index) => limit(mapperFunction, item, index)))`.
 
 This is a convenience function for processing inputs that arrive in batches. For more complex use cases, see p-map.
 

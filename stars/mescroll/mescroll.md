@@ -1,6 +1,6 @@
 ---
 project: mescroll
-stars: 4462
+stars: 4465
 description: 精致的下拉刷新和上拉加载 js框架.支持vue,完美运行于移动端和主流PC浏览器 (JS framework for pull-refresh and pull-up-loading)
 url: https://github.com/mescroll/mescroll
 ---

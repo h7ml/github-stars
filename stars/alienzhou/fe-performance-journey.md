@@ -1,6 +1,6 @@
 ---
 project: fe-performance-journey
-stars: 359
+stars: 361
 description: 🚵 a Journey of Performance Optimizing in Frontend 🚀
 url: https://github.com/alienzhou/fe-performance-journey
 ---

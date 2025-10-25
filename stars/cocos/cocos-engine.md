@@ -1,6 +1,6 @@
 ---
 project: cocos-engine
-stars: 9068
+stars: 9085
 description: Cocos simplifies game creation and distribution with Cocos Creator, a free, open-source, cross-platform game engine. Empowering millions of developers to create high-performance, engaging 2D/3D games and instant web entertainment.
 url: https://github.com/cocos/cocos-engine
 ---

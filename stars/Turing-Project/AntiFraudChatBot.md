@@ -1,6 +1,6 @@
 ---
 project: AntiFraudChatBot
-stars: 2233
+stars: 2232
 description: A simple prompt-chatting AI based on wechaty and fintuned NLP model
 url: https://github.com/Turing-Project/AntiFraudChatBot
 ---

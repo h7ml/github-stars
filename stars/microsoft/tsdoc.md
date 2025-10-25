@@ -1,6 +1,6 @@
 ---
 project: tsdoc
-stars: 4884
+stars: 4888
 description: A doc comment standard for TypeScript
 url: https://github.com/microsoft/tsdoc
 ---

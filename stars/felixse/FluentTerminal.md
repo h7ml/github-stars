@@ -1,6 +1,6 @@
 ---
 project: FluentTerminal
-stars: 9508
+stars: 9513
 description: A Terminal Emulator based on UWP and web technologies.
 url: https://github.com/felixse/FluentTerminal
 ---

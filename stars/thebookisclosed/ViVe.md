@@ -1,6 +1,6 @@
 ---
 project: ViVe
-stars: 5856
+stars: 5923
 description: C# library and console app for using new feature control APIs available in Windows 10 version 2004 and newer
 url: https://github.com/thebookisclosed/ViVe
 ---

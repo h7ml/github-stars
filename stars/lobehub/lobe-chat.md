@@ -1,6 +1,6 @@
 ---
 project: lobe-chat
-stars: 66970
+stars: 67157
 description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.
 url: https://github.com/lobehub/lobe-chat
 ---
@@ -285,7 +285,7 @@ By **vsnthdev** on **2024-12-02**
 Searches Google through their official CSE API.  
 `web` `search`
 
-> 📊 Total plugins: **42**
+> 📊 Total plugins: **41**
 
 ### Agent Market (GPTs)
 

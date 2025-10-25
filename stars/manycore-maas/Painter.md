@@ -1,6 +1,6 @@
 ---
 project: Painter
-stars: 4442
+stars: 4445
 description: 小程序生成图片库，轻松通过 json 方式绘制一张可以发到朋友圈的图片
 url: https://github.com/manycore-maas/Painter
 ---

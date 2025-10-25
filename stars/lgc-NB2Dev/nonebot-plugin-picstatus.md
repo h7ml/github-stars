@@ -1,6 +1,6 @@
 ---
 project: nonebot-plugin-picstatus
-stars: 137
+stars: 138
 description: 运行状态图片版 for NoneBot2 / A NoneBot2 plugin generates a picture which shows the status of current device
 url: https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus
 ---
@@ -100,11 +100,6 @@ Telegram：@lgc2333
 ### LoliApi & Lolicon API
 
 -   背景图来源
-
-### 亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne
-
--     
-    本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助
 
 💰 赞助
 -----

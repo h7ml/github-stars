@@ -1,6 +1,6 @@
 ---
 project: ccseva
-stars: 717
+stars: 716
 description: A beautiful macOS menu bar app for tracking your Claude Code usage in real-time.
 url: https://github.com/Iamshankhadeep/ccseva
 ---

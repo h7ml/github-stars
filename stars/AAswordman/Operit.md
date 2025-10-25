@@ -1,12 +1,13 @@
 ---
 project: Operit
-stars: 1840
+stars: 1871
 description: The most powerful AI agent and AI chat software on Android
 url: https://github.com/AAswordman/Operit
 ---
 
 中文 | English
 
+  
   
 
 Operit AI - 智能助手应用
@@ -108,12 +109,6 @@ Operit AI 提供丰富的插件生态，配合内置工具可实现从日常生�
 -   如有可能，提供截图或录屏帮助我们理解问题
 
 我们会尽力解决每一个合理的问题，但请理解开源项目维护者的时间和精力有限。同时，我们不接受任何形式的人身攻击或不尊重的言论，这样的Issue将被直接关闭。
-
-📞 联系我们
--------
-
--   邮箱：aaswordsman@foxmail.com
--   问题反馈：Issue区
 
 📄 许可证
 ------

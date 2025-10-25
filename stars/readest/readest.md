@@ -1,6 +1,6 @@
 ---
 project: readest
-stars: 14021
+stars: 14247
 description: Readest is a modern, feature-rich ebook reader designed for avid readers offering seamless cross-platform access, powerful tools, and an intuitive interface to elevate your reading experience.
 url: https://github.com/readest/readest
 ---
@@ -320,18 +320,9 @@ Readest is open-source, and contributions are welcome! Feel free to open issues,
 Support
 -------
 
-If Readest has been useful to you, consider supporting its development. Your contribution helps us squash bugs faster, improve performance, and keep building great features.
+If Readest has been useful to you, consider supporting its development. You can become a sponsor on GitHub or just donate with crypto. Your contribution helps us squash bugs faster, improve performance, and keep building great features.
 
-### How to Donate
-
-1.  **GitHub Sponsors**  
-    Back the project directly on GitHub:  
-    👉 https://github.com/sponsors/readest
-    
-2.  **Crypto Donations**  
-    Prefer crypto? You can donate here:  
-    👉 https://donate.readest.com/
-    
+### Sponsors
 
 License
 -------

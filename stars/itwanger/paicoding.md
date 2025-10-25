@@ -1,6 +1,6 @@
 ---
 project: paicoding
-stars: 2799
+stars: 2809
 description: ⭐️一款好用又强大的开源社区，基于 Spring Boot、MyBatis-Plus、MySQL、Redis、ElasticSearch、MongoDB、Docker、RabbitMQ 等主流技术栈，附详细教程，包括Java、Spring、MySQL、Redis、微服务&分布式、消息队列等核心知识点。学编程，就上技术派😁。
 url: https://github.com/itwanger/paicoding
 ---
@@ -520,4 +520,4 @@ GitHub 上标星 13000+ 的开源知识库《 二哥的 Java 进阶之路 》第
 
 Apache License 2.0
 
-Copyright (c) 2022-2024 技术派（楼仔、沉默王二、一灰、小超、小灰飞）
+Copyright (c) 2022-2025 技术派（楼仔、沉默王二、一灰、小超、小灰飞）

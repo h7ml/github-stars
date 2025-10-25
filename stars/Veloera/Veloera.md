@@ -1,6 +1,6 @@
 ---
 project: Veloera
-stars: 1382
+stars: 1406
 description: null
 url: https://github.com/Veloera/Veloera
 ---

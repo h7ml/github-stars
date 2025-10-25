@@ -1,6 +1,6 @@
 ---
 project: datav-vue
-stars: 759
+stars: 760
 description: A Powerful Data Visualization Tool. Uses TypeScript And Vue3. Scenario-specific templates. User-friendly interfaces. 一款数据可视化应用搭建工具
 url: https://github.com/pengxiaotian/datav-vue
 ---

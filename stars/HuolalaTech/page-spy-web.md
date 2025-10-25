@@ -1,6 +1,6 @@
 ---
 project: page-spy-web
-stars: 5461
+stars: 5477
 description: A remote debugging platform you can definitely use.
 url: https://github.com/HuolalaTech/page-spy-web
 ---
@@ -18,25 +18,26 @@ Intro
 
 **PageSpy** is a tool used for debugging projects on platforms such as Web, Mini Programs, and HarmonyOS apps.
 
-Based on encapsulation of native web APIs, it filters and transforms the parameters of native methods when called, and converts into messages with specific format for consumption by the debugger client. The debugger presents ui in an interactive devtools-like for easy viewing after receives the message data.
+It encapsulates native APIs, filtering and transforming the parameters when native methods are invoked, and organizes them into a standard format for transmission to the debugging client. The debugging client then presents the data intuitively through an interface similar to the local console.
 
 Why is PageSpy?
 ---------------
 
 > A picture is worth a thousand words.
 
-When should I use?
-------------------
+When to Use?
+------------
 
-It's **PageSpy** show time whenever you can't debug code with local devtools! Let's see the following instances:
+_PageSpy shines in any scenario where local console debugging is not possible!_ Let's explore some use cases:
 
--   Debugging of H5 or webview app locally: in the past, some products provided panels that could display information on H5, but the small screens of mobile devices make it inconvenient for operation, and the display is not user-friendly. Issues such as information being truncated are also common.
--   Remote work and cross-regional collaboration: traditional communications such as emails, phone calls, and video conferences are inefficient, and fault information is not comprehensive, making it prone to misunderstandings and misjudgments.
--   White screen issues on user devices: traditional approaches to troubleshooting, such as data monitoring and log analysis, depend on troubleshooters understanding business requirements and technical implementations.
+-   **Local Debugging of H5 and Webview Applications**: Mobile screens are too small, traditional debugging panels are inconvenient to operate, display poorly, and prone to information truncation.
+    
+-   **Remote Work and Cross-Region Collaboration**: Traditional communication methods (email, phone, video conferencing) are inefficient, fault information is incomplete, and misunderstandings and misjudgments easily occur.
+    
+-   **Troubleshooting White Screen Issues on User Terminals**: Data monitoring, log analysis and other traditional methods rely on the troubleshooting team's deep understanding of business and technology, resulting in low localization efficiency.
+    
 
-The commonality among these issues is that developers cannot view runtime information as easily as they can using the console.
-
-To address this, PageSpy provides a live view of the project for technical personnel to inspect on the debugging side. In remote collaborative scenarios, testers no longer need to frequently provide fault information to technical personnel through text, screenshots, voice messages, or screen recordings.
+Yep, the goal of PageSpy is can help the people which in like above cases.
 
 How to use?
 -----------

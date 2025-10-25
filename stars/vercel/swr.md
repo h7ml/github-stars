@@ -1,6 +1,6 @@
 ---
 project: swr
-stars: 32012
+stars: 32038
 description: React Hooks for Data Fetching
 url: https://github.com/vercel/swr
 ---

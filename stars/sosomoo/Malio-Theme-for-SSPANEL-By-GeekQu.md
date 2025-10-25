@@ -1,6 +1,6 @@
 ---
 project: Malio-Theme-for-SSPANEL-By-GeekQu
-stars: 17
+stars: 18
 description: null
 url: https://github.com/sosomoo/Malio-Theme-for-SSPANEL-By-GeekQu
 ---

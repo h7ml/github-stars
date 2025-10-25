@@ -1,6 +1,6 @@
 ---
 project: ChatGPT-Desktop
-stars: 1703
+stars: 1702
 description: Fuel your productivity with ChatGPT-Desktop - Blazingly fast and supercharged!
 url: https://github.com/Synaptrix/ChatGPT-Desktop
 ---

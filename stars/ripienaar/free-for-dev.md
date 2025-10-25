@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 113859
+stars: 114057
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -521,6 +521,8 @@ Tools for Teams and Collaboration
 -   Stickies - Visual collaboration app used for brainstorming, content curation, and notes. Free for up to 3 Walls, unlimited users, and 1 GB storage.
     
 -   Stacks - Content workspace with integrated notes, links, and file storage to navigate information overload. Forever free personal plan.
+    
+-   StreamBackdrops — Free HD virtual backgrounds for video calls and team meetings. Professional backgrounds for Zoom, Teams, and Google Meet. No signup required, free for personal use.
     
 -   talky.io — Free group video chat. Anonymous. Peer‑to‑peer. No plugins, signup, or payment required
     
@@ -1148,7 +1150,6 @@ Email
 -   Sweego - European transactional emails API for developers. 500 emails/day free.
 -   Takeout - A constantly updated email service that makes sending emails easy. Five hundred transactional emails/month free.
 -   temp-mail.io — Free disposable temporary email service with multiple emails at once and forwarding
--   tinyletter.com — 5,000 subscribers/month free
 -   Touchlead - A multi-purpose marketing automation tool, with lead management, form builder, and automation. Free for limited number of leads and automations
 -   trashmail.com - Free disposable email addresses with forwarding and automatic address expiration
 -   Tuta - Free secure email account service provider with built-in end-to-end encryption, no ads, no tracking. Free 1GB storage, one calendar (Tuta also have an paid plan.). Tuta is also partially open source, so you can self-host.
@@ -1244,7 +1245,6 @@ Forms
 -   Web3Forms - Contact forms for Static & JAMStack Websites without writing backend code. The free plan allows Unlimited Forms, Unlimited Domains & 250 Submissions per month.
 -   WebAsk - Survey and Form Builder. The free plan has three surveys per account, 100 monthly responses, and ten elements per survey.
 -   Wufoo - Quick forms to use on websites. The free plan has a limit of 100 submissions each month.
--   formpost.app - Free, unlimited Form to Email service. Set up custom redirects, auto-response, webhooks, etc. for free.
 -   Formester.com - Share and embed unique-looking forms on your website—no limits on the number of forms created or features restricted by the plan. Get up to 100 submissions every month for free.
 -   SimplePDF.eu - Embed a PDF editor on your website and turn any PDF into a fillable form. The free plan allows unlimited PDFs with three submissions per PDF.
 -   forms.app — Create online forms with powerful features like conditional logic, automatic score calculator, and AI. Collect up to 100 responses with a free plan, embed your forms on a website, or use them with a link.
@@ -1597,6 +1597,7 @@ Issue Tracking and Project Management
 -   Teaminal - Standup, retro, and sprint planning tool for remote teams. Free for up to 15 users.
 -   teamwork.com — Project management & Team Chat. Free for five users and two projects. Premium plans are available.
 -   teleretro.com — Simple and fun retrospective tool with icebreakers, gifs and emojis. The free plan includes three retros and unlimited members.
+-   Tenzu — Lightweight project management tool for agile teams. The SaaS relies on free contributions; users can always choose to give 0 and there is no features paywall {more details}
 -   testlio.com — Issue tracking, test management and beta testing platform. Free for private use
 -   terrastruct.com — Online diagram maker specifically for software architecture. Free tier up to 4 layers per diagram.
 -   todoist.com — Collaborative and individual task management. The free plan has: 5 active projects, five users in the project, file uploading up to 5MB, three filters, and one week of activity history.
@@ -1863,7 +1864,6 @@ IDE and Code Editing
 -   fakejson.com — FakeJSON helps you quickly generate fake data using its API. Make an API request describing what you want and how you want it. The API returns it all in JSON. Speed up the go-to-market process for ideas and fake it till you make it.
 -   ForgeCode — AI-enabled pair programmer for Claude, GPT4 Series, Grok, Deepseek, Gemini and all frontier models. Works natively with your CLI and integrates seamlessly with any IDE. Free tier includes basic AI model access with local processing.
 -   GetVM — Instant free Linux and IDEs chrome sidebar. The free tier includes 5 VMs per day.
--   GitPod — Instant, ready-to-code dev environments for GitHub projects. The free tier includes 50 hours/month.
 -   ide.goorm.io goormIDE is full IDE on cloud. multi-language support, Linux-based container via the fully-featured web-based terminal, port forwarding, custom URL, real-time collaboration and chat, share link, Git/Subversion support. There are many more features (The free tier includes 1GB RAM and 10GB Storage per container, 5 Container slots).
 -   JDoodle — Online compiler and editor for more than 60 programming languages with a free plan for REST API code compiling up to 200 credits per day.
 -   jetbrains.com — Productivity tools, IDEs and deploy tools (aka IntelliJ IDEA, PyCharm, etc). Free license for students, teachers, Open Source and user groups.
@@ -2172,6 +2172,7 @@ Other Free Resources
 -   GitHub Education — Collection of free services for students. Registration required.
 -   Markdown Tools - Tools for converting HTML, CSVs, PDFs, JSON, and Excel files to and from Markdown
 -   Microsoft 365 Developer Program — Get a free sandbox, tools, and other resources you need to build solutions for the Microsoft 365 platform. The subscription is a 90-day Microsoft 365 E5 Subscription (Windows excluded) which is renewable. It is renewed if you're active in development(measured using telemetry data & algorithms).
+-   PHPhub — A collection of PHP tools, including a formatter, validator, sandbox, regex tester, and more.
 -   Pyrexp — Free web-based regex tester and visualizer for debugging regular expressions.
 -   RedHat for Developers — Free access to Red Hat products including RHEL, OpenShift, CodeReady, etc. exclusively for developers. Individual plan only. Free e-books are also offered for reference.
 -   sandbox.httpsms.com — Send and receive test SMS messages for free.

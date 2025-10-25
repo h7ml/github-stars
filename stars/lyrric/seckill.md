@@ -1,6 +1,6 @@
 ---
 project: seckill
-stars: 1975
+stars: 1974
 description: 苗苗 约苗 九价 秒杀 脚本
 url: https://github.com/lyrric/seckill
 ---

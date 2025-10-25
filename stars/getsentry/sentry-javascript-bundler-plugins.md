@@ -1,6 +1,6 @@
 ---
 project: sentry-javascript-bundler-plugins
-stars: 168
+stars: 169
 description: JavaScript Bundler Plugins for Sentry
 url: https://github.com/getsentry/sentry-javascript-bundler-plugins
 ---

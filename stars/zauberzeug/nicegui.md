@@ -1,6 +1,6 @@
 ---
 project: nicegui
-stars: 14240
+stars: 14309
 description: Create web-based user interfaces with Python. The nice way.
 url: https://github.com/zauberzeug/nicegui
 ---

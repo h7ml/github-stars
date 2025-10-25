@@ -1,6 +1,6 @@
 ---
 project: openai-reflect
-stars: 186
+stars: 187
 description: Physical AI Assistant that illuminates your life
 url: https://github.com/openai/openai-reflect
 ---

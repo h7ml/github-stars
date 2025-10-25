@@ -1,6 +1,6 @@
 ---
 project: natpass
-stars: 4447
+stars: 4448
 description: 🔥居家办公，远程开发神器
 url: https://github.com/lwch/natpass
 ---

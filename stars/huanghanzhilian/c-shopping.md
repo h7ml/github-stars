@@ -1,6 +1,6 @@
 ---
 project: c-shopping
-stars: 2376
+stars: 2382
 description: A beautiful shopping platform developed with Next.js, tailored for various devices including Desktop, Tablet, and Phone. 基于Nextjs开发同时适配Desktop、Tablet、Phone多种设备的精美购物平台
 url: https://github.com/huanghanzhilian/c-shopping
 ---

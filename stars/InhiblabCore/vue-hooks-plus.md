@@ -1,6 +1,6 @@
 ---
 project: vue-hooks-plus
-stars: 1984
+stars: 1988
 description: High performance  & Simplicity  🧲  Vue 3 Hooks library
 url: https://github.com/InhiblabCore/vue-hooks-plus
 ---

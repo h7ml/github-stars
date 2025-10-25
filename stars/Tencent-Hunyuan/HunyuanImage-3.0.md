@@ -1,6 +1,6 @@
 ---
 project: HunyuanImage-3.0
-stars: 2230
+stars: 2297
 description: HunyuanImage-3.0: A Powerful Native Multimodal Model for Image Generation
 url: https://github.com/Tencent-Hunyuan/HunyuanImage-3.0
 ---

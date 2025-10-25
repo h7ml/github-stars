@@ -1,6 +1,6 @@
 ---
 project: ollama-api-pool
-stars: 10
+stars: 11
 description: 🚀 Intelligent Ollama API proxy pool based on Cloudflare Workers - 基于 Cloudflare Workers 的智能 Ollama API 代理池，支持多账号轮询、自动故障转移、负载均衡和统一鉴权
 url: https://github.com/dext7r/ollama-api-pool
 ---

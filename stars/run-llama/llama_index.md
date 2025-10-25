@@ -1,6 +1,6 @@
 ---
 project: llama_index
-stars: 44782
+stars: 44896
 description: LlamaIndex is the leading framework for building LLM-powered agents over your data.
 url: https://github.com/run-llama/llama_index
 ---

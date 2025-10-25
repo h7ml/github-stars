@@ -5,7 +5,7 @@ description: freehiddifynext.github.io
 url: https://github.com/freehiddifynext/freehiddifynext.github.io
 ---
 
-10月14日18.6M/S|Hiddify-Next免费机场订阅每天更新订阅链接 更新时间 2025-10-14 06:15:26
+10月20日21.1M/S|Hiddify-Next免费机场订阅每天更新订阅链接 更新时间 2025-10-20 03:49:49
 =================================================================
 
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：点击跳转
@@ -20,23 +20,23 @@ clash使用教程：
 
 ### 免费Clash节点订阅链接
 
--   https://freehiddifynext.github.io/uploads/2025/10/0-20251014.yaml
--   https://freehiddifynext.github.io/uploads/2025/10/1-20251014.yaml
--   https://freehiddifynext.github.io/uploads/2025/10/2-20251014.yaml
--   https://freehiddifynext.github.io/uploads/2025/10/3-20251014.yaml
--   https://freehiddifynext.github.io/uploads/2025/10/4-20251014.yaml
+-   https://freehiddifynext.github.io/uploads/2025/10/0-20251020.yaml
+-   https://freehiddifynext.github.io/uploads/2025/10/1-20251020.yaml
+-   https://freehiddifynext.github.io/uploads/2025/10/2-20251020.yaml
+-   https://freehiddifynext.github.io/uploads/2025/10/3-20251020.yaml
+-   https://freehiddifynext.github.io/uploads/2025/10/4-20251020.yaml
 
 ### 免费V2ray节点订阅链接
 
--   https://freehiddifynext.github.io/uploads/2025/10/0-20251014.txt
--   https://freehiddifynext.github.io/uploads/2025/10/1-20251014.txt
--   https://freehiddifynext.github.io/uploads/2025/10/2-20251014.txt
--   https://freehiddifynext.github.io/uploads/2025/10/3-20251014.txt
--   https://freehiddifynext.github.io/uploads/2025/10/4-20251014.txt
+-   https://freehiddifynext.github.io/uploads/2025/10/0-20251020.txt
+-   https://freehiddifynext.github.io/uploads/2025/10/1-20251020.txt
+-   https://freehiddifynext.github.io/uploads/2025/10/2-20251020.txt
+-   https://freehiddifynext.github.io/uploads/2025/10/3-20251020.txt
+-   https://freehiddifynext.github.io/uploads/2025/10/4-20251020.txt
 
 ### 免费Sing-box节点订阅链接
 
--   https://freehiddifynext.github.io/uploads/2025/10/20251014.json
+-   https://freehiddifynext.github.io/uploads/2025/10/20251020.json
 
 更多Clash节点订阅 ：
 -------------

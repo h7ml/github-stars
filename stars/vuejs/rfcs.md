@@ -1,6 +1,6 @@
 ---
 project: rfcs
-stars: 4928
+stars: 4929
 description: RFCs for substantial changes / feature additions to Vue core
 url: https://github.com/vuejs/rfcs
 ---

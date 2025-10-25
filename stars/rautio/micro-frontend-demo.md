@@ -1,6 +1,6 @@
 ---
 project: micro-frontend-demo
-stars: 137
+stars: 138
 description: Demo repo for showcasing a micro frontend architecture
 url: https://github.com/rautio/micro-frontend-demo
 ---

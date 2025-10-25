@@ -1,6 +1,6 @@
 ---
 project: dynamic-analysis
-stars: 1039
+stars: 1040
 description: ⚙️ A curated list of dynamic analysis tools and linters for all programming languages, binaries, and more.
 url: https://github.com/analysis-tools-dev/dynamic-analysis
 ---

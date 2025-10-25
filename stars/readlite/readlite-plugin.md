@@ -1,6 +1,6 @@
 ---
 project: readlite-plugin
-stars: 505
+stars: 506
 description: Transform cluttered web pages into clean, distraction-free reading experiences with customizable themes, fonts and multilingual support.
 url: https://github.com/readlite/readlite-plugin
 ---

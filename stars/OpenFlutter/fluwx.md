@@ -1,6 +1,6 @@
 ---
 project: fluwx
-stars: 3261
+stars: 3264
 description: Flutter版微信SDK.WeChat SDK for flutter.
 url: https://github.com/OpenFlutter/fluwx
 ---

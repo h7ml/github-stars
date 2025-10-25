@@ -1,6 +1,6 @@
 ---
 project: cto
-stars: 19
+stars: 43
 description: 玩具
 url: https://github.com/Luotianyi-0712/cto
 ---
@@ -14,11 +14,29 @@ CTONEW
 
 Fork本仓库，点个star
 
-点击depley
+点击depley（使用dash.deno.com部署而非console.deno.com）
 
 选择你的GitHub仓库
 
 设置入口文件为 `main.ts`
+
+如需在正式版本中部署，请将deno.json替换为如下内容 （Deno在线部署忽略）
+
+```
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-write --allow-env --unstable-kv --watch main.ts",
+    "start": "deno run --allow-net --allow-read --allow-write --allow-env --unstable-kv main.ts"
+  },
+  "imports": {
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "djwt": "https://deno.land/x/djwt@v3.0.1/mod.ts"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window", "deno.unstable"]
+  }
+}
+```
 
 ### 环境变量
 

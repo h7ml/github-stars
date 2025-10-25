@@ -1,6 +1,6 @@
 ---
 project: waifu-motivator-plugin
-stars: 346
+stars: 344
 description: OSS Waifu Motivator Plugin for JetBrains IDEs to help boost your motivation while coding!
 url: https://github.com/waifu-motivator/waifu-motivator-plugin
 ---

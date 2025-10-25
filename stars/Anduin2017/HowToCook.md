@@ -1,6 +1,6 @@
 ---
 project: HowToCook
-stars: 95189
+stars: 95361
 description: 程序员在家做饭方法指南。Programmer's guide about how to cook at home (Simplified Chinese only).
 url: https://github.com/Anduin2017/HowToCook
 ---

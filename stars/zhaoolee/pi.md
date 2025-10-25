@@ -1,6 +1,6 @@
 ---
 project: pi
-stars: 1999
+stars: 2005
 description: 树莓派教程，树莓派防吃灰小分队，让树莓派不再吃灰~
 url: https://github.com/zhaoolee/pi
 ---

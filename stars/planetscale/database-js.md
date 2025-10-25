@@ -1,6 +1,6 @@
 ---
 project: database-js
-stars: 1180
+stars: 1181
 description: A Fetch API-compatible PlanetScale database driver
 url: https://github.com/planetscale/database-js
 ---

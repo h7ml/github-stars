@@ -1,6 +1,6 @@
 ---
 project: seajs
-stars: 8302
+stars: 8301
 description: A Module Loader for the Web
 url: https://github.com/seajs/seajs
 ---

@@ -61,6 +61,7 @@ Table of Contents 📑
 -   Email blocking
 -   Nuisance and scam calling telephone numbers blocking
 -   Fraudulent cryptocurrency wallet addresses
+-   Fraudulent cryptocurrency transactions
 -   Fraudulent cryptocurrency mining pool addresses
 -   OFAC sanctioned digital currency addresses
     -   How do we define sanctions data?
@@ -370,6 +371,15 @@ Fraudulent cryptocurrency wallet addresses 🕵️
 Avoid sending cryptocurrency to bad actors and scammers, a list of bad blockchain wallet addresses can be found here in this folder:
 
 -   Wallets Filter List
+
+Fraudulent cryptocurrency transactions 🛡️
+------------------------------------------
+
+Cybercriminals are increasingly abusing blockchain transactions as covert communication channels, sometimes even using them as command-and-control (C2) servers to deliver malware or issue instructions. Avoid interacting with, confirming, or broadcasting any transaction hashes (txids) known to be linked to fraud, scams, or C2 activity.
+
+A curated list of suspicious transaction hashes can be found in this folder:
+
+-   Transactions Filter List
 
 Fraudulent cryptocurrency mining pool addresses 🦈
 --------------------------------------------------

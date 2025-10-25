@@ -1,6 +1,6 @@
 ---
 project: GoDB.js
-stars: 178
+stars: 177
 description: IndexedDB with Intuitive API，轻松搞定浏览器数据库🎉
 url: https://github.com/chenstarx/GoDB.js
 ---

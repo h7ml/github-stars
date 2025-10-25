@@ -1,6 +1,6 @@
 ---
 project: open_virapi
-stars: 38
+stars: 39
 description: VirAPI（Virtual API）开源版代码仓库。非侵入式虚拟数据在线请求响应生成接口，支持MockJs语法，请求即可得自定义规则的响应数据。帮助开发者，特别是前端开发者，提供很好的快速开发体验。在线服务请访问：http://virapi.com/
 url: https://github.com/bluvenr/open_virapi
 ---

@@ -1,6 +1,6 @@
 ---
 project: templates
-stars: 1626
+stars: 1637
 description: Templates for Cloudflare Workers
 url: https://github.com/cloudflare/templates
 ---

@@ -1,6 +1,6 @@
 ---
 project: ollama
-stars: 154326
+stars: 154731
 description: Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.
 url: https://github.com/ollama/ollama
 ---
@@ -625,6 +625,7 @@ Community Integrations
 -   AWS-Strands-With-Ollama - AWS Strands Agents with Ollama Examples
 -   ollama-multirun - A bash shell script to run a single prompt against any or all of your locally installed ollama models, saving the output and performance statistics as easily navigable web pages. (Demo)
 -   ollama-bash-toolshed - Bash scripts to chat with tool using models. Add new tools to your shed with ease. Runs on Ollama.
+-   VT Code - VT Code is a Rust-based terminal coding agent with semantic code intelligence via Tree-sitter. Ollama integration for running local/cloud models with configurable endpoints.
 
 ### Apple Vision Pro
 

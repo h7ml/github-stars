@@ -1,6 +1,6 @@
 ---
 project: github-readme-stats
-stars: 76537
+stars: 76649
 description: :zap: Dynamically generated stats for your github readmes
 url: https://github.com/anuraghazra/github-readme-stats
 ---
@@ -1265,11 +1265,41 @@ Available environment variables
 
 GitHub Readme Stats provides several environment variables that can be used to customize the behavior of your self-hosted instance. These include:
 
--   `CACHE_SECONDS`: Sets the cache duration in seconds for the generated cards. This variable takes precedence over the default cache timings for the public instance. You can also set it to `0` to disable caching completely. If this variable is not set, the default cache duration is 24 hours (86,400 seconds).
--   `WHITELIST`: A comma-separated list of GitHub usernames that are allowed to access your instance. If this variable is not set, all usernames are allowed.
--   `GIST_WHITELIST`: A comma-separated list of GitHub gist IDs that are allowed to be accessed on your instance. If this variable is not set, all gist IDs are allowed.
--   `EXCLUDE_REPO`: A comma-separated list of repositories that will be excluded from stats and top languages cards on your instance. This allows repository exclusion without exposing repository names in public URLs. This enhances privacy for self-hosted instances that include private repositories in stats cards.
--   `FETCH_MULTI_PAGE_STARS`: When set to `true`, this enables fetching all starred repositories for accurate star counts, especially for users with more than 100 repositories. This may increase response times and API points usage, so it is disabled on the public instance.
+Name
+
+Description
+
+Supported values
+
+`CACHE_SECONDS`
+
+Sets the cache duration in seconds for the generated cards. This variable takes precedence over the default cache timings for the public instance. If this variable is not set, the default cache duration is 24 hours (86,400 seconds).
+
+Any positive integer or `0` to disable caching
+
+`WHITELIST`
+
+A comma-separated list of GitHub usernames that are allowed to access your instance. If this variable is not set, all usernames are allowed.
+
+Comma-separated GitHub usernames
+
+`GIST_WHITELIST`
+
+A comma-separated list of GitHub Gist IDs that are allowed to be accessed on your instance. If this variable is not set, all Gist IDs are allowed.
+
+Comma-separated GitHub Gist IDs
+
+`EXCLUDE_REPO`
+
+A comma-separated list of repositories that will be excluded from stats and top languages cards on your instance. This allows repository exclusion without exposing repository names in public URLs. This enhances privacy for self-hosted instances that include private repositories in stats cards.
+
+Comma-separated repository names
+
+`FETCH_MULTI_PAGE_STARS`
+
+Enables fetching all starred repositories for accurate star counts, especially for users with more than 100 repositories. This may increase response times and API points usage, so it is disabled on the public instance.
+
+`true` or `false`
 
 See the Vercel documentation on adding these environment variables to your Vercel instance.
 

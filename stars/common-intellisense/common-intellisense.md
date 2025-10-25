@@ -1,6 +1,6 @@
 ---
 project: common-intellisense
-stars: 93
+stars: 94
 description: Universal Component Intellisense for Any Frameworks
 url: https://github.com/common-intellisense/common-intellisense
 ---

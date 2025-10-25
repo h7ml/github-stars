@@ -1,6 +1,6 @@
 ---
 project: mavonEditor
-stars: 6576
+stars: 6578
 description: mavonEditor - A markdown editor based on Vue that supports a variety of personalized features
 url: https://github.com/hinesboy/mavonEditor
 ---

@@ -1,6 +1,6 @@
 ---
 project: fresh
-stars: 13471
+stars: 13487
 description: The next-gen web framework.
 url: https://github.com/denoland/fresh
 ---
@@ -52,8 +52,8 @@ To deploy the project to the live internet, you can use Deno Deploy:
 
 1.  Push your project to GitHub.
 2.  Create a Deno Deploy project.
-3.  Link the Deno Deploy project to the **`main.ts`** file in the root of the created repository.
-4.  The project will be deployed to a public $project.deno.dev subdomain.
+3.  Select your GitHub repository.
+4.  The project will be deployed to a public $project.$username.deno.net subdomain with no configuration necessary.
 
 For a more in-depth getting started guide, visit the Getting Started page in the Fresh docs.
 

@@ -1,6 +1,6 @@
 ---
 project: vue-naive-admin
-stars: 3843
+stars: 3850
 description: ⚡️基于 Vue3 + Vite + Pinia + Unocss + Naive UI 的轻量级后台管理模板。
 url: https://github.com/zclzone/vue-naive-admin
 ---
@@ -54,6 +54,7 @@ Vue Naive Admin 提供一套后端代码，技术栈使用 Nestjs + TypeOrm + My
 
 -   源码-github: isme-nest-serve | github
 -   源码-gitee: isme-nest-serve | gitee
+-   源码-gitcode: isme-nest-serve | gitcode
 
 文档
 --

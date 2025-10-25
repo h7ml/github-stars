@@ -1,6 +1,6 @@
 ---
 project: Win11Debloat
-stars: 29710
+stars: 30316
 description: A simple, lightweight PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.
 url: https://github.com/Raphire/Win11Debloat
 ---

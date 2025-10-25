@@ -1,6 +1,6 @@
 ---
 project: van
-stars: 4225
+stars: 4229
 description: 🍦 VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour.
 url: https://github.com/vanjs-org/van
 ---

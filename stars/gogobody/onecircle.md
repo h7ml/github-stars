@@ -1,6 +1,6 @@
 ---
 project: onecircle
-stars: 330
+stars: 329
 description: 一款typecho 社交圈子 主题
 url: https://github.com/gogobody/onecircle
 ---

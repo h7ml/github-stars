@@ -1,6 +1,6 @@
 ---
 project: fuzzdb-collect
-stars: 893
+stars: 894
 description: 网络上安全资源的搜集
 url: https://github.com/euphrat1ca/fuzzdb-collect
 ---

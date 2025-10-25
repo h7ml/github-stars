@@ -1,6 +1,6 @@
 ---
 project: biliOS
-stars: 68
+stars: 69
 description: null
 url: https://github.com/xuanli199/biliOS
 ---

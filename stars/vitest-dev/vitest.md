@@ -1,6 +1,6 @@
 ---
 project: vitest
-stars: 15148
+stars: 15218
 description: Next generation testing framework powered by Vite.
 url: https://github.com/vitest-dev/vitest
 ---
@@ -31,7 +31,6 @@ Features
 -   JSDOM and happy-dom for DOM and browser API mocking
 -   Browser Mode for running component tests in the browser
 -   Components testing (Vue, React, Svelte, Lit, Marko)
--   Workers multi-threading via Tinypool (a lightweight fork of Piscina)
 -   Benchmarking support with Tinybench
 -   Projects support
 -   expect-type for type-level testing

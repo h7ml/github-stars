@@ -1,6 +1,6 @@
 ---
 project: fuck-login
-stars: 5898
+stars: 5899
 description: 模拟登录一些知名的网站，为了方便爬取需要登录的网站
 url: https://github.com/xchaoinfo/fuck-login
 ---

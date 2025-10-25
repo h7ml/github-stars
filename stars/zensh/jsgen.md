@@ -1,6 +1,6 @@
 ---
 project: jsgen
-stars: 1555
+stars: 1554
 description: [DEPRECATED]JsGen is a next generation，free, open source web software that you can generate a powerful website, such as blog, forum, etc. It is coded by pure JavaScript, based on Node.js, AngularJS, MongoDB.
 url: https://github.com/zensh/jsgen
 ---

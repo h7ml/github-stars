@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-tauri
-stars: 193
+stars: 194
 description: Integrate Tauri in a Vite project to build cross-platform apps.
 url: https://github.com/amrbashir/vite-plugin-tauri
 ---

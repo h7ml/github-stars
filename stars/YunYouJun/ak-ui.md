@@ -1,6 +1,6 @@
 ---
 project: ak-ui
-stars: 28
+stars: 31
 description: 🔫 UI components for arknights. Deving... 在咕了
 url: https://github.com/YunYouJun/ak-ui
 ---

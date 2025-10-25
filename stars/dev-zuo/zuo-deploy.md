@@ -1,6 +1,6 @@
 ---
 project: zuo-deploy
-stars: 124
+stars: 123
 description: 基于 Vue3 + Node.js 的轻量 Linux 操作面板，支持简单实时终端、自动化部署、持续集成、Nginx 配置管理/操作、Https 证书管理等。
 url: https://github.com/dev-zuo/zuo-deploy
 ---

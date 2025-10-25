@@ -1,6 +1,6 @@
 ---
 project: zhlint
-stars: 990
+stars: 991
 description: A linting tool for Chinese language.
 url: https://github.com/zhlint-project/zhlint
 ---

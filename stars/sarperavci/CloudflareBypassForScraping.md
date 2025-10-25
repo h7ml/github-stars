@@ -1,6 +1,6 @@
 ---
 project: CloudflareBypassForScraping
-stars: 1709
+stars: 1724
 description: A cloudflare verification bypass script for webscraping
 url: https://github.com/sarperavci/CloudflareBypassForScraping
 ---

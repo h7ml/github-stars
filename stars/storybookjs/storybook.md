@@ -1,6 +1,6 @@
 ---
 project: storybook
-stars: 88067
+stars: 88236
 description: Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation
 url: https://github.com/storybookjs/storybook
 ---

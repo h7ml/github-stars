@@ -1,6 +1,6 @@
 ---
 project: CursorPool_Client
-stars: 579
+stars: 583
 description: CursorPool客户端，支持windows系统和mac，支持cursor一键换号、重置机器码、禁用Cursor自动更新
 url: https://github.com/Cloxl/CursorPool_Client
 ---

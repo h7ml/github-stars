@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 44664
+stars: 44820
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -37,11 +37,71 @@ url: https://github.com/1c7/chinese-independent-developer
 3\. 项目列表
 --------
 
+### 2025 年 10 月 23 号添加
+
+#### viga（福建）
+
+-   ✅ CSS2TW：将常规 CSS 转成 Tailwind CSS 的网站
+
+### 2025 年 10 月 22 号添加
+
+#### melooooooo(北京) - GitHub
+
+-   ✅ Sora2 Video Studio：免费 Sora2 视频生成服务，联系我可以赠送积分试用，欢迎反馈建议
+
+### 2025 年 10 月 21 号添加
+
+#### 何夕2077 (武汉)- GitHub
+
+-   ✅ AI 播客生成器：生成播客音频，支持单人和多人对话。支持原文智能配音 - GitHub 仓库
+-   ✅ PromptHub提示词管理优化使用工具：AI 提示词管理平台，支持浏览器插件，多平台客户端
+
+#### haocheng - Github
+
+-   ✅ GenColoring AI：AI 生成涂色页平台 - 博客介绍
+-   ✅ Morse Coder：摩斯密码在线转换工具
+
+### 2025 年 10 月 20 号添加
+
+#### monsoonw(杭州)
+
+-   ✅ Free Sora Watermark Adder：为任何视频添加 Sora 水印
+
+#### zhugezifang
+
+-   ✅ 在线记事本 – 免费在线文本编辑器与笔记分享：在线记事本，用于无干扰写作、记笔记和文本编辑。免费，无需注册，可与他人分享笔记
+
+#### Aris(美国) - Github
+
+-   ✅ Elisi：AI + All in one 个人日程效率软件
+
+#### 阿歪(上海) - Github, Blog
+
+-   ✅ AI Detector： 检查你的文本是否 AI 生成
+-   ✅ Image to Image： AI 图片编辑
+-   ✅ Image Describer： 利用AI为图片生成智能描述
+-   ✅ Liquid Glass HQ： 液态玻璃资源收集站
+
+#### nnpyro(武汉) - Github, 博客
+
+-   ✅ SyncTunnel：跨平台高效文件同步和远程管理软件
+
+#### Ting
+
+-   ✅ Turbo Learn：从文档、图片、拼音文件生成笔记的 AI 学习工具网站
+-   ✅ nano banana：AI 驱动的图像编辑器
+-   ✅ List Difference：数据比较工具，它对两个列表执行SET操作，以查找惟一项、交集和联合，提供高效的数据协调
+-   ✅ ai review generator：生成商品评论的 AI 工具
+
+#### Ethan Sunray
+
+-   ✅ Sora Watermark Adder：为视频添加专业的 Sora AI 同款水印，浏览器本地完成，无需上传，保护您的隐私，永久免费使用
+
 ### 2025 年 10 月 18 号添加
 
 #### 饭特稀 - Github
 
--   ✅ Sora Watermark Remover：Sora 视频去水印，5秒内完成，操作简单
+-   ✅ Sora Watermark Remover：Sora 视频去水印，5 秒内完成，操作简单
 
 ### 2025 年 10 月 17 号添加
 

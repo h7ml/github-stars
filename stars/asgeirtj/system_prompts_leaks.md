@@ -1,6 +1,6 @@
 ---
 project: system_prompts_leaks
-stars: 22943
+stars: 23129
 description: Collection of extracted System Prompts from popular chatbots like ChatGPT, Claude & Gemini
 url: https://github.com/asgeirtj/system_prompts_leaks
 ---

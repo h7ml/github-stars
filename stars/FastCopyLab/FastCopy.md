@@ -1,6 +1,6 @@
 ---
 project: FastCopy
-stars: 191
+stars: 193
 description: null
 url: https://github.com/FastCopyLab/FastCopy
 ---

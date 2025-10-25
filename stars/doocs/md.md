@@ -1,6 +1,6 @@
 ---
 project: md
-stars: 10816
+stars: 10863
 description: ✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 语法、自定义主题样式、内容管理、多图床、AI 助手等特性
 url: https://github.com/doocs/md
 ---
@@ -197,13 +197,13 @@ pnpm web build:h5-netlify
 
 # Chrome 插件启动及调试
 pnpm web ext:dev
-# 访问 chrome://extensions/ 打开开发者模式，加载已解压的扩展程序，选择 .output/chrome-mv3-dev 目录
+# 访问 chrome://extensions/ 打开开发者模式，加载已解压的扩展程序，选择 apps/web/.output/chrome-mv3-dev 目录
 
 # Chrome 插件打包
 pnpm web ext:zip
 
 # Firefox 扩展打包(how to build Firefox addon)
-pnpm web firefox:zip # output zip file at in .output/md-{version}-firefox.zip
+pnpm web firefox:zip # output zip file at in apps/web/.output/md-{version}-firefox.zip
 
 # uTools 插件打包
 pnpm utools:package # output zip file at apps/utools/release/md-utools-v{version}.zip

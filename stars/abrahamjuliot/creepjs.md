@@ -1,6 +1,6 @@
 ---
 project: creepjs
-stars: 2058
+stars: 2072
 description: Creepy device and browser fingerprinting
 url: https://github.com/abrahamjuliot/creepjs
 ---

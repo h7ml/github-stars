@@ -1,6 +1,6 @@
 ---
 project: hastscript
-stars: 192
+stars: 193
 description: utility to create hast trees
 url: https://github.com/syntax-tree/hastscript
 ---

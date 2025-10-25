@@ -1,6 +1,6 @@
 ---
 project: cherry-markdown
-stars: 4386
+stars: 4393
 description: ✨ A Markdown Editor
 url: https://github.com/Tencent/cherry-markdown
 ---
@@ -43,6 +43,7 @@ Cherry Markdown Writer is a Javascript Markdown editor. It has the advantages su
 -   Stream Input Mode (AI chat scenario)
 -   VIM Editing Mode
 -   Utilize Your Own Mermaid.js
+-   Custom Code Block Wrapper
 
 * * *
 

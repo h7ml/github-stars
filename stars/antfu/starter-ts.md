@@ -1,6 +1,6 @@
 ---
 project: starter-ts
-stars: 848
+stars: 849
 description: Starter template for TypeScript library
 url: https://github.com/antfu/starter-ts
 ---

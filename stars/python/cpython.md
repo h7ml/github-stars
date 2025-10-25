@@ -1,6 +1,6 @@
 ---
 project: cpython
-stars: 69404
+stars: 69530
 description: The Python programming language
 url: https://github.com/python/cpython
 ---
@@ -108,7 +108,7 @@ Documentation
 
 Documentation for Python 3.15 is online, updated daily.
 
-It can also be downloaded in many formats for faster access. The documentation is downloadable in HTML, PDF, and reStructuredText formats; the latter version is primarily for documentation authors, translators, and people with special formatting requirements.
+It can also be downloaded in many formats for faster access. The documentation is downloadable in HTML, EPUB, and reStructuredText formats; the latter version is primarily for documentation authors, translators, and people with special formatting requirements.
 
 For information about building Python's documentation, refer to Doc/README.rst.
 

@@ -1,6 +1,6 @@
 ---
 project: remix
-stars: 31837
+stars: 31894
 description: Build Better Websites. Create modern, resilient user experiences with web fundamentals.
 url: https://github.com/remix-run/remix
 ---
@@ -47,6 +47,7 @@ Packages
 We currently publish the following packages:
 
 -   fetch-proxy: Seamlessly construct HTTP proxies with the familiar `fetch()` API
+-   fetch-router: A minimal, composable router built on the web Fetch API and `route-pattern`.
 -   file-storage: Robust key/value storage tailored for JavaScript `File` objects, simplifying file management
 -   form-data-parser: An enhanced `request.formData()` wrapper enabling efficient, streaming file uploads
 -   headers: A comprehensive toolkit for effortlessly managing HTTP headers

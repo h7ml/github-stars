@@ -1,6 +1,6 @@
 ---
 project: core
-stars: 32
+stars: 31
 description: 简单零依赖的响应式框架（Simple zero-dependency responsive framework that uses jsx syntactic sugar to describe the UI）
 url: https://github.com/gyronorg/core
 ---

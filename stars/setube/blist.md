@@ -1,6 +1,6 @@
 ---
 project: blist
-stars: 27
+stars: 26
 description: 一个支持多种存储的文件列表程序
 url: https://github.com/setube/blist
 ---

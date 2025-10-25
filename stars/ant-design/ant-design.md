@@ -1,6 +1,6 @@
 ---
 project: ant-design
-stars: 96389
+stars: 96451
 description: An enterprise-class UI design language and React UI library
 url: https://github.com/ant-design/ant-design
 ---

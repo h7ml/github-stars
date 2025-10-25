@@ -1,6 +1,6 @@
 ---
 project: rfcs
-stars: 6289
+stars: 6297
 description: RFCs for changes to Rust
 url: https://github.com/rust-lang/rfcs
 ---
@@ -39,13 +39,14 @@ You need to follow this process if you intend to make "substantial" changes to R
 -   Any semantic or syntactic change to the language that is not a bugfix.
 -   Removing language features, including those that are feature-gated.
 -   Changes to the interface between the compiler and libraries, including lang items and intrinsics.
--   Additions to `std`.
+-   Large additions to `std`.
 
 Some changes do not require an RFC:
 
 -   Rephrasing, reorganizing, refactoring, or otherwise "changing shape does not change meaning".
 -   Additions that strictly improve objective, numerical quality criteria (warning removal, speedup, better platform coverage, more parallelism, trap more errors, etc.)
 -   Additions only likely to be _noticed by_ other developers-of-rust, invisible to users-of-rust.
+-   Minor additions to `std`: these only require an ACP.
 
 If you submit a pull request to implement a new feature without going through the RFC process, it may be closed with a polite request to submit an RFC first.
 

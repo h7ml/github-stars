@@ -1,6 +1,6 @@
 ---
 project: lowcode-demo
-stars: 1848
+stars: 1851
 description: An enterprise-class low-code technology stack with scale-out design / 一套面向扩展设计的企业级低代码技术体系
 url: https://github.com/alibaba/lowcode-demo
 ---
