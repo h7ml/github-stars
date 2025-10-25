@@ -1,6 +1,6 @@
 ---
 project: elixir-mail
-stars: 472
+stars: 473
 description: Build composable mail messages
 url: https://github.com/DockYard/elixir-mail
 ---

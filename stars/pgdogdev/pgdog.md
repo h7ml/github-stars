@@ -1,6 +1,6 @@
 ---
 project: pgdog
-stars: 2706
+stars: 2722
 description: Horizontal scaling for PostgreSQL with automatic sharding.
 url: https://github.com/pgdogdev/pgdog
 ---

@@ -1,9 +1,16 @@
 ---
 project: lossless-cut
-stars: 34014
+stars: 34143
 description: The swiss army knife of lossless video/audio editing
 url: https://github.com/mifi/lossless-cut
 ---
+
+Special thanks to:  
+  
+Warp, built for coding with multiple AI agents  
+Available for macOS, Linux and Windows
+
+  
 
   
 

@@ -1,6 +1,6 @@
 ---
 project: filestash
-stars: 12882
+stars: 12921
 description: :file_folder: The Dropbox like web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...
 url: https://github.com/mickael-kerjean/filestash
 ---
@@ -13,10 +13,10 @@ Dropbox • Google Drive
 Key Features
 ============
 
--   Manage files from your browser
 -   Sleek, Speedy, Snappy, works great on Desktop and Mobile
--   Extensible / Customisable / Hackable via a rich ecosystem of plugins
+-   Extensible / Customisable / Hackable via a rich ecosystem of plugins and a Workflow engine to enable automation
 -   Shared Links which you can mount locally as network drives
+-   Manage your files not only from your browser but also via SFTP and S3 through third party tools
 -   Builtin Music, Video, Image viewers with optional transcoding and Chromecast support
 -   API and LLM integration via MCP
 -   Themes replicating the UX of dropbox, gdrive, github, ibm, onedrive, and more
@@ -34,7 +34,7 @@ Documentation
 Vision & Philosophy
 ===================
 
-Our goal is simple: **to build the best web based file manager ever made. Period.** But "best" means different things to different people, and making Filestash modular is the only sane model to accomplish that. Anything that isn't a fundamental truth of the universe and might spark a debate belongs in a plugin.
+Our goal is simple: **to build the best file management platform ever made. Period.** But "best" means different things to different people, and making Filestash modular is the only sane model to accomplish that. Anything that isn't a fundamental truth of the universe and might spark a debate belongs in a plugin.
 
 This modularity is made possible by the magic of programming interfaces. For example, if you want a Dropbox-like frontend for FTP, you will find out the FTP plugin simply implements this interface:
 

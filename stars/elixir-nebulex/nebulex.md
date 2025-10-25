@@ -1,6 +1,6 @@
 ---
 project: nebulex
-stars: 1351
+stars: 1354
 description: In-memory and distributed caching toolkit for Elixir.
 url: https://github.com/elixir-nebulex/nebulex
 ---
@@ -172,9 +172,10 @@ end
 
 -   Getting Started - Learn how to set up and use Nebulex.
 -   Documentation - Complete API reference.
--   Examples - Example applications.
 -   Upgrading to v3.0 - Migration guide for v3.0.
+-   Declarative caching - Declarative Caching: Patterns and Best Practices.
 -   Nebulex Streams - Real-time event streaming for Nebulex caches via `Phoenix.PubSub`.
+-   Examples - Example applications.
 
 * * *
 

@@ -1,6 +1,6 @@
 ---
 project: trzsz-ssh
-stars: 2271
+stars: 2278
 description: trzsz-ssh ( tssh ) is an ssh client designed as a drop-in replacement for the openssh client. It aims to provide complete compatibility with openssh, mirroring all its features, while also offering additional useful features. Such as login prompt, batch login, remember password, automated interaction, trzsz, zmodem(rz/sz), udp mode like mosh, etc.
 url: https://github.com/trzsz/trzsz-ssh
 ---
@@ -43,10 +43,6 @@ Command
 
 `RemoteCommand`, `LocalCommand`, `PermitLocalCommand`
 
-SSH Agent
-
-`-a` `-A` `ForwardAgent` `IdentityAgent` `SSH_AUTH_SOCK`
-
 X11 Forward
 
 `-x` `-X` `-Y` `ForwardX11` `ForwardX11Trusted` `ForwardX11Timeout`
@@ -55,13 +51,17 @@ Known Hosts
 
 `UserKnownHostsFile` `GlobalKnownHostsFile` `StrictHostKeyChecking`
 
+SSH Agent
+
+`-a` `-A` `ForwardAgent` `IdentityAgent` `IdentitiesOnly` `SSH_AUTH_SOCK`
+
 Basic Login
 
 `-l` `-p` `-i` `-F` `HostName` `Port` `User` `IdentityFile` `SendEnv` `SetEnv`
 
 Authentication
 
-`PubkeyAuthentication` `PasswordAuthentication` `KbdInteractiveAuthentication`
+`PubkeyAuthentication` `PasswordAuthentication` `KbdInteractiveAuthentication` `GSSAPIAuthentication`
 
 Port Forward
 

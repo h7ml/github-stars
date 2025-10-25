@@ -1,6 +1,6 @@
 ---
 project: difftastic
-stars: 23301
+stars: 23383
 description: a structural diff that understands syntax 🟥🟩
 url: https://github.com/Wilfred/difftastic
 ---
@@ -11,28 +11,23 @@ Difftastic is a structural diff tool that compares files based on their syntax.
 
 **For installation instructions, see Installation in the manual.**
 
-Basic Example
--------------
+Examples
+--------
 
-In this JavaScript example, we can see:
+^ Difftastic understands exactly which pieces of syntax has changed, and can highlight them in context.
 
-(1) Difftastic understands nesting. It highlights the matching `{` and `}`, but understands that `foo()` hasn't changed despite the leading whitespace.
+^ Difftastic understands when whitespace matters, and when it's just an indentation change.
 
-(2) Difftastic understands which lines should be aligned. It's aligned `bar(1)` on the left with `bar(2)` on the right, even though the textual content isn't identical.
+^ Difftastic is not line-oriented. If you reformat your code and it's now split over multiple lines, difftastic will show you what's actually changed.
 
-(3) Difftastic understands that line-wrapping isn't meaningful. `"eric"` is now on a new line, but it hasn't changed.
+^ Difftastic is compatible with git (see the configuration instructions), as well as many other version control systems.
 
-One Minute Demo
----------------
-
-This one minute screencast demonstrates difftastic usage with both standalone files and git.
-
-Languages
----------
+Languages Supported
+-------------------
 
 Difftastic supports over 30 programming languages, see the manual for the full list.
 
-If a file has an unrecognised extension, difftastic uses a textual diff with word highlighting.
+If a file has an unrecognised extension, difftastic uses a line-oriented diff with word highlighting.
 
 Known Issues
 ------------
@@ -55,12 +50,6 @@ Merging. AST merging is a hard problem that difftastic does not address. You mig
 FAQ
 ---
 
-### Isn't this basically `--word-diff --ignore-all-space`?
-
-Word diffing can't do this.
-
-Difftastic parses your code. It understands when whitespace matters, such as inside string literals or languages like Python. It understands that `x-1` is three tokens in JS but one token in Lisp.
-
 ### Can I use difftastic with git?
 
 You can! The difftastic manual includes instructions for git usage. You can also use it with mercurial.
@@ -75,7 +64,7 @@ Probably not. Difftastic is young. Consider writing a plugin for your favourite 
 
 By default, difftastic falls back to a line-oriented diff whenever parse errors are encountered.
 
-This is a conservative choice to ensure that difftastic never claims two syntactically different files are the same.
+This is a conservative choice to ensure that difftastic never claims that two syntactically different files are the same.
 
 Parse errors can occur if the file uses language features that the parser does not understand, if the language relies on a preprocessor before parsing (e.g. C++), or if the file has genuine syntactic mistakes.
 
@@ -152,4 +141,4 @@ Difftastic is open source under the MIT license, see LICENSE for more details.
 
 This repository also includes tree-sitter parsers by other authors in the `vendored_parsers/` directory. These are a mix of the MIT license and the Apache license. See `vendored_parsers/*/LICENSE` for more details.
 
-Files in `sample_files/` are also under the MIT license unless stated otherwise in their header.
+Files in `sample_files/` are also under the MIT license unless stated otherwise in their headers.

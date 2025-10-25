@@ -1,6 +1,6 @@
 ---
 project: gltf-compressor
-stars: 306
+stars: 311
 description: The easiest way to compress glTF files!
 url: https://github.com/Shopify/gltf-compressor
 ---

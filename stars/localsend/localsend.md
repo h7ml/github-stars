@@ -1,6 +1,6 @@
 ---
 project: localsend
-stars: 69055
+stars: 69406
 description: An open-source cross-platform alternative to AirDrop
 url: https://github.com/localsend/localsend
 ---
@@ -296,7 +296,7 @@ Known issue. flutter-cavalry/saf\_stream#4
 Building
 --------
 
-These commands are intended for maintainers only.
+These commands are intended for maintainers only. Make sure to run them from the `app` directory.
 
 ### Android
 

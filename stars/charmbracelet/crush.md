@@ -1,6 +1,6 @@
 ---
 project: crush
-stars: 14040
+stars: 14242
 description: The glamourous AI coding agent for your favourite terminal 💘
 url: https://github.com/charmbracelet/crush
 ---
@@ -210,11 +210,11 @@ AWS Bedrock (Claude)
 
 `AWS_PROFILE`
 
-Custom AWS Profile
+AWS Bedrock (Custom Profile)
 
-`AWS_REGION`
+`AWS_BEARER_TOKEN_BEDROCK`
 
-AWS Region
+AWS Bedrock
 
 `AZURE_OPENAI_API_ENDPOINT`
 
@@ -475,6 +475,7 @@ Crush currently supports running Anthropic models through Bedrock, with caching 
 -   A Bedrock provider will appear once you have AWS configured, i.e. `aws configure`
 -   Crush also expects the `AWS_REGION` or `AWS_DEFAULT_REGION` to be set
 -   To use a specific AWS profile set `AWS_PROFILE` in your environment, i.e. `AWS_PROFILE=myprofile crush`
+-   Alternatively to `aws configure`, you can also just set `AWS_BEARER_TOKEN_BEDROCK`
 
 ### Vertex AI Platform
 
@@ -612,8 +613,8 @@ Whatcha think?
 We’d love to hear your thoughts on this project. Need help? We gotchu. You can find us on:
 
 -   Twitter
--   Discord
 -   Slack
+-   Discord
 -   The Fediverse
 -   Bluesky
 

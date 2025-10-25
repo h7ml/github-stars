@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 14625
+stars: 14673
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -18,13 +18,13 @@ Rust bindings for Python, including tools for creating native Python extension m
 Usage
 -----
 
-Requires Rust 1.74 or greater.
+Requires Rust 1.83 or greater.
 
 PyO3 supports the following Python distributions:
 
 -   CPython 3.7 or greater
 -   PyPy 7.3 (Python 3.11+)
--   GraalPy 24.2 or greater (Python 3.11+)
+-   GraalPy 25.0 or greater (Python 3.12+)
 
 You can use PyO3 to write a native Python module in Rust, or to embed Python in a Rust binary. The following sections explain each of these in turn.
 
@@ -69,7 +69,7 @@ name = "string\_sum"
 crate-type = \["cdylib"\]
 
 \[dependencies\]
-pyo3 = { version = "0.26.0", features = \["extension-module"\] }
+pyo3 = { version = "0.27.0", features = \["extension-module"\] }
 
 **`src/lib.rs`**
 
@@ -124,14 +124,13 @@ To install the Python shared library on RPM based distributions (e.g. Fedora, Re
 Start a new project with `cargo new` and add `pyo3` to the `Cargo.toml` like this:
 
 \[dependencies.pyo3\]
-version = "0.26.0"
+version = "0.27.0"
 features = \["auto-initialize"\]
 
 Example program displaying the value of `sys.version` and the current user name:
 
 use pyo3::prelude::\*;
 use pyo3::types::IntoPyDict;
-use pyo3::ffi::c\_str;
 
 fn main() -> PyResult<()\> {
     Python::attach(|py| {
@@ -139,7 +138,7 @@ fn main() -> PyResult<()\> {
         let version: String = sys.getattr("version")?.extract()?;
 
         let locals = \[("os", py.import("os")?)\].into\_py\_dict(py)?;
-        let code = c\_str!("os.getenv('USER') or os.getenv('USERNAME') or 'Unknown'");
+        let code = c"os.getenv('USER') or os.getenv('USERNAME') or 'Unknown'";
         let user: String = py.eval(code, None, Some(&locals))?.extract()?;
 
         println!("Hello {}, I'm Python {}", user, version);

@@ -1,6 +1,6 @@
 ---
 project: every-programmer-should-know
-stars: 93629
+stars: 93797
 description: A collection of (mostly) technical things every software developer should know about
 url: https://github.com/mtdvio/every-programmer-should-know
 ---
@@ -196,7 +196,10 @@ _P.P.S. Contributions are welcome!_
 -   📄 How To Interview As a Developer Candidate
 -   📄 How To Get a Tech Job Abroad Faster
 -   📖 How To Be A STAR Engineer
--   📄 TL;DR; Stock Options
+-   📈 TL;DR; Stock Options
+    -   Discussion on HN #1
+    -   Discussion on HN #2
+-   📄 The Open Guide to Equity Compensation
 -   📄 Equity 101 for Startup Employees
 -   📖 Cracking the Coding Interview: 189 Programming Questions and Solutions
 -   🔥 Everything you need to know to get the job

@@ -1,6 +1,6 @@
 ---
 project: urllib3
-stars: 3958
+stars: 3961
 description: urllib3 is a user-friendly HTTP client library for Python
 url: https://github.com/urllib3/urllib3
 ---

@@ -1,6 +1,6 @@
 ---
 project: coze-studio
-stars: 17978
+stars: 18118
 description: An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.
 url: https://github.com/coze-dev/coze-studio
 ---
@@ -76,35 +76,23 @@ Deployment steps:
     # Clone code
     git clone https://github.com/coze-dev/coze-studio.git
     
-2.  Configure the model.
+2.  Deploy and start the service. When deploying and starting Coze Studio for the first time, it may take a while to retrieve images and build local images. Please be patient. If you see the message "Container coze-server Started," it means the Coze Studio service has started successfully.
     
-    1.  Copy the template files of the doubao-seed-1.6 model from the template directory and paste them into the configuration file directory.
-        
-        cd coze-studio
-        # Copy model configuration template
-        cp backend/conf/model/template/model\_template\_ark\_doubao-seed-1.6.yaml backend/conf/model/ark\_doubao-seed-1.6.yaml
-        
-    2.  Modify the template file in the configuration file directory.
-        
-        1.  Enter the directory `backend/conf/model`. Open the file `ark_doubao-seed-1.6.yaml`.
-        2.  Set the fields `id`, `meta.conn_config.api_key`, `meta.conn_config.model`, and save the file.
-            
-            -   **id**: The model ID in Coze Studio, defined by the developer, must be a non-zero integer and globally unique. Agents or workflows call models based on model IDs. For models that have already been launched, do not modify their IDs; otherwise, it may result in model call failures.
-            -   **meta.conn\_config.api\_key**: The API Key for the model service. In this example, it is the API Key for Ark API Key. For more information, see Get Volcengine Ark API Key or Get BytePlus ModelArk API Key.
-            -   **meta.conn\_config.model**: The Model name for the model service. In this example, it refers to the Model ID or Endpoint ID of Ark. For more information, see Get Volcengine Ark Model ID / Get Volcengine Ark Endpoint ID or Get BytePlus ModelArk Model ID / Get BytePlus ModelArk Endpoint ID.
-            
-            > For users in China, you may use Volcengine Ark; for users outside China, you may use BytePlus ModelArk instead.
-            
-3.  Deploy and start the service. When deploying and starting Coze Studio for the first time, it may take a while to retrieve images and build local images. Please be patient. During deployment, you will see the following log information. If you see the message "Container coze-server Started," it means the Coze Studio service has started successfully.
-    
-    # Start the service
-    cd docker
+    cd coze-studio
+    # start service
+    # for macOS or Linux
+    make web  
+    # for windows
     cp .env.example .env
-    docker compose up -d
+    docker compose -f ./docker/docker-compose.yml up
     
     For common startup failure issues, **please refer to the FAQ**.
     
-4.  After starting the service, you can open Coze Studio by accessing `http://localhost:8888/` through your browser.
+3.  Register an account by visiting `http://localhost:8888/sign`, entering your username and password, and clicking the Register button.
+    
+4.  Configure the model at `http://localhost:8888/admin/#model-management` by adding a new model. (The model management feature is currently in beta testing. To try it out, please change the images in `docker-compose.yml` to `cozedev/coze-studio-server:0.5.0.beta.3` and `cozedev/coze-studio-web:0.5.0.beta`.)
+    
+5.  Visit Coze Studio at `http://localhost:8888/`.
     
 
 Warning

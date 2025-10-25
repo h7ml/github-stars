@@ -1,6 +1,6 @@
 ---
 project: ferron
-stars: 1445
+stars: 1514
 description: A fast, memory-safe web server written in Rust.
 url: https://github.com/ferronweb/ferron
 ---

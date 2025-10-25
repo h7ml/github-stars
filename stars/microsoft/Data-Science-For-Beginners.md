@@ -1,6 +1,6 @@
 ---
 project: Data-Science-For-Beginners
-stars: 31118
+stars: 31156
 description: 10 Weeks, 20 Lessons, Data Science for All!
 url: https://github.com/microsoft/Data-Science-For-Beginners
 ---
@@ -406,25 +406,19 @@ Other Curricula
 
 Our team produces other curricula! Check out:
 
--   Edge AI for Beginners
--   AI Agents for Beginners
--   Generative AI for Beginners
--   Generative AI for Beginners .NET
--   Generative AI with JavaScript
--   Generative AI with Java
--   AI for Beginners
--   Data Science for Beginners
--   Bash for Beginners
--   ML for Beginners
--   Cybersecurity for Beginners
--   Web Dev for Beginners
--   IoT for Beginners
--   Machine Learning for Beginners
--   XR Development for Beginners
--   Mastering GitHub Copilot for AI Paired Programming
--   XR Development for Beginners
--   Mastering GitHub Copilot for C#/.NET Developers
--   Choose Your Own Copilot Adventure
+### Azure / Edge / MCP / Agents
+
+* * *
+
+### Generative AI Series
+
+* * *
+
+### Core Learning
+
+* * *
+
+### Copilot Series
 
 Getting Help
 ------------

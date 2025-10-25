@@ -1,6 +1,6 @@
 ---
 project: multipart
-stars: 52
+stars: 53
 description: Constructs a multipart message, such an HTTP form data request or multipart email
 url: https://github.com/breakroom/multipart
 ---

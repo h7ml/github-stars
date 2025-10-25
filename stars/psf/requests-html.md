@@ -1,6 +1,6 @@
 ---
 project: requests-html
-stars: 13856
+stars: 13857
 description: Pythonic HTML Parsing for Humans™
 url: https://github.com/psf/requests-html
 ---

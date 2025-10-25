@@ -1,6 +1,6 @@
 ---
 project: anything-llm
-stars: 50102
+stars: 50383
 description: The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility,  and more.
 url: https://github.com/Mintplex-Labs/anything-llm
 ---
@@ -147,6 +147,8 @@ Railway
 RepoCloud
 
 Elestio
+
+Northflank
 
 or set up a production AnythingLLM instance without Docker →
 

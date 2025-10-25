@@ -1,6 +1,6 @@
 ---
 project: observer_cli
-stars: 1476
+stars: 1479
 description: Visualize Erlang/Elixir Nodes On The Command Line
 url: https://github.com/zhongwencool/observer_cli
 ---
@@ -26,7 +26,7 @@ Installation
 %% rebar.config
 {deps, \[observer\_cli\]}
 %% erlang.mk
-dep\_observer\_cli \= hex 1.8.3
+dep\_observer\_cli \= hex 1.8.5
 
 ### Elixir
 
@@ -70,6 +70,10 @@ iex(1)\> :observer\_cli.start(:'target@host', :'magic\_cookie')
 > 
 > **ensure observer\_cli application been loaded on target node.**
 
+> #### tip {: .tip}
+> 
+> Pass `{interval, 3000}` (Erlang) or `interval: 3000` (Elixir) to sample every 3 seconds. The minimum refresh interval is 1000 ms.
+
 ### Escriptize
 
 1.  cd path/to/observer\_cli/
@@ -105,19 +109,27 @@ atom\_count/atom\_limit
 -   **port\_limit**: `erl +Q Number` sets the maximum number of simultaneously existing ports for this system if a Number is passed as value. Valid range for Number is \[1024-134217727\]. The default value used is normally 65536. However, if the runtime system is able to determine maximum amount of file descriptors that it is allowed to open and this value is larger than 65536, the chosen value will increased to a value larger or equal to the maximum amount of file descriptors that can be opened.
 -   **atom\_limit**: `erl +t size` sets the maximum number of atoms the virtual machine can handle. Defaults to 1,048,576.
 
-`PS` report a snapshot of the beam process.
+`ps` reports a snapshot of the BEAM OS process and feeds the system panel. Observer CLI samples four columns:
 
 Command/Flag
 
 Description
 
-ps -o pcpu
+`ps -o pcpu`
 
-cpu utilization of the process in "##.#" format. Currently, it is the CPU time used divided by the time the process has been running (cputime/realtime ratio), expressed as a percentage. It will not add up to 100% unless you are lucky.
+CPU utilization of the BEAM OS process expressed as percentage of a single core. Calculated from cumulative scheduler time / wall clock time, so it may exceed what top reports on multi-core systems.
 
-ps -o pmem
+`ps -o pmem`
 
-ratio of the process's resident set size to the physical memory on the machine, expressed as a percentage.
+Percentage of physical memory used by the BEAM OS process (resident set size / total RAM).
+
+`ps -o rss`
+
+Resident set size in kilobytes, useful for spotting long-lived memory growth.
+
+`ps -o vsz`
+
+Virtual memory size in kilobytes, highlighting total address space reservations (code, heap, and mapped binaries).
 
 `erlang:memory/0` Returns a list with information about memory dynamically allocated by the Erlang emulator.
 
@@ -161,7 +173,7 @@ Scheduler utilization by `erlang:statistics(scheduler_wall_time)`:
 
 ### Process
 
-When looking for high memory usage, for example it's interesting to be able to list all of a node's processes and find the top N consumers. Enter `m` then press `Enter` will use the `recon:proc_count(memory, N)` function, we can get:
+When looking for high memory usage, for example it's interesting to be able to list all of a node's processes and find the top N consumers. Enter `m` then press `Enter` will use the `recon:proc_count(memory, N)` function, and you will get output like the following. On OTP 27+ nodes, process rows also display any label set through `proc_lib:set_label/1`, which helps correlate supervised jobs with their metrics.
 
 `recon:proc_count/2` and `recon:proc_window/3` are to be used when you require information about processes in a larger sense: biggest consumers of given process `memory`, `reductions`, `binary`, `total_heap_size`, `message_queue_len`, either absolutely or over a sliding time window, respectively.
 
@@ -224,6 +236,7 @@ When find out who is slowly but surely eating up all your bandwidth, enter the s
 -   **System Info**: `erlang:system_info/1` returns various information about the allocators of the current system (emulator).
 -   **Allocator Info**: `recon_alloc:average_block_sizes(current|max)` check all allocators in `allocator` and returns the average block sizes being used for mbcs and sbcs. This value is interesting to use because it will tell us how large most blocks are. This can be related to the VM's largest multiblock carrier size (lmbcs) and smallest multiblock carrier size (smbcs) to specify allocation strategies regarding the carrier sizes to be used.
 -   **Cache Hit Rate**: `recon_alloc:cache_hit_rates()` Cache can be tweaked using three VM flags: `+MMmcs`, `+MMrmcbf`, and `+MMamcbf`.
+-   **Distribution buffers**: Uses `erlang:dist_get_stat/1` on OTP 24+ to track per-node distribution queue sizes and the configured `dist_buf_busy_limit`.
 
 ### ETS
 
@@ -237,4 +250,14 @@ Top N list sort by memory size, all items defined in `mnesia:table_info/2`
 
 ### Application
 
-Find application debug information by `application_controller:info()`.
+The Application panel aggregates supervision data from `application_controller:info()`, groups processes by their application master, and shows their live resource usage. Each row includes:
+
+-   **No/App**: position in the table and the OTP application name. `no_group` collects processes that do not belong to any application supervisor.
+-   **ProcessCount** (`p`): number of processes currently owned by that application. Toggle sorting with `p` to track churn.
+-   **Memory** (`m`): total heap/stack memory used by those processes, formatted via `{byte, Size}`.
+-   **Reductions** (`r`): cumulative reduction count, useful to spot CPU-heavy apps.
+-   **MsgQ** (`mq`): total pending messages across the application’s processes.
+-   **Status**: lifecycle state derived from `application_controller` (one of `Loading`, `Loaded`, `Starting`, `Started`, `StartPFalse`, or `Unknown`).
+-   **Version**: semantic version reported by the application specification when available.
+
+Shortcuts follow the same pattern as other panels: `p/m/r/mq` switch the primary sort column, `F/B` paginate large installations, numeric input jumps to a row, and entering a PID delegates to the process view. Use `{interval, Milliseconds}` to adjust the refresh cadence.

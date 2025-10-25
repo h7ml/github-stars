@@ -1,6 +1,6 @@
 ---
 project: minio
-stars: 55819
+stars: 57285
 description: MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
 url: https://github.com/minio/minio
 ---
@@ -91,7 +91,7 @@ Use `docker image ls` to confirm the image exists in your local repository. You 
 
 docker run -p 9000:9000 -p 9001:9001 myminio:minio server /tmp/minio --console-address :9001
 
-Complete documentation for building Docker containers, managing custom images, or loading images into orchestration platforms is out of scope for this documentation. You can modify the `Dockerfile` and `dockerscripts/socker-entrypoint.sh` as-needed to reflect your specific image requirements.
+Complete documentation for building Docker containers, managing custom images, or loading images into orchestration platforms is out of scope for this documentation. You can modify the `Dockerfile` and `dockerscripts/docker-entrypoint.sh` as-needed to reflect your specific image requirements.
 
 See the MinIO Container documentation for more guidance on running MinIO within a Container image.
 

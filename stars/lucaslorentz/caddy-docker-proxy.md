@@ -1,6 +1,6 @@
 ---
 project: caddy-docker-proxy
-stars: 3945
+stars: 3977
 description: Caddy as a reverse proxy for Docker
 url: https://github.com/lucaslorentz/caddy-docker-proxy
 ---
@@ -407,6 +407,12 @@ caddy: example.com
 caddy.rewrite: \* /target{path}
 caddy.reverse\_proxy: {{upstreams}}
 
+Proxying requests matching a path
+
+caddy: example.com
+caddy.handle: /source/\*
+caddy.handle.0\_reverse\_proxy: {{upstreams}}
+
 Proxying requests matching a path, while stripping that path prefix
 
 caddy: example.com
@@ -432,6 +438,12 @@ Proxying multiple domains, with certificates for each
 
 caddy: example.com, example.org, www.example.com, www.example.org
 caddy.reverse\_proxy: {{upstreams}}
+
+Redirecting
+
+caddy: example.com
+caddy.redir\_0: /favicon.ico  /alternative/icon.ico 302
+caddy.redir\_1: /photo.png    /updated-photo.png    302
 
 **More community-maintained examples are available in the Wiki.**
 

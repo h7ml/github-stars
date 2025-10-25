@@ -1,6 +1,6 @@
 ---
 project: postgrest
-stars: 25889
+stars: 25923
 description: REST API for any Postgres database
 url: https://github.com/PostgREST/postgrest
 ---
@@ -15,7 +15,7 @@ Big thanks to our sponsors! You can join them by supporting PostgREST on Patreon
 Usage
 -----
 
-1.  Download the binary (latest release) for your platform.
+1.  See the docs for how to install PostgREST on your platform. You can also use Docker.
     
 2.  Invoke for help:
     

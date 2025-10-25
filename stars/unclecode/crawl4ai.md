@@ -1,6 +1,6 @@
 ---
 project: crawl4ai
-stars: 54762
+stars: 55010
 description: 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN
 url: https://github.com/unclecode/crawl4ai
 ---
@@ -10,11 +10,13 @@ url: https://github.com/unclecode/crawl4ai
 
 Crawl4AI turns the web into clean, LLM ready Markdown for RAG, agents, and data pipelines. Fast, controllable, battle tested by a 50k+ star community.
 
-✨ Check out latest update v0.7.4
+✨ Check out latest update v0.7.6
 
-✨ New in v0.7.4: Revolutionary LLM Table Extraction with intelligent chunking, enhanced concurrency fixes, memory management refactor, and critical stability improvements. Release notes →
+✨ **New in v0.7.6**: Complete Webhook Infrastructure for Docker Job Queue API! Real-time notifications for both `/crawl/job` and `/llm/job` endpoints with exponential backoff retry, custom headers, and flexible delivery modes. No more polling! Release notes →
 
-✨ Recent v0.7.3: Undetected Browser Support, Multi-URL Configurations, Memory Monitoring, Enhanced Table Extraction, GitHub Sponsors. Release notes →
+✨ Recent v0.7.5: Docker Hooks System with function-based API for pipeline customization, Enhanced LLM Integration with custom providers, HTTPS Preservation, and multiple community-reported bug fixes. Release notes →
+
+✨ Previous v0.7.4: Revolutionary LLM Table Extraction with intelligent chunking, enhanced concurrency fixes, memory management refactor, and critical stability improvements. Release notes →
 
 🤓 **My Personal Story**
 
@@ -138,7 +140,7 @@ See All Tiers & Benefits →
 -   📸 **Screenshots**: Capture page screenshots during crawling for debugging or analysis.
 -   📂 **Raw Data Crawling**: Directly process raw HTML (`raw:`) or local files (`file://`).
 -   🔗 **Comprehensive Link Extraction**: Extracts internal, external links, and embedded iframe content.
--   🛠️ **Customizable Hooks**: Define hooks at every step to customize crawling behavior.
+-   🛠️ **Customizable Hooks**: Define hooks at every step to customize crawling behavior (supports both string and function-based APIs).
 -   💾 **Caching**: Cache data for improved speed and to avoid redundant fetches.
 -   📄 **Metadata Extraction**: Retrieve structured metadata from web pages.
 -   📡 **IFrame Content Extraction**: Seamless extraction from embedded iframe content.
@@ -244,9 +246,9 @@ The new Docker implementation includes:
 
 ### Getting Started
 
-# Pull and run the latest release candidate
-docker pull unclecode/crawl4ai:0.7.0
-docker run -d -p 11235:11235 --name crawl4ai --shm-size=1g unclecode/crawl4ai:0.7.0
+# Pull and run the latest release
+docker pull unclecode/crawl4ai:latest
+docker run -d -p 11235:11235 --name crawl4ai --shm-size=1g unclecode/crawl4ai:latest
 
 # Visit the playground at http://localhost:11235/playground
 
@@ -307,7 +309,7 @@ async def main():
     
     async with AsyncWebCrawler(config\=browser\_config) as crawler:
         result \= await crawler.arun(
-            url\="https://docs.micronaut.io/4.7.6/guide/",
+            url\="https://docs.micronaut.io/4.9.9/guide/",
             config\=run\_config
         )
         print(len(result.markdown.raw\_markdown))
@@ -354,7 +356,7 @@ async def main():
             "type": "attribute",
             "attribute": "src"
         }
-    }
+    \]
 }
 
     extraction\_strategy \= JsonCssExtractionStrategy(schema, verbose\=True)
@@ -459,6 +461,55 @@ async def test\_news\_crawl():
 
 ✨ Recent Updates
 ----------------
+
+**Version 0.7.5 Release Highlights - The Docker Hooks & Security Update**
+
+-   **🔧 Docker Hooks System**: Complete pipeline customization with user-provided Python functions at 8 key points
+    
+-   **✨ Function-Based Hooks API (NEW)**: Write hooks as regular Python functions with full IDE support:
+    
+    from crawl4ai import hooks\_to\_string
+    from crawl4ai.docker\_client import Crawl4aiDockerClient
+    
+    \# Define hooks as regular Python functions
+    async def on\_page\_context\_created(page, context, \*\*kwargs):
+        """Block images to speed up crawling"""
+        await context.route("\*\*/\*.{png,jpg,jpeg,gif,webp}", lambda route: route.abort())
+        await page.set\_viewport\_size({"width": 1920, "height": 1080})
+        return page
+    
+    async def before\_goto(page, context, url, \*\*kwargs):
+        """Add custom headers"""
+        await page.set\_extra\_http\_headers({'X-Crawl4AI': 'v0.7.5'})
+        return page
+    
+    \# Option 1: Use hooks\_to\_string() utility for REST API
+    hooks\_code \= hooks\_to\_string({
+        "on\_page\_context\_created": on\_page\_context\_created,
+        "before\_goto": before\_goto
+    })
+    
+    \# Option 2: Docker client with automatic conversion (Recommended)
+    client \= Crawl4aiDockerClient(base\_url\="http://localhost:11235")
+    results \= await client.crawl(
+        urls\=\["https://httpbin.org/html"\],
+        hooks\={
+            "on\_page\_context\_created": on\_page\_context\_created,
+            "before\_goto": before\_goto
+        }
+    )
+    \# ✓ Full IDE support, type checking, and reusability!
+    
+-   **🤖 Enhanced LLM Integration**: Custom providers with temperature control and base\_url configuration
+    
+-   **🔒 HTTPS Preservation**: Secure internal link handling with `preserve_https_for_internal_links=True`
+    
+-   **🐍 Python 3.10+ Support**: Modern language features and enhanced performance
+    
+-   **🛠️ Bug Fixes**: Resolved multiple community-reported issues including URL processing, JWT authentication, and proxy configuration
+    
+
+Full v0.7.5 Release Notes →
 
 **Version 0.7.4 Release Highlights - The Intelligent Table Extraction & Performance Update**
 

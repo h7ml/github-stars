@@ -1,6 +1,6 @@
 ---
 project: yjs
-stars: 20321
+stars: 20384
 description: Shared data types for building collaborative software
 url: https://github.com/yjs/yjs
 ---
@@ -720,10 +720,6 @@ Clone this type into a fresh Yjs type.
 
 Copies the children to a new Array.
 
-**`toDOM():DocumentFragment`**
-
-Transforms this type and all children to new DOM elements.
-
 **`toString():string`**
 
 Get the XML serialization of all descendants.
@@ -799,10 +795,6 @@ Clone this type into a fresh Yjs type.
 **`toArray():Array<Y.XmlElement|Y.XmlText>`**
 
 Copies the children to a new Array.
-
-**`toDOM():Element`**
-
-Transforms this type and all children to a new DOM element.
 
 **`toString():string`**
 

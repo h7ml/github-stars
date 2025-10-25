@@ -1,6 +1,6 @@
 ---
 project: motion
-stars: 30052
+stars: 30111
 description: A modern animation library for React and JavaScript
 url: https://github.com/motiondivision/motion
 ---

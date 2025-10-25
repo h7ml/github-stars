@@ -1,6 +1,6 @@
 ---
 project: spec-kit
-stars: 38533
+stars: 41900
 description: 💫 Toolkit to help you get started with Spec-Driven Development
 url: https://github.com/github/spec-kit
 ---
@@ -176,6 +176,10 @@ Amazon Q Developer CLI
 
 Amazon Q Developer CLI does not support custom arguments for slash commands.
 
+Amp
+
+✅
+
 🔧 Specify CLI Reference
 ------------------------
 
@@ -213,7 +217,7 @@ Name for your new project directory (optional if using `--here`, or use `.` for 
 
 Option
 
-AI assistant to use: `claude`, `gemini`, `copilot`, `cursor-agent`, `qwen`, `opencode`, `codex`, `windsurf`, `kilocode`, `auggie`, `roo`, `codebuddy`, or `q`
+AI assistant to use: `claude`, `gemini`, `copilot`, `cursor-agent`, `qwen`, `opencode`, `codex`, `windsurf`, `kilocode`, `auggie`, `roo`, `codebuddy`, `amp`, or `q`
 
 `--script`
 
@@ -276,6 +280,9 @@ specify init my-project --ai cursor-agent
 
 # Initialize with Windsurf support
 specify init my-project --ai windsurf
+
+# Initialize with Amp support
+specify init my-project --ai amp
 
 # Initialize with PowerShell scripts (Windows/cross-platform)
 specify init my-project --ai copilot --script ps
@@ -550,16 +557,16 @@ At this stage, your project folder contents should resemble the following:
 ```
 └── .specify
     ├── memory
-    │	 └── constitution.md
+    │  └── constitution.md
     ├── scripts
-    │	 ├── check-prerequisites.sh
-    │	 ├── common.sh
-    │	 ├── create-new-feature.sh
-    │	 ├── setup-plan.sh
-    │	 └── update-claude-md.sh
+    │  ├── check-prerequisites.sh
+    │  ├── common.sh
+    │  ├── create-new-feature.sh
+    │  ├── setup-plan.sh
+    │  └── update-claude-md.sh
     ├── specs
-    │	 └── 001-create-taskify
-    │	     └── spec.md
+    │  └── 001-create-taskify
+    │      └── spec.md
     └── templates
         ├── plan-template.md
         ├── spec-template.md
@@ -611,23 +618,23 @@ The output of this step will include a number of implementation detail documents
 .
 ├── CLAUDE.md
 ├── memory
-│	 └── constitution.md
+│  └── constitution.md
 ├── scripts
-│	 ├── check-prerequisites.sh
-│	 ├── common.sh
-│	 ├── create-new-feature.sh
-│	 ├── setup-plan.sh
-│	 └── update-claude-md.sh
+│  ├── check-prerequisites.sh
+│  ├── common.sh
+│  ├── create-new-feature.sh
+│  ├── setup-plan.sh
+│  └── update-claude-md.sh
 ├── specs
-│	 └── 001-create-taskify
-│	     ├── contracts
-│	     │	 ├── api-spec.json
-│	     │	 └── signalr-spec.md
-│	     ├── data-model.md
-│	     ├── plan.md
-│	     ├── quickstart.md
-│	     ├── research.md
-│	     └── spec.md
+│  └── 001-create-taskify
+│      ├── contracts
+│      │  ├── api-spec.json
+│      │  └── signalr-spec.md
+│      ├── data-model.md
+│      ├── plan.md
+│      ├── quickstart.md
+│      ├── research.md
+│      └── spec.md
 └── templates
     ├── CLAUDE-template.md
     ├── plan-template.md
