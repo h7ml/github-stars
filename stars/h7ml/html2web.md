@@ -1,6 +1,6 @@
 ---
 project: html2web
-stars: 9
+stars: 11
 description: HTML2WEB - 粘贴代码，分享创意！一个支持 HTML 和 Markdown 在线编辑、预览和分享的现代化平台
 url: https://github.com/h7ml/html2web
 ---

@@ -1,6 +1,6 @@
 ---
 project: how-to-evaluate-xxx
-stars: 16
+stars: 15
 description: 从一名普通前端开发视角，评价前端或编程领域的技术人、网红。或者换个角度："你对 xxx 的印象是？
 url: https://github.com/dev-zuo/how-to-evaluate-xxx
 ---

@@ -1,6 +1,6 @@
 ---
 project: godbasin.github.io
-stars: 2174
+stars: 2176
 description: 被删前端博客--喜欢请star
 url: https://github.com/godbasin/godbasin.github.io
 ---
@@ -22,6 +22,7 @@ godbasin.github.io
 
 ### 最新
 
+> 《前端性能优化--网页复杂度设计》  
 > 《前端性能优化--网页质量得分》  
 > 《前端基础补齐--有关 JavaScript 单线程》  
 > 《前端基础补齐--有关 JavaScript 代码执行》  

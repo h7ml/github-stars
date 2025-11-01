@@ -1,6 +1,6 @@
 ---
 project: chenzhilong.chat
-stars: 220
+stars: 219
 description: 志龙啸天录
 url: https://github.com/Chisw/chenzhilong.chat
 ---

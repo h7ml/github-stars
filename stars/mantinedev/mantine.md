@@ -1,6 +1,6 @@
 ---
 project: mantine
-stars: 29918
+stars: 29948
 description: A fully featured React components library
 url: https://github.com/mantinedev/mantine
 ---
@@ -11,6 +11,12 @@ Warp, built for coding with multiple AI agents
 Available for macOS, Linux and Windows
 
   
+  
+
+Special thanks to:  
+  
+Drag and Drop React Complex Form Builder Library  
+Build and customize complex React forms in minutes. Seamlessly integrate a no-code form designer for your end-users or your internal tools
 
 Mantine
 =======

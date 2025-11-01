@@ -1,6 +1,6 @@
 ---
 project: clientjs
-stars: 2205
+stars: 2206
 description: Device information and digital fingerprinting written in pure JavaScript.
 url: https://github.com/jackspirou/clientjs
 ---

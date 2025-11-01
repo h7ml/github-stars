@@ -1,6 +1,6 @@
 ---
 project: clickvisual
-stars: 1616
+stars: 1620
 description: A lightweight log analytic and data visualize platform  built on clickhouse.
 url: https://github.com/clickvisual/clickvisual
 ---

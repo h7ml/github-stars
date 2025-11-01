@@ -1,6 +1,6 @@
 ---
 project: aicommits
-stars: 8709
+stars: 8714
 description: A CLI that writes your git commit messages for you with AI
 url: https://github.com/Nutlope/aicommits
 ---

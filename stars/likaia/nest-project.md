@@ -1,6 +1,6 @@
 ---
 project: nest-project
-stars: 13
+stars: 14
 description: 使用nest搭建的服务端应用
 url: https://github.com/likaia/nest-project
 ---

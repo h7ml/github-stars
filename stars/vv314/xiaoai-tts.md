@@ -1,6 +1,6 @@
 ---
 project: xiaoai-tts
-stars: 138
+stars: 137
 description: 小爱音箱自定义文本朗读
 url: https://github.com/vv314/xiaoai-tts
 ---

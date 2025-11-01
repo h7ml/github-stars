@@ -1,6 +1,6 @@
 ---
 project: LogicStack-LeetCode
-stars: 7495
+stars: 7496
 description: 公众号「宫水三叶的刷题日记」刷穿 LeetCode 系列文章源码
 url: https://github.com/SharingSource/LogicStack-LeetCode
 ---

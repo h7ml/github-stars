@@ -1,6 +1,6 @@
 ---
 project: ecma262
-stars: 15507
+stars: 15517
 description: Status, process, and documents for ECMA-262
 url: https://github.com/tc39/ecma262
 ---

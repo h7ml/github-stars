@@ -1,6 +1,6 @@
 ---
 project: vue-hooks
-stars: 495
+stars: 494
 description: ⚡️Awesome Vue Hooks
 url: https://github.com/u3u/vue-hooks
 ---

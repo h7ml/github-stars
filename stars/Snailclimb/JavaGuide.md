@@ -1,6 +1,6 @@
 ---
 project: JavaGuide
-stars: 152288
+stars: 152362
 description: 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！
 url: https://github.com/Snailclimb/JavaGuide
 ---
@@ -337,6 +337,7 @@ Web 实时消息推送详解
 -   Paxos 算法解读
 -   Raft 算法解读
 -   Gossip 协议详解
+-   一致性哈希算法详解
 
 ### RPC
 

@@ -1,6 +1,6 @@
 ---
 project: DevExtreme
-stars: 1864
+stars: 1867
 description: HTML5 JavaScript Component Suite for Responsive Web Development
 url: https://github.com/DevExpress/DevExtreme
 ---

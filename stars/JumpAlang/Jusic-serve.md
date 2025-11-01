@@ -1,6 +1,6 @@
 ---
 project: Jusic-serve
-stars: 326
+stars: 327
 description: 一起听歌吧（同步点歌听歌）
 url: https://github.com/JumpAlang/Jusic-serve
 ---

@@ -1,6 +1,6 @@
 ---
 project: FindTheChatGPTer
-stars: 2026
+stars: 2025
 description: ChatGPT爆火，开启了通往AGI的关键一步，本项目旨在汇总那些ChatGPT的开源平替们，包括文本大模型、多模态大模型等，为大家提供一些便利
 url: https://github.com/chenking2020/FindTheChatGPTer
 ---

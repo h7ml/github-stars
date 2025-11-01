@@ -1,6 +1,6 @@
 ---
 project: iWeChat
-stars: 1825
+stars: 1826
 description: 从 0 开始解刨一个 App，以微信为例
 url: https://github.com/lefex/iWeChat
 ---

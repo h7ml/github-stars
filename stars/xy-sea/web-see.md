@@ -1,6 +1,6 @@
 ---
 project: web-see
-stars: 1366
+stars: 1367
 description: 前端监控SDK，可用来收集并上报：代码报错、性能数据、页面录屏、用户行为、白屏检测等个性化指标数据
 url: https://github.com/xy-sea/web-see
 ---

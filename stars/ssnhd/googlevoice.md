@@ -1,6 +1,6 @@
 ---
 project: googlevoice
-stars: 1962
+stars: 1964
 description: 注册 Google Voice 号码详细步骤
 url: https://github.com/ssnhd/googlevoice
 ---

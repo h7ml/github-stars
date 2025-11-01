@@ -1,6 +1,6 @@
 ---
 project: next-forge
-stars: 6619
+stars: 6655
 description: Production-grade Turborepo template for Next.js apps.
 url: https://github.com/vercel/next-forge
 ---

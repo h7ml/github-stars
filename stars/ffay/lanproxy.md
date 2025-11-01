@@ -1,9 +1,14 @@
 ---
 project: lanproxy
-stars: 5816
+stars: 5817
 description: lanproxy是一个将局域网个人电脑、服务器代理到公网的内网穿透工具，支持tcp流量转发，可支持任何tcp上层协议（访问内网网站、本地支付接口调试、ssh访问、远程桌面、http代理、https代理、socks5代理...）。技术交流QQ群 736294209
 url: https://github.com/ffay/lanproxy
 ---
+
+AI智能体智能应用构建平台
+-------------
+
+我的新开源项目，智能体智能应用一站式搭建平台，无需编程基础，可以一句话生成智能应用，AI时代的WordPress，从想法到实现只差3分钟。欢迎大家star后使用，安装后内置顶级AI模型给大家免费使用 https://github.com/nuwax-ai/nuwax
 
 技术交流QQ群 736294209
 -----------------

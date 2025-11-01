@@ -1,6 +1,6 @@
 ---
 project: fresh
-stars: 13487
+stars: 13504
 description: The next-gen web framework.
 url: https://github.com/denoland/fresh
 ---

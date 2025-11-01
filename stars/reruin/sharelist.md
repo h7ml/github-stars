@@ -1,6 +1,6 @@
 ---
 project: sharelist
-stars: 2702
+stars: 2701
 description: 快速分享 GoogleDrive OneDrive 
 url: https://github.com/reruin/sharelist
 ---

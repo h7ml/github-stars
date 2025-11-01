@@ -1,6 +1,6 @@
 ---
 project: certd
-stars: 3768
+stars: 3793
 description: 开源SSL证书管理工具；全自动证书申请、更新、续期；通配符证书，泛域名证书申请；证书自动化部署到阿里云、腾讯云、主机、群晖、宝塔；https证书，pfx证书，der证书，TLS证书，nginx证书自动续签自动部署
 url: https://github.com/certd/certd
 ---

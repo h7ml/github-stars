@@ -1,6 +1,6 @@
 ---
 project: ts-3d-model-viewer
-stars: 212
+stars: 213
 description: 整合了 google-model-viewer/WebGL/Three.js/WASM 等一系列 3D 模型（STL/OBJ/GLTF/PLY/STEP/X_T）预览工具，便捷地进行模型预览、生成截图、计算拓扑信息。支持 Blender 进行模型压缩优化，提供了基于 Web 的简单 CAD 在线排版操作。
 url: https://github.com/wx-chevalier/ts-3d-model-viewer
 ---

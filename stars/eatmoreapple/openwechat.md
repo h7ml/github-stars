@@ -1,6 +1,6 @@
 ---
 project: openwechat
-stars: 5461
+stars: 5462
 description: golang微信SDK
 url: https://github.com/eatmoreapple/openwechat
 ---

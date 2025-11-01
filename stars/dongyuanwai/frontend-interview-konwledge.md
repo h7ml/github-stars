@@ -1,6 +1,6 @@
 ---
 project: frontend-interview-konwledge
-stars: 39
+stars: 40
 description: 前端面试知识图谱
 url: https://github.com/dongyuanwai/frontend-interview-konwledge
 ---

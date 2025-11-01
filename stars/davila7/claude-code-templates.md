@@ -1,6 +1,6 @@
 ---
 project: claude-code-templates
-stars: 9391
+stars: 9887
 description: CLI tool for configuring and monitoring Claude Code
 url: https://github.com/davila7/claude-code-templates
 ---
@@ -19,17 +19,17 @@ Browse & Install Components and Templates
 ---------------------
 
 # Install a complete development stack
-npx claude-code-templates@latest --agent development-team/frontend-developer --command testing/generate-tests --mcp development/github-integration
+npx claude-code-templates@latest --agent development-team/frontend-developer --command testing/generate-tests --mcp development/github-integration --yes
 
 # Browse and install interactively
 npx claude-code-templates@latest
 
 # Install specific components
-npx claude-code-templates@latest --agent business-marketing/security-auditor
-npx claude-code-templates@latest --command performance/optimize-bundle
-npx claude-code-templates@latest --setting performance/mcp-timeouts
-npx claude-code-templates@latest --hook git/pre-commit-validation
-npx claude-code-templates@latest --mcp database/postgresql-integration
+npx claude-code-templates@latest --agent development-tools/code-reviewer --yes
+npx claude-code-templates@latest --command performance/optimize-bundle --yes
+npx claude-code-templates@latest --setting performance/mcp-timeouts --yes
+npx claude-code-templates@latest --hook git/pre-commit-validation --yes
+npx claude-code-templates@latest --mcp database/postgresql-integration --yes
 
 What You Get
 ------------
@@ -70,11 +70,11 @@ Automation triggers
 
 Pre-commit validation, post-completion actions
 
-**📦 Templates**
+**🎨 Skills**
 
-Complete project configurations with CLAUDE.md, .claude/\* files and .mcp.json
+Reusable capabilities with progressive disclosure
 
-Framework-specific setups, project best practices
+PDF processing, Excel automation, custom workflows
 
 🛠️ Additional Tools
 --------------------
@@ -147,8 +147,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 -   **💬 Community**: GitHub Discussions
 -   **🐛 Issues**: GitHub Issues
 
-⭐ Star History
---------------
+Stargazers over time
+--------------------
 
 * * *
 

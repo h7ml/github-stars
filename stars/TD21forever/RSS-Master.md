@@ -1,6 +1,6 @@
 ---
 project: RSS-Master
-stars: 34
+stars: 35
 description: 针对RSS源的自定义过滤、筛选，使用AI总结、概括、打分等
 url: https://github.com/TD21forever/RSS-Master
 ---

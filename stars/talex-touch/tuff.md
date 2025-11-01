@@ -1,6 +1,6 @@
 ---
 project: tuff
-stars: 154
+stars: 155
 description: The command bar, reimagined for those who build. Tuff is an open-source core for your OS, built on a sandboxed architecture with a local-first AI and a powerful TypeScript SDK.
 url: https://github.com/talex-touch/tuff
 ---

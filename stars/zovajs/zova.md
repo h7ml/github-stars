@@ -1,6 +1,6 @@
 ---
 project: zova
-stars: 123
+stars: 124
 description: A more intuitive framework with the pros of Vue3, React and Angular, empowers developers to build elegant, fast and reliable applications
 url: https://github.com/zovajs/zova
 ---

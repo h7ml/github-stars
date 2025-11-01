@@ -1,6 +1,6 @@
 ---
 project: diboot
-stars: 1605
+stars: 1606
 description: 写的更少, 性能更好 -> 为开发人员打造的低代码开发框架，基础框架可免写90%的SQL，同时具备极强的零代码模型表单页面流程的设计能力和代码生成能力，可在pro-code、low-code、no-code之间自由选择灵活切换，全方位赋能开发。
 url: https://github.com/dibo-software/diboot
 ---

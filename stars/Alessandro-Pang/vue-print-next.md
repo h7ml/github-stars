@@ -1,6 +1,6 @@
 ---
 project: vue-print-next
-stars: 155
+stars: 157
 description: 基于 vue3-print-np 改造的 vue 打印库，使用 Typescript 重构，对 vue3 setup 有更好的支持，支持手动调用打印函数等。
 url: https://github.com/Alessandro-Pang/vue-print-next
 ---

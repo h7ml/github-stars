@@ -1,6 +1,6 @@
 ---
 project: finclip-ios-demo
-stars: 331
+stars: 333
 description: 小程序容器 FinClip 苹果运行环境，让小程序在苹果应用中无缝运行  / iOS DEMO for FinClip
 url: https://github.com/finogeeks/finclip-ios-demo
 ---

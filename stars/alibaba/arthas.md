@@ -1,6 +1,6 @@
 ---
 project: arthas
-stars: 36795
+stars: 36813
 description: Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas
 url: https://github.com/alibaba/arthas
 ---

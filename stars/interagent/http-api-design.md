@@ -1,6 +1,6 @@
 ---
 project: http-api-design
-stars: 13700
+stars: 13702
 description: HTTP API design guide extracted from work on the Heroku Platform API
 url: https://github.com/interagent/http-api-design
 ---

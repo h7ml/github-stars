@@ -21,6 +21,8 @@ Fre
 
 ### Usage
 
+https://deepwiki.com/frejs/fre
+
 yarn add fre
 
 import { render, useState } from 'fre'

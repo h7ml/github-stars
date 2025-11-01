@@ -1,6 +1,6 @@
 ---
 project: stellarspec
-stars: 32
+stars: 33
 description: 🌟 基于 LLM 的智能本地代码审查工具，支持多语言，自动检测 Git 变更并生成专业审查报告
 url: https://github.com/zzy2210/stellarspec
 ---

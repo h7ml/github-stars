@@ -1,6 +1,6 @@
 ---
 project: mdserver-web
-stars: 4423
+stars: 4428
 description: Simple Linux Panel
 url: https://github.com/midoks/mdserver-web
 ---

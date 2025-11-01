@@ -1,6 +1,6 @@
 ---
 project: UserScript
-stars: 9028
+stars: 9048
 description: 🐵 自用的一些乱七八糟 油猴脚本~ 
 url: https://github.com/XIU2/UserScript
 ---

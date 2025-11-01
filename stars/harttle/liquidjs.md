@@ -1,6 +1,6 @@
 ---
 project: liquidjs
-stars: 1717
+stars: 1721
 description: A simple, expressive, safe and Shopify compatible template engine in pure JavaScript.
 url: https://github.com/harttle/liquidjs
 ---
@@ -66,61 +66,7 @@ Financial Support
 If you personally love LiquidJS or it's benefiting your business, please consider financially support us via GitHub Sponsors. Special thanks to our sponsors!
 
   
-**Opensense**
-
   
-**Eleventy**
-
-  
-**Peter deHaan**
-
-  
-**Touchless**
-
-  
-**Dropkiq**
-
-  
-**Dailycontributors**
-
-  
-**Serkan Holat**
-
-  
-**amit777**
-
-  
-**Khaled Salem**
-
-  
-**Sentry**
-
-  
-**Checkout Blocks**
-
-  
-**Customer IO**
-
-  
-**Emmanuel Cartelli**  
-
-  
-**Microsoft**  
-
-  
-**PakStyle.pk**
-
-  
-**Syntax Podcast**
-
-  
-**Cartelli Emmanuel**
-
-  
-**EscortA.com**
-
-  
-**Chudovo**
 
 Contributors ✨
 --------------
@@ -454,3 +400,11 @@ Want to contribute? see Contribution Guidelines. Thanks goes to these wonderful 
   
 **Ihor Panasiuk**  
 💻
+
+  
+**Omri Rosner**  
+💻
+
+  
+**immerrr again**  
+📖

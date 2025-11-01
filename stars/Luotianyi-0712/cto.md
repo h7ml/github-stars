@@ -1,6 +1,6 @@
 ---
 project: cto
-stars: 43
+stars: 46
 description: 玩具
 url: https://github.com/Luotianyi-0712/cto
 ---

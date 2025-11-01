@@ -1,6 +1,6 @@
 ---
 project: qrbtf
-stars: 6752
+stars: 6781
 description: AI & parametric QR code generator. AI & 参数化二维码生成器。https://qrbtf.com
 url: https://github.com/latentcat/qrbtf
 ---

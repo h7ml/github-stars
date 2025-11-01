@@ -1,8 +1,8 @@
 ---
-project: nextjs-15-starter
-stars: 576
+project: nextjs-starter
+stars: 580
 description: Lite version of the Nexty.dev SaaS Boilerplate based on Next.js. A multilingual Next.js 15 starter with built-in i18n support.
-url: https://github.com/weijunext/nextjs-15-starter
+url: https://github.com/weijunext/nextjs-starter
 ---
 
 * * *
@@ -16,10 +16,10 @@ Try Nexty.dev today
 
 🌍 _English ∙ 简体中文 ∙ 日本語_
 
-Next Forge - Multilingual Next.js 15 Starter
+Next Forge - Multilingual Next.js 16 Starter
 ============================================
 
-A feature-rich Next.js 15 multilingual starter template to help you quickly build globally-ready websites.
+A feature-rich Next.js 16 multilingual starter template to help you quickly build globally-ready websites.
 
 -   👉 Source Code
 -   👉 Live Demo
@@ -55,8 +55,8 @@ A feature-rich Next.js 15 multilingual starter template to help you quickly buil
 
 1.  Clone the repository:
 
-git clone https://github.com/weijunext/nextjs-15-starter.git
-cd nextjs-15-starter
+git clone https://github.com/weijunext/nextjs-starter.git
+cd nextjs-starter
 
 1.  Enable Corepack (recommended):
 
@@ -150,7 +150,7 @@ NEXT_PUBLIC_GOOGLE_ADSENSE=
 --------------------
 
 ```
-nextjs-15-starter/
+nextjs-starter/
 ├── app/                      # App directory
 │   ├── [locale]/            # Internationalized routes
 │   │   ├── about/           # About page
@@ -181,7 +181,7 @@ nextjs-15-starter/
 🛠️ Tech Stack
 --------------
 
--   **Framework**: Next.js 15 (App Router)
+-   **Framework**: Next.js 16 (App Router)
 -   **Language**: TypeScript
 -   **Styling**: Tailwind CSS + Shadcn/ui
 -   **Internationalization**: next-intl

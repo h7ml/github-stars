@@ -1,6 +1,6 @@
 ---
 project: PyQtScrcpy
-stars: 156
+stars: 157
 description: 使用Python PyQt制作的Scrcpy GUI版本
 url: https://github.com/Stardawn0v0/PyQtScrcpy
 ---

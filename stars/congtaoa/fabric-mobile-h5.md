@@ -1,6 +1,6 @@
 ---
 project: fabric-mobile-h5
-stars: 45
+stars: 46
 description: 低仿[创客贴-制作-设计页]功能，基于fabric.js和taro-react的移动端图片编辑器
 url: https://github.com/congtaoa/fabric-mobile-h5
 ---

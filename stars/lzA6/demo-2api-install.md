@@ -1,6 +1,6 @@
 ---
 project: demo-2api-install
-stars: 5
+stars: 6
 description: 如何把lzA6的2api项目转换成demo单文件版本呢？
 url: https://github.com/lzA6/demo-2api-install
 ---

@@ -1,6 +1,6 @@
 ---
 project: codex
-stars: 48858
+stars: 49503
 description: Lightweight coding agent that runs in your terminal
 url: https://github.com/openai/codex
 ---
@@ -71,7 +71,7 @@ Codex CLI supports a rich set of configuration options, with preferences stored 
     -   Example prompts
     -   Custom prompts
     -   Memory with AGENTS.md
-    -   Configuration
+-   **Configuration**
 -   **Sandbox & approvals**
 -   **Authentication**
     -   Auth methods

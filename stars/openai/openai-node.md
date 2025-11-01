@@ -1,6 +1,6 @@
 ---
 project: openai-node
-stars: 10275
+stars: 10302
 description: Official JavaScript / TypeScript library for the OpenAI API
 url: https://github.com/openai/openai-node
 ---

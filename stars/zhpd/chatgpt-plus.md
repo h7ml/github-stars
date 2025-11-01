@@ -1,6 +1,6 @@
 ---
 project: chatgpt-plus
-stars: 465
+stars: 464
 description: 🚀 Open source free ChatGPT App (Web, Mac, Windows and Linux).  免费开源的ChatGPT应用程序. 
 url: https://github.com/zhpd/chatgpt-plus
 ---

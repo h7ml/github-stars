@@ -1,6 +1,6 @@
 ---
 project: verification-pwa
-stars: 16
+stars: 19
 description: null
 url: https://github.com/Yuy-0415/verification-pwa
 ---

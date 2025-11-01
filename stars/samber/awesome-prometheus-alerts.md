@@ -1,6 +1,6 @@
 ---
 project: awesome-prometheus-alerts
-stars: 7540
+stars: 7557
 description: 🚨 Collection of Prometheus alerting rules
 url: https://github.com/samber/awesome-prometheus-alerts
 ---

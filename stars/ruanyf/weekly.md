@@ -1,6 +1,6 @@
 ---
 project: weekly
-stars: 77750
+stars: 78121
 description: 科技爱好者周刊，每周五发布
 url: https://github.com/ruanyf/weekly
 ---
@@ -26,6 +26,7 @@ Warp 专为 AI 代理编码而构建
 
 **十月**
 
+-   第 371 期：一个乐观主义者的专访
 -   第 370 期：正确的代码高亮
 -   第 369 期：Tim 与罗永浩的对谈
 -   第 368 期：不要这样管理软件团队

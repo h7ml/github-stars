@@ -1,6 +1,6 @@
 ---
 project: awesome-alternative
-stars: 537
+stars: 538
 description: 收录全网口碑平替好物清单，性价比突出、质量不输大牌。目前有成人服饰、儿童服饰、居家用品等系列。坚持更新，欢迎关注
 url: https://github.com/leonlucc/awesome-alternative
 ---

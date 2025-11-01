@@ -1,6 +1,6 @@
 ---
 project: zustand
-stars: 55324
+stars: 55467
 description: 🐻 Bear necessities for state management in React
 url: https://github.com/pmndrs/zustand
 ---
@@ -443,7 +443,7 @@ const useBearStore \= create<BearState\>()(
   ),
 )
 
-A more complete TypeScript guide is here.
+A more detailed TypeScript guide is here and there.
 
 Best practices
 --------------

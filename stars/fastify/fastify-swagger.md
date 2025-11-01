@@ -1,6 +1,6 @@
 ---
 project: fastify-swagger
-stars: 1044
+stars: 1048
 description: Swagger documentation generator for Fastify
 url: https://github.com/fastify/fastify-swagger
 ---

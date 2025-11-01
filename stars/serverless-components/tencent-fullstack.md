@@ -1,6 +1,6 @@
 ---
 project: tencent-fullstack
-stars: 16
+stars: 15
 description: Full stack application template using multiple components
 url: https://github.com/serverless-components/tencent-fullstack
 ---

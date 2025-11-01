@@ -1,6 +1,6 @@
 ---
 project: flutter_dating_template
-stars: 463
+stars: 461
 description: flutter 版本的交友 app 模板，总计页面35个，测试数据基于 mockjs 创建（A dating app template for The Flutter version, with a total of 35 pages, was created based on MockJS.）
 url: https://github.com/meetqy/flutter_dating_template
 ---

@@ -1,6 +1,6 @@
 ---
 project: remix
-stars: 31894
+stars: 31923
 description: Build Better Websites. Create modern, resilient user experiences with web fundamentals.
 url: https://github.com/remix-run/remix
 ---
@@ -51,6 +51,7 @@ We currently publish the following packages:
 -   file-storage: Robust key/value storage tailored for JavaScript `File` objects, simplifying file management
 -   form-data-parser: An enhanced `request.formData()` wrapper enabling efficient, streaming file uploads
 -   headers: A comprehensive toolkit for effortlessly managing HTTP headers
+-   interaction: Semantic, declarative events and Interactions
 -   lazy-file: Optimize performance with lazy-loaded, streaming `Blob`s and `File`s for JavaScript
 -   multipart-parser: High-performance, streaming parser for multipart messages, perfect for handling complex form data
 -   node-fetch-server: Build Node.js HTTP servers using the web-standard `fetch()` API, promoting code consistency

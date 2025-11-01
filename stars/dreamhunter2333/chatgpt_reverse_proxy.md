@@ -1,6 +1,6 @@
 ---
 project: chatgpt_reverse_proxy
-stars: 28
+stars: 29
 description: Chatgpt reverse proxy based on Browser
 url: https://github.com/dreamhunter2333/chatgpt_reverse_proxy
 ---

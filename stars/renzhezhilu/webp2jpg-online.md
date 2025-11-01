@@ -1,6 +1,6 @@
 ---
 project: webp2jpg-online
-stars: 1966
+stars: 1967
 description: Use the browser's online image format converter, no need to upload files, you can convert jpeg, jpg, png, gif, webp, svg, ico, bmp files to jpeg, png, webp animation, gif, base64,avif,mozjpeg. 使用浏览器的在线图片格式转化器,无需上传文件,可将jpeg、jpg、png、gif、webp、svg、ico、bmp文件转换为jpeg、png、webp、webp动画、gif、base64、avif、mozjpeg,提供了多个可自定义选项来满足常见需求。
 url: https://github.com/renzhezhilu/webp2jpg-online
 ---

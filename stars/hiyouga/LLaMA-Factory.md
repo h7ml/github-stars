@@ -1,6 +1,6 @@
 ---
 project: LLaMA-Factory
-stars: 60762
+stars: 61559
 description: Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)
 url: https://github.com/hiyouga/LLaMA-Factory
 ---
@@ -113,6 +113,8 @@ All Blogs
 
 Changelog
 ---------
+
+\[25/10/26\] We support Megatron-core training backend with **mcore\_adapter**. See PR #9237 to get started.
 
 \[25/08/22\] We supported **OFT** and **OFTv2**. See examples for usage.
 

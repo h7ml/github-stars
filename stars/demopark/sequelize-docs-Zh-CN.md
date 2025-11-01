@@ -1,6 +1,6 @@
 ---
 project: sequelize-docs-Zh-CN
-stars: 3004
+stars: 3005
 description: Sequelize 文档的中文版本:  v7.0.0-alpha.18 | v6.32.0
 url: https://github.com/demopark/sequelize-docs-Zh-CN
 ---
@@ -11,6 +11,8 @@ Sequelize Docs 中文版
 > 此项目同步自 sequelize / sequelize 项目.
 > 
 > 更新日志请参阅: CHANGELOG
+> 
+> 由于v7-40之后文档结构调整, 计划重新翻译新版并调整文档结构.
 
 Sequelize 是一个易用且基于 promise 的 Node.js ORM 工具 适用于 Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, Snowflake, Oracle DB 和 Db2 for IBM i. 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能.
 

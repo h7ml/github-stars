@@ -1,6 +1,6 @@
 ---
 project: moyu
-stars: 2374
+stars: 2384
 description: Github 摸鱼大全！
 url: https://github.com/akira-cn/moyu
 ---

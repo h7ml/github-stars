@@ -50,17 +50,18 @@ pnpm i openapi-ts-request -D
 
 > 配置文件还支持 **_.openapi-ts-request.ts_**, **_openapi-ts-request.config.cjs_** 等格式，参考 cosmiconfig
 
-import type { GenerateServiceProps } from 'openapi-ts-request';
+import { defineConfig } from 'openapi-ts-request';
 
-export default {
+export default defineConfig({
   schemaPath: 'http://petstore.swagger.io/v2/swagger.json',
-} as GenerateServiceProps;
+  serversPath: './src/apis',
+});
 
 支持传入数组配置进行生成
 
-import type { GenerateServiceProps } from 'openapi-ts-request';
+import { defineConfig } from 'openapi-ts-request';
 
-export default \[
+export default defineConfig(\[
   {
     schemaPath: 'http://app.swagger.io/v2/swagger.json',
     serversPath: './src/apis/app',
@@ -69,7 +70,7 @@ export default \[
     schemaPath: 'http://auth.swagger.io/v2/swagger.json',
     serversPath: './src/apis/auth',
   },
-\] as GenerateServiceProps\[\];
+\]);
 
 在 `package.json` 的 `script` 中添加命令: `"openapi": "openapi-ts",`
 
@@ -171,7 +172,6 @@ $ openapi --help
     -o, --output <string>               output directory
     -cfn, --configFileName <string>     config file name
     -cfp, --configFilePath <string>     config file path
-    -u, --uniqueKey <string>            unique key
     --requestLibPath <string>           custom request lib path, for example: "@/request", "node-fetch" (default: "axios")
     -f, --full <boolean>                full replacement (default: true)
     --enableLogging <boolean>           open the log (default: false)
@@ -255,6 +255,16 @@ boolean
 true
 
 是否全量替换
+
+describe
+
+否
+
+string
+
+\-
+
+描述信息，在用 cli 可交互运行方式时会用到
 
 enableLogging
 
@@ -578,6 +588,8 @@ customRenderTemplateData
 
 自定义文件生成时的 list 参数处理，支持对不同文件类型进行精细化控制
 
+hooks 示例
+
 Apifox-Config
 -------------
 
@@ -732,7 +744,8 @@ export default {
 4.  确保你的代码可以通过所有测试用例(新增功能需要添加新的功能测试用例)：`pnpm test:unit`
 5.  创建 changeset 文件通过命令：`pnpm changeset`
 6.  使用 commit 提交你的修改(需遵循 commitlint 规范)
-7.  发起 Pull Request
+7.  如果涉及文档，请同步更新 README.md、READMD-en\_US.md、agents.md
+8.  发起 Pull Request
 
 感谢
 --

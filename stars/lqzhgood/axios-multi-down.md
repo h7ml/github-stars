@@ -1,6 +1,6 @@
 ---
 project: axios-multi-down
-stars: 8
+stars: 9
 description: Axios plugin, Speed up the download process by using multiple Axios GET requests to fetch a single file.
 url: https://github.com/lqzhgood/axios-multi-down
 ---

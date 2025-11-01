@@ -1,6 +1,6 @@
 ---
 project: threejs-tutorial
-stars: 1298
+stars: 1299
 description: Three.js 系列教程，学习和探索 Three.js 世界。
 url: https://github.com/puxiao/threejs-tutorial
 ---

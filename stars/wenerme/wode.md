@@ -1,6 +1,6 @@
 ---
 project: wode
-stars: 58
+stars: 59
 description: Wener Node, Bun, NestJS, React Utils, Hooks & Demos
 url: https://github.com/wenerme/wode
 ---

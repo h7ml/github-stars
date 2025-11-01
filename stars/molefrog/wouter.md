@@ -1,6 +1,6 @@
 ---
 project: wouter
-stars: 7572
+stars: 7589
 description: 🥢 A minimalist-friendly ~2.1KB routing for React and Preact
 url: https://github.com/molefrog/wouter
 ---

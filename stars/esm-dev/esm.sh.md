@@ -1,6 +1,6 @@
 ---
 project: esm.sh
-stars: 3794
+stars: 3832
 description: A nobuild content delivery network(CDN) for modern web development.
 url: https://github.com/esm-dev/esm.sh
 ---
@@ -22,14 +22,14 @@ With import maps, you can even use bare import specifiers instead of URLs:
 <script type\="importmap"\>
   {
     "imports": {
-      "react": "https://esm.sh/react@18.2.0",
-      "react-dom/": "https://esm.sh/react-dom@18.2.0/"
+      "react": "https://esm.sh/react@19.2.0",
+      "react-dom/": "https://esm.sh/react-dom@19.2.0/"
     }
   }
 </script\>
 <script type\="module"\>
-  import React from "react"; // → https://esm.sh/react@18.2.0
-  import { render } from "react-dom/client"; // → https://esm.sh/react-dom@18.2.0/client
+  import React from "react"; // → https://esm.sh/react@19.2.0
+  import { render } from "react-dom/client"; // → https://esm.sh/react-dom@19.2.0/client
 </script\>
 
 > More usages about import maps can be found in the **Using Import Maps** section.
@@ -40,7 +40,7 @@ With import maps, you can even use bare import specifiers instead of URLs:
     
     // Examples
     import React from "https://esm.sh/react"; // latest
-    import React from "https://esm.sh/react@17"; // 17.0.2
+    import React from "https://esm.sh/react@18"; // 18.3.1
     import React from "https://esm.sh/react@beta"; // latest beta
     import { renderToString } from "https://esm.sh/react-dom/server"; // sub-modules
     
@@ -68,15 +68,15 @@ With import maps, you can even use bare import specifiers instead of URLs:
 
 esm.sh allows you to import `.ts(x)`, `.vue`, and `.svelte` files directly in the browser without any build steps.
 
-import { Airplay } from "https://esm.sh/gh/phosphor-icons/react@v2.1.5/src/csr/Airplay.tsx?deps=react@18.2.0";
+import { Airplay } from "https://esm.sh/gh/phosphor-icons/react@v2.1.5/src/csr/Airplay.tsx?deps=react@19.2.0";
 import IconAirplay from "https://esm.sh/gh/phosphor-icons/vue@v2.2.0/src/icons/PhAirplay.vue?deps=vue@3.5.8";
 
 ### Specifying Dependencies
 
-By default, esm.sh rewrites import specifiers based on the package dependencies. To specify the version of these dependencies, you can add `?deps=PACKAGE@VERSION` to the import URL. To specify multiple dependencies, separate them with commas, like this: `?deps=react@17.0.2,react-dom@17.0.2`.
+By default, esm.sh rewrites import specifiers based on the package dependencies. To specify the version of these dependencies, you can add `?deps=PACKAGE@VERSION` to the import URL. To specify multiple dependencies, separate them with commas, like this: `?deps=react@18.3.1,react-dom@18.3.1`.
 
-import React from "https://esm.sh/react@17.0.2";
-import useSWR from "https://esm.sh/swr?deps=react@17.0.2";
+import React from "https://esm.sh/react@18.3.1";
+import useSWR from "https://esm.sh/swr?deps=react@18.3.1";
 
 ### Aliasing Dependencies
 
@@ -251,8 +251,8 @@ Import maps supports **trailing slash** that can not work with URL search params
 
 {
   "imports": {
-    "react-dom": "https://esm.sh/react-dom@18.2.0?dev",
-    "react-dom/": "https://esm.sh/react-dom@18.2.0&dev/"
+    "react-dom": "https://esm.sh/react-dom@19.2.0?dev",
+    "react-dom/": "https://esm.sh/react-dom@19.2.0&dev/"
   }
 }
 
@@ -271,8 +271,8 @@ In development mode (open the page on localhost), `esm.sh/tsx` uses @esm.sh/tsx 
   <script type\="importmap"\>
     {
       "imports": {
-        "react": "https://esm.sh/react@18.2.0",
-        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+        "react": "https://esm.sh/react@19.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@19.2.0/client"
       }
     }
   </script\>

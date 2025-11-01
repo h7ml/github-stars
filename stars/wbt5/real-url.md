@@ -1,6 +1,6 @@
 ---
 project: real-url
-stars: 7737
+stars: 7741
 description: 获取斗鱼&虎牙&哔哩哔哩&抖音&快手等 58 个直播平台的真实流媒体地址(直播源)和弹幕，直播源可在 PotPlayer、flv.js 等播放器中播放。
 url: https://github.com/wbt5/real-url
 ---

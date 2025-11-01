@@ -26,3 +26,37 @@ pīnyīn, 汉字拼音转换工具。
 |- package.json
 `- README.md
 ```
+
+pinyin.js.org
+-------------
+
+pīnyīn 项目主站，网址 pinyin.js.org，代码仓库 @hotoo/pinyin/apps/website， 主要展示 pinyin 项目的文档、演示、工具等。
+
+pinyin
+------
+
+pinyin 项目核心代码，npm 安装：
+
+npm install pinyin
+
+使用：
+
+import { pinyin } from 'pinyin';
+
+const py \= pinyin('中文');
+
+更多用法请参考 API 文档， 源码 @hotoo/pinyin/packages/pinyin
+
+pinyin-cli
+----------
+
+pinyin 命令行工具，可以全局安装在本地随时随处使用。
+
+安装：
+
+npm install pinyin-cli -g
+
+使用：
+
+pinyin 中文
+pinyin --help

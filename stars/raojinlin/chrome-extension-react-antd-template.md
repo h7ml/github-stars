@@ -1,6 +1,6 @@
 ---
 project: chrome-extension-react-antd-template
-stars: 25
+stars: 26
 description: 🚀 这是一个Chrome插件的React和Antd模板，帮助开发者快速启动一个插件。封装了常用的基础库，如消息通信和日志采集。支持环境配置，并使用Promise发送和等待消息响应。可以快速构建React的Chrome插件，同时提供了一些通用的React组件和浏览器接口相关的函数。
 url: https://github.com/raojinlin/chrome-extension-react-antd-template
 ---

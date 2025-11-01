@@ -1,6 +1,6 @@
 ---
 project: Kode
-stars: 3310
+stars: 3387
 description: Open Agent Coding CLI, Koding with GLM, Qwen, Kimi, DeepSeek etc.（welcome to use Kode to summit PR)
 url: https://github.com/shareAI-lab/Kode
 ---

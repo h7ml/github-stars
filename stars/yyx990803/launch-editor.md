@@ -1,6 +1,6 @@
 ---
 project: launch-editor
-stars: 671
+stars: 674
 description: Open file in editor from Node.js.
 url: https://github.com/yyx990803/launch-editor
 ---
@@ -149,6 +149,8 @@ VSCodium
 `cursor`
 
 Cursor
+
+✓
 
 ✓
 

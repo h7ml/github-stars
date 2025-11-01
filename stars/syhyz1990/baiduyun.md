@@ -1,6 +1,6 @@
 ---
 project: baiduyun
-stars: 3990
+stars: 3997
 description: 油猴脚本 - 一个免费开源的网盘下载助手
 url: https://github.com/syhyz1990/baiduyun
 ---

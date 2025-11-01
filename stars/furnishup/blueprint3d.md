@@ -1,6 +1,6 @@
 ---
 project: blueprint3d
-stars: 1892
+stars: 1895
 description: Build interior spaces in 3D
 url: https://github.com/furnishup/blueprint3d
 ---

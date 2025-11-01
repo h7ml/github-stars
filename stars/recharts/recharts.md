@@ -1,6 +1,6 @@
 ---
 project: recharts
-stars: 26115
+stars: 26147
 description: Redefined chart library built with React and D3
 url: https://github.com/recharts/recharts
 ---
@@ -72,6 +72,8 @@ Thanks
 Thanks to Chromatic for providing the visual testing platform that helps us review UI changes and catch visual regressions.
 
 Thanks to JetBrains for providing OSS development license for their IDEs.
+
+Browser testing via
 
 License
 -------

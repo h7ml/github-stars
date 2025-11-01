@@ -1,6 +1,6 @@
 ---
 project: gemini-balance
-stars: 5379
+stars: 5428
 description: Gemini polling proxy service （gemini轮询代理服务）
 url: https://github.com/snailyp/gemini-balance
 ---

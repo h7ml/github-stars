@@ -1,6 +1,6 @@
 ---
 project: lx-music-desktop
-stars: 46808
+stars: 46904
 description: 一个基于 electron 的音乐软件
 url: https://github.com/lyswhut/lx-music-desktop
 ---

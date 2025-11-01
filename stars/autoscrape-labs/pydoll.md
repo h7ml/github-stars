@@ -1,6 +1,6 @@
 ---
 project: pydoll
-stars: 5869
+stars: 5929
 description: Pydoll is a library for automating chromium-based browsers without a WebDriver, offering realistic interactions. 
 url: https://github.com/autoscrape-labs/pydoll
 ---
@@ -20,10 +20,6 @@ Built from scratch with a different philosophy, Pydoll connects directly to the 
 
 We believe that powerful automation shouldn't require you to become an expert in configuration or constantly fight with bot protection systems. With Pydoll, you can focus on what really matters: your automation logic, not the underlying complexity or protection systems.
 
-#### Be a good human. Give it a star ⭐
-
-No stars, no bugs fixed. Just kidding (maybe)
-
 🌟 What makes Pydoll special?
 -----------------------------
 
@@ -32,6 +28,27 @@ No stars, no bugs fixed. Just kidding (maybe)
 -   **Asynchronous Performance**: For high-speed automation and multiple simultaneous tasks
 -   **Humanized Interactions**: Mimic real user behavior
 -   **Simplicity**: With Pydoll, you install and you're ready to automate.
+
+🆕 What's New
+-------------
+
+### Human-Like Page Scrolling: Scroll Like a Real User!
+
+Now you can control page scrolling with smooth animations and automatic completion waiting:
+
+from pydoll.constants import ScrollPosition
+
+\# Scroll down with smooth animation (waits for completion)
+await tab.scroll.by(ScrollPosition.DOWN, 500, smooth\=True)
+
+\# Navigate to specific positions
+await tab.scroll.to\_bottom(smooth\=True)
+await tab.scroll.to\_top(smooth\=True)
+
+\# Instant scroll for speed when realism isn't critical
+await tab.scroll.by(ScrollPosition.UP, 300, smooth\=False)
+
+Unlike `execute_script("window.scrollBy(...)")` which returns immediately, the scroll API uses CDP's `awaitPromise` to wait for the browser's `scrollend` event, ensuring your next actions only execute after scrolling completely finishes. Perfect for taking screenshots, loading lazy content, or creating realistic reading patterns.
 
 📦 Installation
 ---------------

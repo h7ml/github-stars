@@ -1,6 +1,6 @@
 ---
 project: chinese-independent-developer
-stars: 44820
+stars: 44955
 description: 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么
 url: https://github.com/1c7/chinese-independent-developer
 ---
@@ -36,6 +36,75 @@ url: https://github.com/1c7/chinese-independent-developer
 
 3\. 项目列表
 --------
+
+### 2025 年 11 月 1 号添加
+
+#### Yif(上海)
+
+-   ✅ Magic Animal Generator：尽情发挥你的想象力 用 AI 混合两种动物，创造前所未见的新物种
+
+### 2025 年 10 月 31 号添加
+
+#### dodid
+
+-   ✅ ReadTube：Youtube 视频转文字总结、幻灯片总结、AI 优化文字稿
+
+### 2025 年 10 月 30 号添加
+
+#### zxcHolmes
+
+-   ✅ FilingInsight：快速解读美股财报的 AI 工具，1 万多份财报解读，多语言支持，免费阅读
+
+#### KryoWang（广州）- Github
+
+-   ✅ image-to-sketch：图片转素描 AI 小工具
+
+#### SparkHo(广州)
+
+-   ✅ 媒发：内容分发工具，将内容发布/同步到各个媒体平台，只需 1 分钟
+
+#### pillow(重庆)
+
+-   ✅ 音频转文字工具：AI 音频转文字，快速、精准、安全的转写服务
+
+#### oroKAKA - Github
+
+-   ✅ Leawo free-screen-recorder：免费录像软件，支持 4K，无时长限制，无水印
+
+### 2025 年 10 月 28 号添加
+
+#### LinightX(苏州)
+
+-   ✅ AimtrainerX：专为 FPS 爱好者打造的瞄准训练网站，免费、上班可玩，丰富的训练模式，支持自定义训练样式
+
+### 2025 年 10 月 27 号添加
+
+#### Ryan(shanghai)
+
+-   ✅ melhorar imagem：针对葡萄牙地区的图片网站
+
+### 2025 年 10 月 26 号添加
+
+#### Horace(深圳) - Github, 博客
+
+-   ✅ Full Page Screenshot：5 秒一键生成精美推广截图插件。完整网页长截图：自动滚动拼接，无需手动操作。精准元素截取：点击即可截取按钮、图片、文字段落。自由区域选择：拖拽框选，只要你想要的部分。可视区域快照：当前所见即所得。重点标注：箭头、方框、文字说明，一目了然。背景设置：多个精美模板，一键设置精致截图。一键复制：截图完成复制立即发给同事朋友
+
+#### ShawnHacks(北京) - Github, 博客
+
+-   ✅ ResizeImage.dev：在浏览器中直接调整图片尺寸。无需上传即可下载 - 更多介绍
+-   ✅ ImageConverter.dev：免费在线图像转换工具。在您的浏览器中立即在 PNG、JPG、WebP 之间转换图像格式。无需上传 - 更多介绍
+
+#### fzero17
+
+-   ✅ OpenFolder: 在 macOS 菜单栏快速打开常用文件夹
+
+#### suio03 (成都)
+
+-   ✅ AI 图像编辑器：图像编辑工具套件，集多种功能于一体。从照片质量、放大低分辨率图像、进行创意设计等等
+
+#### grhuang87-hue
+
+-   ✅ AI Photo Prompt：任何图像转换为详细的 AI 提示词，为 Gemini、Midjourney 和 Stable Diffusion 即时生成照片和图像提示词 - 更多介绍
 
 ### 2025 年 10 月 23 号添加
 

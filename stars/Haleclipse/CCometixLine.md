@@ -1,6 +1,6 @@
 ---
 project: CCometixLine
-stars: 700
+stars: 734
 description: Claude Code statusline tool written in Rust
 url: https://github.com/Haleclipse/CCometixLine
 ---

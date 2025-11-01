@@ -1,6 +1,6 @@
 ---
 project: signia
-stars: 964
+stars: 965
 description: Reactive signals that scale, by tldraw.
 url: https://github.com/tldraw/signia
 ---

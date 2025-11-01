@@ -1,6 +1,6 @@
 ---
 project: chatgptProxyAPI
-stars: 3001
+stars: 3003
 description: 🔥 使用cloudflare 搭建免费的 OpenAI api代理 ，解决网络无法访问问题。支持流式输出
 url: https://github.com/x-dr/chatgptProxyAPI
 ---

@@ -1,6 +1,6 @@
 ---
 project: OneScan
-stars: 1202
+stars: 1203
 description: OneScan 是一款用于递归目录扫描的 BurpSuite 插件
 url: https://github.com/vaycore/OneScan
 ---

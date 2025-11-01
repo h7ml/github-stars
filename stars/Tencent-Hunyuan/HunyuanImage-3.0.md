@@ -1,6 +1,6 @@
 ---
 project: HunyuanImage-3.0
-stars: 2297
+stars: 2350
 description: HunyuanImage-3.0: A Powerful Native Multimodal Model for Image Generation
 url: https://github.com/Tencent-Hunyuan/HunyuanImage-3.0
 ---
@@ -15,8 +15,9 @@ url: https://github.com/Tencent-Hunyuan/HunyuanImage-3.0
 🔥🔥🔥 News
 -----------
 
--   **September 28, 2025**: 📖 **HunyuanImage-3.0 Technical Report Released** - Comprehensive technical documentation now available
--   **September 28, 2025**: 🚀 **HunyuanImage-3.0 Open Source Release** - Inference code and model weights publicly available
+-   **October 30, 2025**: 🚀 **HunyuanImage-3.0 vLLM Acceleration** - Significantly faster inference with vLLM support.
+-   **September 28, 2025**: 📖 **HunyuanImage-3.0 Technical Report** - Comprehensive technical documentation now available.
+-   **September 28, 2025**: 🎉 **HunyuanImage-3.0 Open Source** - Inference code and model weights publicly available.
 
 🧩 Community Contributions
 --------------------------
@@ -30,7 +31,7 @@ If you develop/use HunyuanImage-3.0 in your projects, welcome to let us know.
     -   Inference
     -   HunyuanImage-3.0 Checkpoints
     -   HunyuanImage-3.0-Instruct Checkpoints (with reasoning)
-    -   VLLM Support
+    -   vLLM Support
     -   Distilled Checkpoints
     -   Image-to-Image Generation
     -   Multi-turn Interaction

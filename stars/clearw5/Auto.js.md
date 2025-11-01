@@ -1,6 +1,6 @@
 ---
 project: Auto.js
-stars: 12825
+stars: 12826
 description: Automation&Workflow JavaScript IDE on Android(安卓平台上的JavaScript编程IDE)
 url: https://github.com/clearw5/Auto.js
 ---

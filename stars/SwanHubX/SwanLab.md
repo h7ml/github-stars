@@ -1,6 +1,6 @@
 ---
 project: SwanLab
-stars: 2945
+stars: 3007
 description: ⚡️SwanLab - an open-source, modern-design AI training tracking and visualization tool. Supports Cloud / Self-hosted use. Integrated with PyTorch / Transformers / LLaMA Factory / veRL/ Swift / Ultralytics / MMEngine / Keras etc.
 url: https://github.com/SwanHubX/SwanLab
 ---
@@ -321,6 +321,7 @@ swanlab login --host http://localhost:8000
 
 **使用SwanLab的优秀论文：**
 
+-   CQLLM: A Framework for Generating CodeQL Security Vulnerability Detection Code Based on Large Language Model
 -   Animation Needs Attention: A Holistic Approach to Slides Animation Comprehension with Visual-Language Models
 -   Efficient Model Fine-Tuning with LoRA for Biomedical Named Entity Recognition
 -   SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy
@@ -548,6 +549,7 @@ network.py
 -   企业微信通知
 -   Discord通知
 -   Slack通知
+-   Bark通知
 -   CSV记录器
 -   文件记录器
 

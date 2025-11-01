@@ -1,6 +1,6 @@
 ---
 project: corepack
-stars: 3295
+stars: 3309
 description: Package manager version manager for Node.js projects
 url: https://github.com/nodejs/corepack
 ---

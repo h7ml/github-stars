@@ -1,6 +1,6 @@
 ---
 project: web3.js
-stars: 19918
+stars: 19932
 description: Collection of comprehensive TypeScript libraries for Interaction with the Ethereum JSON RPC API and utility functions.
 url: https://github.com/web3/web3.js
 ---

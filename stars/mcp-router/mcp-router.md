@@ -1,6 +1,6 @@
 ---
 project: mcp-router
-stars: 933
+stars: 986
 description: A Unified MCP Server Management App
 url: https://github.com/mcp-router/mcp-router
 ---

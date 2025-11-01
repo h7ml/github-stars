@@ -1,6 +1,6 @@
 ---
 project: VS-Code-Extension-Doc-ZH
-stars: 2179
+stars: 2182
 description: VS Code插件开发文档-中文版
 url: https://github.com/Liiked/VS-Code-Extension-Doc-ZH
 ---

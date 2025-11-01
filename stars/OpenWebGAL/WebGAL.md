@@ -1,6 +1,6 @@
 ---
 project: WebGAL
-stars: 3395
+stars: 3472
 description: A brand new web Visual Novel engine | 全新的网页端视觉小说引擎
 url: https://github.com/OpenWebGAL/WebGAL
 ---
@@ -30,7 +30,7 @@ https://demo.openwebgal.com
 
 #### 完整的游戏
 
-铃色☆记忆 by 星奈组 备用链接
+WebGAL 官方游戏展示页
 
 Elf of Era Idols Project (通过 Steam 获取)
 

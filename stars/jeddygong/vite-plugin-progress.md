@@ -1,6 +1,6 @@
 ---
 project: vite-plugin-progress
-stars: 197
+stars: 198
 description: A progress bar plugin for Vite.
 url: https://github.com/jeddygong/vite-plugin-progress
 ---

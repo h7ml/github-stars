@@ -1,6 +1,6 @@
 ---
 project: txiki.js
-stars: 2806
+stars: 2810
 description: A tiny JavaScript runtime
 url: https://github.com/saghul/txiki.js
 ---

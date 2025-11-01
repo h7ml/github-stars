@@ -1,6 +1,6 @@
 ---
 project: vue-codemirror
-stars: 3449
+stars: 3452
 description: @codemirror code editor component for @vuejs
 url: https://github.com/surmon-china/vue-codemirror
 ---

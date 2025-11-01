@@ -1,6 +1,6 @@
 ---
 project: router
-stars: 11904
+stars: 12048
 description: 🤖 A client-first, server-capable, fully type-safe router and full-stack framework for the web (React and more).
 url: https://github.com/TanStack/router
 ---

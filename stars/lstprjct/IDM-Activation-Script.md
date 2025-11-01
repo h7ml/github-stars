@@ -1,6 +1,6 @@
 ---
 project: IDM-Activation-Script
-stars: 14539
+stars: 14623
 description: IDM Activation & Trail Reset Script
 url: https://github.com/lstprjct/IDM-Activation-Script
 ---

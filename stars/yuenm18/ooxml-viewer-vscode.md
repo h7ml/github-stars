@@ -1,6 +1,6 @@
 ---
 project: ooxml-viewer-vscode
-stars: 80
+stars: 81
 description: An OOXML Viewer for Visual Studio Code
 url: https://github.com/yuenm18/ooxml-viewer-vscode
 ---

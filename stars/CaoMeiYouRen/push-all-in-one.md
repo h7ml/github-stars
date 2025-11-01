@@ -1,6 +1,6 @@
 ---
 project: push-all-in-one
-stars: 175
+stars: 178
 description: Push All In One！支持 Server 酱(以及 Server 酱³)、自定义邮件、钉钉机器人、企业微信机器人、企业微信应用、飞书、pushplus、WxPusher、iGot 、Qmsg、息知、PushDeer、Discord、OneBot、Telegram、ntfy 等多种推送方式。
 url: https://github.com/CaoMeiYouRen/push-all-in-one
 ---
@@ -263,20 +263,42 @@ wxPusher.send('群发消息', '这是一条群发消息', {
     uids: \['UID\_1', 'UID\_2'\], // 可以同时发送给多个用户
 })
 
-更多例子请参考 \[examples\](https://github.com/CaoMeiYouRen/push\-all\-in\-one/tree/master/examples)
+更多例子请参考 examples
 
-\*\*代理支持\*\*
+**代理支持**
 
-| 环境变量    | 作用                                       | 例子                   |
-| \--\--\--\--\--\- | \--\--\--\--\--\--\--\--\--\--\--\--\--\--\--\--\--\--\--\--\-- | \--\--\--\--\--\--\--\--\--\--\-- |
-| NO\_PROXY    | 设置是否禁用代理                           | true                   |
-| HTTP\_PROXY  | 设置 http/https 代理                       | http://127.0.0.1:8101  |
-| HTTPS\_PROXY | 设置 http/https 代理                       | http://127.0.0.1:8101  |
-| SOCKS\_PROXY | 通过 socks/socks5 协议设置 http/https 代理 | socks://127.0.0.1:8100 |
+环境变量
+
+作用
+
+例子
+
+NO\_PROXY
+
+设置是否禁用代理
+
+true
+
+HTTP\_PROXY
+
+设置 http/https 代理
+
+http://127.0.0.1:8101
+
+HTTPS\_PROXY
+
+设置 http/https 代理
+
+http://127.0.0.1:8101
+
+SOCKS\_PROXY
+
+通过 socks/socks5 协议设置 http/https 代理
+
+socks://127.0.0.1:8100
 
 本项目通过环境变量来支持请求代理
 
-\`\`\`ts
 // 在 nodejs 项目中可通过直接设置环境变量来设置代理
 process.env.HTTP\_PROXY \= 'http://127.0.0.1:8101' // 当请求是 http/https 的时候走 HTTP\_PROXY
 process.env.HTTPS\_PROXY \= 'http://127.0.0.1:8101' // 当请求是 http/https 的时候走 HTTPS\_PROXY，HTTPS\_PROXY 优先

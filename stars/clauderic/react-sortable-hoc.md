@@ -1,6 +1,6 @@
 ---
 project: react-sortable-hoc
-stars: 10896
+stars: 10899
 description: A set of higher-order components to turn any list into an animated, accessible and touch-friendly sortable list✌️
 url: https://github.com/clauderic/react-sortable-hoc
 ---

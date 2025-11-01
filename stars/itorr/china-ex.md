@@ -1,6 +1,6 @@
 ---
 project: china-ex
-stars: 1645
+stars: 1649
 description: 🇨🇳「中国制霸生成器」中国三十四省份制霸标记工具
 url: https://github.com/itorr/china-ex
 ---

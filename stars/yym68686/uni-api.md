@@ -1,6 +1,6 @@
 ---
 project: uni-api
-stars: 1120
+stars: 1121
 description: This is a project that unifies the management of LLM APIs. It can call multiple backend services through a unified API interface, convert them to the OpenAI format uniformly, and support load balancing. Currently supported backend services include: OpenAI, Anthropic, DeepBricks, OpenRouter, Gemini, Vertex, etc.
 url: https://github.com/yym68686/uni-api
 ---
@@ -227,7 +227,7 @@ api\_keys:
     model:
       - anthropic/claude-3-5-sonnet # Usable model name, can only use the claude-3-5-sonnet model provided by the provider named anthropic. Models with the same name from other providers cannot be used. This syntax will not match the model named anthropic/claude-3-5-sonnet provided by other-provider.
       - <anthropic/claude-3-5-sonnet> # By adding angle brackets on both sides of the model name, it will not search for the claude-3-5-sonnet model under the channel named anthropic, but will take the entire anthropic/claude-3-5-sonnet as the model name. This syntax can match the model named anthropic/claude-3-5-sonnet provided by other-provider. But it will not match the claude-3-5-sonnet model under anthropic.
-      - openai-test/text-moderation-latest # When message moderation is enabled, the text-moderation-latest model under the channel named openai-test can be used for moderation.
+      - openai-test/omni-moderation-latest # When message moderation is enabled, the omni-moderation-latest model under the channel named openai-test can be used for moderation.
       - sk-KjjI60Yd0JFWtxxxxxxxxxxxxxxwmRWpWpQRo/\* # Support using other API keys as channels
     preferences:
       SCHEDULING\_ALGORITHM: fixed\_priority # When SCHEDULING\_ALGORITHM is fixed\_priority, use fixed priority scheduling, always execute the channel of the first model with a request. Default is enabled, SCHEDULING\_ALGORITHM default value is fixed\_priority. SCHEDULING\_ALGORITHM optional values are: fixed\_priority, round\_robin, weighted\_round\_robin, lottery, random.
@@ -571,7 +571,7 @@ FAQ
 
 -   Why does the error `Error processing request or performing moral check: 404: No matching model found` always appear?
 
-Setting ENABLE\_MODERATION to false will fix this issue. When ENABLE\_MODERATION is true, the API must be able to use the text-moderation-latest model, and if you have not provided text-moderation-latest in the provider model settings, an error will occur indicating that the model cannot be found.
+Setting ENABLE\_MODERATION to false will fix this issue. When ENABLE\_MODERATION is true, the API must be able to use the omni-moderation-latest model, and if you have not provided omni-moderation-latest in the provider model settings, an error will occur indicating that the model cannot be found.
 
 -   How to prioritize requests for a specific channel, how to set the priority of a channel?
 

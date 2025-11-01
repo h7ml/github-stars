@@ -1,6 +1,6 @@
 ---
 project: free-for-dev
-stars: 114057
+stars: 114347
 description: A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 url: https://github.com/ripienaar/free-for-dev
 ---
@@ -234,7 +234,7 @@ APIs, Data, and ML
 -   APIVerve - Get instant access to over 120+ APIs for free, built with quality, consistency, and reliability in mind. The free plan covers up to 50 API Tokens per month. (Possibly taken down, 2025-06-25)
 -   Arize AI - Machine learning observability for model monitoring and root-causing issues such as data quality and performance drift. Free up to two models.
 -   Maxim AI - Simulate, evaluate, and observe your AI agents. Maxim is an end-to-end evaluation and observability platform, helping teams ship their AI agents reliably and >5x faster. Free forever for indie developers and small teams (3 seats).
--   Beeceptor - Mock a rest API in seconds, fake API response and much more. Free 50 requests per day, public dashboard, open endpoints (anyone with a dashboard link can view submissions and answers).
+-   Beeceptor - No-code, cloud-based platform for mocking and debugging multi-protocol APIs (REST, SOAP, gRPC & GraphQL), providing instant servers with rules-based logic, CRUD & stateful mocking, proxying, and CORS management for faster integration and testing. The free plan includes 50 requests per day and provides a public dashboard/endpoint where anyone with the dashboard URL can view submitted requests and responses.
 -   BigDataCloud - Provides fast, accurate, and free (Unlimited or up to 10K-50K/month) APIs for modern web like IP Geolocation, Reverse Geocoding, Networking Insights, Email and Phone Validation, Client Info and more.
 -   Browse AI — Extracting and monitoring data on the web. 1k credits per month for free, equals 1k concurrent requests.
 -   BrowserCat - Headless browser API for automation, scraping, AI agent web access, image/pdf generation, and more. Free plan with 1k requests per month.
@@ -344,6 +344,7 @@ APIs, Data, and ML
 -   PromptLoop - PromptLoop delivers 10X easier AI web scraping with near-zero adoption time, 85%+ time saved on existing workflows, and operates 4X faster than manual research without compromise and includes a REST API endpoint for all research tasks. The first 1,000 credits are free each month.
 -   ProxySentry - IP API that detects residential proxies and VPNs. ProxySentry.io offers a free tier with 10k requests per month on rapidapi.com.
 -   Public-Apis Github Repo — A list of free public APIs.
+-   Reducto - Turn any unstructured documents (PDF, XLSX, JPG, PPTX, etc.) into structured JSON data. Parse, extract data, and edit PDF forms. Free tier with 15k free credits and pay-as-you-go.
 -   Rapidapi - World’s Largest API Hub Millions of developers find and connect to thousands of APIs, API Development using fun challenges (with solutions!) and interactive examples.
 -   Rendi - FFmpeg API - A REST API for FFmpeg, run FFmpeg online without handling the infrastructure. Free tier with monthly processing quota and 4 vCPUs available.
 -   RequestBin.com — Create a free endpoint to which you can send HTTP requests. Any HTTP requests sent to that endpoint will be recorded with the associated payload and headers so you can observe recommendations from webhooks and other services.
@@ -1063,7 +1064,6 @@ Search
 -   CommandBar - Unified Search Bar as-a-service, web-based UI widget/plugin that allows your users to search contents, navigations, features, etc. within your product, which helps discoverability. Free for up to 1,000 Monthly Active Users, unlimited commands.
 -   Orama Cloud — Free 3 indexes, 100K docs/index, unlimited full-text/vector/hybrid searches, 60 days analytics
 -   searchly.com — Free 2 indices and 20 MB storage
--   easysitesearch.com — Search widget and API, with automated web-crawler based indexing. Unlimited searches for free, for up to 50 subpages.
 
 **⬆️ Back to Top**
 
@@ -1620,53 +1620,103 @@ Storage and Media Processing
 ----------------------------
 
 -   AndroidFileHost - Free file-sharing platform with unlimited speed, bandwidth, file count, download count, etc. It is mainly aimed for Android dev-related files like APK build, custom ROM & modifications, etc. But seems to accept any other files as well.
+    
 -   borgbase.com — Simple and secure offsite backup hosting for Borg Backup. 10 GB free backup space and two repositories.
+    
 -   icedrive.net - Simple cloud storage service. 10 GB free storage
+    
 -   sync.com - End-to-End cloud storage service. 5 GB of free storage
+    
 -   pcloud.com - Cloud storage service. Up to 10 GB of free storage
+    
 -   sirv.com — Smart Image CDN with on-the-fly image optimization and resizing. The free tier includes 500 MB of storage and 2 GB of bandwidth.
+    
 -   cloudimage.io — Full image optimization and CDN service with 1500+ Points of Presence around the world. A variety of image resizing, compression, and watermarking functions. Open source plugins for responsive images, 360 image making and image editing. Free monthly plan with 25GB of CDN traffic 25GB of cache storage and unlimited transformations.
+    
 -   cloudinary.com — Image upload, powerful manipulations, storage, and delivery for sites and apps, with Ruby, Python, Java, PHP, Objective-C, and more libraries. The free tier includes 25 monthly credits. One credit equals 1,000 image transformations, 1 GB of storage, or 1 GB of CDN usage.
+    
 -   Dropshare - Zero-knowledge file sharing. End-to-end encrypted file sharing with AES-256-GCM encryption, client-side processing, and zero server-side data access. Free uploads for files up to 1GB with no data collection.
+    
 -   embed.ly — Provides APIs for embedding media in a webpage, responsive image scaling, and extracting elements from a webpage. Free for up to 5,000 URLs/month at 15 requests/second
+    
 -   filestack.com — File picker, transform, and deliver, free for 250 files, 500 transformations, and 3 GB bandwidth
+    
 -   file.io - 2 GB storage of files. A file is auto-deleted after one download. REST API to interact with the storage. Rate limit one request/minute.
+    
 -   freetools.site — Free online tools. Convert or edit documents, images, audio, video, and more.
+    
 -   GoFile.io - Free file sharing and storage platform can be used via web-based UI & also API. unlimited file size, bandwidth, download count, etc. But it will be deleted when a file becomes inactive (no download for more than ten days).
+    
 -   gumlet.com — Image and video hosting, processing and streaming via CDN. Provides generous free tier of 250 GB / month for videos and 30 GB / month for images.
+    
 -   image-charts.com — Unlimited image chart generation with a watermark
+    
 -   Imgbot — Imgbot is a friendly robot that optimizes your images and saves you time. Optimized images mean smaller file sizes without sacrificing quality. It's free for open source.
+    
 -   ImgBB — ImgBB is an unlimited image hosting servce. Drag and drop your image anywhere on the screen. 32 MB / image limit. Receive Direct image links, BBCode and HTML thumbnails after uploading image. Login to see the upload history.
+    
 -   imgen - Free unlimited social cover image generation API, no watermark
+    
 -   imgix - Image Caching, management and CDN. Free plan includes 1000 origin images, infinite transformations and 100 GB bandwidth
+    
 -   kraken.io — Image optimization for website performance as a service, free plan up to 1 MB file size
+    
 -   npoint.io — JSON store with collaborative schema editing
+    
 -   nitropack.io - Accelerate your site's speed on autopilot with complete front-end optimization (caching, images and code optimization, CDN). Free for up to 5,000 pageviews/month
+    
 -   otixo.com — Encrypt, share, copy, and move all your cloud storage files from one place. The basic plan provides unlimited file transfer with 250 MB max. file size and allows five encrypted files
+    
 -   packagecloud.io — Hosted Package Repositories for YUM, APT, RubyGem and PyPI. Limited free plans and open-source plans are available via request
+    
 -   getpantry.cloud — A simple JSON data storage API perfect for personal projects, hackathons, and mobile apps!
+    
 -   Pinata IPFS — Pinata is the simplest way to upload and manage files on IPFS. Our friendly user interface and IPFS API make Pinata the easiest IPFS pinning service for platforms, creators, and collectors. 1 GB storage free, along with access to API.
+    
 -   placekitten.com — A quick and simple service for getting pictures of kittens for use as placeholders
+    
 -   plot.ly — Graph and share your data. The free tier includes unlimited public files and ten private files
+    
 -   podio.com — You can use Podio with a team of up to five people and try out the features of the Basic Plan, except user management
+    
 -   QRME.SH - Fast, beautiful bulk QR code generator – no login, no watermark, no ads. Up to 100 URLs per bulk export.
+    
 -   QuickChart — Generate embeddable image charts, graphs, and QR codes
+    
 -   redbooth.com — P2P file syncing, free for up to 2 users
+    
 -   resmush.it — reSmush.it is a FREE API that provides image optimization. reSmush.it has been implemented on the most common CMS such as WordPress, Drupal, or Magento. reSmush.it is the most used image optimization API with more than seven billion images already treated, and it is still Free of charge.
+    
 -   Shotstack - API to generate and edit video at scale. Free up to 20 minutes of rendered video per month
+    
 -   tinypng.com — API to compress and resize PNG and JPEG images, offers 500 compressions for free each month
+    
 -   transloadit.com — Handles file uploads and encoding of video, audio, images, documents. Free for Open source, charities, and students via the GitHub Student Developer Pack. Commercial applications get 2 GB free for test driving
+    
 -   twicpics.com - Responsive images as a service. It provides an image CDN, a media processing API, and a frontend library to automate image optimization. The service is free for up to 3GB of traffic/per month.
+    
 -   uploadcare.com — Uploadcare provides the media pipeline with the ultimate toolkit based on cutting-edge algorithms. All features are available for developers absolutely for free: File Uploading API and UI, Image CDN and Origin Services, Adaptive Delivery, and Smart Compression. The free tier has 3000 uploads, 3 GB traffic, and 3 GB storage.
+    
 -   imagekit.io – Image CDN with automatic optimization, real-time transformation, and storage that you can integrate with existing setup in minutes. The free plan includes up to 20GB of bandwidth per month.
+    
 -   internxt.com – Internxt Drive is a zero-knowledge file storage service based on absolute privacy and uncompromising security. Sign up and get 10 GB for free, forever!
+    
 -   degoo.com – AI based cloud storage with free up to 20 GB, three devices, 5 GB referral bonus (90 days account inactivity).
+    
 -   MConverter.eu – Convert files in bulk. Supports many file formats, including new ones like AVIF. Extract all image frames from videos. Free for up to ten 100MB-files per day, processed in batches of two.
+    
 -   ImageEngine – ImageEngine is an easy to use global image CDN. Sub 60 sec setup. AVIF and JPEGXL support, WordPress-, Magento-, React-, Vue- plugins and more. Claim your free developer account here.
+    
 -   DocsParse – GPT powered AI processing of PDFs, Images, into structured data in JSON, CSV, EXCEL formats. 30 credits for free each month.
+    
 -   VaocherApp QR Code Generator – Easily create custom QR codes for gift cards, gift vouchers, and promotions. Support custom styling, color, logo...
+    
 -   LibreQR — Free QR code generator focused on privacy and no tracking. Free to use with no data collection.
+    
 -   Doradrop — Doradrop is a file-sharing platform with unlimited storage and zero ads. Share files instantly through secure — no login needed.
+    
+-   Ente - Ente is an end-to-end encrypted cloud for photos, videos and 2FA secrets. Can also be self-hosted along with a generous forever free-tier of 10GB. For free tier users, only single replica of data is kept.
+    
 
 **⬆️ Back to Top**
 

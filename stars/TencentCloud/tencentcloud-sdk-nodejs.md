@@ -1,6 +1,6 @@
 ---
 project: tencentcloud-sdk-nodejs
-stars: 578
+stars: 579
 description: Tencent Cloud API 3.0 SDK for NodeJS
 url: https://github.com/TencentCloud/tencentcloud-sdk-nodejs
 ---

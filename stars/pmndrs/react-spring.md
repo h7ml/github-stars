@@ -1,6 +1,6 @@
 ---
 project: react-spring
-stars: 28949
+stars: 28960
 description: ✌️ A spring physics based React animation library
 url: https://github.com/pmndrs/react-spring
 ---

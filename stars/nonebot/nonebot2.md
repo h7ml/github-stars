@@ -1,6 +1,6 @@
 ---
 project: nonebot2
-stars: 7123
+stars: 7128
 description: 跨平台 Python 异步聊天机器人框架 / Asynchronous multi-platform chatbot framework written in Python
 url: https://github.com/nonebot/nonebot2
 ---

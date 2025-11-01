@@ -1,6 +1,6 @@
 ---
 project: nunuStudio
-stars: 2191
+stars: 2192
 description: Web powered cross-platform 3D, WebXR game engine.
 url: https://github.com/tentone/nunuStudio
 ---

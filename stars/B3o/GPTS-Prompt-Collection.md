@@ -1,6 +1,6 @@
 ---
 project: GPTS-Prompt-Collection
-stars: 1698
+stars: 1702
 description: 收集GPTS的prompt  /   Collect the prompt of GPTS
 url: https://github.com/B3o/GPTS-Prompt-Collection
 ---

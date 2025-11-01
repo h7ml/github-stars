@@ -1,6 +1,6 @@
 ---
 project: gsy_flutter_book
-stars: 4496
+stars: 4502
 description: Flutter 完整开发实战详解系列，提供在线预览和pdf下载，本系列将完整讲述：如何快速从 0 开发一个完整的 Flutter APP，配套高完成度 Flutter 开源项目 GSYGithubAppFlutter ，同时会提供一些Flutter的开发细节技巧，之后深入源码和实战为你全面解析 Flutter 。
 url: https://github.com/CarGuo/gsy_flutter_book
 ---

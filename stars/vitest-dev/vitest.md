@@ -1,6 +1,6 @@
 ---
 project: vitest
-stars: 15218
+stars: 15289
 description: Next generation testing framework powered by Vite.
 url: https://github.com/vitest-dev/vitest
 ---

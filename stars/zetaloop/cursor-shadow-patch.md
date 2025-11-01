@@ -1,6 +1,6 @@
 ---
 project: cursor-shadow-patch
-stars: 861
+stars: 863
 description: An experimental patch for Cursor to force different machine ids.
 url: https://github.com/zetaloop/cursor-shadow-patch
 ---

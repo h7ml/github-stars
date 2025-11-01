@@ -1,6 +1,6 @@
 ---
 project: issues-helper
-stars: 396
+stars: 398
 description: 🤖 A GitHub Action easily helps you automatically manage issues. Welcome to try.
 url: https://github.com/actions-cool/issues-helper
 ---
@@ -1342,6 +1342,14 @@ string
 exclude-labels
 
 Exclude labels filtering
+
+string
+
+✖
+
+exclude-issue-numbers
+
+Exclude the specified issues
 
 string
 

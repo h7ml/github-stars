@@ -1,6 +1,6 @@
 ---
 project: vue3-ts-template-h5
-stars: 448
+stars: 449
 description: 🍰🤡 Vue3.0 +  Typescript + Sass + Vant 移动端 ,附属微信朋友圈demo 。访问weizhan.site
 url: https://github.com/weizhanzhan/vue3-ts-template-h5
 ---

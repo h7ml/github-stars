@@ -1,6 +1,6 @@
 ---
 project: AionUi
-stars: 2598
+stars: 2663
 description: Free, local, open-source GUI app for Gemini CLI — Better Chat UI,  Multi-agent, Multi-LLMs & apikey polling, Workspace, MCP, Remote WebUi Mode & more | 🌟 Star if you like it!
 url: https://github.com/iOfficeAI/AionUi
 ---
@@ -37,6 +37,12 @@ _AI helps you create, organize, analyze, and beautify Excel files_
 ### 💬 **Handle Multiple Tasks at Once**
 
 _Multiple conversations, no task confusion, independent memory, double efficiency_
+
+### 🌐 **Access AionUi from Anywhere - WebUI Mode**
+
+_Remote Control Your AI Assistant - Access AionUi from any device on your network! Securely control your local Agent with data staying on your device_
+
+> 💡 **Perfect for Server Deployment** - Run AionUi 24/7 on Linux servers without desktop environment and access it remotely from anywhere!
 
 * * *
 
@@ -131,6 +137,16 @@ AionUi provides a modern interface for users who need better workflow efficiency
 -   **Image Recognition** - Advanced image analysis and understanding
 -   **High-Quality Output** - Professional-grade image generation with detailed control
 
+### 🌐 **WebUI Remote Access**
+
+-   **Cross-Device Access** - Access AionUi from any device on your network via web browser
+-   **Remote Control Local Agent** - Securely control your local AI Agent without data transmission
+-   **Secure Authentication** - User login protection ensures your AI conversations and data are safe
+-   **Server Deployment** - Perfect for running AionUi 24/7 on Linux servers without desktop environment
+-   **Smart Network Detection** - Automatically detects and displays the best network address for connection
+-   **Local Data Security** - All conversations, settings, and configurations stored locally using SQLite database
+-   **Remote Control** - Control your AI assistant from phone, tablet, or any computer on the network
+
 ### 🔧 **Settings Are Simple**
 
 -   **Multi-Platform Support** - Support Gemini, OpenAI, ModelScope, OpenRouter, etc.
@@ -163,6 +179,7 @@ Ready to try AionUi? Download the latest version for your platform from our rele
 -   🤖 Multi-Agent Mode Setup - Integrate terminal AI agents
 -   🔌 MCP Tool Configuration - Model Context Protocol server setup
 -   🎨 Image Generation Configuration - AI image generation setup tutorial
+-   🌐 WebUI Configuration Guide - Complete WebUI setup and configuration
 
 ### 🎯 Use Cases
 

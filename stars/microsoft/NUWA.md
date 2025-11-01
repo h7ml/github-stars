@@ -1,6 +1,6 @@
 ---
 project: NUWA
-stars: 2807
+stars: 2808
 description: A unified 3D Transformer Pipeline for visual synthesis
 url: https://github.com/microsoft/NUWA
 ---

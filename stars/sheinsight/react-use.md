@@ -34,7 +34,7 @@ It's primarily inspired by VueUse, while also drawing from react-use, ahooks, an
 -   **Lightweight**: Boasts zero dependencies.
 -   **SSR-friendly**: Ensures that all Hooks are compatible with Server-side Rendering (SSR).
 -   **First-class TypeScript Support**: Written in TypeScript with well-named type definitions and JSDoc Comment.
--   **Comprehensive Testing**: (Coming soon...)
+-   **Comprehensive Testing**: Each Hook is rigorously tested with Vitest to ensure reliability and stability.
 
 Visit the Get Started section to explore how it can be integrated into your project.
 

@@ -1,6 +1,6 @@
 ---
 project: ktransformers
-stars: 15217
+stars: 15261
 description: A Flexible Framework for Experiencing Cutting-edge LLM Inference Optimizations
 url: https://github.com/kvcache-ai/ktransformers
 ---
@@ -21,6 +21,7 @@ Our vision for KTransformers is to serve as a flexible platform for experimentin
 🔥 Updates
 ----------
 
+-   **Oct 27, 2025**: Support Ascend NPU. (Tutorial)
 -   **Oct 10, 2025**: Integrating into SGLang. (Roadmap)
 -   **Sept 11, 2025**: Support Qwen3-Next. (Tutorial)
 -   **Sept 05, 2025**: Support Kimi-K2-0905. (Tutorial)

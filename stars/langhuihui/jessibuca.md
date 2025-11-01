@@ -1,6 +1,6 @@
 ---
 project: jessibuca
-stars: 2631
+stars: 2634
 description: Jessibuca是一款开源的纯H5直播流播放器
 url: https://github.com/langhuihui/jessibuca
 ---

@@ -1,6 +1,6 @@
 ---
 project: 12factor
-stars: 3748
+stars: 3747
 description: null
 url: https://github.com/heroku/12factor
 ---

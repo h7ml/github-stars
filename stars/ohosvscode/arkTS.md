@@ -1,6 +1,6 @@
 ---
 project: arkTS
-stars: 631
+stars: 645
 description: VSCode鸿蒙ArkTS插件✨✍️支持各种补全/跳转⛺️支持codelinter检测代码错误🎵VSCode HarmonyOS ArkTS plugin for personal use ✨ ✍️supports source code navigation and completion ⛺️supports codelinter to detect errors
 url: https://github.com/ohosvscode/arkTS
 ---
@@ -29,6 +29,7 @@ Features
     -   `main_pages.json5`
 -   📦 1.x版本开始支持安装和管理`OpenHarmony SDK`，并且支持根据当前打开的项目自动探测`API版本`，发出弹窗提示`下载`或`切换`
 -   🥇 1.1.6+ 版本开始支持完美的 `$r` 函数补全和跳转、支持 `module.json5` 文件的补全和跳转、`resources/element/` 下所有`json`文件点击查询全局引用；由 @arkts/project-detector hvigor项目分析器提供强力支撑 ✊
+-   🍞 1.1.8+ 版本开始支持 `module.json5` 文件路径补全和跳转、引用表达式错误诊断、`requestPermissions` 权限补全等一系列 new feature ✨
 
 插件安装 📦
 -------
@@ -111,6 +112,8 @@ Type
 
 Default
 
+Example
+
 `ets.sdkPath`
 
 %configuration.ets.sdkPath.description%
@@ -118,6 +121,8 @@ Default
 `string`
 
 `""`
+
+`${os.homedir}/AppData/Local/OpenHarmony/20`
 
 `ets.baseSdkPath`
 
@@ -127,6 +132,8 @@ Default
 
 `"${os.homedir}/OpenHarmony"`
 
+`"${os.homedir}/AppData/Local/OpenHarmony"`
+
 `ets.hmsPath`
 
 %configuration.ets.hmsPath.description%
@@ -134,6 +141,8 @@ Default
 `string`
 
 `""`
+
+-   Windows: `C:/Program Files/Huawei/DevEco Studio/sdk/default/hms`
 
 `ets.lspDebugMode`
 
@@ -143,6 +152,8 @@ Default
 
 `false`
 
+`true`
+
 `ets.hdcPath`
 
 %configuration.ets.hdcPath.description%
@@ -151,6 +162,9 @@ Default
 
 `""`
 
+-   Unix: `/usr/local/bin/hdc`
+-   Windows: `C:/Program Files/Huawei/DevEco Studio/sdk/default/openharmony/toolchains`
+
 `ets.sdkList`
 
 A list of installed OpenHarmony SDK paths. Keys should follow the pattern API\[number\] (e.g., API9, API10).
@@ -158,6 +172,8 @@ A list of installed OpenHarmony SDK paths. Keys should follow the pattern API\[n
 `object`
 
 `{}`
+
+`{"API20": "${os.homedir}/OpenHarmony/20", "API18": "/opt/OpenHarmony/18"}`
 
 命令
 --
@@ -173,6 +189,32 @@ ETS: %command.restartServer%
 `ets.installSDK`
 
 ETS: %command.installSDK%
+
+推荐食用搭配
+------
+
+ArkTs-X 组织有维护一个官方的跨平台arkts项目构建管理cli,可用于build和烧录
+
+可以参考以下链接进行安装
+
+命令行工具
+
+参考使用方式：
+
+ohos@user Desktop % ace create demo
+? Enter the project name(demo): # 输入工程名称，不输入默认为文件夹名称
+? Enter the bundleName (com.example.demo):  # 输入包名，不输入默认为com.example.工程名
+? Enter the runtimeOS (1: OpenHarmony, 2: HarmonyOS): 1 # 输入RuntimeOS系统
+? Please select the Complie SDK (1: 10, 2: 11, 3: 12): 2 # 输入编译SDK版本
+Signing iOS app for device deployment using developer identity: "Apple Development: xxxxx"
+
+Project created. Target directory:  ${当前目录}/demo.
+In order to run your app, type:
+
+   $ cd demo
+   $ ace run
+
+Your app code is in demo/entry.
 
 Star History 🌟
 ---------------

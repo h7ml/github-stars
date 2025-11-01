@@ -1,7 +1,7 @@
 ---
 project: ofetch
-stars: 4919
-description: 😱 A better fetch API. Works on node, browser and workers.
+stars: 4967
+description: 😱 A better fetch API. Works everywhere.
 url: https://github.com/unjs/ofetch
 ---
 
@@ -10,6 +10,10 @@ ofetch
 
 A better fetch API. Works on node, browser, and workers.
 
+Important
+
+You are on v2 (alpha) development branch. See v1 for v1 docs.
+
 Spoiler
 
 🚀 Quick Start
@@ -17,38 +21,22 @@ Spoiler
 
 Install:
 
-# npm
-npm i ofetch
-
-# yarn
-yarn add ofetch
+npx nypm i ofetch
 
 Import:
 
-// ESM / Typescript
 import { ofetch } from "ofetch";
-
-// CommonJS
-const { ofetch } \= require("ofetch");
-
-✔️ Works with Node.js
----------------------
-
-We use conditional exports to detect Node.js and automatically use unjs/node-fetch-native. If `globalThis.fetch` is available, will be used instead. To leverage Node.js 17.5.0 experimental native fetch API use `--experimental-fetch` flag.
 
 ✔️ Parsing Response
 -------------------
 
-`ofetch` will smartly parse JSON and native values using destr, falling back to the text if it fails to parse.
+`ofetch` smartly parse JSON responses.
 
 const { users } \= await ofetch("/api/users");
 
 For binary content types, `ofetch` will instead return a `Blob` object.
 
-You can optionally provide a different parser than `destr`, or specify `blob`, `arrayBuffer`, `text` or `stream` to force parsing the body with the respective `FetchResponse` method.
-
-// Use JSON.parse
-await ofetch("/movie?lang=en", { parseResponse: JSON.parse });
+You can optionally provide a different parser than `JSON.parse`, or specify `blob`, `arrayBuffer`, `text` or `stream` to force parsing the body with the respective `FetchResponse` method.
 
 // Return text as is
 await ofetch("/movie?lang=en", { parseResponse: (txt) \=> txt });
@@ -121,7 +109,7 @@ The default for `retryDelay` is `0` ms.
 await ofetch("http://google.com/404", {
   retry: 3,
   retryDelay: 500, // ms
-  retryStatusCodes: \[ 404, 500 \], // response status codes to retry
+  retryStatusCodes: \[404, 500\], // response status codes to retry
 });
 
 ✔️ Timeout
@@ -276,14 +264,14 @@ const json \= await ofetch.native("/sushi").then((r) \=> r.json());
 
 **Example:** Handle SSE response:
 
-const stream \= await ofetch("/sse")
+const stream \= await ofetch("/sse");
 const reader \= stream.getReader();
-const decoder \= new TextDecoder()
+const decoder \= new TextDecoder();
 while (true) {
   const { done, value } \= await reader.read();
   if (done) break;
   // Here is the chunked text of the SSE response.
-  const text \= decoder.decode(value)
+  const text \= decoder.decode(value);
 }
 
 🕵️ Adding HTTP(S) Agent
@@ -336,20 +324,6 @@ const unsecureFetch \= ofetch.create({ dispatcher: unsecureAgent });
 
 const data \= await unsecureFetch("https://www.squid-cache.org/");
 
-On older Node.js version (<18), you might also use use `agent`:
-
-import { HttpsProxyAgent } from "https-proxy-agent";
-
-await ofetch("/api", {
-  agent: new HttpsProxyAgent("http://example.com"),
-});
-
-### `keepAlive` support (only works for Node < 18)
-
-By setting the `FETCH_KEEP_ALIVE` environment variable to `true`, an HTTP/HTTPS agent will be registered that keeps sockets around even when there are no outstanding requests, so they can be used for future requests without having to re-establish a TCP connection.
-
-**Note:** This option can potentially introduce memory leaks. Please check node-fetch/node-fetch#1325.
-
 ### 💪 Augment `FetchOptions` interface
 
 You can augment the `FetchOptions` interface to add custom properties.
@@ -358,12 +332,12 @@ You can augment the `FetchOptions` interface to add custom properties.
 // Ensure it's included in the project's tsconfig.json "files".
 declare module "ofetch" {
   interface FetchOptions {
-    // Custom properties 
+    // Custom properties
     requiresAuth?: boolean;
   }
 }
 
-export {}
+export {};
 
 This lets you pass and use those properties with full type safety throughout `ofetch` calls.
 
@@ -374,36 +348,9 @@ const myFetch \= ofetch.create({
   },
 });
 
-myFetch("/foo", { requiresAuth: true })
-
-📦 Bundler Notes
-----------------
-
--   All targets are exported with Module and CommonJS format and named exports
--   No export is transpiled for the sake of modern syntax
-    -   You probably need to transpile `ofetch`, `destr`, and `ufo` packages with Babel for ES5 support
--   You need to polyfill `fetch` global for supporting legacy browsers like using unfetch
-
-❓ FAQ
------
-
-**Why export is called `ofetch` instead of `fetch`?**
-
-Using the same name of `fetch` can be confusing since API is different but still, it is a fetch so using the closest possible alternative. You can, however, import `{ fetch }` from `ofetch` which is auto-polyfill for Node.js and using native otherwise.
-
-**Why not have default export?**
-
-Default exports are always risky to be mixed with CommonJS exports.
-
-This also guarantees we can introduce more utils without breaking the package and also encourage using `ofetch` name.
-
-**Why not transpiled?**
-
-By transpiling libraries, we push the web backward with legacy code which is unneeded for most of the users.
-
-If you need to support legacy users, you can optionally transpile the library in your build pipeline.
+myFetch("/foo", { requiresAuth: true });
 
 License
 -------
 
-MIT. Made with 💖
+💛 Published under the MIT license.

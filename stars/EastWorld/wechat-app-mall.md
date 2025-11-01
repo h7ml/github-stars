@@ -1,6 +1,6 @@
 ---
 project: wechat-app-mall
-stars: 21266
+stars: 21291
 description: 微信小程序商城，微信小程序微店
 url: https://github.com/EastWorld/wechat-app-mall
 ---

@@ -1,6 +1,6 @@
 ---
 project: copy-cert
-stars: 336
+stars: 337
 description: 本工具可以基于已知网站 ssl 证书的信息生成新的自签名证书，保持签发者、有效期、序列号、域名等一致，用于伪装流量。
 url: https://github.com/virusdefender/copy-cert
 ---

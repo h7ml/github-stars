@@ -1,6 +1,6 @@
 ---
 project: dt-react-component
-stars: 99
+stars: 100
 description: React UI component library based on antd package
 url: https://github.com/DTStack/dt-react-component
 ---

@@ -1,9 +1,16 @@
 ---
 project: lobe-chat
-stars: 67157
-description: 🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.
+stars: 67340
+description: 🤯 LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / RAG ), one click install MCP Marketplace and Artifacts / Thinking. One-click FREE deployment of your private AI Agent application.
 url: https://github.com/lobehub/lobe-chat
 ---
+
+Note
+
+**Version Information**
+
+-   **v1.x** (Stable): Available on the `main` branch
+-   **v2.x** (In Development): Currently being actively developed on the `next` branch 🔥
 
 Lobe Chat
 =========
@@ -178,7 +185,7 @@ We have implemented support for the following model service providers:
 -   **HuggingFace**: The HuggingFace Inference API provides a fast and free way for you to explore thousands of models for various tasks. Whether you are prototyping for a new application or experimenting with the capabilities of machine learning, this API gives you instant access to high-performance models across multiple domains.
 -   **Cloudflare Workers AI**: Run serverless GPU-powered machine learning models on Cloudflare's global network.
 
-See more providers (+32)
+See more providers (+31)
 
 -   **GitHub**: With GitHub Models, developers can become AI engineers and leverage the industry's leading AI models.
 -   **Novita**: Novita AI is a platform providing a variety of large language models and AI image generation API services, flexible, reliable, and cost-effective. It supports the latest open-source models like Llama3 and Mistral, offering a comprehensive, user-friendly, and auto-scaling API solution for generative AI application development, suitable for the rapid growth of AI startups.
@@ -203,7 +210,6 @@ See more providers (+32)
 -   **SenseNova**: SenseNova, backed by SenseTime's robust infrastructure, offers efficient and user-friendly full-stack large model services.
 -   **Stepfun**: StepFun's large model possesses industry-leading multimodal and complex reasoning capabilities, supporting ultra-long text understanding and powerful autonomous scheduling search engine functions.
 -   **Baichuan**: Baichuan Intelligence is a company focused on the research and development of large AI models, with its models excelling in domestic knowledge encyclopedias, long text processing, and generative creation tasks in Chinese, surpassing mainstream foreign models. Baichuan Intelligence also possesses industry-leading multimodal capabilities, performing excellently in multiple authoritative evaluations. Its models include Baichuan 4, Baichuan 3 Turbo, and Baichuan 3 Turbo 128k, each optimized for different application scenarios, providing cost-effective solutions.
--   **Minimax**: MiniMax is a general artificial intelligence technology company established in 2021, dedicated to co-creating intelligence with users. MiniMax has independently developed general large models of different modalities, including trillion-parameter MoE text models, voice models, and image models, and has launched applications such as Conch AI.
 -   **InternLM**: An open-source organization dedicated to the research and development of large model toolchains. It provides an efficient and user-friendly open-source platform for all AI developers, making cutting-edge large models and algorithm technologies easily accessible.
 -   **Higress**: Higress is a cloud-native API gateway that was developed internally at Alibaba to address the issues of Tengine reload affecting long-lived connections and the insufficient load balancing capabilities for gRPC/Dubbo.
 -   **Gitee AI**: Gitee AI's Serverless API provides AI developers with an out of the box large model inference API service.
@@ -213,7 +219,7 @@ See more providers (+32)
 -   **InfiniAI**: Provides high-performance, easy-to-use, and secure large model services for application developers, covering the entire process from large model development to service deployment.
 -   **Qiniu**: Qiniu, as a long-established cloud service provider, delivers cost-effective and reliable AI inference services for both real-time and batch processing, with a simple and user-friendly experience.
 
-> 📊 Total providers: **42**
+> 📊 Total providers: **41**
 
 At the same time, we are also planning to support more model service providers. If you would like LobeChat to support your favorite service provider, feel free to join our 💬 community discussion.
 
@@ -261,6 +267,12 @@ Recent Submits
 
 Description
 
+Shopping tools  
+By **shoppingtools** on **2025-10-27**
+
+Search for products on eBay & AliExpress, find eBay events & coupons. Get prompt examples.  
+`shopping` `e-bay` `ali-express` `coupons`
+
 PortfolioMeta  
 By **portfoliometa** on **2025-09-27**
 
@@ -279,13 +291,7 @@ By **FineHow** on **2024-12-22**
 Search for information from the internet base BingApi  
 `bingsearch`
 
-Google CSE  
-By **vsnthdev** on **2024-12-02**
-
-Searches Google through their official CSE API.  
-`web` `search`
-
-> 📊 Total plugins: **41**
+> 📊 Total plugins: **42**
 
 ### Agent Market (GPTs)
 

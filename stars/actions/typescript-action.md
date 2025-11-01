@@ -1,6 +1,6 @@
 ---
 project: typescript-action
-stars: 2331
+stars: 2335
 description: Create a TypeScript Action with tests, linting, workflow, publishing, and versioning
 url: https://github.com/actions/typescript-action
 ---

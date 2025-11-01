@@ -1,6 +1,6 @@
 ---
 project: visx
-stars: 20349
+stars: 20362
 description: 🐯 visx | visualization components
 url: https://github.com/airbnb/visx
 ---
@@ -41,8 +41,8 @@ const xMax \= width \- margin.left \- margin.right;
 const yMax \= height \- margin.top \- margin.bottom;
 
 // We'll make some helpers to get at the data we want
-const x \= d \=> d.letter;
-const y \= d \=> +d.frequency \* 100;
+const x \= (d) \=> d.letter;
+const y \= (d) \=> +d.frequency \* 100;
 
 // And then scale the graph by our data
 const xScale \= scaleBand({
@@ -58,7 +58,7 @@ const yScale \= scaleLinear({
 });
 
 // Compose together the scale and accessor functions to get point functions
-const compose \= (scale, accessor) \=> data \=> scale(accessor(data));
+const compose \= (scale, accessor) \=> (data) \=> scale(accessor(data));
 const xPoint \= compose(xScale, x);
 const yPoint \= compose(yScale, y);
 

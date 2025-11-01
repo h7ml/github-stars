@@ -1,6 +1,6 @@
 ---
 project: down_52pojie_cn
-stars: 2716
+stars: 2720
 description: A single page file explorer that can be hosted on static website. 吾爱破解论坛 爱盘 https://down.52pojie.cn/ 页面的源代码
 url: https://github.com/ganlvtech/down_52pojie_cn
 ---

@@ -1,6 +1,6 @@
 ---
 project: next
-stars: 4661
+stars: 4663
 description: 🦍 A configurable component library for web built on React. 
 url: https://github.com/alibaba-fusion/next
 ---

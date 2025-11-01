@@ -1,6 +1,6 @@
 ---
 project: njs
-stars: 1490
+stars: 1491
 description: A subset of JavaScript language to use in nginx
 url: https://github.com/nginx/njs
 ---

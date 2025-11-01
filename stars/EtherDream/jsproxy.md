@@ -1,6 +1,6 @@
 ---
 project: jsproxy
-stars: 9358
+stars: 9356
 description: An online proxy based on ServiceWorker
 url: https://github.com/EtherDream/jsproxy
 ---

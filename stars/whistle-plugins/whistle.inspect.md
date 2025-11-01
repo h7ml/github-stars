@@ -1,6 +1,6 @@
 ---
 project: whistle.inspect
-stars: 193
+stars: 194
 description: 集成 eruda、vConsole、mdebug 等调试H5页面工具的插件
 url: https://github.com/whistle-plugins/whistle.inspect
 ---

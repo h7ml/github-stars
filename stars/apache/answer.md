@@ -1,6 +1,6 @@
 ---
 project: answer
-stars: 15048
+stars: 15067
 description: A Q&A platform software for teams at any scales. Whether it's a community forum, help center, or knowledge management platform, you can always count on Apache Answer.
 url: https://github.com/apache/answer
 ---
@@ -20,7 +20,7 @@ Quick start
 
 ### Running with docker
 
-docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:1.6.0
+docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:1.7.0
 
 For more information, see Installation.
 

@@ -1,6 +1,6 @@
 ---
 project: cheat-engine
-stars: 17157
+stars: 17203
 description: Cheat Engine. A development environment focused on modding
 url: https://github.com/cheat-engine/cheat-engine
 ---

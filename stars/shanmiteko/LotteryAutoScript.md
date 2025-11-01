@@ -1,6 +1,6 @@
 ---
 project: LotteryAutoScript
-stars: 998
+stars: 1000
 description: Bili动态抽奖助手
 url: https://github.com/shanmiteko/LotteryAutoScript
 ---

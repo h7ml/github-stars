@@ -1,6 +1,6 @@
 ---
 project: CLIProxyAPI
-stars: 1114
+stars: 1227
 description: Wrap Gemini CLI, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API
 url: https://github.com/router-for-me/CLIProxyAPI
 ---
@@ -32,6 +32,7 @@ Features
 -   Multiple accounts with round-robin load balancing (Gemini, OpenAI, Claude, Qwen and iFlow)
 -   Simple CLI authentication flows (Gemini, OpenAI, Claude, Qwen and iFlow)
 -   Generative Language API Key support
+-   AI Studio Build multi-account load balancing
 -   Gemini CLI multi-account load balancing
 -   Claude Code multi-account load balancing
 -   Qwen Code multi-account load balancing
@@ -74,6 +75,12 @@ Installation
 
 brew install cliproxyapi
 brew services start cliproxyapi
+
+### Installation via CLIProxyAPI Linux Installer
+
+curl -fsSL https://raw.githubusercontent.com/brokechubb/cliproxyapi-installer/refs/heads/master/cliproxyapi-installer | bash
+
+Thanks to brokechubb for building the Linux installer!
 
 Usage
 -----
@@ -262,12 +269,16 @@ Supported Models
 -   gemini-2.5-flash-lite
 -   gemini-2.5-flash-image
 -   gemini-2.5-flash-image-preview
+-   gemini-pro-latest
+-   gemini-flash-latest
+-   gemini-flash-lite-latest
 -   gpt-5
 -   gpt-5-codex
 -   claude-opus-4-1-20250805
 -   claude-opus-4-20250514
 -   claude-sonnet-4-20250514
 -   claude-sonnet-4-5-20250929
+-   claude-haiku-4-5-20251001
 -   claude-3-7-sonnet-20250219
 -   claude-3-5-haiku-20241022
 -   qwen3-coder-plus
@@ -279,7 +290,6 @@ Supported Models
 -   deepseek-r1
 -   deepseek-v3
 -   kimi-k2
--   glm-4.5
 -   glm-4.6
 -   tstars2.0
 -   And other iFlow-supported models
@@ -414,13 +424,53 @@ string\[\]
 
 Legacy shorthand for inline API keys. Values are mirrored into the `config-api-key` provider for backwards compatibility.
 
+`gemini-api-key`
+
+object\[\]
+
+\[\]
+
+Gemini API key entries with optional per-key `base-url` and `proxy-url` overrides.
+
+`gemini-api-key.*.api-key`
+
+string
+
+""
+
+Gemini API key.
+
+`gemini-api-key.*.base-url`
+
+string
+
+""
+
+Optional Gemini API endpoint override.
+
+`gemini-api-key.*.headers`
+
+object
+
+{}
+
+Optional extra HTTP headers sent to the overridden Gemini endpoint only.
+
+`gemini-api-key.*.proxy-url`
+
+string
+
+""
+
+Optional per-key proxy override for the Gemini API key.
+
 `generative-language-api-key`
 
 string\[\]
 
 \[\]
 
-List of Generative Language API keys.
+(Legacy alias) View-only list mirrored from `gemini-api-key`. Writes through the legacy management endpoint update the underlying Gemini entries.
 
 `codex-api-key`
 
@@ -486,6 +536,30 @@ string
 
 Proxy URL for this specific API key. Overrides the global proxy-url setting. Supports socks5/http/https protocols.
 
+`claude-api-key.models`
+
+object\[\]
+
+\[\]
+
+Model alias entries for this key.
+
+`claude-api-key.models.*.name`
+
+string
+
+""
+
+Upstream Claude model name invoked against the API.
+
+`claude-api-key.models.*.alias`
+
+string
+
+""
+
+Client-facing alias that maps to the upstream model name.
+
 `openai-compatibility`
 
 object\[\]
@@ -548,7 +622,7 @@ object\[\]
 
 \[\]
 
-The actual model name.
+Model alias definitions routing client aliases to upstream names.
 
 `openai-compatibility.*.models.*.name`
 
@@ -556,7 +630,7 @@ string
 
 ""
 
-The models supported by the provider.
+Upstream model name invoked against the provider.
 
 `openai-compatibility.*.models.*.alias`
 
@@ -564,7 +638,9 @@ string
 
 ""
 
-The alias used in the API.
+Client alias routed to the upstream model.
+
+When `claude-api-key.models` is specified, only the provided aliases are registered in the model registry (mirroring OpenAI compatibility behaviour), and the default Claude catalog is suppressed for that credential.
 
 ### Example Configuration File
 
@@ -613,12 +689,14 @@ quota-exceeded:
    switch-project: true # Whether to automatically switch to another project when a quota is exceeded
    switch-preview-model: true # Whether to automatically switch to a preview model when a quota is exceeded
 
-# API keys for official Generative Language API
-generative-language-api-key:
-  - "AIzaSy...01"
-  - "AIzaSy...02"
-  - "AIzaSy...03"
-  - "AIzaSy...04"
+# Gemini API keys
+gemini-api-key:
+  - api-key: "AIzaSy...01"
+    base-url: "https://generativelanguage.googleapis.com"
+    headers:
+      X-Custom-Header: "custom-value"
+    proxy-url: "socks5://proxy.example.com:1080"
+  - api-key: "AIzaSy...02"
 
 # Codex API keys
 codex-api-key:
@@ -646,7 +724,7 @@ openai-compatibility:
     # api-keys:
     #   - "sk-or-v1-...b780"
     #   - "sk-or-v1-...b781"
-    models: # The models supported by the provider.
+    models: # The models supported by the provider. Or you can use a format such as openrouter://moonshotai/kimi-k2:free to request undefined models
       - name: "moonshotai/kimi-k2:free" # The actual model name.
         alias: "kimi-k2" # The alias used in the API.
 
@@ -836,33 +914,42 @@ openai-compatibility:
       - name: "moonshotai/kimi-k2:free"
         alias: "kimi-k2"
 
-Legacy format (still supported):
-
-openai-compatibility:
-  - name: "openrouter"
-    base-url: "https://openrouter.ai/api/v1"
-    api-keys:
-      - "sk-or-v1-...b780"
-      - "sk-or-v1-...b781"
-    models:
-      - name: "moonshotai/kimi-k2:free"
-        alias: "kimi-k2"
-
 Usage:
 
 Call OpenAI's endpoint `/v1/chat/completions` with `model` set to the alias (e.g., `kimi-k2`). The proxy routes to the configured provider/model automatically.
 
-Also, you may call Claude's endpoint `/v1/messages`, Gemini's `/v1beta/models/model-name:streamGenerateContent` or `/v1beta/models/model-name:generateContent`.
-
 And you can always use Gemini CLI with `CODE_ASSIST_ENDPOINT` set to `http://127.0.0.1:8317` for these OpenAI-compatible provider's models.
+
+### AI Studio Instructions
+
+You can use this service (CLIProxyAPI) as a backend for this AI Studio App. Follow the steps below to configure it:
+
+1.  **Start the CLIProxyAPI Service**: Ensure your CLIProxyAPI instance is running, either locally or remotely.
+2.  **Access the AI Studio App**: Log in to your Google account in your browser, then open the following link:
+    -   https://aistudio.google.com/apps/drive/1CPW7FpWGsDZzkaYgYOyXQ\_6FWgxieLmL
+
+#### Connection Configuration
+
+By default, the AI Studio App attempts to connect to a local CLIProxyAPI instance at `ws://127.0.0.1:8317`.
+
+-   **Connecting to a Remote Service**: If you need to connect to a remotely deployed CLIProxyAPI, modify the `config.ts` file in the AI Studio App to update the `WEBSOCKET_PROXY_URL` value.
+    -   Use the `wss://` protocol if your remote service has SSL enabled.
+    -   Use the `ws://` protocol if SSL is not enabled.
+
+#### Authentication Configuration
+
+By default, WebSocket connections to CLIProxyAPI do not require authentication.
+
+-   **Enable Authentication on the CLIProxyAPI Server**: In your `config.yaml` file, set `ws_auth` to `true`.
+-   **Configure Authentication on the AI Studio Client**: In the `config.ts` file of the AI Studio App, set the `JWT_TOKEN` value to your authentication token.
 
 ### Authentication Directory
 
 The `auth-dir` parameter specifies where authentication tokens are stored. When you run the login command, the application will create JSON files in this directory containing the authentication tokens for your Google accounts. Multiple accounts can be used for load balancing.
 
-### Official Generative Language API
+### Gemini API Configuration
 
-The `generative-language-api-key` parameter allows you to define a list of API keys that can be used to authenticate requests to the official Generative Language API.
+Use the `gemini-api-key` parameter to configure Gemini API keys. Each entry accepts optional `base-url`, `headers`, and `proxy-url` values; headers are only attached to requests sent to the overridden Gemini endpoint and are never forwarded to proxy servers. The legacy `generative-language-api-key` endpoint exposes a mirrored, key-only view for backwards compatibility—writes through that endpoint update the Gemini list but drop any per-key overrides, and the legacy field is no longer persisted in `config.yaml`.
 
 Hot Reloading
 -------------

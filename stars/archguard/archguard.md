@@ -1,6 +1,6 @@
 ---
 project: archguard
-stars: 652
+stars: 653
 description: ArchGuard is a architecture workbench, also for architecture governance, which can analysis architecture in container, component, code level, create architecure fitness functions, and anaysis system dependencies..
 url: https://github.com/archguard/archguard
 ---

@@ -1,6 +1,6 @@
 ---
 project: leetCode
-stars: 1811
+stars: 1810
 description: :pencil2: 算法相关知识储备 LeetCode with Python and JavaScript :books:
 url: https://github.com/HuberTRoy/leetCode
 ---

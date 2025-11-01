@@ -1,6 +1,6 @@
 ---
 project: heytea
-stars: 351
+stars: 350
 description: uniapp仿喜茶GO小程序前端模板(weapp + H5)(持续更新)
 url: https://github.com/tinypuppet/heytea
 ---

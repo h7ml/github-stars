@@ -1,6 +1,6 @@
 ---
 project: HaE
-stars: 3847
+stars: 3853
 description: HaE - Highlighter and Extractor, Empower ethical hacker for efficient operations.
 url: https://github.com/gh0stkey/HaE
 ---
@@ -176,7 +176,7 @@ xccc
 
 柯林斯-民间新秀
 
-3238.8 CNY
+3288.8 CNY
 
 Cuber
 

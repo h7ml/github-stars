@@ -1,6 +1,6 @@
 ---
 project: tango-components
-stars: 10
+stars: 11
 description: An UI library for tango low-code builder
 url: https://github.com/NetEase/tango-components
 ---

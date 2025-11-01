@@ -1,6 +1,6 @@
 ---
 project: big-react
-stars: 3885
+stars: 3886
 description: 跟着我，从0实现React18
 url: https://github.com/BetaSu/big-react
 ---

@@ -1,6 +1,6 @@
 ---
 project: amis-widget-cli
-stars: 57
+stars: 56
 description: amis自定义组件开发工具
 url: https://github.com/aisuda/amis-widget-cli
 ---

@@ -8,7 +8,7 @@ url: https://github.com/EasyWebApp/web-utility
 Web utility
 ===========
 
-**Web front-end** toolkit based on TypeScript
+Web & JavaScript runtimes toolkit based on TypeScript
 
 Installation
 ------------
@@ -149,9 +149,9 @@ Migrate to MobX i18n since v4.
 
 ### Test scripts
 
-If you are looking for a simple alternative of Mocha or Jest, just use these **Test Utility** methods with `ts-node`:
+If you are looking for a simple alternative of Mocha or Jest, just use these **Test Utility** methods with `tsx`:
 
-npx ts-node index.spec.ts
+npx tsx index.spec.ts
 
 #### `index.spec.ts`
 

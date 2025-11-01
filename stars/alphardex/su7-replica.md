@@ -1,6 +1,6 @@
 ---
 project: su7-replica
-stars: 488
+stars: 490
 description: null
 url: https://github.com/alphardex/su7-replica
 ---
