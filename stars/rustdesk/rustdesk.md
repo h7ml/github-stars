@@ -1,13 +1,13 @@
 ---
 project: rustdesk
-stars: 101388
+stars: 101729
 description: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 url: https://github.com/rustdesk/rustdesk
 ---
 
   
 Build • Docker • Structure • Snapshot  
-\[Українська\] | \[česky\] | \[中文\] | \[Magyar\] | \[Español\] | \[فارسی\] | \[Français\] | \[Deutsch\] | \[Polski\] | \[Indonesian\] | \[Suomi\] | \[മലയാളം\] | \[日本語\] | \[Nederlands\] | \[Italiano\] | \[Русский\] | \[Português (Brasil)\] | \[Esperanto\] | \[한국어\] | \[العربي\] | \[Tiếng Việt\] | \[Dansk\] | \[Ελληνικά\] | \[Türkçe\] | \[Norsk\]  
+\[Українська\] | \[česky\] | \[中文\] | \[Magyar\] | \[Español\] | \[فارسی\] | \[Français\] | \[Deutsch\] | \[Polski\] | \[Indonesian\] | \[Suomi\] | \[മലയാളം\] | \[日本語\] | \[Nederlands\] | \[Italiano\] | \[Русский\] | \[Português (Brasil)\] | \[Esperanto\] | \[한국어\] | \[العربي\] | \[Tiếng Việt\] | \[Dansk\] | \[Ελληνικά\] | \[Türkçe\] | \[Norsk\] | \[Română\]  
 **We need your help to translate this README, RustDesk UI and RustDesk Doc to your native language**
 
 Caution

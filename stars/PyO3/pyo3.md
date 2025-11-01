@@ -1,6 +1,6 @@
 ---
 project: pyo3
-stars: 14673
+stars: 14720
 description: Rust bindings for the Python interpreter
 url: https://github.com/PyO3/pyo3
 ---
@@ -204,6 +204,7 @@ Examples
 -   pycrdt _Python bindings for the Rust CRDT implementation Yrs._
 -   pydantic-core _Core validation logic for pydantic written in Rust._
 -   primp _The fastest python HTTP client that can impersonate web browsers by mimicking their headers and TLS/JA3/JA4/HTTP2 fingerprints._
+-   radiate: _A high-performance evolution engine for genetic programming and evolutionary algorithms._
 -   rateslib _A fixed income library for Python using Rust extensions._
 -   river _Online machine learning in python, the computationally heavy statistics algorithms are implemented in Rust._
 -   robyn A Super Fast Async Python Web Framework with a Rust runtime.

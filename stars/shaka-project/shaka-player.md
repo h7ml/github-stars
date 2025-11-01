@@ -1,6 +1,6 @@
 ---
 project: shaka-player
-stars: 7765
+stars: 7778
 description: JavaScript player library / DASH & HLS client / MSE-EME player
 url: https://github.com/shaka-project/shaka-player
 ---
@@ -452,6 +452,7 @@ HLS features supported:
 -   #EXT-X-IMAGE-STREAM-INF for thumbnails
 -   Interstitials
 -   Container change during the playback (eg: MP4 to TS, or AAC to TS)
+-   Chapters (`#EXT-X-SESSION-DATA` tag with the ID `com.apple.hls.chapters`)
 
 HLS features **not** supported:
 
@@ -869,6 +870,7 @@ Shaka Player supports:
 -   DASH Media Presentation Insertion (MPD alternate)
 -   Custom Interstitials
 -   Basic support of VAST and VMAP without IMA
+-   SVTA2053-2: Ad Creative Signaling in DASH and HLS
 
 Content Steering support
 ------------------------

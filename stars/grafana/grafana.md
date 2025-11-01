@@ -1,6 +1,6 @@
 ---
 project: grafana
-stars: 70505
+stars: 70624
 description: The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. 
 url: https://github.com/grafana/grafana
 ---
@@ -38,6 +38,8 @@ If you're interested in contributing to the Grafana project:
 -   Learn how to set up your local environment, in our Developer guide.
 -   Explore our beginner-friendly issues.
 -   Look through our style guide and Storybook.
+
+> Share your contributor experience in our feedback survey to help us improve.
 
 Get involved
 ------------

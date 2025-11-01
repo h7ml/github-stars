@@ -1,6 +1,6 @@
 ---
 project: vocabulary-corpus
-stars: 397
+stars: 400
 description: 44000+ 词汇语料库
 url: https://github.com/hubingkang/vocabulary-corpus
 ---

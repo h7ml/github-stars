@@ -1,6 +1,6 @@
 ---
 project: lossless-cut
-stars: 34143
+stars: 34379
 description: The swiss army knife of lossless video/audio editing
 url: https://github.com/mifi/lossless-cut
 ---
@@ -180,7 +180,7 @@ Attributions
 
 -   App icon made by Dimi Kazak from www.flaticon.com is licensed by CC 3.0 BY.
 -   Lottie animation by Chris Gannon.
--   Thanks to Adi Abinun for UI work.
+-   Thanks to Adi Abinun and @abdul-alhasany for UI work.
 -   Thanks to translators who helped translate the app. You can too!
 -   Thanks to everyone for supporting my open source work 🙌
 

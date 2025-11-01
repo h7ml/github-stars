@@ -1,6 +1,6 @@
 ---
 project: NeedyClash
-stars: 272
+stars: 283
 description: 世界上最好看的 clash？ 兼顾稳定性和性能
 url: https://github.com/Lythrilla/NeedyClash
 ---

@@ -1,6 +1,6 @@
 ---
 project: v2ray-agent
-stars: 17469
+stars: 17513
 description: Xray、Tuic、hysteria2、sing-box 八合一一键脚本
 url: https://github.com/mack-a/v2ray-agent
 ---
@@ -23,7 +23,7 @@ Xray-core/sing-box 一键脚本快速安装
 -   **分流管理:** 提供wireguard、IPv6、Socks5、DNS、VMess(ws)、SNI反向代理，可用于解锁流媒体、规避IP验证等作用.
 -   **目标域名管理:** 提供域名黑名单管理，可用于禁止访问指定网站.
 -   **BT下载管理:** 可用于禁止下载P2P相关内容.
--   **更多内容请访问官方网站、备用**
+-   **更多内容请访问官方网站、备用、X**
 
 快速开始
 ----
@@ -61,6 +61,7 @@ vasma
 -   **Telegram:** 频道 | 群组
 -   **网站:** 官网 | 备用
 -   **反馈:** 提交 issue
+-   **X:** 链接
 
 捐赠
 --

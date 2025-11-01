@@ -1,6 +1,6 @@
 ---
 project: req
-stars: 1266
+stars: 1269
 description: Req is a batteries-included HTTP client for Elixir.
 url: https://github.com/wojtekmach/req
 ---
@@ -42,7 +42,7 @@ Features
     
 -   Templated request paths (via `put_path_params` step.)
     
--   Basic, bearer, and `.netrc` authentication (via `auth` step.)
+-   Basic, Digest, Bearer, and `.netrc`\-based authentication (via `auth` step.)
     
 -   Range requests (via `put_range`) step.)
     

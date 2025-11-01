@@ -1,6 +1,6 @@
 ---
 project: TradingAgents
-stars: 23482
+stars: 24164
 description: TradingAgents: Multi-Agents LLM Financial Trading Framework
 url: https://github.com/TauricResearch/TradingAgents
 ---

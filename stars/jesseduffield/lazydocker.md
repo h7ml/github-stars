@@ -1,6 +1,6 @@
 ---
 project: lazydocker
-stars: 47128
+stars: 47287
 description: The lazier way to manage everything docker
 url: https://github.com/jesseduffield/lazydocker
 ---
@@ -23,7 +23,7 @@ Visit warp.dev to learn more.
 
   
 
-**I (Jesse) co-founded Subble to save your company time and money by finding unused and over-provisioned SaaS licences. Check it out!**  
+**Click here to learn more**  
 
 * * *
 

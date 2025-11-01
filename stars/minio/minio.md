@@ -1,6 +1,6 @@
 ---
 project: minio
-stars: 57285
+stars: 57716
 description: MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
 url: https://github.com/minio/minio
 ---
@@ -72,7 +72,7 @@ You can also connect using any S3-compatible tool, such as the MinIO Client `mc`
 mc alias set local http://localhost:9000 minioadmin minioadmin
 mc admin info local
 
-See Test using MinIO Client `mc` for more information on using the `mc` commandline tool. For application developers, see https://docs.min.io/community/minio-object-store/developers/minio-drivers.html to view MinIO SDKs for supported languages.
+See Test using MinIO Client `mc` for more information on using the `mc` commandline tool. For application developers, see https://docs.min.io/enterprise/aistor-object-store/developers/sdk/ to view MinIO SDKs for supported languages.
 
 Note
 

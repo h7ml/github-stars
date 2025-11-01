@@ -1,6 +1,6 @@
 ---
 project: nebulex
-stars: 1354
+stars: 1356
 description: In-memory and distributed caching toolkit for Elixir.
 url: https://github.com/elixir-nebulex/nebulex
 ---
@@ -35,8 +35,8 @@ For example, to use the Generational Local Cache (`Nebulex.Adapters.Local` adapt
 
 def deps do
   \[
-    {:nebulex, "~> 3.0.0-rc.1"},
-    {:nebulex\_local, "~> 3.0.0-rc.1"}, \# Generational local cache adapter
+    {:nebulex, "~> 3.0.0-rc.2"},
+    {:nebulex\_local, "~> 3.0.0-rc.2"}, \# Generational local cache adapter
     {:decorator, "~> 1.4"},            \# Required for caching decorators
     {:telemetry, "~> 1.2"}             \# Required for telemetry events
   \]
@@ -46,7 +46,7 @@ To provide more flexibility and load only the needed dependencies, Nebulex makes
 
 -   **For enabling declarative decorator-based caching**: Add `:decorator` to the dependency list (recommended).
     
--   **For enabling Telemetry events**: Add `:telemetry` to the dependency list (recommended). See the telemetry guide.
+-   **For enabling Telemetry events**: Add `:telemetry` to the dependency list (recommended). See the Info API guide for monitoring cache stats and metrics.
     
 
 Then run `mix deps.get` in your shell to fetch the dependencies. If you want to use another cache adapter, just choose the appropriate dependency from the table above.

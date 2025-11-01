@@ -1,6 +1,6 @@
 ---
 project: pangolin
-stars: 15686
+stars: 15869
 description: Identity-Aware Tunneled Reverse Proxy Server with Dashboard UI
 url: https://github.com/fosrl/pangolin
 ---
@@ -14,7 +14,8 @@ Pangolin is a self-hosted tunneled reverse proxy server with identity and contex
 Installation
 ------------
 
-Check out the quick install guide for how to install and set up Pangolin.
+-   Check out the quick install guide for how to install and set up Pangolin.
+-   Install from the DigitalOcean marketplace for a one-click pre-configured installer.
 
 Deployment Options
 ------------------

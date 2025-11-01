@@ -1,6 +1,6 @@
 ---
 project: btop
-stars: 27617
+stars: 27748
 description: A monitor of resources
 url: https://github.com/aristocratos/btop
 ---
@@ -168,6 +168,7 @@ Features
 -   Easy switching between sorting options.
 -   Tree view of processes.
 -   Send any signal to selected process.
+-   Pause the process list.
 -   UI menu for changing all config file options.
 -   Auto scaling graph for network usage.
 -   Shows IO activity and speeds for disks.
@@ -244,7 +245,7 @@ See GPU compatibility section for more about compiling with GPU support.
     
 -   **INTEL**
     
-    Requires a working C compiler if compiling from source - tested with GCC12 and Clang16.
+    Requires a working C compiler if compiling from source.
     
     Also requires the user to have permission to read from SYSFS.
     
@@ -363,7 +364,7 @@ Installation
 Compilation Linux
 -----------------
 
-Requires at least GCC 11 or Clang 16.
+Requires at least GCC 14 or Clang 19.
 
 The Makefile also needs GNU `coreutils` and `sed` (should already be installed on any modern distribution).
 
@@ -394,9 +395,9 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
 
 ### With Make
 
-1.  **Install dependencies (example for Ubuntu 21.04 Hirsute)**
+1.  **Install dependencies (example for Ubuntu 24.04 Noble)**
     
-    sudo apt install coreutils sed git build-essential gcc-11 g++-11 lowdown
+    sudo apt install coreutils sed git build-essential lowdown
     
 2.  **Clone repository**
     
@@ -562,9 +563,7 @@ For x86\_64 Linux the flag `GPU_SUPPORT` is automatically set to `true`, to manu
 Compilation macOS OSX
 ---------------------
 
-Requires at least GCC 12 or Clang 16.
-
-With GCC, version 12 (or better) is needed for macOS Ventura. If you get linker errors on Ventura you'll need to upgrade your command line tools (Version 14.0) is bugged.
+Requires at least GCC 14 or Clang 19.
 
 The Makefile also needs GNU coreutils and `sed`.
 
@@ -574,7 +573,7 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
 
 1.  **Install dependencies (example for Homebrew)**
     
-    brew install coreutils make gcc@12 lowdown
+    brew install coreutils make gcc@15 lowdown
     
 2.  **Clone repository**
     
@@ -685,8 +684,6 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
     # Build
     cmake --build build
     
-    _**Note:** btop uses lots of C++ 20 features, so it's necessary to be specific about the compiler and the standard library. If you get a compile with Apple-Clang or GCC, feel free to add the instructions here._
-    
     This will automatically build a release version of btop.
     
     Some useful options to pass to the configure step:
@@ -725,7 +722,7 @@ Install and use Homebrew or MacPorts package managers for easy dependency instal
 Compilation FreeBSD
 -------------------
 
-Requires at least GCC 11 or Clang 16.
+Requires at least Clang 19 (default) or GCC 14.
 
 Note that GNU make (`gmake`) is required to compile on FreeBSD.
 
@@ -733,7 +730,7 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
 
 1.  **Install dependencies**
     
-    sudo pkg install gmake gcc11 coreutils git lowdown
+    sudo pkg install gmake coreutils git lowdown
     
 2.  **Clone repository**
     
@@ -826,15 +823,7 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
     
     Requires Clang / GCC, CMake, Ninja, Lowdown and Git
     
-    _**Note:** LLVM's libc++ shipped with FreeBSD 13 is too old and cannot compile btop._
-    
-    FreeBSD 14 and later:
-    
     pkg install cmake ninja lowdown
-    
-    FreeBSD 13:
-    
-    pkg install cmake gcc13 ninja lowdown
     
 2.  **Clone the repository**
     
@@ -842,17 +831,8 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
     
 3.  **Compile**
     
-    FreeBSD 14 and later:
-    
     # Configure
     cmake -B build -G Ninja
-    # Build
-    cmake --build build
-    
-    FreeBSD 13:
-    
-    # Configure
-    CXX=g++13 cmake -B build -G Ninja
     # Build
     cmake --build build
     
@@ -900,7 +880,7 @@ Note that GNU make (`gmake`) is required to compile on FreeBSD.
 Compilation NetBSD
 ------------------
 
-Requires at least GCC 11.
+Requires at least GCC 14.
 
 Note that GNU make (`gmake`) is required to compile on NetBSD.
 
@@ -908,7 +888,8 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
 
 1.  **Install dependencies**
     
-    pkg\_add gmake gcc11 coreutils git
+    /usr/sbin/pkg\_add pkgin
+    pkgin install -y coregutils gcc14 git gmake
     
 2.  **Clone repository**
     
@@ -917,7 +898,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
     
 3.  **Compile**
     
-    gmake CXXFLAGS="\-DNDEBUG"
+    CXX=/usr/pkg/gcc14/bin/g++ gmake CXXFLAGS="\-DNDEBUG"
     
     Options for make:
     
@@ -1001,7 +982,8 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
     
     Requires GCC, CMake, Ninja and Git
     
-    pkg\_add cmake ninja-build gcc11 coreutils git
+    /usr/sbin/pkg\_add pkgin
+    pkgin install cmake ninja-build gcc14 git
     
 2.  **Clone the repository**
     
@@ -1010,7 +992,7 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
 3.  **Compile**
     
     # Configure
-    cmake -DCMAKE\_CXX\_COMPILER="/usr/pkg/gcc11/bin/g++" -B build -G Ninja
+    CXX="/usr/pkg/gcc14/bin/g++" cmake -B build -G Ninja
     # Build
     cmake --build build
     
@@ -1052,15 +1034,13 @@ Note that GNU make (`gmake`) is required to compile on NetBSD.
 Compilation OpenBSD
 -------------------
 
-Requires at least GCC 11.
-
 Note that GNU make (`gmake`) is required to compile on OpenBSD.
 
 ### With gmake
 
 1.  **Install dependencies**
     
-    pkg\_add gmake gcc%11 g++%11 coreutils git lowdown
+    pkg\_add coreutils git gmake lowdown
     
 2.  **Clone repository**
     
@@ -1069,7 +1049,7 @@ Note that GNU make (`gmake`) is required to compile on OpenBSD.
     
 3.  **Compile**
     
-    gmake CXX=eg++
+    gmake
     
     Options for make:
     
@@ -1155,7 +1135,7 @@ Note that GNU make (`gmake`) is required to compile on OpenBSD.
     
     _**Note:** LLVM's libc++ shipped with OpenBSD 7.4 is too old and cannot compile btop._
     
-    pkg\_add cmake g++%11 git ninja lowdown
+    pkg\_add cmake git ninja lowdown
     
 2.  **Clone the repository**
     
@@ -1164,7 +1144,7 @@ Note that GNU make (`gmake`) is required to compile on OpenBSD.
 3.  **Compile**
     
     # Configure
-    CXX=eg++ cmake -B build -G Ninja
+    cmake -B build -G Ninja
     # Build
     cmake --build build
     
@@ -1311,6 +1291,9 @@ proc\_per\_core = True
 
 #\* Show process memory as bytes instead of percent.
 proc\_mem\_bytes = True
+
+#\* Choose to preserve last cpu and memory usage of dead processes for when paused.
+keep\_dead\_proc\_usage = False
 
 #\* Use /proc/\[pid\]/smaps for memory information in the process info box (very slow but more accurate)
 proc\_info\_smaps = False

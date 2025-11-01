@@ -1,6 +1,6 @@
 ---
 project: coolify
-stars: 46656
+stars: 46828
 description: An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 url: https://github.com/coollabsio/coolify
 ---
@@ -78,7 +78,7 @@ Big Sponsors
 -   CompAI - Open source compliance automation platform
 -   Convex - Open-source reactive database for web app developers
 -   CubePath - Dedicated Servers & Instant Deploy
--   Darweb - Design. Develop. Deliver. Specialized in 3D CPQ Solutions
+-   Dade2 - IT Consulting, Cloud Solutions & System Integration
 -   Formbricks - The open source feedback platform
 -   GoldenVM - Premium virtual machine hosting solutions
 -   Gozunga - Seriously Simple Cloud Infrastructure

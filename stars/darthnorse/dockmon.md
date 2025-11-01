@@ -1,6 +1,6 @@
 ---
 project: dockmon
-stars: 164
+stars: 174
 description: DockMon - Modern Docker container monitoring with auto-restart and alerts
 url: https://github.com/darthnorse/dockmon
 ---
@@ -22,6 +22,7 @@ Key Features
 -   **Advanced Alerting** - Discord, Slack, Telegram, Pushover, Gotify, SMTP with customizable templates
 -   **Container Tagging** - Automatic tag derivation from Docker labels with user-defined tags
 -   **Bulk Operations** - Start, stop, restart multiple containers simultaneously with progress tracking
+-   **Container Deployments** - Deploy containers to local and remote hosts. Supports Docker Run style deployments as well as Docker Compose, including the ability to create templates for repeated deployments
 -   **Automatic Updates** - Detect and execute container image updates on schedule
 -   **HTTP/HTTPS Health Checks** - Custom endpoint monitoring with auto-restart on failure
 -   **Blackout Windows** - Schedule maintenance periods to suppress alerts
@@ -50,50 +51,6 @@ Support & Community
 -   **Wiki** - Complete documentation
 -   **Star on GitHub** - Show your support!
 -   **Buy Me A Coffee** - Support the project
-
-Roadmap
--------
-
-### Completed (v1.0)
-
--   Full backend API with FastAPI
--   WebSocket real-time updates
--   Multi-channel notifications
--   Comprehensive event logging
--   Event log viewer with filtering and search
--   Real-time container logs viewer (multi-container support)
--   Drag-and-drop dashboard
--   Auto-restart with retry logic
-
-### Completed (v1.1)
-
--   Real-time performance metrics (CPU, memory, network, disk I/O)
--   Host-level and container-level statistics
--   TLS/mTLS support for secure remote Docker connections
--   Optimized streaming architecture with Go backend
-
-### Completed (v2.0) - Complete Rewrite
-
--   Modern React 18 frontend with TypeScript
--   Container tagging system with auto-derivation from Docker labels
--   Bulk operations (start/stop/restart multiple containers)
--   Automatic container updates with version tracking and scheduling
--   HTTP/HTTPS health checks with auto-restart on failure
--   Blackout windows for maintenance periods
--   Advanced alert rule engine with metric and event triggers
--   Alpine Linux base image with OpenSSL 3.x
--   Go 1.23 stats service for high-performance metrics streaming
--   Enhanced security and modern architecture
-
-### Planned (v2.1+)
-
--   Historical metrics graphs with trend analysis
--   Configuration export/import
--   Mobile-friendly responsive UI
--   DockMon Agent for remote Docker hosts (avoid exposing Docker socket)
--   Advanced RBAC and multi-user permissions
-
-See the full roadmap for details.
 
 Technology Stack
 ----------------

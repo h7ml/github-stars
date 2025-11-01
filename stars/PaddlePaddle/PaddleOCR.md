@@ -1,6 +1,6 @@
 ---
 project: PaddleOCR
-stars: 61167
+stars: 62276
 description: Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.
 url: https://github.com/PaddlePaddle/PaddleOCR
 ---
@@ -16,11 +16,13 @@ Tip
 
 PaddleOCR now provides an MCP server that supports integration with Agent applications like Claude Desktop. For details, please refer to PaddleOCR MCP Server.
 
-The PaddleOCR 3.0 Technical Report is now available. See details at: PaddleOCR 3.0 Technical Report
+The PaddleOCR 3.0 Technical Report is now available. See details at: PaddleOCR 3.0 Technical Report.
 
-The PaddleOCR-VL Technical Report is now available. See details at PaddleOCR-VL Technical Report
+The PaddleOCR-VL Technical Report is now available. See details at PaddleOCR-VL Technical Report.
 
-**PaddleOCR** converts documents and images into **structured, AI-friendly data** (like JSON and Markdown) with **industry-leading accuracy**—powering AI applications for everyone from indie developers and startups to large enterprises worldwide. With over **50,000 stars** and deep integration into leading projects like **MinerU, RAGFlow, and OmniParser**, PaddleOCR has become the **premier solution** for developers building intelligent document applications in the **AI era**.
+The Beta version of the PaddleOCR official website is now live, offering a more convenient online experience and large-scale PDF file parsing, as well as free API and MCP services. For more details, please visit the PaddleOCR official website.
+
+**PaddleOCR** converts documents and images into **structured, AI-friendly data** (like JSON and Markdown) with **industry-leading accuracy**—powering AI applications for everyone from indie developers and startups to large enterprises worldwide. With over **60,000 stars** and deep integration into leading projects like **MinerU, RAGFlow, pathway and cherry-studio**, PaddleOCR has become the **premier solution** for developers building intelligent document applications in the **AI era**.
 
 ### PaddleOCR 3.0 Core Features
 
@@ -211,7 +213,7 @@ Corresponding Functionality
 
 `doc-parser`
 
-Document parsing: can be used to extract layout elements such as tables, formulas, stamps, images, etc. from documents; includes models like PP-StructureV3
+Document parsing: can be used to extract layout elements such as tables, formulas, stamps, images, etc. from documents; includes models like PP-StructureV3, PaddleOCR-VL
 
 `ie`
 
@@ -386,6 +388,12 @@ for res in output:
 🔄 Quick Overview of Execution Results
 --------------------------------------
 
+### PP-OCRv5
+
+### PP-StructureV3
+
+### PaddleOCR-VL
+
 ✨ Stay Tuned
 ------------
 
@@ -411,6 +419,10 @@ RAGFlow
 
 RAG engine based on deep document understanding.
 
+pathway
+
+Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.
+
 MinerU
 
 Multi-type Document to Markdown Conversion Tool
@@ -418,6 +430,10 @@ Multi-type Document to Markdown Conversion Tool
 Umi-OCR
 
 Free, Open-source, Batch Offline OCR Software.
+
+cherry-studio
+
+A desktop client that supports for multiple LLM providers.
 
 OmniParser
 
@@ -453,14 +469,22 @@ This project is released under the Apache 2.0 license.
 🎓 Citation
 -----------
 
-```
 @misc{cui2025paddleocr30technicalreport,
-      title={PaddleOCR 3.0 Technical Report}, 
-      author={Cheng Cui and Ting Sun and Manhui Lin and Tingquan Gao and Yubo Zhang and Jiaxuan Liu and Xueqing Wang and Zelun Zhang and Changda Zhou and Hongen Liu and Yue Zhang and Wenyu Lv and Kui Huang and Yichao Zhang and Jing Zhang and Jun Zhang and Yi Liu and Dianhai Yu and Yanjun Ma},
-      year={2025},
-      eprint={2507.05595},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2507.05595}, 
+      title\={PaddleOCR 3.0 Technical Report}, 
+      author\={Cheng Cui and Ting Sun and Manhui Lin and Tingquan Gao and Yubo Zhang and Jiaxuan Liu and Xueqing Wang and Zelun Zhang and Changda Zhou and Hongen Liu and Yue Zhang and Wenyu Lv and Kui Huang and Yichao Zhang and Jing Zhang and Jun Zhang and Yi Liu and Dianhai Yu and Yanjun Ma},
+      year\={2025},
+      eprint\={2507.05595},
+      archivePrefix\={arXiv},
+      primaryClass\={cs.CV},
+      url\={https://arxiv.org/abs/2507.05595}, 
 }
-```
+
+@misc{cui2025paddleocrvlboostingmultilingualdocument,
+      title\={PaddleOCR-VL: Boosting Multilingual Document Parsing via a 0.9B Ultra-Compact Vision-Language Model}, 
+      author\={Cheng Cui and Ting Sun and Suyin Liang and Tingquan Gao and Zelun Zhang and Jiaxuan Liu and Xueqing Wang and Changda Zhou and Hongen Liu and Manhui Lin and Yue Zhang and Yubo Zhang and Handong Zheng and Jing Zhang and Jun Zhang and Yi Liu and Dianhai Yu and Yanjun Ma},
+      year\={2025},
+      eprint\={2510.14528},
+      archivePrefix\={arXiv},
+      primaryClass\={cs.CV},
+      url\={https://arxiv.org/abs/2510.14528}, 
+}

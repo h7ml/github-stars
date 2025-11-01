@@ -1,6 +1,6 @@
 ---
 project: cs-video-courses
-stars: 70099
+stars: 70107
 description: List of Computer Science courses with video lectures.
 url: https://github.com/Developer-Y/cs-video-courses
 ---
@@ -198,6 +198,10 @@ Courses
 -   UC Santa Cruz CSE 202 Combinatorial Algorithms spring 2021, by Seshadhri Comandur
 -   UC Santa Cruz CSE 104, 204 Computational Complexity spring 2022, by Seshadhri Comandur (Fall 2020)
 -   UC Santa Cruz CSE 290A Randomized Algorithms spring 2020, by Seshadhri Comandur
+-   University of Maryland CMSC351 Introduction to Algorithms, by Mohammad Hajiaghayi
+-   University of Maryland CMSC858F Network Algorithms and Approximations, by Mohammad Hajiaghayi (YouTube playlists)
+-   University of Maryland CMSC858M Algorithmic Lower Bounds: Fun with Hardness Proofs, by Mohammad Hajiaghayi (YouTube playlists)
+-   University of Maryland UMD DATA602 / MSML602 Principles of Data Science spring 2024, by Mohammad Hajiaghayi
 -   Algorithms for Big-Data (Fall 2020) - Saket Saurabh
 -   CS498ABD - Algorithms for Big Data - UIUC, Fall 2020
 -   Advanced Data Structures
@@ -1267,6 +1271,7 @@ Courses
 -   Frontiers of Biomedical Engineering with W. Mark Saltzman - Yale
 -   NOC:Computational Systems Biology - IIT Madras
 -   NOC:BioInformatics:Algorithms and Applications - IIT Madras
+-   MLCB24: Machine Learning in Computational Biology, Fall 2024 - Manolis Kellis - MIT
 -   Data Science and AI for Neuroscience Summer School - Caltech Neuroscience
 -   Theoretical and Computational Neuroscience Summer School - 2024 - CNeuro
 -   Neuroscience 299: Computing with High-Dimensional Vectors - Fall 2021 - UC Berkeley

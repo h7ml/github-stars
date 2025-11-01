@@ -1,6 +1,6 @@
 ---
 project: nimble_pool
-stars: 371
+stars: 372
 description: A tiny resource-pool implementation for Elixir
 url: https://github.com/dashbitco/nimble_pool
 ---

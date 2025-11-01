@@ -1,6 +1,6 @@
 ---
 project: wysiwyg-editor
-stars: 5370
+stars: 5368
 description: The next generation Javascript WYSIWYG HTML Editor.
 url: https://github.com/froala/wysiwyg-editor
 ---
@@ -206,4 +206,8 @@ If you have questions or need help integrating the editor please contact us inst
 Licensing
 ---------
 
-In order to use the Froala Editor you have to purchase one of the following licenses according to your needs. You can find more about that on our website on the pricing plan page.
+All plugins would be restricted for an unlicensed version. To try out the full functionality, you’ll need to register for a trial license here, which is valid for a limited time.
+
+To continue using the Froala Editor beyond the trial period, you’ll need to purchase a commercial license that suits your use case. For more details, visit our pricing plan page.
+
+This software includes open-source components. License information is available in the License file in the root folder.

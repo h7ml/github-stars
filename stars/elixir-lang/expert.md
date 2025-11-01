@@ -1,6 +1,6 @@
 ---
 project: expert
-stars: 1594
+stars: 1609
 description: Official Elixir Language Server Protocol implementation
 url: https://github.com/elixir-lang/expert
 ---
@@ -40,7 +40,7 @@ This will build the Expert binary and place it in the `apps/expert/burrito_out` 
 Sponsorship
 -----------
 
-Thank you to our corporate sponsors! If you'd like to start sponsoring the project, please read more below.
+Thank you to our corporate sponsors! Expert is currently in alpha and we have organized all future work, including the first release, as milestones. If you'd like to start sponsoring the project, please read more below.
 
 ### Corporate
 

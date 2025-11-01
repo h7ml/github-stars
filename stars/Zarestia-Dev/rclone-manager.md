@@ -1,6 +1,6 @@
 ---
 project: rclone-manager
-stars: 384
+stars: 389
 description: Rclone Manager is a cross-platform GUI application designed to help users manage Rclone remotes efficiently.
 url: https://github.com/Zarestia-Dev/rclone-manager
 ---
@@ -39,7 +39,7 @@ _Built with Angular 20 + Tauri 2 · Linux • Windows • macOS • ARM Support_
 
 **⚙️ Mount Control & Job Monitoring**  
 
-**📱 Mobile Support**  
+**📱 Responsive**  
 
 _Seamlessly switches between light and dark modes to match your system preferences._
 
@@ -85,53 +85,82 @@ _Seamlessly switches between light and dark modes to match your system preferenc
 -   📡 **Metered Connection Detection** – Smart warnings when on limited networks
 -   🎮 **Global Shortcuts** – Keyboard shortcuts for power users (e.g., Ctrl+Shift+M to force-check mounts)
 -   🔍 **Mount Watcher** – Automatic detection and updates of mount status
-
-### ☁️ Supported Cloud Providers
-
-Nearly all Rclone remotes are supported, including:
-
--   **Google Drive** – Full OAuth support with team drives
--   **Microsoft OneDrive** – Personal and Business accounts
--   **Dropbox** – Complete integration
--   **Amazon S3** – And all S3-compatible services
--   **iCloud Drive** – Interactive configuration support
--   **SFTP/FTP** – Secure file transfer protocols
--   **WebDAV** – Generic WebDAV support
--   **And 40+ more providers!**
+-   ☁️ **Supported Cloud Providers** – Google Drive, OneDrive, Dropbox, Amazon S3, iCloud, Wasabi, Backblaze B2, and many more
 
 * * *
 
-🔧 Tech Stack
--------------
+📦 Installation & Downloads
+---------------------------
 
--   **Frontend**: Angular 20 + Angular Material + FontAwesome
--   **Backend**: Tauri 2 (Rust)
--   **Styling**: Custom GTK-inspired theming with responsive design
--   **Architecture**: Modern component-based with reactive state management
+### 📦 Package Manager Availability
+
+Install RClone Manager from your favorite package manager.
+
+#### 🐧 Linux
+
+Repository
+
+Version
+
+Install Command
+
+**AUR**
+
+`yay -S rclone-manager`
+
+**AUR (Git)**
+
+`yay -S rclone-manager-git`
+
+**Direct Download**
+
+**Flathub**
+
+`flatpak install flathub xxxxxxxxxxxxxxxxxxxxx`
+
+#### 🍎 macOS
+
+Repository
+
+Version
+
+Install Command
+
+**Homebrew**
+
+`brew install --cask xxxxxxxxxxxxxxxxxxxxxx`
+
+**Direct Download**
+
+> **Note:** For macOS app launch instructions and troubleshooting, check the installation guide: Installation - macOS
+
+#### 🪟 Windows
+
+Repository
+
+Version
+
+Install Command
+
+**Chocolatey**
+
+`choco install rclone-manager`
+
+**Scoop**
+
+`scoop bucket add extras` then `scoop install rclone-manager`
+
+**Winget**
+
+`winget install RClone-Manager.rclone-manager`
+
+**Direct Download**
+
+> 💡 **More package managers coming soon!** We have submissions under review for Flathub, Homebrew, Scoop, and Winget.
 
 * * *
 
-📦 Downloads
-------------
-
-### 🎯 Latest Release
-
-Get the latest version for your platform:
-
-**Available for:**
-
--   🐧 Linux (x86\_64, ARM64) – AppImage, Deb, RPM
--   🪟 Windows (x86\_64, ARM64) – MSI Installer, Portable
--   🍎 macOS (Intel, Apple Silicon) – DMG
-
-> 📋 See the full release notes for changelog and installation instructions
-
-* * *
-
-🛠️ Installation
-----------------
-
-### 📋 Runtime Requirements
+### 🛠️ Runtime Requirements
 
 **RClone Manager** will guide you through installing any missing dependencies on first run. However, you can pre-install:
 
@@ -149,27 +178,17 @@ Get the latest version for your platform:
 
 -   **7-Zip** – For password-protected configuration backups
 
-### 🚀 Quick Start
-
-1.  **Download** the appropriate package for your OS from releases
-2.  **Install** using your platform's standard method:
-
--   **Linux:**
-    -   **Debian/Ubuntu:** `sudo dpkg -i rclone-manager_*.deb` or run the AppImage
-    -   **Fedora/openSUSE (RPM):** `sudo rpm -i rclone-manager-*.rpm`
-    -   **Arch Linux:** Install from AUR via your AUR helper, e.g. `yay -S rclone-manager`
--   **Windows:** Run the MSI installer or extract the portable version
--   **macOS:** Open the DMG and drag to Applications
-
-1.  **Launch** RClone Manager and follow the onboarding wizard
-2.  **Add your first remote** using the guided setup
-
-> 💡 **First-time users?** The app includes an interactive onboarding that will help you set up Rclone and create your first remote!
-
 * * *
 
 🛠️ Development
 ---------------
+
+### 🔧 Tech Stack
+
+-   **Frontend**: Angular 20 + Angular Material + FontAwesome
+-   **Backend**: Tauri 2 (Rust)
+-   **Styling**: Custom GTK-inspired theming with responsive design
+-   **Architecture**: Modern component-based with reactive state management
 
 ### Prerequisites for Building
 
@@ -181,7 +200,7 @@ Get the latest version for your platform:
 ### Development Setup
 
 # Clone the repository
-git clone https://github.com/RClone-Manager/rclone-manager.git
+git clone https://github.com/Zarestia-Dev/rclone-manager.git
 cd rclone-manager
 
 # Install dependencies
@@ -201,13 +220,7 @@ npm run tauri build
 
 ### Linting & Formatting
 
-# Frontend (Angular)
-npm run lint          # ESLint check
-npm run format        # Prettier format
-
-# Backend (Rust)
-npm run lint:rust     # Clippy check
-npm run format:rust   # Rustfmt format
+-   See **LINTING.md** for detailed instructions on linting and formatting the codebase.
 
 * * *
 
@@ -216,7 +229,7 @@ npm run format:rust   # Rustfmt format
 
 Known bugs and technical limitations are tracked in two places:
 
--   📄 See **ISSUES.md** for detailed explanations of platform-specific issues (e.g. Windows terminal flash)
+-   📄 See **ISSUES.md** for detailed explanations of platform-specific issues (e.g. MacOS App Damaged)
 -   📌 Visit our **GitHub Project Board** for open bugs and upcoming fixes
 
 * * *
@@ -225,25 +238,6 @@ Known bugs and technical limitations are tracked in two places:
 -----------
 
 We organize development on our **GitHub Project Board** — track features, bugs, and long-term goals.
-
-### Current Focus Areas
-
--   🔜 **Near-Term Goals**
-    
-    -   Enhanced job monitoring with detailed progress tracking
-    -   Additional filter configuration options
-    -   Performance optimizations for large remote lists
--   🚀 **Long-Term Vision**
-    
-    -   Multi-language support (i18n/l10n)
-    -   Mobile app versions
-    -   Advanced scheduling and automation
-    -   Plugin system for custom integrations
--   🧩 **Community Driven**
-    
-    -   Feature requests and suggestions
-    -   UI/UX improvements
-    -   Platform-specific enhancements
 
 > 🧠 **Want to influence the direction?** Star the repo, watch the project board, and share your ideas in Discussions or Issues!
 
@@ -258,7 +252,7 @@ We welcome contributions from developers of all skill levels! Here's how you can
 
 -   🐛 **Report Bugs** – Found an issue? Open a bug report
 -   💡 **Suggest Features** – Have an idea? Share it with us
--   � **Improve Documentation** – Help make our docs clearer and more comprehensive
+-   📖 **Improve Documentation** – Help make our docs clearer and more comprehensive
 -   🔧 **Submit Pull Requests** – Fix bugs or implement features (see development setup above)
 -   🌍 **Translate** – Help make RClone Manager available in your language (coming soon)
 -   ⭐ **Spread the Word** – Star the repo, share with friends, write blog posts
@@ -301,5 +295,5 @@ You are free to use, modify, and distribute this software under the terms of the
 
 * * *
 
-Made with ❤️ by the RClone Manager Team  
+Made with ❤️ by the Zarestia Dev Team  
 Powered by Rclone | Built with Angular & Tauri

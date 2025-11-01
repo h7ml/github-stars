@@ -1,8 +1,8 @@
 ---
-project: OpenSpeedy
-stars: 11962
+project: Speedy
+stars: 12455
 description: 🎮 An open-source game speed modifier.[一款开源的游戏变速器]
-url: https://github.com/game1024/OpenSpeedy
+url: https://github.com/game1024/Speedy
 ---
 
 OpenSpeedy
@@ -142,7 +142,13 @@ If you encounter any issues during use, feel free to provide feedback via:
 
 If you find the OpenSpeedy project helpful, you can buy me a coffee~ ☕️
 
-365VPN uses dedicated lines to connect worldwide, offering speeds of up to 10Gbps. Download now to start surfing for free🏄: https://ref.365tz87989.com/?r=RWQVZD
+Name
+
+Description
+
+365VPN
+
+uses dedicated lines to connect worldwide, offering speeds of up to 10Gbps. Download now to start surfing for free🏄: https://ref.365tz87989.com/?r=RWQVZD
 
 Sponsors
 ========

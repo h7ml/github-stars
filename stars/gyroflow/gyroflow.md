@@ -1,6 +1,6 @@
 ---
 project: gyroflow
-stars: 7880
+stars: 7908
 description: Video stabilization using gyroscope data
 url: https://github.com/gyroflow/gyroflow
 ---
@@ -65,7 +65,7 @@ Supported gyro sources
 -   Betaflight blackbox (\*.bfl, \*.bbl, \*.csv)
 -   ArduPilot logs (\*.bin, \*.log)
 -   Gyroflow .gcsv log
--   iOS apps: `Sensor Logger`, `G-Field Recorder`, `Gyro`, `GyroCam`
+-   iOS apps: `Sensor Logger`, `G-Field Recorder`, `Gyro`
 -   Android apps: `Sensor Logger`, `Sensor Record`, `OpenCamera Sensors`, `MotionCam Pro`
 -   Runcam CSV (Runcam 5 Orange, iFlight GOCam GR, Runcam Thumb, Mobius Maxi 4K)
 -   Hawkeye Firefly X Lite CSV

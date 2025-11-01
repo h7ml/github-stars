@@ -1,6 +1,6 @@
 ---
 project: platform
-stars: 23462
+stars: 23529
 description: Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)
 url: https://github.com/hcengineering/platform
 ---
@@ -30,6 +30,11 @@ If you want to interact with Huly programmatically, check out our API Client doc
 
 You can find API usage examples in the Huly examples repository.
 
+Changelog
+---------
+
+For detailed information about changes, improvements, and bug fixes in each version, see our Changelog.
+
 Table of Contents
 -----------------
 
@@ -38,6 +43,7 @@ Table of Contents
     -   Self-Hosting
     -   Activity
     -   API Client
+    -   Changelog
     -   Table of Contents
     -   Pre-requisites
     -   Verification
